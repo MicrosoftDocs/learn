@@ -5,7 +5,7 @@ metadata:
   description: Enable the Defender for Containers plan in Microsoft Defender for Cloud, configure autoprovisioned components including the Defender sensor and Azure Policy add-on, enable Kubernetes API access, and verify deployment coverage.
   ms.date: 05/10/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 title: Enable and configure Defender for Containers

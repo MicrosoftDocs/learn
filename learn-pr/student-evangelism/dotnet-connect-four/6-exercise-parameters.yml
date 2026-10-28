@@ -5,7 +5,7 @@ metadata:
   title: Exercise - Customization using parameters
   description: In this exercise, we learn to customize our game to make it look better and be more flexible.
   author: CamSoper
-  ms.author: casoper
+  ms.author: lumac
   ms.date: 03/15/2023
   ms.topic: unit
 durationInMinutes: 5

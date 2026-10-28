@@ -9,5 +9,5 @@ You also performed hands-on exercises to mount NFS volumes on Linux and Windows 
 
 ### Learn more
 
-- [Mount NFS volumes for Linux or Windows VMs](https://learn.microsoft.com/azure/azure-netapp-files/azure-netapp-files-mount-unmount-volumes-for-virtual-machines)
-- [Mount SMB volumes for Windows virtual machines](https://learn.microsoft.com/azure/azure-netapp-files/mount-volumes-vms-smb)
+- [Mount NFS volumes for Linux or Windows VMs](/azure/azure-netapp-files/azure-netapp-files-mount-unmount-volumes-for-virtual-machines)
+- [Mount SMB volumes for Windows virtual machines](/azure/azure-netapp-files/mount-volumes-vms-smb)

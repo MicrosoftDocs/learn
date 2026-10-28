@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-infrastructure-as-code-configuration-management
 metadata:
+  gs-content.levels: 400
+  gs-content.locale: en-us
+  gs-duration: 23
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - devops-engineer
+    - platform-engineer
+  gs-skills:
+    - DevOps
+    - "Infrastructure Management"
+    - Automation
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/explore-infrastructure-code-configuration-management/index.yml
   title: Explore Infrastructure as Code and Configuration Management
   description: Learn Infrastructure as Code (IaC) foundational concepts, environment deployment strategies, configuration management approaches, and idempotent configuration principles for automated infrastructure operations.
   ms.date: 10/24/2025

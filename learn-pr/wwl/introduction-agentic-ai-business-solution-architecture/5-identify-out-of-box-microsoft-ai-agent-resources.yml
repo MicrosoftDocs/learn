@@ -6,7 +6,7 @@ metadata:
   description: "Discover out-of-the-box Microsoft AI agent resources to accelerate AI adoption, streamline workflows, and integrate seamlessly with Azure AI."
   ms.date: 02/02/2026
   author: Randall-Knapp
-  ms.author: taeldin
+  ms.author: lumac
   ai-usage: ai-assisted
   ms.topic: unit
 durationInMinutes: 3

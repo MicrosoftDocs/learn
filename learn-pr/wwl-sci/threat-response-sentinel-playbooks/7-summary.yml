@@ -6,7 +6,7 @@ metadata:
   description: "Describes how to set up automated response on threats using Microsoft Sentinel Playbooks."
   ms.date: 01/25/2023
   author: wwlpublish
-  ms.author: kelawson
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 2
 content: |

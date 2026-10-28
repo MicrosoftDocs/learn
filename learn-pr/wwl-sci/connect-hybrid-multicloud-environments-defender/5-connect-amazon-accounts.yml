@@ -5,7 +5,7 @@ metadata:
   description: Connect AWS accounts to Microsoft Defender for Cloud using the native cloud connector, configure Defender plans, deploy the CloudFormation template, and validate connector health.
   ms.date: 04/01/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-generated
 title: Connect AWS accounts to Defender for Cloud

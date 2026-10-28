@@ -6,7 +6,7 @@ metadata:
   description: "Sort and group objects by property in the pipeline"
   ms.date: 05/30/2024
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: lumac
   ms.topic: unit
   ms.custom:
   - N/A

@@ -6,7 +6,7 @@ metadata:
   description: "This unit summarizes the key points covered in the interactive case study on modernizing user access control and threat resilience. It reinforces the importance of implementing robust security measures and best practices."
   ms.date: 04/03/2026
   author: wwlpublish
-  ms.author: ceperezb
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 1
 content: |

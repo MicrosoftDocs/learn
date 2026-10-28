@@ -1,13 +1,36 @@
 ### YamlMime:Module
 uid: learn.wwl.plan-implement-privileged-access
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 62
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - entra
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - identity-access-admin
+    - security-engineer
+    - administrator
+  gs-skills:
+    - "Identity and Access Management (IAM)"
+    - "Zero Trust Security"
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - Cybersecurity
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/plan-implement-privileged-access/index.yml
   adobe-target: true
   prefetch-feature-rollout: true
   title: Plan and implement privileged access
   description: "Ensuring that administrative roles are protected and managed to increase your Azure solution security is a must. Explore how to use PIM to protect your data and resources."
   ms.date: 08/06/2025
   author: wwlpublish
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: module
   ms.collection: N/A
   ms.custom:

@@ -2,9 +2,9 @@ The diagram shows routing traffic from on-premises to an Azure NetApp Files volu
 
 :::image type="content" source="../media/azure-firewall-routing-diagram.png" alt-text="Diagram that shows routing traffic from on-premises to an Azure NetApp Files volume through a Virtual WAN hub and Azure Firewall." border="true" lightbox="../media/azure-firewall-routing-diagram.png":::
 
-- To learn how to install an Azure Firewall in a Virtual WAN hub, refer [Configure Azure Firewall in a Virtual WAN hub](https://learn.microsoft.com/azure/virtual-wan/howto-firewall).
+- To learn how to install an Azure Firewall in a Virtual WAN hub, refer [Configure Azure Firewall in a Virtual WAN hub](/azure/virtual-wan/howto-firewall).
 
-- To force different traffic flows via the Azure Firewall installed in the hub, see [How to configure Virtual WAN Hub routing intent and routing policies](https://learn.microsoft.com/azure/virtual-wan/how-to-routing-policies).
+- To force different traffic flows via the Azure Firewall installed in the hub, see [How to configure Virtual WAN Hub routing intent and routing policies](/azure/virtual-wan/how-to-routing-policies).
 
 - To force the Azure NetApp Files-bound traffic through Azure Firewall in the Virtual WAN hub, the effective routes of the virtual hub should have the specific IP address of the Azure NetApp Files volume pointing to the Azure Firewall.
 

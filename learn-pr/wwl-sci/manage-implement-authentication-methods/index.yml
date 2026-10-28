@@ -1,11 +1,32 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-implement-authentication-methods
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 29
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - entra
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - identity-access-admin
+    - security-engineer
+    - administrator
+  gs-skills:
+    - "Identity and Access Management (IAM)"
+    - "Zero Trust Security"
+    - Cybersecurity
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/manage-implement-authentication-methods/index.yml
   title: Manage and Implement Authentication Methods in Microsoft Entra ID
   description: "Learn to plan, deploy, and manage secure authentication in Microsoft Entra ID. This module covers authentication methods, MFA with Conditional Access, passwordless options, and self-service password reset."
   ms.date: 03/13/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: module
   ms.service: entra-id
   ai-usage: ai-assisted

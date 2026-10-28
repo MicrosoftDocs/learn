@@ -6,7 +6,7 @@ metadata:
   description: "Learn how to design model security for responsible AI using identity governance, threat protection, access control, and continuous monitoring."
   ms.date: 02/09/2026
   author: pabloMS
-  ms.author: taeldin
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 5
 content: |

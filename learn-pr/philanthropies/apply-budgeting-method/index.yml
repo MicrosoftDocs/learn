@@ -2,11 +2,29 @@
 uid: learn.philanthropies.apply-budgeting-method
 
 metadata:
+  gs-content.levels: 100
+  gs-content.locale: en-us
+  gs-duration: 50
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - microsoft-365-copilot
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - student
+  gs-skills:
+    - "Generative AI"
+    - "Prompt Engineering"
+  gs-solution.area: "AI Business Solutions"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/philanthropies/apply-budgeting-method/index.yml
   title: Apply a budgeting method to manage money effectively
   description: Learn about four effective budgeting methods to manage your money, save for the future, and achieve your financial goals.
   ms.date: 04/01/2025
   author: kprks
-  ms.author: v-kperkes
+  ms.author: lumac
   ms.topic: module
   ms.service: artificial-intelligence
 

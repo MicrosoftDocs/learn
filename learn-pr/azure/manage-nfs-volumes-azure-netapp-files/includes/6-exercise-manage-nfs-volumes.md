@@ -85,7 +85,7 @@ In this task, you convert an NFS volume between supported versions. If you use t
         [![Screenshot of Edit dialog displaying Protocol type dropdown showing NFSv4.1 selected.](../media/ex-edit-nfsv4.png)](../media/ex-edit-nfsv4.png#lightbox)
 
 4. It takes some time for the conversion operation to complete.
-5. Reconfigure your Linux client to enable NFSv4.1 protocol. See [Configure NFSv4.1 default domain for Azure NetApp Files](https://learn.microsoft.com/azure/azure-netapp-files/azure-netapp-files-configure-nfsv41-domain)
+5. Reconfigure your Linux client to enable NFSv4.1 protocol. See [Configure NFSv4.1 default domain for Azure NetApp Files](/azure/azure-netapp-files/azure-netapp-files-configure-nfsv41-domain)
 6. On all clients, change the NFS protocol version in your mount command (that is,  `/etc/fstab`) from `vers=3` to `vers=4.1`.
 7. Remount the volume on clients using `sudo mount /path/to/vol1`.
 8. On the clients, run `mount -v` and locate your volume in the list. Verify in the output that the version shows `nfsvers=4.1`.

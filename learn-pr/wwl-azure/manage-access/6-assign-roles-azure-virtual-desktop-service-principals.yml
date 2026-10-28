@@ -6,7 +6,7 @@ metadata:
   description: "Assign RBAC roles to the Azure Virtual Desktop service principals"
   ms.date: 08/20/2024
   author: wwlpublish
-  ms.author: bradj
+  ms.author: lumac
   ms.topic: unit
   ms.custom:
   - N/A

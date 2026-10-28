@@ -6,7 +6,7 @@ metadata:
   description: "Deploy the Azure Migrate appliance"
   ms.date: 09/25/2020
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: lumac
   ms.topic: unit
 azureSandbox: false
 durationInMinutes: 6

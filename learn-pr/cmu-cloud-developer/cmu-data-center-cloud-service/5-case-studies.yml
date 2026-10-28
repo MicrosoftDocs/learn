@@ -6,7 +6,7 @@ metadata:
   description: Read a case study for OpenStack
   ms.date: 03/09/2022
   author: softchris
-  ms.author: chnoring
+  ms.author: lumac
   ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 10

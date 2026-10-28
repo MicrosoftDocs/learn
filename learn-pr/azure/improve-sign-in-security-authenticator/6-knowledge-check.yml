@@ -7,7 +7,7 @@ metadata:
   description: "Check how well you understand security for different authentication methods for Microsoft Entra ID. Test your understanding of how to switch users to Microsoft Authenticator push notifications for better security."
   ms.date: 02/29/2024
   author: Justinha
-  ms.author: Justinha
+  ms.author: lumac
   ms.topic: unit
   module_assessment: true
 durationInMinutes: 5

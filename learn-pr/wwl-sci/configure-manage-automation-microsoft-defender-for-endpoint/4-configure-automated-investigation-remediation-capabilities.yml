@@ -6,7 +6,7 @@ metadata:
   description: "Configure automated investigation and remediation capabilities"
   ms.date: 09/12/2025
   author: KenMAG
-  ms.author: kelawson
+  ms.author: lumac
   ms.topic: unit
   ms.custom: sfi-ga-nochange
 azureSandbox: false

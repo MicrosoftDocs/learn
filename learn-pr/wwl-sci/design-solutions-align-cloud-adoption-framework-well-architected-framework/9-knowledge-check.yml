@@ -8,7 +8,7 @@ metadata:
   description: "Knowledge check for module on the topic: Design solutions that align with the Cloud Adoption Framework (CAF) and Well-Architected Framework (WAF)."
   ms.date: 05/27/2026
   author: ceperezb
-  ms.author: ceperezb
+  ms.author: lumac
   ms.topic: unit
   module_assessment: true
 durationInMinutes: 3

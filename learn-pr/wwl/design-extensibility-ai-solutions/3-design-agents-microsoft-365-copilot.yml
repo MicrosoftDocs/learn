@@ -6,7 +6,7 @@ metadata:
   description: "Learn to design, build, and operationalize agents in Microsoft 365 Copilot using Agent Builder and scenario-driven design approaches."
   ms.date: 02/13/2026
   author: pablorodMS
-  ms.author: taeldin
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 6
 content: |

@@ -5,7 +5,7 @@ metadata:
   description: Introduction to configuring network security for Azure Storage, including protecting accounts accessed by AI workloads and on-premises systems.
   ms.date: 04/22/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 title: Introduction

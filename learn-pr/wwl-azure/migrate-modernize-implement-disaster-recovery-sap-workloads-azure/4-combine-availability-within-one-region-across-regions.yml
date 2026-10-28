@@ -6,7 +6,7 @@ metadata:
   description: "Combine availability within one region and across regions"
   ms.date: 01/09/2024
   author: wwlpublish
-  ms.author: eric
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 9
 content: |

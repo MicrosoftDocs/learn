@@ -7,7 +7,7 @@ metadata:
   description: "You needed to roll out a low-cost to help users move away from signing in with less secure methods like Voice calls or SMS. You chose to create a registration campaign to help users set up Microsoft Authenticator, a free app, and use it as their default sign-in method."
   ms.date: 02/29/2024
   author: Justinha
-  ms.author: Justinha
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 1
 content: |

@@ -7,7 +7,7 @@ metadata:
   description: "Review modern authentication methods and security features. Compare various methods for security, usability, and availability and decide how to switch remote employees to a more secure sign-in method."
   ms.date: 02/29/2024
   author: Justinha
-  ms.author: Justinha
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 8
 content: |

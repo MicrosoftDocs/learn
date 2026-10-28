@@ -5,7 +5,7 @@ metadata:
   title: Web app
   description: Build a web app by using Go.
   author: softchris
-  ms.author: chnoring
+  ms.author: lumac
   ms.date: 09/05/2025
   ms.topic: unit
   ms.custom: team=nextgen

@@ -1,6 +1,42 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.build-production-grade-multi-agent-capabilities-microsoft-foundry
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - azure
+    - microsoft-foundry
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - ai-engineer
+    - developer
+    - solution-architect
+  gs-skills:
+    - "Prompt Engineering"
+    - "Agent Development"
+    - "Agentic AI"
+    - "Application Development"
+    - "Application Architecture"
+    - "Platform Engineering"
+    - DevOps
+    - "Cloud Infrastructure"
+    - "Identity and Access Management (IAM)"
+    - "API Management"
+    - Automation
+    - "Retrieval-Augmented Generation (RAG)"
+    - "Knowledge Grounding for AI"
+    - "Multi-Agent Orchestration"
+    - "Vector Databases"
+    - "AI Infrastructure"
+    - "Data Engineering"
+    - "AI Model Evaluation & Testing"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/aaai-2-build-production-grade-multi-agent-capabilities-microsoft-foundry/index.yml
   title: Build Production-Grade Multi-Agent Capabilities with Microsoft Foundry
   description: Learn how to implement the production-grade technical capabilities required to make multi-agent systems reliable, secure, and maintainable. This training helps learners advance from foundational prompting, tool consumption, and RAG patterns to designing multi-intervention guardrail architectures, building enterprise MCP servers, implementing hybrid RAG pipelines, and architecting durable agent memory systems with Azure Cosmos DB. AI-500
   ms.date: 06/16/2026

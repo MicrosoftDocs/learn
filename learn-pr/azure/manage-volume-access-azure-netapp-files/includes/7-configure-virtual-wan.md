@@ -2,7 +2,7 @@ You can configure Azure NetApp Files volumes with Standard network features in o
 
 Your Virtual WAN global deployments could include any combinations of different branches, Point-of-Presence (PoP), private users, offices, Azure virtual networks, and other multicloud deployments. You can use SD-WAN, site-to-site VPN, point-to-site VPN, and ExpressRoute to connect your different sites to a virtual hub.
 
-Refer to [What is Azure Virtual WAN?](https://learn.microsoft.com/azure/virtual-wan/virtual-wan-about) to learn more about Virtual WAN.
+Refer to [What is Azure Virtual WAN?](/azure/virtual-wan/virtual-wan-about) to learn more about Virtual WAN.
 
 Azure NetApp Files connectivity over Virtual WAN is supported only when using Standard networking features.
 

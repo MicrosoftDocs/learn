@@ -6,7 +6,7 @@ metadata:
   description: Learn how to switch to built-in Azure Monitor alerts and notifications.
   ms.date: 12/01/2023
   author: AbhishekMallick-MS
-  ms.author: v-abhmallick
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 7
 content: |

@@ -1,6 +1,31 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-ai-governance-ai-ready-infrastructure
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 110
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - microsoft-foundry
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - ai-engineer
+    - systems-administrator
+    - ip-admin
+    - security-engineer
+  gs-skills:
+    - "AI Governance"
+    - "AI Compliance"
+    - "AI Safety"
+    - "Cloud Infrastructure"
+    - "AI Risk Management"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/explore-ai-governance-ai-ready-infrastructure/index.yml
   title: "Explore AI Governance for AI Ready Infrastructure"
   description: "Learn how to govern AI workloads using Microsoft Foundry by enforcing policies, managing costs, ensuring compliance, and applying responsible AI guardrails through hands‑on governance scenarios and exercises."
   ms.date: 02/02/2026

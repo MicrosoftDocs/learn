@@ -1,6 +1,32 @@
 ### YamlMime:Module
 uid: learn.data-management-analytics
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 71
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+    - microsoft-purview
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - solution-architect
+    - data-engineer
+    - data-professional
+  gs-skills:
+    - "Data Strategies"
+    - "Data Management"
+    - "Solution Architecture"
+    - "Cloud Infrastructure"
+    - "Cloud Administration"
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "Data Engineering"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/data-management-analytics/index.yml
   moduleType: standard
   title: Get started with enterprise scale data management and analytics scenario
   description: "An enterprise-scale data-management and analytics scenario provides a prescriptive data platform design coupled with Azure best practices to define best course for the data journey."

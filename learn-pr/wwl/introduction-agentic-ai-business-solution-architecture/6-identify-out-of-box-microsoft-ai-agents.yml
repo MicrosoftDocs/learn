@@ -6,7 +6,7 @@ metadata:
   description: "Learn how to identify out-of-box Microsoft AI agents, their role in automation, and best practices for using them effectively in business processes."
   ms.date: 02/02/2026
   author: Randall-Knapp
-  ms.author: taeldin
+  ms.author: lumac
   ai-usage: ai-assisted
   ms.topic: unit
 durationInMinutes: 3

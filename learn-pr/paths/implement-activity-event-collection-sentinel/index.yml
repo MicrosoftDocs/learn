@@ -1,11 +1,44 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.implement-activity-event-collection-sentinel
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - azure
+    - microsoft-sentinel
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - security-engineer
+    - security-operations-analyst
+  gs-skills:
+    - "Security Architecture Design"
+    - "Security Operations Management"
+    - "Identity and Access Management (IAM)"
+    - "Data Management"
+    - DevOps
+    - "Security Analytics"
+    - "Threat Management"
+    - "Data Engineering"
+    - SQL
+    - Cybersecurity
+    - "Cloud Administration"
+    - "Device Management"
+    - "Infrastructure Management"
+    - "Security Automation"
+    - "Process Automation"
+    - "Governance, Risk Management, and Compliance (GRC)"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/implement-activity-event-collection-sentinel/index.yml
   title: Implement Activity and Event Collection in Microsoft Sentinel
   description: "Build a complete event collection and response architecture in Microsoft Sentinel. Set up and secure a Microsoft Sentinel workspace, deploy Content Hub solutions, connect Azure resource data, collect Linux and Windows security events with data collection rules, implement automated response workflows with Logic Apps playbooks, and manage data retention for compliance."
   ms.date: 04/16/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: learning-path
   ai-usage: ai-assisted
 title: Implement activity and event collection in Microsoft Sentinel

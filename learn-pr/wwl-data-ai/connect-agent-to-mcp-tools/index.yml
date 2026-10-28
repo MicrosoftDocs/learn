@@ -1,6 +1,32 @@
 ### YamlMime:Module
 uid: learn.wwl.connect-agent-to-mcp-tools
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 51
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - microsoft-foundry
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - ai-engineer
+    - developer
+    - solution-architect
+  gs-skills:
+    - "Agentic AI"
+    - "Application Development"
+    - "AI Solutions"
+    - "API Management"
+    - "Python (Programming Language)"
+    - "Identity and Access Management (IAM)"
+    - "Solution Architecture"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/connect-agent-to-mcp-tools/index.yml
   title: Integrate MCP Tools with Azure AI Agents
   description: Enable dynamic tool access for your Azure AI agents. Learn how to connect MCP-hosted tools and integrate them seamlessly into agent workflows.
   ms.date: 4/30/2026

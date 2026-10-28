@@ -1,11 +1,37 @@
 ### YamlMime:Module
 uid: learn.wwl.examine-sap-s4hana-azure-virtual-machines
 metadata:
+  gs-content.levels: 400
+  gs-content.locale: en-us
+  gs-duration: 23
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - solution-architect
+    - systems-administrator
+    - platform-engineer
+    - network-engineer
+  gs-skills:
+    - "Solution Architecture"
+    - "Cloud Infrastructure"
+    - "Infrastructure Management"
+    - "IT Networking"
+    - Storage
+    - Virtualization
+    - "Cloud Computing"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/examine-sap-s4hana-azure-virtual-machines/index.yml
   title: Examine SAP S/4HANA on Azure virtual machines
   description: "Examine available architecture when deploying SAP S/4HANA workloads running on high-performance Azure VMs, and in-memory SAP HANA databases, running on Azure VMs. Prepare for Exam AZ-120 Planning and Administering Microsoft Azure for SAP Workloads."
   ms.date: 08/01/2024
   author: wwlpublish
-  ms.author: eric
+  ms.author: lumac
   ms.topic: module
   ms.custom:
   - N/A

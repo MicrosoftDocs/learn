@@ -6,7 +6,7 @@ metadata:
   description: "Learn to design a solution for assigning and delegating privileged roles using the Enterprise Access Model and Zero Trust principles for the SC-100 certification."
   ms.date: 05/29/2026
   author: ceperezb
-  ms.author: ceperezb
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 5
 content: |

@@ -6,7 +6,7 @@ metadata:
   description: Clean the data to prepare it for PCA.
   ms.date: 03/13/2023
   author: softchris
-  ms.author: chnoring
+  ms.author: lumac
   ms.topic: unit
   ms.custom: team=nextgen
   show_latex: true

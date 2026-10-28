@@ -1,6 +1,24 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-query-performance-optimization
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 103
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - database-administrator
+  gs-skills:
+    - SQL
+    - "Data Administration"
+    - Databases
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/explore-query-performance-optimization/index.yml
   title: Explore query performance optimization
   description: Explore query performance optimization
   ms.date: 08/05/2026

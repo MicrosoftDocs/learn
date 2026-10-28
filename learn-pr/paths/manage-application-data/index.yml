@@ -1,11 +1,27 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.manage-application-data
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+  gs-skills:
+    - "Application Development"
+    - "Data Management"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/manage-application-data/index.yml
   title: Manage Application Data
   description: Learn to utilize C# methods for date and time, collection types, structs, records, generics, and anonymous types.
   ms.date: 04/02/2025
   author: wwlpublish
-  ms.author: eric
+  ms.author: lumac
   ms.topic: learning-path
 title: Manage application data
 prerequisites: |

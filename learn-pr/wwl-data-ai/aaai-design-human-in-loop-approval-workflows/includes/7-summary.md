@@ -12,6 +12,6 @@ These components create a human-in-the-loop architecture that preserves automati
 
 ## Learn more
 
-- [Power Automate documentation](https://learn.microsoft.com/power-automate/)
-- [Microsoft Teams Adaptive Cards for approvals](https://learn.microsoft.com/microsoftteams/platform/task-modules-and-cards/cards/cards-reference#adaptive-card)
-- [Azure Cosmos DB append-only audit patterns](https://learn.microsoft.com/azure/cosmos-db/nosql/modeling-data)
+- [Power Automate documentation](/power-automate/)
+- [Microsoft Teams Adaptive Cards for approvals](/microsoftteams/platform/task-modules-and-cards/cards/cards-reference#adaptive-card)
+- [Azure Cosmos DB append-only audit patterns](/azure/cosmos-db/nosql/modeling-data)

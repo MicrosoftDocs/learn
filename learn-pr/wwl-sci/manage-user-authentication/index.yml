@@ -1,13 +1,31 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-user-authentication
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 52
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - entra
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - administrator
+  gs-skills:
+    - "Identity and Access Management (IAM)"
+    - Automation
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/manage-user-authentication/index.yml
   adobe-target: true
   prefetch-feature-rollout: true
   title: Manage user authentication
   description: "There are multiple options for authentication in Azure AD. Learn how to implement and manage the right authentications for users based on business needs."
   ms.date: 08/20/2026
   author: wwlpublish
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: module
   ms.collection: N/A
   ms.custom:

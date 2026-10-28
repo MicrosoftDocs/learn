@@ -2,6 +2,28 @@
 uid: learn.dpu.operate-hybrid-infrastructure-with-azure-local
 title: Operate hybrid infrastructure with Azure Local
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 22
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - administrator
+    - solution-architect
+    - security-engineer
+  gs-skills:
+    - "Cloud Infrastructure"
+    - "Infrastructure Management"
+    - "Cloud Administration"
+    - Cybersecurity
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/operate-hybrid-infrastructure-with-azure-local/index.yml
   title: Operate Hybrid Infrastructure With Azure Local
   description: Learn how to manage and operate hybrid infrastructure using Azure Local with familiar tools like Windows Admin Center, PowerShell, and Azure Arc.
   ms.date: 09/16/2025

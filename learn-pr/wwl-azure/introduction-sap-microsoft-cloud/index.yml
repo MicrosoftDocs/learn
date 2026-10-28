@@ -1,6 +1,36 @@
 ### YamlMime:Module
 uid: learn.wwl.introduction-sap-microsoft-cloud
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 69
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+    - entra
+    - power-platform
+    - m365
+    - office-teams
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - solution-architect
+    - administrator
+    - identity-access-admin
+    - data-engineer
+    - devops-engineer
+  gs-skills:
+    - "Solution Architecture"
+    - "Cloud Computing"
+    - "Identity and Access Management (IAM)"
+    - "Data Engineering"
+    - "Application Architecture"
+    - "Process Automation"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/introduction-sap-microsoft-cloud/index.yml
   title: Introduction to SAP on Microsoft Cloud
   description: "In this module, you learn about integrating SAP Business Technology Platform with Azure Cloud, including identity provider setup, data Integration, and implementing Universal Print for SAP front-end printing."
   ms.date: 03/24/2025

@@ -1,10 +1,31 @@
 ### YamlMime:Module
 uid: learn.oxford.explore-select-use-cases
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 16
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - business-analyst
+    - business-leader
+    - ai-engineer
+  gs-skills:
+    - "AI Business & Vision"
+    - "AI Strategy"
+    - "Autonomous AI"
+    - "AI Solutions"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/explore-select-use-cases/index.yml
   title: Explore the art of selecting use cases for winning Autonomous AI
   description: Learn to identify use cases for Autonomous AI.
   author: softchris
-  ms.author: chnoring
+  ms.author: lumac
   ms.date: 08/27/2024
   ms.update-cycle: 180-days
   ms.service: artificial-intelligence

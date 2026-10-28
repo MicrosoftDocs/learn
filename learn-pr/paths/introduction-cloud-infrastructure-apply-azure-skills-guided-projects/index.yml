@@ -1,6 +1,36 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.introduction-cloud-infrastructure-apply-azure-skills-guided-projects
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - azure
+    - entra
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - systems-administrator
+    - it-professional
+    - developer
+  gs-skills:
+    - Storage
+    - "Cloud Infrastructure"
+    - "Application Development"
+    - "Cloud Administration"
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "Infrastructure Management"
+    - "Cloud Computing"
+    - "Identity and Access Management (IAM)"
+    - "Zero Trust Security"
+    - "Security Operations Management"
+    - "Data Security"
+    - "Security Analytics"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/introduction-cloud-infrastructure-apply-azure-skills-guided-projects/index.yml
   title: 'Introduction to Cloud Infrastructure: Apply Azure Skills in Guided Projects'
   description: 'Hands-on guided projects that are part of the Azure Infrastructure fundamentals content.'
   ms.date: 03/31/2026

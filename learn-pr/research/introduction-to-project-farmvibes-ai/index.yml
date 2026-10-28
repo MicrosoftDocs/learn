@@ -1,6 +1,31 @@
 ### YamlMime:Module
 uid: learn.research.introduction-to-project-farmvibes-ai
 metadata:
+  gs-content.levels: 100
+  gs-content.locale: en-us
+  gs-duration: 16
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - data-scientist
+    - ai-engineer
+    - data-engineer
+    - developer
+  gs-skills:
+    - "Machine Learning"
+    - "Data Science"
+    - "Data Engineering"
+    - "Data Analytics"
+    - "AI Infrastructure"
+    - "Application Development"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/research/introduction-to-project-farmvibes-ai/index.yml
   title: Introduction to project FarmVibes.AI
   description: This module provides an introduction to project FarmVibes.AI, a comprehensive tool for enhancing agricultural practices and decision-making in farming. Explore the fundamental components of FarmVibes.AI, including soil analysis capabilities, crop health monitoring systems, and advanced data analytics. Learn how FarmVibes.AI addresses agricultural challenges and integrates these components to assist in sustainable farming and environmental conservation.
   ms.collection: TBD

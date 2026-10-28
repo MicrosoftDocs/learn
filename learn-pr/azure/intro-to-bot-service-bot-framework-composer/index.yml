@@ -1,6 +1,29 @@
 ### YamlMime:Module
 uid: learn.azure.intro-to-bot-service-bot-framework-composer
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 35
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+    - microsoft-copilot-studio
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - ai-engineer
+    - developer
+    - solution-architect
+  gs-skills:
+    - "Agent Development"
+    - "Low-Code Development"
+    - "Natural Language Processing (NLP)"
+    - "Application Architecture"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/intro-to-bot-service-bot-framework-composer/index.yml
   moduleType: introduction
   title: Introduction to Azure Bot Service and Bot Framework Composer
   description: Introduction to Azure Bot Service and Bot Framework Composer
@@ -8,7 +31,7 @@ metadata:
   ms.collection: TBD
   ms.date: 04/15/2025
   author: jasonkellingtonwaypoint
-  ms.author: v-jasonkell
+  ms.author: lumac
   ms.topic: module
   ms.service: azure-ai-bot-service
 title: Introduction to Azure Bot Service and Bot Framework Composer

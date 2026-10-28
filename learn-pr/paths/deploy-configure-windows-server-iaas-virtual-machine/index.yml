@@ -1,6 +1,32 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.deploy-configure-windows-server-iaas-vm
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - platform-engineer
+    - solution-architect
+    - systems-administrator
+  gs-skills:
+    - "Cloud Infrastructure"
+    - "Cloud Administration"
+    - Virtualization
+    - Automation
+    - "Identity and Access Management (IAM)"
+    - "Infrastructure Management"
+    - "Data Migration"
+    - Storage
+    - "Network Connectivity"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/deploy-configure-windows-server-iaas-virtual-machine/index.yml
   title: Deploy and configure Windows Server IaaS Virtual Machine
   description: In this learning path, you’ll learn how to deploy and configure Azure IaaS Virtual Machine workloads. After completing the learning path, you’ll know how to plan, deploy, and upgrade Windows Server Azure Virtual Machines.
   ms.date: 01/23/2026

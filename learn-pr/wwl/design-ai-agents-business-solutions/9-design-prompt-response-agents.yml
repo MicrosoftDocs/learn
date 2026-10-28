@@ -6,7 +6,7 @@ metadata:
   description: "Learn to design prompt-driven agents with Copilot Studio using NLU boosting, system topics, conditions, and triggers for adaptive responses."
   ms.date: 02/13/2026
   author: Randall-Knapp
-  ms.author: taeldin
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 durationInMinutes: 5

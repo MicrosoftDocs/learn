@@ -1,10 +1,38 @@
 ### YamlMime:Module
 uid: learn.security-copilot-describe-core-features
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 60
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - security-copilot
+    - microsoft-defender
+    - microsoft-sentinel
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - security-operations-analyst
+    - administrator
+    - security-engineer
+  gs-skills:
+    - "Security Operations Management"
+    - "AI Prompting"
+    - "AI-Powered Workflow Automation"
+    - "Knowledge Grounding for AI"
+    - "AI Governance"
+    - "Security Analytics"
+    - "Threat Management"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/security-copilot-describe-core-features/index.yml
   title: Describe the Core Features of Microsoft Security Copilot
   description: Describe the core features of Microsoft Security Copilot.
   author: wwlpublish
-  ms.author: ceperezb
+  ms.author: lumac
   ms.date: 04/30/2026
   ms.service: security-copilot
   ai-usage: ai-assisted

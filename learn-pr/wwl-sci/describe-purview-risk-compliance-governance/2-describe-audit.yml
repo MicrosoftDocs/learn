@@ -6,7 +6,7 @@ metadata:
   description: "Describe audit in Microsoft Purview."
   ms.date: 06/17/2026
   author: wwlpublish
-  ms.author: ceperezb
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 4
 content: |

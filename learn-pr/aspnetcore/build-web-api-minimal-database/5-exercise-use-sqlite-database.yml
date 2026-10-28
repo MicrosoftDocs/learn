@@ -6,7 +6,7 @@ metadata:
   description: Use the SQLite database provider with EF Core to add database persistence to your application.
   ms.date: 02/01/2023
   author: CamSoper
-  ms.author: casoper
+  ms.author: lumac
   ms.custom:
     - sfi-ropc-nochange
     - team=nextgen

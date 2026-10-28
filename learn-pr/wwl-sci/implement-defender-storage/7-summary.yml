@@ -5,7 +5,7 @@ metadata:
   description: Summary of implementing Microsoft Defender for Storage. Covers detection pillars, policy-driven deployment, malware scanning cost controls, and alert routing configuration to route outputs to the appropriate security team.
   ms.date: 04/22/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 title: Summary

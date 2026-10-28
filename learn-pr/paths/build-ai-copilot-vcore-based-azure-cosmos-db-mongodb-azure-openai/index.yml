@@ -1,6 +1,40 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.build-ai-copilot-vcore-based-azure-cosmos-db-mongodb-azure-openai
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - data-engineer
+    - database-administrator
+    - developer
+    - solution-architect
+  gs-skills:
+    - Databases
+    - "Cloud Infrastructure"
+    - "Vector Databases"
+    - "AI Infrastructure"
+    - Automation
+    - "Cloud Administration"
+    - "Data Migration"
+    - "Data Engineering"
+    - "Data Management"
+    - "Python (Programming Language)"
+    - "Identity and Access Management (IAM)"
+    - "Data Administration"
+    - "Retrieval-Augmented Generation (RAG)"
+    - "Generative AI"
+    - "Application Development"
+    - "AI Prompting"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/build-ai-copilot-vcore-based-azure-cosmos-db-mongodb-azure-openai/index.yml
   title: Build an AI copilot with vCore-based Azure Cosmos DB for MongoDB and Azure OpenAI
   description: Build an AI copilot with vCore-based Azure Cosmos DB for MongoDB and Azure OpenAI.
   ms.date: 11/24/2024

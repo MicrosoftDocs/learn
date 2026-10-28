@@ -1,11 +1,30 @@
 ### YamlMime:Module
 uid: learn.onboard-sensor-microsoft-defender-iot
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 16
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - microsoft-defender
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - security-engineer
+  gs-skills:
+    - "Device Management"
+    - "Security Operations Management"
+    - "Cloud Administration"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/defender-iot-onboard-sensor/index.yml
   title: Onboard your first OT sensor to Microsoft Defender for IoT
   description: "Learn how to onboard an OT sensor as part of the deployment of Microsoft Defender for IoT to monitor your OT network."
   ms.date: 02/21/2024
   author: limwainstein
-  ms.author: lwainstein
+  ms.author: lumac
   ms.topic: module-standard-task-based
   ms.service: defender-for-iot
 title: 

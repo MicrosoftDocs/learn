@@ -6,7 +6,7 @@ metadata:
   description: Configure Azure DNS to host the Domain Name System (DNS) records for your domain.
   ms.date: 10/03/2024
   author: wwlpublish
-  ms.author: cynthist
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 5
 content: |

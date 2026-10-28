@@ -1,11 +1,31 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-secure-key-vault
 metadata:
+  gs-content.levels: 400
+  gs-content.locale: en-us
+  gs-duration: 27
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+    - entra
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - security-engineer
+  gs-skills:
+    - "Data Security"
+    - "Identity and Access Management (IAM)"
+    - "Network Connectivity"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/configure-secure-key-vault/index.yml
   title: Configure and Secure Azure Key Vault
   description: "Configure a security-hardened Azure Key Vault for enterprise workloads. Apply soft delete and purge protection, enforce least-privilege RBAC access with just-in-time activation, and secure the network perimeter using firewall rules and private endpoints."
   ms.date: 04/13/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: module
   ms.service: azure-key-vault
   ai-usage: ai-assisted

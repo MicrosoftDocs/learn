@@ -1,10 +1,29 @@
 ### YamlMime:Module
 uid: learn.oxford.explore-automated-intelligence
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 29
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - ai-engineer
+    - solution-architect
+  gs-skills:
+    - Automation
+    - "Process Automation"
+    - "AI Solutions"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/explore-automated-intelligence/index.yml
   title: Explore Automated Intelligence
   description: Learn automated intelligence methods and evaluate when to use it.
   author: softchris
-  ms.author: chnoring
+  ms.author: lumac
   ms.date: 07/10/2024
   ms.update-cycle: 180-days
   ms.service: artificial-intelligence

@@ -1,11 +1,36 @@
 ### YamlMime:Module
 uid: learn.cmu-cloud-computing.cloud-basics.cmu-data-center-design
 metadata:
+  gs-content.levels: 400
+  gs-content.locale: en-us
+  gs-duration: 118
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - it-professional
+    - network-engineer
+    - storage-admin
+    - solution-architect
+  gs-skills:
+    - "Cloud Infrastructure"
+    - "Infrastructure Management"
+    - "IT Networking"
+    - Storage
+    - Virtualization
+    - "IT Strategy"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/cmu-cloud-developer/cmu-data-center-design/index.yml
   title: Datacenter components
   description: Carnegie Mellon University's Cloud Developer course. Take a deep dive into datacenters to discover how they are laid out and how computing resources are provisioned and metered.
   ms.date: 03/09/2022
   author: softchris
-  ms.author: chnoring
+  ms.author: lumac
+  ms.service: azure
   ms.topic: module
   ms.custom: team=nextgen
 title: Datacenter components

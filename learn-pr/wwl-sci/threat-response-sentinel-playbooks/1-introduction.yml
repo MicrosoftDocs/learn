@@ -6,7 +6,7 @@ metadata:
   description: "Describes how to implement threat response with Microsoft Sentinel playbooks."
   ms.date: 01/25/2023
   author: wwlpublish
-  ms.author: kelawson
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 3
 content: |

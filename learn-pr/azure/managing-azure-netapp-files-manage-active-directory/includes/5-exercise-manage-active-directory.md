@@ -78,9 +78,9 @@ In this task, you use LDAP over TLS to secure communication between an Azure Net
 
 If you don't have a root CA certificate, you need to generate one and export it for use with LDAP over TLS authentication.
 
-Follow [Install the Certification Authority](https://learn.microsoft.com/windows-server/networking/core-network-guide/cncg/server-certs/install-the-certification-authority) to install and configure AD DS Certificate Authority.
+Follow [Install the Certification Authority](/windows-server/networking/core-network-guide/cncg/server-certs/install-the-certification-authority) to install and configure AD DS Certificate Authority.
 
-Follow [View certificates with the MMC snap-in](https://learn.microsoft.com/dotnet/framework/wcf/feature-details/how-to-view-certificates-with-the-mmc-snap-in) to use the MMC snap-in and the Certificate Manager tool.
+Follow [View certificates with the MMC snap-in](/dotnet/framework/wcf/feature-details/how-to-view-certificates-with-the-mmc-snap-in) to use the MMC snap-in and the Certificate Manager tool.
 
 #### Export the root CA certificate
 

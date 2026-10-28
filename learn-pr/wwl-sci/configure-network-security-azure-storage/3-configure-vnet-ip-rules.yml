@@ -5,7 +5,7 @@ metadata:
   description: Configure virtual network service endpoints using regional and cross-region service endpoint types, create subnet-level virtual network rules, define IP network rules for on-premises and internet clients, and plan for paired-region disaster recovery scenarios.
   ms.date: 04/22/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 title: Configure virtual network and IP rules

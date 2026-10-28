@@ -6,7 +6,7 @@ metadata:
   description: "Design secure DevSecOps processes that align with best practices of the Cloud Adoption Framework."
   ms.date: 05/27/2026
   author: ceperezb
-  ms.author: ceperezb
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-generated
 durationInMinutes: 16

@@ -6,7 +6,7 @@ metadata:
   description: "SC-100 preparatory unit on the topic: specify security requirements for servers, including multiple platforms and operating systems."
   ms.date: 06/05/2026
   author: ceperezb
-  ms.author: ceperezb
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 13
 content: |

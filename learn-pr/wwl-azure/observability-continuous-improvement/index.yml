@@ -1,6 +1,29 @@
 ### YamlMime:Module
 uid: learn.wwl.observability-continuous-improvement
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 64
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+    - azure-devops
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - platform-engineer
+    - site-reliability-engineer
+    - devops-engineer
+  gs-skills:
+    - "Platform Engineering"
+    - DevOps
+    - Automation
+    - "Data Visualization"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/observability-continuous-improvement/index.yml
   title: Observability and Continuous Improvement
   description: "Learners will discover the significance of observability in providing real-time insights into system performance and identifying inefficiencies. This module emphasizes the importance of continuous improvement through feedback loops, performance monitoring, and market analysis. Learners will explore strategies for adapting to market trends and fostering a culture of innovation within platform engineering teams."
   ms.date: 01/14/2025

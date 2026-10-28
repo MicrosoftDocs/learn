@@ -1,6 +1,31 @@
 ### YamlMime:Module
 uid: learn.wwl.innovate-rise-sap-microsoft-cloud
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 26
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+    - power-platform
+    - microsoft-copilot-studio
+    - office-teams
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - functional-consultant
+    - solution-architect
+    - business-owner
+  gs-skills:
+    - "Cloud Computing"
+    - "Process Automation"
+    - "AI-Powered Workflow Automation"
+    - "Collaboration Tools"
+  gs-solution.area: "AI Business Solutions"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/innovate-rise-sap-microsoft-cloud/index.yml
   title: Innovate Using RISE with SAP on the Microsoft Cloud
   description: "Explore how to leverage both RISE with SAP and Microsoft Cloud to optimize workflows, automate tasks, enhance decision-making, and improve team communication and collaboration."
   ms.date: 04/08/2025

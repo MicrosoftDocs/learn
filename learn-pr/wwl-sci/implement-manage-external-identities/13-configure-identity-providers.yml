@@ -8,7 +8,7 @@ metadata:
   description: "Configure identity providers"
   ms.date: 08/20/2026
   author: wwlpublish
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ms.custom:
     - sfi-ga-nochange

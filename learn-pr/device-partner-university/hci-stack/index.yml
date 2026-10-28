@@ -2,6 +2,26 @@
 uid: learn.dpu.hci-stack
 title: Hyperconverged Infrastructure (HCI) Stack
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 15
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - technology-manager
+    - systems-administrator
+  gs-skills:
+    - "Cloud Infrastructure"
+    - Virtualization
+    - "Infrastructure Management"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/hci-stack/index.yml
   title: Hyperconverged Infrastructure (HCI) Stack
   description: In this module, you'll learn how Azure Local functions, how it integrates with hybrid environments, and how deployment and management work using standard tools.
   ms.date: 09/16/2025

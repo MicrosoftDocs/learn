@@ -1,6 +1,28 @@
 ### YamlMime:Module
 uid: learn.wwl.purview-identify-mitigate-ai-risks
 metadata:
+  gs-content.levels: 400
+  gs-content.locale: en-us
+  gs-duration: 48
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - microsoft-purview
+    - microsoft-365-copilot
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - ip-admin
+    - security-operations-analyst
+  gs-skills:
+    - "AI Risk Management"
+    - "AI Governance"
+    - "Data Security"
+    - "Security Analytics"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/purview-identify-mitigate-ai-risks/index.yml
   title: Identify and mitigate AI data security risks
   description: "Identify and mitigate AI data security risks."
   ms.date: 02/06/2025

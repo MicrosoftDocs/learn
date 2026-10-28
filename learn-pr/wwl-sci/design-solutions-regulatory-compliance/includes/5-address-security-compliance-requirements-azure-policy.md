@@ -179,5 +179,5 @@ When designing your Azure Policy implementation:
 - **Balance enforcement with agility** - Use audit mode initially to assess impact before enabling deny effects
 - **Plan exemption governance** - Establish approval workflows and time limits for policy exemptions
 - **Integrate with Defender for Cloud** - Use the regulatory compliance dashboard for centralized visibility across your compliance initiatives
-- **Adopt Policy as Code** - Store custom policy definitions in source control and deploy through CI/CD pipelines using the [Policy as Code workflow](https://learn.microsoft.com/azure/governance/policy/concepts/policy-as-code)
+- **Adopt Policy as Code** - Store custom policy definitions in source control and deploy through CI/CD pipelines using the [Policy as Code workflow](/azure/governance/policy/concepts/policy-as-code)
 - **Extend governance to hybrid environments** - Use Azure Arc to apply Azure Policy to resources outside Azure, enabling consistent governance across on-premises and multicloud environments

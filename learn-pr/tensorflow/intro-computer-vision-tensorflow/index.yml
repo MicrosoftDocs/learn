@@ -1,6 +1,30 @@
 ### YamlMime:Module
 uid: learn.tensorflow.intro-computer-vision
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 57
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - data-scientist
+    - ai-engineer
+    - developer
+    - student
+  gs-skills:
+    - "Computer Vision"
+    - "Machine Learning"
+    - "AI Model Evaluation & Testing"
+    - "Python (Programming Language)"
+    - "Data Science"
+    - "Data Visualization"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/tensorflow/intro-computer-vision-tensorflow/index.yml
   title: Introduction to Computer Vision with TensorFlow
   description: Learn how to perform different computer vision tasks using TensorFlow.
   author: Orin-Thomas

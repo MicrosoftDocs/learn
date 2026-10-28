@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-app-service-plans
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 24
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - administrator
+    - developer
+  gs-skills:
+    - "Cloud Administration"
+    - "Application Architecture"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/configure-app-service-plans/index.yml
   title: Configure Azure App Service Plans
   description: "Configure Azure App Service plans"
   ms.date: 06/10/2026

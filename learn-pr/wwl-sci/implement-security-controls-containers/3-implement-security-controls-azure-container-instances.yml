@@ -5,7 +5,7 @@ metadata:
   description: Configure security controls for Azure Container Instances workloads. Configuration includes managed identities, Key Vault secret references, virtual network integration, security context settings, and managed identity image pull.
   ms.date: 04/15/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 title: Implement security controls for Azure Container Instances

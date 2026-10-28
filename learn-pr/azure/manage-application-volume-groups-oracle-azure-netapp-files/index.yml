@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.azure.manage-application-volume-groups-oracle
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 60
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - systems-administrator
+    - database-administrator
+  gs-skills:
+    - Storage
+    - "Cloud Administration"
+    - "Infrastructure Management"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/manage-application-volume-groups-oracle-azure-netapp-files/index.yml
   title: Manage Application Volume Groups for Oracle in Azure NetApp Files
   description: Learn ways to manage application volume groups for Oracle in Azure NetApp Files, like deploying application volume group for Oracle, managing volumes in an application volume group, and deploy application volume group for Oracle using Resource Manager.
   ms.date: 07/20/2026

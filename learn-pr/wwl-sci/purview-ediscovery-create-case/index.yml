@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.wwl.purview-ediscovery-create-case
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 31
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - microsoft-purview
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - ip-admin
+    - administrator
+  gs-skills:
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "Data Security"
+    - "Identity and Access Management (IAM)"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/purview-ediscovery-create-case/index.yml
   title: Create and manage eDiscovery cases
   description: Create and manage eDiscovery cases.
   ms.date: 05/15/2025

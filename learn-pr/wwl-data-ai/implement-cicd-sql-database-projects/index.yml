@@ -1,6 +1,35 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-cicd-sql-database-projects
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 116
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+    - github
+    - azure-devops
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - database-administrator
+    - developer
+    - data-engineer
+    - devops-engineer
+    - security-engineer
+  gs-skills:
+    - DevOps
+    - "Database Development"
+    - SQL
+    - Automation
+    - "Application Security"
+    - "Data Administration"
+    - Databases
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/implement-cicd-sql-database-projects/index.yml
   title: Implement CI/CD by Using SQL Database Projects
   description: Implement CI/CD for SQL Database Projects with source control, branching, schema drift detection, automated pipelines, and testing strategies using GitHub Actions and Azure DevOps.
   ms.date: 7/13/2026

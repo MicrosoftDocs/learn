@@ -5,7 +5,7 @@ metadata:
   description: Summary of detecting container risks using Microsoft Defender for Containers. We cover the four protection pillars, plan configuration, vulnerability assessment, runtime threat detection, and gated deployment for Azure Kubernetes Service (AKS) and Azure Container Registry (ACR) environments.
   ms.date: 05/10/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 title: Summary

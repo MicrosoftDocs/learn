@@ -1,10 +1,39 @@
 ### YamlMime:Module
 uid: learn.security-copilot-embedded-experiences
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 52
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - microsoft-defender
+    - microsoft-purview
+    - entra
+    - defender-for-cloud
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - security-operations-analyst
+    - security-engineer
+    - ip-admin
+    - identity-access-admin
+  gs-skills:
+    - "Security Analytics"
+    - "Threat Management"
+    - "Identity and Access Management (IAM)"
+    - "Data Security"
+    - "Security Automation"
+    - "AI Risk Management"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/security-copilot-embedded-experiences/index.yml
   title: Describe the Embedded Experiences of Microsoft Security Copilot
   description: Microsoft Security Copilot is accessible directly from some Microsoft security products. This is referred to the embedded experience. Learn about the scenarios supported by the Copilot embedded experience in Microsoft’s security solutions.
   author: wwlpublish
-  ms.author: ceperezb
+  ms.author: lumac
   ms.date: 05/01/2026
   ms.service: security-copilot
   ai-usage: ai-assisted

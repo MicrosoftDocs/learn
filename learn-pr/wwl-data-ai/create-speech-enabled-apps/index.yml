@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.wwl.create-speech-enabled-apps
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 53
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - microsoft-foundry
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - ai-engineer
+    - developer
+  gs-skills:
+    - "Application Development"
+    - "AI Solutions"
+    - "Natural Language Processing (NLP)"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/create-speech-enabled-apps/index.yml
   title: Create speech-enabled apps with Azure Speech in Microsoft Foundry Tools
   description: Create speech-enabled apps with Azure Speech in Microsoft Foundry Tools.
   author: ivorb

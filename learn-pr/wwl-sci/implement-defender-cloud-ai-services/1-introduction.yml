@@ -6,7 +6,7 @@ metadata:
   description: Learn why Azure AI services workloads need threat detection and how the Defender for AI Services plan addresses that gap.
   ms.date: 05/03/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 durationInMinutes: 2

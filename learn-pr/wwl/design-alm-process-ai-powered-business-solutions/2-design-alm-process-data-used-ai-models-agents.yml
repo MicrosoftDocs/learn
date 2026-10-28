@@ -6,7 +6,7 @@ metadata:
   description: "Learn to design an ALM process for data powering AI models and agents. Ensure governance, compliance, and scalability across environments."
   ms.date: 02/12/2026
   author: msdavidram
-  ms.author: taeldin
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 10
 content: |

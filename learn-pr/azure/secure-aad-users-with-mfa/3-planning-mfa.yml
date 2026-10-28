@@ -5,7 +5,7 @@ metadata:
   description: Learn the things to consider as you plan to turn on Microsoft Entra multifactor authentication.
   ms.date: 11/01/2024
   author: Justinha
-  ms.author: justinha
+  ms.author: lumac
   ms.topic: unit
 title: Plan your multifactor authentication deployment
 durationInMinutes: 7

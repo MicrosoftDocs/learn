@@ -5,7 +5,7 @@ metadata:
   description: Assign and manage Azure Policy for Arc-enabled servers to enforce security baselines including Defender for Servers enablement, extension deployment, and machine configuration policies at management group scope.
   ms.date: 05/11/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 title: Apply Azure Policy to Arc-enabled servers

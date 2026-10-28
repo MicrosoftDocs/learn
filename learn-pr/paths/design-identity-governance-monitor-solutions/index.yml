@@ -1,6 +1,31 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.design-identity-governance-monitor-solutions
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - security-engineer
+    - solution-architect
+  gs-skills:
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "Solution Architecture"
+    - "Cloud Administration"
+    - "Cloud Infrastructure"
+    - "Identity and Access Management (IAM)"
+    - "Security Architecture Design"
+    - Cybersecurity
+    - "Application Security"
+    - "Security Analytics"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/design-identity-governance-monitor-solutions/index.yml
   title: 'AZ-305: Design identity, governance, and monitor solutions'
   description: 'AZ-305: Design identity, governance, and monitor solutions'
   ms.date: 06/23/2026

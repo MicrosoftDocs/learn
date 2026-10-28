@@ -1,6 +1,26 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.prepare-to-teach-pl-300-microsoft-power-bi-data-analyst
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - higher-ed-educator
+  gs-skills:
+    - "Career Development"
+    - "Collaboration Tools"
+    - "Digital Accessibility"
+    - "Data Analytics"
+    - "Communications Management"
+    - "Data Visualization"
+  gs-solution.area: null
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/prepare-to-teach-pl-300-microsoft-power-bi-data-analyst/index.yml
   title: 'Prepare to teach PL-300: Microsoft Power BI Data Analyst'
   description: Learn about the Microsoft Learn for Educators program and how to best deliver its content to your students. Prepare to deliver Developing solution for Microsoft Azure solutions in the classroom.
   ms.date: 05/24/2023

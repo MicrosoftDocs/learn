@@ -23,7 +23,7 @@ The following table provides a side-by-side comparison of the three primary fine
 | **Primary purpose** | Format consistency, style adherence, domain terminology | Complex reasoning, problem-solving, multi-step analysis | Subjective preferences, tone alignment, content choices |
 
 > [!TIP]
-> For detailed information about managing and optimizing fine-tuning costs, learn more at [cost management for fine-tuning](/azure/ai-foundry/openai/how-to/fine-tuning-cost-management?view=foundry).
+> For detailed information about managing and optimizing fine-tuning costs, learn more at [cost management for fine-tuning](/azure/ai-foundry/openai/how-to/fine-tuning-cost-management?view=foundry&preserve-view=true).
 
 ## Understand decision dimensions for method selection
 
@@ -61,6 +61,6 @@ Three key dimensions determine which fine-tuning method fits your project: the d
 Each method's distinct requirements create natural constraints for your selection. Matching your available data, budget, and quality goals to the right method determines whether fine-tuning succeeds or fails. A method that requires preference pairs doesn't work if you only have labeled examples. A high-cost approach doesn't scale if you need to optimize multiple agents. And teaching format consistency doesn't help if your real problem is reasoning quality.
 
 > [!NOTE]
-> Two other fine-tuning methods address specialized scenarios: [**vision fine-tuning**](/azure/ai-foundry/openai/how-to/fine-tuning-vision?view=foundry) optimizes models for image understanding tasks (like product catalog recognition or visual quality inspection), while [**tool use fine-tuning**](/azure/ai-foundry/openai/how-to/fine-tuning-functions?view=foundry) teaches models when to make function calls and what to do with the results. Unlike the methods covered here (which optimize text generation quality) these specialized methods focus on multimodal processing and function-calling behavior respectively.
+> Two other fine-tuning methods address specialized scenarios: [**vision fine-tuning**](/azure/ai-foundry/openai/how-to/fine-tuning-vision?view=foundry&preserve-view=true) optimizes models for image understanding tasks (like product catalog recognition or visual quality inspection), while [**tool use fine-tuning**](/azure/ai-foundry/openai/how-to/fine-tuning-functions?view=foundry&preserve-view=true) teaches models when to make function calls and what to do with the results. Unlike the methods covered here (which optimize text generation quality) these specialized methods focus on multimodal processing and function-calling behavior respectively.
 
 Understanding the characteristics of each method provides the foundation—but recognizing when to apply each approach requires practice. Next, you explore realistic agent quality problems and determine which fine-tuning method best addresses each scenario.

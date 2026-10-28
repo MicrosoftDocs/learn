@@ -1,6 +1,34 @@
 ### YamlMime:Module
 uid: learn.wwl.get-started-generative-ai-azure-database-postgresql
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 57
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+    - azure-openai
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+    - ai-engineer
+    - database-administrator
+    - data-engineer
+  gs-skills:
+    - "Generative AI"
+    - "Embedding Models"
+    - "Vector Databases"
+    - "Database Development"
+    - SQL
+    - "Natural Language Processing (NLP)"
+    - "Machine Learning"
+    - "Retrieval-Augmented Generation (RAG)"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/get-started-generative-ai-azure-database-postgresql/index.yml
   title: Get started with generative AI in Azure Database for PostgreSQL
   description: Use generative AI in Azure Database for PostgreSQL.
   author: wwlpublish

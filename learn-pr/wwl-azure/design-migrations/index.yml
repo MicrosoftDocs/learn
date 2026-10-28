@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.wwl.design-migrations
 metadata:
+  gs-content.levels: 400
+  gs-content.locale: en-us
+  gs-duration: 46
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - solution-architect
+  gs-skills:
+    - "Solution Architecture"
+    - "Data Migration"
+    - "Cloud Infrastructure"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/design-migrations/index.yml
   title: Design Migrations
   description: "Azure Architect's design and recommend migration solutions."
   ms.date: 06/23/2026

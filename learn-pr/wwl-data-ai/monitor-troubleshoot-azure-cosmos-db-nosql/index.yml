@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.wwl.monitor-troubleshoot-azure-cosmos-db-nosql
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 97
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - database-administrator
+    - support-engineer
+  gs-skills:
+    - "Data Administration"
+    - "Security Analytics"
+    - Databases
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/monitor-troubleshoot-azure-cosmos-db-nosql/index.yml
   title: Monitor and Troubleshoot Azure Cosmos DB
   description: "Interpret Azure Cosmos DB response codes, diagnose the four causes of a 429, monitor latency and partition utilization against service objectives, and configure Azure Monitor alerts and diagnostic logs."
   ms.date: 10/03/2026

@@ -5,7 +5,7 @@ metadata:
   title: Introduction
   description: Get started with Microsoft Security Copilot, an AI-powered, cloud-based security analysis tool that enables analysts to respond to threats quickly, process signals at machine speed, and assess risk more quickly than may otherwise be possible.
   author: wwlpublish
-  ms.author: ceperezb
+  ms.author: lumac
   ms.date: 05/01/2026
   ms.topic: unit
   ms.collection:

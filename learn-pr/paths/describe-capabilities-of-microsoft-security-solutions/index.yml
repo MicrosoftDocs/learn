@@ -1,11 +1,43 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.describe-capabilities-of-microsoft-security-solutions
 metadata:
+  gs-content.levels: 100
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - security-engineer
+    - security-operations-analyst
+    - security-professional
+  gs-skills:
+    - "AI Prompting"
+    - "Security Operations Management"
+    - "Security Analytics"
+    - "Threat Management"
+    - "Identity and Access Management (IAM)"
+    - "AI Governance"
+    - Cybersecurity
+    - "Cloud Infrastructure"
+    - "IT Networking"
+    - "Cloud Administration"
+    - "Security Architecture Design"
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "AI Security (Model-Level)"
+    - "Security Automation"
+    - "Device Management"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/describe-capabilities-of-microsoft-security-solutions/index.yml
   title: 'Introduction to Microsoft security solutions'
   description: 'SC-900: Introduction to Microsoft security solutions'
   ms.date: 04/27/2026
   author: wwlpublish
-  ms.author: ceperezb
+  ms.author: lumac
   ms.topic: learning-path
 title: 'Introduction to Microsoft security solutions'
 prerequisites: |

@@ -6,7 +6,7 @@ metadata:
   description: "Learn how to design IaaS AI workloads using Azure landing zones for scalable, efficient, and secure AI deployment and management."
   ms.date: 01/26/2026
   author: wwlpublish
-  ms.author: cynthist
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 4
 content: |

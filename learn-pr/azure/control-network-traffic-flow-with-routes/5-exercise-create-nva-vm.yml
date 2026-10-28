@@ -5,7 +5,7 @@ metadata:
   description: Exercise - Create an NVA and virtual machines
   ms.date: 12/02/2024
   author: wwlpublish
-  ms.author: cynthist
+  ms.author: lumac
   ms.topic: unit
   ms.custom:
     - devx-track-azurecli

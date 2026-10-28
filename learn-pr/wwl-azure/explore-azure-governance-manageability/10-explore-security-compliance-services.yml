@@ -6,7 +6,7 @@ metadata:
   description: "Strengthen the security posture of your cloud resources, and protect workloads running in Azure, hybrid, and other cloud platforms."
   ms.date: 08/02/2024
   author: wwlpublish
-  ms.author: eric
+  ms.author: lumac
   ms.topic: unit
   ms.custom:
   - N/A

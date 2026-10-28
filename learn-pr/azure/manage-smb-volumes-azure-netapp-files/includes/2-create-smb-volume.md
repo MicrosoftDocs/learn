@@ -6,7 +6,7 @@ To create an SMB volume, from the Azure NetApp Files portal, you need to provide
 
 | Setting | Description |
 | --- | --- |
-| Volume name | Specify the name for the volume that you are creating. Refer to [Naming rules and restrictions for Azure resources](https://learn.microsoft.com/azure/azure-resource-manager/management/resource-name-rules#microsoftnetapp) for naming conventions on volumes. |
+| Volume name | Specify the name for the volume that you are creating. Refer to [Naming rules and restrictions for Azure resources](/azure/azure-resource-manager/management/resource-name-rules#microsoftnetapp) for naming conventions on volumes. |
 | Capacity pool | Specify the capacity pool where you want the volume to be created. |
 | Quota | Specify the amount of logical storage that is allocated to the volume. The **Available quota** field shows the amount of unused space in the chosen capacity pool that you can use to create a new volume. The size of the new volume must not exceed the available quota. |
 | Large Volume | Regular volumes quotas are between 100 GiB and 100 TiB. Large volume quotas range from 50 TiB to 1 PiB in size. If you intend for the volume quota to fall in the large volume range, select **Yes**. Volume quotas are entered in GiB. |

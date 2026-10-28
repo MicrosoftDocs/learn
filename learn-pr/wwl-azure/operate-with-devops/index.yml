@@ -1,6 +1,32 @@
 ### YamlMime:Module
 uid: learn.wwl.operate-with-devops
 metadata:
+  gs-content.levels: 100
+  gs-content.locale: en-us
+  gs-duration: 54
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+    - github
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - devops-engineer
+    - site-reliability-engineer
+    - platform-engineer
+    - security-engineer
+  gs-skills:
+    - DevOps
+    - "Platform Engineering"
+    - Automation
+    - "Data Analytics"
+    - Cybersecurity
+    - "Cloud Infrastructure"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/operate-with-devops/index.yml
   title: "Operate with DevOps"
   description: "Achieve operational excellence and enhance developer experience in your organization through DevOps. Your operational and development practices improve by implementing shift-right testing, observability through performance and security monitoring, Site Reliability Engineering and platform engineering."
   ms.date: 02/06/2024

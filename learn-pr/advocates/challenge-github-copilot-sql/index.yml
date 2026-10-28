@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.challenge-github-copilot-with-sql
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 25
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - github-copilot
+    - github
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+  gs-skills:
+    - "AI-Augmented Software Development"
+    - "Prompt Engineering"
+    - SQL
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/advocates/challenge-github-copilot-sql/index.yml
   ms.author: orthomas
   author: Orin-Thomas
   ms.date: 07/25/2026

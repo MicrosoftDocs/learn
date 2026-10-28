@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.wwl.get-tips-tricks-for-teach-az-500-microsoft-azure-security-technologies
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 30
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+    - entra
+    - defender-for-cloud
+    - microsoft-sentinel
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - higher-ed-educator
+  gs-skills:
+    - Cybersecurity
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/get-tips-tricks-for-teach-az-500-microsoft-azure-security-technologies/index.yml
   title: Get tips and tricks for teaching AZ-500 Microsoft Azure Security Technologies
   description: Get tips and tricks for teaching AZ-500 Microsoft Azure Security Technologies
   ms.date: 11/15/2022

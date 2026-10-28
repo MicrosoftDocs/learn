@@ -6,7 +6,7 @@ metadata:
   description: "Investigate security incidents in Microsoft Defender XDR"
   ms.date: 04/28/2025
   author: KenMAG
-  ms.author: kelawson
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 3
 content: |

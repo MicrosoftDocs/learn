@@ -6,7 +6,7 @@ metadata:
   description: "Choose deployment type options with Azure Center for SAP solutions for distributed with High Availability (HA), distributed non-HA, and single server. Select SAP software and operating system (OS)."
   ms.date: 01/09/2024
   author: wwlpublish
-  ms.author: eric
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 3
 content: |

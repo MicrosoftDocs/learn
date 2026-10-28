@@ -6,7 +6,7 @@ metadata:
   description: "Create an Azure DNS zone and record using the Azure portal"
   ms.date: 12/20/2024
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: lumac
   ms.topic: unit
 azureSandbox: false
 durationInMinutes: 4

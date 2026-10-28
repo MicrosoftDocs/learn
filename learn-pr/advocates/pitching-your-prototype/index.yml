@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.pitch-your-product-prototype
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 44
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - business-owner
+    - product-manager
+  gs-skills:
+    - "Communications Management"
+    - "AI Business & Vision"
+    - "Responsible AI"
+  gs-solution.area: "AI Business Solutions"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/advocates/pitching-your-prototype/index.yml
   title: Pitch your product prototype
   description: Write a compelling and technically credible pitch deck for your Azure-based product prototype that resonates with your audience and accurately explains your solution.
   author: czhu89

@@ -1,6 +1,6 @@
 Learn how to deploy Azure NetApp Files application volume group for Oracle.
 
-Before you begin, you should understand the [requirements and considerations for application volume group for SAP HANA](https://learn.microsoft.com/azure/azure-netapp-files/application-volume-group-considerations).
+Before you begin, you should understand the [requirements and considerations for application volume group for SAP HANA](/azure/azure-netapp-files/application-volume-group-considerations).
 
 ### Register for feature
 

@@ -6,7 +6,7 @@ metadata:
   description: "Learn how to evaluate when to build custom AI agents versus extending Microsoft 365 Copilot, including architectural criteria, capability boundaries, and decision frameworks."
   ms.date: 02/13/2026
   author: Randall-Knapp
-  ms.author: taeldin
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 durationInMinutes: 10

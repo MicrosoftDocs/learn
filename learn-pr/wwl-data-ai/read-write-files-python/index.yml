@@ -1,6 +1,23 @@
 ### YamlMime:Module
 uid: learn.wwl.read-write-files-python
 metadata:
+  gs-content.levels: 100
+  gs-content.locale: en-us
+  gs-duration: 55
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+  gs-skills:
+    - "Python (Programming Language)"
+    - "Application Development"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/read-write-files-python/index.yml
   title: Read and Write Files
   description: Learn how to read from and write to files in Python using context managers to keep your code safe and clean.
   ms.date: 09/16/2026

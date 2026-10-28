@@ -1,6 +1,34 @@
 ### YamlMime:Module
 uid: learn.wwl.migrate-file-server-workloads-using-storage-migration-service
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 28
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - windows
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - administrator
+    - systems-administrator
+    - solution-architect
+    - storage-admin
+    - network-engineer
+  gs-skills:
+    - "Data Migration"
+    - Storage
+    - "Infrastructure Management"
+    - "Cloud Infrastructure"
+    - "Network Connectivity"
+    - "Cloud Administration"
+    - Cybersecurity
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/migrate-file-server-workloads-using-storage-migration-service/index.yml
   title: Migrate file server workloads using Storage Migration Service
   description: "Learn to use Storage Migration Service to migrate files and files shares from existing file server to new servers running Windows Server. Configure storage migration for optimum performance of data migration."
   ms.date: 01/23/2026

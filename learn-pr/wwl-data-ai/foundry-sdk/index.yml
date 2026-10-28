@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.wwl.foundry-sdk
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 53
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - microsoft-foundry
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - ai-engineer
+    - developer
+  gs-skills:
+    - "Generative AI"
+    - "Application Development"
+    - "API Management"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/foundry-sdk/index.yml
   title: Develop a generative AI chat app with Microsoft Foundry
   description: Use Microsoft Foundry to develop generative AI chat applications
     with projects and the Responses API.

@@ -1,11 +1,31 @@
 ### YamlMime:Module
 uid: learn.azure.sustainable-software-engineering-overview
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 25
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+    - solution-architect
+  gs-skills:
+    - "Application Architecture"
+    - "Infrastructure Management"
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "IT Strategy"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/sustainable-software-engineering-overview/index.yml
   title: The Principles of Sustainable Software Engineering
   description: Sustainable Software Engineering is an emerging discipline at the intersection of climate science, software, hardware, electricity markets, and data center design. The Principles of Sustainable Software Engineering are a core set of competencies needed to define, build, and run sustainable software applications.
   ms.date: 11/23/2024
   author: Zimmergren
-  ms.author: tozimmergren
+  ms.author: lumac
   ms.topic: module
   ms.contributors:
   - tozimmergren

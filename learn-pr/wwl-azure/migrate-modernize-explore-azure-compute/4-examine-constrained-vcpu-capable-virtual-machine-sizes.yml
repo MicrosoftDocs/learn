@@ -6,7 +6,7 @@ metadata:
   description: "Examine constrained vCPU capable virtual machine sizes"
   ms.date: 01/08/2024
   author: wwlpublish
-  ms.author: eric
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 4
 content: |

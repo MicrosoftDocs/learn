@@ -6,7 +6,7 @@ metadata:
   description: Learn how to specify security baselines for Windows Server and Windows client endpoints, including SCT baselines for servers and MDM baselines for Intune-managed devices.
   ms.date: 06/05/2026
   author: ceperezb
-  ms.author: ceperezb
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 8
 content: |

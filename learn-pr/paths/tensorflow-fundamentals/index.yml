@@ -3,11 +3,37 @@ uid: learn.tensorflow.tensorflow-fundamentals
 title: TensorFlow fundamentals
 summary: Learn the fundamentals of deep learning with TensorFlow! This beginner friendly learning path will introduce key concepts to building machine learning models. 
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - ai-engineer
+    - data-scientist
+    - developer
+    - student
+  gs-skills:
+    - "Machine Learning"
+    - "Data Science"
+    - "Python (Programming Language)"
+    - "AI Model Evaluation & Testing"
+    - "Computer Vision"
+    - "Data Visualization"
+    - "Natural Language Processing (NLP)"
+    - "Embedding Models"
+    - "Generative AI"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/tensorflow-fundamentals/index.yml
   title: TensorFlow fundamentals
   description: Learn the fundamentals of deep learning with TensorFlow! This beginner friendly learning path will introduce key concepts to building machine learning models.
   ms.date: 04/09/2021
   author: cassiebreviu
-  ms.author: cassieb
+  ms.author: lumac
   ms.topic: learning-path
   ms.custom:
   - team=cloud_advocates

@@ -1,12 +1,33 @@
 ### YamlMime:LearningPath
 uid: learn.best-practices-azure-migration
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - business-analyst
+    - solution-architect
+    - technology-manager
+  gs-skills:
+    - "Cloud Computing"
+    - "IT Strategy"
+    - "Solution Architecture"
+    - "Data Migration"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/best-practices-azure-migration/index.yml
   title: Best practices for Azure migration and modernization
   description: Cloud migration and modernization is top of mind for most of the organizations. Explore how you can confidently and efficiently navigate every step of the migration and modernization journey. Dive deeper into steps and best practices for planning and executing migration and modernization.
   brand: azure
   ms.date: 02/22/2021
   author: jamcneil
-  ms.author: jumcn
+  ms.author: lumac
   ms.topic: learning-path
 title: Best practices for Azure migration and modernization
 summary: |

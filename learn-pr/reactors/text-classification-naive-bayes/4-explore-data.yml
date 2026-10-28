@@ -6,7 +6,7 @@ metadata:
   description: Explore the data by histograms and word clouds in pandas and Matplotlib.
   ms.date: 06/30/2020
   author: softchris
-  ms.author: chnoring
+  ms.author: lumac
   ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 6

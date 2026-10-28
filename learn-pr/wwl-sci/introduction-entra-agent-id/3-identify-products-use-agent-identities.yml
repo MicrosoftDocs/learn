@@ -6,7 +6,7 @@ metadata:
   description: "Discover which Microsoft products automatically create and manage agent identities, including Microsoft Foundry, Copilot Studio, and Azure services."
   ms.date: 02/09/2026
   author: wwlpublish
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 10
 content: |

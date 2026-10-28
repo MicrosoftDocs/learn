@@ -1,6 +1,28 @@
 ### YamlMime:Module
 uid: learn.wwl.create-configure-host-pools-session-hosts
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 57
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - systems-administrator
+    - solution-architect
+  gs-skills:
+    - "Cloud Administration"
+    - "Cloud Infrastructure"
+    - "Identity and Access Management (IAM)"
+    - "Network Connectivity"
+    - Virtualization
+    - Automation
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/create-configure-host-pools-session-hosts/index.yml
   title: Create and configure host pools and session hosts for Azure Virtual Desktop
   description: "Create and configure host pools and session hosts for Azure Virtual Desktop"
   ms.date: 08/22/2024

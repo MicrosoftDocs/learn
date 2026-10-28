@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.wwl.use-ai-to-communicate
 metadata:
+  gs-content.levels: 100
+  gs-content.locale: en-us
+  gs-duration: 18
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - microsoft-365-copilot
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - business-user
+    - communications
+  gs-skills:
+    - "Generative AI"
+    - "Prompt Engineering"
+  gs-solution.area: "AI Business Solutions"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl/use-ai-to-communicate/index.yml
   title: "Use AI to Communicate"
   description: "Learn how to use AI tools like Microsoft Copilot to create clear, concise, and professional messages for work, school, or personal use."
   ms.date: 09/17/2026

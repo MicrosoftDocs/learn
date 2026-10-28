@@ -115,6 +115,6 @@ You can filter the view by selecting the following values in the dropdown menus 
 | Monitor condition | Select a monitor condition, or select **All** to include alerts of conditions. |
 | Alert state | Select an alert state, or select **All** to include alerts of states.|
 | Monitor service | Select a service, or select **All** to include all services. Only alerts created by rules that use service as a target are included. |
-| Time range |Only alerts fired within the selected time window are included in the view. |Supported values are the past hour, the past 24 hours, the past 7 days, and the past 30 days.|
+| Time range |Only alerts fired within the selected time window are included in the view. Supported values are the past hour, the past 24 hours, the past 7 days, and the past 30 days.|
 
 Select **Columns** at the top of the page to select which columns to display.

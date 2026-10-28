@@ -1,6 +1,28 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-manage-networking-for-azure-virtual-desktop
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 71
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - network-engineer
+    - systems-administrator
+    - solution-architect
+  gs-skills:
+    - "IT Networking"
+    - "Cloud Infrastructure"
+    - "Cloud Administration"
+    - "Security Architecture Design"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/implement-manage-networking-azure-virtual-desktop/index.yml
   title: Implement and manage networking for Azure Virtual Desktop
   description: "Implement and manage networking for Azure Virtual Desktop"
   ms.date: 08/22/2024

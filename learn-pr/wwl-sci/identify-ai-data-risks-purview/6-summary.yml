@@ -5,7 +5,7 @@ metadata:
   description: Summary of using Microsoft Purview Data Security Posture Management for AI to identify and assess AI data risks, including DSPM configuration, SharePoint overexposure, and Copilot interaction risk review.
   ms.date: 04/21/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 title: Summary

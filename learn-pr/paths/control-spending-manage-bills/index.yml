@@ -1,6 +1,30 @@
 ### YamlMime:LearningPath
 uid: learn.control-spending-manage-bills
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - data-analyst
+    - finance
+    - systems-administrator
+    - technology-manager
+  gs-skills:
+    - "Solution Architecture"
+    - "IT Strategy"
+    - "Cloud Administration"
+    - "Data Analytics"
+    - "Data Visualization"
+    - "Business Insights"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/control-spending-manage-bills/index.yml
   title: "Control Azure spending and manage bills with Microsoft Cost Management + Billing"
   description: Learn how to monitor and control your Azure spending and optimize the use of Azure resources.
   brand: azure

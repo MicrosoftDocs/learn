@@ -6,7 +6,7 @@ metadata:
   description: Part of building software responsibly is making sure that all users can be involved. This unit goes into detail about how to make sure your bot is accessible to users of all kinds, including those with disabilities or impairments.
   ms.date: 07/10/2024
   author: Adriamen
-  ms.author: japerena
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 3
 content: |

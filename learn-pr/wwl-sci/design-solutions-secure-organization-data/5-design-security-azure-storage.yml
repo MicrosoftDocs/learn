@@ -6,7 +6,7 @@ metadata:
   description: "SC-100 preparatory unit on the topic: design security for Azure Storage."
   ms.date: 06/02/2026
   author: ceperezb
-  ms.author: ceperezb
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-generated
 durationInMinutes: 7

@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.wwl.train-evaluate-regression-models
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 69
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure-machine-learning
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - data-scientist
+  gs-skills:
+    - "Machine Learning"
+    - "Data Science"
+    - "AI Model Evaluation & Testing"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/machine-learning/train-evaluate-regression-models/index.yml
   title: Train and evaluate regression models
   description: "Regression is a commonly used kind of machine learning for predicting numeric values."
   ms.collection: TBD

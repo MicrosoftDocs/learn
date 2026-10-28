@@ -5,7 +5,7 @@ metadata:
   description: Exercise - Integrate logs with a Log Analytics workspace.
   ms.date: 03/01/2023
   author: softchris
-  ms.author: chnoring
+  ms.author: lumac
   ms.topic: unit
 title: Exercise - Integrate logs with a Log Analytics workspace
 durationInMinutes: 10

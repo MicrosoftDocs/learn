@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-azure-compute
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 66
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - solution-architect
+    - administrator
+  gs-skills:
+    - "Cloud Infrastructure"
+    - Virtualization
+    - "Solution Architecture"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/explore-azure-compute/index.yml
   title: Explore Azure for SAP compute
   description: "This module explores the design of scalable, performant, and resilient compute components for SAP deployments in Azure. Prepare for Exam AZ-120 Planning and Administering Microsoft Azure for SAP Workloads."
   ms.date: 10/23/2026

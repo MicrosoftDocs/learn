@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.wwl.fabric-transform-data-dataflows
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 61
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - fabric
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - data-engineer
+    - data-analyst
+  gs-skills:
+    - "Data Engineering"
+    - "Data Management"
+    - "Data Analytics"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl/fabric-transform-data-dataflows/index.yml
   title: Transform Data Using Dataflows Gen2 in Microsoft Fabric
   description: "Apply low-code transformations using Power Query in Dataflows Gen2 to prepare analytical data for downstream consumption."
   ms.date: 03/30/2026

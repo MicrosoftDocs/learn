@@ -1,11 +1,34 @@
 ### YamlMime:Module
 uid: learn.cmu-cloud-computing.cloud-basics.cmu-data-centers
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 40
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+    - it-professional
+    - network-engineer
+  gs-skills:
+    - "Cloud Computing"
+    - "Cloud Infrastructure"
+    - "Infrastructure Management"
+    - Virtualization
+    - "IT Networking"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/cmu-cloud-developer/cmu-data-centers/index.yml
   title: Datacenter trends in cloud computing
   description: Carnegie Mellon University's Cloud Developer course. Datacenters are what power the cloud. Learn what they are, how they work, and challenges in managing them.
   ms.date: 03/09/2022
   author: softchris
-  ms.author: chnoring
+  ms.author: lumac
+  ms.service: azure
   ms.topic: module
   ms.custom: team=nextgen
 title: Datacenter trends in cloud computing

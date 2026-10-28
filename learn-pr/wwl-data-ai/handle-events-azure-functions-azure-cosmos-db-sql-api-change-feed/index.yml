@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.wwl.handle-events-azure-functions-azure-cosmos-db-sql-api-change-feed
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 46
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+  gs-skills:
+    - "Application Development"
+    - "Database Development"
+    - Automation
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/handle-events-azure-functions-azure-cosmos-db-sql-api-change-feed/index.yml
   title: Handle events with Azure Functions and Azure Cosmos DB for NoSQL change feed
   description: "Use Azure Functions bindings to integrate a function with Azure Cosmos DB for NoSQL."
   ms.date: 04/02/2025

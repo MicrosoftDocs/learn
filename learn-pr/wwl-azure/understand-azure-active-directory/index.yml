@@ -1,6 +1,23 @@
 ### YamlMime:Module
 uid: learn.wwl.understand-azure-active-directory
 metadata:
+  gs-content.levels: 100
+  gs-content.locale: en-us
+  gs-duration: 23
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - entra
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - it-professional
+  gs-skills:
+    - "Identity and Access Management (IAM)"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/understand-azure-active-directory/index.yml
   title: Understand Microsoft Entra ID
   description: "This module equips learners to describe Microsoft Entra ID - a cloud-based identity and access management service. They'll compare it with AD DS, understand its role as a directory for cloud services, and learn about its security features. They'll also learn about Microsoft Entra Domain Services."
   ms.date: 05/12/2023

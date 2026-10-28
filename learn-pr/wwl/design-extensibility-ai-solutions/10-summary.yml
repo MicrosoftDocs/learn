@@ -6,7 +6,7 @@ metadata:
   description: "Explore key takeaways on designing extensible AI solutions, including custom models, agents, and integration strategies for enterprise environments."
   ms.date: 02/13/2026
   author: pablorodMS
-  ms.author: taeldin
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 3
 content: |

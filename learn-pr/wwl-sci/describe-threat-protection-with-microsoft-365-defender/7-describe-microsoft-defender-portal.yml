@@ -6,7 +6,7 @@ metadata:
   description: "Describe the Microsoft Defender portal"
   ms.date: 04/14/2026
   author: wwlpublish
-  ms.author: ceperezb
+  ms.author: lumac
   ms.topic: unit
   ms.custom:
     - sfi-ga-nochange

@@ -5,7 +5,7 @@ metadata:
   description: Check your knowledge of security controls for Azure Container Registry, Azure Container Instances, and Azure Container Apps.
   ms.date: 04/15/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-generated
 title: Knowledge check

@@ -1,6 +1,23 @@
 ### YamlMime:Module
 uid: learn.wwl.perform-windows-server-secure-administration
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 35
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - windows
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - it-professional
+  gs-skills:
+    - "Infrastructure Management"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-windows-server/perform-windows-server-secure-administration/index.yml
   title: Perform Windows Server secure administration
   description: "Learn how to apply the principle of least privilege, delegate administrative control in Active Directory, implement Privileged Access Workstations (PAWs) with Windows Defender security features, and configure jump servers for secure remote administration."
   ms.date: 08/31/2026

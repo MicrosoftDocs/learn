@@ -6,7 +6,7 @@ metadata:
   description: "This unit describes how to create design and environmental considerations for a HoloLens app prototype."
   ms.date: 7/25/2023
   author: tholewis
-  ms.author: tholewis
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 60
 content: |

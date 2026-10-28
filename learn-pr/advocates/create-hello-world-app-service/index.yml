@@ -1,6 +1,24 @@
 ### YamlMime:Module
 uid: learn.azure.create-hello-app-service
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 21
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+  gs-skills:
+    - "Application Development"
+    - "Cloud Administration"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/advocates/create-hello-world-app-service/index.yml
   title: Deploy a simple Java Web App to Azure App Service
   description: Learn how to create a Java web application and deploy it to Azure App Service.
   ms.date: 05/20/2026

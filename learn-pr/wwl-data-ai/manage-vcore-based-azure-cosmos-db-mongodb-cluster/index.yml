@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-vcore-based-azure-cosmos-db-mongodb-cluster
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 70
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - database-administrator
+  gs-skills:
+    - "Data Administration"
+    - "Cloud Infrastructure"
+    - Databases
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/manage-vcore-based-azure-cosmos-db-mongodb-cluster/index.yml
   title: Manage a vCore-based Azure Cosmos DB for MongoDB cluster
   description: "Manage a vCore-based Azure Cosmos DB for MongoDB cluster."
   ms.date: 11/24/2024

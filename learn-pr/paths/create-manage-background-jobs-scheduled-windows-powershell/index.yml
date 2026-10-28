@@ -1,6 +1,28 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.create-manage-background-jobs-scheduled-windows-powershell
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - azure
+    - m365
+    - windows
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - devops-engineer
+    - security-engineer
+    - systems-administrator
+  gs-skills:
+    - Automation
+    - "Infrastructure Management"
+    - "Security Automation"
+  gs-solution.area: null
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/create-manage-background-jobs-scheduled-windows-powershell/index.yml
   title: Create and manage background jobs and scheduled jobs in Windows PowerShell
   description: Create and manage background jobs and scheduled jobs in Windows PowerShell
   ms.date: 05/12/2026

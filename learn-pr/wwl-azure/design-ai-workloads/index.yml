@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.wwl.design-ai-workloads
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 36
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+    - microsoft-foundry
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - data-scientist
+    - ai-engineer
+  gs-skills:
+    - "Solution Architecture"
+    - "AI Infrastructure"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/design-ai-workloads/index.yml
   title: "Design AI Workloads on Azure"
   description: "Learn to design AI workloads on Azure using SaaS, PaaS, and IaaS solutions. Align AI strategy with business goals and apply governance best practices."
   ms.date: 06/23/2026

@@ -1,11 +1,35 @@
 ### YamlMime:Module
 uid: learn.wwl.explain-devops-continous-delivery-quality
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 18
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - devops-engineer
+    - developer
+    - product-manager
+    - solution-architect
+    - technology-manager
+  gs-skills:
+    - DevOps
+    - Automation
+    - "Application Development"
+    - "IT Strategy"
+    - "Solution Architecture"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl/explain-devops-continous-delivery-quality/index.yml
   title: Explain DevOps Continuous Delivery and Continuous Quality
   description: "Explore two capabilities in the DevOps taxonomy, Continuous Delivery and Continuous Quality."
   ms.date: 09/20/2020
   author: wwlpublish
-  ms.author: sallybre
+  ms.author: lumac
   ms.topic: module
   ms.service: azure-devops
 title: Explain DevOps Continuous Delivery and Continuous Quality

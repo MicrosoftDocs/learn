@@ -2,11 +2,29 @@
 uid: learn.philanthropies.create-personalized-savings-plan
 
 metadata:
+  gs-content.levels: 100
+  gs-content.locale: en-us
+  gs-duration: 74
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - student
+  gs-skills:
+    - "AI Prompting"
+    - "AI Fluency"
+    - "AI Productivity"
+  gs-solution.area: "AI Business Solutions"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/philanthropies/create-personalized-savings-plan/index.yml
   title: Create a personalized savings plan to work toward a financial goal
   description: Learn how to build a strong financial foundation by exploring practical saving strategies. Discover how small steps today can lead to achieving large goals tomorrow.
   ms.date: 04/02/2025
   author: kprks
-  ms.author: v-kperkes
+  ms.author: lumac
   ms.topic: module
   ms.service: artificial-intelligence
 

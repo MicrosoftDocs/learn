@@ -6,7 +6,7 @@ metadata:
   description: "Summary of the module on the topic: design solutions for security posture management in hybrid and multicloud environments."
   ms.date: 06/03/2026
   author: ceperezb
-  ms.author: ceperezb
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 2
 content: |

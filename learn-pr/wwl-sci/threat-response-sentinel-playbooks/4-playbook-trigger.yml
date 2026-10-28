@@ -6,7 +6,7 @@ metadata:
   description: "Explain how to trigger a playbook in real time."
   ms.date: 01/25/2023
   author: wwlpublish
-  ms.author: kelawson
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 12
 content: |

@@ -1,6 +1,29 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-azure-kubernetes-service-azure-stack-hci
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 66
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - platform-engineer
+    - devops-engineer
+    - systems-administrator
+    - solution-architect
+  gs-skills:
+    - "Cloud Infrastructure"
+    - DevOps
+    - Storage
+    - "Identity and Access Management (IAM)"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/manage-azure-kubernetes-service-azure-stack-hci/index.yml
   title: Manage Azure Kubernetes Service on Azure Local
   description: "Prepare, deploy, access, and operate AKS clusters on hyperconverged Azure Local deployments."
   ms.date: 10/23/2026

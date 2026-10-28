@@ -6,7 +6,7 @@ metadata:
   description: "Exercise: Implement dates, times and time zone solutions in using C#."
   ms.date: 03/24/2025
   author: wwlpublish
-  ms.author: eric
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 30
 content: |

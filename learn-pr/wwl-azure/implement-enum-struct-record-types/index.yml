@@ -1,11 +1,27 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-enum-struct-record-types
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 51
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+  gs-skills:
+    - "Application Development"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/implement-enum-struct-record-types/index.yml
   title: Implement Enum, Struct, and Record Types
   description: "Learn to create organized, maintainable code with enum, struct, and record types in C#."
   ms.date: 05/28/2025
   author: wwlpublish
-  ms.author: eric
+  ms.author: lumac
   ms.topic: module
   ms.collection: N/A
   ms.custom:

@@ -1,6 +1,35 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-tools-to-track-usage-flow
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 100
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+    - azure-devops
+    - github
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - devops-engineer
+    - developer
+    - platform-engineer
+    - systems-administrator
+  gs-skills:
+    - DevOps
+    - "Cloud Administration"
+    - "Infrastructure Management"
+    - "Application Development"
+    - "Data Analytics"
+    - Automation
+    - "Cloud Infrastructure"
+    - "Platform Engineering"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/implement-tools-track-usage-flow/index.yml
   title: Implement Tools to Track Usage and Flow
   description: "Learn how to implement continuous monitoring tools to track application usage and flow. Explore Azure Monitor, Log Analytics, Kusto Query Language (KQL), and Application Insights for comprehensive telemetry, performance monitoring, and user behavior analysis."
   ms.date: 11/11/2025

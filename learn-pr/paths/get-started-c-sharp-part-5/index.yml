@@ -1,6 +1,22 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.get-started-c-sharp-part-5
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+  gs-skills:
+    - "Application Development"
+    - "Application Architecture"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/get-started-c-sharp-part-5/index.yml
   title: Create methods in C# console applications (Get started with C#, Part 5)
   description: This learning path covers the syntax of creating and using methods in C# console applications.
   ms.date: 02/26/2024

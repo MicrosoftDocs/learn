@@ -6,7 +6,7 @@ metadata:
   description: "Learn how to configure SQL granular permissions to control access to objects in a Microsoft Fabric data warehouse."
   ms.date: 06/11/2026
   author: theresa-i
-  ms.author: theresai
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 4
 content: |

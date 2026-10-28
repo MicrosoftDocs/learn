@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.wwl.build-rag-applications-azure-database-postgresql
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 101
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - microsoft-foundry
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+    - ai-engineer
+  gs-skills:
+    - "Retrieval-Augmented Generation (RAG)"
+    - "Knowledge Grounding for AI"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/build-rag-applications-azure-database-postgresql/index.yml
   title: Build RAG Applications with Azure Database for PostgreSQL
   description: Learn how to implement Retrieval Augmented Generation (RAG) on Azure Database for PostgreSQL using Azure AI and vector (pgvector) extensions. Build a Python-based application and explore advanced options like GraphRAG.
   ms.date: 10/25/2026

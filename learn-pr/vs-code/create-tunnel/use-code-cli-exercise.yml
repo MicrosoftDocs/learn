@@ -5,7 +5,7 @@ metadata:
   title: Exercise - Enable Remote - Tunnels in the code CLI
   description: This exercise explains the steps to enable remote tunnels with code CLI.
   author: theReynald
-  ms.author: radolphe
+  ms.author: lumac
   ms.date: 12/15/2023
   ms.topic: unit
 durationInMinutes: 6

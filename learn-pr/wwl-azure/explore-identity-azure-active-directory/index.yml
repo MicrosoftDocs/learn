@@ -1,11 +1,38 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-identity-azure-active-directory
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 48
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - entra
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - identity-access-admin
+    - security-engineer
+    - systems-administrator
+    - solution-architect
+  gs-skills:
+    - "Identity and Access Management (IAM)"
+    - "Zero Trust Security"
+    - Cybersecurity
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "Security Architecture Design"
+    - Automation
+    - "Security Analytics"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/explore-identity-azure-active-directory/index.yml
   title: Explore identity in Microsoft Entra ID
   description: "This module covers a wide view of the definition and available services for identity provided in the Microsoft Entra ID. Start with the basics of authentication, authorization, and access tokens. After building a firm foundation of what an identity is, why it's important. Then we move into governance and lifecycle management of your identities and identity solutions. The final topic opens up the term Zero Trust to see how it should be applied to your identity solutions."
   ms.date: 10/20/2026
   author: wwlpublish
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: module
   ms.collection: N/A
   ms.custom:

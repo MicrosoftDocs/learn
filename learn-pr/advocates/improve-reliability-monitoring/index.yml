@@ -2,6 +2,28 @@
 uid: learn.improve-reliability-monitoring
 title: "Improve your reliability with modern operations practices: Monitoring"
 metadata:
+  gs-content.levels: 400
+  gs-content.locale: en-us
+  gs-duration: 45
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - site-reliability-engineer
+    - systems-administrator
+  gs-skills:
+    - "Cloud Administration"
+    - "Data Analytics"
+    - "Data Visualization"
+    - DevOps
+    - "Communications Management"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/advocates/improve-reliability-monitoring/index.yml
   title: "Improve your reliability with modern operations practices: Monitoring"
   description: Learn how to use monitoring to help you sustainably achieve the appropriate level of reliability in your systems, services, and products.
   ms.date: 04/15/2026

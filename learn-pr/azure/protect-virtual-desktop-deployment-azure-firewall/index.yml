@@ -1,6 +1,30 @@
 ### YamlMime:Module
 uid: learn.protect-virtual-desktop-deployment-azure-firewall
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 78
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - network-engineer
+    - security-engineer
+    - systems-administrator
+  gs-skills:
+    - Cybersecurity
+    - "IT Networking"
+    - "Network Connectivity"
+    - "Cloud Administration"
+    - Virtualization
+    - "Security Architecture Design"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/protect-virtual-desktop-deployment-azure-firewall/index.yml
   moduleType: standard
   title: Protect your Azure Virtual Desktop deployment by using Azure Firewall
   description: Learn how to deploy and configure Azure Firewall to protect outbound network traffic for Azure Virtual Desktop.

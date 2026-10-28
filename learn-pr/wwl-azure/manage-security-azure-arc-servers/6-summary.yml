@@ -5,7 +5,7 @@ metadata:
   description: Summary of managing security for Arc-enabled hybrid servers, covering access control, extension security, Azure Policy enforcement, and Defender for Cloud posture monitoring.
   ms.date: 05/11/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 title: Summary

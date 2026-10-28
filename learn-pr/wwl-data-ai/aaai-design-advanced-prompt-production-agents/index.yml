@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.wwl.design-advanced-prompting-production-agents
 metadata:
+  gs-content.levels: 400
+  gs-content.locale: en-us
+  gs-duration: 93
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - microsoft-foundry
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+    - ai-engineer
+  gs-skills:
+    - "Prompt Engineering"
+    - "Agent Development"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/aaai-design-advanced-prompt-production-agents/index.yml
   title: Design Advanced Prompting Strategies for Production AI Agents
   description: "Design advanced prompting strategies for production AI agents in Microsoft Foundry. Implement multiturn reasoning architectures with dynamic context injection, build layered prompt injection defenses, design system prompt frameworks with autonomy-level control, design multi-intervention guardrail architectures covering all four attack surfaces, implement prompt versioning and optimization workflows, and design fine-tuning strategies and data preparation pipelines."
   ms.date: 8/24/2026

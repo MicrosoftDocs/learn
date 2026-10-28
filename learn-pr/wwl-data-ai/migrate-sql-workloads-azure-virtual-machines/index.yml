@@ -1,6 +1,27 @@
 ### YamlMime:Module
 uid: learn-wwl.migrate-sql-workloads-azure-virtual-machines
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 65
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - database-administrator
+    - solution-architect
+  gs-skills:
+    - "Data Migration"
+    - Databases
+    - SQL
+    - "Cloud Infrastructure"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/migrate-sql-workloads-azure-virtual-machines/index.yml
   title: Migrate SQL Server workloads to Azure Virtual Machine
   description: "Discover the tools and features available to migrate SQL workloads from on-premises to Azure Virtual Machines (VMs)."
   ms.date: 07/23/2026

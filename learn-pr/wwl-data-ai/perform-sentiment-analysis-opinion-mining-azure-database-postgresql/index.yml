@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn-wwl.perform-sentiment-analysis-opinion-mining-azure-database-postgresql
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 15
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - microsoft-foundry
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+  gs-skills:
+    - "Natural Language Processing (NLP)"
+    - "Database Development"
+    - Databases
+    - "Application Development"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/perform-sentiment-analysis-opinion-mining-azure-database-postgresql/index.yml
   title: Perform sentiment analysis and opinion mining with Azure Database for PostgreSQL
   description: Learn how to perform sentiment analysis and opinion mining with Azure Database for PostgreSQL.
   author: wwlpublish

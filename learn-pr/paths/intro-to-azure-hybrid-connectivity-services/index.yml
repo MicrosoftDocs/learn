@@ -1,6 +1,25 @@
 ### YamlMime:LearningPath
 uid: learn.intro-to-azure-hybrid-connectivity-services
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - network-engineer
+    - solution-architect
+  gs-skills:
+    - "Network Connectivity"
+    - "IT Networking"
+    - "Solution Architecture"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/intro-to-azure-hybrid-connectivity-services/index.yml
   title: Introduction to Azure hybrid connectivity services
   description: Learn to connect your on-premises and Azure networks together with Azure hybrid connectivity services.
   brand: azure

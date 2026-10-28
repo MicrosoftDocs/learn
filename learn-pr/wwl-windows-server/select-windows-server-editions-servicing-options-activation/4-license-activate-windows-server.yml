@@ -6,7 +6,7 @@ metadata:
   description: "License and activate Windows Server"
   ms.date: 12/20/2024
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: lumac
   ms.topic: unit
 azureSandbox: false
 durationInMinutes: 7

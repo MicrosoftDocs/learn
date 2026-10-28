@@ -1,6 +1,35 @@
 ### YamlMime:Module
 uid: learn.wwl.debug-production-multi-agent-incidents-azure
 metadata:
+  gs-content.levels: 400
+  gs-content.locale: en-us
+  gs-duration: 40
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - microsoft-foundry
+    - azure
+    - azure-openai
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - ai-engineer
+    - devops-engineer
+    - site-reliability-engineer
+    - platform-engineer
+  gs-skills:
+    - "Agent Operations"
+    - "Agentic AI"
+    - "AI Infrastructure"
+    - DevOps
+    - Automation
+    - "Data Analytics"
+    - "AI Model Evaluation & Testing"
+    - "Multi-Agent Orchestration"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/aaai-debug-production-multi-agent-incidents-azure/index.yml
   title: Debug and Respond to Production Multi-Agent Incidents in Azure
   description: "Debug and respond to production incidents in multi-agent AI solutions in Azure. Implement agent replay capabilities that reproduce complex multi-agent failures, apply structured root cause analysis procedures for multi-agent incident diagnosis, configure automated detection and remediation for common agent failure patterns, and establish incident response and post-mortem processes adapted to the characteristics of AI agent system failures."
   ms.date: 8/5/2026

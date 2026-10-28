@@ -6,7 +6,7 @@ metadata:
   description: "Learn the essentials of monitoring, analyzing, and tuning AI-powered agents to ensure reliability, effectiveness, and continuous improvement."
   ms.date: 02/13/2026
   author: msdavidram
-  ms.author: taeldin
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 3
 content: |

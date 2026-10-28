@@ -1,6 +1,31 @@
 ### YamlMime:Module
 uid: learn.wwl.measure-performance-azure-cosmos-db-sql-api
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 42
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - database-administrator
+    - administrator
+    - data-engineer
+    - site-reliability-engineer
+  gs-skills:
+    - Databases
+    - "Cloud Administration"
+    - "Data Administration"
+    - "Data Analytics"
+    - "Cloud Infrastructure"
+    - "Infrastructure Management"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/measure-performance-azure-cosmos-db-sql-api/index.yml
   title: Measure performance in Azure Cosmos DB for NoSQL
   description: "We learn to use Azure Monitor to create and analyze monitoring data for Azure Cosmos DB."
   ms.date: 04/02/2025

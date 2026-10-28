@@ -2,6 +2,24 @@
 uid: learn.dpu.windows-autopilot-2026
 title: Device deployment with Windows Autopilot
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 17
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - windows
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - it-professional
+  gs-skills:
+    - "Device Management"
+    - Automation
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/windows-autopilot-2026/index.yml
   title: Device Deployment With Windows Autopilot
   description: In this module, we review how you can use Windows Autopilot to deploy devices efficiently.
   ms.date: 08/29/2025

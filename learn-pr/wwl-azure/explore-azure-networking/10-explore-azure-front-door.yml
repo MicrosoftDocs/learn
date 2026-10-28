@@ -6,7 +6,7 @@ metadata:
   description: "Define, manage, and monitor the global routing for your web traffic by optimizing for performance and global failover for high availability, with Azure Front Door."
   ms.date: 12/23/2024
   author: wwlpublish
-  ms.author: eric
+  ms.author: lumac
   ms.topic: unit
   ms.custom:
   - N/A

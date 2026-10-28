@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.wwl.use-functions-modules-windows-powershell-scripts
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 29
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - windows
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - administrator
+  gs-skills:
+    - Automation
+    - "Application Development"
+    - "Infrastructure Management"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/use-functions-modules-windows-powershell-scripts/index.yml
   title: Use functions and modules in Windows PowerShell scripts
   description: This module covers how to create modules and functions in Windows PowerShell scripts.
   ms.date: 05/12/2026

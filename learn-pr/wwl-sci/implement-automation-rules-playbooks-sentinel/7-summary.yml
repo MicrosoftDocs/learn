@@ -5,7 +5,7 @@ metadata:
   description: Summary of implementing automation rules and Logic Apps playbooks in Microsoft Sentinel, covering incident triage automation, Content Hub playbooks, and custom playbook authoring.
   ms.date: 04/16/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 title: Summary

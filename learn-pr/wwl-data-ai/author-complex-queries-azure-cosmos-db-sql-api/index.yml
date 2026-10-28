@@ -1,6 +1,28 @@
 ### YamlMime:Module
 uid: learn.wwl.author-complex-queries-azure-cosmos-db-sql-api
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 49
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+  gs-skills:
+    - Databases
+    - SQL
+    - "Application Development"
+    - "Data Management"
+    - "Python (Programming Language)"
+    - "Application Security"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/author-complex-queries-azure-cosmos-db-sql-api/index.yml
   title: Author complex queries with the Azure Cosmos DB for NoSQL
   description: "Create SQL queries for Azure Cosmos DB for NoSQL that uses subqueries or cross-products."
   ms.date: 04/02/2025

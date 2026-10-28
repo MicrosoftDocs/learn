@@ -1,6 +1,23 @@
 ### YamlMime:Module
 uid: learn.languages.csharp-null-safety
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 23
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+  gs-skills:
+    - "Application Development"
+    - "Application Security"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/language/csharp-null-safety/index.yml
   moduleType: standard
   title: Null safety in C#
   description: Learn coding practices to help prevent the occurrence of NullReferenceException.

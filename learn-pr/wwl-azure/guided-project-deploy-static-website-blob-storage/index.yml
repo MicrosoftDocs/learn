@@ -1,6 +1,27 @@
 ### YamlMime:Module
 uid: learn.wwl.guided-project-deploy-static-website-blob-storage
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 36
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - storage-admin
+    - systems-administrator
+    - developer
+  gs-skills:
+    - Storage
+    - "Cloud Infrastructure"
+    - "Application Development"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/guided-project-deploy-static-website-blob-storage/index.yml
   title: 'Guided Project: Deploy a static website with Azure Blob Storage'
   description: "Host a public website directly from Azure Blob Storage without managing servers."
   ms.date: 03/25/2026

@@ -1,6 +1,31 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.get-started-azure-cosmos-db-sql-api
 metadata:
+  gs-content.levels: 100
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - data-engineer
+    - database-administrator
+    - developer
+    - solution-architect
+  gs-skills:
+    - Databases
+    - "Database Design"
+    - "Data Management"
+    - "Cloud Computing"
+    - "Vector Databases"
+    - "Solution Architecture"
+    - "Data Administration"
+    - "Cloud Administration"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/get-started-azure-cosmos-db-sql-api/index.yml
   title: Get started with Azure Cosmos DB for NoSQL
   description: Get started with Azure Cosmos DB for NoSQL
   ms.date: 04/02/2025

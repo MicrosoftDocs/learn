@@ -1,6 +1,32 @@
 ### YamlMime:Module
 uid: learn-wwl.get-started-sql-database-microsoft-fabric
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 70
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - fabric
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - data-engineer
+    - database-administrator
+    - developer
+    - solution-architect
+  gs-skills:
+    - Databases
+    - "Database Development"
+    - SQL
+    - "Data Engineering"
+    - "Data Security"
+    - Virtualization
+    - "AI-Augmented Software Development"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/get-started-sql-database-microsoft-fabric/index.yml
   title: Get started with SQL Database in Microsoft Fabric
   description: "Learn how SQL Database in Microsoft Fabric works, the key concepts, and practical examples to help users SQL Database effectively as part of their analytics solutions."
   ms.date: 8/27/2026

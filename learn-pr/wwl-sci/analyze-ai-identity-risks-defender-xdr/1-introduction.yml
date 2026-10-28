@@ -5,7 +5,7 @@ metadata:
   description: Introduction to analyzing AI identity risks using Microsoft Defender XDR, including AI asset discovery and blast radius assessment.
   ms.date: 04/21/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 title: Introduction

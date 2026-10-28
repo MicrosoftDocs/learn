@@ -6,7 +6,7 @@ metadata:
   description: "Ingest and transform real-time data"
   ms.date: 09/10/2025
   author: theresa-i
-  ms.author: theresai
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 6
 content: |

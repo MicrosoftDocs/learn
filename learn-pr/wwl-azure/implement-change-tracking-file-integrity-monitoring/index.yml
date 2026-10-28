@@ -1,6 +1,30 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-change-tracking-file-integrity-monitoring-for-windows-iaas-vms
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 50
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+    - defender-for-cloud
+    - defender-endpoint
+    - windows
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - systems-administrator
+    - security-engineer
+  gs-skills:
+    - "Security Analytics"
+    - Cybersecurity
+    - "Infrastructure Management"
+    - "Cloud Administration"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/implement-change-tracking-file-integrity-monitoring/index.yml
   title: Implement change tracking and file integrity monitoring for Windows IaaS VMs
   description: "Implement change tracking and file integrity monitoring for Windows IaaS VMs"
   ms.date: 08/16/2026

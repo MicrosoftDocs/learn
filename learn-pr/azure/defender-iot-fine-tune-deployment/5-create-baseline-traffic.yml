@@ -6,7 +6,7 @@ metadata:
   description: "Create a baseline of OT network traffic."
   ms.date: 5/23/2024
   author: limwainstein
-  ms.author: lwainstein
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 8
 content: |

@@ -6,7 +6,7 @@ metadata:
   description: "SC-100: Select cloud workload protection solutions in Microsoft Defender for Cloud."
   ms.date: 06/03/2026
   author: ceperezb
-  ms.author: ceperezb
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 8
 content: |

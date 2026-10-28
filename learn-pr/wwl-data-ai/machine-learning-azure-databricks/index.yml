@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.wwl.machine-learning-azure-databricks
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 84
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure-databricks
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - data-scientist
+    - data-engineer
+  gs-skills:
+    - "Machine Learning"
+    - "Data Science"
+    - "AI Model Evaluation & Testing"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/machine-learning-azure-databricks/index.yml
   title: Train a machine learning model in Azure Databricks
   description: Learn how to train machine learning models using Spark and the MLlib library in Azure Databricks.
   author: JulianePadrao

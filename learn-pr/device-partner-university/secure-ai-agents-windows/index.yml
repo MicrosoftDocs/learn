@@ -2,6 +2,25 @@
 uid: learn.dpu.secure-ai-agents-windows
 title: Secure AI agents and workloads on Windows
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 35
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - windows
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - it-professional
+    - security-engineer
+  gs-skills:
+    - "AI Security (Model-Level)"
+    - "Application Security"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/secure-ai-agents-windows/index.yml
   title: Secure AI Agents And Workloads On Windows
   description: Explore how to secure AI agents and AI-powered workloads on Windows. Learn how identity, governance, policy controls, containment, monitoring, and development lifecycle security practices help reduce risk while enabling AI agents to access data, interact with systems, and perform approved actions.
   ms.date: 07/23/2026

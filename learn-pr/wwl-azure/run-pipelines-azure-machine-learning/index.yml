@@ -1,6 +1,28 @@
 ### YamlMime:Module
 uid: learn.wwl.run-pipelines-azure-machine-learning
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 40
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure-machine-learning
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - data-scientist
+    - ai-engineer
+  gs-skills:
+    - "Machine Learning"
+    - Automation
+    - DevOps
+    - "Python (Programming Language)"
+    - "Data Engineering"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/run-pipelines-azure-machine-learning/index.yml
   title: Run pipelines in Azure Machine Learning
   description: Choose this module if you want to automate multistep machine learning workflows with reusable components and Azure Machine Learning pipelines.
   author: madiepev

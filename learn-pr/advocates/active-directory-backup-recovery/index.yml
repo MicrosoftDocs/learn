@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.devrel.active-directory-backup-recovery
 metadata:
+  gs-content.levels: 400
+  gs-content.locale: en-us
+  gs-duration: 130
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - systems-administrator
+    - security-engineer
+  gs-skills:
+    - "Infrastructure Management"
+    - "Identity and Access Management (IAM)"
+    - "Data Security"
+    - Virtualization
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/advocates/active-directory-backup-recovery/index.yml
   title: Advanced Active Directory Back Up and Recovery
   description: Design, validate, and execute supported backup and recovery decisions for Active Directory Domain Services in Windows Server 2025.
   ms.date: 08/12/2026

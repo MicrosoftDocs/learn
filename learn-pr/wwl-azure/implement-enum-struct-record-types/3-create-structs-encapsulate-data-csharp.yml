@@ -6,7 +6,7 @@ metadata:
   description: "Learn how to use structs in C# to group related data into lightweight, efficient containers."
   ms.date: 05/28/2025
   author: wwlpublish
-  ms.author: eric
+  ms.author: lumac
   ms.topic: unit
   ms.custom:
   - N/A

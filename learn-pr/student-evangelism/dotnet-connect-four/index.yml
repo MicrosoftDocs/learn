@@ -1,11 +1,28 @@
 ### YamlMime:Module
 uid: learn.gh-dotnet-connectfour
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 32
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+    - student
+  gs-skills:
+    - "Application Development"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/student-evangelism/dotnet-connect-four/index.yml
   title: Build a Connect Four game with Blazor
   description: Learn how to build a web app with Blazor.
   ms.date: 03/15/2023
   author: CamSoper
-  ms.author: casoper
+  ms.author: lumac
   ms.topic: module-standard-task-based
   manager: coxford
   ms.service: dotnet

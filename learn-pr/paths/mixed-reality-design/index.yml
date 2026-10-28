@@ -3,6 +3,29 @@ uid: learn.mixed-reality-design
 title: Mixed Reality design
 summary: Learn the fundamentals of designing mixed reality apps and experiences.
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - windows
+    - azure
+    - dynamics-365
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+    - technology-manager
+  gs-skills:
+    - "Application Development"
+    - "Collaboration Tools"
+    - "Cloud Computing"
+    - "Digital Accessibility"
+    - "Application Architecture"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/mixed-reality-design/index.yml
   title: Mixed Reality design
   description: Learn the fundamentals of designing mixed reality apps and experiences.
   ms.date: 07/28/2023

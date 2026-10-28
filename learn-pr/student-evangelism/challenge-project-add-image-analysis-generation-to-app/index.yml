@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.student-evangelism.challenge-project-add-image-analysis-generation-to-app
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 80
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - microsoft-foundry
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+    - ai-engineer
+  gs-skills:
+    - "Computer Vision"
+    - "Generative AI"
+    - "Application Development"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/student-evangelism/challenge-project-add-image-analysis-generation-to-app/index.yml
   title: Challenge project - Add image analysis and generation capabilities to your application
   description: "Add image analysis and generation capabilities to your application"
   ms.date: 9/5/2023

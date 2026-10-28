@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.wwl.build-generative-ai-applications-with-azure-cosmos-db-nosql
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 108
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - microsoft-foundry
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+    - ai-engineer
+  gs-skills:
+    - "Generative AI"
+    - Databases
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/build-generative-ai-applications-with-azure-cosmos-db-nosql/index.yml
   title: Build Generative AI applications with Azure Cosmos DB
   description: "Build advanced Generative AI application with Python and Azure Cosmos DB for NoSQL."
   ms.date: 04/02/2025

@@ -6,7 +6,7 @@ metadata:
   description: "Consider network load balancing for Hyper-V VMs"
   ms.date: 01/01/2025
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: lumac
   ms.topic: unit
 azureSandbox: false
 labModal: false

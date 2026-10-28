@@ -6,7 +6,7 @@ metadata:
   description: Learn how to configure Azure Monitor alerts in vaults. 
   ms.date: 12/01/2023
   author: AbhishekMallick-MS
-  ms.author: v-abhmallick
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 3
 content: |

@@ -1,10 +1,28 @@
 ### YamlMime:Module
 uid: learn-wwl.secure-responsible-conversational-ai
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 36
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - ai-engineer
+    - security-engineer
+  gs-skills:
+    - "Responsible AI"
+    - "Data Security"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/ai-school/secure-responsible-conversational-ai/index.yml
   title: Discover Microsoft safety guidelines for responsible conversational AI development
   description: Learn Microsoft development guidelines for fair and secure responsible conversational AI.
   author: Adriamen
-  ms.author: japerena
+  ms.author: lumac
   ms.date: 07/10/2024
   ms.update-cycle: 180-days
   ms.service: artificial-intelligence

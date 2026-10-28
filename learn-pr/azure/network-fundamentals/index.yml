@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.azure.network-fundamentals
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 47
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - network-engineer
+    - systems-administrator
+  gs-skills:
+    - "IT Networking"
+    - "Network Connectivity"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/network-fundamentals/index.yml
   title: Fundamentals of computer networking
   description: Learn the fundamental principles of computer networking to prepare you for the Azure admin and developer learning paths.
   ms.date: 07/09/2024

@@ -2,6 +2,27 @@
 uid: learn.dpu.windows-at-work-elevate-it-teams-with-windows-11-pro
 title: 'Windows at work: Elevate IT teams with Windows 11 Pro'
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 15
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - security-copilot
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - security-operations-analyst
+    - it-professional
+  gs-skills:
+    - "Security Analytics"
+    - "Threat Management"
+    - "Security Operations Management"
+    - "AI Prompting"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/win-at-work-it/index.yml
   title: 'Windows At Work: Elevate IT Teams With Windows 11 Pro'
   description: Discover how IT teams can use Microsoft Security Copilot to handle anomalous security events faster and more efficiently.
   ms.date: 10/20/2025

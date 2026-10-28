@@ -1,6 +1,23 @@
 ### YamlMime:Module
 uid: learn.dotnet-maui.create-user-interface-xaml
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 54
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+    - student
+  gs-skills:
+    - "Application Development"
+  gs-solution.area: null
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/dot-net-maui/create-user-interface-xaml/index.yml
   moduleType: standard
   title: "Create a UI in a .NET MAUI app by using XAML"
   description: "Learn how to design a UI for a .NET MAUI app using XAML."

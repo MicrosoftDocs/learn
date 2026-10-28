@@ -1,6 +1,27 @@
 ### YamlMime:Module
 uid: learn.wwl.create-manage-scheduled-jobs-use-windows-powershell
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 48
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - windows
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - systems-administrator
+    - devops-engineer
+    - security-engineer
+  gs-skills:
+    - Automation
+    - "Infrastructure Management"
+    - "Security Automation"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/create-manage-scheduled-jobs-use-windows-powershell/index.yml
   title: Create and manage scheduled jobs using Windows PowerShell
   description: "Create and manage scheduled jobs using Windows PowerShell"
   ms.date: 05/12/2026

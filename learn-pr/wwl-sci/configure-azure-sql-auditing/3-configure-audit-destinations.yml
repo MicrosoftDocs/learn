@@ -6,7 +6,7 @@ metadata:
   description: "Configure audit log routing to Azure Blob Storage, Azure Monitor Log Analytics, and Event Hubs for Azure SQL Database, and enable immutable storage for tamper-resistant compliance records."
   ms.date: 04/22/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-generated
 durationInMinutes: 4

@@ -6,7 +6,7 @@ metadata:
   description: "Evaluate how Just-in-Time access protects AI workloads and learn the architectural boundary between PIM-governed human access and RBAC-governed workload identities."
   ms.date: 03/18/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 5
 content: |

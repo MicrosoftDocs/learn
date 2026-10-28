@@ -1,6 +1,27 @@
 ### YamlMime:Module
 uid: learn.wwl.get-started-data-concepts
 metadata:
+  gs-content.levels: 100
+  gs-content.locale: en-us
+  gs-duration: 37
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - m365
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - business-user
+    - data-analyst
+  gs-skills:
+    - "Data Analytics"
+    - "Data Visualization"
+    - "Business Insights"
+    - "Data Management"
+  gs-solution.area: "AI Business Solutions"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/get-started-data-concepts/index.yml
   title: Get started with data concepts
   description: "Businesses rely on data. Understanding data is key to many business operations. This module covers what data is, when to sort and filter data and when to calculate derived values from data."
   ms.date: 10/26/2026

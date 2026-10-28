@@ -1,6 +1,27 @@
 ### YamlMime:Module
 uid: learn.moderate-content-detect-harm-azure-ai-content-safety
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 38
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - ai-engineer
+    - developer
+  gs-skills:
+    - "AI Security (Model-Level)"
+    - "AI Model Evaluation & Testing"
+    - "Application Development"
+    - "Responsible AI"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/advocates/moderate-content-detect-harm-azure-ai-content-safety/index.yml
   title: Implement generative AI guardrails with Azure AI Content Safety
   description: Learn how to implement generative AI guardrails with Azure AI Content Safety.
   author: aprilgittens

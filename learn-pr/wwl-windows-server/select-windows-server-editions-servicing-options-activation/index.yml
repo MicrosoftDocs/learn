@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.wwl.select-windows-server-editions-servicing-options-activation
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 36
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - systems-administrator
+    - administrator
+    - technology-manager
+  gs-skills:
+    - "Infrastructure Management"
+    - Virtualization
+    - "Cloud Administration"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-windows-server/select-windows-server-editions-servicing-options-activation/index.yml
   title: Select Windows Server editions, servicing options, and activation
   description: "Select Windows Server editions, servicing options, and activation"
   ms.date: 01/23/2026

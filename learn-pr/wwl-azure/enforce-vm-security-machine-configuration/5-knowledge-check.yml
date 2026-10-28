@@ -5,7 +5,7 @@ metadata:
   description: Check your knowledge of Azure Machine Configuration extension capabilities, prerequisites, built-in baseline policies, and custom configuration authoring.
   ms.date: 05/11/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-generated
 title: Knowledge check

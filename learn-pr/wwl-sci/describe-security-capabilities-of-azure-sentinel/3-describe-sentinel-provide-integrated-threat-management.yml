@@ -6,7 +6,7 @@ metadata:
   description: "Describe threat detection and mitigation capabilities in Microsoft Sentinel"
   ms.date: 06/15/2026
   author: wwlpublish
-  ms.author: ceperezb
+  ms.author: lumac
   ms.topic: unit
   ms.custom:
   - N/A

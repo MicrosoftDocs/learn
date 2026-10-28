@@ -5,7 +5,7 @@ metadata:
   description: Summary of implementing Microsoft Defender for Servers, covering plan selection, onboarding, vulnerability scanning, Microsoft Defender for Endpoint (MDE) integration, agentless scanning, and File Integrity Monitoring.
   ms.date: 05/11/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 title: Summary

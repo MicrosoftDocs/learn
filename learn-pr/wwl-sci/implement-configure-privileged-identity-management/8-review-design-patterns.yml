@@ -6,7 +6,7 @@ metadata:
   description: "Select appropriate just-in-time access patterns based on risk and workload type, and understand how design patterns connect individual PIM controls into a coherent privileged access strategy."
   ms.date: 03/18/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 2
 content: |

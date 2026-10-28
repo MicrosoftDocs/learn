@@ -2,6 +2,26 @@
 uid: learn.dpu.copilot-meeting-productivity
 title: Enhance meeting productivity with Copilot in Microsoft Teams
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 21
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - office-teams
+    - microsoft-365-copilot
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - business-user
+  gs-skills:
+    - "AI Productivity"
+    - "AI Prompting"
+    - "Collaboration Tools"
+  gs-solution.area: "AI Business Solutions"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/copilot-meeting-productivity/index.yml
   title: Enhance Meeting Productivity With Copilot In Microsoft Teams
   description: Discover how Copilot in Microsoft Teams transforms meetings into searchable, interactive summaries that help teams stay informed and aligned.
   ms.date: 11/06/2025

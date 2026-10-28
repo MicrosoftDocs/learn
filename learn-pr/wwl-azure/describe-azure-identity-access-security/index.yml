@@ -1,6 +1,29 @@
 ### YamlMime:Module
 uid: learn.wwl.describe-azure-identity-access-security
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 47
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - entra
+    - azure
+    - defender-for-cloud
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - identity-access-admin
+    - security-engineer
+  gs-skills:
+    - "Identity and Access Management (IAM)"
+    - "Zero Trust Security"
+    - Cybersecurity
+    - "Data Security"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/describe-azure-identity-access-security/index.yml
   title: Describe Azure identity, access, and security
   description: "Describe Azure identity, access, and security"
   ms.date: 01/09/2026

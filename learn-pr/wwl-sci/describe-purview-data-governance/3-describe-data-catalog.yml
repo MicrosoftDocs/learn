@@ -6,7 +6,7 @@ metadata:
   description: "Describe the features of Microsoft Purview Unified Catalog, including governance domains, data products, glossary terms, and data quality."
   ms.date: 06/19/2026
   author: wwlpublish
-  ms.author: ceperezb
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 9
 content: |

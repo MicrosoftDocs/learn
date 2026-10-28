@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.wwl.generate-images-azure-openai
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 33
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - microsoft-foundry
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - ai-engineer
+    - developer
+  gs-skills:
+    - "Generative AI"
+    - "Application Development"
+    - "AI Prompting"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/generate-images-azure-openai/index.yml
   title: Generate images with AI
   description: Use models in Microsoft Foundry to generate images
   author: ivorb

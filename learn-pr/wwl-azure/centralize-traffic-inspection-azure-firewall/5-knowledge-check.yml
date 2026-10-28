@@ -6,7 +6,7 @@ metadata:
   description: Check your knowledge of Azure Firewall capabilities, rule collection configuration, Firewall Policy, and Secured Virtual Hub deployment.
   ms.date: 05/11/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-generated
 durationInMinutes: 5

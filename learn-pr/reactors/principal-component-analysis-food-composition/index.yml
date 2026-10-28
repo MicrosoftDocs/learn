@@ -1,11 +1,32 @@
 ### YamlMime:Module
 uid: learn.reactors.principal-component-analysis-food-composition
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 58
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - data-scientist
+    - developer
+    - student
+  gs-skills:
+    - "Data Science"
+    - "Machine Learning"
+    - "Data Visualization"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/reactors/principal-component-analysis-food-composition/index.yml
   title: Principal component analysis with food composition
   description: Learn how to use principal component analysis (PCA) to learn about the contents of a food nutrition dataset.
   ms.date: 03/13/2023
   author: sguthals
-  ms.author: chnoring
+  ms.author: lumac
+  ms.service: artificial-intelligence
   ms.topic: module
   show_latex: true
   ms.custom: team=nextgen

@@ -6,7 +6,7 @@ metadata:
   description: "Deploy private endpoints for Azure SQL Database and SQL Managed Instance, configure firewall rules, and evaluate when to disable public endpoint access."
   ms.date: 04/22/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-generated
 durationInMinutes: 4

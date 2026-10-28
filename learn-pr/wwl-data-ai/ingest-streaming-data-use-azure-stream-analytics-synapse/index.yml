@@ -1,6 +1,28 @@
 ### YamlMime:Module
 uid: learn.wwl.ingest-streaming-data-use-azure-stream-analytics-synapse
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 74
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - data-engineer
+    - developer
+    - solution-architect
+  gs-skills:
+    - "Data Engineering"
+    - SQL
+    - "Data Analytics"
+    - "Cloud Infrastructure"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/ingest-streaming-data-use-azure-stream-analytics-synapse/index.yml
   title: Ingest Streaming Data Using Azure Stream Analytics
   description: "Azure Stream Analytics is a fully managed real-time analytics service that you can use to process streaming event data and route results to a range of output destinations for storage, analysis, and visualization."
   ms.date: 10/12/2026

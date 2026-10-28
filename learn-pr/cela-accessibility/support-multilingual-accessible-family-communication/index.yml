@@ -1,6 +1,30 @@
 ### YamlMime:Module
 uid: learn.wwl.support-multilingual-accessible-family-communication
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 21
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - microsoft-365-copilot
+    - office-teams
+    - m365
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - k-12-educator
+  gs-skills:
+    - "Digital Accessibility"
+    - "Communications Management"
+    - "AI Productivity"
+    - "AI Prompting"
+    - "Responsible AI"
+    - "Collaboration Tools"
+  gs-solution.area: "AI Business Solutions"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/cela-accessibility/support-multilingual-accessible-family-communication/index.yml
   title: "Support Multilingual and Accessible Family Communication"
   description: "Learn to use AI tools to simplify and translate educational communications, ensuring inclusivity and accessibility for diverse families."
   ms.date: 1/9/2026

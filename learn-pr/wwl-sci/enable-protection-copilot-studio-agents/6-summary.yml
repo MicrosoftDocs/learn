@@ -5,7 +5,7 @@ metadata:
   description: Summary of enabling real-time protection for Copilot Studio agents using Microsoft Defender for Cloud Apps, covering protection capabilities, configuration steps, and output verification.
   ms.date: 04/21/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 title: Summary

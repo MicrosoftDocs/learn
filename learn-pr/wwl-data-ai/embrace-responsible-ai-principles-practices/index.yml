@@ -1,6 +1,24 @@
 ### YamlMime:Module
 uid: learn.wwl.embrace-responsible-ai-principles-practices
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 51
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - business-leader
+    - business-owner
+  gs-skills:
+    - "Responsible AI"
+    - "AI Governance"
+  gs-solution.area: "AI Business Solutions"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/embrace-responsible-ai-principles-practices/index.yml
   title: Embrace Responsible AI Principles and Practices
   description: "Explore six principles to guide AI development and use - fairness, reliability and safety, privacy and security, inclusiveness, transparency, and accountability."
   ms.date: 07/10/2026

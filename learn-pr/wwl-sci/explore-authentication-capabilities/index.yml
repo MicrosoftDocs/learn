@@ -1,11 +1,29 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-authentication-capabilities-of-azure-ad
 metadata:
+  gs-content.levels: 100
+  gs-content.locale: en-us
+  gs-duration: 39
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - entra
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - administrator
+  gs-skills:
+    - "Identity and Access Management (IAM)"
+    - Automation
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/explore-authentication-capabilities/index.yml
   title: Describe the Authentication Capabilities of Microsoft Entra ID
   description: "Describe the authentication capabilities of Microsoft Entra ID"
   ms.date: 06/10/2026
   author: wwlpublish
-  ms.author: ceperezb
+  ms.author: lumac
   ms.topic: module
   ms.service: entra-id
 title: Describe the authentication capabilities of Microsoft Entra ID

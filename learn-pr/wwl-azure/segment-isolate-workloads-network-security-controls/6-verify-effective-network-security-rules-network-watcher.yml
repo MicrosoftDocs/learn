@@ -6,7 +6,7 @@ metadata:
   description: "Use Network Watcher effective security rules, IP flow verify, and Network Security Group (NSG) diagnostics to validate that segmentation controls produce the intended security posture."
   ms.date: 04/22/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 8
 content: |

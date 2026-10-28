@@ -5,7 +5,7 @@ metadata:
   description: Check your knowledge of Azure Backup security features including soft delete, vault immutability, and Multi-User Authorization.
   ms.date: 05/11/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-generated
 title: Knowledge check

@@ -43,7 +43,7 @@
 
 #### 1. Create a custom attribute
 
-To create a [custom attribute](/graph/api/identityuserflowattribute-post?view=graph-rest-beta&tabs=http), run the following Microsoft Graph request.
+To create a [custom attribute](/graph/api/identityuserflowattribute-post?view=graph-rest-beta&tabs=http&preserve-view=true), run the following Microsoft Graph request.
 
 ```json
 POST https://graph.microsoft.com/beta/identity/userFlowAttributes
@@ -71,7 +71,7 @@ From the response, copy the value of the custom attribute **id**. For example:
 
 #### 2. Add attribute to a user flow
 
-To [add an attribute to a user flow](/graph/api/onattributecollectionexternalusersselfservicesignup-post-attributes?view=graph-rest-beta&tabs=http), run the Microsoft Graph request below. Replace the **{user-flow-ID}** with your [user flow ID](/graph/api/identitycontainer-list-authenticationeventsflows?view=graph-rest-beta&tabs=http). Replace the **{attribute-ID}** with your [attribute ID](/graph/api/identityuserflowattribute-list?view=graph-rest-beta&tabs=http) from the previous step.
+To [add an attribute to a user flow](/graph/api/onattributecollectionexternalusersselfservicesignup-post-attributes?view=graph-rest-beta&tabs=http&preserve-view=true), run the Microsoft Graph request below. Replace the **{user-flow-ID}** with your [user flow ID](/graph/api/identitycontainer-list-authenticationeventsflows?view=graph-rest-beta&tabs=http&preserve-view=true). Replace the **{attribute-ID}** with your [attribute ID](/graph/api/identityuserflowattribute-list?view=graph-rest-beta&tabs=http&preserve-view=true) from the previous step.
 
 ```json
 POST https://graph.microsoft.com/beta/identity/authenticationEventsFlows/{user-flow-ID}/microsoft.graph.externalUsersSelfServiceSignUpEventsFlow/onAttributeCollection/microsoft.graph.onAttributeCollectionExternalUsersSelfServiceSignUp/attributes/$ref
@@ -90,14 +90,14 @@ POST https://graph.microsoft.com/beta/identity/authenticationEventsFlows/{user-f
 ```
 
 #### 3. (Optional) Update the page layout
-Usually the attribute appears at the bottom of the sign-up page. You can [update the sign-up page layout](/graph/api/authenticationeventsflow-update?view=graph-rest-beta&tabs=http). In Page layouts, you can indicate which attributes are required and arrange the display order. You can also edit attribute labels, create radio buttons or checkboxes, and more.
+Usually the attribute appears at the bottom of the sign-up page. You can [update the sign-up page layout](/graph/api/authenticationeventsflow-update?view=graph-rest-beta&tabs=http&preserve-view=true). In Page layouts, you can indicate which attributes are required and arrange the display order. You can also edit attribute labels, create radio buttons or checkboxes, and more.
 
 To do so, you need to update the user flow. In the request body, supply only the values for properties that should be updated. Existing properties that aren't included in the request body maintains their previous values or becomes recalculated based on changes to other property values.
 
 > [!WARNING]
 > The **inputs** collection must contain all of the attributes. To add or remove attributes, make sure to include all other attributes.
 
-Replace the **{user-flow-ID}** with your [user flow ID](/graph/api/identitycontainer-list-authenticationeventsflows?view=graph-rest-beta&tabs=http). Replace the **{attribute-ID}** with your [attribute ID](/graph/api/identityuserflowattribute-list?view=graph-rest-beta&tabs=http).
+Replace the **{user-flow-ID}** with your [user flow ID](/graph/api/identitycontainer-list-authenticationeventsflows?view=graph-rest-beta&tabs=http&preserve-view=true). Replace the **{attribute-ID}** with your [attribute ID](/graph/api/identityuserflowattribute-list?view=graph-rest-beta&tabs=http&preserve-view=true).
 
 ```json
 PATCH https://graph.microsoft.com/beta/identity/authenticationEventsFlows/{user-flow-ID}

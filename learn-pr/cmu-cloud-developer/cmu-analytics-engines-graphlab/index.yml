@@ -1,11 +1,32 @@
 ### YamlMime:Module
 uid: learn.cmu-cloud-computing.distributed-programming.analytics-engines-graphlab
 metadata:
+  gs-content.levels: 400
+  gs-content.locale: en-us
+  gs-duration: 63
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+    - data-engineer
+  gs-skills:
+    - "Data Engineering"
+    - "Application Architecture"
+    - "Data Analytics"
+    - "Application Development"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/cmu-cloud-developer/cmu-analytics-engines-graphlab/index.yml
   title: 'Distributed computing on the cloud: GraphLab'
   description: Carnegie Mellon University's cloud developer course. GraphLab is a big data tool developed by Carnegie Mellon University to help with data mining. Learn about how GraphLab works and why it's useful.
   ms.date: 03/09/2022
   author: softchris
-  ms.author: chnoring
+  ms.author: lumac
+  ms.service: azure
   ms.topic: module
   ms.custom: team=nextgen
 title: 'Distributed computing on the cloud: GraphLab'

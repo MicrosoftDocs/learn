@@ -1,6 +1,27 @@
 ### YamlMime:Module
 uid: learn.azure-arc-enabled-vmware
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 40
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+    - defender-for-cloud
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - systems-administrator
+  gs-skills:
+    - Virtualization
+    - "Cloud Administration"
+    - "Infrastructure Management"
+    - "Identity and Access Management (IAM)"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/advocates/intro-azure-arc-enabled-vmware-vsphere/index.yml
   ms.author: orthomas
   author: Orin-Thomas
   ms.date: 02/15/2026

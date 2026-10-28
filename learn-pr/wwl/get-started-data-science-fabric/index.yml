@@ -1,6 +1,33 @@
 ### YamlMime:Module
 uid: learn.wwl.get-started-data-science-fabric
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 46
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - fabric
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - data-scientist
+    - data-engineer
+    - data-analyst
+  gs-skills:
+    - "Data Science"
+    - "Machine Learning"
+    - "Data Management"
+    - "Data Engineering"
+    - "Data Analytics"
+    - "AI Model Evaluation & Testing"
+    - "Model Hosting & Inference"
+    - "Data Visualization"
+    - "Python (Programming Language)"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl/get-started-data-science-fabric/index.yml
   title: Get started with data science in Microsoft Fabric
   description: "Get started with data science in Microsoft Fabric by learning how to train a model in a notebook, and track your metrics with MLflow and experiments."
   ms.date: 11/25/2024

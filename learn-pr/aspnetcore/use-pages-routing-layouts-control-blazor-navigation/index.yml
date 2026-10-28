@@ -1,12 +1,30 @@
 ### YamlMime:Module
 uid: learn.use-pages-routing-layouts-improve-blazor-navigation
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 41
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+  gs-skills:
+    - "Application Development"
+    - "Application Architecture"
+    - "Database Development"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/aspnetcore/use-pages-routing-layouts-control-blazor-navigation/index.yml
   moduleType: standard
   title: Use pages, routing, and layouts to improve Blazor navigation
   description: Learn how to optimize your app's navigation, use parameters from the URL, and create reusable layouts in a Blazor web app.
   ms.date: 07/17/2025
   author: csharpfritz
-  ms.author: jefritz
+  ms.author: lumac
   manager: coxford
   ms.topic: module
   ms.service: dotnet-architecture

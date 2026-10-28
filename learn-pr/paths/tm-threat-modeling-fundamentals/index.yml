@@ -1,6 +1,30 @@
 ### YamlMime:LearningPath
 uid: learn.security.tm-threat-modeling-fundamentals
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+    - security-engineer
+    - solution-architect
+  gs-skills:
+    - "Threat Management"
+    - "Security Architecture Design"
+    - "Application Security"
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "Application Architecture"
+    - "Identity and Access Management (IAM)"
+    - "Data Security"
+    - Automation
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/tm-threat-modeling-fundamentals/index.yml
   title: Threat Modeling Security Fundamentals
   description: This learning path takes you through the four main phases of threat modeling, explains the differences between each data-flow diagram element, walks you through the threat modeling framework, recommends different tools and gives you a step-by-step guide on creating proper data-flow diagrams.
   brand: azure

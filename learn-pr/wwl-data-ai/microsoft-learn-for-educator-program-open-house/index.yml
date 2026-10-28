@@ -1,6 +1,22 @@
 ### YamlMime:Module
 uid: learn.wwl.microsoft-learn-for-educator-program-open-house
 metadata:
+  gs-content.levels: 100
+  gs-content.locale: en-us
+  gs-duration: 36
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - higher-ed-educator
+  gs-skills:
+    - "Career Development"
+  gs-solution.area: null
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/microsoft-learn-for-educator-program-open-house/index.yml
   title: Microsoft Learn for Educator Program open house
   description: "Microsoft Learn for Educators provide eligible Educators and faculty members at colleges, universities, community colleges, Polytechnics, and some STEM-focused secondary schools access to Microsoft's Ready-to-teach curriculum and teaching materials aligned to industry-recognized Microsoft Certifications."
   ms.date: 07/19/2024

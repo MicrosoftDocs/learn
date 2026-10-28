@@ -2,6 +2,24 @@
 uid: learn.dpu.passwordless-authentication
 title: Replace passwords with secure authentication methods
 metadata:
+  gs-content.levels: null
+  gs-content.locale: en-us
+  gs-duration: 29
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - windows
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - systems-administrator
+  gs-skills:
+    - "Identity and Access Management (IAM)"
+    - Cybersecurity
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/passwordless-authentication/index.yml
   title: Replace Passwords with Secure Authentication Methods
   description: 'In this module, you’ll follow an IT team as it transitions its organization to a passwordless model to strengthen and simplify security. In the process, you’ll learn about several passwordless options available to organizations running Windows and how to implement them.'
   ms.date: 06/25/2026

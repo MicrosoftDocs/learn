@@ -1,6 +1,28 @@
 ### YamlMime:Module
 uid: learn.azure.terraform-introduction-to-infrastructure-as-code
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 28
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - devops-engineer
+    - systems-administrator
+    - developer
+  gs-skills:
+    - "Infrastructure Management"
+    - "Cloud Infrastructure"
+    - DevOps
+    - Automation
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/terraform-introduction-to-infrastructure-as-code/index.yml
   moduleType: introduction
   title: Introduction to infrastructure as code using Terraform
   description: Learn the fundamentals of how Terraform can help you adopt infrastructure as code to quickly and confidently scale your cloud deployments.

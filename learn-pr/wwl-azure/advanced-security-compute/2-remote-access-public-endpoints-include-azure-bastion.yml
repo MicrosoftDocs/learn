@@ -6,7 +6,7 @@ metadata:
   description: "Plan and implement remote access to public endpoints, Azure Bastion and just-in-time (JIT) virtual machine (VM) access"
   ms.date: 06/10/2024
   author: wwlpublish
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ms.custom:
   - N/A

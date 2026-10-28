@@ -2,6 +2,28 @@
 uid: learn.improve-reliability-scaling
 title: "Improve your reliability with modern operations practices: Capacity planning and scaling"
 metadata:
+  gs-content.levels: 400
+  gs-content.locale: en-us
+  gs-duration: 32
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - solution-architect
+    - site-reliability-engineer
+  gs-skills:
+    - "Solution Architecture"
+    - "Application Architecture"
+    - "Cloud Infrastructure"
+    - "Infrastructure Management"
+    - Databases
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/advocates/improve-reliability-scaling/index.yml
   title: "Improve your reliability with modern operations practices: Capacity planning and scaling"
   description: Learn about capacity planning and scaling practices that can help you sustainably achieve the appropriate level of reliability in your systems, services, and products.
   ms.date: 04/12/2026

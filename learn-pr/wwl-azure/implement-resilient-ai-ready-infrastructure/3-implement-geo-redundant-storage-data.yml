@@ -6,7 +6,7 @@ metadata:
   description: "Implement geo-redundant storage for AI data protection."
   ms.date: 02/03/2026
   author: wwlpublish
-  ms.author: bradj
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 13
 content: |

@@ -6,7 +6,7 @@ metadata:
   description: "Create a Log Analytics workspace"
   ms.date: 10/25/2023
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 4
 content: |

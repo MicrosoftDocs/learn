@@ -6,7 +6,7 @@ metadata:
   description: "This unit explores distribution channels for HoloLens apps."
   ms.date: 06/11/2024
   author: aprilgittens
-  ms.author: tholewis
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 4
 content: |

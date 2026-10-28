@@ -6,7 +6,7 @@ metadata:
   description: Exercise - Set up and view sign-in logs and audit logs.
   ms.date: 03/01/2023
   author: softchris
-  ms.author: chnoring
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 10
 content: |

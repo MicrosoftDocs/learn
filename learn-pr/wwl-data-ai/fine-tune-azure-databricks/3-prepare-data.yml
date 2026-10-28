@@ -6,7 +6,7 @@ metadata:
   description: "Prepare your data for fine-tuning"
   ms.date: 07/09/2025
   author: theresa-i
-  ms.author: theresai
+  ms.author: lumac
   ms.topic: unit
 azureSandbox: false
 labModal: false

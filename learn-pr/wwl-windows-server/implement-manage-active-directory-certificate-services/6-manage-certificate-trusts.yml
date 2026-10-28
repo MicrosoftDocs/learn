@@ -6,7 +6,7 @@ metadata:
   description: "Manage certificate trusts"
   ms.date: 06/11/2024
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 4
 content: |

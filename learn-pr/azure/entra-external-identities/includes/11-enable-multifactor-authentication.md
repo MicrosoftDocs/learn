@@ -43,7 +43,7 @@
 ::: zone pivot="microsoft-graph-api"
 
 #### Create conditional access policy
-The following example creates a [conditional access policy](/graph/api/conditionalaccessroot-post-policies?view=graph-rest-beta&tabs=http). This policy targets all sign-ins for all users (except for the tenant's Global Administrator.) In the request below, replace the **{web-or-mobile-app-ID}** with your own web or mobile application (App ID, not object ID.) Note that you can add more applications.
+The following example creates a [conditional access policy](/graph/api/conditionalaccessroot-post-policies?view=graph-rest-beta&tabs=http&preserve-view=true). This policy targets all sign-ins for all users (except for the tenant's Global Administrator.) In the request below, replace the **{web-or-mobile-app-ID}** with your own web or mobile application (App ID, not object ID.) Note that you can add more applications.
 
 ```json
 POST https://graph.microsoft.com/v1.0/identity/conditionalAccess/policies

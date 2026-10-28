@@ -5,7 +5,7 @@ metadata:
   description: Configure subscription key management, JSON Web Token (JWT) validation, and Microsoft Entra ID token policies to control who can call APIs in Azure API Management.
   ms.date: 04/15/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 title: Configure API authentication and authorization policies

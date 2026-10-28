@@ -16,7 +16,7 @@ In this exercise, we'll build a high-level Azure Sphere application that connect
    | **Region** | The Azure region you want to use. |
    | **Pricing plan** | Select a **Standard** plan, such as **Standard 2**. |
 
-   Standard plans are billed on a per-device basis. They include two free devices plus a plan-specific monthly message allocation (S0: 400 messages/device/month; S1: 5,000; S2: 30,000); extra devices and usage beyond the included message allocation can affect charges. See [Azure IoT Central pricing](https://azure.microsoft.com/pricing/details/iot-central/?azure-portal=true) for current rates and the [Create an IoT Central application](https://learn.microsoft.com/azure/iot-central/core/howto-create-iot-central-application?azure-portal=true) article for details on the available plans.
+   Standard plans are billed on a per-device basis. They include two free devices plus a plan-specific monthly message allocation (S0: 400 messages/device/month; S1: 5,000; S2: 30,000); extra devices and usage beyond the included message allocation can affect charges. See [Azure IoT Central pricing](https://azure.microsoft.com/pricing/details/iot-central/?azure-portal=true) for current rates and the [Create an IoT Central application](/azure/iot-central/core/howto-create-iot-central-application?azure-portal=true) article for details on the available plans.
 1. Select **Review + create**, then select **Create**.
 1. When the application is ready, open it from the Azure portal by selecting the application URL.
 

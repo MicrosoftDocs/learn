@@ -6,7 +6,7 @@ metadata:
   description: "Learn how to navigate the Microsoft Entra admin center to view, search, filter, and manage agent identities and blueprints."
   ms.date: 02/09/2026
   author: wwlpublish
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 12
 content: |

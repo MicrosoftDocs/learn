@@ -1,6 +1,31 @@
 ### YamlMime:Module
 uid: learn.wwl.create-configure-azure-documentdb-cluster
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 57
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - entra
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - database-administrator
+    - developer
+    - administrator
+  gs-skills:
+    - Databases
+    - "Cloud Administration"
+    - "Cloud Infrastructure"
+    - "Data Security"
+    - Storage
+    - "Identity and Access Management (IAM)"
+    - "Network Connectivity"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/create-configure-azure-documentdb-cluster/index.yml
   title: Create and Configure an Azure DocumentDB Cluster
   description: "Learn how to provision an Azure DocumentDB cluster, connect with MongoDB tools, and configure compute, storage, and security settings."
   ms.date: 06/20/2026

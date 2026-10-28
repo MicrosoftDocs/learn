@@ -1,11 +1,42 @@
 ### YamlMime:LearningPath
 uid: learn-wwl.work-with-data-warehouses-using-microsoft-fabric
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - fabric
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - data-analyst
+    - data-engineer
+  gs-skills:
+    - "Data Analytics"
+    - "Data Engineering"
+    - "Data Management"
+    - "AI Fluency"
+    - "Data Warehousing"
+    - "Database Design"
+    - SQL
+    - "Database Development"
+    - "Data Administration"
+    - "Data Security"
+    - "Data Visualization"
+    - "Solution Architecture"
+    - "Security Analytics"
+    - "AI-Augmented Software Development"
+    - "AI Prompting"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/work-with-data-warehouses-using-microsoft-fabric/index.yml
   title: Implement a data warehouse with Microsoft Fabric
   description: Explore the data warehousing process and learn how to load, monitor, secure, and query a warehouse in Microsoft Fabric.
   ms.date: 06/12/2026
   author: theresa-i
-  ms.author: theresai
+  ms.author: lumac
   ms.topic: learning-path
 title: Implement a data warehouse with Microsoft Fabric
 prerequisites: |

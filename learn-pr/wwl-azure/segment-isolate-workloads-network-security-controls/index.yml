@@ -1,11 +1,33 @@
 ### YamlMime:Module
 uid: learn.wwl.segment-isolate-workloads-network-security-controls
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 53
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - network-engineer
+    - security-engineer
+    - systems-administrator
+  gs-skills:
+    - "IT Networking"
+    - "Security Architecture Design"
+    - Cybersecurity
+    - "Cloud Infrastructure"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/segment-isolate-workloads-network-security-controls/index.yml
   title: Segment and Isolate Azure Workloads Using Network Security Controls
   description: "Segment Azure workloads to control lateral movement and enforce least-privilege network access. Design and configure Network Security Group (NSG) and Application Security Group (ASG) rules with a security-first approach, enforce organization-wide policies using Azure Virtual Network Manager, and verify effective security posture using Network Watcher diagnostics."
   ms.date: 05/10/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: module
   ms.service: azure-virtual-network
   ai-usage: ai-generated

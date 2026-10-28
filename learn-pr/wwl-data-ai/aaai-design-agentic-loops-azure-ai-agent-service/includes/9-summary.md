@@ -33,6 +33,6 @@ The patterns you implemented support Contoso Capital's production multi-agent pl
 
 ## Learn more
 
-- [Microsoft Foundry Agent Service documentation](https://learn.microsoft.com/azure/foundry/agents/overview)
+- [Microsoft Foundry Agent Service documentation](/azure/foundry/agents/overview)
 
 ::: zone-end

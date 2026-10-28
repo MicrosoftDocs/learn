@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.use-docker-container-dev-env-vs-code
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 34
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+    - devops-engineer
+  gs-skills:
+    - "Application Development"
+    - Virtualization
+    - Automation
+    - DevOps
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/use-docker-container-dev-env-vs-code/index.yml
   title: Use a Docker container as a development environment with Visual Studio Code
   description: Create and configure a full-featured container-based development environment with the Visual Studio Code Dev Containers extension. Open any folder or repository in a container and take advantage of the full feature set of Visual Studio Code, like IntelliSense (completions), code navigation, and debugging.
   ms.date: 04/28/2023

@@ -6,7 +6,7 @@ metadata:
   description: Try polynomial regression models.
   ms.date: 05/15/2020
   author: softchris
-  ms.author: chnoring
+  ms.author: lumac
   ms.topic: unit
   ms.custom: team=nextgen
   show_latex: true

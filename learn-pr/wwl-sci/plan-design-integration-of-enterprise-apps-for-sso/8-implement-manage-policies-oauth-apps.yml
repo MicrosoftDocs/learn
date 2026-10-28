@@ -6,7 +6,7 @@ metadata:
   description: "Implement and manage policies for OAuth apps"
   ms.date: 04/21/2025
   author: wwlpublish
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ms.custom:
   - N/A

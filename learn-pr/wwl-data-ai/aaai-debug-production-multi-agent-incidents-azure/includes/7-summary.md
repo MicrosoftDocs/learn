@@ -12,7 +12,7 @@ These practices compound over time, though the improvement is earned rather than
 
 ## Learn more
 
-- [Azure Automation runbook documentation](https://learn.microsoft.com/azure/automation/automation-runbook-types)
-- [Azure Durable Functions for complex orchestration workflows](https://learn.microsoft.com/azure/azure-functions/durable/durable-functions-overview)
-- [OpenTelemetry distributed tracing best practices](https://learn.microsoft.com/azure/azure-monitor/app/opentelemetry-enable)
-- [Microsoft Site Reliability Engineering resources](https://learn.microsoft.com/azure/site-reliability-engineering/)
+- [Azure Automation runbook documentation](/azure/automation/automation-runbook-types)
+- [Azure Durable Functions for complex orchestration workflows](/azure/azure-functions/durable/durable-functions-overview)
+- [OpenTelemetry distributed tracing best practices](/azure/azure-monitor/app/opentelemetry-enable)
+- [Microsoft Site Reliability Engineering resources](/azure/site-reliability-engineering/)

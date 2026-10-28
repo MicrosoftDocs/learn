@@ -1,6 +1,34 @@
 ### YamlMime:LearningPath
 uid: learn.build-community-driven-projects-github
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - github
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - devops-engineer
+    - developer
+  gs-skills:
+    - DevOps
+    - "Collaboration Tools"
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "Data Migration"
+    - "Data Security"
+    - "Infrastructure Management"
+    - "Application Security"
+    - "Security Automation"
+    - "Application Development"
+    - "Communications Management"
+    - "Organizational Culture"
+    - "IT Strategy"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/build-community-driven-projects-github/index.yml
   title: Build community-driven software projects on GitHub
   description: Learn how GitHub enables you to build communities that foster communication and collaboration while reinforcing recommended guidelines, codes of conduct, and security best practices.
   brand: github

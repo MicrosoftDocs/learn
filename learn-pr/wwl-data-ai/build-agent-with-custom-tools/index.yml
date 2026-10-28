@@ -1,6 +1,30 @@
 ### YamlMime:Module
 uid: learn.wwl.build-agent-with-custom-tools
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 53
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - microsoft-foundry
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - ai-engineer
+    - developer
+    - solution-architect
+  gs-skills:
+    - "Agentic AI"
+    - "Application Development"
+    - "AI-Powered Workflow Automation"
+    - Automation
+    - "AI Infrastructure"
+  gs-solution.area: "AI Business Solutions"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/build-agent-with-custom-tools/index.yml
   title: Integrate custom tools into your agent
   description: Learn how to build an agent with custom tools using the Microsoft Foundry Agent Service.
   ms.date: 10/16/2026

@@ -6,7 +6,7 @@ metadata:
   description: "Learn how to configure secure AI infrastructure in Azure using role-based access control and Azure Policy for enhanced governance and security."
   ms.date: 02/09/2026
   author: wwlpublish
-  ms.author: bradj
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 12
 content: |

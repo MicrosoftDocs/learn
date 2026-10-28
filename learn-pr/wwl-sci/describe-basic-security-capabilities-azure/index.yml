@@ -1,11 +1,31 @@
 ### YamlMime:Module
 uid: learn.wwl.describe-basic-security-capabilities-azure
 metadata:
+  gs-content.levels: 100
+  gs-content.locale: en-us
+  gs-duration: 29
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - security-professional
+    - security-engineer
+  gs-skills:
+    - Cybersecurity
+    - "Cloud Infrastructure"
+    - "IT Networking"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/describe-basic-security-capabilities-azure/index.yml
   title: Describe Core Infrastructure Security Services in Azure
   description: "Describe core infrastructure security services in Azure."
   ms.date: 06/12/2026
   author: wwlpublish
-  ms.author: ceperezb
+  ms.author: lumac
   ai-usage: ai-assisted
   ms.topic: module
   ms.service: security

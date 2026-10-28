@@ -1,6 +1,29 @@
 ### YamlMime:Module
 uid: learn.save-money-with-azure-reserved-instances
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 34
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+    - power-bi
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - systems-administrator
+    - finance
+    - data-analyst
+  gs-skills:
+    - "Cloud Administration"
+    - "Business Insights"
+    - "Data Analytics"
+    - "Data Visualization"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/save-money-with-azure-reserved-instances/index.yml
   title: Save money with Azure Reserved Instances
   description: Learn how to save money by taking advantage of Azure Reserved Instances.
   ms.date: 10/24/2024

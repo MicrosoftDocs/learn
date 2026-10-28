@@ -1,6 +1,32 @@
 ### YamlMime:Module
 uid: learn.wwl.purview-data-security-posture-management-investigate-risks
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 31
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - microsoft-purview
+    - m365
+    - microsoft-defender
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - ip-admin
+    - security-operations-analyst
+    - risk-practitioner
+  gs-skills:
+    - "Data Security"
+    - "Security Analytics"
+    - "Security Operations Management"
+    - "AI Risk Management"
+    - "Agentic AI"
+    - "Threat Management"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/purview-data-security-posture-management-investigate-risks/index.yml
   title: Investigate Data Security Risks with Microsoft Purview Data Security Posture Management
   description: "Investigate data security risks by using Purview Data Security Posture Management (DSPM) to analyze activity signals, identify risky user and AI agent behavior, and use Security Copilot to prioritize the most critical data security events."
   ms.date: 04/30/2026

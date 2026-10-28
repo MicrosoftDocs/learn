@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.wwl.what-is-artificial-intelligence
 metadata:
+  gs-content.levels: 100
+  gs-content.locale: en-us
+  gs-duration: 16
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - business-user
+  gs-skills:
+    - "AI Fluency"
+    - "AI Productivity"
+    - "AI Prompting"
+    - "Responsible AI"
+  gs-solution.area: "AI Business Solutions"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl/what-is-artificial-intelligence/index.yml
   title: "What Is Artificial Intelligence"
   description: "Learn what artificial intelligence is, how it works, and how tools like Microsoft Copilot can help with everyday tasks and decision-making."
   ms.date: 09/17/2026

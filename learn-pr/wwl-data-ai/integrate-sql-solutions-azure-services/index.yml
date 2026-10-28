@@ -1,6 +1,30 @@
 ### YamlMime:Module
 uid: learn.integrate-sql-solutions-azure-services
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 105
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+    - database-administrator
+    - data-engineer
+    - devops-engineer
+  gs-skills:
+    - "API Management"
+    - "Database Development"
+    - SQL
+    - DevOps
+    - "Cloud Infrastructure"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/integrate-sql-solutions-azure-services/index.yml
   title: Integrate SQL Solutions With Azure Services
   description: Learn how to use Data API Builder to create REST and GraphQL APIs for SQL databases, deploy to Azure, configure monitoring, and implement event-driven patterns for change handling.
   ms.date: 7/14/2026

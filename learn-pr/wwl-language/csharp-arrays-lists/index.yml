@@ -1,6 +1,22 @@
 ### YamlMime:Module
 uid: learn.languages.csharp-arrays-lists
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 51
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+  gs-skills:
+    - "Application Development"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-language/csharp-arrays-lists/index.yml
   title: Organize data with arrays and lists in C#
   description: "Learn how to store and manage groups of related data in C# using arrays and `List<T>`, and choose the right structure for the job."
   ms.date: 09/23/2026

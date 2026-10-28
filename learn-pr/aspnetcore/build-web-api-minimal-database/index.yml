@@ -1,11 +1,28 @@
 ### YamlMime:Module
 uid: learn.aspnetcore.build-web-api-minimal-database
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 35
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+  gs-skills:
+    - "Application Development"
+    - "Database Development"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/aspnetcore/build-web-api-minimal-database/index.yml
   title: Use a database with minimal API, Entity Framework Core, and ASP.NET Core
   description: Learn how to add a database to a minimal API application.
   ms.date: 02/01/2023
   author: CamSoper
-  ms.author: casoper
+  ms.author: lumac
   manager: coxford
   ms.custom: team=nextgen
   ms.topic: module-standard-task-based

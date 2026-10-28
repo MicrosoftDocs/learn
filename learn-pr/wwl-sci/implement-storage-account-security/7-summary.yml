@@ -5,7 +5,7 @@ metadata:
   description: Summary of implementing security and managing access for Azure Storage. Topics include account hardening, authorization model selection, stored access policies, and Azure Policy enforcement for Shared Key prevention.
   ms.date: 04/22/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 title: Summary

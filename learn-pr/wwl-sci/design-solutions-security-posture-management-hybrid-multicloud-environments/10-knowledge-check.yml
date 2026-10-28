@@ -6,7 +6,7 @@ metadata:
   description: "Knowledge check for the module on the topic: design solutions for security posture management in hybrid and multicloud environments."
   ms.date: 06/03/2026
   author: ceperezb
-  ms.author: ceperezb
+  ms.author: lumac
   ms.topic: unit
   module_assessment: true
 durationInMinutes: 5

@@ -21,7 +21,7 @@ However, the capacity pool should have the requested new capacity by volume unde
 
 ### Resize the capacity pool or a volume by using Azure CLI
 
-You can use the following commands of [Azure command-line tools](https://learn.microsoft.com/azure/azure-netapp-files/azure-netapp-files-sdk-cli) to resize a capacity pool or a volume:
+You can use the following commands of [Azure command-line tools](/azure/azure-netapp-files/azure-netapp-files-sdk-cli) to resize a capacity pool or a volume:
 
 - `az netappfiles pool`
 - `az netappfiles volume` (use the `--usage-threshold` parameter)

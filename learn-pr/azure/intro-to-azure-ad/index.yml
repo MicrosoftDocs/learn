@@ -1,6 +1,27 @@
 ### YamlMime:Module
 uid: learn.intro-to-azure-ad
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 27
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - entra
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - identity-access-admin
+    - security-engineer
+    - solution-architect
+  gs-skills:
+    - "Identity and Access Management (IAM)"
+    - "Security Architecture Design"
+    - "Security Operations Management"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/intro-to-azure-ad/index.yml
   title: Secure Your Identities by Using Microsoft Entra ID
   description: Use Microsoft Entra ID and Microsoft Entra External ID to secure employee, guest, and customer access to applications.
   ms.date: 10/18/2026

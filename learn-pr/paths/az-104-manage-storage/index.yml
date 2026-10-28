@@ -1,6 +1,30 @@
 ### YamlMime:LearningPath
 uid: learn.az-104-manage-storage
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - systems-administrator
+  gs-skills:
+    - "Cloud Administration"
+    - "Cloud Infrastructure"
+    - "Network Connectivity"
+    - "Solution Architecture"
+    - "Data Management"
+    - Storage
+    - Cybersecurity
+    - "Identity and Access Management (IAM)"
+    - "Application Security"
+    - "Security Analytics"
+  gs-solution.area: null
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/az-104-manage-storage/index.yml
   title: 'AZ-104: Implement and manage storage in Azure'
   description: 'AZ-104: Implement and manage storage in Azure'
   ms.date: 06/23/2026

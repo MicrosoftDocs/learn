@@ -6,7 +6,7 @@ metadata:
   description: "Assess your understanding of implementing and configuring Privileged Identity Management (PIM)."
   ms.date: 03/18/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   module_assessment: true
   ai_generated_module_assessment: false

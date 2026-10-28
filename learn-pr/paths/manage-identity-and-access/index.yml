@@ -1,12 +1,33 @@
 ### YamlMime:LearningPath
 uid: learn.security.manage-identity-and-access
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - entra
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - systems-administrator
+    - security-engineer
+  gs-skills:
+    - "Identity and Access Management (IAM)"
+    - "Cloud Administration"
+    - Cybersecurity
+    - "Security Architecture Design"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/manage-identity-and-access/index.yml
   title: Manage identity and access in Microsoft Entra ID
   description: Learn how to work with subscriptions, users, and groups by configuring Microsoft Entra ID for workloads.
   brand: azure
   ms.date: 10/1/2019
   author: barclayn
-  ms.author: barclayn
+  ms.author: lumac
   ms.topic: learning-path
 title: Manage identity and access in Microsoft Entra ID
 summary: |

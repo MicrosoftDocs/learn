@@ -6,6 +6,6 @@ When you integrate responsible AI principles into the lifecycle of LLMs, you can
 
 **Explore other reading materials:**
 
-- [Responsible AI Principles from Microsoft](/azure/machine-learning/concept-responsible-ai?view=azureml-api-2&azure-portal=true)
+- [Responsible AI Principles from Microsoft](/azure/machine-learning/concept-responsible-ai?view=azureml-api-2&azure-portal=true&preserve-view=true)
 - [Large Language Models on Azure Databricks](/azure/databricks/large-language-models/?azure-portal=true)
 - [Responsible AI in practice](/azure/machine-learning/concept-responsible-ai?azure-portal=true)

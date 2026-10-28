@@ -6,7 +6,7 @@ metadata:
   description: "Learn how centralized governance with Microsoft Foundry ensures compliance, cost control, and security for AI workloads in your organization."
   ms.date: 02/02/2026
   author: wwlpublish
-  ms.author: bradj
+  ms.author: lumac
   ms.topic: unit
   ms.custom: references_regions
 durationInMinutes: 3

@@ -1,6 +1,24 @@
 ### YamlMime:Module
 uid: learn.enable-windows-server-extended-security-updates-using-azure-arc
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 24
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - systems-administrator
+  gs-skills:
+    - "Infrastructure Management"
+    - "Cloud Administration"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/advocates/azure-arc-esu-windows-server/index.yml
   ms.author: orthomas
   author: Orin-Thomas
   ms.date: 07/25/2026

@@ -1,11 +1,37 @@
 ### YamlMime:Module
 uid: learn.wwl.describe-security-management-capabilities-of-azure
 metadata:
+  gs-content.levels: 100
+  gs-content.locale: en-us
+  gs-duration: 29
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - defender-for-cloud
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - security-engineer
+    - solution-architect
+    - administrator
+    - security-professional
+  gs-skills:
+    - "Cloud Administration"
+    - Cybersecurity
+    - "Security Architecture Design"
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "Threat Management"
+    - "AI Security (Model-Level)"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/describe-security-management-capabilities-of-azure/index.yml
   title: Describe the Security Management Capabilities in Azure
   description: Describe the security management capabilities in Azure.
   ms.date: 06/11/2026
   author: wwlpublish
-  ms.author: ceperezb
+  ms.author: lumac
   ms.topic: module
   ai-usage: ai-assisted
   ms:service: security

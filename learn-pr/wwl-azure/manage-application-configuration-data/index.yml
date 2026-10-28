@@ -1,6 +1,28 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-application-configuration-data
 metadata:
+  gs-content.levels: 400
+  gs-content.locale: en-us
+  gs-duration: 140
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+    - azure-devops
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - devops-engineer
+    - developer
+  gs-skills:
+    - DevOps
+    - "Application Architecture"
+    - "Data Security"
+    - Automation
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/manage-application-configuration-data/index.yml
   title: Manage Application Configuration Data
   description: "Learn externalized configuration patterns, Azure App Configuration implementation, Key Vault integration, and feature flag management for secure, dynamic application settings"
   ms.date: 10/24/2025

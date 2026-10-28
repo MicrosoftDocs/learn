@@ -6,7 +6,7 @@ metadata:
   description: "Learn how to implement row-level security to control which rows users can access in a Microsoft Fabric data warehouse."
   ms.date: 06/11/2026
   author: theresa-i
-  ms.author: theresai
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 5
 content: |

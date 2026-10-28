@@ -5,7 +5,7 @@ metadata:
   description: Apply ingress controls, managed identities, secrets management, and Dapr mTLS for Azure Container Apps environments.
   ms.date: 04/15/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 title: Implement security controls for Azure Container Apps

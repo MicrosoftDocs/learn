@@ -6,7 +6,7 @@ metadata:
   description: "Assess the attack surface created by public PaaS endpoints, compare service endpoints and private endpoints, and understand data exfiltration scenarios that public endpoints enable."
   ms.date: 04/22/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 8
 content: |

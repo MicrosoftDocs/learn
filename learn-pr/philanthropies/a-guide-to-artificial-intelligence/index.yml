@@ -2,10 +2,30 @@
 uid: learn.philanthropies.a-guide-to-artifical-intelligence
 
 metadata:
+  gs-content.levels: 100
+  gs-content.locale: en-us
+  gs-duration: 33
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - k-12-educator
+    - higher-ed-educator
+    - business-user
+    - student
+  gs-skills:
+    - "Machine Learning"
+    - "Data Science"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/philanthropies/a-guide-to-artificial-intelligence/index.yml
   title: A guide to artificial intelligence
   description: This module explores fundamental concepts in artificial intelligence (AI) and machine learning.
   author: yoosunee
-  ms.author: anruss
+  ms.author: lumac
   ms.date: 01/14/2025
   ms.update-cycle: 180-days
   ms.service: artificial-intelligence

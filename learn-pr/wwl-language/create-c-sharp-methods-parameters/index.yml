@@ -1,6 +1,23 @@
 ### YamlMime:Module
 uid: learn.wwl.create-c-sharp-methods-parameters
 metadata:
+  gs-content.levels: 100
+  gs-content.locale: en-us
+  gs-duration: 52
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+    - student
+  gs-skills:
+    - "Application Development"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-language/create-c-sharp-methods-parameters/index.yml
   title: Create C# methods with parameters
   description: "This module covers method parameters, including pass-by-reference and pass-by-value parameter types. This module also covers optional and named arguments."
   ms.date: 06/07/2024

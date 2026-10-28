@@ -6,7 +6,7 @@ metadata:
   description: "Integrate Microsoft Entra ID with SAP HANA"
   ms.date: 01/10/2024
   author: wwlpublish
-  ms.author: eric
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 10
 content: |

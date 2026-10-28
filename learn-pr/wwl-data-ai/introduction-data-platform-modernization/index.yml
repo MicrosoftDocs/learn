@@ -1,6 +1,31 @@
 ### YamlMime:Module
 uid: learn.wwl.introduction-data-platform-modernization
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 32
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - database-administrator
+    - solution-architect
+    - data-engineer
+    - technology-manager
+  gs-skills:
+    - "Data Migration"
+    - "Data Strategies"
+    - "Solution Architecture"
+    - "Data Administration"
+    - Databases
+    - "Cloud Computing"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/introduction-data-platform-modernization/index.yml
   title: Design a SQL Server migration strategy
   description: Design a SQL Server migration strategy
   ms.date: 07/23/2026

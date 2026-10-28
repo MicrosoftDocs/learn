@@ -1,6 +1,30 @@
 ### YamlMime:Module
 uid: learn.wwl.design-implement-intelligent-search-with-sql
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 84
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+    - data-engineer
+    - ai-engineer
+  gs-skills:
+    - "Semantic Search"
+    - "Vector Databases"
+    - "Database Development"
+    - SQL
+    - "Database Design"
+    - "AI Model Evaluation & Testing"
+    - "Natural Language Processing (NLP)"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/design-implement-intelligent-search-with-sql/index.yml
   title: Design and Implement Intelligent Search With SQL
   description: Implement intelligent search capabilities in SQL Server and Azure SQL by combining traditional full-text search with semantic vector search. Learn to choose search approaches, prepare SQL for vector search, and implement vector, hybrid, and ranking-based search patterns.
   ms.date: 07/17/2026

@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.wwl.guided-project-monitor-service-health-activity-alerts
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 36
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - systems-administrator
+  gs-skills:
+    - "Cloud Administration"
+    - "Cloud Infrastructure"
+    - "Security Analytics"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/guided-project-monitor-service-health-activity-alerts/index.yml
   title: 'Guided Project: Monitor Azure with Service Health and Activity Log alerts'
   description: "Set up proactive monitoring with Service Health alerts and Activity Log alerts without paid compute resources."
   ms.date: 03/25/2026

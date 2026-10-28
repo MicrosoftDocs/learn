@@ -1,12 +1,31 @@
 ### YamlMime:Module
 uid: learn.improve-sign-in-security-authenticator
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 41
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - entra
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - identity-access-admin
+    - security-engineer
+  gs-skills:
+    - "Identity and Access Management (IAM)"
+    - Cybersecurity
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/improve-sign-in-security-authenticator/index.yml
   moduleType: standard
   title: Improve sign-in security with Microsoft Authenticator
   description: "Improve Microsoft Entra sign-in security by running a registration campaign to nudge users to set up Microsoft Authenticator push notifications as their default sign-in method."
   ms.date: 02/29/2024
   author: Justinha
-  ms.author: Justinha
+  ms.author: lumac
   ms.topic: module
   ms.service: azure
 title: Improve sign-in security with Microsoft Authenticator

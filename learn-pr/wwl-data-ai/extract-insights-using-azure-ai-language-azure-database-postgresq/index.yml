@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.wwl.extract-insights-using-azure-ai-language-azure-database-postgresql
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 22
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - microsoft-foundry
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+    - ai-engineer
+  gs-skills:
+    - "Natural Language Processing (NLP)"
+    - "Data Analytics"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/extract-insights-using-azure-ai-language-azure-database-postgresq/index.yml
   title: Extract insights using Azure Language and Azure Database for PostgreSQL
   description: Learn to extract insights using Azure Language and Azure Database for PostgreSQL.
   author: wwlpublish

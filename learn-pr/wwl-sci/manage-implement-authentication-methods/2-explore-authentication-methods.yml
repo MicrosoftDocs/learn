@@ -6,7 +6,7 @@ metadata:
   description: Explore the spectrum of Microsoft Entra ID authentication methods, from password-based to passwordless, and understand authentication strength and security hierarchy.
   ms.date: 03/04/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 durationInMinutes: 5

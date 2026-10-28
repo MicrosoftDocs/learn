@@ -6,7 +6,7 @@ metadata:
   description: "Use Security Copilot to investigate security incidents, analyze artifacts, and perform advanced investigation in Microsoft Defender XDR."
   ms.date: 04/28/2026
   author: ceperezb
-  ms.author: ceperezb
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 22
 content: |

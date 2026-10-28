@@ -1,6 +1,23 @@
 ### YamlMime:Module
 uid: learn.azure-well-architected-introduction
 metadata:
+  gs-content.levels: 100
+  gs-content.locale: en-us
+  gs-duration: 14
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - solution-architect
+  gs-skills:
+    - "Solution Architecture"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/azure-well-architected-introduction/index.yml
   adobe-target: true
   prefetch-feature-rollout: true
   title: Introduction to the Microsoft Azure Well-Architected Framework

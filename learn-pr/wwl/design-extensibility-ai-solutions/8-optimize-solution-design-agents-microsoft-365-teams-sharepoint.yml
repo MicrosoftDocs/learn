@@ -6,7 +6,7 @@ metadata:
   description: "Learn to design and optimize Microsoft 365 agents for Teams and SharePoint. Ensure reliability, governance, and business value in your solutions."
   ms.date: 02/13/2026
   author: pablorodMS
-  ms.author: taeldin
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 6
 content: |

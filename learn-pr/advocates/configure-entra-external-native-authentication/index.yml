@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.intro-entra-external-native-auth
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 57
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - entra
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+    - identity-access-admin
+  gs-skills:
+    - "Application Development"
+    - "Identity and Access Management (IAM)"
+    - "Application Security"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/advocates/configure-entra-external-native-authentication/index.yml
   ms.author: orthomas
   author: S2FrdQ
   ms.date: 07/25/2026

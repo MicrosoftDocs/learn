@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.azure.manage-nfs-volumes
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 66
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - storage-admin
+    - systems-administrator
+  gs-skills:
+    - Storage
+    - "Identity and Access Management (IAM)"
+    - "Cloud Administration"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/manage-nfs-volumes-azure-netapp-files/index.yml
   title: Manage NFS volumes in Azure NetApp Files
   description: Learn how to create and manage NFS volumes. Learn to configure NFSv4.1 ID domain and Kerberos, enable Active Directory Domain Services and LDAP authentication for NFS volumes. Also, understand how to convert NFS volumes between supported versions.
   ms.date: 05/12/2026

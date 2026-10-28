@@ -3,6 +3,29 @@ uid: learn.hololens-fundamentals
 title: HoloLens Fundamentals
 summary: Learn the fundamentals of HoloLens device management, deployment, and app distribution.
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - technology-manager
+  gs-skills:
+    - "Collaboration Tools"
+    - "IT Strategy"
+    - "Device Management"
+    - "Network Connectivity"
+    - "Identity and Access Management (IAM)"
+    - Cybersecurity
+    - "Application Development"
+    - DevOps
+    - "Application Security"
+  gs-solution.area: null
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/hololens-fundamentals/index.yml
   title: HoloLens Fundamentals
   description: Learn the fundamentals of HoloLens device management, deployment, and app distribution.
   ms.date: 07/26/2023

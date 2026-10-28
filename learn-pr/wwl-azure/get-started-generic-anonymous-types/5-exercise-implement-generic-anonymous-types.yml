@@ -6,7 +6,7 @@ metadata:
   description: "Practice creating generics, advanced generics, and anonymous types in C# to write flexible, reusable, and efficient code."
   ms.date: 04/03/2025
   author: wwlpublish
-  ms.author: eric
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 25
 content: |

@@ -1,6 +1,27 @@
 ### YamlMime:Module
 uid: learn.languages.dotnet-microservices
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 28
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+    - solution-architect
+  gs-skills:
+    - "Application Development"
+    - "Application Architecture"
+    - "Cloud Computing"
+    - "Cloud Infrastructure"
+    - DevOps
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/language/dotnet-microservices/index.yml
   title: Build your first microservice with .NET
   description: Microservice applications are composed of small, independently versioned, and scalable customer-focused services that communicate with each other by using standard protocols and well-defined interfaces. Each microservice typically encapsulates simple business logic, which you can scale out or in. You test, deploy, and manage the microservice independently. Smaller teams develop a microservice based on a customer scenario, and choose the technologies that they use. This module teaches you how to build your first microservice by using .NET.
   ms.date: 10/23/2024

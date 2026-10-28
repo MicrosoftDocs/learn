@@ -1,11 +1,31 @@
 ### YamlMime:Module
 uid: learn.oxford.industrial-iot-connectivity
 metadata:
+  gs-content.levels: 100
+  gs-content.locale: en-us
+  gs-duration: 35
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - network-engineer
+    - security-engineer
+  gs-skills:
+    - "Network Connectivity"
+    - "IT Networking"
+    - Cybersecurity
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/student-evangelism/intro-azure-sphere-iiot-connectivity-methods/index.yml
   title: "Introduction to Azure Sphere for industrial IoT connectivity"
   description: "This module introduces Azure Sphere connectivity methods"
   ms.date: 06/11/2021
   author: leestott
-  ms.author: chnoring
+  ms.author: lumac
   ms.topic: module
   ms.custom: team=nextgen
   ms.service: azure-sphere

@@ -2,6 +2,27 @@
 uid: learn.dpu.stay-current-with-windows
 title: Stay current with Windows devices and Microsoft 365 Apps
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - windows
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - it-professional
+  gs-skills:
+    - "Device Management"
+    - "Cloud Administration"
+    - "Infrastructure Management"
+    - "Identity and Access Management (IAM)"
+    - "Communications Management"
+    - "Governance, Risk Management, and Compliance (GRC)"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/stay-current-with-windows/index.yml
   title: Stay Current With Windows Devices And Microsoft 365 Apps
   description: Learn how to plan, prepare for, and deploy Windows and Microsoft 365 Apps. 
   ms.date: 04/18/2026

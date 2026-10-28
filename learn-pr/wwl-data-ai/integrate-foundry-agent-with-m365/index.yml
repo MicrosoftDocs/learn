@@ -1,6 +1,29 @@
 ### YamlMime:Module
 uid: learn.wwl.integrate-foundry-agent-with-m365
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 74
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - microsoft-foundry
+    - office-teams
+    - microsoft-365-copilot
+    - m365
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - ai-engineer
+  gs-skills:
+    - "Agent Development"
+    - "Agent Operations"
+    - "Knowledge Grounding for AI"
+    - "Identity and Access Management (IAM)"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/integrate-foundry-agent-with-m365/index.yml
   title: Integrate your agent with Microsoft 365
   description: Learn how to publish Microsoft Foundry agents to Microsoft Teams and Microsoft 365 Copilot, access workplace data with Work IQ, and test your integrated agents.
   author: ivorb

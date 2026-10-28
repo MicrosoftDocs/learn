@@ -6,7 +6,7 @@ metadata:
   description: "Enable Defender for open-source relational databases to protect Azure Database for PostgreSQL, MySQL, and MariaDB, and understand the coverage boundaries and limitations of this plan."
   ms.date: 04/22/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-generated
 durationInMinutes: 3

@@ -2,6 +2,25 @@
 uid: learn.dpu.surface-portal-service-support
 title: Creating service orders and support requests in Surface portals
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 8
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - surface
+    - intune
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - support-engineer
+    - systems-administrator
+  gs-skills:
+    - "Device Management"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/surface-portal-service-support/index.yml
   title: Creating Service Orders And Support Requests In Surface Portals
   description: 'In this module, you''ll learn how to create service orders and support requests in Surface portals. You''ll understand the different types of service orders and support requests, how to create them in the Surface Partner Portal and Surface Support Portal, and how to track their status and updates.'
   ms.date: 04/22/2026

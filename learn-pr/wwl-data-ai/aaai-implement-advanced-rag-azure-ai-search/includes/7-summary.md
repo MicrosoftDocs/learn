@@ -22,4 +22,4 @@ When you implement production RAG pipelines, these are the trade-offs that shape
 
 ## Learn more
 
-- [Azure AI Search](https://learn.microsoft.com/azure/search/)
+- [Azure AI Search](/azure/search/)

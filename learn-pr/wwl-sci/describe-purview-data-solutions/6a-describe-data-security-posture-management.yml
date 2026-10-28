@@ -6,7 +6,7 @@ metadata:
   description: "Describe Data Security Posture Management in Microsoft Purview."
   ms.date: 06/22/2026
   author: wwlpublish
-  ms.author: ceperezb
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 10
 content: |

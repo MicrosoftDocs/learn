@@ -1,11 +1,34 @@
 ### YamlMime:Module
 uid: learn.wwl.investigate-threats-using-audit-in-microsoft-365-defender-microsoft-purview-standard
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 55
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - microsoft-purview
+    - m365
+    - microsoft-defender
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - security-operations-analyst
+  gs-skills:
+    - "Security Analytics"
+    - "Threat Management"
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "Data Analytics"
+    - "Security Operations Management"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/investigate-threats-using-audit-in-microsoft-365-defender-microsoft-purview-standard/index.yml
   title: Investigate threats by using audit features in Microsoft Defender XDR and Microsoft Purview Standard
   description: "Use the Microsoft Purview Universal Audit Log (UAL) to investigate threats"
   ms.date: 09/12/2024
   author: wwlpublish
-  ms.author: kelawson
+  ms.author: lumac
   ms.topic: module
   ms.service: purview
   ms.subservice: purview-audit

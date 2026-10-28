@@ -1,6 +1,27 @@
 ### YamlMime:Module
 uid: learn.azure.troubleshoot-azure-netapp-files
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 59
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - systems-administrator
+  gs-skills:
+    - Storage
+    - "Cloud Administration"
+    - "Infrastructure Management"
+    - "Identity and Access Management (IAM)"
+    - "Network Connectivity"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/troubleshoot-azure-netapp-files/index.yml
   title: Troubleshoot Azure NetApp Files
   description: Learn to use the Diagnose and solve problems tool to troubleshoot issues of Azure NetApp Files, and learn resolutions to issues you might have when managing Azure NetApp Files resources.
   ms.date: 07/24/2026

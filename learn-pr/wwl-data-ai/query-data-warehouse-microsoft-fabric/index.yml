@@ -1,11 +1,29 @@
 ### YamlMime:Module
 uid: learn-wwl.query-data-warehouse-microsoft-fabric
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 67
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - fabric
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - data-analyst
+  gs-skills:
+    - "Data Warehousing"
+    - SQL
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/query-data-warehouse-microsoft-fabric/index.yml
   title: Query a data warehouse in Microsoft Fabric
   description: Learn to query a Microsoft Fabric data warehouse using the SQL query editor, visual query editor, and SQL Server Management Studio.
   ms.date: 05/08/2026
   author: theresa-i
-  ms.author: theresai
+  ms.author: lumac
   ms.topic: module-standard-task-based
   ms.service: fabric
   ai-usage: ai-assisted

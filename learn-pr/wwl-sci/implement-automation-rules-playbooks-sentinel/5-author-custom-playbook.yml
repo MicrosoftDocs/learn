@@ -5,7 +5,7 @@ metadata:
   description: Build a custom Microsoft Sentinel playbook using Azure Logic Apps, configuring the Microsoft Sentinel incident trigger, and adding response actions. Then, connect the playbook to an automation rule for end-to-end automated response.
   ms.date: 04/16/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 title: Author a custom playbook with Azure Logic Apps

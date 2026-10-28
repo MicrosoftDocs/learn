@@ -1,6 +1,24 @@
 ### YamlMime:Module
 uid: learn.dotnet-files
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 37
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+  gs-skills:
+    - "Application Development"
+    - "Data Management"
+    - Storage
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/language/dotnet-files/index.yml
   title: Work with files and directories in a .NET app
   description: Learn how to use .NET, C#, and System.IO to work with directories, paths, files, and the file system.
   ms.date: 07/29/2024

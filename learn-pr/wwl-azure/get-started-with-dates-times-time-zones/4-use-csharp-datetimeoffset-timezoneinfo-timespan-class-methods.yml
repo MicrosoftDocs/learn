@@ -6,7 +6,7 @@ metadata:
   description: "Explore methods for handling date and time with offsets, time zone conversions, and intervals in .NET applications."
   ms.date: 03/24/2025
   author: wwlpublish
-  ms.author: eric
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 6
 content: |

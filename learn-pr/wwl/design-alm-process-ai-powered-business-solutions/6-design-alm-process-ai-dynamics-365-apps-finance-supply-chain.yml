@@ -6,7 +6,7 @@ metadata:
   description: "Learn how to design an ALM process for AI in Dynamics 365 Finance and Supply Chain to ensure data quality, compliance, and operational reliability."
   ms.date: 02/12/2026
   author: msdavidram
-  ms.author: taeldin
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 6
 content: |

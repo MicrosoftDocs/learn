@@ -1,6 +1,29 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.explore-basic-computer-concepts
 metadata:
+  gs-content.levels: 100
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - student
+  gs-skills:
+    - "IT Networking"
+    - "Network Connectivity"
+    - Cybersecurity
+    - "Cloud Computing"
+    - Storage
+    - "Identity and Access Management (IAM)"
+    - "Cloud Infrastructure"
+    - "Application Development"
+    - "Digital Accessibility"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/explore-basic-computer-concepts/index.yml
   title: Exploring basic computer concepts
   description: Learn how computers work and how they connect to the internet. You’ll also learn the very basics of how computers are programmed.
   ms.date: 04/10/2024

@@ -6,7 +6,7 @@ metadata:
   description: "Use the Microsoft Defender portal"
   ms.date: 4/4/2025
   author: KenMAG
-  ms.author: kelawson
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 5
 content: |

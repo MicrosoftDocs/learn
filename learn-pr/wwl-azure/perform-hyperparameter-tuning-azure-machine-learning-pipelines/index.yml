@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.wwl.perform-hyperparameter-tuning-azure-machine-learning-pipelines
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 46
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure-machine-learning
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - data-scientist
+  gs-skills:
+    - "Machine Learning"
+    - "AI Model Evaluation & Testing"
+    - "Data Science"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/perform-hyperparameter-tuning-azure-machine-learning-pipelines/index.yml
   title: Perform hyperparameter tuning with Azure Machine Learning
   description: Choose this module if you want to optimize model training by tuning hyperparameters with sweep jobs in Azure Machine Learning.
   author: madiepev

@@ -6,7 +6,7 @@ metadata:
   description: "This unit summarizes key concepts related to aggregate functions and grouping in PostgreSQL. It reinforces the use of COUNT, SUM, AVG, MIN, MAX, and the GROUP BY and HAVING clauses to perform data analysis and generate meaningful summaries. Learners review the core techniques needed to extract insights from relational databases."
   ms.date: 05/23/2025
   author: milenak
-  ms.author: mpopovic
+  ms.author: lumac
   ms.topic: unit
 ###########################################################################
 ###

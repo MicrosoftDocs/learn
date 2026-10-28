@@ -2,6 +2,30 @@
 uid: learn.dpu.surface-management-portal
 title: Work smarter and streamline workflows with Security Copilot in the Surface Management Portal
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 10
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - security-copilot
+    - surface
+    - intune
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - administrator
+    - security-engineer
+    - technology-manager
+  gs-skills:
+    - "Device Management"
+    - "AI Productivity"
+    - "Security Operations Management"
+    - "Infrastructure Management"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/surface-management-portal/index.yml
   title: Work smarter and streamline workflows with Security Copilot in the Surface Management Portal
   description: In this module, you'll learn more about this integration and how it helps IT teams work smarter with streamlined deployment and AI enhancements.
   ms.date: 07/17/2025

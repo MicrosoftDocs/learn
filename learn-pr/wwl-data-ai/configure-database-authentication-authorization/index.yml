@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-database-authentication-authorization
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 66
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - entra
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - database-administrator
+  gs-skills:
+    - "Identity and Access Management (IAM)"
+    - "Data Security"
+    - Databases
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/configure-database-authentication-authorization/index.yml
   title: Configure database authentication and authorization
   description: Configure database authentication and authorization
   ms.date: 08/04/2026

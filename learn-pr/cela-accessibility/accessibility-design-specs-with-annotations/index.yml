@@ -1,6 +1,24 @@
 ### YamlMime:Module
 uid: learn.cela-accessibility.accessibility-design-specs-with-annotations
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 60
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - windows
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+  gs-skills:
+    - "Digital Accessibility"
+    - "Application Development"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/cela-accessibility/accessibility-design-specs-with-annotations/index.yml
   author: erzelman
   ms.author: erzelman
   ms.date: 02/14/2025

@@ -5,7 +5,7 @@ metadata:
   description: Check your knowledge of custom log tables, data retention tiers, and Microsoft Purview Audit integration in Microsoft Sentinel.
   ms.date: 04/16/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-generated
 title: Knowledge check

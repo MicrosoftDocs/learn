@@ -6,7 +6,7 @@ metadata:
   description: "Resource providers for Azure Stack Hub"
   ms.date: 08/05/2022
   author: wwlpublish
-  ms.author: bradj
+  ms.author: lumac
   ms.topic: unit
 azureSandbox: false
 labModal: false

@@ -5,7 +5,7 @@ metadata:
   description: Learn how to browse the Security Copilot agent library, understand the difference between Microsoft and partner agents. Then complete the full setup flow for a Microsoft-built agent including identity selection and trigger configuration.
   ms.date: 04/23/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
 title: Discover and set up Microsoft-built agents
 durationInMinutes: 4

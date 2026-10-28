@@ -6,7 +6,7 @@ metadata:
   description: "Use Security Copilot to investigate sensitive activity in Activity explorer and investigate a DLP alert in Microsoft Purview."
   ms.date: 04/28/2026
   author: ceperezb
-  ms.author: ceperezb
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 17
 content: |

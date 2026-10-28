@@ -1,11 +1,31 @@
 ### YamlMime:Module
 uid: learn.arm-template-test
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 25
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - devops-engineer
+    - developer
+  gs-skills:
+    - DevOps
+    - Automation
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/arm-template-test/index.yml
   title: Validate Azure resources by using the ARM Template Test Toolkit
   description: Use the ARM Template Test Toolkit and apply it on your Azure Resource Manager templates to ensure the templates follow good practices before deployment.
   ms.date: 06/07/2022
   author: softchris
-  ms.author: chnoring
+  ms.author: lumac
+  ms.service: azure-resource-manager
   ms.topic: module
   ms.custom: team=nextgen
 title: Validate Azure resources by using the ARM Template Test Toolkit

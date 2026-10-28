@@ -6,7 +6,7 @@ metadata:
   description: "Learn how to implement version control and Git integration in Microsoft Fabric."
   ms.date: 05/06/2025
   author: wwlpublish
-  ms.author: theresai
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 6
 content: |

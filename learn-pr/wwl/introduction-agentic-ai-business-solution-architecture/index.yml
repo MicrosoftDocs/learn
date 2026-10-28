@@ -1,11 +1,31 @@
 ### YamlMime:Module
 uid: learn.wwl.introduction-agentic-ai-business-solution-architecture
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 24
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - solution-architect
+    - business-leader
+  gs-skills:
+    - "AI Strategy"
+    - "Agentic AI"
+    - "AI Solutions"
+    - "Solution Architecture"
+  gs-solution.area: "AI Business Solutions"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl/introduction-agentic-ai-business-solution-architecture/index.yml
   title: "Introduction to Agentic AI Business Solutions"
   description: "Learn how to align AI solutions with business goals, scale AI adoption, and use Microsoft AI technologies for enterprise success."
   ms.date: 02/02/2026
   author: Randall-Knapp
-  ms.author: taeldin
+  ms.author: lumac
   ai-usage: ai-assisted
   ms.topic: module
   ms.service: copilot-studio

@@ -1,6 +1,28 @@
 ### YamlMime:Module
 uid: learn.protect-endpoints-with-endpoint-manager
 metadata:
+  gs-content.levels: 100
+  gs-content.locale: en-us
+  gs-duration: 19
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - intune
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - administrator
+    - it-professional
+  gs-skills:
+    - "Device Management"
+    - "Data Security"
+    - "Cloud Administration"
+    - Cybersecurity
+    - "Identity and Access Management (IAM)"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/endpoint-manager/protect-endpoints-with-endpoint-manager/index.yml
   title: Protect your endpoint environment with Microsoft Intune
   description: In this module, you learn about protecting devices, apps, and data. Additionally, you understand the endpoint environment and the supported platforms available with Microsoft Intune. 
   ms.date: 10/04/2024

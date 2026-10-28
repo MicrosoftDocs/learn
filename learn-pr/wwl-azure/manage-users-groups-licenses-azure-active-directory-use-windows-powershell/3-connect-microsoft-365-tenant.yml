@@ -6,7 +6,7 @@ metadata:
   description: "Connect to the Microsoft 365 tenant by using Windows PowerShell"
   ms.date: 10/26/2022
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: lumac
   ms.topic: unit
   ms.custom:
 azureSandbox: false

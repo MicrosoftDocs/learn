@@ -1,6 +1,27 @@
 ### YamlMime:Module
 uid: learn.devrel.design-single-domain-active-directory-forest
 metadata:
+  gs-content.levels: 400
+  gs-content.locale: en-us
+  gs-duration: 65
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - solution-architect
+    - systems-administrator
+    - identity-access-admin
+  gs-skills:
+    - "Solution Architecture"
+    - "Infrastructure Management"
+    - "IT Networking"
+    - "Identity and Access Management (IAM)"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/advocates/design-single-domain-active-directory-forest/index.yml
   title: Design a Single-Domain Active Directory Forest
   description: Design DNS, sites, replication, and domain controller placement for a Windows Server 2025 single-domain AD DS forest.
   ms.date: 07/15/2026

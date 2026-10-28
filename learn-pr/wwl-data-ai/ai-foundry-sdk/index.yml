@@ -2,6 +2,25 @@
 uid: learn.wwl.ai-foundry-sdk
 hidden: true
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 55
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - microsoft-foundry
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+    - ai-engineer
+  gs-skills:
+    - "Agent Development"
+    - "Application Development"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/ai-foundry-sdk/index.yml
   title: Develop an AI app with the Microsoft Foundry SDK
   description: Use the Microsoft Foundry SDK to develop AI applications with Microsoft Foundry projects.
   author: wwlpublish

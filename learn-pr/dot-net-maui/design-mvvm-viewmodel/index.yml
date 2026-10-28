@@ -1,6 +1,23 @@
 ### YamlMime:Module
 uid: learn.dotnet-maui.design-a-mvvm-viewmodel
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 46
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+  gs-skills:
+    - "Application Architecture"
+    - "Application Development"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/dot-net-maui/design-mvvm-viewmodel/index.yml
   title: Design an MVVM viewmodel for .NET MAUI
   description: Discover how the MVVM design pattern can help separate your business logic and user interface code. Learn about how viewmodels are designed and why they're so important.
   ms.date: 01/08/2025

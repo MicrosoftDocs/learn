@@ -6,7 +6,7 @@ metadata:
   description: Follow these steps to create an analytics rule and use it to investigate an incident in Microsoft Sentinel.
   ms.date: 04/18/2025
   author: KenMAG
-  ms.author: kelawson
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 35
 content: |

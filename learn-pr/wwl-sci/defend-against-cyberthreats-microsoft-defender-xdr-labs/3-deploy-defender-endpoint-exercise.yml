@@ -7,7 +7,7 @@ metadata:
   description: "Deploy Microsoft Defender for Endpoint and onboard devices."
   ms.date: 11/7/2024
   author: wwlpublish
-  ms.author: kelawson
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 15
 content: |

@@ -1,6 +1,28 @@
 ### YamlMime:Module
 uid: learn.wwl.work-script-constructs-windows-powershell
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 39
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - windows
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - administrator
+    - systems-administrator
+    - developer
+  gs-skills:
+    - Automation
+    - "Process Automation"
+    - "Application Development"
+    - "Infrastructure Management"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/work-script-constructs-windows-powershell/index.yml
   title: Work with scripting constructs in Windows PowerShell
   description: "This module explains how to use scripting constructs for iteration and decision making in Windows PowerShell."
   ms.date: 05/12/2026

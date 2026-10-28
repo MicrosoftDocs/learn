@@ -12,7 +12,7 @@ Together, these four disciplines—versioning, quota governance, cost attributio
 
 ## Learn more
 
-- [Azure API Management LLM token limit policy](https://learn.microsoft.com/azure/api-management/llm-token-limit-policy)
-- [Azure OpenAI model deprecation and retirement](https://learn.microsoft.com/azure/ai-services/openai/concepts/model-retirements)
-- [Azure Monitor OpenTelemetry overview](https://learn.microsoft.com/azure/azure-monitor/app/opentelemetry-overview)
-- [Container Apps scaling and resource allocation](https://learn.microsoft.com/azure/container-apps/scale-app)
+- [Azure API Management LLM token limit policy](/azure/api-management/llm-token-limit-policy)
+- [Azure OpenAI model deprecation and retirement](/azure/ai-services/openai/concepts/model-retirements)
+- [Azure Monitor OpenTelemetry overview](/azure/azure-monitor/app/opentelemetry-overview)
+- [Container Apps scaling and resource allocation](/azure/container-apps/scale-app)

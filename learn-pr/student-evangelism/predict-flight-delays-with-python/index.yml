@@ -1,11 +1,32 @@
 ### YamlMime:Module
 uid: learn.student-evangelism.predict-flight-delays-with-python
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 51
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - data-scientist
+  gs-skills:
+    - "Python (Programming Language)"
+    - "Data Science"
+    - "Machine Learning"
+    - "AI Model Evaluation & Testing"
+    - "Data Analytics"
+    - "Data Visualization"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/student-evangelism/predict-flight-delays-with-python/index.yml
   title: Predict flight delays by creating a machine learning model in Python
   description: Learn how to import airline arrival data into a Jupyter notebook, use Pandas and Scikit-Learn, and then visualize the output with Matplotlib.
   ms.date: 02/24/2019
   author: JeffProsise
-  ms.author: chnoring
+  ms.author: lumac
   ms.topic: module
   ms.custom: team=nextgen, py-fresh-zinc
   ms.service: azure-python

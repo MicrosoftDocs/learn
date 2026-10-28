@@ -1,4 +1,4 @@
-When you create a new server in Azure SQL Database or Azure Synapse Analytics named *mysqlserver*, for example, a server-level firewall blocks all access to the public endpoint for the server (which is accessible at *mysqlserver.database.windows.net*). For simplicity, *SQL Database* is used to refer to both SQL Database and Azure Synapse Analytics. This article does *not* apply to *Azure SQL Managed Instance*. For information about network configuration, see [Connect your application to Azure SQL Managed Instance](/azure/azure-sql/managed-instance/connect-application-instance?view=azuresql).
+When you create a new server in Azure SQL Database or Azure Synapse Analytics named *mysqlserver*, for example, a server-level firewall blocks all access to the public endpoint for the server (which is accessible at *mysqlserver.database.windows.net*). For simplicity, *SQL Database* is used to refer to both SQL Database and Azure Synapse Analytics. This article does *not* apply to *Azure SQL Managed Instance*. For information about network configuration, see [Connect your application to Azure SQL Managed Instance](/azure/azure-sql/managed-instance/connect-application-instance?view=azuresql&preserve-view=true).
 
 ## How the firewall works
 
@@ -38,7 +38,7 @@ Database-level IP firewall rules enable clients to access certain (secure) datab
 We recommend that you use database-level IP firewall rules whenever possible. This practice enhances security and makes your database more portable. Use server-level IP firewall rules for administrators. Also use them when you have many databases that have the same access requirements, and you don't want to configure each database individually.
 
 > [!NOTE]
-> For information about portable databases in the context of business continuity, see [Authentication requirements for disaster recovery](/azure/azure-sql/database/active-geo-replication-security-configure?view=azuresql).
+> For information about portable databases in the context of business continuity, see [Authentication requirements for disaster recovery](/azure/azure-sql/database/active-geo-replication-security-configure?view=azuresql&preserve-view=true).
 
 ## Server-level versus database-level IP firewall rules
 
@@ -104,14 +104,14 @@ You create the first server-level firewall setting by using the [Azure portal](h
 To improve performance, server-level IP firewall rules are temporarily cached at the database level. To refresh the cache, see [DBCC FLUSHAUTHCACHE](/sql/t-sql/database-console-commands/dbcc-flushauthcache-transact-sql).
 
 > [!TIP]
-> You can use [Database Auditing](/azure/azure-sql/database/auditing-overview?view=azuresql) to audit server-level and database-level firewall changes.
+> You can use [Database Auditing](/azure/azure-sql/database/auditing-overview?view=azuresql&preserve-view=true) to audit server-level and database-level firewall changes.
 
 ### Use the Azure portal to manage server-level IP firewall rules
 
 To set a server-level IP firewall rule in the Azure portal, go to the overview page for your database or your server.
 
 > [!TIP]
-> For a tutorial, see [Create a database using the Azure portal](/azure/azure-sql/database/single-database-create-quickstart?view=azuresql).
+> For a tutorial, see [Create a database using the Azure portal](/azure/azure-sql/database/single-database-create-quickstart?view=azuresql&preserve-view=true).
 
 #### From the database overview page
 
@@ -202,7 +202,7 @@ New-AzSqlServerFirewallRule -ResourceGroupName "myResourceGroup" `-ServerName $s
 ```
 
 > [!TIP]
-> For $servername specify the server name and not the fully qualified DNS name e.g. specify mysqldbserver instead of mysqldbserver.database.windows.net. For PowerShell examples in the context of a quickstart, see [Create DB - PowerShell](/azure/azure-sql/database/powershell-script-content-guide?view=azuresql) and [Create a single database and configure a server-level IP firewall rule using PowerShell](/azure/azure-sql/database/scripts/create-and-configure-database-powershell?view=azuresql).
+> For $servername specify the server name and not the fully qualified DNS name e.g. specify mysqldbserver instead of mysqldbserver.database.windows.net. For PowerShell examples in the context of a quickstart, see [Create DB - PowerShell](/azure/azure-sql/database/powershell-script-content-guide?view=azuresql&preserve-view=true) and [Create a single database and configure a server-level IP firewall rule using PowerShell](/azure/azure-sql/database/scripts/create-and-configure-database-powershell?view=azuresql&preserve-view=true).
 
 ### Use CLI to manage server-level IP firewall rules
 
@@ -229,7 +229,7 @@ az sql server firewall-rule create --resource-group myResourceGroup --server $se
 ```
 
 > [!TIP]
-> For $servername, specify the server name and not the fully qualified DNS name. For example, use mysqldbserver instead of mysqldbserver.database.windows.net. For a CLI example in the context of a quickstart, see [Create DB - Azure CLI](/azure/azure-sql/database/az-cli-script-samples-content-guide?view=azuresql) and [Create a single database and configure a server-level IP firewall rule using the Azure CLI](/azure/azure-sql/database/scripts/create-and-configure-database-cli?view=azuresql). For Azure Synapse Analytics, refer to the following examples:
+> For $servername, specify the server name and not the fully qualified DNS name. For example, use mysqldbserver instead of mysqldbserver.database.windows.net. For a CLI example in the context of a quickstart, see [Create DB - Azure CLI](/azure/azure-sql/database/az-cli-script-samples-content-guide?view=azuresql&preserve-view=true) and [Create a single database and configure a server-level IP firewall rule using the Azure CLI](/azure/azure-sql/database/scripts/create-and-configure-database-cli?view=azuresql&preserve-view=true). For Azure Synapse Analytics, refer to the following examples:
 
 Expand table
 
@@ -266,7 +266,7 @@ Expand table
 
 Consider the following points when access to Azure SQL Database doesn't behave as you expect.
 
- -  Local firewall configuration: Before your computer can access Azure SQL Database, you may need to create a firewall exception on your computer for TCP port 1433. To make connections inside the Azure cloud boundary, you may have to open additional ports. For more information, see the "SQL Database: Outside vs inside" section of [Ports beyond 1433 for ADO.NET 4.5 and Azure SQL Database](/azure/azure-sql/database/adonet-v12-develop-direct-route-ports?view=azuresql).
+ -  Local firewall configuration: Before your computer can access Azure SQL Database, you may need to create a firewall exception on your computer for TCP port 1433. To make connections inside the Azure cloud boundary, you may have to open additional ports. For more information, see the "SQL Database: Outside vs inside" section of [Ports beyond 1433 for ADO.NET 4.5 and Azure SQL Database](/azure/azure-sql/database/adonet-v12-develop-direct-route-ports?view=azuresql&preserve-view=true).
  -  Network address translation: Because of network address translation (NAT), the IP address that's used by your computer to connect to Azure SQL Database may be different than the IP address in your computer's IP configuration settings. To view the IP address that your computer is using to connect to Azure:
     
     
@@ -274,7 +274,7 @@ Consider the following points when access to Azure SQL Database doesn't behave a
     2.  Go to the Configure tab on the server that hosts your database.
     3.  The Current Client IP Address is displayed in the Allowed IP Addresses section. Select Add for Allowed IP Addresses to allow this computer to access the server.
  -  Changes to the allow list haven't taken effect yet: There may be up to a five-minute delay for changes to the Azure SQL Database firewall configuration to take effect.
- -  The login isn't authorized, or an incorrect password was used: If a login doesn't have permissions on the server or the password is incorrect, the connection to the server is denied. Creating a firewall setting only gives clients an *opportunity* to try to connect to your server. The client must still provide the necessary security credentials. For more information about preparing logins, see [Controlling and granting database access](/azure/azure-sql/database/logins-create-manage?view=azuresql).
+ -  The login isn't authorized, or an incorrect password was used: If a login doesn't have permissions on the server or the password is incorrect, the connection to the server is denied. Creating a firewall setting only gives clients an *opportunity* to try to connect to your server. The client must still provide the necessary security credentials. For more information about preparing logins, see [Controlling and granting database access](/azure/azure-sql/database/logins-create-manage?view=azuresql&preserve-view=true).
  -  Dynamic IP address: If you have an internet connection that uses dynamic IP addressing and you have trouble getting through the firewall, try one of the following solutions:
     
     

@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn-wwl.migrate-sql-workloads-azure-managed-instances
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 69
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - database-administrator
+  gs-skills:
+    - "Data Migration"
+    - Databases
+    - "Data Administration"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/migrate-sql-workloads-azure-managed-instances/index.yml
   title: Migrate SQL Server workloads to Azure SQL Managed Instance
   description: "Migrate SQL Server workloads to Azure SQL Managed Instance"
   ms.date: 07/23/2026

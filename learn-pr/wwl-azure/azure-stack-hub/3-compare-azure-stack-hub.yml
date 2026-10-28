@@ -6,7 +6,7 @@ metadata:
   description: "Compare Azure Stack Hub, Azure Stack HCI, and Azure Stack Edge"
   ms.date: 08/05/2022
   author: wwlpublish
-  ms.author: bradj
+  ms.author: lumac
   ms.topic: unit
 azureSandbox: false
 labModal: false

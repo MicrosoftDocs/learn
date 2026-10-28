@@ -2,11 +2,30 @@
 uid: learn.dpu.keep-microsoft-365-secure
 title: Keep Microsoft 365 secure after Windows 10 end of support
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 15
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - windows
+    - m365
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - it-professional
+  gs-skills:
+    - "Device Management"
+    - Cybersecurity
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/windows-10-end-of-support-impact-microsoft-365/index.yml
   title: Keep Microsoft 365 Secure After Windows 10 end of support
   description: In this module, you'll learn how Windows 10 end of support affects Microsoft 365 apps, what it means to stay compliant, and how to plan a smooth transition to Windows 11 or Windows 365 Cloud PCs.
   ms.date: 10/15/2025
   author: melissawinters
-  ms.author: v-mwinters
+  ms.author: lumac
   ms.topic: module
   ms.service: microsoft-365-business
   ms.custom: CW062025-2

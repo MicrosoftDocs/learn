@@ -6,7 +6,7 @@ metadata:
   description: "This knowledge check assesses the user's understanding of distribution channels for a HoloLens app."
   ms.date: 06/11/2024
   author: aprilgittens
-  ms.author: tholewis
+  ms.author: lumac
   ms.topic: unit
   module_assessment: true
 durationInMinutes: 3

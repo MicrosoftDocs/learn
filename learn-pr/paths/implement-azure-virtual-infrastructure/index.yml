@@ -1,6 +1,32 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.implement-azure-virtual-infrastructure
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - solution-architect
+    - systems-administrator
+  gs-skills:
+    - "IT Networking"
+    - "Cloud Infrastructure"
+    - "Cloud Administration"
+    - "Security Architecture Design"
+    - Storage
+    - "Identity and Access Management (IAM)"
+    - "Network Connectivity"
+    - Virtualization
+    - Automation
+    - "Infrastructure Management"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/implement-azure-virtual-infrastructure/index.yml
   title: Implement an Azure Virtual Desktop infrastructure
   description: Implement an Azure Virtual Desktop infrastructure
   ms.date: 08/06/2024

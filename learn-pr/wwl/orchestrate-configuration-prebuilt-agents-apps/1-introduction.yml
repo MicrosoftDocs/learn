@@ -6,7 +6,7 @@ metadata:
   description: "Learn how to orchestrate and configure AI-driven experiences with Microsoft's prebuilt agents and Copilot for business productivity and compliance."
   ms.date: 02/13/2026
   author: msdavidram
-  ms.author: taeldin
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 3
 content: |

@@ -1,6 +1,31 @@
 ### YamlMime:Module
 uid: learn.wwl.identify-technical-debt
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 28
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure-devops
+    - github
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+    - devops-engineer
+    - security-engineer
+    - technology-manager
+  gs-skills:
+    - DevOps
+    - "Application Development"
+    - "Application Security"
+    - Automation
+    - Cybersecurity
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/identify-technical-debt/index.yml
   title: Identify Technical Debt
   description: "Learn how to find and manage technical debt in your code, use code quality tools, and plan effective code reviews."
   ms.date: 09/09/2025

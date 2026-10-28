@@ -5,7 +5,7 @@ metadata:
   description: Assign the built-in Trusted Launch Azure Policy initiative to enforce adoption across a VM estate, review compliance, and create remediation tasks for capable but noncompliant virtual machines.
   ms.date: 05/11/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 title: Enforce Trusted Launch adoption with Azure Policy

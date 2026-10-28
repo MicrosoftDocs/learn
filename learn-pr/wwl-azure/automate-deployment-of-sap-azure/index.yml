@@ -1,11 +1,31 @@
 ### YamlMime:Module
 uid: learn.wwl.automate-deployment-of-sap-azure
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 42
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - devops-engineer
+    - platform-engineer
+  gs-skills:
+    - Automation
+    - "Cloud Infrastructure"
+    - DevOps
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/automate-deployment-of-sap-azure/index.yml
   title: Automate Deployment of SAP on Azure
   description: "After this module, you'll be able to run automated deployments of SAP on Azure infrastructure."
   ms.date: 12/23/2024
   author: wwlpublish
-  ms.author: eric
+  ms.author: lumac
   ms.topic: module
   ms.collection: N/A
   ms.custom:

@@ -1,6 +1,30 @@
 ### YamlMime:Module
 uid: learn.wwl.run-training-scripts-track-models-mlflow
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 49
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure-machine-learning
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - data-scientist
+    - ai-engineer
+    - developer
+  gs-skills:
+    - "Machine Learning"
+    - "Python (Programming Language)"
+    - "Data Science"
+    - Automation
+    - "AI Model Evaluation & Testing"
+    - "Model Hosting & Inference"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/run-training-scripts-track-models-mlflow/index.yml
   title: Run training scripts and track models with MLflow in Azure Machine Learning
   description: Choose this module if you want to convert notebooks to training scripts, run command jobs, and track models with MLflow.
   author: madiepev

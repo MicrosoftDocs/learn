@@ -1,6 +1,32 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-hybrid-identity-with-windows-server
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 109
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - entra
+    - azure
+    - windows
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - identity-access-admin
+    - systems-administrator
+    - solution-architect
+    - security-engineer
+  gs-skills:
+    - "Identity and Access Management (IAM)"
+    - "Cloud Infrastructure"
+    - "Infrastructure Management"
+    - "Security Architecture Design"
+    - Cybersecurity
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/implement-hybrid-identity-windows-server/index.yml
   title: Implement hybrid identity with Windows Server
   description: "Learn how to implement hybrid identity by integrating on-premises AD DS with Microsoft Entra ID using directory synchronization, password hash sync, pass-through authentication, seamless SSO, and Microsoft Entra Domain Services."
   ms.date: 08/31/2026

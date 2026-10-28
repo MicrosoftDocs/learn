@@ -6,7 +6,7 @@ metadata:
   description: "Customize Azure Monitor workbooks for Azure Virtual Desktop Insights"
   ms.date: 08/13/2024
   author: wwlpublish
-  ms.author: bradj
+  ms.author: lumac
   ms.topic: unit
   ms.custom:
   - N/A

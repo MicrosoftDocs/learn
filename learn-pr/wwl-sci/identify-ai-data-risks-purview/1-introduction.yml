@@ -5,7 +5,7 @@ metadata:
   description: Introduction to using Microsoft Purview Data Security Posture Management for AI to identify and assess AI data risks in your organization.
   ms.date: 04/21/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 title: Introduction

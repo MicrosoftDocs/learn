@@ -1,6 +1,24 @@
 ### YamlMime:Module
 uid: learn.azure.azure-netapp-files-performance
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 25
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - storage-admin
+  gs-skills:
+    - Storage
+    - "Cloud Administration"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/azure-netapp-files-performance/index.yml
   moduleType: introduction        
   title: Understand and tune Azure NetApp Files performance       
   description: Learn about the different factors that influence performance in Azure NetApp Files and make choices to optimize the performance to meet the needs of your workloads.      

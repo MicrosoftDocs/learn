@@ -5,7 +5,7 @@ metadata:
   description: Learn how to navigate Environment Settings in the Azure portal to enable Defender for Cloud workload protection plans at subscription and resource scope.
   ms.date: 03/31/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-generated
 title: Enable workload protection plans in Environment Settings

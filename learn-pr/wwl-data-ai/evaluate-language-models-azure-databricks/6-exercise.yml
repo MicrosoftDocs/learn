@@ -6,7 +6,7 @@ metadata:
   description: "Exercise - Evaluate an Azure OpenAI model"
   ms.date: 07/10/2025
   author: theresa-i
-  ms.author: theresai
+  ms.author: lumac
   ms.topic: unit
 azureSandbox: false
 labModal: false

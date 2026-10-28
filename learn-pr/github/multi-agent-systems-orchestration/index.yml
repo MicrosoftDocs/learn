@@ -2,6 +2,25 @@
 uid: learn.github.multi-agent-systems-orchestration
 title: Multi-Agent systems and orchestration
 metadata:
+  gs-content.levels: null
+  gs-content.locale: en-us
+  gs-duration: 90
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - github-copilot
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+    - ai-engineer
+  gs-skills:
+    - "Multi-Agent Orchestration"
+    - "Agentic AI"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/github/multi-agent-systems-orchestration/index.yml
   title: Multi-Agent systems and orchestration
   description: In this module, you will learn how to design multi-agent systems that coordinate through GitHub-native artifacts, remain observable through logs and workflow outputs, and recover safely through retry, rollback, and human escalation.
   author: camihmerhar

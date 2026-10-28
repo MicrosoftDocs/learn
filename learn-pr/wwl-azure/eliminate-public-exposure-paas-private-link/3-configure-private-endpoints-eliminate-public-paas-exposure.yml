@@ -6,7 +6,7 @@ metadata:
   description: "Configure private endpoints and private DNS zone integration to route PaaS and AI service traffic through the private network, then disable public network access to complete the control."
   ms.date: 04/22/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 10
 content: |

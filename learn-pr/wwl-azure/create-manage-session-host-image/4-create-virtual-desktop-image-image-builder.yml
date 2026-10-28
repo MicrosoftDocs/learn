@@ -6,7 +6,7 @@ metadata:
   description: "Create an Azure Virtual Desktop image by using VM Image Builder and PowerShell"
   ms.date: 08/21/2024
   author: wwlpublish
-  ms.author: bradj
+  ms.author: lumac
   ms.topic: unit
   ms.custom:
   - N/A

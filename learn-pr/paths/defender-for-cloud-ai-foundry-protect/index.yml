@@ -1,6 +1,37 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.defender-for-cloud-ai-foundry-protect
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - defender-for-cloud
+    - microsoft-foundry
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+    - security-engineer
+  gs-skills:
+    - "AI Security (Model-Level)"
+    - "Cloud Infrastructure"
+    - "Security Operations Management"
+    - "Threat Management"
+    - Cybersecurity
+    - "Security Analytics"
+    - "AI Safety"
+    - "Responsible AI"
+    - "AI Governance"
+    - "AI Model Evaluation & Testing"
+    - "Data Security"
+    - "Identity and Access Management (IAM)"
+    - "Security Architecture Design"
+    - "Agentic AI"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/defender-for-cloud-ai-foundry-protect/index.yml
   title: 'Protect Microsoft Foundry solutions by using Microsoft Defender for Cloud'
   description: 'Learn how to secure Microsoft Foundry workloads by using Microsoft Defender for Cloud. Discover AI resources across Azure, assess their security posture, protect against runtime threats, and configure model guardrails in Microsoft Foundry to prevent unsafe or policy-violating content.'
   ms.date: 10/15/2025

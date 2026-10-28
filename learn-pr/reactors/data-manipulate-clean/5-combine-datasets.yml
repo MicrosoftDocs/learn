@@ -6,7 +6,7 @@ metadata:
   description: Combine datasets by using pandas `DataFrames`.
   ms.date: 04/08/2022
   author: softchris
-  ms.author: chnoring
+  ms.author: lumac
   ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 30

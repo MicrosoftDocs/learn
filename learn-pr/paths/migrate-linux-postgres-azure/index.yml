@@ -2,6 +2,43 @@
 uid: learn.migrate-linux-postgres-azure
 title: Migrate Linux and PostgreSQL Workloads to Azure
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - azure
+    - entra
+    - azure-openai
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - database-administrator
+    - developer
+    - data-engineer
+    - systems-administrator
+    - devops-engineer
+    - ai-engineer
+  gs-skills:
+    - "Cloud Administration"
+    - "Data Migration"
+    - "Data Administration"
+    - "Identity and Access Management (IAM)"
+    - "Application Development"
+    - Databases
+    - "Data Management"
+    - "Generative AI"
+    - "Embedding Models"
+    - "Vector Databases"
+    - "Database Development"
+    - SQL
+    - "Natural Language Processing (NLP)"
+    - "Machine Learning"
+    - "Retrieval-Augmented Generation (RAG)"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/migrate-linux-postgres-azure/index.yml
   title: Migrate Linux and PostgreSQL Workloads to Azure
   description: Migrate Linux and PostgreSQL workloads to Azure using Azure Virtual Machines and Azure Database for PostgreSQL.
   ms.date: 10/07/2024

@@ -6,7 +6,7 @@ metadata:
   description: Amazon Elastic Compute Cloud (Amazon EC2)
   ms.date: 03/09/2022
   author: softchris
-  ms.author: chnoring
+  ms.author: lumac
   ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 9

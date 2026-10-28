@@ -6,7 +6,7 @@ metadata:
   description: "Learn how to define solution rules and architectural constraints for AI components using Copilot Studio, Microsoft Foundry, and Foundry Tools."
   ms.date: 02/13/2026
   author: Randall-Knapp
-  ms.author: taeldin
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 durationInMinutes: 7

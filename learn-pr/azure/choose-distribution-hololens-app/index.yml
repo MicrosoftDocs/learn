@@ -1,11 +1,29 @@
 ### YamlMime:Module
 uid: learn.choose-distribution-hololens-app
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 23
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+  gs-skills:
+    - "Application Development"
+    - DevOps
+    - "Application Security"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/choose-distribution-hololens-app/index.yml
   title: Choose a distribution channel for a HoloLens app 
   description: "Learn how to choose a distribution channel for your HoloLens app."
   ms.date: 06/11/2024
   author: aprilgittens
-  ms.author: tholewis
+  ms.author: lumac
   ms.topic: module-choose-best-product
   ms.service: hololens
 title: Choose a distribution channel for a HoloLens app

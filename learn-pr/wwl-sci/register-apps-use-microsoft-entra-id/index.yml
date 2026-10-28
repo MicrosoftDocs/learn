@@ -1,11 +1,33 @@
 ### YamlMime:Module
 uid: learn.wwl.register-apps-use-microsoft-entra-id
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 23
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - entra
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+    - identity-access-admin
+    - security-engineer
+  gs-skills:
+    - "Application Development"
+    - "Identity and Access Management (IAM)"
+    - "Zero Trust Security"
+    - Cybersecurity
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/register-apps-use-microsoft-entra-id/index.yml
   title: Register apps using Microsoft Entra ID
   description: "In this module, we explore the process of creating an app registration in Microsoft Entra ID. Then explore the settings and configuration options. You create a single page app, register multitenant app, and other options. As part of this process, we dig into granting user access to apps and configure how and when they can use the app and its data."
   ms.date: 12/3/2025
   author: wwlpublish
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: module
   ms.custom:
   - N/A

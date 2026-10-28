@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.devrel.understand-active-directory-security-policies
 metadata:
+  gs-content.levels: 400
+  gs-content.locale: en-us
+  gs-duration: 115
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - systems-administrator
+    - security-engineer
+  gs-skills:
+    - "Identity and Access Management (IAM)"
+    - "Security Operations Management"
+    - "Security Automation"
+    - "Infrastructure Management"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/advocates/understand-active-directory-security-policies/index.yml
   title: Understand Active Directory Group Policy Security Settings
   description: Learn how to configure, audit, and manage Group Policy Security Settings in Active Directory environments.
   ms.date: 07/01/2026

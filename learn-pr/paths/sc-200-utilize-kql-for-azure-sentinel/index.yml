@@ -1,11 +1,31 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.sc-200-utilize-kql-for-azure-sentinel
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - microsoft-sentinel
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - security-operations-analyst
+  gs-skills:
+    - "Data Analytics"
+    - "Security Analytics"
+    - "Data Visualization"
+    - "Threat Management"
+    - SQL
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/sc-200-utilize-kql-for-azure-sentinel/index.yml
   title: 'Create queries for Microsoft Sentinel using Kusto Query Language (KQL)'
   description: 'Create queries for Microsoft Sentinel using Kusto Query Language (KQL)'
   ms.date: 11/26/2025
   author: KenMAG
-  ms.author: kelawson
+  ms.author: lumac
   ms.topic: learning-path
 title: 'Create queries for Microsoft Sentinel using Kusto Query Language (KQL)'
 prerequisites: |

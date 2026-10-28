@@ -5,7 +5,7 @@ metadata:
   description: Create custom Azure Policy definitions with remediation tasks, which enforce controls that built-in definitions don't cover.
   ms.date: 04/23/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 title: Create and deploy custom policy definitions

@@ -2,11 +2,33 @@
 #LP name: Introduction to the Cloud with Carnegie Mellon
 uid: learn.cmu-cloud-admin.overview-of-the-cloud.cmu-cloud-admin-overview
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 125
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - systems-administrator
+    - technology-manager
+  gs-skills:
+    - "Cloud Computing"
+    - "Cloud Infrastructure"
+    - Virtualization
+    - "IT Strategy"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/cmu-cloud-admin/cmu-cloud-admin-overview/index.yml
   title: Foundations of cloud computing for administrators
   description: Cloud Admin course from Dr. Majd Sakr at Carnegie Mellon University. Learn about the cloud, including the history, building blocks, and types on your way to becoming a Cloud Administrator.
   ms.date: 06/07/2022
   author: softchris
-  ms.author: chnoring
+  ms.author: lumac
+  ms.service: azure
   ms.topic: module
   showCreativeCommonsFooter: true
   ms.custom: team=nextgen

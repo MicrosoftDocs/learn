@@ -6,7 +6,7 @@ metadata:
   description: Review what you accomplished by enabling the Defender for AI Services plan and monitoring AI security posture with the Data and AI security dashboard.
   ms.date: 05/03/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 durationInMinutes: 1

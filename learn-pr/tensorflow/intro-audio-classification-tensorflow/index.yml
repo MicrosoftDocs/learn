@@ -1,6 +1,29 @@
 ### YamlMime:Module
 uid: learn.tensorflow.intro-audio-classification
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 48
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - data-scientist
+    - ai-engineer
+    - developer
+    - student
+  gs-skills:
+    - "Machine Learning"
+    - "AI Model Evaluation & Testing"
+    - "Python (Programming Language)"
+    - "Data Science"
+    - "Data Visualization"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/tensorflow/intro-audio-classification-tensorflow/index.yml
   title: Introduction to audio classification with TensorFlow
   description: Learn how to prepare audio data, create spectrograms, and build a TensorFlow keyword classification model.
   ms.date: 04/20/2026

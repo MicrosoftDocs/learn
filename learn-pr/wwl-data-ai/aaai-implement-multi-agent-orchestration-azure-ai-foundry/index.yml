@@ -1,6 +1,34 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-multi-agent-orchestration-azure-ai-foundry
 metadata:
+  gs-content.levels: 400
+  gs-content.locale: en-us
+  gs-duration: 48
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - microsoft-foundry
+    - azure
+    - azure-openai
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - ai-engineer
+    - solution-architect
+    - developer
+  gs-skills:
+    - "Multi-Agent Orchestration"
+    - "Agent Development"
+    - "Agentic AI"
+    - "Application Architecture"
+    - "Python (Programming Language)"
+    - "AI Infrastructure"
+    - "Solution Architecture"
+    - "AI Model Evaluation & Testing"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/aaai-implement-multi-agent-orchestration-azure-ai-foundry/index.yml
   title: Implement Advanced Multi-Agent Orchestration Patterns in Microsoft Foundry
   description: "Implement advanced multi-agent orchestration patterns in Microsoft Foundry. Design hub-and-spoke coordination with central orchestrator agents, implement parallel agent spawning with synchronization, configure supervisor patterns for hierarchical task delegation, and evaluate orchestration framework trade-offs."
   ms.date: 7/28/2026

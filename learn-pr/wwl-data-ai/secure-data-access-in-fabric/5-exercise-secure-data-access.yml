@@ -6,7 +6,7 @@ metadata:
   description: "Practice securing data access in Microsoft Fabric using workspace roles, item permissions, and OneLake security roles."
   ms.date: 05/26/2026
   author: theresa-i
-  ms.author: theresai
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 45
 content: |

@@ -2,11 +2,28 @@
 uid: learn.dpu.k12-admin
 title: Microsoft Education for K-12 administrators
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 27
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - windows
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - it-professional
+  gs-skills:
+    - "Device Management"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/microsoft-education-k12-admin/index.yml
   title: Microsoft Education for K-12 administrators
   description: In this module, you'll learn how Microsoft Education solutions support the needs of K-12 administrators.
   ms.date: 07/01/2025
   author: melissawinters
-  ms.author: v-mwinters
+  ms.author: lumac
   ms.topic: module
   ms.service: microsoft-365-education
   ms.custom: CE052925-2

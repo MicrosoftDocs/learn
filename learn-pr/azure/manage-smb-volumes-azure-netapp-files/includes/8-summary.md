@@ -10,14 +10,14 @@ You also performed hands-on exercises to create an SMB volume for Azure NetApp F
 
 ### Learn more
 
-[Configure Active Directory connections before creating an SMB volume](https://learn.microsoft.com/azure/azure-netapp-files/create-active-directory-connections)
+[Configure Active Directory connections before creating an SMB volume](/azure/azure-netapp-files/create-active-directory-connections)
 
-[Control access to an SMB volume](https://learn.microsoft.com/azure/azure-netapp-files/azure-netapp-files-create-volumes-smb#control-access-to-an-smb-volume)
+[Control access to an SMB volume](/azure/azure-netapp-files/azure-netapp-files-create-volumes-smb#control-access-to-an-smb-volume)
 
-[Enable Continuous Availability on existing SMB volumes](https://learn.microsoft.com/azure/azure-netapp-files/enable-continuous-availability-existing-smb)
+[Enable Continuous Availability on existing SMB volumes](/azure/azure-netapp-files/enable-continuous-availability-existing-smb)
 
-[How to use DFS Namespaces with Azure NetApp Files](https://learn.microsoft.com/azure/azure-netapp-files/use-dfs-n-and-dfs-root-consolidation-with-azure-netapp-files?tabs=windows-gui)
+[How to use DFS Namespaces with Azure NetApp Files](/azure/azure-netapp-files/use-dfs-n-and-dfs-root-consolidation-with-azure-netapp-files?tabs=windows-gui)
 
-[Install the DFS Namespaces server role](https://learn.microsoft.com/azure/azure-netapp-files/use-dfs-n-and-dfs-root-consolidation-with-azure-netapp-files?tabs=windows-gui#install-the-dfs-namespaces-server-role)
+[Install the DFS Namespaces server role](/azure/azure-netapp-files/use-dfs-n-and-dfs-root-consolidation-with-azure-netapp-files?tabs=windows-gui#install-the-dfs-namespaces-server-role)
 
-[Configure a DFS-N Namespace with Azure NetApp Files SMB volumes](https://learn.microsoft.com/azure/azure-netapp-files/use-dfs-n-and-dfs-root-consolidation-with-azure-netapp-files?tabs=windows-gui#configure-a-dfs-n-namespace-with-azure-netapp-files-smb-volumes)
+[Configure a DFS-N Namespace with Azure NetApp Files SMB volumes](/azure/azure-netapp-files/use-dfs-n-and-dfs-root-consolidation-with-azure-netapp-files?tabs=windows-gui#configure-a-dfs-n-namespace-with-azure-netapp-files-smb-volumes)

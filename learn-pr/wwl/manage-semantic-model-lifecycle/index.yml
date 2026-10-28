@@ -1,6 +1,28 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-semantic-model-lifecycle
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 86
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - power-bi
+    - fabric
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - data-analyst
+    - data-engineer
+    - devops-engineer
+  gs-skills:
+    - "Data Analytics"
+    - DevOps
+    - "Data Engineering"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl/manage-semantic-model-lifecycle/index.yml
   title: Manage the Semantic Model Development Lifecycle
   description: "Manage semantic models through their full development lifecycle. Create reusable assets, version-control with Git, inspect and validate with the XMLA endpoint and SemPy, deploy through pipelines, and maintain with monitoring and impact analysis."
   ms.date: 04/06/2026

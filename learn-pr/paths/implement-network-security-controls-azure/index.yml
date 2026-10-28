@@ -1,11 +1,39 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.implement-network-security-controls-azure
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - network-engineer
+    - security-engineer
+    - solution-architect
+  gs-skills:
+    - "IT Networking"
+    - "Security Architecture Design"
+    - Cybersecurity
+    - "Cloud Infrastructure"
+    - "Network Connectivity"
+    - "Security Operations Management"
+    - "Application Security"
+    - "Data Security"
+    - "Cloud Administration"
+    - "Identity and Access Management (IAM)"
+    - "Zero Trust Security"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/implement-network-security-controls-azure/index.yml
   title: Implement Network Security Controls in Azure
   description: Implement defense-in-depth network security controls in Azure. Segment workloads to control lateral movement, centralize traffic inspection with Azure Firewall, harden remote and hybrid connectivity, and eliminate public network exposure of PaaS and AI services using private endpoints.
   ms.date: 05/13/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: learning-path
 title: Implement network security controls in Azure
 summary: |

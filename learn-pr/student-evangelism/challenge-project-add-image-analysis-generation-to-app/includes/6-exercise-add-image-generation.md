@@ -3,10 +3,10 @@ In this exercise you will add image generation capabilities to your React applic
 
 ## Specification
 
-1. Create a new Azure OpenAI Service resource in your subscription. To configure your resource properly, check the [region availability](https://learn.microsoft.com/azure/ai-services/openai/concepts/models#dall-e-models-preview?WT.mc_id=academic-105496-cacaste) for DALLE2 model before creating it.
-Please note that, as part of Microsoft's commitment to responsible AI, access to Azure OpenAI service is currently limited to a set of Azure customers requesting it in advance, by filling out [this form](https://customervoice.microsoft.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR7en2Ais5pxKtso_Pz4b1_xUNTZBNzRKNlVQSFhZMU9aV09EVzYxWFdORCQlQCN0PWcu). If your application doesn't match the [acceptance criteria](https://learn.microsoft.com/legal/cognitive-services/openai/limited-access?context=%2Fazure%2Fcognitive-services%2Fopenai%2Fcontext%2Fcontext&WT.mc_id=academic-105496-cacaste), you can rely on the [OpenAI public APIs](https://platform.openai.com/docs/api-reference/introduction) to build your prototype.
+1. Create a new Azure OpenAI Service resource in your subscription. To configure your resource properly, check the [region availability](/azure/ai-services/openai/concepts/models#dall-e-models-preview?WT.mc_id=academic-105496-cacaste) for DALLE2 model before creating it.
+Please note that, as part of Microsoft's commitment to responsible AI, access to Azure OpenAI service is currently limited to a set of Azure customers requesting it in advance, by filling out [this form](https://customervoice.microsoft.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR7en2Ais5pxKtso_Pz4b1_xUNTZBNzRKNlVQSFhZMU9aV09EVzYxWFdORCQlQCN0PWcu). If your application doesn't match the [acceptance criteria](/legal/cognitive-services/openai/limited-access?context=%2Fazure%2Fcognitive-services%2Fopenai%2Fcontext%2Fcontext&WT.mc_id=academic-105496-cacaste), you can rely on the [OpenAI public APIs](https://platform.openai.com/docs/api-reference/introduction) to build your prototype.
 
-1. Add the code to call the [Azure OpenAI service API](https://learn.microsoft.com/azure/ai-services/openai/reference#image-generation?WT.mc_id=academic-105496-cacaste) to your React application as a function 'generateImage' in a new separate module, that you can name 'azure-image-generation.js'. Note that if you are using a non-Azure endpoint, authentication and endpoint construction are handled differently and you should refer to the [OpenAI API reference](https://platform.openai.com/docs/api-reference).
+1. Add the code to call the [Azure OpenAI service API](/azure/ai-services/openai/reference#image-generation?WT.mc_id=academic-105496-cacaste) to your React application as a function 'generateImage' in a new separate module, that you can name 'azure-image-generation.js'. Note that if you are using a non-Azure endpoint, authentication and endpoint construction are handled differently and you should refer to the [OpenAI API reference](https://platform.openai.com/docs/api-reference).
 
 1. Add 'generateImage' as a new module into your App.js and call the 'generateImage' function from there, in a way that the image generation action is triggered when the 'Generate' button is pressed. Ensure to hold the UI and to have a processing indicator while the action is running.
 
@@ -14,7 +14,7 @@ Please note that, as part of Microsoft's commitment to responsible AI, access to
 
 > [!TIP]
 > Don't include the services key directly in your code, and never post it publicly. When running your app locally, you can store your credentials in environment variables. Environment variables are name-value pairs that are stored within a specific development environment.
-> See the [Azure AI services security article](https://learn.microsoft.com/azure/ai-services/security-features?WT.mc_id=academic-105496-cacaste) for more authentication options.
+> See the [Azure AI services security article](/azure/ai-services/security-features?WT.mc_id=academic-105496-cacaste) for more authentication options.
 
 ## Check your work
 

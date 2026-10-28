@@ -6,7 +6,7 @@ metadata:
   description: "Describe how Microsoft Purview Data Map captures metadata across hybrid and multicloud environments to provide the foundation for data governance."
   ms.date: 06/19/2026
   author: wwlpublish
-  ms.author: ceperezb
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 5
 content: |

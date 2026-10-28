@@ -6,7 +6,7 @@ metadata:
   description: "Design a Microsoft Entra ID solution for hybrid and multicloud environments, including directory synchronization, authentication methods, and multicloud federation."
   ms.date: 05/28/2026
   author: ceperezb
-  ms.author: ceperezb
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-generated
 durationInMinutes: 9

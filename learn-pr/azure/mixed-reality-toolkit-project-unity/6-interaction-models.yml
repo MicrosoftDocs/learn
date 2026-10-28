@@ -6,7 +6,7 @@ metadata:
   description: Interaction models for interacting with holograms.
   ms.date: 06/24/2025
   author: lolambean
-  ms.author: lolab
+  ms.author: lumac
   ms.topic: unit
   ms.custom:
   - team=cloud_advocates

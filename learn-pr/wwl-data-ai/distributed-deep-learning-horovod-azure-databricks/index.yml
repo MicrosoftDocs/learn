@@ -1,6 +1,29 @@
 ### YamlMime:Module
 uid: learn.wwl.distributed-deep-learning-horovod-azure-databricks
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 35
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure-databricks
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - data-scientist
+    - ai-engineer
+  gs-skills:
+    - "Machine Learning"
+    - "Data Science"
+    - "AI Infrastructure"
+    - "Python (Programming Language)"
+    - "Cloud Computing"
+    - "Model Hosting & Inference"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/distributed-deep-learning-horovod-azure-databricks/index.yml
   title: Distributed deep learning with Horovod and Azure Databricks
   description: "Distributed deep learning with Horovod and Azure Databricks"
   ms.date: 03/27/2023

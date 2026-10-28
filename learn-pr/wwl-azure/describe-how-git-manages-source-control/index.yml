@@ -1,6 +1,24 @@
 ### YamlMime:Module
 uid: learn.wwl.describe-how-git-manages-source-control
 metadata:
+  gs-content.levels: 100
+  gs-content.locale: en-us
+  gs-duration: 22
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - github
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+  gs-skills:
+    - DevOps
+    - "Application Development"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/describe-how-git-manages-source-control/index.yml
   title: Describe how Git manages source control
   description: "Describe how Git manages source control"
   ms.date: 03/13/2024

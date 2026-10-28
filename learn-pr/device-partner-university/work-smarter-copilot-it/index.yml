@@ -2,6 +2,31 @@
 uid: learn.dpu.work-smarter-copilot-it
 title: Work smarter with Copilot prompts for IT professionals
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 19
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - microsoft-365-copilot
+    - m365
+    - windows
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - support-engineer
+    - systems-administrator
+    - technology-manager
+  gs-skills:
+    - "Prompt Engineering"
+    - "Generative AI"
+    - "Security Operations Management"
+    - "Communications Management"
+    - "Device Management"
+  gs-solution.area: "AI Business Solutions"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/work-smarter-copilot-it/index.yml
   title: Work Smarter With Copilot Prompts For IT Professionals
   description: In this module, you'll learn how to use Microsoft 365 Copilot to work smarter and more efficiently as an IT professional. You'll explore how to use Copilot prompts to streamline your daily tasks, investigate incidents, troubleshoot systems, and coordinate with stakeholders effectively.
   ms.date: 06/24/2026

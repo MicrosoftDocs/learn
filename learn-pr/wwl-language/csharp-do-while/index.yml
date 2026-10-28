@@ -1,6 +1,23 @@
 ### YamlMime:Module
 uid: learn.languages.csharp-do-while
 metadata:
+  gs-content.levels: 100
+  gs-content.locale: en-us
+  gs-duration: 55
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+    - student
+  gs-skills:
+    - "Application Development"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-language/csharp-do-while/index.yml
   title: Add Looping Logic to your Code using the do-while and while Statements in C#
   description: "Use the do-while and while statements to iterate as long as a Boolean expression evaluates to true."
   ms.date: 12/15/2025

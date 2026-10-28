@@ -1,6 +1,27 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-identity-projects-pipelines-agents
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 74
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure-devops
+    - entra
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - devops-engineer
+    - identity-access-admin
+  gs-skills:
+    - "Identity and Access Management (IAM)"
+    - DevOps
+    - "Zero Trust Security"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/manage-identity-projects-pipelines-agents/index.yml
   title: Manage identity for projects, pipelines, and agents
   description: Manage identity for projects, pipelines, and agents.
   ms.date: 01/18/2024

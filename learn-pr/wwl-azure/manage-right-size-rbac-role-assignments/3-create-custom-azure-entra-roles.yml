@@ -5,7 +5,7 @@ metadata:
   description: Create custom Azure RBAC roles and Microsoft Entra custom roles to provide minimum necessary permissions for operations that built-in roles don't cover appropriately.
   ms.date: 05/11/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 title: Create custom Azure roles and Microsoft Entra roles

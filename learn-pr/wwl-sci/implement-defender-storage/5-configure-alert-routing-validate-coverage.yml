@@ -5,7 +5,7 @@ metadata:
   description: Configure email notification recipients for Defender for Storage alerts, connect alerts to a Microsoft Sentinel workspace, set suppression rules for expected AI agent behaviors, and use Storage Center to verify no storage accounts are unprotected.
   ms.date: 04/22/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 title: Configure alert routing and validate Defender coverage

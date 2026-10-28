@@ -6,7 +6,7 @@ metadata:
   description: "Discover key practices for testing AI solutions, ensuring reliability, safety, and performance across dynamic business environments."
   ms.date: 02/13/2026
   author: msdavidram
-  ms.author: taeldin
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 3
 content: |

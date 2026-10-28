@@ -1,11 +1,34 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-access-management-capabilities-of-azure-ad
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 41
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - entra
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - identity-access-admin
+    - network-engineer
+    - security-engineer
+  gs-skills:
+    - "Identity and Access Management (IAM)"
+    - "Zero Trust Security"
+    - "IT Networking"
+    - "AI Security (Model-Level)"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/explore-access-management-capabilities/index.yml
   title: Describe Access Management Capabilities of Microsoft Entra
   description: "Describe access management capabilities of Microsoft Entra"
   ms.date: 06/08/2026
   author: wwlpublish
-  ms.author: ceperezb
+  ms.author: lumac
   ms.topic: module
   ai-usage: ai-assisted
   ms.service: entra-id

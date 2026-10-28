@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.wwl.optimize-azure-reliability-using-sre-agent
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 93
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - site-reliability-engineer
+  gs-skills:
+    - "Agent Operations"
+    - "Infrastructure Management"
+    - Automation
+    - "AI Governance"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/optimize-azure-reliability-with-sre-agent/index.yml
   title: Optimize Azure reliability by using Azure SRE Agent
   description: "Learn how to apply SRE (Site Reliability Engineering) principles and use Azure SRE Agent to improve incident response, reduce operational toil, and govern remediation workflows."
   ms.date: 6/9/2026

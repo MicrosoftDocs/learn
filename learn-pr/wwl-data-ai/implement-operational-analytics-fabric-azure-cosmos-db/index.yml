@@ -1,6 +1,28 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-operational-analytics-fabric-azure-cosmos-db
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 98
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - fabric
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - data-engineer
+  gs-skills:
+    - "Data Engineering"
+    - "Data Analytics"
+    - Databases
+    - "Data Warehousing"
+    - SQL
+    - "Infrastructure Management"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/implement-operational-analytics-fabric-azure-cosmos-db/index.yml
   title: Implement Operational Analytics with Microsoft Fabric
   description: "Run analytics on operational Azure Cosmos DB data with no ETL: choose between Azure Cosmos DB and Cosmos DB in Microsoft Fabric, mirror a database into OneLake, monitor replication health, and query the result with Transact-SQL (T-SQL) and Spark."
   ms.date: 10/04/2026

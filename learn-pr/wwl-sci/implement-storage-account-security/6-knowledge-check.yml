@@ -5,7 +5,7 @@ metadata:
   description: Check your knowledge of implementing security and managing access for Azure Storage, including authorization models, stored access policies, and Shared Key enforcement.
   ms.date: 04/22/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-generated
 title: Knowledge check

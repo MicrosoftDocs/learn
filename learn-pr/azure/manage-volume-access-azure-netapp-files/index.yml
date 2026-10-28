@@ -1,6 +1,27 @@
 ### YamlMime:Module
 uid: learn.azure.manage-volume-access
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 60
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - storage-admin
+    - systems-administrator
+  gs-skills:
+    - Storage
+    - "Identity and Access Management (IAM)"
+    - "Cloud Administration"
+    - "Network Connectivity"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/manage-volume-access-azure-netapp-files/index.yml
   title: Manage volume access for Azure NetApp Files
   description: Learn how to manage access to a volume in Azure NetApp Files by configuring export policies, Unix permissions, and ACLs for NFS and dual-protocol volumes. Understand how to manage SMB share ACLs and configure network features for a volume.
   ms.date: 06/02/2026

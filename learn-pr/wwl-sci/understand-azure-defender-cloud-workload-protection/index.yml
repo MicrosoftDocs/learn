@@ -1,11 +1,34 @@
 ### YamlMime:Module
 uid: learn.wwl.understand-azure-defender-cloud-workload-protection
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 54
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - defender-for-cloud
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - security-operations-analyst
+    - security-engineer
+    - solution-architect
+  gs-skills:
+    - Cybersecurity
+    - "Threat Management"
+    - "Security Architecture Design"
+    - "Cloud Infrastructure"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/understand-azure-defender-cloud-workload-protection/index.yml
   title: Explain cloud workload protections in Microsoft Defender for Cloud
   description: "Explain cloud workload protections in Microsoft Defender for Cloud"
   ms.date: 06/16/2026
   author: KenMAG
-  ms.author: kelawson
+  ms.author: lumac
   ms.topic: module
   ms.service: defender-for-cloud
   ai-usage: ai-assisted

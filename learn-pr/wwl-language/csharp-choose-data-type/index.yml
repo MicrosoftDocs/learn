@@ -1,6 +1,22 @@
 ### YamlMime:Module
 uid: learn.languages.csharp-choose-data-type
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 47
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+  gs-skills:
+    - "Application Development"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-language/csharp-choose-data-type/index.yml
   title: Choose the correct data type in your C# code
   description: "Choose the correct data type for your code from several basic types used in C#."
   ms.date: 12/15/2025

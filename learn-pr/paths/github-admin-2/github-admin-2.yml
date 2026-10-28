@@ -1,6 +1,35 @@
 ### YamlMime:LearningPath
 uid: learn.github.github-administration-products-2
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - github
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - devops-engineer
+    - security-engineer
+  gs-skills:
+    - "Application Security"
+    - "Data Security"
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "Identity and Access Management (IAM)"
+    - Cybersecurity
+    - "Zero Trust Security"
+    - "Security Architecture Design"
+    - "Infrastructure Management"
+    - DevOps
+    - "IT Networking"
+    - "Security Operations Management"
+    - Automation
+    - "Application Development"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/github-admin-2/github-admin-2.yml
   title: GitHub fundamentals - Administration basics and product features Part 2 of 2
   description: In this learning path, learn the basics of GitHub administration and discover the products that GitHub offers. This is the second learning path in a two part series.
   ms.date: 04/23/2024

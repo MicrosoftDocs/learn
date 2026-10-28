@@ -6,7 +6,7 @@ metadata:
   description: "Provides a summary of configuring a Security information and event management (SIEM) for Security Operations using Microsoft Sentinel."
   ms.date: 06/25/2025
   author: KenMAG
-  ms.author: kelawson
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 5
 content: |

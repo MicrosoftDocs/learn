@@ -1,6 +1,26 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.implement-manage-premises-hybrid-networking-infrastructure
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - windows
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - network-engineer
+    - systems-administrator
+  gs-skills:
+    - "IT Networking"
+    - "Network Connectivity"
+    - "Infrastructure Management"
+    - Cybersecurity
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/implement-manage-premises-hybrid-networking-infrastructure/index.yml
   title: Implement and Manage an On-Premises and Hybrid Networking Infrastructure
   description: Learn how to implement on-premises and hybrid name resolution with DNS and manage IP addressing with DHCP in hybrid scenarios.
   ms.date: 08/31/2026

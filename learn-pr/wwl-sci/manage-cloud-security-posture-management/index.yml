@@ -1,11 +1,33 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-cloud-security-posture-management
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 21
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - defender-for-cloud
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - security-engineer
+    - security-operations-analyst
+    - ip-admin
+  gs-skills:
+    - "Cloud Administration"
+    - Cybersecurity
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "Security Analytics"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/manage-cloud-security-posture-management/index.yml
   title: Manage your cloud security posture management​
   description: "Manage your cloud security posture management​"
   ms.date: 03/20/2025
   author: wwlpublish
-  ms.author: kelawson
+  ms.author: lumac
   ms.topic: module
   ms.service: defender-for-cloud
 title: Manage your cloud security posture management​

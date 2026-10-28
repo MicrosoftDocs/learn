@@ -1,11 +1,37 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.secure-networking
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - network-engineer
+    - security-engineer
+  gs-skills:
+    - "Application Security"
+    - "Data Security"
+    - Databases
+    - "Network Connectivity"
+    - "IT Networking"
+    - "Security Architecture Design"
+    - "Identity and Access Management (IAM)"
+    - Cybersecurity
+    - "Cloud Infrastructure"
+    - "Zero Trust Security"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/secure-networking/index.yml
   title: 'Protect network infrastructure in Azure'
   description: 'Protect network infrastructure in Azure'
   ms.date: 01/23/2026
   author: wwlpublish
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: learning-path
 title: 'Protect network infrastructure in Azure'
 prerequisites: |

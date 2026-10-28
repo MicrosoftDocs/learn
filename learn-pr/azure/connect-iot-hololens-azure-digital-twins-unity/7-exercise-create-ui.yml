@@ -6,7 +6,7 @@ metadata:
   description: Learn how to create and configure the Azure Digital Twin user interface in your Unity project.
   ms.date: 09/10/2024
   author: JBrentJ
-  ms.author: lolab
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 8
 content: |

@@ -1,6 +1,22 @@
 ### YamlMime:Module
 uid: learn.wwl.guided-project-debug-handle-exceptions-c-sharp-console-application
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 50
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+  gs-skills:
+    - "Application Development"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-language/guided-project-debug-handle-exceptions-c-sharp-console-application/index.yml
   title: Guided project - Debug and handle exceptions in a C# console application using Visual Studio Code
   description: "This module guides you through the code verification process for a C# console application. Hands-on activities provide experience identifying logic issues, debugging the application, and implementing exception handling. Step-by-step instructions are provided."
   ms.date: 12/15/2025

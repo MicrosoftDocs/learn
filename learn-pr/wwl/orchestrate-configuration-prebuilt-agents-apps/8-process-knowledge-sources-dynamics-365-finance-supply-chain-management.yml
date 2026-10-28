@@ -6,7 +6,7 @@ metadata:
   description: "Learn how to recommend and manage process knowledge sources for in-app help in Dynamics 365 Finance and Supply Chain apps. Improve user productivity."
   ms.date: 02/13/2026
   author: msdavidram
-  ms.author: taeldin
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 5
 content: |

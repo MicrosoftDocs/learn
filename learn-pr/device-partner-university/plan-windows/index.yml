@@ -5,6 +5,23 @@ uid: learn.dpu.plan-windows
 title: Plan to deploy updates for Windows clients and Microsoft 365 apps
 
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 23
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - windows
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - it-professional
+  gs-skills:
+    - "Device Management"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/plan-windows/index.yml
   title: Plan to Deploy Updates for Windows Clients and Microsoft 365 Apps
 
   description: In this module, you’ll learn how to plan updates for the clients and applications across your organization.

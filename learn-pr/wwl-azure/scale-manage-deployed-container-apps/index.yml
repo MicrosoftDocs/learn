@@ -1,6 +1,32 @@
 ### YamlMime:Module
 uid: learn.wwl.scale-manage-deployed-container-apps
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 33
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - devops-engineer
+    - platform-engineer
+    - developer
+    - administrator
+  gs-skills:
+    - DevOps
+    - Automation
+    - "Cloud Infrastructure"
+    - "Platform Engineering"
+    - "Application Architecture"
+    - "Network Connectivity"
+    - "Infrastructure Management"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/scale-manage-deployed-container-apps/index.yml
   title: Scale and manage deployed container apps
   description: "This module addresses the concept of revisions in Azure Container Apps and discusses options for application lifecycle management. It also covers scaling choices and ingress settings, including traffic splitting for Azure Container Apps."
   ms.date: 01/07/2025

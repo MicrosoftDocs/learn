@@ -1,11 +1,34 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.migrate-modernize-explore-foundations-of-iaas
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - solution-architect
+    - network-engineer
+    - systems-administrator
+    - storage-admin
+  gs-skills:
+    - "Cloud Infrastructure"
+    - "Solution Architecture"
+    - Storage
+    - "Network Connectivity"
+    - Cybersecurity
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/migrate-modernize-explore-foundations-of-iaas/index.yml
   title: Modernize and explore the foundations of IaaS for SAP on Azure
   description: Modernize and explore the foundations of IaaS for SAP on Azure
   ms.date: 01/10/2024
   author: wwlpublish
-  ms.author: eric
+  ms.author: lumac
   ms.topic: learning-path
 title: Modernize and explore the foundations of IaaS for SAP on Azure
 prerequisites: |

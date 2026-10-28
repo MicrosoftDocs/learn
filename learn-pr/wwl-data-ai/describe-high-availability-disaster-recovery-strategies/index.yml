@@ -1,6 +1,30 @@
 ### YamlMime:Module
 uid: learn.wwl.describe-high-availability-disaster-recovery-strategies
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 59
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - database-administrator
+    - solution-architect
+    - data-engineer
+  gs-skills:
+    - "Solution Architecture"
+    - "Data Management"
+    - "Cloud Infrastructure"
+    - "Infrastructure Management"
+    - "Network Connectivity"
+    - Storage
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/describe-high-availability-disaster-recovery-strategies/index.yml
   title: Describe high availability and disaster recovery strategies
   description: Describe high availability and disaster recovery strategies
   ms.date: 08/10/2026

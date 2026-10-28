@@ -1,6 +1,34 @@
 ### YamlMime:Module
 uid: learn.wwl.purview-unified-catalog-understand
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 34
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - microsoft-purview
+    - fabric
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - data-professional
+    - data-engineer
+    - data-analyst
+    - business-analyst
+    - administrator
+  gs-skills:
+    - "Data Management"
+    - "Data Strategies"
+    - "Data Administration"
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "Data Analytics"
+    - "Responsible AI"
+    - "AI Governance"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/purview-unified-catalog-understand/index.yml
   title: Understand How Microsoft Purview Unified Catalog Unifies Your Data Estate
   description: Learn how Microsoft Purview Unified Catalog helps organizations overcome fragmented data estates by centralizing assets, adding business context, and applying consistent governance so teams can trust and use data with confidence.
   ms.date: 09/09/2025

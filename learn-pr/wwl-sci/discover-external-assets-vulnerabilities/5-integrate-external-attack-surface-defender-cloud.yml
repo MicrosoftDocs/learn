@@ -5,7 +5,7 @@ metadata:
   description: Connect EASM outside-in discovery data with Defender Cloud Security Posture Management (CSPM) to perform attack path analysis starting from internet-exposed resources and run Cloud Security Explorer queries that correlate external exposure with internal security findings.
   ms.date: 04/07/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-generated
 title: Integrate EASM insights with Defender for Cloud

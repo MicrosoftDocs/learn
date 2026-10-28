@@ -1,6 +1,28 @@
 ### YamlMime:Module
 uid: learn.wwl.convert-oracle-schema-azure-database-postgresql-ai
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 68
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - microsoft-foundry
+    - github-copilot
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - database-administrator
+  gs-skills:
+    - "Data Migration"
+    - Databases
+    - "Data Administration"
+    - "AI-Augmented Software Development"
+    - "AI Governance"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/convert-oracle-schema-azure-database-postgresql-ai/index.yml
   title: Convert Oracle schemas to Azure Database for PostgreSQL
   description: "Learn how to use the AI-powered Oracle to Azure Database for PostgreSQL schema conversion feature in the Visual Studio Code PostgreSQL extension to automate schema translation, validate results in a scratch database, and resolve flagged items with GitHub Copilot agent mode."
   ms.date: 07/17/2026

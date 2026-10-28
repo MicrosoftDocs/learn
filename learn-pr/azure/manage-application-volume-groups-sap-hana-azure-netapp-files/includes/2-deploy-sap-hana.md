@@ -2,7 +2,7 @@ Here you learn how to deploy the first SAP HANA host using Azure NetApp Files ap
 
 All deployments start with the volumes for a single SAP HANA host. The shared, log-backup, and data-backup volumes are created only for the first host. All other hosts in a multiple-host environment share these volumes, and they add only data and log volumes for each additional host.
 
-- Before you begin, you should understand the [requirements and considerations for application volume group for SAP HANA](https://learn.microsoft.com/azure/azure-netapp-files/application-volume-group-considerations).
+- Before you begin, you should understand the [requirements and considerations for application volume group for SAP HANA](/azure/azure-netapp-files/application-volume-group-considerations).
 - Be sure to follow the [pinning recommendations](https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRxjSlHBUxkJBjmARn57skvdUQlJaV0ZBOE1PUkhOVk40WjZZQVJXRzI2RC4u) and have at least one HANA virtual machine (VM) in the availability set started. Alternatively, you can use Application volume group for SAP HANA Extension 1.
 
 ### Register for Extension 1
@@ -11,13 +11,13 @@ Azure NetApp Files application volume group for SAP HANA Extension 1 is currentl
 
 Application volume group for SAP HANA extension one offers support for:
 
-- [Availability zone volume placement](https://learn.microsoft.com/azure/reliability/reliability-netapp-files)
+- [Availability zone volume placement](/azure/reliability/reliability-netapp-files)
 
 Designating the same availability zone for the volumes ensures that virtual machines and Azure NetApp Files volumes reside in the same availability zone and meet the latency requirements for SAP HANA. This improvement simplifies the deployment process, avoiding the manual AvSet pinning process and eliminating the requirement for availability sets.
 
-- [Standard network features](https://learn.microsoft.com/azure/azure-netapp-files/azure-netapp-files-network-topologies)
+- [Standard network features](/azure/azure-netapp-files/azure-netapp-files-network-topologies)
 
-Application volume group for SAP HANA now supports selecting Standard network features for all volumes in the volume group. Standard network features support enhanced security including [network security groups (NSGs)](https://learn.microsoft.com/azure/virtual-network/network-security-group-how-it-works)
+Application volume group for SAP HANA now supports selecting Standard network features for all volumes in the volume group. Standard network features support enhanced security including [network security groups (NSGs)](/azure/virtual-network/network-security-group-how-it-works)
 
 You need to register the feature before using it for the first time. Feature registration may take up to 60 minutes to complete.
 

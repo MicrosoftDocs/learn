@@ -6,7 +6,7 @@ metadata:
   description: "Design AI solutions that align to the Microsoft Cloud Security Benchmark."
   ms.date: 05/19/2026
   author: ceperezb
-  ms.author: ceperezb
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 6
 content: |

@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-postgresql-architecture
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 39
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - database-administrator
+  gs-skills:
+    - "Data Administration"
+    - Databases
+    - "Cloud Administration"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/explore-postgresql-architecture/index.yml
   title: Explore PostgreSQL architecture
   description: "PostgreSQL is an open-source relational database system that is now available as a service in Azure. In this module, you learn about the PostgreSQL architecture, and how to manage different aspects of PostgreSQL in Azure Database for PostgreSQL."
   ms.date: 05/08/2024

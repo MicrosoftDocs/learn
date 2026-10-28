@@ -6,7 +6,7 @@ metadata:
   description: "Design an agent identity solution using Microsoft Entra Agent ID."
   ms.date: 05/28/2026
   author: ceperezb
-  ms.author: ceperezb
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-generated
 durationInMinutes: 12

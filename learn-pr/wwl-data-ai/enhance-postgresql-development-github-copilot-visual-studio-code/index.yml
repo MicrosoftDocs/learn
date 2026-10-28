@@ -1,6 +1,28 @@
 ### YamlMime:Module
 uid: learn.wwl.enhance-postgresql-development-github-copilot-visual-studio-code
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 56
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - github-copilot
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+    - data-engineer
+  gs-skills:
+    - "AI-Augmented Software Development"
+    - "Database Development"
+    - SQL
+    - Databases
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/enhance-postgresql-development-github-copilot-visual-studio-code/index.yml
   title: Develop PostgreSQL Solutions in Visual Studio Code With the PostgreSQL Extension and GitHub Copilot
   description: Learn how GitHub Copilot and the PostgreSQL extension improve SQL development workflows in Visual Studio Code.
   ms.date: 10/26/2026

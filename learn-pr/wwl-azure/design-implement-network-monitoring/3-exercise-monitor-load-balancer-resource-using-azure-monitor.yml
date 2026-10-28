@@ -8,7 +8,7 @@ metadata:
   description: "Exercise: Monitor a load balancer resource using Azure monitor"
   ms.date: 05/19/2025
   author: wwlpublish
-  ms.author: cynthist
+  ms.author: lumac
   ms.topic: unit
   ms.custom:
   - N/A

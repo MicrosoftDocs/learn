@@ -1,6 +1,30 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.implement-windows-server-iaas-vm-identity
 metadata:
+  gs-content.levels: 400
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - entra
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - identity-access-admin
+    - systems-administrator
+    - solution-architect
+    - security-engineer
+  gs-skills:
+    - "Identity and Access Management (IAM)"
+    - "Cloud Infrastructure"
+    - "Infrastructure Management"
+    - "Security Architecture Design"
+    - Cybersecurity
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/implement-windows-server-iaas-virtual-machine-identity/index.yml
   title: Implement Windows Server IaaS VM Identity
   description: After completing this learning path, you’ll know how to implement identity in Azure. You’ll be able to extend an existing on-premises Active Directory identity service into Azure.
   ms.date: 01/23/2026

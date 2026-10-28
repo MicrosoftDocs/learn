@@ -1,6 +1,29 @@
 ### YamlMime:Module
 uid: learn.introduction-to-azure-backup # Do not edit: uid must be globally unique
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 18
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - systems-administrator
+    - storage-admin
+    - database-administrator
+    - solution-architect
+  gs-skills:
+    - Storage
+    - "Infrastructure Management"
+    - "Data Administration"
+    - "Data Security"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/intro-to-azure-backup/index.yml
   moduleType: introduction
   title: Introduction to Azure Backup
   description: Introduction to Azure Backup.

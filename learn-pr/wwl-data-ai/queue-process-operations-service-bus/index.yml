@@ -1,6 +1,28 @@
 ### YamlMime:Module
 uid: learn.wwl.queue-process-operations-service-bus
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 81
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+    - ai-engineer
+    - solution-architect
+  gs-skills:
+    - "Application Architecture"
+    - "Python (Programming Language)"
+    - "Cloud Computing"
+    - "Generative AI"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/queue-process-operations-service-bus/index.yml
   title: Queue and Process AI Operations with Azure Service Bus
   description: Learn how to use Azure Service Bus to queue, distribute, and reliably process AI workloads using queues, topics, subscriptions, and dead-letter queues.
   ms.date: 06/15/2026

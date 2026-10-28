@@ -1,6 +1,27 @@
 ### YamlMime:Module
 uid: learn.wwl.design-authentication-authorization-solutions
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 70
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - entra
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - solution-architect
+    - security-engineer
+  gs-skills:
+    - "Identity and Access Management (IAM)"
+    - "Solution Architecture"
+    - Cybersecurity
+    - "Application Security"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/design-authentication-authorization-solutions/index.yml
   title: Design Authentication and Authorization Solutions
   description: "Azure Architects design and recommend authentication and authorization solutions."
   ms.date: 03/23/2026

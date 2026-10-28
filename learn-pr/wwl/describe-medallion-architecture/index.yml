@@ -1,11 +1,29 @@
 ### YamlMime:Module
 uid: learn.wwl.describe-medallion-architecture
 metadata:
+  gs-content.levels: 100
+  gs-content.locale: en-us
+  gs-duration: 71
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - fabric
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - data-analyst
+  gs-skills:
+    - "Data Engineering"
+    - "Data Strategies"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl/describe-medallion-architecture/index.yml
   title: Organize a Fabric Lakehouse Using Medallion Architecture Design
   description: "Explore the potential of the medallion architecture design in Microsoft Fabric. Organize and transform your data across Bronze, Silver, and Gold layers of a lakehouse for optimized analytics."
   ms.date: 06/10/2026
   author: theresa-i
-  ms.author: theresai
+  ms.author: lumac
   ms.topic: module-standard-task-based
   ms.service: fabric
 title: Organize a Fabric lakehouse using medallion architecture design

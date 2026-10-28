@@ -2,6 +2,28 @@
 uid: learn.dpu.why-windows-now
 title: Why Windows 11 Pro, why now
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 12
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - windows
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - technology-manager
+    - business-owner
+    - business-user
+  gs-skills:
+    - "Device Management"
+    - "AI Strategy"
+    - "Security Architecture Design"
+    - "Communications Management"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/why-windows-now/index.yml
   title: Why Windows 11 Pro, Why Now
   description: In this module, you'll understand the reasons to upgrade to Windows 11 Pro and the different upgrade scenarios that help drive upgrades.
   ms.date: 07/28/2025

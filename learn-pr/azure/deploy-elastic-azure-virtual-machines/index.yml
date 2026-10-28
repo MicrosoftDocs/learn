@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.azure.deploy-elastic-azure-virtual-machines
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 114
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - systems-administrator
+    - solution-architect
+  gs-skills:
+    - "Cloud Infrastructure"
+    - "Cloud Administration"
+    - "Infrastructure Management"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/deploy-elastic-azure-virtual-machines/index.yml
   moduleType: standard
   title: Deploy Elastic on Azure Virtual Machines
   description: "Deploy a self-managed Elasticsearch cluster and Kibana on private Azure Linux virtual machines, configure HTTPS, and verify a disposable lab."

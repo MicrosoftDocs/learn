@@ -1,6 +1,33 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.develop-computer-vision-with-foundry
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - azure-openai
+    - microsoft-foundry
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - ai-engineer
+    - developer
+  gs-skills:
+    - "Multimodal AI"
+    - "Computer Vision"
+    - "Generative AI"
+    - "Application Development"
+    - "Python (Programming Language)"
+    - "AI Prompting"
+    - "Prompt Engineering"
+    - "Model Hosting & Inference"
+    - "AI Safety"
+    - "Information Extraction"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/develop-computer-vision-with-foundry/index.yml
   title: Develop computer vision solutions with Microsoft Foundry
   description: Learn how to develop computer vision solutions on Azure using Microsoft Foundry.
   ms.date: 03/08/2026

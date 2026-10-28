@@ -13,8 +13,8 @@ These patterns give your team a repeatable way to evolve MCP tools without break
 ## Learn more
 
 - [Model Context Protocol specification](https://modelcontextprotocol.io/specification/2025-11-25)
-- [Azure Managed Identity documentation](https://learn.microsoft.com/entra/identity/managed-identities-azure-resources/overview)
-- [Azure Container Apps documentation](https://learn.microsoft.com/azure/container-apps/overview)
+- [Azure Managed Identity documentation](/entra/identity/managed-identities-azure-resources/overview)
+- [Azure Container Apps documentation](/azure/container-apps/overview)
 - [Semantic Versioning specification](https://semver.org/)
-- [Circuit Breaker pattern](https://learn.microsoft.com/azure/architecture/patterns/circuit-breaker)
-- [Retry pattern with exponential backoff](https://learn.microsoft.com/azure/architecture/patterns/retry)
+- [Circuit Breaker pattern](/azure/architecture/patterns/circuit-breaker)
+- [Retry pattern with exponential backoff](/azure/architecture/patterns/retry)

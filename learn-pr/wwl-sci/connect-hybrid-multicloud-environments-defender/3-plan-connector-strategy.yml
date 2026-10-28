@@ -5,7 +5,7 @@ metadata:
   description: Plan connector scope, scan interval, permission model, and deployment path for on-premises, AWS, and GCP environments in Microsoft Defender for Cloud.
   ms.date: 04/01/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-generated
 title: Plan a connector strategy for hybrid and multicloud environments

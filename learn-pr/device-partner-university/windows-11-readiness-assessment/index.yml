@@ -2,6 +2,27 @@
 uid: learn.dpu.windows-11-readiness-assessment
 title: Perform a Windows 11 device readiness assessment
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 27
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - windows
+    - intune
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - administrator
+    - systems-administrator
+  gs-skills:
+    - "Device Management"
+    - "Cloud Administration"
+    - "Infrastructure Management"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/windows-11-readiness-assessment/index.yml
   title: Perform A Windows 11 Device Readiness Assessment
   description: Learn how to assess device readiness for Windows 11 using PC Health Check and Endpoint Analytics in Microsoft Intune. This module guides IT professionals through evaluating upgrade eligibility and planning secure transitions post–Windows 10 end of support.
   ms.date: 10/31/2025

@@ -1,11 +1,29 @@
 ### YamlMime:Module
 uid: learn.wwl.discover-interfaces
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 42
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+    - student
+  gs-skills:
+    - "Application Development"
+    - "Application Architecture"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/discover-interfaces/index.yml
   title: Discover Interfaces
   description: "In this module, you learn how to design an interface with properties in C#, develop a class that implements the interface, and formulate property definitions within the interface."
   ms.date: 04/15/2025
   author: wwlpublish
-  ms.author: eric
+  ms.author: lumac
   ms.topic: module-intro-to-product
   ms.collection: N/A
   ms.custom:

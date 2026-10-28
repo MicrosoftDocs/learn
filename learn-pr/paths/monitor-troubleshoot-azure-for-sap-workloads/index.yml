@@ -1,11 +1,36 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.monitor-troubleshoot-azure-for-sap-workloads
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - solution-architect
+  gs-skills:
+    - "Cloud Administration"
+    - "Infrastructure Management"
+    - "Data Analytics"
+    - "Security Operations Management"
+    - Databases
+    - "IT Networking"
+    - Storage
+    - "Enterprise Resource Planning (ERP)"
+    - "Solution Architecture"
+    - "Cloud Infrastructure"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/monitor-troubleshoot-azure-for-sap-workloads/index.yml
   title: Monitor and troubleshoot Azure for SAP workloads
   description: Monitor and troubleshoot Azure for SAP workloads
   ms.date: 01/11/2024
   author: wwlpublish
-  ms.author: eric
+  ms.author: lumac
   ms.topic: learning-path
 title: Monitor and troubleshoot Azure for SAP workloads
 prerequisites: |

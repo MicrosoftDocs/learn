@@ -1,13 +1,43 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-security-controls-identity-access
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 367
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - entra
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - security-engineer
+    - identity-access-admin
+    - systems-administrator
+    - security-operations-analyst
+    - solution-architect
+    - ip-admin
+  gs-skills:
+    - "Identity and Access Management (IAM)"
+    - Cybersecurity
+    - "Security Architecture Design"
+    - "Cloud Administration"
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "Security Analytics"
+    - Automation
+    - "Cloud Infrastructure"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/manage-security-controls-identity-access/index.yml
   adobe-target: true
   prefetch-feature-rollout: true
   title: Manage Security Controls for Identity and Access
   description: "This module focuses on effectively managing security controls in Microsoft Entra ID by securing identities, authentication, and authorization to protect users, groups, and external identities against threats while ensuring secure and seamless access to resources."
   ms.date: 10/20/2026
   author: wwlpublish
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: module
   ms.collection: N/A
   ms.custom:

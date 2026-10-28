@@ -6,7 +6,7 @@ metadata:
   description: "Create a Microsoft Sentinel playbook."
   ms.date: 06/09/2025
   author: KenMAG
-  ms.author: kelawson
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 15
 content: |

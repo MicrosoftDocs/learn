@@ -9,5 +9,5 @@ You also performed hands-on exercises to configure customer-managed keys for vol
 
 ### Learn more
 
-- [Configure customer-managed keys for Azure NetApp Files volume encryption](https://learn.microsoft.com/azure/azure-netapp-files/configure-customer-managed-keys?tabs=azure-portal)
-- [Configure customer-managed keys with managed Hardware Security Module](https://learn.microsoft.com/azure/azure-netapp-files/configure-customer-managed-keys-hardware)
+- [Configure customer-managed keys for Azure NetApp Files volume encryption](/azure/azure-netapp-files/configure-customer-managed-keys?tabs=azure-portal)
+- [Configure customer-managed keys with managed Hardware Security Module](/azure/azure-netapp-files/configure-customer-managed-keys-hardware)

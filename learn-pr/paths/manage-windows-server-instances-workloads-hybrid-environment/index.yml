@@ -1,6 +1,38 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.manage-windows-server-instances-workloads-hybrid-environment
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - azure
+    - windows
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - systems-administrator
+  gs-skills:
+    - "Cloud Administration"
+    - "Infrastructure Management"
+    - "Network Connectivity"
+    - Cybersecurity
+    - Automation
+    - "IT Networking"
+    - "Identity and Access Management (IAM)"
+    - "Zero Trust Security"
+    - "Security Architecture Design"
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "Device Management"
+    - "Cloud Infrastructure"
+    - Virtualization
+    - "Process Automation"
+    - DevOps
+    - "Security Automation"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/manage-windows-server-instances-workloads-hybrid-environment/index.yml
   title: Manage Windows Server Instances and Workloads in a Hybrid Environment
   description: Learn how to configure remote management and manage Windows Server workloads using Azure services in a hybrid environment.
   ms.date: 07/07/2026

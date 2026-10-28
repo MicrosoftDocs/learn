@@ -1,6 +1,28 @@
 ### YamlMime:Module
 uid: learn.explore-microsoft-copilot-business-users
 metadata:
+  gs-content.levels: 100
+  gs-content.locale: en-us
+  gs-duration: 42
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - microsoft-365-copilot
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - business-user
+  gs-skills:
+    - "AI Fluency"
+    - "AI Productivity"
+    - "Generative AI"
+    - "Responsible AI"
+    - "Agentic AI"
+    - "AI Prompting"
+  gs-solution.area: "AI Business Solutions"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/explore-microsoft-copilot-business-users/index.yml
   title: "Work Smarter With AI"
   description: "Discover how to use AI to support workplace tasks like summarizing, drafting, and analyzing. Learn to use AI effectively and responsibly."
   ms.date: 08/17/2026

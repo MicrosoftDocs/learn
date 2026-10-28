@@ -1,6 +1,27 @@
 ### YamlMime:Module
 uid: learn.oxford.connect-iot-devices-cognitive-services-azure-func
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 76
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+    - ai-engineer
+  gs-skills:
+    - "Application Development"
+    - "AI Solutions"
+    - "API Management"
+    - "Cloud Infrastructure"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/student-evangelism/connecting-iot-devices-cognitive-services-azure-functions/index.yml
   title: "Connect IoT devices to Azure AI Speech using Azure Functions"
   description: Create and deploy a cloud-hosted Azure Function that uses Azure AI Speech translation with an MXChip IoT DevKit
   ms.date: 05/01/2026

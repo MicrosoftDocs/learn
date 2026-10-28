@@ -1,6 +1,31 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.azure-data-fundamentals-explore-relational-data
 metadata:
+  gs-content.levels: 100
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - data-engineer
+    - data-professional
+    - database-administrator
+    - developer
+    - student
+  gs-skills:
+    - Databases
+    - "Database Design"
+    - SQL
+    - "Cloud Computing"
+    - "Data Administration"
+    - "Data Migration"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/azure-data-fundamentals-explore-relational-data/index.yml
   title: 'Introduction to Microsoft Azure Data relational data in Azure'
   description: 'Introduction to Microsoft Azure Data relational data in Azure'
   ms.date: 05/04/2026

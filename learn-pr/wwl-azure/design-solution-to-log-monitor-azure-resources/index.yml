@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.wwl.design-solution-to-log-monitor-azure-resources
 metadata:
+  gs-content.levels: 400
+  gs-content.locale: en-us
+  gs-duration: 26
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - solution-architect
+    - administrator
+  gs-skills:
+    - "Security Analytics"
+    - "Solution Architecture"
+    - "Cloud Administration"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/design-solution-to-log-monitor-azure-resources/index.yml
   title: Design a Solution to Log and Monitor Azure Resources
   description: "Design a solution to log and monitor Azure resources"
   ms.date: 06/23/2026

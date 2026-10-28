@@ -1,11 +1,28 @@
 ### YamlMime:Module
 uid: learn.fsharp-conditional
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 16
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+  gs-skills:
+    - "Application Development"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/language/fsharp-conditional/index.yml
   title: Manage execution flow in F#
   description: Learn how to manage execution flow in your programs by using `if...elif...else` and loop constructs.
   ms.date: 11/23/2022
   author: baronfel
   ms.author: chethusk 
+  ms.service: dotnet-fsharp
   ms.topic: module
   ms.custom: team=nextgen
   ms.devlang: fsharp

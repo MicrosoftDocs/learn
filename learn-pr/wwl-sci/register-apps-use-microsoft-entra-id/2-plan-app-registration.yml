@@ -6,7 +6,7 @@ metadata:
   description: "Establish the goals, permissions, and the data integration needs for your application in Microsoft Entra."
   ms.date: 03/18/2024
   author: wwlpublish
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ms.custom:
   - N/A

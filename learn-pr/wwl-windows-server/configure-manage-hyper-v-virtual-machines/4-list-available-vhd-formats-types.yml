@@ -6,7 +6,7 @@ metadata:
   description: "List available VHD formats and types"
   ms.date: 03/19/2024
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: lumac
   ms.topic: unit
 azureSandbox: false
 labModal: false

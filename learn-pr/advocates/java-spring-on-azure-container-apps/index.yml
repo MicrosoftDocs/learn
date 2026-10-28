@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.java-on-azure-container-apps
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 30
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+    - systems-administrator
+  gs-skills:
+    - "Application Development"
+    - "Cloud Administration"
+    - Databases
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/advocates/java-spring-on-azure-container-apps/index.yml
   title: Deploy a Spring Boot app to Azure Container Apps
   description: In this module, you learn how to deploy a Spring Boot app to Azure Container Apps. You deploy a Spring Boot application to Azure Container Apps and maintain it using the built-in Java stack.
   author: Orin-Thomas

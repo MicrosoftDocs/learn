@@ -1,10 +1,28 @@
 ### YamlMime:Module
 uid: learn.streamline-nonprofit-program-management-with-microsoft-copilot
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 25
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - nonprofit-professionals
+  gs-skills:
+    - "AI Productivity"
+    - "AI-Powered Workflow Automation"
+    - "Organizational Effectiveness"
+  gs-solution.area: "AI Business Solutions"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/philanthropies/streamline-nonprofit-program-management-with-microsoft-copilot/index.yml
   title: Streamline nonprofit program management with Microsoft Copilot
   description: This module is aligned to program management and administrative task roles. Learn how AI tools such as Copilot can help to manage everyday tasks to increase efficiency, automate time-consuming tasks, and give time back to your team.
   author: CourtneyHMicrosoft
-  ms.author: anruss
+  ms.author: lumac
   ms.date: 01/14/2025
   ms.update-cycle: 180-days
   ms.service: artificial-intelligence

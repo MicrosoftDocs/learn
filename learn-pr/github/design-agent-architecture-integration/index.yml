@@ -2,6 +2,34 @@
 uid: learn.github.design-agent-architecture-integration
 title: Designing Agent Architecture and SDLC Integration
 metadata:
+  gs-content.levels: 400
+  gs-content.locale: en-us
+  gs-duration: 45
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - github
+    - github-copilot
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - solution-architect
+    - devops-engineer
+    - developer
+    - security-engineer
+    - systems-administrator
+  gs-skills:
+    - "Agentic AI"
+    - "Agent Operations"
+    - "AI Governance"
+    - "AI Risk Management"
+    - DevOps
+    - "Security Architecture Design"
+    - "Security Automation"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/github/design-agent-architecture-integration/index.yml
   title: Designing Agent Architecture and SDLC Integration
   description: Illustration showing how agentic systems use GitHub workflows such as branches, pull requests, checks, and repository rules to safely build and maintain software.
   author: camihmerhar

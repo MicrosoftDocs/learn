@@ -1,11 +1,32 @@
 ### YamlMime:Module
 uid: learn.wwl.get-started-kusto-fabric
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 66
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - fabric
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - data-analyst
+    - data-engineer
+  gs-skills:
+    - "Data Analytics"
+    - "Data Engineering"
+    - "Data Visualization"
+    - Automation
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl/get-started-kusto-fabric/index.yml
   title: Get started with Real-Time Intelligence in Microsoft Fabric
   description: "Real-Time Intelligence in Microsoft Fabric has capabilities that help you ingest, process, store, visualize, and act on data in motion to gain immediate insights from events as they happen."
   ms.date: 09/10/2025
   author: theresa-i
-  ms.author: theresai
+  ms.author: lumac
   ms.topic: module-standard-task-based
   ms.service: fabric
   ms.subservice: rti-core

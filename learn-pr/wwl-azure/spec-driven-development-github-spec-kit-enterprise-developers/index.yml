@@ -1,6 +1,23 @@
 ### YamlMime:Module
 uid: learn.spec-driven-development-github-spec-kit-microsoft-internal
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 180
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - github
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - devops-engineer
+  gs-skills:
+    - "AI-Augmented Software Development"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/spec-driven-development-github-spec-kit-enterprise-developers/index.yml
   title: Implement Spec-Driven Development using the GitHub Spec Kit
   description: "Implement the spec-driven development methodology using GitHub Spec Kit and GitHub Copilot in Visual Studio Code. Training covers a brownfield scenario for enterprise developers, emphasizing intent-first philosophy with living specifications."
   ms.date: 1/28/2026

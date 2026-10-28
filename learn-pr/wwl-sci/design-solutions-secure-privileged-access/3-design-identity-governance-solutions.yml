@@ -6,7 +6,7 @@ metadata:
   description: "Learn to evaluate security and governance of solutions with Microsoft Entra ID, including PIM, entitlement management, and access reviews."
   ms.date: 05/29/2026
   author: ceperezb
-  ms.author: ceperezb
+  ms.author: lumac
   ms.topic: unit
   ms.custom: sfi-ga-nochange
 durationInMinutes: 8

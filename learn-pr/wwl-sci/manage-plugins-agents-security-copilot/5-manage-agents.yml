@@ -5,7 +5,7 @@ metadata:
   description: Learn how to control agent execution by running or pausing agents, edit agent configuration, provide targeted feedback to improve agent performance. Explore managing agent memory to refine outputs over time.
   ms.date: 04/23/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
 title: Manage Security Copilot agents
 durationInMinutes: 4

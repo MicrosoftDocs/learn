@@ -1,11 +1,34 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.describe-capabilities-of-microsoft-compliance-solutions
 metadata:
+  gs-content.levels: 100
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - m365
+    - microsoft-purview
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - ip-admin
+  gs-skills:
+    - "Data Security"
+    - Cybersecurity
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "Security Operations Management"
+    - "Threat Management"
+    - "Data Management"
+    - "Security Analytics"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/describe-capabilities-of-microsoft-compliance-solutions/index.yml
   title: "Introduction to Microsoft Purview and Microsoft's privacy principles"
   description: "SC-900: Introduction to Microsoft Purview and Microsoft's privacy principles"
   ms.date: 04/27/2026
   author: wwlpublish
-  ms.author: ceperezb
+  ms.author: lumac
   ms.topic: learning-path
 title: "Introduction to Microsoft Purview and Microsoft's privacy principles"
 prerequisites: |

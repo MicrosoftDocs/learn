@@ -1,6 +1,34 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.devops-foundations-core-principles-practices
 metadata:
+  gs-content.levels: 100
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - azure
+    - github
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - devops-engineer
+    - developer
+    - platform-engineer
+  gs-skills:
+    - DevOps
+    - "Application Development"
+    - "Cloud Infrastructure"
+    - Cybersecurity
+    - "Organizational Culture"
+    - Automation
+    - "Application Security"
+    - "Platform Engineering"
+    - "Infrastructure Management"
+    - "Data Analytics"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/devops-foundations-core-principles-practices/index.yml
   title: "DevOps foundations: The core principles and practices AZ-2008"
   description: 'Explore DevOps practices using GitHub. Your development and operations teams will experience improved collaboration, agility, continuous integration, continuous delivery, automation, and operational excellence throughout all phases of the application lifecycle. (AZ-2008)'
   ms.date: 02/06/2024

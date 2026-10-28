@@ -2,6 +2,31 @@
 uid: learn.dpu.windows-11-pro-accreditation-2026
 title: Windows 11 Pro Accreditation 2026
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - intune
+    - microsoft-365-copilot
+    - windows
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - it-professional
+    - systems-administrator
+  gs-skills:
+    - "AI Fluency"
+    - "AI Productivity"
+    - "Device Management"
+    - "Infrastructure Management"
+    - Cybersecurity
+    - "Cloud Administration"
+    - "Agentic AI"
+  gs-solution.area: null
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/windows-11-pro-accreditation-2026/index.yml
   title: Windows 11 Pro Accreditation 2026
   description: This Learning Path introduces Windows 11 Pro as a secure, high-performance platform designed to support AI-enabled work. Learners will explore how Windows can provide a flexible canvas for AI experiences, built-in security and management, resilient device fundamentals, and seamless integration with the Microsoft Cloud. The Learning Path covers how Windows 11 Pro supports intelligent workflows with AI and agents, simplifies IT management with security by default, and delivers reliable performance for mission-critical operations. By completing this Learning Path, learners will understand how they can use Windows 11 Pro to adopt AI while maintaining strong security, resiliency, and operational efficiency.
   ms.date: 01/28/2026

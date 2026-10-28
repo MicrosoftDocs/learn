@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.test-python-with-pytest
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 21
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+    - student
+  gs-skills:
+    - "Python (Programming Language)"
+    - "Application Development"
+    - Automation
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/language/test-python-with-pytest/index.yml
   moduleType: standard
   title: Testing with Pytest
   description: Use Pytest, a popular test framework to write and run tests in Python. Learn about useful patterns, utilities, and helpful reporting that make Pytest a solid choice for testing.

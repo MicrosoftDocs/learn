@@ -2,6 +2,29 @@
 uid: learn.wwl.apl-2015-github-secret-scanning
 hidden: true
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - github
+    - github-copilot
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+    - security-engineer
+  gs-skills:
+    - "Application Security"
+    - Cybersecurity
+    - "Security Operations Management"
+    - "Security Automation"
+    - "AI-Augmented Software Development"
+    - "AI Prompting"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/apl-2015-github-secret-scanning/index.yml
   title: Resolve GitHub Secret Scanning Alerts using GitHub Copilot Agent
   description: Learn how to resolve GitHub Secret Scanning alerts using GitHub Copilot's Ask and Agent modes. The training focuses on detecting hard-coded secrets in source code and implementing secure configuration patterns to replace them.
   ms.date: 03/05/2026

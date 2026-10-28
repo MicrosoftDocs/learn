@@ -6,7 +6,7 @@ metadata:
   description: Understand the primary drivers for Azure migration, and how applications can be changed or replaced to use new cloud technologies.
   ms.date: 05/30/2025
   author: sgsneha
-  ms.author: sudhirsneha
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 10
 content: |

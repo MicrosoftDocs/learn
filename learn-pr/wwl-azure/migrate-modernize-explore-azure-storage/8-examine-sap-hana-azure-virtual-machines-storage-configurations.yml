@@ -6,7 +6,7 @@ metadata:
   description: "Examine SAP HANA Azure Virtual Machines storage configurations"
   ms.date: 01/09/2024
   author: wwlpublish
-  ms.author: eric
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 5
 content: |

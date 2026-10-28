@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-event-messaging-azure-managed-redis
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 81
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+  gs-skills:
+    - "Application Development"
+    - "Application Architecture"
+    - "Python (Programming Language)"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/implement-event-messaging-azure-managed-redis/index.yml
   title: Implement Event Messaging with Azure Managed Redis
   description: Learn how to implement event messaging with Azure Cache for Redis and Azure Managed Redis, including pub/sub for real-time notifications and Streams for reliable task processing.
   ms.date: 06/12/2026

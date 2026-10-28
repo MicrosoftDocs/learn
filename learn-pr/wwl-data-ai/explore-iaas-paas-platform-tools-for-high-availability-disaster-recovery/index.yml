@@ -1,6 +1,31 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-iaas-paas-platform-tools-for-ha-dr
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 71
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - database-administrator
+    - systems-administrator
+    - data-engineer
+  gs-skills:
+    - "Data Administration"
+    - Databases
+    - "Cloud Infrastructure"
+    - "Cloud Administration"
+    - SQL
+    - "IT Networking"
+    - Virtualization
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/explore-iaas-paas-platform-tools-for-high-availability-disaster-recovery/index.yml
   title: Explore IaaS and PaaS solutions for high availability and disaster recovery
   description: Explore IaaS and PaaS solutions for high availability and disaster recovery
   ms.date: 08/10/2026

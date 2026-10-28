@@ -1,6 +1,24 @@
 ### YamlMime:LearningPath
 uid: learn.dotnet-maui.build-apps-with-dotnet-maui
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+  gs-skills:
+    - "Application Development"
+    - "Application Architecture"
+    - Databases
+    - Storage
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/build-apps-with-dotnet-maui/index.yml
   title: Build mobile and desktop apps with .NET MAUI
   description: 'In this learning path, use C# and Visual Studio with .NET MAUI to create an app that runs across iOS, Android, and Windows.'
   ms.date: 01/02/2025

@@ -1,6 +1,34 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.deploy-manage-identity-infrastructure
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - azure
+    - windows
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - identity-access-admin
+    - solution-architect
+    - systems-administrator
+  gs-skills:
+    - "Identity and Access Management (IAM)"
+    - "Infrastructure Management"
+    - "Security Architecture Design"
+    - "Zero Trust Security"
+    - "Solution Architecture"
+    - "Cloud Administration"
+    - Cybersecurity
+    - "Data Management"
+    - Automation
+    - "Cloud Infrastructure"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/deploy-manage-identity-infrastructure/index.yml
   title: Deploy and manage identity infrastructure
   description: Deploy and manage identity infrastructure
   ms.date: 01/23/2026

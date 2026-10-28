@@ -2,11 +2,30 @@
 uid: learn.dpu.introduction-to-windows-server-2025
 title: Introduction to Windows Server 2025
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 18
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - windows
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - systems-administrator
+  gs-skills:
+    - "Cloud Administration"
+    - "Infrastructure Management"
+    - Virtualization
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/introduction-to-windows-server-2025/index.yml
   title: Introduction To Windows Server 2025
   description: Characterize the types of IT environments and business needs that Windows Server 2025 is designed to support. Describe the core features of Windows Server 2025, including modular server roles, advanced security infrastructure, Hyper-V virtualization, resilient storage and networking, centralized management tools, and hybrid cloud integration.
   ms.date: 08/27/2025
   author: melissawinters
-  ms.author: v-mwinters
+  ms.author: lumac
   ms.topic: module
   ms.service: windows-server
   ms.custom: CS110724-1

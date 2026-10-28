@@ -7,7 +7,7 @@ metadata:
   description: "Change how a Blazor app routes navigation by using the @page directive."
   ms.date: 07/17/2025
   author: csharpfritz
-  ms.author: jefritz
+  ms.author: lumac
   ms.manager: markl
   ms.topic: unit
   ms.custom:

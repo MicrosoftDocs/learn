@@ -1,6 +1,24 @@
 ### YamlMime:Module
 uid: learn.wwl.design-implement-data-modeling-unity-catalog
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 137
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure-databricks
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - data-engineer
+  gs-skills:
+    - "Data Administration"
+    - "Data Management"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-databricks/design-implement-data-modeling-unity-catalog/index.yml
   title: Design and Implement Data Modeling with Azure Databricks
   description: Learn how to design and implement data modeling strategies in Azure Databricks with Unity Catalog, including ingestion patterns, table formats, partitioning, slowly changing dimensions, and clustering strategies.
   ms.date: 10/26/2026

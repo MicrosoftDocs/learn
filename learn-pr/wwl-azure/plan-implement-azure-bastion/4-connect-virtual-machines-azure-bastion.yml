@@ -5,7 +5,7 @@ metadata:
   description: Connect to Azure virtual machines through Azure Bastion using browser-based RDP and SSH sessions, native client tunneling, shareable links, and monitor active sessions.
   ms.date: 04/16/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 title: Connect to VMs through Azure Bastion

@@ -1,6 +1,39 @@
 ### YamlMime:Module
 uid: learn.wwl.design-human-in-loop-approval-workflows
 metadata:
+  gs-content.levels: 400
+  gs-content.locale: en-us
+  gs-duration: 41
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - microsoft-foundry
+    - power-automate
+    - office-teams
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - ai-engineer
+    - solution-architect
+    - ip-admin
+  gs-skills:
+    - "Agentic AI"
+    - "Multi-Agent Orchestration"
+    - "Agent Operations"
+    - "AI Governance"
+    - "AI Risk Management"
+    - "AI Compliance"
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "Responsible AI"
+    - "AI-Powered Workflow Automation"
+    - "AI Model Evaluation & Testing"
+    - "Prompt Engineering"
+    - "Data Analytics"
+  gs-solution.area: "AI Business Solutions"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/aaai-design-human-in-loop-approval-workflows/index.yml
   title: Design Human-in-the-Loop Approval Workflows with Power Automate and Microsoft Teams
   description: "Design human-in-the-loop systems for production multi-agent workflows using Power Automate and Microsoft Teams. Implement confidence-threshold escalation architectures, design asynchronous approval workflows for high-stakes agent actions, build human feedback collection and active learning pipelines, and configure audit workflows that provide complete human oversight records for regulated environments."
   ms.date: 8/5/2026

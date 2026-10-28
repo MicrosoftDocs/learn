@@ -1,6 +1,28 @@
 ### YamlMime:Module
 uid: learn.wwl.review-azure-powershell-module
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 45
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+    - entra
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - systems-administrator
+    - identity-access-admin
+  gs-skills:
+    - Automation
+    - "Cloud Administration"
+    - "Infrastructure Management"
+    - "Identity and Access Management (IAM)"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/review-azure-powershell-module/index.yml
   title: Review Azure PowerShell module
   description: This module explains the Azure PowerShell environment and the Az module for Windows PowerShell. It also explains how to manage Microsoft Entra ID by using PowerShell modules.
   ms.date: 05/12/2026

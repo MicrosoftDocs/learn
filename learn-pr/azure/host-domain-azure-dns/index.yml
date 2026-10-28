@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.azure.host-domain-azure-dns
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 43
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - network-engineer
+    - systems-administrator
+  gs-skills:
+    - "IT Networking"
+    - "Cloud Administration"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/host-domain-azure-dns/index.yml
   title: Host your domain on Azure DNS
   description: Learn how to host the Domain Name System (DNS) records for your domains on Azure infrastructure by using Azure DNS.
   ms.date: 10/03/2024

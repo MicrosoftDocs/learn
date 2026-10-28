@@ -1,6 +1,27 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.az-400-implement-secure-continuous-deployment
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - azure
+    - azure-devops
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles: null
+  gs-skills:
+    - "Application Architecture"
+    - Automation
+    - DevOps
+    - "Data Security"
+    - "Identity and Access Management (IAM)"
+    - "Application Security"
+  gs-solution.area: null
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/az-400-implement-secure-continuous-deployment/index.yml
   title: "AZ-400: Implement a secure continuous deployment using Azure Pipelines"
   description: "AZ-400: Implement a secure continuous deployment using Azure Pipelines"
   ms.date: 10/07/2025

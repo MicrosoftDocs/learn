@@ -1,6 +1,25 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.query-use-common-information-model-windows-management
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - windows
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - systems-administrator
+  gs-skills:
+    - Automation
+    - "Network Connectivity"
+    - "Infrastructure Management"
+    - "Device Management"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/query-use-common-information-model-windows-management/index.yml
   title: Query management information by using Common Information Model and Windows Management Instrumentation
   description: This learning path covers Windows Management Instrumentation (WMI) and Common Information Model (CIM). These technologies help to access information about a computer. Additionally, both technologies provide local and remote access to management information from the operating system, computer hardware, and installed software.
   ms.date: 05/12/2026

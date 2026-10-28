@@ -6,7 +6,7 @@ metadata:
   description: "Implement Storage Spaces Direct"
   ms.date: 09/10/2024
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: lumac
   ms.topic: unit
 azureSandbox: false
 labModal: false

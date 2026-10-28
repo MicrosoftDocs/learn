@@ -1,11 +1,33 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.implement-identity-management-solution
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - entra
+    - m365
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - identity-access-admin
+  gs-skills:
+    - "Identity and Access Management (IAM)"
+    - "Cloud Administration"
+    - "Zero Trust Security"
+    - "Security Architecture Design"
+    - "Device Management"
+    - "Infrastructure Management"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/implement-identity-management-solution/index.yml
   title: 'Implement an identity management solution using Microsoft Entra ID'
   description: 'Implement an identity management solution using Microsoft Entra ID'
   ms.date: 01/23/2026
   author: wwlpublish
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: learning-path
 title: 'Implement an identity management solution using Microsoft Entra ID'
 prerequisites: |

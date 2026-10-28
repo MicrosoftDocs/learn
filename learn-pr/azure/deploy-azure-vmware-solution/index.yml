@@ -1,6 +1,30 @@
 ### YamlMime:Module
 uid: learn.deploy-azure-vmware-solution
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 56
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - systems-administrator
+    - network-engineer
+    - solution-architect
+  gs-skills:
+    - "Cloud Infrastructure"
+    - "Cloud Administration"
+    - Virtualization
+    - "Network Connectivity"
+    - "IT Networking"
+    - "Solution Architecture"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/deploy-azure-vmware-solution/index.yml
   title: Prepare for VMware resource migration by deploying Azure VMware Solution
   description: Prepare to migrate VMware resources to Azure by deploying an Azure VMware Solution resource. Then, connect your VMware environment to Azure VMware Solution.
   ms.date: 11/15/2025

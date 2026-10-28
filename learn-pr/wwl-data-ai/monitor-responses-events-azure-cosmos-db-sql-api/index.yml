@@ -1,6 +1,30 @@
 ### YamlMime:Module
 uid: learn.wwl.monitor-responses-events-azure-cosmos-db-sql-api
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 51
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+    - support-engineer
+    - database-administrator
+  gs-skills:
+    - Databases
+    - "Application Development"
+    - "Data Administration"
+    - "Cloud Administration"
+    - "Infrastructure Management"
+    - Cybersecurity
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/monitor-responses-events-azure-cosmos-db-sql-api/index.yml
   title: Monitor responses and events in Azure Cosmos DB for NoSQL
   description: "We will learn to use a rich set of REST response codes returned by Azure Cosmos DB request to help you analyze potential issues."
   ms.date: 04/02/2025

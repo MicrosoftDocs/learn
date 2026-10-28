@@ -5,7 +5,7 @@ metadata:
   description: Introduction to governing AI agents in Microsoft 365 using Microsoft Agent 365 to enforce organizational policies and monitor agent activity.
   ms.date: 04/21/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 title: Introduction

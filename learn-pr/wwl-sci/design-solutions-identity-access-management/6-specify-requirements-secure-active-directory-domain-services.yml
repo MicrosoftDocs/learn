@@ -6,7 +6,7 @@ metadata:
   description: "Provide guidance for hardening AD DS through attack surface reduction, administrative tiering, and monitoring."
   ms.date: 05/28/2026
   author: ceperezb
-  ms.author: ceperezb
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 12
 content: |

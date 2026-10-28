@@ -28,4 +28,4 @@ Together, these four layers produce a clinical agent that reasons safely, acts t
 - [What is Azure Cosmos DB?](/azure/cosmos-db/introduction)
 - [Vector search in Azure Cosmos DB for NoSQL](/azure/cosmos-db/nosql/vector-search)
 - [HIPAA compliance on Azure](/azure/compliance/offerings/offering-hipaa-us)
-- [Semantic Kernel Vector Store documentation](https://learn.microsoft.com/semantic-kernel/concepts/vector-store-connectors/)
+- [Semantic Kernel Vector Store documentation](/semantic-kernel/concepts/vector-store-connectors/)

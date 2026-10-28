@@ -5,7 +5,7 @@ metadata:
   description: Examine how just-in-time VM access reduces the attack surface by replacing permanently open management ports. JIT provides rules with on-demand, time-bound access, and identify the prerequisites and VM eligibility requirements.
   ms.date: 05/11/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 title: Examine just-in-time VM access requirements and VM eligibility

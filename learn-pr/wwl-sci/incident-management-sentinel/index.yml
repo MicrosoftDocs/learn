@@ -1,11 +1,33 @@
 ### YamlMime:Module
 uid: learn.azure.incident-management-sentinel
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 80
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+    - microsoft-sentinel
+    - microsoft-defender
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - security-operations-analyst
+  gs-skills:
+    - "Security Operations Management"
+    - "Security Analytics"
+    - "Threat Management"
+    - "Security Automation"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/incident-management-sentinel/index.yml
   title: Security incident management in Microsoft Sentinel
   description: Learn about security incidents, incident evidence and entities, incident management, and how to use Microsoft Sentinel to handle incidents.
   ms.date: 04/18/2025
   author: KenMAG
-  ms.author: kelawson
+  ms.author: lumac
   ms.topic: module
   ms.service: microsoft-sentinel
 title: Security incident management in Microsoft Sentinel

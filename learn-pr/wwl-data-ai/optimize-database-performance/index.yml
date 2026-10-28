@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.wwl.optimize-database-performance
 metadata:
+  gs-content.levels: 400
+  gs-content.locale: en-us
+  gs-duration: 104
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - database-administrator
+    - developer
+  gs-skills:
+    - SQL
+    - "Data Administration"
+    - "Database Development"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/optimize-database-performance/index.yml
   title: Optimize Database Performance
   description: Optimize Azure SQL Database performance by choosing the right service tier and managing concurrency with isolation levels. Analyze queries with execution plans and DMVs. Use Query Store for plan management and resolve blocking and deadlocks.
   ms.date: 7/13/2026

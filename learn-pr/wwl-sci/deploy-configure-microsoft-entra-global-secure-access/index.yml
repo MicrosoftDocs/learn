@@ -1,11 +1,34 @@
 ### YamlMime:Module
 uid: learn.wwl.deploy-configure-microsoft-entra-global-secure-access
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 58
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - entra
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - identity-access-admin
+    - network-engineer
+    - security-engineer
+  gs-skills:
+    - "Identity and Access Management (IAM)"
+    - "IT Networking"
+    - "Network Connectivity"
+    - "Zero Trust Security"
+    - "Security Operations Management"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/deploy-configure-microsoft-entra-global-secure-access/index.yml
   title: Deploy and Configure Microsoft Entra Global Secure Access
   description: "The modern workforce transitioned from traditional office settings to working from nearly anywhere. This change in working location necessitates an identity-aware, cloud-delivered network perimeter. This identity-aware perimeter is known as Security Service Edge (SSE). The Microsoft SSE solution includes Microsoft Entra Internet Access and Microsoft Entra Private Access, collectively referred to as Global Secure Access. This solution is founded on Zero Trust principles, emphasizing least privilege, explicit verification, and an assumption of breach to ensure security in the cloud era."
   ms.date: 08/20/2026
   author: wwlpublish
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: module
   ms.service: entra
   ms.subservice: architecture

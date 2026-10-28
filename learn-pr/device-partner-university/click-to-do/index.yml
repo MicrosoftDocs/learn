@@ -2,6 +2,25 @@
 uid: learn.dpu.click-to-do
 title: Take action on content with Click to Do
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 24
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - windows
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - business-user
+  gs-skills:
+    - "AI Productivity"
+    - "Information Extraction"
+    - "Generative AI"
+  gs-solution.area: "AI Business Solutions"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/click-to-do/index.yml
   title: Take Action On Content With Click To Do
   description: In this module, you'll learn how to use Click to Do in Windows to take action on on-screen content, reduce context switching, and stay productive.
   ms.date: 06/05/2026

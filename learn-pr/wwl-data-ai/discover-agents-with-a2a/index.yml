@@ -1,6 +1,31 @@
 ### YamlMime:Module
 uid: learn.wwl.discover-agents-with-a2a
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 56
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - microsoft-foundry
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - ai-engineer
+    - developer
+    - solution-architect
+  gs-skills:
+    - "Agent Development"
+    - "Agentic AI"
+    - "Multi-Agent Orchestration"
+    - "Application Development"
+    - "API Management"
+    - "Python (Programming Language)"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/discover-agents-with-a2a/index.yml
   title: Discover Azure AI Agents with A2A
   description: Learn how to implement the A2A protocol to enable agent discovery, direct communication, and coordinated task execution across remote agents.
   ms.date: 5/29/2026

@@ -6,7 +6,7 @@ metadata:
   description: "Walk through the steps and configuration values for registering a new app in Microsoft Entra ID."
   ms.date: 03/18/2024
   author: wwlpublish
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ms.custom:
     - sfi-ropc-nochange

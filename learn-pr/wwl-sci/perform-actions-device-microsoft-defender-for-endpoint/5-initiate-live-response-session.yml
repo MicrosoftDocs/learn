@@ -6,7 +6,7 @@ metadata:
   description: "Initiate live response session"
   ms.date: 06/22/2026
   author: KenMAG
-  ms.author: kelawson
+  ms.author: lumac
   ms.topic: unit
 azureSandbox: false
 labModal: false

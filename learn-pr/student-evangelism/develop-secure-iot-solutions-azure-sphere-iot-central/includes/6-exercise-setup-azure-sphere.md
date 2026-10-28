@@ -23,7 +23,7 @@ Use this exercise as a setup checklist for the development computer and the atta
       net start AzureSphereDeviceCommunicationService
       ```
 
-      Reinstall the Azure Sphere SDK only if the TAP adapter is still missing after restarting the service. For full guidance, see [Connection problems caused by TAP-Windows Adapter configuration](/azure-sphere/install/troubleshoot-installation?view=azure-sphere-integrated#connection-problems-caused-by-tap-windows-adapter-configuration).
+      Reinstall the Azure Sphere SDK only if the TAP adapter is still missing after restarting the service. For full guidance, see [Connection problems caused by TAP-Windows Adapter configuration](/azure-sphere/install/troubleshoot-installation?view=azure-sphere-integrated&preserve-view=true#connection-problems-caused-by-tap-windows-adapter-configuration).
    - If you use Cisco AnyConnect and the Azure Sphere TAP adapter appears unplugged, open the adapter properties and clear the **Cisco AnyConnect Network Access Manager Filter Driver** entry for the Azure Sphere TAP adapter. Then test again with `az sphere device show-attached`.
 1. Windows users. If the IoT Central **ShowIoTCentralConfig** command fails with a missing library message, close the tool, delete the `%LOCALAPPDATA%\Temp\.net\ShowIoTCentralConfig` folder, and then run **ShowIoTCentralConfig** again from a command prompt.
 
@@ -44,7 +44,7 @@ az extension update --name azure-sphere
 ```
 
 > [!IMPORTANT]
-> A few early Seeed Azure Sphere MT3620 Development Kits require a manual OS update if they have never been used. Update the OS manually before you log in, claim the device, or connect the device to the internet. Other dev kits, including the Seeed MT3620 Mini Dev Board, or already-used Seeed Azure Sphere MT3620 Development Kits update automatically after connecting to the internet; manual update isn't required. For details, see [Quickstart: Choose a catalog and claim your device](/azure-sphere/install/claim-device?view=azure-sphere-integrated).
+> A few early Seeed Azure Sphere MT3620 Development Kits require a manual OS update if they have never been used. Update the OS manually before you log in, claim the device, or connect the device to the internet. Other dev kits, including the Seeed MT3620 Mini Dev Board, or already-used Seeed Azure Sphere MT3620 Development Kits update automatically after connecting to the internet; manual update isn't required. For details, see [Quickstart: Choose a catalog and claim your device](/azure-sphere/install/claim-device?view=azure-sphere-integrated&preserve-view=true).
 
 Sign in and select the Azure subscription that contains, or will contain, your Azure Sphere catalog.
 
@@ -70,7 +70,7 @@ You need to do the following:
 1. Claim your device into the catalog.
 1. Configure networking for the device.
 
-The following [Quickstart: Install the Azure Sphere SDK for Windows](/azure-sphere/install/install-sdk?view=azure-sphere-integrated) will step you through the process.
+The following [Quickstart: Install the Azure Sphere SDK for Windows](/azure-sphere/install/install-sdk?view=azure-sphere-integrated&preserve-view=true) will step you through the process.
 
 ### Install the Git client for Windows
 
@@ -113,7 +113,7 @@ You need to do the following:
 1. Claim your device into the catalog.
 1. Configure networking for the device.
 
-The following [Quickstart: Install the Azure Sphere SDK for Linux](/azure-sphere/install/install-sdk-linux?view=azure-sphere-integrated) will step you through the process.
+The following [Quickstart: Install the Azure Sphere SDK for Linux](/azure-sphere/install/install-sdk-linux?view=azure-sphere-integrated&preserve-view=true) will step you through the process.
 
 ### Install the Git client for Linux
 
@@ -186,7 +186,7 @@ Before you sideload an application or delete existing sideloaded applications, e
    az sphere device sideload delete
    ```
 
-1. Restart Azure Sphere. This command depends on the catalog and resource group defaults set above; if those defaults aren't set in the current shell, add `--resource-group <resource-group> --catalog <catalog>` explicitly. See the [`az sphere device restart` reference](/azure-sphere/reference/cli/azsphere-device?view=azure-sphere-integrated#az-sphere-device-restart) for the parameter list.
+1. Restart Azure Sphere. This command depends on the catalog and resource group defaults set above; if those defaults aren't set in the current shell, add `--resource-group <resource-group> --catalog <catalog>` explicitly. See the [`az sphere device restart` reference](/azure-sphere/reference/cli/azsphere-device?view=azure-sphere-integrated&preserve-view=true#az-sphere-device-restart) for the parameter list.
 
    ```
    az sphere device restart --device <device-id>
@@ -198,7 +198,7 @@ Most high-level application exercises don't require real-time core debugging. On
 
 1. Open the appropriate command line for your operating system:
    - On Windows, open **PowerShell** or **Command Prompt** as **Administrator**. The `--enable-rt-core-debugging` parameter installs USB debugger drivers, so the command requires an elevated shell.
-   - On Linux, open a normal **Terminal**. The Azure Sphere SDK udev rules and `azsphere` group membership installed during SDK setup typically provide the access needed for this command. If the command fails with a permissions error, re-run it with `sudo`. See the [`az sphere device enable-development` reference](/azure-sphere/reference/cli/azsphere-device?view=azure-sphere-integrated#az-sphere-device-enable-development), which annotates `--enable-rt-core-debugging` with "Requires administrator permissions."
+   - On Linux, open a normal **Terminal**. The Azure Sphere SDK udev rules and `azsphere` group membership installed during SDK setup typically provide the access needed for this command. If the command fails with a permissions error, re-run it with `sudo`. See the [`az sphere device enable-development` reference](/azure-sphere/reference/cli/azsphere-device?view=azure-sphere-integrated&preserve-view=true#az-sphere-device-enable-development), which annotates `--enable-rt-core-debugging` with "Requires administrator permissions."
 
    ```azurecli
    az sphere device enable-development --resource-group <resource-group> --catalog <catalog> --device <device-id> --enable-rt-core-debugging

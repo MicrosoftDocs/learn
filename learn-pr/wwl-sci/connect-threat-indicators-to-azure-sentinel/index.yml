@@ -1,11 +1,36 @@
 ### YamlMime:Module
 uid: learn.wwl.connect-threat-indicators-to-azure-sentinel
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 33
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - microsoft-sentinel
+    - microsoft-defender
+    - entra
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - security-operations-analyst
+    - security-engineer
+    - administrator
+  gs-skills:
+    - "Threat Management"
+    - "Security Operations Management"
+    - "Security Analytics"
+    - "Identity and Access Management (IAM)"
+    - Cybersecurity
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/connect-threat-indicators-to-azure-sentinel/index.yml
   title: Connect threat indicators to Microsoft Sentinel
   description: "Connect threat indicators to Microsoft Sentinel"
   ms.date: 05/06/2025
   author: KenMAG
-  ms.author: kelawson
+  ms.author: lumac
   ms.topic: module
   ms.service: microsoft-sentinel
 title: Connect threat indicators to Microsoft Sentinel
