@@ -110,6 +110,6 @@ A useful architecture decision has three parts:
 
 - **What's chosen**
 - **Why the evidence supports it**
-- **What remains conditional**. 
+- **What remains conditional**
 
 A procurement preference or a successful demonstration addresses only part of that decision.
