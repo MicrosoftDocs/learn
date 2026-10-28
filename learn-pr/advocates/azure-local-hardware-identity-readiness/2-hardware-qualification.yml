@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-local-hardware-identity-readiness.hardware-qualification
+metadata:
+  title: Hardware Qualification
+  description: Qualify Azure Local hardware, verify node symmetry and firmware security, and distinguish platform minimums from workload capacity.
+  ms.date: 10/25/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Hardware qualification
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-hardware-qualification.md)]

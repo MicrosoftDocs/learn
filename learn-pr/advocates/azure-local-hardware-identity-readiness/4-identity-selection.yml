@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-local-hardware-identity-readiness.identity-selection
+metadata:
+  title: Identity Selection
+  description: Compare Azure Local platform identity models while separating Azure authorization, local authentication, and workload identity requirements.
+  ms.date: 10/25/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Identity selection
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-identity-selection.md)]

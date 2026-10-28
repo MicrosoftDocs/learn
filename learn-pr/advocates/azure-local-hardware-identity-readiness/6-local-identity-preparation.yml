@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-local-hardware-identity-readiness.local-identity-preparation
+metadata:
+  title: Local Identity Preparation
+  description: Prepare local administrator accounts, certificate lifecycle ownership, Azure Key Vault access, name resolution, and protected recovery for Azure Local.
+  ms.date: 10/25/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Local identity preparation
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-local-identity-preparation.md)]

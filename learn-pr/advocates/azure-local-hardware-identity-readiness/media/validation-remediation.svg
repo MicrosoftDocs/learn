@@ -1,0 +1,243 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="1060" viewBox="0 0 1100 1060" role="img" aria-labelledby="validation-remediation-title validation-remediation-desc" style="background-color:white" font-family="Segoe UI, Arial, sans-serif" data-source-icon-root="C:\Azure-Icons" data-content-review-date="2026-10-28" data-diagram="validation-remediation">
+  <title id="validation-remediation-title">Turn a failed check into evidence</title>
+  <desc id="validation-remediation-desc">Record the versioned baseline, run the relevant check, review status and evidence, correct the owned dependency with an approved reversible change, then preserve before-and-after reports, rerun affected and final checks, and accept only when no blockers remain. Preserve reports before rerunning because the checker overwrites files. A scoped pass is not full readiness.</desc>
+  <metadata data-provenance="Supplied Azure icon SVG artwork, embedded inline" data-asset-policy="Original artwork; namespaced IDs; no external assets">{"title": "Turn a failed check into evidence", "source_icon_root": "C:\\Azure-Icons", "review_date": "2026-10-28", "asset_handling": "Inline original vector artwork; IDs and local references prefixed", "font_stack": "Segoe UI, Arial, sans-serif", "icons": [{"relative_path": "general\\10800-icon-service-File.svg", "sha256": "89c56bc2a1b0f3f1a061049c7b58ea385b1a4d687cefc22ea91ffa3002f341f8"}, {"relative_path": "CnE_Enterprise\\Server (generic).svg", "sha256": "ad48653923f33e26b833269fa4426879d4864b1a19282278aaa41885703d3389"}, {"relative_path": "general\\10834-icon-service-Search.svg", "sha256": "694ee70fea9eb355ee1c742dd517589ef23f7d0d74dfabcadff58992d8a92e0a"}, {"relative_path": "general\\10844-icon-service-Toolbox.svg", "sha256": "c56ef74a842e432db697b7e46956daa8240ce21d27006225541b6450f36bf974"}, {"relative_path": "general\\10853-icon-service-Backlog.svg", "sha256": "3cbfa83a364c36d68e927dc96ee9c79302d7f100c3cf938bdf9764bd8d7a414f"}]}</metadata>
+  <rect id="validation-remediation-white-background" x="0" y="0" width="1100" height="1060" fill="#FFFFFF" />
+  <defs>
+    <marker id="validation-remediation-arrow" viewBox="0 0 8 8" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M 0 0 L 8 4 L 0 8 Z" fill="#51798F" />
+    </marker>
+  </defs>
+  <text id="validation-remediation-text-1" x="52" y="58" font-size="30" font-weight="700" fill="#18354A" text-anchor="start" data-diagram-text="true" data-layout-owner="canvas" data-max-width="996">
+    <tspan x="52" y="58">Turn a failed check into evidence</tspan>
+  </text>
+  <text id="validation-remediation-text-2" x="52" y="96" font-size="20" font-weight="400" fill="#405E72" text-anchor="start" data-diagram-text="true" data-layout-owner="canvas" data-max-width="996">
+    <tspan x="52" y="96">Reading order: 1 to 5, top to bottom. Unresolved findings keep deployment blocked.</tspan>
+  </text>
+  <rect id="validation-remediation-step-1" data-layout-box="step-1" x="52" y="144" width="996" height="118" rx="16" fill="#EAF4FC" stroke="#ACCDE3" stroke-width="1.5" />
+  <circle cx="91" cy="177" r="22" fill="#155F91" />
+  <text id="validation-remediation-text-3" x="91" y="184" font-size="21" font-weight="700" fill="#FFFFFF" text-anchor="middle" data-diagram-text="true" data-layout-owner="step-1" data-max-width="37">
+    <tspan x="91" y="184">1</tspan>
+  </text>
+  <text id="validation-remediation-text-4" x="130" y="184" font-size="24" font-weight="700" fill="#18354A" text-anchor="start" data-diagram-text="true" data-layout-owner="step-1" data-max-width="778">
+    <tspan x="130" y="184">Record baseline</tspan>
+  </text>
+  <text id="validation-remediation-text-5" x="130" y="216" font-size="21" font-weight="400" fill="#18354A" text-anchor="start" data-diagram-text="true" data-layout-owner="step-1" data-max-width="776">
+    <tspan x="130" y="216">Build and module versions; host and test scope</tspan>
+    <tspan x="130" y="243">Time of capture</tspan>
+  </text>
+  <svg width="58" height="58" viewBox="0 0 18 18" x="954" y="173" preserveAspectRatio="xMidYMid meet" data-source-icon="general\10800-icon-service-File.svg" data-source-sha256="89c56bc2a1b0f3f1a061049c7b58ea385b1a4d687cefc22ea91ffa3002f341f8" data-icon-id-prefix="validation-remediation-icon-1-" aria-hidden="true" focusable="false">
+    <defs>
+      <linearGradient id="validation-remediation-icon-1-e5371565-cc9b-4729-9e54-9bac135a92bd" x1="9" y1="18" x2="9" gradientUnits="userSpaceOnUse">
+        <stop offset="0" stop-color="#0078d4" />
+        <stop offset="0.817" stop-color="#5ea0ef" />
+      </linearGradient>
+    </defs>
+    <title>MsPortalFx.base.images-22</title>
+    <g id="validation-remediation-icon-1-abc3e3f9-d4db-41ad-8b60-378d1c3348f7">
+      <g>
+        <g>
+          <path d="M10.023.134H2.362A.605.605,0,0,0,1.757.74V17.26a.605.605,0,0,0,.605.606H15.638a.605.605,0,0,0,.6-.606V6.327a.605.605,0,0,0-.6-.606H11.232a.605.605,0,0,1-.6-.605V.74A.6.6,0,0,0,10.023.134Z" fill="#fff" />
+          <path d="M9.743.908V5.057a1.524,1.524,0,0,0,1.52,1.523h4.18V17.092H2.557V.908H9.743M10.036,0H2.264A.614.614,0,0,0,1.65.615v16.77A.614.614,0,0,0,2.264,18H15.736a.614.614,0,0,0,.614-.615V6.286a.614.614,0,0,0-.614-.614H11.263a.614.614,0,0,1-.613-.615V.615A.614.614,0,0,0,10.036,0Z" fill="url(#validation-remediation-icon-1-e5371565-cc9b-4729-9e54-9bac135a92bd)" />
+          <path d="M16.116,5.794,10.438.134V4.746a1.041,1.041,0,0,0,1.035,1.048Z" fill="#0078d4" />
+        </g>
+        <rect x="4" y="8.196" width="9.999" height="1.341" rx="0.603" fill="#5ea0ef" />
+        <rect x="4" y="10.599" width="9.999" height="1.341" rx="0.603" fill="#5ea0ef" />
+        <rect x="4" y="13.002" width="6.302" height="1.341" rx="0.603" fill="#5ea0ef" />
+      </g>
+    </g>
+  </svg>
+  <polyline points="550,270 550,288" fill="none" stroke="#51798F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#validation-remediation-arrow)" data-diagram-connector="true" />
+  <rect id="validation-remediation-step-2" data-layout-box="step-2" x="52" y="296" width="996" height="118" rx="16" fill="#EAF7F5" stroke="#AAD3CC" stroke-width="1.5" />
+  <circle cx="91" cy="329" r="22" fill="#155F91" />
+  <text id="validation-remediation-text-7" x="91" y="336" font-size="21" font-weight="700" fill="#FFFFFF" text-anchor="middle" data-diagram-text="true" data-layout-owner="step-2" data-max-width="37">
+    <tspan x="91" y="336">2</tspan>
+  </text>
+  <text id="validation-remediation-text-8" x="130" y="336" font-size="24" font-weight="700" fill="#18354A" text-anchor="start" data-diagram-text="true" data-layout-owner="step-2" data-max-width="778">
+    <tspan x="130" y="336">Run relevant check</tspan>
+  </text>
+  <text id="validation-remediation-text-9" x="130" y="368" font-size="21" font-weight="400" fill="#18354A" text-anchor="start" data-diagram-text="true" data-layout-owner="step-2" data-max-width="776">
+    <tspan x="130" y="368">Use actual nodes when required</tspan>
+    <tspan x="130" y="395">Select the relevant validator for the recorded scope</tspan>
+  </text>
+  <svg version="1.0" x="925" y="297" viewBox="0 0 83.4 83.4" enable-background="new 0 0 83.4 83.4" xml:space="preserve" width="118" height="118" preserveAspectRatio="xMidYMid meet" data-source-icon="CnE_Enterprise\Server (generic).svg" data-source-sha256="ad48653923f33e26b833269fa4426879d4864b1a19282278aaa41885703d3389" data-icon-id-prefix="validation-remediation-icon-2-" aria-hidden="true" focusable="false">
+    <g id="validation-remediation-icon-2-Layer_1">
+      <g id="validation-remediation-icon-2-File_x2C__general">
+        <title>Sheet.1071</title>
+      </g>
+      <g id="validation-remediation-icon-2-Message">
+	</g>
+      <g id="validation-remediation-icon-2-Monitor">
+	</g>
+      <g id="validation-remediation-icon-2-Monitor_running_apps">
+	</g>
+      <g id="validation-remediation-icon-2-Mouse">
+	</g>
+      <g id="validation-remediation-icon-2-Network_card">
+	</g>
+      <g id="validation-remediation-icon-2-Not_allowed">
+	</g>
+      <g id="validation-remediation-icon-2-Performance">
+	</g>
+      <g id="validation-remediation-icon-2-Phone">
+	</g>
+      <g id="validation-remediation-icon-2-Plug_and_play">
+	</g>
+      <g id="validation-remediation-icon-2-Powershell_script_file">
+	</g>
+      <g id="validation-remediation-icon-2-Protocol_stack">
+	</g>
+      <g id="validation-remediation-icon-2-Queue_x2C__general">
+	</g>
+      <g id="validation-remediation-icon-2-RMS_connector">
+	</g>
+      <g id="validation-remediation-icon-2-Router">
+	</g>
+      <g id="validation-remediation-icon-2-Script_file">
+	</g>
+      <g id="validation-remediation-icon-2-Secure_virtual_machine">
+	</g>
+    </g>
+    <g id="validation-remediation-icon-2-paths">
+      <g id="validation-remediation-icon-2-Access_control">
+	</g>
+      <g id="validation-remediation-icon-2-Azure_active_directory">
+	</g>
+      <g id="validation-remediation-icon-2-Generic_code">
+	</g>
+      <g id="validation-remediation-icon-2-Laptop">
+	</g>
+      <g id="validation-remediation-icon-2-Load_balancer">
+	</g>
+      <g id="validation-remediation-icon-2-Lock_x2C__protected">
+	</g>
+    </g>
+    <g id="validation-remediation-icon-2-symbols">
+      <g>
+        <path fill="#2A3282" d="M52.6,19.1h-16c-1.1,0-2,0.9-2,2v39h20v-39C54.6,20,53.7,19.1,52.6,19.1z M51.6,56.1h-14v-2h14V56.1z     M51.6,52.1h-14v-2h14V52.1z M51.6,27.1h-14v-2h14V27.1z" />
+      </g>
+    </g>
+    <g id="validation-remediation-icon-2-slices">
+</g>
+  </svg>
+  <polyline points="550,422 550,440" fill="none" stroke="#51798F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#validation-remediation-arrow)" data-diagram-connector="true" />
+  <rect id="validation-remediation-step-3" data-layout-box="step-3" x="52" y="448" width="996" height="118" rx="16" fill="#EAF4FC" stroke="#ACCDE3" stroke-width="1.5" />
+  <circle cx="91" cy="481" r="22" fill="#155F91" />
+  <text id="validation-remediation-text-11" x="91" y="488" font-size="21" font-weight="700" fill="#FFFFFF" text-anchor="middle" data-diagram-text="true" data-layout-owner="step-3" data-max-width="37">
+    <tspan x="91" y="488">3</tspan>
+  </text>
+  <text id="validation-remediation-text-12" x="130" y="488" font-size="24" font-weight="700" fill="#18354A" text-anchor="start" data-diagram-text="true" data-layout-owner="step-3" data-max-width="778">
+    <tspan x="130" y="488">Review finding</tspan>
+  </text>
+  <text id="validation-remediation-text-13" x="130" y="520" font-size="21" font-weight="400" fill="#18354A" text-anchor="start" data-diagram-text="true" data-layout-owner="step-3" data-max-width="776">
+    <tspan x="130" y="520">Status, severity and supporting evidence</tspan>
+    <tspan x="130" y="547">Identify the accountable dependency owner</tspan>
+  </text>
+  <svg width="58" height="58" viewBox="0 0 18 18" x="954" y="477" preserveAspectRatio="xMidYMid meet" data-source-icon="general\10834-icon-service-Search.svg" data-source-sha256="694ee70fea9eb355ee1c742dd517589ef23f7d0d74dfabcadff58992d8a92e0a" data-icon-id-prefix="validation-remediation-icon-3-" aria-hidden="true" focusable="false">
+    <defs>
+      <radialGradient id="validation-remediation-icon-3-ea8ddd8a-48ba-441c-8311-10e5bddbfbfb" cx="10.629" cy="7.175" r="6.675" gradientUnits="userSpaceOnUse">
+        <stop offset="0.225" stop-color="#32d4f5" />
+        <stop offset="0.59" stop-color="#32d2f2" />
+        <stop offset="0.825" stop-color="#32caea" />
+        <stop offset="1" stop-color="#32bedd" />
+      </radialGradient>
+    </defs>
+    <title>MsPortalFx.base.images-56</title>
+    <g id="validation-remediation-icon-3-e958cf41-a31a-426c-90ab-58b20591ece8">
+      <g>
+        <rect x="-0.375" y="12.598" width="9.73" height="2.216" rx="1.036" transform="translate(-8.376 7.19) rotate(-45)" fill="#198ab3" />
+        <circle cx="10.629" cy="7.175" r="6.675" fill="url(#validation-remediation-icon-3-ea8ddd8a-48ba-441c-8311-10e5bddbfbfb)" />
+        <circle cx="10.615" cy="7.056" r="5.243" fill="#fff" />
+        <path d="M5.535,8.353S6.97,1.171,13.676,2.8a5.14,5.14,0,0,0-6.186.047A5.121,5.121,0,0,0,5.535,8.353Z" fill="#c3f1ff" />
+      </g>
+    </g>
+  </svg>
+  <polyline points="550,574 550,592" fill="none" stroke="#51798F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#validation-remediation-arrow)" data-diagram-connector="true" />
+  <rect id="validation-remediation-step-4" data-layout-box="step-4" x="52" y="600" width="996" height="118" rx="16" fill="#EAF7F5" stroke="#AAD3CC" stroke-width="1.5" />
+  <circle cx="91" cy="633" r="22" fill="#155F91" />
+  <text id="validation-remediation-text-15" x="91" y="640" font-size="21" font-weight="700" fill="#FFFFFF" text-anchor="middle" data-diagram-text="true" data-layout-owner="step-4" data-max-width="37">
+    <tspan x="91" y="640">4</tspan>
+  </text>
+  <text id="validation-remediation-text-16" x="130" y="640" font-size="24" font-weight="700" fill="#18354A" text-anchor="start" data-diagram-text="true" data-layout-owner="step-4" data-max-width="778">
+    <tspan x="130" y="640">Correct owned dependency</tspan>
+  </text>
+  <text id="validation-remediation-text-17" x="130" y="672" font-size="21" font-weight="400" fill="#18354A" text-anchor="start" data-diagram-text="true" data-layout-owner="step-4" data-max-width="776">
+    <tspan x="130" y="672">Approved change and reversal plan</tspan>
+    <tspan x="130" y="699">Correct the dependency with its named owner</tspan>
+  </text>
+  <svg width="58" height="58" viewBox="0 0 18 18" x="954" y="629" preserveAspectRatio="xMidYMid meet" data-source-icon="general\10844-icon-service-Toolbox.svg" data-source-sha256="c56ef74a842e432db697b7e46956daa8240ce21d27006225541b6450f36bf974" data-icon-id-prefix="validation-remediation-icon-4-" aria-hidden="true" focusable="false">
+    <defs>
+      <linearGradient id="validation-remediation-icon-4-a1711304-680d-4c8b-88a3-f1ba4b9a6455" x1="9" y1="16.431" x2="9" y2="4.559" gradientUnits="userSpaceOnUse">
+        <stop offset="0" stop-color="#0078d4" />
+        <stop offset="0.156" stop-color="#1380da" />
+        <stop offset="0.528" stop-color="#3c91e5" />
+        <stop offset="0.822" stop-color="#559cec" />
+        <stop offset="1" stop-color="#5ea0ef" />
+      </linearGradient>
+    </defs>
+    <title>MsPortalFx.base.images-78</title>
+    <g id="validation-remediation-icon-4-bb1c4aae-a407-4f6f-98e2-81891d0404e1">
+      <g>
+        <path d="M13.135,4.659h-.85V2.422a.1.1,0,0,0-.026,0H5.845a.093.093,0,0,0-.026,0V4.659h-.85V2.379a.846.846,0,0,1,.876-.81h6.414a.846.846,0,0,1,.876.81Z" fill="#a3a3a3" />
+        <rect x="0.5" y="4.559" width="17" height="11.872" rx="0.567" fill="url(#validation-remediation-icon-4-a1711304-680d-4c8b-88a3-f1ba4b9a6455)" />
+        <rect x="0.5" y="7.594" width="17" height="1.311" fill="#9cebff" />
+        <path d="M6.617,8.905H11.5a0,0,0,0,1,0,0v1.531a.281.281,0,0,1-.281.281H6.9a.281.281,0,0,1-.281-.281V8.905A0,0,0,0,1,6.617,8.905Z" fill="#005ba1" />
+        <polygon points="0.5 10.894 0.5 13.889 5.144 15.378 6.015 12.662 0.5 10.894" fill="#83b9f9" />
+        <path d="M17.5,10.745a2.718,2.718,0,1,0,0,4.837Z" fill="#5ea0ef" />
+      </g>
+    </g>
+  </svg>
+  <polyline points="550,726 550,744" fill="none" stroke="#51798F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#validation-remediation-arrow)" data-diagram-connector="true" />
+  <rect id="validation-remediation-step-5" data-layout-box="step-5" x="52" y="752" width="996" height="118" rx="16" fill="#EAF4FC" stroke="#ACCDE3" stroke-width="1.5" />
+  <circle cx="91" cy="785" r="22" fill="#155F91" />
+  <text id="validation-remediation-text-19" x="91" y="792" font-size="21" font-weight="700" fill="#FFFFFF" text-anchor="middle" data-diagram-text="true" data-layout-owner="step-5" data-max-width="37">
+    <tspan x="91" y="792">5</tspan>
+  </text>
+  <text id="validation-remediation-text-20" x="130" y="792" font-size="24" font-weight="700" fill="#18354A" text-anchor="start" data-diagram-text="true" data-layout-owner="step-5" data-max-width="778">
+    <tspan x="130" y="792">Retest and decide</tspan>
+  </text>
+  <text id="validation-remediation-text-21" x="130" y="824" font-size="21" font-weight="400" fill="#18354A" text-anchor="start" data-diagram-text="true" data-layout-owner="step-5" data-max-width="776">
+    <tspan x="130" y="824">Preserve before/after; rerun affected and final checks</tspan>
+    <tspan x="130" y="851">Accept only when no blockers remain</tspan>
+  </text>
+  <svg width="58" height="58" viewBox="0 0 18 18" x="954" y="781" preserveAspectRatio="xMidYMid meet" data-source-icon="general\10853-icon-service-Backlog.svg" data-source-sha256="3cbfa83a364c36d68e927dc96ee9c79302d7f100c3cf938bdf9764bd8d7a414f" data-icon-id-prefix="validation-remediation-icon-5-" aria-hidden="true" focusable="false">
+    <defs>
+      <linearGradient id="validation-remediation-icon-5-ae5004eb-b3cc-4afc-9498-a0eb145de4dc" x1="3.439" y1="6.801" x2="3.439" y2="1.432" gradientUnits="userSpaceOnUse">
+        <stop offset="0.2" stop-color="#0078d4" />
+        <stop offset="0.287" stop-color="#1380da" />
+        <stop offset="0.759" stop-color="#5ea0ef" />
+      </linearGradient>
+      <linearGradient id="validation-remediation-icon-5-a1226368-080a-4756-9af4-a472e9b2c59c" x1="3.439" y1="11.998" x2="3.439" y2="6.628" gradientUnits="userSpaceOnUse">
+        <stop offset="0.2" stop-color="#0078d4" />
+        <stop offset="0.287" stop-color="#1380da" />
+        <stop offset="0.759" stop-color="#5ea0ef" />
+      </linearGradient>
+      <linearGradient id="validation-remediation-icon-5-a87a55b1-552d-4fae-9ce3-1c309da31213" x1="3.439" y1="17.194" x2="3.439" y2="11.824" gradientUnits="userSpaceOnUse">
+        <stop offset="0.2" stop-color="#0078d4" />
+        <stop offset="0.287" stop-color="#1380da" />
+        <stop offset="0.759" stop-color="#5ea0ef" />
+      </linearGradient>
+    </defs>
+    <g id="validation-remediation-icon-5-fb31d21f-8069-4bda-ba9f-5d4b1930b65d">
+      <g>
+        <path d="M6.437,1.856l-.292-.292a.5.5,0,0,0-.707,0L2.606,4.392,1.441,3.229a.5.5,0,0,0-.707,0l-.293.293a.5.5,0,0,0,0,.707L2.253,6.044a.5.5,0,0,0,.354.146.5.5,0,0,0,.353-.146L6.437,2.563A.5.5,0,0,0,6.437,1.856Z" fill="url(#validation-remediation-icon-5-ae5004eb-b3cc-4afc-9498-a0eb145de4dc)" />
+        <rect x="7.339" y="2.949" width="10.366" height="1.895" rx="0.923" fill="#a3a3a3" />
+        <rect x="7.339" y="8.073" width="10.366" height="1.895" rx="0.923" fill="#a3a3a3" />
+        <rect x="7.339" y="13.196" width="10.366" height="1.895" rx="0.923" fill="#a3a3a3" />
+        <path d="M6.437,7.053,6.145,6.76a.5.5,0,0,0-.707,0L2.606,9.588,1.441,8.425a.5.5,0,0,0-.707,0l-.293.293a.5.5,0,0,0,0,.707L2.253,11.24a.5.5,0,0,0,.354.147.5.5,0,0,0,.353-.147L6.437,7.76A.5.5,0,0,0,6.437,7.053Z" fill="url(#validation-remediation-icon-5-a1226368-080a-4756-9af4-a472e9b2c59c)" />
+        <path d="M6.437,12.249l-.292-.293a.5.5,0,0,0-.354-.146.494.494,0,0,0-.353.146L2.606,14.784,1.441,13.621a.5.5,0,0,0-.707,0l-.293.292a.5.5,0,0,0,0,.707l1.812,1.815a.5.5,0,0,0,.707,0l3.477-3.48A.5.5,0,0,0,6.437,12.249Z" fill="url(#validation-remediation-icon-5-a87a55b1-552d-4fae-9ce3-1c309da31213)" />
+      </g>
+    </g>
+  </svg>
+  <rect id="validation-remediation-takeaway" data-layout-box="takeaway" x="52" y="906" width="996" height="126" rx="16" fill="#F4F8FB" stroke="#CFDEE8" stroke-width="1.5" />
+  <text id="validation-remediation-text-23" x="78" y="941" font-size="22" font-weight="700" fill="#18354A" text-anchor="start" data-diagram-text="true" data-layout-owner="takeaway" data-max-width="944">
+    <tspan x="78" y="941">Preserve reports BEFORE rerun: the checker overwrites files.</tspan>
+  </text>
+  <text id="validation-remediation-text-24" x="78" y="972" font-size="20" font-weight="400" fill="#18354A" text-anchor="start" data-diagram-text="true" data-layout-owner="takeaway" data-max-width="944">
+    <tspan x="78" y="972">Unresolved finding: keep deployment blocked and repeat from step 2.</tspan>
+  </text>
+  <text id="validation-remediation-text-25" x="78" y="1003" font-size="20" font-weight="600" fill="#18354A" text-anchor="start" data-diagram-text="true" data-layout-owner="takeaway" data-max-width="944">
+    <tspan x="78" y="1003">A scoped pass is not full readiness.</tspan>
+  </text>
+</svg>

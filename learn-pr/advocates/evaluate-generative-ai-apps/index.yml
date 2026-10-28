@@ -23,8 +23,8 @@ metadata:
     - "Retrieval-Augmented Generation (RAG)"
   gs-solution.area: "Cloud & AI Platforms"
   gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/advocates/evaluate-generative-ai-apps/index.yml
-  ms.author: apspeigh
-  author: aprilgittens
+  ms.author: orthomas
+  author: Orin-Thomas
   ms.date: 04/20/2026
   ms.update-cycle: 180-days
   title: Evaluating generative AI applications
