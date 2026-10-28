@@ -1,6 +1,31 @@
 ### YamlMime:Module
 uid: learn.azure.azure-container-instances-sidecar
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 62
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+    - systems-administrator
+    - network-engineer
+    - security-engineer
+  gs-skills:
+    - "Application Architecture"
+    - "Cloud Infrastructure"
+    - "Network Connectivity"
+    - "Application Security"
+    - Automation
+    - "Identity and Access Management (IAM)"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/secure-apps-azure-container-instances-sidecar/index.yml
   title: Use Azure Container Instances sidecar containers and private addressing
   description: Learn to use YAML to define container instances, add functionality with sidecar and initialization containers, and use Azure Private Link for greater security.
   ms.date: 07/24/2024

@@ -2,6 +2,36 @@
 uid: learn.dpu.powerful-security-ai
 title: Secure on-device AI with Copilot+ PCs
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 17
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - windows
+    - microsoft-365-copilot
+    - intune
+    - entra
+    - m365
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - administrator
+    - security-engineer
+    - technology-manager
+    - business-owner
+  gs-skills:
+    - "AI Security (Model-Level)"
+    - "Device Management"
+    - "Zero Trust Security"
+    - "AI Governance"
+    - "Data Security"
+    - "Identity and Access Management (IAM)"
+    - Cybersecurity
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/powerful-security-designed-for-ai/index.yml
   title: Secure On-Device AI with Copilot+ PCs
   description: Learn how Copilot+ PCs integrate hardware-backed security, Windows 11 Pro protections, and on-device AI processing to help organizations protect data, identities, and devices.
   ms.date: 05/06/2026

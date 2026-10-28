@@ -2,6 +2,23 @@
 uid: learn.edge.intro-to-pwabuilder
 title: Introduction to PWABuilder
 metadata:
+  gs-content.levels: 100
+  gs-content.locale: en-us
+  gs-duration: 31
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+  gs-skills:
+    - "Application Development"
+    - "Application Architecture"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/pwa/intro-to-pwabuilder/index.yml
   title: Introduction to PWABuilder
   description: PWABuilder is an open-source tool developed by Microsoft that streamlines the process of deploying Progressive Web Apps (PWAs). It simplifies PWA development by automating the creation of essential components, providing a user-friendly interface for customization, and packaging PWAs for various platforms and app stores. PWABuilder is an ideal choice for projects that require a seamless app-like experience across different devices and network conditions. By using PWABuilder, organizations can save time and resources while delivering users a seamless, app-like experience.
   ms.date: 05/01/2023

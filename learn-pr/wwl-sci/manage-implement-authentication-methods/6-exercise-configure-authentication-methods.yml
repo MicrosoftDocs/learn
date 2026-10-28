@@ -6,7 +6,7 @@ metadata:
   description: "Hands-on exercise: enable the MFA registration policy in Identity Protection, require MFA for cloud admin portals using Conditional Access, and enable phishing-resistant sign-in with passkeys (FIDO2) in Microsoft Entra ID."
   ms.date: 03/13/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 durationInMinutes: 2

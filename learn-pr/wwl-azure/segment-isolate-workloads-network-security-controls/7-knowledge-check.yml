@@ -6,7 +6,7 @@ metadata:
   description: Check your knowledge of network segmentation. You're also tested on Network Security Group (NSG) and Application Security Group (ASG) configuration, Azure Virtual Network Manager security admin rules, and Network Watcher verification.
   ms.date: 05/11/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-generated
 durationInMinutes: 5

@@ -1,12 +1,31 @@
 ### YamlMime:Module
 uid: learn.azure.monitor-protection-of-workloads-in-azure-backup
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 50
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - systems-administrator
+    - solution-architect
+  gs-skills:
+    - "Cloud Administration"
+    - "Data Administration"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/monitor-protection-of-workloads-in-azure-backup/index.yml
   title: Monitor workload protection in Azure Backup
   description: Learn how to monitor Azure Backup-protected workloads by using Azure Monitor.
   manager: jsuri
   ms.date: 12/01/2023
   author: AbhishekMallick-MS
-  ms.author: v-abhmallick
+  ms.author: lumac
   ms.topic: module
   ms.service: azure-backup
 title: Monitor workload protection in Azure Backup

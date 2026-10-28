@@ -6,4 +6,4 @@ In this exercise, you use the `azure_ai` extension in an Azure Database for Post
 
 Launch the exercise and follow the instructions.
 
-[![Button to launch exercise.](../media/launch-exercise.png)](https://learn.microsoft.com/)
+[![Button to launch exercise.](../media/launch-exercise.png)](/)

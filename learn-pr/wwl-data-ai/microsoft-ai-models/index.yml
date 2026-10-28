@@ -1,6 +1,27 @@
 ### YamlMime:Module
 uid: learn.wwl.microsoft-ai-models
 metadata:
+  gs-content.levels: 400
+  gs-content.locale: en-us
+  gs-duration: 51
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - github-copilot
+    - microsoft-foundry
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - ai-engineer
+    - developer
+  gs-skills:
+    - "Generative AI"
+    - "AI Model Evaluation & Testing"
+    - "AI-Augmented Software Development"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/microsoft-ai-models/index.yml
   title: Get started with Microsoft AI models
   description: Explore Microsoft AI models for reasoning, code generation, speech, transcription, and image generation.
   ms.date: 08/25/2026

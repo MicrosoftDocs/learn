@@ -6,7 +6,7 @@ metadata:
   description: "This unit summarizes the key points covered in the interactive case study on modernizing identity and data security. It reinforces the importance of implementing robust security measures and best practices."
   ms.date: 06/23/2026 
   author: wwlpublish 
-  ms.author: ceperezb 
+  ms.author: lumac
   ms.topic: unit 
 durationInMinutes: 1
 content: |

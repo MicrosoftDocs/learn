@@ -6,7 +6,7 @@ metadata:
   description: Upload Data and Create Scatterplot
   ms.date: 02/25/2019
   author: JeffProsise
-  ms.author: chnoring
+  ms.author: lumac
   ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 5

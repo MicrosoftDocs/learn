@@ -6,7 +6,7 @@ metadata:
   description: "Azure identity services with SAP RISE"
   ms.date: 03/24/2025
   author: wwlpublish
-  ms.author: bradj
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 10
 content: |

@@ -1,6 +1,27 @@
 ### YamlMime:Module
 uid: learn.wwl.send-pass-data-output-from-pipeline
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 28
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - windows
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - administrator
+    - systems-administrator
+  gs-skills:
+    - Automation
+    - "Data Management"
+    - "Infrastructure Management"
+    - "Process Automation"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/send-pass-data-output-from-pipeline/index.yml
   title: Send and pass data as output from the pipeline
   description: This module explains how to send pipeline data to files and in various output formats.
   ms.date: 05/12/2026

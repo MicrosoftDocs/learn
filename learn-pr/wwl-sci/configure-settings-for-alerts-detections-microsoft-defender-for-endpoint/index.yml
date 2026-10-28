@@ -1,11 +1,35 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-settings-for-alerts-detections-microsoft-defender-for-endpoint
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 32
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - defender-endpoint
+    - microsoft-defender
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - security-operations-analyst
+    - security-engineer
+    - administrator
+  gs-skills:
+    - "Threat Management"
+    - "Security Operations Management"
+    - Cybersecurity
+    - "Security Automation"
+    - "Device Management"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/configure-settings-for-alerts-detections-microsoft-defender-for-endpoint/index.yml
   title: Configure for alerts and detections in Microsoft Defender for Endpoint
   description: "Configure for alerts and detections in Microsoft Defender for Endpoint"
   ms.date: 05/20/2026
   author: wwlpublish
-  ms.author: kelawson
+  ms.author: lumac
   ms.topic: module
   ms.service: defender-endpoint
   ai-usage: ai-assisted

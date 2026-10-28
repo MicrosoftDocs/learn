@@ -1,6 +1,27 @@
 ### YamlMime:Module
 uid: learn.implement-data-security-compliance
 metadata:
+  gs-content.levels: 400
+  gs-content.locale: en-us
+  gs-duration: 116
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - database-administrator
+    - security-engineer
+  gs-skills:
+    - "Data Security"
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "Identity and Access Management (IAM)"
+    - SQL
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/implement-data-security-compliance/index.yml
   title: Implement Data Security and Compliance With SQL
   description: Learn how to implement data security and compliance features in SQL Server, Azure SQL, and SQL databases in Microsoft Fabric, including encryption, masking, Row-Level Security, and auditing.
   ms.date: 07/07/2026

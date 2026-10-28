@@ -5,7 +5,7 @@ metadata:
   description: Learn how to plan a Security Copilot workspace deployment by evaluating capacity, data residency, and role requirements.
   ms.date: 03/19/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
 title: Plan a workspace deployment
 durationInMinutes: 8

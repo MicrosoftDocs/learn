@@ -1,6 +1,30 @@
 ### YamlMime:Module
 uid: learn.architect-scalable-t-solutions
 metadata:
+  gs-content.levels: 400
+  gs-content.locale: en-us
+  gs-duration: 47
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+    - microsoft-foundry
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - solution-architect
+    - ai-engineer
+    - technology-manager
+  gs-skills:
+    - "Solution Architecture"
+    - "Multi-Agent Orchestration"
+    - "Model Hosting & Inference"
+    - "AI Governance"
+    - "AI Strategy"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/advocates/architect-scalable-ai-agent-solutions/index.yml
   title: Architect Scalable and Cost-Efficient AI Agent Solutions on Azure
   description: This module guides learners through designing AI agent architectures that scale with business demand, provide deep visibility into cost drivers, and support long-term governance. Participants explore reference architectures, orchestration patterns, and financial design principles that ensure operational efficiency, cost control, and strategic alignment.
   ms.date: 09/01/2026

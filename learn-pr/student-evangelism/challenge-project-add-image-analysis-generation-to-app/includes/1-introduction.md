@@ -23,8 +23,8 @@ In this challenge, you'll create a smart web application that integrates compute
 
 By completing this project you'll demonstrate your ability to:
 
-- Integrate the newest Image Analysis 4.0 capabilities - powered by Microsoft’s Florence large foundation model - into your application, by applying the knowledge learned in the [Explore Cognitive Services for Vision](https://learn.microsoft.com/training/modules/explore-cognitive-services-vision/?WT.mc_id=academic-105496-cacaste) Microsoft Learn module.
-- Enrich your solution with generative AI capabilities, by applying the skills learned in the [Develop Generative AI solutions with Azure OpenAI Service](https://learn.microsoft.com/training/paths/develop-ai-solutions-azure-openai/?WT.mc_id=academic-105496-cacaste) Microsoft Learn module.
+- Integrate the newest Image Analysis 4.0 capabilities - powered by Microsoft’s Florence large foundation model - into your application, by applying the knowledge learned in the [Explore Cognitive Services for Vision](/training/modules/explore-cognitive-services-vision/?WT.mc_id=academic-105496-cacaste) Microsoft Learn module.
+- Enrich your solution with generative AI capabilities, by applying the skills learned in the [Develop Generative AI solutions with Azure OpenAI Service](/training/paths/develop-ai-solutions-azure-openai/?WT.mc_id=academic-105496-cacaste) Microsoft Learn module.
 
 Overall, the tech stack of the final solution will look as follows:
 ![Solution tech stack](../media/solution-tech-stack.png)

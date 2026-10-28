@@ -1,6 +1,28 @@
 ### YamlMime:Module
 uid: learn.introduction-to-azure-api-center
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 34
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+    - systems-administrator
+  gs-skills:
+    - "API Management"
+    - "Platform Engineering"
+    - "Cloud Administration"
+    - DevOps
+    - "Application Development"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/introduction-to-azure-api-center/index.yml
   title: Introduction to Azure API Center    
   description: "Introduction to Azure API Center, a centralized secure inventory of APIs to help you govern, discover, and consume APIs across your organization."              
   ms.date: 5/3/2024              

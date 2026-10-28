@@ -6,7 +6,7 @@ metadata:
   description: "Connect to Azure Virtual Desktop with the Remote Desktop client for Windows"
   ms.date: 08/08/2024
   author: wwlpublish
-  ms.author: bradj
+  ms.author: lumac
   ms.topic: unit
   ms.custom:
   - N/A

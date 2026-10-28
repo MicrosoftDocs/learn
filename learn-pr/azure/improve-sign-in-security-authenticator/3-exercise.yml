@@ -7,7 +7,7 @@ metadata:
   description: "Enable remote employees for Microsoft Authenticator and enable a registration campaign to nudge them to set up Microsoft Authenticator when they sign in."
   ms.date: 02/29/2024
   author: Justinha
-  ms.author: Justinha
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 10
 content: |

@@ -5,7 +5,7 @@ metadata:
   title: Exercise - Use a custom handler to build an app
   description: Build and run a serverless app by using Go.
   author: softchris
-  ms.author: chnoring
+  ms.author: lumac
   ms.date: 09/05/2025
   ms.topic: unit
   ms.custom: team=nextgen

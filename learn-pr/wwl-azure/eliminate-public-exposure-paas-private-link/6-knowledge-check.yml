@@ -6,7 +6,7 @@ metadata:
   description: Check your knowledge of private endpoint configuration, private DNS integration, Azure Private Link service, and policy-based enforcement of private access adoption.
   ms.date: 05/11/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-generated
 durationInMinutes: 5

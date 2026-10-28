@@ -1,6 +1,22 @@
 ### YamlMime:Module
 uid: learn.wwl.close-out-course
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 15
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - higher-ed-educator
+  gs-skills:
+    - "Career Development"
+  gs-solution.area: null
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/close-out-course/index.yml
   title: Microsoft Learn for Educators student certification
   description: "Microsoft Learn for Educators student certification"
   ms.date: 11/15/2022

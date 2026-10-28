@@ -5,7 +5,7 @@ metadata:
   description: Detect Shared Key usage using Azure Monitor metrics and KQL log queries, migrate clients to Microsoft Entra ID, disable Shared Key authorization on storage accounts, and assign the built-in Azure Policy to enforce Shared Key prevention at scale.
   ms.date: 04/22/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 title: Disable Shared Key authorization and enforce with Azure Policy

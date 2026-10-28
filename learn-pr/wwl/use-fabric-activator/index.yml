@@ -1,11 +1,31 @@
 ### YamlMime:Module
 uid: learn.wwl.use-fabric-activator
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 54
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - fabric
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - data-analyst
+    - data-engineer
+  gs-skills:
+    - Automation
+    - "Data Analytics"
+    - "Data Engineering"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl/use-fabric-activator/index.yml
   title: Use Activator in Microsoft Fabric
   description: "Fabric Activator is an event detection engine that automatically triggers actions when specific patterns or conditions are detected in data sources."
   ms.date: 09/12/2025
   author: theresa-i
-  ms.author: theresai
+  ms.author: lumac
   ms.topic: module
   ms.service: fabric
   ms.subservice: rti-core

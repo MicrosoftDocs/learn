@@ -6,7 +6,7 @@ metadata:
   description: "Knowledge check for module on: design solutions for network security."
   ms.date: 05/20/2026
   author: ceperezb
-  ms.author: ceperezb
+  ms.author: lumac
   ms.topic: unit
   module_assessment: true
 durationInMinutes: 3

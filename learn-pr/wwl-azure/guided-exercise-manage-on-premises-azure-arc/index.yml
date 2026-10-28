@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.wwl.guided-exercise-manage-on-premises-azure-arc
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 240
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+    - defender-for-cloud
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - systems-administrator
+  gs-skills:
+    - "Cloud Administration"
+    - "Infrastructure Management"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/guided-exercise-manage-on-premises-azure-arc/index.yml
   title: Guided exercise - Manage on-premises Windows servers by using Azure Arc
   description: "In this guided exercise, you practice onboarding, securing, monitoring, and updating on-premises Windows servers by using Azure Arc. The guided exercise combines both learning and hands-on practice."
   ms.date: 06/10/2024

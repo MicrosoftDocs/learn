@@ -6,7 +6,7 @@ metadata:
   description: "Learn how to configure governance policies for AI workloads, ensuring compliance, cost control, and operational efficiency with Microsoft Foundry."
   ms.date: 02/02/2026
   author: wwlpublish
-  ms.author: bradj
+  ms.author: lumac
   ms.topic: unit
   ms.custom: references_regions
 durationInMinutes: 13

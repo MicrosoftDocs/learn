@@ -1,6 +1,28 @@
 ### YamlMime:LearningPath
 uid: learn.az-104-monitor-backup-resources
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - solution-architect
+    - systems-administrator
+  gs-skills:
+    - Storage
+    - "Infrastructure Management"
+    - "Data Administration"
+    - "Data Security"
+    - "Cloud Administration"
+    - "Data Analytics"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/az-104-monitor-backup-resources/index.yml
   title: 'AZ-104: Monitor and back up Azure resources'
   description: 'AZ-104: Monitor and back up Azure resources'
   ms.date: 06/23/2026

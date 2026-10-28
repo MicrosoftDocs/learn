@@ -1,11 +1,38 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.ingest-data-with-microsoft-fabric
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - fabric
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - data-analyst
+    - data-engineer
+  gs-skills:
+    - Automation
+    - "Data Engineering"
+    - SQL
+    - "Process Automation"
+    - "Data Analytics"
+    - "Python (Programming Language)"
+    - "Data Management"
+    - "Data Visualization"
+    - "Platform Engineering"
+    - "Database Development"
+    - "Low-Code Development"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/ingest-data-with-microsoft-fabric/index.yml
   title: Ingest Data with Microsoft Fabric
   description: Learn to ingest and process data in Microsoft Fabric using Dataflows Gen2, pipelines, Apache Spark, and KQL databases.
   ms.date: 06/12/2026
   author: theresa-i
-  ms.author: theresai
+  ms.author: lumac
   ms.topic: learning-path
 title: Ingest data with Microsoft Fabric
 prerequisites: |

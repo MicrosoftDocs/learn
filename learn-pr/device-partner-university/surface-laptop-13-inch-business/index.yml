@@ -2,6 +2,27 @@
 uid: learn.dpu.surface-laptop-13-inch-business
 title: Support mobile productivity with Surface Laptop for Business 13-inch
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 35
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - surface
+    - windows
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - business-user
+    - it-professional
+  gs-skills:
+    - "AI Productivity"
+    - "Device Management"
+    - Cybersecurity
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/surface-laptop-13-inch-business/index.yml
   title: Support Mobile Productivity With Surface Laptop For Business 13-Inch
   description: "In this module, you'll learn how to support mobile productivity with Surface Laptop for Business 13-inch."
   ms.date: 09/23/2026

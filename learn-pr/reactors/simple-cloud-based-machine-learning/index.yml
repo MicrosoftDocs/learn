@@ -1,11 +1,32 @@
 ### YamlMime:Module
 uid: learn.reactors.simple-cloud-based-machine-learning 
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 20
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure-machine-learning
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - data-scientist
+  gs-skills:
+    - "Machine Learning"
+    - "Data Science"
+    - "AI Model Evaluation & Testing"
+    - "Model Hosting & Inference"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/reactors/simple-cloud-based-machine-learning/index.yml
   title: Simple cloud-based machine learning 
   description: Learn about simple cloud-based machine learning for data science operations.
   ms.date: 06/30/2020
   author: sguthals
-  ms.author: chnoring
+  ms.author: lumac
+  ms.service: azure-machine-learning
   ms.topic: module
   ms.custom: team=nextgen
 title: Simple cloud-based machine learning  

@@ -6,7 +6,7 @@ metadata:
   description: "Practice creating, subscribing to, and raising events in C# using delegates and custom event data classes."
   ms.date: 04/24/2025
   author: wwlpublish
-  ms.author: eric
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 25
 content: |

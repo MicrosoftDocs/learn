@@ -6,7 +6,7 @@ metadata:
   description: Learn about Hadoop MapReduce version 2.0, known as YARN.
   ms.date: 03/09/2022
   author: softchris
-  ms.author: chnoring
+  ms.author: lumac
   ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 29

@@ -1,6 +1,27 @@
 ### YamlMime:Module
 uid: learn.wwl.purview-dspm-assess-data-security-posture
 metadata:
+  gs-content.levels: 400
+  gs-content.locale: en-us
+  gs-duration: 56
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - microsoft-purview
+    - security-copilot
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - ip-admin
+    - risk-practitioner
+  gs-skills:
+    - "Data Security"
+    - "Security Analytics"
+    - "AI Risk Management"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/purview-dspm-assess-data-security-posture/index.yml
   title: Assess Data Security Posture in Microsoft Purview
   description: "Assess your organization's data security posture by interpreting posture metrics and security objectives on the DSPM dashboard, then discovering where specific gaps exist across the data estate."
   ms.date: 04/29/2026

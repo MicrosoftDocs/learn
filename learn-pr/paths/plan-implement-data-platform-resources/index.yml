@@ -1,6 +1,32 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.plan-implement-data-platform-resources
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - database-administrator
+    - data-engineer
+    - developer
+    - solution-architect
+  gs-skills:
+    - Databases
+    - "Cloud Infrastructure"
+    - "Cloud Administration"
+    - "Data Administration"
+    - "Data Migration"
+    - SQL
+    - Automation
+    - "Application Development"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/plan-implement-data-platform-resources/index.yml
   title: Plan and implement data platform resources
   description: Plan and implement data platform resources
   ms.date: 8/4/2026

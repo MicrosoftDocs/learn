@@ -1,6 +1,24 @@
 ### YamlMime:Module
 uid: learn.student-evangelism.academic-program-certifications-define-requirements
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 29
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - faculty
+    - business-leader
+  gs-skills:
+    - "Career Development"
+    - "Organizational Effectiveness"
+  gs-solution.area: "AI Business Solutions"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/student-evangelism/academic-program-certifications-define-requirements/index.yml
   title: Define academic and industry requirements for implementing certifications in degree programs
   description: Identify the main processes involved in planning to implement certifications and to define academic and industry requirements in a new program proposal document.
   ms.date: 03/27/2023

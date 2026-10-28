@@ -1,6 +1,30 @@
 ### YamlMime:Module
 uid: learn.wwl.use-azure-cosmos-db-sql-api-sdk
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 45
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+    - database-administrator
+    - security-engineer
+  gs-skills:
+    - "Application Development"
+    - "Database Development"
+    - Databases
+    - "Identity and Access Management (IAM)"
+    - "Python (Programming Language)"
+    - "Cloud Computing"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/use-azure-cosmos-db-sql-api-sdk/index.yml
   title: Use the Azure Cosmos DB for NoSQL SDK
   description: "Learn about the Azure Cosmos DB libraries, and then download the libraries to use in a .NET, Python, or JavaScript (Node.JS) application."
   ms.date: 04/02/2025

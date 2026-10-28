@@ -6,7 +6,7 @@ metadata:
   description: "Manage alert suppression"
   ms.date: 1/7/2025
   author: wwlpublish
-  ms.author: kelawson
+  ms.author: lumac
   ms.topic: unit
 azureSandbox: false
 labModal: false

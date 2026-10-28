@@ -6,7 +6,7 @@ metadata:
   description: "Learn how to implement deployment pipelines in Microsoft Fabric."
   ms.date: 12/5/2025
   author: wwlpublish
-  ms.author: theresai
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 6
 content: |

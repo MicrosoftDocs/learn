@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.wwl.train-evaluate-classification-models
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 64
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - data-scientist
+  gs-skills:
+    - "Machine Learning"
+    - "AI Model Evaluation & Testing"
+    - "Python (Programming Language)"
+    - "Data Science"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/machine-learning/train-evaluate-classification-models/index.yml
   title: Train and evaluate classification models
   description: "Train and evaluate classification models"
   ms.collection: TBD

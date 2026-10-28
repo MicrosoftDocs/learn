@@ -6,7 +6,7 @@ metadata:
   description: "Review what you learned about planning, implementing, securing, and governing a medallion architecture in a Microsoft Fabric lakehouse."
   ms.date: 06/10/2026
   author: theresa-i
-  ms.author: theresai
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 2
 content: |

@@ -1,13 +1,35 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-azure-ad-identity-protection
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 55
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - entra
+    - microsoft-defender
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - identity-access-admin
+    - security-operations-analyst
+  gs-skills:
+    - "Identity and Access Management (IAM)"
+    - "Zero Trust Security"
+    - "Security Automation"
+    - "Security Analytics"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/manage-azure-active-directory-identity-protection/index.yml
   adobe-target: true
   prefetch-feature-rollout: true
   title: Manage Microsoft Entra Identity Protection
   description: "Protecting a user's identity by monitoring their usage and sign-in patterns ensures a secure cloud solution. Explore how to design and implement Microsoft Entra Identity protection."
   ms.date: 05/15/2026
   author: wwlpublish
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: module
   ms.collection: N/A
   ms.custom:

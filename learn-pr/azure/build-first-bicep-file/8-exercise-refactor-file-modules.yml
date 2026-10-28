@@ -8,7 +8,7 @@ metadata:
   description: Learn how to create self-contained, reusable modules for your Bicep code.
   ms.date: 01/31/2025
   author: mumian
-  ms.author: jgao
+  ms.author: lumac
   ms.topic: unit
   ms.custom:
     - devx-track-bicep

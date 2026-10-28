@@ -1,6 +1,32 @@
 ### YamlMime:Module
 uid: learn.wwl.petabyte-scale-ingestion-azure-data-factory
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 43
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - data-engineer
+    - platform-engineer
+    - security-engineer
+  gs-skills:
+    - "Data Engineering"
+    - Automation
+    - "Cloud Infrastructure"
+    - "Cloud Administration"
+    - "Data Security"
+    - "IT Networking"
+    - "Identity and Access Management (IAM)"
+    - Cybersecurity
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/petabyte-scale-ingestion-azure-data-factory/index.yml
   title: Petabyte-scale ingestion with Azure Data Factory
   description: "Petabyte-scale ingestion with Azure Data Factory"
   ms.date: 10/12/2026

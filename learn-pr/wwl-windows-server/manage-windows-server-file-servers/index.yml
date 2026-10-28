@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-windows-server-file-servers
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 55
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - systems-administrator
+    - storage-admin
+  gs-skills:
+    - Storage
+    - "Infrastructure Management"
+    - "Data Security"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-windows-server/manage-windows-server-file-servers/index.yml
   title: Manage Windows Server file servers
   description: "Learn how to manage the Windows Server File Server role, including NTFS and ReFS file systems, File Server Resource Manager (FSRM) quotas and file screening, SMB protocol configuration and encryption, and Volume Shadow Copy Service (VSS)."
   ms.date: 08/31/2026

@@ -6,7 +6,7 @@ When assigning user roles, provide the user email address if you're using a Linu
 
 ### Requirements
 
-ACLs can only be configured on NFS4.1 volumes. You can [convert a volume from NFSv3 to NFSv4.1](https://learn.microsoft.com/azure/azure-netapp-files/convert-nfsv3-nfsv41).
+ACLs can only be configured on NFS4.1 volumes. You can [convert a volume from NFSv3 to NFSv4.1](/azure/azure-netapp-files/convert-nfsv3-nfsv41).
 
 - You must have two packages installed:
   - nfs-utils to mount NFS volumes
@@ -20,9 +20,9 @@ ACLs can only be configured on NFS4.1 volumes. You can [convert a volume from NF
 
 ### Configure ACLs
 
-1. If you want to configure ACLs for a Linux VM joined to Active Directory, complete the steps in [Join a Linux VM to a Microsoft Entra Domain](https://learn.microsoft.com/azure/azure-netapp-files/join-active-directory-domain).
+1. If you want to configure ACLs for a Linux VM joined to Active Directory, complete the steps in [Join a Linux VM to a Microsoft Entra Domain](/azure/azure-netapp-files/join-active-directory-domain).
 
-2. [Mount the volume](https://learn.microsoft.com/azure/azure-netapp-files/azure-netapp-files-mount-unmount-volumes-for-virtual-machines).
+2. [Mount the volume](/azure/azure-netapp-files/azure-netapp-files-mount-unmount-volumes-for-virtual-machines).
 
 3. Use the command `nfs4_getfacl <path>` to view the existing ACL on a directory or file.
 

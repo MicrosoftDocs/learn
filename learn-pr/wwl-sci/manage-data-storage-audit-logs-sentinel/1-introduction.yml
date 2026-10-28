@@ -5,7 +5,7 @@ metadata:
   description: Introduction to managing data storage in Microsoft Sentinel, including custom log tables, data retention tiers, and Microsoft Purview Audit integration for compliance investigations.
   ms.date: 04/16/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 title: Introduction

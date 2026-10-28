@@ -2,6 +2,23 @@
 uid: learn.dpu.introduction-to-surface-portals
 title: Introduction to Surface Management and Support Portals
 metadata:
+  gs-content.levels: 100
+  gs-content.locale: en-us
+  gs-duration: 21
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - surface
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - it-professional
+  gs-skills:
+    - "Device Management"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/introduction-to-surface-portals/index.yml
   title: Introduction To Surface Management And Support Portals
   description: 'Learn about Surface Management and Support Portals, their functions, and when to use each portal for managing and supporting your Surface devices effectively.'
   ms.date: 04/08/2026

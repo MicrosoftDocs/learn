@@ -1,6 +1,24 @@
 ### YamlMime:Module
 uid: learn.philanthropies.design-vision
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 62
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - marketing
+  gs-skills:
+    - "Generative AI"
+    - "Prompt Engineering"
+    - "AI Productivity"
+  gs-solution.area: "AI Business Solutions"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/philanthropies/design-vision/index.yml
   title: Design the Vision - Storyboard with Copilot & Designer
   description: "Evaluate how Microsoft Designer and Copilot support creative planning, storyboarding, and script writing tasks for music video preproduction."
   ms.date: 3/20/2025

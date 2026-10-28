@@ -5,7 +5,7 @@ metadata:
   description: Learn how to configure Defender for Storage protection layers including malware scanning, and how to enable and manage the Defender for Databases subplans (four subplans total).
   ms.date: 03/31/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-generated
 title: Configure Defender for Storage and Defender for Databases

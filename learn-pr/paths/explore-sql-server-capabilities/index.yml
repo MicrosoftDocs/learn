@@ -1,6 +1,44 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.explore-sql-server-capabilities
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - data-engineer
+    - database-administrator
+    - developer
+  gs-skills:
+    - Databases
+    - SQL
+    - "Database Development"
+    - "Vector Databases"
+    - "Retrieval-Augmented Generation (RAG)"
+    - "Semantic Search"
+    - "Generative AI"
+    - "AI-Augmented Software Development"
+    - "Application Development"
+    - "Cloud Infrastructure"
+    - "Cloud Administration"
+    - "Data Engineering"
+    - "Data Migration"
+    - "Identity and Access Management (IAM)"
+    - Cybersecurity
+    - "Data Analytics"
+    - "Data Management"
+    - "Data Administration"
+    - Storage
+    - "Data Security"
+    - "Embedding Models"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/explore-sql-server-capabilities/index.yml
   title: Explore SQL Server 2025 capabilities
   description: Explore SQL Server 2025 capabilities
   ms.date: 08/11/2026

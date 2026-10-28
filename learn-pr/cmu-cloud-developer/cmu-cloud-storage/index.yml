@@ -1,12 +1,36 @@
 ### YamlMime:Module
 uid: learn.cmu-cloud-computing.cloud-storage.cloud-storage-overview
 metadata:
+  gs-content.levels: 400
+  gs-content.locale: en-us
+  gs-duration: 163
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+    - data-engineer
+    - solution-architect
+  gs-skills:
+    - Storage
+    - Databases
+    - "Database Design"
+    - "Data Engineering"
+    - "Application Architecture"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/cmu-cloud-developer/cmu-cloud-storage/index.yml
   title: Cloud storage overview
   description: Carnegie Mellon University's Cloud Developer course. Learn all about data and get an overview of how it's stored, including local and distributed file systems, databases, and object storage.
   brand: azure
   ms.date: 03/09/2022
   author: softchris
-  ms.author: chnoring
+  ms.author: lumac
+  ms.service: azure
   ms.topic: module
   ms.custom: team=nextgen
 title: Cloud storage overview

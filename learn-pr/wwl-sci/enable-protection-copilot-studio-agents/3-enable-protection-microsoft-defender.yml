@@ -5,7 +5,7 @@ metadata:
   description: Configure real-time protection for Copilot Studio agents in the Microsoft Defender portal by navigating to System > Settings > Security for AI. Then, coordinate App ID configuration with Power Platform admins, and verify the Connected status of protected agents.
   ms.date: 04/21/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 title: Enable protection in Microsoft Defender

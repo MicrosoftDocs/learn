@@ -10,7 +10,7 @@ Single sign-on (SSO) allows users to authenticate their identity once and then l
 
 
 
-Both Authentication and authorization processes can be performed with [Microsoft Identity platform](https://learn.microsoft.com/entra/identity-platform/v2-overview) as part of Microsoft Entra ID (Formerly known as Azure Active Directory) and [Microsoft Entra ID for Customers](https://learn.microsoft.com/entra/external-id/customers/overview-customers-ciam). Microsoft identity platform is suited for solutions where customers' users have Microsoft Entra ID accounts, often that would be B2B solutions. *Microsoft Entra ID for customers* is suitable for solutions serving end-users directly since those users don't have Microsoft Entra ID account and don't belong to any organizational tenant. 
+Both Authentication and authorization processes can be performed with [Microsoft Identity platform](/entra/identity-platform/v2-overview) as part of Microsoft Entra ID (Formerly known as Azure Active Directory) and [Microsoft Entra ID for Customers](/entra/external-id/customers/overview-customers-ciam). Microsoft identity platform is suited for solutions where customers' users have Microsoft Entra ID accounts, often that would be B2B solutions. *Microsoft Entra ID for customers* is suitable for solutions serving end-users directly since those users don't have Microsoft Entra ID account and don't belong to any organizational tenant.
 
 Both platforms implement the OAuth 2.0 authorization protocol. OAuth 2.0 is a method through which a third-party app can access web-hosted resources on behalf of a user.
 

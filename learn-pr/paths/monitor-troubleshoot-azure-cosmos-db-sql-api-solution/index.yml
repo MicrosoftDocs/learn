@@ -1,6 +1,40 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.monitor-troubleshoot-azure-cosmos-db-sql-api-solution
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - database-administrator
+    - developer
+    - data-engineer
+    - site-reliability-engineer
+    - support-engineer
+  gs-skills:
+    - Databases
+    - "Cloud Administration"
+    - "Data Administration"
+    - "Data Analytics"
+    - "Cloud Infrastructure"
+    - "Infrastructure Management"
+    - "Application Development"
+    - Cybersecurity
+    - "Data Management"
+    - Storage
+    - "Data Migration"
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "Data Security"
+    - "Identity and Access Management (IAM)"
+    - "Application Security"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/monitor-troubleshoot-azure-cosmos-db-sql-api-solution/index.yml
   title: Monitor and troubleshoot an Azure Cosmos DB for NoSQL solution
   description: Monitor and troubleshoot an Azure Cosmos DB for NoSQL solution
   ms.date: 04/02/2025

@@ -6,7 +6,7 @@ metadata:
   description: A knowledge check for the discover Microsoft guidelines for responsible conversational AI development module.
   ms.date: 07/10/2024
   author: Adriamen
-  ms.author: japerena
+  ms.author: lumac
   ms.topic: unit
   module_assessment: true
 durationInMinutes: 2

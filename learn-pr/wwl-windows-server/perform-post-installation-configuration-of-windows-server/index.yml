@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.wwl.perform-post-installation-configuration-of-windows-server
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 46
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - windows
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - systems-administrator
+  gs-skills:
+    - "Infrastructure Management"
+    - Automation
+    - "Cloud Administration"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-windows-server/perform-post-installation-configuration-of-windows-server/index.yml
   title: Perform post-installation configuration of Windows Server
   description: "Learn how to perform post-installation configuration of Windows Server using Sconfig for Server Core, Desired State Configuration (DSC) for declarative management, Windows Admin Center, and answer files for automated setup."
   ms.date: 08/31/2026

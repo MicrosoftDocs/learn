@@ -1,11 +1,32 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-disk-encryption-azure-virtual-machines
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 25
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - security-engineer
+    - systems-administrator
+  gs-skills:
+    - Cybersecurity
+    - "Cloud Infrastructure"
+    - "Cloud Administration"
+    - "Identity and Access Management (IAM)"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/implement-disk-encryption-azure-virtual-machines/index.yml
   title: Implement Disk Encryption for Azure Virtual Machines
   description: "Select and configure the right disk encryption approach for Azure virtual machines. Compare managed disk encryption options, configure encryption at host with customer-managed keys using Disk Encryption Sets, and apply confidential disk encryption to confidential virtual machines."
   ms.date: 05/11/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: module
   ms.service: azure-virtual-machines
   ai-usage: ai-assisted

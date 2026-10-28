@@ -1,6 +1,28 @@
 ### YamlMime:Module
 uid: learn.azure.introduction-to-deployment-stacks
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 30
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - devops-engineer
+    - systems-administrator
+    - solution-architect
+  gs-skills:
+    - "Infrastructure Management"
+    - "Cloud Administration"
+    - DevOps
+    - "Identity and Access Management (IAM)"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/introduction-to-deployment-stacks/index.yml
   title: Introduction to deployment stacks
   description: Describe the benefits of using deployment stacks to deploy your Azure resources.
   ms.date: 08/01/2023

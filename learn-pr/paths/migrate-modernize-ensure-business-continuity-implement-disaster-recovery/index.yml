@@ -1,11 +1,34 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.migrate-modernize-ensure-business-continuity-implement-disaster-recovery
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - database-administrator
+    - solution-architect
+    - systems-administrator
+  gs-skills:
+    - "Cloud Infrastructure"
+    - "Solution Architecture"
+    - Databases
+    - Storage
+    - "Network Connectivity"
+    - "Infrastructure Management"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/migrate-modernize-ensure-business-continuity-implement-disaster-recovery/index.yml
   title: Modernize, ensure business continuity, and implement disaster recovery for SAP solutions on Azure​
   description: Modernize, ensure business continuity, and implement disaster recovery for SAP solutions on Azure​
   ms.date: 01/10/2024
   author: wwlpublish
-  ms.author: eric
+  ms.author: lumac
   ms.topic: learning-path
 title: Modernize, ensure business continuity, and implement disaster recovery for SAP solutions on Azure​
 prerequisites: |

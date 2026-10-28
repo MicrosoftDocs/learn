@@ -6,7 +6,7 @@ metadata:
   description: "Deploy and configure Microsoft Entra Internet Access"
   ms.date: 08/20/2026
   author: wwlpublish
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 10
 content: |

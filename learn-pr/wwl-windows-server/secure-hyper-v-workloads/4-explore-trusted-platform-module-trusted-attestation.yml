@@ -6,7 +6,7 @@ metadata:
   description: "Explore TPM-trusted attestation"
   ms.date: 04/16/2024
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: lumac
   ms.topic: unit
   ms.custom:
   - N/A

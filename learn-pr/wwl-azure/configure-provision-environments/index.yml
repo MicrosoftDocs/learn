@@ -1,6 +1,32 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-provision-environments
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 120
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure-devops
+    - azure
+    - github
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - devops-engineer
+    - platform-engineer
+    - developer
+    - systems-administrator
+    - solution-architect
+  gs-skills:
+    - DevOps
+    - "Cloud Infrastructure"
+    - "Application Development"
+    - "Security Automation"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/configure-provision-environments/index.yml
   title: Configure and Provision Environments
   description: "Learn environment provisioning, service connection configuration, and automated testing infrastructure setup."
   ms.date: 10/01/2025

@@ -1,6 +1,34 @@
 ### YamlMime:Module
 uid: learn.wwl.responsible-ai-content-safety
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 70
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - microsoft-foundry
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - ai-engineer
+    - developer
+    - solution-architect
+    - security-engineer
+  gs-skills:
+    - "AI Safety"
+    - "Responsible AI"
+    - "AI Security (Model-Level)"
+    - "AI Model Evaluation & Testing"
+    - "AI Governance"
+    - "AI Risk Management"
+    - "Natural Language Processing (NLP)"
+    - "Computer Vision"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/responsible-content-safety/index.yml
   title: Use AI responsibly with Microsoft Foundry Content Safety
   description: As the amount of user-generated online content increases, so does the need to ensure harmful material is moderated effectively. Microsoft Foundry Content Safety resource includes features to help organizations moderate and manage both user-generated and AI-generated content.
   ms.date: 10/16/2026

@@ -13,7 +13,7 @@ The hardware requirements for Windows Server depend on the services that the ser
 
 For a Windows Server 2025 Server Core VM, use the documented 2-GB RAM minimum as the baseline and allocate more memory for the server's roles and applications. Setup can also require additional memory, particularly when the boot image includes extra languages or updates. Don't size a production VM around the lower-memory setup workaround described in the hardware documentation or assume that you can reduce its allocation to 512 MB after installation.
 
-Minimum installation requirements aren't workload sizing recommendations. Check the version-specific [Windows Server hardware requirements](/windows-server/get-started/hardware-requirements?view=windows-server-2025) before deployment, and test the configuration with the roles and applications you intend to run.
+Minimum installation requirements aren't workload sizing recommendations. Check the version-specific [Windows Server hardware requirements](/windows-server/get-started/hardware-requirements?view=windows-server-2025&preserve-view=true) before deployment, and test the configuration with the roles and applications you intend to run.
 
 ### Other hardware requirements
 

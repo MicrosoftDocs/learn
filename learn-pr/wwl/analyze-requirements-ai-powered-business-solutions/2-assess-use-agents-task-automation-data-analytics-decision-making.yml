@@ -6,7 +6,7 @@ metadata:
   description: "Learn how AI agents automate tasks, analyze data, and support decision-making. Explore Microsoft Copilot and generative AI for enterprise productivity."
   ms.date: 02/04/2026
   author: Randall-Knapp
-  ms.author: taeldin
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 durationInMinutes: 5

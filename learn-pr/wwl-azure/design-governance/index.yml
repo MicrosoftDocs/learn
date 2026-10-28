@@ -1,6 +1,31 @@
 ### YamlMime:Module
 uid: learn.wwl.design-governance
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 49
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - solution-architect
+    - platform-engineer
+    - ip-admin
+    - security-engineer
+  gs-skills:
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "Solution Architecture"
+    - "Cloud Administration"
+    - "Cloud Infrastructure"
+    - "Identity and Access Management (IAM)"
+    - "Security Architecture Design"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/design-governance/index.yml
   title: Design Governance
   description: "Azure Architects design and recommend governance solutions."
   ms.date: 06/23/2026

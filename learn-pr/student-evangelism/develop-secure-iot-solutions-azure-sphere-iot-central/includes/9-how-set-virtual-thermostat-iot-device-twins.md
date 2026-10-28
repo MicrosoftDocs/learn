@@ -50,7 +50,7 @@ static LP_DEVICE_TWIN_BINDING dt_desiredTemperature = {
 The following is the implementation of the handler function `DeviceTwinSetTemperatureHandler`. The handler function is called when the device receives a `DesiredTemperature` desired property message from Azure IoT Hub.
 
 > [!NOTE]
-> As part of the [IoT Plug and Play writable property conventions](https://learn.microsoft.com/azure/iot/concepts-convention#writable-properties), the device should acknowledge the desired property update with a call to **lp_deviceTwinAckDesiredState**.
+> As part of the [IoT Plug and Play writable property conventions](/azure/iot/concepts-convention#writable-properties), the device should acknowledge the desired property update with a call to **lp_deviceTwinAckDesiredState**.
 
 ```c
 /// <summary>

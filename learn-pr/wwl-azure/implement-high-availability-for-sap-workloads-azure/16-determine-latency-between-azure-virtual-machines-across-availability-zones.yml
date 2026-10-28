@@ -6,7 +6,7 @@ metadata:
   description: "Learn how to measure the latency between Azure Virtual Machines across availability zones."
   ms.date: 12/27/2024
   author: wwlpublish
-  ms.author: eric
+  ms.author: lumac
   ms.topic: unit
   ms.custom:
   - N/A

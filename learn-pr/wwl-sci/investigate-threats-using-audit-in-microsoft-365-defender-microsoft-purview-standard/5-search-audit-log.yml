@@ -6,7 +6,7 @@ metadata:
   description: "Search the Unified Audit Log (UAL)."
   ms.date: 2/17/2023
   author: wwlpublish
-  ms.author: kelawson
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 10
 content: |

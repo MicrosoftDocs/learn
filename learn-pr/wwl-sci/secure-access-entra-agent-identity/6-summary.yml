@@ -5,7 +5,7 @@ metadata:
   description: Summary of securing access for Microsoft Entra Agent ID, covering authentication flow mapping, Conditional Access policy configuration, and agent identity lifecycle management.
   ms.date: 04/21/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 title: Summary

@@ -5,7 +5,7 @@ metadata:
   description: Explore how Microsoft Defender EASM is deployed as an Azure resource, what assets it discovers, and how its outside-in scanning scope differs from other Defender tools.
   ms.date: 04/07/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-generated
 title: Explore EASM features and capabilities

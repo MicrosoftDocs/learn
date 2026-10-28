@@ -1,6 +1,29 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.az-400-manage-infrastructure-as-code-using-azure
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - devops-engineer
+  gs-skills:
+    - Automation
+    - "Cloud Infrastructure"
+    - DevOps
+    - "Infrastructure Management"
+    - "Cloud Administration"
+    - "Process Automation"
+    - "Platform Engineering"
+    - "Application Development"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/az-400-manage-infrastructure-as-code-using-azure/index.yml
   title: "AZ-400: Manage infrastructure as code using Azure and DSC"
   description: "AZ-400: Manage infrastructure as code using Azure and DSC"
   ms.date: 10/24/2025

@@ -6,7 +6,7 @@ metadata:
   description: "Install the SAP software with Azure Center for SAP solutions."
   ms.date: 12/23/2024
   author: wwlpublish
-  ms.author: eric
+  ms.author: lumac
   ms.topic: unit
   ms.custom:
     - sfi-ropc-nochange

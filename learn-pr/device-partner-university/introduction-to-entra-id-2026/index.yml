@@ -2,6 +2,24 @@
 uid: learn.dpu.introduction-to-entra-id-2026
 title: Introduction to Microsoft Entra ID
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 21
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - entra
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - identity-access-admin
+  gs-skills:
+    - "Identity and Access Management (IAM)"
+    - "Zero Trust Security"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/introduction-to-entra-id-2026/index.yml
   title: Introduction To Microsoft Entra ID
   description: In this module, you’ll learn how to manage identities and access using Microsoft Entra ID.
   ms.date: 08/28/2025

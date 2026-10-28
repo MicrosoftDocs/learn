@@ -5,7 +5,7 @@ metadata:
   description: Search and query Microsoft Purview Audit logs in the Microsoft Defender portal using the Purview Audit search tool and Advanced Hunting KQL queries for compliance investigation and incident correlation.
   ms.date: 04/16/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 title: Query Purview Audit logs in Microsoft Defender XDR

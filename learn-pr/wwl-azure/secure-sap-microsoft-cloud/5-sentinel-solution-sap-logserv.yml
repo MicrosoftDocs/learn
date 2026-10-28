@@ -6,7 +6,7 @@ metadata:
   description: "Microsoft Sentinel Solution for SAP integration with SAP LogServ add-on"
   ms.date: 03/13/2026
   author: wwlpublish
-  ms.author: bradj
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 10
 content: |

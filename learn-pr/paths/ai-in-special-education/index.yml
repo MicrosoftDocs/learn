@@ -1,11 +1,37 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.ai-in-special-education
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - microsoft-365-copilot
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - k-12-educator
+  gs-skills:
+    - "AI Productivity"
+    - "Responsible AI"
+    - "AI Prompting"
+    - "Accessible AI"
+    - "AI Governance"
+    - "AI Safety"
+    - "Digital Accessibility"
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "Role focused AI Workflows"
+    - "Communications Management"
+    - "Collaboration Tools"
+  gs-solution.area: "AI Business Solutions"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/ai-in-special-education/index.yml
   title: AI in Special Education
   description: This course supports educators in exploring how Microsoft AI tools can be thoughtfully used in special education environments to reduce administrative demands, strengthen accessibility, and support clear communication with families. Throughout the learning path, responsible use of AI, privacy, and transparency are emphasized so educators can determine when and how AI fits into their practice in ways that align with student needs and professional values.
   ms.date: 12/22/2025
   author: Randall-Knapp
-  ms.author: rknapp
+  ms.author: lumac
   ms.topic: learning-path
 title: AI in special education
 summary: |

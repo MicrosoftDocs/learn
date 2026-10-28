@@ -1,6 +1,33 @@
 ### YamlMime:Module
 uid: learn.wwl.design-secure-scalable-platform-architectures
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 50
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - platform-engineer
+    - solution-architect
+    - security-engineer
+    - devops-engineer
+  gs-skills:
+    - "Platform Engineering"
+    - "Security Architecture Design"
+    - "Solution Architecture"
+    - "Cloud Infrastructure"
+    - Automation
+    - DevOps
+    - Cybersecurity
+    - "Identity and Access Management (IAM)"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/design-secure-scalable-platform-architectures/index.yml
   title: Design Secure and Scalable Platform Architectures
   description: "In this module, learners will gain insights into designing platform architectures that are secure, scalable, and compliant with regulatory standards. The module covers capacity planning, cost optimization, and the role of automation in maintaining consistency and reducing manual errors. Learners will also explore strategies for building scalable solutions that can handle increasing demand and complex workflows."
   ms.date: 01/14/2025

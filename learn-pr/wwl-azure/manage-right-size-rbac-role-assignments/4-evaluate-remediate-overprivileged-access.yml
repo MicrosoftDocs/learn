@@ -5,7 +5,7 @@ metadata:
   description: Identify overprivileged role assignments using Defender Cloud Security Posture Management (CSPM), Cloud Infrastructure Entitlement Management (CIEM), and Microsoft Entra access reviews, then right-size access to enforce least-privilege principles.
   ms.date: 05/11/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 title: Evaluate and remediate overprivileged access

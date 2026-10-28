@@ -1,6 +1,36 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-generative-ai-agents-azure-postgresql
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 62
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - microsoft-foundry
+    - azure-openai
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+    - data-engineer
+    - solution-architect
+    - ai-engineer
+  gs-skills:
+    - "Agent Development"
+    - "Agentic AI"
+    - "Multi-Agent Orchestration"
+    - "Vector Databases"
+    - "Semantic Search"
+    - Databases
+    - "Retrieval-Augmented Generation (RAG)"
+    - "AI Infrastructure"
+    - "Application Architecture"
+    - SQL
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/implement-generative-ai-agents-azure-postgresql/index.yml
   title: Implement Generative AI agents with Azure Database for PostgreSQL
   description: "Learn to build, integrate, and evaluate generative AI agents using Azure Database for PostgreSQL."
   ms.date: 10/26/2026

@@ -1,11 +1,30 @@
 ### YamlMime:Module
 uid: learn.wwl.describe-concepts-of-cryptography
 metadata:
+  gs-content.levels: 100
+  gs-content.locale: en-us
+  gs-duration: 24
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - security-professional
+    - business-user
+  gs-skills:
+    - Cybersecurity
+    - "Data Security"
+    - "Identity and Access Management (IAM)"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/describe-concepts-of-cryptography/index.yml
   title: Describe Concepts of Cryptography
   description: "Describe concepts of cryptography."
   ms.date: 04/24/2026
   author: wwlpublish
-  ms.author: ceperezb
+  ms.author: lumac
   ms.topic: module
   ms.service: security
 title: Describe concepts of cryptography

@@ -6,7 +6,7 @@ metadata:
   description: "Learn how to configure just-in-time access for Azure subscription and resource roles using Privileged Identity Management."
   ms.date: 03/17/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 5
 content: |

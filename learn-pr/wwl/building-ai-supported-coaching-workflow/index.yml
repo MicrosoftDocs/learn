@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.wwl.building-ai-supported-coaching-workflow
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 16
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - business-user
+  gs-skills:
+    - "AI Prompting"
+    - "Role focused AI Workflows"
+    - "Responsible AI"
+    - "Accessible AI"
+  gs-solution.area: "AI Business Solutions"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl/building-ai-supported-coaching-workflow/index.yml
   title: "Building an AI-Supported Coaching Workflow"
   description: "Learn to create AI-supported workflows for coaching, build prompt libraries, and integrate employee partnership into repeatable processes."
   ms.date: 09/25/2026

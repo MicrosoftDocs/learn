@@ -1,6 +1,32 @@
 ### YamlMime:LearningPath
 uid: learn-wwl.implement-operational-databases-in-microsoft-fabric
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - fabric
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - data-engineer
+    - developer
+  gs-skills:
+    - Databases
+    - "Database Development"
+    - SQL
+    - "Data Engineering"
+    - "Data Security"
+    - Virtualization
+    - "AI-Augmented Software Development"
+    - "Application Development"
+    - "Data Management"
+    - "Process Automation"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/implement-operational-databases-in-microsoft-fabric/index.yml
   title: Implement operational databases in Microsoft Fabric
   description: Learn how to work with operational databases in Microsoft Fabric.
   ms.date: 08/11/2026

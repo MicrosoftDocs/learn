@@ -10,8 +10,8 @@ You also performed hands-on exercises to configure an export policy for volume, 
 
 ### Learn more
 
-[Configure access control lists on NFSv4.1 volumes for Azure NetApp Files](https://learn.microsoft.com/azure/azure-netapp-files/configure-access-control-lists)
+[Configure access control lists on NFSv4.1 volumes for Azure NetApp Files](/azure/azure-netapp-files/configure-access-control-lists)
 
-[Mount or unmount a volume](https://learn.microsoft.com/azure/azure-netapp-files/azure-netapp-files-mount-unmount-volumes-for-virtual-machines)
+[Mount or unmount a volume](/azure/azure-netapp-files/azure-netapp-files-mount-unmount-volumes-for-virtual-machines)
 
-[Manage SMB share ACLs in Azure NetApp Files](https://learn.microsoft.com/azure/azure-netapp-files/manage-smb-share-access-control-lists)
+[Manage SMB share ACLs in Azure NetApp Files](/azure/azure-netapp-files/manage-smb-share-access-control-lists)

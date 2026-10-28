@@ -1,6 +1,33 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.design-develop-database-solutions
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - fabric
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - data-engineer
+    - database-administrator
+    - developer
+  gs-skills:
+    - Databases
+    - "Database Design"
+    - "Database Development"
+    - SQL
+    - "Data Management"
+    - "Application Development"
+    - "Data Engineering"
+    - "Generative AI"
+    - Cybersecurity
+    - "Identity and Access Management (IAM)"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/design-develop-database-solutions/index.yml
   title: Design and develop database solutions
   description: Learn to design and implement database objects, programmability objects, advanced T-SQL code, and AI-assisted tools for SQL Server, Azure SQL, and Microsoft Fabric.
   ms.date: 02/27/2026

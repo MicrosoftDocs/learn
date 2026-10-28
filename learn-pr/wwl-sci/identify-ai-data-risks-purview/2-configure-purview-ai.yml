@@ -5,7 +5,7 @@ metadata:
   description: Configure Microsoft Purview Data Security Posture Management for AI, enable data discovery, and set up the DSPM for AI dashboard to surface AI-related data risks.
   ms.date: 04/21/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 title: Configure Data Security Posture Management (DSPM) for AI

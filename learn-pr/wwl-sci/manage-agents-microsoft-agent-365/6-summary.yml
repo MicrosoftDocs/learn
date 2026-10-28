@@ -5,7 +5,7 @@ metadata:
   description: Summary of managing AI agents using Microsoft Agent 365, covering the management interface, agent registration, access controls, and activity monitoring.
   ms.date: 04/21/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 title: Summary

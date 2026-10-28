@@ -6,7 +6,7 @@ metadata:
   description: Summary of what you learned in the Plan to deploy a Microsoft Defender for IoT monitoring system for OT networks training module. 
   ms.date: 11/29/2023
   author: limwainstein
-  ms.author: lwainstein
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 1
 content: |

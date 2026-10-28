@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-security-azure-cosmos-db-sql-api
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 60
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+  gs-skills:
+    - "Data Security"
+    - "Identity and Access Management (IAM)"
+    - "Application Security"
+    - Databases
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/implement-security-azure-cosmos-db-sql-api/index.yml
   title: Implement security in Azure Cosmos DB for NoSQL
   description: "We will learn the different security models that Azure Cosmos DB uses."
   ms.date: 04/02/2025

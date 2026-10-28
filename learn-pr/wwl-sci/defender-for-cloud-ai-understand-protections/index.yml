@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.wwl.defender-for-cloud-ai-understand-protections
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 26
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - defender-for-cloud
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - security-engineer
+    - security-professional
+  gs-skills:
+    - "AI Security (Model-Level)"
+    - "Cloud Infrastructure"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/defender-for-cloud-ai-understand-protections/index.yml
   title: Understand how Microsoft Defender for Cloud supports AI security and governance in Azure
   description: Understand how Microsoft Defender for Cloud strengthens AI security in Azure through posture management and integration with key governance and identity services.
   ms.date: 10/13/2025

@@ -1,6 +1,29 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.execute-queries-azure-cosmos-db-sql-api
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+  gs-skills:
+    - "Database Development"
+    - Databases
+    - SQL
+    - "Application Development"
+    - "Python (Programming Language)"
+    - "Data Management"
+    - "Application Security"
+    - "Generative AI"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/execute-queries-azure-cosmos-db-sql-api/index.yml
   title: Execute queries and build a Generative AI application with Azure Cosmos DB
   description: Execute queries and build a Generative AI application with Azure Cosmos DB
   ms.date: 04/02/2025

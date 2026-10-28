@@ -6,7 +6,7 @@ metadata:
   description: "Understand attack surface reduction"
   ms.date: 2/26/2025
   author: wwlpublish
-  ms.author: kelawson
+  ms.author: lumac
   ms.topic: unit
 azureSandbox: false
 labModal: false

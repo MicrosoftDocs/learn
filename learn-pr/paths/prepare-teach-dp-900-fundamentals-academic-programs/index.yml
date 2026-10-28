@@ -1,6 +1,26 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.prepare-teach-dp-900-fundamentals-academic-programs
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - higher-ed-educator
+  gs-skills:
+    - "Career Development"
+    - "Collaboration Tools"
+    - "Digital Accessibility"
+    - "Data Analytics"
+    - Databases
+    - "Communications Management"
+  gs-solution.area: null
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/prepare-teach-dp-900-fundamentals-academic-programs/index.yml
   title: DP-900
   description: Prepare to teach DP-900 Microsoft Azure Data fundamentals in academic programs
   ms.date: 09/23/2022

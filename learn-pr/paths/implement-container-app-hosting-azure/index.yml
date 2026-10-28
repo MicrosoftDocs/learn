@@ -1,6 +1,35 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.implement-container-app-hosting-azure
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - devops-engineer
+    - developer
+    - platform-engineer
+  gs-skills:
+    - DevOps
+    - Automation
+    - "Cloud Infrastructure"
+    - "Application Development"
+    - "Application Security"
+    - "Security Automation"
+    - "Cloud Administration"
+    - "Infrastructure Management"
+    - "Identity and Access Management (IAM)"
+    - "Security Architecture Design"
+    - "AI Infrastructure"
+    - "Network Connectivity"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/implement-container-app-hosting-azure/index.yml
   title: Implement Container Application Hosting on Azure
   description: Learn how to deploy, configure, and troubleshoot containerized applications on Azure.
   ms.date: 1/19/2026

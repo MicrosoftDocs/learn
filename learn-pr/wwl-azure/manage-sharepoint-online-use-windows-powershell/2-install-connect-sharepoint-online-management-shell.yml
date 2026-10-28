@@ -6,7 +6,7 @@ metadata:
   description: "Install and connect to SharePoint Online Management Shell by using Windows PowerShell"
   ms.date: 10/24/2022
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: lumac
   ms.topic: unit
   ms.custom: sfi-ga-nochange
 azureSandbox: false

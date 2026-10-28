@@ -1,6 +1,26 @@
 ### YamlMime:LearningPath
 uid: learn.devrel.administer-internet-information-services
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - systems-administrator
+  gs-skills:
+    - "Infrastructure Management"
+    - "IT Networking"
+    - "Application Security"
+    - Automation
+    - "Identity and Access Management (IAM)"
+    - "Data Security"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/administer-internet-information-services/index.yml
   title: Administer Internet Information Services
   description: This learning path aims to explain learners how to administer Internet Information Services (IIS) on Windows Server. IIS is a flexible, secure, and manageable Web server for hosting anything on the Web. It's used to host websites, services, and applications on the Internet or intranet. In this learning path, you learn how to install, configure, and manage IIS to host web applications and services.
   brand: windows-server

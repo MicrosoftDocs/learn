@@ -1,6 +1,32 @@
 ### YamlMime:Module
 uid: learn.wwl.collaborate-pull-requests-azure-repos
 metadata:
+  gs-content.levels: 400
+  gs-content.locale: en-us
+  gs-duration: 30
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure-devops
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - devops-engineer
+    - platform-engineer
+    - developer
+    - security-engineer
+    - solution-architect
+  gs-skills:
+    - DevOps
+    - "Collaboration Tools"
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "Application Development"
+    - "Security Architecture Design"
+    - "Communications Management"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/collaborate-pull-requests-azure-repos/index.yml
   title: Collaborate with pull requests in Azure Repos
   description: "Collaborate with enterprise-grade pull request workflows, advanced collaboration patterns, and strategic code review practices in Azure Repos for scalable DevOps implementations."
   ms.date: 09/09/2025

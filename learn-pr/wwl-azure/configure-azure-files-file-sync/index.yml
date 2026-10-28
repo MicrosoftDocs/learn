@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-azure-files-file-sync
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 29
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - administrator
+    - storage-admin
+  gs-skills:
+    - Storage
+    - "Cloud Administration"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/configure-azure-files-file-sync/index.yml
   adobe-target: true
   prefetch-feature-rollout: true
   title: Configure Azure Files

@@ -6,7 +6,7 @@ metadata:
   description: "Learn how to design, structure, and operationalize a prompt library aligned with Microsoft best practices for enterprise AI workloads."
   ms.date: 02/13/2026
   author: Randall-Knapp
-  ms.author: taeldin
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 durationInMinutes: 10

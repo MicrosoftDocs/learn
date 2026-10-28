@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.wwl.design-data-storage-solution-for-non-relational-data
 metadata:
+  gs-content.levels: 400
+  gs-content.locale: en-us
+  gs-duration: 56
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - solution-architect
+    - storage-admin
+  gs-skills:
+    - Storage
+    - "Solution Architecture"
+    - "Data Security"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/design-data-storage-solution-for-non-relational-data/index.yml
   adobe-target: true
   prefetch-feature-rollout: true
   title: Design a data storage solution for non-relational data

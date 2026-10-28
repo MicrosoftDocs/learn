@@ -8,7 +8,7 @@ Together, these four capabilities give your operations team the tools to move fr
 
 ## Learn more
 
-- [OpenTelemetry documentation](https://learn.microsoft.com/azure/azure-monitor/app/opentelemetry-overview)
-- [Azure Monitor OpenTelemetry Distro for Python](https://learn.microsoft.com/azure/azure-monitor/app/opentelemetry-enable?tabs=python)
-- [Azure Monitor dynamic thresholds](https://learn.microsoft.com/azure/azure-monitor/alerts/alerts-dynamic-thresholds)
-- [Distributed tracing for multi-service applications](https://learn.microsoft.com/azure/azure-monitor/app/distributed-trace-data)
+- [OpenTelemetry documentation](/azure/azure-monitor/app/opentelemetry-overview)
+- [Azure Monitor OpenTelemetry Distro for Python](/azure/azure-monitor/app/opentelemetry-enable?tabs=python)
+- [Azure Monitor dynamic thresholds](/azure/azure-monitor/alerts/alerts-dynamic-thresholds)
+- [Distributed tracing for multi-service applications](/azure/azure-monitor/app/distributed-trace-data)

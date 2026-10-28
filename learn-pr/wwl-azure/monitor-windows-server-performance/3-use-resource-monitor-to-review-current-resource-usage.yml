@@ -6,7 +6,7 @@ metadata:
   description: "Use Resource Monitor to review current resource usage"
   ms.date: 01/15/2025
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 6
 content: |

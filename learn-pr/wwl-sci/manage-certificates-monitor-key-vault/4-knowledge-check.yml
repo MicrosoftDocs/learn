@@ -5,7 +5,7 @@ metadata:
   description: Check your knowledge of managing certificates and enabling audit logging in Azure Key Vault, including CA integration, lifetime actions, and diagnostic log configuration.
   ms.date: 04/13/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-generated
 title: Knowledge check

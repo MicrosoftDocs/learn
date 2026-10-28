@@ -1,6 +1,31 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.ai-workloads-governance
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - azure
+    - azure-machine-learning
+    - microsoft-foundry
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - security-engineer
+    - systems-administrator
+  gs-skills:
+    - "Data Security"
+    - "IT Networking"
+    - "Cloud Administration"
+    - "AI Governance"
+    - "AI Compliance"
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "Security Automation"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/ai-workloads-governance/index.yml
   title: AI workload governance and DLP
   description: Master the art of safeguarding sensitive data and enforcing governance for AI workloads on Azure. This learning path is crafted for IT and security professionals tasked with maintaining data protection and compliance in AI environments. Discover how to prevent data exfiltration and apply governance policies that ensure consistent, secure AI deployments. Learn to combine technical controls with strategic oversight to create resilient, policy-driven AI architectures that align with organizational and regulatory standards. 
   ms.date: 07/08/2025

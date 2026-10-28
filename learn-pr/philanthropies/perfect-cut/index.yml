@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.philanthropies.perfect-cut
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 95
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - student
+    - k-12-educator
+  gs-skills:
+    - "Generative AI"
+    - "AI Productivity"
+    - "Digital Accessibility"
+  gs-solution.area: "AI Business Solutions"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/philanthropies/perfect-cut/index.yml
   title: Perfect the Cut - Postproduction and Enhancement with Microsoft Clipchamp
   description: "Discover how Microsoft Clipchamp streamlines postproduction for animated projects, including AI-powered color grading, transitions, asset integration, and export optimization."
   ms.date: 4/28/2025

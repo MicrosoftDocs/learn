@@ -6,7 +6,7 @@ metadata:
   description: "Learn about C# classes like DateOnly, TimeOnly, DateTime, DateTimeOffset, TimeZoneInfo, and TimeSpan for handling date and time."
   ms.date: 03/24/2025
   author: wwlpublish
-  ms.author: eric
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 5
 content: |

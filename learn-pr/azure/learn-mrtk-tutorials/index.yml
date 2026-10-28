@@ -1,11 +1,29 @@
 ### YamlMime:Module
 uid: learn.azure.learn-introduction-tutorials-mrtk
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 49
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - windows
+    - vs
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+  gs-skills:
+    - "Application Development"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/learn-mrtk-tutorials/index.yml
   title: Introduction to the Mixed Reality Toolkit - Set Up Your Project and Use Hand Interaction
   description: This course provides the user with a basic understanding of all the foundational elements of MRTK.
   ms.date: 11/06/2024
   author: marlenaklein-msft
-  ms.author: marlenaklein
+  ms.author: lumac
   ms.topic: module
   ms.service: hololens
 title: Introduction to the Mixed Reality Toolkit-Set Up Your Project and Use Hand Interaction

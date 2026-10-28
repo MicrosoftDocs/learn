@@ -1,11 +1,29 @@
 ### YamlMime:Module
 uid: learn.wwl.defend-against-cyberthreats-microsoft-defender-xdr-labs
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 63
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - microsoft-defender
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - security-operations-analyst
+  gs-skills:
+    - "Security Analytics"
+    - "Threat Management"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/defend-against-cyberthreats-microsoft-defender-xdr-labs/index.yml
   title: Defend against Cyberthreats with Microsoft Defender XDR lab exercises
   description: "Learn how to configure Microsoft Defender XDR, deploy Microsoft Defender for Endpoint and onboard devices, configure policies, mitigate threats, and respond to incidents with Defender XDR."
   ms.date: 06/12/2026
   author: KenMAG
-  ms.author: kelawson
+  ms.author: lumac
   ms.topic: module-guided-project
   ms.service: defender-xdr
   ai-usage: ai-assisted

@@ -1,6 +1,30 @@
 ### YamlMime:Module
 uid: learn.wwl.analyze-text-ai-language
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 46
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - microsoft-foundry
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - ai-engineer
+    - developer
+  gs-skills:
+    - "Natural Language Processing (NLP)"
+    - "AI Solutions"
+    - "Application Development"
+    - "Python (Programming Language)"
+    - "Data Security"
+    - "Identity and Access Management (IAM)"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/analyze-text-ai-language/index.yml
   title: Analyze text with Azure Language in Foundry Tools
   description: Use Azure Language in Foundry Tools to built text analysis solutions.
   author: ivorb

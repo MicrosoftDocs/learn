@@ -1,6 +1,30 @@
 ### YamlMime:Module
 uid: learn.wwl.windows-server-update-management
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 31
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - windows
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - systems-administrator
+    - security-engineer
+    - solution-architect
+  gs-skills:
+    - "Infrastructure Management"
+    - Cybersecurity
+    - "Network Connectivity"
+    - "Cloud Administration"
+    - Automation
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/windows-server-update-management/index.yml
   title: Windows Server update management
   description: "Learn how to deploy and manage Windows Server Update Services (WSUS) for centralized update management, including deployment topologies, computer groups, and integration with Azure Automation Update Management for hybrid environments."
   ms.date: 08/31/2026

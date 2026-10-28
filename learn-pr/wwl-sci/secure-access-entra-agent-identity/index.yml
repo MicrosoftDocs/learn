@@ -1,11 +1,35 @@
 ### YamlMime:Module
 uid: learn.wwl.secure-access-entra-agent-identity
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 23
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - entra
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - security-engineer
+    - identity-access-admin
+    - administrator
+  gs-skills:
+    - "Identity and Access Management (IAM)"
+    - "Zero Trust Security"
+    - "Agent Operations"
+    - "Security Architecture Design"
+    - "AI Governance"
+    - "Cloud Administration"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/secure-access-entra-agent-identity/index.yml
   title: Secure Access for Microsoft Entra Agent Identity
   description: "Secure AI agent identities by applying Conditional Access policies through Microsoft Entra Agent Identity. Map authentication flows, configure CA policies scoped to agents, and control agent access and lifecycle events to reduce identity-based risk."
   ms.date: 08/21/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: module
   ms.service: entra-id
   ai-usage: ai-assisted

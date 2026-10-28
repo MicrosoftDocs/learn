@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-azure-cosmos-db-sql-api-sdk
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 44
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+  gs-skills:
+    - "Database Development"
+    - "Application Development"
+    - Databases
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/configure-azure-cosmos-db-sql-api-sdk/index.yml
   title: Configure the Azure Cosmos DB for NoSQL SDK
   description: "Learn how to configure the Azure Cosmos DB for NoSQL SDK in various ways including how to integrate with the emulator, implement parallelism, and create a custom logger."
   ms.date: 04/02/2025

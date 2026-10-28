@@ -1,6 +1,36 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.develop-language-solutions-azure-ai
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - microsoft-foundry
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - ai-engineer
+    - developer
+  gs-skills:
+    - "Natural Language Processing (NLP)"
+    - "AI Solutions"
+    - "Application Development"
+    - "Python (Programming Language)"
+    - "Data Security"
+    - "Identity and Access Management (IAM)"
+    - "Agent Development"
+    - "Generative AI"
+    - "AI Infrastructure"
+    - "Agentic AI"
+    - Storage
+    - Cybersecurity
+    - "Multimodal AI"
+    - "Model Hosting & Inference"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/develop-language-solutions-azure-ai/index.yml
   title: Develop natural language solutions in Azure
   description: Develop natural language solutions in Azure
   ms.date: 3/16/2026

@@ -6,7 +6,7 @@ metadata:
   description: "This unit introduces the module with Contoso's penetration test finding—public PaaS and AI service endpoints accessible with stolen credentials from outside the corporate network."
   ms.date: 04/22/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 3
 content: |

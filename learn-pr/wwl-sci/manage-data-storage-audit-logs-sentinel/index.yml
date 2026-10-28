@@ -1,11 +1,36 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-data-storage-audit-logs-sentinel
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 31
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - microsoft-sentinel
+    - microsoft-purview
+    - m365
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - security-engineer
+    - security-operations-analyst
+    - ip-admin
+  gs-skills:
+    - "Data Management"
+    - "Security Analytics"
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "Cloud Administration"
+    - "Security Operations Management"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/manage-data-storage-audit-logs-sentinel/index.yml
   title: Manage Data Storage and Query Audit Logs in Microsoft Sentinel
   description: "Manage data storage in Microsoft Sentinel by creating custom log tables, configuring retention tiers and archive policies for compliance. Then, connect Microsoft Purview Audit as a data source, and query audit logs in the Microsoft Defender XDR portal for compliance investigations."
   ms.date: 04/16/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: module
   ms.service: microsoft-sentinel
   ai-usage: ai-assisted

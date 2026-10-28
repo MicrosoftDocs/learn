@@ -1,6 +1,27 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.write-advanced-transact-sql-queries
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - database-administrator
+    - developer
+  gs-skills:
+    - SQL
+    - "Database Development"
+    - "Database Design"
+    - "Data Analytics"
+    - Databases
+    - "Data Engineering"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/write-advanced-transact-sql-queries/index.yml
   title: Write advanced Transact-SQL queries
   description: Write advanced Transact-SQL queries
   ms.date: 08/12/2026

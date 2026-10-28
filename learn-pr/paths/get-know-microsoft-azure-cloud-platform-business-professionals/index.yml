@@ -1,6 +1,28 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.get-know-microsoft-azure-cloud-platform-business-professionals
 metadata:
+  gs-content.levels: 100
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - business-leader
+    - business-owner
+  gs-skills:
+    - "Cloud Computing"
+    - "IT Strategy"
+    - "Business Insights"
+    - "Organizational Effectiveness"
+    - "AI Business & Vision"
+    - "Cloud Infrastructure"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/get-know-microsoft-azure-cloud-platform-business-professionals/index.yml
   title: 'Get to know Microsoft Azure cloud platform: An overview for business professionals'
   description: |-
     Enhance your cloud fluency with this 90-minute, highly informative training designed to bridge the gap between cloud computing and business strategy. Take a tour of the transformative power of the cloud to drive business success, growth and cost savings with Microsoft Azure as your trusted partner.

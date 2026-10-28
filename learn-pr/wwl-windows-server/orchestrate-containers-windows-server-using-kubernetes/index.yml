@@ -1,6 +1,31 @@
 ### YamlMime:Module
 uid: learn.wwl.orchestrate-containers-windows-server-using-kubernetes
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 65
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - systems-administrator
+    - solution-architect
+  gs-skills:
+    - "Infrastructure Management"
+    - "Cloud Infrastructure"
+    - "Cloud Administration"
+    - "Platform Engineering"
+    - "IT Networking"
+    - Automation
+    - DevOps
+    - "Solution Architecture"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-windows-server/orchestrate-containers-windows-server-using-kubernetes/index.yml
   title: Orchestrate containers on Windows Server using Kubernetes
   description: "Orchestrate containers on Windows Server using Kubernetes"
   ms.date: 01/23/2026

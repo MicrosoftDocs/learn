@@ -5,7 +5,7 @@ metadata:
   description: Introduction to implementing security and managing access for Azure Storage, including securing accounts used by AI agent workloads.
   ms.date: 04/22/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 title: Introduction

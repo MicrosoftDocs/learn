@@ -1,6 +1,23 @@
 ### YamlMime:Module
 uid: learn.wwl.query-multiple-tables-with-joins
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 62
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - data-analyst
+  gs-skills:
+    - SQL
+    - "Database Development"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/query-multiple-tables-with-joins/index.yml
   title: Combine multiple tables with JOINs in T-SQL
   description: "Combine multiple tables with JOINs in T-SQL"
   ms.date: 08/10/2026

@@ -1,6 +1,34 @@
 ### YamlMime:Module
 uid: learn.wwl.machine-learning-production-azure-databricks
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 62
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure-databricks
+    - azure-machine-learning
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - data-scientist
+    - data-engineer
+    - ai-engineer
+    - devops-engineer
+  gs-skills:
+    - "Machine Learning"
+    - "Data Engineering"
+    - "Model Hosting & Inference"
+    - "AI Model Evaluation & Testing"
+    - Automation
+    - DevOps
+    - "Data Management"
+    - "Data Science"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/machine-learning-production-azure-databricks/index.yml
   title: Manage machine learning in production with Azure Databricks
   description: "Learn how to manage machine learning models in production with Azure Databricks."
   ms.date: 4/24/2025

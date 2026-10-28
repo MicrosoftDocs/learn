@@ -1,6 +1,36 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-secure-ai-ready-infrastructure
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 103
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+    - entra
+    - microsoft-foundry
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - administrator
+    - security-engineer
+    - identity-access-admin
+    - platform-engineer
+    - ai-engineer
+  gs-skills:
+    - "AI Infrastructure"
+    - "Identity and Access Management (IAM)"
+    - "Cloud Infrastructure"
+    - "Security Architecture Design"
+    - Databases
+    - "Data Security"
+    - "AI Governance"
+    - "Cloud Administration"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/manage-secure-ai-ready-infrastructure/index.yml
   title: "Manage secure AI-Ready Infrastructure"
   description: "This module shows how to secure AI agents using Azure RBAC and Microsoft Entra ID managed identities, eliminating stored credentials while enforcing least‑privilege access. It then demonstrates deploying Azure Cosmos DB for NoSQL as a scalable, compliant conversation store optimized for agent workloads."
   ms.date: 02/02/2026

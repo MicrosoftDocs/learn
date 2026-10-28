@@ -2,6 +2,28 @@
 uid: learn.dpu.windows-11-pro
 title: What's new with Windows 11 Pro
 metadata:
+  gs-content.levels: 100
+  gs-content.locale: en-us
+  gs-duration: 23
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - windows
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - business-user
+    - administrator
+    - security-engineer
+  gs-skills:
+    - "Device Management"
+    - Cybersecurity
+    - "AI Productivity"
+    - "Digital Accessibility"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/windows-11-pro/index.yml
   title: What's New With Windows 11 Pro
   description: In this module, you'll discover how the latest Windows 11 Pro features can help organizations work more efficiently and securely. 
   ms.date: 07/23/2025

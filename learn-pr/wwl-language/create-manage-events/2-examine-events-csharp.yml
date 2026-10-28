@@ -6,7 +6,7 @@ metadata:
   description: "Learn how events in C# enable communication between objects and streamline user interactions."
   ms.date: 04/24/2025
   author: wwlpublish
-  ms.author: eric
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 6
 content: |

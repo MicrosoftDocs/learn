@@ -6,7 +6,7 @@ metadata:
   description: "Your understanding of resilient AI infrastructure design helps you make critical architectural decisions that balance availability, cost, and operational complexity. Test your ability to apply these concepts by analyzing scenarios where you must select appropriate deployment patterns, storage configurations, and container registry strategies based on specific business requirements."
   ms.date: 02/03/2026
   author: wwlpublish
-  ms.author: bradj
+  ms.author: lumac
   ms.topic: unit
   module_assessment: false
 durationInMinutes: 3

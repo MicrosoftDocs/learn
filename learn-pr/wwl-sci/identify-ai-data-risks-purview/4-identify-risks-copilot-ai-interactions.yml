@@ -5,7 +5,7 @@ metadata:
   description: Review sensitive data risks surfaced from Copilot and AI application interactions in the Microsoft Purview DSPM for AI dashboard, and interpret findings to prioritize remediation.
   ms.date: 04/21/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 title: Identify risks in Copilot and AI app interactions

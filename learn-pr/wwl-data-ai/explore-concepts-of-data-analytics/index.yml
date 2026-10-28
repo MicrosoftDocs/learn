@@ -1,6 +1,22 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-concepts-of-data-analytics
 metadata:
+  gs-content.levels: 100
+  gs-content.locale: en-us
+  gs-duration: 15
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - data-analyst
+  gs-skills:
+    - "Data Analytics"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/explore-concepts-of-data-analytics/index.yml
   title: Explore concepts of data analytics
   description: "This content is a part of Explore concepts of data analytics."
   ms.date: 10/12/2026

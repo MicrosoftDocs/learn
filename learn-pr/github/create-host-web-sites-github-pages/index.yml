@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.github.create-host-web-sites-github-pages
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 72
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - github
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+    - devops-engineer
+  gs-skills:
+    - "Application Development"
+    - DevOps
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/github/create-host-web-sites-github-pages/index.yml
   title: "Create and Host Web Sites by Using GitHub Pages"
   description: Learn how to host your personal, organization, and project sites for free with GitHub Pages.
   ms.date: 06/23/2025

@@ -1,6 +1,39 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.azure-databricks-data-engineer-setup-configure-environment
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - azure-databricks
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - data-engineer
+  gs-skills:
+    - "Data Engineering"
+    - "Data Analytics"
+    - "Data Management"
+    - "Data Science"
+    - "Machine Learning"
+    - SQL
+    - "Data Warehousing"
+    - "Cloud Administration"
+    - "Python (Programming Language)"
+    - "Cloud Infrastructure"
+    - Storage
+    - "Data Security"
+    - "Solution Architecture"
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "Agent Development"
+    - DevOps
+    - "Platform Engineering"
+    - "Data Administration"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/azure-databricks-data-engineer-set-up-configure-environment/index.yml
   title: Set up and Configure an Azure Databricks Environment
   description: Build a solid foundation in Azure Databricks by understanding its architecture, integrations, compute options, and data organization capabilities. Learn how Azure Databricks provides a unified platform for data engineering, analytics, and AI workloads in the cloud.
   ms.date: 12/09/2025

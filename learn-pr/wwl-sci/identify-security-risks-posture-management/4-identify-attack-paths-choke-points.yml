@@ -5,7 +5,7 @@ metadata:
   description: Use attack path analysis in Microsoft Defender for Cloud to locate externally exploitable attack chains, identify choke points, investigate nodes with MITRE ATT&CK context, and understand how attack paths extend to AI workloads.
   ms.date: 03/26/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-generated
 title: Identify attack paths and choke points

@@ -5,7 +5,7 @@ metadata:
   description: Configure confidential disk encryption for Azure confidential virtual machines, binding disk encryption keys to the VM's vTPM for workload isolation.
   ms.date: 05/11/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 title: Apply confidential disk encryption to confidential virtual machines

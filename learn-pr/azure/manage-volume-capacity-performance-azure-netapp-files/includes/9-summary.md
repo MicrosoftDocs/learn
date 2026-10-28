@@ -12,8 +12,8 @@ You also performed hands-on exercises to resize pools and volumes, update quota 
 
 ### Learn more
 
-- [Monitor the capacity of a volume](https://learn.microsoft.com/azure/azure-netapp-files/monitor-volume-capacity)
-- [Resize the capacity pool or a volume using REST API](https://learn.microsoft.com/azure/azure-netapp-files/azure-netapp-files-resize-capacity-pools-or-volumes#resizing-the-capacity-pool-or-a-volume-using-rest-api)
-- [Resize a cross-region replication destination volume](https://learn.microsoft.com/azure/azure-netapp-files/azure-netapp-files-resize-capacity-pools-or-volumes#resize-a-cross-region-replication-destination-volume)
-- [Manage Azure NetApp Files storage with cool access](https://learn.microsoft.com/azure/azure-netapp-files/manage-cool-access?tabs=standard)
-- [Update Terraform-managed Azure resources outside of Terraform](https://learn.microsoft.com/azure/azure-netapp-files/terraform-manage-volume)
+- [Monitor the capacity of a volume](/azure/azure-netapp-files/monitor-volume-capacity)
+- [Resize the capacity pool or a volume using REST API](/azure/azure-netapp-files/azure-netapp-files-resize-capacity-pools-or-volumes#resizing-the-capacity-pool-or-a-volume-using-rest-api)
+- [Resize a cross-region replication destination volume](/azure/azure-netapp-files/azure-netapp-files-resize-capacity-pools-or-volumes#resize-a-cross-region-replication-destination-volume)
+- [Manage Azure NetApp Files storage with cool access](/azure/azure-netapp-files/manage-cool-access?tabs=standard)
+- [Update Terraform-managed Azure resources outside of Terraform](/azure/azure-netapp-files/terraform-manage-volume)

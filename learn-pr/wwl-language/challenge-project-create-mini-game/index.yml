@@ -1,6 +1,22 @@
 ### YamlMime:Module
 uid: learn.wwl.challenge-project-create-mini-game
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 45
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+  gs-skills:
+    - "Application Development"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-language/challenge-project-create-mini-game/index.yml
   title: Challenge Project - Create a Mini-Game
   description: "Use methods with parameters and return values to develop the features of a console mini-game."
   ms.date: 05/19/2025

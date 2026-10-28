@@ -1,4 +1,4 @@
-By using Azure NetApp Files [storage with cool access](https://learn.microsoft.com/azure/azure-netapp-files/cool-access-introduction), you can configure inactive data to move from Azure NetApp Files storage (hot tier) to an Azure storage account (cool tier). Cool access is suitable for infrequently accessed data and can reduce total storage cost.
+By using Azure NetApp Files [storage with cool access](/azure/azure-netapp-files/cool-access-introduction), you can configure inactive data to move from Azure NetApp Files storage (hot tier) to an Azure storage account (cool tier). Cool access is suitable for infrequently accessed data and can reduce total storage cost.
 
 The cool access feature allows you to configure a capacity pool with cool access.
 
@@ -25,6 +25,6 @@ Azure NetApp Files storage with cool access is generally available. Before using
 
    `Get-AzProviderFeature -ProviderNamespace Microsoft.NetApp -FeatureName ANFCoolAccess`
 
-You can also use [Azure CLI commands](https://learn.microsoft.com/cli/azure/feature) `az feature register` and `az feature show` to register and view registration status.
+You can also use [Azure CLI commands](/cli/azure/feature) `az feature register` and `az feature show` to register and view registration status.
 
-To learn about how to update Terraform-managed Azure resources outside of Terraform, see [Managing Azure resources outside of Terraform](https://learn.microsoft.com/azure/azure-netapp-files/terraform-manage-volume).
+To learn about how to update Terraform-managed Azure resources outside of Terraform, see [Managing Azure resources outside of Terraform](/azure/azure-netapp-files/terraform-manage-volume).

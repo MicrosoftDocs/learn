@@ -1,10 +1,37 @@
 ### YamlMime:Module
 uid: learn.philanthropies.streamline-training-plans-with-ai-tools
 metadata:
+  gs-content.levels: 100
+  gs-content.locale: en-us
+  gs-duration: 18
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - microsoft-365-copilot
+    - m365
+    - office-teams
+    - azure-openai
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - k-12-educator
+    - higher-ed-educator
+    - business-user
+  gs-skills:
+    - "AI Productivity"
+    - "AI Workforce Applications"
+    - "Role focused AI Workflows"
+    - "Generative AI"
+    - "AI Prompting"
+    - "Collaboration Tools"
+  gs-solution.area: "AI Business Solutions"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/philanthropies/streamline-training-plans-with-ai-tools/index.yml
   title: Streamline training plans with AI tools
   description: AI tools can aid in streamlining training plans. It helps in building learning objectives, streamlining research, creating assessments, providing feedback, and improving writing quality. Collaboration is boosted with tools like Microsoft Copilot.
   author: yoosunee
-  ms.author: anruss
+  ms.author: lumac
   ms.date: 01/14/2025
   ms.update-cycle: 180-days
   ms.service: artificial-intelligence

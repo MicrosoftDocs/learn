@@ -15,7 +15,7 @@ The Azure AI Voice Live client library for Python provides a real-time, speech-t
 > [!IMPORTANT]
 > As of version 1.0.0, this SDK is async-only. The synchronous API is deprecated to focus exclusively on async patterns. All examples and samples use async/await syntax.
 
-In this unit, you learn how to use the SDK to implement authentication and handle events. You also see a minimal example of creating a session. For a full reference to the Voice Live package, visit the [voice live Package reference](/python/api/azure-ai-voicelive/azure.ai.voicelive?view=azure-python).
+In this unit, you learn how to use the SDK to implement authentication and handle events. You also see a minimal example of creating a session. For a full reference to the Voice Live package, visit the [voice live Package reference](/python/api/azure-ai-voicelive/azure.ai.voicelive?view=azure-python&preserve-view=true).
 
 ## Implement authentication
 

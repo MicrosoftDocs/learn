@@ -1,6 +1,32 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.az-400-design-implement-dependency-management-strategy
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - azure-devops
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - devops-engineer
+    - developer
+  gs-skills:
+    - "Application Development"
+    - DevOps
+    - "Solution Architecture"
+    - "Application Security"
+    - Automation
+    - "Data Migration"
+    - "Data Security"
+    - "Identity and Access Management (IAM)"
+    - "Platform Engineering"
+    - "Governance, Risk Management, and Compliance (GRC)"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/az-400-design-implement-dependency-management-strategy/index.yml
   title: "AZ-400: Design and Implement a Dependency Management Strategy"
   description: "Learn how to design and implement a comprehensive dependency management strategy for DevOps. Explore package dependencies, package management, artifact security, versioning strategies, and GitHub Packages integration for efficient software development."
   ms.date: 10/13/2025

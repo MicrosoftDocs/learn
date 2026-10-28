@@ -1,11 +1,33 @@
 ### YamlMime:Module
 uid: learn.wwl.create-manage-azure-sentinel-workspaces
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 34
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+    - microsoft-sentinel
+    - microsoft-defender
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - security-operations-analyst
+  gs-skills:
+    - "Security Architecture Design"
+    - "Security Operations Management"
+    - "Identity and Access Management (IAM)"
+    - "Data Management"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/create-manage-azure-sentinel-workspaces/index.yml
   title: Create and manage Microsoft Sentinel workspaces
   description: "Create and manage Microsoft Sentinel workspaces"
   ms.date: 12/02/2025
   author: KenMAG
-  ms.author: kelawson
+  ms.author: lumac
   ms.topic: module
   ms.service: microsoft-sentinel
 title: Create and manage Microsoft Sentinel workspaces

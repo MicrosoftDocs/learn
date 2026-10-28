@@ -6,7 +6,7 @@ metadata:
   description: "Use WDS to deploy Windows Server"
   ms.date: 12/26/2024
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: lumac
   ms.topic: unit
 azureSandbox: false
 durationInMinutes: 10

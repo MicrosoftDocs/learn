@@ -1,11 +1,35 @@
 ### YamlMime:Module
 uid: learn-wwl.secure-data-access-in-fabric
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 63
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - fabric
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - data-engineer
+    - data-analyst
+    - security-engineer
+    - administrator
+  gs-skills:
+    - "Data Security"
+    - "Identity and Access Management (IAM)"
+    - "Data Administration"
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "Data Management"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/secure-data-access-in-fabric/index.yml
   title: Secure Data Access in Microsoft Fabric
   description: Implement workspace roles, item permissions, and OneLake security roles to control data access in Microsoft Fabric.
   ms.date: 05/26/2026
   author: theresa-i
-  ms.author: theresai
+  ms.author: lumac
   ms.topic: module
   ms.collection: 
   ms.service: fabric

@@ -24,9 +24,9 @@ To mount an NFS volume using a Linux client, in Azure portal go to **Mount instr
 - `$ANFIP` is the IP address of the Azure NetApp Files volume found in the volume properties menu.
 - `$FILEPATH` is the export path of the Azure NetApp Files volume.
 - `$MOUNTPOINT` is the directory on the Linux host used to mount the NFS export.
-- If you want to mount an NFS Kerberos volume, refer to [Configure NFSv4.1 Kerberos encryption](https://learn.microsoft.com/azure/azure-netapp-files/configure-kerberos-encryption) for more details.
+- If you want to mount an NFS Kerberos volume, refer to [Configure NFSv4.1 Kerberos encryption](/azure/azure-netapp-files/configure-kerberos-encryption) for more details.
 - You can also access SMB volumes from Linux clients via NFS by setting the protocol access for the volume to **dual-protocol**. This allows for accessing the volume via NFS (NFSv3 or NFSv4.1) and SMB.
-- Review the [Linux NFS mount options best practices](https://learn.microsoft.com/azure/azure-netapp-files/performance-linux-mount-options)
+- Review the [Linux NFS mount options best practices](/azure/azure-netapp-files/performance-linux-mount-options)
 
 ### Mount NFS volumes on Windows clients
 
@@ -34,7 +34,7 @@ Mounting NFSv4.1 volumes on Windows clients isn't supported.
 
 You can mount NFSv3 volumes on Windows clients by using NFS:
 
-1. [Mount the volume on a Linux VM first](https://learn.microsoft.com/azure/azure-netapp-files/azure-netapp-files-mount-unmount-volumes-for-virtual-machines#mount-nfs-volumes-on-linux-clients)
+1. [Mount the volume on a Linux VM first](/azure/azure-netapp-files/azure-netapp-files-mount-unmount-volumes-for-virtual-machines#mount-nfs-volumes-on-linux-clients)
 2. Run `chmod 777` or `chmod 775` command against the volume.
 3. Mount the volume via the NFS client on Windows using the mount option `mtype=hard` to reduce connection issues.
     - You can also access NFS volumes from Windows clients via SMB by setting the protocol access for the volume to **dual-protocol**. This setting allows access to the volume via SMB and NFS (NFSv3 or NFSv4.1) and results in better performance than using the NFS client on Windows with an NFS volume.

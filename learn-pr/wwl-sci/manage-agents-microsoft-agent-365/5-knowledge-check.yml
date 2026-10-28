@@ -5,7 +5,7 @@ metadata:
   description: Check your knowledge of governing AI agents using Microsoft Agent 365, including enabling the management interface. You then test your understanding of registering agents, applying access controls, and monitoring agent activity.
   ms.date: 04/21/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-generated
 title: Knowledge check

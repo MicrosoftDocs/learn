@@ -5,7 +5,7 @@ metadata:
   description: Explore the architecture and four protection pillars of Microsoft Defender for Containers. Pillars include the Defender sensor, Azure Policy for Kubernetes, registry access, and Kubernetes API access components.
   ms.date: 05/10/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 title: Explore Microsoft Defender for Containers

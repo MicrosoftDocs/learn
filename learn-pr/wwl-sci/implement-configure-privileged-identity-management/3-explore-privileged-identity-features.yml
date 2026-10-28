@@ -6,7 +6,7 @@ metadata:
   description: "Explore the core capabilities of PIM including eligible assignments, time-bound access, approval workflows, and audit history."
   ms.date: 03/17/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 5
 content: |

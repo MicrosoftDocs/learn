@@ -5,7 +5,7 @@ metadata:
   description: Introduction to implementing Microsoft Defender for Storage to detect threats including malicious file uploads and compromised AI agent credentials targeting Azure Storage accounts.
   ms.date: 04/22/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 title: Introduction

@@ -2,6 +2,28 @@
 uid: learn.azure.azure.use-slurm-hpc-azure-cyclecloud
 title: Use Slurm for HPC on Azure CycleCloud
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 47
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - systems-administrator
+    - solution-architect
+    - devops-engineer
+  gs-skills:
+    - "Cloud Infrastructure"
+    - "Infrastructure Management"
+    - "Cloud Administration"
+    - Automation
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/use-slurm-hpc-azure-cyclecloud/index.yml
   title: Use Slurm for HPC on Azure CycleCloud
   description: Learn how to use the Slurm job scheduler with Azure CycleCloud.
   ms.date: 11/15/2025

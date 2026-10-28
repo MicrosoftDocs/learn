@@ -6,7 +6,7 @@ metadata:
   description: Introducing popular infrastructure as code tools like Azure Resource Manager Templates, Puppet, Chef, and Ansible
   ms.date: 06/07/2022
   author: softchris
-  ms.author: chnoring
+  ms.author: lumac
   ms.topic: unit
   ms.custom:
     - sfi-ropc-nochange

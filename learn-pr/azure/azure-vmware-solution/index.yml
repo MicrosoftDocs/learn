@@ -2,6 +2,25 @@
 uid: learn.azure.azure-vmware-solution
 title: Secure outbound internet connectivity for Azure VMware Solution
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 80
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - network-engineer
+    - security-engineer
+  gs-skills:
+    - "IT Networking"
+    - Cybersecurity
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/azure-vmware-solution/index.yml
   title: Secure Outbound Internet Connectivity for Azure VMware Solution
   description: Secure outbound internet connectivity for Azure VMware Solution using Azure Route Server, Azure Firewall, and third-party NVA
   ms.date: 07/08/2025

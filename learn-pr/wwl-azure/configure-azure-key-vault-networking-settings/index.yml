@@ -1,11 +1,29 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-azure-key-vault-networking-settings
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 147
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - security-engineer
+  gs-skills:
+    - "Application Security"
+    - "IT Networking"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/configure-azure-key-vault-networking-settings/index.yml
   title: Configure Azure Key Vault networking settings
   description: "Learn to configure Azure Key Vault networking settings via the Azure portal, enabling secure access control to your vault, protecting sensitive keys and secrets."
   ms.date: 10/24/2024
   author: wwlpublish
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: module-standard-task-based
   ms.custom:
   - N/A

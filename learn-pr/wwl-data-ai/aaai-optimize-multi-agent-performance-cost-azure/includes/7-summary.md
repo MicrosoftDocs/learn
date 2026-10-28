@@ -12,7 +12,7 @@ These optimization strategies compound. Intelligent model routing eliminates ove
 
 ## Learn more
 
-- [Azure OpenAI Service prompt caching documentation](https://learn.microsoft.com/azure/ai-services/openai/how-to/prompt-caching)
-- [Azure Cache for Redis with vector search](https://learn.microsoft.com/azure/azure-cache-for-redis/cache-tutorial-vector-similarity)
-- [Microsoft Foundry model deployment and optimization](https://learn.microsoft.com/azure/ai-foundry/how-to/deploy-models-openai)
-- [Token optimization strategies for large language models](https://learn.microsoft.com/azure/ai-services/openai/how-to/latency)
+- [Azure OpenAI Service prompt caching documentation](/azure/ai-services/openai/how-to/prompt-caching)
+- [Azure Cache for Redis with vector search](/azure/azure-cache-for-redis/cache-tutorial-vector-similarity)
+- [Microsoft Foundry model deployment and optimization](/azure/ai-foundry/how-to/deploy-models-openai)
+- [Token optimization strategies for large language models](/azure/ai-services/openai/how-to/latency)

@@ -5,7 +5,7 @@ metadata:
   description: Configure EasyAuth authentication, managed identity, and HTTPS enforcement. Then configure access restrictions, virtual network integration, private endpoints, and Key Vault references for Azure App Service.
   ms.date: 04/15/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 title: Implement security controls for Azure App Service

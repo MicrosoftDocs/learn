@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.azure.mount-azure-netapp-files-volumes
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 27
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+    - windows
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - storage-admin
+    - systems-administrator
+  gs-skills:
+    - Storage
+    - "Cloud Administration"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/mount-azure-netapp-files-volumes/index.yml
   title: Mount Azure NetApp Files Volumes
   description: Learn how to mount NFS and SMB volumes on Linux and Windows virtual machines, and access SMB volumes from Microsoft Entra.
   ms.date: 06/02/2026

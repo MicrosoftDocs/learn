@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.wwl.moving-data-into-out-of-azure-cosmos-db-sql-api
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 52
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - data-engineer
+  gs-skills:
+    - "Data Migration"
+    - "Data Engineering"
+    - Databases
+    - "Cloud Administration"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/move-data-azure-cosmos-db-sql-api/index.yml
   title: Move data into and out of Azure Cosmos DB for NoSQL
   description: "Migrate data into and out of Azure Cosmos DB for NoSQL using Azure services and open-source solutions."
   ms.date: 04/02/2025

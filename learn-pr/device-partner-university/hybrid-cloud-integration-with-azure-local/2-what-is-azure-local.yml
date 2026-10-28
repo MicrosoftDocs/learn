@@ -6,7 +6,7 @@ metadata:
   description: This content is part of the "Hybrid cloud integration with Azure Local" module.
   ms.date: 09/11/2025
   author: melissawinters
-  ms.author: v-mwinters
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 5
 content: |

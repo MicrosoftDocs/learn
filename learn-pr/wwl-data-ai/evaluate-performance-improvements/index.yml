@@ -1,6 +1,30 @@
 ### YamlMime:Module
 uid: learn.wwl.evaluate-performance-improvements
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 74
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - database-administrator
+    - data-engineer
+  gs-skills:
+    - "Data Administration"
+    - Databases
+    - SQL
+    - "Database Design"
+    - "Infrastructure Management"
+    - "Cloud Administration"
+    - "Data Management"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/evaluate-performance-improvements/index.yml
   title: Evaluate performance improvements
   description: Evaluate performance improvements
   ms.date: 08/05/2026

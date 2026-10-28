@@ -1,6 +1,31 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-data-operations-azure-managed-redis
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 61
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+    - data-engineer
+    - administrator
+  gs-skills:
+    - "Data Management"
+    - "Application Development"
+    - "Python (Programming Language)"
+    - "Cloud Infrastructure"
+    - "Cloud Administration"
+    - Automation
+    - "Data Engineering"
+    - "Identity and Access Management (IAM)"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/implement-data-operations-azure-managed-redis/index.yml
   title: Implement Data Operations in Azure Managed Redis
   description: Learn how to implement data operations in Azure Managed Redis.
   ms.date: 06/12/2026

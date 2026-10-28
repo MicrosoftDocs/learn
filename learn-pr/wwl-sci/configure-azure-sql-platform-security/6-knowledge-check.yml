@@ -6,7 +6,7 @@ metadata:
   description: "Check your knowledge of platform-level security configuration for Azure SQL Database and SQL Managed Instance."
   ms.date: 04/22/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   module_assessment: true
   ai_generated_module_assessment: false

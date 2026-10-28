@@ -1,6 +1,28 @@
 ### YamlMime:Module
 uid: learn.introduction-to-application-resiliency-azure
 metadata:
+  gs-content.levels: 400
+  gs-content.locale: en-us
+  gs-duration: 99
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - solution-architect
+    - site-reliability-engineer
+  gs-skills:
+    - "Solution Architecture"
+    - "Application Architecture"
+    - "Cloud Infrastructure"
+    - "Infrastructure Management"
+    - DevOps
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/advocates/introduction-application-resiliency-azure/index.yml
   ms.author: orthomas
   author: Orin-Thomas
   ms.date: 11/15/2025

@@ -6,7 +6,7 @@ metadata:
   description: "Configure Azure Private Link service to expose internal workloads to authorized consumers across subscriptions or tenants without creating a public endpoint."
   ms.date: 04/22/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 8
 content: |

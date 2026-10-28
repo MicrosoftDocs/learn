@@ -6,7 +6,7 @@ metadata:
   description: "Introduction to designing solutions for securing privileged access using Zero Trust principles and Microsoft security frameworks."
   ms.date: 05/29/2026
   author: ceperezb
-  ms.author: ceperezb
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 2
 content: |

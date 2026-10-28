@@ -1,11 +1,28 @@
 ### YamlMime:Module
 uid: learn.fsharp-functions
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 18
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+  gs-skills:
+    - "Application Development"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/language/fsharp-functions/index.yml
   title: Create and architect with functions in F#
   description: Learn what functions are and how to define and call them. In addition, use function patterns to architect with functions.
   ms.date: 03/03/2023
   author: baronfel
   ms.author: chethusk 
+  ms.service: dotnet-fsharp
   ms.topic: module
   ms.custom: team=nextgen
   ms.devlang: fsharp

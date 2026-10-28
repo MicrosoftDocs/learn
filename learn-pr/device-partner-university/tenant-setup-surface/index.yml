@@ -2,6 +2,32 @@
 uid: learn.dpu.tenant-setup-surface
 title: Microsoft tenant setup for Surface Support Portal access
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 12
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - surface
+    - m365
+    - entra
+    - intune
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - administrator
+    - identity-access-admin
+    - technology-manager
+    - business-owner
+  gs-skills:
+    - "Identity and Access Management (IAM)"
+    - "Cloud Administration"
+    - "Device Management"
+    - Cybersecurity
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/tenant-setup-surface/index.yml
   title: Microsoft Tenant Setup For Surface Support Portal Access
   description: 'In this module, you''ll learn how to set up a Microsoft tenant to access the Surface Support Portal and manage your Surface devices effectively.'
   ms.date: 04/24/2026

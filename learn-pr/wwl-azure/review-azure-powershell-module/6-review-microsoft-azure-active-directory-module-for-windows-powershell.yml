@@ -6,7 +6,7 @@ metadata:
   description: "Review Microsoft Azure Active Directory module for Windows PowerShell and Azure Active Directory PowerShell for Graph modules"
   ms.date: 03/22/2024
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: lumac
   ms.topic: unit
   ms.custom: N/A, devx-track-azurepowershell
 azureSandbox: false

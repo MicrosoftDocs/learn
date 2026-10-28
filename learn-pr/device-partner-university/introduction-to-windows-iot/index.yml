@@ -2,11 +2,35 @@
 uid: learn.dpu.introduction-to-windows-iot
 title: Introduction to Windows IoT
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 17
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - windows
+    - azure
+    - intune
+    - microsoft-defender
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - systems-administrator
+    - technology-manager
+  gs-skills:
+    - "Device Management"
+    - Cybersecurity
+    - "Cloud Computing"
+    - "Infrastructure Management"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/introduction-to-windows-iot/index.yml
   title: Introduction To Windows IoT
   description: In this module, you'll learn the fundamentals of Windows IoT, including its architecture, key features, and operational components. You'll examine how Windows IoT enables organizations to deploy, manage, and secure dedicated devices across a variety of business environments. You'll also explore decision-making criteria for selecting Windows IoT and review the tools and integrations available for building modern IoT solutions.
   ms.date: 09/08/2025
   author: melissawinters
-  ms.author: v-mwinters
+  ms.author: lumac
   ms.topic: module
   ms.service: windows-iot
   ms.custom: CI020124-1

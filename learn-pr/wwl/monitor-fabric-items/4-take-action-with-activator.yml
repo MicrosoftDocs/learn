@@ -6,7 +6,7 @@ metadata:
   description: "Learn how to use Activator and the Real-Time hub to respond to Fabric job events with automated alerts and remediation actions."
   ms.date: 06/03/2026
   author: theresa-i
-  ms.author: theresai
+  ms.author: lumac
   ms.topic: unit
   ms.custom:
   - fabric

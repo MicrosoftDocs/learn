@@ -1,6 +1,30 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-defender-cloud-azure-arc-enabled-servers
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 47
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - security-engineer
+    - systems-administrator
+    - platform-engineer
+  gs-skills:
+    - Cybersecurity
+    - "Cloud Administration"
+    - "Security Operations Management"
+    - "Infrastructure Management"
+    - "Identity and Access Management (IAM)"
+    - Automation
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/configure-defender-cloud-azure-arc-enabled-servers/index.yml
   title: Configure Microsoft Defender for Cloud for Azure Arc-enabled servers
   description: "Configure Defender for Servers for on-premises Windows and Linux servers, connect the servers to Azure Arc, and verify their protection status."
   ms.date: 08/16/2026

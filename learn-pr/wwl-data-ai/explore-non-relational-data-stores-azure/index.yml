@@ -1,6 +1,29 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-non-relational-data-stores-azure
 metadata:
+  gs-content.levels: 100
+  gs-content.locale: en-us
+  gs-duration: 32
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+    - data-engineer
+    - database-administrator
+    - data-analyst
+  gs-skills:
+    - Databases
+    - "Database Design"
+    - "Data Management"
+    - "Cloud Computing"
+    - "Data Engineering"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/explore-non-relational-data-stores-azure/index.yml
   title: Explore Fundamentals Of Azure Cosmos DB
   description: "Explore the features and capabilities of Azure Cosmos DB, Identify supported APIs, and interact with a Cosmos DB database."
   ms.date: 10/12/2026

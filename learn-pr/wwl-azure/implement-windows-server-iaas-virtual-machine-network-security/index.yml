@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-windows-server-iaas-vm-network-security
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 64
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+    - windows
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - security-engineer
+  gs-skills:
+    - "Application Security"
+    - "IT Networking"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/implement-windows-server-iaas-virtual-machine-network-security/index.yml
   title: Implement Windows Server IaaS VM network security
   description: "Learn how to implement network security for Windows Server IaaS VMs using network security groups (NSGs), Azure Firewall, Windows Defender Firewall, and Azure Network Watcher for traffic capture and flow logging."
   ms.date: 08/31/2026

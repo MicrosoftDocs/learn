@@ -6,7 +6,7 @@ metadata:
   description: "Design and configure NSG rules using a security-first, least-privilege approach. This unit explains how to control traffic between Azure workloads."
   ms.date: 04/22/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 10
 content: |

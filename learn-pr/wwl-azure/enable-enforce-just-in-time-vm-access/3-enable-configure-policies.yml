@@ -5,7 +5,7 @@ metadata:
   description: Enable just-in-time VM access from Microsoft Defender for Cloud and the Azure portal, configure per-port access policies with custom time windows and source IP restrictions, and manage JIT configuration programmatically using PowerShell and the REST API.
   ms.date: 05/11/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 title: Enable and configure JIT access policies

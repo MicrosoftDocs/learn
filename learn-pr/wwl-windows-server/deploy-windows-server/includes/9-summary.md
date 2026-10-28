@@ -6,6 +6,6 @@ You can learn more by reviewing the following documents.
 
 - [Roles, Role Services, and Features not in Windows Server - Server Core](/windows-server/administration/server-core/server-core-removed-roles?azure-portal=true).
 - [Roles, Role Services, and Features included in Windows Server - Server Core](/windows-server/administration/server-core/server-core-roles-and-services?azure-portal=true).
-- [Windows Server hardware requirements](/windows-server/get-started/hardware-requirements?view=windows-server-2025).
+- [Windows Server hardware requirements](/windows-server/get-started/hardware-requirements?view=windows-server-2025&preserve-view=true).
 - [Download and install the Windows ADK](/windows-hardware/get-started/adk-install).
 - [Automate Windows Setup](/windows-hardware/manufacture/desktop/automate-windows-setup).

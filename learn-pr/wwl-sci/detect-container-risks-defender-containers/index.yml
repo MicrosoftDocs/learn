@@ -1,11 +1,36 @@
 ### YamlMime:Module
 uid: learn.wwl.detect-container-risks-defender-containers
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 36
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - defender-for-cloud
+    - azure
+    - microsoft-sentinel
+    - microsoft-defender
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - security-engineer
+    - security-operations-analyst
+  gs-skills:
+    - Cybersecurity
+    - "Threat Management"
+    - "Security Analytics"
+    - "Cloud Infrastructure"
+    - "Application Security"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/detect-container-risks-defender-containers/index.yml
   title: Detect Container Risks Using Microsoft Defender for Containers
   description: "Detect misconfigurations and runtime risks across container workloads using Microsoft Defender for Containers. Enable and configure the Defender for Containers plan, and assess container image vulnerabilities in Azure Container Registry. Then respond to runtime threat alerts and security posture recommendations for Azure Kubernetes Service (AKS) clusters."
   ms.date: 05/10/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: module
   ms.service: defender-for-cloud
   ai-usage: ai-assisted

@@ -1,6 +1,27 @@
 ### YamlMime:Module
 uid: learn.introduction-github-advanced-security # Do not edit: uid must be globally unique
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 26
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - github
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+    - security-engineer
+    - administrator
+  gs-skills:
+    - "Application Security"
+    - "Security Automation"
+    - "Security Operations Management"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/github/introduction-github-advanced-security/index.yml
   moduleType: introduction        # Do not edit: type must be 'introduction'
   title: Introduction to GitHub Advanced Security  # Do not edit: title must be "Introduction to (product)"
   description: "This module will help you become familiar with GitHub's Advanced Security features and best practices. As you learn about these features, you'll identify critical areas for eliminating security gaps."

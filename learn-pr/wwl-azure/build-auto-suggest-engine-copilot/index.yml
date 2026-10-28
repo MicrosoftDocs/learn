@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.wwl.build-auto-suggest-engine-copilot
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 52
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - github-copilot
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+  gs-skills:
+    - "AI-Augmented Software Development"
+    - "AI Prompting"
+    - "Application Development"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/build-auto-suggest-engine-copilot/index.yml
   title: Guided project - Build auto suggest engine with Copilot
   description: Use GitHub Copilot to interpret, debug, and extend project code for a Trie data structure that supports autocomplete and spelling suggestion features.
   author: wwlpublish

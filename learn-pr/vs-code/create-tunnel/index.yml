@@ -1,11 +1,29 @@
 ### YamlMime:Module
 uid: learn.create-tunnel
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 24
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+  gs-skills:
+    - "Network Connectivity"
+    - "Cloud Computing"
+    - "Application Development"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/vs-code/create-tunnel/index.yml
   title: Introduction to Remote - Tunnels extension
   description: Learn how to enable remote tunnels with Visual Studio Code.
   ms.date: 12/15/2023
   author: theReynald
-  ms.author: radolphe
+  ms.author: lumac
   ms.topic: module-intro-to-product
   ms.service: vs-code
 title: Introduction to the Remote - Tunnels extension

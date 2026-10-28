@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-computers
 metadata:
+  gs-content.levels: 100
+  gs-content.locale: en-us
+  gs-duration: 30
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - student
+  gs-skills:
+    - "Cloud Computing"
+    - "IT Networking"
+    - Storage
+    - "Identity and Access Management (IAM)"
+    - "Cloud Infrastructure"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/explore-computers/index.yml
   title: Explore computers
   description: "Describes the fundamentals of computers and how they work on both a small and large scale."
   ms.date: 03/19/2024

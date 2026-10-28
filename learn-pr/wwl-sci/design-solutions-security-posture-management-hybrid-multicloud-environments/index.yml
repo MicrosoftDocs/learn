@@ -1,11 +1,37 @@
 ### YamlMime:Module
 uid: learn.wwl.design-solutions-security-posture-management-hybrid-multicloud-environments
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 70
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+    - defender-for-cloud
+    - microsoft-defender
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - security-engineer
+    - solution-architect
+  gs-skills:
+    - Cybersecurity
+    - "Security Architecture Design"
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "Cloud Administration"
+    - "Infrastructure Management"
+    - "Threat Management"
+    - "Security Analytics"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/design-solutions-security-posture-management-hybrid-multicloud-environments/index.yml
   title: Design Solutions for Security Posture Management in Hybrid and Multicloud Environments
   description: "You learn how to design security posture management solutions that integrate into hybrid and multicloud scenarios using capabilities in Microsoft Defender for Cloud, Azure Arc, and Microsoft Cloud Security Benchmark (MCSB)."
   ms.date: 06/03/2026
   author: ceperezb
-  ms.author: ceperezb
+  ms.author: lumac
   ms.topic: module
   ms.service: security
   ai-usage: ai-assisted

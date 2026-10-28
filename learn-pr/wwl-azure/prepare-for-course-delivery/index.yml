@@ -1,6 +1,23 @@
 ### YamlMime:Module
 uid: learn.wwl.prepare-for-course-delivery
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 18
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - higher-ed-educator
+  gs-skills:
+    - "Career Development"
+    - "Communications Management"
+  gs-solution.area: null
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/prepare-for-course-delivery/index.yml
   title: Microsoft Learn for Educators preparing for course delivery
   description: "Microsoft Learn for Educators preparing for course delivery"
   ms.date: 11/15/2022

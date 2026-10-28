@@ -6,7 +6,7 @@ metadata:
   description: "Design authentication strategies using Conditional Access, CAE, Identity Protection, and protected actions."
   ms.date: 05/28/2026
   author: ceperezb
-  ms.author: ceperezb
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 12
 content: |

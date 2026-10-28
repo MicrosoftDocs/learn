@@ -1,6 +1,22 @@
 ### YamlMime:Module
 uid: learn.wwl.investigate-history-app-development
 metadata:
+  gs-content.levels: 100
+  gs-content.locale: en-us
+  gs-duration: 24
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles: null
+  gs-skills:
+    - "Application Development"
+    - "Digital Accessibility"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/investigate-history-app-development/index.yml
   title: Investigate the history of app development
   description: "Explores the history of computing and programming and surveys how modern programming evolved from the early days."
   ms.date: 03/19/2024

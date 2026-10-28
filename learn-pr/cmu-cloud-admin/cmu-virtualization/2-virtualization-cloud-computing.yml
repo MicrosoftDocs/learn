@@ -6,7 +6,7 @@ metadata:
   description: Take a deep dive into how virtualization works and it's benefits.
   ms.date: 06/07/2022
   author: softchris
-  ms.author: chnoring
+  ms.author: lumac
   ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 11

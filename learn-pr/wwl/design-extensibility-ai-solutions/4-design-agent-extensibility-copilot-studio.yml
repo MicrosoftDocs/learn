@@ -6,7 +6,7 @@ metadata:
   description: "Learn to design extensible agents in Microsoft Copilot Studio. Explore instruction, skill, integration, and pro-code extensibility for enterprise solutions."
   ms.date: 02/13/2026
   author: pablorodMS
-  ms.author: taeldin
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 6
 content: |

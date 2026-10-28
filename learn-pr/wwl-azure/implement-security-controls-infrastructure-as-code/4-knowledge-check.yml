@@ -5,7 +5,7 @@ metadata:
   description: Check your knowledge of IaC scanning with Defender for DevOps and Azure Policy enforcement in CI/CD pipelines.
   ms.date: 04/23/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-generated
 title: Knowledge check

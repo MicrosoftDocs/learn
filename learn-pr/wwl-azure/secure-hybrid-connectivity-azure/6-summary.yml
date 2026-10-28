@@ -6,7 +6,7 @@ metadata:
   description: "This unit summarizes the key takeaways from the secure remote and hybrid connectivity using VPN gateways and Microsoft Entra Private Access module."
   ms.date: 04/22/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 3
 content: |

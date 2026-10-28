@@ -1,11 +1,43 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.server-vm-security
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - azure
+    - defender-for-cloud
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - security-engineer
+    - systems-administrator
+  gs-skills:
+    - Cybersecurity
+    - "Cloud Infrastructure"
+    - "Cloud Administration"
+    - "Identity and Access Management (IAM)"
+    - "Security Architecture Design"
+    - "Security Operations Management"
+    - "Security Automation"
+    - "Network Connectivity"
+    - "IT Networking"
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "Zero Trust Security"
+    - "Security Analytics"
+    - "Infrastructure Management"
+    - "Data Security"
+    - Automation
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/server-vm-security/index.yml
   title: Implement Security for Servers and Virtual Machines
   description: "Implement layered security controls across Azure virtual machines and Arc-enabled hybrid servers. Configure disk encryption, Trusted Launch, Azure Bastion, Microsoft Defender for Servers, just-in-time VM access, and Azure Machine Configuration to close security gaps across your server estate."
   ms.date: 05/18/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: learning-path
   ai-usage: ai-assisted
 title: Implement security for servers and virtual machines

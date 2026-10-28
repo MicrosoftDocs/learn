@@ -6,7 +6,7 @@ metadata:
   description: "Manage multiple Microsoft Sentinel workspaces, or workspaces not in your tenant"
   ms.date: 11/11/2022
   author: wwlpublish
-  ms.author: kelawson
+  ms.author: lumac
   ms.topic: unit
 azureSandbox: false
 labModal: false

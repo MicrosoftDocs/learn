@@ -1,6 +1,35 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.observe-troubleshoot-apps
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+    - devops-engineer
+    - ai-engineer
+    - site-reliability-engineer
+    - data-analyst
+  gs-skills:
+    - "Python (Programming Language)"
+    - DevOps
+    - "Cloud Computing"
+    - "Generative AI"
+    - "Data Analytics"
+    - "Data Visualization"
+    - "Security Operations Management"
+    - "Cloud Administration"
+    - "Application Development"
+    - Automation
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/observe-troubleshoot-apps/index.yml
   title: Observe and Troubleshoot Apps on Azure
   description: Learn how to instrument distributed applications with OpenTelemetry and analyze telemetry data with Azure Monitor to observe and troubleshoot AI solutions on Azure.
   ms.date: 02/20/2026

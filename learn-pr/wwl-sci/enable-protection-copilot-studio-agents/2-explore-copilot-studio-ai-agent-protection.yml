@@ -5,7 +5,7 @@ metadata:
   description: Explore the three capability pillars of Microsoft Defender for Cloud Apps AI agent protection—discovery and hunting, audit and alerts, and real-time runtime protection—and understand what each capability provides for Copilot Studio agents.
   ms.date: 05/03/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 title: Explore Copilot Studio AI agent protection

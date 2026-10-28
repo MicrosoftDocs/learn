@@ -1,11 +1,37 @@
 ### YamlMime:Module
 uid: learn.reactors.text-classification-naive-bayes
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 81
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - data-scientist
+    - ai-engineer
+    - developer
+    - student
+  gs-skills:
+    - "Natural Language Processing (NLP)"
+    - "Machine Learning"
+    - "AI Model Evaluation & Testing"
+    - "Python (Programming Language)"
+    - "Data Science"
+    - Cybersecurity
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/reactors/text-classification-naive-bayes/index.yml
   title: Text classification for Naive Bayes
   description: Use conditional probability and Bayes classification to analyze an email dataset for spam and ham.
   ms.date: 06/30/2020
   author: sguthals
-  ms.author: chnoring
+  ms.author: lumac
+  ms.service: artificial-intelligence
   ms.topic: module
   show_latex: true
   hidden: true

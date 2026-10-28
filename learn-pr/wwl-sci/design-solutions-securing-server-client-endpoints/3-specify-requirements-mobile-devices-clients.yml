@@ -6,7 +6,7 @@ metadata:
   description: "Learn how to specify security requirements for mobile devices and client workstations including endpoint protection, hardening, and configuration."
   ms.date: 06/05/2026
   author: ceperezb
-  ms.author: ceperezb
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 13
 content: |

@@ -1,6 +1,32 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.deploy-configure-azure-monitor
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - platform-engineer
+    - systems-administrator
+  gs-skills:
+    - "Cloud Administration"
+    - "Infrastructure Management"
+    - "Identity and Access Management (IAM)"
+    - "Data Security"
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "Security Operations Management"
+    - "Data Analytics"
+    - Automation
+    - "Network Connectivity"
+    - "IT Networking"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/deploy-configure-azure-monitor/index.yml
   title: Deploy and configure Azure Monitor
   description: In this learning path, you learn to deploy and configure Azure Monitor, including creating a Log Analytics workspace, and configuring monitoring for applications, virtual machines, and virtual networks. You also learn to create and configure alerts and responses. Finally, you practice these skills in a guided lab project.
   ms.date: 01/23/2026

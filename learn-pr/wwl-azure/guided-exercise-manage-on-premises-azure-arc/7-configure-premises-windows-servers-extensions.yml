@@ -6,7 +6,7 @@ metadata:
   description: "Exercise 6 - Configure on-premises Windows servers by using Azure virtual machine extensions and CLI"
   ms.date: 06/10/2024
   author: wwlpublish
-  ms.author: bradj
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 45
 content: |

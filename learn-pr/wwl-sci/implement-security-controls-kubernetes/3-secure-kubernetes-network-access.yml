@@ -5,7 +5,7 @@ metadata:
   description: Implement network security controls for AKS, including private clusters, authorized IP ranges, Kubernetes network policies, and Instance Metadata Service (IMDS) restriction.
   ms.date: 04/15/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 title: Secure AKS network access

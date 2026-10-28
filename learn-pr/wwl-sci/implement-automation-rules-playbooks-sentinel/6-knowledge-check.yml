@@ -5,7 +5,7 @@ metadata:
   description: Check your knowledge of Microsoft Sentinel automation rules and Logic Apps playbooks, including when to use each, required permissions, and playbook trigger types.
   ms.date: 04/16/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-generated
 title: Knowledge check

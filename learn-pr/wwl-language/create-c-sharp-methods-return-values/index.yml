@@ -1,6 +1,23 @@
 ### YamlMime:Module
 uid: learn.wwl.create-c-sharp-methods-return-values
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 55
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+  gs-skills:
+    - "Application Development"
+    - "Application Architecture"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-language/create-c-sharp-methods-return-values/index.yml
   title: Create C# methods that return values
   description: "This module covers the return keyword and returning values from methods."
   ms.date: 01/15/2025

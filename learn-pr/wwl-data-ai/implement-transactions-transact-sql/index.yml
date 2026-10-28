@@ -1,6 +1,30 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-transactions-transact-sql
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 55
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+    - fabric
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+    - database-administrator
+    - data-engineer
+  gs-skills:
+    - SQL
+    - "Database Development"
+    - Databases
+    - "Application Development"
+    - "Data Management"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/implement-transactions-transact-sql/index.yml
   title: Implement transactions with Transact-SQL
   description: "Implement transactions with Transact-SQL"
   ms.date: 08/11/2026

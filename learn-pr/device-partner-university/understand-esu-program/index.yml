@@ -2,6 +2,29 @@
 uid: learn.dpu.understand-the-esu-program
 title: Understand the Extended Security Updates (ESU) program for Windows 10
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 7
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - windows
+    - intune
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - technology-manager
+    - systems-administrator
+    - business-owner
+  gs-skills:
+    - "Device Management"
+    - "Security Operations Management"
+    - "Data Migration"
+    - "Infrastructure Management"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/understand-esu-program/index.yml
   title: Understand the Extended Security Updates (ESU) Program for Windows 10
   description: In this module, you'll learn about the Extended Security Updates (ESU) program for Windows 10. 
   ms.date: 07/16/2025

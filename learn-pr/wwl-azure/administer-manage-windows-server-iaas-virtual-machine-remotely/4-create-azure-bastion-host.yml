@@ -6,7 +6,7 @@ metadata:
   description: "Create an Azure Bastion host"
   ms.date: 01/20/2025
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: lumac
   ms.topic: unit
 azureSandbox: false
 labModal: false

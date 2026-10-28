@@ -7,7 +7,7 @@ These patterns transform multi-agent deployments from high-risk manual processes
 ## Learn more
 
 - [GitHub Actions documentation](https://docs.github.com/actions)
-- [Microsoft Foundry deployment guide](https://learn.microsoft.com/azure/foundry/agents/how-to/deploy-hosted-agent)
-- [Azure App Configuration for feature management](https://learn.microsoft.com/azure/azure-app-configuration/concept-feature-management)
-- [Azure Container Apps revisions and traffic splitting](https://learn.microsoft.com/azure/container-apps/revisions)
-- [Azure Monitor alerts and action groups](https://learn.microsoft.com/azure/azure-monitor/alerts/alerts-overview)
+- [Microsoft Foundry deployment guide](/azure/foundry/agents/how-to/deploy-hosted-agent)
+- [Azure App Configuration for feature management](/azure/azure-app-configuration/concept-feature-management)
+- [Azure Container Apps revisions and traffic splitting](/azure/container-apps/revisions)
+- [Azure Monitor alerts and action groups](/azure/azure-monitor/alerts/alerts-overview)

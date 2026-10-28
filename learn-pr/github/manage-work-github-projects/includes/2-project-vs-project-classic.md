@@ -4,7 +4,7 @@ Let's first go over some of the enhancements in a side-by-side glance and then d
 
 ## Projects vs Projects (Classic)
 
-|                  |Projects   |Projects (Classic)|
+| Feature          |Projects   |Projects (Classic)|
 |------------------|-----------|------------------|
 |Tables and Boards |Boards, Lists, Timeline Layout |Boards |
 |Data        |Sort, rank, and group items by custom fields such as text, number, date, iteration and single select |Columns and Cards |

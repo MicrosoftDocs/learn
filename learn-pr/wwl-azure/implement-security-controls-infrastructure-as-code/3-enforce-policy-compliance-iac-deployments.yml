@@ -5,7 +5,7 @@ metadata:
   description: Apply Azure Policy in a policy-as-code workflow using source control and CI/CD pipelines to block noncompliant IaC deployments at the platform level.
   ms.date: 04/23/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 title: Enforce policy compliance in IaC deployments

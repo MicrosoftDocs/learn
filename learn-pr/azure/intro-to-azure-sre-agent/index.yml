@@ -1,6 +1,28 @@
 ### YamlMime:Module
 uid: learn.intro-to-azure-sre-agent
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 29
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - platform-engineer
+    - systems-administrator
+    - technology-manager
+  gs-skills:
+    - "Agent Operations"
+    - "AI-Powered Workflow Automation"
+    - "AI Governance"
+    - "Cloud Administration"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/intro-to-azure-sre-agent/index.yml
   moduleType: introduction
   title: Introduction to Azure SRE Agent
   description: Learn how Azure SRE Agent supports operational investigations, automation, and controlled mitigation, and evaluate when to use it.

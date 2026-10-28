@@ -6,7 +6,7 @@ metadata:
   description: "Understand why just-in-time privileged access is critical to a Zero Trust security strategy and what this module covers."
   ms.date: 03/18/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 1
 content: |

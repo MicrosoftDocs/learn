@@ -1,6 +1,32 @@
 ### YamlMime:Module
 uid: learn.wwl.purview-ai-assess-mitigate-risks
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 35
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - microsoft-purview
+    - m365
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - administrator
+    - ip-admin
+    - risk-practitioner
+    - security-engineer
+  gs-skills:
+    - "AI Risk Management"
+    - "Data Security"
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "AI Compliance"
+    - "Threat Management"
+    - "Responsible AI"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/purview-ai-assess-mitigate-risks/index.yml
   title: Assess and mitigate AI risks with Microsoft Purview
   description: Microsoft Purview helps you strengthen data security in AI environments, providing tools to handle challenges from AI technology. Learn to safeguard your data and adapt to evolving security challenges in AI technology.
   ms.date: 04/10/2025

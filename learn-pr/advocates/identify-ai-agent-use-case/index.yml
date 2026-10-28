@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.identify-ai-agent-use-case
 metadata:
+  gs-content.levels: 400
+  gs-content.locale: en-us
+  gs-duration: 21
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - business-analyst
+    - technology-manager
+  gs-skills:
+    - "AI Business & Vision"
+    - "AI Strategy"
+    - "Agentic AI"
+    - "Solution Architecture"
+  gs-solution.area: "AI Business Solutions"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/advocates/identify-ai-agent-use-case/index.yml
   title: Identify and Prioritize High-Impact AI Agent Use Cases
   description: Uncover and evaluate AI agent use cases that deliver measurable business value with financial efficiency.
   ms.date: 09/1/2026

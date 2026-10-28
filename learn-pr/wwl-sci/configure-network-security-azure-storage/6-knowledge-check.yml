@@ -5,7 +5,7 @@ metadata:
   description: Check your knowledge of configuring network security for Azure Storage, including firewall rules, virtual network and IP rules, resource instance rules, and private endpoints.
   ms.date: 04/22/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-generated
 title: Knowledge check

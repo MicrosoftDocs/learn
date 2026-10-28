@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.azure.design-considerations-mr-development
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 73
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - windows
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+  gs-skills:
+    - "Application Development"
+    - "Digital Accessibility"
+    - "Application Architecture"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/intro-to-mixed-reality-design/index.yml
   title: Designing for mixed reality
   description: Learn about all the foundational elements required to design a mixed reality application.
   ms.date: 06/13/2024

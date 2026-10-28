@@ -6,7 +6,7 @@ metadata:
   description: "Exercise - Analyze data with Apache Spark"
   ms.date: 05/22/2025
   author: theresa-i
-  ms.author: theresai
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 45
 content: |

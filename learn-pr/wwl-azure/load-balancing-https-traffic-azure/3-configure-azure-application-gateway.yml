@@ -8,7 +8,7 @@ metadata:
   description: "Configure Azure Application Gateway"
   ms.date: 05/19/2025
   author: wwlpublish
-  ms.author: cynthist
+  ms.author: lumac
   ms.topic: unit
   ms.custom:
   - N/A

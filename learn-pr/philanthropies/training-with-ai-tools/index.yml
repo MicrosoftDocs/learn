@@ -2,10 +2,28 @@
 uid: learn.philanthropies.training-with-ai-tools
 
 metadata:
+  gs-content.levels: 100
+  gs-content.locale: en-us
+  gs-duration: 116
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - business-user
+    - chief-learning-officer
+  gs-skills:
+    - "AI Fluency"
+    - "Career Development"
+  gs-solution.area: "AI Business Solutions"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/philanthropies/training-with-ai-tools/index.yml
   title: Training with AI tools
   description: In this module, you learn various AI-powered tools and how to effectively use them in your training sessions for an optimized learning experience.
   author: yoosunee
-  ms.author: anruss
+  ms.author: lumac
   ms.date: 01/14/2025
   ms.update-cycle: 180-days
   ms.service: artificial-intelligence

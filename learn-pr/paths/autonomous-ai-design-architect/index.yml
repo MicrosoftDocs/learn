@@ -1,11 +1,36 @@
 ### YamlMime:LearningPath
 uid: learn.oxford.autonomous-ai-design-architect
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - ai-engineer
+    - business-analyst
+    - solution-architect
+  gs-skills:
+    - Automation
+    - "Process Automation"
+    - "AI Solutions"
+    - "Machine Learning"
+    - "Autonomous AI"
+    - "Solution Architecture"
+    - "AI Business & Vision"
+    - "AI Strategy"
+    - "AI Model Evaluation & Testing"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/autonomous-ai-design-architect/index.yml
   title: Autonomous AI design architect 
   description: This learning path aims to explain Machine Teaching for Autonomous AI.
   ms.date: 12/12/2022
   author: softchris
-  ms.author: chnoring
+  ms.author: lumac
   ms.topic: learning-path
 title: Autonomous AI design architect 
 summary: |

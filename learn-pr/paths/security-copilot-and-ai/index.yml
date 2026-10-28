@@ -1,11 +1,53 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.security-copilot-and-ai
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - azure
+    - microsoft-defender
+    - entra
+    - microsoft-purview
+    - security-copilot
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - administrator
+    - security-engineer
+    - security-operations-analyst
+  gs-skills:
+    - "Generative AI"
+    - "Natural Language Processing (NLP)"
+    - "Prompt Engineering"
+    - "Large Language Model Operations (LLMOps)"
+    - "Embedding Models"
+    - "Retrieval-Augmented Generation (RAG)"
+    - "Agentic AI"
+    - "AI Fluency"
+    - "AI Prompting"
+    - "Security Operations Management"
+    - "Security Analytics"
+    - "Threat Management"
+    - "Identity and Access Management (IAM)"
+    - "AI Governance"
+    - "AI-Powered Workflow Automation"
+    - "Knowledge Grounding for AI"
+    - "Data Security"
+    - "Security Automation"
+    - "AI Risk Management"
+    - "Agent Development"
+    - "Agent Operations"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/security-copilot-and-ai/index.yml
   title: 'Enhance security operations by using Microsoft Security Copilot (SC-5006)'
   description: 'Enhance security operations by using Microsoft Security Copilot (SC-5006).'
   ms.date: 05/15/2026
   author: wwlpublish
-  ms.author: ceperezb
+  ms.author: lumac
   ms.topic: learning-path
   ms.custom: [copilot-learning-hub]
 title: 'Enhance security operations by using Microsoft Security Copilot'

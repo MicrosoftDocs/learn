@@ -1,13 +1,32 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-app-registration
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 48
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - entra
+    - microsoft-defender
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - identity-access-admin
+  gs-skills:
+    - "Identity and Access Management (IAM)"
+    - "Application Security"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/implement-app-registration/index.yml
   adobe-target: true
   prefetch-feature-rollout: true
   title: Implement app registration
   description: "Line of business developed in-house need registration in Microsoft Entra ID and assigned to users for a secure Azure solution. Explore how to implement app registration."
   ms.date: 03/31/2025
   author: wwlpublish
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: module-standard-task-based
   ms.collection: N/A
   ms.custom:

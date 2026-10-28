@@ -5,7 +5,7 @@ metadata:
   description: Apply authentication and authorization controls to AI Gateway, configure diagnostic logging for model traffic, and use monitoring data to detect anomalous usage patterns.
   ms.date: 04/21/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 title: Secure and monitor AI Gateway access

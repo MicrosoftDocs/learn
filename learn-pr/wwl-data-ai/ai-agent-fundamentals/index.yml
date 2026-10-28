@@ -1,6 +1,32 @@
 ### YamlMime:Module
 uid: learn.wwl.ai-agent-fundamentals
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 49
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - microsoft-foundry
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - ai-engineer
+    - developer
+    - data-scientist
+  gs-skills:
+    - "Agent Development"
+    - "Agentic AI"
+    - "Generative AI"
+    - "Knowledge Grounding for AI"
+    - "Multi-Agent Orchestration"
+    - "AI Security (Model-Level)"
+    - "AI Governance"
+    - "Prompt Engineering"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/ai-agent-fundamentals/index.yml
   title: Get started with AI agent development on Azure
   description: AI agents represent the next generation of intelligent applications. Learn how they can be developed and used on Microsoft Azure.
   author: ivorb

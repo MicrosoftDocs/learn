@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.simplify-complex-conditionals-github-copilot-agent
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 78
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - github
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+  gs-skills:
+    - "AI-Augmented Software Development"
+    - "Application Development"
+    - Automation
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/simplify-complex-conditionals-github-copilot-agent/index.yml
   title: Simplify Complex Conditionals using GitHub Copilot Agent
   description: "This module covers the use of GitHub Copilot's Agent mode to simplify complex conditional statements in code. It provides practical examples and exercises to enhance coding efficiency."
   ms.date: 10/16/2025

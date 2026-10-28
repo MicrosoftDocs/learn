@@ -6,7 +6,7 @@ metadata:
   description: "Learn how to design solutions for implementing and governing security using Azure landing zones."
   ms.date: 05/27/2026
   author: ceperezb
-  ms.author: ceperezb
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 durationInMinutes: 14

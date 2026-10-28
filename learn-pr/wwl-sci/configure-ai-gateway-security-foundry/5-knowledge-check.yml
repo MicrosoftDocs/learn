@@ -5,7 +5,7 @@ metadata:
   description: Check your knowledge of configuring AI Gateway security in Microsoft Foundry, including gateway architecture, configuration steps, and access monitoring.
   ms.date: 04/21/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-generated
 title: Knowledge check

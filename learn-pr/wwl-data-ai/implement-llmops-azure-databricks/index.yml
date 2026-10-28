@@ -1,12 +1,31 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-llmops-azure-databricks
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 63
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure-databricks
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - data-scientist
+    - ai-engineer
+  gs-skills:
+    - "Large Language Model Operations (LLMOps)"
+    - "AI Model Evaluation & Testing"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/implement-llmops-azure-databricks/index.yml
   title: Implement LLMOps in Azure Databricks
   description: Implement LLMOps in Azure Databricks
   ms.date: 06/17/2026
   ms.update-cycle: 180-days
   author: theresa-i
-  ms.author: theresai
+  ms.author: lumac
   ms.topic: module
   ms.service: azure-databricks
   ai-usage: ai-assisted

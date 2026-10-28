@@ -1,6 +1,34 @@
 ### YamlMime:LearningPath
 uid: learn.github.developing-agentic-systems-1
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - github
+    - github-copilot
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - devops-engineer
+    - developer
+  gs-skills:
+    - "Agentic AI"
+    - "AI-Augmented Software Development"
+    - "AI Governance"
+    - "Agent Operations"
+    - "AI Risk Management"
+    - DevOps
+    - "Security Architecture Design"
+    - "Security Automation"
+    - "Agent Development"
+    - "API Management"
+    - "Application Development"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/gh-developing-agentic-systems-1.yml
   title: Developing in Agentic AI Systems Part 1 of 2
   description: Learn how to design, deploy, and manage agentic AI systems within the software development lifecycle by integrating, orchestrating, and governing autonomous agents using GitHub to ensure safe, reliable, and scalable delivery.
   brand: github

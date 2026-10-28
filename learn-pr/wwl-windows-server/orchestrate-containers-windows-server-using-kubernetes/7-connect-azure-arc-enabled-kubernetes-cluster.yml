@@ -6,7 +6,7 @@ metadata:
   description: "Connect an Azure Arc-enabled Kubernetes cluster to Azure Arc"
   ms.date: 02/01/2025
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: lumac
   ms.topic: unit
 azureSandbox: false
 durationInMinutes: 10

@@ -1,6 +1,33 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.migrate-servers-workloads-premises-hybrid-environments
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - solution-architect
+    - systems-administrator
+  gs-skills:
+    - "Data Migration"
+    - "Cloud Infrastructure"
+    - Virtualization
+    - "Cloud Administration"
+    - "Infrastructure Management"
+    - "Solution Architecture"
+    - "Network Connectivity"
+    - Storage
+    - "Identity and Access Management (IAM)"
+    - Cybersecurity
+    - Automation
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/migrate-servers-workloads-premises-hybrid-environments/index.yml
   title: Migrate servers and workloads in on-premises and hybrid environments
   description: Migrate servers and workloads in on-premises and hybrid environments
   ms.date: 01/23/2026

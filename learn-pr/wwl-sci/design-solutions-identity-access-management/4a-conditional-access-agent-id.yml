@@ -6,7 +6,7 @@ metadata:
   description: "Design Conditional Access policies for AI agent identities using Microsoft Entra Agent ID, including agent architecture, policy configuration, risk-based controls, and investigation techniques."
   ms.date: 05/28/2026
   author: ceperezb
-  ms.author: ceperezb
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-generated
 durationInMinutes: 9

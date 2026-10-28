@@ -1,6 +1,35 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-identity-based-security-azure-machine-learning
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 73
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure-machine-learning
+    - entra
+    - azure
+    - microsoft-foundry
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - identity-access-admin
+    - security-engineer
+    - administrator
+    - platform-engineer
+  gs-skills:
+    - "Identity and Access Management (IAM)"
+    - "Zero Trust Security"
+    - "AI Infrastructure"
+    - "Security Architecture Design"
+    - "Cloud Administration"
+    - "Security Analytics"
+    - Cybersecurity
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/implement-identity-based-security-azure-machine-learning/index.yml
   title: "Implement identity-based security for Azure Machine Learning workspaces"
   description: "This course teaches how to govern AI platforms using Microsoft Entra and Azure Machine Learning, covering security groups, Conditional Access, managed identities, enterprise application integration, and audit logging to continuously monitor, enforce, and improve identity‑centric security for AI workloads."
   ms.date: 02/05/2026

@@ -5,7 +5,7 @@ metadata:
   description: Assign built-in Azure roles at the appropriate scope using least-privilege principles, including managed identity role assignments and effective permissions review.
   ms.date: 05/11/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 title: Assign and manage Azure built-in roles

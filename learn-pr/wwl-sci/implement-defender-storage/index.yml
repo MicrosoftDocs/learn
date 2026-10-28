@@ -1,11 +1,32 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-defender-storage
 metadata:
+  gs-content.levels: 400
+  gs-content.locale: en-us
+  gs-duration: 22
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - defender-for-cloud
+    - azure
+    - microsoft-sentinel
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - security-engineer
+  gs-skills:
+    - "Threat Management"
+    - "Data Security"
+    - "Security Operations Management"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/implement-defender-storage/index.yml
   title: Implement Microsoft Defender for Storage
   description: "Enable and configure Microsoft Defender for Storage to detect threats against Azure Blob Storage, Azure Files, and Azure Data Lake Storage. Configure activity monitoring, malware scanning with cost controls, sensitive data threat detection, and alert routing to ensure Defender outputs reach the appropriate security team."
   ms.date: 04/22/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: module
   ms.service: defender-for-cloud
   ai-usage: ai-assisted

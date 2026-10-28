@@ -5,7 +5,7 @@ metadata:
   description: Deploy Application Gateway with WAF_v2, and route traffic through the Web Application Firewall (WAF). Then restrict App Service to Application Gateway traffic only, and tune the policy by monitoring WAF diagnostic logs.
   ms.date: 04/15/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 title: Protect App Service with Web Application Firewall

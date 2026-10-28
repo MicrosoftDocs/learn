@@ -1,11 +1,29 @@
 ### YamlMime:Module
 uid: learn.wwl.plan-microsoft-sentinel-deployment-sap
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 28
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - microsoft-sentinel
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - security-operations-analyst
+  gs-skills:
+    - "Security Analytics"
+    - "Threat Management"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/plan-microsoft-sentinel-deployment-sap/index.yml
   title: Plan to deploy the Microsoft Sentinel solution for SAP
   description: "Understand the Microsoft Sentinel solution for SAP. The module covers the roles of the team members who will work together to design, deploy and implement the Microsoft Sentinel solution for SAP."
   ms.date: 11/29/2022
   author: wwlpublish
-  ms.author: eric
+  ms.author: lumac
   ms.topic: module
   ms.service: microsoft-sentinel
 title: Plan to deploy the Microsoft Sentinel solution for SAP

@@ -1,6 +1,35 @@
 ### YamlMime:LearningPath
 uid: learn-wwl.develop-data-driven-app-sql-db
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+  gs-skills:
+    - Databases
+    - "Cloud Computing"
+    - "Application Architecture"
+    - "Database Development"
+    - DevOps
+    - Automation
+    - SQL
+    - "Application Security"
+    - "Application Development"
+    - "Data Migration"
+    - "Data Engineering"
+    - "API Management"
+    - "Identity and Access Management (IAM)"
+    - "Data Security"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/develop-data-driven-app-sql-db/index.yml
   title: Develop data-driven applications by using Azure SQL Database
   description: Learn how to develop data-driven applications by using Microsoft Azure SQL Database. DP-3020
   ms.date: 08/11/2026

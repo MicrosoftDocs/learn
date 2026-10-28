@@ -6,7 +6,7 @@ metadata:
   description: "Learn how to customize Copilot in Dynamics 365 apps to enhance customer experience, improve workflows, and align AI outputs with business needs."
   ms.date: 02/13/2026
   author: Randall-Knapp
-  ms.author: taeldin
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 durationInMinutes: 5

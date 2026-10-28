@@ -6,7 +6,7 @@ metadata:
   description: "Learn how to design end-to-end test scenarios for AI solutions that integrate multiple Dynamics 365 apps, ensuring seamless workflows and accurate outputs."
   ms.date: 02/13/2026
   author: msdavidram
-  ms.author: taeldin
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 5
 content: |

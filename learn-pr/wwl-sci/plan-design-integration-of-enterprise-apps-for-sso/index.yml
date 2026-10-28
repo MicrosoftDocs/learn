@@ -1,11 +1,32 @@
 ### YamlMime:Module
 uid: learn.wwl.plan-design-integration-of-enterprise-apps-for-sso
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 42
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - entra
+    - microsoft-defender
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - identity-access-admin
+    - security-engineer
+  gs-skills:
+    - "Identity and Access Management (IAM)"
+    - Cybersecurity
+    - "Governance, Risk Management, and Compliance (GRC)"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/plan-design-integration-of-enterprise-apps-for-sso/index.yml
   title: Plan and design the integration of enterprise apps for SSO
   description: "Enterprise app deployment enables control over which users can access the apps, easily log into apps with single-sign-on, and provide integrated usage reports."
   ms.date: 04/21/2025
   author: wwlpublish
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: module-standard-task-based
   ms.collection: N/A
   ms.custom:

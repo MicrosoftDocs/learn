@@ -6,7 +6,7 @@ metadata:
   description: "Assign the required DNS static IP addresses to the Azure Virtual Machines."
   ms.date: 12/23/2024
   author: wwlpublish
-  ms.author: eric
+  ms.author: lumac
   ms.topic: unit
   ms.custom:
   - N/A

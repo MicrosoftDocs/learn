@@ -6,7 +6,7 @@ metadata:
   description: "Learn how to define a cloud security strategy from the ground up using the Cloud Adoption Framework Secure methodology, covering posture modernization, Zero Trust principles, incident preparedness, and the CIA Triad."
   ms.date: 05/27/2026
   author: ceperezb
-  ms.author: ceperezb
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-generated
 durationInMinutes: 14

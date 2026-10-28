@@ -6,7 +6,7 @@ metadata:
   description: "Learn how to design and configure a model router in Azure AI Foundry to optimize cost, latency, accuracy, and reliability across AI workloads."
   ms.date: 02/13/2026
   author: pabloMS
-  ms.author: taeldin
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 5
 content: |

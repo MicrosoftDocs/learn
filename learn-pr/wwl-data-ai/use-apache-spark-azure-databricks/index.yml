@@ -1,6 +1,24 @@
 ### YamlMime:Module
 uid: learn.wwl.use-apache-spark-azure-databricks
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 79
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure-databricks
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - data-engineer
+  gs-skills:
+    - "Data Engineering"
+    - "Machine Learning"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/use-apache-spark-azure-databricks/index.yml
   title: Use Apache Spark in Azure Databricks
   description: Use Apache Spark in Azure Databricks
   ms.date: 10/12/2026

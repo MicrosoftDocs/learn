@@ -35,4 +35,4 @@ Connect-MgGraph -Scopes 'User.Read.All'
 
 After running the previous command, you'll be prompted for your Microsoft Entra credentials. You should use the credentials that you use to sign in to Microsoft 365 or your Azure services. After you authenticate, you'll be able to use the cmdlets available for Microsoft Entra management.
 
-> **Additional reading:** For more information about the cmdlets related to Microsoft Entra ID in the PowerShell for Graph, refer to [Microsoft Graph PowerShell](/powershell/microsoftgraph/overview?view=graph-powershell-1.0).
+> **Additional reading:** For more information about the cmdlets related to Microsoft Entra ID in the PowerShell for Graph, refer to [Microsoft Graph PowerShell](/powershell/microsoftgraph/overview?view=graph-powershell-1.0&preserve-view=true).

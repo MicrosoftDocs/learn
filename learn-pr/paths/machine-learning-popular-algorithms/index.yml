@@ -1,11 +1,35 @@
 ### YamlMime:LearningPath
 uid: learn.reactors.machine-learning-popular-algorithms
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - data-scientist
+    - developer
+    - student
+  gs-skills:
+    - "Natural Language Processing (NLP)"
+    - "Machine Learning"
+    - "AI Model Evaluation & Testing"
+    - "Python (Programming Language)"
+    - "Data Science"
+    - Cybersecurity
+    - "Data Visualization"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/machine-learning-popular-algorithms/index.yml
   title: 'Popular machine learning algorithms: Naive Bayes and PCA'
   description: Learn how to use and learn from popular machine learning algorithms, like Naive Bayes and PCA.
   ms.date: 06/30/2020
   author: softchris
-  ms.author: chnoring
+  ms.author: lumac
   ms.topic: learning-path
   show_latex: true
   hidden: true

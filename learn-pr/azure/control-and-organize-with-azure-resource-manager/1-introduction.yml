@@ -6,7 +6,7 @@ metadata:
   description: Introduction to resource groups and management in Azure
   ms.date: 10/29/2024
   author: wwlpublish
-  ms.author: cynthist
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 2
 content: |

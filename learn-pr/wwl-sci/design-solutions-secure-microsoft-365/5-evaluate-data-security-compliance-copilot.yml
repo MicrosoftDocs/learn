@@ -6,7 +6,7 @@ metadata:
   description: "Evaluate data security and compliance controls for Microsoft 365 Copilot, including sensitivity labels, DLP, Insider Risk Management, auditing, eDiscovery, retention, and DSPM for AI."
   ms.date: 05/21/2026
   author: ceperezb
-  ms.author: ceperezb
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 9
 content: |

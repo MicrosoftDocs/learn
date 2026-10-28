@@ -1,6 +1,25 @@
 ### YamlMime:LearningPath
 uid: learn.intro-to-azure-application-delivery-services
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - network-engineer
+    - solution-architect
+  gs-skills:
+    - "IT Networking"
+    - "Solution Architecture"
+    - "Application Security"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/intro-to-azure-application-delivery-services/index.yml
   title: Introduction to Azure application delivery services
   description: Learn to distribute network traffic to load balance workloads with Azure application delivery services.
   brand: azure

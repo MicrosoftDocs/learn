@@ -1,6 +1,33 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-secure-access-pipeline-resources
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 58
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure-devops
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - devops-engineer
+    - security-engineer
+    - administrator
+    - developer
+  gs-skills:
+    - DevOps
+    - "Application Security"
+    - "Data Security"
+    - "Identity and Access Management (IAM)"
+    - "Security Automation"
+    - Cybersecurity
+    - "Cloud Administration"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/configure-secure-access-pipeline-resources/index.yml
   title: Configure secure access to pipeline resources
   description: Configure secure access to pipeline resources.
   ms.date: 01/18/2024

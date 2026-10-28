@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.wwl.model-data-relationships-azure-documentdb
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 66
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+  gs-skills:
+    - "Database Design"
+    - Databases
+    - "Database Development"
+    - "Application Development"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/model-data-relationships-azure-documentdb/index.yml
   title: Model Data Relationships in Azure DocumentDB
   description: "Model data relationships effectively in Azure DocumentDB. Analyze entity relationships using access patterns and cardinality, apply the embed-vs-reference decision framework, and implement one-to-one, one-to-many, and many-to-many relationship patterns with practical e-commerce examples."
   ms.date: 06/20/2026

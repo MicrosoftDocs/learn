@@ -1,11 +1,35 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.configure-key-vault-security
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - security-engineer
+  gs-skills:
+    - "Network Connectivity"
+    - "Data Security"
+    - "Cloud Administration"
+    - "Application Security"
+    - Cybersecurity
+    - "Security Operations Management"
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "Threat Management"
+    - "Identity and Access Management (IAM)"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/configure-key-vault-security/index.yml
   title: Secure Azure Key Vault with defense in depth for the Cloud and AI Workloads
   description: "Implement a defense-in-depth security strategy for Azure Key Vault. Configure hardened vault settings, control access through RBAC and just-in-time privilege, manage keys, secrets, and certificates, and detect threats using Microsoft Defender for Key Vault and Defender CSPM."
   ms.date: 04/13/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: learning-path
   ai-usage: ai-assisted
 title: Secure Azure Key Vault with defense in depth for the cloud and AI workloads

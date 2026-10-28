@@ -1,6 +1,30 @@
 ### YamlMime:Module
 uid: learn.wwl.automated-evaluation-genaiops
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 74
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - microsoft-foundry
+    - github
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - ai-engineer
+    - data-scientist
+    - devops-engineer
+  gs-skills:
+    - "AI Model Evaluation & Testing"
+    - "Synthetic Data Generation"
+    - "Large Language Model Operations (LLMOps)"
+    - DevOps
+    - "Python (Programming Language)"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/automated-evaluation-genaiops/index.yml
   title: Automate AI evaluations with Microsoft Foundry and GitHub Actions
   description: Learn how to implement automated evaluations for AI agents using Microsoft Foundry evaluators and GitHub Actions workflows.
   author: madiepev

@@ -2,6 +2,26 @@
 # Oxford University Module - Oxford responsible for ongoing maintenance
 uid: learn.oxford.create-image-recognition-with-azure-iot-edge
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 87
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+    - microsoft-foundry
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - ai-engineer
+  gs-skills:
+    - "Computer Vision"
+    - "AI Solutions"
+    - "Cloud Infrastructure"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/student-evangelism/create-image-recognition-solution-iot-edge-cognitive-services/index.yml
   title: "Create an image recognition solution with Azure IoT Edge, Azure AI Custom Vision, and Azure Speech"
   description: "Build an image recognition solution that runs on Azure IoT Edge. Use a prebuilt, exported Azure AI Custom Vision model locally at the edge and call Azure Speech in Foundry Tools to announce labels with text to speech."
   ms.date: 05/01/2026

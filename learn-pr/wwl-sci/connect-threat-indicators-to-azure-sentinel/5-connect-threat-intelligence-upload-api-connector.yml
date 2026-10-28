@@ -6,7 +6,7 @@ metadata:
   description: "By using the Threat Intelligence Upload API, your organization can ingest custom threat intelligence data into Microsoft Sentinel."
   ms.date: 05/05/2025
   author: KenMAG
-  ms.author: kelawson
+  ms.author: lumac
   ms.topic: unit
 azureSandbox: false
 labModal: false

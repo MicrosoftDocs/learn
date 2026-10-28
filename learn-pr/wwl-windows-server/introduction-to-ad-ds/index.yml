@@ -1,6 +1,28 @@
 ### YamlMime:Module
 uid: learn.wwl.introduction-to-ad-ds
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 60
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - windows
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - administrator
+    - identity-access-admin
+    - solution-architect
+  gs-skills:
+    - "Identity and Access Management (IAM)"
+    - "Infrastructure Management"
+    - "Security Architecture Design"
+    - "Zero Trust Security"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-windows-server/introduction-to-ad-ds/index.yml
   title: Introduction to AD DS
   description: "Introduction to AD DS"
   ms.date: 01/23/2026

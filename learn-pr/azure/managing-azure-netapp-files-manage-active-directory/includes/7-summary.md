@@ -13,6 +13,6 @@ You performed hands-on exercises to create, modify, and manage an Active Directo
 
 ### Learn more
 
-- [Configure AD DS LDAP over TLS for Azure NetApp Files](https://learn.microsoft.com/azure/azure-netapp-files/configure-ldap-over-tls)
-- [Modify Active Directory connections for Azure NetApp Files](https://learn.microsoft.com/azure/azure-netapp-files/modify-active-directory-connections)
-- [Join a Linux VM to an Active Directory Domain](https://learn.microsoft.com/azure/azure-netapp-files/join-active-directory-domain)
+- [Configure AD DS LDAP over TLS for Azure NetApp Files](/azure/azure-netapp-files/configure-ldap-over-tls)
+- [Modify Active Directory connections for Azure NetApp Files](/azure/azure-netapp-files/modify-active-directory-connections)
+- [Join a Linux VM to an Active Directory Domain](/azure/azure-netapp-files/join-active-directory-domain)

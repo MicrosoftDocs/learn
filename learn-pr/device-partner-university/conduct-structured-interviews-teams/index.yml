@@ -2,6 +2,26 @@
 uid: learn.dpu.conduct-structured-interviews-teams
 title: Conduct structured interviews using Microsoft Teams and Copilot
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 23
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - office-teams
+    - microsoft-365-copilot
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - business-user
+  gs-skills:
+    - "Collaboration Tools"
+    - "AI Prompting"
+    - "Role focused AI Workflows"
+  gs-solution.area: "AI Business Solutions"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/conduct-structured-interviews-teams/index.yml
   title: Conduct Structured Interviews Using Microsoft Teams And Copilot
   description: Learn how to schedule and run a candidate interview using Microsoft Teams and Copilot to capture insights and streamline feedback.
   ms.date: 10/20/2025

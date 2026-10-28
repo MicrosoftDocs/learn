@@ -1,8 +1,24 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.get-started-with-python-programs
 metadata:
+  gs-content.levels: 100
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+  gs-skills:
+    - "Python (Programming Language)"
+    - "Application Development"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/get-started-with-python-programs/index.yml
   title: "Get Started with Python Programming: Part 2 - Building Programs"
-  description: Learn the fundamentals of programming in Python.
+  description: Build Python programs with loops, collections, file input and output, and reusable functions to organize and process application data.
   ms.date: 07/15/2026
   author: wwlpublish
   ms.author: buzahid

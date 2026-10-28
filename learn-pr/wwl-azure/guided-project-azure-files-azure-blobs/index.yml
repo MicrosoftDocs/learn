@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.wwl.guided-project-azure-files-azure-blobs
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 74
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - administrator
+  gs-skills:
+    - Storage
+    - "Cloud Administration"
+    - "Data Security"
+    - "Infrastructure Management"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/guided-project-azure-files-azure-blobs/index.yml
   title: Guided Project - Azure Files and Azure Blobs
   description: "Guided Project - Azure Files and Azure Blobs"
   ms.date: 06/23/2026

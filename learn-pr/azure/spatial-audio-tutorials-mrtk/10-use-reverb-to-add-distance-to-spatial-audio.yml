@@ -6,7 +6,7 @@ metadata:
   description: Description to Use reverb to add distance to spatial audio
   ms.date: 02/12/2024
   author: marlenaklein-msft
-  ms.author: marlenaklein
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 1
 content: |

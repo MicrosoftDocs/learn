@@ -1,6 +1,29 @@
 ### YamlMime:Module
 uid: learn.choose-deployment-strategy-hololens
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 31
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - intune
+    - entra
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - technology-manager
+    - systems-administrator
+  gs-skills:
+    - "Device Management"
+    - "IT Strategy"
+    - "Network Connectivity"
+    - "Identity and Access Management (IAM)"
+    - Cybersecurity
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/choose-deployment-strategy-hololens/index.yml
   title: Choose a deployment scenario for HoloLens device management
   description: "Learn how to choose a deployment scenario for managing HoloLens devices."
   ms.date: 06/11/2024

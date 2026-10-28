@@ -2,6 +2,30 @@
 uid: learn.dpu.security-copilot-education
 title: Microsoft Security Copilot in Education
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 23
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - security-copilot
+    - microsoft-defender
+    - microsoft-sentinel
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - security-operations-analyst
+    - security-engineer
+    - administrator
+  gs-skills:
+    - "Security Operations Management"
+    - "Security Analytics"
+    - Cybersecurity
+    - "Prompt Engineering"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/security-copilot-edu/index.yml
   title: Microsoft Security Copilot In Education
   description: In this module, you'll explore how Microsoft Security Copilot can help schools strengthen their defenses against cyber threats like phishing and ransomware. You'll learn how to use AI-driven insights to investigate incidents, generate reports, and improve security operations in educational environments.
   ms.date: 11/06/2025

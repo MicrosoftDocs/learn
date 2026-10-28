@@ -5,7 +5,7 @@ metadata:
   description: Summary of discovering unprotected assets and vulnerabilities using Microsoft Defender External Attack Surface Management.
   ms.date: 04/07/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-generated
 title: Summary

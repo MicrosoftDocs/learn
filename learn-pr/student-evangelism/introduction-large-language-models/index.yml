@@ -1,7 +1,28 @@
 ### YamlMime:Module
 uid: learn.introduction-large-language-models
 metadata:
-  ms.author: chnoring
+  gs-content.levels: 100
+  gs-content.locale: en-us
+  gs-duration: 25
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - student
+    - developer
+    - ai-engineer
+  gs-skills:
+    - "AI Fluency"
+    - "Generative AI"
+    - "Prompt Engineering"
+    - "Machine Learning"
+  gs-solution.area: "AI Business Solutions"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/student-evangelism/introduction-large-language-models/index.yml
+  ms.author: lumac
   author: softchris
   ms.date: 11/30/2023
   ms.update-cycle: 180-days

@@ -5,7 +5,7 @@ metadata:
   description: Examine the AI Gateway architecture in Microsoft Foundry, including how it sits between callers and AI models. Then check what security controls it enforces, and why it's a critical layer in AI workload protection.
   ms.date: 04/21/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 title: Examine AI Gateway architecture

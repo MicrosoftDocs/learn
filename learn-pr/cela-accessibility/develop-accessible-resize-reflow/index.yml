@@ -1,6 +1,24 @@
 ### YamlMime:Module 
 uid: learn.develop-accessible-resize-reflow
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 90
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - windows
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+  gs-skills:
+    - "Digital Accessibility"
+    - "Application Development"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/cela-accessibility/develop-accessible-resize-reflow/index.yml
   title: Develop accessible resize and reflow
   description: Learn why supporting resize and reflow is crucial for creating accessible websites and apps.
   ms.date: 02/12/2025

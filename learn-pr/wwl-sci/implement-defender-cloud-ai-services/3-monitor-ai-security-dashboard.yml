@@ -6,7 +6,7 @@ metadata:
   description: Use the Data and AI security dashboard in Microsoft Defender for Cloud to verify protection coverage, review AI threat alerts, and configure notifications.
   ms.date: 05/03/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 durationInMinutes: 7

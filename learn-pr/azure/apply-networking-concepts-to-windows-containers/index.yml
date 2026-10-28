@@ -2,6 +2,25 @@
 uid: learn.azure.apply-networking-concepts-to-windows-containers
 
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 65
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - network-engineer
+    - platform-engineer
+  gs-skills:
+    - "IT Networking"
+    - "Platform Engineering"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/apply-networking-concepts-to-windows-containers/index.yml
   title: Apply Networking concepts to Windows containers running on Azure Kubernetes Service (AKS) and AKS Hybrid
   description: Learn networking concepts that help you solve real problems with Windows containers running on Azure Kubernetes Service (AKS) and AKS Hybrid.
   ms.date: 04/30/2025

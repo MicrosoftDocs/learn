@@ -2,6 +2,30 @@
 uid: learn.dpu.deploy-windows
 title: Deploy updates for Windows client and Microsoft 365 apps
 metadata:
+  gs-content.levels: 400
+  gs-content.locale: en-us
+  gs-duration: 48
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - windows
+    - intune
+    - entra
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - systems-administrator
+    - technology-manager
+  gs-skills:
+    - "Device Management"
+    - "Infrastructure Management"
+    - "Identity and Access Management (IAM)"
+    - "Communications Management"
+    - "Governance, Risk Management, and Compliance (GRC)"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/deploy-windows/index.yml
   title: Deploy Updates For Windows Client And Microsoft 365 Apps
   description: In this module, you'll learn how to deploy updates to the clients and apps in your organization.
   ms.date: 04/15/2026

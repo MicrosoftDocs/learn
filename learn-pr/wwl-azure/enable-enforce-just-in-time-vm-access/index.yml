@@ -1,11 +1,38 @@
 ### YamlMime:Module
 uid: learn.wwl.enable-enforce-just-in-time-vm-access
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 24
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+    - defender-for-cloud
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - security-engineer
+    - systems-administrator
+    - platform-engineer
+  gs-skills:
+    - Cybersecurity
+    - "Cloud Administration"
+    - "Identity and Access Management (IAM)"
+    - "Security Operations Management"
+    - "IT Networking"
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - Automation
+    - "Infrastructure Management"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/enable-enforce-just-in-time-vm-access/index.yml
   title: Enable and Enforce Just-in-Time VM Access
   description: "Enable and configure just-in-time VM access in Microsoft Defender for Cloud to eliminate permanently open RDP and SSH ports. Configure per-port access policies, request time-bound access, audit access activity, and enforce JIT adoption across your VM estate using Azure Policy."
   ms.date: 05/11/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: module
   ms.service: defender-for-cloud
   ai-usage: ai-assisted

@@ -5,7 +5,7 @@ metadata:
   description: Assign built-in Azure Policy definitions and initiatives to enforce security configurations at subscription and management group scope.
   ms.date: 05/11/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 title: Assign built-in Azure Policy definitions

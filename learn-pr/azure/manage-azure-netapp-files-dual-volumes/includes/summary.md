@@ -9,7 +9,7 @@ You also performed hands-on exercises to create a dual-protocol volume for Azure
 
 ### Learn more
 
-- [Considerations for creating a dual-protocol volume](https://learn.microsoft.com/azure/azure-netapp-files/create-volumes-dual-protocol#considerations)
-- [Manage LDAP POSIX Attributes](https://learn.microsoft.com/azure/azure-netapp-files/create-volumes-dual-protocol#manage-ldap-posix-attributes)
-- [Create a dual-protocol volume](https://learn.microsoft.com/azure/azure-netapp-files/create-volumes-dual-protocol#create-a-dual-protocol-volume)
-- [Configure an NFS client for Azure NetApp Files](https://learn.microsoft.com/azure/azure-netapp-files/configure-nfs-clients)
+- [Considerations for creating a dual-protocol volume](/azure/azure-netapp-files/create-volumes-dual-protocol#considerations)
+- [Manage LDAP POSIX Attributes](/azure/azure-netapp-files/create-volumes-dual-protocol#manage-ldap-posix-attributes)
+- [Create a dual-protocol volume](/azure/azure-netapp-files/create-volumes-dual-protocol#create-a-dual-protocol-volume)
+- [Configure an NFS client for Azure NetApp Files](/azure/azure-netapp-files/configure-nfs-clients)

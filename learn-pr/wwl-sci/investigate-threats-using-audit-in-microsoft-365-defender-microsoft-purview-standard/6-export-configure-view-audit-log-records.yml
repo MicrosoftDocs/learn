@@ -6,7 +6,7 @@ metadata:
   description: "Export, configure, and view audit log records."
   ms.date: 3/20/2023
   author: wwlpublish
-  ms.author: kelawson
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 6
 content: |

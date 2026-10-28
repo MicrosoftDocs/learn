@@ -2,11 +2,40 @@
 uid: learn.dpu.copilot-plus-pc-accreditation-2025
 title: Copilot+ PC Accreditation 2025
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - microsoft-365-copilot
+    - windows
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - business-leader
+    - sales
+    - technology-manager
+  gs-skills:
+    - "AI Infrastructure"
+    - "AI Fluency"
+    - "AI Business & Vision"
+    - "Device Management"
+    - "AI Security (Model-Level)"
+    - "Zero Trust Security"
+    - "AI Governance"
+    - "Data Security"
+    - "Identity and Access Management (IAM)"
+    - Cybersecurity
+    - "AI Productivity"
+  gs-solution.area: null
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/copilot-plus-pc-accreditation-2025/index.yml
   title: Copilot+ PC Accreditation 2025
   description: This Learning Path introduces the Copilot+ PC Accreditation and explores how AI-powered Windows PCs can support everyday tasks. It covers key features and tools that help users work more efficiently, solve problems quickly, and explore new ways of using technology in daily life
   ms.date: 08/25/2025
   author: melissawinters
-  ms.author: v-mwinters
+  ms.author: lumac
   ms.topic: learning-path
   ms.custom: CW052024-0
 summary: >

@@ -1,6 +1,31 @@
 ### YamlMime:Module
 uid: learn.wwl.purview-ninja-security-copilot
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 17
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - microsoft-purview
+    - m365
+    - microsoft-defender
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - risk-practitioner
+    - ip-admin
+    - security-operations-analyst
+  gs-skills:
+    - "Security Analytics"
+    - "Security Automation"
+    - "Data Security"
+    - "Agentic AI"
+    - "AI Risk Management"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/purview-ninja-security-copilot/index.yml
   title: Efficiently Investigate Data Risks with Security Copilot in Microsoft Purview
   description: "Efficiently investigate data risks with Security Copilot in Microsoft Purview."
   ms.date: 08/21/2025

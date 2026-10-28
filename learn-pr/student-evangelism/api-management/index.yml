@@ -1,11 +1,35 @@
 ### YamlMime:Module
 uid: learn.api-management
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 22
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+    - azure-openai
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - devops-engineer
+    - developer
+  gs-skills:
+    - "API Management"
+    - "Cloud Infrastructure"
+    - DevOps
+    - "Identity and Access Management (IAM)"
+    - "AI Infrastructure"
+    - "Generative AI"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/student-evangelism/api-management/index.yml
   title: Manage your generative AI APIs with Azure API Management
   description: Learn how to manage generative AI APIs with Azure API Management.
   ms.date: 06/30/2024
   author: softchris
-  ms.author: chnoring
+  ms.author: lumac
   manager:
   ms.topic: module-standard-task-based
   ms.service: azure-api-management

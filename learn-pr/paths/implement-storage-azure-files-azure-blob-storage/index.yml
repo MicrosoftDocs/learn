@@ -1,6 +1,29 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.implement-storage-azure-files-azure-blob-storage
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles: null
+  gs-skills:
+    - "Data Management"
+    - Storage
+    - Cybersecurity
+    - "Identity and Access Management (IAM)"
+    - "Application Security"
+    - "Cloud Administration"
+    - "Security Analytics"
+    - "Data Security"
+    - "Infrastructure Management"
+  gs-solution.area: null
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/implement-storage-azure-files-azure-blob-storage/index.yml
   title: Secure storage for Azure Files and Azure Blob Storage
   description: Secure storage for Azure Files and Azure Blob Storage.
   ms.date: 06/23/2026

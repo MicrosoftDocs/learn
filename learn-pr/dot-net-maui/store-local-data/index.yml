@@ -1,6 +1,24 @@
 ### YamlMime:Module
 uid: learn.dotnet-maui.store-local-data
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 64
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+  gs-skills:
+    - "Application Development"
+    - Databases
+    - Storage
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/dot-net-maui/store-local-data/index.yml
   moduleType: standard
   title: "Store local data with SQLite in a .NET MAUI app"
   description: "Learn how to store and access data held in SQLite using a .NET Multi-platform App UI (MAUI) app"

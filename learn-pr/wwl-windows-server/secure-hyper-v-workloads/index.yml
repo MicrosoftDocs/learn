@@ -1,6 +1,30 @@
 ### YamlMime:Module
 uid: learn.wwl.secure-hyper-v-workloads
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 55
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - windows
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - security-engineer
+    - administrator
+    - systems-administrator
+    - solution-architect
+  gs-skills:
+    - Virtualization
+    - "Security Architecture Design"
+    - Cybersecurity
+    - "Infrastructure Management"
+    - "Data Security"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-windows-server/secure-hyper-v-workloads/index.yml
   title: Secure Hyper-V workloads
   description: "Learn how to secure Hyper-V workloads using guarded fabric, Host Guardian Service (HGS) with TPM-trusted and Host Key attestation, Key Protection Service, and shielded virtual machines with BitLocker-encrypted template disks."
   ms.date: 08/31/2026

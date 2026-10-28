@@ -8,7 +8,7 @@ metadata:
   description: "Implement application-based user provisioning"
   ms.date: 04/14/2025
   author: wwlpublish
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ms.custom:
   - N/A

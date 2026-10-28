@@ -1,11 +1,28 @@
 ### YamlMime:Module
 uid: learn.wwl.create-manage-events
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 60
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+  gs-skills:
+    - "Application Development"
+    - "Application Architecture"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-language/create-manage-events/index.yml
   title: Create and Manage Events
   description: "Discover how events facilitate communication between objects in C#, and how their integration with delegates creates robust, decoupled code."
   ms.date: 04/24/2025
   author: wwlpublish
-  ms.author: eric
+  ms.author: lumac
   ms.topic: module-intro-to-product
   ms.service: dotnet-csharp
   ms.subservice: fundamentals

@@ -1,6 +1,22 @@
 ### YamlMime:Module
 uid: learn.languages.csharp-for
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 37
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+  gs-skills:
+    - "Application Development"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-language/csharp-for/index.yml
   title: Iterate Through a Code Block using for Statement in C#
   description: "Use the for iteration statement to loop a pre-set number of times and control the iteration process."
   ms.date: 12/15/2025

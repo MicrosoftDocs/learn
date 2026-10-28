@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.introduction-microsoft-copilot-azure
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 22
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - systems-administrator
+    - identity-access-admin
+  gs-skills:
+    - "Cloud Administration"
+    - "Role focused AI Workflows"
+    - "Identity and Access Management (IAM)"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/advocates/introduction-microsoft-copilot-azure/index.yml
   ms.author: viniap
   author: Orin-Thomas
   ms.date: 07/25/2026

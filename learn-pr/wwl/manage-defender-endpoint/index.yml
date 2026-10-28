@@ -1,6 +1,28 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-defender-endpoint
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 37
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - defender-endpoint
+    - windows
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - security-engineer
+    - security-operations-analyst
+  gs-skills:
+    - Cybersecurity
+    - "Security Operations Management"
+    - "Application Security"
+    - "Zero Trust Security"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl/manage-defender-endpoint/index.yml
   title: MD-102 2-Manage Microsoft Defender for Endpoint
   description: "This module explores using Microsoft Defender for Endpoint to provide additional protection and monitor devices against threats."
   ms.date: 04/23/2024

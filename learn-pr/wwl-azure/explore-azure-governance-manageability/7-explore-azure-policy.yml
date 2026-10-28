@@ -6,7 +6,7 @@ metadata:
   description: "Create, assign, and manage policies to enforce different rules over your resources."
   ms.date: 08/02/2024
   author: wwlpublish
-  ms.author: eric
+  ms.author: lumac
   ms.topic: unit
   ms.custom:
   - N/A

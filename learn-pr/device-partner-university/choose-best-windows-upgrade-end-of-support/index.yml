@@ -2,6 +2,27 @@
 uid: learn.dpu.choose-best-windows-upgrade-end-of-support
 title: Choose the best Windows upgrade path after Windows 10 end of support
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 28
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - windows
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - technology-manager
+    - it-professional
+  gs-skills:
+    - "Device Management"
+    - "IT Strategy"
+    - "Cloud Computing"
+    - "Governance, Risk Management, and Compliance (GRC)"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/choose-best-windows-upgrade-end-of-support/index.yml
   title: Choose The Best Windows Upgrade Path After Windows 10 End Of Support
   description: Learn how to assess and recommend the best Windows upgrade path after Windows 10 end of support using structured decision criteria and real-world scenarios.
   ms.date: 12/18/2025

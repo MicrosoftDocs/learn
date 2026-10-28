@@ -8,7 +8,7 @@ metadata:
   description: "Analyze Privileged Identity Management audit history and reports"
   ms.date: 08/06/2025
   author: wwlpublish
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ms.custom:
   - N/A

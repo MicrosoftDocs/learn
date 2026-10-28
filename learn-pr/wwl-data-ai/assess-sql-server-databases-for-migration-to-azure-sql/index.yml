@@ -1,6 +1,27 @@
 ### YamlMime:Module
 uid: learn.wwl.assess-sql-server-databases-for-migration-to-azure-sql
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 45
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - database-administrator
+    - solution-architect
+  gs-skills:
+    - "Data Migration"
+    - Databases
+    - "Data Administration"
+    - "Solution Architecture"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/assess-sql-server-databases-for-migration-to-azure-sql/index.yml
   title: Assess SQL Server databases for migration to Azure SQL
   description: "Learn multiple assessment tools that facilitate the migration of databases to Azure, including SQL Server enabled by Azure Arc, Azure Migrate, and Azure Database Migration Service."
   ms.date: 07/23/2026

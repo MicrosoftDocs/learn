@@ -1,11 +1,36 @@
 ### YamlMime:Module
 uid: learn.case-study-access-control-threat-resilience
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 38
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - entra
+    - microsoft-sentinel
+    - microsoft-defender
+    - security-copilot
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - solution-architect
+    - security-engineer
+  gs-skills:
+    - "Security Architecture Design"
+    - "Zero Trust Security"
+    - "Identity and Access Management (IAM)"
+    - "Threat Management"
+    - "Governance, Risk Management, and Compliance (GRC)"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/case-study-access-control-threat-resilience/index.yml
   title: "Interactive Case Study: Modernizing User Access Control and Threat Resilience"
   description: "Apply your cybersecurity architect skills on a real business scenario focused on user access control and threat resilience. Analyze design requirements, answer conceptual and technical questions and design a solution to meet the business needs."
   ms.date: 04/03/2026
   author: wwlpublish
-  ms.author: ceperezb
+  ms.author: lumac
   ai-usage: ai-assisted
   ms.topic: module
   ms.service: security

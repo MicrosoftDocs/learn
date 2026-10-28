@@ -5,7 +5,7 @@ metadata:
   description: Summary of configuring Trusted Launch security features for Azure virtual machines, covering component identification, configuration, upgrade paths, and Azure Policy enforcement.
   ms.date: 05/11/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 title: Summary

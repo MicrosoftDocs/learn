@@ -1,11 +1,28 @@
 ### YamlMime:Module
 uid: learn.wwl.describe-device-based-threats-security-controls
 metadata:
+  gs-content.levels: 100
+  gs-content.locale: en-us
+  gs-duration: 17
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - microsoft-defender
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - it-professional
+  gs-skills:
+    - "Device Management"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/describe-device-based-threats-security-controls/index.yml
   title: Describe Device-Based Threats and Security Controls
   description: "Describe device-based threats and security controls."
   ms.date: 04/24/2026
   author: wwlpublish
-  ms.author: ceperezb
+  ms.author: lumac
   ms.topic: module
   ms.service: security
 title: Describe device-based threats and security controls

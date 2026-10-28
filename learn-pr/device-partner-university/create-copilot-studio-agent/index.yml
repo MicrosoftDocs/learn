@@ -2,6 +2,25 @@
 uid: learn.dpu.create-copilot-studio-agent
 title: Work smarter with an agent in Microsoft Copilot Studio
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 50
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - microsoft-copilot-studio
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - business-user
+    - business-analyst
+  gs-skills:
+    - "Agent Development"
+    - "No-Code Development"
+  gs-solution.area: "AI Business Solutions"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/create-copilot-studio-agent/index.yml
   title: Work smarter with an agent in Microsoft Copilot Studio
   description: Create and configure an agent for a defined business scenario in Microsoft Copilot Studio. Practice planning, connecting knowledge sources, testing responses, and refining agent behavior.
   ms.date: 10/06/2026

@@ -6,7 +6,7 @@ metadata:
   description: "Protect user accounts with the Protected Users group"
   ms.date: 01/01/2025
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: lumac
   ms.topic: unit
 azureSandbox: false
 labModal: false

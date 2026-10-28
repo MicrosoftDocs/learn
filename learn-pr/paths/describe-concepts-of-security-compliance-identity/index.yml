@@ -1,11 +1,33 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.describe-concepts-of-security-compliance-identity
 metadata:
+  gs-content.levels: 100
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - azure
+    - entra
+    - m365
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - security-professional
+  gs-skills:
+    - Cybersecurity
+    - "Data Security"
+    - "Identity and Access Management (IAM)"
+    - "Zero Trust Security"
+    - "Governance, Risk Management, and Compliance (GRC)"
+  gs-solution.area: null
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/describe-concepts-of-security-compliance-identity/index.yml
   title: 'Introduction to security, compliance, and identity concepts'
   description: 'SC-900: Introduction to security, compliance, and identity concepts'
   ms.date: 04/27/2026
   author: wwlpublish
-  ms.author: ceperezb
+  ms.author: lumac
   ms.topic: learning-path
 title: 'Introduction to security, compliance, and identity concepts'
 prerequisites: |

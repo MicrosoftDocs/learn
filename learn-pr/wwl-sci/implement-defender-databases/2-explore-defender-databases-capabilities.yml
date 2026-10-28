@@ -6,7 +6,7 @@ metadata:
   description: "Explore the Defender for Databases plans, their coverage scope, and the threat types each plan detects across Azure SQL and open-source relational database services."
   ms.date: 04/22/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-generated
 durationInMinutes: 3

@@ -6,7 +6,7 @@ metadata:
   description: Identify Azure and on-premises roles to assign to users
   ms.date: 11/29/2023
   author: limwainstein
-  ms.author: lwainstein
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 5
 content: |

@@ -1,6 +1,34 @@
 ### YamlMime:Module
 uid: learn.wwl.project-perception-agentic-security-orientation
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 40
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - microsoft-defender
+    - azure
+    - entra
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - security-operations-analyst
+    - security-engineer
+    - administrator
+    - solution-architect
+  gs-skills:
+    - "Agentic AI"
+    - "Agent Operations"
+    - "Security Operations Management"
+    - "Security Architecture Design"
+    - "Threat Management"
+    - "Security Automation"
+    - "Identity and Access Management (IAM)"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/project-perception-agentic-security-orientation/index.yml
   title: Understand How Project Perception Coordinates Security Operations
   description: "Learn how Project Perception coordinates specialized agents across the six areas of work your team already runs: threat intelligence, triage, investigation, detection engineering, attack path analysis, and posture prioritization. Recognize when a situation calls for a coordinated playbook by naming and counting the areas of work it touches."
   ms.date: 08/03/2026

@@ -6,7 +6,7 @@ metadata:
   description: "Deploy and configure Microsoft Entra Private Access"
   ms.date: 08/20/2026
   author: wwlpublish
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ms.custom: sfi-ga-nochange
 durationInMinutes: 8

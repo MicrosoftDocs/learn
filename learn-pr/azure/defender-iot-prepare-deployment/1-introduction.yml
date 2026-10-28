@@ -6,7 +6,7 @@ metadata:
   description: "Introduction to the Defender for IoT deployment preparation scenario."
   ms.date: 03/04/2024
   author: limwainstein
-  ms.author: lwainstein
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 2
 content: |

@@ -1,11 +1,34 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-agents-microsoft-agent-365
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 23
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - m365
+    - microsoft-365-copilot
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - administrator
+    - security-engineer
+  gs-skills:
+    - "Agentic AI"
+    - "AI Compliance"
+    - "AI Risk Management"
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "Identity and Access Management (IAM)"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/manage-agents-microsoft-agent-365/index.yml
   title: Manage Agents Using Microsoft Agent 365
   description: "Govern AI agents in your Microsoft 365 environment using Microsoft Agent 365. Enable and navigate the Agent 365 management interface, register agents and apply access controls, and monitor agent activity to enforce organizational governance policies."
   ms.date: 04/21/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: module
   ms.service: security
   ai-usage: ai-assisted

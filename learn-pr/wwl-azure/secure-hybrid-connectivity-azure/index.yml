@@ -1,11 +1,29 @@
 ### YamlMime:Module
 uid: learn.wwl.secure-hybrid-connectivity-azure
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 39
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - solution-architect
+  gs-skills:
+    - "Application Security"
+    - "IT Networking"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/secure-hybrid-connectivity-azure/index.yml
   title: Secure Remote and Hybrid Connectivity Using VPN Gateways and Microsoft Entra Private Access
   description: "Harden Azure remote and hybrid connectivity to reduce attack surface and enforce Zero Trust access principles. Assess VPN gateway security risks, apply hardening controls, and deploy Microsoft Entra Private Access to replace broad VPN access with identity-aware, per-application access."
   ms.date: 05/10/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: module
   ms.service: azure-vpn-gateway
   ai-usage: ai-generated

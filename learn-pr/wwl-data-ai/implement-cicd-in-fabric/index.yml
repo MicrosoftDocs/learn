@@ -1,11 +1,37 @@
 ### YamlMime:Module
 uid: learn-wwl.implement-cicd-in-fabric
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 46
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - fabric
+    - github
+    - azure-devops
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - data-engineer
+    - devops-engineer
+    - developer
+    - platform-engineer
+  gs-skills:
+    - DevOps
+    - Automation
+    - "Data Engineering"
+    - "Platform Engineering"
+    - "API Management"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/implement-cicd-in-fabric/index.yml
   title: Implement Continuous Integration and Continuous Delivery (CI/CD) in Microsoft Fabric
   description: Learn the key concepts and strategies for implementing continuous integration and continuous deployment (CI/CD) in Microsoft Fabric.
   ms.date: 12/5/2025
   author: wwlpublish
-  ms.author: theresai
+  ms.author: lumac
   ms.topic: module
   ms.collection: 
   ms.service: fabric

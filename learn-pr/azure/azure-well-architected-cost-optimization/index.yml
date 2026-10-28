@@ -1,6 +1,27 @@
 ### YamlMime:Module
 uid: learn.azure-well-architected-cost-optimization
 metadata:
+  gs-content.levels: 400
+  gs-content.locale: en-us
+  gs-duration: 64
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - solution-architect
+    - technology-manager
+    - finance
+  gs-skills:
+    - "Solution Architecture"
+    - "IT Strategy"
+    - "Cloud Administration"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/azure-well-architected-cost-optimization/index.yml
   title: Microsoft Azure Well-Architected Framework - Cost Optimization
   description: Apply cost optimization guidance in your architecture to sustain and improve your return on investment (ROI).
   ms.date: 07/07/2025

@@ -1,6 +1,22 @@
 ### YamlMime:Module
 uid: learn.wwl.microsoft-learn-educators-course-preparation
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 17
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - higher-ed-educator
+  gs-skills:
+    - "Career Development"
+  gs-solution.area: null
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-hedt/microsoft-learn-educators-course-preparation/index.yml
   title: Microsoft Learn for Educators Course Preparation
   description: "Your students want skills that make them employable. Using the resources available from Microsoft will help you feel confident to teach your students the skills they need to help them pass a Microsoft Certification exam."
   ms.date: 08/08/2022

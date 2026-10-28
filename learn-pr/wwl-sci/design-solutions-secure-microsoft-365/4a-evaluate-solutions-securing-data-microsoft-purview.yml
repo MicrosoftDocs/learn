@@ -7,7 +7,7 @@ metadata:
   description: "Evaluate Microsoft Purview data security solutions including data classification, sensitivity labels, DLP, encryption key management, Information Barriers, and Data Security Posture Management for securing data across Microsoft 365."
   ms.date: 05/21/2026
   author: ceperezb
-  ms.author: ceperezb
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-generated
 durationInMinutes: 10

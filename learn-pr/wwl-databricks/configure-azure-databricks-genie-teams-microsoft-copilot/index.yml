@@ -1,6 +1,29 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-azure-databricks-genie-teams-microsoft-copilot
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 47
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure-databricks
+    - office-teams
+    - microsoft-365-copilot
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - data-engineer
+    - administrator
+  gs-skills:
+    - "Data Analytics"
+    - "Collaboration Tools"
+    - "Identity and Access Management (IAM)"
+    - "AI Productivity"
+  gs-solution.area: "AI Business Solutions"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-databricks/configure-azure-databricks-genie-teams-microsoft-copilot/index.yml
   title: Configure Azure Databricks Genie for Microsoft Teams and Microsoft Copilot
   description: "Prepare Azure Databricks and Microsoft 365 so business users can access governed data through Databricks Genie in Microsoft Teams and Microsoft Copilot."
   ms.date: 10/26/2026

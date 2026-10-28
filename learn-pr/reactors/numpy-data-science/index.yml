@@ -1,11 +1,33 @@
 ### YamlMime:Module
 uid: learn.reactors.numpy-data-science
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 127
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - data-scientist
+    - developer
+    - student
+  gs-skills:
+    - "Data Science"
+    - "Data Analytics"
+    - "Application Development"
+    - "Data Visualization"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/reactors/numpy-data-science/index.yml
   title: Introduction to NumPy for data science
   description: Learn about how to use NumPy for data science. Create, index, and sort arrays.
   ms.date: 04/07/2022
   author: sguthals
-  ms.author: chnoring
+  ms.author: lumac
+  ms.service: azure-python
   ms.topic: module
   ms.custom: team=nextgen
 title: Introduction to NumPy for data science

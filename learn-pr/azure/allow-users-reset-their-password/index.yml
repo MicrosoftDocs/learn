@@ -1,11 +1,30 @@
 ### YamlMime:Module
 uid: learn.azure.allow-users-to-reset-their-password
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 31
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - entra
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - systems-administrator
+    - security-engineer
+  gs-skills:
+    - "Identity and Access Management (IAM)"
+    - "Cloud Administration"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/allow-users-reset-their-password/index.yml
   title: Allow users to reset their password with Microsoft Entra self-service password reset
   description: Learn how to allow users to reset their password with Microsoft Entra self-service password reset.
   ms.date: 11/07/2024
   author: Justinha
-  ms.author: justinha
+  ms.author: lumac
   ms.topic: module
   ms.service: entra-id
 title: Allow users to reset their password with Microsoft Entra self-service password reset

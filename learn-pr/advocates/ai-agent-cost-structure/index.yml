@@ -1,6 +1,29 @@
 ### YamlMime:Module
 uid: learn.ai-agent-cost-structure
 metadata:
+  gs-content.levels: 400
+  gs-content.locale: en-us
+  gs-duration: 96
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+    - microsoft-foundry
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - technology-manager
+    - solution-architect
+  gs-skills:
+    - "AI Infrastructure"
+    - "Cloud Administration"
+    - "Agent Operations"
+    - "AI Strategy"
+    - "Data Strategies"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/advocates/ai-agent-cost-structure/index.yml
   title: Understand the Key Cost Drivers of AI Agents
   description: Developing and deploying AI agents can unlock transformative capabilities for businesses, but it requires careful planning and budgeting.
   ms.date: 09/01/2026

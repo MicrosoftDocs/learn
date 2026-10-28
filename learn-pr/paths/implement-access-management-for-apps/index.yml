@@ -1,11 +1,34 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.implement-access-management-for-apps
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - entra
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+    - identity-access-admin
+    - security-engineer
+  gs-skills:
+    - "Identity and Access Management (IAM)"
+    - Cybersecurity
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "Application Development"
+    - "Zero Trust Security"
+    - "Application Security"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/implement-access-management-for-apps/index.yml
   title: 'Implement access management for apps'
   description: 'Implement access management for apps'
   ms.date: 01/23/2026
   author: wwlpublish
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: learning-path
 title: 'Implement access management for apps'
 prerequisites: |

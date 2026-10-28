@@ -6,7 +6,7 @@ metadata:
   description: "Introduction to implementing Microsoft Defender for Databases to detect threats across Azure SQL services."
   ms.date: 04/22/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-generated
 durationInMinutes: 2

@@ -2,6 +2,27 @@
 uid: learn.windows-server.certificate-services-roles-topology
 title: Active Directory Certificate Services roles and topology
 metadata:
+  gs-content.levels: 400
+  gs-content.locale: en-us
+  gs-duration: 220
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - solution-architect
+    - security-engineer
+    - systems-administrator
+  gs-skills:
+    - "Security Architecture Design"
+    - "Identity and Access Management (IAM)"
+    - "Infrastructure Management"
+    - "Governance, Risk Management, and Compliance (GRC)"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/advocates/certificate-services-roles-topology/index.yml
   title: Active Directory Certificate Services Roles and Topology
   description: Design Active Directory Certificate Services topologies with suitable role placement, trust boundaries, availability, key protection, and recovery.
   author: Orin-Thomas

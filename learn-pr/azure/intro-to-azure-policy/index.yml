@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.intro-to-azure-policy
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 10
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - systems-administrator
+    - ip-admin
+  gs-skills:
+    - "Cloud Administration"
+    - "Governance, Risk Management, and Compliance (GRC)"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/intro-to-azure-policy/index.yml
   moduleType: introduction
   title: Introduction to Azure Policy
   description: "This module introduces you to Azure Policy and describes how to use it to meet compliance requirements in your environment."

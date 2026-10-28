@@ -5,7 +5,7 @@ metadata:
   description: Use External Attack Surface Management (EASM) dashboards—Overview, Attack surface summary, Security posture, and OWASP Top 10—to identify and prioritize vulnerabilities, exposed services, certificate issues, and web application risks across your external attack surface.
   ms.date: 04/07/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-generated
 title: Analyze your attack surface with dashboards

@@ -6,7 +6,7 @@ metadata:
   description: Learn how to create alerts by using Log Analytics for Azure Backup.
   ms.date: 12/01/2023
   author: AbhishekMallick-MS
-  ms.author: v-abhmallick
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 15
 content: |

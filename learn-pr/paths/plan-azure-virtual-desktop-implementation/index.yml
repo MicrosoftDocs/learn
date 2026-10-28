@@ -1,6 +1,30 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.plan-azure-virtual-desktop-implementation
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - solution-architect
+  gs-skills:
+    - "Solution Architecture"
+    - "Cloud Infrastructure"
+    - Virtualization
+    - "Infrastructure Management"
+    - "Identity and Access Management (IAM)"
+    - "Network Connectivity"
+    - Storage
+    - "Cloud Administration"
+    - "IT Networking"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/plan-azure-virtual-desktop-implementation/index.yml
   title: Plan an Azure Virtual Desktop implementation
   description: Plan an Azure Virtual Desktop implementation
   ms.date: 08/01/2022

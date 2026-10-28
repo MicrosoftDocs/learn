@@ -2,11 +2,33 @@
 uid: learn.dpu.hybrid-cloud-integration-with-azure-local
 title: Hybrid cloud integration with Azure Local
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 18
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+    - microsoft-defender
+    - microsoft-sentinel
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - systems-administrator
+    - technology-manager
+  gs-skills:
+    - "Cloud Infrastructure"
+    - "Infrastructure Management"
+    - Cybersecurity
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/hybrid-cloud-integration-with-azure-local/index.yml
   title: Hybrid Cloud Integration With Azure Local
   description: In this module, you'll learn how Azure Local enables organizations to run virtual machines, containers, and cloud services on-premises while integrating with Azure for centralized management and security. You'll explore technical features such as hybrid cloud connectivity, resource organization, automated updates, container orchestration with AKS, and multi-layered security protections.
   ms.date: 09/11/2025
   author: melissawinters
-  ms.author: v-mwinters
+  ms.author: lumac
   ms.topic: module
   ms.service: azure-local
   ms.custom: CA090123-3

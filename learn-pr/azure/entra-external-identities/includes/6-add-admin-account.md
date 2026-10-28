@@ -49,7 +49,7 @@ In Microsoft Entra External ID, an external tenant represents your directory of 
 
 #### 1. Create a user
 
-To [create a user](/graph/api/user-post-users?view=graph-rest-1.0&tabs=http), replace the following values in the Microsoft Graph request:
+To [create a user](/graph/api/user-post-users?view=graph-rest-1.0&tabs=http&preserve-view=true), replace the following values in the Microsoft Graph request:
 
 - **displayName** with the user display name.
 - **mailNickname** with a mail alias for the user. This property must be specified when a user is created.

@@ -1,6 +1,24 @@
 ### YamlMime:Module
 uid: learn.wwl.guided-project-build-basic-website-endpoint-with-functions
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 36
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+  gs-skills:
+    - "Application Development"
+    - "Cloud Computing"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/guided-project-build-basic-website-endpoint-with-functions/index.yml
   title: 'Guided project: Build a simple website endpoint with Azure Functions'
   description: "Create and test an HTTP-triggered Azure Function as a lightweight website endpoint."
   ms.date: 03/16/2026

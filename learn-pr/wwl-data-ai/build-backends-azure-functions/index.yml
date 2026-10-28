@@ -1,6 +1,27 @@
 ### YamlMime:Module
 uid: learn.wwl.build-backends-azure-functions
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 98
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+  gs-skills:
+    - "Application Development"
+    - "Cloud Computing"
+    - "AI Infrastructure"
+    - "Application Security"
+    - "Identity and Access Management (IAM)"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/build-backends-azure-functions/index.yml
   title: Build Serverless AI Backends with Azure Functions
   description: Learn how to use Azure Functions as lightweight serverless compute for AI workloads, including inference endpoints, event processors, and integration with Azure services.
   ms.date: 06/15/2026

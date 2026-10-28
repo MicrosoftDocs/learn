@@ -1,11 +1,31 @@
 ### YamlMime:Module
 uid: learn.wwl.monitor-fabric-data-warehouse
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 52
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - fabric
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - data-engineer
+    - database-administrator
+  gs-skills:
+    - "Data Warehousing"
+    - "Security Analytics"
+    - "Data Administration"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl/monitor-fabric-data-warehouse/index.yml
   title: Monitor a Microsoft Fabric Data Warehouse
   description: "A data warehouse is a vital component of an enterprise analytics solution. It's important to learn how to monitor a data warehouse so you can better understand the activity that occurs in it."
   ms.date: 06/13/2025
   author: theresa-i
-  ms.author: theresai
+  ms.author: lumac
   ms.topic: module
   ms.collection: N/A
   ms.custom:

@@ -6,7 +6,7 @@ metadata:
   description: Get a basic understanding of what NumPy arrays are and how they differ from the other Python data structures.
   ms.date: 04/07/2022
   author: softchris
-  ms.author: chnoring
+  ms.author: lumac
   ms.topic: unit
   ms.custom:
     - team=nextgen

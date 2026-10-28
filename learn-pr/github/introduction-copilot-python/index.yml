@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.github-copilot-with-python
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 22
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - github-copilot
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+  gs-skills:
+    - "AI-Augmented Software Development"
+    - "Python (Programming Language)"
+    - "Prompt Engineering"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/github/introduction-copilot-python/index.yml
   title: Using GitHub Copilot with Python
   description: Make changes and updates to a Python application by using GitHub Copilot with Visual Studio Code.
   author: bethanyjep

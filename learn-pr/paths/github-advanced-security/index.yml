@@ -1,6 +1,27 @@
 ### YamlMime:LearningPath
 uid: learn.github-github-advanced-security
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - github
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+    - security-engineer
+  gs-skills:
+    - "Application Security"
+    - DevOps
+    - Cybersecurity
+    - "Security Automation"
+    - "Security Operations Management"
+  gs-solution.area: null
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/github-advanced-security/index.yml
   title: GitHub Advanced Security Part 1 of 2
   description: Learn how to secure your code with advanced security features at every stage of your development lifecycle. GitHub Advanced Security is an add-on to GitHub Enterprise that allows you to use security features, such as secret scanning, code scanning, and dependency management on your private repositories.
   brand: github

@@ -3,6 +3,26 @@ uid: learn.dpu.office-home-business-2024
 title: Choose the best Office productivity option for stable and evolving workflows
 
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 18
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - m365
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - business-owner
+    - business-user
+  gs-skills:
+    - "AI Productivity"
+    - "Collaboration Tools"
+    - "Organizational Effectiveness"
+  gs-solution.area: "AI Business Solutions"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/office-home-business-2024/index.yml
   title: Choose The Best Office Productivity Option For Stable And Evolving Workflows
   description: >
     In this module, you’ll learn how to choose the Office productivity option that best fits your needs by evaluating key decision criteria—such as product model, change tolerance, service dependency, AI benefits, and deployment style—and applying them to real-world scenarios involving stable and evolving workflows.

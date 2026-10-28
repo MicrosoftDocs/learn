@@ -1,6 +1,27 @@
 ### YamlMime:Module
 uid: learn.wwl.continuous-deployment-for-machine-learning
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 22
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure-machine-learning
+    - azure-devops
+    - github
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - ai-engineer
+    - devops-engineer
+  gs-skills:
+    - "Machine Learning"
+    - DevOps
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/continuous-deployment-for-machine-learning/index.yml
   title: Continuous deployment for machine learning
   description: Learn about continuous development for machine learning, machine learning operations, and MLOps.
   author: wwlpublish

@@ -1,6 +1,29 @@
 ### YamlMime:Module
 uid: learn.monitor-java-azure
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 60
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+    - devops-engineer
+    - database-administrator
+  gs-skills:
+    - "Application Development"
+    - "Cloud Administration"
+    - "Data Analytics"
+    - "Data Visualization"
+    - "Data Administration"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/monitor-java-azure/index.yml
   moduleType: standard
   title: Monitoring Java applications on Azure
   description: Learn how to use monitoring for your Java applications on Azure

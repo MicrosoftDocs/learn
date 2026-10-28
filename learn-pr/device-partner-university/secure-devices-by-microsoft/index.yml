@@ -2,6 +2,30 @@
 uid: learn.dpu.secured-devices-by-microsoft
 title: Secure at every layer with Microsoft Surface
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 27
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - surface
+    - windows
+    - intune
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - systems-administrator
+    - security-engineer
+    - technology-manager
+  gs-skills:
+    - Cybersecurity
+    - "Device Management"
+    - "Security Architecture Design"
+    - "Infrastructure Management"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/secure-devices-by-microsoft/index.yml
   title: Secure At Every Layer With Microsoft Surface
   description: 'Learn how Microsoft Surface devices are designed with security at every layer, from hardware to firmware to software, providing robust protection for your data and privacy.'
   ms.date: 02/03/2026

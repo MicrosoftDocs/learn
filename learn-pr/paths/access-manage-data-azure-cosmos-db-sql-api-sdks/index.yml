@@ -1,6 +1,27 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.access-manage-data-azure-cosmos-db-sql-api-sdks
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+  gs-skills:
+    - "Database Development"
+    - "Application Development"
+    - Databases
+    - "Data Engineering"
+    - "Database Design"
+    - "Cloud Computing"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/access-manage-data-azure-cosmos-db-sql-api-sdks/index.yml
   title: Access and manage data with the Azure Cosmos DB for NoSQL SDKs
   description: Access and manage data with the Azure Cosmos DB for NoSQL SDKs
   ms.date: 04/02/2025

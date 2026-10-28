@@ -6,7 +6,7 @@ metadata:
   description: "Understand advanced concepts of generics, including covariance, contravariance, and generic constraints, to write more flexible, and reusable code."
   ms.date: 04/03/2025
   author: wwlpublish
-  ms.author: eric
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 8
 content: |

@@ -1,11 +1,35 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-devops-continuous-security-operations
 metadata:
+  gs-content.levels: 100
+  gs-content.locale: en-us
+  gs-duration: 22
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - devops-engineer
+    - security-engineer
+    - site-reliability-engineer
+  gs-skills:
+    - DevOps
+    - Cybersecurity
+    - "Security Automation"
+    - "Application Security"
+    - "Infrastructure Management"
+    - Automation
+    - "Organizational Culture"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl/explore-devops-continuous-security-operations/index.yml
   title: Explore DevOps Continuous Security and Continuous Operations
   description: "Explore two capabilities in the DevOps taxonomy, Continuous Security and Continuous Operations."
   ms.date: 09/20/2020
   author: wwlpublish
-  ms.author: sallybre
+  ms.author: lumac
   ms.topic: module
   ms.service: azure-devops
 title: Explore DevOps Continuous Security and Continuous Operations

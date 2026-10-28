@@ -6,7 +6,7 @@ metadata:
   description: "Implement Azure Spot Virtual Machines and Azure Reservations"
   ms.date: 01/01/2025
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: lumac
   ms.topic: unit
 azureSandbox: false
 durationInMinutes: 5

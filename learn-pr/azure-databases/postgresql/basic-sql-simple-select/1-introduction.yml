@@ -6,7 +6,7 @@ metadata:
   description: "This unit introduces the SQL SELECT statement in PostgreSQL and teaches how to retrieve, filter, and format data from relational tables. Learners gain foundational querying skills, including selecting specific columns, using DISTINCT, and creating calculated fields."
   ms.date: 05/23/2025
   author: milenak
-  ms.author: mpopovic
+  ms.author: lumac
   ms.topic: unit
 ###########################################################################
 ###

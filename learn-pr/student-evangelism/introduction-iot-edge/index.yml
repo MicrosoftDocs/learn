@@ -1,6 +1,24 @@
 ### YamlMime:Module
 uid: learn.oxford.intro-to-iot-edge
 metadata:
+  gs-content.levels: 100
+  gs-content.locale: en-us
+  gs-duration: 22
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+  gs-skills:
+    - "Cloud Infrastructure"
+    - "Application Architecture"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/student-evangelism/introduction-iot-edge/index.yml
   title: "Introduction to Azure IoT Edge"
   description: "Learn how to explain the essential characteristics of IoT Edge and the functionality of its components."
   ms.date: 05/10/2026

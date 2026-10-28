@@ -1,6 +1,24 @@
 ### YamlMime:Module
 uid: learn.wwl.sort-and-filter-queries
 metadata:
+  gs-content.levels: 100
+  gs-content.locale: en-us
+  gs-duration: 57
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+  gs-skills:
+    - SQL
+    - "Database Development"
+    - Databases
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/sort-filter-queries/index.yml
   title: Sort and filter results in T-SQL
   description: "Sort and filter results in T-SQL"
   ms.date: 08/10/2026

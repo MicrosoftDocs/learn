@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.devrel.secure-harden-internet-information-services
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 71
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - systems-administrator
+    - security-engineer
+  gs-skills:
+    - "Identity and Access Management (IAM)"
+    - "Infrastructure Management"
+    - "Data Security"
+    - Automation
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/advocates/secure-harden-internet-information-services/index.yml
   ms.author: orthomas
   author: Orin-Thomas
   ms.date: 03/31/2026

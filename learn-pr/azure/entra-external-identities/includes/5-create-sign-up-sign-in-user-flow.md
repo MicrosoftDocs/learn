@@ -11,11 +11,11 @@ A [user flow](/entra/external-id/customers/how-to-user-flow-sign-up-sign-in-cust
 
 1. To create a sign-up and sign-in user flow, sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) and browse to **Identity** > **External Identities**.
 
-    [ ![Screenshot of Microsoft Entra admin center homepage with a left navigation item titled External Identities highlighted.](../media/create-a-sign-up-and-sign-in-user-flow/1_inline.png) ](../media/create-a-sign-up-and-sign-in-user-flow/1.png#lightbox)
+    [ ![Screenshot of the Microsoft Entra admin center home page with External Identities highlighted in the navigation menu.](../media/create-a-sign-up-and-sign-in-user-flow/1_inline.png) ](../media/create-a-sign-up-and-sign-in-user-flow/1.png#lightbox)
 
 1. From the menu, select **User flows**. Then, select **New user flow**.
 
-    [ ![Screenshot of Microsoft Entra admin center homepage with a left navigation item titled External Identities highlighted.](../media/create-a-sign-up-and-sign-in-user-flow/2_inline.png) ](../media/create-a-sign-up-and-sign-in-user-flow/2.png#lightbox)
+    [ ![Screenshot of the External Identities User flows page with User flows and the New user flow button highlighted.](../media/create-a-sign-up-and-sign-in-user-flow/2_inline.png) ](../media/create-a-sign-up-and-sign-in-user-flow/2.png#lightbox)
 
 1. On the **Create** page, enter a **Name** for the user flow (for example, "SignUpSignIn"). Then, under **Identity providers**, select the **Email Accounts** check box, and then select one of these options. If you configured other identity providers, you can select them.
 
@@ -62,7 +62,7 @@ A [user flow](/entra/external-id/customers/how-to-user-flow-sign-up-sign-in-cust
 
 #### 1. Create a user flow
 
-To create a user flow, you create an [authentication events flow](/graph/api/identitycontainer-post-authenticationeventsflows?view=graph-rest-beta&tabs=http) object that is of the type specified in the request body.
+To create a user flow, you create an [authentication events flow](/graph/api/identitycontainer-post-authenticationeventsflows?view=graph-rest-beta&tabs=http&preserve-view=true) object that is of the type specified in the request body.
 
 ```json
 POST https://graph.microsoft.com/beta/identity/authenticationEventsFlows
@@ -204,7 +204,7 @@ From the response, copy the value of the user flow **id**. For example:
 ```
 
 #### 2. Add your application to the user flow
-To [add or link an application to a user flow](/graph/api/authenticationconditionsapplications-post-includeapplications?view=graph-rest-beta&tabs=http), use the following Microsoft Graph request. Replace the **{user-flow-ID}** with your [user flow ID](/graph/api/identitycontainer-list-authenticationeventsflows?view=graph-rest-beta&tabs=http). Replace the **{app-ID}** with your [application ID](/graph/api/application-list?view=graph-rest-beta&tabs=http).
+To [add or link an application to a user flow](/graph/api/authenticationconditionsapplications-post-includeapplications?view=graph-rest-beta&tabs=http&preserve-view=true), use the following Microsoft Graph request. Replace the **{user-flow-ID}** with your [user flow ID](/graph/api/identitycontainer-list-authenticationeventsflows?view=graph-rest-beta&tabs=http&preserve-view=true). Replace the **{app-ID}** with your [application ID](/graph/api/application-list?view=graph-rest-beta&tabs=http&preserve-view=true).
 
 ```json
 POST https://graph.microsoft.com/beta/identity/authenticationEventsFlows/{user-flow-ID}/conditions/applications/includeApplications

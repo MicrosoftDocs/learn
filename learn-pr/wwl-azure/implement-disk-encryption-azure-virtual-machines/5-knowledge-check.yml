@@ -5,7 +5,7 @@ metadata:
   description: Check your knowledge of Azure VM disk encryption options, encryption at host configuration, and confidential disk encryption.
   ms.date: 05/11/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-generated
 title: Knowledge check

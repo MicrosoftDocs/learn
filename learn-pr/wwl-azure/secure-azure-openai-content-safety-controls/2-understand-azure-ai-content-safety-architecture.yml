@@ -6,7 +6,7 @@ metadata:
   description: "Learn how Azure AI Content Safety protects applications by analyzing prompts and responses in real-time to block harmful content effectively."
   ms.date: 02/04/2026
   author: wwlpublish
-  ms.author: bradj
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 12
 content: |

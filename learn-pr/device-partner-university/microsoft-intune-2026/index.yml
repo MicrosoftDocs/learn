@@ -2,6 +2,28 @@
 uid: learn.dpu.microsoft-intune-2026
 title: Device management with Microsoft Intune
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 25
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - intune
+    - security-copilot
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - administrator
+    - security-engineer
+  gs-skills:
+    - "Device Management"
+    - "Cloud Administration"
+    - "Zero Trust Security"
+    - Cybersecurity
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/microsoft-intune-2026/index.yml
   title: Device Management With Microsoft Intune
   description: In this module, you’ll learn how Microsoft Intune helps you easily manage devices and apps from the cloud.
   ms.date: 09/03/2025

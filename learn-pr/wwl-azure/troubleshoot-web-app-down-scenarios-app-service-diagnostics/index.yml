@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.wwl.troubleshoot-web-app-down-scenarios-app-service-diagnostics
 metadata:
+  gs-content.levels: 100
+  gs-content.locale: en-us
+  gs-duration: 21
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - support-engineer
+    - developer
+  gs-skills:
+    - "Infrastructure Management"
+    - "Application Development"
+    - "Cloud Administration"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/troubleshoot-web-app-down-scenarios-app-service-diagnostics/index.yml
   title: Troubleshoot Web App Down Scenarios with App Service Diagnostics
   description: "Utilize Web App Down, Crash Monitoring, and Ask Genie for troubleshooting. Use these tools to monitor application and platform availability, identify unhandled exceptions, capture memory dumps and callstack, and find areas of investigation and diagnostics."
   ms.date: 07/13/2022

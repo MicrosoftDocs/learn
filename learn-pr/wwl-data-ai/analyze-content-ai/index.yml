@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.wwl.analyze-content-ai
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 60
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - microsoft-foundry
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - ai-engineer
+    - developer
+  gs-skills:
+    - "Information Extraction"
+    - "Multimodal AI"
+    - "Application Development"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/analyze-content-ai/index.yml
   title: Create a multimodal analysis solution with Azure Content Understanding 
   description: Use Azure Content Understanding for multimodal content analysis and information extraction.
   author: ivorb

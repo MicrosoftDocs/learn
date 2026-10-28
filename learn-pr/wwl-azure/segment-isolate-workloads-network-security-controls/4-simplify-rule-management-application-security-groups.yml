@@ -6,7 +6,7 @@ metadata:
   description: "Use application security groups to group workloads by function and reduce Network Security Group (NSG) rule complexity in dynamic Azure environments."
   ms.date: 04/22/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 8
 content: |

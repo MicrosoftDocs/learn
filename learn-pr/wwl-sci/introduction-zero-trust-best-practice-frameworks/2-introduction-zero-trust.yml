@@ -6,7 +6,7 @@ metadata:
   description: "Describe the concept of Zero Trust."
   ms.date: 04/27/2026
   author: ceperezb
-  ms.author: ceperezb
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 11
 content: |

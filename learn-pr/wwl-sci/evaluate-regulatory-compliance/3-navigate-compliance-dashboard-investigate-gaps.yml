@@ -5,7 +5,7 @@ metadata:
   description: Learn to use the regulatory compliance dashboard in the Defender portal to identify and investigate failing controls, review automated and manual assessments, and remediate findings.
   ms.date: 03/26/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-generated
 title: Navigate the regulatory compliance dashboard and investigate control gaps

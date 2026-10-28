@@ -1,6 +1,27 @@
 ### YamlMime:Module
 uid: learn.wwl.get-started-copilot-fabric-data-warehouse
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 46
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - fabric
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - data-analyst
+    - data-engineer
+  gs-skills:
+    - SQL
+    - "Data Warehousing"
+    - "AI-Augmented Software Development"
+    - "AI Prompting"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl/get-started-copilot-fabric-data-warehouse/index.yml
   title: Get Started With Copilot in Microsoft Fabric for Data Warehouse
   description: Get started with Copilot in Microsoft Fabric for Data Warehouse
   ms.date: 10/12/2026

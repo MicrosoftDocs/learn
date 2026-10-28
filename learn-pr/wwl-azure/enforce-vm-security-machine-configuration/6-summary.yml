@@ -5,7 +5,7 @@ metadata:
   description: Summary of enforcing VM security configuration with Azure Machine Configuration, covering extension capabilities, prerequisite deployment, built-in baseline policies, and custom configuration authoring.
   ms.date: 05/11/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 title: Summary

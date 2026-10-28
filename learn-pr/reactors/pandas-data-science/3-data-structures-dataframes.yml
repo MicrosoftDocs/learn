@@ -6,7 +6,7 @@ metadata:
   description: Learn about one of the primary pandas data structures, the DataFrames object.
   ms.date: 04/07/2022
   author: softchris
-  ms.author: chnoring
+  ms.author: lumac
   ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 15

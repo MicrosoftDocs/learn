@@ -6,7 +6,7 @@ metadata:
   description: "Use one-to-many remoting by using Windows PowerShell"
   ms.date: 03/21/2024
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: lumac
   ms.topic: unit
   ms.custom:
   - N/A

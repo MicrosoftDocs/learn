@@ -2,6 +2,34 @@
 uid: learn.github.governance-guardrails-operations
 title: Governance, guardrails, and operations
 metadata:
+  gs-content.levels: 400
+  gs-content.locale: en-us
+  gs-duration: 45
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - github
+    - github-copilot
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - devops-engineer
+    - security-engineer
+    - administrator
+    - platform-engineer
+    - solution-architect
+  gs-skills:
+    - "Responsible AI"
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - Cybersecurity
+    - "Security Architecture Design"
+    - DevOps
+    - "Identity and Access Management (IAM)"
+    - "Agent Operations"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/github/governance-guardrails-operations/index.yml
   title: Governance, Guardrails, and Operations
   description: Agent systems must operate within clear governance frameworks to ensure security, compliance, and accountability. In the GitHub ecosystem, governance is enforced through repository controls, workflows, and policies that help prevent unauthorized changes, unsafe deployments, and sensitive data exposure.
   author: camihmerhar

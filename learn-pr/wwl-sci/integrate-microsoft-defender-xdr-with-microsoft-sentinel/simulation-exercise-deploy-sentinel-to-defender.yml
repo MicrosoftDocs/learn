@@ -6,7 +6,7 @@ metadata:
   description: "Run a simulation exercise to connect a Microsoft Sentinel workspace to the Microsoft Defender portal."
   ms.date: 06/26/2026
   author: KenMAG
-  ms.author: kelawson
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 25
 content: |

@@ -5,7 +5,7 @@ metadata:
   description: Learn how to discover and acquire partner-built agents through the Security Store integrated in Security Copilot. Explore the billing model, and complete the Global Administrator approval workflow for agents that access Microsoft product data.
   ms.date: 04/23/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
 title: Acquire and configure partner agents from Security Store
 durationInMinutes: 4

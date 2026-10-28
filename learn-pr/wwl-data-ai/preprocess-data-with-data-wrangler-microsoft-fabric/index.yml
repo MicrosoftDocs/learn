@@ -1,6 +1,31 @@
 ### YamlMime:Module
 uid: learn-wwl.preprocess-data-with-data-wrangler-microsoft-fabric
 metadata:
+  gs-content.levels: 100
+  gs-content.locale: en-us
+  gs-duration: 70
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - fabric
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - data-scientist
+    - data-engineer
+    - data-analyst
+  gs-skills:
+    - "Data Science"
+    - "Data Management"
+    - "Data Analytics"
+    - "Data Engineering"
+    - "Machine Learning"
+    - "Python (Programming Language)"
+    - Automation
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/preprocess-data-with-data-wrangler-microsoft-fabric/index.yml
   title: Preprocess data with Data Wrangler in Microsoft Fabric
   description: Explore the process of preparing data for machine learning models using the Data Wrangler tool in Microsoft Fabric notebooks.
   author: JulianePadrao

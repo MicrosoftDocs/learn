@@ -6,7 +6,7 @@ metadata:
   description: "Implement IaaS VM IP addressing"
   ms.date: 12/20/2024
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: lumac
   ms.topic: unit
 azureSandbox: false
 durationInMinutes: 10

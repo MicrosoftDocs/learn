@@ -8,5 +8,5 @@ You also performed hands-on exercises to register for Azure NetApp Files service
 
 ### Learn more
 
-- [Register for NetApp Resource Provider](https://learn.microsoft.com/azure/azure-netapp-files/azure-netapp-files-register)
-- [Delegate a subnet to Azure NetApp Files](https://learn.microsoft.com/azure/azure-netapp-files/azure-netapp-files-delegate-subnet)
+- [Register for NetApp Resource Provider](/azure/azure-netapp-files/azure-netapp-files-register)
+- [Delegate a subnet to Azure NetApp Files](/azure/azure-netapp-files/azure-netapp-files-delegate-subnet)

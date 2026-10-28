@@ -1,6 +1,24 @@
 ### YamlMime:Module
 uid: learn.wwl.guided-project-visit-petting-zoo
 metadata:
+  gs-content.levels: 100
+  gs-content.locale: en-us
+  gs-duration: 28
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+    - student
+  gs-skills:
+    - "Application Development"
+    - "Application Architecture"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-language/guided-project-visit-petting-zoo/index.yml
   title: Guided Project - Plan a Petting Zoo Visit
   description: "Create an application that coordinates school visits to a petting zoo. This project requires the use of different methods with return types and parameters to complete the code."
   ms.date: 05/19/2025

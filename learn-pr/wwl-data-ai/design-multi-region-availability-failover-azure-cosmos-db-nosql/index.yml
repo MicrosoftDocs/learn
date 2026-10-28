@@ -1,6 +1,31 @@
 ### YamlMime:Module
 uid: learn.wwl.design-multi-region-availability-failover-azure-cosmos-db-nosql
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 110
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+    - solution-architect
+    - devops-engineer
+  gs-skills:
+    - "Database Development"
+    - "Application Development"
+    - "Data Management"
+    - "Solution Architecture"
+    - "Cloud Infrastructure"
+    - "Infrastructure Management"
+    - "Python (Programming Language)"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/design-multi-region-availability-failover-azure-cosmos-db-nosql/index.yml
   title: Design Multi-Region Availability and Failover in Azure Cosmos DB
   description: "Distribute Azure Cosmos DB data across regions, route reads and writes from the SDK, resolve write conflicts, and configure account-level and partition-level failover."
   ms.date: 10/03/2026

@@ -5,7 +5,7 @@ metadata:
   description: Use Microsoft Sentinel to hunt for security threats across on-premises and cloud environments.
   ms.date: 08/20/2026
   author: wwlpublish
-  ms.author: kelawson
+  ms.author: lumac
   ms.topic: unit
 title: Introduction
 durationInMinutes: 3

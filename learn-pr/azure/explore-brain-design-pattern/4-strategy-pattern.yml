@@ -5,7 +5,7 @@ metadata:
   title: Strategy Pattern
   description: An introduction to the strategy pattern.
   author: softchris
-  ms.author: chnoring
+  ms.author: lumac
   ms.date: 08/29/2024
   ms.update-cycle: 180-days
   ms.topic: unit

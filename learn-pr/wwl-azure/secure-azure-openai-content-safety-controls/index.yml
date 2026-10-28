@@ -1,6 +1,28 @@
 ### YamlMime:Module
 uid: learn.wwl.secure-azure-openai-content-safety-controls
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 57
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure-openai
+    - microsoft-foundry
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - security-engineer
+    - ai-engineer
+  gs-skills:
+    - "AI Safety"
+    - "AI Security (Model-Level)"
+    - "AI Governance"
+    - "Cloud Infrastructure"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/secure-azure-openai-content-safety-controls/index.yml
   title: "Secure Azure OpenAI with content safety controls"
   description: "This module shows you how to secure Azure OpenAI workloads in Microsoft Foundry by using centralized governance, managed identities, private networking, content safety controls, and container image protection for compliant enterprise deployments."
   ms.date: 02/04/2026

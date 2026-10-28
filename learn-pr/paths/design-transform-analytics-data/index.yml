@@ -1,6 +1,30 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.design-transform-analytics-data
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - fabric
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - data-analyst
+    - data-engineer
+  gs-skills:
+    - "Data Management"
+    - "Solution Architecture"
+    - "Data Engineering"
+    - "Data Analytics"
+    - "Data Warehousing"
+    - "Database Design"
+    - SQL
+    - "Database Development"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/design-transform-analytics-data/index.yml
   title: Design and Transform Analytics Data in Microsoft Fabric
   description: Design dimensional models and apply transformations using dataflows, Spark notebooks, and T-SQL to produce consistent, analysis-ready data in Microsoft Fabric.
   ms.date: 04/30/2026

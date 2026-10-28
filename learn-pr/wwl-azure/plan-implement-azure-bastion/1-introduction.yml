@@ -5,7 +5,7 @@ metadata:
   description: Introduction to planning and implementing Azure Bastion, covering the security gaps addressed by eliminating public RDP and SSH exposure.
   ms.date: 04/16/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 title: Introduction

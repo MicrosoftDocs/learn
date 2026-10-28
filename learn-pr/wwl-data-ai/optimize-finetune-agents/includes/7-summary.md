@@ -9,9 +9,9 @@ In this module, you learned:
 
 - [Customize a model with fine-tuning](/azure/ai-services/openai/how-to/fine-tuning)
 - [Fine-tune models using standard deployments in Microsoft Foundry](/azure/ai-foundry/how-to/fine-tune-serverless)
-- [Reinforcement fine-tuning in Microsoft Foundry](/azure/ai-foundry/openai/how-to/reinforcement-fine-tuning?view=foundry)
-- [Direct preference optimization in Microsoft Foundry](/azure/ai-foundry/openai/how-to/fine-tuning-direct-preference-optimization?view=foundry)
-- [Generate synthetic data for fine-tuning](/azure/ai-foundry/fine-tuning/data-generation?view=foundry)
+- [Reinforcement fine-tuning in Microsoft Foundry](/azure/ai-foundry/openai/how-to/reinforcement-fine-tuning?view=foundry&preserve-view=true)
+- [Direct preference optimization in Microsoft Foundry](/azure/ai-foundry/openai/how-to/fine-tuning-direct-preference-optimization?view=foundry&preserve-view=true)
+- [Generate synthetic data for fine-tuning](/azure/ai-foundry/fine-tuning/data-generation?view=foundry&preserve-view=true)
 - [Microsoft Foundry Discord](https://aka.ms/azureaifoundry/discord)
 - [Microsoft Foundry Developer Forum](https://aka.ms/azureaifoundry/forum)
 

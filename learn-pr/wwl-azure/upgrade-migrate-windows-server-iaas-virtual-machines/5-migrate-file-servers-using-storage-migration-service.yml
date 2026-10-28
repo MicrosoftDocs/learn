@@ -6,7 +6,7 @@ metadata:
   description: "Migrate file servers by using Storage Migration Service"
   ms.date: 01/25/2025
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: lumac
   ms.topic: unit
   ms.contributors: orthomas
 azureSandbox: false

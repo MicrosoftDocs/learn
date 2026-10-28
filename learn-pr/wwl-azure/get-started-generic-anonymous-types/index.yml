@@ -1,11 +1,27 @@
 ### YamlMime:Module
 uid: learn.wwl.get-started-generic-anonymous-types
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 53
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+  gs-skills:
+    - "Application Development"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/get-started-generic-anonymous-types/index.yml
   title: Get Started with Generic and Anonymous Types
   description: "Get started with generic and anonymous types in C#."
   ms.date: 04/03/2025
   author: wwlpublish
-  ms.author: eric
+  ms.author: lumac
   ms.topic: module
   ms.service: dotnet-csharp
   ms.devlang: csharp

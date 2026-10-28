@@ -6,7 +6,7 @@ metadata:
   description: "Secure Windows Server DNS"
   ms.date: 01/12/2025
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 10
 content: |

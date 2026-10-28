@@ -6,7 +6,7 @@ metadata:
   description: "Use DSC to configure Windows Server"
   ms.date: 04/11/2023
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: lumac
   ms.topic: unit
 azureSandbox: false
 labModal: false

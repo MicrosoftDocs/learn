@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.wwl.design-network-solutions
 metadata:
+  gs-content.levels: 400
+  gs-content.locale: en-us
+  gs-duration: 53
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - network-engineer
+    - solution-architect
+  gs-skills:
+    - "IT Networking"
+    - "Network Connectivity"
+    - "Solution Architecture"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/design-network-solutions/index.yml
   adobe-target: true
   prefetch-feature-rollout: true
   title: Design Network Solutions

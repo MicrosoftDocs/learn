@@ -1,6 +1,31 @@
 ### YamlMime:Module
 uid: learn.introduction-generative-ai-center-excellence
 metadata:
+  gs-content.levels: 400
+  gs-content.locale: en-us
+  gs-duration: 29
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - microsoft-foundry
+    - defender-for-cloud
+    - microsoft-purview
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - technology-manager
+    - business-analyst
+    - solution-architect
+  gs-skills:
+    - "AI Strategy"
+    - "AI Governance"
+    - "AI Transformation"
+    - "Organizational Effectiveness"
+    - "AI Risk Management"
+  gs-solution.area: "AI Business Solutions"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/advocates/intro-ai-center-excellence/index.yml
   ms.author: orthomas
   author: Orin-Thomas
   ms.date: 05/22/2026

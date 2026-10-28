@@ -1,11 +1,29 @@
 ### YamlMime:Module
 uid: learn.wwl.describe-basic-cybersecurity-threats-attacks-mitigations
 metadata:
+  gs-content.levels: 100
+  gs-content.locale: en-us
+  gs-duration: 21
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - business-user
+    - security-professional
+  gs-skills:
+    - Cybersecurity
+    - "Threat Management"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/describe-basic-cybersecurity-threats-attacks-mitigations/index.yml
   title: Describe Basic Cybersecurity Threats, Attacks, and Mitigations
   description: "Describe basic cybersecurity threats, attacks, and mitigations."
   ms.date: 04/24/2026
   author: wwlpublish
-  ms.author: ceperezb
+  ms.author: lumac
   ms.topic: module
   ms.service: security 
 title: Describe basic cybersecurity threats, attacks, and mitigations

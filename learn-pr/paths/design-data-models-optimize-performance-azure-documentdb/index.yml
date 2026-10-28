@@ -1,6 +1,40 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.design-data-models-optimize-performance-azure-documentdb
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - database-administrator
+    - developer
+  gs-skills:
+    - Databases
+    - "Cloud Infrastructure"
+    - "Solution Architecture"
+    - "Data Migration"
+    - "Cloud Administration"
+    - "Data Security"
+    - Storage
+    - "Identity and Access Management (IAM)"
+    - "Network Connectivity"
+    - "Database Development"
+    - "Data Analytics"
+    - "Data Management"
+    - "Application Development"
+    - "Python (Programming Language)"
+    - "Database Design"
+    - "Data Administration"
+    - "Vector Databases"
+    - "Semantic Search"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/design-data-models-optimize-performance-azure-documentdb/index.yml
   title: Design Data Models and Optimize Performance in Azure DocumentDB
   description: Build applications with Azure DocumentDB. Create and configure clusters, perform CRUD operations, connect with SDK, design efficient data models, and optimize query performance.
   ms.date: 06/20/2026

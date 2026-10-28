@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-persistent-connections-to-remote-computers
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 34
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - windows
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - systems-administrator
+  gs-skills:
+    - "Infrastructure Management"
+    - Automation
+    - "Network Connectivity"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/manage-persistent-connections-to-remote-computers/index.yml
   title: Manage persistent connections to remote computers by using Windows PowerShell sessions
   description: "This module explains how to establish and manage persistent connections to remote computers, known as Windows PowerShell sessions or PSSessions."
   ms.date: 05/12/2026

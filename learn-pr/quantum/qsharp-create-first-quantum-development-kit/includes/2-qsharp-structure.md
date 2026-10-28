@@ -59,9 +59,9 @@ operation Main() : Unit {
 ```
 
 > [!NOTE]
-> In Q#, the `Unit` type means that the function or operation doesn't return a value. For more information about types in Q#, see [Type System](https://learn.microsoft.com/azure/quantum/user-guide/language/typesystem/).
+> In Q#, the `Unit` type means that the function or operation doesn't return a value. For more information about types in Q#, see [Type System](/azure/quantum/user-guide/language/typesystem/).
 
-To explore the Q# standard library, see the [API reference](https://learn.microsoft.com/qsharp/api/qsharp-lang/).
+To explore the Q# standard library, see the [API reference](/qsharp/api/qsharp-lang/).
 
 ## Qubit allocation
 

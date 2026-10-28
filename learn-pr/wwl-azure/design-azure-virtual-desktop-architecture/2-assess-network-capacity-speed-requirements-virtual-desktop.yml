@@ -8,7 +8,7 @@ metadata:
   description: "Assess network capacity and speed requirements for Azure Virtual Desktop"
   ms.date: 06/19/2025
   author: wwlpublish
-  ms.author: bradj
+  ms.author: lumac
   ms.topic: unit
   ms.custom:
   - N/A

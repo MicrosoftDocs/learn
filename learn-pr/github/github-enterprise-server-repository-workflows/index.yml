@@ -2,6 +2,29 @@
 uid: learn.github.github-enterprise-server-repository-workflows
 title: GitHub Enterprise Server fundamentals for developers
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 31
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - github
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+    - devops-engineer
+    - administrator
+  gs-skills:
+    - DevOps
+    - "Collaboration Tools"
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - Cybersecurity
+    - "Infrastructure Management"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/github/github-enterprise-server-repository-workflows/index.yml
   title: GitHub Enterprise Server Fundamentals for Developers
   description: Overview of collaboration on GitHub Enterprise Server (GHES), focusing on governance, branch policies, and pull request workflows.
   author: camihmerhar

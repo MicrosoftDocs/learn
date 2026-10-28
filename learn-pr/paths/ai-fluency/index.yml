@@ -3,6 +3,34 @@ uid: learn.philanthropies.ai-fluency
 trophy: 
   uid: learn.philanthropies.ai-fluency.trophy
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - business-user
+  gs-skills:
+    - "AI Fluency"
+    - "Generative AI"
+    - "Machine Learning"
+    - "Natural Language Processing (NLP)"
+    - "AI Productivity"
+    - "AI Prompting"
+    - "Career Development"
+    - "Prompt Engineering"
+    - "Responsible AI"
+    - "AI Safety"
+    - "AI Risk Management"
+    - "Digital Accessibility"
+    - "Accessible AI"
+    - "AI Workforce Applications"
+  gs-solution.area: "AI Business Solutions"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/ai-fluency/index.yml
   title: AI Fluency - Explore AI in your language.
   description: This learning path is designed to provide a comprehensive understanding of AI fluency. It includes modules that cover various aspects of AI, starting with foundational concepts and progressing to more advanced topics. Each module is tailored to help individuals and organizations use AI technologies to enhance their philanthropic efforts.
   ms.date: 12/25/2024

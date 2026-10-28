@@ -5,7 +5,7 @@ metadata:
   description: Check your knowledge of Azure Kubernetes Service (AKS) security controls including identity, network access, workload identity, and pod security.
   ms.date: 04/15/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 title: Knowledge check

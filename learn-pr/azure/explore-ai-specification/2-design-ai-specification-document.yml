@@ -5,7 +5,7 @@ metadata:
   title: Design the AI Specification document
   description: We give an introduction to the AI Specification document for a use case and explain the key components.
   author: softchris
-  ms.author: chnoring
+  ms.author: lumac
   ms.date: 07/10/2024
   ms.update-cycle: 180-days
   ms.topic: unit

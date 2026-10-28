@@ -6,7 +6,7 @@ metadata:
   description: "Migrate offline data with Azure Import/Export and Azure Data Box."
   ms.date: 03/10/2025
   author: wwlpublish
-  ms.author: cynthist
+  ms.author: lumac
   ms.topic: unit
   ms.custom:
   - N/A

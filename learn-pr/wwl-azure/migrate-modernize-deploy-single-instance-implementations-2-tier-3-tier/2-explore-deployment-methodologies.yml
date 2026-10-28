@@ -6,7 +6,7 @@ metadata:
   description: "Explore deployment methodologies"
   ms.date: 01/09/2024
   author: wwlpublish
-  ms.author: eric
+  ms.author: lumac
   ms.topic: unit
   ms.custom: devx-track-azurecli, devx-track-azurepowershell, devx-track-terraform
 durationInMinutes: 4

@@ -6,7 +6,7 @@ metadata:
   description: "Learn how to secure AI infrastructure with Azure. Configure identity, governance scopes, and policies to ensure compliance and prevent risks."
   ms.date: 02/09/2026
   author: wwlpublish
-  ms.author: bradj
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 5
 content: |

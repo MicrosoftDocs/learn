@@ -1,11 +1,30 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-defender-cloud-ai-services
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 20
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - defender-for-cloud
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - security-engineer
+    - ai-engineer
+  gs-skills:
+    - "AI Security (Model-Level)"
+    - "Cloud Infrastructure"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/implement-defender-cloud-ai-services/index.yml
   title: Enable Defender for AI Services Workload Protection in Microsoft Defender for Cloud
   description: "Enable and configure the Defender for AI Services Cloud Workload Protection plan in Microsoft Defender for Cloud. The plan helps to detect threats targeting Azure AI services workloads and monitor AI security posture."
   ms.date: 05/03/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: module
   ms.service: defender-for-cloud
   ai-usage: ai-assisted

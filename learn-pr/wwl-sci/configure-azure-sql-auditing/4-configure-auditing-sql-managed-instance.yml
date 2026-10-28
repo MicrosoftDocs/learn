@@ -6,7 +6,7 @@ metadata:
   description: "Configure server-level auditing for SQL Managed Instance using T-SQL CREATE SERVER AUDIT syntax and diagnostic settings, and enable auditing of Microsoft support operations."
   ms.date: 04/22/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-generated
 durationInMinutes: 3

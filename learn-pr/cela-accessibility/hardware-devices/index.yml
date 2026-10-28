@@ -2,11 +2,28 @@
 #LP name: Module 5: Accessibility Best Practices for Gaming Hardware
 uid: learn.hardware-devices
 metadata:
+  gs-content.levels: 400
+  gs-content.locale: en-us
+  gs-duration: 55
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - surface
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - engineering
+  gs-skills:
+    - "Digital Accessibility"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/cela-accessibility/hardware-devices/index.yml
   title: Accessibility Best Practices for Gaming Hardware
   description: Learn how to create more accessible standard gaming hardware products, such as game consoles, controllers, and headsets. Discover ways to design hardware packaging that features accessible components to improve the unboxing experience of more customers. 
   ms.date: 07/10/2025
   author: kaitlynjones
-  ms.author: kaitlynjones
+  ms.author: lumac
   ms.topic: module
   ms.service: microsoft-gaming
   showCreativeCommonsFooter: true

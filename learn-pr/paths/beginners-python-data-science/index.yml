@@ -1,12 +1,35 @@
 ### YamlMime:LearningPath
 uid: learn.reactors.beginners-python-data-science
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - azure-machine-learning
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - data-scientist
+    - developer
+    - student
+  gs-skills:
+    - "Machine Learning"
+    - "Data Science"
+    - "Data Visualization"
+    - "Application Development"
+    - "AI Model Evaluation & Testing"
+    - "Model Hosting & Inference"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/beginners-python-data-science/index.yml
   title: Beginners data science for Python developers
   description: Beginners data science for Python developers
   brand: azure
   ms.date: 05/19/2020
   author: softchris
-  ms.author: chnoring
+  ms.author: lumac
   ms.topic: learning-path
 title: Beginners data science for Python developers
 summary: |

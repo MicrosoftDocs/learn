@@ -1,6 +1,26 @@
 ### YamlMime:Module
 uid: learn.windows-server.design-manage-certificate-templates
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 149
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - systems-administrator
+    - security-engineer
+  gs-skills:
+    - "Identity and Access Management (IAM)"
+    - "Security Architecture Design"
+    - Cybersecurity
+    - "Infrastructure Management"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/advocates/design-manage-certificate-templates/index.yml
   title: Design and Manage Active Directory Certificate Services Certificate Templates
   description: Design secure certificate templates, control enrollment, manage template publication, validate certificate profiles, plan lifecycle changes, plus recover archived encryption keys.
   ms.date: 09/30/2026

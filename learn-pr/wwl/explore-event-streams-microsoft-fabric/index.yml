@@ -1,11 +1,31 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-event-streams-microsoft-fabric
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 50
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - fabric
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - data-engineer
+    - data-analyst
+  gs-skills:
+    - "Data Engineering"
+    - "Data Analytics"
+    - "Process Automation"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl/explore-event-streams-microsoft-fabric/index.yml
   title: Use Eventstream in Microsoft Fabric
   description: "Eventstream in Real-Time Intelligence (RTI) enables you to ingest, transform, and route real-time data."
   ms.date: 09/10/2025
   author: theresa-i
-  ms.author: theresai
+  ms.author: lumac
   ms.topic: module-standard-task-based
   ms.service: fabric
   ms.subservice: rti-core

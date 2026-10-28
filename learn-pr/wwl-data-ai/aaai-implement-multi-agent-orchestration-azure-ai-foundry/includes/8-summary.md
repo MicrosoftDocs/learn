@@ -12,7 +12,7 @@ In Contoso Capital's production platform, you implemented hierarchical orchestra
 
 ## Learn more
 
-- [Microsoft Agent Framework documentation](https://learn.microsoft.com/agent-framework/overview)
-- [Microsoft Foundry Agent Service overview](https://learn.microsoft.com/azure/foundry/agents/overview)
-- [Multi-agent orchestration patterns](https://learn.microsoft.com/agents/architecture/multi-agent-patterns)
+- [Microsoft Agent Framework documentation](/agent-framework/overview)
+- [Microsoft Foundry Agent Service overview](/azure/foundry/agents/overview)
+- [Multi-agent orchestration patterns](/agents/architecture/multi-agent-patterns)
 - [LangGraph documentation](https://langchain-ai.github.io/langgraph/)

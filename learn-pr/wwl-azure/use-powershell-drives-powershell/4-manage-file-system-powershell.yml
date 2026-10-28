@@ -6,7 +6,7 @@ metadata:
   description: "Manage the file system in PowerShell"
   ms.date: 09/23/2022
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: lumac
   ms.topic: unit
   ms.custom:
 azureSandbox: false

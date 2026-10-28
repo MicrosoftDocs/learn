@@ -1,6 +1,35 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-roles-responsibilities-world-of-data
 metadata:
+  gs-content.levels: 100
+  gs-content.locale: en-us
+  gs-duration: 15
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+    - fabric
+    - power-bi
+    - azure-databricks
+    - microsoft-foundry
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - database-administrator
+    - data-engineer
+    - data-analyst
+    - ai-engineer
+  gs-skills:
+    - "Career Development"
+    - "Data Administration"
+    - "Data Engineering"
+    - "Data Analytics"
+    - "AI Solutions"
+    - "Cloud Computing"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/explore-roles-responsibilities-world-of-data/index.yml
   title: Explore Data Roles and Services
   description: "This content is a part of Explore data roles and services."
   ms.date: 10/12/2026

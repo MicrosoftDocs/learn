@@ -6,7 +6,7 @@ metadata:
   description: "In this exercise, you'll load data into a warehouse using T-SQL in Microsoft Fabric."
   ms.date: 06/09/2026
   author: theresa-i
-  ms.author: theresai
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 30
 content: |

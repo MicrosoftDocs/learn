@@ -2,6 +2,26 @@
 uid: learn.wwl.guided-project-create-ai-travel-agent
 hidden: true
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 44
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure-openai
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+    - ai-engineer
+  gs-skills:
+    - "Agent Development"
+    - "Prompt Engineering"
+    - "Generative AI"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/guided-project-create-ai-travel-agent/index.yml
   title: Guided project - Create an AI travel agent
   description: "Develop a proof of concept AI Travel assistant chatbot using the Semantic Kernel SDK."
   ms.date: 01/23/2025

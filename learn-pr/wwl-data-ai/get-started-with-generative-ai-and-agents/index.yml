@@ -1,11 +1,31 @@
 ### YamlMime:Module
 uid: learn.wwl.get-started-with-generative-ai-and-agents
 metadata:
+  gs-content.levels: 100
+  gs-content.locale: en-us
+  gs-duration: 58
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - microsoft-foundry
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+    - ai-engineer
+  gs-skills:
+    - "Generative AI"
+    - "AI Solutions"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/get-started-with-generative-ai-and-agents/index.yml
   title: Get started with generative AI and agents in Azure
   description: "Learn how to use generative AI models and agents with Microsoft Foundry."
   ms.date: 03/24/2026
   author: GraemeMalcolm
   ms.author: gmalc
+  ms.service: microsoft-foundry
   ai-usage: ai-assisted
   ms.topic: module
   ms.collection:

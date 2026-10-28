@@ -6,7 +6,7 @@ metadata:
   description: "Test your understanding of Azure AI infrastructure security with this knowledge check. Learn about managed identities, governance scopes, and Azure Policy."
   ms.date: 02/09/2026
   author: wwlpublish
-  ms.author: bradj
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 6
 content: "Choose the best response for each of the following questions."

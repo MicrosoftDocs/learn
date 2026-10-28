@@ -1,13 +1,36 @@
 ### YamlMime:Module
 uid: learn.introduction-to-microsoft-defender-iot
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 22
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - microsoft-defender
+    - microsoft-sentinel
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - security-engineer
+    - security-operations-analyst
+    - technology-manager
+  gs-skills:
+    - "Security Analytics"
+    - "Threat Management"
+    - "Security Operations Management"
+    - "Security Automation"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/introduction-to-microsoft-defender-iot/index.yml
   moduleType: introduction
   title: Introduction to Microsoft Defender for IoT
   description: "Evaluate whether Microsoft Defender for IoT is right for unified asset discovery and security monitoring across your business-critical network environments."
   ms.date: 04/03/2023
   manager: raynew
   author: limwainstein
-  ms.author: lwainstein
+  ms.author: lumac
   ms.topic: module-intro-to-product
   ms.service: defender-for-iot
 title: Introduction to Microsoft Defender for IoT

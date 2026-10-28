@@ -6,7 +6,7 @@ metadata:
   description: "Explain Microsoft Defender for Cloud"
   ms.date: 07/30/2025
   author: wwlpublish
-  ms.author: kelawson
+  ms.author: lumac
   ms.topic: unit
 azureSandbox: false
 labModal: false

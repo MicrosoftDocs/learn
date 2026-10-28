@@ -1,6 +1,30 @@
 ### YamlMime:Module
 uid: learn.wwl.plan-agile-github-projects-azure-boards
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 94
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - github
+    - azure-devops
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - devops-engineer
+    - product-manager
+    - platform-engineer
+  gs-skills:
+    - DevOps
+    - "Collaboration Tools"
+    - "Platform Engineering"
+    - Automation
+    - "Application Development"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/plan-agile-github-projects-azure-boards/index.yml
   title: Plan Agile with GitHub Projects and Azure Boards
   description: "Plan Agile with GitHub Projects and Azure Boards"
   ms.date: 09/02/2025

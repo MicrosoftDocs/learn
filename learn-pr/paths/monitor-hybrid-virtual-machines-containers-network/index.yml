@@ -3,11 +3,32 @@ uid: learn.monitor-hybrid-virtual-machines-containers-network
 title: Monitor hybrid virtual machines, containers, and network resources
 summary: Learn how to monitor virtual machines, containers, and network resources with Azure Monitor.
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - systems-administrator
+    - network-engineer
+  gs-skills:
+    - "Cloud Administration"
+    - "Infrastructure Management"
+    - "Data Analytics"
+    - "IT Networking"
+    - "Security Analytics"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/monitor-hybrid-virtual-machines-containers-network/index.yml
   title: Monitor hybrid virtual machines, containers, and network resources
   description: Learn how to monitor virtual machines, containers, and network resources in a hybrid environment with Azure Monitor.
   ms.date: 07/03/2023
   author: guywi-ms
-  ms.author: guywild
+  ms.author: lumac
   ms.topic: learning-path
 prerequisites: |
   - An Azure account with an [active subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).

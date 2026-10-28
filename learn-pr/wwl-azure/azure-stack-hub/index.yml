@@ -1,6 +1,30 @@
 ### YamlMime:Module
 uid: learn.wwl.azure-stack-hub
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 48
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - administrator
+    - solution-architect
+    - devops-engineer
+  gs-skills:
+    - "Cloud Computing"
+    - "Cloud Infrastructure"
+    - "Solution Architecture"
+    - "Infrastructure Management"
+    - "IT Networking"
+    - DevOps
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/azure-stack-hub/index.yml
   title: Azure Stack Hub
   description: "Azure Stack Hub"
   ms.date: 08/05/2022

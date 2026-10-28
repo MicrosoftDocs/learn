@@ -1,6 +1,37 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.manage-storage-file-services
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - windows
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - solution-architect
+    - storage-admin
+    - systems-administrator
+  gs-skills:
+    - Storage
+    - "Data Migration"
+    - "Cloud Infrastructure"
+    - "Cloud Administration"
+    - "Infrastructure Management"
+    - "Identity and Access Management (IAM)"
+    - "Network Connectivity"
+    - "Data Security"
+    - Automation
+    - Virtualization
+    - "Solution Architecture"
+    - "Data Management"
+    - "IT Networking"
+    - Cybersecurity
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/manage-storage-file-services/index.yml
   title: Manage Storage and File Services
   description: Learn how to configure and manage Azure Files, Windows Server file shares, and Windows Server storage including Storage Spaces and Storage Spaces Direct.
   ms.date: 08/31/2026

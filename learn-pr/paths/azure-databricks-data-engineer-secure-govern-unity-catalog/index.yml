@@ -1,6 +1,33 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.azure-databricks-data-engineer-secure-govern-unity-catalog
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - azure
+    - azure-databricks
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - ip-admin
+    - data-engineer
+    - database-administrator
+    - security-engineer
+  gs-skills:
+    - "Data Security"
+    - "Identity and Access Management (IAM)"
+    - "Data Management"
+    - "Zero Trust Security"
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "Data Administration"
+    - "Security Analytics"
+    - SQL
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/index.yml
   title: Secure and Govern Unity Catalog Objects in Azure Databricks
   description: Learn to implement comprehensive security and governance for your data assets in Azure Databricks using Unity Catalog. Master access control strategies, fine-grained permissions, credential management, and governance practices to build a secure and compliant data platform.
   ms.date: 12/09/2025

@@ -1,6 +1,35 @@
 ### YamlMime:Module
 uid: learn.wwl.understand-azure-databricks-integrations
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 69
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure-databricks
+    - fabric
+    - power-bi
+    - power-platform
+    - microsoft-copilot-studio
+    - microsoft-purview
+    - microsoft-foundry
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - data-engineer
+    - solution-architect
+  gs-skills:
+    - "Data Engineering"
+    - "Solution Architecture"
+    - "Data Analytics"
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "Agent Development"
+    - DevOps
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-databricks/understand-azure-databricks-integrations/index.yml
   title: Understand Azure Databricks Integrations
   description: Learn how Azure Databricks integrates with Microsoft tools and services including Fabric, Power BI, VS Code, Power Platform, Copilot Studio, Purview, and Foundry to enable comprehensive data and AI solutions.
   ms.date: 10/02/2026

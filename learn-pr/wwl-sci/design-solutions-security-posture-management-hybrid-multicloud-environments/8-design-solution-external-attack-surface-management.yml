@@ -6,7 +6,7 @@ metadata:
   description: "SC-100: Design a solution for Microsoft Defender External Attack Surface Management."
   ms.date: 06/03/2026
   author: ceperezb
-  ms.author: ceperezb
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 9
 content: |

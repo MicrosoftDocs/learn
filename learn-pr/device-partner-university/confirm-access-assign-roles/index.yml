@@ -2,6 +2,27 @@
 uid: learn.dpu.confirm-access-assign-roles
 title: Confirming access and assigning roles in Surface portals
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 15
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - surface
+    - intune
+    - m365
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - systems-administrator
+    - identity-access-admin
+  gs-skills:
+    - "Identity and Access Management (IAM)"
+    - "Device Management"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/confirm-access-assign-roles/index.yml
   title: Confirming Access And Assigning Roles In Surface Portals
   description: 'In this module, you''ll learn how to confirm access and assign roles in Surface portals. You''ll understand the importance of confirming access and assigning appropriate roles to users in order to ensure a secure and efficient experience when using Surface portals.'
   ms.date: 04/24/2026

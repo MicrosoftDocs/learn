@@ -1,6 +1,30 @@
 ### YamlMime:Module
 uid: learn.azure.customize-clusters-azure-cyclecloud
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 122
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - systems-administrator
+    - devops-engineer
+    - solution-architect
+  gs-skills:
+    - "Cloud Infrastructure"
+    - "Cloud Administration"
+    - Automation
+    - Storage
+    - "Infrastructure Management"
+    - DevOps
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/customize-clusters-azure-cyclecloud/index.yml
   moduleType: standard
   title: Customize high-performance computing clusters deployed with Azure CycleCloud
   description: Azure CycleCloud templates offer a declarative provisioning model that helps you minimize administrative overhead associated with deploying and maintaining custom HPC environments in Azure.

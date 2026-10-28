@@ -56,7 +56,7 @@ In complex scenarios, especially in B2B solutions, it's also an option to deploy
 
 - Risks: Your codebase will probably need to be designed to support both multitenant and single-tenant deployments. If you plan to allow migration between infrastructures, you need to consider how to migrate customers from a multitenant deployment to their own single-tenant deployment. You also need to know which of your tenants are on each deployment, so that you can communicate information about system issues or upgrades to the relevant customers.
 
-More detailed guidance can be found at the official Microsoft documentation: [https://learn.microsoft.com/azure/architecture/guide/multitenant/considerations/tenancy-models](https://learn.microsoft.com/azure/architecture/guide/multitenant/considerations/tenancy-models) 
+More detailed guidance can be found at the official Microsoft documentation: [https://learn.microsoft.com/azure/architecture/guide/multitenant/considerations/tenancy-models](/azure/architecture/guide/multitenant/considerations/tenancy-models)
 
 
 Next, you're going to have a closer look into different aspects of multitenant architecture.

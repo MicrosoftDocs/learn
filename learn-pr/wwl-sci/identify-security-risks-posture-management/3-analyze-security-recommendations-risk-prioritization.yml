@@ -5,7 +5,7 @@ metadata:
   description: Use the risk-based prioritization model in Microsoft Defender for Cloud to triage security recommendations across cloud and AI workloads, identify AI-specific findings, and investigate individual recommendations.
   ms.date: 03/26/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-generated
 title: Analyze security recommendations with risk prioritization

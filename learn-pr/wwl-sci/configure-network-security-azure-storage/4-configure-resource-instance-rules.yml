@@ -5,7 +5,7 @@ metadata:
   description: Configure resource instance rules for Azure AI Foundry, Azure Machine Learning, and Azure Functions workloads that can't use virtual network rules, and manage trusted service exceptions for Azure platform services.
   ms.date: 04/22/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 title: Configure resource instance rules and trusted services

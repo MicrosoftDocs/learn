@@ -6,7 +6,7 @@ metadata:
   description: "SC-100 preparatory unit on the topic: design integrated posture management solutions that include Microsoft Defender for Cloud in hybrid and multicloud environments."
   ms.date: 06/03/2026
   author: ceperezb
-  ms.author: ceperezb
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 10
 content: |

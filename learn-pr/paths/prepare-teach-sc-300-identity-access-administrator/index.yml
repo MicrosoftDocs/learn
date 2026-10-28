@@ -1,6 +1,26 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.prepare-teach-sc-300-identity-access-administrator
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - higher-ed-educator
+  gs-skills:
+    - "Career Development"
+    - "Collaboration Tools"
+    - "Digital Accessibility"
+    - "Identity and Access Management (IAM)"
+    - "Zero Trust Security"
+    - "Communications Management"
+  gs-solution.area: null
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/prepare-teach-sc-300-identity-access-administrator/index.yml
   title: Prepare to teach SC-300 Microsoft Identity and Access Administrator
   description: Learn about the Microsoft Learn for Educators program and how to best deliver its content to your students. Prepare to deliver Microsoft’s security solutions, SC-900 Microsoft Security, Compliance, and Identity Fundamentals in academic program.
   ms.date: 12/01/2023

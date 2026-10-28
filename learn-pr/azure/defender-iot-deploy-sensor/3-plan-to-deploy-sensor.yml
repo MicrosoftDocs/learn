@@ -6,7 +6,7 @@ metadata:
   description: "Plan to deploy an operational technology (OT) sensor"
   ms.date: 4/15/2024
   author: limwainstein
-  ms.author: lwainstein
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 4
 content: |

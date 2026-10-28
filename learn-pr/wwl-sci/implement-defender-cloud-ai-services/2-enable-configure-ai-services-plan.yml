@@ -6,7 +6,7 @@ metadata:
   description: Enable the Defender for AI Services Cloud Workload Protection plan on an Azure subscription and configure its components including suspicious prompt evidence, data security for AI interactions, and AI model security.
   ms.date: 05/03/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 durationInMinutes: 7

@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.wwl.introduction-computer-vision
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 34
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - ai-engineer
+    - data-scientist
+  gs-skills:
+    - "Computer Vision"
+    - "Multimodal AI"
+    - "Generative AI"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/introduction-computer-vision/index.yml
   title: Introduction to computer vision concepts
   description: Introduction to computer vision concepts
   author: wwlpublish

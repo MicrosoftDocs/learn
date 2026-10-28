@@ -1,6 +1,30 @@
 ### YamlMime:Module
 uid: learn.wwl.introduction-agentic-devops-microsoft-tools-azure
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 47
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+    - azure-devops
+    - github
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - devops-engineer
+    - platform-engineer
+    - security-engineer
+  gs-skills:
+    - DevOps
+    - "Agentic AI"
+    - "AI Governance"
+    - Automation
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/introduction-agentic-devops-microsoft-tools-azure/index.yml
   title: Introduction to Agentic DevOps Using Microsoft Tools on Azure
   description: "Describe the agentic DevOps model for Microsoft DevOps Engineers, identify high-value opportunities in daily DevOps work, and define safe operating boundaries for agentic actions on Azure."
   ms.date: 8/24/2026

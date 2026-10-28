@@ -10,10 +10,10 @@ In Azure NetApp Files, encryption keys can be either platform managed, or custom
   - An encryption key hierarchy is used to encrypt and protect all volume keys.
   - These encryption keys are never displayed or reported in an unencrypted format. When you delete a volume, Azure NetApp Files immediately deletes the volume's encryption keys.
 - **Customer-managed keys (CMK)**
-  - Customer-managed keys for Azure NetApp Files volume encryption can be used where keys are stored in [Azure Key Vault](https://learn.microsoft.com/azure/key-vault/general/basic-concepts).
+  - Customer-managed keys for Azure NetApp Files volume encryption can be used where keys are stored in [Azure Key Vault](/azure/key-vault/general/basic-concepts).
   - These keys are read, created, deleted, updated, and/or administered by one or more customers. Keys stored in a customer-owned key vault or hardware security module (HSM) are CMKs.
   - With customer-managed keys, you can fully manage the relationship between a key's life cycle, key usage permissions, and auditing operations on keys.
-  - Bring Your Own Key (BYOK) is a CMK scenario in which a customer imports (brings) keys from an outside storage location into an Azure key management service (see the [Azure Key Vault: Bring your own key specification](https://learn.microsoft.com/azure/key-vault/keys/byok-specification)).
+  - Bring Your Own Key (BYOK) is a CMK scenario in which a customer imports (brings) keys from an outside storage location into an Azure key management service (see the [Azure Key Vault: Bring your own key specification](/azure/key-vault/keys/byok-specification)).
 
 Customer-managed keys can be stored on-premises or, more commonly, in a cloud key management service.
 
@@ -45,7 +45,7 @@ Before creating your first customer-managed key volume, you must set up:
 - An Azure Key Vault, containing at least one key.
   - The key vault must have soft delete and purge protection enabled.
   - The key must be of type RSA.
-- The key vault must have an [Azure Private Endpoint](https://learn.microsoft.com/azure/private-link/private-endpoint-overview).
+- The key vault must have an [Azure Private Endpoint](/azure/private-link/private-endpoint-overview).
   - The private endpoint must reside in a different subnet than the one delegated to Azure NetApp Files. The subnet must be in the same VNet as the one delegated to Azure NetApp.
 
 ### Configure a NetApp account to use customer-managed keys
@@ -170,7 +170,7 @@ You select the identity type that you want to use for authentication to the Azur
    $netappAccount = Update-AzNetAppFilesAccount -ResourceGroupName <resource_group> -Name <account_name> -IdentityType UserAssigned -UserAssignedIdentityId $userId.Id -KeyVaultEncryption -KeyVaultUri <keyVaultUri> -KeyName <keyName> -EncryptionUserAssignedIdentity $userId.Id
    ```
 
-You can alternately [use role-based access control to grant access to the key vault](https://learn.microsoft.com/azure/azure-netapp-files/configure-customer-managed-keys?tabs=azure-powershell#use-role-based-access-control).
+You can alternately [use role-based access control to grant access to the key vault](/azure/azure-netapp-files/configure-customer-managed-keys?tabs=azure-powershell#use-role-based-access-control).
 
 ### Configure customer-managed keys with managed Hardware Security Module (HSM)
 

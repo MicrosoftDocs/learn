@@ -1,6 +1,32 @@
 ### YamlMime:LearningPath
 uid: learn.github-actions-2
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - github
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - devops-engineer
+    - developer
+  gs-skills:
+    - DevOps
+    - Automation
+    - "Application Development"
+    - "Infrastructure Management"
+    - "Application Security"
+    - "Identity and Access Management (IAM)"
+    - "IT Networking"
+    - "Data Security"
+    - "Security Operations Management"
+    - Cybersecurity
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/github-actions-2/index.yml
   title: Automate your workflow with GitHub Actions Part 2 of 2
   description: This is part two of a GitHub Action Learning Path. Learn how GitHub Actions enables you to automate your software development cycle.
   brand: github

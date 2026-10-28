@@ -6,7 +6,7 @@ metadata:
   description: "Query instances by using commands and WMI Query Language"
   ms.date: 03/22/2024
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: lumac
   ms.topic: unit
   ms.custom:
   - N/A

@@ -1,6 +1,38 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.az-400-work-git-for-enterprise-devops
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - azure-devops
+    - github
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - devops-engineer
+    - developer
+    - platform-engineer
+    - security-engineer
+  gs-skills:
+    - DevOps
+    - "Collaboration Tools"
+    - "Organizational Culture"
+    - "Organizational Effectiveness"
+    - "Application Development"
+    - "Platform Engineering"
+    - Automation
+    - "Application Security"
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "Security Architecture Design"
+    - "Communications Management"
+    - Cybersecurity
+    - "Identity and Access Management (IAM)"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/az-400-work-git-for-enterprise-devops/index.yml
   title: "AZ-400: Development for Enterprise DevOps"
   description: "Learn Git features and DevOps practices that help organizations build better software together."
   ms.date: 09/10/2025

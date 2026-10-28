@@ -8,7 +8,7 @@ metadata:
   description: Check your knowledge of visualizing and querying ontology data with Microsoft Fabric IQ.
   ms.date: 04/13/2026
   author: theresa-i
-  ms.author: theresai
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-generated
 azureSandbox: false

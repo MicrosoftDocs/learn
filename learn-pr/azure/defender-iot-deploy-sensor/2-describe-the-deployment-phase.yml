@@ -6,7 +6,7 @@ metadata:
   description: "Describe the deployment phase for Defender for IoT"
   ms.date: 4/15/2024
   author: limwainstein
-  ms.author: lwainstein
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 2
 content: |

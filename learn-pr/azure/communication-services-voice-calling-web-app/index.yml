@@ -1,6 +1,25 @@
 ### YamlMime:Module
 uid: learn.communication-services-voice-calling-webapp
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 16
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+  gs-skills:
+    - "Application Development"
+    - "Identity and Access Management (IAM)"
+    - "Cloud Administration"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/communication-services-voice-calling-web-app/index.yml
   moduleType: standard
   title: Create a voice calling web app with Azure Communication Services
   description: "In this module, you create a basic web app that can be used for voice calling with Azure Communication Services."

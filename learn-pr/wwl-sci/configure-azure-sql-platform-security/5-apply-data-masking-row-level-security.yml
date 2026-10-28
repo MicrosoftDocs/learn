@@ -6,7 +6,7 @@ metadata:
   description: "Configure dynamic data masking functions and granular UNMASK permissions, and implement row-level security predicates to restrict financial data access by role and division."
   ms.date: 04/22/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-generated
 durationInMinutes: 3

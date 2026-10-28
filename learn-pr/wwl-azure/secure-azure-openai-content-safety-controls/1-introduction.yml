@@ -6,7 +6,7 @@ metadata:
   description: "Learn how to configure Azure AI Content Safety to protect your Azure OpenAI deployments, ensuring compliance and responsible AI governance."
   ms.date: 02/04/2026
   author: wwlpublish
-  ms.author: bradj
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 5
 content: |

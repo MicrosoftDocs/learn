@@ -5,7 +5,7 @@ metadata:
   description: Learn how to assign Security Copilot workspaces for integrated Microsoft Security agents and manage agent routing.
   ms.date: 03/19/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
 title: Assign workspaces for integrated agents
 durationInMinutes: 7

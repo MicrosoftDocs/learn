@@ -2,6 +2,30 @@
 uid: learn.dpu.work-smarter-copilot-hr
 title: Work smarter with Copilot prompts for human resources professionals
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 23
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - microsoft-365-copilot
+    - m365
+    - windows
+    - office-teams
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - hr
+  gs-skills:
+    - "AI Productivity"
+    - "AI Workforce Applications"
+    - "Collaboration Tools"
+    - "Communications Management"
+    - "Responsible AI"
+  gs-solution.area: "AI Business Solutions"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/device-partner-university/work-smarter-copilot-hr/index.yml
   title: Work Smarter With Copilot Prompts For Human Resources Professionals
   description: Discover how Microsoft 365 Copilot and Copilot+ PC experiences can help human resources professionals plan their day, support employees and managers, collaborate more effectively, and stay organized through practical prompts and workflows.
   ms.date: 07/27/2026

@@ -6,7 +6,7 @@ metadata:
   description: Learn how to use the Query builder in Microsoft Fabric IQ to add filters, control components, explore cross-source data, and interpret results in Diagram, Card, and Table view.
   ms.date: 04/13/2026
   author: theresa-i
-  ms.author: theresai
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-generated
 azureSandbox: false

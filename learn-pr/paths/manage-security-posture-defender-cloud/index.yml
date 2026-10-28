@@ -1,11 +1,38 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.manage-security-posture-defender-cloud
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - azure
+    - defender-for-cloud
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - security-engineer
+  gs-skills:
+    - "Security Architecture Design"
+    - "Network Connectivity"
+    - "Security Analytics"
+    - "Threat Management"
+    - "AI Risk Management"
+    - "AI Security (Model-Level)"
+    - "Cloud Administration"
+    - Cybersecurity
+    - "Infrastructure Management"
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "Security Operations Management"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/manage-security-posture-defender-cloud/index.yml
   title: Manage Security Posture by Using Microsoft Defender for Cloud
   description: Learn to manage cloud security posture using Microsoft Defender for Cloud. You connect hybrid and multicloud environments, identify risks, and assess compliance—then protect your workloads with threat detection and vulnerability management.
   ms.date: 04/23/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: learning-path
 title: Manage security posture by using Microsoft Defender for Cloud
 summary: |

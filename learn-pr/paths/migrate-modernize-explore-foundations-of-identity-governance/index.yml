@@ -1,11 +1,34 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.migrate-modernize-explore-foundations-of-identity-governance
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - azure
+    - defender-for-cloud
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - solution-architect
+    - systems-administrator
+    - security-engineer
+  gs-skills:
+    - "Data Migration"
+    - "Cloud Infrastructure"
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "Infrastructure Management"
+    - Cybersecurity
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/migrate-modernize-explore-foundations-of-identity-governance/index.yml
   title: Modernize and explore the foundations of identity and governance for SAP on Azure
   description: Modernize and explore the foundations of identity and governance for SAP on Azure
   ms.date: 01/11/2024
   author: wwlpublish
-  ms.author: eric
+  ms.author: lumac
   ms.topic: learning-path
 title: Modernize and explore the foundations of identity and governance for SAP on Azure
 prerequisites: |

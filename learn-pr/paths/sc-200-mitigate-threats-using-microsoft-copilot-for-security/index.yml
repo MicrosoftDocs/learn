@@ -1,11 +1,50 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.sc-200-mitigate-threats-using-microsoft-copilot-for-security
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - azure
+    - microsoft-defender
+    - security-copilot
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - administrator
+    - security-engineer
+    - security-operations-analyst
+  gs-skills:
+    - "Generative AI"
+    - "Natural Language Processing (NLP)"
+    - "Prompt Engineering"
+    - "Large Language Model Operations (LLMOps)"
+    - "Embedding Models"
+    - "Retrieval-Augmented Generation (RAG)"
+    - "Agentic AI"
+    - "AI Fluency"
+    - "AI Prompting"
+    - "Security Operations Management"
+    - "Security Analytics"
+    - "Threat Management"
+    - "Identity and Access Management (IAM)"
+    - "AI Governance"
+    - "AI-Powered Workflow Automation"
+    - "Knowledge Grounding for AI"
+    - "Data Security"
+    - "Security Automation"
+    - "AI Risk Management"
+    - "Agent Operations"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/sc-200-mitigate-threats-using-microsoft-copilot-for-security/index.yml
   title: 'Mitigate threats using Microsoft Security Copilot'
   description: 'Mitigate threats using Microsoft Security Copilot'
   ms.date: 11/26/2025
   author: KenMAG
-  ms.author: kelawson
+  ms.author: lumac
   ms.topic: learning-path
   ms.custom: ai-learning-hub
 title: 'Mitigate threats using Microsoft Security Copilot'

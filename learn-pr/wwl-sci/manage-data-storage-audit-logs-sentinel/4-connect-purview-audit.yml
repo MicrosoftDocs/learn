@@ -5,7 +5,7 @@ metadata:
   description: Configure the Microsoft Purview Audit data connector in Microsoft Sentinel to ingest Microsoft 365 audit log data into the workspace for security investigation and compliance reporting.
   ms.date: 04/16/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 title: Connect Microsoft Purview Audit to Microsoft Sentinel

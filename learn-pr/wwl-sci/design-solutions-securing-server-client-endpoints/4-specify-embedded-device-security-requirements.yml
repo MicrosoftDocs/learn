@@ -6,7 +6,7 @@ metadata:
   description: "Learn how to specify security requirements for IoT devices and embedded systems including device identity, network segmentation, and threat detection."
   ms.date: 06/05/2026
   author: ceperezb
-  ms.author: ceperezb
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 14
 content: |

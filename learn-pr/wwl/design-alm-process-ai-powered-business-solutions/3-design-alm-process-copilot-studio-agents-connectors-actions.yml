@@ -6,7 +6,7 @@ metadata:
   description: "Learn to design an ALM process for Copilot Studio agents, connectors, and actions. Ensure governance, scalability, and compliance across environments."
   ms.date: 02/12/2026
   author: msdavidram
-  ms.author: taeldin
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 5
 content: |

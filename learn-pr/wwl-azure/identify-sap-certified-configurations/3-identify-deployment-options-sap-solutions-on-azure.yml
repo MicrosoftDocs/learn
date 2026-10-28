@@ -6,7 +6,7 @@ metadata:
   description: "Identify deployment options customers have when deploying SAP products in Azure."
   ms.date: 09/19/2024
   author: wwlpublish
-  ms.author: eric
+  ms.author: lumac
   ms.topic: unit
   ms.custom:
   - N/A

@@ -6,7 +6,7 @@ metadata:
   description: "Define the architecture, components, and functionality of Data Deduplication"
   ms.date: 01/01/2025
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: lumac
   ms.topic: unit
 azureSandbox: false
 labModal: false

@@ -6,7 +6,7 @@ metadata:
   description: "Prepare Azure for the Azure Migrate deployment"
   ms.date: 09/25/2020
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: lumac
   ms.topic: unit
   ms.custom: sfi-ga-nochange
 azureSandbox: false

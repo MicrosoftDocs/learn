@@ -8,7 +8,7 @@ metadata:
   description: "Exercise - setting tenant-wide properties"
   ms.date: 04/08/2025
   author: wwlpublish
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ms.custom:
     - sfi-ga-nochange

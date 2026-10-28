@@ -2,6 +2,28 @@
 uid: learn.dpu.ai-success-build-ai-agents
 title: 'AI Success: Build AI agents with Microsoft Copilot'
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - microsoft-copilot-studio
+    - microsoft-365-copilot
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - business-analyst
+    - business-user
+    - sales
+  gs-skills:
+    - "Agent Development"
+    - "Prompt Engineering"
+    - "AI Productivity"
+    - "No-Code Development"
+  gs-solution.area: "AI Business Solutions"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/ai-success-build-ai-agents/index.yml
   title: 'AI Success: Build AI agents with Microsoft Copilot'
   description:  This learning path introduces the fundamentals of building AI agents with Microsoft Copilot. Learn how to create and configure agents, connect knowledge sources, define agent behavior through instructions, and test your solutions. By completing these modules, you'll gain practical experience building and using AI agents to improve productivity and streamline everyday work.
   ms.date: 10/09/2026

@@ -6,7 +6,7 @@ metadata:
   description: "Explore the high-level tasks needed to run Azure Backup for SAP HANA on Azure Virtual Machines."
   ms.date: 03/27/2024
   author: wwlpublish
-  ms.author: eric
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 5
 content: |

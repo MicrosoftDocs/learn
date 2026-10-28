@@ -6,7 +6,7 @@ metadata:
   description: "Describes the planning process for Defender for IoT, to identify devices and subnets to monitor."
   ms.date: 03/04/2024
   author: limwainstein
-  ms.author: lwainstein
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 7
 content: |

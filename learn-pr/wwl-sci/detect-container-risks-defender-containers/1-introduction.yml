@@ -5,7 +5,7 @@ metadata:
   description: Introduction to detecting container risks using Microsoft Defender for Containers, including the Contoso Retail scenario and the detection gaps this module addresses.
   ms.date: 05/10/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 title: Introduction

@@ -1,6 +1,22 @@
 ### YamlMime:Module
 uid: learn.wwl.challenge-project-work-variable-data-c-sharp
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 43
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+  gs-skills:
+    - "Application Development"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-language/challenge-project-work-variable-data-c-sharp/index.yml
   title: Challenge Project - Work with Variable Data in C#
   description: "A challenge project to test C# skills working with variable data."
   ms.date: 12/15/2025

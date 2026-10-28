@@ -6,7 +6,7 @@ metadata:
   description: "Introduction to the Unified Security Operations Platform and integrating Microsoft Sentinel with Defender XDR."
   ms.date: 02/02/2026
   author: KenMAG
-  ms.author: kelawson
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 3
 content: |

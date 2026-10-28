@@ -5,7 +5,7 @@ metadata:
   title: Blazor
   description: In this unit, we cover the Blazor framework and some core concepts.
   author: CamSoper
-  ms.author: casoper
+  ms.author: lumac
   ms.date: 03/15/2023
   ms.topic: unit
   ms.custom:

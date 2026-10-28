@@ -5,7 +5,7 @@ metadata:
   description: Learn how to assign roles, manage permissions, and configure owner settings and plugins for Security Copilot workspaces.
   ms.date: 03/19/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
 title: Configure workspace access and settings
 durationInMinutes: 8

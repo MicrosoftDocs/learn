@@ -1,6 +1,34 @@
 ### YamlMime:LearningPath
 uid: learn.az-400-develop-instrumentation-strategy
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - solution-architect
+    - systems-administrator
+    - technology-manager
+  gs-skills:
+    - "Cloud Administration"
+    - "Infrastructure Management"
+    - "Governance, Risk Management, and Compliance (GRC)"
+    - "Identity and Access Management (IAM)"
+    - "Solution Architecture"
+    - "Application Architecture"
+    - DevOps
+    - Automation
+    - "Organizational Culture"
+    - "Data Analytics"
+    - "IT Strategy"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/az-400-develop-instrumentation-strategy/index.yml
   title: "Develop an instrumentation strategy"
   description: "Develop an effective instrumentation strategy through logging, telemetry, and monitoring and prepare for Exam AZ-400: Designing and Implementing Microsoft DevOps Solutions."
   brand: azure

@@ -6,7 +6,7 @@ metadata:
   description: "Implement and manage Microsoft 365 Apps on Azure Virtual Desktop session hosts"
   ms.date: 08/13/2024
   author: wwlpublish
-  ms.author: bradj
+  ms.author: lumac
   ms.topic: unit
   ms.custom:
   - N/A

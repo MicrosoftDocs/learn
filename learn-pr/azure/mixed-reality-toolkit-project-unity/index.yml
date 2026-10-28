@@ -1,11 +1,28 @@
 ### YamlMime:Module
 uid: learn.mixed-reality-toolkit-project-unity
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 44
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - windows
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+  gs-skills:
+    - "Application Development"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/mixed-reality-toolkit-project-unity/index.yml
   title: Set Up a Mixed Reality Project in Unity with the Mixed Reality Toolkit 
   description: Import the Mixed Reality Toolkit (MRTK) into your Unity project to accelerate your mixed reality development. You can also deploy your project to a HoloLens.
   ms.date: 06/24/2025
   author: lolambean
-  ms.author: lolab
+  ms.author: lumac
   ms.topic: module
   ms.service: hololens
   ms.custom:

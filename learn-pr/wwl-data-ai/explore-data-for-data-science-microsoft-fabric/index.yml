@@ -1,6 +1,30 @@
 ### YamlMime:Module
 uid: learn-wwl.explore-data-for-data-science-microsoft-fabric
 metadata:
+  gs-content.levels: 200
+  gs-content.locale: en-us
+  gs-duration: 87
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - fabric
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - data-scientist
+    - data-analyst
+    - data-engineer
+  gs-skills:
+    - "Data Science"
+    - "Data Analytics"
+    - "Data Visualization"
+    - "Python (Programming Language)"
+    - "Data Management"
+    - "Machine Learning"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/explore-data-for-data-science-microsoft-fabric/index.yml
   title: Explore data for data science with notebooks in Microsoft Fabric
   description: Discover how to perform data exploration for data science using Microsoft Fabric notebooks.
   author: JulianePadrao

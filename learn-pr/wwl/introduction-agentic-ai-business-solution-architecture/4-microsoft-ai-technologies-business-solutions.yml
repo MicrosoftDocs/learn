@@ -6,7 +6,7 @@ metadata:
   description: "Discover how Microsoft AI technologies like Azure AI and Copilot solutions drive business value, enhance productivity, and streamline workflows."
   ms.date: 02/02/2026
   author: Randall-Knapp
-  ms.author: taeldin
+  ms.author: lumac
   ai-usage: ai-assisted
   ms.topic: unit
 durationInMinutes: 3

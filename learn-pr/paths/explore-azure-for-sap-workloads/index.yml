@@ -1,11 +1,41 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.explore-azure-for-sap-workloads
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - solution-architect
+    - systems-administrator
+  gs-skills:
+    - "Enterprise Resource Planning (ERP)"
+    - "Solution Architecture"
+    - "Cloud Infrastructure"
+    - "Data Analytics"
+    - "Data Visualization"
+    - "Process Automation"
+    - "Identity and Access Management (IAM)"
+    - "Network Connectivity"
+    - Storage
+    - Virtualization
+    - Databases
+    - "Infrastructure Management"
+    - "IT Networking"
+    - "Cloud Computing"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/explore-azure-for-sap-workloads/index.yml
   title: Explore Azure for SAP workloads
   description: Explore Azure for SAP workloads
   ms.date: 07/29/2024
   author: wwlpublish
-  ms.author: eric
+  ms.author: lumac
   ms.topic: learning-path
 title: Explore Azure for SAP workloads
 prerequisites: |

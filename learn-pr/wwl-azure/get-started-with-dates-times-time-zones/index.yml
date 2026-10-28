@@ -1,11 +1,27 @@
 ### YamlMime:Module
 uid: learn.wwl.get-started-with-dates-times-time-zones
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 58
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+  gs-skills:
+    - "Application Development"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/get-started-with-dates-times-time-zones/index.yml
   title: Get Started with Dates, Times, and Time Zones
   description: "Learn how to handle date and time effectively in C# applications."
   ms.date: 03/24/2025
   author: wwlpublish
-  ms.author: eric
+  ms.author: lumac
   ms.topic: module
   ms.service: dotnet-csharp
   ms.devlang: csharp

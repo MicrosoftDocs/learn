@@ -1,11 +1,30 @@
 ### YamlMime:Module
 uid: learn.student-evangelism.web-development-101.accessibility
 metadata:
+  gs-content.levels: 100
+  gs-content.locale: en-us
+  gs-duration: 15
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - developer
+    - student
+  gs-skills:
+    - "Digital Accessibility"
+    - "Application Development"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/student-evangelism/web-development-101-accessibility/index.yml
   title: Learn the basics of web accessibility
   description: This module covers various concepts on the topic of accessibility and how to add it to your web applications during web development. You will learn the importance of using HTML tags properly to describe information, and various improvements you can make to your sites.
   ms.date: 03/30/2021
   author: GeekTrainer
-  ms.author: chnoring
+  ms.author: lumac
+  ms.service: accessibility
   ms.topic: module
   ms.custom: team=nextgen
 title: Learn the basics of web accessibility

@@ -1,11 +1,31 @@
 ### YamlMime:LearningPath
 uid: learn.fundamentals-budgeting-students
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-last.refresh.date: null
+  gs-modality: learning-path
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - student
+  gs-skills:
+    - "AI Fluency"
+    - "Business Insights"
+    - "Generative AI"
+    - "Prompt Engineering"
+    - "AI Prompting"
+    - "AI Productivity"
+  gs-solution.area: null
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/introduction-budgeting-for-students/index.yml
   title: 'Introduction to budgeting for students'
   description: Learn the fundamentals of budgeting and how to use tools such as Microsoft Copilot to manage your money effectively, save for future goals, and reduce financial stress.
   ms.date: 04/28/2025
   author: kprks
-  ms.author: v-kperkes
+  ms.author: lumac
   ms.topic: learning-path
 title: Introduction to budgeting for students
 prerequisites: None

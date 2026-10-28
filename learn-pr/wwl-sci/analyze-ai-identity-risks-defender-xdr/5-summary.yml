@@ -5,7 +5,7 @@ metadata:
   description: Summary of analyzing AI identity risks using Microsoft Defender XDR, covering AI agent discovery, blast radius assessment, and attack path analysis.
   ms.date: 04/21/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 title: Summary

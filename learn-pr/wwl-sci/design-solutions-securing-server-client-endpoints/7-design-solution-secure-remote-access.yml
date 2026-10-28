@@ -6,7 +6,7 @@ metadata:
   description: Learn how to design secure remote access to virtual machines in Azure landing zones using Azure Bastion, just-in-time access, and hybrid connectivity options.
   ms.date: 06/05/2026
   author: ceperezb
-  ms.author: ceperezb
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 12
 content: |

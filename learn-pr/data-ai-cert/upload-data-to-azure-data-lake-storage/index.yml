@@ -1,6 +1,27 @@
 ### YamlMime:Module
 uid: learn.data-ai.upload-data-to-azure-data-lake-storage
 metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 35
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - azure
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - data-engineer
+    - storage-admin
+  gs-skills:
+    - Storage
+    - "Cloud Administration"
+    - "Data Management"
+    - "Data Engineering"
+  gs-solution.area: "Cloud & AI Platforms"
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/data-ai-cert/upload-data-to-azure-data-lake-storage/index.yml
   title: Upload data to Azure Data Lake Storage
   description: "Learn about creating an Azure Data Lake Storage account and uploading data to Data Lake Storage Gen 2 through the Azure Storage Explorer."
   ms.date: 10/12/2026

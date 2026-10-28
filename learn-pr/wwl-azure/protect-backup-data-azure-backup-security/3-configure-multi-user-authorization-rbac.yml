@@ -5,7 +5,7 @@ metadata:
   description: Implement Multi-User Authorization using Resource Guard and configure RBAC roles to enforce a two-admin approval model for critical backup operations.
   ms.date: 05/11/2026
   author: r-c-stewart
-  ms.author: roberts
+  ms.author: lumac
   ms.topic: unit
   ai-usage: ai-assisted
 title: Configure Multi-User Authorization and RBAC for backup
