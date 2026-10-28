@@ -24,8 +24,8 @@ metadata:
     - "Retrieval-Augmented Generation (RAG)"
   gs-solution.area: Security
   gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/advocates/measure-mitigate-risks-azure-ai-studio/index.yml
-  ms.author: apspeigh
-  author: aprilgittens
+  ms.author: orthomas
+  author: Orin-Thomas
   ms.date: 04/20/2026
   ms.update-cycle: 180-days
   title: Measure and mitigate risks for a generative AI app in Azure AI Foundry

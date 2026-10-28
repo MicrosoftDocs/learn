@@ -29,8 +29,8 @@ metadata:
   title: Evaluate generative AI applications
   description: Explore how to evaluate generative AI applications.
   ms.date: 10/15/2024
-  author: aprilgittens
-  ms.author: apspeigh
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: learning-path
 summary: >
   Explore concepts and methodologies for evaluating generative AI applications. Through code-first exercises and real-world scenarios, you'll learn to analyze and assess output quality, evaluate output using custom evaluators, and generate synthetic datasets.
