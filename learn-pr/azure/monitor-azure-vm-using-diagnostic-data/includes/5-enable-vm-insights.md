@@ -1,46 +1,73 @@
-Besides monitoring your VM host's health, utilization, and performance, you need to monitor the software and processes running on your VM. These are called the VM guest or client. In this unit, you enable the Azure Monitor VM insights feature, which offers a quick way to start monitoring the VM client.
+Host metrics describe the Azure resources allocated to your VM. To inspect performance inside the guest operating system, enable Azure Monitor Agent (AMA) and a performance data collection rule (DCR).
 
-The VM client includes the operating system and other workloads and applications. To monitor the software running on your VM, you install the Azure Monitor Agent, which collects data from inside the VM. VM insights:
+This exercise uses logs-based VM insights monitoring. Its predefined performance data is stored in the `InsightsMetrics` table in the **Log Analytics workspace** you prepared. You analyze it with VM insights Performance views and Kusto Query Language (KQL).
 
-- Installs Azure Monitor Agent on your VM.
-- Creates a DCR that collects and sends a predefined set of client performance data to a Log Analytics workspace.
-- Presents the data in curated workbooks.
- 
-Although you don't need to use VM insights to install Azure Monitor Agent, create DCRs, or set up workbooks, VM insights makes setting up VM client monitoring easy. VM insights provides you with a basis for monitoring the performance of your VM client and mapping the processes running on your machine.
+> [!NOTE]
+> Azure Monitor also offers generally available OpenTelemetry metrics-based monitoring, the recommended metrics experience for new VM deployments. It stores guest metrics in an **Azure Monitor workspace** and uses **PromQL**. That workspace isn't a Log Analytics workspace, and those metrics don't automatically populate `InsightsMetrics`. This exercise selects logs-based collection so you can analyze performance and Syslog with KQL. See [Compare monitoring experiences](/azure/azure-monitor/vm/metrics-opentelemetry-guest#compare-experiences).
 
-## Enable VM insights
+## Enable logs-based performance monitoring
 
-1. In the Azure portal, on your VM's **Overview** page, select **Insights** from the left navigation menu under **Monitoring**.
-1. On the **Insights** page, select **Enable**.
-1. Under **Data collection rule**, note the properties of the DCR that VM insights creates. In the DCR description, **Processes and dependencies (Map)** is set to **Disabled**, which you can change to **Enabled** or review [this article on how-to](/azure/azure-monitor/vm/vminsights-maps) if greyed out. Also a default **Log Analytics workspace** is created or assigned.
-1. Select **Configure**.
+1. Open **monitored-linux-vm** in the Azure portal and select **Monitor** from its menu.
+1. Select **Configure** to open **Configure monitor**.
+1. Select the logs-based collection option and clear **OpenTelemetry metrics** for this exercise.
+1. Select **Customize infrastructure monitoring**. Select the **Log Analytics workspace** created earlier rather than accepting an unspecified default workspace.
+1. Allow the portal to create the performance DCR. If you select an existing DCR instead, confirm that it's configured for logs-based VM insights performance collection, sends data to the intended workspace, and doesn't enable process/dependency mapping.
+1. Leave process/dependency mapping disabled. Don't install Dependency Agent.
+1. Recommended host alerts were configured in the preceding VM exercise. Clear **Enable recommended alerts** in this onboarding operation to avoid creating an additional set.
+1. Review the configuration. Confirm logs-based collection, the intended Log Analytics workspace, and the selected VM. Record the DCR name and its actual resource group for cleanup.
 
-   :::image type="content" source="../media/enable-insights.png" alt-text="Screenshot that shows enabling and configuring VM insights." lightbox="../media/enable-insights.png":::
+   :::image type="content" source="../media/enable-insights-revised.png" alt-text="Screenshot of Configure monitor with logs-based metrics selected and OpenTelemetry metrics and recommended alerts cleared." lightbox="../media/enable-insights-revised.png":::
 
-   Configuration of the workspace and the agent installation typically takes 5 to 10 minutes. It can take another 5 to 10 minutes for data to become available to view in the portal.
+1. Select **Review + Enable**, then **Enable**.
 
-1. When the deployment finishes, confirm that the Azure Monitor Agent is installed by looking on the **Properties** tab of the VM's **Overview** page under **Extensions + applications**.
+> [!NOTE]
+> AMA requires a managed identity. The portal enables a system-assigned managed identity when needed. The identity and DCR association are part of monitoring setup; installing an extension alone doesn't define the data to collect. For more information, see [Enable enhanced VM monitoring](/azure/azure-monitor/vm/tutorial-enable-monitoring).
 
-   On the **Monitoring** tab of the **Overview** page, under **Performance and utilization**, you can see that **Guest OS metrics** are now being collected.
+Allow several minutes for installation, configuration, and initial data delivery. On the VM, open **Settings** > **Extensions + applications** and confirm that **AzureMonitorLinuxAgent** reports successful provisioning.
 
-   :::image type="content" source="../media/guest-os-metrics.png" alt-text="Screenshot that shows Guest OS metrics on the VM's Monitoring tab." lightbox="../media/guest-os-metrics.png":::
+## View and confirm performance data
 
-## View VM insights
+1. In the VM menu, expand **Monitoring**, select **Insights**, and open **Performance**.
+1. Select a time range that includes the period after onboarding. Inspect the CPU, memory, and logical-disk performance views.
 
-VM insights creates a DCR that sends client VM performance counters to Azure Monitor Logs. Because the DCR sends its metrics to Azure Monitor Logs, you don't use Metrics Explorer to view the metrics data that VM insights collects.
+   :::image type="content" source="../media/vm-insights-performance-revised.png" alt-text="Screenshot of the logs-based VM insights Performance view with logical-disk data and CPU and available-memory charts." lightbox="../media/vm-insights-performance-revised.png":::
 
-To view the VM insights performance graphs and maps:
+1. Open **Logs** from the VM menu. Confirm the query scope is this VM.
+1. If Logs opens in Simple mode, switch to **KQL mode**. Close the example-query dialog if necessary.
+1. Run the following query:
 
-1. Select **Insights** from the VM's left navigation menu under **Monitoring**.
+   ```kusto
+   InsightsMetrics
+   | where TimeGenerated > ago(30m)
+   | where Origin == "vm.azm.ms"
+   | summarize Samples = count() by Namespace, Name
+   | order by Namespace asc, Name asc
+   ```
 
-1. Near the top of the **Insights** page, select the **Performance** tab. The prebuilt VM insights Performance workbook shows charts and graphs with performance-related data for the current VM.
+The results should list recently collected performance measurements for this VM. The Performance charts and recent `InsightsMetrics` records are the success criteria; a VM Overview widget or an agent heartbeat alone isn't proof of performance collection.
 
-   :::image type="content" source="../media/vm-insights-performance.png" alt-text="Screenshot that shows the prebuilt VM insights Performance workbook." lightbox="../media/vm-insights-performance.png":::
+For example, chart guest CPU utilization:
 
-   - You can customize the view by specifying a different **Time range** at the top of the page and different aggregations at the top of each graph.
+```kusto
+InsightsMetrics
+| where TimeGenerated > ago(30m)
+| where Origin == "vm.azm.ms"
+| where Namespace == "Processor" and Name == "UtilizationPercentage"
+| summarize AverageCpu = avg(Val) by bin(TimeGenerated, 5m), Computer
+| render timechart
+```
 
-   - Select **View Workbooks** to select from other available prebuilt VM insights workbooks. Select **Go To Gallery** to select from a gallery of other VM insights workbooks and workbook templates, or to edit and create your own workbooks.
+These queries assume the VM resource scope. If you open Logs from a workspace instead, constrain the query to the VM's full resource ID with an `_ResourceId` filter.
 
-1. If enabled earlier, select the **Map** tab on the **Insights** page to see the workbook for the Map feature. The map visualizes the VM's dependencies by discovering running process groups and processes that have active network connections over a specified time range.
+If no performance records appear, check the extension, managed identity, DCR association, destination workspace, and [required outbound connectivity](/azure/azure-monitor/agents/azure-monitor-agent-network-configuration). Initial charts need time to accumulate samples. See [Troubleshoot AMA on Linux](/azure/azure-monitor/agents/azure-monitor-agent-troubleshoot-linux-vm).
 
-   :::image type="content" source="../media/dependency-map.png" alt-text="Screenshot that shows a dependency map on the Map tab of VM insights." lightbox="../media/dependency-map.png":::
+> [!IMPORTANT]
+> Keep the predefined VM insights performance DCR intact. In the next unit, create an additional DCR for Linux Syslog. The performance DCR doesn't collect Syslog automatically.
+
+For more examples, see [InsightsMetrics queries](/azure/azure-monitor/reference/queries/insightsmetrics) and [VM insights Performance views](/azure/azure-monitor/vm/vminsights-performance).
+
+## Application dependency monitoring
+
+For a website instrumented with Application Insights, [Application map](/azure/azure-monitor/app/app-map) can visualize application components and recorded dependencies. This requires an application, supported instrumentation, and generated request/dependency telemetry. This lab creates a VM, not an instrumented website, so an application map isn't an expected output.
+
+Application-level mapping isn't a replacement for arbitrary host-process and port discovery. AMA guest performance collection alone doesn't create either kind of map.

@@ -2,34 +2,33 @@
 uid: learn.azure.monitor-azure-vm-using-diagnostic-data.collect-log-data
 title: Collect VM client event logs
 metadata:
-  title: Collect VM client event logs
-  description: Use the Azure Monitor Agent to create a data collection rule (DCR) that collects client system event logs and sends them to Azure Monitor Logs.
-  ms.date: 09/26/2024
-  author: cwatson-cat
-  ms.author: cwatson
+  title: Collect VM Client Event Logs
+  description: Create and associate a Linux Syslog data collection rule (DCR) so Azure Monitor Agent sends selected guest system events to a Log Analytics workspace.
+  ms.date: 10/25/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
 durationInMinutes: 7
 content: |
   [!include[](includes/6-collect-log-data.md)]
 quiz:
-  title: Check your knowledge
   questions:
-  - content: How can you collect event log data from your VMs?
+  - content: How can you collect Linux Syslog events from the VM after enabling logs-based VM insights in this exercise?
     choices:
-    - content: Create a DCR.
+    - content: Create and associate a separate Linux Syslog DCR with the VM.
       isCorrect: true
-      explanation: You can create DCRs to collect VM log data or performance counters that the VM insights DCR doesn't collect.
-    - content: Enable VM insights.
+      explanation: Configure a DCR with the required Linux Syslog facilities and severities, select the named Log Analytics workspace as its destination, and associate it with the VM.
+    - content: Enable only logs-based VM insights performance collection.
       isCorrect: false
-      explanation: The VM insights predefined DCR collects metrics, not log data.
+      explanation: The predefined logs-based performance DCR collects performance records into InsightsMetrics, not Linux Syslog events. Use a separate Syslog DCR for this exercise.
     - content: Enable boot diagnostics.
       isCorrect: false
       explanation: The serial log information that boot diagnostics collects is separate from the system event logs.
-  - content: How can you view log data collected by a DCR?
+  - content: How can you view Linux Syslog events sent to Azure Monitor Logs by this exercise's DCR?
     choices:
     - content: In the **Monitoring** tab of your VM **Overview** page.
       isCorrect: false
-      explanation: Log data isn't available in the VM **Monitoring** tab.
+      explanation: Query the collected Syslog events in Logs rather than the VM Overview monitoring charts.
     - content: By selecting **Data Collection Rules** in Azure Monitor.
       isCorrect: false
       explanation: You select Data Collection Rules to create a DCR, not to view the data the DCR collects.

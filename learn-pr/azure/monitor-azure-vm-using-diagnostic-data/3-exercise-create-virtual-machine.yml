@@ -2,18 +2,17 @@
 uid: learn.azure.monitor-azure-vm-using-diagnostic-data.exercise-create-virtual-machine
 title: Monitor VM host data
 metadata:
-  title: View VM host monitoring data
-  description: Create a Linux VM with recommended alerts and boot diagnostics enabled, and view built-in metrics graphs, boot diagnostics, and the activity log.
-  ms.date: 09/26/2024
-  author: cwatson-cat
-  ms.author: cwatson
+  title: View VM Host Monitoring Data
+  description: Create a Linux VM with recommended alerts and boot diagnostics, prepare a Log Analytics workspace, and view host monitoring data.
+  ms.date: 10/25/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
   ms.custom: linux-related-content
 durationInMinutes: 6
 content: |
   [!include[](includes/3-exercise-create-virtual-machine.md)]
 quiz:
-  title: Check your knowledge
   questions:
   - content: What do you need to do to enable recommended alert rules when you create a VM?
     choices:
