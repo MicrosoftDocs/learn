@@ -1,0 +1,157 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-local-network-configuration.knowledge-check
+metadata:
+  title: Module Assessment
+  description: Assess Azure Local network topology, address planning, storage transport evidence, capacity, cloud connectivity, and policy ownership.
+  ms.date: 10/26/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  module_assessment: true
+  ai-usage: ai-assisted
+title: Module assessment
+durationInMinutes: 10
+content: |
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which statement accurately describes switchless storage?"
+    choices:
+    - content: "It removes every switch from the deployment."
+      isCorrect: false
+      explanation: "Incorrect. Switchless describes storage paths, not all access networking. Specific topology and expansion restrictions still apply."
+    - content: "It uses direct storage connections in an exact supported pattern; access networking can still need switches."
+      isCorrect: true
+      explanation: "Correct. Switchless describes storage paths, not all access networking. Specific topology and expansion restrictions still apply."
+    - content: "It permits arbitrary mesh expansion if enough ports exist."
+      isCorrect: false
+      explanation: "Incorrect. Switchless describes storage paths, not all access networking. Specific topology and expansion restrictions still apply."
+    - content: "It guarantees host-failure continuity for a single node."
+      isCorrect: false
+      explanation: "Incorrect. Switchless describes storage paths, not all access networking. Specific topology and expansion restrictions still apply."
+  - content: "A converged host uses SET. Which host-facing switch configuration is appropriate?"
+    choices:
+    - content: "LACP because two ports share a virtual switch."
+      isCorrect: false
+      explanation: "Incorrect. SET is switch-independent. Switch-to-switch aggregation doesn't authorize a host-facing LACP bundle."
+    - content: "Legacy LBFO teaming to simplify compatibility."
+      isCorrect: false
+      explanation: "Incorrect. SET is switch-independent. Switch-to-switch aggregation doesn't authorize a host-facing LACP bundle."
+    - content: "The validated switch-independent SET pattern, without a host-facing LACP bundle."
+      isCorrect: true
+      explanation: "Correct. SET is switch-independent. Switch-to-switch aggregation doesn't authorize a host-facing LACP bundle."
+    - content: "Any aggregation mode supported between the switches."
+      isCorrect: false
+      explanation: "Incorrect. SET is switch-independent. Switch-to-switch aggregation doesn't authorize a host-facing LACP bundle."
+  - content: "Which management-pool plan meets the stated minimum?"
+    choices:
+    - content: "Six consecutive reserved addresses in the node management subnet, excluding node management addresses."
+      isCorrect: true
+      explanation: "Correct. The infrastructure pool needs at least six consecutive addresses in the management subnet, separate from node addresses and other allocations."
+    - content: "Six addresses spread across unrelated subnets."
+      isCorrect: false
+      explanation: "Incorrect. The infrastructure pool needs at least six consecutive addresses in the management subnet, separate from node addresses and other allocations."
+    - content: "Six addresses including the two node management addresses."
+      isCorrect: false
+      explanation: "Incorrect. The infrastructure pool needs at least six consecutive addresses in the management subnet, separate from node addresses and other allocations."
+    - content: "Any six addresses already used by another infrastructure service."
+      isCorrect: false
+      explanation: "Incorrect. The infrastructure pool needs at least six consecutive addresses in the management subnet, separate from node addresses and other allocations."
+  - content: "Both adapters report RDMA enabled. What most directly demonstrates actual SMB Direct use?"
+    choices:
+    - content: "A successful ping to a peer."
+      isCorrect: false
+      explanation: "Incorrect. Enablement and selection are intermediate evidence; observed SMB Direct rate activity demonstrates use during that interval."
+    - content: "An LLDP neighbor advertisement."
+      isCorrect: false
+      explanation: "Incorrect. Enablement and selection are intermediate evidence; observed SMB Direct rate activity demonstrates use during that interval."
+    - content: "Two virtual interfaces with similar names."
+      isCorrect: false
+      explanation: "Incorrect. Enablement and selection are intermediate evidence; observed SMB Direct rate activity demonstrates use during that interval."
+    - content: "Relevant nonzero SMB Direct byte-rate samples during the existing transfer, correlated with selected paths."
+      isCorrect: true
+      explanation: "Correct. Enablement and selection are intermediate evidence; observed SMB Direct rate activity demonstrates use during that interval."
+  - content: "One 25-Gbps path survives while approved traffic demand is 29 Gbps. What is the correct conclusion?"
+    choices:
+    - content: "A 50-percent ETS reservation guarantees all demand will fit."
+      isCorrect: false
+      explanation: "Incorrect. `29 > 25` before overhead. QoS allocates available capacity; it can't increase physical capacity."
+    - content: "Nominal capacity is insufficient; reducing concurrent demand and measuring the revised envelope is necessary."
+      isCorrect: true
+      explanation: "Correct. `29 > 25` before overhead. QoS allocates available capacity; it can't increase physical capacity."
+    - content: "The second link's normal capacity remains available after failure."
+      isCorrect: false
+      explanation: "Incorrect. `29 > 25` before overhead. QoS allocates available capacity; it can't increase physical capacity."
+    - content: "RDMA removes the need to budget bandwidth."
+      isCorrect: false
+      explanation: "Incorrect. `29 > 25` before overhead. QoS allocates available capacity; it can't increase physical capacity."
+  - content: "What does cloud `gatewayBypass` do for an eligible endpoint?"
+    choices:
+    - content: "Bypasses the gateway tunnel while the enterprise proxy remains applicable."
+      isCorrect: true
+      explanation: "Correct. Cloud gateway bypass skips the tunnel, unlike local proxy bypass. Eligibility and exact-FQDN restrictions remain."
+    - content: "Bypasses every local proxy and firewall."
+      isCorrect: false
+      explanation: "Incorrect. Cloud gateway bypass skips the tunnel, unlike local proxy bypass. Eligibility and exact-FQDN restrictions remain."
+    - content: "Adds unsupported endpoints to gateway coverage."
+      isCorrect: false
+      explanation: "Incorrect. Cloud gateway bypass skips the tunnel, unlike local proxy bypass. Eligibility and exact-FQDN restrictions remain."
+    - content: "Accepts arbitrary wildcard destination lists."
+      isCorrect: false
+      explanation: "Incorrect. Cloud gateway bypass skips the tunnel, unlike local proxy bypass. Eligibility and exact-FQDN restrictions remain."
+  - content: "A direct TCP 443 probe succeeds. What has been established?"
+    choices:
+    - content: "The intended explicit proxy path is correctly configured."
+      isCorrect: false
+      explanation: "Incorrect. A direct TCP connection doesn't test the proxy transaction, certificate trust, authorization, or every originating component."
+    - content: "TLS inspection is supported."
+      isCorrect: false
+      explanation: "Incorrect. A direct TCP connection doesn't test the proxy transaction, certificate trust, authorization, or every originating component."
+    - content: "A direct transport connection succeeded from that caller; TLS and application acceptance remain separate."
+      isCorrect: true
+      explanation: "Correct. A direct TCP connection doesn't test the proxy transaction, certificate trust, authorization, or every originating component."
+    - content: "Every Azure dependency is reachable from resource bridge and workloads."
+      isCorrect: false
+      explanation: "Incorrect. A direct TCP connection doesn't test the proxy transaction, certificate trust, authorization, or every originating component."
+  - content: "One applicable inbound NSG has matching deny priority 100 and allow priority 200. Which result follows?"
+    choices:
+    - content: "The allow wins because it's more specific."
+      isCorrect: false
+      explanation: "Incorrect. Within the confirmed rule collection, lower-numbered matching priority wins. A later allow doesn't override the earlier deny."
+    - content: "The deny wins because the lower-numbered matching rule is evaluated first."
+      isCorrect: true
+      explanation: "Correct. Within the confirmed rule collection, lower-numbered matching priority wins. A later allow doesn't override the earlier deny."
+    - content: "The guest firewall automatically overrides both."
+      isCorrect: false
+      explanation: "Incorrect. Within the confirmed rule collection, lower-numbered matching priority wins. A later allow doesn't override the earlier deny."
+    - content: "Both rules are ignored when the database listens locally."
+      isCorrect: false
+      explanation: "Incorrect. Within the confirmed rule collection, lower-numbered matching priority wins. A later allow doesn't override the earlier deny."
+  - content: "Which statement about Arc-enabled SDN is supported?"
+    choices:
+    - content: "Installing a guest Arc agent converts every local VM into an Azure Local VM-management resource."
+      isCorrect: false
+      explanation: "Incorrect. Arc-enabled SDN has a distinct controller and management model. Guest agents and AKS coexistence don't expand supported resource scope."
+    - content: "Arc-enabled SDN supports locally added software load balancers on the same controller."
+      isCorrect: false
+      explanation: "Incorrect. Arc-enabled SDN has a distinct controller and management model. Guest agents and AKS coexistence don't expand supported resource scope."
+    - content: "AKS coexistence implies NSG attachment support for AKS workload NICs."
+      isCorrect: false
+      explanation: "Incorrect. Arc-enabled SDN has a distinct controller and management model. Guest agents and AKS coexistence don't expand supported resource scope."
+    - content: "Its controller runs as a Failover Cluster service, and configuration must remain within its Azure-managed boundary."
+      isCorrect: true
+      explanation: "Correct. Arc-enabled SDN has a distinct controller and management model. Guest agents and AKS coexistence don't expand supported resource scope."
+  - content: "What is the safest rollback principle for an approved Network ATC QoS override?"
+    choices:
+    - content: "Delete the intent and assume all generated configuration disappears."
+      isCorrect: false
+      explanation: "Incorrect. Rollback must preserve unrelated explicit settings and prove restored operation, not merely submit a command."
+    - content: "Restore a remembered SMB percentage regardless of other overrides."
+      isCorrect: false
+      explanation: "Incorrect. Rollback must preserve unrelated explicit settings and prove restored operation, not merely submit a command."
+    - content: "Restore the full recorded explicit baseline through the supported interface and verify all affected nodes and performance."
+      isCorrect: true
+      explanation: "Correct. Rollback must preserve unrelated explicit settings and prove restored operation, not merely submit a command."
+    - content: "Change switch priorities until storage throughput looks normal."
+      isCorrect: false
+      explanation: "Incorrect. Rollback must preserve unrelated explicit settings and prove restored operation, not merely submit a command."

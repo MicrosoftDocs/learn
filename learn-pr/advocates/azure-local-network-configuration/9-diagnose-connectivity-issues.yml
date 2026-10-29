@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-local-network-configuration.diagnose-connectivity-issues
+metadata:
+  title: Diagnose Azure Local Connectivity Issues
+  description: Record the actual network flow, investigate each connection boundary, and assign configuration ownership before remediation.
+  ms.date: 10/26/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Diagnose Azure Local connectivity issues
+durationInMinutes: 3
+content: |
+  [!include[](includes/9-diagnose-connectivity-issues.md)]

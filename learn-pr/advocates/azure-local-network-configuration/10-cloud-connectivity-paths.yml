@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-local-network-configuration.cloud-connectivity-paths
+metadata:
+  title: Cloud Connectivity Paths
+  description: Distinguish Azure Local egress paths, residual dependencies, proxy bypass behavior, and network policy enforcement.
+  ms.date: 10/26/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Cloud connectivity paths
+durationInMinutes: 13
+content: |
+  [!include[](includes/10-cloud-connectivity-paths.md)]

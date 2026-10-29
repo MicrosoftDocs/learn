@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-local-network-configuration.network-infrastructure-resilience
+metadata:
+  title: Network Infrastructure Resilience
+  description: Compare supported network patterns, identify shared failure domains, and assess teaming requirements, degraded capacity, and expansion limits.
+  ms.date: 10/26/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Network infrastructure resilience
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-network-infrastructure-resilience.md)]
