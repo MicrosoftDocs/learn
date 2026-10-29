@@ -2,9 +2,10 @@
 uid: learn.wwl.perform-code-free-transformation-scale-azure-data-factory.debug-mapping-data-flow
 title: Debug mapping data flow
 metadata:
+  zone_pivot_groups: video-or-text
   title: Debug mapping data flow
   description: "Debug mapping data flow"
-  ms.date: 10/12/2026
+  ms.date: 10/29/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

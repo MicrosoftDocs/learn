@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=83c2902a-67bf-4961-a5c6-c637b7d5224d]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Azure Data Lake Storage Gen2 is an enabling technology for multiple data analytics use cases. This unit describes a few common types of analytical workload and identifies how Azure Data Lake Storage Gen2 works with other Azure services to support them.
 
 ## Big data processing and analytics
@@ -27,3 +38,5 @@ Streaming events are often captured in a queue for processing. There are multipl
 Data science involves the statistical analysis of large volumes of data, often using tools such as Apache Spark and scripting languages such as Python. Azure Data Lake Storage Gen2 provides a highly scalable cloud-based data store for the volumes of data required in data science workloads.
 
 Machine learning is a subarea of data science that deals with training predictive models. Model training requires huge amounts of data, and the ability to process that data efficiently. Azure Machine Learning is a cloud service in which data scientists can run Python code in notebooks using dynamically allocated distributed compute resources. The compute processes data in Azure Data Lake Storage Gen2 containers to train models, which can then be deployed as production web services to support predictive analytical workloads.
+
+::: zone-end

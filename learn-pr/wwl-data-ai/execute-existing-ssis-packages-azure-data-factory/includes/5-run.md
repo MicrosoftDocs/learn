@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=b6119cbd-9fc4-4567-946f-9ee02dec08cc]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 SQL Server Data Tools (SSDT) is typically used to create and deploy SQL Server Integration Services (SSIS) packages. It can be used for both on-premises SSIS packages, and for packages that run in Azure through Azure Data Factory. When you create a new SSIS package that runs in Azure, first select the **Integration Services Project (Azure-Enabled)** template, which prompts you to connect to SSIS in Azure Data Factory.
 
 > [!div class="mx-imgBorder"]
@@ -52,3 +63,5 @@ With these settings configured, you can then execute the packages in Azure from 
 For scenarios where you need to automate package execution in scripts or CI/CD pipelines, the `AzureDTExec` command-line utility provides an Azure-native alternative to the standard `dtexec` utility. Unlike `dtexec`, which runs packages locally, `AzureDTExec` submits package execution to your Azure-SSIS IR by creating and triggering an Azure Data Factory pipeline with an Execute SSIS Package activity.
 
 This approach is useful when integrating SSIS package execution into automated workflows, scheduled jobs, or deployment pipelines where direct SSDT interaction isn't practical. For configuration and usage details, see [Run SSIS packages with the AzureDTExec utility](/azure/data-factory/how-to-invoke-ssis-package-azure-enabled-dtexec).
+
+::: zone-end

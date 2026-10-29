@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=39006f09-f4f1-4cd7-a09b-10f31aca7050]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Microsoft Fabric IQ brings together six items that work as an integrated ecosystem. Each item serves a specific role in how you define, query, analyze, visualize, plan, and automate actions on your business data. Understanding these items helps you choose the right tool for each task.
 
 The six items in the IQ workload are:
@@ -81,3 +92,5 @@ Operations agents reason across both live streaming data in Eventhouse and histo
 Planning connects directly to Power BI semantic models, so dimensions, measures, and hierarchies already defined in your semantic models flow into planning sheets automatically. This means business concepts like revenue targets, inventory thresholds, and budget allocations stay consistent across reports, ontologies, and planning experiences.
 
 Contoso Offshore's project planning team uses Planning to forecast vessel utilization and installation costs for the coming weeks. The team connects to the Power BI semantic model used to generate its ontology. Shared project and vessel definitions help align forecasts with the task and equipment dependencies explored through the ontology. Each experience still depends on its own data refresh behavior; shared definitions don't guarantee a continuously live view of operational readiness.
+
+::: zone-end

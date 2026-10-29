@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=8b086fe5-e8f7-4c63-96f0-9c460ff3c714]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Contoso relies heavily on massive amounts of data in Azure Storage. Their many applications rely on blobs, unstructured table storage, Azure Data Lake, and Server Message Block (SMB)-based file shares.
 
 After Contoso's competitor has a data breach, Contoso tasks the network administrator to check the organization's data security. As Contoso's data consultant, you assure the network administrator that Azure Storage accounts provide several high-level security benefits for the data in the cloud:
@@ -7,8 +18,6 @@ After Contoso's competitor has a data breach, Contoso tasks the network administ
 - Support browser cross-domain access
 - Control who can access data
 - Audit storage access
-
-> [!VIDEO https://learn-video.azurefd.net/vod/player?id=f0ef7956-ecdf-43cb-82e5-d0f9cb34bf3c]
 
 ## Encryption at rest
 
@@ -46,3 +55,5 @@ You can assign RBAC roles to a security principal or a managed identity for Azur
 Auditing is another part of controlling access. You can audit Azure Storage access by using Azure Storage logs in Azure Monitor. These resource logs record requests to the storage account, and you can search them for specific requests. You can filter based on the authentication mechanism, the success of the operation, or the resource that was accessed.
 
 The older Storage Analytics logs are still supported, but Microsoft recommends Azure Monitor logs instead.
+
+::: zone-end

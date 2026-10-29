@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=3b3ce74e-17c3-417c-9472-24d9e866e5f3]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Azure Data Lake Storage Gen2 provides a data lake solution that enables enterprises to consolidate their data. It's built on Azure Blob storage, so it inherits all of the security features reviewed in this module.
 
 Along with role-based access control (RBAC), Azure Data Lake Storage Gen2 provides access control lists (ACLs) that are POSIX-like, and that restrict access to only authorized users, groups, or service principals. It applies restrictions in a way that's flexible, fine-grained, and manageable. Azure Data Lake Storage Gen2 authenticates through Microsoft Entra ID OAuth 2.0 bearer tokens. This allows for flexible authentication schemes, including federation with Microsoft Entra Connect and multifactor authentication that provides stronger protection than just passwords.
@@ -5,3 +16,5 @@ Along with role-based access control (RBAC), Azure Data Lake Storage Gen2 provid
 More significantly, these authentication schemes are integrated into the main analytics services that use the data. These services include Azure Databricks, HDInsight, and Azure Synapse Analytics. Management tools, such as Azure Storage Explorer, are also included. After authentication finishes, permissions are applied at the finest granularity to ensure the right level of authorization for an enterprise's large-data assets.
 
 The Azure Storage end-to-end encryption of data and transport layer protections add further layers of security for an enterprise data lake. The same set of analytics engines and tools can take advantage of these additional layers of protection for your analytics pipelines.
+
+::: zone-end

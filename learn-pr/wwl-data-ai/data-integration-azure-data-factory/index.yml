@@ -21,7 +21,7 @@ metadata:
   gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/data-integration-azure-data-factory/index.yml
   title: Data integration with Azure Data Factory
   description: Integrate data with Azure Data Factory
-  ms.date: 10/12/2026
+  ms.date: 10/29/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: module

@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=e6654670-a3a2-4a6c-902c-bf30fc691b1f]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 To work with data factory pipelines, it's imperative to understand what a pipeline in Azure Data Factory is. 
 
 A pipeline in Azure Data Factory represents a logical grouping of activities where the activities together perform a certain task.
@@ -28,3 +39,5 @@ The four dependency conditions are:
 For example, if a pipeline has an Activity A, followed by an Activity B and Activity B has as a dependency condition on Activity A 'Succeeded', then Activity B only runs if Activity A has the status of succeeded.
 
 If you have multiple activities in a pipeline and subsequent activities aren't dependent on previous activities, the activities may run in parallel.
+
+::: zone-end

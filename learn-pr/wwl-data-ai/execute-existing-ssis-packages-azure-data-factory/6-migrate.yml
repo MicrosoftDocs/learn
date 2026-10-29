@@ -2,9 +2,10 @@
 uid: learn.wwl.execute-existing-ssis-packages-azure-data-factory.migrate
 title: Migrate SSIS packages to Azure Data Factory
 metadata:
+  zone_pivot_groups: video-or-text
   title: Migrate SSIS packages to Azure Data Factory
   description: "Migrate SSIS packages to Azure Data Factory"
-  ms.date: 10/12/2026
+  ms.date: 10/29/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

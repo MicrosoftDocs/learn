@@ -1,6 +1,19 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=970279c8-7cda-4d2d-ae00-2af10e22ac59]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 The Mapping Data Flow makes it even easier for more people to create code free transformation that can be used to cleanse data. With common transformation types covered, it may be the only tool required before loading into a data warehouse or preparing for an advanced analytical workload. If not, Azure Data Factory also can call on the features of a variety of Azure Data Platform technologies to perform transformations on its behalf. For organizations that have SSIS packages that contain the transformation logic, SSIS packages can be used with Azure Data Factory too, so Azure Data Factory can handle your transformation needs in one place.
 
 > [!IMPORTANT]
 > Should you be working in your own subscription while running through this content, it is best practice at the end of a project to identify whether or not you still need the resources you created. Resources left running can cost you money. You can delete resources one by one, or just delete the resource group to get rid of the entire set.
 
 [Data Factory in Microsoft Fabric](/fabric/data-factory/) is the next generation of Azure Data Factory, with a simpler architecture, built-in AI, and new integration features. If you're new to data integration, start with Data Factory in Microsoft Fabric.
+
+::: zone-end

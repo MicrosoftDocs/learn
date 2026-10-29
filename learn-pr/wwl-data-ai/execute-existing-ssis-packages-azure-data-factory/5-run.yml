@@ -2,9 +2,10 @@
 uid: learn.wwl.execute-existing-ssis-packages-azure-data-factory.run
 title: Run SSIS packages in Azure Data Factory
 metadata:
+  zone_pivot_groups: video-or-text
   title: Run SSIS Packages in Azure Data Factory
   description: "Run SSIS packages in Azure Data Factory"
-  ms.date: 10/12/2026
+  ms.date: 10/29/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

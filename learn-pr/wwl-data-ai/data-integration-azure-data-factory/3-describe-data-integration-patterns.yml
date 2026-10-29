@@ -2,9 +2,10 @@
 uid: learn.wwl.integrate-data-azure-data-factory.describe-data-integration-patterns
 title: Describe data integration patterns
 metadata:
+  zone_pivot_groups: video-or-text
   title: Describe data integration patterns
   description: "Describe data integration patterns"
-  ms.date: 10/12/2026
+  ms.date: 10/29/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

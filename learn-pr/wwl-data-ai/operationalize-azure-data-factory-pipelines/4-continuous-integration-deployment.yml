@@ -2,9 +2,10 @@
 uid: learn.wwl.operationalize-your-azure-data-factory-pipelines.continuous-integration-and-deployment
 title: Continuous integration and deployment
 metadata:
+  zone_pivot_groups: video-or-text
   title: Continuous integration and deployment
   description: "Continuous integration and deployment"
-  ms.date: 10/12/2026
+  ms.date: 10/29/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

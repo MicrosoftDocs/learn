@@ -23,7 +23,7 @@ metadata:
   gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/understand-fabric-iq-fundamentals/index.yml
   title: Understand Microsoft Fabric IQ fundamentals
   description: Learn the fundamentals of Microsoft Fabric IQ, including how ontologies create a shared business vocabulary, the six items in the IQ workload, and how ontology modeling differs from traditional data modeling approaches.
-  ms.date: 09/08/2026
+  ms.date: 10/29/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: module

@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=f550de73-8fc3-46b9-9982-1904b4604c62]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 A dataset is a named view of data that simply points or references the data you want to use in your activities as inputs and outputs. Datasets identify data within different data stores, such as tables, files, folders, and documents. For example, an Azure Blob dataset specifies the blob container and folder in Blob storage from which the activity should read the data.
 
 A dataset in Data Factory can be defined as an object within the Copy Data Activity, as a separate object, or in a JSON format for programmatic creation as follows:
@@ -43,7 +54,8 @@ In this procedure, you create two datasets: InputDataset and OutputDataset. Thes
 1. In your desktop, create a folder named ADFv2QuickStartPSH in your C drive.
 
 1. Create a JSON file named InputDataset.json in the C:\ADFv2QuickStartPSH folder with the following content:
-     ```JSON
+
+     ```json
        {
            "name": "InputDataset",
            "properties": {
@@ -63,7 +75,6 @@ In this procedure, you create two datasets: InputDataset and OutputDataset. Thes
                }
            }
        }
-
        ```
 
 1. To create the dataset: InputDataset, run the Set-AzDataFactoryV2Dataset cmdlet.
@@ -124,3 +135,5 @@ In this procedure, you create two datasets: InputDataset and OutputDataset. Thes
     Structure         :
     Properties        : Microsoft.Azure.Management.DataFactory.Models.BinaryDataset
     ```
+
+::: zone-end

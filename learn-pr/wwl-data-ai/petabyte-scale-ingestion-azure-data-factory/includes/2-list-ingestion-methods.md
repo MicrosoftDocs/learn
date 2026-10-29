@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=f14e7705-f45c-4a1d-8e6f-1c23c913eaa6]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Azure Data Factory can accommodate organizations that are embarking on data integration projects from the differing starting point. It's rare for a data migration project to be a green field project. Typically, many data integration workflows must consider existing pipelines that have been created on previous projects, with different dependencies and using different technologies. To that end, there are various ingestion methods that can be used to extract data from a variety of sources. 
 
 ## Ingesting data using the Copy Activity
@@ -17,3 +28,5 @@ Azure Data Factory can call on compute resources to process data by a data platf
 
 ## Ingesting data using SSIS packages
 Many organizations have decades of development investment in SQL Server Integration Services (SSIS) packages that contain both ingestion and transformation logic from on-premises and cloud data stores. Azure Data Factory provides the ability to lift and shift existing SSIS workload, by creating an Azure-SSIS Integration Runtime to natively execute SSIS packages, and enables you to deploy and manage your existing SSIS packages with little to no change using familiar tools such as SQL Server Data Tools (SSDT) and SQL Server Management Studio (SSMS), just like using SSIS on-premises.
+
+::: zone-end

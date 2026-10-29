@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=3fbb6130-8a6c-4e42-8e3d-fd0478a95c0c]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 By default, storage accounts accept connections from clients on any network. To limit access to selected networks, you must first change the default action. You can restrict access to specific IP addresses, ranges, or virtual networks.
 
 ## Private endpoints
@@ -30,3 +41,5 @@ Follow these steps to change default network access in the Azure portal.
 1. To apply your changes, select **Save**.
 
 :::image type="content" source="../media/5-firewall.png" alt-text="Screenshot that shows the firewall options for storage accounts.":::
+
+::: zone-end

@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=ea357ccd-8bdf-4359-9a9d-136f0a327aee]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 It's easy to set up Azure Data Factory (ADF) from within the Azure portal. You only require the following information:
 
 - **Subscription**: The subscription in which the ADF instance is created
@@ -35,3 +46,5 @@ New-AzResourceGroup -Name $resourceGroupName -Location $rglocation
 # Create Azure Data Factory
 Set-AzDataFactoryV2 -ResourceGroupName $resourceGroupName -Name "ctoigniteADF" -Location $rglocation
 ```
+
+::: zone-end

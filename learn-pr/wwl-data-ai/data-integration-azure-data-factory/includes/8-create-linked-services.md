@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=a0ba299e-3655-463f-9e8f-61bce0cf756c]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Before you create a dataset, you must create a **linked service** to link your data store to the data factory. Linked services are much like connection strings, which define the connection information needed for Data Factory to connect to external resources. Data Factory supports a wide range of connectors that you can use to define a linked service. For the list, see the [connector overview](/azure/data-factory/connector-overview).
 
 A linked service in Data Factory can be defined using the Copy Data Activity in the ADF designer, or you can create them independently to point to a data store or a compute resource. The Copy Activity copies data between the source and destination, and you define a linked service as part of the copy activity definition.
@@ -67,3 +78,4 @@ The following example creates a linked service named "StorageLinkedService" that
 }
 ```
 
+::: zone-end

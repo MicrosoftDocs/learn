@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=a6273bbe-fa34-4dd6-bd25-88a89d4687dc]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Much of Contoso's data is generated or consumed by custom applications. The applications are written in various languages.
 
 Azure Storage supports authorizing requests with Microsoft Entra ID, which is the recommended approach for apps that use Blob storage or Queue storage.
@@ -56,3 +67,5 @@ Disabling Shared Key is the strongest protection against unauthorized key use, a
 
 > [!TIP]
 > Microsoft recommends disabling Shared Key access if it isn't required to prevent its inadvertent use. Use Microsoft Entra ID with managed identities for workloads that support OAuth, Kerberos for Azure Files over SMB, and user delegation SAS tokens where Microsoft Entra ID authorization can't be used.
+
+::: zone-end

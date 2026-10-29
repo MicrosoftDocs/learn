@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=379f7cae-8927-4bdc-bc5f-aab4b26f2091]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 ## What is control flow
 
 Control flow is an orchestration of pipeline activities that includes chaining activities in a sequence, branching, defining parameters at the pipeline level, and passing arguments while invoking the pipeline on demand or from a trigger.
@@ -53,3 +64,5 @@ There are many more control flow activities. See the following items for other u
 
 * Get metadata activity:
    The Get metadata activity retrieves the metadata of any data in Azure Data Factory.
+
+::: zone-end

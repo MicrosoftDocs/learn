@@ -2,9 +2,10 @@
 uid: learn.wwl.integrate-data-azure-data-factory.explain-process
 title: Explain the data factory process
 metadata:
+  zone_pivot_groups: video-or-text
   title: Explain the data factory process
   description: "Explain the data factory process"
-  ms.date: 10/12/2026
+  ms.date: 10/29/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

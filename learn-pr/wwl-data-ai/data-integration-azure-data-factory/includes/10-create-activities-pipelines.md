@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=c9cdd668-9f50-46b1-8d2e-32f6d2b4eb6a]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Activities within Azure Data Factory define the actions that are performed on the data. There are three categories:
 
 - Data movement activities
@@ -166,3 +177,5 @@ The following JSON defines a pipeline named "MyFirstPipeline" that contains one 
     }
 }
 ```
+
+::: zone-end

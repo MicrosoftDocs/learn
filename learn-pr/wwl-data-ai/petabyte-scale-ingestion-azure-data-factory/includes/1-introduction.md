@@ -1,3 +1,11 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=6ed192f8-23b0-48af-b5c8-36f874fa6eb7]
+
+::: zone-end
+
+::: zone pivot="text"
+
 The first stage of data integration work is to ingest source data from any number of systems into a destination, or an intermediary data store. Azure Data Factory provides differing ingestion methods that can connect to over a hundred different data connectors. The method you choose largely depends on your current skillset, or preference for working with a technology to ingest data.
 
 Regardless of which method you choose, you must set up the appropriate infrastructure to support the data ingestion method through integration runtimes. In addition, you must also make sure that the data ingestion is secure in each data store, and while in transit.
@@ -15,3 +23,8 @@ In this module, you learn how to:
 
 > [!NOTE]
 > [Data Factory in Microsoft Fabric](/fabric/data-factory/) is the next generation of Azure Data Factory, with a simpler architecture, built-in AI, and new features. If you're new to data integration, consider starting with Fabric Data Factory. Existing Azure Data Factory workloads can upgrade to Fabric Data Factory. For more information, see [Upgrade from Azure Data Factory to Data Factory in Microsoft Fabric](/fabric/data-factory/migrate-planning-azure-data-factory).
+
+::: zone-end
+
+> [!NOTE]
+> We recognize that different people like to learn in different ways. You can choose to complete this module in video-based format or you can read the content as text and images. The text contains greater detail than the videos, so in some cases you might want to refer to it as supplemental material to the video presentation.

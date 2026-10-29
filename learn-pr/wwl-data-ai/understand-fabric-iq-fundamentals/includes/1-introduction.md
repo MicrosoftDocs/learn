@@ -1,3 +1,11 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=65398f14-d772-42ce-9408-62f906a6da09]
+
+::: zone-end
+
+::: zone pivot="text"
+
 Imagine you're a data analyst at Contoso Offshore, a fictional company that specializes in offshore construction, wind-farm installation, and marine engineering. You help project planning, fleet management, and maintenance teams understand whether vessels and equipment are ready for scheduled foundation installations.
 
 ## Connect maintenance data to project readiness
@@ -16,3 +24,8 @@ In this module, you discover what Fabric IQ is and how it works. You explore the
 
 > [!IMPORTANT]
 > Fabric IQ is currently in [preview](/fabric/fundamentals/preview).
+
+::: zone-end
+
+> [!NOTE]
+> We recognize that different people like to learn in different ways. You can choose to complete this module in video-based format or you can read the content as text and images. The text contains greater detail than the videos, so in some cases you might want to refer to it as supplemental material to the video presentation.
