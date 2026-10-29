@@ -2,9 +2,10 @@
 uid: learn.wwl.integrate-data-azure-data-factory.manage-integration-runtime
 title: Manage integration runtimes
 metadata:
+  zone_pivot_groups: video-or-text
   title: Manage integration runtimes
   description: "Manage integration runtimes"
-  ms.date: 10/12/2026
+  ms.date: 10/29/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

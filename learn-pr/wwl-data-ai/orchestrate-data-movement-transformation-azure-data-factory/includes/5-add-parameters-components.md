@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=8b46193c-045c-4735-9f75-ec1f6ad663ef]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 ## Parameterize linked services in Azure Data Factory
 
 Within Azure Data Factory, it's possible to parameterize a linked service in which you can pass through dynamic values during run time. A use-case for this scenario is connecting to several different databases that are on the same SQL server, in which you might think about parameterizing the database name in the linked service definition. The benefit of doing this is that you don't have to create a single linked service for each database that is on the same SQL Server.
@@ -94,3 +105,5 @@ If you have created a data flow in which you have set parameters, it's possible 
 After you have added the activity to the pipeline canvas, you find the data flow parameters in the activity's **Parameters** tab.
 
 Assigning parameter values, ensures that you're able to use the parameters in a pipeline expression language or data flow expression language based on spark types. You can also combine the two, that is, the pipeline and data flow expression parameters.
+
+::: zone-end

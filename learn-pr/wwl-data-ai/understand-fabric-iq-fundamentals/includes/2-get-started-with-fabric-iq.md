@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=e955fa25-cfcd-4633-8cc7-5ac9a4d195c0]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Fabric IQ is part of Microsoft IQ, a set of capabilities that form the enterprise intelligence layer of the Microsoft stack. Microsoft IQ works across four areas: Work IQ provides context on how employees work, Foundry IQ provides context on policies and documents, Web IQ provides context from the web, and Fabric IQ provides context on business entities and data.
 
 Within Microsoft Fabric, IQ is a dedicated workload where you create **ontology items**—Fabric artifacts that contain your ontology definitions and data bindings.
@@ -113,3 +124,5 @@ Fabric IQ offers two approaches for creating ontologies:
 **Build from OneLake data:** If you don't have a semantic model, or want full control over ontology design, you can build directly from lakehouse and eventhouse data. You manually create entity types, define properties, and establish relationships. This approach gives you complete control over how you model your business vocabulary.
 
 Both paths lead to the same result: a complete ontology that defines your business concepts.
+
+::: zone-end

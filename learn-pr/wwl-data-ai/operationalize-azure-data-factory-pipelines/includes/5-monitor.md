@@ -1,4 +1,13 @@
+::: zone pivot="video"
 
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=910242cf-2b2e-47ec-8a0e-521d2a1d3244]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
 
 Once you've created and published a pipeline in Azure Data Factory, you can associate it with a trigger or manually kick off an on-demand run. You can monitor all of your pipeline runs natively in the Azure Data Factory user experience. To open the monitoring experience, select the **Monitor & Manage** tile in the data factory blade of the Azure portal. If you're already in the Azure Data Factory UX, select the **Monitor** icon on the left sidebar.
 
@@ -26,7 +35,7 @@ The pipeline run grid contains the following columns:
 
 You need to manually select the **Refresh** button to refresh the list of pipeline and activity runs. Autorefresh is currently not supported.
 
-![Refresh button in the pipeline monitoring view.](../media/refresh.png)
+![Screenshot of the Refresh button in the pipeline monitoring view.](../media/refresh.png)
 
 To view the results of a debug run, select the **Debug** tab.
 
@@ -36,7 +45,7 @@ To view the results of a debug run, select the **Debug** tab.
 
 To get a detailed view of the individual activity runs of a specific pipeline run, select the pipeline name.
 
-![Activity runs list for a selected pipeline run.](../media/view-activity-runs.png)
+![Screenshot of the activity runs list for a selected pipeline run.](../media/view-activity-runs.png)
 
 The list view shows activity runs that correspond to each pipeline run. Hover over the specific activity run to get run-specific information such as the JSON input, JSON output, and detailed activity-specific monitoring experiences. Select the icons in the **Actions** column to open them.
 
@@ -157,3 +166,5 @@ ADFActivityRun
 ADFPipelineRun
 | summarize argmax(TimeGenerated, *) by RunId, Status, _ResourceId
 ```
+
+::: zone-end

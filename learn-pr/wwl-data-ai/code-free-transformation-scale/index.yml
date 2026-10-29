@@ -26,7 +26,7 @@ metadata:
   gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/code-free-transformation-scale/index.yml
   title: Code-free transformation at scale with Azure Data Factory
   description: "Perform code-free transformation at scale with Azure Data Factory"
-  ms.date: 10/12/2026
+  ms.date: 10/29/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: module

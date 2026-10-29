@@ -2,9 +2,10 @@
 uid: learn.azure.secure-azure-storage-account.adl-enterprise-security-features
 title: Explore Azure Data Lake Storage security features
 metadata:
+  zone_pivot_groups: video-or-text
   title: Explore Azure Data Lake Storage security features
   description: "Explore Azure Data Lake Storage security features"
-  ms.date: 10/12/2026
+  ms.date: 10/29/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

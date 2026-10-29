@@ -27,7 +27,7 @@ metadata:
   gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/data-ai-cert/introduction-to-azure-data-lake-storage/index.yml
   title: Introduction to Azure Data Lake Storage Gen2
   description: "Discover how Data Lake Storage provides a repository where you can upload and store unstructured data bringing new efficiencies to processing big data analytics."
-  ms.date: 10/12/2026
+  ms.date: 10/29/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: module

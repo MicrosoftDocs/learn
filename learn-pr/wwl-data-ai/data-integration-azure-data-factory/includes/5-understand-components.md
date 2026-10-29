@@ -1,6 +1,15 @@
-An Azure subscription might have one or more Azure Data Factory instances. Azure Data Factory is composed of key components. These components work together to provide the platform on which you can compose data-driven workflows with steps to move and transform data.
+::: zone pivot="video"
 
-> [!VIDEO https://learn-video.azurefd.net/vod/player?id=67d2d9f1-4edc-4299-9401-94e3f2a8be15]
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=cf206254-3cd7-4847-8ea0-8f3c5e021f57]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
+An Azure subscription might have one or more Azure Data Factory instances. Azure Data Factory is composed of key components. These components work together to provide the platform on which you can compose data-driven workflows with steps to move and transform data.
 
 Data Factory supports a wide variety of data sources that you can connect to through the creation of an object known as a **Linked Service**, which enables you to ingest the data from a data source in readiness to prepare the data for transformation and/or analysis. In addition, Linked Services can fire up compute services on demand. For example, you may have a requirement to start an on-demand HDInsight cluster for the purpose of just processing data through a Hive query. So Linked Services enables you to define data sources, or compute resource that is required to ingest and prepare data.
 
@@ -19,3 +28,5 @@ _Parameters_ are key-value pairs of read-only configuration.  Parameters are d
 Azure Data Factory has an _integration runtime_ that enables it to bridge between the activity and linked Services objects. It's referenced by the linked service, and provides the compute environment where the activity either runs on or gets dispatched from. This way, the activity can be performed in the region closest possible. There are three types of Integration Runtime, including Azure, Self-hosted, and Azure-SSIS.
 
 Once the work is complete, you can then use Data Factory to publish the final dataset to another linked service that can then be consumed by technologies such as Power BI or Machine Learning.
+
+::: zone-end

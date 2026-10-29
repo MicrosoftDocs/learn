@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=692af88d-ebc3-4bb9-a180-b008b4fd1228]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Continuous integration is the practice of testing each change made to your codebase automatically and as early as possible. Continuous delivery follows the testing that happens during continuous integration and pushes changes to a staging or production system.
 
 In Azure Data Factory, continuous integration and delivery (CI/CD) means moving Data Factory pipelines from one environment (development, test, production) to another. Azure Data Factory uses Azure Resource Manager templates to store the configuration of your various Azure Data Factory entities (pipelines, datasets, data flows, and so on). There are two suggested methods to promote a data factory to another environment:
@@ -172,7 +183,7 @@ If you're unable to use Azure DevOps or a different release management tool, you
 
 1. Select **Load file**, and then select the generated Resource Manager template. This is the **ARMTemplateForFactory.json** file located in the .zip file exported in step 1.
 
-   ![Resource Manager template editor in the Azure portal.](../media/custom-deployment-edit-template.png)
+   ![Screenshot of the Resource Manager template editor in the Azure portal.](../media/custom-deployment-edit-template.png)
 
 1. In the **Custom deployment** section, enter the target subscription, region, and other details required for the deployment. When you're done, select **Review + create** to deploy the Resource Manager template.
 
@@ -300,3 +311,5 @@ If you're using Git integration with your data factory and have a CI/CD pipeline
 -   **Key Vault**. When you use linked services whose connection information is stored in Azure Key Vault, it's recommended to keep separate key vaults for different environments. You can also configure separate permission levels for each key vault. For example, you might not want your team members to have permissions to production secrets. If you follow this approach, we recommend that you keep the same secret names across all stages. If you keep the same secret names, you don't need to parameterize each connection string across CI/CD environments because the only thing that changes is the key vault name, which is a separate parameter.
 
 -  **Resource naming** Due to ARM template constraints, issues in deployment may arise if your resources contain spaces in the name. The Azure Data Factory team recommends using '_' or '-' characters instead of spaces for resources. For example, 'Pipeline_1' would be a preferable name over 'Pipeline 1'.
+
+::: zone-end

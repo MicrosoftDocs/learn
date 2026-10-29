@@ -2,9 +2,10 @@
 uid: learn.wwl.understand-fabric-iq-fundamentals.explore-fabric-iq-components
 title: Explore Microsoft Fabric IQ components
 metadata:
+  zone_pivot_groups: video-or-text
   title: Explore Microsoft Fabric IQ Components
   description: Learn about the components that make up the Fabric IQ ecosystem, including ontology items, data agents, Graph in Microsoft Fabric, and Power BI semantic models.
-  ms.date: 09/08/2026
+  ms.date: 10/29/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

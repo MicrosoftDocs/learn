@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=a91a21c4-f7dd-452e-ad04-607724597cb1]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 As a best practice, you shouldn't share storage account keys with external third-party applications. If these apps need access to your data, you need to secure their connections without using storage account keys.
 
 For untrusted clients, use a *shared access signature* (SAS). A SAS is a string that contains a security token that can be attached to a URI. You can use a SAS to delegate access to storage objects and specify constraints, such as the permissions and the time range of access.
@@ -32,3 +43,5 @@ You'd typically use a SAS for a service where users read and write their data to
 - A lightweight service authenticates the client, as needed. Next, it generates a SAS. After receiving the SAS, the client can access storage account resources directly. The SAS defines the client's permissions and access interval. It reduces the need to route all data through the front-end proxy service.
 
     ![Diagram that shows a server-side SAS operation.](../media/4-server-flowchart.png)
+
+::: zone-end

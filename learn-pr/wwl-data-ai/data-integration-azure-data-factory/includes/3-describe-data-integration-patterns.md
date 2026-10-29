@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=cf4bf185-fabd-47d7-bd84-aef047a06632]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Microsoft Azure provides various data platform services that enables you to perform different types of analytics. Whether it's a descriptive analytics solution in a data warehouse, through to predictive analytics within HDInsight, Azure Databricks, or Machine Learning Services. There's a need for a service to  deal with the important aspect of data integration.
 
 Data integration firstly involves the collection of data from one or more sources. Next, it typically includes a process where the data might be cleansed and transformed, or augmented with additional data and prepared. Finally, the amalgamated data is stored in a data platform service that handles the type of analytics that you want to perform. This process can be automated by Azure Data Factory in a pattern known as Extract, Transform and Load (ETL).
@@ -52,3 +63,5 @@ Azure Data factory is typically used to automate the process of extracting, tran
 ### Advanced analytical workloads
 
 You can perform advanced analytics in the form of predictive or preemptive analytics using a range of Azure data platform services. Azure Data Factory provides the integration from source systems into a Data Lake store, and can initiate compute resources such as Azure Databricks, or HDInsight to use the data to perform the advanced analytical work
+
+::: zone-end

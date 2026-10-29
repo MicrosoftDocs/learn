@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=9fd4e7df-3138-4790-ad5b-454e7b6630c4]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Ontology modeling in Fabric IQ defines business concepts independent of specific analytical use cases. This unit explains how the ontology approach differs from traditional analytical data modeling.
 
 ## Shift from report schemas to business concepts
@@ -115,3 +126,5 @@ Each entity type supports **one static binding** and multiple time-series bindin
 Data binding creates a semantic reference layer, not a live streaming connection. When new rows arrive in a source, a manual graph refresh is needed before they appear as entity instances in the ontology.
 
 Check data freshness before you use an answer to assess installation readiness. The ontology gives maintenance and project planning shared business meaning, but it doesn't replace data preparation, refresh management, or operational judgment.
+
+::: zone-end

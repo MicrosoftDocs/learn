@@ -2,9 +2,10 @@
 uid: learn.wwl.execute-existing-ssis-packages-azure-data-factory.understand-azure-ssis-integration-runtime
 title: Understand the Azure-SSIS integration runtime
 metadata:
+  zone_pivot_groups: video-or-text
   title: Understand the Azure SSIS Integration Runtime
   description: "Understand the Azure SSIS Integration Runtime"
-  ms.date: 10/12/2026
+  ms.date: 10/29/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

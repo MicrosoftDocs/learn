@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=4a241c14-6527-4e7a-89f2-924fbcb82c91]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Microsoft Fabric IQ is part of Microsoft IQ, an enterprise intelligence layer that elevates business data into shared concepts usable by people and AI agents. In this module, you learned what Fabric IQ is, how it fits in the Microsoft IQ ecosystem, and how to get started in your workspace.
 
 You explored the build-bind-query workflow for creating ontologies: defining entity types, entity instances, properties, relationships, and rules; binding them to lakehouse tables, eventhouse streams, and Power BI semantic models; and querying them through Graph or data agents.
@@ -7,3 +18,5 @@ You examined six items in the IQ workload: ontology items define your business v
 Finally, you learned how ontology modeling differs from traditional analytical modeling. Instead of starting with specific reporting needs and designing tables optimized for queries, ontology modeling starts with core business concepts and their relationships. This concept-driven approach creates reusable definitions that agents, Graph, and planning experiences can all use, enabling business users to explore data using familiar terminology.
 
 In the Contoso Offshore example, you connect maintenance orders to required equipment, installation tasks, and projects. Shared definitions distinguish equipment carried by a vessel from equipment required by a task. An explicit maintenance-overlap rule explains why task T001 is at risk, while consistent identifiers and refreshed data keep the answer grounded in the source records.
+
+::: zone-end

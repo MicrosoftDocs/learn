@@ -2,9 +2,10 @@
 uid: learn.wwl.operationalize-your-azure-data-factory-pipelines.understand-language-support-azure-data-factory
 title: Understand the language support in Azure Data Factory
 metadata:
+  zone_pivot_groups: video-or-text
   title: Understand the language support in Azure Data Factory
   description: "Understand the language support in Azure Data Factory"
-  ms.date: 10/12/2026
+  ms.date: 10/29/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

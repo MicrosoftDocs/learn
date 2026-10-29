@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=fa815732-7d40-4a53-a8a0-8d1bbe8701ed]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Data integration requires the secure handling of data that is both at rest and in transit. Security requirements must be factored into the design stage before a data integration solution is built. This initially provides coverage of the source systems and how the data from them are ingested. However, there's a need for a holistic approach, that also encapsulates the security of intermediary data stores in the following areas
 
 ## Network
@@ -62,3 +73,5 @@ Check your organizations standards for logging and monitoring and snap to the st
 - Security logs
 - Anti-malware logging
 - Log retention policies
+
+::: zone-end

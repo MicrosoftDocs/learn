@@ -2,9 +2,10 @@
 uid: learn.wwl.understand-fabric-iq-fundamentals.understand-ontology-modeling-paradigm
 title: Understand the ontology modeling paradigm
 metadata:
+  zone_pivot_groups: video-or-text
   title: Understand the Ontology Modeling Paradigm
   description: Learn how ontology modeling differs from traditional analytical data modeling by starting with business concepts and relationships rather than designing tables for specific use cases.
-  ms.date: 09/08/2026
+  ms.date: 10/29/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

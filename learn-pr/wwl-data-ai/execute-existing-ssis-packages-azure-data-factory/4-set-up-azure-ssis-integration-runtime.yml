@@ -2,9 +2,10 @@
 uid: learn.wwl.execute-existing-ssis-packages-azure-data-factory.set-up-azure-ssis-integration-runtime
 title: Set up the Azure-SSIS integration runtime
 metadata:
+  zone_pivot_groups: video-or-text
   title: Set-up Azure SSIS Integration Runtime
   description: "Set-up Azure SSIS Integration Runtime"
-  ms.date: 10/12/2026
+  ms.date: 10/29/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

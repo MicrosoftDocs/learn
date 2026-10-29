@@ -21,7 +21,7 @@ metadata:
   gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/introduction-to-data-engineering-azure/index.yml
   title: Introduction to Data Engineering on Azure
   description: This module describes how Microsoft Azure provides a comprehensive platform for data engineering.
-  ms.date: 10/12/2026
+  ms.date: 10/29/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: module

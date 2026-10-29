@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=51f1e661-2c95-493d-8f26-c3b83157b4a6]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 The data engineer often works with multiple types of data to perform many operations using many scripting or coding languages that are appropriate to their individual organization.
 
 ## Types of data
@@ -6,7 +17,7 @@ There are three primary types of data that a data engineer works with.
 
 | Structured | Semi-structured | Unstructured |
 |--|--|--|
-| ![Diagram of Structured data type.](../media/2-structured-data.png) | ![Diagram of Semi-structured data type.](../media/2-semi-structured-data.png) | ![Diagram of Unstructured data type.](../media/2-unstructured-data.png) |
+| ![Diagram of structured data organized in rows and columns.](../media/2-structured-data.png) | ![Diagram of semi-structured data with a flexible schema.](../media/2-semi-structured-data.png) | ![Diagram of unstructured data without a predefined schema.](../media/2-unstructured-data.png) |
 | Structured data primarily comes from table-based source systems such as a relational database or from a flat file such as a comma separated (CSV) file. The primary element of a structured file is that the rows and columns are aligned consistently throughout the file. | Semi-structured data is data such as JavaScript object notation (JSON) files, which may require flattening prior to loading into your source system. When flattened, this data doesn't have to fit neatly into a table structure. | Unstructured data doesn't follow a predefined schema or tabular structure. Types of unstructured data that are commonly used include portable document format (PDF) files, word processor documents, and images. |
 
 ## Data operations
@@ -42,3 +53,5 @@ Data engineers must be proficient with a range of tools and scripting languages 
 - **KQL** - Kusto Query Language (KQL) is a query language for analyzing streaming and log data in real-time analytics scenarios. Data engineers use KQL in Microsoft Fabric's Real-Time Intelligence workload and Azure Data Explorer to query high-velocity data streams.
 
 - **Others** - Depending upon the needs of the organization and your individual skill set, you may also use other popular languages within or outside of notebooks including R, Java, Scala, C#, and more. The use of notebooks is growing in popularity, and allows collaboration using different languages within the same notebook.
+
+::: zone-end

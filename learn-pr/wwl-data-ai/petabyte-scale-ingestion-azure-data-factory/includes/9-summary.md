@@ -1,4 +1,17 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=54720762-d817-4481-a83a-2ea1fd20b0d3]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Data Ingestion can operate at petabyte scale using an ingestion method that is suited to your skillset. Using the Copy Activity method provides the simplest method to set up your ingestion mechanism. Regardless of the method that you use, you should be aware that for data transfers from on-premises servers, that a self-hosted integration runtime is required to allow this. For SSIS package execution, the Azure-SSIS integration runtime is more appropriate. It's also important to ensure that the data is ingested securely.
 
-> [!Important]
+> [!IMPORTANT]
 > Should you be working in your own subscription while running through this content, it is best practice at the end of a project to identify whether or not you still need the resources you created. Resources left running can cost you money. You can delete resources one by one, or just delete the resource group to get rid of the entire set.
+
+::: zone-end

@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=204951fe-e019-49b8-a22a-b278d6887451]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Securing an Azure Data Factory deployment involves controlling who can access your factory, how the factory authenticates to other services, and how data at rest is protected. Understanding these security capabilities helps you design pipelines that meet your organization's compliance requirements.
 
 ## Control access with role-based access control
@@ -55,3 +66,5 @@ Across all security controls, apply least privilege consistently:
 - Audit activity logs regularly using Azure Monitor to detect unexpected access patterns.
 
 For more information on roles and permissions in Azure Data Factory, see [Roles and permissions for Azure Data Factory](/azure/data-factory/concepts-roles-permissions).
+
+::: zone-end
