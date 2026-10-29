@@ -1,9 +1,9 @@
-When diagnosing investigating network functionality anomalies, record a network traffic flow information that includes: 
+When investigating network functionality anomalies, record network traffic flow information that includes: 
 
 - Originating component
 - Source address
 - Destination name and address
-- Protocol, destination port
+- Protocol and destination port
 - Direction
 - Expected route
 - Policy owner

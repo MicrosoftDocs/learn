@@ -50,7 +50,7 @@ For each application, establish the following requirements before provisioning i
 > [!NOTE]
 > Azure Local does not require a separate logical network, VLAN, or subnet for every application. Applications with compatible security and connectivity requirements can share a workload network, with appropriate access controls. Consider separate networks for different tenants, compliance requirements, or application tiers, and explicitly control communication between them. Separate logical network resources alone do not establish isolation; the underlying VLANs, routing, and security policies must enforce the intended boundaries. Separate workload networks can still share physical adapters and switches.
 
-## Azure Kubernetes Services requirements
+## Azure Kubernetes Service requirements
 
 Azure Kubernetes Service (AKS) on Azure Local adds further requirements. Plan addresses for cluster VMs, control-plane access, and load-balancer front ends, and account for the supported pod and service address ranges. Include capacity for upgrades and scaling; a host management pool alone is not a Kubernetes address plan. 
 
