@@ -6,7 +6,8 @@ Modules are also a way to make Bicep code even more reusable. You can have a sin
 
 You'll also often need to emit _outputs_ from the Bicep modules and files. Outputs are a way for your Bicep code to send data back to whoever or whatever started the deployment. Let's look at outputs first.
 
-[!INCLUDE [Note - don't run commands](../../../includes/dont-run-commands.md)]
+> [!NOTE]
+> The commands in this unit are shown to illustrate concepts. Don't run the commands yet. You'll practice what you learn here soon.
 
 ## Outputs
 
@@ -33,17 +34,17 @@ The output definition includes a few key parts:
 > [!TIP]
 > Outputs can use the same names as variables and parameters. This convention can be helpful if you construct a complex expression within a variable to use within your Bicep file's resources, and you also need to expose the variable's value as an output.
 
-Here's another example of an output. This one will have its value set to the fully qualified domain name (FQDN) of a public IP address resource.
+Here's another example of an output. It'll have its value set to the fully qualified domain name (FQDN) of a public IP address resource.
 
 ```bicep
 output ipFqdn string = publicIPAddress.properties.dnsSettings.fqdn
 ```
 
 > [!TIP]
-> Try to use resource properties as outputs rather than making assumptions about how resources will behave. For example, if you need to have an output for App Service app's URL, use the app's `defaultHostName` property instead of creating a string for the URL yourself. Sometimes these assumptions aren't valid in different environments, or the way the resource works changes, so it's safer to have the resource tell you its own properties.
+> Try to use resource properties as outputs rather than making assumptions about how resources will behave. For example, if you need to have an output for an App Service app's URL, use the app's `defaultHostName` property instead of creating a string for the URL yourself. Sometimes these assumptions aren't valid in different environments, or the way the resource works changes, so it's safer to have the resource tell you its own properties.
 
 > [!CAUTION]
-> Don't create outputs for secret values like connection strings or keys. Anyone with access to your resource group can read outputs from Bicep files. There are other approaches you can use to get access to secret resource properties, which we'll cover in a later module.
+> Don't put secrets, such as keys or connection strings, in ordinary outputs. Ordinary output values are stored in deployment history and can be read by users with the required deployment read permissions. Bicep 0.35.1 and later supports `@secure()` on string and object outputs to prevent those values from appearing in deployment history, the Azure portal, or command-line output. This module outputs only a non-secret host name.
 
 ## Define a module
 
@@ -51,7 +52,7 @@ Bicep modules allow you to organize and reuse your Bicep code by creating smalle
 
 Imagine you have a Bicep file that deploys application, database, and networking resources for _solution A_. You might split this Bicep file into three modules, each of which is focused on its own set of resources. As a bonus, you can now reuse the modules in other templates for other solutions too; so when you develop a file for _solution B_, which has similar networking requirements to _solution A_, you can reuse the network module.
 
-:::image type="content" source="../../includes/media/bicep-files-modules.png" alt-text="Diagram that shows a Bicep file for solution A referencing three modules: application, database, and networking. The networking module is then reused in another Bicep file for solution B." border="false":::
+:::image type="content" source="../../includes/media/bicep-files-modules.png" alt-text="Diagram that shows solution A using application, database, and networking modules, with solution B reusing the networking module." border="false":::
 
 When you want the Bicep file to include a reference to a module file, use the `module` keyword. A module definition looks similar to a resource declaration, but instead of including a resource type and API version, you'll use the module's file name:
 
@@ -69,7 +70,7 @@ Let's look closely at some key parts of this module definition:
 - The `module` keyword tells Bicep you're about to use another Bicep file as a module.
 - Just like resources, modules need a _symbolic name_ like `myModule`. You'll use the symbolic name when you refer to the module's outputs in other parts of the Bicep file.
 - `modules/mymodule.bicep` is the path to the module Bicep file, relative to the file. Remember, a module file is just a regular Bicep file.
-- Just like resources, the `name` property is mandatory. Azure uses the module name because it creates a separate deployment for each module within the Bicep file. Those deployments have names you can use to identify them.
+- The `name` property sets the name of the nested deployment that Azure creates for the module. It's optional in Bicep 0.34.1 and later; Bicep generates a name when it's omitted. This example specifies a name so that you can easily identify the deployment in Azure. For more information, see Bicep modules in the More info section of the Summary unit.
 - You can specify any _parameters_ of the module by using the `params` keyword. When you set the values of each parameter within the Bicep file, you can use expressions, file parameters, variables, properties of resources deployed within the file and outputs from other modules. Bicep will automatically understand the dependencies between the resources.
 
 ## Modules and outputs
@@ -90,4 +91,4 @@ A good Bicep module follows some key principles:
 >
 > - **A module should be as self-contained as possible.** If a module needs to use a variable to define a part of a module, the variable should generally be included in the module Bicep file rather than in the parent Bicep file.
 >
-> - **A module shouldn't output secrets.** Just like templates, don't create module outputs for secret values like connection strings or keys.
+> - **A module shouldn't expose secrets through ordinary outputs.** Prefer retrieving secret resource properties where they're needed. If a design requires a secure module output, use the supported secure-output feature and preserve its protection at every subsequent boundary.

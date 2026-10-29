@@ -4,7 +4,8 @@ Your toy company launches new products regularly, and you need to use the Bicep 
 
 In this unit, you'll learn about _parameters_ and _variables_, which are two Bicep features that can make your Bicep files flexible and reusable. You'll also be introduced to _expressions_.
 
-[!INCLUDE [Note - don't run commands](../../../includes/dont-run-commands.md)]
+> [!NOTE]
+> The commands in this unit are shown to illustrate concepts. Don't run the commands yet. You'll practice what you learn here soon.
 
 ## Parameters and variables
 
@@ -12,7 +13,7 @@ A _parameter_ lets you bring in values from outside the Bicep file. For example,
 
 A _variable_ is defined and set within the Bicep file. Variables let you store important information in one place and refer to it throughout the file without having to copy and paste it.
 
-It's usually a good idea to use parameters for things that will change between each deployment, like:
+It's usually a good idea to use parameters for things that'll change between each deployment, like:
 
 - Resource names that need to be unique.
 - Locations into which to deploy the resources.
@@ -39,7 +40,7 @@ Let's look at how each part of this definition works:
 - `string` is the type of the parameter. You can specify several different types for Bicep parameters, including `string` for text, `int` for numbers, and `bool` for Boolean true or false values. You can also pass in more complex parameters by using the `array` and `object` types.
 
 > [!TIP]
-> Try not to over-generalize Bicep files by using too many parameters. You should use the minimum number of parameters you need for your business scenario. Remember, you can always change Bicep files in the future if your requirements change.
+> Try not to overgeneralize Bicep files by using too many parameters. You should use the minimum number of parameters you need for your business scenario. Remember, you can always change Bicep files in the future if your requirements change.
 
 ### Provide default values
 
@@ -149,7 +150,7 @@ The default value for the `storageAccountName` parameter now has two parts to it
 - `${uniqueString(resourceGroup().id)}` is a way of telling Bicep to evaluate the output of the `uniqueString(resourceGroup().id)` function, then concatenate it into the string.
 
 > [!TIP]
-> Sometimes the `uniqueString()` function will create strings that start with a number. Some Azure resources, like storage accounts, don't allow their names to start with numbers. This means it's a good idea to use string interpolation to create resource names, like in the preceding example.
+> Storage account names must be globally unique, contain 3 to 24 characters, and use only lowercase letters and numbers. They can start with a number. A descriptive prefix makes a generated name easier to recognize; it isn't required to prevent a leading digit. For example, `toylaunch` plus the 13-character result of `uniqueString()` produces a 22-character name. The function reduces the likelihood of a collision but doesn't guarantee global uniqueness.
 
 ### Selecting SKUs for resources
 
@@ -183,13 +184,20 @@ var appServicePlanSkuName = (environmentType == 'prod') ? 'P2V3' : 'F1'
 
 Notice some new syntax here, too. Let's break it down:
 
-- `(environmentType == 'prod')` evaluates to a Boolean (true or false) value, depending on which allowed value is used for `environmentType` parameter.
+- `(environmentType == 'prod')` evaluates to a Boolean (true or false) value, depending on which allowed value is used for the `environmentType` parameter.
 - `?` is called a _ternary operator_, and it evaluates an `if/then` statement. The value after the `?` operator is used if the expression is true. If the expression evaluates to false, the value after the colon (`:`) is used.
 
 We can translate these rules to:
 
 - For the `storageAccountSkuName` variable, if the `environmentType` parameter is set to `prod`, then use the `Standard_GRS` SKU. Otherwise, use the `Standard_LRS` SKU.
 - For the `appServicePlanSkuName` variable, if the `environmentType` parameter is set to `prod`, then use the `P2V3` SKU and the `PremiumV3` tier. Otherwise, use the `F1` SKU.
+
+> [!NOTE]
+> These expressions select the resource SKUs; they don't create a separate environment by themselves. In this example, changing only `environmentType` doesn't change resource names. With the same resource group and resource names, a deployment updates the existing resources. To keep production and non-production environments separate, use a dedicated resource group for each environment and available resource names. Continue using the same group for successive deployments of that environment.
+>
+> Before deploying `prod`, confirm that the chosen region and subscription support the required SKUs and review their costs. Upgrading an existing App Service plan to `P2v3` also requires its underlying App Service deployment unit to support PremiumV3 and that specific SKU. If the deployment unit doesn't support it, follow the PremiumV3 redeployment guidance in the More info section of the Summary unit: create a new resource group and a new plan initially using the desired PremiumV3 SKU, then redeploy the app. Changing only the plan name in the same resource-group, region, and operating-system combination might not resolve this restriction.
+
+<!-- -->
 
 > [!TIP]
 > When you create multipart expressions like this, it's best to use variables rather than embedding the expressions directly into the resource properties. This makes your Bicep files easier to read and understand because it avoids cluttering your resource definitions with logic.
