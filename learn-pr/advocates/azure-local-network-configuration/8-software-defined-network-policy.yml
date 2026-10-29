@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-local-network-configuration.software-defined-network-policy
+metadata:
+  title: Software-Defined Network Policy
+  description: Identify Azure Local workload policy ownership, supported resource scopes, and the boundaries between logical networks and overlays.
+  ms.date: 10/26/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Software-defined network policy
+durationInMinutes: 4
+content: |
+  [!include[](includes/8-software-defined-network-policy.md)]

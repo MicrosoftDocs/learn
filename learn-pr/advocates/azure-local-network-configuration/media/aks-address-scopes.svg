@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1200" viewBox="0 0 1440 1200" role="img" aria-labelledby="diagram-title diagram-description" style="background-color: #ffffff">
+  <title id="diagram-title">AKS on Azure Local: address scopes and pod address cleanup</title>
+  <desc id="diagram-description">Read cards 1 to 3 from left to right. Physical Azure Local hosts have management addresses. They run AKS control-plane and worker virtual machines, which use a separate static workload-network IP pool, not DHCP. Workers run pods whose containers share a pod address managed by CNI. Read cards 4 to 6 for the pod address lifecycle: creation allocates an address, an individual container stopping does not necessarily release it, and removal of pod networking normally releases it for reuse. Upgrade capacity, API endpoints, load-balancer front ends, and internal service addresses need separate planning.</desc>
+  <metadata>Embedded Azure icon sources: compute\10347-icon-service-Hosts.svg; compute\10021-icon-service-Virtual-Machine.svg; containers\10023-icon-service-Kubernetes-Services.svg.</metadata>
+  <rect id="background" x="0" y="0" width="1440" height="1200" fill="#ffffff"/>
+  <defs>
+    <style>
+      text { font-family: "Segoe UI", Arial, sans-serif; fill: #000000; }
+      .title { font-size: 34px; font-weight: 600; }
+      .subtitle, .body { font-size: 20px; }
+      .section-title { font-size: 28px; font-weight: 600; }
+      .card-title { font-size: 24px; font-weight: 600; }
+      .label { font-size: 20px; font-weight: 600; }
+      .small { font-size: 18px; }
+      .connector { fill: none; stroke: #506477; stroke-width: 2.5; marker-end: url(#arrow); }
+      .card { fill: #ffffff; stroke-width: 2; }
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#506477"/>
+    </marker>
+    <symbol id="azure-host" viewBox="0 0 18 18" data-source-icon="compute\10347-icon-service-Hosts.svg">
+      <defs>
+        <linearGradient id="host-top" x1="9.02" y1="5.46" x2="9.02" y2="0.65" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#198ab3"/><stop offset="1" stop-color="#32d4f5"/></linearGradient>
+        <linearGradient id="host-bottom" x1="8.98" y1="11.97" x2="8.98" y2="7.17" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#198ab3"/><stop offset="1" stop-color="#32d4f5"/></linearGradient>
+        <linearGradient id="host-link" x1="9.02" y1="17.34" x2="9.02" y2="14.32" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#198ab3"/><stop offset="1" stop-color="#32d4f5"/></linearGradient>
+      </defs>
+      <g>
+        <path d="M8.46,5.46h1v9.6h-1Z" fill="#32bedd"/>
+        <path d="M15.48.65H2.56A.58.58,0,0,0,2,1.23V4.88a.58.58,0,0,0,.57.58H15.48a.57.57,0,0,0,.57-.58V1.23A.57.57,0,0,0,15.48.65Z" fill="url(#host-top)"/>
+        <path d="M15.44,7.17H2.52A.57.57,0,0,0,2,7.74V11.4a.56.56,0,0,0,.57.57H15.44A.57.57,0,0,0,16,11.4V7.74A.58.58,0,0,0,15.44,7.17Z" fill="url(#host-bottom)"/>
+        <circle cx="9.06" cy="15.84" r="1.51" fill="#7fba00"/>
+        <circle cx="9.02" cy="15.83" r="1.51" fill="url(#host-link)"/>
+        <g><rect x="13.72" y="1.55" width="1.05" height="1.05" rx="0.15" fill="#b4ec36"/><rect x="13.72" y="3.36" width="1.05" height="1.05" rx="0.15" fill="#b4ec36"/></g>
+        <g><rect x="13.72" y="8.04" width="1.05" height="1.05" rx="0.15" fill="#b4ec36"/><rect x="13.72" y="9.85" width="1.05" height="1.05" rx="0.15" fill="#b4ec36"/></g>
+      </g>
+    </symbol>
+    <symbol id="azure-vm" viewBox="0 0 18 18" data-source-icon="compute\10021-icon-service-Virtual-Machine.svg">
+      <defs>
+        <linearGradient id="vm-screen" x1="8.88" y1="12.21" x2="8.88" y2="0.21" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#0078d4"/><stop offset="0.82" stop-color="#5ea0ef"/></linearGradient>
+        <linearGradient id="vm-stand" x1="8.88" y1="16.84" x2="8.88" y2="12.21" gradientUnits="userSpaceOnUse"><stop offset="0.15" stop-color="#ccc"/><stop offset="1" stop-color="#707070"/></linearGradient>
+      </defs>
+      <rect x="-0.12" y="0.21" width="18" height="12" rx="0.6" fill="url(#vm-screen)"/>
+      <polygon points="11.88 4.46 11.88 7.95 8.88 9.71 8.88 6.21 11.88 4.46" fill="#50e6ff"/>
+      <polygon points="11.88 4.46 8.88 6.22 5.88 4.46 8.88 2.71 11.88 4.46" fill="#c3f1ff"/>
+      <polygon points="8.88 6.22 8.88 9.71 5.88 7.95 5.88 4.46 8.88 6.22" fill="#9cebff"/>
+      <polygon points="5.88 7.95 8.88 6.21 8.88 9.71 5.88 7.95" fill="#c3f1ff"/>
+      <polygon points="11.88 7.95 8.88 6.21 8.88 9.71 11.88 7.95" fill="#9cebff"/>
+      <path d="M12.49,15.84c-1.78-.28-1.85-1.56-1.85-3.63H7.11c0,2.07-.06,3.35-1.84,3.63a1,1,0,0,0-.89,1h9A1,1,0,0,0,12.49,15.84Z" fill="url(#vm-stand)"/>
+    </symbol>
+    <symbol id="azure-kubernetes" viewBox="0 0 18 18" data-source-icon="containers\10023-icon-service-Kubernetes-Services.svg">
+      <defs>
+        <linearGradient id="aks-1" x1="2.94" y1="3.74" x2="8.67" y2="3.74" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#b77af4"/><stop offset="1" stop-color="#773adc"/></linearGradient>
+        <linearGradient id="aks-2" x1="9.13" y1="3.79" x2="14.85" y2="3.79" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#b77af4"/><stop offset="1" stop-color="#773adc"/></linearGradient>
+        <linearGradient id="aks-3" x1="0.01" y1="9.12" x2="5.73" y2="9.12" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#b77af4"/><stop offset="1" stop-color="#773adc"/></linearGradient>
+        <linearGradient id="aks-4" x1="6.18" y1="9.08" x2="11.9" y2="9.08" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#b77af4"/><stop offset="1" stop-color="#773adc"/></linearGradient>
+        <linearGradient id="aks-5" x1="12.35" y1="9.13" x2="18.08" y2="9.13" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#b77af4"/><stop offset="1" stop-color="#773adc"/></linearGradient>
+        <linearGradient id="aks-6" x1="2.87" y1="14.56" x2="8.6" y2="14.56" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#b77af4"/><stop offset="1" stop-color="#773adc"/></linearGradient>
+        <linearGradient id="aks-7" x1="9.05" y1="14.6" x2="14.78" y2="14.6" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#b77af4"/><stop offset="1" stop-color="#773adc"/></linearGradient>
+      </defs>
+      <polygon points="5.8 1.22 2.94 1.75 2.94 5.65 5.8 6.26 8.67 5.11 8.67 2.2 5.8 1.22" fill="url(#aks-1)"/>
+      <path d="M5.91,6.2,8.53,5.14A.2.2,0,0,0,8.65,5V2.36a.21.21,0,0,0-.13-.18l-2.65-.9H5.75l-2.6.48A.2.2,0,0,0,3,1.94V5.47a.19.19,0,0,0,.15.19l2.63.55A.32.32,0,0,0,5.91,6.2Z" fill="none"/>
+      <path d="M2.94,1.75v3.9l2.89.61v-5Zm1.22,3.6-.81-.16v-3l.81-.13Zm1.26.23-.93-.15V2l.93-.16Z" fill="#341a6e"/>
+      <polygon points="11.99 1.27 9.13 1.8 9.13 5.7 11.99 6.31 14.85 5.15 14.85 2.25 11.99 1.27" fill="url(#aks-2)"/>
+      <path d="M9.13,1.8V5.7L12,6.31v-5Zm1.21,3.6-.81-.16v-3l.81-.13Zm1.26.23-.93-.15V2.05l.93-.17Z" fill="#341a6e"/>
+      <polygon points="2.87 6.6 0.01 7.13 0.01 11.03 2.87 11.64 5.74 10.49 5.74 7.58 2.87 6.6" fill="url(#aks-3)"/>
+      <path d="M0,7.13V11l2.89.61v-5Zm1.21,3.61-.81-.17v-3l.81-.14ZM2.48,11l-.93-.15V7.38l.93-.16Z" fill="#341a6e"/>
+      <polygon points="9.04 6.56 6.18 7.09 6.18 10.99 9.04 11.61 11.9 10.45 11.9 7.54 9.04 6.56" fill="url(#aks-4)"/>
+      <path d="M6.18,7.09V11l2.88.61v-5ZM7.39,10.7l-.81-.17v-3l.81-.14Zm1.26.22-.93-.15V7.34l.93-.16Z" fill="#341a6e"/>
+      <polygon points="15.21 6.61 12.35 7.14 12.35 11.04 15.21 11.65 18.08 10.5 18.08 7.59 15.21 6.61" fill="url(#aks-5)"/>
+      <path d="M12.35,7.14V11l2.89.61v-5Zm1.22,3.61-.81-.17v-3l.81-.14Zm1.26.22-.93-.15V7.39l.93-.16Z" fill="#341a6e"/>
+      <polygon points="5.73 12.04 2.87 12.56 2.87 16.46 5.73 17.08 8.6 15.92 8.6 13.02 5.73 12.04" fill="url(#aks-6)"/>
+      <path d="M5.84,17,8.45,16a.18.18,0,0,0,.12-.18v-2.6A.2.2,0,0,0,8.44,13L5.8,12.1a.17.17,0,0,0-.12,0l-2.6.47a.19.19,0,0,0-.16.19v3.54a.19.19,0,0,0,.15.19L5.7,17A.23.23,0,0,0,5.84,17Z" fill="none"/>
+      <path d="M2.87,12.56v3.9l2.89.62V12Zm1.22,3.61L3.28,16V13l.81-.14Zm1.26.23-.93-.15V12.81l.93-.16Z" fill="#341a6e"/>
+      <polygon points="11.91 12.08 9.05 12.61 9.05 16.51 11.91 17.12 14.78 15.97 14.78 13.06 11.91 12.08" fill="url(#aks-7)"/>
+      <path d="M9.05,12.61v3.9l2.89.61v-5Zm1.22,3.61-.81-.17v-3l.81-.14Zm1.26.22-.93-.15V12.86l.93-.16Z" fill="#341a6e"/>
+    </symbol>
+  </defs>
+
+  <text x="40" y="57" class="title">AKS on Azure Local: address scopes and cleanup</text>
+  <text x="40" y="96" class="subtitle">Read 1-3 from left to right. Hosting arrows show where components run, not packet routes.</text>
+
+  <g data-card="scope-1">
+    <rect x="40" y="150" width="400" height="480" rx="12" class="card" stroke="#0078d4" data-role="card-boundary"/>
+    <text x="64" y="194" class="card-title">1. Physical hosts</text>
+    <text x="64" y="235" class="body">Azure Local machines</text>
+    <use href="#azure-host" x="64" y="272" width="52" height="52" aria-hidden="true"/>
+    <text x="136" y="291" class="label">Host A</text>
+    <text x="136" y="320" class="body">Management IP A</text>
+    <use href="#azure-host" x="64" y="367" width="52" height="52" aria-hidden="true"/>
+    <text x="136" y="386" class="label">Host B</text>
+    <text x="136" y="415" class="body">Management IP B</text>
+    <line x1="64" y1="460" x2="416" y2="460" stroke="#c9d9e8" data-role="divider"/>
+    <text x="64" y="497" class="label">Static or reserved DHCP</text>
+    <text x="64" y="535" class="body">Host management addresses</text>
+    <text x="64" y="565" class="body">are separate from all AKS</text>
+    <text x="64" y="595" class="body">node VM addresses.</text>
+  </g>
+
+  <g data-card="scope-2">
+    <rect x="520" y="150" width="400" height="480" rx="12" class="card" stroke="#5c2d91" data-role="card-boundary"/>
+    <text x="544" y="194" class="card-title">2. AKS node VMs</text>
+    <use href="#azure-kubernetes" x="848" y="170" width="48" height="48" aria-hidden="true"/>
+    <text x="544" y="235" class="body">Workload logical network</text>
+    <text x="544" y="267" class="label">Static VM IP pool - no DHCP</text>
+    <use href="#azure-vm" x="544" y="305" width="44" height="44" aria-hidden="true"/>
+    <text x="608" y="324" class="label">Control-plane VM(s)</text>
+    <text x="608" y="353" class="body">Manage Kubernetes</text>
+    <use href="#azure-vm" x="544" y="395" width="44" height="44" aria-hidden="true"/>
+    <text x="608" y="414" class="label">Worker VM(s)</text>
+    <text x="608" y="443" class="body">Run application pods</text>
+    <line x1="544" y1="475" x2="896" y2="475" stroke="#dcd1e9" data-role="divider"/>
+    <text x="544" y="512" class="body">One IP per node VM.</text>
+    <text x="544" y="550" class="body">Reserve an API endpoint and</text>
+    <text x="544" y="580" class="body">upgrade / growth addresses.</text>
+  </g>
+
+  <g data-card="scope-3">
+    <rect x="1000" y="150" width="400" height="480" rx="12" class="card" stroke="#008272" data-role="card-boundary"/>
+    <text x="1024" y="194" class="card-title">3. Pods and containers</text>
+    <text x="1024" y="235" class="body">CNI manages the pod range</text>
+    <g data-card="shared-pod">
+      <rect x="1024" y="267" width="352" height="184" rx="10" fill="#f0faf8" stroke="#008272" stroke-width="1.5" data-role="card-boundary"/>
+      <text x="1044" y="301" class="label">One pod = one shared IP</text>
+      <g data-card="container-a">
+        <rect x="1044" y="326" width="144" height="99" rx="8" fill="#ffffff" stroke="#008272" stroke-width="1.5" data-role="card-boundary"/>
+        <text x="1116" y="368" text-anchor="middle" class="small">Container</text>
+        <text x="1116" y="397" text-anchor="middle" class="label">A</text>
+      </g>
+      <g data-card="container-b">
+        <rect x="1212" y="326" width="144" height="99" rx="8" fill="#ffffff" stroke="#008272" stroke-width="1.5" data-role="card-boundary"/>
+        <text x="1284" y="368" text-anchor="middle" class="small">Container</text>
+        <text x="1284" y="397" text-anchor="middle" class="label">B</text>
+      </g>
+    </g>
+    <text x="1024" y="490" class="body">Containers share this pod IP.</text>
+    <text x="1024" y="528" class="label">Pod IPs are not DHCP leases.</text>
+    <text x="1024" y="566" class="body">New pods can reuse released</text>
+    <text x="1024" y="596" class="body">addresses after cleanup.</text>
+  </g>
+
+  <text x="480" y="352" text-anchor="middle" class="small">run</text>
+  <line x1="450" y1="370" x2="510" y2="370" class="connector" data-role="connector"/>
+  <text x="960" y="396" text-anchor="middle" class="small">run</text>
+  <line x1="930" y1="414" x2="990" y2="414" class="connector" data-role="connector"/>
+
+  <text x="40" y="692" class="section-title">Pod address lifecycle</text>
+  <text x="40" y="729" class="subtitle">Read 4-6 from left to right. Address reuse follows pod-network cleanup, not each container exit.</text>
+
+  <g data-card="lifecycle-4">
+    <rect x="40" y="770" width="400" height="230" rx="12" class="card" stroke="#0078d4" data-role="card-boundary"/>
+    <text x="64" y="812" class="card-title">4. Pod is created</text>
+    <text x="64" y="858" class="body">CNI allocates one pod IP.</text>
+    <text x="64" y="889" class="body">Containers share the address.</text>
+    <text x="64" y="930" class="body">The allocation stays in use</text>
+    <text x="64" y="961" class="body">while pod networking exists.</text>
+  </g>
+  <g data-card="lifecycle-5">
+    <rect x="520" y="770" width="400" height="230" rx="12" class="card" stroke="#b65c00" data-role="card-boundary"/>
+    <text x="544" y="812" class="card-title">5. A container stops</text>
+    <text x="544" y="858" class="body">A container restart or exit</text>
+    <text x="544" y="889" class="body">does not necessarily remove</text>
+    <text x="544" y="920" class="body">the pod's network.</text>
+    <text x="544" y="961" class="label">The pod IP can stay allocated.</text>
+  </g>
+  <g data-card="lifecycle-6">
+    <rect x="1000" y="770" width="400" height="230" rx="12" class="card" stroke="#008272" data-role="card-boundary"/>
+    <text x="1024" y="812" class="card-title">6. Pod network removed</text>
+    <text x="1024" y="858" class="body">Normal CNI cleanup releases</text>
+    <text x="1024" y="889" class="body">the pod IP for reuse.</text>
+    <text x="1024" y="930" class="body">If cleanup fails, investigate</text>
+    <text x="1024" y="961" class="body">stale CNI allocations.</text>
+  </g>
+  <line x1="450" y1="885" x2="510" y2="885" class="connector" data-role="connector"/>
+  <line x1="930" y1="885" x2="990" y2="885" class="connector" data-role="connector"/>
+
+  <g data-card="planning-reminder">
+    <rect x="40" y="1040" width="1360" height="112" rx="12" class="card" stroke="#506477" data-role="card-boundary"/>
+    <text x="64" y="1074" class="card-title">Plan other addresses separately</text>
+    <text x="64" y="1105" class="body">Load-balancer front ends: reserved outside the VM pool. Internal services: a separate Kubernetes service range.</text>
+    <text x="64" y="1135" class="body">Keep spare capacity for upgrades and scaling. Shorter DHCP leases do not reclaim pod IPs.</text>
+  </g>
+  <text x="40" y="1183" class="small">CNI = Container Network Interface. The pod example illustrates ordinary, non-host-networked pods.</text>
+</svg>

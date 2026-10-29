@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-local-network-configuration.network-address-planning
+metadata:
+  title: Azure Local Network Address Planning
+  description: Plan nonoverlapping Azure Local address allocations, automatic storage addressing, consistent frame handling, and infrastructure service dependencies.
+  ms.date: 10/26/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Azure Local network address planning
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-network-address-planning.md)]

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-local-network-configuration.storage-networking-protocols
+metadata:
+  title: Storage Networking Protocols
+  description: Distinguish storage transport capabilities, traffic priorities, selected connections, and evidence of actual remote direct memory access activity.
+  ms.date: 10/26/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Storage networking protocols
+durationInMinutes: 8
+content: |
+  [!include[](includes/7-storage-networking-protocols.md)]

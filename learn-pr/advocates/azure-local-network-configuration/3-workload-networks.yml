@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-local-network-configuration.workload-networks
+metadata:
+  title: Azure Local Workload Networks
+  description: Configure workload logical networks, plan Kubernetes addressing, select traffic segmentation, and deploy the appropriate Network Controller model.
+  ms.date: 10/26/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Azure Local workload networks
+durationInMinutes: 25
+content: |
+  [!include[](includes/3-workload-networks.md)]

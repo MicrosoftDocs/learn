@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-local-network-configuration.introduction
+metadata:
+  title: Introduction
+  description: Explore the network configuration layers, responsibilities, and learning objectives for Azure Local.
+  ms.date: 10/26/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Introduction
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]
