@@ -1,4 +1,13 @@
+::: zone pivot="video"
 
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=251eca42-70a7-45b8-97d8-1dfbf64dc3f7]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
 
 By default, the Azure Data Factory user interface experience (UX) authors directly against the data factory service. This experience has the following limitations:
 
@@ -128,3 +137,5 @@ After you remove the association with the current repo, you can configure your G
 
 > [!IMPORTANT]
 > Removing Git configuration from a data factory doesn't delete anything from the repository. The factory contains all published resources. You can continue to edit the factory directly against the service.
+
+::: zone-end

@@ -2,9 +2,10 @@
 uid: learn.data-ai-introduction-to-azure-data-lake-storage.azure-data-lake-and-blob-storage
 title: Compare Azure Data Lake Storage to Azure Blob storage
 metadata:
+  zone_pivot_groups: video-or-text
   title: Compare Azure Data Lake Storage to Azure Blob storage
   description: "Compare Azure Data Lake Storage to Azure Blob storage"
-  ms.date: 10/12/2026
+  ms.date: 10/29/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

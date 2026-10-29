@@ -2,9 +2,10 @@
 uid: learn.wwl.petabyte-scale-ingestion-azure-data-factory.describe-connectors
 title: Describe data factory connectors
 metadata:
+  zone_pivot_groups: video-or-text
   title: Describe data factory connectors
   description: "Describe data factory connectors"
-  ms.date: 10/12/2026
+  ms.date: 10/29/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

@@ -2,9 +2,10 @@
 uid: learn.wwl.orchestrate-data-movement-transformation-azure-data-factory.executing-packages
 title: Execute data factory packages
 metadata:
+  zone_pivot_groups: video-or-text
   title: Execute data factory packages
   description: "Execute data factory packages"
-  ms.date: 10/12/2026
+  ms.date: 10/29/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

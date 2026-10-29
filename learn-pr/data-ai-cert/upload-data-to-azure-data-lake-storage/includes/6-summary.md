@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=417c8d60-6d6e-4177-8107-9f9fbca4c9bb]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Azure SDKs help automate various redundant operations in Azure. In an enterprise scenario, you often need to upload files from on-premises or local servers to Azure Data Lake Storage Gen2 at regular intervals. Analytics applications can then use Azure Databricks, Microsoft Fabric, or Azure Synapse Analytics to derive insights from the uploaded data, even if the data is formatted differently.
 
 Azure Storage stores various forms of data in a way that's scalable and reliable. Whether the data is structured or unstructured, Azure Storage can store all of it. 
@@ -7,3 +18,5 @@ Use Azure Storage Explorer to manage your data. Download it on your machine and 
 ## Cleanup
 
 To avoid additional costs in your Azure account, delete the **mslearn-datalake-test** resource group. This action removes all the resources you created in this module.
+
+::: zone-end

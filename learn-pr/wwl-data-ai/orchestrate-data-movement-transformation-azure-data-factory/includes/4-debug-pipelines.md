@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=738c6b4b-809e-4e6c-a200-64c7798c8409]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Customer requirements and expectations are changing in relation to data integration. The need among users to develop and debug their Extract Transform/Load (ETL) and Extract Load/Transform (ELT) workflows iteratively is therefore becoming more imperative.
 
 Azure Data Factory can help you build and develop iterative debug Data Factory pipelines when you develop your data integration solution. By authoring a pipeline using the pipeline canvas, you can test your activities and pipelines by using the Debug capability.
@@ -68,3 +79,5 @@ One thing to take in mind is that the Azure Data Factory service only keeps debu
 
 > [!div class="mx-imgBorder"]
 > [![Screenshot showing how to monitor debug run Azure Data Factory.](../media/azure-data-factory-monitor-pipeline-debug.png)](../media/azure-data-factory-monitor-pipeline-debug.png#lightbox)
+
+::: zone-end

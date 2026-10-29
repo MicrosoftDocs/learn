@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=456cb065-f776-4c1c-b78f-867a77976099]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 ## Data-driven workflows
 
 The pipelines (data-driven workflows) in Azure Data Factory typically perform the following four steps:
@@ -21,3 +32,5 @@ Azure Data Factory provides full support for CI/CD of your data pipelines using 
 ## Monitor
 
  Azure Data Factory has built-in support for pipeline monitoring via Azure Monitor, API, PowerShell, Azure Monitor logs, and health panels on the Azure portal, to monitor the scheduled activities and pipelines for success and failure rates.
+
+::: zone-end

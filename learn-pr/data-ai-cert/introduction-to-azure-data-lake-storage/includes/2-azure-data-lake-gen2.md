@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=c9bc631b-2663-4920-9592-c01a612916a0]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 A data lake is a repository of data that is stored in its natural format, usually as blobs or files. Azure Data Lake Storage is a scalable, secure, and cost-effective data lake solution for high-performance analytics built into Azure.
 
 ![Diagram representing files in Azure data Lake Storage Gen2 being accessed by big data technologies.](../media/azure-data-lake-gen-2.png)
@@ -35,3 +46,5 @@ Data Lake Storage supports the Azure Storage redundancy options. Locally redunda
 > - What are the typical access patterns
 >
 > This approach helps determine how to plan for access control governance across your lake. Data engineers should be proactive in ensuring that the lake doesn't become the proverbial data swamp, which becomes inaccessible and not useful to users because of a lack of data governance and data quality measures. Establishing a baseline and following best practices for Azure Data Lake helps ensure a robust implementation that allows the organization to grow and gain insight.
+
+::: zone-end

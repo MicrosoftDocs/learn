@@ -21,7 +21,7 @@ metadata:
   gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/execute-existing-ssis-packages-azure-data-factory/index.yml
   title: Execute existing SSIS packages in Azure Data Factory
   description: Execute existing SSIS packages in Azure Data Factory or Azure Synapse Pipeline
-  ms.date: 10/12/2026
+  ms.date: 10/29/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: module

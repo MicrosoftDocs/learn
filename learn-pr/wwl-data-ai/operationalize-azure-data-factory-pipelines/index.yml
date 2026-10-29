@@ -27,7 +27,7 @@ metadata:
   gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/operationalize-azure-data-factory-pipelines/index.yml
   title: Operationalize your Azure Data Factory pipelines
   description: "Operationalize your Azure Data Factory pipelines"
-  ms.date: 10/12/2026
+  ms.date: 10/29/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: module

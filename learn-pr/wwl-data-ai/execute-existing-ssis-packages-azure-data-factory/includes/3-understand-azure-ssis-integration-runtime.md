@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=7d16abfd-3c24-4d01-a6c5-779b7d479452]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 ## Integration runtime
 
 In Data Factory, an activity defines the action to be performed. A linked service defines a target data store or a compute service. An integration runtime (IR) provides the bridge between the activity and linked services.
@@ -21,3 +32,5 @@ During the provisioning of the Azure-SSIS integration runtime, you specify the f
 - The maximum parallel executions per node.
 
 With the Azure-SSIS integration runtime enabled, you can deploy, run, manage, monitor, and schedule SSIS packages using tools such as SQL Server Management Studio (SSMS) or SQL Server Data Tools (SSDT).
+
+::: zone-end

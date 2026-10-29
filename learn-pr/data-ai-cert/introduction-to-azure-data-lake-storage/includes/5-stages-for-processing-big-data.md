@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=106a54da-1ebd-4586-9e8c-8e88aa292b17]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Data lakes have a fundamental role in a wide range of big data architectures. These architectures can involve the creation of:
 
 - An enterprise data warehouse.
@@ -13,3 +24,5 @@ There are four stages for processing big data solutions that are common to all a
 - **Prep and train** - The prep and train phase identifies the technologies that are used to perform data preparation and model training and scoring for machine learning solutions. Common technologies that are used in this phase are Azure Databricks, Microsoft Fabric, and Azure Machine Learning.
 
 - **Model and serve** - Finally, the model and serve phase involves the technologies that present the data to users. These technologies can include visualization tools such as Microsoft Power BI, or analytical workloads in Microsoft Fabric. Often, a combination of multiple technologies is used depending on the business requirements.
+
+::: zone-end

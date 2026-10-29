@@ -2,9 +2,10 @@
 uid: learn.wwl.understand-fabric-iq-fundamentals.get-started-with-fabric-iq
 title: Get started with Fabric IQ
 metadata:
+  zone_pivot_groups: video-or-text
   title: Get Started with Fabric IQ
   description: Learn what Microsoft Fabric IQ is, where to access it, and how ontologies define business vocabulary and bind to data sources.
-  ms.date: 09/08/2026
+  ms.date: 10/29/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

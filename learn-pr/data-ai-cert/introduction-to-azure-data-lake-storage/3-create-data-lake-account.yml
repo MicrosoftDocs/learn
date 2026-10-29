@@ -2,9 +2,10 @@
 uid: learn.data-ai-introduction-to-azure-data-lake-storage.create-data-lake-account
 title: Enable Azure Data Lake Storage Gen2 in Azure Storage
 metadata:
+  zone_pivot_groups: video-or-text
   title: Enable Azure Data Lake Storage Gen2 in Azure Storage
   description: "Enable Azure Data Lake Storage Gen2 in Azure Storage"
-  ms.date: 10/12/2026
+  ms.date: 10/29/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

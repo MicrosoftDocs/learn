@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=5f730185-eb80-4444-90c5-1edaf57b4631]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 To create Data Factory instances, the user account that you use to sign in to Azure must be a member of the _contributor_ or _owner_ role, or an _administrator_ of the Azure subscription.
 
 To create and manage Data Factory objects including datasets, linked services, pipelines, triggers, and integration runtimes, the following requirements must be met:
@@ -30,3 +41,5 @@ To grant a managed identity access to a resource, assign the appropriate Azure R
 For credentials that can't use managed identity authentication, store them in **Azure Key Vault** and reference the secret in your linked service definition. This avoids embedding sensitive values in pipeline configuration.
 
 Learn more about [managed identities for Azure Data Factory](/azure/data-factory/data-factory-service-identity).
+
+::: zone-end

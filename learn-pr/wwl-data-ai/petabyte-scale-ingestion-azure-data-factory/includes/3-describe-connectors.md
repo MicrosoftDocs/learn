@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=0e326d47-78c9-4efb-9c53-e905eb2da1fc]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Connectors are Azure Data Factory objects that enable your Linked Services and Datasets to connect to a wide variety of data sources and sinks. These can include connections to Azure resources and third-party connectors such as Amazon S3 or Google Cloud Storage. There are over 100 connectors available, and they work with the Copy, Data Flow, Look up, Get Metadata, and Delete activities that can be found within Azure Data Factory.
 
 The file formats that are supported include:
@@ -23,3 +34,5 @@ There are too many data stores to list, but the following table lists the catego
 | Services & Apps   | Dynamics, Salesforce                           |
 
 The list of connectors is constantly evolving. You can keep up to date with the latest list, and the activity support by looking at the [connectors overview page](/azure/data-factory/connector-overview)
+
+::: zone-end

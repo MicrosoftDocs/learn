@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=01253ab1-2258-4d55-a726-18c758800d59]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 During the building of Mapping Data Flows, you can interactively watch how the data transformations are executing so that you can debug them. To use this functionality, it's first necessary to turn on the "Data Flow Debug" feature.
 
 ![Screenshot that shows the "Data Flow Debug" toggle being activated.](../media/start-data-flow-debug.png)
@@ -17,3 +28,5 @@ Finally, you can use the debug settings to control the number of rows that are r
 > It's recommended to limit the number of rows to enough to confirm that the data is correct. The bigger the data set, the longer it takes to return the results back. You can also use the Debug settings to specify any parameter values that should be used during the execution of the pipeline.
 >
 > You're charged hourly while a debug session is running, including the TTL time. Turn the debug switch off when you finish debugging so that the Spark cluster can terminate.
+
+::: zone-end

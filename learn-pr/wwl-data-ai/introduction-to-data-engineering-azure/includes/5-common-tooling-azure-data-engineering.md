@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=0f8eed24-caf7-484c-ac05-6542bf5ad286]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 ![Diagram of the flow of a typical enterprise data analytics solution.](../media/3-data-engineering-azure.png)
 
 Microsoft Azure includes many services that can be used to implement and manage data engineering workloads.
@@ -17,3 +28,5 @@ Microsoft Fabric is a unified, end-to-end SaaS analytics platform built on OneLa
 The diagram also includes Azure Synapse Analytics. Microsoft Fabric provides guidance for migrating Azure Synapse workloads to Fabric.
 
 The analytical data stores that are populated with data produced by data engineering workloads support data modeling and visualization for reporting and analysis, often using visualization tools such as Microsoft Power BI.
+
+::: zone-end

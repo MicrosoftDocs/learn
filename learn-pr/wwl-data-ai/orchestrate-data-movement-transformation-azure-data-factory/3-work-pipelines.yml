@@ -2,9 +2,10 @@
 uid: learn.wwl.orchestrate-data-movement-transformation-azure-data-factory.working-pipelines
 title: Work with data factory pipelines
 metadata:
+  zone_pivot_groups: video-or-text
   title: Work with data factory pipelines
   description: "Work with data factory pipelines"
-  ms.date: 10/12/2026
+  ms.date: 10/29/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

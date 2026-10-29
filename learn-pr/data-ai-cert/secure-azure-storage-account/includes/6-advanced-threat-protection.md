@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=1e4ae7cf-9676-4deb-8dd7-045d5f2b6362]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Microsoft Defender for Storage provides an extra layer of security intelligence that detects unusual and potentially harmful attempts to access or exploit storage accounts. This layer of protection helps you address threats without being a security expert or managing security-monitoring systems.
 
 Security alerts are triggered when anomalies in activity occur. These security alerts are integrated with Microsoft Defender for Cloud. By default, subscription owners also receive email notifications for high-severity alerts, with details of the suspicious activity. You can change who receives the emails and which alert severities trigger them.
@@ -35,3 +46,5 @@ When storage activity anomalies occur, you receive an email notification with in
 You can review and manage your current security alerts from Microsoft Defender for Cloud's Security alerts tile. Selecting a specific alert provides details and actions for investigating the current threat and addressing future threats.
 
 ![Screenshot that shows security anomaly details in Microsoft Defender for Cloud.](../media/view-security-anomolies-details-in-azure-defender-for-security.png)
+
+::: zone-end

@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=fde15134-67b7-46a6-aff6-a4658eac7360]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 With the Azure-SSIS integration runtime installed and SQL Server Data Tools (SSDT) you have the capability to deploy and manage SSIS packages that you create in the cloud. For some packages, you may be able to rebuild them by redeploying them in the Azure-SSIS runtime. However, there may be some SSIS packages that already exist within your environment that may not be compatible.
 
 ## Perform assessments of your SSIS packages
@@ -47,5 +58,4 @@ Azure Database Migration Service doesn't migrate a source SSISDB to Azure SQL Da
 > [!TIP]
 > To understand additional features and tools for migrating SQL Server workloads to Azure SQL, see [Migrate SQL Server workloads to Azure SQL](/training/paths/migrate-sql-workloads-azure/).
 
-
-
+::: zone-end

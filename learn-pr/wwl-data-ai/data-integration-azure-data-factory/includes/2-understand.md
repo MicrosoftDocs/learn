@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=0ded8ea2-de49-4b5a-bf44-ff6a926ca243]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 The need to trigger the batch movement of data, or to set up a regular schedule is a requirement for most analytics solutions. Azure Data Factory (ADF) is the service that can be used to fulfill such a requirement. ADF provides a cloud-based data integration service that orchestrates the movement and transformation of data between various data stores and compute resources.
 
 Azure Data Factory is the cloud-based ETL and data integration service that allows you to create data-driven workflows for orchestrating data movement and transforming data at scale. Using Azure Data Factory, you can create and schedule data-driven workflows (called pipelines) that can ingest data from disparate data stores. You can build complex ETL processes that transform data visually with data flows or by using compute services such as Azure HDInsight Hadoop, Azure Databricks, and Azure SQL Database.
@@ -14,3 +25,5 @@ ADF uses a similar approach. While it has native functionality to ingest and tra
 ADF also has built-in support for pipeline monitoring through Azure Monitor, an API, PowerShell, Azure Monitor logs, and health panels in the Azure portal.
 
 ![Diagram showing the Data Factory platform.](../media/hydrid-data-integration-scale.png)
+
+::: zone-end

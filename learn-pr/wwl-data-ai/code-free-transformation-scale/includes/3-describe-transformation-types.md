@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=476f96cb-87ee-4a2f-8d45-e2cb76e0c036]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Mapping Data Flows provides many different transformations types that enable you to modify data. They're broken down into the following categories:
 
 | **Category Name**                           | **Description**                                                                                                                                                                                                                                                                          |
@@ -48,3 +59,4 @@ To build the expression, use the Expression Builder, which is launched by select
 
 The Expression Builder tool defaults to the text editor option. The autocomplete feature reads from the entire Azure Data Factory Data Flow object model with syntax checking and highlighting.
 
+::: zone-end

@@ -1,3 +1,11 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=4e65cbb3-9071-48a5-9862-09dfc8962838]
+
+::: zone-end
+
+::: zone pivot="text"
+
 When using Azure Data Factory (ADF) to build your data integration solutions, it's important to have effective, scalable methods to monitor your pipeline runs and enable team collaboration. Azure Data Factory integrates with Azure DevOps and GitHub to allow easy source control and effective continuous integration and delivery. Azure Data Factory also offers a variety of both visual and programmatic monitoring services to also support the monitoring of your pipelines.
 
 > [!NOTE]
@@ -24,3 +32,8 @@ Before taking this module, it's recommended that the student is able to:
 * Explain and create resource groups
 * Describe Azure Data Factory and its core components
 * Ingest data into Azure Data Factory using the Copy Activity
+
+::: zone-end
+
+> [!NOTE]
+> We recognize that different people like to learn in different ways. You can choose to complete this module in video-based format or you can read the content as text and images. The text contains greater detail than the videos, so in some cases you might want to refer to it as supplemental material to the video presentation.

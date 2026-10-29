@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=4724d9e3-385e-45f1-9bd3-61f99fcfa4ce]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Perform the following steps to set up an integration runtime.
 
 ## Set up an Azure-SSIS integration runtime
@@ -118,3 +129,5 @@ Alternatively, if you want to deploy your packages into the file system, Azure F
 1. On the **Connections** pane of **Manage** hub, switch to the **Integration Runtimes** page and select **Refresh**.
 
     ![Screenshot showing the Integration Runtimes page.](../media/integration-runtimes-page.png)
+
+::: zone-end
