@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-local-network-configuration.host-network-intents
+metadata:
+  title: Host Network Intents
+  description: Map Azure Local network intents to physical adapters, host virtual interfaces, reconciliation evidence, and supported configuration changes.
+  ms.date: 10/26/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Host network intents
+durationInMinutes: 4
+content: |
+  [!include[](includes/6-host-network-intents.md)]

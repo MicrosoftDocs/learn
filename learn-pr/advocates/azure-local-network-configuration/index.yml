@@ -1,0 +1,57 @@
+### YamlMime:Module
+uid: learn.devrel.azure-local-network-configuration
+metadata:
+  title: Azure Local Network Configuration
+  description: Plan Azure Local network configuration, address allocation, host intents, storage connectivity, workload security, and resilient Azure connectivity.
+  ms.date: 10/26/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: module-standard-concept-based
+  ms.service: azure-local
+  ai-usage: ai-assisted
+title: Azure Local network configuration
+summary: |
+  Azure Local networking connects physical switches and adapters, intent-managed host configuration, storage transports, Azure connectivity, and workload security. These layers cooperate, but they have different owners and different evidence of success. An adapter reporting **Up** does not establish storage performance. A successful connection to Transmission Control Protocol (TCP) port 443 does not establish an authenticated Azure transaction. A correctly written security rule does not help a workload unless it applies to that workload's actual path.
+abstract: |
+  By the end of this module, you can:
+
+  - Understand Azure Local network configuration.
+  - Develop a nonoverlapping address plan that respects automatic storage configuration.
+  - Explain how Network ATC maps intent to host adapters and interfaces.
+  - Correlate intent state, SMB interface selection, RDMA activity, and application performance.
+  - Calculate whether a converged design can sustain its approved degraded-state demand.
+  - Distinguish direct egress, enterprise proxies, Azure Arc gateway, and supported private paths.
+  - Locate the correct software-defined networking owner for a denied workload flow.
+  - Select a supported network infrastructure design and explain which failures it can tolerate and what limits apply to expansion.
+  - Propose a narrowly scoped, reversible change when the supported procedure permits reversal.
+prerequisites: |
+  - Familiarity with physical networking, virtualization, and storage.
+  - Basic understanding of Azure Local deployment, Azure resource management, and Windows PowerShell.
+iconUrl: /training/achievements/generic-badge.svg
+ratingEnabled: false
+levels:
+- intermediate
+roles:
+- administrator
+- network-engineer
+- solution-architect
+products:
+- azure-local
+subjects:
+- networking
+- infrastructure
+units:
+- learn.devrel.azure-local-network-configuration.introduction
+- learn.devrel.azure-local-network-configuration.physical-network-configuration
+- learn.devrel.azure-local-network-configuration.workload-networks
+- learn.devrel.azure-local-network-configuration.network-infrastructure-resilience
+- learn.devrel.azure-local-network-configuration.network-address-planning
+- learn.devrel.azure-local-network-configuration.host-network-intents
+- learn.devrel.azure-local-network-configuration.storage-networking-protocols
+- learn.devrel.azure-local-network-configuration.software-defined-network-policy
+- learn.devrel.azure-local-network-configuration.diagnose-connectivity-issues
+- learn.devrel.azure-local-network-configuration.cloud-connectivity-paths
+- learn.devrel.azure-local-network-configuration.knowledge-check
+- learn.devrel.azure-local-network-configuration.summary
+badge:
+  uid: learn.devrel.azure-local-network-configuration.badge

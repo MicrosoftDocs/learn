@@ -1,0 +1,356 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="1020" viewBox="0 0 1280 1020" role="img" aria-labelledby="diagram-title diagram-description" style="background-color: white">
+  <title id="diagram-title">Compare storage connectivity patterns</title>
+  <desc id="diagram-description">A two-node switchless example has two direct storage links between nodes. The switched example uses separate paths through switches A and B. Management and compute access is omitted in both diagrams and still requires its own design. This is a conceptual comparison, not a cabling blueprint.</desc>
+  <rect id="background" x="0" y="0" width="1280" height="1020" fill="#ffffff" />
+  <defs>
+    <marker id="arrow-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#0078d4" />
+    </marker>
+    <marker id="arrow-purple" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#5c2d91" />
+    </marker>
+    <marker id="arrow-gray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#506477" />
+    </marker>
+  </defs>
+  <text x="40" y="48" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="600" fill="#000000" text-anchor="start" data-role="heading">Compare storage connectivity patterns</text>
+  <text x="40" y="83" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="400" fill="#000000" text-anchor="start" data-role="subtitle">Read each topology left to right. Solid blue: path A. Dashed purple: path B.</text>
+  <text x="40" y="135" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="600" fill="#000000" text-anchor="start" data-role="label">1. Switchless storage: direct node-to-node links</text>
+  <g data-card="direct-node-a">
+    <rect x="40" y="175" width="320" height="165" rx="10" fill="#f3f8fd" stroke="#0078d4" stroke-width="1.5" data-role="card-boundary" />
+    <text x="62" y="214" font-family="Segoe UI, Arial, sans-serif" font-size="23" font-weight="600" fill="#000000" text-anchor="start" data-role="card-title">Node A</text>
+    <svg version="1.0" x="292" y="276" viewBox="32 17 25 46" enable-background="new 0 0 83.4 83.4" xml:space="preserve" width="44" height="44" aria-hidden="true" data-source-icon="CnE_Enterprise\Server (generic).svg">
+      <g id="icon-1-Layer_1">
+        <g id="icon-1-File_x2C__general">
+          <title>Sheet.1071</title>
+        </g>
+        <g id="icon-1-Message">
+	</g>
+        <g id="icon-1-Monitor">
+	</g>
+        <g id="icon-1-Monitor_running_apps">
+	</g>
+        <g id="icon-1-Mouse">
+	</g>
+        <g id="icon-1-Network_card">
+	</g>
+        <g id="icon-1-Not_allowed">
+	</g>
+        <g id="icon-1-Performance">
+	</g>
+        <g id="icon-1-Phone">
+	</g>
+        <g id="icon-1-Plug_and_play">
+	</g>
+        <g id="icon-1-Powershell_script_file">
+	</g>
+        <g id="icon-1-Protocol_stack">
+	</g>
+        <g id="icon-1-Queue_x2C__general">
+	</g>
+        <g id="icon-1-RMS_connector">
+	</g>
+        <g id="icon-1-Router">
+	</g>
+        <g id="icon-1-Script_file">
+	</g>
+        <g id="icon-1-Secure_virtual_machine">
+	</g>
+      </g>
+      <g id="icon-1-paths">
+        <g id="icon-1-Access_control">
+	</g>
+        <g id="icon-1-Azure_active_directory">
+	</g>
+        <g id="icon-1-Generic_code">
+	</g>
+        <g id="icon-1-Laptop">
+	</g>
+        <g id="icon-1-Load_balancer">
+	</g>
+        <g id="icon-1-Lock_x2C__protected">
+	</g>
+      </g>
+      <g id="icon-1-symbols">
+        <g>
+          <path fill="#2A3282" d="M52.6,19.1h-16c-1.1,0-2,0.9-2,2v39h20v-39C54.6,20,53.7,19.1,52.6,19.1z M51.6,56.1h-14v-2h14V56.1z     M51.6,52.1h-14v-2h14V52.1z M51.6,27.1h-14v-2h14V27.1z" />
+        </g>
+      </g>
+      <g id="icon-1-slices">
+</g>
+    </svg>
+    <text x="62" y="253" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400" fill="#000000" text-anchor="start" data-role="card-body">Storage adapters</text>
+    <text x="62" y="282" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400" fill="#000000" text-anchor="start" data-role="card-body">Two direct paths</text>
+  </g>
+  <g data-card="direct-node-b">
+    <rect x="920" y="175" width="320" height="165" rx="10" fill="#f3f8fd" stroke="#0078d4" stroke-width="1.5" data-role="card-boundary" />
+    <text x="942" y="214" font-family="Segoe UI, Arial, sans-serif" font-size="23" font-weight="600" fill="#000000" text-anchor="start" data-role="card-title">Node B</text>
+    <svg version="1.0" x="1172" y="276" viewBox="32 17 25 46" enable-background="new 0 0 83.4 83.4" xml:space="preserve" width="44" height="44" aria-hidden="true" data-source-icon="CnE_Enterprise\Server (generic).svg">
+      <g id="icon-2-Layer_1">
+        <g id="icon-2-File_x2C__general">
+          <title>Sheet.1071</title>
+        </g>
+        <g id="icon-2-Message">
+	</g>
+        <g id="icon-2-Monitor">
+	</g>
+        <g id="icon-2-Monitor_running_apps">
+	</g>
+        <g id="icon-2-Mouse">
+	</g>
+        <g id="icon-2-Network_card">
+	</g>
+        <g id="icon-2-Not_allowed">
+	</g>
+        <g id="icon-2-Performance">
+	</g>
+        <g id="icon-2-Phone">
+	</g>
+        <g id="icon-2-Plug_and_play">
+	</g>
+        <g id="icon-2-Powershell_script_file">
+	</g>
+        <g id="icon-2-Protocol_stack">
+	</g>
+        <g id="icon-2-Queue_x2C__general">
+	</g>
+        <g id="icon-2-RMS_connector">
+	</g>
+        <g id="icon-2-Router">
+	</g>
+        <g id="icon-2-Script_file">
+	</g>
+        <g id="icon-2-Secure_virtual_machine">
+	</g>
+      </g>
+      <g id="icon-2-paths">
+        <g id="icon-2-Access_control">
+	</g>
+        <g id="icon-2-Azure_active_directory">
+	</g>
+        <g id="icon-2-Generic_code">
+	</g>
+        <g id="icon-2-Laptop">
+	</g>
+        <g id="icon-2-Load_balancer">
+	</g>
+        <g id="icon-2-Lock_x2C__protected">
+	</g>
+      </g>
+      <g id="icon-2-symbols">
+        <g>
+          <path fill="#2A3282" d="M52.6,19.1h-16c-1.1,0-2,0.9-2,2v39h20v-39C54.6,20,53.7,19.1,52.6,19.1z M51.6,56.1h-14v-2h14V56.1z     M51.6,52.1h-14v-2h14V52.1z M51.6,27.1h-14v-2h14V27.1z" />
+        </g>
+      </g>
+      <g id="icon-2-slices">
+</g>
+    </svg>
+    <text x="942" y="253" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400" fill="#000000" text-anchor="start" data-role="card-body">Storage adapters</text>
+    <text x="942" y="282" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400" fill="#000000" text-anchor="start" data-role="card-body">Matching peer paths</text>
+  </g>
+  <text x="640" y="219" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400" fill="#000000" text-anchor="middle" data-role="label">Storage path A</text>
+  <polyline points="370,235 910,235" fill="none" stroke="#0078d4" stroke-width="2.5" data-role="connector" stroke-linejoin="round" marker-end="url(#arrow-blue)" marker-start="url(#arrow-blue)" />
+  <text x="640" y="279" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400" fill="#000000" text-anchor="middle" data-role="label">Storage path B</text>
+  <polyline points="370,295 910,295" fill="none" stroke="#5c2d91" stroke-width="2.5" data-role="connector" stroke-linejoin="round" marker-end="url(#arrow-purple)" marker-start="url(#arrow-purple)" stroke-dasharray="9 6" />
+  <text x="40" y="384" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400" fill="#000000" text-anchor="start" data-role="label">Management and workload access still needs its own switches and redundancy.</text>
+  <text x="40" y="416" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="400" fill="#000000" text-anchor="start" data-role="label">Use the exact supported pattern; the cited two-node switchless patterns require redeployment to add nodes.</text>
+  <text x="40" y="485" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="600" fill="#000000" text-anchor="start" data-role="label">2. Switched storage: independent fabric paths</text>
+  <g data-card="switched-node-a">
+    <rect x="40" y="525" width="300" height="330" rx="10" fill="#f3f8fd" stroke="#0078d4" stroke-width="1.5" data-role="card-boundary" />
+    <text x="62" y="564" font-family="Segoe UI, Arial, sans-serif" font-size="23" font-weight="600" fill="#000000" text-anchor="start" data-role="card-title">Node A</text>
+    <svg version="1.0" x="272" y="791" viewBox="32 17 25 46" enable-background="new 0 0 83.4 83.4" xml:space="preserve" width="44" height="44" aria-hidden="true" data-source-icon="CnE_Enterprise\Server (generic).svg">
+      <g id="icon-3-Layer_1">
+        <g id="icon-3-File_x2C__general">
+          <title>Sheet.1071</title>
+        </g>
+        <g id="icon-3-Message">
+	</g>
+        <g id="icon-3-Monitor">
+	</g>
+        <g id="icon-3-Monitor_running_apps">
+	</g>
+        <g id="icon-3-Mouse">
+	</g>
+        <g id="icon-3-Network_card">
+	</g>
+        <g id="icon-3-Not_allowed">
+	</g>
+        <g id="icon-3-Performance">
+	</g>
+        <g id="icon-3-Phone">
+	</g>
+        <g id="icon-3-Plug_and_play">
+	</g>
+        <g id="icon-3-Powershell_script_file">
+	</g>
+        <g id="icon-3-Protocol_stack">
+	</g>
+        <g id="icon-3-Queue_x2C__general">
+	</g>
+        <g id="icon-3-RMS_connector">
+	</g>
+        <g id="icon-3-Router">
+	</g>
+        <g id="icon-3-Script_file">
+	</g>
+        <g id="icon-3-Secure_virtual_machine">
+	</g>
+      </g>
+      <g id="icon-3-paths">
+        <g id="icon-3-Access_control">
+	</g>
+        <g id="icon-3-Azure_active_directory">
+	</g>
+        <g id="icon-3-Generic_code">
+	</g>
+        <g id="icon-3-Laptop">
+	</g>
+        <g id="icon-3-Load_balancer">
+	</g>
+        <g id="icon-3-Lock_x2C__protected">
+	</g>
+      </g>
+      <g id="icon-3-symbols">
+        <g>
+          <path fill="#2A3282" d="M52.6,19.1h-16c-1.1,0-2,0.9-2,2v39h20v-39C54.6,20,53.7,19.1,52.6,19.1z M51.6,56.1h-14v-2h14V56.1z     M51.6,52.1h-14v-2h14V52.1z M51.6,27.1h-14v-2h14V27.1z" />
+        </g>
+      </g>
+      <g id="icon-3-slices">
+</g>
+    </svg>
+    <text x="62" y="680" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400" fill="#000000" text-anchor="start" data-role="card-body">Independent storage</text>
+    <text x="62" y="709" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400" fill="#000000" text-anchor="start" data-role="card-body">adapters / paths</text>
+  </g>
+  <g data-card="switched-node-b">
+    <rect x="940" y="525" width="300" height="330" rx="10" fill="#f3f8fd" stroke="#0078d4" stroke-width="1.5" data-role="card-boundary" />
+    <text x="962" y="564" font-family="Segoe UI, Arial, sans-serif" font-size="23" font-weight="600" fill="#000000" text-anchor="start" data-role="card-title">Node B</text>
+    <svg version="1.0" x="1172" y="791" viewBox="32 17 25 46" enable-background="new 0 0 83.4 83.4" xml:space="preserve" width="44" height="44" aria-hidden="true" data-source-icon="CnE_Enterprise\Server (generic).svg">
+      <g id="icon-4-Layer_1">
+        <g id="icon-4-File_x2C__general">
+          <title>Sheet.1071</title>
+        </g>
+        <g id="icon-4-Message">
+	</g>
+        <g id="icon-4-Monitor">
+	</g>
+        <g id="icon-4-Monitor_running_apps">
+	</g>
+        <g id="icon-4-Mouse">
+	</g>
+        <g id="icon-4-Network_card">
+	</g>
+        <g id="icon-4-Not_allowed">
+	</g>
+        <g id="icon-4-Performance">
+	</g>
+        <g id="icon-4-Phone">
+	</g>
+        <g id="icon-4-Plug_and_play">
+	</g>
+        <g id="icon-4-Powershell_script_file">
+	</g>
+        <g id="icon-4-Protocol_stack">
+	</g>
+        <g id="icon-4-Queue_x2C__general">
+	</g>
+        <g id="icon-4-RMS_connector">
+	</g>
+        <g id="icon-4-Router">
+	</g>
+        <g id="icon-4-Script_file">
+	</g>
+        <g id="icon-4-Secure_virtual_machine">
+	</g>
+      </g>
+      <g id="icon-4-paths">
+        <g id="icon-4-Access_control">
+	</g>
+        <g id="icon-4-Azure_active_directory">
+	</g>
+        <g id="icon-4-Generic_code">
+	</g>
+        <g id="icon-4-Laptop">
+	</g>
+        <g id="icon-4-Load_balancer">
+	</g>
+        <g id="icon-4-Lock_x2C__protected">
+	</g>
+      </g>
+      <g id="icon-4-symbols">
+        <g>
+          <path fill="#2A3282" d="M52.6,19.1h-16c-1.1,0-2,0.9-2,2v39h20v-39C54.6,20,53.7,19.1,52.6,19.1z M51.6,56.1h-14v-2h14V56.1z     M51.6,52.1h-14v-2h14V52.1z M51.6,27.1h-14v-2h14V27.1z" />
+        </g>
+      </g>
+      <g id="icon-4-slices">
+</g>
+    </svg>
+    <text x="962" y="680" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400" fill="#000000" text-anchor="start" data-role="card-body">Independent storage</text>
+    <text x="962" y="709" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400" fill="#000000" text-anchor="start" data-role="card-body">adapters / paths</text>
+  </g>
+  <g data-card="switch-a">
+    <rect x="470" y="525" width="340" height="130" rx="10" fill="#f3f8fd" stroke="#0078d4" stroke-width="1.5" data-role="card-boundary" />
+    <text x="492" y="564" font-family="Segoe UI, Arial, sans-serif" font-size="23" font-weight="600" fill="#000000" text-anchor="start" data-role="card-title">Switch A</text>
+    <svg id="icon-5-a1606a52-fb14-4637-87de-4d524bba1829" width="44" height="44" viewBox="0 0 18 18" x="742" y="591" aria-hidden="true" data-source-icon="networking\10061-icon-service-Virtual-Networks.svg">
+      <defs>
+        <linearGradient id="icon-5-f020fb7e-2243-4501-8153-5d69bd3c34f7" x1="9.88" y1="8.59" x2="11.52" y2="10.23" gradientTransform="translate(2.03 -0.4) rotate(-0.08)" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#86d633" />
+          <stop offset="1" stop-color="#5e9624" />
+        </linearGradient>
+        <linearGradient id="icon-5-b3c2bc94-8c7c-48a2-9719-6ee899a43a97" x1="6.18" y1="8.59" x2="7.81" y2="10.23" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#86d633" />
+          <stop offset="1" stop-color="#5e9624" />
+        </linearGradient>
+        <linearGradient id="icon-5-e900c35d-0958-4d4f-b28f-302eeaaf52f5" x1="2.48" y1="8.59" x2="4.11" y2="10.23" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#86d633" />
+          <stop offset="1" stop-color="#5e9624" />
+        </linearGradient>
+      </defs>
+      <title>Icon-networking-61</title>
+      <circle cx="12.74" cy="8.99" r="1.16" fill="url(#icon-5-f020fb7e-2243-4501-8153-5d69bd3c34f7)" />
+      <circle cx="9.04" cy="9" r="1.16" fill="url(#icon-5-b3c2bc94-8c7c-48a2-9719-6ee899a43a97)" />
+      <circle cx="5.34" cy="9" r="1.16" fill="url(#icon-5-e900c35d-0958-4d4f-b28f-302eeaaf52f5)" />
+      <path d="M2.61,7.28h.94a.3.3,0,0,1,.3.3v6.94a.6.6,0,0,1-.6.6H2.31a0,0,0,0,1,0,0V7.58a.3.3,0,0,1,.3-.3Z" transform="translate(13.18 16.93) rotate(134.92)" fill="#50e6ff" />
+      <path d="M2.56,2.91H3.5a.3.3,0,0,1,.3.3v7.43a0,0,0,0,1,0,0H2.86a.6.6,0,0,1-.6-.6V3.21a.3.3,0,0,1,.3-.3Z" transform="translate(5.66 -0.16) rotate(44.92)" fill="#1490df" />
+      <path d="M14.15,7.28h.94a.6.6,0,0,1,.6.6v6.94a.3.3,0,0,1-.3.3h-.94a.3.3,0,0,1-.3-.3V7.28a0,0,0,0,1,0,0Z" transform="translate(12.32 -7.28) rotate(45.08)" fill="#50e6ff" />
+      <path d="M14.81,2.91h.94a0,0,0,0,1,0,0v7.43a.3.3,0,0,1-.3.3H14.5a.3.3,0,0,1-.3-.3V3.51a.6.6,0,0,1,.6-.6Z" transform="translate(30.36 0.99) rotate(135.08)" fill="#1490df" />
+    </svg>
+    <text x="492" y="603" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400" fill="#000000" text-anchor="start" data-role="card-body">Approved storage fabric</text>
+  </g>
+  <g data-card="switch-b">
+    <rect x="470" y="725" width="340" height="130" rx="10" fill="#f7f3fb" stroke="#5c2d91" stroke-width="1.5" data-role="card-boundary" />
+    <text x="492" y="764" font-family="Segoe UI, Arial, sans-serif" font-size="23" font-weight="600" fill="#000000" text-anchor="start" data-role="card-title">Switch B</text>
+    <svg id="icon-6-a1606a52-fb14-4637-87de-4d524bba1829" width="44" height="44" viewBox="0 0 18 18" x="742" y="791" aria-hidden="true" data-source-icon="networking\10061-icon-service-Virtual-Networks.svg">
+      <defs>
+        <linearGradient id="icon-6-f020fb7e-2243-4501-8153-5d69bd3c34f7" x1="9.88" y1="8.59" x2="11.52" y2="10.23" gradientTransform="translate(2.03 -0.4) rotate(-0.08)" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#86d633" />
+          <stop offset="1" stop-color="#5e9624" />
+        </linearGradient>
+        <linearGradient id="icon-6-b3c2bc94-8c7c-48a2-9719-6ee899a43a97" x1="6.18" y1="8.59" x2="7.81" y2="10.23" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#86d633" />
+          <stop offset="1" stop-color="#5e9624" />
+        </linearGradient>
+        <linearGradient id="icon-6-e900c35d-0958-4d4f-b28f-302eeaaf52f5" x1="2.48" y1="8.59" x2="4.11" y2="10.23" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#86d633" />
+          <stop offset="1" stop-color="#5e9624" />
+        </linearGradient>
+      </defs>
+      <title>Icon-networking-61</title>
+      <circle cx="12.74" cy="8.99" r="1.16" fill="url(#icon-6-f020fb7e-2243-4501-8153-5d69bd3c34f7)" />
+      <circle cx="9.04" cy="9" r="1.16" fill="url(#icon-6-b3c2bc94-8c7c-48a2-9719-6ee899a43a97)" />
+      <circle cx="5.34" cy="9" r="1.16" fill="url(#icon-6-e900c35d-0958-4d4f-b28f-302eeaaf52f5)" />
+      <path d="M2.61,7.28h.94a.3.3,0,0,1,.3.3v6.94a.6.6,0,0,1-.6.6H2.31a0,0,0,0,1,0,0V7.58a.3.3,0,0,1,.3-.3Z" transform="translate(13.18 16.93) rotate(134.92)" fill="#50e6ff" />
+      <path d="M2.56,2.91H3.5a.3.3,0,0,1,.3.3v7.43a0,0,0,0,1,0,0H2.86a.6.6,0,0,1-.6-.6V3.21a.3.3,0,0,1,.3-.3Z" transform="translate(5.66 -0.16) rotate(44.92)" fill="#1490df" />
+      <path d="M14.15,7.28h.94a.6.6,0,0,1,.6.6v6.94a.3.3,0,0,1-.3.3h-.94a.3.3,0,0,1-.3-.3V7.28a0,0,0,0,1,0,0Z" transform="translate(12.32 -7.28) rotate(45.08)" fill="#50e6ff" />
+      <path d="M14.81,2.91h.94a0,0,0,0,1,0,0v7.43a.3.3,0,0,1-.3.3H14.5a.3.3,0,0,1-.3-.3V3.51a.6.6,0,0,1,.6-.6Z" transform="translate(30.36 0.99) rotate(135.08)" fill="#1490df" />
+    </svg>
+    <text x="492" y="803" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400" fill="#000000" text-anchor="start" data-role="card-body">Approved storage fabric</text>
+  </g>
+  <polyline points="350,590 460,590" fill="none" stroke="#0078d4" stroke-width="2.5" data-role="connector" stroke-linejoin="round" marker-end="url(#arrow-blue)" marker-start="url(#arrow-blue)" />
+  <polyline points="820,590 930,590" fill="none" stroke="#0078d4" stroke-width="2.5" data-role="connector" stroke-linejoin="round" marker-end="url(#arrow-blue)" marker-start="url(#arrow-blue)" />
+  <polyline points="350,790 460,790" fill="none" stroke="#5c2d91" stroke-width="2.5" data-role="connector" stroke-linejoin="round" marker-end="url(#arrow-purple)" marker-start="url(#arrow-purple)" stroke-dasharray="9 6" />
+  <polyline points="820,790 930,790" fill="none" stroke="#5c2d91" stroke-width="2.5" data-role="connector" stroke-linejoin="round" marker-end="url(#arrow-purple)" marker-start="url(#arrow-purple)" stroke-dasharray="9 6" />
+  <text x="640" y="695" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400" fill="#000000" text-anchor="middle" data-role="label">Separate failure domains</text>
+  <text x="40" y="915" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="400" fill="#000000" text-anchor="start" data-role="label">Separate storage ports and converged host ports are different choices from switched versus switchless.</text>
+  <text x="40" y="951" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="400" fill="#000000" text-anchor="start" data-role="label">Conceptual paths only: management links, workload uplinks, and switch interconnects are not shown.</text>
+</svg>

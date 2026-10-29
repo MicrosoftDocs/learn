@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-local-network-configuration.physical-network-configuration
+metadata:
+  title: Azure Local Physical Network Configuration
+  description: Examine Azure Local physical connections, management addressing, infrastructure pools, and intent-managed host configuration.
+  ms.date: 10/26/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Azure Local physical network configuration
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-physical-network-configuration.md)]

@@ -1,0 +1,208 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1100" viewBox="0 0 1200 1100" role="img" aria-labelledby="diagram-title diagram-description" style="background-color: white">
+  <title id="diagram-title">Trace an external management flow</title>
+  <desc id="diagram-description">Five ordered checks trace a management request from its originating service through host configuration, physical fabric, approved egress, and destination acceptance. Storage peer traffic uses separate storage paths.</desc>
+  <rect id="background" x="0" y="0" width="1200" height="1100" fill="#ffffff" />
+  <defs>
+    <marker id="arrow-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#0078d4" />
+    </marker>
+    <marker id="arrow-purple" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#5c2d91" />
+    </marker>
+    <marker id="arrow-gray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#506477" />
+    </marker>
+  </defs>
+  <text x="40" y="48" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="600" fill="#000000" text-anchor="start" data-role="heading">Trace an external management flow</text>
+  <text x="40" y="83" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="400" fill="#000000" text-anchor="start" data-role="subtitle">Read from top to bottom. Each boundary needs its own evidence.</text>
+  <g data-card="1">
+    <rect x="40" y="120" width="1120" height="130" rx="10" fill="#f3f8fd" stroke="#0078d4" stroke-width="1.5" data-role="card-boundary" />
+    <text x="62" y="159" font-family="Segoe UI, Arial, sans-serif" font-size="23" font-weight="600" fill="#000000" text-anchor="start" data-role="card-title">1. Originating service</text>
+    <svg version="1.0" x="1092" y="186" viewBox="32 17 25 46" enable-background="new 0 0 83.4 83.4" xml:space="preserve" width="44" height="44" aria-hidden="true" data-source-icon="CnE_Enterprise\Server (generic).svg">
+      <g id="icon-1-Layer_1">
+        <g id="icon-1-File_x2C__general">
+          <title>Sheet.1071</title>
+        </g>
+        <g id="icon-1-Message">
+	</g>
+        <g id="icon-1-Monitor">
+	</g>
+        <g id="icon-1-Monitor_running_apps">
+	</g>
+        <g id="icon-1-Mouse">
+	</g>
+        <g id="icon-1-Network_card">
+	</g>
+        <g id="icon-1-Not_allowed">
+	</g>
+        <g id="icon-1-Performance">
+	</g>
+        <g id="icon-1-Phone">
+	</g>
+        <g id="icon-1-Plug_and_play">
+	</g>
+        <g id="icon-1-Powershell_script_file">
+	</g>
+        <g id="icon-1-Protocol_stack">
+	</g>
+        <g id="icon-1-Queue_x2C__general">
+	</g>
+        <g id="icon-1-RMS_connector">
+	</g>
+        <g id="icon-1-Router">
+	</g>
+        <g id="icon-1-Script_file">
+	</g>
+        <g id="icon-1-Secure_virtual_machine">
+	</g>
+      </g>
+      <g id="icon-1-paths">
+        <g id="icon-1-Access_control">
+	</g>
+        <g id="icon-1-Azure_active_directory">
+	</g>
+        <g id="icon-1-Generic_code">
+	</g>
+        <g id="icon-1-Laptop">
+	</g>
+        <g id="icon-1-Load_balancer">
+	</g>
+        <g id="icon-1-Lock_x2C__protected">
+	</g>
+      </g>
+      <g id="icon-1-symbols">
+        <g>
+          <path fill="#2A3282" d="M52.6,19.1h-16c-1.1,0-2,0.9-2,2v39h20v-39C54.6,20,53.7,19.1,52.6,19.1z M51.6,56.1h-14v-2h14V56.1z     M51.6,52.1h-14v-2h14V52.1z M51.6,27.1h-14v-2h14V27.1z" />
+        </g>
+      </g>
+      <g id="icon-1-slices">
+</g>
+    </svg>
+    <text x="62" y="198" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400" fill="#000000" text-anchor="start" data-role="card-body">Identify the caller, destination, protocol, and port.</text>
+    <text x="62" y="227" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400" fill="#000000" text-anchor="start" data-role="card-body">Collect evidence from the actual host or appliance.</text>
+  </g>
+  <polyline points="600,260 600,300" fill="none" stroke="#0078d4" stroke-width="2.5" data-role="connector" stroke-linejoin="round" marker-end="url(#arrow-blue)" />
+  <g data-card="2">
+    <rect x="40" y="310" width="1120" height="130" rx="10" fill="#f3f8fd" stroke="#0078d4" stroke-width="1.5" data-role="card-boundary" />
+    <text x="62" y="349" font-family="Segoe UI, Arial, sans-serif" font-size="23" font-weight="600" fill="#000000" text-anchor="start" data-role="card-title">2. Host configuration</text>
+    <svg id="icon-2-e0050721-e8d8-4c79-ae50-d8fc2871d932" width="44" height="44" viewBox="0 0 18 18" x="1092" y="376" aria-hidden="true" data-source-icon="networking\10080-icon-service-Network-Interfaces.svg">
+      <defs>
+        <linearGradient id="icon-2-fcad3287-b71c-44fa-971a-6a18bcf384a0" x1="9.01" y1="16.5" x2="9.01" y2="1.5" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#5e9641" />
+          <stop offset="0.34" stop-color="#6baa42" />
+          <stop offset="0.67" stop-color="#73b743" />
+          <stop offset="1" stop-color="#76bb43" />
+        </linearGradient>
+      </defs>
+      <title>Icon-networking-80</title>
+      <path d="M15.89,2.91h1.27a.34.34,0,0,1,.34.34v3.5a.34.34,0,0,1-.34.34H15.89a0,0,0,0,1,0,0V2.91A0,0,0,0,1,15.89,2.91Z" fill="#ffca00" />
+      <path d="M15.89,9h1.27a.34.34,0,0,1,.34.34v5.86a.34.34,0,0,1-.34.34H15.89a0,0,0,0,1,0,0V9A0,0,0,0,1,15.89,9Z" fill="#ffca00" />
+      <rect x="2.13" y="1.5" width="13.76" height="15" rx="0.69" fill="url(#icon-2-fcad3287-b71c-44fa-971a-6a18bcf384a0)" />
+      <path d="M5.9,12.9H5.19A.2.2,0,0,1,5,12.69V4.34a.19.19,0,0,1,.19-.2H7.12a.19.19,0,0,1,.19.2.2.2,0,0,1-.19.21H5.38v7.93H5.9a.2.2,0,0,1,.19.21A.21.21,0,0,1,5.9,12.9Z" fill="#b4ec36" />
+      <path d="M6,13.92H4.4a.2.2,0,0,1-.19-.21L4.08,3.38a.2.2,0,0,1,.06-.15.16.16,0,0,1,.13-.06H7.12v.41H4.47l.12,9.92H6Z" fill="#b4ec36" />
+      <path d="M12,13H10.41a.19.19,0,0,1-.14-.07.18.18,0,0,1-.06-.14V7.9a.19.19,0,0,1,.19-.2l.91,0,0-2.25h.38l0,2.44a.2.2,0,0,1-.18.21l-.91,0v4.42H12Z" fill="#b4ec36" />
+      <rect x="7.07" y="2.29" width="6.14" height="3.11" rx="0.26" fill="#365615" />
+      <rect x="5.86" y="12.69" width="4.9" height="1.09" rx="0.26" transform="translate(21.54 4.93) rotate(90)" fill="#365615" />
+      <rect x="3.99" y="12.71" width="4.9" height="1.09" rx="0.26" transform="translate(19.7 6.82) rotate(90)" fill="#365615" />
+      <rect x="9.98" y="12.71" width="4.9" height="1.09" rx="0.26" transform="translate(25.68 0.83) rotate(90)" fill="#f2f2f2" />
+      <ellipse cx="8.11" cy="8.06" rx="1.04" ry="1.12" fill="#f2f2f2" />
+      <path d="M.5,5.7H1.77A.34.34,0,0,1,2.11,6v5.86a.34.34,0,0,1-.34.34H.5a0,0,0,0,1,0,0V5.7A0,0,0,0,1,.5,5.7Z" transform="translate(2.61 17.95) rotate(180)" fill="#3b3b3b" />
+    </svg>
+    <text x="62" y="388" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400" fill="#000000" text-anchor="start" data-role="card-body">Check the intended adapter, VLAN, address, and route.</text>
+    <text x="62" y="417" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400" fill="#000000" text-anchor="start" data-role="card-body">Network ATC manages host intent, not the physical switches.</text>
+  </g>
+  <polyline points="600,450 600,490" fill="none" stroke="#0078d4" stroke-width="2.5" data-role="connector" stroke-linejoin="round" marker-end="url(#arrow-blue)" />
+  <g data-card="3">
+    <rect x="40" y="500" width="1120" height="130" rx="10" fill="#f3f8fd" stroke="#0078d4" stroke-width="1.5" data-role="card-boundary" />
+    <text x="62" y="539" font-family="Segoe UI, Arial, sans-serif" font-size="23" font-weight="600" fill="#000000" text-anchor="start" data-role="card-title">3. Physical fabric</text>
+    <svg id="icon-3-a1606a52-fb14-4637-87de-4d524bba1829" width="44" height="44" viewBox="0 0 18 18" x="1092" y="566" aria-hidden="true" data-source-icon="networking\10061-icon-service-Virtual-Networks.svg">
+      <defs>
+        <linearGradient id="icon-3-f020fb7e-2243-4501-8153-5d69bd3c34f7" x1="9.88" y1="8.59" x2="11.52" y2="10.23" gradientTransform="translate(2.03 -0.4) rotate(-0.08)" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#86d633" />
+          <stop offset="1" stop-color="#5e9624" />
+        </linearGradient>
+        <linearGradient id="icon-3-b3c2bc94-8c7c-48a2-9719-6ee899a43a97" x1="6.18" y1="8.59" x2="7.81" y2="10.23" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#86d633" />
+          <stop offset="1" stop-color="#5e9624" />
+        </linearGradient>
+        <linearGradient id="icon-3-e900c35d-0958-4d4f-b28f-302eeaaf52f5" x1="2.48" y1="8.59" x2="4.11" y2="10.23" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#86d633" />
+          <stop offset="1" stop-color="#5e9624" />
+        </linearGradient>
+      </defs>
+      <title>Icon-networking-61</title>
+      <circle cx="12.74" cy="8.99" r="1.16" fill="url(#icon-3-f020fb7e-2243-4501-8153-5d69bd3c34f7)" />
+      <circle cx="9.04" cy="9" r="1.16" fill="url(#icon-3-b3c2bc94-8c7c-48a2-9719-6ee899a43a97)" />
+      <circle cx="5.34" cy="9" r="1.16" fill="url(#icon-3-e900c35d-0958-4d4f-b28f-302eeaaf52f5)" />
+      <path d="M2.61,7.28h.94a.3.3,0,0,1,.3.3v6.94a.6.6,0,0,1-.6.6H2.31a0,0,0,0,1,0,0V7.58a.3.3,0,0,1,.3-.3Z" transform="translate(13.18 16.93) rotate(134.92)" fill="#50e6ff" />
+      <path d="M2.56,2.91H3.5a.3.3,0,0,1,.3.3v7.43a0,0,0,0,1,0,0H2.86a.6.6,0,0,1-.6-.6V3.21a.3.3,0,0,1,.3-.3Z" transform="translate(5.66 -0.16) rotate(44.92)" fill="#1490df" />
+      <path d="M14.15,7.28h.94a.6.6,0,0,1,.6.6v6.94a.3.3,0,0,1-.3.3h-.94a.3.3,0,0,1-.3-.3V7.28a0,0,0,0,1,0,0Z" transform="translate(12.32 -7.28) rotate(45.08)" fill="#50e6ff" />
+      <path d="M14.81,2.91h.94a0,0,0,0,1,0,0v7.43a.3.3,0,0,1-.3.3H14.5a.3.3,0,0,1-.3-.3V3.51a.6.6,0,0,1,.6-.6Z" transform="translate(30.36 0.99) rotate(135.08)" fill="#1490df" />
+    </svg>
+    <text x="62" y="578" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400" fill="#000000" text-anchor="start" data-role="card-body">Confirm neighbor ports, VLAN membership, and available paths.</text>
+    <text x="62" y="607" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400" fill="#000000" text-anchor="start" data-role="card-body">Assess errors, congestion, and capacity after a path failure.</text>
+  </g>
+  <polyline points="600,640 600,680" fill="none" stroke="#0078d4" stroke-width="2.5" data-role="connector" stroke-linejoin="round" marker-end="url(#arrow-blue)" />
+  <g data-card="4">
+    <rect x="40" y="690" width="1120" height="130" rx="10" fill="#f3f8fd" stroke="#0078d4" stroke-width="1.5" data-role="card-boundary" />
+    <text x="62" y="729" font-family="Segoe UI, Arial, sans-serif" font-size="23" font-weight="600" fill="#000000" text-anchor="start" data-role="card-title">4. Approved egress</text>
+    <svg width="44" height="44" viewBox="0 0 18 18" x="1092" y="756" aria-hidden="true" data-source-icon="management + governance\00756-icon-service-Azure-Arc.svg">
+      <defs>
+        <linearGradient id="icon-4-b69d2150-b4da-460b-99ae-a9f5a961b313" x1="-1194.321" y1="9.128" x2="-1190.755" y2="9.128" gradientTransform="matrix(-1, 0, 0, 1, -1179.887, 0)" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#32bedd" />
+          <stop offset="0.998" stop-color="#9cebff" stop-opacity="0.5" />
+        </linearGradient>
+        <linearGradient id="icon-4-e690cc62-d1a2-4325-90ca-ac2fe51a5b58" x1="80.363" y1="9.135" x2="83.929" y2="9.135" gradientTransform="translate(-76.796)" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#005ba1" />
+          <stop offset="0.998" stop-color="#005ba1" stop-opacity="0" />
+        </linearGradient>
+        <linearGradient id="icon-4-ff649864-6b4c-4fa8-bcca-c12b2b910f3c" x1="3.555" y1="9.326" x2="14.434" y2="9.326" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#005ba1" />
+          <stop offset="0.974" stop-color="#32bedd" />
+        </linearGradient>
+      </defs>
+      <g id="icon-4-a826c017-5e9e-4208-897f-2ade2eb58cd6">
+        <polygon points="7.132 4.469 3.567 6.542 0 4.468 3.567 2.395 7.132 4.469" fill="#5ea0ef" />
+        <polygon points="7.132 13.794 3.566 11.735 3.566 15.867 7.132 13.794" fill="#005ba1" />
+        <polygon points="3.567 6.542 3.566 6.541 3.566 6.542 0 4.468 0 13.801 3.566 15.874 7.132 13.801 7.132 13.794 3.566 15.867 3.566 11.735 7.132 13.794 7.132 4.469 3.567 6.542" fill="#0078d4" />
+        <polygon points="10.868 4.469 14.433 6.542 18 4.468 14.433 2.395 10.868 4.469" fill="#9cebff" />
+        <polygon points="10.868 13.794 14.434 11.735 14.434 15.867 10.868 13.794" fill="#32bedd" />
+        <polygon points="14.433 6.535 14.434 6.535 14.434 6.535 14.434 11.728 10.868 13.794 10.868 4.462 14.433 6.535" fill="url(#icon-4-b69d2150-b4da-460b-99ae-a9f5a961b313)" />
+        <polygon points="10.868 4.469 14.433 6.542 18 4.468 14.433 2.395 10.868 4.469" fill="#9cebff" />
+        <polygon points="14.433 6.542 10.868 4.469 10.868 13.794 14.434 11.735 14.434 15.867 10.868 13.794 10.868 13.801 14.434 15.874 18 13.801 18 4.468 18 4.468 14.433 6.542" fill="#50e6ff" />
+        <polygon points="10.868 13.794 14.434 11.735 14.434 15.867 10.868 13.794" fill="#32bedd" />
+        <polygon points="14.433 6.535 14.434 6.535 14.434 6.535 14.434 11.728 10.868 13.794 10.868 4.462 14.433 6.535" fill="url(#icon-4-b69d2150-b4da-460b-99ae-a9f5a961b313)" />
+        <polygon points="3.567 6.541 3.566 6.541 3.566 6.541 3.566 11.734 7.132 13.801 7.132 4.469 3.567 6.541" fill="url(#icon-4-e690cc62-d1a2-4325-90ca-ac2fe51a5b58)" />
+        <path d="M14.423,10.126c-.624,1.556-3.066,2.584-5.348,2.584l-.081,0-.08,0c-2.282,0-4.724-1.028-5.348-2.584,0,0-.025-1.561,0-1.713C4.02,10.15,6.4,11.435,8.859,11.435l.135,0,.136,0c2.455,0,4.839-1.285,5.293-3.022C14.448,8.565,14.423,10.126,14.423,10.126ZM13.4,5.942A6.653,6.653,0,0,1,9.13,7.416l-.136,0-.135,0a6.656,6.656,0,0,1-4.267-1.47l-.856.5C4.553,7.809,6.8,8.69,8.914,8.69h.161c2.115,0,4.366-.883,5.181-2.251Z" fill="url(#icon-4-ff649864-6b4c-4fa8-bcca-c12b2b910f3c)" />
+      </g>
+    </svg>
+    <text x="62" y="768" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400" fill="#000000" text-anchor="start" data-role="card-body">Follow the configured direct or enterprise-proxy route.</text>
+    <text x="62" y="797" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400" fill="#000000" text-anchor="start" data-role="card-body">Arc gateway carries eligible traffic; other dependencies remain.</text>
+  </g>
+  <polyline points="600,830 600,870" fill="none" stroke="#0078d4" stroke-width="2.5" data-role="connector" stroke-linejoin="round" marker-end="url(#arrow-blue)" />
+  <g data-card="5">
+    <rect x="40" y="880" width="1120" height="130" rx="10" fill="#f3f8fd" stroke="#0078d4" stroke-width="1.5" data-role="card-boundary" />
+    <text x="62" y="919" font-family="Segoe UI, Arial, sans-serif" font-size="23" font-weight="600" fill="#000000" text-anchor="start" data-role="card-title">5. Destination acceptance</text>
+    <svg id="icon-5-b75943ba-1a3f-485d-b45d-3fee00ed7e5e" width="44" height="44" viewBox="0 0 18 18" x="1092" y="946" aria-hidden="true" data-source-icon="networking\10067-icon-service-Network-Security-Groups.svg">
+      <defs>
+        <linearGradient id="icon-5-fe5ce43f-2823-4617-bb54-57df9e778372" x1="9.01" y1="0.75" x2="9.01" y2="17.25" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#5ea0ef" />
+          <stop offset="0.18" stop-color="#559cec" />
+          <stop offset="0.47" stop-color="#3c91e5" />
+          <stop offset="0.84" stop-color="#1380da" />
+          <stop offset="1" stop-color="#0078d4" />
+        </linearGradient>
+      </defs>
+      <title>Icon-networking-67</title>
+      <path d="M16.36,8.4c0,4.84-5.85,8.74-7.12,9.53a.46.46,0,0,1-.48,0c-1.27-.79-7.12-4.69-7.12-9.53V2.58a.46.46,0,0,1,.45-.46C6.64,2,5.59,0,9,0s2.36,2,6.91,2.12a.46.46,0,0,1,.45.46Z" fill="#0078d4" />
+      <path d="M15.75,8.45c0,4.44-5.36,8-6.53,8.74a.43.43,0,0,1-.44,0c-1.17-.72-6.53-4.3-6.53-8.74V3.11a.42.42,0,0,1,.41-.42C6.83,2.58,5.87.75,9,.75s2.17,1.83,6.34,1.94a.42.42,0,0,1,.41.42Z" fill="#6bb9f2" />
+      <path d="M9,9V.75c3.13,0,2.17,1.83,6.34,1.94a.43.43,0,0,1,.41.43V8.46a4.89,4.89,0,0,1,0,.54ZM9,9H2.28c.4,4.18,5.38,7.5,6.5,8.19a.39.39,0,0,0,.18.06H9Z" fill="url(#icon-5-fe5ce43f-2823-4617-bb54-57df9e778372)" />
+      <path d="M2.66,2.69C6.83,2.58,5.87.75,9,.75V9H2.28a4.89,4.89,0,0,1,0-.54V3.12A.43.43,0,0,1,2.66,2.69Z" fill="#50e6ff" />
+      <path d="M15.72,9H9v8.25H9a.39.39,0,0,0,.18-.06C10.34,16.5,15.32,13.18,15.72,9Z" fill="#50e6ff" />
+    </svg>
+    <text x="62" y="958" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400" fill="#000000" text-anchor="start" data-role="card-body">Validate TLS certificate trust and service authorization.</text>
+    <text x="62" y="987" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400" fill="#000000" text-anchor="start" data-role="card-body">An open TCP port is not a successful application transaction.</text>
+  </g>
+  <text x="40" y="1060" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="400" fill="#000000" text-anchor="start" data-role="label">Storage peer traffic stays on its approved storage paths, not this cloud-management sequence.</text>
+</svg>
