@@ -9,15 +9,15 @@ In this module, you learned how to:
 - Map Project Perception's named agents and playbooks onto that model, with each agent specialized in a primary area of security operations work and one additional Red team agent for externally facing web applications
 - Recognize when a situation calls for a Project Perception playbook by identifying the areas of work involved and the shape of work required
 
-One operational question drives the day-to-day work. When a situation arrives, name the areas of work it touches, count them, pick the likely shape (work that stays inside one area, a coordinated playbook across several areas, or both at once), and confirm an available agent or playbook supports the objective.
+When a situation arrives, distinguish work that benefits from focused agent-supported execution from work that requires coordination across several capabilities. The number of security areas involved helps describe scope, but doesn't determine the tool choice. A focused Perception agent or playbook can support one area, while a need spanning several areas still requires a supported, suitable option.
 
 > [!TIP]
 > **When a situation arrives, run this:**
 >
-> 1. **Name the areas of work.** Which of the six does the situation touch? Threat intelligence analysis, alert triage, incident investigation, detection engineering, attack path analysis, posture prioritization.
-> 1. **Count them.** One, several that need coordination, or several with an analyst also working inside one.
-> 1. **Pick the likely shape.** Work that stays inside one area, a coordinated playbook across several areas, or both at once.
-> 1. **Confirm availability.** Check the **Playbooks** page in Perception for an agent or playbook that covers the objective and areas involved.
+> 1. **Name the objective and areas of work.** What outcome does your organization need, and which security areas does it touch?
+> 1. **Assess execution and coordination needs.** Would focused agent support help, or do several capabilities need connected handoffs?
+> 1. **Confirm support and feasibility.** Check whether Perception offers a supported agent or playbook for the objective and whether its requirements and authorized scope can be met.
+> 1. **Choose the response that fits.** Use existing analyst tools, a focused agent or playbook, a coordinated playbook, or a combination. If a prerequisite is missing, resolve it or use existing workflows.
 
 ## Resources
 

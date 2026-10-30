@@ -2,7 +2,7 @@ In this module, you learned to evaluate throughput and consistency requirements 
 
 ## What you learned
 
-- Request units (RUs) are the currency of throughput: every read, write, and query consumes RUs. You estimate a workload's request units per second (RU/s) from its operation mix and rates. Then confirm the estimate with the request charge that every response reports.
+- Request units (RUs) are the currency of throughput: every read, write, and query consumes RUs. You estimate a workload's request units per second (RU/s) from its operation mix and rates. You then confirm the estimate with the request charge that every response reports.
 - The throughput model follows the traffic shape: provisioned for sustained, high-utilization traffic and serverless for intermittent traffic, with standard versus autoscale governing how provisioned capacity behaves.
 - Throughput scope trades cost against isolation: dedicated container throughput is the recommended default because it guarantees predictable performance, while shared database throughput lowers cost for many light, similar containers at the price of per-container guarantees.
 - Consistency is a five-level sliding scale from strong to eventual. You set the strongest routinely needed level as the account default and relax individual reads that tolerate staleness. A `ConsistencyLevel` override can only relax consistency, never strengthen it.

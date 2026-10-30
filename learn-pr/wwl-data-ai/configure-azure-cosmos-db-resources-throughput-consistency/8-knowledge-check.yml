@@ -4,8 +4,8 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Answer questions to validate your understanding of throughput models, consistency levels, and time to live in Azure Cosmos DB for NoSQL."
-  ms.date: 09/30/2026
-  author: wwlpublish
+  ms.date: 10/30/2026
+  author: MScalopez
   ms.author: calopez
   ms.topic: unit
   module_assessment: true
@@ -36,7 +36,7 @@ quiz:
       explanation: "Incorrect. A `ConsistencyLevel` override can't raise consistency above the account default, only lower it. Strong is stronger than the session default, so this request-level change isn't available."
     - content: "Set the account default to eventual and strengthen the strict read to session per request."
       isCorrect: false
-      explanation: "Incorrect. Because a `ConsistencyLevel` override can only relax consistency, the consistency can't raise a read above an eventual default. The account default must be at least as strong as the strongest read any operation requires."
+      explanation: "Incorrect. Because a `ConsistencyLevel` override can only relax consistency, the override can't raise a read above an eventual default. The account default must be at least as strong as the strongest read any operation requires."
   - content: "A team is designing an account with several containers and is considering provisioning throughput once at the database level so that every container draws from the same pool. What is the main risk of that approach?"
     choices:
     - content: "Shared database throughput caps each container at 400 RU/s no matter how large the pool is."

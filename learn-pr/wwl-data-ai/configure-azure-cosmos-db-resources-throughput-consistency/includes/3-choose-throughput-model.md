@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=856cfce5-a04b-42fd-8ff7-13697c2fc65a]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 With an estimate of the throughput your workload needs, the next decision is how to provision it. Azure Cosmos DB gives you two choices: provisioned or serverless capacity, and, if provisioned, standard or autoscale throughput. In the Contoso scenario, the bursty, unpredictable traffic favors one combination, and the same reasoning applies to any workload once you can describe its traffic.
 
 ## Provisioned or serverless
@@ -6,7 +17,7 @@ With an estimate of the throughput your workload needs, the next decision is how
 
 **Serverless** removes throughput provisioning entirely. Throughput charges cover only the RUs (request units) each request consumes, with no reserved capacity and no minimum throughput charge. Serverless fits workloads with intermittent, unpredictable, or low-average traffic, such as a new application or prototype whose load is hard to forecast.
 
-:::image type="content" source="../media/serverless.png" alt-text="Diagram showing individual requests, each consuming 'RUs' in a serverless model." lightbox="../media/serverless.png":::
+:::image type="content" source="../media/serverless.png" alt-text="Diagram showing individual requests, each consuming RUs in a serverless model." lightbox="../media/serverless.png":::
 
 The distinction comes down to utilization. If traffic keeps reserved capacity busy most of the time, provisioned throughput costs less per request. If traffic is sparse or spiky with long idle gaps, serverless avoids paying for idle capacity.
 
@@ -24,7 +35,7 @@ Autoscale fits variable or unpredictable traffic, but it doesn't eliminate rate-
 
 Accounts configured with multiple write regions are the exception. There, autoscale and standard throughput cost the same per 100 RU/s, so autoscale is the better choice no matter how steady the traffic is.
 
-Accounts created after September 25, 2024 also get **dynamic scaling** enabled by default. Dynamic scaling applies autoscale per partition and per region rather than uniformly across the whole resource, so one hot partition no longer forces every partition to scale up with it. That behavior lowers cost for workloads whose traffic lands unevenly across partitions and for accounts spread over multiple regions. Older accounts enable it from the **Features** pane in the Azure portal, or programmatically with Azure PowerShell, the Azure CLI, or the REST API.
+Accounts created after September 25, 2024, also get **dynamic scaling** enabled by default. Dynamic scaling applies autoscale per partition and per region rather than uniformly across the whole resource, so one hot partition no longer forces every partition to scale up with it. That behavior lowers cost for workloads whose traffic lands unevenly across partitions and for accounts spread over multiple regions. Older accounts enable it from the **Features** pane in the Azure portal, or programmatically with Azure PowerShell, the Azure CLI, or the REST API.
 
 ## A decision matrix
 
@@ -42,6 +53,8 @@ Map the choice to your traffic pattern:
 The provisioned models aren't permanent. A container switches between standard and autoscale at any time as a workload's traffic evolves, a point the next unit returns to when you provision throughput in practice.
 
 > [!NOTE]
-> Migration between standard and autoscale throughput runs in the Azure portal, the Azure CLI, PowerShell, or an Azure management SDK. The client SDKs (Software Development Kits) create resources with either model, but they don't switch an existing resource from one model to the other.
+> Migration between standard and autoscale throughput runs in the Azure portal, the Azure CLI, PowerShell, or an Azure management SDK. The client software development kits (SDKs) create resources with either model, but they don't switch an existing resource from one model to the other.
 
 Serverless is different, because capacity mode belongs to the account rather than the container. A serverless account for the NoSQL API migrates in place to provisioned throughput, which converts every container at once and can't be undone. To switch from provisioned throughput to serverless, create a new account and migrate the data.
+
+::: zone-end

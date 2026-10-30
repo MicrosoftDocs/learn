@@ -1,6 +1,15 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=e946a065-2d68-4f03-9fc3-5cbe80df474f]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
 Consistency levels control both the guarantees a read receives and how writes replicate across regions. These concerns are related but distinct.
 
-Most applications don't need strong consistency simply to let users read their own writes. Session consistency provides read-your-writes and monotonic-read guarantees within a client session. The Cosmos DB SDK carries a session token between operations, and clients can pass that token between requests to ensure they read their own writes. Session reads use one replica and have the same request unit (RU) cost as consistent prefix and eventual reads.
+Most applications don't need strong consistency simply to let users read their own writes. Session consistency provides read-your-writes and monotonic-read guarantees within a client session. The Azure Cosmos DB SDK carries a session token between operations, and clients can pass that token between requests to ensure they read their own writes. Session reads use one replica and have the same request unit (RU) cost as consistent prefix and eventual reads.
 
 Strong consistency serves a different requirement: every read returns the latest globally committed write, regardless of which client issued it. In a multi-region account, this guarantee increases write latency because a write must commit across regions. Bounded staleness limits cross-region replication lag to a configured number of versions or time interval.
 
@@ -16,7 +25,7 @@ Azure Cosmos DB offers a sliding scale of five well-defined consistency levels, 
 
 | Consistency level | Guarantee |
 | ---: | :--- |
-| **Strong** | Reads always return the most recent committed write. In a multi-region account, writes normally aren't acknowledged until all regions acknowledge replication, so distance between regions increases 'write latency.' |
+| **Strong** | Reads always return the most recent committed write. In a multi-region account, writes normally aren't acknowledged until all regions acknowledge replication, so distance between regions increases write latency. |
 | **Bounded staleness** | Reads lag writes by at most a configured number of versions (*K*) or time interval (*T*). Reads in the write region use a local quorum, the same read mechanism the *strong* level uses. |
 | **Session** | Within a client session, clients read their own writes. Reads against a physical partition the session has yet to write to behave as *eventual* reads. This level is the default. |
 | **Consistent prefix** | Reads might lag writes. Writes made as a batch within a transaction are always visible together, while individual document writes have *eventual* consistency and can arrive out of order. |
@@ -34,7 +43,7 @@ Select consistency from the required guarantee rather than from the business dom
 
 Every account has a default consistency level that applies to all reads and queries against its containers. This level is **session** unless you change it. In the Azure portal, you set it on the account's **Default consistency** pane. Session is the default and is appropriate for most applications. Don't configure strong or bounded staleness only because one workflow must read its own write; session consistency already provides that guarantee.
 
-Configure strong consistency when the account requires global linearizability and an RPO of zero. Configure bounded staleness when the account requires a defined cross-region staleness and RPO boundary. These account-level choices affect write replication even if individual reads request weaker consistency, so per-request overrides aren't a way to avoid their write-latency or durability tradeoffs.
+Configure strong consistency when the account requires global linearizability and an RPO of zero. Configure bounded staleness when the account requires a defined cross-region staleness and RPO boundary. These account-level choices affect write replication even if individual reads request weaker consistency, so per-request overrides aren't a way to avoid their write-latency or durability trade-offs.
 
 :::image type="content" source="../media/default-consistency-pane.png" alt-text="Screenshot of the Default consistency pane with the five levels shown as a selector and session selected." lightbox="../media/default-consistency-pane-full.png":::
 
@@ -110,7 +119,7 @@ items = container.read_items(
 
 ## Session tokens
 
-With session consistency, each write returns a session token that identifies the minimum version subsequent reads must observe for the relevant partition. The SDK caches and sends these tokens automatically when operations use the same Cosmos Client.
+With session consistency, each write returns a session token that identifies the minimum version subsequent reads must observe for the relevant partition. The SDK caches and sends these tokens automatically when operations use the same `CosmosClient` instance.
 
 If a workflow can move between application nodes or client instances, capture the session token from the write response to the user client. Storing the token in a cookie is a typical pattern. Send the token to the subsequent read. Passing the session token preserves the read-your-writes guarantee across those clients. Session tokens are partition-bound, so use the token produced for the partition containing the item.
 
