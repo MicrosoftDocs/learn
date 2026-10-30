@@ -22,13 +22,12 @@ metadata:
   gs-solution.area: "Cloud & AI Platforms"
   gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/build-first-bicep-file/index.yml
   moduleType: standard
-  title: Build your first Bicep file
+  title: Build Your First Bicep File
   description: Learn how to create Bicep files and create reusable infrastructure as code.
   ms.service: azure-resource-manager
-  manager: jasongroce
-  ms.date: 01/31/2025
-  author: mumian
-  ms.author: lumac
+  ms.date: 10/25/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: module
   ms.devlang: bicep
 title: Build your first Bicep file
@@ -40,20 +39,24 @@ abstract: |
     - Create and deploy a Bicep file that includes modules.
 prerequisites: |
   You should be familiar with:
+
   - Infrastructure as code and its benefits
   - Azure, including the Azure portal, subscriptions, resource groups, and resources
 
   To follow along with the exercises in the module, you need the following software installed locally:
-  - [Visual Studio Code](https://code.visualstudio.com)
-  - The [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep)
-  - Either the latest [Azure CLI](/cli/azure/install-azure-cli) tools, or the latest version of [Azure PowerShell](/powershell/azure/install-az-ps)
+
+  - Visual Studio Code
+  - The Bicep extension for Visual Studio Code
+  - Either the latest Azure CLI tools or the latest version of Azure PowerShell
+
     > [!TIP]
-    > You can use either the Azure CLI or Azure PowerShell to complete this module. If you're not sure which to choose, we recommend you use the [Azure CLI](/cli/azure/install-azure-cli).
+    > You can use either the Azure CLI or Azure PowerShell to complete this module. If you're not sure which to choose, we recommend you use the Azure CLI.
 
     > [!NOTE]
-    > Azure CLI automatically installs the Bicep CLI. Azure PowerShell requires a manual installation. For more information, go to [Install Bicep tools](/azure/azure-resource-manager/bicep/install).
+    > Azure CLI automatically installs the Bicep CLI. Azure PowerShell requires a manual installation. For installation links, see the More info section of the Summary unit.
 
-  [!INCLUDE [](../../includes/azure-optional-exercise-subscription-prerequisite.md)]
+  > [!IMPORTANT]
+  > To complete the optional exercises in this module, you need to use your own subscription, which might incur charges. If you want to follow along, you can use a trial subscription or a subscription that you already have access to. You'll find the trial subscription link in the More info section of the Summary unit.
 
 iconUrl: /training/achievements/bicep/deploy-azure-resources-by-using-bicep-files.svg
 hidden: true
@@ -83,4 +86,3 @@ units:
 - learn.azure.deploy-azure-resources-bicep.summary
 badge:
   uid: learn.azure.deploy-azure-resources-by-using-bicep-files.badge
-

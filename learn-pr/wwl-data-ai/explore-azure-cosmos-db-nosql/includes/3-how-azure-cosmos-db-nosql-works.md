@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=84b3a1a7-75d5-409f-a3ae-b965a65472ac]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Knowing the resource model tells you how Azure Cosmos DB for NoSQL organizes data. To evaluate whether it fits the Contoso application, you also need to understand how it delivers performance and reach. In this unit, you build a mental model of three ideas that the rest of the course relies on: request units, partitioning, and global distribution.
 
 ## Request units: the currency of throughput
@@ -48,3 +59,5 @@ Global distribution supports different configurations. An account configured wit
 For the Contoso application, which serves users across several regions, this capability means one account can back the entire application while keeping data near each user.
 
 Together, request units, partitioning, and global distribution form the model you use to reason about Azure Cosmos DB for NoSQL. With that model in place, you can now evaluate whether the service fits a specific workload.
+
+::: zone-end

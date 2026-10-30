@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=69a48b0a-c4d2-4bab-9511-783bd829e21c]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Azure Cosmos DB for NoSQL organizes data differently than a relational database. Understanding this structure helps you decide if it fits the Contoso application. In this unit, you learn the data model behind the service and the resources you work with. This foundation supports every decision you make later in the module.
 
 ## What a NoSQL database is
@@ -85,3 +96,5 @@ One more behavior is easy to miss because it happens without any action from you
 > Think about an application you work on today. Which of its data (user records, events, catalog entries) would map naturally to self-contained JSON documents, and which relationships would be harder to express without a fixed relational schema?
 
 You now know what Azure Cosmos DB for NoSQL is and the resources you work with. Next, you learn how the service distributes and scales that data.
+
+::: zone-end

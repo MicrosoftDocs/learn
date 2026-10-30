@@ -11,28 +11,40 @@ You want to monitor the VMs that host your website, so you decide to quickly cre
      1. Under **Name**, enter *learn-monitor-vm-rg*.
      1. Select **OK**.
    - For **Virtual machine name**, enter *monitored-linux-vm*.
-   - For **Image**, select **Ubuntu Server 20.04 LTS - x64 Gen2**.
+   - For **Image**, select **Ubuntu Server 24.04 LTS**, **x64**, **Gen2**, published by Canonical. Use the full server image for this exercise.
 1. Leave the other settings at their current values, and select the **Monitoring** tab.
-
-   :::image type="content" source="../media/create-vm-basic.png" alt-text="Screenshot that shows the Basics tab of the Create a virtual machine page." lightbox="../media/create-vm-basic.png":::
-
-1. On the **Monitoring** tab, select the checkbox next to **Enable recommended alert rules**.
-1. On the **Set up recommended alert rules** screen:
+1. On the **Monitoring** tab, select **Enable recommended alert rules** if the option is available.
+1. If the **Set up recommended alert rules** screen opens:
    1. Select all the listed alert rules if not already selected, and adjust the values if desired.
    1. Under **Notify me by**, select the checkbox next to **Email**, and enter an email address to receive alert notifications.
    1. Select **Save**.
 1. Under **Diagnostics**, for **Boot diagnostics**, ensure that **Enable with managed storage account (recommended)** is selected.
 
    > [!NOTE]
-   > Don't select **Enable OS guest diagnostics**. The Linux Diagnostics Agent (LAD) is deprecated, and you can enable OS guest and client monitoring later.
+   > Keep boot diagnostics enabled with managed storage. Boot diagnostics and host metrics don't require Azure Monitor Agent. Later in this module, you enable Azure Monitor Agent and associated data collection rules to collect guest performance data and Linux Syslog. Don't enable a separate OS guest diagnostics extension.
 
 1. Select **Review + create** at the bottom of the page, and when validation passes, select **Create**.
-
-   :::image type="content" source="../media/create-vm-monitoring.png" alt-text="Screenshot that shows the Monitoring tab and alert rule configuration screen of the Create a virtual machine page." lightbox="../media/create-vm-monitoring.png":::
-
 1. On the **Generate new key pair** popup dialog box, select **Download private key and create resource**.
 
 It can take a few minutes to create the VM. When you get the notification that the VM is created, select **Go to resource** to see basic metrics data.
+
+If the creation screen didn't offer recommended alerts, open the VM's **Alerts** page and select **View + set up**. Configure the desired host alert rules and the email notification action group, then select **Save**. For details, see [Enable recommended alert rules](/azure/azure-monitor/alerts/alerts-manage-alert-rules#enable-recommended-alert-rules-in-the-azure-portal).
+
+Record the alert rule and action group names and their resource groups. You use this information during cleanup and avoid creating another set of recommended alerts when you enable guest monitoring.
+
+## Prepare the Log Analytics workspace
+
+1. In the Azure portal, search for **Log Analytics workspaces** and select **Create**.
+1. Select the same subscription and the dedicated **learn-monitor-vm-rg** resource group used for this exercise.
+1. Enter an available workspace name, such as **learn-monitor-vm-law**. Record the name you use.
+1. Select the VM's region. Using one region for this lab simplifies configuration; it isn't a universal requirement that a VM and its Log Analytics workspace share a region.
+1. Select **Review + Create**, then **Create**.
+1. Record the workspace name, region, and resource group. Explicitly select this workspace in both the performance-monitoring configuration and the Syslog DCR.
+
+> [!IMPORTANT]
+> Use a dedicated lab resource group. Record any resources the portal creates outside that group. Don't delete a shared workspace or action group during cleanup.
+
+For more information, see [Create a Log Analytics workspace](/azure/azure-monitor/logs/quick-create-workspace) and [Azure Monitor Agent supported operating systems](/azure/azure-monitor/agents/azure-monitor-agent-supported-operating-systems#debian-based-distributions).
 
 ## View built-in metrics graphs
 
@@ -40,7 +52,7 @@ Once your VM is created, Azure starts collecting basic metrics data automaticall
 
 1. To view basic metrics graphs, on the VMs **Overview** page, select the **Monitoring** tab.
 
-   :::image type="content" source="../media/select-monitoring.png" alt-text="Screenshot that shows Monitoring tab on a VMs Overview screen." lightbox="../media/select-monitoring.png":::
+   :::image type="content" source="../media/select-monitoring.png" alt-text="Screenshot of a VM's Monitoring tab on its Overview page." lightbox="../media/select-monitoring.png":::
 
 1. Under **Performance and utilization** > **Platform metrics**, review the following metrics graphs related to the VMs performance and utilization. Select **Show more metrics** if all the graphs don't appear immediately.
 
@@ -50,9 +62,9 @@ Once your VM is created, Azure starts collecting basic metrics data automaticall
    - **Network (total)**
    - **Disk operations/sec (average)**
 
-   :::image type="content" source="../media/platform-metrics.png" alt-text="Screenshot that shows the platform metrics graphics on the VM Overview page." lightbox="../media/platform-metrics.png":::
+   :::image type="content" source="../media/platform-metrics.png" alt-text="Screenshot of platform metrics graphs on a VM's Overview page." lightbox="../media/platform-metrics.png":::
 
-1. Under **Guest OS metrics**, notice that guest OS metrics aren't being collected yet. In the next units, you configure VM insights and data collection rules to collect guest OS metrics.
+You haven't configured AMA guest performance collection yet. In the next units, you enable logs-based VM insights monitoring and use its Performance views and Log Analytics to analyze guest data.
 
 ## View the activity log
 
@@ -67,5 +79,4 @@ You enabled boot diagnostics when you created the VM. You can view boot diagnost
 1. In the left navigation menu for the VM, select **Boot diagnostics** under **Help**.
 1. On the **Boot diagnostics** page, select **Screenshot** to see a startup screenshot from the VMs hypervisor. Select **Serial log** to view log messages created when the VM started.
 
-   :::image type="content" source="../media/3-boot-diagnostics.png" alt-text="Screenshot that shows the boot diagnostic image captured." lightbox="../media/3-boot-diagnostics.png":::
-
+   :::image type="content" source="../media/3-boot-diagnostics.png" alt-text="Screenshot of a VM's boot diagnostics image." lightbox="../media/3-boot-diagnostics.png":::

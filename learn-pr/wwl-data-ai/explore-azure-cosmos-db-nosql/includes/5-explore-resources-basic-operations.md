@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=e1cfd02c-9447-46e9-920b-7c3331636c69]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 You decided that Azure Cosmos DB for NoSQL fits the Contoso application. The next step is to see the resource model in action and learn the basic operations you perform on any new account. In this unit, you walk through those operations conceptually so that the hands-on exercise that follows feels familiar.
 
 This unit demonstrates each operation in the Azure portal, using the Data Explorer. The portal isn't the only way to do any of it. You can also create an account, database, or container using Bicep, Azure Resource Manager templates, the Azure CLI, or Azure PowerShell. In production, teams usually provision resources this way, as infrastructure as code, instead of setting them up by hand. Creating and querying items is a different kind of operation, one you perform in the portal or from application code, usually through an SDK.
@@ -73,3 +84,5 @@ Because the service indexes every property by default, both queries run without 
 These read and write operations (creating items, viewing them, and querying them) are the same operations you perform from application code later, expressed through the portal here. Working in Data Explorer first lets you confirm the resource model and your partition key choice before you write a line of application code.
 
 You now know the operations you perform on a new account. In the next unit, you apply them yourself: you provision an account and create a database, container, and items.
+
+::: zone-end

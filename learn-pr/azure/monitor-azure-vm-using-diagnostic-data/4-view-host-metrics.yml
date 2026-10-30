@@ -1,18 +1,17 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.monitor-azure-vm-using-diagnostic-data.view-host-metrics
-title: Use Metrics Explorer to view detailed host metrics
+title: Use metrics explorer to view detailed host metrics
 metadata:
-  title: Use Metrics Explorer to view detailed host metrics
+  title: Use Metrics Explorer to View Detailed Host Metrics
   description: Use Azure Monitor Metrics Explorer to create and configure a custom VM host metrics graph.
-  ms.date: 09/26/2024
-  author: cwatson-cat
-  ms.author: cwatson
+  ms.date: 10/25/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/4-view-host-metrics.md)]
 quiz:
-  title: Check your knowledge
   questions:
   - content: How do you add another metric to an existing Metrics Explorer graph?
     choices:

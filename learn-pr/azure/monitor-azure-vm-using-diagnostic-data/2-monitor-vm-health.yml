@@ -4,15 +4,14 @@ title: Monitoring for Azure VMs
 metadata:
   title: Monitoring for Azure VMs
   description: Understand Azure Monitor Metrics and Logs, and explore the various Azure Monitor capabilities for monitoring a virtual machine (VM).
-  ms.date: 09/26/2024
-  author: cwatson-cat
-  ms.author: cwatson
+  ms.date: 10/25/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
 durationInMinutes: 8
 content: |
   [!include[](includes/2-monitor-vm-health.md)]
 quiz:
-  title: Check your knowledge
   questions:
   - content: What are the two main types of monitoring data that Azure Monitor collects for Azure VMs?
     choices:
@@ -21,7 +20,7 @@ quiz:
       explanation: Azure Monitor can collect two main types of data for monitoring VMs, metrics and logs.
     - content: VM insights and Alerts.
       isCorrect: false
-      explanation: VM insights and Alerts are based on Azure Monitor Metrics data, but Azure Monitor can also collect log data.
+      explanation: VM insights helps collect and visualize guest performance data. Azure Monitor alerts can evaluate metric data or log queries; these aren't separate telemetry types.
     - content: Workbooks and Workspaces.
       isCorrect: false
       explanation: Workbooks and Log Analytics Workspaces work with already-collected metrics and log data.

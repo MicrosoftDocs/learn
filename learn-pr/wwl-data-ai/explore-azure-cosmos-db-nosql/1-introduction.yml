@@ -2,10 +2,11 @@
 uid: learn.wwl.explore-azure-cosmos-db-nosql.introduction
 title: Introduction
 metadata:
+  zone_pivot_groups: video-or-text
   title: Introduction
   description: "Frame the adoption decision for Azure Cosmos DB for NoSQL, including for AI workloads."
-  ms.date: 08/08/2026
-  author: wwlpublish
+  ms.date: 10/29/2026
+  author: MScalopez
   ms.author: calopez
   ms.topic: unit
 azureSandbox: false

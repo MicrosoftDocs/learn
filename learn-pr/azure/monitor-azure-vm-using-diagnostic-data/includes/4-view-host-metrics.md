@@ -1,7 +1,8 @@
-You want to investigate how traffic flowing into your VM affects its CPU capability. If the built-in metrics charts for a VM don't already show the data you need, you can use Metrics Explorer to create customized metrics charts. In this unit, you plot a graph that displays your VM's maximum percentage CPU and average inbound flow data together.
+You want to compare inbound network flows with your VM's CPU utilization. If the built-in metrics charts for a VM don't already show the data you need, you can use Metrics Explorer to create customized metrics charts. In this unit, you plot a graph that displays your VM's maximum percentage CPU and average inbound flow count together.
 
 Azure Monitor Metrics Explorer offers a UI for exploring and analyzing VM metrics. You can use Metrics Explorer to view and create custom charts for many VM host metrics in addition to the metrics shown on the built-in graphs.
-## Understand Metrics Explorer
+
+## Understand metrics explorer
 
 To open Metrics Explorer, you can:
 
@@ -9,16 +10,18 @@ To open Metrics Explorer, you can:
 - Select the **See all Metrics** link next to **Platform metrics** on the **Monitoring** tab of the VM's **Overview** page.
 - Select **Metrics** from the left navigation menu on the Azure Monitor **Overview** page.
 
-:::image type="content" source="../media/metrics-explorer.png" alt-text="Screenshot that shows Metrics Explorer." lightbox="../media/metrics-explorer.png":::
+:::image type="content" source="../media/metrics-explorer.png" alt-text="Screenshot of the metrics explorer interface in the Azure portal." lightbox="../media/metrics-explorer.png":::
 
 In Metrics Explorer, you can select the following values from the dropdown fields:
 
-- **Scope:** If you open Metrics Explorer from a VM, this field is prepopulated with the VM name. You can add more items with the same resource type (VMs) and location.
+- **Scope:** If you open Metrics Explorer from a VM, this field is prepopulated with the VM name. For the classic multi-resource view, you can add VMs of the same resource type in the same subscription and region. Use splitting by resource ID to compare individual VMs, or by resource group where available.
 - **Metric Namespace**: Most resource types have only one namespace, but for some types, you must pick a namespace. For example, storage accounts have separate namespaces for files, tables, blobs, and queues.
 - **Metric**: Each metrics namespace has many metrics available to choose from.
 - **Aggregation**: For each metric, Metrics Explorer applies a default aggregation. You can use a different aggregation to get different information about the metric.
 
-You can apply the following aggregation functions to metrics:
+Filtering and splitting within a metric depend on the dimensions it exposes. **Percentage CPU** and **Inbound Flows** don't provide geographic-region, server-cluster, or application-component dimensions. To combine other scopes or telemetry, use an appropriately configured workbook or query. See [Metrics Explorer scope and dimensions](/azure/azure-monitor/metrics/analyze-metrics).
+
+Depending on the metric, you can apply the following aggregation functions to the data points in each chart time interval:
 
 - **Count**: Counts the number of data points.
 - **Average (Avg)**: Calculates the arithmetic mean of values.
@@ -40,9 +43,11 @@ To create a Metrics Explorer graph that shows host VM maximum percentage CPU and
 
 1. Select **Add metric** at upper left.
 1. Under **Metric**, select **Inbound Flows**. Leave **Aggregation** at **Avg**.
+
+   **Inbound Flows** counts current inbound flows; it isn't a count of HTTP requests or the number of received bytes. **Percentage CPU** measures allocated compute utilization. **Max** shows the highest recorded CPU value in each chart time interval, while **Avg** shows the average inbound flow count. Comparing their trends doesn't establish that one caused the other. See the [VM metric definitions](/azure/azure-monitor/reference/supported-metrics/microsoft-compute-virtualmachines-metrics).
+
 1. At upper right, select **Local Time: Last 24 hours (Automatic - 15 minutes)**, change it to **Last 30 minutes**, and select **Apply**.
 
 Your graph should look similar to the following screenshot:
 
-:::image type="content" source="../media/3-metric-graph.png" alt-text="Screenshot that shows a graph of CPU usage and inbound traffic." lightbox="../media/3-metric-graph.png":::
-
+:::image type="content" source="../media/3-metric-graph.png" alt-text="Screenshot of CPU usage and inbound flow count on one graph." lightbox="../media/3-metric-graph.png":::

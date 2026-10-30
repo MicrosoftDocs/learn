@@ -28,8 +28,8 @@ metadata:
   gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/explore-azure-cosmos-db-nosql/index.yml
   title: Explore Azure Cosmos DB for NoSQL
   description: "Evaluate whether Azure Cosmos DB for NoSQL fits your application, including AI workloads, and create your first account, database, container, and items."
-  ms.date: 08/04/2026
-  author: wwlpublish
+  ms.date: 10/29/2026
+  author: MScalopez
   ms.author: calopez
   ms.topic: module
   ms.service: azure-cosmos-db
