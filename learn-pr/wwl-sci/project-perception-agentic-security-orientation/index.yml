@@ -30,21 +30,21 @@ metadata:
   gs-solution.area: Security
   gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/project-perception-agentic-security-orientation/index.yml
   title: Understand How Project Perception Coordinates Security Operations
-  description: "Learn how Project Perception coordinates specialized agents across the six areas of work your team already runs: threat intelligence, triage, investigation, detection engineering, attack path analysis, and posture prioritization. Recognize when a situation calls for a coordinated playbook by naming and counting the areas of work it touches."
-  ms.date: 08/03/2026
+  description: "Learn how Project Perception coordinates specialized agents across six areas of security work. Assess focused execution and coordination needs, then check supported capabilities, inputs, and authorization before choosing a response."
+  ms.date: 10/30/2026
   author: wwlpublish
   ms.author: riswinto
   ms.topic: module
   ms.service: defender-xdr
   ai-usage: ai-assisted
 title: Understand how Project Perception coordinates security operations
-summary: 'Project Perception is Microsoft''s agentic security system, accessed through the Agentic security section of the Microsoft Defender portal. Machine-paced attackers move faster than security teams can coordinate work across specialist boundaries. This module explains how Project Perception runs security operations as a coordinated, machine-speed workflow while humans stay in control of critical decisions, and gives you the recognition question that drives day-to-day tool choice: does this situation touch one area of work, or does it need a coordinated playbook across several?'
+summary: 'Project Perception is Microsoft''s agentic security system, accessed through the Agentic security section of the Microsoft Defender portal. Machine-paced attackers move faster than security teams can coordinate work across specialist boundaries. This module explains how Project Perception connects security operations while humans stay in control of critical decisions. Learn to distinguish focused execution from coordination needs and choose a response based on supported capabilities, available inputs, authorization, and organizational objectives.'
 abstract: |
   After completing this module, you will be able to:
   - Explain why human-paced security operations struggle to keep up with machine-paced attackers
   - Describe how coordinated multi-agent defense runs those tasks as one connected workflow, handled by Red, Blue, and Green team agents
   - Map Project Perception's agents and playbooks onto that model
-  - Recognize when a situation calls for a Project Perception playbook by naming and counting the areas of work it touches
+  - Recognize when focused agent support or a coordinated playbook fits a security objective by checking capabilities, inputs, and authorization
 prerequisites: |
   - Day-to-day familiarity with security operations concepts such as alerts, investigations, threat intelligence, and vulnerability management
   - High-level familiarity with the Microsoft Defender portal and Microsoft Defender XDR workflows

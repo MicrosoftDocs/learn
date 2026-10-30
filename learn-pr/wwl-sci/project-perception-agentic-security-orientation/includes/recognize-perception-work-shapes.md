@@ -1,15 +1,15 @@
-A situation lands on your desk. Experienced analysts already ask which areas of work a situation touches, even if they don't phrase it that way. **Name the areas of work the situation touches and count them. That's how you recognize whether a coordinated playbook is the right response.** Practicing that skill on three situations, each drawn from a real pattern SOCs see week to week, is what turns the framework into a working reflex.
+A situation lands on your desk. Identifying the areas of security work involved helps you understand its scope, but doesn't determine the right tool. These three situations help you distinguish work that benefits from focused agent support from work that needs coordination across several capabilities.
 
 ## The recognition question
 
 Work through these steps before reading each situation's diagnosis.
 
-1. **Name the areas of work.** Which of the six does the immediate need touch: threat intelligence analysis, alert triage, incident investigation, detection engineering, attack path analysis, posture prioritization?
-1. **Count them.** One area with an analyst inside it, several areas that need coordination, or a coordinated playbook running with a single analyst also working inside one of the areas?
-1. **Pick the likely shape.** Work that stays inside one area (handle it inside your existing tools), a coordinated playbook across several areas (a Project Perception playbook), or both at once.
-1. **Confirm an available agent or playbook supports the objective.** Check the **Playbooks** page in Perception to confirm one covers the objective and the work involved.
+1. **Name the objective and areas of work.** What outcome does your organization need? Which of the six areas does the immediate need touch: threat intelligence analysis, alert triage, incident investigation, detection engineering, attack path analysis, posture prioritization?
+1. **Assess the execution and coordination needs.** Would agent-supported execution help complete a focused task? Do several capabilities need to pass findings through a connected workflow? Consider the required handoffs, not just the number of areas involved.
+1. **Confirm support and feasibility.** Check whether Perception offers a supported agent or playbook for the objective and whether its requirements and authorized scope can be met. For more information, see the [playbook requirements](/security/agentic-security/agentic-security-concepts#playbook).
+1. **Choose the response that fits.** Use existing analyst tools, a focused Perception agent or playbook, a playbook that coordinates several capabilities, or a combination. If no supported option meets the need or a prerequisite is missing, use existing workflows or resolve the gap before you run it.
 
-Once you name the areas, the likely shape usually becomes clear.
+**The number of areas is a clue about scope, not a selection rule.** A single area can benefit from a focused agent or playbook. Several areas don't automatically justify a coordinated playbook. Support, inputs, authorization, and organizational needs are essential parts of the decision.
 
 ## Situation one: a new threat actor advisory
 
@@ -17,7 +17,7 @@ A threat intelligence advisory arrives about a previously unnamed state-linked a
 
 **Areas of work the situation touches.** Threat intelligence analysis, attack path analysis, posture prioritization, detection engineering. That's four areas of work across all three teams of agents: Blue, Red, Green, Blue.
 
-**Diagnosis.** Coordinate across the four areas. The value isn't any single area running well. It's the four running as one continuous workflow with the handoffs closed. This is what the _Protect against a threat_ playbook is built for: Threat Intelligence Agent, then Recon Agent, then Posture Prioritization Agent, then Detection Authoring Agent, with security context carrying findings between them.
+**Diagnosis.** This objective benefits from coordination because each stage needs the previous stage's findings. The _Protect against a threat_ playbook connects Threat Intelligence Agent, Recon Agent, Posture Prioritization Agent, and Detection Authoring Agent, with security context carrying findings between them. It's a candidate, not an automatic choice because four areas are involved. Before you select it, confirm that it supports the required environment and outcome and that its requirements and authorized scope can be met. Otherwise, address the gap or coordinate the response through existing workflows.
 
 ## Situation two: an analyst triaging a specific alert
 
@@ -25,18 +25,18 @@ An analyst is triaging a suspicious sign-in alert on a VIP account. They want a 
 
 **Areas of work the situation touches.** Alert triage. Summarizing the alert stack, running the KQL check for related activity, and pulling the account's recent behavior are all part of the same triage task.
 
-**Diagnosis.** Work that stays inside one area. This is one analyst inside alert triage doing what alert triage always involves: reading the alert stack, following one related lead, understanding one account's behavior. That's the shape you handle inside your existing alert-triage tools, not with a coordinated playbook. The Security Alert Triage Agent could also work autonomously inside alert triage, but the situation describes an analyst in the driver's seat on one specific alert, not an autonomous agent classifying a queue. If the triage finding later escalates into a broader investigation across areas, that's a different situation.
+**Diagnosis.** This is a focused triage task, with no stated need for coordination across several capabilities. Existing alert-triage tools are a reasonable choice for the analyst's exploratory work. A focused Perception agent or playbook might also help if its supported scope and outputs match the task, the required inputs are available, and its work is authorized. Don't assume that any focused option supports every requested query or summary. Check its capabilities before you delegate. One area of work doesn't rule out Perception, just as an analyst's involvement doesn't rule out agent support. If the findings require a broader investigation, reassess the objective and coordination needs.
 
-## Situation three: a playbook running while an analyst digs into a finding
+## Situation three: an analyst follows up on a playbook report
 
-This third shape looks like the first two combined, but it's a distinct category. Coordinated playbook output and single-analyst work regularly run alongside each other in real investigations. Without naming this shape, you'll try to force real situations into one of the first two and mis-diagnose.
+Coordinated playbook output and focused follow-up can complement each other. You don't need to force the entire investigation into one execution approach.
 
 The _Protect against a threat_ playbook from Situation one has run. It produced a coordinated report showing two internet-facing applications present the paths the actor exploits. As an analyst reviews the report, they want to dig into one specific investigation subtree, ask follow-up questions about one indicator of compromise, and run an exploratory KQL query for a related pattern the playbook didn't cover.
 
-**Areas of work the situation touches.** The playbook connected four areas of work (threat intelligence analysis, attack path analysis, posture prioritization, detection engineering). The analyst's manual follow-up sits inside incident investigation, where digging into subtrees, chasing indicators, and crafting exploratory queries are all normal tasks.
+**Areas of work the situation touches.** The playbook connected four areas of work (threat intelligence analysis, attack path analysis, posture prioritization, detection engineering). The analyst's follow-up focuses on investigating specific findings from the coordinated report, including an indicator and a possible related activity pattern.
 
-**Diagnosis.** Both at once. Project Perception is coordinating across those four areas through the playbook. The analyst is working inside incident investigation, which is one area, using whatever incident-investigation tools they normally rely on. This is the normal shape of a mature SOC investigation: a coordinated playbook running while an analyst works inside one area by hand. The playbook's coordination doesn't replace the inside-one-area work. The two run alongside each other.
+**Diagnosis.** Combine coordinated output with focused follow-up. The playbook has completed the connected workflow, and the analyst uses its report as context for further investigation. Existing investigation tools fit the exploratory questions. A supported focused agent or playbook is another option if its capabilities, inputs, and authorized scope match the follow-up. The completed playbook doesn't automatically cover these new questions or require another coordinated run.
 
 ## What the recognition practice is for
 
-Before you move into setup and operational guidance for Perception, run the recognition against what's in front of you. Name the areas of work, count them, pick the likely shape, and confirm an available agent or playbook supports the objective. The right response usually falls out of the diagnosis.
+Before you move into setup and operational guidance for Perception, practice the full decision: name the objective and areas, assess execution and coordination needs, confirm support and feasibility, and then choose the response. The goal is to match supported, authorized work to your organization's needs, not to turn an area count into a tool choice.
