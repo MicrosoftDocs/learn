@@ -4,8 +4,8 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Answer questions to validate your understanding of authentication, the client singleton pattern, connectivity modes, the emulator, and error handling in the Azure Cosmos DB SDK."
-  ms.date: 10/01/2026
-  author: wwlpublish
+  ms.date: 10/30/2026
+  author: MScalopez
   ms.author: calopez
   ms.topic: unit
   module_assessment: true
@@ -20,7 +20,7 @@ quiz:
     - content: "Construct the client with `ManagedIdentityCredential` configured for the App Service managed identity, so authentication uses that identity without a stored application secret."
       isCorrect: true
       explanation: "`ManagedIdentityCredential` selects the configured managed identity instead of trying a chain of environment and developer credentials. That identity needs an appropriate Azure Cosmos DB data-plane role. `DefaultAzureCredential` is useful during development, but an earlier credential in its chain can take precedence over managed identity. A specific credential makes production identity selection deterministic."
-    - content: "Copy the primary key from the account's Keys blade into an app setting, because keys work immediately and need no role assignment."
+    - content: "Copy the primary key from the account's Keys pane into an app setting, because keys work immediately and need no role assignment."
       isCorrect: false
       explanation: "An account key does work, but it's a long-lived secret that has to be stored securely and rotated on a schedule. Keys are a reasonable fit for local tooling, scripts, and the emulator. For an application running in Azure, Microsoft Entra ID removes the secret from the deployment altogether."
     - content: "Use the emulator's well-known key, since it's a documented public constant rather than a private secret."
@@ -33,7 +33,7 @@ quiz:
       explanation: "Frequent instantiation discards the connection pool and address cache on every request. The SDK re-establishes connections and refetches partition routing information for each new client, which increases latency and resource usage rather than improving them."
     - content: "The address cache and connection pool are discarded and rebuilt on every request, adding latency and resource overhead."
       isCorrect: true
-      explanation: "CosmosClient manages TCP (Transmission Control protocol) connections and an address cache that maps partition key ranges to the addresses of their replica sets. Discarding and recreating the client per request throws away that state and rebuilds it from scratch, adding connection setup and routing discovery cost to every operation."
+      explanation: "CosmosClient manages TCP (Transmission Control Protocol) connections and an address cache that maps partition key ranges to the addresses of their replica sets. Discarding and recreating the client per request throws away that state and rebuilds it from scratch, adding connection setup and routing discovery cost to every operation."
     - content: "The SDK detects multiple instances and shares their connection state automatically."
       isCorrect: false
       explanation: "There's no cross-instance state sharing. Each CosmosClient maintains its own independent connection pool and address cache."

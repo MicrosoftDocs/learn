@@ -1,8 +1,17 @@
-With connectivity mode, timeouts, and preferred regions all configured, the client is tuned for production, and iteration speed becomes the next challenge. Each code change that requires a round-trip to Azure consumes request units and adds network latency to the development loop. The Azure Cosmos DB emulator runs the Cosmos DB for NoSQL wire protocol on a local machine, so the SDK connects to it exactly as it connects to a cloud account, without a live Azure account or any cloud cost.
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=2ed7496b-f853-4364-a11a-d94f67bc950d]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+With connectivity mode, timeouts, and preferred regions all configured, the client is tuned for production, and iteration speed becomes the next challenge. Each code change that requires a round-trip to Azure consumes request units and adds network latency to the development loop. The Azure Cosmos DB emulator runs the Azure Cosmos DB for NoSQL wire protocol on a local machine, so the SDK connects to it exactly as it connects to a cloud account, without a live Azure account or any cloud cost.
 
 ## What the emulator provides
 
-The emulator replicates the Cosmos DB for NoSQL API wire protocol locally. Because it implements the same protocol the SDK uses, application code written against the emulator remains mostly unchanged except for the SDK connection itself for authentication, certificate handling, and connection mode when pointed at a cloud account. There are also some small feature differences as new features are released. That said, the overall compatibility makes the emulator genuinely useful when used for development and testing.
+The emulator replicates the Azure Cosmos DB for NoSQL API wire protocol locally. Because it implements the same protocol the SDK uses, application code written against the emulator remains mostly unchanged; only the client configuration (authentication, certificate handling, and connection mode) differs for a cloud account. There are also some small feature differences as new features are released. That said, the overall compatibility makes the emulator genuinely useful when used for development and testing.
 
 Three development scenarios benefit most from running against the emulator:
 
@@ -17,7 +26,7 @@ The emulator is available in several forms depending on your operating system:
 | Windows Installer | Download from the Azure Cosmos DB emulator page on Microsoft Learn |
 | Windows Docker container | `docker pull mcr.microsoft.com/cosmosdb/windows/azure-cosmos-emulator` |
 
-The Linux-based vNext emulator is the recommended local development option for Azure Cosmos DB for NoSQL. It runs as a Docker container on Windows, macOS, and Linux, including supported ARM64 environments. vNext supports the NoSQL API in gateway mode and implements the core operations needed for most local development and integration testing. It doesn't emulate every cloud-service capability. In particular, it doesn't implement request-unit accounting, Direct mode, or server-side JavaScript through stored procedures, triggers, and user-defined functions. Use the Windows local emulator or legacy Linux container only when your tests require capabilities that vNext doesn't yet support. Always validate performance, throughput, regional behavior, and unsupported features against an Azure Cosmos DB account before release.
+The Linux-based vNext emulator is the recommended local development option for Azure Cosmos DB for NoSQL. It runs as a Docker container on Windows, macOS, and Linux, including supported ARM64 environments. vNext supports the NoSQL API in gateway mode and implements the core operations needed for most local development and integration testing. It doesn't emulate every cloud-service capability. In particular, it doesn't implement request-unit accounting, direct mode, or server-side JavaScript through stored procedures, triggers, and user-defined functions. Use the Windows local emulator or legacy Linux container only when your tests require capabilities that vNext doesn't yet support. Always validate performance, throughput, regional behavior, and unsupported features against an Azure Cosmos DB account before release.
 
 The NoSQL API is supported across all forms.
 
@@ -72,7 +81,7 @@ Connection mode: Gateway
 The HTTPS endpoint presents a locally generated development certificate. Before connecting, export and trust the emulator certificate by using the certificate-import process for your operating system or language runtime. After the certificate is trusted, the SDK validates it normally.
 
 > [!IMPORTANT]
-> Don’t disable TLS validation with DangerousAcceptAnyServerCertificateValidator, connection_verify=False, or an equivalent option. Those settings can accidentally disable certificate validation when the application later connects to Azure.
+> Don’t disable TLS validation with `DangerousAcceptAnyServerCertificateValidator`, `connection_verify=False`, or an equivalent option. Those settings can accidentally disable certificate validation when the application later connects to Azure.
 
 ::: zone pivot="csharp"
 
@@ -98,7 +107,7 @@ CosmosClient client = new(
 
 ::: zone-end
 
-The vNext emulator supports gateway mode only. Explicitly configuring gateway mode prevents a client that normally uses Direct mode from attempting unsupported direct connections.
+The vNext emulator supports gateway mode only. Explicitly configuring gateway mode prevents a client that normally uses direct mode from attempting unsupported direct connections.
 
 ::: zone pivot="python"
 
@@ -120,7 +129,7 @@ client = CosmosClient(
 
 ::: zone-end
 
-After creating the client, application code can use the same SDK operations for databases, containers, and items that it uses with Azure. The client configuration still differs: Azure should normally use Microsoft Entra ID, and production workloads can use Direct mode.
+After creating the client, application code can use the same SDK operations for databases, containers, and items that it uses with Azure. The client configuration still differs: Azure should normally use Microsoft Entra ID, and production workloads can use direct mode.
 
 ## Switch between the emulator and Azure
 
@@ -230,8 +239,8 @@ else:
 For local Azure development, DefaultAzureCredential can use the developer’s Azure CLI sign-in. In Azure, it can use the application’s managed identity. Assign that identity an appropriate data-plane role, such as Cosmos DB Built-in Data Contributor.
 
 > [!IMPORTANT]
-> Import and trust the emulator certificate when using HTTPS. Don’t disable TLS validation in shared application code. Certificate-validation callbacks and connection_verify=False can accidentally disable validation when the application connects to Azure.
+> Import and trust the emulator certificate when using HTTPS. Don’t disable TLS validation in shared application code. Certificate-validation callbacks and `connection_verify=False` can accidentally disable validation when the application connects to Azure.
 
 Changing the target configuration doesn’t copy databases, containers, or data between environments. Provision cloud resources separately through infrastructure as code, and use explicit seed or migration processes when test data is required.
 
-Before release, run integration tests against Azure to validate behavior the emulator doesn’t reproduce, including request charges, indexing behavior, Direct mode, regional distribution, consistency, availability, and performance.
+Before release, run integration tests against Azure to validate behavior the emulator doesn’t reproduce, including request charges, indexing behavior, direct mode, regional distribution, consistency, availability, and performance.

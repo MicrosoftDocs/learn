@@ -4,11 +4,11 @@ title: Enable offline development with the emulator
 metadata:
   title: Enable offline development with the emulator
   description: "Connect the Azure Cosmos DB SDK to the local emulator for cost-free offline development and testing, and switch between emulator and cloud endpoints."
-  ms.date: 10/01/2026
-  author: wwlpublish
+  ms.date: 10/30/2026
+  author: MScalopez
   ms.author: calopez
   ms.topic: unit
-  zone_pivot_groups: dev-lang-csharp-python
+  zone_pivot_groups: video-or-text,dev-lang-csharp-python
   ai-usage: ai-generated
 azureSandbox: false
 labModal: false

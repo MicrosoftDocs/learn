@@ -1,3 +1,12 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=329585cb-57a5-4a27-889d-376f632ef2f6]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
 The client is configured, connectivity mode is tuned, and the emulator confirms the setup works locally. The final step before Contoso's web API goes to production is making the connection layer both resilient and observable. This unit covers three concerns that compound each other in production. First, which errors the SDK handles automatically versus which need application-level logic. Second, how to enable logging to see exactly what the SDK does at runtime. Third, how to tune async and parallelism settings to sustain the throughput the API demands.
 
 ## Understand built-in retry
@@ -92,7 +101,7 @@ def retryable_upsert(container, item, max_retries=3):
 
 ## Configure SDK logging
 
-Logging exposes SDK request information: status codes, request URIs (Uniform Resource Identifiers), and request-unit charges appear in your output stream. Exceptions and response diagnostics also expose error details, so logs aren't the only way to distinguish a 403 from a 404. Recording those details helps diagnose a misconfigured credential, a missing resource, or a wrong endpoint. Logged request-unit charges also give you an early signal when a query is more expensive than expected, long before it causes a production incident.
+Logging exposes SDK request information: status codes, request URIs, and request-unit charges appear in your output stream. Exceptions and response diagnostics also expose error details, so logs aren't the only way to distinguish a 403 from a 404. Recording those details helps diagnose a misconfigured credential, a missing resource, or a wrong endpoint. Logged request-unit charges also give you an early signal when a query is more expensive than expected, long before it causes a production incident.
 
 ::: zone pivot="csharp"
 
@@ -156,7 +165,7 @@ client = CosmosClient(url=endpoint, credential=credential, logging_enable=True)
 
 ## Tune async and parallelism settings
 
-Asynchronous code is the foundation of efficient SDK usage. When the application awaits a Cosmos DB operation, the calling thread is free to handle other requests rather than sitting idle waiting for a network response. This process matters most for a web API like Contoso's, where dozens of requests arrive simultaneously and each one awaits a database operation. Blocking even one thread per request quickly exhausts the thread pool under load.
+Asynchronous code is the foundation of efficient SDK usage. When the application awaits an Azure Cosmos DB operation, the calling thread is free to handle other requests rather than sitting idle waiting for a network response. This process matters most for a web API like Contoso's, where dozens of requests arrive simultaneously and each one awaits a database operation. Blocking even one thread per request quickly exhausts the thread pool under load.
 
 ::: zone pivot="csharp"
 
@@ -214,4 +223,4 @@ With error handling in place, logging active, and parallelism tuned, the Contoso
 
 ---
 
-> **Synthesis prompt:** Review the three concerns in this unit: error handling, logging, and parallelism. Which one has the highest priority before the Contoso web API goes to production, and why? Consider the tradeoffs: logging is observable but costs overhead; retry logic protects writes but can mask underlying provisioning problems; parallelism improves throughput but increases client CPU and memory use.
+> **Synthesis prompt:** Review the three concerns in this unit: error handling, logging, and parallelism. Which one has the highest priority before the Contoso web API goes to production, and why? Consider the trade-offs: logging is observable but costs overhead; retry logic protects writes but can mask underlying provisioning problems; parallelism improves throughput but increases client CPU and memory use.
