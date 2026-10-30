@@ -4,11 +4,11 @@ title: Process bulk operations
 metadata:
   title: Process Bulk Operations
   description: "Run high-throughput independent writes with bulk execution in .NET and concurrent async operations in Python, and manage throttling during ingest."
-  ms.date: 10/01/2026
-  author: wwlpublish
+  ms.date: 10/30/2026
+  author: MScalopez
   ms.author: calopez
   ms.topic: unit
-  zone_pivot_groups: dev-lang-csharp-python
+  zone_pivot_groups: video-or-text,dev-lang-csharp-python
   ai-usage: ai-generated
 azureSandbox: false
 labModal: false
