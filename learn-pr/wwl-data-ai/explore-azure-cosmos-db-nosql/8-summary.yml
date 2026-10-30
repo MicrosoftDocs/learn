@@ -4,8 +4,8 @@ title: Summary
 metadata:
   title: Summary
   description: "Recap what Azure Cosmos DB for NoSQL is, how it works, when to use it, and how to provision it, with links to learn more."
-  ms.date: 08/09/2026
-  author: wwlpublish
+  ms.date: 10/29/2026
+  author: MScalopez
   ms.author: calopez
   ms.topic: unit
 azureSandbox: false

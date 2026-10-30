@@ -2,38 +2,37 @@
 uid: learn.azure.monitor-azure-vm-using-diagnostic-data.enable-vm-insights
 title: Collect client performance counters by using VM insights
 metadata:
-  title: Collect client performance counters by using VM insights
-  description: Enable Azure Monitor VM insights with process and dependency mapping to monitor and map client performance counter metrics.
-  ms.date: 09/26/2024
-  author: cwatson-cat
-  ms.author: cwatson
+  title: Collect Client Performance Counters by Using VM Insights
+  description: Enable logs-based VM insights monitoring with Azure Monitor Agent and a data collection rule, and analyze guest performance data in a Log Analytics workspace.
+  ms.date: 10/25/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/5-enable-vm-insights.md)]
 quiz:
-  title: Check your knowledge
   questions:
-  - content: What capabilities does enabling VM insights provide?
+  - content: What does enabling logs-based VM insights monitoring in this exercise provide?
     choices:
-    - content: Prebuilt client performance workbooks and guest OS metrics.
+    - content: Prebuilt Performance views and guest performance records in a Log Analytics workspace.
       isCorrect: true
-      explanation: Enable VM insights with the Azure Monitor Agent to collect guest OS metrics and use prebuilt workbooks to visualize VM client performance.
+      explanation: Logs-based VM insights uses Azure Monitor Agent and a predefined DCR to collect guest performance records into InsightsMetrics in the selected Log Analytics workspace for Performance views and KQL analysis.
     - content: Graphs that show several host metrics on one graph with customizable timeframes.
       isCorrect: false
       explanation: To build metrics graphs that show several host metrics on one graph with adjustable timeframes, use Metrics Explorer.
-    - content: Azure VM log collection and analytics.
+    - content: Automatic Linux Syslog collection.
       isCorrect: false
-      explanation: Azure Monitor doesn't collect any logs by default. You have to set up DCRs to collect logs and send them to Log Analytics.
-  - content: What's a quick way to install the Azure Monitor Agent to collect guest OS metrics?
+      explanation: The predefined performance DCR doesn't collect Syslog. Create an additional Linux Syslog DCR.
+  - content: With authentication and connectivity prerequisites met, what starts guest data collection with Azure Monitor Agent in this exercise?
     choices:
-    - content: Install the diagnostics extension under **Diagnostics settings**.
+    - content: Enable only boot diagnostics.
       isCorrect: false
-      explanation: The diagnostics extension isn't related to the Azure Monitor Agent.
-    - content: You don't have to install or enable anything to use the Azure Monitor Agent to collect guest OS metrics.
+      explanation: Boot diagnostics collects boot information, not the guest performance and Syslog data configured by AMA DCRs.
+    - content: Create a Log Analytics workspace without configuring the VM.
       isCorrect: false
-      explanation: Guest OS metrics aren't collected by default. You must install the Azure Monitor Agent to collect guest OS metrics.
-    - content: Select the **Azure Monitor Agent** when you enable VM insights.
+      explanation: A workspace supplies a destination; creating it alone doesn't install AMA or associate a collection rule with the VM.
+    - content: Install Azure Monitor Agent and associate a DCR that defines the data and destination.
       isCorrect: true
-      explanation: Select the Azure Monitor Agent instead of the legacy Log Analytics Agent when you enable VM insights.
+      explanation: AMA requires the agent, its authentication and connectivity prerequisites, and an associated DCR defining what to collect and where to send it.
 

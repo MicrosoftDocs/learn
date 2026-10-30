@@ -20,13 +20,12 @@ metadata:
     - "Data Analytics"
   gs-solution.area: "Cloud & AI Platforms"
   gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/monitor-azure-vm-using-diagnostic-data/index.yml
-  title: Monitor your Azure virtual machines with Azure Monitor
+  title: Monitor Your Azure Virtual Machines with Azure Monitor
   description: Learn how to monitor your Azure VMs by using Azure Monitor to collect and analyze VM host and client metrics and logs.
-  ms.date: 09/26/2024
-  author: guywi-ms
-  ms.author: lumac
+  ms.date: 10/25/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: module
-  ms.custom: engagement-fy23
   ms.service: azure-virtual-machines
 title: Monitor your Azure virtual machines with Azure Monitor
 summary: Learn how to monitor your Azure VMs by using Azure Monitor to collect and analyze VM host and client metrics and logs.
@@ -34,9 +33,9 @@ abstract: |
   - Understand which monitoring data you need to collect from your VM.
   - Enable and view recommended alerts and diagnostics.
   - Use Azure Monitor to collect and analyze VM host metrics data.
-  - Use Azure Monitor Agent to collect VM client performance metrics and event logs.
+  - Use Azure Monitor Agent to collect VM client performance data and Linux Syslog events.
 prerequisites: | 
-  - At least **Contributor** role access to an Azure subscription
+  - At least **Contributor** role access to an Azure subscription covering the VM, workspace, and data collection rules
   - Familiarity with virtualization and Azure VMs
 iconUrl: /training/achievements/monitor-azure-vm-using-diagnostic-data.svg
 levels:
@@ -60,4 +59,4 @@ units:
 - learn.azure.monitor-azure-vm-using-diagnostic-data.summary
 badge:
   uid: learn.azure.monitor-azure-vm-using-diagnostic-data.badge
-
+

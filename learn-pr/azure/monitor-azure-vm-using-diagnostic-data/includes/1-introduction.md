@@ -11,9 +11,14 @@ To complete this module, you need the following prerequisites:
 - Familiarity with virtualization, Azure portal navigation, and Azure VMs.
 - Access to an Azure subscription with at least **Contributor** role. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn) and add a subscription before you begin. If you're a student, you can take advantage of the [Azure for students](https://azure.microsoft.com/free/students/?cid=msft_learn) offer.
 
+Your permissions must cover the VM, Log Analytics workspace, data collection rules, and other resources created by the exercises. Contributor access to the VM alone isn't sufficient to create resources elsewhere.
+
+> [!IMPORTANT]
+> This module uses your Azure subscription. Use a dedicated lab resource group and workspace. VM resources, monitoring ingestion, retention, and alert rules can incur charges. Record any resources created outside the lab resource group so you can clean up only the resources owned by this exercise.
+
 ## Learning objectives
 
 - Understand which monitoring data you need to collect from your VM.
 - Enable and view recommended alerts and diagnostics.
 - Use Azure Monitor to collect and analyze VM host data.
-- Use Azure Monitor Agent to collect VM client performance metrics and event logs.
+- Use Azure Monitor Agent to collect VM client performance data and Linux Syslog events.

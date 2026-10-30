@@ -4,8 +4,8 @@ title: 'Exercise: Create an account and resources'
 metadata:
   title: 'Exercise: Create an Account and Resources'
   description: "Provision an Azure Cosmos DB for NoSQL account and create a database, container, and items."
-  ms.date: 09/11/2026
-  author: wwlpublish
+  ms.date: 10/29/2026
+  author: MScalopez
   ms.author: calopez
   ms.topic: unit
 azureSandbox: false

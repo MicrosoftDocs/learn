@@ -1,72 +1,101 @@
-Azure Monitor Metrics and VM insights performance counters help you identify performance anomalies, and alert when thresholds are reached. But to analyze the root causes of issues you detect, you need to analyze log data to see which system events caused or contributed to the issues. In this unit, you set up a DCR to collect Linux VM Syslog data, and view the log data in Azure Monitor Log Analytics by using a simple Kusto Query Language (KQL) query.
+Performance data helps identify anomalies. Linux Syslog provides additional event data that can help investigate them. The performance data collection rule (DCR) from the previous unit doesn't collect Syslog. You now create a separate DCR that sends selected Syslog events to the same Log Analytics workspace.
 
-VM insights installs the Azure Monitor Agent, and creates a DCR that collects predefined performance counters, maps process dependencies, and presents the data in prebuilt workbooks. You can create your own DCRs to collect VM performance counters that the VM insights DCR doesn't collect, or to collect log data.
+## Before you begin
 
-When you create DCRs in the Azure portal, you can select from a range of performance counters and sampling rates or add custom performance counters. Alternatively, you can select from a predefined set of log types and severity levels or define custom log schemas. You can associate a single DCR to any or all VMs in your subscription, but you might need multiple DCRs to collect different types of data from different VMs.
+Confirm that **monitored-linux-vm** has Azure Monitor Agent (AMA) installed, a managed identity configured, and access to the [required Azure Monitor endpoints](/azure/azure-monitor/agents/azure-monitor-agent-network-configuration). Record the region of the Log Analytics workspace selected in the previous unit.
 
-## Create a DCR to collect log data
+This exercise uses public Azure Monitor endpoints. It doesn't configure Private Link or an Azure Monitor Private Link Scope (AMPLS).
 
-In the Azure portal, search for and select *monitor* to go to the Azure Monitor **Overview** page.
+> [!NOTE]
+> Linux Syslog collection uses a supported Syslog daemon such as **rsyslog** or **syslog-ng**. The daemon forwards messages to AMA using the configuration installed for collection. AMA doesn't automatically collect every event that exists only in the systemd journal.
 
-:::image type="content" source="../media/monitor-overview.png" alt-text="Screenshot that shows the Azure Monitor Overview page." lightbox="../media/monitor-overview.png":::
+## Create the Syslog DCR
 
-### Create a Data Collection Endpoint
+1. In the Azure portal, open **Monitor** > **Data Collection Rules** and select **Create**.
+1. If the default creation experience opens, use its banner link to switch to the **classic creation experience**. The following steps use **Platform Type** and **Add data source** from that experience.
+1. On **Basics**, enter **collect-events-linux** for the rule name.
+1. Select your subscription and **learn-monitor-vm-rg**. For **Region**, select the region of the destination **Log Analytics workspace**.
+1. For **Platform Type**, select **Linux**. Leave **Data Collection Endpoint** unselected for this public-endpoint Syslog exercise.
 
-You must have a data collection endpoint to send log data to. To create an endpoint:
+   :::image type="content" source="../media/create-dcr-basics-revised.png" alt-text="Screenshot of the DCR Basics tab with collect-events-linux, Linux selected, and no data collection endpoint." lightbox="../media/create-dcr-basics-revised.png":::
 
-1. In the Azure Monitor left navigation menu under **Settings**, select **Data Collection Endpoints**.
-1. On the **Data Collection Endpoints** page, select **Create**.
-1. On the **Create data collection endpoint** page, for **Name**, enter *linux-logs-endpoint*.
-1. Select the same **Subscription**, **Resource group**, and **Region** as your VM uses.
-1. Select **Review + create**, and when validation passes, select **Create**.
+1. On **Resources**, select **Add resources**, select **monitored-linux-vm**, and select **Apply**. Don't select **Enable Data Collection Endpoints**.
 
-### Create the Data Collection Rule
+   :::image type="content" source="../media/create-dcr-resources-revised.png" alt-text="Screenshot of the DCR Resources tab with monitored-linux-vm selected and Enable Data Collection Endpoints cleared." lightbox="../media/create-dcr-resources-revised.png":::
 
-To create the DCR to collect the event logs:
+1. On **Collect and deliver**, select **Add data source**, then **Linux Syslog**.
+1. Configure the **user**, **daemon**, and **syslog** facilities with minimum level **Warning** (shown as **LOG_WARNING** in some portal views). Set other facilities to **NONE** for this exercise. If using the bulk selector, select the intended facilities and apply the minimum level, then confirm the resulting level on each row.
 
-1. In the Monitor left navigation menu under **Settings**, select **Data Collection Rules**.
-1. On the **Data Collection Rules** page, you can see the DCR that VM insights created. Select **Create** to create a new data collection rule.
+   :::image type="content" source="../media/syslog-facilities-revised.png" alt-text="Screenshot of Linux Syslog settings with LOG_USER, LOG_DAEMON, and LOG_SYSLOG set to LOG_WARNING and other facilities set to none." lightbox="../media/syslog-facilities-revised.png":::
 
-   :::image type="content" source="../media/dcr-create.png" alt-text="Screenshot of the Data Collection Rules screen with Create highlighted." lightbox="../media/dcr-create.png":::
+1. On **Destination**, select **Azure Monitor Logs** and the exact Log Analytics workspace used for performance collection.
+1. Select **Add data source**, then **Review + create**, and **Create**.
+1. Open the DCR's **Resources** page and confirm that the intended VM is associated. Allow several minutes for the configuration to reach the agent.
 
-1. On the **Basics** tab of the **Create Data Collection Rule** screen, provide the following information:
-   - **Rule name**: Enter *collect-events-linux*.
-   - **Subscription**, **Resource Group**, and **Region**: Select the same as for your VM.
-   - **Platform Type**: Select **Linux**.
-1. Select **Next: Resources** or the **Resources** tab.
+The minimum level includes Warning and more-severe events for the selected facilities. It doesn't mean "Warning only," and it doesn't collect unselected facilities. For more information, see [Collect Syslog events with AMA](/azure/azure-monitor/vm/data-collection-syslog) and [Create a VM data collection rule](/azure/azure-monitor/vm/data-collection).
 
-   :::image type="content" source="../media/create-dcr-basics.png" alt-text="Screenshot of the Basics tab of the Create Data Collection Rule screen." lightbox="../media/create-dcr-basics.png":::
+> [!IMPORTANT]
+> A DCE isn't required for this public-endpoint Syslog path. Private Link deployments, including AMA networks that share DNS with AMPLS resources, need additional endpoint and DNS configuration. Follow the [DCE requirements](/azure/azure-monitor/data-collection/data-collection-endpoint-overview#when-is-a-dce-required) and [Private Link guidance](/azure/azure-monitor/fundamentals/private-link-security) for that topology instead of treating this lab as a private-network recipe. Other data sources can also have their own DCE requirements.
 
-1. On the **Resources** screen, select **Add resources**.
-1. On the **Select a scope** screen, select the **monitored-linux-vm** VM, and then select **Apply**.
-1. On the **Resources** screen, select **Enable Data Collection Endpoints**.
-1. Under **Data collection endpoint** for the **monitored-linux-vm**, select the **linux-logs-endpoint** you created.
-1. Select **Next: Collect and deliver**, or the **Collect and deliver** tab.
+## Generate an event that matches the DCR
 
-   :::image type="content" source="../media/create-dcr-resources.png" alt-text="Screenshot of the Resources tab of the Create Data Collection Rule screen." lightbox="../media/create-dcr-resources.png":::
+1. On the VM, select **Operations** > **Run command** > **RunShellScript**. This executes on the Linux VM, not in the local computer's terminal.
+1. Enter the following commands and select **Run** to check that the Syslog daemon and agent are active:
 
-1. On the **Collect and deliver** tab, select **Add data source**.
-1. On the **Add data source** screen, under **Data source type**, select **Linux Syslog**.
-1. On the **Add data source** screen, select **Next: Destination** or the **Destination** tab, and make sure the **Account or namespace** matches the Log Analytics workspace that you want to use. You can use the default Log Analytics workspace that VM insights set up, or create or use another Log Analytics workspace.
+   ```bash
+   systemctl is-active rsyslog
+   systemctl is-active azuremonitoragent
+   ```
 
-1. On the **Add data source** screen, select **Add data source**.
-1. On the **Create Data Collection Rule** screen, select **Review + create**, and when validation passes, select **Create**.
+   Both should report **active**. If either is inactive, resolve the service/configuration problem before continuing. Use the [AMA Syslog troubleshooting guidance](/azure/azure-monitor/agents/azure-monitor-agent-troubleshoot-linux-vm-rsyslog) rather than assuming collection succeeded.
 
-   :::image type="content" source="../media/create-dcr-finish.png" alt-text="Screenshot of Review + create highlighted on the Create Data Collection Rule screen." lightbox="../media/create-dcr-finish.png":::
+1. After the previous command completes and the DCR has reached the agent, replace the script with the following command and select **Run**:
 
-## View log data
+   ```bash
+   logger -p user.warning -t learn-monitor-vm "learn-monitor-vm syslog test"
+   ```
 
-You can view and analyze the log data collected by your DCR by using KQL log queries. A set of sample KQL queries is available for VMs, but you can write a query to look at the events your DCR is collecting.
+This creates one warning event in the **user** facility, matching the configured filter. [Run Command](/azure/virtual-machines/linux/run-command) uses the Azure VM agent and requires its documented outbound connectivity; it doesn't require opening an inbound SSH port.
 
-1. On your VM's **Overview** page, select **Logs** from the left navigation menu under **Monitoring**. Log Analytics opens an empty query window with the scope set to your VM.
+## View the collected event
 
-   You can also access log data by selecting **Logs** from the left navigation of the Azure Monitor **Overview** page. If necessary, select **Select scope** at the top of the query window to scope the query to the desired Log Analytics workspace and VM.
+1. Open **Logs** from **monitored-linux-vm**. Confirm the resource scope is this VM.
+1. If Simple mode is selected, switch to **KQL mode**. Close the example-query dialog if it opens.
+1. Run the following query:
 
-   >[!NOTE]
-   > The **Queries** window with sample queries might open when you open Log Analytics. For now, close this window, because you're going to manually create a simple query.
+   ```kusto
+   Syslog
+   | where TimeGenerated > ago(30m)
+   | where Facility == "user"
+   | where SeverityLevel == "warning"
+   | where SyslogMessage contains "learn-monitor-vm syslog test"
+   | project TimeGenerated, Computer, Facility, SeverityLevel, SyslogMessage
+   | order by TimeGenerated desc
+   ```
 
-1. In the empty query window, type *Syslog*, and then select **Run**. All the system log events the DCR collected within the **Time range** are displayed.
+   :::image type="content" source="../media/syslog-test-result-revised.png" alt-text="Screenshot of the KQL query and its matching user-facility warning event containing learn-monitor-vm syslog test." lightbox="../media/syslog-test-result-revised.png":::
 
-1. You can refine your query to identify events of interest. For example, you can display only the events that had a **SeverityLevel** of **warning**.
+The result should contain the test event. Data delivery isn't instantaneous. Allow several minutes; if the event was generated before the configuration arrived, generate a new event after confirming the association and agent health.
 
-   :::image type="content" source="../media/dcr-log.png" alt-text="Screenshot that shows the events returned from the Syslog by the DCR." lightbox="../media/dcr-log.png":::
+To inspect recent warnings across the collected facilities, run:
+
+```kusto
+Syslog
+| where TimeGenerated > ago(30m)
+| where SeverityLevel == "warning"
+| top 100 by TimeGenerated desc
+```
+
+> [!NOTE]
+> These queries assume the VM resource scope. If you open Logs from a workspace instead, constrain the query to the VM's full resource ID with an `_ResourceId` filter. A computer name alone might not uniquely identify a VM across a shared workspace. See [Log Analytics modes and scope](/azure/azure-monitor/logs/log-analytics-overview).
+
+If the Syslog table isn't available yet or the query returns no matching records, check the DCR's destination and region, VM association, configured facility/severity values, Syslog daemon, AMA status, and network connectivity. This heartbeat query can help distinguish a disconnected agent from a Syslog-specific problem:
+
+```kusto
+Heartbeat
+| where TimeGenerated > ago(30m)
+| where Category == "Azure Monitor Agent"
+| top 20 by TimeGenerated desc
+```
+
+A heartbeat confirms agent communication, not successful Syslog collection. The matching `Syslog` record is the exercise's success criterion. For more information, see [Troubleshoot AMA on Linux](/azure/azure-monitor/agents/azure-monitor-agent-troubleshoot-linux-vm) and [Syslog query examples](/azure/azure-monitor/reference/queries/syslog).

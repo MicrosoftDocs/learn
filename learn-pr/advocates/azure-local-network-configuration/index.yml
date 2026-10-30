@@ -1,15 +1,15 @@
 ### YamlMime:Module
 uid: learn.devrel.azure-local-network-configuration
 metadata:
-  title: Azure Local Network Configuration
-  description: Plan Azure Local network configuration, address allocation, host intents, storage connectivity, workload security, and resilient Azure connectivity.
+  title: Azure Local Network Infrastructure
+  description: Plan Azure Local network infrastructure, configuration, address allocation, host intents, storage connectivity, workload security, and resilient Azure connectivity.
   ms.date: 10/26/2026
   author: Orin-Thomas
   ms.author: orthomas
   ms.topic: module-standard-concept-based
   ms.service: azure-local
   ai-usage: ai-assisted
-title: Azure Local network configuration
+title: Azure Local network infrastructure
 summary: |
   Azure Local networking connects physical switches and adapters, intent-managed host configuration, storage transports, Azure connectivity, and workload security. These layers cooperate, but they have different owners and different evidence of success. An adapter reporting **Up** does not establish storage performance. A successful connection to Transmission Control Protocol (TCP) port 443 does not establish an authenticated Azure transaction. A correctly written security rule does not help a workload unless it applies to that workload's actual path.
 abstract: |
