@@ -4,8 +4,8 @@ title: Exercise - Configure throughput and consistency
 metadata:
   title: Exercise - Configure throughput and consistency
   description: "Configure autoscale throughput, set default and per-request consistency, and configure time to live, observing the effects on cost and behavior."
-  ms.date: 09/30/2026
-  author: wwlpublish
+  ms.date: 10/30/2026
+  author: MScalopez
   ms.author: calopez
   ms.topic: unit
   zone_pivot_groups: dev-lang-csharp-python
