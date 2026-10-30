@@ -24,8 +24,8 @@ metadata:
   gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/connect-azure-cosmos-db-nosql-sdk/index.yml
   title: Connect to Azure Cosmos DB with the SDK
   description: "Initialize and configure the Azure Cosmos DB SDK for .NET and Python. Connect with a client singleton and tune connectivity mode. Enable offline development, and handle connection errors to build reliable data access."
-  ms.date: 10/01/2026
-  author: wwlpublish
+  ms.date: 10/30/2026
+  author: MScalopez
   ms.author: calopez
   ms.topic: module
   ms.service: azure-cosmos-db

@@ -1,3 +1,12 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=38848c2b-94ea-4b1e-9128-c2bfc0eded43]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
 Not everything the Contoso order service writes deserves to live forever. A checkout session holds a cart for a few hours. A shipping quote from a carrier goes stale in 15 minutes. An idempotency token guarding against duplicate submissions matters for a day and never again. Storing that data indefinitely inflates storage cost and forces someone to write a cleanup job. In this unit, you configure time to live so Azure Cosmos DB expires those items for you.
 
 ## How time to live works

@@ -1,3 +1,12 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=1a5dd68a-7942-4810-977c-d9653bd65041]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
 Contoso's web API handles product-browsing requests and order submissions simultaneously, sometimes in unpredictable bursts. With the SDK installed and the object hierarchy understood, the developer is ready to create a `CosmosClient`. How that client is created shapes the reliability and latency of every request the API processes, so the decision deserves careful attention. The singleton pattern is the single most important reliability practice in the Azure Cosmos DB SDK.
 
 ## Why a singleton matters
@@ -37,7 +46,7 @@ builder.Services.AddSingleton<CosmosClient>(_ =>
 The factory delegate defers construction until the first consumer requests the service, and the host disposes the instance when it stops, with no teardown code to write manually.
 
 > [!TIP]
-> Deferred construction means the first request that touches Azure Cosmos DB also pays for connection setup and routing discovery. To move that cost to start up instead, build the client with `CosmosClient.CreateAndInitializeAsync` and register the finished instance. The `containers` list tells the SDK which routing metadata to prefetch.
+> Deferred construction means the first request that touches Azure Cosmos DB also pays for connection setup and routing discovery. To move that cost to startup instead, build the client with `CosmosClient.CreateAndInitializeAsync` and register the finished instance. The `containers` list tells the SDK which routing metadata to prefetch.
 >
 > ```csharp
 > using CosmosClient client = await CosmosClient.CreateAndInitializeAsync(
@@ -55,7 +64,7 @@ The factory delegate defers construction until the first consumer requests the s
 
 ::: zone pivot="python"
 
-**Module-level or application start up:** assign the client to a module-level variable during initialization:
+**Module-level or application startup:** assign the client to a module-level variable during initialization:
 
 ```python
 from azure.cosmos import CosmosClient
@@ -93,7 +102,7 @@ The `lifespan` function runs startup logic before `yield` and shutdown logic aft
 
 ::: zone-end
 
-The two SDKs (Software Development Kits) differ in what construction costs. In .NET, the `CosmosClient` constructor makes no network calls, so the SDK defers the first connection to Azure Cosmos DB until the application runs its first operation. In Python, constructing the synchronous client is a heavier operation: it reads account metadata to discover the account's regional endpoints before the constructor returns. Either way, the work belongs at startup rather than on each request.
+The two SDKs differ in what construction costs. In .NET, the `CosmosClient` constructor makes no network calls, so the SDK defers the first connection to Azure Cosmos DB until the application runs its first operation. In Python, constructing the synchronous client is a heavier operation: it reads account metadata to discover the account's regional endpoints before the constructor returns. Either way, the work belongs at startup rather than on each request.
 
 ## Navigating from client to container
 
@@ -146,7 +155,7 @@ client.close()
 
 ::: zone-end
 
-Add the dispose step to the application's startup code from the beginning, instead of leaving it for later. This step keeps the connection lifecycle explicit, matching how the host manages other long-lived resources.
+Add the dispose step to the application's shutdown code from the beginning, instead of leaving it for later. This step keeps the connection lifecycle explicit, matching how the host manages other long-lived resources.
 
 ---
 

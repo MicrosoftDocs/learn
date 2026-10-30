@@ -4,8 +4,8 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Answer questions to validate your understanding of point reads, write semantics, partial document patch, item time to live, optimistic concurrency, transactional batch, and bulk execution."
-  ms.date: 10/01/2026
-  author: wwlpublish
+  ms.date: 10/30/2026
+  author: MScalopez
   ms.author: calopez
   ms.topic: unit
 azureSandbox: false
@@ -67,4 +67,4 @@ quiz:
       explanation: "Awaiting each write serializes the entire load, leaving one operation in flight at a time and no opportunity for the SDK to group requests. Throttling responses are retried automatically either way, so this approach gives up the throughput without gaining anything."
     - content: "Use bulk execution so the SDK groups concurrent operations by physical partition into fewer service requests."
       isCorrect: true
-      explanation: "Bulk execution is designed for exactly this workload: many independent operations, spread across partitions, on a background path where total throughput matters more than the latency of any individual write. The .NET SDK groups operations by physical partition and dispatches each group as one request. The Python SDK has no bulk flag, and the equivalent there's to drive the operations concurrently with the async client."
+      explanation: "Bulk execution is designed for exactly this workload: many independent operations, spread across partitions, on a background path where total throughput matters more than the latency of any individual write. The .NET SDK groups operations by physical partition and dispatches each group as one request. The Python SDK has no bulk flag, and the equivalent there is to drive the operations concurrently with the async client."

@@ -1,8 +1,17 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=50c758a3-fc22-4314-a081-2f62f61246f7]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
 A Contoso order document holds the customer reference, the shipping address, a payment summary, and every line item on the order. Some of those documents run to several hundred kilobytes. When a warehouse scanner reports that one order shipped, the only thing that changes is a status field and a timestamp. Your app reads the whole document, changes two properties, and writes back the whole document, which moves all of those kilobytes across the network twice to change a few dozen bytes. In this unit, you use partial document patch to send only the change.
 
 ## What patch does
 
-**Partial document update** also called the patch API, sends a list of operations that describe the change rather than the resulting document. The service applies those operations to the stored item server side. Your application never has to read the item first.
+**Partial document update**, also called the patch API, sends a list of operations that describe the change rather than the resulting document. The service applies those operations to the stored item server side. Your application never has to read the item first.
 
 Three things improve at once:
 

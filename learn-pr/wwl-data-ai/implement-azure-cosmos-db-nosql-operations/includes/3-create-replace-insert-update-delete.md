@@ -1,3 +1,12 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=e316f635-a2f0-46c4-9c44-cf1cebeba154]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
 Reading orders is only half of the Contoso data layer. The service also has to record a new order when a customer checks out and revise an order when a warehouse confirms stock. It must refresh a cached shipping quote whether or not one already exists, and remove a canceled order. Four write operations cover all of it, and each carries different semantics for what happens when the item already exists. In this unit, you perform each write with the SDK and learn which one to reach for in a given situation.
 
 ## The four write operations
@@ -9,7 +18,7 @@ Reading orders is only half of the Contoso data layer. The service also has to r
 | Upsert | Overwrites the whole item | Inserts the item | You don't know or don't care whether the item exists |
 | Delete | Removes the item | Fails with 404 Not Found | The item is no longer needed |
 
-Every one of these operations is a point operation, addressed by `id` and partition key, so each one costs a predictable amount. For a 1-KB item with few indexed properties, a create or delete costs roughly '5' RUs (request units). That's five times the '1' RU cost of a point read, because the service writes to the replica set and updates the index. A replace costs about twice as much as a create operation, because the service deletes the old document and inserts the new one as two full document operations. An upsert costs whichever case applies: around '5' RUs when it inserts, around 10 when it replaces. Indexing more properties raises the cost of every write.
+Every one of these operations is a point operation, addressed by `id` and partition key, so each one costs a predictable amount. For a 1-KB item with few indexed properties, a create or delete costs roughly 5 RUs (request units). That's five times the 1 RU cost of a point read, because the service writes to the replica set and updates the index. A replace costs about twice as much as a create operation, because the service deletes the old document and inserts the new one as two full document operations. An upsert costs whichever case applies: around 5 RUs when it inserts, around 10 when it replaces. Indexing more properties raises the cost of every write.
 
 ### Creating an item
 

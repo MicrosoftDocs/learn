@@ -4,12 +4,12 @@ title: Handle connection errors, logging, and parallelism
 metadata:
   title: Handle connection errors, logging, and parallelism
   description: "Diagnose common connection errors, configure SDK logging to observe request behavior, and tune async and parallelism settings for production throughput."
-  ms.date: 10/01/2026
-  author: wwlpublish
+  ms.date: 10/30/2026
+  author: MScalopez
   ms.author: calopez
   ms.topic: unit
   ai-usage: ai-generated
-  zone_pivot_groups: dev-lang-csharp-python
+  zone_pivot_groups: video-or-text,dev-lang-csharp-python
 azureSandbox: false
 labModal: false
 durationInMinutes: 10

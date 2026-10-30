@@ -4,8 +4,8 @@ title: Summary
 metadata:
   title: Summary
   description: "Review the operation toolbox and the cost and correctness decisions that select among point reads, writes, patch, batch, and bulk."
-  ms.date: 10/01/2026
-  author: wwlpublish
+  ms.date: 10/30/2026
+  author: MScalopez
   ms.author: calopez
   ms.topic: unit
   ai-usage: ai-generated
