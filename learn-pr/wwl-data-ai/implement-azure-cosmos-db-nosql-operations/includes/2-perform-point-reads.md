@@ -1,4 +1,13 @@
-The Contoso order service retrieves a single order far more often than it does anything else. An agent opens an order. A status page refreshes, a downstream service confirms a shipment. Each of those requests knows exactly which order it wants, which makes it a candidate for the cheapest read Azure Cosmos DB offers. In this unit, the developer retrieves an item by its identifier and partition key with a point read. The developer also learns why this operation is the default choice whenever both values are known.
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=c385e9c3-74f6-44cb-ab17-57afb1ba6dc3]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+The Contoso order service retrieves a single order far more often than it does anything else. An agent opens an order. A status page refreshes. A downstream service confirms a shipment. Each of those requests knows exactly which order it wants, which makes it a candidate for the cheapest read Azure Cosmos DB offers. In this unit, the developer retrieves an item by its identifier and partition key with a point read. The developer also learns why this operation is the default choice whenever both values are known.
 
 ## What makes a point read different
 
@@ -8,8 +17,8 @@ A query takes a different path. Even a query that filters on a single `id` compi
 
 | Read style | Typical charge for a 1-KB item | Why |
 |:---|:---|:---|
-| Point read | '1' RU | Direct lookup by `id` and partition key, with no query engine |
-| Query returning 1 item | About '3' RU | Query plan, index lookup, and result-set assembly |
+| Point read | 1 RU | Direct lookup by `id` and partition key, with no query engine |
+| Query returning 1 item | About 3 RU | Query plan, index lookup, and result-set assembly |
 
 Both figures assume the default *session* consistency. Under *strong* or *bounded staleness*, the RU cost of any read doubles, whether it's a point read or a query.
 

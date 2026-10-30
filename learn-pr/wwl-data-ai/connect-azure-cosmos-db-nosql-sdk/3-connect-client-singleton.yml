@@ -4,11 +4,11 @@ title: Connect using a client singleton
 metadata:
   title: Connect using a client singleton
   description: "Create a single, reused CosmosClient instance and navigate to a database and container without triggering network calls."
-  ms.date: 10/01/2026
-  author: wwlpublish
+  ms.date: 10/30/2026
+  author: MScalopez
   ms.author: calopez
   ms.topic: unit
-  zone_pivot_groups: dev-lang-csharp-python
+  zone_pivot_groups: video-or-text,dev-lang-csharp-python
   ai-usage: ai-generated
 azureSandbox: false
 labModal: false

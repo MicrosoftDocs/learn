@@ -1,3 +1,12 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=2e632921-86d8-494c-a20c-c373e1a7ebca]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
 A Contoso order isn't one document. When a customer checks out, the service writes the order header and decrements the reserved stock counter that lives alongside it. If the header lands and the counter update fails, the warehouse ships goods that inventory still believes are available. In this unit, you group those writes into a transactional batch so they either all succeed or all fail together.
 
 ## What a transactional batch guarantees

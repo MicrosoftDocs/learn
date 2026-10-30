@@ -1,3 +1,12 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=dc8bd5aa-10b4-4ba7-80a9-cdf1fa6e7b3c]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
 With the singleton client registered, Contoso's developer has a stable entry point to Azure Cosmos DB. The next decision is the network path between the application and the service. The Azure Cosmos DB SDK supports two connectivity modes: gateway and direct, and the right choice depends on the network environment where the application runs. Beyond connectivity mode, client options for timeouts, retries, and region preference determine how the client performs under real workload conditions.
 
 ## Gateway mode vs. direct mode
@@ -7,7 +16,7 @@ The SDK routes requests to Azure Cosmos DB through one of two paths. Understandi
 | Mode | How it works | When to use |
 |:-----|:-------------|:------------|
 | **Direct** | The gateway supplies routing metadata at initialization and again whenever cached addresses go stale. Data requests travel directly to storage partition replicas over TCP (Transmission Control Protocol). Address information is cached locally. | Low-latency apps on Azure VMs (virtual machines), containers, or App Service with the required outbound TCP access. Public and service endpoints use ports 10000-20000; private endpoints can use the full range 0-65535, in addition to gateway access. Supported by the .NET and Java SDKs (software development kits) only. |
-| **Gateway** | All requests (reads, writes, and queries) route through the Cosmos DB HTTPS gateway, which forwards them to the appropriate replica. | Environments behind strict firewalls or HTTP-only proxies, and hosts that limit outbound connections, such as Azure Functions on the Consumption plan. |
+| **Gateway** | All requests (reads, writes, and queries) route through the Azure Cosmos DB HTTPS gateway, which forwards them to the appropriate replica. | Environments behind strict firewalls or HTTP-only proxies, and hosts that limit outbound connections, such as Azure Functions on the Consumption plan. |
 
 :::image type="content" source="../media/sdk-connectivity-modes.png" alt-text="Diagram comparing gateway mode (all requests via HTTPS gateway) and direct mode (data requests via TCP to partition replicas)." lightbox="../media/sdk-connectivity-modes.png":::
 
@@ -59,17 +68,17 @@ client = CosmosClient(
 ```
 
 > [!NOTE]
-> The Python SDK doesn't currently support direct connectivity mode. Gateway mode routes all requests through the Cosmos DB HTTPS gateway on port 443. The account endpoint must still be reachable, and network policies and the account firewall must permit the connection.
+> The Python SDK doesn't currently support direct connectivity mode. Gateway mode routes all requests through the Azure Cosmos DB HTTPS gateway on port 443. The account endpoint must still be reachable, and network policies and the account firewall must permit the connection.
 
 ::: zone-end
 
 Because the singleton is created once at application startup, connectivity mode is fixed for the lifetime of the process. There's no way to switch modes on a running client, so treat this task as a startup-time decision that reflects the deployment environment.
 
-## Time out and retry settings
+## Timeout and retry settings
 
 Rate limiting and transient network delays are normal in distributed systems. The SDK handles both automatically through built-in retry logic, but the default thresholds are designed for general-purpose workloads rather than tuned production scenarios. Adjusting timeout and retry settings lets you align the SDK's behavior with the latency budget and throughput expectations of Contoso's web API.
 
-Two scenarios benefit most from tuning these settings. First, a web API with a tight response time SLA (service level agreement) can lower `RequestTimeout` to limit the wait for each network response. An SDK operation can make multiple requests and retries, so this setting doesn't impose an end-to-end deadline. Pass a `CancellationToken` to the operation to request cancellation across those requests and retries; cancellation is cooperative. Second, an account provisioned close to its throughput limit benefits from fewer retry attempts. Fewer retries surface the 429 rate-limit error to the application faster. The application can then queue or shed load intentionally, instead of burning time in the SDK's retry loop.
+Two scenarios benefit most from tuning these settings. First, a web API with a tight response time service-level agreement (SLA) can lower `RequestTimeout` to limit the wait for each network response. An SDK operation can make multiple requests and retries, so this setting doesn't impose an end-to-end deadline. Pass a `CancellationToken` to the operation to request cancellation across those requests and retries; cancellation is cooperative. Second, an account provisioned close to its throughput limit benefits from fewer retry attempts. Fewer retries surface the 429 rate-limit error to the application faster. The application can then queue or shed load intentionally, instead of burning time in the SDK's retry loop.
 
 ::: zone pivot="csharp"
 
@@ -115,7 +124,7 @@ In both languages, these settings combine with connectivity mode and region pref
 
 ## Preferred regions
 
-By default, the client targets the account's primary write region for all requests. For multi-region Cosmos DB accounts, placing a nearby read region first in the preferred region list can reduce round-trip latency for read-heavy workloads like Contoso's product-browsing endpoint. The SDK uses the list as an ordered preference, not an automatic measurement of which region is closest: it tries the first available configured read region and falls back to subsequent entries. For a single-write-region account, writes still target the current write region.
+By default, the client targets the account's primary write region for all requests. For multi-region Azure Cosmos DB accounts, placing a nearby read region first in the preferred region list can reduce round-trip latency for read-heavy workloads like Contoso's product-browsing endpoint. The SDK uses the list as an ordered preference, not an automatic measurement of which region is closest: it tries the first available configured read region and falls back to subsequent entries. For a single-write-region account, writes still target the current write region.
 
 ::: zone pivot="csharp"
 

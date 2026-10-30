@@ -4,8 +4,8 @@ title: Exercise - Connect an app to Azure Cosmos DB
 metadata:
   title: Exercise - Connect an app to Azure Cosmos DB
   description: "Import the SDK, create a singleton client, run against the emulator, switch to a cloud account, and add basic logging and error handling."
-  ms.date: 10/01/2026
-  author: wwlpublish
+  ms.date: 10/30/2026
+  author: MScalopez
   ms.author: calopez
   ms.topic: unit
   zone_pivot_groups: dev-lang-csharp-python

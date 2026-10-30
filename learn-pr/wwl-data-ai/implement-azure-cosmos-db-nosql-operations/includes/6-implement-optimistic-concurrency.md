@@ -1,3 +1,12 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=04b05502-6972-4ab6-a4e0-361a78a5eeda]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
 Two Contoso support agents open the same order at 10:03. One applies a discount. The other corrects the shipping address. Both read the document, both change their own field, and both write back the whole document. The second write wins completely, and the first agent's discount vanishes without any error surfacing anywhere. In this unit, you use ETags to close that window so a write that's based on stale data fails instead of silently overwriting a newer one.
 
 ## The lost update problem

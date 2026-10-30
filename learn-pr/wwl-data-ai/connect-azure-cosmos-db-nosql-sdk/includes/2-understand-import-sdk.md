@@ -1,3 +1,12 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=e41ece24-4222-47e7-9ce6-cb287398fb07]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
 Before Contoso's developer writes a single read or write operation, two prerequisites need to be in place: the SDK installed in the project and a mental model of how the library represents Azure Cosmos DB resources in code. This unit covers both: the object hierarchy the SDK exposes and the steps to add the library to your project.
 
 ## The SDK client hierarchy
@@ -34,7 +43,7 @@ This separation goes beyond naming conventions. `CosmosClient` holds the underly
 
 ## Installing the SDK
 
-Both SDK packages are open source. The .NET library is maintained in the `Azure/azure-cosmos-dotnet-v3` repository on GitHub and published on NuGet as **Microsoft.Azure.Cosmos**. The Python library lives in the `Azure/azure-sdk-for-python` repository on GitHub and published on PyPI as **azure-cosmos**.
+Both SDK packages are open source. The .NET library is maintained in the `Azure/azure-cosmos-dotnet-v3` repository on GitHub and published on NuGet as **Microsoft.Azure.Cosmos**. The Python library lives in the `Azure/azure-sdk-for-python` repository on GitHub and is published on PyPI as **azure-cosmos**.
 
 To install the latest stable version, run the appropriate command for your language:
 
@@ -92,7 +101,7 @@ from azure.cosmos import CosmosClient, PartitionKey
 
 With the package installed, the next decision is how to authenticate with your Azure Cosmos DB account. The SDK supports two approaches: **account keys** and **Microsoft Entra ID**. Understanding when to use each shapes how your application handles credentials across environments.
 
-**Account keys** are primary or secondary keys available in the Azure portal under the account's **Keys** blade. They're simple to use and work immediately, but they're long-lived secrets that require rotation and secure storage. Account keys are appropriate for local tooling, scripts, and the Azure Cosmos DB Emulator during development.
+**Account keys** are primary or secondary keys available in the Azure portal under the account's **Keys** pane. They're simple to use and work immediately, but they're long-lived secrets that require rotation and secure storage. Account keys are appropriate for local tooling, scripts, and the Azure Cosmos DB Emulator during development.
 
 **Microsoft Entra ID** authentication accepts a token credential from the Azure Identity library. `DefaultAzureCredential` tries an ordered, configurable chain of sources, including environment credentials, workload identity, managed identity, and developer sign-ins. The available sources vary by language, platform, and installed packages. An earlier configured credential can take precedence over managed identity or the Azure CLI, so assigning a managed identity or running `az login` doesn't guarantee which identity the client uses. Managed identity avoids stored application secrets, but an environment credential can use a client secret.
 

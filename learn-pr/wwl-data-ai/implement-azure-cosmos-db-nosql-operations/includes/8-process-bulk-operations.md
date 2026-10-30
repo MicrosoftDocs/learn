@@ -1,3 +1,12 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=f989388f-2462-4774-8b10-466f314fbc7f]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
 Every night, Contoso reloads a product catalog of several hundred thousand items into Azure Cosmos DB. Those writes have nothing in common with the checkout path: they span every partition in the container, no two of them depend on each other, and nobody is waiting on an individual response. What matters is total elapsed time. Issuing them one at a time, awaiting each response before starting the next, takes hours. In this unit, you use bulk execution to finish the same work in minutes.
 
 ## Batch and bulk solve different problems
