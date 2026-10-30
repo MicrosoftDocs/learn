@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=7f8439ac-9667-49d3-a61a-ebbf49fef46a]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Knowing how Azure Cosmos DB for NoSQL works is one thing. Deciding if it's right for Contoso is another. This unit covers how to make that call, including for AI workloads, so you can weigh any workload's requirements against what the service offers.
 
 ## Signals that the service fits
@@ -45,3 +56,5 @@ Evaluate fit by asking which capabilities the application genuinely needs and wh
 > Take a workload you know and list its requirements for scale, geographic reach, schema flexibility, consistency, and any planned AI features. Weigh those requirements against the fit signals and the cases for choosing another option. 
 
 With a way to evaluate the service in hand, you're ready to move from decision to practice. Next, you explore the resources and basic operations you use to work with an account.
+
+::: zone-end

@@ -2,10 +2,11 @@
 uid: learn.wwl.explore-azure-cosmos-db-nosql.what-is-azure-cosmos-db-nosql
 title: What is Azure Cosmos DB for NoSQL
 metadata:
+  zone_pivot_groups: video-or-text
   title: What Is Azure Cosmos DB for NoSQL
   description: "Describe Azure Cosmos DB for NoSQL, the document data model, and its account, database, container, and item resources."
-  ms.date: 08/09/2026
-  author: wwlpublish
+  ms.date: 10/29/2026
+  author: MScalopez
   ms.author: calopez
   ms.topic: unit
 azureSandbox: false
