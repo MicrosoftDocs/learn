@@ -1,8 +1,27 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=0049de80-b28b-4c82-b5d1-17bbf5be6b97]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
 A shopper filtering the Contoso catalog by price band can match 40,000 products. The API returns 20 of them. Fetching all 40,000 to serve 20 wastes request units (RUs), memory, and time on every request, and the mobile client that made the call has no use for the rest. In this unit, you page through results and use continuation tokens to resume a query across separate requests.
 
 ## Results arrive in pages already
 
-Every query in Azure Cosmos DB for NoSQL returns results in pages. `MaxItemCount` sets a ceiling on how many items a single page holds:
+::: zone pivot="csharp"
+
+Every query in Azure Cosmos DB for NoSQL returns results in pages. `MaxItemCount` sets a ceiling on how many items a single page holds. Running the following query with `MaxItemCount` set to 20 requests up to 20 items per page:
+
+::: zone-end
+
+::: zone pivot="python"
+
+Every query in Azure Cosmos DB for NoSQL returns results in pages. `max_item_count` sets a ceiling on how many items a single page holds. Running the following query with `max_item_count` set to 20 requests up to 20 items per page:
+
+::: zone-end
 
 ```sql
 SELECT p.id, p.name, p.price

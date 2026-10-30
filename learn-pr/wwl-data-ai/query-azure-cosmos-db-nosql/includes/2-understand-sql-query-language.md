@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=b7a9d7ae-9e38-43a0-9834-2e17567a1068]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 The Contoso catalog API answers a narrow set of questions over and over: show every product in a category, show products inside a price band, show the products tagged for a promotion. Each question becomes a query, and the running cost of the catalog is mostly the sum of those queries. In this unit, you build the mental model you need to read a query and predict both what it returns and what it charges.
 
 ## The shape of the data
@@ -91,3 +102,5 @@ The Contoso catalog partitions by `/categoryId`, so a category-scoped browse is 
 ---
 
 > **Guiding question:** Look at the queries your own application runs most often. For each one, ask two questions: does the filter include the partition key value, and does the `SELECT` return properties nobody uses? Those two answers usually account for most of what a read-heavy workload costs.
+
+::: zone-end
