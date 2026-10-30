@@ -1,8 +1,17 @@
-In most cases, you should start a new workload using Serverless. Then as you develop the workload, decide on which throughput model (provisioned or serverless) is right for you, and if provisioned, the amount of throughput that meets your needs. That estimate is the foundation of every cost decision that follows.
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=a986a96c-2541-4e94-a3ed-754ca7d90204]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+In most cases, you should start a new workload using serverless. Then, as you develop the workload, decide which throughput model (provisioned or serverless) is right for you, and if provisioned, the amount of throughput that meets your needs. That estimate is the foundation of every cost decision that follows.
 
 ## Request units as the currency of throughput
 
-Azure Cosmos DB expresses the cost of every operation in **request units**. A request unit is a single number that measures the cost of an operation. It combines the CPU, IOPS (Input/Output Operations Per Second), and memory used, so you don't have to track each resource separately. Thinking in RUs (request units) lets you compare operations without reasoning about the underlying hardware: '10' RUs is twice the cost of '5' RUs.
+Azure Cosmos DB expresses the cost of every operation in **request units**. A request unit is a single number that measures the cost of an operation. It combines the CPU, input/output operations per second (IOPS), and memory used, so you don't have to track each resource separately. Thinking in RUs (request units) lets you compare operations without reasoning about the underlying hardware: 10 RUs is twice the cost of 5 RUs.
 
 Every request against a container consumes RUs, including:
 
@@ -14,7 +23,7 @@ You measure throughput as request units per second (RU/s). With provisioned thro
 
 ## Estimate RU/s from your access pattern
 
-Some operations have predictable, normalized costs that let you make an initial estimate. As a baseline, a point read of a 1-KB item by its ID and partition key costs about '1' RU with session, consistent prefix, or eventual consistency. Strong and bounded staleness reads cost twice as many RUs. Creating or deleting that same item costs about '5' RUs, and updating it costs about '10' RUs, assuming fewer than five indexed properties. Write cost rises with item size and with the number of properties the container indexes, so an item with many indexed properties costs more than those baselines. Queries vary widely with their complexity, the number of items they scan, and whether they use the index.
+Some operations have predictable, normalized costs that let you make an initial estimate. As a baseline, a point read of a 1-KB item by its ID and partition key costs about 1 RU with session, consistent prefix, or eventual consistency. Strong and bounded staleness reads cost twice as many RUs. Creating or deleting that same item costs about 5 RUs, and updating it costs about 10 RUs, assuming fewer than five indexed properties. Write cost rises with item size and with the number of properties the container indexes, so an item with many indexed properties costs more than those baselines. Queries vary widely with their complexity, the number of items they scan, and whether they use the index.
 
 :::image type="content" source="../media/request-unit-cost-operation.png" alt-text="Diagram comparing request unit costs for point reads, creates, deletes, updates, and queries.":::
 
@@ -45,6 +54,5 @@ To build this table for your own workload, gather your top few queries and your 
 ::: zone-end
 
 Learn more about [planning and managing Azure Cosmos DB costs](/azure/cosmos-db/plan-manage-costs), including the Azure Cosmos DB Cost Estimator that turns a described workload into an RU/s estimate.
-
 
 With a throughput estimate in hand, you can choose a model that serves that demand at the lowest cost.

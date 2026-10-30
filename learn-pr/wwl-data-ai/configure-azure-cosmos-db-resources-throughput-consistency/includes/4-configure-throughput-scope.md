@@ -1,10 +1,19 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=7f94ae7f-a2a3-4bed-98e7-d3ba8e120bd4]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
 Once a throughput model is chosen, you decide *where* to provision the throughput: at the database level, shared across all its containers, or at the container level, dedicated to one. In the Contoso scenario, this choice determines whether the new container gets guaranteed, predictable capacity or shares a pool with its neighbors. The trade-off is cost against isolation, and it applies whenever you add a container to an account.
 
 ## Shared versus dedicated throughput
 
 **Container-level (dedicated) throughput** reserves request units per second (RU/s) exclusively for a single container. That capacity is always available to the container, and other containers don't affect it. A service-level agreement (SLA) backs the container's performance. Dedicated throughput gives you predictable performance and isolation, at the cost of provisioning each container separately.
 
-**Database-level (shared) throughput** provisions a pool of RU/s at the database that all its containers draw from. Sharing lowers cost when you have many containers that individually see light traffic, because they split one reservation instead of each paying a minimum. The catch: the shared pool offers no per-container guarantee. If one container gets busy, it can consume the shared RU/s and starve the others. A shared-throughput database also holds at most 25 containers. The minimum is 400 RU/s for standard throughput. The minimum autoscale setting has a maximum of 1,000 RU/s and scales between 100 and 1,000 RU/s. Any container beyond that limit needs its own dedicated throughput.
+**Database-level (shared) throughput** provisions a pool of RU/s at the database that all its containers draw from. Sharing lowers cost when you have many containers that individually see light traffic, because they split one reservation instead of each paying a minimum. The catch: the shared pool offers no per-container guarantee. If one container gets busy, it can consume the shared RU/s and starve the others. A shared-throughput database also holds at most 25 containers. Any container beyond that limit needs its own dedicated throughput. The minimum is 400 RU/s for standard throughput. The minimum autoscale setting has a maximum of 1,000 RU/s and scales between 100 and 1,000 RU/s.
 
 :::image type="content" source="../media/shared-versus-dedicated-throughput.png" alt-text="Diagram comparing a shared 400 RU/s database pool with dedicated throughput for three containers." lightbox="../media/shared-versus-dedicated-throughput.png":::
 
@@ -22,7 +31,7 @@ Raising the RU/s is subject to service quotas. The default maximum is 1,000,000 
 The minimum you can set rises with the data you store and with the highest rate you ever provisioned. For a container using standard throughput, it's the largest of 400 RU/s, 1 RU/s per GB of storage, or 1% of your highest provisioned rate. For an autoscale container, calculate the largest of 1,000 RU/s, 10 RU/s per GB, or 10% of the highest maximum you ever set, then round up to the next 1,000 RU/s. Shared-throughput databases also have container-count terms for legacy databases allowed to exceed 25 shared containers. Check the resource's reported minimum and the [throughput limits](/azure/cosmos-db/concepts-limits#minimum-throughput-limits) before reducing throughput.
 
 > [!NOTE]
-> The RU/s value changes at any time within those limits, but the throughput *scope* is fixed when you create the container. A container with dedicated throughput can't be converted to draw from shared database throughput, and a shared container can't be given dedicated throughput. Changing scope means to create a new container and moving the data, which a container copy job can do for you.
+> The RU/s value changes at any time within those limits, but the throughput *scope* is fixed when you create the container. A container with dedicated throughput can't be converted to draw from shared database throughput, and a shared container can't be given dedicated throughput. Changing scope means creating a new container and moving the data, which a container copy job can do for you.
 
 :::image type="content" source="../media/container-creation-scope-model.png" alt-text="Diagram of a container creation form showing database throughput scope and autoscale or manual throughput settings.":::
 

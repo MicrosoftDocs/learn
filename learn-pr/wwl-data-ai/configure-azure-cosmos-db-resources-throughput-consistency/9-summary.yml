@@ -4,8 +4,8 @@ title: Summary
 metadata:
   title: Summary
   description: "Recap throughput models, consistency levels, and time to live as levers that balance cost and performance, with links to learn more."
-  ms.date: 09/30/2026
-  author: wwlpublish
+  ms.date: 10/30/2026
+  author: MScalopez
   ms.author: calopez
   ms.topic: unit
 azureSandbox: false

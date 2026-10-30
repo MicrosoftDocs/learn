@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=95f79086-31b0-4db3-905b-d2bb73e205f7]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 The final configuration lever manages data over its lifetime. Much of the data an application stores loses value after a fixed window. Examples include session records, event logs, cached results, or Contoso's older records that no longer serve the workload. If the data is left in place, that data grows storage cost and forces you to write cleanup jobs. Time to live (TTL) expires data automatically, turning retention into a setting instead of a maintenance task.
 
 ## How time to live works
@@ -22,7 +33,7 @@ TTL also depends on indexing. You can't enable TTL on a container whose indexing
 
 ## Override retention per item
 
-When TTL is enabled on the container (set to either a positive value or `-1`), an individual item can override the container default through its own `ttl` property. This property lets one container hold data with different lifetimes: a default retention for most items, a longer, or shorter one for specific items, or no expiry at all.
+When TTL is enabled on the container (set to either a positive value or `-1`), an individual item can override the container default through its own `ttl` property. This property lets one container hold data with different lifetimes: a default retention for most items, a longer or shorter one for specific items, or no expiry at all.
 
 The interaction between the two settings follows a clear rule: the item's `ttl` wins whenever the container has TTL enabled:
 
@@ -51,3 +62,4 @@ This unit covers container-level TTL as a cost and lifecycle control. Fine-grain
 > **Guiding question:** Think of a data type your applications store that stops being useful after a set time, such as a password-reset token, a temporary export, or a daily rollup. What TTL would you set on its container, and would any items in it need a per-item override? Connect your answer to the storage cost you'd avoid.
 
 
+::: zone-end
