@@ -1,3 +1,11 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=cb5e53e2-fbbe-4508-bacf-d71f378c0e5a]
+
+::: zone-end
+
+::: zone pivot="text"
+
 Building an AI application on a database means writing several layers by hand: the connection code, the retrieval logic, the storage schema for whatever the agent needs to remember. A set of AI-assisted development tools for Azure Cosmos DB removes most of that work. Some of them connect an AI assistant directly to your data so it can explore a container while you design against it. Others package the storage and retrieval patterns a production AI application needs, so you attach a component instead of building one.
 
 That work lands on the Contoso team the moment they start building a shopping assistant for their product catalog. The assistant has to answer questions that span many products, and it has to remember what a shopper told it three messages ago and three sessions ago. Hand-building both means a vector store, a document store, a summarization pipeline, and a retrieval loop that knows when one search pass isn't enough. The team has weeks, not months, and the catalog already lives in Azure Cosmos DB.
@@ -9,3 +17,8 @@ This module first explains what each tool does and which problem it solves. You 
 MCP uses a language-independent protocol, so compatible assistants and agents can connect regardless of the language used to implement the client or server. The Agent Memory Toolkit and Agentic Retrieval are currently Python-based. Treat their APIs and implementation details according to their documented maturity rather than as built-in Azure Cosmos DB service capabilities.
 
 By the end of this module, you can select the right AI-assisted development tool for an Azure Cosmos DB scenario and describe the boundary between what the tool handles and what you design.
+
+::: zone-end
+
+> [!NOTE]
+> We recognize that different people like to learn in different ways. You can choose to complete this module in video-based format or you can read the content as text and images. The text contains greater detail than the videos, so in some cases you might want to refer to it as supplemental material to the video presentation.

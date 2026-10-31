@@ -2,10 +2,11 @@
 uid: learn.wwl.process-azure-cosmos-db-nosql-change-feed.introduction
 title: Introduction
 metadata:
+  zone_pivot_groups: video-or-text
   title: Introduction
   description: "Frame the change feed as the record of container changes that drives event-driven integration, and container copy jobs as the way to move data onto a new container design."
-  ms.date: 10/02/2026
-  author: wwlpublish
+  ms.date: 10/30/2026
+  author: MScalopez
   ms.author: calopez
   ms.topic: unit
   ai-usage: ai-generated

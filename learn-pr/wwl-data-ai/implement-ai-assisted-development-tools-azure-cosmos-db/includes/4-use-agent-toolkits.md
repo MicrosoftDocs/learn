@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=9994c526-c96d-4da1-8610-15ab2aee7c86]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Connecting an assistant to the catalog helps the Contoso developer inspect data. The application still needs to remember shopper preferences and answer questions that span several products. In this unit, you use the public-preview Agent Memory Toolkit and the Agentic Retrieval reference implementation to address those needs and identify what each integration requires.
 
 Both implementations are Python-based. Agent Memory Toolkit is an installable public-preview SDK. Agentic Retrieval is a product-owned reference implementation that you clone and adapt rather than install as a versioned SDK. The code that follows runs against an Azure Cosmos DB for NoSQL account and a Microsoft Foundry deployment providing a chat model and an embedding model.
@@ -39,7 +50,7 @@ Set `AI_FOUNDRY_ENDPOINT` to the Azure OpenAI endpoint for your Foundry resource
 
 `create_memory_store` attempts to create the database and containers with vector and full-text policies. The constructor calls it automatically when you pass `cosmos_endpoint`. Microsoft Entra ID can't authorize these data-plane creation requests for databases or containers. A control-plane role doesn't change that restriction. Create the resources through Azure Resource Manager, the Azure CLI, or the Azure portal first. Then connect without creating resources by constructing the client without `cosmos_endpoint` and calling `connect_cosmos` as shown.
 
-Writing a turn is one call per message. The toolkit stores the raw text, and embeds the turn itself only if you opt in with `enable_turn_embeddings`, because what retrieval searches is the memory derived from turns rather than the turns themselves:
+Writing a turn is one call per message. The toolkit stores the raw text and embeds the turn itself only if you opt in with `enable_turn_embeddings`, because what retrieval searches is the memory derived from turns rather than the turns themselves:
 
 ```python
 thread_id = "thread-001"
@@ -120,3 +131,5 @@ The `--mode` flag selects the retrieval paradigm. The preceding command explicit
 Two retrieval controls are worth understanding, because they're the ones you tune. Diversity selection uses a greedy log-determinant method to pick a varied subset of retrieved chunks rather than the highest-scoring near-duplicates, controlled by `--k-diverse`. It applies to decomposed mode only, and it ships disabled, so it's something you opt into. A semantic reranker reorders results by relevance before synthesis, works in either mode, and is enabled through the `ranker` settings when a reranker resource is available.
 
 Both toolkits reach Azure Cosmos DB with Microsoft Entra ID. The memory toolkit defaults to it. The retrieval toolkit documents it as the default but ships an example configuration with `use_rbac_auth: false`, so set that value yourself. Because the retrieval toolkit writes during ingestion, its identity needs **Cosmos DB Built-in Data Contributor** rather than the reader role a Model Context Protocol server uses. If you also let its ingestion script create the database and containers, or enable the account's vector and full-text search capabilities, that work goes through Azure Resource Manager, so the identity needs an Azure RBAC role such as Cosmos DB Operator as well.
+
+::: zone-end

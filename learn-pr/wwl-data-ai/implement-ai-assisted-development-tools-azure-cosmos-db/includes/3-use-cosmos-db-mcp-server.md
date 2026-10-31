@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=8b2175d7-c6c1-4556-b7e5-c70b6c963344]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 The Contoso developer building the shopping assistant inherits a catalog someone else modeled. Before writing retrieval code, they need to know which containers exist, what top-level properties appear in the Product items, and whether real queries return the expected results. Connecting an AI assistant through a Model Context Protocol (MCP) server lets them investigate these questions in the same window where they write code. The schema-inference tool samples item structure, but it doesn’t inspect the container’s indexing, full-text, or vector policies. Verify those policies separately through Data Explorer, an SDK, or the resource definition.
 
 ## What the protocol provides
@@ -66,7 +77,7 @@ Several tools also depend on configuration you own:
 
 - **Text search requires a full-text index** on the property being searched. Matching is word-tokenized rather than substring based, and it applies the container's configured analyzer, so stemming and stop-word removal behave as they do in your own queries.
 - **Vector search requires a vector index** on the target property, plus an Azure OpenAI embedding deployment for the server to convert your search text into a query vector. The query embedding must be compatible with the stored embeddings. Use the same embedding model and preprocessing and request the same vector dimensions defined by the container’s vector policy. A model or dimension mismatch can make the query fail or produce meaningless similarity results.
-- **Schema inference reports top-level properties only.** Nested objects and arrays come back typed as `object` or `array` with no recursion, so finding the path to a nested vector property means to read an individual document.
+- **Schema inference reports top-level properties only.** Nested objects and arrays come back typed as `object` or `array` with no recursion, so finding the path to a nested vector property means reading an individual document.
 
 That last constraint catches people. The inferred schema is a sample-based approximation of a schemaless container, not a contract. Two documents in the same container can carry different properties, and the tool reports how many sampled documents contained each one precisely because that variation is expected.
 
@@ -79,3 +90,5 @@ Its tool set overlaps the Azure MCP Server's and adds one operation the design-t
 A Microsoft Foundry agent connects to the deployed server through the tool catalog, authenticating with the project's managed identity against the application registration's client ID.
 
 One security property deserves attention before you deploy it. Once the server's identity holds a data-plane role on the account, any caller who authenticates successfully can read every database and container in that account. Scope the identity's role assignment to the specific database or container the agent needs, rather than to the account root, and treat the list of principals allowed to call the server as a security boundary in its own right.
+
+::: zone-end

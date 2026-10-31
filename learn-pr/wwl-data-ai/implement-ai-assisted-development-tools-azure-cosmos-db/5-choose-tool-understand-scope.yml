@@ -2,10 +2,11 @@
 uid: learn.wwl.implement-ai-assisted-development-tools-azure-cosmos-db.choose-tool-understand-scope
 title: Choose the right tool and understand its scope
 metadata:
+  zone_pivot_groups: video-or-text
   title: Choose the Right Tool and Understand Its Scope
   description: "Match an AI-assisted development tool to a scenario, and separate the patterns a tool encodes from the data model, cost, security, and evaluation decisions you own."
-  ms.date: 09/11/2026
-  author: wwlpublish
+  ms.date: 10/31/2026
+  author: MScalopez
   ms.author: calopez
   ms.topic: unit
   ai-usage: ai-generated
