@@ -1,3 +1,12 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=11312a4b-8327-4b25-aefd-b29adb89d8d7]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
 Hierarchical keys work when the first level has enough distinct values to spread across physical partitions. Some workloads have no such property. A telemetry stream keyed by date concentrates every write on today. A container of audit events keyed by tenant has 12 tenants. In both cases, no single property in the data satisfies the cardinality criterion, so you construct one.
 
 In this unit, you build synthetic partition keys and apply the container-level patterns that keep multiple tenants sharing one account without one of them starving the others.

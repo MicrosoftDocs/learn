@@ -4,11 +4,11 @@ title: Identify anti-patterns and estimate cost
 metadata:
   title: Identify Anti-Patterns and Estimate Cost
   description: "Review a design for partitioning anti-patterns, confirm them with normalized request unit (RU) consumption and partition statistics, and estimate workload throughput and storage cost."
-  ms.date: 10/02/2026
-  author: wwlpublish
+  ms.date: 10/30/2026
+  author: MScalopez
   ms.author: calopez
   ms.topic: unit
-  zone_pivot_groups: dev-lang-csharp-python
+  zone_pivot_groups: video-or-text,dev-lang-csharp-python
   ai-usage: ai-generated
 azureSandbox: false
 labModal: false

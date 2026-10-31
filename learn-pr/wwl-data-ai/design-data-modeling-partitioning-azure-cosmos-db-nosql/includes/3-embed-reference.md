@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=78a39493-8928-41e7-8660-b1a892f31553]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 The previous unit identified candidate aggregate roots and the operations the model must support. The next step is to map those business boundaries to Azure Cosmos DB items.
 
 Embedding places related data inside one item. Referencing keeps data in separate items connected by identifiers. Access patterns influence this choice, but ownership, lifecycle, consistency, and boundedness come first.
@@ -159,3 +170,5 @@ The nine relational tables now describe five candidate aggregate roots:
 The CustomerAddress, CustomerPassword, and SalesOrderDetail tables are now embedded data. The ProductTags junction table is now a bounded array of tag identifiers on Product.
 
 These choices preserve ownership and lifecycle boundaries, but the model isn't finished. Rendering a product page still requires separate lookups for the category and tag display names. The next unit uses denormalization and preaggregation to optimize those reads without changing which aggregate owns the authoritative data.
+
+::: zone-end

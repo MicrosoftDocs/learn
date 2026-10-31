@@ -1,3 +1,12 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=75445819-aaaa-4f24-a8c1-b09f6c9e83aa]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
 The Contoso catalog now serves retail brands who run their own storefronts, and the obvious key for the shared containers is the tenant identifier: every storefront query is scoped to one brand, so every query routes to one partition. The obvious key is also the one that breaks first. Tenant is a low-cardinality property, tenant sizes are wildly uneven, and the largest brand passes 20 gigabytes (GB) of products long before the others reach 1 GB. When it does, writes for that tenant stop.
 
 Hierarchical partition keys solve exactly the case where a tenant outgrows a logical partition. In this unit, you subpartition a container so that one first-level value can grow past the logical partition ceiling while queries that name it still route efficiently.

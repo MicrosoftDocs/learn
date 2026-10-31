@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=3089007d-bcd5-48bd-8723-0b38ca780ea0]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 The Contoso merchandising team labels products with tags, and the promotions page asks a question the previous unit can't answer: which products carry a given tag? The condition lives inside an array of objects, and a top-level comparison such as `p.tags = @tag` doesn't reach it. In this unit, you use subqueries to filter and reshape data nested inside an item.
 
 ## What a subquery is
@@ -159,3 +170,5 @@ Two more habits keep subquery costs predictable. Project inside the subquery wit
 ---
 
 > **Guiding question:** Think about an array property in your own data, such as tags, line items, or permissions. Are your current queries reading whole items into application code and filtering the array there? Each of those queries is a candidate for `EXISTS` or `ARRAY`, which moves the filter to the service and shrinks what crosses the network.
+
+::: zone-end

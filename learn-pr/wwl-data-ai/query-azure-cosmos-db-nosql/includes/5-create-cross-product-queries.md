@@ -1,3 +1,12 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=19efd8f0-3f32-4b4b-941b-58f7bc20b4de]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
 The Contoso merchandising team wants a different view of the same data: one row per product-and-tag pair, so a report can group products by tag. `EXISTS` can't produce that view, because it returns each product once. This unit covers `JOIN`, which expands a nested array into a cross-product and gives you one result per element.
 
 ## JOIN operates inside a single item
@@ -137,11 +146,11 @@ rows = container.query_items(
 )
 
 pairs = list(rows)
-charge = container.client_connection.last_response_headers["x-ms-request-charge"]
+charge = rows.get_response_headers()["x-ms-request-charge"]
 print(f"{len(pairs)} rows, last page charged {charge} RU")
 ```
 
-Each result is a flat dictionary with `name` and `tag` keys, not a full product item. `list()` drains every page, but `last_response_headers` holds the final page alone, so totaling the charge across a multi-page result takes a `response_hook`.
+Each result is a flat dictionary with `name` and `tag` keys, not a full product item. `list()` drains every page, but `rows.get_response_headers()` returns headers for the final page alone, so totaling the charge across a multi-page result takes a `response_hook`. Read the headers from `rows`, not the plain list in `pairs`.
 
 ::: zone-end
 

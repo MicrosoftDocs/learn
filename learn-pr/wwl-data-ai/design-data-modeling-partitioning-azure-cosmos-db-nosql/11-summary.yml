@@ -4,8 +4,8 @@ title: Summary
 metadata:
   title: Summary
   description: "Review access-pattern modeling, embedding and referencing, denormalization, partition key selection, hierarchical and synthetic keys, anti-patterns, and cost estimation."
-  ms.date: 10/02/2026
-  author: wwlpublish
+  ms.date: 10/30/2026
+  author: MScalopez
   ms.author: calopez
   ms.topic: unit
   ai-usage: ai-generated

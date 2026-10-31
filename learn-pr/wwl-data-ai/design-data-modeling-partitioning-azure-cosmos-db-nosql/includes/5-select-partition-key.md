@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=d2f073cd-d4f8-4c87-8a0a-2c67e4b958c4]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Three containers now hold the Contoso data, and each one needs a partition key. That key is the decision the module builds toward, and it's the one with the least room for error: the partition key is set when the container is created and can't be changed in place. In this unit, you evaluate candidate keys against the criteria that determine whether a container scales, and apply them to the Contoso model.
 
 ## What the partition key controls
@@ -80,3 +91,5 @@ There's no in-place change. Moving to a different partition key means to create 
 The change is manageable, but it requires a project rather than a configuration update. Complete the review in the final unit of this module before you create the container.
 
 > **Synthesis prompt:** Contoso adds a customer service tool that looks up orders by order number, with no customer context. Against the `/customerId` key, that lookup fans out across every partition. Decide how you'd handle it, and defend the choice: change the container's partition key, keep the fan-out and accept the cost, or store a second copy of the data keyed differently. Consider how often the tool runs compared to the storefront operations, what a second copy costs to keep synchronized, and what you learned about the cost of fan-out on a large container.
+
+::: zone-end

@@ -2,10 +2,11 @@
 uid: learn.wwl.design-data-modeling-partitioning-azure-cosmos-db-nosql.embed-or-reference
 title: "Map aggregates to items: embed or reference"
 metadata:
+  zone_pivot_groups: video-or-text
   title: Choose to Embed or Reference Data
   description: "Decide per relationship whether to embed or reference related data, weigh item size against request count, and mix entity types in one container with a discriminator."
-  ms.date: 10/02/2026
-  author: wwlpublish
+  ms.date: 10/30/2026
+  author: MScalopez
   ms.author: calopez
   ms.topic: unit
   ai-usage: ai-generated
