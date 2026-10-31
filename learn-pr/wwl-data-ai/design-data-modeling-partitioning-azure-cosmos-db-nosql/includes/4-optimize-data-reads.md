@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=27765493-db10-45a6-9c6e-dae9df1a7572]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 The model from the previous unit is normalized in spirit: every fact lives in exactly one place. A relational database can assemble those facts with joins, whose cost depends on the data, indexes, and query plan. In Azure Cosmos DB, where a join across containers doesn't exist, separate lookups add requests on the busiest screen in the application. In this unit, you trade write complexity for read efficiency by copying values where they're read and storing answers you'd otherwise compute.
 
 ## Count the requests the product page costs
@@ -112,3 +123,5 @@ Nine relational tables are now three containers:
 :::image type="content" source="../media/final-container-design.png" alt-text="Diagram of three containers: customer holds customer and sales order items, product holds product items, and productMeta holds tag and category items." lightbox="../media/final-container-design.png":::
 
 Each read operation in the access-pattern inventory now uses an item read or a query against one container, without separate lookups to assemble related data. Queries can still require multiple page requests. Order creation uses an atomic batch for the insert and counter update. What the model doesn't yet have is a considered partition key for each container, which is where the rest of the module goes.
+
+::: zone-end

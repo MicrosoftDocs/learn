@@ -1,11 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-data-modeling-partitioning-azure-cosmos-db-nosql.optimize-data-reads
-title: Denormalize and pre-aggregate for performance
+title: Denormalize and preaggregate for performance
 metadata:
-  title: Denormalize and Pre-Aggregate for Performance
-  description: "Copy frequently read values onto the items that read them, keep the copies current with the change feed, and pre-aggregate computed values inside a shared logical partition."
-  ms.date: 10/02/2026
-  author: wwlpublish
+  zone_pivot_groups: video-or-text
+  title: Denormalize and preaggregate for performance
+  description: "Copy frequently read values onto the items that read them, keep the copies current with the change feed, and preaggregate computed values inside a shared logical partition."
+  ms.date: 10/30/2026
+  author: MScalopez
   ms.author: calopez
   ms.topic: unit
   ai-usage: ai-generated

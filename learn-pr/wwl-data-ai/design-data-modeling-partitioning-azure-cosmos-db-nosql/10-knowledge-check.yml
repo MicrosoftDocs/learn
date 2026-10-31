@@ -4,8 +4,8 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Answer the following questions to check your understanding of access-pattern modeling. Review when to embed or reference data. Check your knowledge of partition key selection and common anti-patterns. The questions also cover hierarchical and synthetic keys."
-  ms.date: 10/02/2026
-  author: wwlpublish
+  ms.date: 10/30/2026
+  author: MScalopez
   ms.author: calopez
   ms.topic: unit
   module_assessment: true
@@ -22,7 +22,7 @@ quiz:
       explanation: "A Replace operation writes the full item, and its request charge scales with item size. When a small, frequently written value shares an item with a large, static body, each replacement also writes the static properties. The Patch API modifies selected paths and sends less data over the wire, but the request unit (RU) reduction isn't necessarily significant. Splitting the volatile property into a smaller item reduces the data involved in each replacement. Measure the write charge to confirm the savings."
     - content: "The timestamp write conflicts with concurrent profile reads, so each page view waits for a read lock on the item."
       isCorrect: false
-      explanation: "Reads in Azure Cosmos DB don't block writes and writes don't block reads. The problem here's the request charge of rewriting a large item, not contention."
+      explanation: "Reads in Azure Cosmos DB don't block writes and writes don't block reads. The problem here is the request charge of rewriting a large item, not contention."
     - content: "The item exceeds the 2-megabyte (MB) item limit once the timestamp history accumulates, so writes eventually fail."
       isCorrect: false
       explanation: "A single timestamp property is overwritten rather than appended, so the item doesn't grow. Unbounded growth is a real anti-pattern, but it applies to arrays that accumulate entries, not to a scalar that's replaced."
@@ -58,12 +58,12 @@ quiz:
       explanation: "Using the item identifier as the final level does produce single-item logical partitions, which is exactly why it guarantees the full key never approaches 20 gigabytes (GB). Queries are routed by physical partition, and a routable prefix still reaches only the relevant subset."
     - content: "Filtering on the second level without the first provides no routable prefix, so the query fans out to every physical partition."
       isCorrect: true
-      explanation: "Routing works on a leading run of the hierarchy. A filter on the tenant, or on both the tenant and device, targets only a subset of partitions. If the filter omits the first partition key level, the query engine cannot target specific partitions. The query then behaves as if the container did not use subpartitions."
+      explanation: "Routing works on a leading run of the hierarchy. A filter on the tenant, or on both the tenant and device, targets only a subset of partitions. If the filter omits the first partition key level, the query engine can't target specific partitions. The query then behaves as if the container didn't use subpartitions."
   - content: "A platform hosts 8,000 tenants of broadly similar size in one container, and per-tenant queries dominate the workload. A second platform hosts 12 tenants whose writes arrive in heavy bursts, and reads are point reads by item identifier. Which partitioning approach fits each?"
     choices:
     - content: "The first platform suits a hierarchical key rooted at the tenant identifier; the second suits a synthetic key or the item identifier."
       isCorrect: true
-      explanation: "Hierarchical keys need high first-level cardinality and similar usage per value, which 8,000 comparable, query-scoped tenants provide. The workload has only 12 tenants, and writes occur in bursts. A tenant identifier can't distribute this load evenly. Use a synthetic key or the item identifier to distribute writes. Point reads do not benefit from the routing provided by a hierarchical partition key."
+      explanation: "Hierarchical keys need high first-level cardinality and similar usage per value, which 8,000 comparable, query-scoped tenants provide. The workload has only 12 tenants, and writes occur in bursts. A tenant identifier can't distribute this load evenly. Use a synthetic key or the item identifier to distribute writes. Point reads don't benefit from the routing provided by a hierarchical partition key."
     - content: "Both should use a hierarchical key rooted at the tenant identifier, since both isolate data by tenant."
       isCorrect: false
       explanation: "Hierarchical keys colocate all items sharing a first-level value on the same physical partition until it splits. With 12 tenants, those keys concentrate burst ingestion on a handful of partitions, which is the opposite of what a write-heavy workload needs."

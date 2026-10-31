@@ -5,7 +5,7 @@ In this module, you transformed the Contoso schema from nine relational tables i
 - Begin by identifying candidate aggregate roots from business ownership, lifecycle, and consistency requirements.
 - Use access patterns to test and optimize aggregate boundaries rather than deriving ownership from queries alone.
 - Embed bounded data that belongs to an aggregate. Reference data that is independently owned, shared, or unbounded.
-- Treat copied and pre-aggregated values as projections with an authoritative source, synchronization mechanism, and acceptable consistency window.
+- Treat copied and preaggregated values as projections with an authoritative source, synchronization mechanism, and acceptable consistency window.
 - Keep aggregate, item, logical-partition, and container boundaries distinct. An item is a JSON document, while a logical partition defines routing, scale, and the scope of multi-item transactions.
 - Co-locate separate aggregate items under the same partition-key value when the workload benefits from single-partition queries or multi-item transactions.
 - Select a partition key by evaluating cardinality, storage and request distribution, immutability, and alignment with important query filters.

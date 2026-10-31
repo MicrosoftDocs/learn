@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=6d602ed6-ac79-4718-89aa-7435b4308376]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Relational schemas divide data into normalized tables and reconstruct business objects with joins. Those table boundaries don’t necessarily represent business ownership. An order and its line items might occupy separate tables even though the line items exist only as part of the order.
 
 A document model can preserve these natural business boundaries. Before deciding which data to embed, reference, or partition together, identify the objects that own related data and enforce the rules that must remain consistent.
@@ -60,7 +71,7 @@ A customer’s order history is different. An order has its own lifecycle, might
 
 Product, Category, and Tag are also separate aggregate roots. The product page reads their values together, but that doesn’t transfer ownership of Category or Tag to Product. Instead, the model can copy selected category and tag values onto the Product item as denormalized projections while preserving Category and Tag as the authoritative sources.
 
-Finally, identify operations that no individual aggregate can answer efficiently. Ranking customers by order count spans many customers and partitions. A pre-aggregated counter can make that read cheaper, but it introduces a synchronization obligation that the design must handle explicitly.
+Finally, identify operations that no individual aggregate can answer efficiently. Ranking customers by order count spans many customers and partitions. A preaggregated counter can make that read cheaper, but it introduces a synchronization obligation that the design must handle explicitly.
 
 ## Write down the patterns before you model
 
@@ -74,3 +85,5 @@ Two rules keep it useful:
 - **Record measured frequencies where you have them.** Estimates drift toward what the team finds interesting rather than what users do.
 
 **Guiding question:** Write the same five columns for the three operations your own application runs most often. For each one, count how many separate requests the current design needs to answer it. Any operation that takes more than one request is a candidate for the modeling techniques in the next two units, and the count itself is the baseline you measure improvement against.
+
+::: zone-end
