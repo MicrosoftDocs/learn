@@ -2,10 +2,11 @@
 uid: learn.wwl.design-data-modeling-partitioning-azure-cosmos-db-nosql.identify-access-patterns
 title: Identify aggregate boundaries and access patterns
 metadata:
+  zone_pivot_groups: video-or-text
   title: Identify Access Patterns for Your Data
   description: "Build an access-pattern inventory that records operation type, frequency, filters, and result shape, and use it to drive every modeling and partitioning decision."
-  ms.date: 10/02/2026
-  author: wwlpublish
+  ms.date: 10/30/2026
+  author: MScalopez
   ms.author: calopez
   ms.topic: unit
   ai-usage: ai-generated

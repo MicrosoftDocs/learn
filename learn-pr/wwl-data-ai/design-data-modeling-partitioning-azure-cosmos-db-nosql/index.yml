@@ -29,8 +29,8 @@ metadata:
   gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/design-data-modeling-partitioning-azure-cosmos-db-nosql/index.yml
   title: Design a Data Modeling and Partitioning Strategy for Azure Cosmos DB for NoSQL
   description: "Model Azure Cosmos DB for NoSQL data around access patterns and select partition keys, including hierarchical, synthetic, and multitenant strategies, that scale and distribute load evenly."
-  ms.date: 10/02/2026
-  author: wwlpublish
+  ms.date: 10/30/2026
+  author: MScalopez
   ms.author: calopez
   ms.topic: module
   ms.service: azure-cosmos-db

@@ -1,3 +1,12 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=736b2cb7-3f40-4315-8dfa-0929a6c091b2]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
 A partitioning problem is cheap to fix on a whiteboard and expensive to fix in production, where fixing it means to copy a container. That asymmetry makes design review a skill worth practicing deliberately. In this unit, you review a model for the anti-patterns that show up most often, and estimate what a design costs before it exists.
 
 ## Anti-patterns to look for
@@ -20,7 +29,7 @@ Each of these anti-patterns passes a casual read of the model and fails under lo
 
 **Treating “read together” as “owned together.”** Two values appearing on the same screen doesn’t mean they belong to the same aggregate or item. Embedding independently owned data couples unrelated lifecycles and can create multiple competing sources of truth. When a read frequently needs values owned by another aggregate, consider storing a denormalized projection instead.
 
-**Confusing a projection with its source of truth.** A copied category name on Product is optimized for reading, but Category remains authoritative. Every copied or pre-aggregated value needs a defined owner, synchronization mechanism, acceptable consistency window, and recovery strategy.
+**Confusing a projection with its source of truth.** A copied category name on Product is optimized for reading, but Category remains authoritative. Every copied or preaggregated value needs a defined owner, synchronization mechanism, acceptable consistency window, and recovery strategy.
 
 **Equating aggregates with items, logical partitions, or containers.** An aggregate defines business ownership and lifecycle. An item is a JSON document. A logical partition defines routing, scale, and the scope of multi-item transactions. A container defines partitioning and operational configuration. Forcing these boundaries into a one-to-one mapping can create oversized items, unnecessary containers, or poorly distributed partitions.
 
@@ -57,11 +66,13 @@ Console.WriteLine($"Charge: {response.RequestCharge} RU");
 ::: zone pivot="python"
 
 ```python
-item = container.read_item(item=product_id, partition_key=category_id)
+response = container.read_item(item=product_id, partition_key=category_id)
 
-charge = container.client_connection.last_response_headers["x-ms-request-charge"]
+charge = response.get_response_headers()["x-ms-request-charge"]
 print(f"Charge: {charge} RU")
 ```
+
+Read the headers from the response object so subsequent or concurrent requests don't overwrite the charge you're measuring.
 
 ::: zone-end
 

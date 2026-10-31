@@ -2,10 +2,11 @@
 uid: learn.wwl.design-data-modeling-partitioning-azure-cosmos-db-nosql.introduction
 title: Introduction
 metadata:
+  zone_pivot_groups: video-or-text
   title: Introduction
   description: "Frame data modeling and partition key selection as the design decisions that set Azure Cosmos DB cost and scale before the first item is written."
-  ms.date: 10/02/2026
-  author: wwlpublish
+  ms.date: 10/30/2026
+  author: MScalopez
   ms.author: calopez
   ms.topic: unit
   ai-usage: ai-generated

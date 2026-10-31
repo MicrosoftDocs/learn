@@ -1,3 +1,12 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=e8b63612-4e27-4094-8af3-44e9903e34a5]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
 The Contoso catalog API takes its filter values from the request: a category from the route, a price range from the query string, a sort order from a header. Building the query as a string and pasting in those values works on the first try and creates two problems that surface later. In this unit, you write parameterized queries, project results into the shape your application consumes, apply built-in functions, and run all of it through the SDK.
 
 ## Parameterize every value that comes from outside
@@ -156,11 +165,11 @@ results = container.query_items(
 for product in results:
     print(f"{product['name']}: {product['price']}")
 
-charge = container.client_connection.last_response_headers["x-ms-request-charge"]
+charge = results.get_response_headers()["x-ms-request-charge"]
 print(f"Last page charge: {charge} RU")
 ```
 
-`query_items` returns a paged iterable, and iterating it fetches each page as needed. Reading `last_response_headers` after the iteration reports the charge for the last page alone, not the query total. To accumulate the charge across a multi-page result, pass a `response_hook` callable, which the SDK invokes once per page.
+`query_items` returns a paged iterable, and iterating it fetches each page as needed. Calling `get_response_headers()` on that iterable after the iteration reports the charge for the last page alone, not the query total. These headers belong to this query response, so other requests on the container don't overwrite them. To accumulate the charge across a multi-page result, pass a `response_hook` callable, which the SDK invokes once per page.
 
 ::: zone-end
 
