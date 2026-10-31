@@ -6,4 +6,4 @@ In this exercise, you connect an AI assistant to the CosmicWorks product catalog
 
 Launch the exercise and follow the instructions.
 
-[![Diagram of the Launch Exercise button for opening the hands-on lab.](../media/launch-exercise.png)](https://microsoftlearning.github.io/dp-420-cosmos-db-dev/instructions/08-inspect-azure-cosmosdb-azure-mcp-server.html)
+[![Diagram of the button used to launch the exercise.](../media/launch-exercise.png)](https://microsoftlearning.github.io/dp-420-cosmos-db-dev/instructions/08-inspect-azure-cosmosdb-azure-mcp-server.html)

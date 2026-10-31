@@ -2,10 +2,11 @@
 uid: learn.wwl.process-azure-cosmos-db-nosql-change-feed.choose-change-feed-mode
 title: Choose a change feed mode
 metadata:
+  zone_pivot_groups: video-or-text
   title: Choose a Change Feed Mode
   description: "Compare latest version mode with all versions and deletes mode, weigh the account requirements each carries, and match a mode to what a consumer has to act on."
-  ms.date: 10/02/2026
-  author: wwlpublish
+  ms.date: 10/30/2026
+  author: MScalopez
   ms.author: calopez
   ms.topic: unit
   ai-usage: ai-generated

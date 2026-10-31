@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=9d51d89e-8ded-4e45-bafa-155a886ea3a2]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 The Contoso developer has several tools available and one assistant to build. Using every tool creates unnecessary dependencies and an architecture that’s difficult to operate. Ignoring all of them means rebuilding capabilities that existing tools already provide. Start from the requirement and select only the tools that address it.
 
 ## Match the tool to the need
@@ -43,7 +54,7 @@ The **SDK** performs the operation you asked for. It has no opinion about why.
 
 An **MCP server** exposes a defined set of tools to a model and executes the tool the model selects. A tool can wrap one SDK operation or orchestrate several operations and other services, such as generating an embedding before running a vector query. MCP supplies tool discovery and invocation; authentication, authorization, tool filtering, confirmation, and Azure role assignments provide the security controls.
 
-A **toolkit** performs a sequence of operations that implement a pattern, including operations you didn't ask for explicitly. Writing a turn may trigger extraction, summarization, and contradiction resolution. That implicit work is both the value and the risk: the pattern arrives complete, and the model calls it makes are billed to you whether or not you noticed the threshold that fired them.
+A **toolkit** performs a sequence of operations that implement a pattern, including operations you didn't ask for explicitly. Writing a turn might trigger extraction, summarization, and contradiction resolution. That implicit work is both the value and the risk: the pattern arrives complete, and the model calls it makes are billed to you whether or not you noticed the threshold that fired them.
 
 ## A short decision path
 
@@ -54,3 +65,5 @@ Three questions resolve most cases.
 - **Can you afford the pattern's runtime cost?** Multi-step retrieval and per-turn extraction both trade money and latency for quality. Measure the trade before you commit to it.
 
 Contoso's assistant comes out of that path with the Azure MCP Server during development, the memory toolkit for shopper context, and the retrieval toolkit only for the multi-product questions that a single search answers badly. Simple product lookups keep using a direct query, because nothing about them needs a retrieval loop.
+
+::: zone-end

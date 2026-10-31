@@ -1,3 +1,11 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=ff9f3576-455a-4ac3-a03b-fa8d50784290]
+
+::: zone-end
+
+::: zone pivot="text"
+
 Storing an item is rarely the end of the work. A price change might need to update a search index, a new order might notify a fulfillment service, and a renamed category might need to update every Product item carrying a copy of that name.
 
 Applications can query for recently modified items, but polling repeatedly consumes request units even when nothing changed. It also requires the application to maintain its own checkpoint, doesn’t surface deleted items, and can’t recover intermediate versions of an item that changed multiple times between polls.
@@ -14,3 +22,8 @@ The Contoso catalog team meets both halves of this problem at once. Each product
 This module works through both problems. First, you learn what the change feed records and how to read it in two ways. You then implement a consumer that keeps a denormalized copy current. Next, you determine when a workload requires records of deletes and intermediate versions. You run the same logic in a serverless function. Finally, you copy the data to a container with a new partition key by using a copy job.
 
 By the end of this module, you can build event-driven integrations on the Azure Cosmos DB change feed and move container data with container copy jobs.
+
+::: zone-end
+
+> [!NOTE]
+> We recognize that different people like to learn in different ways. You can choose to complete this module in video-based format or you can read the content as text and images. The text contains greater detail than the videos, so in some cases you might want to refer to it as supplemental material to the video presentation.

@@ -4,8 +4,8 @@ title: Summary
 metadata:
   title: Summary
   description: "Recap the change feed read models, mode selection, the Azure Functions trigger, and container copy jobs, with links for further learning and cleanup guidance."
-  ms.date: 10/02/2026
-  author: wwlpublish
+  ms.date: 10/30/2026
+  author: MScalopez
   ms.author: calopez
   ms.topic: unit
   ai-usage: ai-generated

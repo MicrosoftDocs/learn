@@ -2,10 +2,11 @@
 uid: learn.wwl.implement-ai-assisted-development-tools-azure-cosmos-db.use-agent-toolkits
 title: Use the agent toolkits
 metadata:
+  zone_pivot_groups: video-or-text
   title: Use the Agent Toolkits
   description: "Use the Agent Memory Toolkit and Agentic Retrieval, identify their prerequisites and integration options, and distinguish toolkit behavior from application responsibilities."
-  ms.date: 09/11/2026
-  author: wwlpublish
+  ms.date: 10/31/2026
+  author: MScalopez
   ms.author: calopez
   ms.topic: unit
   ai-usage: ai-generated

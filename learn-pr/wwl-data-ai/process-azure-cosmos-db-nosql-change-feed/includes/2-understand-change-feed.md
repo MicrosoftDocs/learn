@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=3e8e0d9f-b8e1-4b3f-a5d9-03afe40eb9a5]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Contoso's catalog stores a copy of each category's name on every product document, a denormalization that makes the storefront's read path a single lookup. The cost of that decision is a synchronization job: when a category is renamed, something has to find the affected products and update them. The change feed is where that job gets its input.
 
 In this unit, you learn what the change feed records, how the two read models differ, and how to tell whether a consumer is keeping up.
@@ -59,3 +70,5 @@ Run the estimator on its own instance rather than inside a processor host. A sin
 In an account replicated across regions, changes made in one region appear in the feed in all of them. The feed is contiguous across a manual failover of the write region.
 
 Accounts configured for writes in multiple regions behave differently in one respect worth knowing before you design around them. Items arrive in the order recorded by the conflict-resolution timestamp rather than the local write timestamp, and there's no guarantee of when a change becomes available. In the default mode, a change to an item can be dropped from the feed if a more recent change to the same item arrives from another region.
+
+::: zone-end

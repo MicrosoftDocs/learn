@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=99173297-70ba-4892-8316-d3ddefa54d4e]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Contoso's shopping assistant needs three capabilities from the catalog: a way for a developer to explore the data while designing against it, a place to keep what each shopper says, and a retrieval path good enough to answer questions that span dozens of products. In this unit, you learn which tool addresses each of those needs and what design decisions each one encodes on your behalf.
 
 ## One store behind all of them
@@ -59,3 +70,5 @@ Each tool carries a set of decisions its authors made so you don't have to. Know
 - **A retrieval loop.** Agentic retrieval combines vector and full-text results and runs more than one pass. In decomposed mode, it also selects a diverse subset rather than the top-scoring near-duplicates, and it runs up to a configurable number of rounds, stopping early when gap analysis finds nothing worth another pass.
 
 Processing cadence and retrieval settings are configurable. Other choices, such as the toolkit's memory taxonomy and container key structure, require code changes. The last unit in this module returns to which settings you should expect to tune.
+
+::: zone-end
