@@ -1,3 +1,12 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=bb0b19c7-0116-48b5-ac91-74901652ce21]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
 Contoso's category rename now has a source of events. What it needs next is a consumer that reads those events reliably, survives a process restart without reprocessing everything, and scales out when the catalog grows. In this unit, you build that consumer and see what the runtime handles for you in each language.
 
 ## The four components
@@ -88,17 +97,21 @@ while True:
     else:
         changes = monitored.query_items_change_feed(start_time="Beginning")
 
-    for item in changes:
-        if item["type"] == "category":
-            sync_category_name(item)
+    pages = changes.by_page()
+    for page in pages:
+        for item in page:
+            if item["type"] == "category":
+                sync_category_name(item)
 
-    continuation = monitored.client_connection.last_response_headers["etag"]
-    save_checkpoint(continuation)
+        continuation = pages.continuation_token
+        save_checkpoint(continuation)
 
     time.sleep(5)
 ```
 
 `productMeta` holds both category and tag documents discriminated by a `type` property, so the loop filters on it.
+
+Use `by_page()` to process each page and save its `continuation_token` only after you process every item in that page. The page iterator captures the token before your processing code runs, so subsequent requests don't overwrite it. Unlike a point-read response, the change feed result is an iterator, so use its paging API rather than `get_response_headers()` or the container's shared response headers.
 
 A continuation token records the reader’s position, but it isn’t equivalent to a processor lease. It doesn’t coordinate ownership or distribute work across consumers. The application must persist a separate token for each feed range and coordinate those ranges itself. Persist it after the batch is processed, never before, so that a crash mid-batch replays those changes instead of skipping them. A token stays valid for as long as the container exists when you read in latest version mode.
 

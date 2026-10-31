@@ -4,11 +4,11 @@ title: Handle events with Azure Functions
 metadata:
   title: Handle Events with Azure Functions
   description: "Run change feed logic with the Azure Cosmos DB trigger without hosting a processor, configure an identity-based connection, and share a lease container across functions."
-  ms.date: 10/02/2026
-  author: wwlpublish
+  ms.date: 10/30/2026
+  author: MScalopez
   ms.author: calopez
   ms.topic: unit
-  zone_pivot_groups: dev-lang-csharp-python
+  zone_pivot_groups: video-or-text,dev-lang-csharp-python
   ai-usage: ai-generated
 azureSandbox: false
 labModal: false

@@ -4,8 +4,8 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Check your understanding of change feed read models and mode selection with the following questions. Review how lease containers and the Azure Functions trigger work. Check your knowledge of container copy jobs."
-  ms.date: 10/02/2026
-  author: wwlpublish
+  ms.date: 10/30/2026
+  author: MScalopez
   ms.author: calopez
   ms.topic: unit
   module_assessment: true

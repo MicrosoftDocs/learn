@@ -4,11 +4,11 @@ title: Implement a change feed consumer
 metadata:
   title: Implement a Change Feed Consumer
   description: "Configure a lease container, write a delegate that handles batches of changes, control where processing starts, and scale a change feed consumer across instances."
-  ms.date: 10/02/2026
-  author: wwlpublish
+  ms.date: 10/30/2026
+  author: MScalopez
   ms.author: calopez
   ms.topic: unit
-  zone_pivot_groups: dev-lang-csharp-python
+  zone_pivot_groups: video-or-text,dev-lang-csharp-python
   ai-usage: ai-generated
 azureSandbox: false
 labModal: false

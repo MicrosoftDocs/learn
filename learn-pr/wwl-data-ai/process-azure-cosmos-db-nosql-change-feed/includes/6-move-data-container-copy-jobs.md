@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=8c56f3e5-3a6e-4021-ba8d-de295e628f73]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Contoso's second problem has nothing to do with events. The catalog container was created with `/categoryId` as its partition key, and the team now wants the hierarchical key they designed. Changing a partition key isn't a settings edit: the data has to move into a container created with the new key. The portal offers a guided flow for that migration on the container's **Partition Keys** tab, and underneath it runs the same copy job you can run yourself.
 
 The same is true of several other decisions that feel like settings and aren't: consider the unique key constraints and the container name. Decide whether to provision throughput on the database or the container. To use some features, you must enable them when you create the container. Container copy jobs are the service-side mechanism for all of these decisions. In this unit, you run one and learn what it does and doesn't preserve.
@@ -71,3 +82,5 @@ Several behaviors surprise people mid-migration:
 > **Guiding question:** Look at a container you own and ask which of its properties you'd have to run a copy job to change. If more than one is on that list, it's worth changing them in a single migration rather than repeating the outage.
 
 For Contoso, the sequence is now complete: create a container with the hierarchical key, run an offline copy during a maintenance window, verify counts, and repoint the storefront. To target the new catalog container and use its hierarchical partition key, update the category-sync consumer's product writes. That consumer still reads category changes from `productMeta`; the copy job doesn't redirect its reads or writes automatically.
+
+::: zone-end

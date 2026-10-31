@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=1824cd61-cbdc-4095-a0b2-ba4682535233]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 The category-sync consumer works because it needs the latest category name after an update, not every intermediate version. Contoso's next requirement doesn't share that property. Compliance asks for an audit trail of deleted products, and the consumer built so far can't produce one, because in its default configuration the feed never reports a deletion.
 
 In this unit, you learn what each change feed mode captures. You also examine the cost of the more detailed mode. Then, you choose the mode that meets your workload requirements.
@@ -85,3 +96,5 @@ If the answer is no, latest version mode is the simpler default. If the answer i
 A single container supports both. Different applications can read the same container's feed in different modes at the same time, so an audit consumer on all versions and deletes and an indexer on latest version mode coexist without conflict. What isn't allowed is one consumer switching modes, because each consumer is fixed to the mode it was configured with.
 
 > **Synthesis prompt:** Contoso needs three consumers on the catalog: a search indexer, a compliance log of product deletions, and a cache invalidator that only needs to know an item changed. Decide the mode for each. Then, check whether your account-level choices, continuous backups in particular, are compatible with all three running together.
+
+::: zone-end

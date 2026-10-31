@@ -1,3 +1,12 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=6da2d73d-89ca-44f6-985b-11138dab6d0d]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
 The consumer from earlier in this module works. However, Contoso must deploy and manage the process. Contoso must keep it running, monitor it, and scale it when needed. For a job that spends most of its time idle and occasionally handles a burst of category renames, deploying and managing the process requires substantial infrastructure for a small amount of logic.
 
 The Azure Functions trigger for Azure Cosmos DB removes it. In this unit, you move the same synchronization logic into a function and see which decisions the platform takes over and which stay yours.
