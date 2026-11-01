@@ -1,10 +1,21 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=f339e667-5a5a-4276-a8b9-a796e4191c17]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Azure Stream Analytics is a service for complex event processing and analysis of streaming data. Stream Analytics is used to:
 
 - Ingest data from an *input*, such as an Azure event hub, Azure IoT Hub, or Azure Storage blob container.
 - Process the data by using a *query* to select, project, and aggregate data values.
 - Write the results to an *output*, such as Azure Data Lake Storage Gen2, Azure SQL Database, Azure Cosmos DB, Azure Functions, Azure Event Hubs, Microsoft Power BI, or others.
 
-![Diagram that shows a Stream Analytics job with inputs, a query, and outputs](../media/stream-analytics.png)
+![Diagram that shows a Stream Analytics job with inputs, a query, and outputs.](../media/stream-analytics.png)
 
 Once started, a Stream Analytics query runs perpetually, processing new data as it arrives in the input and storing results in the output.
 
@@ -55,3 +66,5 @@ The field used as a timestamp is important when aggregating data over temporal w
 ## No-code editor
 
 If you prefer to build your stream processing job without writing SQL, Azure Stream Analytics includes a no-code editor. You can access it from the Azure Stream Analytics portal (preview) or the Azure Event Hubs portal. The no-code editor provides a drag-and-drop canvas where you connect input sources, add transformations (including time-window aggregations such as tumbling, hopping, and session windows), and configure outputs, without writing any code. For more information, see [No-code stream processing in Azure Stream Analytics](/azure/stream-analytics/no-code-stream-processing).
+
+::: zone-end

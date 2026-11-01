@@ -2,9 +2,10 @@
 uid: learn.data-ai.introduction-to-data-streaming.data-streams
 title: Understand data streams
 metadata:
+  zone_pivot_groups: video-or-text
   title: Understand Data Streams
   description: "Understand data streams"
-  ms.date: 10/12/2026
+  ms.date: 10/31/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

@@ -1,3 +1,13 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=8ae6da39-7eff-40e3-a231-3b93df18ff79]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
 
 All Azure Stream Analytics jobs include at least one input and output. In most cases, inputs reference sources of streaming data (though you can also define inputs for static reference data to augment the streamed event data). Outputs determine where the results of the stream processing query are sent. In the case of data ingestion into Azure Synapse Analytics, the output usually references an Azure Data Lake Storage Gen2 container or a table in a dedicated SQL pool database.
 
@@ -49,3 +59,5 @@ Azure Stream Analytics supports a wide range of output destinations beyond data 
 
 > [!NOTE]
 > For the full list of supported output types, see [Understand outputs from Azure Stream Analytics](/azure/stream-analytics/stream-analytics-define-outputs?azure-portal=true) in the Azure Stream Analytics documentation.
+
+::: zone-end

@@ -1,3 +1,13 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=b857f86e-eed1-4248-8b62-17c7a5276954]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
 
 To send streaming data to Power BI, your Azure Stream Analytics job uses a query that writes its results to a Power BI output. A simple query that forwards event data from an event hub directly to Power BI might look something like this:
 
@@ -35,3 +45,5 @@ When working with window functions (such as the **TumblingWindow** function in t
 
 > [!NOTE]
 > For more information about Power BI output limitations, see [Power BI output from Azure Stream Analytics](/azure/stream-analytics/power-bi-output?azure-portal=true#limitations-and-best-practices) in the Azure Stream Analytics documentation.
+
+::: zone-end
