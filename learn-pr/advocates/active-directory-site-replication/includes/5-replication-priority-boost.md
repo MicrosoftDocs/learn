@@ -25,18 +25,23 @@ repadmin /showconn <DCName>        :: connection objects feeding this DC
 dcdiag /test:Replications /test:Intersite /test:KccEvent /test:CheckSecurityError /v
 ```
 
-**4. Map the error to a cause.** A handful of errors account for most cases:
-
-| Symptom / error | Typical cause | First checks |
-| --- | --- | --- |
-| `1722` RPC server unavailable | Network/firewall, DC down, name resolution | Connectivity to RPC endpoint mapper (TCP 135) and the dynamic port; `ping`/`nltest /dsgetdc` |
-| `1256` remote system not available | Partner offline or unreachable for some time | Partner health; expected if a DC was rebooting |
-| `8524` DSA operation/DNS failure | Missing or stale DNS SRV/CNAME records | `dcdiag /test:DNS`; confirm the DSA GUID `_msdcs` CNAME resolves |
-| `-2146893022` / access denied | Kerberos or **time skew** beyond five minutes; machine account/secure channel | Time hierarchy (`w32tm /query /status`); secure channel |
-| `8606` / `8614` | **Lingering objects** / data older than tombstone lifetime | Don't force replication; remediate lingering objects |
+**4. Map the error to a cause.** Use the following table to investigate the actual error, without treating a related symptom as its root cause. Follow the linked Microsoft guidance for error-specific diagnosis and recovery:
 
 > [!TIP]
-> Time is the most common silent cause of "access denied" replication failures. Kerberos rejects tickets when DC clocks differ by more than the allowed skew, and that surfaces as authentication errors on the replication RPC. Validate the time hierarchy before chasing the replication stack.
+> Validate the time hierarchy when the errors or Kerberos evidence indicate a time problem. Don't assume every authentication-related replication failure is caused by clock skew. Match the numeric error and the affected source/destination/NC to its dedicated troubleshooting guidance.
+
+| Error | Meaning | First diagnostic direction |
+| --- | --- | --- |
+| [`1722`](/troubleshoot/windows-server/active-directory/replication-error-1722-rpc-server-unavailable) | RPC server unavailable | Check name resolution, source availability, TCP 135, and the actual replication RPC endpoint. |
+| [`1256`](/troubleshoot/windows-server/active-directory/active-directory-replication-error-1256) | Remote system unavailable, often recorded for canceled queued requests | Inspect every NC for the same source/destination pair and investigate the preceding non-1256 RPC bind error. |
+| `8524` | DSA operation failed because of a DNS lookup failure | Check the source DSA GUID CNAME, its target host records, and DNS health. |
+| [`-2146893022`](/troubleshoot/windows-server/active-directory/replication-error-2146893022) / `0x80090322` | The target principal name is incorrect | Check DC identity/name resolution, SPNs, and source machine-account password consistency with the KDC. Follow the error-specific procedure. |
+| [`5`](/troubleshoot/windows-server/active-directory/replications-fail-with-error-5) / [`8453`](/troubleshoot/windows-server/active-directory/replication-error-8453) | Access denied / replication access denied | Investigate authentication, authorization, replication rights, secure-channel state, and relevant time/Kerberos evidence. |
+| [`8606`](/troubleshoot/windows-server/active-directory/replication-error-8606) | Insufficient attributes were given to create an object | Inspect event 1988 and the named object/source. Distinguish permanent lingering objects from documented transient deletion or restore timing conditions. |
+| [`8614`](/troubleshoot/windows-server/active-directory/replication-error-8614) | Last replication exceeds the tombstone lifetime | Inspect event 2042, time accuracy, and replication history. Assess lingering-object risk and follow the documented recovery or rebuild process. |
+
+> [!WARNING]
+> Don't bypass a tombstone-lifetime quarantine or disable strict replication consistency merely to make replication succeed. Assess the DC's clock, replication history, and lingering-object risk, then follow the error-specific recovery or rebuild procedure before restoring normal replication.
 
 ## How the engine prioritizes replication—and where it falls short
 

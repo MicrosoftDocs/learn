@@ -1,16 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.site-topology-replication.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  title: Knowledge check
+  title: Module Assessment
   description: Check your understanding of Active Directory site topology design, replication metadata, and Windows Server 2025 replication and DC Locator behavior.
-  ms.date: 04/28/2026
+  ms.date: 10/30/2026
   author: orin-thomas
   ms.author: orthomas
   ms.topic: unit
 durationInMinutes: 5
 quiz:
-  title: Check your knowledge
+  title: Module assessment
   questions:
   - content: "You're performing an over-the-wire promotion of a new Windows Server 2025 domain controller and want the destination DC to converge the domain naming context from one specific partner ahead of its peers. How do you apply Replication Priority Boost?"
     choices:

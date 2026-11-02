@@ -13,12 +13,21 @@ USN context is why the same user object can show different "Current USN" values 
 
 ### Invocation ID and DSA GUID
 
-A DC is identified in replication metadata by two GUIDs:
+A DC has two identifiers with different roles in replication:
 
-- The **DSA GUID** (`objectGUID` of the DC's NTDS Settings object) is stable for the life of the DC.
-- The **invocation ID** identifies the *current instance* of the directory database. It normally matches the DSA GUID, but it's **reset whenever the database is restored** from backup or snapshot, or when a virtualized DC detects a generation-ID change.
+- The **DSA GUID** is the `objectGUID` of the DC's NTDS Settings object. It identifies that directory server object and remains stable for that object's lifetime.
+- The **invocation ID** identifies an incarnation of the DC's directory database and is used with originating USNs in replication metadata.
 
-That reset is the core of **USN rollback protection**. If a DIT is restored improperly and the USN counter moves backward, partners would otherwise ignore "old" USNs they think they've already seen, silently dropping changes. Resetting the invocation ID makes the restored database look like a new source, so partners reevaluate it correctly. Inspect signatures with `repadmin /showsig`.
+These identifiers need not match. A difference between them doesn't, by itself, prove that the DC has been restored. Use the DSA object GUID for operations that explicitly require a replication partner's server identity, such as Replication Priority Boost. Use invocation IDs when interpreting originating updates and UTD-vector entries.
+
+During supported recovery, a new invocation ID identifies the restored database incarnation so partners don't confuse its new updates with updates from the earlier incarnation. This mechanism isn't permission to use arbitrary snapshot or file-copy restores.
+
+> [!WARNING]
+> Restoring a snapshot or database image doesn't inherently reset the invocation ID. Use a supported AD-aware recovery procedure. Virtualization safeguards require a supported guest and a VM-GenerationID-aware hypervisor that reports the generation change. An unsupported rollback can reuse the old invocation ID and cause partners to ignore updates, even when routine replication reports don't reveal the resulting divergence.
+
+Inspect the current DSA object GUID and invocation ID with `repadmin /showrepl <DCName> /verbose`. Use `repadmin /showsig <DCName>` when investigating recorded retired database signatures.
+
+For more information, see [Detect and recover from USN rollback](/troubleshoot/windows-server/active-directory/detect-and-recover-from-usn-rollback) and [Safely virtualizing AD DS](/windows-server/identity/ad-ds/introduction-to-active-directory-domain-services-ad-ds-virtualization-level-100).
 
 ## The two vectors: high-watermark and up-to-dateness
 
@@ -38,7 +47,7 @@ repadmin /showrepl <DCName> /verbose
 :: The up-to-dateness vector for an NC: every originating DSA and its highest USN
 repadmin /showutdvec <DCName> dc=contoso,dc=com
 
-:: Invocation ID and DSA GUID for USN-rollback investigations
+:: Retired database signatures for USN-rollback investigations
 repadmin /showsig <DCName>
 ```
 
@@ -96,7 +105,19 @@ Get-ADObject -IncludeDeletedObjects -SearchBase "DC=contoso,DC=com" `
 
 In LDP, you enumerate deleted objects by binding to a DC, searching the **Deleted Objects** container with scope **Subtree**, and loading the predefined **Return Deleted Objects** control (LDAP OID `1.2.840.113556.1.4.417`). The `-IncludeDeletedObjects` switch allows you to view deleted objects in PowerShell.
 
+**Lingering objects** can remain on a DC that missed deletions while replication was interrupted long enough for the deletion markers to be garbage-collected on other replicas.
+
 > [!WARNING]
-> Deleted-object metadata is also how you detect **lingering objects**—objects that were deleted while a DC was offline past the tombstone lifetime, then reintroduced when that DC came back. A reintroduced object has originating metadata older than every partner's UTDVEC, which is exactly the signal `repadmin /removelingeringobjects` and the strict-replication-consistency setting use to find and remove it. Take care with a domain controller that has been offline longer than the tombstone lifetime.
+> An old originating timestamp or USN isn't sufficient evidence that an object is lingering. Lingering-object verification uses replication knowledge to identify eligible objects, then checks whether they exist on a verified up-to-date writable reference replica of the same partition. Start with advisory mode and review the reported objects before removing anything.
+>
+> Strict replication consistency blocks a source's updates to objects missing on the destination and reports the condition. It doesn't automatically remove lingering objects. Keep this protection enabled while following the documented diagnosis and cleanup procedure.
+
+Start with this advisory-only command template. Replace `<SuspectDC>` with the DC to examine and `<ReferenceDSAObjectGUID>` with the healthy reference DC's **NTDS Settings objectGUID**, not its invocation ID. Use the partition being investigated in place of the example domain DN:
+
+```text
+repadmin /removelingeringobjects <SuspectDC> <ReferenceDSAObjectGUID> "DC=contoso,DC=com" /advisory_mode
+```
+
+Advisory mode reports findings without deleting objects. Review the output and follow the full [Microsoft procedure for identifying and removing lingering objects](/troubleshoot/windows-server/active-directory/active-directory-replication-event-id-1388-1988) before performing any removal. Don't omit `/advisory_mode` merely to make replication succeed.
 
 With USNs, the HWMV, and the UTDVEC, you can state precisely what information every DC has and hasn't received, with per-attribute and deleted-object metadata telling you which DC originated each change. The next unit puts this to work: diagnosing replication failures and, where the engine's built-in priorities aren't optimal, applying Replication Priority Boost.

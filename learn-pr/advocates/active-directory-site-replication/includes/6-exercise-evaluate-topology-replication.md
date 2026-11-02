@@ -44,38 +44,71 @@ Get-ADReplicationSite -Filter * | Select-Object Name
     repadmin /showism
     ```
 
-1. Improve one defect, then confirm the change. For example, lower the link interval and enable inter-site change notification on a fast lab link:
+1. Improve one defect, then confirm the change. For example, lower the link interval and enable inter-site change notification on a fast lab link. First save the actual initial interval and option state. Run this block as a single script from a writable working directory, and keep the baseline file for cleanup. For a repeat run, use a fresh directory or file name rather than overwrite an earlier baseline:
 
     ```powershell
-    Set-ADReplicationSiteLink -Identity "NY-CHI" -ReplicationFrequencyInMinutes 15 -Replace @{ options = 1 }
-    Get-ADReplicationSiteLink -Identity "NY-CHI" |
-        Select-Object Name, Cost, ReplicationFrequencyInMinutes, Options
+    $server = 'NYDC1.contoso.com'
+    $link = Get-ADReplicationSiteLink -Identity 'NY-CHI' `
+        -Properties options -Server $server -ErrorAction Stop
+    $baseline = [pscustomobject]@{
+        Server = $server
+        LinkDN = $link.DistinguishedName
+        Interval = $link.ReplicationFrequencyInMinutes
+        HadOptions = ($null -ne $link.options)
+        Options = [int]$link.options
+    }
+    $baseline | Export-Clixml -LiteralPath '.\NY-CHI-before.xml' `
+        -NoClobber -ErrorAction Stop
+
+    Set-ADReplicationSiteLink -Identity $baseline.LinkDN -Server $server `
+        -ReplicationFrequencyInMinutes 15 `
+        -Replace @{ options = ($baseline.Options -bor 1) } -ErrorAction Stop
+
+    Get-ADReplicationSiteLink -Identity $baseline.LinkDN -Server $server `
+        -Properties options -ErrorAction Stop |
+        Select-Object Name, ReplicationFrequencyInMinutes, options
     ```
+
+    > [!IMPORTANT]
+    > The `options` attribute is a bitfield. Set only the intended bit, preserving other flags. Restore the recorded initial state, not assumed defaults. This rollback example assumes no one else edits the isolated lab link during the exercise.
 
 **Expected result:** You can name each site's bridgehead and ISTG, identify at least one topology defect, and verify a corrected site-link property.
 
 ## Exercise 2 - Validate DC Locator on Windows Server 2025
 
-1. Confirm the Windows Server 2025 DNS-only default. Check whether `BlockNetBIOSDiscovery` is explicitly configured, remembering that an absent policy value doesn't mean NetBIOS discovery is allowed:
+Run this exercise locally on `NYDC1` or `CHIDC1`, both of which run Windows Server 2025 in this lab. For additional client tests, record each client's OS and effective discovery policy separately. Don't infer a client's policy from the DC it locates.
+
+1. Confirm the local OS, then check whether `BlockNetBIOSDiscovery` is explicitly configured. An absent policy value on Windows Server 2025 doesn't mean NetBIOS-style discovery is allowed. Handle missing keys or values intentionally, without suppressing registry read errors:
 
     ```powershell
+    Get-CimInstance -ClassName Win32_OperatingSystem -ErrorAction Stop |
+        Select-Object Caption, Version, BuildNumber
+
     $path = 'HKLM:\Software\Policies\Microsoft\Netlogon\Parameters'
-    $value = (Get-ItemProperty $path -Name BlockNetBIOSDiscovery -ErrorAction SilentlyContinue).BlockNetBIOSDiscovery
+    $value = $null
+    if (Test-Path -LiteralPath $path -ErrorAction Stop) {
+        $keyProperties = Get-ItemProperty -LiteralPath $path -ErrorAction Stop
+        $policyProperty = $keyProperties.PSObject.Properties['BlockNetBIOSDiscovery']
+        if ($null -ne $policyProperty) {
+            $value = $policyProperty.Value
+        }
+    }
+
     if ($null -eq $value) {
-        'Not configured: Windows Server 2025 still uses the TRUE/default DNS-only behavior.'
+        'Not configured. On Windows Server 2025, NetBIOS-style discovery is blocked by default.'
     }
     else {
         switch ($value) {
-            0 { 'Explicitly disabled: NetBIOS-based discovery is allowed if legacy constraints also allow it.' }
-            1 { 'Explicitly enabled: DNS-based discovery only.' }
-            default { "Unexpected BlockNetBIOSDiscovery value: $value" }
+            0 { 'Policy permits legacy discovery, subject to other legacy constraints.' }
+            1 { 'Policy blocks NetBIOS-style discovery.' }
+            default { throw "Unexpected BlockNetBIOSDiscovery value: $value" }
         }
     }
     ```
 
-    A value of `1`, or no configured policy value on Windows Server 2025, means Netlogon uses DNS-based discovery only, with no NetBIOS/mailslot fallback.
+    A value of `1`, or no configured policy value on Windows Server 2025, means Netlogon uses DNS-based discovery only, with no NetBIOS/mailslot fallback. If the value is `0`, record the override and use a Windows Server 2025 lab computer with the default blocking behavior or an explicit value of `1` for this DNS-only exercise.
 
-1. Prove site-aware discovery works through DNS alone:
+1. Discover a DC and compare its reported site with the calling computer's expected site. Don't treat discovery success alone as proof that the selected DC is site-local:
 
     ```cmd
     nltest /dsgetdc:contoso.com /force
@@ -87,17 +120,20 @@ Get-ADReplicationSite -Filter * | Select-Object Name
     Get-ADDomainController -Discover -DomainName contoso.com -SiteName "Chicago"
     ```
 
-1. Confirm the SRV/CNAME records DC Locator depends on are registered:
+    The `-SiteName "Chicago"` request checks discovery for that specified site. It doesn't establish the calling computer's own subnet-to-site mapping.
+
+1. Inspect the DNS records used for domain-wide discovery and site selection:
 
     ```cmd
     dcdiag /test:DNS /DnsRecordRegistration /v
     dcdiag /test:LocatorCheck
+    nslookup -type=SRV _ldap._tcp.dc._msdcs.contoso.com
     nslookup -type=SRV _ldap._tcp.Chicago._sites.dc._msdcs.contoso.com
     ```
 
-1. Reflect: with NetBIOS discovery blocked, what would break if `CHIDC1`'s site-specific SRV records were missing, or if a client subnet weren't mapped to a site?
+1. Reflect: if a client has no usable site mapping or site-specific records, can it still discover a DC through domain-wide DNS? Which DC does it select, and what is the effect on locality?
 
-**Expected result:** DC Locator resolves a *site-local* DC purely from DNS, and you can locate the SRV records that make that possible.
+**Expected result:** You establish the discovery policy on the tested Windows Server 2025 computer, locate a DC through DNS, and compare the returned DC site with the client's expected site. A successful remote-DC result can demonstrate a locality problem rather than a discovery failure.
 
 ## Exercise 3 - Read replication metadata and prove convergence
 
@@ -224,8 +260,29 @@ Simulate the over-the-wire promotion scenario: you want `CHIDC1` to service the 
 Get-NetFirewallRule -DisplayName "LAB-Block-Repl" -ErrorAction SilentlyContinue | Remove-NetFirewallRule
 # Reset the priority boost in LDP: Browse > Modify, attribute setPriorityBoost,
 #   value <NC>:<partner DSA GUID>:0, operation Replace, then verify msDS-PriorityBoost.
-# Revert any site-link change if you want to restore the lab baseline:
-Set-ADReplicationSiteLink -Identity "NY-CHI" -ReplicationFrequencyInMinutes 180 -Clear options
+```
+
+If you changed the site link in Exercise 1, restore its saved baseline. Return to the computer and working directory where you saved `NY-CHI-before.xml`, or supply that file's full path. If you used a different file name, use the same name here. Don't substitute assumed defaults if the baseline file is missing.
+
+```powershell
+$baseline = Import-Clixml -LiteralPath '.\NY-CHI-before.xml' -ErrorAction Stop
+$restore = @{
+    Identity = $baseline.LinkDN
+    Server = $baseline.Server
+    ReplicationFrequencyInMinutes = $baseline.Interval
+    ErrorAction = 'Stop'
+}
+if ($baseline.HadOptions) {
+    Set-ADReplicationSiteLink @restore `
+        -Replace @{ options = [int]$baseline.Options }
+}
+else {
+    Set-ADReplicationSiteLink @restore -Clear options
+}
+
+Get-ADReplicationSiteLink -Identity $baseline.LinkDN `
+    -Server $baseline.Server -Properties options -ErrorAction Stop |
+    Select-Object Name, ReplicationFrequencyInMinutes, options
 ```
 
 You've now explored the full lifecycle: design evaluation, DC Locator validation under the Windows Server 2025 DNS-only default, metadata-based convergence proof, failure diagnosis, and targeted priority control. The summary consolidates these into a checklist you can carry into production reviews.

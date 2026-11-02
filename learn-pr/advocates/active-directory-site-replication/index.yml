@@ -18,9 +18,9 @@ metadata:
     - "IT Networking"
   gs-solution.area: "Cloud & AI Platforms"
   gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/advocates/active-directory-site-replication/index.yml
-  title: Active Directory sites, topology, and replication
+  title: Active Directory Sites, Topology, and Replication
   description: Design Active Directory site topology and analyze Active Directory replication metadata, including Windows Server 2025 replication priority control.
-  ms.date: 04/28/2026
+  ms.date: 10/30/2026
   author: orin-thomas
   ms.author: orthomas
   ms.topic: module
