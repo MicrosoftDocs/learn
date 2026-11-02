@@ -1,0 +1,37 @@
+Before an agent can use Web IQ, we need to create an Azure resource and connect it in the Web IQ portal.
+
+The Azure resource is used for management and billing. The Web IQ portal provides the application profile, credentials, and playground we'll use to test retrieval.
+
+You'll need a paid Azure subscription for this. Free trials and subscriptions funded through Azure credits aren't supported.
+
+Let's start in the Azure portal.
+
+I'll search for Microsoft Web IQ and select the option to create a resource.
+
+Next, I'll choose my subscription and resource group, and give the resource a name. If prompted for a region, I'll select Global.
+
+After reviewing and accepting the terms of use, I can review the settings and create the resource.
+
+When deployment finishes, I'll open the resource and select Go to Web IQ portal.
+
+Here, I'll sign in and select the same subscription and resource. If prompted, I'll also provide the tenant ID.
+
+Completing this connection creates a Web IQ AppID, which appears in the selector at the top of the portal.
+
+This identifies our Web IQ application profile, including its enabled services, rate limits, and API keys. It isn't the same as a Microsoft Entra application client ID, and it isn't a secret credential.
+
+OK, let's try a query in the playground.
+
+I'll check that the correct AppID is selected, choose the Web search option, and enter a query about upcoming tour dates for a band.
+
+We can review the available parameters, send the request, and inspect either the JSON response or the formatted results.
+
+I'm looking for relevant sources and dates, not just results that mention the band's name. If necessary, I can refine the query and try again.
+
+Once retrieval is working, I'll open Profile management and copy an API key for the connection we'll create in Foundry.
+
+The key belongs to this Web IQ profile and authenticates requests. Keep it in secure connection settings, not in agent instructions or source code.
+
+For production applications, Web IQ also supports Microsoft Entra authentication by binding an application client ID to the profile.
+
+With the resource connected, queries tested, and credentials ready, we can move on to adding Web IQ to an agent.

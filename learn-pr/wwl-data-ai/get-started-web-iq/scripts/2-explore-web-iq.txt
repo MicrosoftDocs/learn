@@ -1,0 +1,23 @@
+Web IQ gives agents access to web information in a form they can use as grounding context. Let's explore the methods it provides.
+
+Suppose we're building an agent that answers questions about bands and music artists.
+
+Web Search discovers and ranks relevant pages, returning useful passages and source links. We could use it to find a band's official tour announcements.
+
+News focuses on news articles, so it's useful for finding recent reporting about the band.
+
+Images and Videos find media results, with metadata and links to their sources. Our agent could use these methods to find band pictures or performance videos.
+
+Browse works differently. Instead of searching for pages, it retrieves content from a URL we already know. So we could search for an official tour page, then browse it to check the event details.
+
+And Auto returns evidence across eligible answer types, with supporting citations. It's currently a beta REST API for enabled AppIDs, rather than one of the five documented MCP tools.
+
+Foundry's standard web search tool already supports current answers with citations. Web IQ adds dedicated retrieval methods and more explicit controls over the results.
+
+Depending on the method, we can set the language, region, result count, and content length. Query-relevant passages help avoid filling the model's context with unrelated text.
+
+We can also use Web IQ through REST, SDKs, or the model context protocol, rather than tying retrieval to one agent.
+
+Of course, retrieved information still needs checking. An old tour announcement doesn't prove a concert is upcoming.
+
+Choose relevant sources, check the dates, and make sure the agent's answer is supported by the evidence.

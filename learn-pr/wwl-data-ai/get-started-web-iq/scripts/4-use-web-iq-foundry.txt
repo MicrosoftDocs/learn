@@ -1,0 +1,23 @@
+Once Web IQ is configured, we can connect it to a Foundry agent using the model context protocol, or MCP.
+
+Here's an agent in my project that answers questions about bands. I've selected a deployed model and given it instructions.
+
+Let's ask whether a band has any upcoming concerts. Without current evidence, we shouldn't assume the model knows the answer.
+
+I'll remove any existing web search tool for this comparison, so we can see what Web IQ adds.
+
+In Tools, I'll select Add tools, search the catalog for Web IQ, and create a connection using the API key from the Web IQ portal.
+
+The key goes in the connection settings, not the instructions.
+
+I'll review the approval policy. For this controlled demonstration, I'll auto-approve the calls, then save the agent.
+
+Let's also update its instructions to use Web IQ for time-sensitive questions, prefer official sources, cite evidence, and acknowledge uncertainty.
+
+Now I'll ask about upcoming concerts again.
+
+We can inspect the response and open Traces to check which Web IQ tools were called and what they returned.
+
+I'll also ask for pictures of the band to try image search.
+
+Tool access is only part of the solution. Check that the retrieved evidence is relevant, and that the answer accurately reflects it. Retrieved web text should be treated as data, not instructions.
