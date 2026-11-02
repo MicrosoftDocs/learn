@@ -2,9 +2,10 @@
 uid: learn.data-ai.introduction-to-data-streaming.event-processing
 title: Understand event processing
 metadata:
+  zone_pivot_groups: video-or-text
   title: Understand Event Processing
   description: "Understand event processing"
-  ms.date: 10/12/2026
+  ms.date: 10/31/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

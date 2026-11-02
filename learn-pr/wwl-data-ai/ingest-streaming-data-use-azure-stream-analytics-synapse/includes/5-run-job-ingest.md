@@ -1,3 +1,13 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=84e1c33e-ae06-4cb6-bdde-3640d7b8243f]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
 
 When you've created and saved your query, you can run the Azure Stream Analytics job to start processing events from the input(s) and writing results to the output(s). Once started, the job runs perpetually until stopped, continuously processing new events as they arrive.
 
@@ -40,3 +50,5 @@ You can monitor a running Stream Analytics job in the Azure portal. The job over
 
 > [!NOTE]
 > For more information about monitoring and troubleshooting Stream Analytics jobs, see [Monitor Azure Stream Analytics jobs](/azure/stream-analytics/monitor-azure-stream-analytics?azure-portal=true) in the Azure Stream Analytics documentation.
+
+::: zone-end

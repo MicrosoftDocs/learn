@@ -1,3 +1,13 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=97c85156-a47d-4f3b-b62d-17dd59731474]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
 
 Azure Stream Analytics can route the results of stream processing to multiple types of output destinations, depending on whether you need to store, analyze, forward, or visualize the data.
 
@@ -23,3 +33,5 @@ For scenarios that require live visualization of streaming metrics—such as mon
 ## Event forwarding
 
 Azure Stream Analytics can also write filtered or enriched events to another Azure Event Hubs instance. This pattern is used to build multi-stage streaming pipelines, where one Stream Analytics job performs initial filtering or enrichment and forwards the results to a downstream consumer such as another job, an Azure Function, or a custom application.
+
+::: zone-end

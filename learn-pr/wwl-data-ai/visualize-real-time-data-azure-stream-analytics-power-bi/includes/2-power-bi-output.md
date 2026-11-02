@@ -1,3 +1,13 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=fea56e25-faf2-4772-bf95-a67752952c70]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
 
 All Azure Stream Analytics jobs include at least one input and output. In most cases, inputs reference sources of streaming data (though you can also define inputs for static reference data to augment the streamed event data). Outputs determine where the results of the stream processing query are sent. To support real-time data visualization, you can use a **Power BI** output.
 
@@ -31,3 +41,5 @@ You can use a Power BI output to write the results of a Stream Analytics query t
 
 > [!NOTE]
 > For more information about Power BI outputs, see [Power BI output from Azure Stream Analytics](/azure/stream-analytics/power-bi-output?azure-portal=true) in the Azure Stream Analytics documentation. To configure Managed Identity authentication, see [Use Managed Identity to authenticate your Azure Stream Analytics job to Power BI](/azure/stream-analytics/powerbi-output-managed-identity).
+
+::: zone-end
