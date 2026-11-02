@@ -2,9 +2,9 @@
 uid: learn.wwl.site-topology-replication.site-link-design
 title: Design sites, site links, and the replication topology
 metadata:
-  title: Design sites, site links, and the replication topology
+  title: Design Sites, Site Links, and the Replication Topology
   description: Design sites, subnets, site links, and costs, and explain how the KCC, ISTG, bridgeheads, and connection objects build the replication topology.
-  ms.date: 04/28/2026
+  ms.date: 10/30/2026
   author: orin-thomas
   ms.author: orthomas
   ms.topic: unit

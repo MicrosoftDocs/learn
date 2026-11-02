@@ -9,7 +9,7 @@ A **site** represents a set of well-connected IP subnets—typically a LAN or a 
 - **Replication boundary.** Within a site, replication is near-immediate and uncompressed. Between sites, replication is scheduled and compressed to conserve WAN bandwidth.
 - **Service location boundary.** Clients use site membership to find the *closest* DC, Distributed File System (DFS) target, and other site-aware services. This is the DC Locator path you validate later in the module.
 
-A **subnet** object maps an IP range to a site. Subnet-to-site mapping is what lets a DC tell a client which site it belongs to, so missing or overlapping subnets are one of the most common—and most disruptive—topology defects. On Windows Server 2025, where NetBIOS-based DC discovery is blocked by default, accurate subnet coverage is no longer optional: it's the only mechanism that keeps clients on a local DC.
+A **subnet** object maps an IP range to a site. Subnet-to-site mapping is what lets a DC tell a client which site it belongs to, so missing or overlapping subnets are one of the most common—and most disruptive—topology defects. Accurate subnet coverage helps clients find site-local DCs. Blocking NetBIOS-style discovery on Windows Server 2025 doesn't remove domain-wide DNS discovery: a client without a usable site mapping can still discover a remote DC.
 
 > [!IMPORTANT]
 > Every routed subnet that hosts domain members should map to exactly one site. A client whose source IP doesn't match any subnet object is logged on the DC's Netlogon as a "no-client-site" event and is given an arbitrary (often remote) DC. Audit `%SystemRoot%\debug\netlogon.log` for `NO_CLIENT_SITE` entries to find unmapped subnets.
@@ -100,14 +100,24 @@ The two scopes behave differently by design.
 - You can enable **inter-site change notification** on a site link to get near-intra-site latency over a fast WAN by setting the link's `options` attribute to include the change-notification bit (value `1`). Use it only on links with ample bandwidth.
 
 ```powershell
-# Enable inter-site change notification on a fast WAN link (options bit 1 = USE_NOTIFY)
-Set-ADReplicationSiteLink -Identity "NY-CHI" -Replace @{ options = 1 }
+# Enable change notification without clearing other option flags
+$server = 'NYDC1.contoso.com'
+$link = Get-ADReplicationSiteLink -Identity 'NY-CHI' `
+    -Properties options -Server $server -ErrorAction Stop
+$options = [int]$link.options
+
+Set-ADReplicationSiteLink -Identity $link.DistinguishedName `
+    -Server $server -Replace @{ options = ($options -bor 1) } `
+    -ErrorAction Stop
 
 # Inspect connection objects, bridgeheads, and the ISTG from any DC
 repadmin /showconn
 repadmin /bridgeheads /verbose
 repadmin /istg
 ```
+
+> [!IMPORTANT]
+> The `options` attribute is a bitfield. Use bitwise OR (`-bor 1`) to enable change notification while preserving other flags. The resulting value can be greater than `1` when other flags are set. Capture the initial settings before a temporary change so you can restore them rather than assume default values.
 
 ## Bringing the design together
 

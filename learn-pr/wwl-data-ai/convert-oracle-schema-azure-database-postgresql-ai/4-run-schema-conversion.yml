@@ -4,7 +4,7 @@ title: Run a schema conversion
 metadata:
   title: Run a schema conversion
   description: "Walk through the Migration Wizard to create a migration project, configure connections, run the schema conversion, and interpret the conversion report."
-  ms.date: 07/17/2026
+  ms.date: 11/02/2026
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit

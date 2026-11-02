@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check for the AI-powered Oracle to Azure Database for PostgreSQL schema conversion module."
-  ms.date: 07/17/2026
+  ms.date: 11/02/2026
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
@@ -34,25 +34,25 @@ quiz:
     - content: "The tool prompts you to select thin or thick mode manually in the Migration Wizard and works with either choice as long as Oracle is reachable."
       isCorrect: false
       explanation: "Incorrect. The Migration Wizard doesn't expose a manual connectivity-mode selector. The tool reads your `sqlnet.ora` and `tnsnames.ora` configuration and selects thin or thick mode automatically based on the settings it finds."
-  - content: "After a conversion run, the customer summary report shows a 92% success percentage. Your project sponsor asks whether the converted schema is ready to deploy to production. How should you interpret this number?"
+  - content: "After a conversion run, the HTML report shows a 92% conversion rate. Your project sponsor asks whether the converted schema is ready to deploy to production. How should you interpret this number?"
     choices:
-    - content: "The success percentage reflects how many objects converted automatically without manual intervention. It doesn't indicate production readiness; you resolve review tasks and independently validate the converted objects first."
+    - content: "The rate is the number of Converted objects divided by the conversion total. It doesn't indicate production readiness; you review both Converted and Not converted objects and independently validate behavior."
       isCorrect: true
-      explanation: "Correct. The success percentage measures automated conversion coverage, not deployment readiness. Resolving review tasks and independently validating the converted objects remain before the schema is production-ready."
-    - content: "A success percentage above 90% means the schema is production-ready and you can deploy it as-is."
+      explanation: "Correct. Use the report's conversion total, not discovery or extraction totals. A Converted status doesn't establish compilation success, deployment inclusion, or equivalent runtime behavior."
+    - content: "A conversion rate above 90% means the schema is production-ready and you can deploy it as-is."
       isCorrect: false
-      explanation: "Incorrect. The success percentage reflects automated conversion coverage, not deployment readiness. Even a high percentage still requires you to resolve review tasks and validate objects before production."
-    - content: "The success percentage is the proportion of objects that passed scratch-schema validation, so only the remaining objects need review."
+      explanation: "Incorrect. A high conversion rate doesn't establish production readiness. Review definitions and notes, correct issues, and independently test the deployed schema before production."
+    - content: "The conversion rate is the proportion of objects that passed scratch-schema validation, so only the remaining objects need review."
       isCorrect: false
-      explanation: "Incorrect. The success percentage measures objects converted without manual intervention, not the scratch-validation pass rate. Converted objects still require independent validation before production, even when they aren't flagged as review tasks."
-  - content: "After running a schema conversion, the Schema Review pane shows five Mandatory tasks, twelve Recommended tasks, and three Optional tasks. You need to deploy the schema to a test environment for functional testing as soon as possible. What is the minimum set of review tasks you must resolve before deployment?"
+      explanation: "Incorrect. The conversion rate uses Converted objects, not a scratch-validation pass count. Converted objects can contain placeholders and still need review and independent testing."
+  - content: "You use Fix in Conversion Object Explorer to correct a generated PostgreSQL file. What must you do before relying on that correction for deployment?"
     choices:
-    - content: "All twenty tasks, because unresolved review tasks indicate conversion failures and block any deployment."
+    - content: "Rerun the completed conversion to regenerate deploy.sql with the correction."
       isCorrect: false
-      explanation: "Incorrect. Review tasks are not conversion failures — they are flagged items that require human judgment. Recommended and Optional tasks don't block deployment; they represent items to address before production promotion or at your convenience."
-    - content: "The five Mandatory tasks, because they block deployment until resolved."
+      explanation: "Incorrect. Rerunning completed conversions isn't supported. Correct generated definitions manually, compile and test them, and confirm that deployment SQL includes the corrections."
+    - content: "Review the edit, compile and test it in a nonproduction database where the schema is deployed, and confirm that deployment SQL includes the tested correction."
       isCorrect: true
-      explanation: "Correct. Mandatory tasks (High priority) must be resolved before deployment — the converted objects aren't production-ready until you address them. Recommended tasks should be resolved before promoting to production but don't block a test deployment, and Optional tasks can be addressed at your convenience."
-    - content: "Only the Optional tasks, because Mandatory and Recommended tasks are handled automatically by GitHub Copilot agent mode."
+      explanation: "Correct. Editing a file, applying the definition to a database, and updating deploy.sql are separate actions. Compilation alone doesn't establish equivalent business behavior."
+    - content: "Deploy immediately because Fix automatically updates the database and deploy.sql."
       isCorrect: false
-      explanation: "Incorrect. GitHub Copilot agent mode assists you in resolving tasks, but you must review and accept any proposed fix — it doesn't resolve tasks automatically. Mandatory tasks, not Optional ones, must be resolved before deployment."
+      explanation: "Incorrect. Copilot assists with edits to the PostgreSQL file. You must review the changes, apply and validate them explicitly, and confirm that deployment SQL includes them."

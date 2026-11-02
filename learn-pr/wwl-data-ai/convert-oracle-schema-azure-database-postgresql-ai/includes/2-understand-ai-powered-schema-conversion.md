@@ -4,7 +4,7 @@ To tackle Contoso Retail's migration, you first need to understand how the conve
 
 The [Oracle to Azure Database for PostgreSQL schema conversion feature](/azure/postgresql/migrate/oracle-conversions-schema/schema-conversions-overview) is built into the [PostgreSQL extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-ossdata.vscode-pgsql) (extension ID: `ms-ossdata.vscode-pgsql`, published by Microsoft). You don't need a separate migration tool or an another cloud service beyond the resources the tool uses. The entire workflow runs within VS Code.
 
-The feature converts Oracle schema objects into PostgreSQL-compatible DDL ready to deploy to Azure Database for PostgreSQL flexible server.
+The feature converts Oracle schema objects into PostgreSQL-compatible DDL for review and validation before deployment to Azure Database for PostgreSQL flexible server.
 
 ## Identify the architecture components
 
@@ -13,7 +13,7 @@ The conversion involves five components working together:
 | Component | Role |
 |---|---|
 | **Source Oracle database** | The Oracle schema to convert. The tool reads schema metadata from the Oracle data dictionary, never row-level application data. |
-| **VS Code PostgreSQL extension** | The primary interface. Manages connections, runs the Migration Wizard, hosts the Schema Review pane, and produces all conversion artifacts. |
+| **VS Code PostgreSQL extension** | The primary interface. Manages connections, runs the Migration Wizard, hosts Conversion Object Explorer, and produces all conversion artifacts. |
 | **Azure Database for PostgreSQL flexible server** | Hosts the scratch schemas used for validation. The converted DDL runs against this server before the tool generates final output. |
 | **Microsoft Foundry** | Hosts the language models that power AI-driven schema translation. Your organization creates a model deployment and the tool calls it during conversion. |
 | **Schema conversion agents** | AI agents that orchestrate the conversion process, passing schema context to the language model and processing the results. |
@@ -22,11 +22,11 @@ The conversion involves five components working together:
 
 ## Follow the conversion pipeline
 
-The conversion runs through six sequential stages. Understanding each stage helps you interpret the conversion report and focus your effort after the run completes.
+The conversion workflow includes the following stages. Understanding each stage helps you interpret the conversion report and focus your effort after the run completes.
 
-### Connect and discover schema objects
+### Discover and extract schema objects
 
-The tool connects to your Oracle database and catalogs all schema objects. It reads catalog views in the Oracle data dictionary, such as `DBA_TABLES`, `DBA_PROCEDURES`, and `DBA_DEPENDENCIES`, to extract DDL and map object dependencies. This stage is fully deterministic: the tool reads what Oracle exposes, batches objects into dependency-aware groups, and prepares them for transformation.
+The tool connects to your Oracle database and inventories objects in the selected schemas. Discovery checks source permissions, exclusions, and schema dependencies without extracting DDL. After you review the scope and configure the remaining connections, extraction reads DDL and metadata from the Oracle data dictionary, including views such as `DBA_TABLES`, `DBA_PROCEDURES`, and `DBA_DEPENDENCIES`. These steps are deterministic and prepare the definitions for transformation.
 
 ### Transform DDL with AI
 
@@ -36,29 +36,29 @@ This is the stage where AI adds the most value: translating complex DDL that wou
 
 ### Validate in scratch schemas
 
-The tool tests every converted object by applying the generated DDL to scratch schemas in your Azure Database for PostgreSQL flexible server. The scratch schemas use the `_mig_scratch_` prefix and are created and dropped automatically by the tool.
+The tool attempts to compile generated DDL in your Azure Database for PostgreSQL flexible server and performs available static checks. It drops schemas matching the selected Oracle schemas with `DROP SCHEMA ... CASCADE` and recreates them. Use an empty or dedicated, unused scratch database with no objects or data you need to preserve, because this operation can also remove dependent objects in other schemas.
 
-This stage catches problems that text-level review would miss: syntax errors, unresolved dependencies, and incompatibilities with the target PostgreSQL version. Because validation runs against your actual target server, it also detects extension and `search_path` issues specific to your configuration.
+This stage can detect syntax errors, unresolved dependencies, target-version incompatibilities, and extension or `search_path` issues. It doesn't establish equivalent application behavior or production readiness.
 
-### Generate review tasks
+### Review conversion results
 
-Objects that the tool can't fully validate, or that it converts with a fallback approach, are flagged as [**review tasks**](/azure/postgresql/migrate/oracle-conversions-schema/schema-conversions-review-tasks-artifacts). Common triggers include:
+The HTML report and [**Conversion Object Explorer**](/azure/postgresql/migrate/oracle-conversions-schema/schema-conversions-object-explorer) show object statuses, definitions, and conversion notes. Review both **Converted** and **Not converted** objects, especially:
 
 - Complex PL/SQL logic with no direct PostgreSQL equivalent
 - Oracle data types with multiple valid PostgreSQL mappings (for example, `NUMBER` types that could map to `numeric`, `integer`, or `bigint` depending on actual usage)
 - Oracle behaviors that differ semantically in PostgreSQL, such as empty-string vs. NULL handling, numeric precision, date and time handling, or transaction control
 
-Review tasks aren't failures. They're the tool's way of telling you: "this object converted, but verify the result before production."
+A **Converted** status doesn't guarantee a complete implementation, successful compilation, or inclusion in deployment SQL. Inspect definitions and notes for missing logic or placeholders.
 
-### Resolve tasks with guidance
+### Correct objects with guidance
 
-For each review task, you can use **GitHub Copilot agent mode** for guided resolution. Select **Run Task** in the Schema Review pane, and GitHub Copilot agent mode opens in VS Code with the source DDL, the generated PostgreSQL DDL, and the task evidence as context. Copilot suggests a fix; you review and accept or modify it.
+In Conversion Object Explorer, select **Ask** to explain an object's conversion and dependencies, or **Fix** for a Copilot prompt with the object's details. Review and accept or modify the proposed edits.
 
-You can also resolve tasks manually by editing the generated `.sql` file directly in VS Code.
+You can also edit the generated `.sql` file manually. Compile corrections in a nonproduction database where the converted schema is deployed, and confirm that deployment SQL includes the tested corrections.
 
-### Generate the final output
+### Prepare deployment
 
-Once objects pass validation and review tasks are addressed, the tool writes the final PostgreSQL DDL to organized `.sql` files grouped by schema and object type, along with a `deploy.sql` consolidated deployment script and several reports.
+The conversion generates PostgreSQL `.sql` files, a `deploy.sql` deployment script, reports, and setup instructions. Generating these files doesn't deploy them. Review the output and follow the setup instructions to deploy to a separate nonproduction database before functional and application validation.
 
 ## Recognize where AI helps, and where it doesn't
 
@@ -67,7 +67,7 @@ The conversion pipeline uses AI selectively. Microsoft Foundry Models handle the
 The other pipeline stages run as deterministic, rule-based steps. These include source parsing, metadata extraction, dependency ordering, scratch-schema validation, and script generation. This hybrid approach keeps behavior predictable and auditable across the stages where it matters most.
 
 > [!IMPORTANT]
-> The same AI that converts schema objects can also assist with reviewing those objects. AI systems can occasionally confirm their own mistakes. You must independently validate all converted objects and review-task resolutions before deploying to production. Don't treat AI-generated output as production-ready without independent verification.
+> The same AI that converts schema objects can also assist with reviewing those objects. AI systems can occasionally confirm their own mistakes. You must independently validate all converted objects and corrections before deploying to production. Don't treat AI-generated output as production-ready without independent verification.
 
 ## Identify what the tool converts
 
@@ -77,11 +77,11 @@ The tool supports a broad range of Oracle schema and code objects:
 
 **Views and code objects:** standard views, materialized views, triggers (row-level and statement-level), functions, stored procedures, packages (specifications and bodies), and types (object types, `TYPE BODY` member methods, `VARRAY`, nested tables, and `SUBTYPE` declarations).
 
-Objects outside this supported scope, such as Oracle system schemas, Advanced Queuing, Java in the database, or wrapped PL/SQL, are either excluded from extraction or flagged as limitations. Unit 5 covers how to plan around these categories.
+Support varies by object and feature. Oracle system schemas, Advanced Queuing tables, and Java in the database aren't extracted. Wrapped PL/SQL can produce placeholders without the original business logic. Unit 5 covers how to plan around these limitations.
 
 ## Check supported Oracle source versions
 
 The tool supports schema conversion from Oracle 12.1, 12.2, 18c, 19c, and 21c. The target is Azure Database for PostgreSQL flexible server running PostgreSQL version 15 or later.
 
 > [!NOTE]
-> Before you run a conversion on a production-complexity schema, list the Oracle features your schema uses most heavily, such as PL/SQL packages, complex triggers, materialized view refresh logic, and Oracle-specific data types. These are the areas most likely to generate review tasks and deserve the most attention during the review stage.
+> Before you run a conversion on a production-complexity schema, list the Oracle features your schema uses most heavily, such as PL/SQL packages, complex triggers, materialized view refresh logic, and Oracle-specific data types. These areas deserve particular attention when you review generated definitions and conversion notes.

@@ -1,4 +1,4 @@
-A replication topology rarely fails all at once. It degrades quietly: convergence stretches from minutes to hours, a branch authenticates against a DC three time zones away, or a functional-level upgrade stalls because one DC never received a change. This unit catalogs the topology anti-patterns that cause these symptoms, then shows how to validate DC Locator and replication behavior so the topology is ready for Windows Server 2025—where the safety net of NetBIOS-based discovery is gone by default.
+A replication topology rarely fails all at once. It degrades quietly: convergence stretches from minutes to hours, a branch authenticates against a DC three time zones away, or a functional-level upgrade stalls because one DC never received a change. This unit catalogs the topology anti-patterns that cause these symptoms, then shows how to validate DC Locator and replication behavior on computers running Windows Server 2025, where NetBIOS-style discovery is blocked by default.
 
 ## Common topology anti-patterns
 
@@ -37,7 +37,7 @@ Bridge All Site Links assumes transitive connectivity. On a partially routed net
 
 ## Validate DC Locator behavior
 
-Topology is only correct if clients and DCs actually *locate* the right DC through it. DC Locator resolves a DC in two stages: a DNS SRV lookup for the domain, followed by a *site-specific* lookup that narrows the result to the caller's site. Validate both.
+Topology is only correct if clients and DCs actually *locate* the right DC through it. DC Locator uses DNS SRV records for domain discovery and can use site-specific records to find a DC in the caller's site. Validate discovery and site selection separately: finding a DC doesn't establish that it's site-local.
 
 ```cmd
 :: Which DC and site does this client resolve, and is the result site-aware?
@@ -50,7 +50,7 @@ nltest /dsaddresstosite:10.20.30.40
 ```
 
 ```powershell
-# Confirm site-aware discovery returns a local DC
+# Request discovery for the Chicago site and inspect the returned DC
 Get-ADDomainController -Discover -DomainName contoso.com -SiteName "Chicago"
 
 # Health checks for SRV records and locator logic
@@ -60,18 +60,20 @@ dcdiag /test:LocatorCheck
 
 The site-specific records DC Locator depends on look like `_ldap._tcp.<SiteName>._sites.dc._msdcs.contoso.com`. If those records are missing, or the subnet-to-site mapping is wrong, clients fall through to a generic domain-wide look up and can land on a remote DC.
 
-## Windows Server 2025 readiness: DNS is the only path
+## Windows Server 2025 readiness: DNS discovery and site selection
 
-Historically, when DNS-based discovery failed, the DC Locator could fall back to **NetBIOS mailslot** discovery (broadcast or WINS). That fallback masked broken topology and missing SRV records. Windows Server 2025 changes the default:
+DC Locator can map a flat domain name to a DNS domain name and then use DNS discovery. That's distinct from legacy NetBIOS-style discovery through WINS or mailslots. Windows Server 2025 changes the default for that legacy discovery method on the computer whose Netlogon service performs the lookup:
 
 - The Group Policy setting **Block NetBIOS-based discovery for domain controller location** (`BlockNetBIOSDiscovery`) defaults to **TRUE**. When explicitly configured, the backing registry value is `HKLM\Software\Policies\Microsoft\Netlogon\Parameters\BlockNetBIOSDiscovery` (`REG_DWORD`); `1` blocks NetBIOS-based discovery, `0` allows the legacy fallback if WINS or mailslot discovery is otherwise available. If the policy value is absent, Windows Server 2025 still uses the secure default and blocks NetBIOS-based discovery.
 - With the block in effect, Netlogon uses **DNS-based discovery only**. There's no mailslot or broadcast fallback.
 - Netlogon's NetBIOS mailslot functionality is **deprecated** in Windows Server 2025 and shouldn't be relied on going forward.
 
-This change is a security and hygiene improvement, but it removes the cushion that hid topology defects. The practical consequence is **DNS-based site discovery becomes a hard dependency**: any subnet not mapped to a site, any missing site-specific SRV record, or any application that depended on NetBIOS-based DC discovery can now fail outright instead of falling back.
+DNS domain discovery and site selection are related but distinct. Missing subnet mappings or site-specific SRV records can cause a client to use a remote DC through domain-wide DNS discovery. They don't, by themselves, remove all DNS discovery paths. An application that requires legacy NetBIOS-style discovery can fail when that method is blocked, but a flat domain-name input alone doesn't establish that dependency.
 
 > [!IMPORTANT]
-> Before you enforce `BlockNetBIOSDiscovery` (or deploy Windows Server 2025 DCs that block it by default), inventory **legacy DC Locator dependencies**: applications that call `DsGetDcName` with NetBIOS-style flags, single-label domain name lookups, WINS-dependent logon scripts, and appliances that locate DCs by browsing. Confirm each can resolve a DC via DNS SRV records first. Use `nltest /dsgetdc:contoso.com /force` from representative subnets to prove DNS-only discovery succeeds before removing the fallback.
+> Check the OS and effective policy on the computer performing DC Locator, not just on the DC it finds. Upgrading a DC doesn't change every client's local discovery policy. A flat domain name can still work when Locator maps it to a DNS domain name. Test legacy applications using their actual lookup behavior before concluding that they require NetBIOS discovery.
+
+Use `nltest /dsgetdc:contoso.com /force` from representative subnets to observe DNS discovery and compare the returned DC's site with the client's expected site. Record the discovery policy on each tested computer rather than inferring it from the DC's operating system. For more information, see [Locating domain controllers (DC Locator)](/windows-server/identity/ad-ds/manage/dc-locator).
 
 ### Validate topology before raising the functional level
 
