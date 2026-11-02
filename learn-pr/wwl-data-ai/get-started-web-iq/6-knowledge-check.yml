@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-web-iq.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Check your understanding of Web IQ capabilities, configuration, and integration with Microsoft Foundry."
+  ms.date: 10/30/2026
+  author: GraemeMalcolm
+  ms.author: gmalc
+  ms.topic: unit
+  module_assessment: true
+durationInMinutes: 3
+content: |
+quiz:
+  questions:
+    - content: "An agent has the URL of an event organizer's page and needs to read its content to verify a concert date. Which Web IQ method should it use?"
+      choices:
+        - content: "Web Search, to discover and rank pages for a search query."
+          isCorrect: false
+          explanation: "Incorrect. Web Search is useful when the agent needs to discover sources. Browse retrieves content from a specific URL the agent already knows."
+        - content: "Browse, to retrieve content from the known URL."
+          isCorrect: true
+          explanation: "Correct. Browse extracts content from a specified page, enabling the agent to inspect a source it has already identified."
+        - content: "Images, to find pictures related to the event."
+          isCorrect: false
+          explanation: "Incorrect. Images finds image results and associated metadata; it isn't the method for reading the organizer's page."
+    - content: "After creating a Web IQ resource in Azure, how do you obtain its Web IQ AppID?"
+      choices:
+        - content: "Register an application in Microsoft Entra ID and use its client ID as the Web IQ AppID."
+          isCorrect: false
+          explanation: "Incorrect. A Microsoft Entra application client ID is a separate identifier. It can be bound to a Web IQ AppID for token-based authentication."
+        - content: "Deploy a language model in Foundry and use the deployment name as the AppID."
+          isCorrect: false
+          explanation: "Incorrect. A model deployment identifies a model in Foundry, not an application profile in Web IQ."
+        - content: "Sign in to the Web IQ portal and connect the Azure subscription and Web IQ resource."
+          isCorrect: true
+          explanation: "Correct. Connecting the resource in the Web IQ portal creates its AppID. Select it in the playground to test requests, and obtain an API key from Profile management for key-based clients."
+    - content: "Which approach enables a Foundry agent to answer questions about upcoming concerts using Web IQ?"
+      choices:
+        - content: "Add the Web IQ MCP tool with a securely configured connection, instruct the agent to retrieve current information and cite sources, and verify tool calls in traces."
+          isCorrect: true
+          explanation: "Correct. The tool supplies current web evidence at run time. Instructions guide its use, and traces help verify that the agent retrieved supporting information."
+        - content: "Put the Web IQ API key in the agent's instructions so the model can learn to search."
+          isCorrect: false
+          explanation: "Incorrect. API keys belong in the tool connection's credential configuration, not in prompts or instructions."
+        - content: "Add the concert question to the agent's instructions and rely on the model's training data."
+          isCorrect: false
+          explanation: "Incorrect. Instructions don't update the model's knowledge. Questions about upcoming events require current evidence retrieved through a tool such as Web IQ."

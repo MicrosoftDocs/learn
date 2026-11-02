@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.sovereignty-policy-initiatives.cloud-adoption-framework
+title: Cloud adoption guidance for Azure
+metadata:
+  title: Cloud adoption guidance for Azure
+  description: Introduction to Cloud Adoption Framework for Azure
+  ms.date: 11/02/2026
+  author: salisburysimon
+  ms.author: sidicken
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/02-cloud-adoption-framework.md)]

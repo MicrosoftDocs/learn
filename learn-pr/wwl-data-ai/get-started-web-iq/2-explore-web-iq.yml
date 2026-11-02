@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-web-iq.explore-web-iq
+title: Explore Web IQ
+metadata:
+  title: Explore Web IQ
+  description: "Explore the Web Search, News, Images, Videos, Browse, and Auto methods in Microsoft Web IQ."
+  ms.date: 10/30/2026
+  author: GraemeMalcolm
+  ms.author: gmalc
+  ms.topic: unit
+  zone_pivot_groups: video-or-text
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-explore-web-iq.md)]

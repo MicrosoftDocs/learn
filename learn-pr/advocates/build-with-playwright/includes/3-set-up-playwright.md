@@ -27,7 +27,10 @@ When you run this command, you're asked a few questions to configure the Playwri
 - Add a GitHub Action for automating tests. We recommend **Yes**.
 - Install Playwright browsers. We recommend selecting the default of **True**.
 
-You should now see the following output in the terminal:
+> [!NOTE]
+> On Linux, including a supported Linux distribution in WSL, the initializer can also ask whether to install Playwright's operating-system dependencies. Browser downloads and system-library installation are separate steps. If those dependencies aren't installed, select **Yes** when prompted, provided you're authorized to install system packages. This step requires root or sudo permissions. If you skipped it, run `npx playwright install-deps` from your project directory before running the tests. See [Install system dependencies](https://playwright.dev/docs/browsers#install-system-dependencies).
+
+Your terminal output should look similar to the following example. Exact messages can vary by version:
 
 ```output
 Initializing NPM project (npm init -y)…
@@ -37,11 +40,11 @@ Wrote to /learn-playwright/package.json:
 {
 
   "name": "learn-playwright",
-  "version": "1.0.0",*
-  "description": "",*
-  "main": "index.js",*
-  "scripts": {*
-    "test": "echo \"Error: no test specified\" && exit 1"*
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
@@ -61,7 +64,6 @@ found 0 vulnerabilities
 Writing playwright.config.ts.
 Writing .github/workflows/playwright.yml.
 Writing tests/example.spec.ts.
-Writing tests-examples/demo-todo-app.spec.ts.
 Writing package.json.
 Downloading browsers (npx playwright install)…
 ✔ Success! Created a Playwright Test project at /learn-playwright
@@ -75,7 +77,7 @@ Inside that directory, you can run several commands:
     Starts the interactive UI mode.
 
   npx playwright test --project=chromium
-    Runs the tests only on Desktop Chrome.
+    Runs the tests only in the Chromium project.
 
   npx playwright test example
     Runs the tests in a specific file.
@@ -92,7 +94,6 @@ We suggest that you begin by typing:
 
 And check out the following files:
   - ./tests/example.spec.ts - Example end-to-end test
-  - ./tests-examples/demo-todo-app.spec.ts - Demo Todo App end-to-end tests
   - ./playwright.config.ts - Playwright Test configuration
 
 Visit https://playwright.dev/docs/intro for more information. ✨
@@ -105,10 +106,17 @@ The output tells us that a new npm project was created with a package.json file,
 - `playwright.config.ts`: The Playwright Test Configuration file.
 - `.github/workflows/playwright.yml`: GitHub Action for automating tests
 - `tests/`: Top-level folder that Playwright searches recursively for tests with an example test script.
-- `tests-examples/`: Staging folder with a demo todo app test script to try out.
 - `package.json`: The npm project file.
 
-Next, it tells us that Playwright has downloaded browsers. Playwright downloads the latest version of the browsers on which we can run our tests. It uses browser binaries that are installed locally, so you don't need to have the browsers installed on your machine.
+> [!NOTE]
+> Current Playwright project templates create a starter test in `tests/example.spec.ts`. They no longer generate a `tests-examples` folder. This module uses the starter tests to explore configuration and test suites. Installation messages and package counts can vary by version.
+
+Playwright downloads the browser binaries required by the installed Playwright version. These managed binaries let you run the Chromium, Firefox, and WebKit projects without installing those browsers separately. When you update Playwright, install the browser binaries required by the new version as well.
+
+On Linux, the required operating-system libraries must also be installed. If a browser fails to launch because host dependencies are missing, complete the dependency-installation step described above before rerunning the tests.
+
+> [!NOTE]
+> The `Desktop Chrome` device profile doesn't select branded Google Chrome. The example's `chromium` project uses Playwright's Chromium build. Testing installed Google Chrome or Microsoft Edge requires an appropriate [browser channel](https://playwright.dev/docs/browsers#google-chrome--microsoft-edge) and that browser to be available.
 
 When finished, we get a success message and a list of commands we can run to interact with the Playwright Test project.
 
@@ -120,7 +128,7 @@ To run tests in Playwright, use the npx playwright test command. The command run
 npx playwright test
 ```
 
-When you run the command, you see the following output:
+Your output should resemble the following example. The two starter test cases run in three projects, giving six test executions. Worker counts and elapsed time can differ.
 
 ```output
 Running 6 tests using 5 workers
@@ -131,7 +139,7 @@ To open last HTML report run:
   npx playwright show-report
 ```
 
-The output tells us that six tests were run using five workers. By default, Playwright runs tests in parallel by using workers. The number of CPU cores available determines the number of workers. Playwright uses half of the available CPU cores.
+The example shows six test executions using five workers. The [`workers` setting](https://playwright.dev/docs/api/class-testconfig#test-config-workers) limits the number of concurrent worker processes. During an ordinary local run, the generated configuration uses Playwright's default limit of 50% of the logical CPU cores. The number of workers actually used also depends on the available work. When `CI` is set, the configuration shown in this module limits the run to one worker.
 
 Let's open the HTML report to see more details about the test run.
 
@@ -145,11 +153,11 @@ The following message tells us the report is being served locally, and a browser
 Serving HTML report at http://localhost:9323. Press Ctrl+C to quit.
 ```
 
-:::image type="content" source="../media/setup-show-report.png" alt-text="A screenshot of a Playwright report.":::
+:::image type="content" source="../media/setup-show-report.png" alt-text="Screenshot of six passing Playwright test executions across Chromium, Firefox, and WebKit.":::
 
 The report gives us the following insights:
 
-- We have two test cases (*has title* and *get started link*)
+- We've got two test cases (*has title* and *get started link*)
 - We ran each across three browser engines (chromium, Firefox, webkit)
 - The test cases were defined in the `example.spec.ts` file
 - The test run took *5.2s* with all six tests passing (none skipped)
@@ -159,13 +167,15 @@ Selecting a particular row gives you the detailed run of that test case. For exa
 - The test is called *has title*.
 - The file name is `example.spec.ts` and the line number is `3`.
 - The test case was run on Chromium
-- The *Before Hooks* test ran first. It launched the browser and set the browser and page *context* (fixtures) for test isolation.
-- The *Action* test on line `4` ran next. It resulted in *navigation* to a specific page.
-- Then, the *Assertion* test on line `7` executed. It *validated* that the page has a specific title.
-- The *After Hooks* test ran last. It took any context *cleanup* actions needed.
+- **Before Hooks** shows setup activity, including creation of the isolated context and page fixtures. The browser may already be running in the worker.
+- The navigation step shows the call to `page.goto()`.
+- The assertion step shows the check of the page title.
+- **After Hooks** shows teardown activity, including fixture cleanup.
 - The test case took *661ms* to complete.
 
-:::image type="content" source="../media/run-report-detail.png" alt-text="A screenshot showing an example of a detailed Playwright spec report.":::
+These entries belong to one test execution. They aren't separate test cases.
+
+:::image type="content" source="../media/run-report-detail.png" alt-text="Screenshot of a Playwright test report with setup hooks, navigation, an assertion, and teardown hooks.":::
 
 To run our test only on the Chromium browser, we can use the `--project` option.
 
@@ -173,6 +183,6 @@ To run our test only on the Chromium browser, we can use the `--project` option.
 npx playwright test --project chromium
 ```
 
-Go ahead and run the command. Notice that two tests were run using two workers. When you open the report, you see that the tests were only run on the Chromium browser.
+Run the command and confirm that the report contains two test executions in the Chromium project. The run can use fewer than two workers, depending on your machine and configuration.
 
 Congratulations! You successfully installed Playwright and ran the example test. In the next section, we'll look at the test in more detail, as well as the Playwright configuration file.

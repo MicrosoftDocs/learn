@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.sovereignty-policy-initiatives.azure-policy-resources
+title: Azure Policy resources
+metadata:
+  title: Azure Policy resources
+  description: Learn about the Azure Policy resources.
+  ms.date: 11/02/2026
+  author: salisburysimon
+  ms.author: sidicken
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/04-azure-policy-resources.md)]

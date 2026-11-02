@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.sovereignty-policy-initiatives.azure-policy-design-principles
+title: Azure Policy design principles
+metadata:
+  title: Azure Policy design principles
+  description: Learn about the Azure Policy design principles.
+  ms.date: 11/02/2026
+  author: salisburysimon
+  ms.author: sidicken
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/03-azure-policy-design-principles.md)]

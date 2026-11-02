@@ -1,0 +1,56 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.sovereignty-confidential-computing.check
+title: Check your knowledge
+metadata:
+  title: Check your knowledge
+  description: Answer the following questions to see what you learned.
+  ms.date: 11/02/2026
+  author: salisburysimon
+  ms.author: sidicken
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Answer the following questions to see what you learned.
+  questions:
+  - content: Which hardware-based feature allows for confidential computing?
+    choices:
+    - content: Trusted Compute Base (TCB)
+      isCorrect: false
+      explanation: Incorrect. While TCB refers to the components that you need to trust to create a secure environment for using data, it doesn't directly allow for confidential computing.
+    - content: Virtual machines (VMs)
+      isCorrect: false
+      explanation: Incorrect. VMs aren't specific to confidential computing and don't inherently protect data in use.
+    - content: Trusted Execution Environment (TEE)
+      isCorrect: true
+      explanation: Correct. TEEs create a more secure and isolated environment, allowing for the core functionality of confidential computing.
+    - content: Network firewalls
+      isCorrect: false
+      explanation: Incorrect. Firewalls control network traffic to protect data network traffic, not data in use.
+  - content: In the process of attestation, which entity issues the Attestation result?
+    choices:
+    - content: Attester
+      isCorrect: false
+      explanation: Incorrect. The Attester submits evidence, not the Attestation result.
+    - content: Verifier
+      isCorrect: true
+      explanation: Correct. The Verifier evaluates evidence and issues the Attestation result.
+    - content: Relying party
+      isCorrect: false
+      explanation: Incorrect. The relying party evaluates the Attestation result but doesn't issue it.
+    - content: Cloud provider
+      isCorrect: false
+      explanation: Incorrect. The cloud provider might manage components but isn't necessarily the Verifier.
+  - content: What does the Trusted launch feature in Azure enhance?
+    choices:
+    - content: Container scalability
+      isCorrect: false
+      explanation: Incorrect. Trusted launch doesn't deal with scaling containers.
+    - content: Boot process security
+      isCorrect: true
+      explanation: Correct. Trusted launch ensures the security of the entire boot process through secure boot and integrity monitoring.
+    - content: Cloud storage encryption
+      isCorrect: false
+      explanation: Incorrect. Trusted launch doesn't focus on storage encryption.
+    - content: API management
+      isCorrect: false
+      explanation: Incorrect. Trusted launch is unrelated to API management.

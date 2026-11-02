@@ -18,5 +18,6 @@ In this module, you'll learn:
 To get started with Playwright, you should have:
 
 * [Visual Studio Code](https://code.visualstudio.com/) installed
-* [Latest version of node](https://nodejs.org/en/download/current)
-* [Latest version of npm](https://docs.npmjs.com/try-the-latest-stable-version-of-npm)
+* [Node.js](https://nodejs.org/) installed in a version supported by [Playwright's system requirements](https://playwright.dev/docs/intro#system-requirements)
+* [npm](https://docs.npmjs.com/) installed
+* An operating system supported by [Playwright's system requirements](https://playwright.dev/docs/intro#system-requirements).

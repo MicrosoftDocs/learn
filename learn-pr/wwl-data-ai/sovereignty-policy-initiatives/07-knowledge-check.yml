@@ -1,0 +1,78 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.sovereignty-policy-initiatives.check
+title: Check your knowledge
+metadata:
+  title: Check your knowledge
+  description: Answer the following questions to see what you learned.
+  ms.date: 11/02/2026
+  author: salisburysimon
+  ms.author: sidicken
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Answer the following questions to see what you learned
+  questions:
+    - content: What is the purpose of Azure Policy and how does it help in managing resources?
+      choices:
+        - content: Azure Policy is used to manually configure resources on a case-by-case basis.
+          isCorrect: false
+          explanation: Incorrect. Azure Policy isn't used for manual configuration.
+        - content: Azure Policy assesses compliance at scale and enforces organizational and regulatory standards across Azure environments.
+          isCorrect: true
+          explanation: Correct. Azure Policy assesses compliance at scale and enforces organizational and regulatory standards across Azure environments. Many built-in policies are included, and you can create custom policies. Examples of what you can achieve with Azure Policy include allowing only certain virtual machine sizes for your project, recommending system updates on servers, and allowing multifactor authentication for subscription accounts.
+        - content: Azure Policy is a networking tool that manages traffic between virtual networks.
+          isCorrect: false
+          explanation: Incorrect. Azure Policy isn't focused on networking tasks.
+        - content: Azure Policy is solely for encrypting data at rest in Azure.
+          isCorrect: false
+          explanation: Incorrect. While Azure Policy can enforce encryption policies, its scope is broader.
+    - content: What are the two recommended steps to deploy policies safely in an existing environment?
+      choices:
+        - content: Start from assignments with Enforcement Mode Disabled and then deploy policies in deployment rings.
+          isCorrect: true
+          explanation: Correct. Starting with Enforcement Mode Disabled and deploying policies in deployment rings ensures a controlled and safe approach to managing policy resources in your existing environment.
+        - content: Start from assignments with Enforcement Mode Enabled and then deploy policies in deployment rings.
+          isCorrect: false
+          explanation: Incorrect. This approach would be risky because activating Enforcement Mode would enforce policies across the entire environment at once. Starting with Enforcement Mode Enabled could lead to disruptions or compliance violations without a gradual validation process.
+        - content: Start from assignments with Enforcement Mode Disabled and then deploy policies in parallel.
+          isCorrect: false
+          explanation: Incorrect. While starting with Enforcement Mode Disabled is a good practice, deploying policies in parallel without a controlled rollout strategy can be problematic. Deploying policies in parallel across all regions or environments simultaneously might lead to unforeseen issues and make it challenging to find the root cause.
+        - content: Start from assignments with Enforcement Mode Enabled and then deploy policies in parallel.
+          isCorrect: false
+          explanation: Incorrect. This approach is risky because activating Enforcement Mode would enforce policies across the entire environment at once and could lead to disruptions or compliance violations without a gradual validation process. Deploying policies in parallel without a controlled rollout strategy could result in widespread disruptions or noncompliance.
+    - content: What is the purpose of the Enforcement Mode in Azure Policy?
+      choices:
+        - content: It prevents resource evaluation from happening at all.
+          isCorrect: false
+          explanation: Incorrect. The 'disabled' effect prevents resource evaluation, not the Enforcement Mode.
+        - content: It triggers entries in the Azure Activity log.
+          isCorrect: false
+          explanation: Incorrect. When Enforcement Mode is set to 'DoNotEnforce', it doesn't trigger entries in the Azure Activity log.
+        - content: It allows testing the policy's outcome on existing resources without initiating the policy effect.
+          isCorrect: true
+          explanation: Correct. Enforcement Mode lets you deactivate the enforcement of certain policy effects for testing purposes.
+    - content: What is the role of Azure Resource Manager in the governance of Azure applications and resources?
+      choices:
+       - content: It's the deployment and management service for Azure, providing a management layer that allows creation, update, and deletion of resources.
+         isCorrect: true
+         explanation: Correct. Azure Resource Manager is the deployment and management service for Azure, allowing control over resources.
+       - content: It's a unit of management, billing, and scale in Azure.
+         isCorrect: false
+         explanation: Incorrect. This describes Azure subscriptions, not Azure Resource Manager.
+       - content: It provides a level of scope above subscriptions.
+         isCorrect: false
+         explanation: Incorrect. This is the role of Azure management groups, not Azure Resource Manager.
+    - content: At what levels can Azure Policies be assigned?
+      choices:
+       - content: Management Group
+         isCorrect: false
+         explanation: Incorrect. Azure Policies can be assigned at more levels than just Management Group.
+       - content: Management Group and Subscription
+         isCorrect: false
+         explanation: Incorrect. Azure Policies can be assigned at more levels than just Management Group and Subscription.
+       - content: Management Group, Subscription, and Resource Group
+         isCorrect: true
+         explanation: Correct. Azure Policies can be assigned at the Management Group, Subscription, and Resource Group levels.
+       - content: Subscription and Resource Group
+         isCorrect: false
+         explanation: Incorrect. Azure Policies can be assigned at more levels than just Subscription and Resource Group.
