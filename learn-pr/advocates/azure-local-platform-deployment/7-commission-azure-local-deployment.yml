@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-local-platform-deployment.commission-azure-local-deployment
+metadata:
+  title: Commission the Azure Local Deployment
+  description: Gather independent cloud, local infrastructure, and workload-management evidence to establish acceptance scope and operational handover.
+  ms.date: 10/30/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Commission the Azure Local deployment
+durationInMinutes: 10
+content: |
+  [!include[](includes/7-commission-azure-local-deployment.md)]

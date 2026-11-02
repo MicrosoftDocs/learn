@@ -1,0 +1,54 @@
+### YamlMime:Module
+uid: learn.devrel.azure-local-platform-deployment
+metadata:
+  title: Deploy the Azure Local Platform
+  description: Review Azure Local deployment readiness, validation, orchestration, supported recovery, and acceptance evidence before operational handover.
+  ms.date: 10/30/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: module-standard-concept-based
+  ms.service: azure-local
+  ai-usage: ai-assisted
+title: Deploy the Azure Local platform
+summary: |
+  An Azure Local deployment connects decisions about physical infrastructure, identity, networking, and Azure governance. A successful deployment requires more than a completed wizard: you need evidence that the environment was ready, that orchestration completed correctly, and that operations teams can support the resulting platform.
+
+  In this module, you learn to treat **readiness**, **orchestration**, and **acceptance** as separate engineering responsibilities. You review deployment inputs, distinguish different kinds of validation, investigate a failed operation, and decide whether a system is ready for handover.
+abstract: |
+  After completing this module, you can:
+
+  - Map hardware, identity, network, storage, and Azure prerequisites to their owners and dependent deployment stages.
+  - Review a deployment parameter set without exposing secrets or mistaking validation for deployment.
+  - Explain the relationship between Azure Arc registration, platform orchestration, and workload management.
+  - Diagnose the earliest actionable failure and select a supported recovery boundary.
+  - Establish acceptance from independent Azure, local infrastructure, and workload-management evidence.
+  - Identify when simplified machine provisioning requires a separate preview assessment.
+prerequisites: |
+  - Familiarity with physical servers, virtual machines, networking, and storage.
+  - Basic understanding of Azure resources, permissions, and Windows Server administration.
+  - No Azure subscription, cluster, parameter file, or credentials are required for the paper exercise.
+iconUrl: /training/achievements/generic-badge.svg
+ratingEnabled: false
+levels:
+- intermediate
+roles:
+- administrator
+- solution-architect
+products:
+- azure-local
+subjects:
+- infrastructure
+units:
+- learn.devrel.azure-local-platform-deployment.introduction
+- learn.devrel.azure-local-platform-deployment.azure-local-deployment-boundary
+- learn.devrel.azure-local-platform-deployment.review-deployment-contract
+- learn.devrel.azure-local-platform-deployment.validate-deployment-readiness
+- learn.devrel.azure-local-platform-deployment.lifecycle-orchestration
+- learn.devrel.azure-local-platform-deployment.diagnose-deployment-orchestration-failure
+- learn.devrel.azure-local-platform-deployment.commission-azure-local-deployment
+- learn.devrel.azure-local-platform-deployment.evaluate-simplified-machine-provisioning
+- learn.devrel.azure-local-platform-deployment.exercise-review-deployment-decisions
+- learn.devrel.azure-local-platform-deployment.knowledge-check
+- learn.devrel.azure-local-platform-deployment.summary
+badge:
+  uid: learn.devrel.azure-local-platform-deployment.badge

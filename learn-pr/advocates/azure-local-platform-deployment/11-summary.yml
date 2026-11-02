@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-local-platform-deployment.summary
+metadata:
+  title: Summary
+  description: Review Azure Local deployment gates, supported recovery, independent acceptance evidence, and references for release-specific deployment requirements.
+  ms.date: 10/30/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Summary
+durationInMinutes: 4
+content: |
+  [!include[](includes/11-summary.md)]

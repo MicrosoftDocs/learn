@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-local-platform-deployment.validate-deployment-readiness
+metadata:
+  title: Validate Deployment Readiness
+  description: Distinguish non-deploying template checks from resource-changing readiness validation before authorizing Azure Local deployment.
+  ms.date: 10/30/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Validate deployment readiness
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-validate-deployment-readiness.md)]
