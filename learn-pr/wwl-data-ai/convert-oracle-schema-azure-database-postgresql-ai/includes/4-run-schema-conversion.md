@@ -12,7 +12,7 @@ Before you create a migration project, add a connection to your Azure Database f
 2. Enter the connection details: host, database name, username, and password.
 3. Test and save the connection.
 
-This connection serves as the scratch database for validation and is the target for the generated DDL.
+This connection provides access to the scratch database for conversion validation. Deployment to a separate destination database is a later step.
 
 ### Open a workspace and create a migration project
 
@@ -20,7 +20,7 @@ The Migration Wizard stores all project files, including artifacts, reports, and
 
 1. Create a new folder on your local machine for the migration project.
 2. Open the folder in VS Code as a new workspace (**File** > **Open Folder**).
-3. In the PostgreSQL extension, go to the **Migrations (preview)** panel and select **Create Migration Project**.
+3. In the PostgreSQL extension, go to the **Migrations** panel and select **Create Migration Project**.
 4. Enter a **project name** in the Migration Wizard, then select **Next**.
 
 ### Configure the Oracle connection and load schemas
@@ -28,20 +28,31 @@ The Migration Wizard stores all project files, including artifacts, reports, and
 1. Enter your Oracle connection details: host, port, database or service name, username, and password.
 2. Select **Load Schemas**. The tool tests the connection and, if successful, lists all user-defined schemas available in your Oracle database.
 3. Select one or more schemas to include in the conversion.
-4. Select **Next**.
+4. Select **Next: Discovery**.
 
 The tool selects thin or thick client mode automatically based on your `sqlnet.ora` settings. If your environment requires thick mode and Oracle Instant Client isn't on the `PATH`, the connection fails at this step, a good reason to verify connectivity before opening the wizard.
 
-:::image type="content" source="../media/oracle-connection.png" alt-text="Screenshot of the Migration Wizard Connect to Oracle step with fields for host, port, service name, credentials, and schema selection.":::
+:::image type="content" source="../media/oracle-connection.png" alt-text="Screenshot of the Oracle connection step with redacted connection details, the HR schema selected, and the Next: Discovery button.":::
+
+### Review Discovery
+
+Discovery inventories the source without extracting DDL.
+
+1. Review **Source permissions**. Work with your Oracle database administrator to resolve unsuccessful checks, then select **Refresh Discovery**.
+2. Review **Discovered**, **To be extracted**, **Excluded**, and **Invalid objects**, including supported and unsupported object types.
+3. Review **Dependent schemas**. These references don't mean that the schemas are selected for conversion. If you need to change the scope, select **Previous**, update the schema selection, and review Discovery again.
+4. Select **I have reviewed the objects, exclusions and dependent schemas**, then select **Next: PostgreSQL Connection**.
 
 ### Configure the scratch database
 
 1. Select the Azure Database for PostgreSQL connection you created earlier.
-2. Select the **target database** from the dropdown list.
-3. Select **Next**.
+2. Select an empty or dedicated, unused **target database** from the dropdown list.
+3. Select **Verify Extensions**. If required extensions are missing, allow-list and install them in the selected database, then verify again. You can continue with the warning, but dependent objects might require manual changes.
+4. Select the checkbox acknowledging that schemas matching the selected Oracle schemas are dropped and recreated, deleting their existing objects and data.
+5. Select **Next: Microsoft Foundry Model Configuration**.
 
-> [!NOTE]
-> The tool creates temporary schemas, named with the `_mig_scratch_` prefix, in the selected database to validate converted DDL. These schemas are created and dropped automatically during the conversion run. The connecting user must have `CREATE` privileges on this database.
+> [!WARNING]
+> The tool uses `DROP SCHEMA ... CASCADE`, which can also remove dependent objects in other schemas. Don't select a database containing anything you need to preserve. The connection user needs permission to drop and recreate matching schemas, not just database-level `CREATE`.
 
 ### Configure Microsoft Foundry
 
@@ -59,34 +70,35 @@ The Migration Wizard navigates to the main conversion panel.
 
 The conversion processes objects in dependency-aware batches. Duration depends on schema size and complexity, and on the token-per-minute capacity of your Microsoft Foundry deployment. For large schemas with heavy PL/SQL, this stage can take several minutes to an hour or more.
 
-:::image type="content" source="../media/migration-progress.png" alt-text="Screenshot of the Migration Wizard progress panel showing objects extracted, chunks converted, and a Migration Complete message.":::
+When the run finishes, the project shows **Schema conversion is complete** and **Review conversion summary**.
+
+:::image type="content" source="../media/migration-progress.png" alt-text="Screenshot of completed schema conversion showing extraction and conversion progress and the Review conversion summary action.":::
 
 ## Review what the scratch database validates
 
-During the conversion run, scratch-schema validation confirms that the converted DDL is deployable. It verifies:
+During conversion, the tool attempts compilation and available static checks in the scratch database. These checks can identify:
 
-- **Syntax correctness**, the generated DDL is valid for the target PostgreSQL version
-- **Dependency order**, objects are created in the correct sequence (types before tables, tables before foreign keys, functions before triggers that call them)
-- **Target-version compatibility**, object definitions work with the specific PostgreSQL major version on the scratch server
-- **Extension dependencies**, functions that depend on `orafce` or other extension symbols resolve correctly
+- **Syntax errors** in generated DDL
+- **Unresolved dependencies** between converted objects
+- **Target-version incompatibilities** with the scratch server
+- **Missing extension dependencies**, such as unresolved `orafce` functions
 
-Objects that fail scratch-schema validation are flagged as review tasks rather than silently dropped or partially deployed.
+Review object statuses, definitions, and conversion notes for validation issues. Compilation doesn't test application behavior, and a **Converted** status alone doesn't establish compilation success or deployment readiness.
 
 ## Read the conversion report
 
-After the conversion completes, the tool generates a [set of reports](/azure/postgresql/migrate/oracle-conversions-schema/schema-conversions-reports) in the session folder. Start with `reports/customer_summary.md`.
+After conversion completes, the [HTML conversion report](/azure/postgresql/migrate/oracle-conversions-schema/schema-conversions-reports) opens automatically. Reopen it from **Conversion report** on the **Conversion summary** page, or open `reports/report.html` in the conversion session folder.
 
-The customer summary tells you:
+The **Overall summary** separates the results of each phase:
 
-- **Overall conversion status**: how many objects converted successfully, how many were skipped, and how many are flagged for review
-- **Success percentage**: the proportion of Oracle objects that converted to PostgreSQL DDL without requiring manual intervention
-- **Next actions**: a prioritized list of what to do before deploying
+- **Discovery**: source inventory, including objects planned for extraction, excluded objects, and invalid objects
+- **Extraction**: retrieved definitions, failed extractions, and excluded objects
+- **Conversion**: **Converted** and **Not converted** counts
+- **Conversion rate (%)**: converted objects divided by the conversion total, expressed as a percentage
 
 > [!NOTE]
-> The success percentage reflects automated conversion coverage, not deployment readiness. Objects that convert automatically still require your validation before production. Review tasks represent the work remaining before the schema is ready for production promotion.
+> Discovery, extraction, and conversion can count different objects. Use the report's conversion total, not the discovery or extraction total, as the conversion-rate denominator. The rate doesn't establish equivalent runtime behavior or production readiness.
 
-The `reports/technical_conversion_report.md` provides a detailed breakdown for DBAs and migration engineers: per-object conversion status, DDL snippets, and links to the generated PostgreSQL files.
+Expand **Conversion** and **Object type conversion** to investigate object-level statuses and notes. Review notes for converted objects as well as objects that weren't converted.
 
-The `reports/review_tasks.md` is an offline copy of the review tasks for reference and audit. Resolve tasks from the **Schema Review** pane in VS Code, not from this file.
-
-**After your first conversion run:** Open `reports/customer_summary.md` and note your success percentage and the count of Mandatory review tasks. Use that baseline to plan the review and resolution work in the next stage.
+**After conversion:** Review the HTML report and identify objects that need attention. Use **Conversion Object Explorer** to inspect and correct their definitions in the next stage.
