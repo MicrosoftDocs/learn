@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.sovereignty-policy-initiatives.azure-policy-definitions
+title: Azure Policy definitions
+metadata:
+  title: Azure Policy definitions
+  description: Learn about the Azure Policy definitions.
+  ms.date: 11/02/2026
+  author: salisburysimon
+  ms.author: sidicken
+  ms.topic: unit
+durationInMinutes: 20
+content: |
+  [!include[](includes/05-azure-policy-definitions.md)]
