@@ -2,9 +2,9 @@
 uid: learn.build-with-playwright.introduction-to-playwright
 title: What is Playwright?
 metadata:
-  title: What is Playwright?
+  title: What Is Playwright?
   description: In this module, you learn about Playwright, a library that enables you to automate web browsers. You learn how to set up Playwright, create a new Playwright project, and write your first Playwright test.
-  ms.date: 05/01/2026
+  ms.date: 10/30/2026
   ms.author: orthomas
   author: Orin-Thomas
   ms.topic: unit
