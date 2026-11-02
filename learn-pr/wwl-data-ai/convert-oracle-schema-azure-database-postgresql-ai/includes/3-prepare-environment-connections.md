@@ -13,7 +13,10 @@ The schema conversion capability is built into the [PostgreSQL extension](https:
 
 ## Prepare Azure Database for PostgreSQL flexible server
 
-The tool uses an Azure Database for PostgreSQL flexible server as the scratch database for validation. Prepare a server before you start a conversion.
+The tool uses an Azure Database for PostgreSQL flexible server as the scratch database for validation. Prepare an empty database or a dedicated, unused database before you start a conversion.
+
+> [!WARNING]
+> The tool drops schemas matching the selected Oracle schemas with `DROP SCHEMA ... CASCADE` and recreates them. This deletes their existing objects and data and can remove dependent objects in other schemas. Don't use a database that contains anything you need to preserve.
 
 **Version:** Use PostgreSQL version 15 or later. The tool generates DDL that targets the major version of the scratch server. Use the same major version on the scratch server as on your production target to avoid syntax or feature differences at deployment time.
 
@@ -30,7 +33,7 @@ The tool uses an Azure Database for PostgreSQL flexible server as the scratch da
 | `pg_partman` | Time- and range-based partition management |
 | `pg_stat_statements` | Per-query performance telemetry |
 
-To [allow-list extensions](/azure/postgresql/extensions/how-to-allow-extensions), open the Azure portal, navigate to your Azure Database for PostgreSQL flexible server, select **Server parameters**, search for `azure.extensions`, and add each extension. For extensions such as `pg_partman` and `pg_stat_statements` that require `shared_preload_libraries` entries, a server restart is needed.
+To [allow-list extensions](/azure/postgresql/extensions/how-to-allow-extensions), open the Azure portal, navigate to your Azure Database for PostgreSQL flexible server, select **Server parameters**, search for `azure.extensions`, and add each extension. Configure `shared_preload_libraries` only for features that require it, such as `pg_stat_statements`. For `pg_partman` background maintenance, the library is `pg_partman_bgw`, not `pg_partman`. Restart the server after changing this parameter.
 
 Connect to the scratch database and install each extension:
 
@@ -41,35 +44,33 @@ CREATE EXTENSION IF NOT EXISTS pg_trgm;
 -- Add others as needed for your schema
 ```
 
-**`search_path` configuration:** The `orafce` extension installs Oracle-compatible packages in dedicated schemas (`oracle`, `dbms_*`, `plv*`, `utl_file`). Add those schemas, along with the PostGIS (`topology`, `tiger`) and `pg_cron` (`cron`) schemas, to `search_path` so converted code can reference them without schema qualification. Set it at the database level to persist across sessions:
+**`search_path` configuration:** The `orafce` extension installs Oracle-compatible packages in dedicated schemas (`oracle`, `dbms_*`, `plv*`, `utl_file`). Add the schemas for the extensions you installed to `search_path` so converted code can reference them without schema qualification. The following example includes `orafce` and PostGIS schemas. Set it at the database level, then reconnect for the setting to take effect:
 
 ```sql
 ALTER DATABASE <scratch-db> SET search_path TO
-    public, oracle, topology, tiger, cron,
+    public, oracle, topology, tiger,
     dbms_random, dbms_alert, dbms_assert, dbms_output, dbms_pipe,
     dbms_sql, dbms_utility, plvchr, plvdate, plvlex, plvstr,
     plvsubst, plunit, utl_file;
 ```
 
-**Required privileges:** The PostgreSQL user the tool uses to connect to the scratch database must be able to create and drop objects, and must belong to the `azure_pg_admin` role to create the required extensions.
+**Required privileges:** The PostgreSQL connection user needs `CONNECT` and `CREATE` privileges on the scratch database, permission to drop matching schemas, and permission to create validation objects. Database-level `CREATE` alone doesn't permit dropping a schema owned by another role. Have an administrator with the appropriate extension-installation permissions prepare the required extensions. The conversion account doesn't need to install extensions that are already installed.
 
 > [!NOTE]
-> The connecting user must have `CREATE` privileges on the scratch database and membership in the `azure_pg_admin` role. The tool creates and drops scratch schemas named with the `_mig_scratch_` prefix during the validation stage.
+> Coordinate ownership of matching schemas with your database administrator before conversion.
 
 ## Prepare the source Oracle environment
 
 You need a set of minimum privileges on the Oracle side so the tool can read schema metadata. The tool never queries row-level application data, reading only from the Oracle data dictionary.
 
-Grant the Oracle connection user permission to connect, read the data dictionary, and read the `SYS.ARGUMENT$` catalog. `CONNECT` and the `SYS.ARGUMENT$` grant are always required; for dictionary access, grant either `SELECT_CATALOG_ROLE` or `SELECT ANY DICTIONARY`:
+Arrange the [documented source Oracle privileges](/azure/postgresql/migrate/oracle-conversions-schema/schema-conversions-tutorial#source-oracle-privileges) with your database administrator. They include connection and dictionary access, procedure argument metadata, and session and process limits:
 
 ```sql
--- Always required
 GRANT CONNECT TO <migration_user>;
 GRANT SELECT ON SYS.ARGUMENT$ TO <migration_user>;
-
--- Dictionary access: grant either one of the following
+GRANT SELECT ON SYS.V_$RESOURCE_LIMIT TO <migration_user>;
 GRANT SELECT_CATALOG_ROLE TO <migration_user>;
--- GRANT SELECT ANY DICTIONARY TO <migration_user>;
+GRANT SELECT ANY DICTIONARY TO <migration_user>;
 ```
 
 > [!NOTE]
@@ -103,14 +104,14 @@ If your environment requires thick mode, install Oracle Instant Client before st
 4. Restart VS Code to pick up the updated environment variables.
 
 > [!NOTE]
-> The schema conversion feature isn't supported on ARM64 architecture on either Windows or Linux, in thin or thick mode. Thick client mode additionally requires Oracle Instant Client, which is available on Windows and Linux only.
+> The schema conversion feature isn't supported on ARM64 architecture on either Windows or Linux, in thin or thick mode. For supported platforms and client installation guidance, see [Oracle connectivity modes](/azure/postgresql/migrate/oracle-conversions-schema/schema-conversions-overview#oracle-connectivity-modes).
 
 ## Configure Microsoft Foundry authentication
 
 The tool calls a language model in [Microsoft Foundry](/azure/foundry/what-is-foundry) during the AI-powered transformation stage. You need a Microsoft Foundry resource with a `gpt-5.2` deployment before you run a conversion.
 
 > [!NOTE]
-> Configure your Microsoft Foundry deployment with at least **500,000 tokens per minute (TPM)** for reliable performance on schemas of moderate complexity. Run one conversion project at a time, because concurrent projects compete for the same Foundry quota and can cause throttling or partial conversions.
+> Microsoft recommends a deployment quota greater than **1,000,000 tokens per minute (TPM)** for optimal conversion performance. Run one conversion project at a time, because concurrent projects compete for the same Foundry quota and can cause throttling or partial conversions.
 
 The schema conversion feature itself is free. You're billed only for the Microsoft Foundry tokens each conversion consumes and for the Azure Database for PostgreSQL servers, so downsize or delete the scratch server after the conversion completes. See [Microsoft Foundry pricing](https://azure.microsoft.com/pricing/details/ai-foundry/) and [Azure Database for PostgreSQL pricing](https://azure.microsoft.com/pricing/details/postgresql/flexible-server/).
 
@@ -126,7 +127,7 @@ The tool supports two authentication methods for Microsoft Foundry:
 
 ### Authenticate with an API key
 
-API key authentication uses a deployment-specific key to authorize requests. You provide the endpoint URL and the key in the Migration Wizard. This method is straightforward and suits development and testing scenarios.
+API key authentication uses a Microsoft Foundry resource key to authorize requests. You provide the endpoint URL and the key in the Migration Wizard. This method is straightforward and suits development and testing scenarios.
 
 ### Authenticate with Microsoft Entra ID (recommended for production)
 

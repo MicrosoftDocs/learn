@@ -10,4 +10,4 @@ Your goal is to produce a validated, deployment-ready PostgreSQL schema while ke
 
 Throughout this module, you explore how the AI-powered conversion works, how to prepare your environment, how to run a conversion with the Migration Wizard, and how to triage and resolve the items the tool flags for review. The module focuses on schema object conversion, not row-level data migration or application-code conversion, which separate tools and modules address.
 
-By the end of this module, you can describe how the AI-powered schema conversion pipeline works, prepare an Oracle source and Azure targets for conversion, run the Migration Wizard end to end, and review and resolve conversion tasks to produce a finalized, deployment-ready schema.
+By the end of this module, you can describe how the AI-powered schema conversion pipeline works, prepare an Oracle source and Azure targets for conversion, run the Migration Wizard end to end, and review and correct converted objects to prepare the schema for deployment and independent validation.

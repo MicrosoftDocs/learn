@@ -4,7 +4,7 @@ title: Prepare the environment and connections
 metadata:
   title: Prepare the environment and connections
   description: "Learn how to install the VS Code PostgreSQL extension, configure the Azure Database for PostgreSQL flexible server and Oracle source, choose the right connectivity mode, and set up Microsoft Foundry authentication."
-  ms.date: 07/17/2026
+  ms.date: 11/02/2026
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit

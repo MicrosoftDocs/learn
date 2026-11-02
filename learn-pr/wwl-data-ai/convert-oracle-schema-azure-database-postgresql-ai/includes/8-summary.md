@@ -2,20 +2,20 @@ This module explored the AI-powered Oracle to Azure Database for PostgreSQL sche
 
 ## Review what you learned
 
-- **AI-powered schema conversion pipeline**: The capability combines Foundry language models for DDL translation with deterministic scratch-schema validation and structured review-task generation. AI handles the complex translation work; parsing, metadata extraction, dependency ordering, validation, and script generation remain rule-based and verifiable.
-- **Environment preparation**: A successful conversion requires the PostgreSQL extension installed in VS Code, an Azure Database for PostgreSQL flexible server (version 15 or later) configured with the required extensions and `search_path`, an Oracle source with minimum required privileges, the appropriate Oracle connectivity mode (thin or thick), and a Foundry resource with a `gpt-5.2` deployment.
-- **Running the Migration Wizard**: The Migration Wizard guides you through creating a migration project, loading Oracle schemas, configuring the scratch database and Foundry connection, and running the conversion. Start your review with `reports/customer_summary.md`, which provides the overall conversion status, success percentage, and the next actions for each run.
-- **Reviewing and resolving tasks**: Review tasks are flagged items where human judgment is required. You triage them in the Schema Review pane by criticality, whether Mandatory, Recommended, or Optional, resolve them using GitHub Copilot agent mode or manual edits, and validate each fix against the scratch database before marking it resolved.
-- **Planning around limitations and deploying**: Certain Oracle objects, such as Advanced Queuing, Java in the database, wrapped PL/SQL, system event triggers, database links, and others, are outside the tool's supported scope and require a separate remediation plan. Use `deploy.sql` as the final deployment artifact, and validate the complete schema in a nonproduction environment before promoting to production.
+- **AI-powered schema conversion pipeline**: The capability combines Foundry language models for DDL translation with compilation attempts and available static checks. Discovery inventories source scope without extracting DDL. Metadata extraction, dependency ordering, validation checks, and script generation remain rule-based.
+- **Environment preparation**: Conversion requires the PostgreSQL extension installed in VS Code, an Azure Database for PostgreSQL flexible server (version 15 or later) configured with the required extensions and `search_path`, an Oracle source with the required privileges, the appropriate Oracle connectivity mode, and a Foundry resource with a `gpt-5.2` deployment. Use an empty or dedicated, unused scratch database: matching schemas are dropped with `CASCADE` and recreated.
+- **Running the Migration Wizard**: Review Discovery permissions, exclusions, and dependencies before configuring the scratch database and Foundry connection. After conversion, start with the HTML report, `reports/report.html`. Its conversion rate uses the conversion total, not discovery or extraction counts, and doesn't establish production readiness.
+- **Reviewing and correcting objects**: Inspect both **Converted** and **Not converted** objects in Conversion Object Explorer. Compare definitions and read conversion notes. Use **Ask**, **Fix**, or manual edits, then compile corrections in a nonproduction database where the schema is deployed. Confirm that deployment SQL includes the tested corrections. Rerunning completed conversions isn't supported.
+- **Planning around limitations and deploying**: Some Oracle objects aren't extracted or converted, while others produce partial implementations or placeholders. Follow the generated setup instructions to deploy to a separate nonproduction database, review deployment results, and independently test behavior before production use.
 
-The AI accelerates conversion and focuses your effort where it matters most. The DBA owns the validation, the review-task resolution, and the final production sign out.
+The AI accelerates conversion and focuses your effort where it matters most. The DBA owns validation, object corrections, and the final production sign-off.
 
 ## Learn more
 
 - [Oracle to Azure Database for PostgreSQL flexible server schema conversion overview](/azure/postgresql/migrate/oracle-conversions-schema/schema-conversions-overview)
 - [Tutorial: Convert Oracle schemas to Azure Database for PostgreSQL](/azure/postgresql/migrate/oracle-conversions-schema/schema-conversions-tutorial)
 - [Best practices for Oracle to Azure Database for PostgreSQL schema conversion](/azure/postgresql/migrate/oracle-conversions-schema/schema-conversions-best-practices)
-- [Review tasks and output folders for Oracle to Azure Database for PostgreSQL schema conversion](/azure/postgresql/migrate/oracle-conversions-schema/schema-conversions-review-tasks-artifacts)
-- [Schema conversion reports for Oracle to Azure Database for PostgreSQL](/azure/postgresql/migrate/oracle-conversions-schema/schema-conversions-reports)
+- [Review converted objects in Conversion Object Explorer](/azure/postgresql/migrate/oracle-conversions-schema/schema-conversions-object-explorer)
+- [View the HTML report for Oracle schema conversion](/azure/postgresql/migrate/oracle-conversions-schema/schema-conversions-reports)
 - [Oracle to Azure Database for PostgreSQL schema conversion limitations](/azure/postgresql/migrate/oracle-conversions-schema/schema-conversions-limitations)
 - [FAQ: Oracle to Azure Database for PostgreSQL schema conversion](/azure/postgresql/migrate/oracle-conversions-schema/schema-conversions-faq)

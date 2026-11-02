@@ -3,8 +3,8 @@ uid: learn.wwl.convert-oracle-schema-azure-database-postgresql-ai.review-resolve
 title: Review, resolve, and finalize the converted schema
 metadata:
   title: Review, resolve, and finalize the converted schema
-  description: "Learn how to triage review tasks by criticality in the Schema Review pane, resolve them with GitHub Copilot agent mode or manual edits, navigate conversion artifacts, plan around unsupported objects, and apply best practices before deployment."
-  ms.date: 07/17/2026
+  description: "Learn how to review converted objects in Conversion Object Explorer, correct them with GitHub Copilot agent mode or manual edits, navigate conversion artifacts, plan around conversion limitations, and apply best practices before deployment."
+  ms.date: 11/02/2026
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
