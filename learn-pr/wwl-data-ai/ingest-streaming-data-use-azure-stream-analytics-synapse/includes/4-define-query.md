@@ -1,3 +1,13 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=24e43aec-c608-4348-9815-5c6325f66a45]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
 
 After defining the input(s) and output(s) for your Azure Stream Analytics job, you can define a *query* to process the incoming data from an input and write the results to an output.
 
@@ -66,3 +76,5 @@ HAVING COUNT(*) >= 1
 
 > [!TIP]
 > For more information about common patterns for queries, see [Common query patterns in Azure Stream Analytics](/azure/stream-analytics/stream-analytics-stream-analytics-query-patterns?azure-portal=true) in the Azure Stream Analytics documentation.
+
+::: zone-end

@@ -1,3 +1,13 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=11831951-dc25-42fe-9821-2983368cab40]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
 
 In this module, you've learned how to integrate Azure Stream Analytics and Microsoft Power BI to generate real-time data visualizations.
 
@@ -8,3 +18,5 @@ By using a Power BI output in Azure Stream Analytics, you can send the results o
 
 > [!NOTE]
 > To learn more about real-time visualization in Power BI, see [Real-time streaming in Power BI](/power-bi/connect-data/service-real-time-streaming) in the Power BI documentation.
+
+::: zone-end

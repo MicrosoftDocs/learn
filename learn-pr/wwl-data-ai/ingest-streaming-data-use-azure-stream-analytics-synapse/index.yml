@@ -25,7 +25,7 @@ metadata:
   gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/ingest-streaming-data-use-azure-stream-analytics-synapse/index.yml
   title: Ingest Streaming Data Using Azure Stream Analytics
   description: "Azure Stream Analytics is a fully managed real-time analytics service that you can use to process streaming event data and route results to a range of output destinations for storage, analysis, and visualization."
-  ms.date: 10/12/2026
+  ms.date: 10/31/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: module-standard-task-based
