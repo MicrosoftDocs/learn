@@ -2,7 +2,7 @@ In this module, you learned the core concepts of Playwright for automated end to
 
 * Installed Playwright and ran the example tests.
 * Explored the HTML report.
-* Modified the test directory to see the demo todo tests being run.
+* Grouped the starter tests into a suite and used a `beforeEach` hook to prepare each test.
 * Added a project in the config file to see tests being run on an emulated mobile device.
 * Configured Playwright to run tests with screenshots and traces.
 * Explored the trace viewer.

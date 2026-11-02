@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.sovereignty-confidential-computing.key-components-azure-confidential-computing
+title: Key components of Azure confidential computing
+metadata:
+  title: Key components of Azure confidential computing
+  description: Learn about the key components of Azure confidential computing.
+  ms.date: 11/02/2026
+  author: salisburysimon
+  ms.author: sidicken
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/03-key-components-azure-confidential-computing.md)]

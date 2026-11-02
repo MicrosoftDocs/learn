@@ -27,53 +27,64 @@ If you did test-driven development or end-to-end testing, the structure and form
 Here's how we organize our tests in Playwright.
 
 - Every test() method in that specification is a [Test Case](https://playwright.dev/docs/api/class-testcase). When run in a configuration with multiple projects, each project instantiates a version of this Test Case and configures it to suit project requirements.
-- Every executable statement within the Test Case is a test action that can be tracked in the reporter, trace-viewer, or UI mode tooling flows.
-- Test cases can be grouped explicitly into [Test Suites](https://playwright.dev/docs/api/class-suite) using the `test.describe()` function. You can see an example of this in our *test-examples/demo-todo-app-spec.ts* file. We'll revisit the test cases later.
+- A test contains actions, assertions, and supporting code. Playwright records supported API calls, assertions, fixture activity, and hooks as steps. To give a group of operations a named step in the report, wrap it in [`test.step()`](https://playwright.dev/docs/api/class-test#test-step). Ordinary JavaScript statements aren't automatically recorded as individual actions.
+- Test cases can be grouped explicitly into [Test Suites](https://playwright.dev/docs/api/class-suite) using the `test.describe()` function. You'll group the starter tests into a suite in the following exercise.
 - Test cases are grouped implicitly into Suites based on the project to which they belong and the file in which they're contained, which allows Playwright to target groups of tests in various ways for execution.
 - Every test run has a *Root* suite, with a child *Project* suite for each configured project. Project suites have child *File* suites for each test specification identified for that run. The File suite can have Test Case objects (individual) and Test Suite objects (explicitly grouped using describe) as children.
 
-The `test.describe` directive allows us to group Test Case objects logically in a file so we can do things like apply `beforeEach` and `afterEach` hooks to all tests within a group. See the following snippet from *test-examples/demo-todo-app.spec.ts* for reference:
+### Create a test suite
+
+The `test.describe()` function groups related tests in a file. You can use [test hooks](https://playwright.dev/docs/writing-tests#using-test-hooks), such as `test.beforeEach()`, to prepare the environment before each test in the group.
+
+Replace the contents of `tests/example.spec.ts` with the following code. Don't append it to the existing tests. The suite groups the two starter tests and uses a `beforeEach` hook to open the website before each test.
 
 ```typescript
-test.describe('Mark all as completed', () => {
+import { test, expect } from '@playwright/test';
+
+test.describe('Playwright documentation', () => {
   test.beforeEach(async ({ page }) => {
-    await createDefaultTodos(page);
-    await checkNumberOfTodosInLocalStorage(page, 3);
+    await page.goto('https://playwright.dev/');
   });
 
-  test.afterEach(async ({ page }) => {
-    await checkNumberOfTodosInLocalStorage(page, 3);
+  test('has title', async ({ page }) => {
+    await expect(page).toHaveTitle(/Playwright/);
   });
 
-  test('should allow me to mark all items as completed', async ({ page }) => {
-    // test actions details omitted for clarity
-  });
-
-  test('should allow me to clear the complete state of all items', async ({ page }) => {
-    // test actions details omitted for clarity
-  });
-
-  test('complete all checkbox should update state when items are completed / cleared', async ({ page }) => {
-    // test actions details omitted for clarity
+  test('get started link', async ({ page }) => {
+    await page.getByRole('link', { name: 'Get started' }).click();
+    await expect(
+      page.getByRole('heading', { name: 'Installation' })
+    ).toBeVisible();
   });
 });
 ```
 
+From your `learn-playwright` directory, run the grouped tests on Chromium:
+
+```bash
+npx playwright test tests/example.spec.ts --project=chromium
+```
+
+You should see two passing test executions. Grouping the existing tests into a suite doesn't add test cases. The `beforeEach` hook runs before each test, so both tests start at the website's home page.
+
 ## Understand test structure
 
-We can look at either of the two preceding Test Specification snippets (the first from *example.spec.ts*, the second from *demo-todo-app.spec.ts*) for this discussion. Let's use the second one since it has a bit more detail that is relevant.
+The preceding snippets show the original starter tests and a grouped version of the same tests. Let's use the grouped version for this discussion because it also shows how a setup hook prepares each test.
 
 Playwright tests generally follow the [Arrange-Act-Assert](https://automationpanda.com/2020/07/07/arrange-act-assert-a-pattern-for-writing-good-tests/) pattern:
 
 - **Arrange**: Sets up the environment for the test. This can include providing the right fixtures, but also running `beforeEach`/`beforeAll` hooks that set up the initial state for that test.
 - **Act**: These are the steps within the test that locate the right elements with which to interact, then act on them. For instance, the test might [locate a button](https://playwright.dev/docs/api/class-locator), then [select it](https://playwright.dev/docs/writing-tests). Other actions include check/uncheck (checkboxes), fill (forms), hover (mouseover), focus (on element), press (single key), and so on.
-- **Assert**: These statements validate expected outcomes from the actions. Playwright supports [web-first assertions,](https://playwright.dev/docs/test-assertions) where [generic assertions](https://playwright.dev/docs/api/class-genericassertions) (using expect) can be coupled with [async matchers](https://playwright.dev/docs/api/class-locatorassertions)(for the Locator) to make sure that the target element is ready before evaluating the asserted condition.
+- **Assert**: Assertions check the expected outcome of an action. Playwright's [web-first matchers](https://playwright.dev/docs/test-assertions#auto-retrying-assertions), such as `await expect(locator).toBeVisible()`, repeatedly check the expected condition until it passes or times out. [Generic matchers](https://playwright.dev/docs/api/class-genericassertions), such as `expect(value).toEqual(expected)`, check an already available value and don't automatically retry.
+
+> [!NOTE]
+> Web-first assertions still retry their checks when the test configuration has `retries: 0`. Their [default timeout is five seconds](https://playwright.dev/docs/test-timeouts#expect-timeout) and can be changed through `expect.timeout` in the configuration or an individual assertion's options. Whole-test retries are a separate setting.
 
 Once you understand this, it becomes easier to understand, author, and refine, your test specifications using Playwright tooling.
 
 ## Understand test components
 
-Let's see these concepts in action by reviewing the *tests/example.spec.ts* from earlier in this unit.
+Let's revisit the original, ungrouped starter tests to see how fixtures, locators, and assertions work together. The following code is for comparison only. Keep the grouped version in `tests/example.spec.ts` for the next unit.
 
 ```typescript
 import { test, expect } from '@playwright/test';
@@ -95,9 +106,9 @@ test('get started link', async ({ page }) => {
 });
 ```
 
-1. **Arrange**: There are no explicit hooks in this test spec, however `page` is a [Fixture](https://playwright.dev/docs/test-fixtures) that also supports this goal.
-2. **Act**: `page.goto` is an example of a [Navigation](https://playwright.dev/docs/writing-tests#navigation) action where the browser automates the user action of navigating to that URL.
-3. **Assert**: `expect.(\<locator>).toBeVisible()` is an example of a [LocatorAssertion](https://playwright.dev/docs/api/class-locatorassertions) where Playwright waits for the located element to be ready (using retries) before evaluating the assertion (is it visible?).
+1. **Arrange**: There aren't any explicit hooks in this test spec, however `page` is a [Fixture](https://playwright.dev/docs/test-fixtures) that also supports this goal.
+1. **Act**: `page.goto` is an example of a [Navigation](https://playwright.dev/docs/writing-tests#navigation) action where the browser automates the user action of navigating to that URL.
+1. **Assert**: `await expect(page.getByRole('heading', { name: 'Installation' })).toBeVisible()` is a [locator assertion](https://playwright.dev/docs/api/class-locatorassertions). Playwright repeatedly checks whether the matching heading is visible until the assertion passes or its timeout is reached.
 
 With this simple example, you know three powerful concepts in Playwright Testing:
 

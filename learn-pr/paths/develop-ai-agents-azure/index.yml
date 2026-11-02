@@ -42,7 +42,7 @@ metadata:
     - "Application Architecture"
   gs-solution.area: "Cloud & AI Platforms"
   gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/develop-ai-agents-azure/index.yml
-  title: Develop AI Agents on Azure 
+  title: Develop AI Agents on Azure
   description: Learn how to develop AI agents on Azure using the Microsoft Foundry Agent Service and Microsoft Agent Framework. AI-3026
   ms.date: 02/18/2026
   author: ivorb
@@ -56,27 +56,27 @@ summary: |
   Generative Artificial Intelligence (AI) is becoming more functional and accessible, and AI agents are a key component of this evolution. This learning path will help you understand the AI agents, including when to use them and how to build them, using Microsoft Foundry Agent Service and Microsoft Agent Framework. By the end of this learning path, you will have the skills needed to develop AI agents on Azure.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
-- intermediate
+  - intermediate
 roles:
-- ai-engineer
+  - ai-engineer
 products:
-- foundry-tools
-- microsoft-foundry
+  - foundry-tools
+  - microsoft-foundry
 subjects:
-- artificial-intelligence
-- machine-learning
-- natural-language-processing
+  - artificial-intelligence
+  - machine-learning
+  - natural-language-processing
 modules:
-- learn.wwl.develop-ai-agents-azure-vs-code
-- learn.wwl.build-agent-with-custom-tools
-- learn.wwl.connect-agent-to-mcp-tools
-- learn.wwl.introduction-foundry-iq
-- learn.wwl.integrate-foundry-agent-with-m365
-- learn.wwl.build-agent-workflows-microsoft-foundry
-- learn.wwl.develop-ai-agent-with-semantic-kernel
-- learn.wwl.orchestrate-sk-multi-agent-solution
-- learn.wwl.discover-agents-with-a2a
+  - learn.wwl.develop-ai-agents-azure-vs-code
+  - learn.wwl.build-agent-with-custom-tools
+  - learn.wwl.connect-agent-to-mcp-tools
+  - learn.wwl.introduction-foundry-iq
+  - learn.wwl.get-started-web-iq
+  - learn.wwl.integrate-foundry-agent-with-m365
+  - learn.wwl.build-agent-workflows-microsoft-foundry
+  - learn.wwl.develop-ai-agent-with-semantic-kernel
+  - learn.wwl.orchestrate-sk-multi-agent-solution
+  - learn.wwl.discover-agents-with-a2a
 
 trophy:
   uid: learn.wwl.develop-ai-agents-azure.trophy
-

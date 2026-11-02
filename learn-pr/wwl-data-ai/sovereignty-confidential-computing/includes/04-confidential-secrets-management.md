@@ -1,0 +1,31 @@
+Confidential secrets management is a critical aspect of securing sensitive information in modern cloud applications. With the rapid adoption of cloud technologies, organizations are becoming increasingly concerned about the privacy and security of sensitive data, particularly credentials, encryption keys, and other secrets that are required for accessing cloud services. Azure offers several robust solutions for managing and safeguarding these secrets, ensuring that they remain confidential and accessible only to authorized users and applications. This unit describes Azure Key Vault Managed HSM and Secure Key Release (SKR), and it explains how these tools play a role in managing secrets in a more secure way.
+
+### Manage secrets by using Azure Key Vault
+
+Microsoft Azure Key Vault is a cloud service that provides more secure storage and management of cryptographic keys, secrets, and certificates. Organizations can use Azure Key Vault to control access to sensitive information by setting granular permissions for different applications or users.
+
+One key feature of Azure Key Vault is its ability to provide access policies that define who can access which secrets and under what conditions. Administrators can define [role-based access control (RBAC)](/azure/key-vault/general/rbac-guide?tabs=azure-cli) policies for different users, applications, or service principals, ensuring that only authorized entities can interact with the secrets. This feature is especially important for organizations with a large number of users or services accessing the same secrets. Azure provides integration with Microsoft Entra ID, which makes it easier for organizations to manage identity and access controls, ensuring that only authenticated users and services can retrieve secrets from the Key Vault.
+
+Another significant feature of Azure Key Vault is its ability to handle secret versioning. Organizations can store multiple versions of a secret, and Key Vault automatically manages and tracks the life cycle of these versions. This feature is useful when an organization is updating secrets, such as rotating encryption keys or passwords, without impacting the applications that rely on them. By maintaining version control of secrets, Azure Key Vault ensures that applications can continue using older versions of secrets until they're ready to upgrade to the latest version, reducing the risk of downtime during secret rotations.
+
+Moreover, Azure Key Vault integrates seamlessly with other Azure services, such as Azure DevOps and Azure Kubernetes Service (AKS), allowing secrets to be more securely managed and used in CI/CD pipelines or containerized applications. For example, with Azure Kubernetes Service, an organization can inject secrets directly into containers as environment variables or they can be mounted as files, ensuring that the secrets are always available to applications but remain protected from unauthorized access.
+
+For more information, see [Azure Key Vault](/azure/key-vault/general/overview).
+
+### Manage secrets by using Azure Key Vault Managed HSM
+
+While Azure Key Vault helps provide a highly secure and manageable environment for secrets, Microsoft Azure Key Vault Managed HSM is a solution that provides more security by integrating physical hardware security modules for key storage and management. These hardware security modules are certified to meet rigorous standards, including FIPS 140-2 Level 3 compliance, ensuring that cryptographic operations, such as key generation, signing, and encryption/decryption, are more protected at the highest level.
+
+Azure Key Vault Managed HSM allows organizations to have control of the keys and the policy regarding where and when keys are released based on provided evidence (including the usual RBAC, network, and so on), while delegating the management of the underlying infrastructure to Azure. Azure ensures that the hardware security modules that organizations use in Azure Key Vault Managed HSM are always up to date with the latest security patches and upgrades. Additionally, Managed HSM provides features, such as secure key import/export, backup and restore, and multitenant and multi-region support, to ensure that keys remain available and recoverable in failure or disaster.
+
+For a detailed overview, see [Azure Key Vault Managed HSM](/azure/key-vault/managed-hsm/).
+
+### Secure Key Release
+
+Secure Key Release (SKR) is an essential part of the Azure confidential computing strategy, allowing a more secure handling and release of encryption keys under strict access controls and attestation. SKR works by ensuring that encryption keys aren't exposed to any entity until the environment that they're intended for is validated as secure and trustworthy. This assurance is achieved through a combination of attestation and encryption, ensuring that keys are only made available to processes that run in trusted environments. In practical terms, SKR is a mechanism that allows organizations to implement *just-in-time* key access.
+
+A key use case for SKR is in cloud data storage solutions. Consider a situation where an organization stores sensitive data in Microsoft Azure Blob Storage that's encrypted with a key that's stored in Key Vault. When the application needs to access the data, SKR ensures that the virtual machine or container that runs the application is in a trusted environment, such as a secure enclave or Trusted Execution Environment (TEE), before granting access to the decryption key. This process prevents the key from being exposed in an insecure environment, mitigating the risk of unauthorized access.
+
+SKR also provides audit logs and telemetry, allowing organizations to track and verify when keys were accessed, who accessed them, and whether the environment was properly attested. This audit trail is invaluable for compliance with industry regulations because it provides evidence of key management practices and helps organizations maintain a more secure and compliant environment.
+
+For more information on Secure Key Release and how it integrates with Microsoft Azure Attestation solutions, see [Confidential computing SKR attestation](/azure/confidential-computing/concept-skr-attestation).
