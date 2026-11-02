@@ -1,3 +1,0 @@
-In this module, you learned how Microsoft Web IQ provides current web knowledge for grounding AI agents, and how to configure it and connect it in Microsoft Foundry.
-
-Check out the Web IQ documentation for more information, and continue exploring agent development with us!
