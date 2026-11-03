@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.architecting-code-specifications-ai.deconstruct-feature-request
+title: Deconstruct a feature request
+metadata:
+  title: Deconstruct a Feature Request
+  description: "Learn how to break down feature requests into components and requirements."
+  ms.date: 10/19/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-deconstruct-feature-request.md)]

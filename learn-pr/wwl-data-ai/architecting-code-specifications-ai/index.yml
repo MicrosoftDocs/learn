@@ -1,0 +1,55 @@
+### YamlMime:Module
+uid: learn.wwl.architecting-code-specifications-ai
+metadata:
+  title: Architect Code Specifications for AI
+  description: Learn how to write clear specifications and requirements that work well with AI-assisted development tools.
+  ms.date: 10/19/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: module
+  ms.service: vs-code
+  ai-usage: ai-assisted
+title: Architect code specifications for AI
+summary: Learn how to write clear specifications and requirements that work well with AI-assisted development tools.
+abstract: |
+  After you complete this module, you'll be able to:
+
+  -   Deconstruct feature requests into clear, testable requirements.
+
+  -   Write explicit and detailed specifications for AI understanding.
+
+  -   Define boundaries and edge cases to guide implementation.
+
+  -   Create effective prompts for AI-assisted development.
+
+  -   Collaborate effectively with AI tools using specifications.
+
+prerequisites: |
+  -   Intermediate-level experience with software development
+
+  -   Familiarity with writing requirements and specifications
+
+  -   Understanding of software design concepts
+
+  -   Experience with AI-assisted development tools
+
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+- student
+products:
+- vs-code
+subjects:
+- app-development
+units:
+- learn.wwl.architecting-code-specifications-ai.introduction
+- learn.wwl.architecting-code-specifications-ai.deconstruct-feature-request
+- learn.wwl.architecting-code-specifications-ai.write-explicit-specifications
+- learn.wwl.architecting-code-specifications-ai.define-boundaries-edge-cases
+- learn.wwl.architecting-code-specifications-ai.exercise
+- learn.wwl.architecting-code-specifications-ai.knowledge-check
+- learn.wwl.architecting-code-specifications-ai.summary
+badge:
+  uid: learn.wwl.architecting-code-specifications-ai.badge

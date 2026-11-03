@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.architecting-code-specifications-ai.exercise
+title: Exercise - Write specifications
+metadata:
+  title: Exercise - Write Specifications for AI
+  description: "Practice deconstructing a feature request, writing an explicit specification, and defining edge cases, then use GitHub Copilot to generate code from your specification."
+  ms.date: 10/19/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/5-exercise.md)]

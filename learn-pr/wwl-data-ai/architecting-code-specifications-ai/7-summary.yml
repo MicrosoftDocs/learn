@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.architecting-code-specifications-ai.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "Review what you've learned about architecting code specifications for AI."
+  ms.date: 10/19/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/7-summary.md)]
