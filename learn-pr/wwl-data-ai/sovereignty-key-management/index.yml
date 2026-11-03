@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.wwl.sovereignty-key-management
+metadata:
+ title: Azure key and certificate management
+ description: In this module, you learn about essential concepts for using encryption keys and digital certificates in Azure to help secure cloud workloads and ensure data sovereignty.
+ ms.date: 11/02/2026
+ author: salisburysimon
+ ms.author: sidicken
+ ms.topic: module-standard-concept-based
+ ms.service: azure-key-vault
+title: Azure key and certificate management
+summary: This module provides comprehensive details about managing encryption keys and digital certificates in Azure Key Vault services to help organizations meet stringent data sovereignty requirements.
+abstract: |
+    This module explains the following concepts:
+    - Key encryption and key sovereignty
+    - Azure key management solutions
+    - Best practices for using Azure key management
+    - Azure key management strategies
+    - Certificate management
+prerequisites: |
+ - Knowledge of Azure Fundamentals
+ - Knowledge of Azure Infrastructure Solutions
+ - Knowledge of Microsoft for Sovereignty overview
+iconUrl: /learn/achievements/sovereignty-key-management.svg
+levels:
+- advanced
+roles:
+- solution-architect
+- administrator
+products:
+- azure
+- azure-key-vault
+subjects:
+- security
+units:
+- learn.wwl.sovereignty-key-management.introduction-key-encryption-and-key-sovereignty
+- learn.wwl.sovereignty-key-management.azure-key-management-solutions
+- learn.wwl.sovereignty-key-management.best-practices-azure-key-management
+- learn.wwl.sovereignty-key-management.azure-key-management-strategies
+- learn.wwl.sovereignty-key-management.azure-certificate-management
+- learn.wwl.sovereignty-key-management.check
+- learn.wwl.sovereignty-key-management.summary
+badge:
+  uid: learn.wwl.sovereignty-key-management.badge
