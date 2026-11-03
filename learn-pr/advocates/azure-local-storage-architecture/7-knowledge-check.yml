@@ -1,0 +1,148 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-local-storage-resilience.knowledge-check
+metadata:
+  title: Module Assessment
+  description: Assess your understanding of Azure Local storage architecture, resiliency, capacity, quorum, monitoring, maintenance, and recovery.
+  ms.date: 10/27/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+  module_assessment: true
+title: Module assessment
+durationInMinutes: 12
+content: ""
+quiz:
+  questions:
+  - content: A proposal allocates all 40 TiB of ideal two-way-mirror logical capacity from an 80-TiB pool to current applications. Which review finding is most important?
+    choices:
+    - content: Two-way mirroring always provides 80 TiB of logical capacity.
+      isCorrect: false
+      explanation: Incorrect. Fifty-percent efficiency is the ideal mirror ratio. Physical and logical deductions, growth, and usable repair destinations still have to be budgeted.
+    - content: The plan hasn't accounted for overhead, repair reserve, infrastructure, growth, and reserve placement.
+      isCorrect: true
+      explanation: Correct. Fifty-percent efficiency is the ideal mirror ratio. Physical and logical deductions, growth, and usable repair destinations still have to be budgeted.
+    - content: Deduplication guarantees enough capacity for any missing reserve.
+      isCorrect: false
+      explanation: Incorrect. Fifty-percent efficiency is the ideal mirror ratio. Physical and logical deductions, growth, and usable repair destinations still have to be budgeted.
+  - content: A partition retains cluster quorum, but its storage can't supply sufficient usable data. What does a healthy witness do?
+    choices:
+    - content: It provides the missing workload copy.
+      isCorrect: false
+      explanation: Incorrect. A witness is an arbitration resource. It can't replace missing storage metadata, data copies, or working paths.
+    - content: It overrides the volume's resiliency requirements.
+      isCorrect: false
+      explanation: Incorrect. A witness is an arbitration resource. It can't replace missing storage metadata, data copies, or working paths.
+    - content: It helps establish cluster ownership but can't make unavailable data readable.
+      isCorrect: true
+      explanation: Correct. A witness is an arbitration resource. It can't replace missing storage metadata, data copies, or working paths.
+  - content: A proposal combines a 4+4 hyperconverged rack-aware cluster, 4-millisecond inter-rack round-trip time, and external ReFS CSVs. The designer cites the SAN preview's 5-millisecond allowance. What should you conclude?
+    choices:
+    - content: The design combines incompatible requirements from different architectures.
+      isCorrect: true
+      explanation: Correct. Hyperconverged rack awareness requires at most 1 millisecond and excludes attached external arrays. The SAN preview has separate transport, filesystem, and witness requirements.
+    - content: The design is valid because both architectures use two racks.
+      isCorrect: false
+      explanation: Incorrect. Hyperconverged rack awareness requires at most 1 millisecond and excludes attached external arrays. The SAN preview has separate transport, filesystem, and witness requirements.
+    - content: Adding a disk witness makes the local-drive design valid.
+      isCorrect: false
+      explanation: Incorrect. Hyperconverged rack awareness requires at most 1 millisecond and excludes attached external arrays. The SAN preview has separate transport, filesystem, and witness requirements.
+  - content: An ordinary three-node cluster uses three-way mirroring. Two nodes fail, leaving one data copy. Which statement is correct?
+    choices:
+    - content: One remaining copy guarantees that the cluster and pool stay operational.
+      isCorrect: false
+      explanation: Incorrect. Three-way mirroring's data protection doesn't override the operating requirements of an ordinary three-node cluster and its storage pool.
+    - content: Data-copy survival is only one condition. Cluster and pool quorum can still prevent operation.
+      isCorrect: true
+      explanation: Correct. Three-way mirroring's data protection doesn't override the operating requirements of an ordinary three-node cluster and its storage pool.
+    - content: Dynamic quorum guarantees survival of any simultaneous two-node failure.
+      isCorrect: false
+      explanation: Incorrect. Three-way mirroring's data protection doesn't override the operating requirements of an ordinary three-node cluster and its storage pool.
+  - content: A LUN has four reported paths, but all four traverse the same switch. What can you conclude?
+    choices:
+    - content: The data exists as four independent copies.
+      isCorrect: false
+      explanation: Incorrect. All routes share a switch failure domain. MPIO paths are access routes, not replicas.
+    - content: The switch can fail without affecting storage access.
+      isCorrect: false
+      explanation: Incorrect. All routes share a switch failure domain. MPIO paths are access routes, not replicas.
+    - content: The path count doesn't establish independence from that switch failure.
+      isCorrect: true
+      explanation: Correct. All routes share a switch failure domain. MPIO paths are access routes, not replicas.
+  - content: Using the capacity example in this module, what's the approximate budget for current workloads after 2 TiB physical overhead, 10 TiB physical reserve, three-way mirroring, 1 TiB logical infrastructure, and 3 TiB logical growth?
+    choices:
+    - content: 18.7 TiB.
+      isCorrect: true
+      explanation: Correct. `(80 - 2 - 10) / 3 - 1 - 3` is approximately 18.7 TiB. The 22.7-TiB value precedes the logical deductions.
+    - content: 22.7 TiB.
+      isCorrect: false
+      explanation: Incorrect. `(80 - 2 - 10) / 3 - 1 - 3` is approximately 18.7 TiB. The 22.7-TiB value precedes the logical deductions.
+    - content: 64 TiB.
+      isCorrect: false
+      explanation: Incorrect. `(80 - 2 - 10) / 3 - 1 - 3` is approximately 18.7 TiB. The 22.7-TiB value precedes the logical deductions.
+  - content: A ReFS deduplication job has reached its 30-minute limit. What's the correct completion decision?
+    choices:
+    - content: Assume that the volume is fully optimized because the duration elapsed.
+      isCorrect: false
+      explanation: Incorrect. Runtime isn't full-completion evidence. Disabling deduplication also doesn't reverse all optimization already performed.
+    - content: Inspect ReFS job status, actual savings, workload impact, storage health, and the approved schedule state.
+      isCorrect: true
+      explanation: Correct. Runtime isn't full-completion evidence. Disabling deduplication also doesn't reverse all optimization already performed.
+    - content: Run `Disable-ReFSDedup` to restore every block to its original physical layout.
+      isCorrect: false
+      explanation: Incorrect. Runtime isn't full-completion evidence. Disabling deduplication also doesn't reverse all optimization already performed.
+  - content: A rack-aware volume retains usable data after a zone failure, but a VM has strict placement in the failed zone. What should you expect?
+    choices:
+    - content: The witness stores and starts a replacement VM.
+      isCorrect: false
+      explanation: Incorrect. Strict placement prevents cross-zone failover. Intact storage doesn't create an eligible execution destination.
+    - content: Storage protection automatically removes the placement restriction.
+      isCorrect: false
+      explanation: Incorrect. Strict placement prevents cross-zone failover. Intact storage doesn't create an eligible execution destination.
+    - content: The VM doesn't fail over to the other zone. Recovery depends on the application and placement design.
+      isCorrect: true
+      explanation: Correct. Strict placement prevents cross-zone failover. Intact storage doesn't create an eligible execution destination.
+  - content: A node returns after an outage and reports `Up`, but storage resynchronization is still active. Another node is scheduled for maintenance. What should you do?
+    choices:
+    - content: Continue because node reachability proves that protection is restored.
+      isCorrect: false
+      explanation: Incorrect. A reachable node can still contain stale copies. Complete storage recovery and confirm the required operating conditions before further maintenance.
+    - content: Wait for resynchronization and the other required health and placement conditions before reducing protection again.
+      isCorrect: true
+      explanation: Correct. A reachable node can still contain stale copies. Complete storage recovery and confirm the required operating conditions before further maintenance.
+    - content: Reformat the returning node's data drives to remove stale copies.
+      isCorrect: false
+      explanation: Incorrect. A reachable node can still contain stale copies. Complete storage recovery and confirm the required operating conditions before further maintenance.
+  - content: A CSV uses ReFS. What can you conclude about checksums?
+    choices:
+    - content: Every file has data checksums enabled because the volume uses ReFS.
+      isCorrect: false
+      explanation: Incorrect. Metadata protection and file-data integrity streams are distinct. Valid checksums also don't establish that an application change was desirable.
+    - content: Checksums can reverse an accidental deletion replicated to every copy.
+      isCorrect: false
+      explanation: Incorrect. Metadata protection and file-data integrity streams are distinct. Valid checksums also don't establish that an application change was desirable.
+    - content: ReFS checksums metadata, but file-data checksum coverage depends on integrity streams and must be assessed for the workload.
+      isCorrect: true
+      explanation: Correct. Metadata protection and file-data integrity streams are distinct. Valid checksums also don't establish that an application change was desirable.
+  - content: An Azure dashboard still shows the previous healthy state after telemetry stops arriving. What should the operator conclude?
+    choices:
+    - content: The current condition is unknown from that dashboard, so local evidence and the monitoring interruption need investigation.
+      isCorrect: true
+      explanation: Correct. Old observations don't establish current health. Missing telemetry is a separate condition that requires investigation.
+    - content: No new samples mean that no new storage faults occurred.
+      isCorrect: false
+      explanation: Incorrect. Old observations don't establish current health. Missing telemetry is a separate condition that requires investigation.
+    - content: The missing telemetry proves that the storage pool has failed.
+      isCorrect: false
+      explanation: Incorrect. Old observations don't establish current health. Missing telemetry is a separate condition that requires investigation.
+  - content: An accidental deletion reaches every synchronous replica, but the storage system remains healthy. Which action addresses the lost data?
+    choices:
+    - content: Rebalance data across the remaining drives.
+      isCorrect: false
+      explanation: Incorrect. Repair and rebalancing preserve current data rather than undoing a deletion. Recovery needs an appropriate earlier or otherwise known-good source.
+    - content: Move the CSV to another owner node.
+      isCorrect: false
+      explanation: Incorrect. Repair and rebalancing preserve current data rather than undoing a deletion. Recovery needs an appropriate earlier or otherwise known-good source.
+    - content: Recover from an appropriate known-good recovery point or application-supported recovery mechanism.
+      isCorrect: true
+      explanation: Correct. Repair and rebalancing preserve current data rather than undoing a deletion. Recovery needs an appropriate earlier or otherwise known-good source.

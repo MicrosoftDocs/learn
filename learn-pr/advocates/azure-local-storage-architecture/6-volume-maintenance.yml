@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-local-storage-resilience.volume-maintenance
+metadata:
+  title: Azure Local Volume Maintenance
+  description: Plan controlled Azure Local volume maintenance, including expansion, ownership changes, safe retirement, and deduplication job management.
+  ms.date: 10/27/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Azure Local volume maintenance
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-volume-maintenance.md)]

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-local-storage-resilience.storage-resiliency-options
+metadata:
+  title: Storage Resiliency Options
+  description: Compare mirror and parity layouts, explain data integrity, and calculate physical capacity, logical allocations, growth, and repair reserve.
+  ms.date: 10/27/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Storage resiliency options
+durationInMinutes: 13
+content: |
+  [!include[](includes/3-storage-resiliency-options.md)]
