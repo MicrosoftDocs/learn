@@ -1,0 +1,185 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="1000" viewBox="0 0 1100 1000" role="img" aria-labelledby="diagram-title diagram-description" style="background: white; background-color: #ffffff">
+  <title id="diagram-title">Acceptance needs three independent gates</title>
+  <desc id="diagram-description">Three independent evidence pillars feed a handover decision. Cloud evidence requires a completed operation and current Arc and extension status. Local infrastructure evidence requires verified membership and quorum plus healthy storage and network. Workload management evidence requires a ready bridge and extension and approved image, network and storage paths. All required gates must pass; record exceptions and operational owners. Platform acceptance is not application certification.</desc>
+  <rect id="canvas-background" x="0" y="0" width="1100" height="1000" fill="#ffffff" opacity="1" data-role="canvas-background" />
+  <defs>
+    <marker id="management-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#426789" />
+    </marker>
+  </defs>
+  <text x="48" y="62" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="600" fill="#172b4d" data-role="diagram-heading">Acceptance needs three independent gates</text>
+  <text x="48" y="104" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="400" fill="#172b4d" data-role="reading-order">Read evidence pillars 1–3 from left to right, then make decision 4.</text>
+  <g data-card="1-cloud">
+    <rect x="48" y="152" width="312" height="420" rx="12" fill="#f3f8fd" stroke="#9bb3c8" stroke-width="1.5" data-role="card-boundary" />
+    <circle cx="88" cy="198" r="22" fill="#005a9e" data-role="number-badge" />
+    <text x="88" y="206" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#ffffff" data-role="stage-number" text-anchor="middle">1</text>
+    <svg width="48" height="48" viewBox="0 0 18 18" x="284" y="174" aria-hidden="true" focusable="false" data-source-icon="management + governance\00756-icon-service-Azure-Arc.svg">
+      <defs>
+        <linearGradient id="pillar-1-b69d2150-b4da-460b-99ae-a9f5a961b313" x1="-1194.321" y1="9.128" x2="-1190.755" y2="9.128" gradientTransform="matrix(-1, 0, 0, 1, -1179.887, 0)" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#32bedd" />
+          <stop offset="0.998" stop-color="#9cebff" stop-opacity="0.5" />
+        </linearGradient>
+        <linearGradient id="pillar-1-e690cc62-d1a2-4325-90ca-ac2fe51a5b58" x1="80.363" y1="9.135" x2="83.929" y2="9.135" gradientTransform="translate(-76.796)" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#005ba1" />
+          <stop offset="0.998" stop-color="#005ba1" stop-opacity="0" />
+        </linearGradient>
+        <linearGradient id="pillar-1-ff649864-6b4c-4fa8-bcca-c12b2b910f3c" x1="3.555" y1="9.326" x2="14.434" y2="9.326" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#005ba1" />
+          <stop offset="0.974" stop-color="#32bedd" />
+        </linearGradient>
+      </defs>
+      <g id="pillar-1-a826c017-5e9e-4208-897f-2ade2eb58cd6">
+        <polygon points="7.132 4.469 3.567 6.542 0 4.468 3.567 2.395 7.132 4.469" fill="#5ea0ef" />
+        <polygon points="7.132 13.794 3.566 11.735 3.566 15.867 7.132 13.794" fill="#005ba1" />
+        <polygon points="3.567 6.542 3.566 6.541 3.566 6.542 0 4.468 0 13.801 3.566 15.874 7.132 13.801 7.132 13.794 3.566 15.867 3.566 11.735 7.132 13.794 7.132 4.469 3.567 6.542" fill="#0078d4" />
+        <polygon points="10.868 4.469 14.433 6.542 18 4.468 14.433 2.395 10.868 4.469" fill="#9cebff" />
+        <polygon points="10.868 13.794 14.434 11.735 14.434 15.867 10.868 13.794" fill="#32bedd" />
+        <polygon points="14.433 6.535 14.434 6.535 14.434 6.535 14.434 11.728 10.868 13.794 10.868 4.462 14.433 6.535" fill="url(#pillar-1-b69d2150-b4da-460b-99ae-a9f5a961b313)" />
+        <polygon points="10.868 4.469 14.433 6.542 18 4.468 14.433 2.395 10.868 4.469" fill="#9cebff" />
+        <polygon points="14.433 6.542 10.868 4.469 10.868 13.794 14.434 11.735 14.434 15.867 10.868 13.794 10.868 13.801 14.434 15.874 18 13.801 18 4.468 18 4.468 14.433 6.542" fill="#50e6ff" />
+        <polygon points="10.868 13.794 14.434 11.735 14.434 15.867 10.868 13.794" fill="#32bedd" />
+        <polygon points="14.433 6.535 14.434 6.535 14.434 6.535 14.434 11.728 10.868 13.794 10.868 4.462 14.433 6.535" fill="url(#pillar-1-b69d2150-b4da-460b-99ae-a9f5a961b313)" />
+        <polygon points="3.567 6.541 3.566 6.541 3.566 6.541 3.566 11.734 7.132 13.801 7.132 4.469 3.567 6.541" fill="url(#pillar-1-e690cc62-d1a2-4325-90ca-ac2fe51a5b58)" />
+        <path d="M14.423,10.126c-.624,1.556-3.066,2.584-5.348,2.584l-.081,0-.08,0c-2.282,0-4.724-1.028-5.348-2.584,0,0-.025-1.561,0-1.713C4.02,10.15,6.4,11.435,8.859,11.435l.135,0,.136,0c2.455,0,4.839-1.285,5.293-3.022C14.448,8.565,14.423,10.126,14.423,10.126ZM13.4,5.942A6.653,6.653,0,0,1,9.13,7.416l-.136,0-.135,0a6.656,6.656,0,0,1-4.267-1.47l-.856.5C4.553,7.809,6.8,8.69,8.914,8.69h.161c2.115,0,4.366-.883,5.181-2.251Z" fill="url(#pillar-1-ff649864-6b4c-4fa8-bcca-c12b2b910f3c)" />
+      </g>
+    </svg>
+    <text x="72" y="265" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="600" fill="#172b4d" data-role="card-heading">Cloud</text>
+    <text x="72" y="307" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="600" fill="#172b4d" data-role="card-heading">evidence</text>
+    <text x="72" y="351" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="400" fill="#172b4d" data-role="body">Operation complete</text>
+    <text x="72" y="395" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="400" fill="#172b4d" data-role="body">Arc and extension</text>
+    <text x="72" y="431" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="400" fill="#172b4d" data-role="body">status current</text>
+    <text x="72" y="547" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="600" fill="#005a9e" data-role="body">Independent evidence</text>
+  </g>
+  <g data-card="2-local">
+    <rect x="394" y="152" width="312" height="420" rx="12" fill="#eff9f8" stroke="#8ab6b1" stroke-width="1.5" data-role="card-boundary" />
+    <circle cx="434" cy="198" r="22" fill="#006c70" data-role="number-badge" />
+    <text x="434" y="206" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#ffffff" data-role="stage-number" text-anchor="middle">2</text>
+    <svg width="48" height="48" viewBox="0 0 18 18" x="630" y="174" aria-hidden="true" focusable="false" data-source-icon="management + governance\01710-icon-service-Arc-Machines.svg">
+      <defs>
+        <linearGradient id="pillar-2-bf5fc184-d6f4-42f0-ac55-f069b76e3064" x1="9.004" x2="9.004" y2="13.433" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#a67af4" />
+          <stop offset="0.999" stop-color="#773adc" />
+        </linearGradient>
+      </defs>
+      <g id="pillar-2-f0be493b-fc10-49e5-8c1a-711b8b850a0b">
+        <g>
+          <path d="M17.547,15.2c-.161.7-1.035,1.391-2.617,1.928a21.589,21.589,0,0,1-12.121.017C1.352,16.627.566,15.971.443,15.3c-.021-.118,0-1.966,0-1.966l17.131-.159S17.566,15.11,17.547,15.2Z" fill="#5ea0ef" />
+          <ellipse cx="9.001" cy="13.295" rx="8.573" ry="2.964" transform="translate(-0.133 0.091) rotate(-0.575)" fill="#50e6ff" />
+        </g>
+        <path d="M13.364,12.978a.482.482,0,0,1-.5.455H5.146a.482.482,0,0,1-.5-.455V.456A.48.48,0,0,1,5.146,0h7.715a.481.481,0,0,1,.5.455Z" fill="url(#pillar-2-bf5fc184-d6f4-42f0-ac55-f069b76e3064)" />
+        <path d="M11.212,6.791H6.872a1,1,0,0,1-.947-1.044h0A1,1,0,0,1,6.872,4.7h4.34a1,1,0,0,1,.948,1.045A1,1,0,0,1,11.212,6.791ZM12.16,2.64A1,1,0,0,0,11.212,1.6H6.872A1,1,0,0,0,5.925,2.64h0a1,1,0,0,0,.947,1.045h4.34A1,1,0,0,0,12.16,2.64Z" fill="#552f99" />
+        <path d="M10.94,1.939a.7.7,0,1,1-.7.7A.7.7,0,0,1,10.94,1.939Zm-.7,3.8a.7.7,0,1,0,.7-.7A.7.7,0,0,0,10.239,5.743Z" fill="#50e6ff" />
+      </g>
+    </svg>
+    <text x="418" y="265" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="600" fill="#172b4d" data-role="card-heading">Local</text>
+    <text x="418" y="307" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="600" fill="#172b4d" data-role="card-heading">infrastructure</text>
+    <text x="418" y="351" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="400" fill="#172b4d" data-role="body">Membership and</text>
+    <text x="418" y="387" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="400" fill="#172b4d" data-role="body">quorum verified</text>
+    <text x="418" y="427" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="400" fill="#172b4d" data-role="body">Storage and network</text>
+    <text x="418" y="463" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="400" fill="#172b4d" data-role="body">healthy</text>
+    <text x="418" y="547" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="600" fill="#006c70" data-role="body">Independent evidence</text>
+  </g>
+  <g data-card="3-workload">
+    <rect x="740" y="152" width="312" height="420" rx="12" fill="#f7f3fc" stroke="#b3a5cf" stroke-width="1.5" data-role="card-boundary" />
+    <circle cx="780" cy="198" r="22" fill="#63409c" data-role="number-badge" />
+    <text x="780" y="206" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#ffffff" data-role="stage-number" text-anchor="middle">3</text>
+    <svg width="48" height="48" viewBox="0 0 18 18" x="976" y="174" aria-hidden="true" focusable="false" data-source-icon="other\01088-icon-service-Arc-Kubernetes.svg">
+      <defs>
+        <linearGradient id="pillar-3-aaf476de-04bc-4af8-98cc-e67929dccd20" x1="3.875" y1="2.197" x2="8.777" y2="2.197" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#b77af4" />
+          <stop offset="1" stop-color="#773adc" />
+        </linearGradient>
+        <linearGradient id="pillar-3-e2e768ca-2bc9-4c3d-bc33-6349d8f4731f" x1="9.171" y1="2.24" x2="14.064" y2="2.24" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#b77af4" />
+          <stop offset="1" stop-color="#773adc" />
+        </linearGradient>
+        <linearGradient id="pillar-3-e88f099b-e35f-4e7e-a2c4-1e9fb9b22f53" x1="1.368" y1="6.8" x2="6.27" y2="6.8" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#b77af4" />
+          <stop offset="1" stop-color="#773adc" />
+        </linearGradient>
+        <linearGradient id="pillar-3-b2b9a9f5-c49e-4bc8-976b-c01464f17c56" x1="6.647" y1="6.77" x2="11.54" y2="6.77" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#b77af4" />
+          <stop offset="1" stop-color="#773adc" />
+        </linearGradient>
+        <linearGradient id="pillar-3-e01d8424-0958-4929-b1f6-dbe2af45d956" x1="11.925" y1="6.808" x2="16.828" y2="6.808" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#b77af4" />
+          <stop offset="1" stop-color="#773adc" />
+        </linearGradient>
+        <linearGradient id="pillar-3-aa78596d-0840-4d8e-a3f2-11a5bc47f254" x1="3.815" y1="11.454" x2="8.717" y2="11.454" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#b77af4" />
+          <stop offset="1" stop-color="#773adc" />
+        </linearGradient>
+        <linearGradient id="pillar-3-e6e3eec0-8e51-48fe-a516-00fa6f1954af" x1="9.102" y1="11.488" x2="14.004" y2="11.488" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#b77af4" />
+          <stop offset="1" stop-color="#773adc" />
+        </linearGradient>
+      </defs>
+      <g id="pillar-3-bf1543c9-de56-4176-b371-2d59f0335c50">
+        <path d="M17.947,15.105c-.167.733-1.083,1.456-2.738,2.018a22.6,22.6,0,0,1-12.69.018C.994,16.6.171,15.917.042,15.213c-.022-.124,0-2.058,0-2.058l17.935-.166S17.968,15.015,17.947,15.105Z" fill="#5ea0ef" />
+        <ellipse cx="9.001" cy="13.115" rx="8.976" ry="3.103" transform="translate(-0.131 0.091) rotate(-0.575)" fill="#50e6ff" />
+        <polygon points="6.322 0.041 3.875 0.494 3.875 3.831 6.322 4.353 8.777 3.369 8.777 0.879 6.322 0.041" fill="url(#pillar-3-aaf476de-04bc-4af8-98cc-e67929dccd20)" />
+        <path d="M6.416,4.3,8.657,3.4a.173.173,0,0,0,.1-.12V1.016A.181.181,0,0,0,8.649.862L6.382.092h-.1L4.055.5a.17.17,0,0,0-.129.154v3.02a.164.164,0,0,0,.129.163l2.25.47A.261.261,0,0,0,6.416,4.3Z" fill="none" />
+        <polygon points="11.617 0.084 9.171 0.537 9.171 3.874 11.617 4.396 14.064 3.403 14.064 0.922 11.617 0.084" fill="url(#pillar-3-e2e768ca-2bc9-4c3d-bc33-6349d8f4731f)" />
+        <polygon points="3.815 4.644 1.368 5.097 1.368 8.434 3.815 8.956 6.27 7.972 6.27 5.482 3.815 4.644" fill="url(#pillar-3-e88f099b-e35f-4e7e-a2c4-1e9fb9b22f53)" />
+        <polygon points="9.094 4.609 6.647 5.063 6.647 8.399 9.094 8.93 11.54 7.937 11.54 5.448 9.094 4.609" fill="url(#pillar-3-b2b9a9f5-c49e-4bc8-976b-c01464f17c56)" />
+        <polygon points="14.372 4.652 11.925 5.106 11.925 8.442 14.372 8.964 16.828 7.98 16.828 5.491 14.372 4.652" fill="url(#pillar-3-e01d8424-0958-4929-b1f6-dbe2af45d956)" />
+        <polygon points="6.262 9.298 3.815 9.743 3.815 13.079 6.262 13.61 8.717 12.617 8.717 10.136 6.262 9.298" fill="url(#pillar-3-aa78596d-0840-4d8e-a3f2-11a5bc47f254)" />
+        <path d="M6.356,13.541l2.233-.855a.156.156,0,0,0,.1-.154V10.307a.171.171,0,0,0-.112-.188l-2.258-.77a.152.152,0,0,0-.1,0L4,9.751a.163.163,0,0,0-.137.163v3.028a.163.163,0,0,0,.128.163l2.25.436A.189.189,0,0,0,6.356,13.541Z" fill="none" />
+        <polygon points="11.549 9.332 9.102 9.785 9.102 13.122 11.549 13.644 14.004 12.66 14.004 10.17 11.549 9.332" fill="url(#pillar-3-e6e3eec0-8e51-48fe-a516-00fa6f1954af)" />
+        <path d="M3.875.494V3.831l2.472.522V.075Zm1.044,3.08-.693-.137V.871L4.919.76ZM6,3.771l-.8-.128V.708L6,.571ZM9.171.537V3.874l2.455.522V.118Zm1.035,3.08L9.513,3.48V.914L10.206.8Zm1.078.2-.8-.128V.751l.8-.145ZM1.36,5.1V8.408l2.472.522V4.652ZM2.4,8.186,1.7,8.04V5.474l.693-.12Zm1.086.222L2.686,8.28V5.311l.8-.137ZM6.647,5.063V8.408l2.464.522V4.652ZM7.682,8.151l-.693-.145V5.439l.693-.119ZM8.76,8.34l-.8-.129V5.277l.8-.137Zm3.165-3.234v3.3L14.4,8.93V4.652Zm1.044,3.088-.693-.145V5.482l.693-.12Zm1.078.188-.795-.128V5.32l.8-.137ZM3.815,9.743v3.336l2.473.531V9.264Zm1.044,3.088-.693-.145V10.119L4.859,10Zm1.078.2-.8-.128V9.957l.8-.137ZM9.1,9.785v3.337l2.473.522V9.366Zm1.044,3.089-.693-.146V10.162l.693-.12Zm1.078.188-.8-.128V10l.8-.137Z" fill="#341a6e" />
+      </g>
+    </svg>
+    <text x="764" y="265" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="600" fill="#172b4d" data-role="card-heading">Workload</text>
+    <text x="764" y="307" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="600" fill="#172b4d" data-role="card-heading">management</text>
+    <text x="764" y="351" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="400" fill="#172b4d" data-role="body">Bridge and extension</text>
+    <text x="764" y="387" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="400" fill="#172b4d" data-role="body">ready</text>
+    <text x="764" y="427" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="400" fill="#172b4d" data-role="body">Approved image,</text>
+    <text x="764" y="463" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="400" fill="#172b4d" data-role="body">network, and storage</text>
+    <text x="764" y="499" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="400" fill="#172b4d" data-role="body">paths ready</text>
+    <text x="764" y="547" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="600" fill="#63409c" data-role="body">Independent evidence</text>
+  </g>
+  <line id="cloud-evidence-to-handover" x1="204" x2="204" y1="584" y2="679" stroke="#426789" stroke-width="2.5" marker-end="url(#management-arrow)" data-role="connector" />
+  <line id="local-evidence-to-handover" x1="550" x2="550" y1="584" y2="679" stroke="#426789" stroke-width="2.5" marker-end="url(#management-arrow)" data-role="connector" />
+  <line id="workload-evidence-to-handover" x1="896" x2="896" y1="584" y2="679" stroke="#426789" stroke-width="2.5" marker-end="url(#management-arrow)" data-role="connector" />
+  <g data-card="4-handover-decision">
+    <rect x="48" y="692" width="1004" height="208" rx="12" fill="#f2f7fc" stroke="#9bb3c8" stroke-width="1.5" data-role="card-boundary" />
+    <circle cx="88" cy="736" r="22" fill="#005a9e" data-role="number-badge" />
+    <text x="88" y="744" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#ffffff" data-role="stage-number" text-anchor="middle">4</text>
+    <text x="132" y="744" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="600" fill="#172b4d" data-role="card-heading">Handover decision</text>
+    <svg id="card-4-e4e764cd-2e73-472f-b88a-bf8bfc2c2994" width="46" height="46" viewBox="0 0 18 18" x="976" y="715" aria-hidden="true" focusable="false" data-source-icon="management + governance\00001-icon-service-Monitor.svg">
+      <defs>
+        <radialGradient id="card-4-ac8b32da-30ca-4b92-8d0f-8d2d5ef278a0" cx="5.72" cy="7.45" r="8.42" gradientTransform="translate(3.23 1.51) scale(1.01 1.01)" gradientUnits="userSpaceOnUse">
+          <stop offset="0.18" stop-color="#5ea0ef" />
+          <stop offset="0.56" stop-color="#5c9fee" />
+          <stop offset="0.69" stop-color="#559ced" />
+          <stop offset="0.78" stop-color="#4a97e9" />
+          <stop offset="0.86" stop-color="#3990e4" />
+          <stop offset="0.93" stop-color="#2387de" />
+          <stop offset="0.99" stop-color="#087bd6" />
+          <stop offset="1" stop-color="#0078d4" />
+        </radialGradient>
+        <radialGradient id="card-4-a9954820-cb38-4943-9842-f0a568d2b015" cx="28.18" cy="202.29" r="2.7" gradientTransform="translate(-17.77 -185.01) scale(0.95)" gradientUnits="userSpaceOnUse">
+          <stop offset="0.19" stop-color="#8c8e90" />
+          <stop offset="0.35" stop-color="#848688" />
+          <stop offset="0.6" stop-color="#6e7071" />
+          <stop offset="0.91" stop-color="#4a4b4c" />
+          <stop offset="1" stop-color="#3e3f3f" />
+        </radialGradient>
+      </defs>
+      <title>Icon-manage-317</title>
+      <ellipse cx="9" cy="9" rx="8.5" ry="8.47" fill="url(#card-4-ac8b32da-30ca-4b92-8d0f-8d2d5ef278a0)" />
+      <ellipse cx="9" cy="9" rx="7.4" ry="7.37" fill="#fff" />
+      <path d="M2.72,9.44a6.24,6.24,0,0,0,1.82,4l2-2a3.53,3.53,0,0,1-1-2Z" fill="#9cebff" />
+      <path d="M13.13,4.27A6.25,6.25,0,0,0,9.44,2.74V5.53a3.41,3.41,0,0,1,1.71.7Z" fill="#32bedd" />
+      <path d="M4.87,4.27l2,2a3.41,3.41,0,0,1,1.71-.7V2.74A6.25,6.25,0,0,0,4.87,4.27Z" fill="#32bedd" />
+      <path d="M11.78,6.85a3.6,3.6,0,0,1,.71,1.71h2.79a6.16,6.16,0,0,0-1.53-3.67Z" fill="#32bedd" />
+      <path d="M6.22,6.85l-2-2A6.16,6.16,0,0,0,2.72,8.56H5.51A3.6,3.6,0,0,1,6.22,6.85Z" fill="#50e6ff" />
+      <path d="M14.14,7a.45.45,0,0,0-.57-.25L9.45,8.41l.32.81,4.12-1.63A.44.44,0,0,0,14.14,7Z" fill="#f04049" />
+      <ellipse cx="9" cy="9" rx="1.2" ry="1.2" fill="url(#card-4-a9954820-cb38-4943-9842-f0a568d2b015)" />
+    </svg>
+    <text x="80" y="793" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="600" fill="#172b4d" data-role="body">All required gates must pass.</text>
+    <text x="80" y="833" font-family="Segoe UI, Arial, sans-serif" font-size="23" font-weight="400" fill="#172b4d" data-role="body">Record exceptions and assign operational owners.</text>
+  </g>
+  <text x="48" y="956" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="600" fill="#172b4d" data-role="acceptance-boundary">Platform acceptance is not application certification.</text>
+</svg>

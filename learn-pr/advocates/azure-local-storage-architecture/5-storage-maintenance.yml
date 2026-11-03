@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-local-storage-resilience.storage-maintenance
+metadata:
+  title: Azure Local Storage Maintenance
+  description: Monitor Azure Local storage, diagnose degradation, recover failed hardware, and distinguish storage repair from restoring application data.
+  ms.date: 10/27/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Azure Local storage maintenance
+durationInMinutes: 14
+content: |
+  [!include[](includes/5-storage-maintenance.md)]

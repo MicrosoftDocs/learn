@@ -2,9 +2,9 @@
 uid: learn.azure.intro-to-azure-application-gateway.knowledge-check
 title: Module assessment
 metadata:
-  title: Module assessment
+  title: Module Assessment
   description: Knowledge check.
-  ms.date: 05/15/2025
+  ms.date: 11/03/2026
   author: Orin-Thomas
   ms.author: orthomas
   ms.custom: team=cloud_advocates
@@ -14,19 +14,18 @@ durationInMinutes: 4
 content: |
   [!include[](includes/5-knowledge-check.md)]
 quiz:
-  title: Check your knowledge
   questions:
     - content: Which of the following Azure Application Gateway features can protect web applications against SQL injection attacks?
       choices:
         - content: Health probes
           isCorrect: false
           explanation: Incorrect. Health probes allow the application gateway to determine which hosts in the back-end pool are no longer responding.
+        - content: Web application firewall
+          isCorrect: true
+          explanation: Correct. A web application firewall allows you to protect against SQL injection and other attacks.
         - content: TLS/SSL termination
           isCorrect: false
           explanation: Incorrect. TLS/SSL termination offloads the encryption and decryption operations of TLS/SSL onto the application gateway.
-        - content: Web application firewall
-          isCorrect: true
-          explanation: Correct. A web application firewall allows you to protect against SQL injection and other attacks.          
     - content: You have a back-end pool made up of four Azure infrastructure as a service (IaaS) virtual machines. Occasionally, one or more of these virtual machines might become temporarily unresponsive. You want to ensure that Application Gateway doesn't forward traffic to an unresponsive virtual machine, even if you're unaware that a problem exists. Which Application Gateway feature can prevent traffic from forwarding to an unresponsive virtual machine?
       choices: 
         - content: Health probes
@@ -37,16 +36,16 @@ quiz:
           explanation: Incorrect. A web application firewall allows you to protect against SQL injection and other attacks.          
         - content: Connection draining
           isCorrect: false
-          explanation: Incorrect. Connection draining allows you to deregister an instance in a back-end pool so that it doesn't receive any new traffic. It doesn't detect whether an instance in the back-end pool is unresponsive.          
-    - content: You have a back-end pool made up of eight Azure IaaS virtual machines. You need to install a new framework on each of these virtual machines. You don't want the virtual machine to participate in the back-end pool while you do this maintenance operation. You want to stop new connections from occurring on the virtual machine that you're doing maintenance on. You also want to allow any existing connections that are present to complete naturally. Which of the following Azure Application Gateway features can you use to accomplish this goal?
+          explanation: Incorrect. Connection draining lets existing connections continue for a configured time when a backend instance is deregistered. It doesn't detect whether a backend instance is unresponsive. Health probes perform that check.
+    - content: You have a back-end pool made up of eight Azure IaaS virtual machines. You need to install a new framework on each virtual machine. Cookie-based affinity is disabled. Before starting maintenance on a virtual machine, you plan to deregister it from the backend pool, stop new connections from being assigned to it, and give existing connections a configured period to finish. Which Azure Application Gateway feature should you enable?
       choices:
         - content: Session affinity
           isCorrect: false
-          explanation: Incorrect. Session affinity ensures that the same back-end pool host always serves a client connection to a web application.   
-        - content: Connection draining
-          isCorrect: true
-          explanation: Correct. Connection draining allows you to deregister an instance in a back-end pool so that it doesn't receive any new traffic. Connection draining is useful in maintenance scenarios during which you want to gracefully remove traffic from a node.      
+          explanation: Incorrect. Cookie-based session affinity can direct subsequent requests to the same healthy backend server while the client returns the gateway's affinity cookie. It doesn't gracefully remove a server for maintenance or preserve local session state if the server becomes unavailable.
         - content: Health probes
           isCorrect: false
           explanation: Incorrect. Health probes allow the application gateway to determine which hosts in the back-end pool are no longer responding.
+        - content: Connection draining
+          isCorrect: true
+          explanation: Correct. Enable connection draining in the associated backend HTTP settings before deregistering the virtual machine. With cookie-based affinity disabled as specified in this scenario, the gateway stops assigning new requests to that target and allows existing connections to continue until the configured draining timeout. Choose a timeout long enough for expected requests and wait for draining to complete before starting maintenance. Draining doesn't guarantee that connections lasting beyond the timeout will finish.
           

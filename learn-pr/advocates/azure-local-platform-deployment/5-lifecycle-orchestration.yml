@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-local-platform-deployment.lifecycle-orchestration
+metadata:
+  title: Lifecycle Orchestration
+  description: Explain orchestrator-managed components, distinguish node connectivity from workload management, and monitor deployment without conflicting changes.
+  ms.date: 10/30/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Lifecycle orchestration
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-lifecycle-orchestration.md)]

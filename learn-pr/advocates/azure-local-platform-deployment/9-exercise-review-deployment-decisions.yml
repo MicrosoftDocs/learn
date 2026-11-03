@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-local-platform-deployment.exercise-review-deployment-decisions
+metadata:
+  title: Exercise - Review Deployment Decisions
+  description: Review fictional deployment records to identify readiness defects, choose supported recovery, and decide whether workload handover can proceed.
+  ms.date: 10/30/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Exercise - Review deployment decisions
+durationInMinutes: 20
+content: |
+  [!include[](includes/9-exercise-review-deployment-decisions.md)]

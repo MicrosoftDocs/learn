@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-local-storage-resilience.failure-domain-design
+metadata:
+  title: Failure-Domain Design
+  description: Design Azure Local rack-level protection by considering failure domains, quorum, witnesses, workload placement, and recovery evidence.
+  ms.date: 10/27/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Failure-domain design
+durationInMinutes: 12
+content: |
+  [!include[](includes/4-failure-domain-design.md)]

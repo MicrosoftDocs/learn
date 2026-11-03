@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-local-storage-resilience.introduction
+metadata:
+  title: Introduction
+  description: Explore how Azure Local storage availability depends on data protection, capacity, access paths, cluster ownership, and application recovery.
+  ms.date: 10/27/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Introduction
+durationInMinutes: 7
+content: |
+  [!include[](includes/1-introduction.md)]

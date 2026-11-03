@@ -1,0 +1,135 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="1158" viewBox="0 0 1100 1158" role="img" aria-labelledby="diagram-title diagram-description" style="background: white; background-color: #ffffff">
+  <title id="diagram-title">Identity: three different questions</title>
+  <desc id="diagram-description">Three identity questions, not a topology or migration workflow. First, authorize the deployment caller using scoped Azure RBAC, distinct from local rights. Second, choose either AD DS with a delegated OU and lifecycle deployment user, or Local Identity with Key Vault, a new non-built-in local administrator, common credentials on all nodes, and static addresses and DNS. Third, retain required service identities and assign credential rotation and recovery owners. Local Identity still uses Azure authorization.</desc>
+  <rect id="canvas-background" x="0" y="0" width="1100" height="1158" fill="#ffffff" opacity="1" data-role="canvas-background" />
+  <defs>
+    <marker id="management-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#426789" />
+    </marker>
+  </defs>
+  <text x="48" y="62" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="600" fill="#172b4d" data-role="diagram-heading">Identity: three different questions</text>
+  <text x="48" y="104" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="400" fill="#172b4d" data-role="reading-order">Read 1, then 2, then 3. In question 2, choose one alternative.</text>
+  <g data-card="1-azure-authorization">
+    <rect x="48" y="144" width="1004" height="216" rx="12" fill="#f3f8fd" stroke="#9bb3c8" stroke-width="1.5" data-role="card-boundary" />
+    <circle cx="88" cy="188" r="22" fill="#005a9e" data-role="number-badge" />
+    <text x="88" y="196" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#ffffff" data-role="stage-number" text-anchor="middle">1</text>
+    <text x="132" y="196" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="600" fill="#172b4d" data-role="card-heading">Azure authorization</text>
+    <svg id="card-1-e0c2a2f0-e647-4f01-b91b-afb7bf15040d" width="46" height="46" viewBox="0 0 18 18" x="976" y="167" aria-hidden="true" focusable="false" data-source-icon="management + governance\10316-icon-service-Policy.svg">
+      <defs>
+        <linearGradient id="card-1-a7f731a9-5c58-44f4-8037-3c3627e98008" x1="8.45" y1="11.47" x2="8.45" y2="6.24" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#198ab3" />
+          <stop offset="0.16" stop-color="#1f9ac2" />
+          <stop offset="0.5" stop-color="#29bade" />
+          <stop offset="0.8" stop-color="#30cdef" />
+          <stop offset="1" stop-color="#32d4f5" />
+        </linearGradient>
+      </defs>
+      <title>Icon-manage-316</title>
+      <ellipse cx="8.45" cy="8.85" rx="2.6" ry="2.61" fill="url(#card-1-a7f731a9-5c58-44f4-8037-3c3627e98008)" />
+      <ellipse cx="15.73" cy="4.77" rx="1.27" ry="1.28" fill="#32bedd" />
+      <ellipse cx="15.73" cy="8.95" rx="1.27" ry="1.28" fill="#32bedd" />
+      <ellipse cx="15.73" cy="13.12" rx="1.27" ry="1.28" fill="#32bedd" />
+      <ellipse cx="12.83" cy="6.91" rx="1.27" ry="1.28" fill="#50e6ff" />
+      <ellipse cx="12.83" cy="11.09" rx="1.27" ry="1.28" fill="#50e6ff" />
+      <path d="M2.41,5.58A.24.24,0,0,1,2.5,5.5L8.32,2.11c.08,0,5,2.78,5,2.78a.24.24,0,0,0,.36-.21V3.59a.24.24,0,0,0-.12-.21S8.4.46,8.33.5L1.11,4.64,1,4.72Z" fill="#949494" />
+      <path d="M13.3,13.14,8.56,15.87a.35.35,0,0,1-.11,0v1.6a.2.2,0,0,0,.11,0l5-2.86a.24.24,0,0,0,.12-.2V13.35A.24.24,0,0,0,13.3,13.14Z" fill="#949494" />
+      <path d="M8.45,15.9a.31.31,0,0,1-.13,0L2.5,12.47a.22.22,0,0,1-.12-.2V5.7a.27.27,0,0,1,0-.12L1,4.72a.28.28,0,0,0,0,.13v8.27a.24.24,0,0,0,.11.21l7.22,4.14a.24.24,0,0,0,.12,0Z" fill="#b3b3b3" />
+    </svg>
+    <text x="80" y="238" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="600" fill="#172b4d" data-role="body">Who can act in Azure?</text>
+    <text x="80" y="278" font-family="Segoe UI, Arial, sans-serif" font-size="23" font-weight="400" fill="#172b4d" data-role="body">Deployment caller: scoped Azure role-based access control (RBAC).</text>
+    <text x="80" y="316" font-family="Segoe UI, Arial, sans-serif" font-size="23" font-weight="400" fill="#172b4d" data-role="body">Creating resources and assigning roles are separate from local rights.</text>
+  </g>
+  <g data-card="2-host-identity-choice">
+    <rect x="48" y="392" width="1004" height="440" rx="12" fill="#f8f6fc" stroke="#9bb3c8" stroke-width="1.5" data-role="card-boundary" />
+    <circle cx="88" cy="436" r="22" fill="#63409c" data-role="number-badge" />
+    <text x="88" y="444" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#ffffff" data-role="stage-number" text-anchor="middle">2</text>
+    <text x="132" y="444" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="600" fill="#172b4d" data-role="card-heading">Choose ONE host identity branch</text>
+    <text x="80" y="484" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="400" fill="#172b4d" data-role="body">2A and 2B are alternatives, not sequential steps or a migration path.</text>
+    <g data-card="2A-ad-ds-alternative">
+      <rect x="72" y="516" width="466" height="278" rx="12" fill="#ffffff" stroke="#b3a5cf" stroke-width="1.5" data-role="card-boundary" />
+      <text x="96" y="555" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700" fill="#63409c" data-role="branch-label">ALTERNATIVE 2A</text>
+      <text x="96" y="596" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="600" fill="#172b4d" data-role="card-heading">AD DS</text>
+      <text x="96" y="646" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="400" fill="#172b4d" data-role="body">Delegated organizational unit (OU)</text>
+      <text x="96" y="686" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="400" fill="#172b4d" data-role="body">Lifecycle deployment user</text>
+      <text x="96" y="726" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="400" fill="#172b4d" data-role="body">for deployment and lifecycle tasks</text>
+    </g>
+    <g data-card="2B-local-identity-alternative">
+      <rect x="562" y="516" width="466" height="278" rx="12" fill="#ffffff" stroke="#b3a5cf" stroke-width="1.5" data-role="card-boundary" />
+      <text x="586" y="555" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700" fill="#63409c" data-role="branch-label">ALTERNATIVE 2B</text>
+      <svg id="identity-local-vault-bc93169a-24c4-4686-9f37-c7e4f53b3d34" width="42" height="42" viewBox="0 0 18 18" x="962" y="535" aria-hidden="true" focusable="false" data-source-icon="security\10245-icon-service-Key-Vaults.svg">
+        <defs>
+          <radialGradient id="identity-local-vault-fb114c93-7c16-4540-899a-0796041629e6" cx="9" cy="9" r="8.5" gradientUnits="userSpaceOnUse">
+            <stop offset="0.18" stop-color="#5ea0ef" />
+            <stop offset="0.56" stop-color="#5c9fee" />
+            <stop offset="0.69" stop-color="#559ced" />
+            <stop offset="0.78" stop-color="#4a97e9" />
+            <stop offset="0.86" stop-color="#3990e4" />
+            <stop offset="0.93" stop-color="#2387de" />
+            <stop offset="0.99" stop-color="#087bd6" />
+            <stop offset="1" stop-color="#0078d4" />
+          </radialGradient>
+          <radialGradient id="identity-local-vault-ec478bd3-5b38-4e7f-b661-11f355578bff" cx="38.95" cy="182.07" r="9.88" gradientTransform="translate(-28.71 -163.24) scale(0.94 0.94)" gradientUnits="userSpaceOnUse">
+            <stop offset="0.27" stop-color="#ffd70f" />
+            <stop offset="0.49" stop-color="#ffcb12" />
+            <stop offset="0.88" stop-color="#feac19" />
+            <stop offset="1" stop-color="#fea11b" />
+          </radialGradient>
+        </defs>
+        <title>Icon-security-245</title>
+        <path id="identity-local-vault-aacf8311-a317-400f-b613-74bd00da5ce3" d="M9,.5A8.5,8.5,0,1,0,17.5,9,8.51,8.51,0,0,0,9,.5ZM9,16.34A7.34,7.34,0,1,1,16.34,9,7.34,7.34,0,0,1,9,16.34Z" fill="url(#identity-local-vault-fb114c93-7c16-4540-899a-0796041629e6)" />
+        <circle cx="9" cy="9" r="7.34" fill="#fff" />
+        <g>
+          <path id="identity-local-vault-bd983c41-db73-40ec-a4f4-da1213fc9924" d="M13.44,7.33a1.84,1.84,0,0,0,0-2.59h0L10.29,1.58a1.83,1.83,0,0,0-2.58,0h0L4.56,4.74a1.84,1.84,0,0,0,0,2.59L7.18,10a.51.51,0,0,1,.15.36v4.88a.63.63,0,0,0,.18.44l1.2,1.2a.41.41,0,0,0,.58,0l1.16-1.16h0l.68-.68a.25.25,0,0,0,0-.34l-.49-.49a.27.27,0,0,1,0-.37l.49-.49a.25.25,0,0,0,0-.34l-.49-.49a.27.27,0,0,1,0-.37l.49-.49a.25.25,0,0,0,0-.34l-.68-.69v-.25ZM9,2.35A1,1,0,0,1,9,4.42,1,1,0,1,1,9,2.35Z" fill="url(#identity-local-vault-ec478bd3-5b38-4e7f-b661-11f355578bff)" />
+          <path id="identity-local-vault-ad2e7e44-9bfd-4775-8bf4-8ef26a544921" d="M8.18,15.3h0a.23.23,0,0,0,.38-.17v-4a.24.24,0,0,0-.11-.2h0a.22.22,0,0,0-.34.2v4A.28.28,0,0,0,8.18,15.3Z" fill="#ff9300" opacity="0.75" />
+          <rect id="identity-local-vault-a996fbff-3936-4b24-b407-369336c143ba" x="6.48" y="5.79" width="5.17" height="0.61" rx="0.28" fill="#ff9300" opacity="0.75" />
+          <rect id="identity-local-vault-bb12d31c-3352-4a18-87dd-a169a4a8721d" x="6.48" y="6.78" width="5.17" height="0.61" rx="0.28" fill="#ff9300" opacity="0.75" />
+        </g>
+      </svg>
+      <text x="586" y="596" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="600" fill="#172b4d" data-role="card-heading">Local Identity + Key Vault</text>
+      <text x="586" y="646" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="400" fill="#172b4d" data-role="body">New, non-built-in local admin</text>
+      <text x="586" y="686" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="400" fill="#172b4d" data-role="body">Same credentials on all nodes</text>
+      <text x="586" y="726" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="400" fill="#172b4d" data-role="body">Static addresses and DNS</text>
+    </g>
+  </g>
+  <g data-card="3-lifecycle-ownership">
+    <rect x="48" y="864" width="1004" height="246" rx="12" fill="#eff9f8" stroke="#8ab6b1" stroke-width="1.5" data-role="card-boundary" />
+    <circle cx="88" cy="908" r="22" fill="#006c70" data-role="number-badge" />
+    <text x="88" y="916" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#ffffff" data-role="stage-number" text-anchor="middle">3</text>
+    <text x="132" y="916" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="600" fill="#172b4d" data-role="card-heading">Lifecycle ownership</text>
+    <svg id="card-3-e4e764cd-2e73-472f-b88a-bf8bfc2c2994" width="46" height="46" viewBox="0 0 18 18" x="976" y="887" aria-hidden="true" focusable="false" data-source-icon="management + governance\00001-icon-service-Monitor.svg">
+      <defs>
+        <radialGradient id="card-3-ac8b32da-30ca-4b92-8d0f-8d2d5ef278a0" cx="5.72" cy="7.45" r="8.42" gradientTransform="translate(3.23 1.51) scale(1.01 1.01)" gradientUnits="userSpaceOnUse">
+          <stop offset="0.18" stop-color="#5ea0ef" />
+          <stop offset="0.56" stop-color="#5c9fee" />
+          <stop offset="0.69" stop-color="#559ced" />
+          <stop offset="0.78" stop-color="#4a97e9" />
+          <stop offset="0.86" stop-color="#3990e4" />
+          <stop offset="0.93" stop-color="#2387de" />
+          <stop offset="0.99" stop-color="#087bd6" />
+          <stop offset="1" stop-color="#0078d4" />
+        </radialGradient>
+        <radialGradient id="card-3-a9954820-cb38-4943-9842-f0a568d2b015" cx="28.18" cy="202.29" r="2.7" gradientTransform="translate(-17.77 -185.01) scale(0.95)" gradientUnits="userSpaceOnUse">
+          <stop offset="0.19" stop-color="#8c8e90" />
+          <stop offset="0.35" stop-color="#848688" />
+          <stop offset="0.6" stop-color="#6e7071" />
+          <stop offset="0.91" stop-color="#4a4b4c" />
+          <stop offset="1" stop-color="#3e3f3f" />
+        </radialGradient>
+      </defs>
+      <title>Icon-manage-317</title>
+      <ellipse cx="9" cy="9" rx="8.5" ry="8.47" fill="url(#card-3-ac8b32da-30ca-4b92-8d0f-8d2d5ef278a0)" />
+      <ellipse cx="9" cy="9" rx="7.4" ry="7.37" fill="#fff" />
+      <path d="M2.72,9.44a6.24,6.24,0,0,0,1.82,4l2-2a3.53,3.53,0,0,1-1-2Z" fill="#9cebff" />
+      <path d="M13.13,4.27A6.25,6.25,0,0,0,9.44,2.74V5.53a3.41,3.41,0,0,1,1.71.7Z" fill="#32bedd" />
+      <path d="M4.87,4.27l2,2a3.41,3.41,0,0,1,1.71-.7V2.74A6.25,6.25,0,0,0,4.87,4.27Z" fill="#32bedd" />
+      <path d="M11.78,6.85a3.6,3.6,0,0,1,.71,1.71h2.79a6.16,6.16,0,0,0-1.53-3.67Z" fill="#32bedd" />
+      <path d="M6.22,6.85l-2-2A6.16,6.16,0,0,0,2.72,8.56H5.51A3.6,3.6,0,0,1,6.22,6.85Z" fill="#50e6ff" />
+      <path d="M14.14,7a.45.45,0,0,0-.57-.25L9.45,8.41l.32.81,4.12-1.63A.44.44,0,0,0,14.14,7Z" fill="#f04049" />
+      <ellipse cx="9" cy="9" rx="1.2" ry="1.2" fill="url(#card-3-a9954820-cb38-4943-9842-f0a568d2b015)" />
+    </svg>
+    <text x="80" y="965" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="400" fill="#172b4d" data-role="body">Retain required service identities.</text>
+    <text x="80" y="1005" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="400" fill="#172b4d" data-role="body">Assign owners for credential rotation and recovery.</text>
+    <text x="80" y="1045" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="600" fill="#172b4d" data-role="body">Local Identity still requires Azure authorization.</text>
+  </g>
+</svg>

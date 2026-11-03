@@ -1,0 +1,105 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-local-platform-deployment.knowledge-check
+metadata:
+  title: Module Assessment
+  description: Check your understanding of Azure Local validation, identity preparation, authorization, failure recovery, workload readiness, and simplified provisioning.
+  ms.date: 10/30/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  module_assessment: true
+  ai-usage: ai-assisted
+title: Module assessment
+durationInMinutes: 8
+content: |
+quiz:
+  title: Module assessment
+  questions:
+  - content: "`Test-AzResourceGroupDeployment` returns no findings. What can you conclude?"
+    choices:
+    - content: "The Azure Local `Validate` deployment already created the prerequisite resources."
+      isCorrect: false
+      explanation: "Incorrect. `Test-AzResourceGroupDeployment` doesn't submit the resource-changing Azure Local `Validate` phase."
+    - content: "That ARM validation call returned no findings. Target-environment readiness remains a separate requirement."
+      isCorrect: true
+      explanation: "Correct. A non-deploying ARM validation call doesn't run or complete the full Azure Local readiness and deployment workflow."
+    - content: "The cluster and its storage are healthy."
+      isCorrect: false
+      explanation: "Incorrect. A non-deploying template check doesn't establish cluster or storage health. These require independent acceptance evidence."
+  - content: "A site chooses Local Identity with Azure Key Vault. Which preparation matches that branch?"
+    choices:
+    - content: "Create a supported non-built-in local administrator account with matching credentials across nodes, static addresses, and the required DNS configuration."
+      isCorrect: true
+      explanation: "Correct. Local Identity removes AD-specific preparation, not local administrator, static addressing, or DNS requirements."
+    - content: "Prepare an AD DS OU because every Azure Local deployment requires domain membership."
+      isCorrect: false
+      explanation: "Incorrect. Local Identity doesn't require domain membership or Active Directory organizational-unit preparation."
+    - content: "Use the built-in Administrator account and DHCP because there's no AD DS dependency."
+      isCorrect: false
+      explanation: "Incorrect. This branch requires a supported non-built-in local administrator account and static node addresses. Removing the directory dependency doesn't remove these requirements."
+  - content: "An operator has Contributor on the resource group, but the template needs to create role assignments. What should happen next?"
+    choices:
+    - content: "Have the governance owner establish the documented role-assignment permission at the appropriate scope."
+      isCorrect: true
+      explanation: "Correct. Contributor doesn't grant role-assignment authority. Resolve the specific authorization requirement through the responsible owner."
+    - content: "Grant subscription Owner without further investigation."
+      isCorrect: false
+      explanation: "Incorrect. Investigate the required action and scope instead of granting unnecessary subscription-wide authority."
+    - content: "Replace the template with portal deployment to bypass authorization."
+      isCorrect: false
+      explanation: "Incorrect. The Azure portal doesn't bypass authorization. The deployment identity still needs permission for the operations it performs."
+  - content: "A bridge stage fails after a dependent extension reports that it can't retrieve a required secret. What should you examine first?"
+    choices:
+    - content: "The application running inside a workload VM."
+      isCorrect: false
+      explanation: "Incorrect. The evidence identifies a deployment extension's credential dependency, not a guest application's health."
+    - content: "The extension's actual secret-consumer identity, vault access path, authorization, and connectivity."
+      isCorrect: true
+      explanation: "Correct. The bridge failure can be downstream of credential retrieval. Repairing an appliance doesn't fix the underlying access relationship."
+    - content: "The bridge's display name, followed by immediate appliance replacement."
+      isCorrect: false
+      explanation: "Incorrect. A display name doesn't establish the cause of a failed secret request. Replacing an orchestrator-managed appliance doesn't repair the access relationship."
+  - content: "Validation completed, but the system is now in **Deployment failed** state. What's the appropriate approach?"
+    choices:
+    - content: "Always submit `Validate` again before every retry."
+      isCorrect: false
+      explanation: "Incorrect. Submitting `Validate` again in this state can reset system properties and cause license synchronization problems."
+    - content: "Delete the resource group to reverse all local changes."
+      isCorrect: false
+      explanation: "Incorrect. Deleting Azure resources doesn't safely reverse local configuration and can remove required management relationships."
+    - content: "Repair the confirmed dependency and use the supported failed-stage recovery procedure."
+      isCorrect: true
+      explanation: "Correct. Recovery is state-dependent. Repeating `Validate` in this condition carries the documented property-reset and license-sync risk."
+  - content: "An approved `InfraOnly` deployment completes without workload storage paths. What does this mean?"
+    choices:
+    - content: "Infrastructure-only provisioning behaved as intended. Workload storage must still be prepared before workload-ready acceptance."
+      isCorrect: true
+      explanation: "Correct. `InfraOnly` deliberately defers workload storage. Expected deployment behavior and workload readiness are different questions."
+    - content: "Resource Manager silently lost the deployment parameters."
+      isCorrect: false
+      explanation: "Incorrect. Deferred workload storage is the documented behavior of `InfraOnly`, not evidence of lost parameters."
+    - content: "All storage must be recreated."
+      isCorrect: false
+      explanation: "Incorrect. Infrastructure storage can be correctly deployed. Create and verify the planned workload volumes and storage paths through the supported workflow."
+  - content: "Resource Manager reports success, but a node is unavailable and storage repair is active. Can you approve a fully commissioned platform?"
+    choices:
+    - content: "Yes, if the custom location resource exists."
+      isCorrect: false
+      explanation: "Incorrect. Resource presence doesn't prove node availability, storage resiliency, or a healthy workload-management path."
+    - content: "No. Local acceptance criteria remain unmet even though the cloud operation succeeded."
+      isCorrect: true
+      explanation: "Correct. Acceptance requires independent local evidence, including membership and storage readiness. Resource existence isn't sufficient."
+    - content: "Yes. Resource Manager success overrides local health observations."
+      isCorrect: false
+      explanation: "Incorrect. A successful cloud operation doesn't establish local health or waive the agreed acceptance criteria."
+  - content: "Simplified machine provisioning reports **Ready to cluster**. What remains?"
+    choices:
+    - content: "Only enabling Azure Arc gateway, which the preview requires."
+      isCorrect: false
+      explanation: "Incorrect. The referenced preview doesn't support Arc gateway, and node preparation doesn't replace cluster deployment or commissioning."
+    - content: "Nothing. The preview has certified application readiness."
+      isCorrect: false
+      explanation: "Incorrect. Simplified provisioning prepares physical machines to become Azure Local nodes. It doesn't certify the platform or its applications."
+    - content: "The normal supported cluster deployment, validation, and commissioning workflow."
+      isCorrect: true
+      explanation: "Correct. Simplified provisioning prepares and registers physical machines for use as Azure Local nodes. It doesn't replace cluster deployment, and the referenced preview doesn't support Arc gateway."
