@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.sovereignty-key-management.azure-key-management-strategies
+title: Azure key management strategies
+metadata:
+  title: Azure key management strategies
+  description: Learn about the Azure key management strategies.
+  ms.date: 11/02/2026
+  author: salisburysimon
+  ms.author: sidicken
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/04-azure-key-management-strategies.md)]

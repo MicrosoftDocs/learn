@@ -1,0 +1,112 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.sovereignty-key-management.check
+title: Check your knowledge
+metadata:
+ title: Check your knowledge
+ description: Answer the following questions to see what you learned.
+ ms.date: 11/02/2026
+ author: salisburysimon
+ ms.author: sidicken
+ ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Answer the following questions to see what you learned.
+  questions:
+  - content: What is the primary function of encryption in cloud environments for data sovereignty?
+    choices:
+    - content: To make data unreadable without the appropriate decryption key
+      isCorrect: true
+      explanation: Correct. Encryption ensures that sensitive data is more protected and can only be accessed by those with the correct decryption key.
+    - content: To store data in a compressed format for faster access
+      isCorrect: false
+      explanation: Incorrect. Encryption isn't about compressing it.
+    - content: To provide backup and disaster recovery solutions
+      isCorrect: false
+      explanation: Incorrect. Back up and disaster recovery are important, but they aren't the primary focus of encryption.
+    - content: To meet a single regulatory requirement only
+      isCorrect: false
+      explanation: Incorrect. Encryption protects data confidentiality and can support multiple regulatory requirements; it isn't limited to a single requirement.
+  - content: Which service allows Azure customers to provision and manage SSL or TLS certificates?
+    choices:
+    - content: Azure Key Vault
+      isCorrect: true
+      explanation: Correct. Azure Key Vault allows you to more securely store and manage SSL/TLS certificates.
+    - content: Azure Active Directory
+      isCorrect: false
+      explanation: Incorrect. Azure Active Directory handles identity and access management, not certificates.
+    - content: Azure Blob Storage
+      isCorrect: false
+      explanation: Incorrect. Azure Blob Storage is for storing unstructured data, not managing certificates.
+    - content: Azure Firewall
+      isCorrect: false
+      explanation: Incorrect. Azure Firewall focuses on network security, not certificate management.
+  - content: Which of the following is true about Azure Key Vault (Standard Tier)?
+    choices:
+    - content: It's validated for FIPS 140-2 Level 3.
+      isCorrect: false
+      explanation: Incorrect. FIPS 140-2 Level 3 validation applies to the Premium Tier, not the Standard Tier.
+    - content: It provides hardware-based security for cryptographic keys.
+      isCorrect: false
+      explanation: Incorrect. The Standard Tier doesn't use hardware-based security.
+    - content: It's multitenant and uses software-based protection for encryption-at-rest.
+      isCorrect: true
+      explanation: Correct. Azure Key Vault Standard Tier is a multitenant service that uses software-based encryption-at-rest.
+    - content: It's a single-tenant service for key management.
+      isCorrect: false
+      explanation: Incorrect. The Standard Tier isn't single tenant.
+  - content: What does Azure Key Vault Managed HSM offer in terms of exclusive administrative access to shared cryptographic modules?
+    choices:
+    - content: A multitenant environment for low-value key management
+      isCorrect: false
+      explanation: Incorrect. Azure Key Vault Managed HSM isn't multitenant.
+    - content: A high-security, single-tenant solution for key management
+      isCorrect: true
+      explanation: Correct. Azure Key Vault Managed HSM is a single-tenant, high-security solution that provides full control over cryptographic keys for compliance and regulatory needs.
+    - content: Full administrative access to shared cryptographic modules
+      isCorrect: false
+      explanation: Incorrect. It doesn't offer full administrative access to shared cryptographic modules.
+    - content: A hardware-based solution for managing API keys only
+      isCorrect: false
+      explanation: Incorrect. Azure Key Vault Managed HSM isn't only for managing API keys.
+  - content: Which built-in role allows a service identity to wrap and unwrap keys for service encryption, without granting permission to delete keys in Azure Key Vault Managed HSM?
+    choices:
+    - content: Managed HSM Crypto User
+      isCorrect: false
+      explanation: Incorrect. This role allows key wrapping and unwrapping, but it also grants permission to delete keys.
+    - content: Managed HSM Crypto Service Encryption User
+      isCorrect: true
+      explanation: Correct. This role grants permission to read key metadata and wrap and unwrap keys for service encryption, but not to delete keys.
+    - content: Managed HSM Crypto Officer
+      isCorrect: false
+      explanation: Incorrect. This role grants role management, key purge and recovery, and key export permissions, but not key wrapping or unwrapping.
+    - content: Managed HSM Crypto Auditor
+      isCorrect: false
+      explanation: Incorrect. This role can read key attributes, but it can't use keys for wrapping or unwrapping.
+  - content: What primary function does a certificate serve in the Azure ecosystem?
+    choices:
+    - content: It binds a public key to an identity, such as a person or organization, to allow more secure communication.
+      isCorrect: true
+      explanation: Correct. A certificate binds a public key to an identity, facilitating more secure communication and authentication.
+    - content: It stores sensitive application passwords in Azure.
+      isCorrect: false
+      explanation: Incorrect. Certificates aren't typically used for storing passwords; secrets or keys are used instead.
+    - content: It encrypts data at rest in Azure Storage.
+      isCorrect: false
+      explanation: Incorrect. Certificates don't secure data at rest, though they can play a role in encryption processes.
+    - content: It monitors application performance.
+      isCorrect: false
+      explanation: Incorrect. Certificates don't monitor application performance.
+  - content: How does Azure Key Vault handle notifications for certificate life cycle events?
+    choices:
+    - content: Through Azure Monitor only
+      isCorrect: false
+      explanation: Incorrect. Azure Monitor is for broader monitoring, not specifically for certificate life cycle alerts.
+    - content: By sending alerts to specified contacts
+      isCorrect: true
+      explanation: Correct. Azure Key Vault allows you to provide contact information for life cycle alerts.
+    - content: By automatically rotating certificates without notifications
+      isCorrect: false
+      explanation: Incorrect. Notifications can be configured alongside rotation.
+    - content: It doesn't support notifications
+      isCorrect: false
+      explanation: Incorrect. Key Vault does support notifications.
