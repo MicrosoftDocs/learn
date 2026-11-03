@@ -1,4 +1,4 @@
-In this module, you learned about Azure Application Gateway, a service that allows you to manage the requests that client applications can send to a web app. You learned that Application Gateway routes traffic to a pool of web servers based on the URL of a request. The pool of web servers can be Azure virtual machines, Azure virtual machine scale sets, Azure App Service, and even on-premises servers. You learned that Application Gateway provides features such as load balancing HTTP traffic, a web application firewall, and support for TLS/SSL encryption of your data. You also learned that Application Gateway supports encrypting traffic between users and an application gateway, and between application servers and an application gateway. 
+In this module, you learned about the HTTP(S) traffic-management capabilities of Azure Application Gateway Standard_v2 and WAF_v2. You learned that Application Gateway can route traffic to a pool of web servers based on the URL path of a request. The pool of web servers can be Azure virtual machines, Azure virtual machine scale sets, Azure App Service, and even on-premises servers. You learned that Application Gateway provides HTTP load balancing and can provide WAF inspection when configured with WAF_v2 and an enabled WAF policy. Detection mode logs rule matches; Prevention mode can block requests according to the policy. You also learned that TLS encrypts traffic between users and the gateway when the listener uses HTTPS, and between the gateway and application servers when the backend HTTP settings use HTTPS.
 
 ## Learn more
 
@@ -6,4 +6,4 @@ In this module, you learned about Azure Application Gateway, a service that allo
 - [Azure Application Gateway features](/azure/application-gateway/features?azure-portal=true)
 - [How an application gateway works](/azure/application-gateway/how-application-gateway-works?azure-portal=true)
 - [Application gateway components](/azure/application-gateway/application-gateway-components?azure-portal=true)
-- [Load balance your web service traffic with Application Gateway](/training/modules/load-balance-web-traffic-with-application-gateway/)
+- [Quickstart: Direct web traffic with Azure Application Gateway using the Azure portal](/azure/application-gateway/quick-create-portal). This quickstart requires an Azure subscription and creates billable resources.

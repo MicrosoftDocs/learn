@@ -1,0 +1,240 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="1360" height="1100" viewBox="0 0 1360 1100"
+     role="img" aria-labelledby="diagram-title diagram-description">
+  <title id="diagram-title">End-to-end TLS with Azure Application Gateway</title>
+  <desc id="diagram-description">
+    Follow steps 1 through 5. A client creates an HTTPS connection to the gateway.
+    The HTTPS listener has the client-facing server certificate and private key
+    and terminates the first TLS connection. The gateway processes decrypted HTTP
+    and routes the request. WAF inspection requires WAF_v2 with an enabled policy.
+    Backend HTTP settings configured for HTTPS establish a separate TLS connection.
+    The gateway validates the backend certificate's chain, expiry, and hostname
+    using its built-in trusted roots for a publicly trusted certificate, or an
+    appropriate added trusted root for a private-CA or self-signed certificate.
+    The backend server holds its own server certificate and private key and
+    terminates the second TLS connection. Each connection uses its own negotiated
+    encryption keys. A trusted root establishes trust and does not supply the
+    backend's private key. The request direction is shown; both connections are bidirectional.
+  </desc>
+  <metadata>
+    Azure icon vector sources:
+    C:\Azure-Icons\general\10783-icon-service-Browser.svg
+    C:\Azure-Icons\networking\10076-icon-service-Application-Gateways.svg
+    C:\Azure-Icons\compute\10021-icon-service-Virtual-Machine.svg
+    C:\Azure-Icons\CnE_Enterprise\Certificate.svg
+    Technical references:
+    https://learn.microsoft.com/en-us/azure/application-gateway/ssl-overview
+    https://learn.microsoft.com/en-us/azure/application-gateway/configuration-http-settings
+  </metadata>
+  <defs>
+    <style>
+      text { font-family: "Segoe UI", Arial, sans-serif; fill: #000000; }
+      .eyebrow { font-size: 15px; font-weight: 600; letter-spacing: 1.5px; }
+      .title { font-size: 34px; font-weight: 600; }
+      .subtitle { font-size: 21px; }
+      .group-title { font-size: 26px; font-weight: 600; }
+      .node-title { font-size: 24px; font-weight: 600; }
+      .body { font-size: 20px; }
+      .detail { font-size: 18px; }
+      .small { font-size: 17px; }
+      .number { font-size: 21px; font-weight: 700; text-anchor: middle; }
+      .connection-title { font-size: 22px; font-weight: 600; text-anchor: middle; }
+      .connection-label { font-size: 17px; text-anchor: middle; }
+      .card { fill: #ffffff; stroke: #b6c4d2; stroke-width: 1.5; }
+      .step-badge { fill: #e4f0fb; stroke: #a7cae8; stroke-width: 1; }
+      .connector { fill: none; stroke-width: 3; stroke-linecap: round; }
+    </style>
+    <marker id="arrow-client" viewBox="0 0 12 12" refX="10" refY="6"
+            markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M1 1L11 6L1 11Z" fill="#0078d4"/>
+    </marker>
+    <marker id="arrow-internal" viewBox="0 0 12 12" refX="10" refY="6"
+            markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M1 1L11 6L1 11Z" fill="#586b7c"/>
+    </marker>
+    <marker id="arrow-backend" viewBox="0 0 12 12" refX="10" refY="6"
+            markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M1 1L11 6L1 11Z" fill="#087f76"/>
+    </marker>
+
+    <!-- Original Azure icon geometry is retained, with scoped IDs and gradients. -->
+    <linearGradient id="browser-fill" x1="9" y1="15.834" x2="9" y2="5.788" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#32bedd"/>
+      <stop offset="0.175" stop-color="#32caea"/>
+      <stop offset="0.41" stop-color="#32d2f2"/>
+      <stop offset="0.775" stop-color="#32d4f5"/>
+    </linearGradient>
+    <symbol id="azure-browser" viewBox="0 0 18 18">
+      <path d="M.5,5.788h17a0,0,0,0,1,0,0v9.478a.568.568,0,0,1-.568.568H1.068A.568.568,0,0,1,.5,15.266V5.788A0,0,0,0,1,.5,5.788Z" fill="url(#browser-fill)"/>
+      <path d="M1.071,2.166H16.929a.568.568,0,0,1,.568.568V5.788a0,0,0,0,1,0,0H.5a0,0,0,0,1,0,0V2.734A.568.568,0,0,1,1.071,2.166Z" fill="#0078d4"/>
+      <rect x="2.787" y="3.248" width="12.426" height="1.459" rx="0.284" fill="#f2f2f2"/>
+    </symbol>
+    <linearGradient id="gateway-green" x1="9" y1="19.25" x2="9" y2="-0.46"
+                    gradientTransform="translate(9 -3.73) rotate(45)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#5e9624"/>
+      <stop offset="0.55" stop-color="#6dad2a"/>
+      <stop offset="1" stop-color="#76bc2d"/>
+    </linearGradient>
+    <linearGradient id="gateway-node-one" x1="7.54" y1="6.44" x2="7.53" y2="5.18" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ccc"/>
+      <stop offset="0.12" stop-color="#d7d7d7"/>
+      <stop offset="0.42" stop-color="#ebebeb"/>
+      <stop offset="0.72" stop-color="#f8f8f8"/>
+      <stop offset="1" stop-color="#fcfcfc"/>
+    </linearGradient>
+    <linearGradient id="gateway-node-two" x1="9.36" y1="7.69" x2="9.36" y2="6.57"
+                    gradientUnits="userSpaceOnUse" xlink:href="#gateway-node-one"/>
+    <symbol id="azure-application-gateway" viewBox="0 0 18 18">
+      <rect x="2.82" y="2.82" width="12.35" height="12.35" rx="0.57" transform="translate(-3.73 9) rotate(-45)" fill="url(#gateway-green)"/>
+      <path d="M10.89,10.51h2.84a.11.11,0,0,0,.1-.11V7.57a.1.1,0,0,0-.18-.07l-.78.78,0,.05a.1.1,0,0,1-.14,0L9.26,4.91a.1.1,0,0,0-.14,0l-.88.88a.11.11,0,0,0,0,.15l3.41,3.41a.11.11,0,0,1,0,.15l-.05.05-.78.78A.11.11,0,0,0,10.89,10.51Z" fill="#fff"/>
+      <path d="M6.92,10.51H4.08A.11.11,0,0,1,4,10.4V7.57a.1.1,0,0,1,.17-.07l.79.78,0,.05a.1.1,0,0,0,.14,0L8.55,4.91a.1.1,0,0,1,.14,0l.88.88a.11.11,0,0,1,0,.15L6.16,9.35a.11.11,0,0,0,0,.15l0,.05.78.78A.11.11,0,0,1,6.92,10.51Z" fill="#fff"/>
+      <path d="M6.82,13.07l2,2a.1.1,0,0,0,.14,0l2-2a.1.1,0,0,0-.07-.17H9.72a.11.11,0,0,1-.1-.1V8a.1.1,0,0,0-.1-.11H8.28A.11.11,0,0,0,8.17,8V12.8a.1.1,0,0,1-.1.1H6.89A.1.1,0,0,0,6.82,13.07Z" fill="#fff"/>
+      <path d="M10.65,7.78A2.71,2.71,0,0,1,7.33,3.5l0,0a2.71,2.71,0,0,1,3.29,4.3" fill="#0078d4"/>
+      <circle cx="7.53" cy="5.55" r="0.87" fill="url(#gateway-node-one)"/>
+      <path d="M6.67,7l.19.3L7,7.5a5.94,5.94,0,0,1,.34-1.1.85.85,0,0,1-.45-.23A6.71,6.71,0,0,0,6.67,7Z" fill="#f2f2f2" opacity="0.55"/>
+      <path d="M7.24,4.73A4,4,0,0,1,7,3.8a2.48,2.48,0,0,0-.34.46A3.51,3.51,0,0,0,6.86,5,1,1,0,0,1,7.24,4.73Z" fill="#f2f2f2" opacity="0.55"/>
+      <path d="M8.17,6.14a.87.87,0,0,1-.48.26,4.62,4.62,0,0,0,.46.41,4.14,4.14,0,0,0,.65.39V7.13A.53.53,0,0,1,9,6.73,3.6,3.6,0,0,1,8.17,6.14Z" fill="#f2f2f2" opacity="0.55"/>
+      <path d="M10.79,7.2a4.14,4.14,0,0,1-.87-.1v0a.55.55,0,0,1-.16.39,3.84,3.84,0,0,0,1.08.08,2.93,2.93,0,0,0,.37-.42Z" fill="#f2f2f2" opacity="0.55"/>
+      <circle cx="9.36" cy="7.13" r="0.56" fill="url(#gateway-node-two)"/>
+      <circle cx="10.64" cy="5.74" r="0.6" fill="#f2f2f2"/>
+      <path d="M9.21,4.42A4.29,4.29,0,0,1,11.09,4a2.24,2.24,0,0,0-.47-.45,4.5,4.5,0,0,0-1.49.35c-.1,0-.19.11-.29.16h0a5.85,5.85,0,0,1-.63-.93l-.34.13a5.35,5.35,0,0,0,.65,1,3.92,3.92,0,0,0-.67.55.87.87,0,0,1,.43.35,3.29,3.29,0,0,1,.61-.48,9.16,9.16,0,0,0,1.17,1,.57.57,0,0,1,.2-.32A8.44,8.44,0,0,1,9.21,4.42Z" fill="#f2f2f2" opacity="0.55"/>
+      <path d="M11.55,6.09h0l-.1,0h0l-.08,0h0l-.1-.06a.61.61,0,0,1-.2.3l.12.07h0l.11.06h0l.28.14h0a3.58,3.58,0,0,0,.09-.35Z" fill="#f2f2f2" opacity="0.55"/>
+      <circle cx="7.53" cy="5.55" r="0.87" fill="#f2f2f2"/>
+      <circle cx="9.36" cy="7.13" r="0.56" fill="#f2f2f2"/>
+    </symbol>
+    <linearGradient id="vm-screen" x1="8.88" y1="12.21" x2="8.88" y2="0.21" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0078d4"/>
+      <stop offset="0.82" stop-color="#5ea0ef"/>
+    </linearGradient>
+    <linearGradient id="vm-stand" x1="8.88" y1="16.84" x2="8.88" y2="12.21" gradientUnits="userSpaceOnUse">
+      <stop offset="0.15" stop-color="#ccc"/>
+      <stop offset="1" stop-color="#707070"/>
+    </linearGradient>
+    <symbol id="azure-virtual-machine" viewBox="-0.2 0 18.2 18">
+      <rect x="-0.12" y="0.21" width="18" height="12" rx="0.6" fill="url(#vm-screen)"/>
+      <polygon points="11.88 4.46 11.88 7.95 8.88 9.71 8.88 6.21 11.88 4.46" fill="#50e6ff"/>
+      <polygon points="11.88 4.46 8.88 6.22 5.88 4.46 8.88 2.71 11.88 4.46" fill="#c3f1ff"/>
+      <polygon points="8.88 6.22 8.88 9.71 5.88 7.95 5.88 4.46 8.88 6.22" fill="#9cebff"/>
+      <polygon points="5.88 7.95 8.88 6.21 8.88 9.71 5.88 7.95" fill="#c3f1ff"/>
+      <polygon points="11.88 7.95 8.88 6.21 8.88 9.71 11.88 7.95" fill="#9cebff"/>
+      <path d="M12.49,15.84c-1.78-.28-1.85-1.56-1.85-3.63H7.11c0,2.07-.06,3.35-1.84,3.63a1,1,0,0,0-.89,1h9A1,1,0,0,0,12.49,15.84Z" fill="url(#vm-stand)"/>
+    </symbol>
+    <symbol id="azure-certificate" viewBox="190 135 460 400">
+      <path fill="#2A3282" d="M382.9,379.5H234.6c-7.7,0-13.7-6-13.7-13.7V212.4h42.8v-42h275.1c7.7,0,13.7,6,13.7,13.7v1.7c6.9,1.7,14.6,5.1,21.4,7.7v-10.3c0-18.9-15.4-35.1-35.1-35.1H251.8l-51.4,52.3v165.4c0,18.9,15.4,35.1,35.1,35.1h161.1C390.6,394.1,386.3,387.3,382.9,379.5z"/>
+      <g transform="translate(59.286,-2749.37)">
+        <g transform="translate(1.9875,4.54747E-013)">
+          <path fill="#2A3282" d="M507.4,3166.4l51.4,77.1l-48-12.9l-13.7,38.6l-51.4-68.6l-38.6,68.6l-18-41.1l-48,12.9l47.1-81.4c0,0,12.9,22.3,59.1,22.3C494.5,3181.8,507.4,3166.4,507.4,3166.4z"/>
+        </g>
+        <g transform="translate(5.3475,-13.3447)">
+          <path fill="#2A3282" d="M447.9,3165.5c-45.4,0-82.3-36.8-82.3-81.4c0-44.6,36.8-81.4,82.3-81.4s82.3,36.8,82.3,81.4C529.4,3128.7,493.4,3165.5,447.9,3165.5z M447.9,3020.7c-35.1,0-64.3,28.3-64.3,63.4s29.1,63.4,64.3,63.4s64.3-28.3,64.3-63.4S483.1,3020.7,447.9,3020.7z"/>
+        </g>
+        <g transform="translate(-5.79536E-014,-8.08875)">
+          <path fill="#2A3282" d="M452.9,3203.5c-69.4,0-126-55.7-126-124.3s56.6-124.3,126-124.3s126,55.7,126,124.3C578.9,3146.9,522.3,3203.5,452.9,3203.5z M452.9,2973c-59.1,0-108,48-108,106.3c0,58.3,48,106.3,108,106.3s108-48,108-106.3C560.9,3020.1,512.9,2973,452.9,2973z"/>
+        </g>
+      </g>
+    </symbol>
+  </defs>
+
+  <rect id="background" x="0" y="0" width="1360" height="1100" fill="#ffffff"/>
+  <g id="header">
+    <text class="eyebrow" x="40" y="40">AZURE APPLICATION GATEWAY / STANDARD_V2 AND WAF_V2</text>
+    <text class="title" x="40" y="87">End-to-end TLS: two separate connections</text>
+    <text class="subtitle" x="40" y="124">The gateway decrypts requests, processes HTTP, and uses a separate encrypted backend connection.</text>
+  </g>
+
+  <g id="gateway-container">
+    <rect x="410" y="180" width="540" height="700" rx="20" fill="#f3f8fc" stroke="#bfd3e4" stroke-width="2"/>
+    <use xlink:href="#azure-application-gateway" x="434" y="195" width="44" height="44" aria-hidden="true"/>
+    <text class="group-title" x="494" y="226">Application Gateway</text>
+  </g>
+
+  <g id="step-1-client" data-step="1">
+    <rect class="card" x="40" y="260" width="260" height="250" rx="14"/>
+    <circle class="step-badge" cx="70" cy="296" r="18"/>
+    <text class="number" x="70" y="303">1</text>
+    <text class="node-title" x="104" y="305">Client</text>
+    <use xlink:href="#azure-browser" x="140" y="326" width="60" height="60" aria-hidden="true"/>
+    <text class="detail" x="64" y="416">Starts an HTTPS request.</text>
+    <text class="detail" x="64" y="451">Validates the gateway's</text>
+    <text class="detail" x="64" y="478">server certificate.</text>
+  </g>
+
+  <g id="connection-1">
+    <text class="connection-title" x="355" y="302">TLS A</text>
+    <text class="connection-label" x="355" y="328">HTTPS</text>
+    <path id="client-tls-arrow" class="connector" d="M314 350H422" stroke="#0078d4" marker-end="url(#arrow-client)"/>
+    <text class="connection-label" x="355" y="388">Encrypted</text>
+  </g>
+
+  <g id="step-2-listener" data-step="2">
+    <rect class="card" x="434" y="260" width="492" height="168" rx="12"/>
+    <circle class="step-badge" cx="464" cy="292" r="18"/>
+    <text class="number" x="464" y="299">2</text>
+    <text class="node-title" x="498" y="301">HTTPS listener</text>
+    <use xlink:href="#azure-certificate" x="454" y="324" width="42" height="42" aria-hidden="true"/>
+    <text class="body" x="512" y="338">Client-facing server certificate</text>
+    <text class="body" x="512" y="372">and private key</text>
+    <text class="detail" x="458" y="403">Terminates TLS connection A.</text>
+  </g>
+
+  <path id="listener-to-http-arrow" class="connector" d="M680 440V470"
+        stroke="#586b7c" marker-end="url(#arrow-internal)"/>
+
+  <g id="step-3-processing" data-step="3">
+    <rect class="card" x="434" y="482" width="492" height="116" rx="12"/>
+    <circle class="step-badge" cx="464" cy="514" r="18"/>
+    <text class="number" x="464" y="521">3</text>
+    <text class="node-title" x="498" y="523">Inspect and route HTTP</text>
+    <text class="body" x="458" y="560">Decrypted inside the gateway.</text>
+    <text class="small" x="458" y="585">WAF_v2 + enabled policy: inspect requests.</text>
+  </g>
+
+  <path id="http-to-backend-settings-arrow" class="connector" d="M680 610V630"
+        stroke="#586b7c" marker-end="url(#arrow-internal)"/>
+
+  <g id="step-4-backend-settings" data-step="4">
+    <rect class="card" x="434" y="642" width="492" height="214" rx="12"/>
+    <circle class="step-badge" cx="464" cy="674" r="18"/>
+    <text class="number" x="464" y="681">4</text>
+    <text class="node-title" x="498" y="683">Backend HTTPS settings</text>
+    <text class="body" x="458" y="720">Uses a separate TLS connection.</text>
+    <use xlink:href="#azure-certificate" x="454" y="740" width="42" height="42" aria-hidden="true"/>
+    <text class="body" x="512" y="754">Publicly trusted: built-in roots.</text>
+    <text class="body" x="512" y="784">Private CA / self-signed: add root.</text>
+    <text class="detail" x="458" y="829">Validate chain, expiry, and hostname.</text>
+  </g>
+
+  <g id="connection-2">
+    <text class="connection-title" x="1005" y="682">TLS B</text>
+    <text class="connection-label" x="1005" y="708">HTTPS</text>
+    <path id="backend-tls-arrow" class="connector" d="M938 730H1048" stroke="#087f76" marker-end="url(#arrow-backend)"/>
+    <text class="connection-label" x="1005" y="768">Encrypted</text>
+  </g>
+
+  <g id="step-5-backend" data-step="5">
+    <rect class="card" x="1060" y="592" width="260" height="288" rx="14"/>
+    <circle class="step-badge" cx="1090" cy="628" r="18"/>
+    <text class="number" x="1090" y="635">5</text>
+    <text class="node-title" x="1124" y="637">Backend server</text>
+    <use xlink:href="#azure-virtual-machine" x="1160" y="659" width="60" height="60" aria-hidden="true"/>
+    <use xlink:href="#azure-certificate" x="1082" y="737" width="34" height="34" aria-hidden="true"/>
+    <text class="small" x="1130" y="746">Server certificate</text>
+    <text class="small" x="1130" y="772">and private key</text>
+    <text class="detail" x="1084" y="814">Terminates TLS B.</text>
+    <text class="detail" x="1084" y="843">Processes the request.</text>
+  </g>
+
+  <text class="small" x="40" y="565">Arrows show the request direction.</text>
+  <text class="small" x="40" y="591">Both TLS connections are bidirectional.</text>
+  <text class="small" x="40" y="631">A = client-to-gateway connection.</text>
+  <text class="small" x="40" y="657">B = gateway-to-backend connection.</text>
+  <text class="small" x="40" y="697">Use TLS 1.2 or higher on both hops.</text>
+
+  <g id="key-distinction">
+    <rect x="40" y="920" width="1280" height="124" rx="14" fill="#f3f2f1" stroke="#d6d4d2" stroke-width="1.5"/>
+    <text class="node-title" x="64" y="958">Two TLS connections, not a pass-through tunnel</text>
+    <text class="body" x="64" y="994">Server certificates authenticate the endpoints. Each connection uses its own negotiated encryption keys.</text>
+    <text class="body" x="64" y="1024">Trusted roots validate the backend certificate. The backend's private key stays on the backend.</text>
+  </g>
+  <text class="detail" x="40" y="1080">Enable HTTPS on both the listener and backend HTTP settings. An HTTP backend hop would be unencrypted.</text>
+</svg>
