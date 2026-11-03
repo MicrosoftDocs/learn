@@ -86,11 +86,11 @@ In the next module, you work on managing resource lifecycles, including adding, 
 Reliable resource cleanup is a key feature of deployment stacks. When you delete a deployment stack, you can also delete the managed resources, resource groups, and management groups. Using a single API call eliminates the need to understand dependencies. As with creating and updating deployment stacks, the _action on unmanage_ parameter determines how Azure handles detached resources.
 
 > [!NOTE]
-> In this module, we are working with resrouce group scoped deployment stacks. In this situation, the resource group is not managed by the stack. The 'delete all' value for the _action on unmanage_ parameter doesn't detele the resource group where the stack exists. It is necessary to delete the resource group after the stack and its resources are deleted.
+> In this module, we are working with resource group scoped deployment stacks. In this situation, the resource group is not managed by the stack. The 'delete all' value for the _action on unmanage_ parameter doesn't delete the resource group where the stack exists. It is necessary to delete the resource group after the stack and its resources are deleted.
 
 ::: zone pivot="cli"
 
-To delete a deployment stack using Azure CLI, use the `az stack group delete` command. The `--action-on-unmanaged` argument determines how Azure handles detached resources, resource groups, and management groups.
+To delete a deployment stack using Azure CLI, use the `az stack group delete` command. The `--action-on-unmanage` argument determines how Azure handles detached resources, resource groups, and management groups.
 
 ```azurecli
 az stack group delete \
@@ -109,7 +109,7 @@ To delete a deployment stack using Azure PowerShell, use the `Remove-AzResourceG
 Remove-AzResourceGroupDeploymentStack `
     -Name stack-deposits `
     -ResourceGroupName rg-depositsApplication `
-    -ActionOnUnmanage -DeleteAll
+    -ActionOnUnmanage DeleteAll
 ```
 
 ::: zone-end

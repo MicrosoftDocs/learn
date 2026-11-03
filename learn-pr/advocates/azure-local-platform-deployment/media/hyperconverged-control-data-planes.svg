@@ -1,0 +1,323 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="1292" viewBox="0 0 1100 1292" role="img" aria-labelledby="diagram-title diagram-description" style="background: white; background-color: #ffffff">
+  <title id="diagram-title">Azure Local: cloud control, local infrastructure</title>
+  <desc id="diagram-description">An infographic with three numbered sections. Section 1 is the Azure control plane, which handles management requests such as creating a virtual machine. A management arrow connects it to section 2, a local hyperconverged cluster. The two example physical nodes, 2A and 2B, each run VMs through Hyper-V and supply eligible local drives. Storage traffic connects both nodes to 2C, Storage Spaces Direct, which combines their drives into resilient shared storage. This shared storage is a logical pool across the nodes, not a separate external storage appliance. The local data plane carries workload application and storage traffic. Cluster coordination supports the failures covered by the design, while machines, switches, and storage remain at the site. Section 3 explains that control-plane health does not establish local workload health, and running workloads do not establish Azure management connection health. Arrows illustrate management and storage relationships, not a complete packet route.</desc>
+  <rect id="canvas-background" x="0" y="0" width="1100" height="1292" fill="#ffffff" opacity="1" data-role="canvas-background" />
+  <defs>
+    <marker id="management-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#426789" />
+    </marker>
+  </defs>
+  <text x="48" y="62" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="600" fill="#172b4d" data-role="diagram-heading">Azure Local: cloud control, local infrastructure</text>
+  <text x="48" y="104" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="400" fill="#172b4d" data-role="reading-order">Read 1-3 top to bottom; within 2, read A-B-C. Example: two nodes.</text>
+  <g data-card="1-azure-control-plane">
+    <rect x="48" y="140" width="1004" height="142" rx="12" fill="#f3f8fd" stroke="#9bb3c8" stroke-width="1.5" data-role="card-boundary" />
+    <circle cx="88" cy="184" r="22" fill="#005a9e" data-role="number-badge" />
+    <text x="88" y="192" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#ffffff" data-role="stage-number" text-anchor="middle">1</text>
+    <text x="132" y="192" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="600" fill="#172b4d" data-role="card-heading">Azure control plane</text>
+    <svg width="46" height="46" viewBox="0 0 18 18" x="976" y="163" aria-hidden="true" focusable="false" data-source-icon="management + governance\00756-icon-service-Azure-Arc.svg">
+      <defs>
+        <linearGradient id="card-1-b69d2150-b4da-460b-99ae-a9f5a961b313" x1="-1194.321" y1="9.128" x2="-1190.755" y2="9.128" gradientTransform="matrix(-1, 0, 0, 1, -1179.887, 0)" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#32bedd" />
+          <stop offset="0.998" stop-color="#9cebff" stop-opacity="0.5" />
+        </linearGradient>
+        <linearGradient id="card-1-e690cc62-d1a2-4325-90ca-ac2fe51a5b58" x1="80.363" y1="9.135" x2="83.929" y2="9.135" gradientTransform="translate(-76.796)" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#005ba1" />
+          <stop offset="0.998" stop-color="#005ba1" stop-opacity="0" />
+        </linearGradient>
+        <linearGradient id="card-1-ff649864-6b4c-4fa8-bcca-c12b2b910f3c" x1="3.555" y1="9.326" x2="14.434" y2="9.326" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#005ba1" />
+          <stop offset="0.974" stop-color="#32bedd" />
+        </linearGradient>
+      </defs>
+      <g id="card-1-a826c017-5e9e-4208-897f-2ade2eb58cd6">
+        <polygon points="7.132 4.469 3.567 6.542 0 4.468 3.567 2.395 7.132 4.469" fill="#5ea0ef" />
+        <polygon points="7.132 13.794 3.566 11.735 3.566 15.867 7.132 13.794" fill="#005ba1" />
+        <polygon points="3.567 6.542 3.566 6.541 3.566 6.542 0 4.468 0 13.801 3.566 15.874 7.132 13.801 7.132 13.794 3.566 15.867 3.566 11.735 7.132 13.794 7.132 4.469 3.567 6.542" fill="#0078d4" />
+        <polygon points="10.868 4.469 14.433 6.542 18 4.468 14.433 2.395 10.868 4.469" fill="#9cebff" />
+        <polygon points="10.868 13.794 14.434 11.735 14.434 15.867 10.868 13.794" fill="#32bedd" />
+        <polygon points="14.433 6.535 14.434 6.535 14.434 6.535 14.434 11.728 10.868 13.794 10.868 4.462 14.433 6.535" fill="url(#card-1-b69d2150-b4da-460b-99ae-a9f5a961b313)" />
+        <polygon points="10.868 4.469 14.433 6.542 18 4.468 14.433 2.395 10.868 4.469" fill="#9cebff" />
+        <polygon points="14.433 6.542 10.868 4.469 10.868 13.794 14.434 11.735 14.434 15.867 10.868 13.794 10.868 13.801 14.434 15.874 18 13.801 18 4.468 18 4.468 14.433 6.542" fill="#50e6ff" />
+        <polygon points="10.868 13.794 14.434 11.735 14.434 15.867 10.868 13.794" fill="#32bedd" />
+        <polygon points="14.433 6.535 14.434 6.535 14.434 6.535 14.434 11.728 10.868 13.794 10.868 4.462 14.433 6.535" fill="url(#card-1-b69d2150-b4da-460b-99ae-a9f5a961b313)" />
+        <polygon points="3.567 6.541 3.566 6.541 3.566 6.541 3.566 11.734 7.132 13.801 7.132 4.469 3.567 6.541" fill="url(#card-1-e690cc62-d1a2-4325-90ca-ac2fe51a5b58)" />
+        <path d="M14.423,10.126c-.624,1.556-3.066,2.584-5.348,2.584l-.081,0-.08,0c-2.282,0-4.724-1.028-5.348-2.584,0,0-.025-1.561,0-1.713C4.02,10.15,6.4,11.435,8.859,11.435l.135,0,.136,0c2.455,0,4.839-1.285,5.293-3.022C14.448,8.565,14.423,10.126,14.423,10.126ZM13.4,5.942A6.653,6.653,0,0,1,9.13,7.416l-.136,0-.135,0a6.656,6.656,0,0,1-4.267-1.47l-.856.5C4.553,7.809,6.8,8.69,8.914,8.69h.161c2.115,0,4.366-.883,5.181-2.251Z" fill="url(#card-1-ff649864-6b4c-4fa8-bcca-c12b2b910f3c)" />
+      </g>
+    </svg>
+    <text x="80" y="244" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="400" fill="#172b4d" data-role="body">Management requests, such as creating a virtual machine.</text>
+  </g>
+  <line id="azure-management-request" x1="550" x2="550" y1="296" y2="342" stroke="#426789" stroke-width="2.5" marker-end="url(#management-arrow)" data-role="connector" />
+  <text x="580" y="326" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="400" fill="#172b4d" data-role="connector-label">Management requests</text>
+  <g data-card="2-local-hyperconverged-cluster">
+    <rect x="48" y="354" width="1004" height="678" rx="12" fill="#f0f8f8" stroke="#83b6b8" stroke-width="1.5" data-role="card-boundary" />
+    <circle cx="88" cy="398" r="22" fill="#006c70" data-role="number-badge" />
+    <text x="88" y="406" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#ffffff" data-role="stage-number" text-anchor="middle">2</text>
+    <text x="132" y="406" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="600" fill="#172b4d" data-role="card-heading">Local hyperconverged cluster</text>
+    <svg width="46" height="46" viewBox="0 0 18 18" x="976" y="377" aria-hidden="true" focusable="false" data-source-icon="management + governance\01710-icon-service-Arc-Machines.svg">
+      <defs>
+        <linearGradient id="card-2-bf5fc184-d6f4-42f0-ac55-f069b76e3064" x1="9.004" x2="9.004" y2="13.433" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#a67af4" />
+          <stop offset="0.999" stop-color="#773adc" />
+        </linearGradient>
+      </defs>
+      <g id="card-2-f0be493b-fc10-49e5-8c1a-711b8b850a0b">
+        <g>
+          <path d="M17.547,15.2c-.161.7-1.035,1.391-2.617,1.928a21.589,21.589,0,0,1-12.121.017C1.352,16.627.566,15.971.443,15.3c-.021-.118,0-1.966,0-1.966l17.131-.159S17.566,15.11,17.547,15.2Z" fill="#5ea0ef" />
+          <ellipse cx="9.001" cy="13.295" rx="8.573" ry="2.964" transform="translate(-0.133 0.091) rotate(-0.575)" fill="#50e6ff" />
+        </g>
+        <path d="M13.364,12.978a.482.482,0,0,1-.5.455H5.146a.482.482,0,0,1-.5-.455V.456A.48.48,0,0,1,5.146,0h7.715a.481.481,0,0,1,.5.455Z" fill="url(#card-2-bf5fc184-d6f4-42f0-ac55-f069b76e3064)" />
+        <path d="M11.212,6.791H6.872a1,1,0,0,1-.947-1.044h0A1,1,0,0,1,6.872,4.7h4.34a1,1,0,0,1,.948,1.045A1,1,0,0,1,11.212,6.791ZM12.16,2.64A1,1,0,0,0,11.212,1.6H6.872A1,1,0,0,0,5.925,2.64h0a1,1,0,0,0,.947,1.045h4.34A1,1,0,0,0,12.16,2.64Z" fill="#552f99" />
+        <path d="M10.94,1.939a.7.7,0,1,1-.7.7A.7.7,0,0,1,10.94,1.939Zm-.7,3.8a.7.7,0,1,0,.7-.7A.7.7,0,0,0,10.239,5.743Z" fill="#50e6ff" />
+      </g>
+    </svg>
+    <text x="80" y="448" font-family="Segoe UI, Arial, sans-serif" font-size="23" font-weight="400" fill="#172b4d" data-role="body">The same physical machines provide compute and storage.</text>
+    <g data-card="2A-physical-node-1">
+      <rect x="80" y="480" width="452" height="200" rx="12" fill="#ffffff" stroke="#83b6b8" stroke-width="1.5" data-role="card-boundary" />
+      <circle cx="120" cy="524" r="22" fill="#006c70" data-role="number-badge" />
+      <text x="120" y="532" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#ffffff" data-role="stage-number" text-anchor="middle">2A</text>
+      <text x="164" y="532" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="600" fill="#172b4d" data-role="card-heading">Physical node 1</text>
+      <svg width="46" height="46" viewBox="0 0 18 18" x="456" y="503" aria-hidden="true" focusable="false" data-source-icon="management + governance\01710-icon-service-Arc-Machines.svg">
+        <defs>
+          <linearGradient id="card-2A-bf5fc184-d6f4-42f0-ac55-f069b76e3064" x1="9.004" x2="9.004" y2="13.433" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#a67af4" />
+            <stop offset="0.999" stop-color="#773adc" />
+          </linearGradient>
+        </defs>
+        <g id="card-2A-f0be493b-fc10-49e5-8c1a-711b8b850a0b">
+          <g>
+            <path d="M17.547,15.2c-.161.7-1.035,1.391-2.617,1.928a21.589,21.589,0,0,1-12.121.017C1.352,16.627.566,15.971.443,15.3c-.021-.118,0-1.966,0-1.966l17.131-.159S17.566,15.11,17.547,15.2Z" fill="#5ea0ef" />
+            <ellipse cx="9.001" cy="13.295" rx="8.573" ry="2.964" transform="translate(-0.133 0.091) rotate(-0.575)" fill="#50e6ff" />
+          </g>
+          <path d="M13.364,12.978a.482.482,0,0,1-.5.455H5.146a.482.482,0,0,1-.5-.455V.456A.48.48,0,0,1,5.146,0h7.715a.481.481,0,0,1,.5.455Z" fill="url(#card-2A-bf5fc184-d6f4-42f0-ac55-f069b76e3064)" />
+          <path d="M11.212,6.791H6.872a1,1,0,0,1-.947-1.044h0A1,1,0,0,1,6.872,4.7h4.34a1,1,0,0,1,.948,1.045A1,1,0,0,1,11.212,6.791ZM12.16,2.64A1,1,0,0,0,11.212,1.6H6.872A1,1,0,0,0,5.925,2.64h0a1,1,0,0,0,.947,1.045h4.34A1,1,0,0,0,12.16,2.64Z" fill="#552f99" />
+          <path d="M10.94,1.939a.7.7,0,1,1-.7.7A.7.7,0,0,1,10.94,1.939Zm-.7,3.8a.7.7,0,1,0,.7-.7A.7.7,0,0,0,10.239,5.743Z" fill="#50e6ff" />
+        </g>
+      </svg>
+      <svg id="node-1-compute-fd454f1c-5506-44b8-874e-8814b8b2f70b" width="34" height="34" viewBox="0 0 18 18" x="104" y="559" aria-hidden="true" focusable="false" data-source-icon="compute\10021-icon-service-Virtual-Machine.svg">
+        <defs>
+          <linearGradient id="node-1-compute-f34d9569-2bd0-4002-8f16-3d01d8106cb5" x1="8.88" y1="12.21" x2="8.88" y2="0.21" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#0078d4" />
+            <stop offset="0.82" stop-color="#5ea0ef" />
+          </linearGradient>
+          <linearGradient id="node-1-compute-bdb45a0b-eb58-4970-a60a-fb2ce314f866" x1="8.88" y1="16.84" x2="8.88" y2="12.21" gradientUnits="userSpaceOnUse">
+            <stop offset="0.15" stop-color="#ccc" />
+            <stop offset="1" stop-color="#707070" />
+          </linearGradient>
+        </defs>
+        <title>Icon-compute-21</title>
+        <rect x="-0.12" y="0.21" width="18" height="12" rx="0.6" fill="url(#node-1-compute-f34d9569-2bd0-4002-8f16-3d01d8106cb5)" />
+        <polygon points="11.88 4.46 11.88 7.95 8.88 9.71 8.88 6.21 11.88 4.46" fill="#50e6ff" />
+        <polygon points="11.88 4.46 8.88 6.22 5.88 4.46 8.88 2.71 11.88 4.46" fill="#c3f1ff" />
+        <polygon points="8.88 6.22 8.88 9.71 5.88 7.95 5.88 4.46 8.88 6.22" fill="#9cebff" />
+        <polygon points="5.88 7.95 8.88 6.21 8.88 9.71 5.88 7.95" fill="#c3f1ff" />
+        <polygon points="11.88 7.95 8.88 6.21 8.88 9.71 11.88 7.95" fill="#9cebff" />
+        <path d="M12.49,15.84c-1.78-.28-1.85-1.56-1.85-3.63H7.11c0,2.07-.06,3.35-1.84,3.63a1,1,0,0,0-.89,1h9A1,1,0,0,0,12.49,15.84Z" fill="url(#node-1-compute-bdb45a0b-eb58-4970-a60a-fb2ce314f866)" />
+      </svg>
+      <text x="156" y="584" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="400" fill="#172b4d" data-role="body">Hyper-V runs VMs</text>
+      <svg id="node-1-drives-ea317b31-b31a-44fd-a7c4-260774575363" width="34" height="34" viewBox="0 0 18 18" x="104" y="613" aria-hidden="true" focusable="false" data-source-icon="compute\10032-icon-service-Disks.svg">
+        <defs>
+          <linearGradient id="node-1-drives-a3aecb5c-11f5-4ece-99f7-9672f3236156" x1="15.35" y1="13.41" x2="15.37" y2="13.41" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#0078d4" />
+            <stop offset="0.14" stop-color="#1782da" />
+            <stop offset="0.37" stop-color="#368fe3" />
+            <stop offset="0.59" stop-color="#4c98ea" />
+            <stop offset="0.8" stop-color="#599eee" />
+            <stop offset="0.99" stop-color="#5ea0ef" />
+          </linearGradient>
+          <linearGradient id="node-1-drives-b4dfb3ab-25fe-416c-a6fa-f33fcfbf22dc" x1="5.51" y1="802.5" x2="12.94" y2="810.58" gradientTransform="translate(0 -1278.76) scale(1 1.59)" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#0078d4" />
+            <stop offset="0.02" stop-color="#0d7ed8" />
+            <stop offset="0.08" stop-color="#2b8ae0" />
+            <stop offset="0.15" stop-color="#4194e7" />
+            <stop offset="0.22" stop-color="#519beb" />
+            <stop offset="0.29" stop-color="#5b9fee" />
+            <stop offset="0.4" stop-color="#5ea0ef" />
+            <stop offset="0.55" stop-color="#5b9fee" />
+            <stop offset="0.68" stop-color="#509aeb" />
+            <stop offset="0.8" stop-color="#3f92e6" />
+            <stop offset="0.91" stop-color="#2688df" />
+            <stop offset="0.99" stop-color="#127fd9" />
+          </linearGradient>
+        </defs>
+        <title>Icon-compute-32</title>
+        <ellipse cx="8.96" cy="11.82" rx="7.5" ry="3.08" fill="#76bc2d" />
+        <ellipse cx="9.15" cy="11.79" rx="2.49" ry="0.68" fill="#5e9624" />
+        <path d="M15.35,13.4l0,0Z" fill="url(#node-1-drives-a3aecb5c-11f5-4ece-99f7-9672f3236156)" />
+        <ellipse cx="8.96" cy="4.99" rx="7.5" ry="3.08" fill="url(#node-1-drives-b4dfb3ab-25fe-416c-a6fa-f33fcfbf22dc)" />
+        <ellipse cx="9.15" cy="4.95" rx="2.49" ry="0.68" fill="#005ba1" />
+        <path d="M9,14.84c4.15,0,7.5-1.38,7.5-3.08h0v1.82h0c-.14,1.65-3.44,3-7.5,3s-7.5-1.38-7.5-3.08V11.76C1.46,13.46,4.82,14.84,9,14.84Z" fill="#5e9624" />
+        <path d="M15.35,13.4l0,0Z" fill="url(#node-1-drives-a3aecb5c-11f5-4ece-99f7-9672f3236156)" />
+        <path d="M9,8c4.15,0,7.5-1.38,7.5-3.08h0V6.74h0c-.14,1.65-3.44,3-7.5,3s-7.5-1.38-7.5-3.08V4.92C1.46,6.62,4.82,8,9,8Z" fill="#0078d4" />
+      </svg>
+      <text x="156" y="638" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="400" fill="#172b4d" data-role="body">Eligible local drives</text>
+    </g>
+    <g data-card="2B-physical-node-2">
+      <rect x="568" y="480" width="452" height="200" rx="12" fill="#ffffff" stroke="#83b6b8" stroke-width="1.5" data-role="card-boundary" />
+      <circle cx="608" cy="524" r="22" fill="#006c70" data-role="number-badge" />
+      <text x="608" y="532" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#ffffff" data-role="stage-number" text-anchor="middle">2B</text>
+      <text x="652" y="532" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="600" fill="#172b4d" data-role="card-heading">Physical node 2</text>
+      <svg width="46" height="46" viewBox="0 0 18 18" x="944" y="503" aria-hidden="true" focusable="false" data-source-icon="management + governance\01710-icon-service-Arc-Machines.svg">
+        <defs>
+          <linearGradient id="card-2B-bf5fc184-d6f4-42f0-ac55-f069b76e3064" x1="9.004" x2="9.004" y2="13.433" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#a67af4" />
+            <stop offset="0.999" stop-color="#773adc" />
+          </linearGradient>
+        </defs>
+        <g id="card-2B-f0be493b-fc10-49e5-8c1a-711b8b850a0b">
+          <g>
+            <path d="M17.547,15.2c-.161.7-1.035,1.391-2.617,1.928a21.589,21.589,0,0,1-12.121.017C1.352,16.627.566,15.971.443,15.3c-.021-.118,0-1.966,0-1.966l17.131-.159S17.566,15.11,17.547,15.2Z" fill="#5ea0ef" />
+            <ellipse cx="9.001" cy="13.295" rx="8.573" ry="2.964" transform="translate(-0.133 0.091) rotate(-0.575)" fill="#50e6ff" />
+          </g>
+          <path d="M13.364,12.978a.482.482,0,0,1-.5.455H5.146a.482.482,0,0,1-.5-.455V.456A.48.48,0,0,1,5.146,0h7.715a.481.481,0,0,1,.5.455Z" fill="url(#card-2B-bf5fc184-d6f4-42f0-ac55-f069b76e3064)" />
+          <path d="M11.212,6.791H6.872a1,1,0,0,1-.947-1.044h0A1,1,0,0,1,6.872,4.7h4.34a1,1,0,0,1,.948,1.045A1,1,0,0,1,11.212,6.791ZM12.16,2.64A1,1,0,0,0,11.212,1.6H6.872A1,1,0,0,0,5.925,2.64h0a1,1,0,0,0,.947,1.045h4.34A1,1,0,0,0,12.16,2.64Z" fill="#552f99" />
+          <path d="M10.94,1.939a.7.7,0,1,1-.7.7A.7.7,0,0,1,10.94,1.939Zm-.7,3.8a.7.7,0,1,0,.7-.7A.7.7,0,0,0,10.239,5.743Z" fill="#50e6ff" />
+        </g>
+      </svg>
+      <svg id="node-2-compute-fd454f1c-5506-44b8-874e-8814b8b2f70b" width="34" height="34" viewBox="0 0 18 18" x="592" y="559" aria-hidden="true" focusable="false" data-source-icon="compute\10021-icon-service-Virtual-Machine.svg">
+        <defs>
+          <linearGradient id="node-2-compute-f34d9569-2bd0-4002-8f16-3d01d8106cb5" x1="8.88" y1="12.21" x2="8.88" y2="0.21" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#0078d4" />
+            <stop offset="0.82" stop-color="#5ea0ef" />
+          </linearGradient>
+          <linearGradient id="node-2-compute-bdb45a0b-eb58-4970-a60a-fb2ce314f866" x1="8.88" y1="16.84" x2="8.88" y2="12.21" gradientUnits="userSpaceOnUse">
+            <stop offset="0.15" stop-color="#ccc" />
+            <stop offset="1" stop-color="#707070" />
+          </linearGradient>
+        </defs>
+        <title>Icon-compute-21</title>
+        <rect x="-0.12" y="0.21" width="18" height="12" rx="0.6" fill="url(#node-2-compute-f34d9569-2bd0-4002-8f16-3d01d8106cb5)" />
+        <polygon points="11.88 4.46 11.88 7.95 8.88 9.71 8.88 6.21 11.88 4.46" fill="#50e6ff" />
+        <polygon points="11.88 4.46 8.88 6.22 5.88 4.46 8.88 2.71 11.88 4.46" fill="#c3f1ff" />
+        <polygon points="8.88 6.22 8.88 9.71 5.88 7.95 5.88 4.46 8.88 6.22" fill="#9cebff" />
+        <polygon points="5.88 7.95 8.88 6.21 8.88 9.71 5.88 7.95" fill="#c3f1ff" />
+        <polygon points="11.88 7.95 8.88 6.21 8.88 9.71 11.88 7.95" fill="#9cebff" />
+        <path d="M12.49,15.84c-1.78-.28-1.85-1.56-1.85-3.63H7.11c0,2.07-.06,3.35-1.84,3.63a1,1,0,0,0-.89,1h9A1,1,0,0,0,12.49,15.84Z" fill="url(#node-2-compute-bdb45a0b-eb58-4970-a60a-fb2ce314f866)" />
+      </svg>
+      <text x="644" y="584" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="400" fill="#172b4d" data-role="body">Hyper-V runs VMs</text>
+      <svg id="node-2-drives-ea317b31-b31a-44fd-a7c4-260774575363" width="34" height="34" viewBox="0 0 18 18" x="592" y="613" aria-hidden="true" focusable="false" data-source-icon="compute\10032-icon-service-Disks.svg">
+        <defs>
+          <linearGradient id="node-2-drives-a3aecb5c-11f5-4ece-99f7-9672f3236156" x1="15.35" y1="13.41" x2="15.37" y2="13.41" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#0078d4" />
+            <stop offset="0.14" stop-color="#1782da" />
+            <stop offset="0.37" stop-color="#368fe3" />
+            <stop offset="0.59" stop-color="#4c98ea" />
+            <stop offset="0.8" stop-color="#599eee" />
+            <stop offset="0.99" stop-color="#5ea0ef" />
+          </linearGradient>
+          <linearGradient id="node-2-drives-b4dfb3ab-25fe-416c-a6fa-f33fcfbf22dc" x1="5.51" y1="802.5" x2="12.94" y2="810.58" gradientTransform="translate(0 -1278.76) scale(1 1.59)" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#0078d4" />
+            <stop offset="0.02" stop-color="#0d7ed8" />
+            <stop offset="0.08" stop-color="#2b8ae0" />
+            <stop offset="0.15" stop-color="#4194e7" />
+            <stop offset="0.22" stop-color="#519beb" />
+            <stop offset="0.29" stop-color="#5b9fee" />
+            <stop offset="0.4" stop-color="#5ea0ef" />
+            <stop offset="0.55" stop-color="#5b9fee" />
+            <stop offset="0.68" stop-color="#509aeb" />
+            <stop offset="0.8" stop-color="#3f92e6" />
+            <stop offset="0.91" stop-color="#2688df" />
+            <stop offset="0.99" stop-color="#127fd9" />
+          </linearGradient>
+        </defs>
+        <title>Icon-compute-32</title>
+        <ellipse cx="8.96" cy="11.82" rx="7.5" ry="3.08" fill="#76bc2d" />
+        <ellipse cx="9.15" cy="11.79" rx="2.49" ry="0.68" fill="#5e9624" />
+        <path d="M15.35,13.4l0,0Z" fill="url(#node-2-drives-a3aecb5c-11f5-4ece-99f7-9672f3236156)" />
+        <ellipse cx="8.96" cy="4.99" rx="7.5" ry="3.08" fill="url(#node-2-drives-b4dfb3ab-25fe-416c-a6fa-f33fcfbf22dc)" />
+        <ellipse cx="9.15" cy="4.95" rx="2.49" ry="0.68" fill="#005ba1" />
+        <path d="M9,14.84c4.15,0,7.5-1.38,7.5-3.08h0v1.82h0c-.14,1.65-3.44,3-7.5,3s-7.5-1.38-7.5-3.08V11.76C1.46,13.46,4.82,14.84,9,14.84Z" fill="#5e9624" />
+        <path d="M15.35,13.4l0,0Z" fill="url(#node-2-drives-a3aecb5c-11f5-4ece-99f7-9672f3236156)" />
+        <path d="M9,8c4.15,0,7.5-1.38,7.5-3.08h0V6.74h0c-.14,1.65-3.44,3-7.5,3s-7.5-1.38-7.5-3.08V4.92C1.46,6.62,4.82,8,9,8Z" fill="#0078d4" />
+      </svg>
+      <text x="644" y="638" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="400" fill="#172b4d" data-role="body">Eligible local drives</text>
+    </g>
+    <line id="node-1-storage-traffic" x1="306" x2="306" y1="692" y2="758" stroke="#426789" stroke-width="2.5" marker-end="url(#management-arrow)" data-role="connector" />
+    <line id="node-2-storage-traffic" x1="794" x2="794" y1="692" y2="758" stroke="#426789" stroke-width="2.5" marker-end="url(#management-arrow)" data-role="connector" />
+    <text x="550" y="730" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="400" fill="#172b4d" data-role="connector-label" text-anchor="middle">Local storage traffic</text>
+    <g data-card="2C-storage-spaces-direct">
+      <rect x="184" y="772" width="732" height="136" rx="12" fill="#e2f3f2" stroke="#83b6b8" stroke-width="1.5" data-role="card-boundary" />
+      <circle cx="224" cy="816" r="22" fill="#006c70" data-role="number-badge" />
+      <text x="224" y="824" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#ffffff" data-role="stage-number" text-anchor="middle">2C</text>
+      <text x="268" y="824" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="600" fill="#172b4d" data-role="card-heading">Storage Spaces Direct</text>
+      <svg id="card-2C-ea317b31-b31a-44fd-a7c4-260774575363" width="46" height="46" viewBox="0 0 18 18" x="840" y="795" aria-hidden="true" focusable="false" data-source-icon="compute\10032-icon-service-Disks.svg">
+        <defs>
+          <linearGradient id="card-2C-a3aecb5c-11f5-4ece-99f7-9672f3236156" x1="15.35" y1="13.41" x2="15.37" y2="13.41" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#0078d4" />
+            <stop offset="0.14" stop-color="#1782da" />
+            <stop offset="0.37" stop-color="#368fe3" />
+            <stop offset="0.59" stop-color="#4c98ea" />
+            <stop offset="0.8" stop-color="#599eee" />
+            <stop offset="0.99" stop-color="#5ea0ef" />
+          </linearGradient>
+          <linearGradient id="card-2C-b4dfb3ab-25fe-416c-a6fa-f33fcfbf22dc" x1="5.51" y1="802.5" x2="12.94" y2="810.58" gradientTransform="translate(0 -1278.76) scale(1 1.59)" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#0078d4" />
+            <stop offset="0.02" stop-color="#0d7ed8" />
+            <stop offset="0.08" stop-color="#2b8ae0" />
+            <stop offset="0.15" stop-color="#4194e7" />
+            <stop offset="0.22" stop-color="#519beb" />
+            <stop offset="0.29" stop-color="#5b9fee" />
+            <stop offset="0.4" stop-color="#5ea0ef" />
+            <stop offset="0.55" stop-color="#5b9fee" />
+            <stop offset="0.68" stop-color="#509aeb" />
+            <stop offset="0.8" stop-color="#3f92e6" />
+            <stop offset="0.91" stop-color="#2688df" />
+            <stop offset="0.99" stop-color="#127fd9" />
+          </linearGradient>
+        </defs>
+        <title>Icon-compute-32</title>
+        <ellipse cx="8.96" cy="11.82" rx="7.5" ry="3.08" fill="#76bc2d" />
+        <ellipse cx="9.15" cy="11.79" rx="2.49" ry="0.68" fill="#5e9624" />
+        <path d="M15.35,13.4l0,0Z" fill="url(#card-2C-a3aecb5c-11f5-4ece-99f7-9672f3236156)" />
+        <ellipse cx="8.96" cy="4.99" rx="7.5" ry="3.08" fill="url(#card-2C-b4dfb3ab-25fe-416c-a6fa-f33fcfbf22dc)" />
+        <ellipse cx="9.15" cy="4.95" rx="2.49" ry="0.68" fill="#005ba1" />
+        <path d="M9,14.84c4.15,0,7.5-1.38,7.5-3.08h0v1.82h0c-.14,1.65-3.44,3-7.5,3s-7.5-1.38-7.5-3.08V11.76C1.46,13.46,4.82,14.84,9,14.84Z" fill="#5e9624" />
+        <path d="M15.35,13.4l0,0Z" fill="url(#card-2C-a3aecb5c-11f5-4ece-99f7-9672f3236156)" />
+        <path d="M9,8c4.15,0,7.5-1.38,7.5-3.08h0V6.74h0c-.14,1.65-3.44,3-7.5,3s-7.5-1.38-7.5-3.08V4.92C1.46,6.62,4.82,8,9,8Z" fill="#0078d4" />
+      </svg>
+      <text x="216" y="870" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="400" fill="#172b4d" data-role="body">Resilient shared storage from these nodes' drives.</text>
+    </g>
+    <text x="80" y="946" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="400" fill="#172b4d" data-role="body">Local data plane: workload application and storage traffic.</text>
+    <text x="80" y="980" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="400" fill="#172b4d" data-role="body">Cluster coordination supports the failures covered by the design.</text>
+    <text x="80" y="1014" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="400" fill="#172b4d" data-role="body">Machines, switches, and storage remain at your site.</text>
+  </g>
+  <g data-card="3-independent-health-observations">
+    <rect x="48" y="1064" width="1004" height="188" rx="12" fill="#f7f3fc" stroke="#b6a3d8" stroke-width="1.5" data-role="card-boundary" />
+    <circle cx="88" cy="1108" r="22" fill="#63409c" data-role="number-badge" />
+    <text x="88" y="1116" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#ffffff" data-role="stage-number" text-anchor="middle">3</text>
+    <text x="132" y="1116" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="600" fill="#172b4d" data-role="card-heading">Observe both planes independently</text>
+    <svg id="card-3-e4e764cd-2e73-472f-b88a-bf8bfc2c2994" width="46" height="46" viewBox="0 0 18 18" x="976" y="1087" aria-hidden="true" focusable="false" data-source-icon="management + governance\00001-icon-service-Monitor.svg">
+      <defs>
+        <radialGradient id="card-3-ac8b32da-30ca-4b92-8d0f-8d2d5ef278a0" cx="5.72" cy="7.45" r="8.42" gradientTransform="translate(3.23 1.51) scale(1.01 1.01)" gradientUnits="userSpaceOnUse">
+          <stop offset="0.18" stop-color="#5ea0ef" />
+          <stop offset="0.56" stop-color="#5c9fee" />
+          <stop offset="0.69" stop-color="#559ced" />
+          <stop offset="0.78" stop-color="#4a97e9" />
+          <stop offset="0.86" stop-color="#3990e4" />
+          <stop offset="0.93" stop-color="#2387de" />
+          <stop offset="0.99" stop-color="#087bd6" />
+          <stop offset="1" stop-color="#0078d4" />
+        </radialGradient>
+        <radialGradient id="card-3-a9954820-cb38-4943-9842-f0a568d2b015" cx="28.18" cy="202.29" r="2.7" gradientTransform="translate(-17.77 -185.01) scale(0.95)" gradientUnits="userSpaceOnUse">
+          <stop offset="0.19" stop-color="#8c8e90" />
+          <stop offset="0.35" stop-color="#848688" />
+          <stop offset="0.6" stop-color="#6e7071" />
+          <stop offset="0.91" stop-color="#4a4b4c" />
+          <stop offset="1" stop-color="#3e3f3f" />
+        </radialGradient>
+      </defs>
+      <title>Icon-manage-317</title>
+      <ellipse cx="9" cy="9" rx="8.5" ry="8.47" fill="url(#card-3-ac8b32da-30ca-4b92-8d0f-8d2d5ef278a0)" />
+      <ellipse cx="9" cy="9" rx="7.4" ry="7.37" fill="#fff" />
+      <path d="M2.72,9.44a6.24,6.24,0,0,0,1.82,4l2-2a3.53,3.53,0,0,1-1-2Z" fill="#9cebff" />
+      <path d="M13.13,4.27A6.25,6.25,0,0,0,9.44,2.74V5.53a3.41,3.41,0,0,1,1.71.7Z" fill="#32bedd" />
+      <path d="M4.87,4.27l2,2a3.41,3.41,0,0,1,1.71-.7V2.74A6.25,6.25,0,0,0,4.87,4.27Z" fill="#32bedd" />
+      <path d="M11.78,6.85a3.6,3.6,0,0,1,.71,1.71h2.79a6.16,6.16,0,0,0-1.53-3.67Z" fill="#32bedd" />
+      <path d="M6.22,6.85l-2-2A6.16,6.16,0,0,0,2.72,8.56H5.51A3.6,3.6,0,0,1,6.22,6.85Z" fill="#50e6ff" />
+      <path d="M14.14,7a.45.45,0,0,0-.57-.25L9.45,8.41l.32.81,4.12-1.63A.44.44,0,0,0,14.14,7Z" fill="#f04049" />
+      <ellipse cx="9" cy="9" rx="1.2" ry="1.2" fill="url(#card-3-a9954820-cb38-4943-9842-f0a568d2b015)" />
+    </svg>
+    <text x="80" y="1158" font-family="Segoe UI, Arial, sans-serif" font-size="23" font-weight="400" fill="#172b4d" data-role="body">A healthy Azure control plane does not prove local workload health.</text>
+    <text x="80" y="1200" font-family="Segoe UI, Arial, sans-serif" font-size="23" font-weight="400" fill="#172b4d" data-role="body">Running workloads do not prove a healthy Azure management connection.</text>
+  </g>
+</svg>

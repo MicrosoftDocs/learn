@@ -42,7 +42,7 @@ To delete a deployment stack using Azure PowerShell, use the `Remove-AzResourceG
 Remove-AzResourceGroupDeploymentStack `
     -Name stack-deposits `
     -ResourceGroupName rg-depositsApplication `
-    -ActionOnUnmanage -DeleteAll
+    -ActionOnUnmanage DeleteAll
 ```
 
 ::: zone-end

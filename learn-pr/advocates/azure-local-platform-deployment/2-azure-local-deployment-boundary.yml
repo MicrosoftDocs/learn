@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-local-platform-deployment.azure-local-deployment-boundary
+metadata:
+  title: Azure Local Deployment Boundary
+  description: Define deployment scope, assign prerequisite owners, distinguish identity models, and prepare Azure authorization before registering nodes.
+  ms.date: 10/30/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Azure Local deployment boundary
+durationInMinutes: 12
+content: |
+  [!include[](includes/2-azure-local-deployment-boundary.md)]

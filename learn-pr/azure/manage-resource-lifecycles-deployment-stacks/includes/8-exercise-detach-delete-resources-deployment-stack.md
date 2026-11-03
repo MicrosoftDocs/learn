@@ -58,7 +58,7 @@ Wait for the update operation to complete before moving on to the next task.
 
 ::: zone pivot="powershell"
 
-With the Bicep file modified, we want to update the deployment stack so that the Log Analytics workspace and Application Insights instance are detached from the stack. We use `ActionOnUnmanage DetachAll` to accomplish this result.
+With the Bicep file modified, we want to update the deployment stack so that the Log Analytics workspace and Application Insights instance are detached from the stack. We use `-ActionOnUnmanage DetachAll` to accomplish this result.
 
 1. To update the deployment stack, run the following command from the terminal in Visual Studio Code.
 

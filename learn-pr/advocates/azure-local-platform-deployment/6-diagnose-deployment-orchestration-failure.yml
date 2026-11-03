@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-local-platform-deployment.diagnose-deployment-orchestration-failure
+metadata:
+  title: Diagnose Azure Local Deployment Orchestration Failure
+  description: Trace the earliest actionable deployment failure, collect cloud and local evidence, assign remediation, and select a supported recovery point.
+  ms.date: 10/30/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Diagnose Azure Local deployment orchestration failure
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-diagnose-deployment-orchestration-failure.md)]

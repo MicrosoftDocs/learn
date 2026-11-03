@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-local-storage-resilience.storage-design
+metadata:
+  title: Azure Local Storage Design
+  description: Compare Azure Local storage architectures, filesystem choices, supported deployment combinations, and independent storage access paths.
+  ms.date: 10/27/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Azure Local storage design
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-storage-design.md)]

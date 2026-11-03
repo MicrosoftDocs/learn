@@ -1,0 +1,49 @@
+### YamlMime:Module
+uid: learn.devrel.azure-local-storage-resilience
+metadata:
+  title: Azure Local Storage Architecture and Maintenance
+  description: Design resilient Azure Local storage by selecting supported architectures, planning capacity, evaluating failures, and managing maintenance and recovery.
+  ms.date: 10/27/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: module-standard-concept-based
+  ai-usage: ai-assisted
+  ms.service: azure-local
+title: Azure Local storage architecture and maintenance
+summary: |
+  Azure Local storage is resilient only when the hosted workload can use its data after the failures that the design promises to withstand. Redundant drives are important, but so are copy placement, storage-network paths, quorum, repair capacity, and enough surviving compute capacity to run the workload.
+abstract: |
+  After completing this module, you can:
+
+  - Select a supported Azure Local storage architecture and resiliency layout for a specified failure requirement.
+  - Calculate physical footprint, logical capacity, repair reserve, and growth without mixing allocation layers.
+  - Explain how fault domains, storage paths, cluster quorum, and pool quorum affect availability.
+  - Interpret storage and quorum evidence during a degradation or capacity incident.
+  - Explain data-integrity protection and select monitoring evidence for storage failures and recovery.
+  - Distinguish repair, resynchronization, rebalancing, and recovery from an independent recovery point.
+prerequisites: |
+  - Familiarity with Azure Local architecture, virtualization, and storage.
+  - Working knowledge of failover clustering and redundant network connections.
+  - Basic Windows PowerShell experience for the read-only diagnostic examples.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+- solution-architect
+products:
+- azure-local
+subjects:
+- storage
+- infrastructure
+units:
+- learn.devrel.azure-local-storage-resilience.introduction
+- learn.devrel.azure-local-storage-resilience.storage-design
+- learn.devrel.azure-local-storage-resilience.storage-resiliency-options
+- learn.devrel.azure-local-storage-resilience.failure-domain-design
+- learn.devrel.azure-local-storage-resilience.storage-maintenance
+- learn.devrel.azure-local-storage-resilience.volume-maintenance
+- learn.devrel.azure-local-storage-resilience.knowledge-check
+- learn.devrel.azure-local-storage-resilience.summary
+badge:
+  uid: learn.devrel.azure-local-storage-resilience.badge

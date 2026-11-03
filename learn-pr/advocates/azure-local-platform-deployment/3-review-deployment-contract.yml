@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-local-platform-deployment.review-deployment-contract
+metadata:
+  title: Review the Deployment Contract
+  description: Review deployment templates, identity-specific parameters, network allocations, storage choices, witness configuration, and protected secret references.
+  ms.date: 10/30/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Review the deployment contract
+durationInMinutes: 13
+content: |
+  [!include[](includes/3-review-deployment-contract.md)]
