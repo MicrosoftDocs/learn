@@ -1,0 +1,60 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.architecting-code-specifications-ai.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: Check your understanding of architecting code specifications for AI.
+  author: wwlpublish
+  ms.author: buzahid
+  ms.date: 10/19/2026
+  ms.topic: unit
+  module_assessment: true
+  ai_generated_module_assessment: false
+durationInMinutes: 4
+content: |
+quiz:
+  questions:
+  - content: "Why is deconstructing a feature request important?"
+    choices:
+    - content: "It makes the request shorter"
+      isCorrect: false
+      explanation: "Incorrect. Deconstruction isn't about length; it's about understanding the full scope and requirements."
+    - content: "It breaks down complex requests into manageable components and clarifies requirements"
+      isCorrect: true
+      explanation: "Correct. Deconstruction helps you understand what's really needed and creates a foundation for clear specifications."
+    - content: "It's only necessary for AI-assisted development"
+      isCorrect: false
+      explanation: "Incorrect. Good requirements analysis is important regardless of whether you use AI assistance."
+  - content: "What should explicit specifications include?"
+    choices:
+    - content: "Only the happy path scenario"
+      isCorrect: false
+      explanation: "Incorrect. Specifications should cover multiple scenarios, including edge cases and error conditions."
+    - content: "Inputs, outputs, expected behavior, constraints, and error handling"
+      isCorrect: true
+      explanation: "Correct. Comprehensive specifications provide all the details AI needs to generate accurate code."
+    - content: "A list of programming languages to use"
+      isCorrect: false
+      explanation: "Incorrect. Specifications describe what the code should do, not implementation details like language choice."
+  - content: "What are edge cases?"
+    choices:
+    - content: "Situations that rarely happen and can be ignored"
+      isCorrect: false
+      explanation: "Incorrect. Edge cases are boundary conditions that should be handled deliberately in your code."
+    - content: "The situations at the boundaries of normal operation, like empty input or maximum values"
+      isCorrect: true
+      explanation: "Correct. Edge cases are important boundary conditions that should be explicitly handled and tested."
+    - content: "Errors that occur during development"
+      isCorrect: false
+      explanation: "Incorrect. Edge cases are specific input scenarios, not development errors."
+  - content: "How should you communicate specifications to an AI assistant?"
+    choices:
+    - content: "Assume the AI will figure out your requirements"
+      isCorrect: false
+      explanation: "Incorrect. AI works best with clear, explicit specifications and instructions."
+    - content: "Use detailed specifications and clear prompts that include requirements, examples, and edge cases"
+      isCorrect: true
+      explanation: "Correct. Detailed specifications and well-written prompts lead to better AI-generated code."
+    - content: "Specifications don't matter for AI-assisted development"
+      isCorrect: false
+      explanation: "Incorrect. Clear specifications are even more important when working with AI tools."
