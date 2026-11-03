@@ -1,0 +1,9 @@
+This module provided a comprehensive overview about managing encryption keys and digital certificates in Azure Key Vault services to help organizations meet stringent data sovereignty requirements. It described key management strategies that align with organizational needs for secure data storage and compliance with international regulations, such as FIPS-140-2 Level 3 validation.
+
+Key management requirements were reviewed, emphasizing the importance of safeguarding sensitive data and cryptographic material and linking these needs to data classification systems. The module also explored encryption strategies, which offer flexibility for different security needs. Azure Key Vault Managed HSM is also an option for organizations that require high assurance for key protection through hardware security modules.
+
+The module also detailed the operational models for key management, highlighting the differences between Azure Key Vault Premium and Azure Key Vault Managed HSM, particularly in terms of access control and compliance. Additionally, the module emphasized the importance of understanding FIPS-140-2 Level 3 compliance and implementing proper role-based access control (RBAC), along with key management operations, such as key creation, management, and usage in Azure Key Vault Managed HSM.
+
+The module described platform-managed and customer-managed certificates, explaining the various scenarios where digital certificates are used, such as website authentication, service authentication, and infrastructure security. It also addressed certificate life cycle management, including automated creation, renewal, and revocation, alongside the integration of on-premises and partner certificate solutions.
+
+Overall, this module explained how to implement more secure, compliant, and scalable key and certificate management in Microsoft for Sovereignty.

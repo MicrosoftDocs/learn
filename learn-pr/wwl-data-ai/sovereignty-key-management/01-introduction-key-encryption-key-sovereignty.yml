@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.sovereignty-key-management.introduction-key-encryption-and-key-sovereignty
+title: Introduction
+metadata:
+  title: Introduction
+  description: Introduction to the Azure key and certificate management module
+  ms.date: 11/02/2026
+  author: salisburysimon
+  ms.author: sidicken
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/01-introduction-key-encryption-key-sovereignty.md)]
