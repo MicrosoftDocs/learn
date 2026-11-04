@@ -13,11 +13,11 @@ Chat applications range from straightforward question answering to conversations
 
 ![Screenshot of the MAI Thinking model in the playground.](../media/thinking-model.png)
 
-## MAI-Thinking-1
+## MAI-Thinking
 
-**MAI-Thinking-1** is Microsoft AI's first reasoning model. It was built from scratch for serious mathematics, coding, software engineering, and real-world enterprise deployment. Its mixture-of-experts architecture activates a subset of its overall parameters during inference, giving it a smaller inference footprint than a similarly sized dense model.
+**MAI-Thinking** is Microsoft AI's first reasoning model. It was built from scratch for serious mathematics, coding, software engineering, and real-world enterprise deployment. Its mixture-of-experts architecture activates a subset of its overall parameters during inference, giving it a smaller inference footprint than a similarly sized dense model.
 
-MAI-Thinking-1 is designed for workloads such as:
+MAI-Thinking is designed for workloads such as:
 
 - Working through multi-step mathematics and logic problems.
 - Analyzing requirements and producing or reviewing code.
