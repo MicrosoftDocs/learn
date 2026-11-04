@@ -1,3 +1,13 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=a71f94a9-9a95-495f-b6a9-2f3011de6404]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
 
 Optimizing AI agents requires more than making changes and hoping they work better. Effective optimization depends on structured experiments that compare agent variants objectively, measuring quality improvements, cost impacts, and performance characteristics. Consider Adventure Works, an outdoor adventure company managing a Trail Guide Agent that helps customers plan hiking trips with trail recommendations, accommodation bookings, and gear suggestions. The team wants to reduce operational costs by switching from GPT-4 to GPT-4 mini, but they need to verify that quality doesn't degrade below their 4.2/5.0 customer satisfaction target and response times remain under 30 seconds. Here, you learn how to design evaluation experiments by defining metrics, selecting variants to test, and creating systematic testing approaches.
 
@@ -86,3 +96,5 @@ Business requirements influence these thresholds: customer-facing agents handlin
 Your comparison methodology runs each variant against the same test prompts, recording quality scores, token usage, and response times. Organizing results reveals patterns. For example, GPT-4 mini might excel at straightforward queries but struggle with complex planning. Document your experiment design to ensure reproducibility: test prompts, scoring criteria, variant configurations, and rationale.
 
 With comprehensive experiment design complete, you're ready to implement these experiments using version control workflows that enable safe testing and team collaboration.
+
+::: zone-end

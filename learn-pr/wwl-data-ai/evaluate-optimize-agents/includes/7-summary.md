@@ -1,3 +1,13 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=2ee726fc-1c76-4269-a576-650a95d70754]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
 
 You've learned how to optimize AI agents through structured evaluation that transforms guesswork into evidence-based engineering decisions.
 
@@ -20,3 +30,5 @@ Successful optimization balances multiple dimensions. A model change might reduc
 ## Next steps
 
 Start with a high-impact optimization opportunity where clear metrics reveal potential improvements. Design your first evaluation experiment, create test prompts covering diverse scenarios, and establish evaluation rubrics before testing begins. Run experiments systematically, document results thoroughly, and use objective data to guide your optimization decisions.
+
+::: zone-end
