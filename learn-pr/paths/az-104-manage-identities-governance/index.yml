@@ -92,7 +92,7 @@ modules:
 - learn.wwl.understand-azure-active-directory
 - learn.wwl.create-configure-manage-identities
 - learn.wwl.describe-core-architectural-components-of-azure
-- learn-bizapps.sovereignty-policy-initiatives
+- learn.wwl.sovereignty-policy-initiatives
 - learn.secure-azure-resources-with-rbac
 - learn.azure.allow-users-to-reset-their-password
 trophy:
