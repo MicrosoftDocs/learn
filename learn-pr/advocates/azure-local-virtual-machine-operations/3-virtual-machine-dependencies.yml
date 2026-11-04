@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-local-virtual-machine-operations.virtual-machine-dependencies
+metadata:
+  title: Prepare Virtual Machine Dependencies
+  description: Prepare images, storage, networking, permissions, capacity, placement, and workstation security before provisioning virtual machines.
+  ms.date: 11/01/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Prepare virtual machine dependencies
+durationInMinutes: 26
+content: |
+  [!include[](includes/3-virtual-machine-dependencies.md)]

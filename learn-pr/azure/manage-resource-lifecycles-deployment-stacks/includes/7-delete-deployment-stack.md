@@ -19,7 +19,7 @@ Consider the deposits application. In the previous unit, we removed some resourc
 Typically, when deleting a deployment stack, you set the _action on unmanage_ parameter to `delete all`, which deletes the resources. But sometimes, you want to delete the stack without deleting the resources. Maybe you no longer need the features that deployment stacks offer, but the resources need to remain. Or, you're moving a resource from one stack to another. To detach the resources, set the _action on unmanage_ parameter to `detach all` instead.
 
 > [!NOTE]
-> When working with resource group scoped deployment stacks, the `delete all` value for the _action on unmanage_ parameter doesn't detele the detached resources or the resource group where the stack exists. If you want to remove the detached resources and resource group, they must manually be deleted.
+> When working with resource group scoped deployment stacks, the `delete all` value for the _action on unmanage_ parameter doesn't delete the detached resources or the resource group where the stack exists. If you want to remove the detached resources and resource group, they must manually be deleted.
 
 ::: zone pivot="cli"
 
