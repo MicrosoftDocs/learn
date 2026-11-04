@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-local-virtual-machine-operations.virtual-machine-lifecycle
+metadata:
+  title: Apply Virtual Machine Lifecycle Changes
+  description: Plan supported virtual machine changes, host maintenance, power operations, resizing, disk changes, and retirement.
+  ms.date: 11/01/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Apply virtual machine lifecycle changes
+durationInMinutes: 14
+content: |
+  [!include[](includes/5-virtual-machine-lifecycle.md)]

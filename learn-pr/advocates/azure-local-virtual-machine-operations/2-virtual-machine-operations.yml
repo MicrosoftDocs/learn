@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-local-virtual-machine-operations.virtual-machine-operations
+metadata:
+  title: Azure Local Virtual Machine Operations
+  description: Explain Azure-managed virtual machine identities, control-plane responsibilities, supported tools, and operational records.
+  ms.date: 11/01/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Azure Local virtual machine operations
+durationInMinutes: 16
+content: |
+  [!include[](includes/2-virtual-machine-operations.md)]

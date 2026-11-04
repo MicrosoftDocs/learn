@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-local-virtual-machine-operations.virtual-machine-health
+metadata:
+  title: Assess Virtual Machine Health
+  description: Interpret virtual machine health, configure actionable alerts, investigate failures, and respond to Azure management outages.
+  ms.date: 11/01/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Assess virtual machine health
+durationInMinutes: 12
+content: |
+  [!include[](includes/4-virtual-machine-health.md)]

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-local-virtual-machine-operations.graphics-acceleration
+metadata:
+  title: Configure Graphics Acceleration
+  description: Compare whole-device graphics assignment and graphics processor partitioning, including host requirements, placement, migration, and recovery.
+  ms.date: 11/01/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Configure graphics acceleration
+durationInMinutes: 8
+content: |
+  [!include[](includes/9-graphics-acceleration.md)]

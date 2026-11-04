@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-local-virtual-machine-operations.network-mobility-restrictions
+metadata:
+  title: Virtual Machine Infrastructure Restrictions
+  description: Apply network configuration boundaries, distinguish migration and failover, and use checkpoints within supported limits.
+  ms.date: 11/01/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Virtual machine infrastructure restrictions
+durationInMinutes: 4
+content: |
+  [!include[](includes/6-network-mobility-restrictions.md)]

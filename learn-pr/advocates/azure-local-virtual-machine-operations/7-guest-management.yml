@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-local-virtual-machine-operations.guest-management
+metadata:
+  title: Manage Guest Operating Systems
+  description: Maintain guest operating systems, Connected Machine agents, and extensions, then diagnose guest-management and activation issues.
+  ms.date: 11/01/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Manage guest operating systems
+durationInMinutes: 16
+content: |
+  [!include[](includes/7-guest-management.md)]
