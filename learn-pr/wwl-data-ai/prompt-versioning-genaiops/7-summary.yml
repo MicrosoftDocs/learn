@@ -2,9 +2,10 @@
 uid: learn.wwl.prompt-versioning-genaiops.summary
 title: Summary
 metadata:
+  zone_pivot_groups: video-or-text
   title: Summary
   description: "Summary of prompt versioning for GenAIOps"
-  ms.date: 01/07/2026
+  ms.date: 11/4/2026
   author: madiepev
   ms.author: madiepev
   ms.topic: unit

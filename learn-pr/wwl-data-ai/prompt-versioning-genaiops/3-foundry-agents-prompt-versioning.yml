@@ -2,9 +2,10 @@
 uid: learn.wwl.prompt-versioning-genaiops.foundry-agents-prompt-versioning
 title: Understand Microsoft Foundry agents and prompt versioning
 metadata:
+  zone_pivot_groups: video-or-text
   title: Understand Microsoft Foundry agents and prompt versioning
   description: "Learn how prompts integrate with Microsoft Foundry agent definitions and how to version agents using Git tags"
-  ms.date: 01/26/2026
+  ms.date: 11/4/2026
   author: madiepev
   ms.author: madiepev
   ms.topic: unit

@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=45a0c903-6578-466f-b43f-05f9db1d4890]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Safe prompt deployment requires a workflow that prevents untested changes from reaching production users.
 
 In the customer service scenario, the prompt change went directly to production without any testing or review process. A proper workflow would have caught the issue in a development environment, allowed team review through a pull request, and enabled quick rollback when problems appeared.
@@ -128,3 +139,5 @@ Automation accelerates prompt deployment while maintaining quality:
 > Start with automated testing and gradually add monitoring and deployment automation. This incremental approach lets your team build confidence while learning what works for your specific workflows.
 
 This systematic approach ensures prompt changes move through appropriate validation stages before impacting real users, while maintaining the ability to quickly address issues when they arise.
+
+::: zone-end

@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=5cf50e4c-ac64-4c56-be25-fd94f3191442]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Prompts in Microsoft Foundry exist as part of agent definitions, where each agent combines a language model with system instructions that define its behavior.
 
 In the customer service scenario, the team's agent prompt controlled how the system responded to customer inquiries. When they modified that prompt to sound more casual, they changed a core component of the agent definition, but without understanding how to version and track those changes properly.
@@ -103,3 +114,4 @@ You can switch between deployed agent versions through both the Microsoft Foundr
 
 Now that you understand how Microsoft Foundry manages agent versions, you're ready to explore how to organize these prompts and deployment scripts in a GitHub repository.
 
+::: zone-end
