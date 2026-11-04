@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=561583eb-9747-4214-a24e-b7ef69d532be]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 To generate monitoring data that is captured by Application Insights and visualized in Azure Monitor, you need to run a service you deployed through the Microsoft Foundry.
 
 A service can simply be a deployed language model, or a deployed generative AI app like an AI assistant or agent.
@@ -102,3 +113,5 @@ Using the `AIinferenceInstrumentor` ensures that all AI inference operations per
 
 Now that you understand how to monitor, let's explore what we can do with the information we track.
 
+
+::: zone-end

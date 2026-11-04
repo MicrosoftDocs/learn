@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=f0258519-3f6e-4b9b-a194-2321f0da562a]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Before you can optimize performance or make informed decisions about deployment, you need to know what to look at. In generative AI applications, especially those built using Microsoft Foundry, **monitoring isn’t about measuring everything, it’s about measuring the right things**.
 
 Let's explore the key performance signals you should monitor in your generative AI system and how they connect to real-world outcomes like user experience, reliability, and cost.
@@ -71,3 +82,5 @@ Monitoring helps you observe these trade-offs in real-time, which is essential i
 
 In the next section, you explore the tools available to you when building generative AI systems with Microsoft Foundry.
 
+
+::: zone-end
