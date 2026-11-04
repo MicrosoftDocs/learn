@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=a817ca61-e453-4ff2-8f12-fb259096bfe2]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Once the Adventure Works team has written their agent specification—the blueprint that defines what the agent must do, how it behaves, and how they'll measure success—they know exactly what to build. Now they design it. Designing an agent means making three connected choices: which **model** powers it, how you **ground** it in your data, and how you **optimize** it to hit the targets in your specification.
 
 :::image type="content" source="../media/agent-design-overview.png" alt-text="Diagram that shows agent design building on the agent specification and made of three connected choices: model, ground, and optimize.":::
@@ -32,3 +43,5 @@ Design is iterative. The team refines the **command prompt** through prompt engi
 They lean on the test data from the specification. After each small prompt tweak, they run the **smoke tests** for quick feedback, then run a full **automated** evaluation before bigger changes for objective, repeatable scoring across the whole dataset. Each loop moves the agent closer to the quality bar the specification set.
 
 Which grounding approach would fit *your* use case? Does your data change often, or do you mainly need a consistent tone? With the agent designed, the next step is to see how these choices fit into the full development lifecycle.
+
+::: zone-end

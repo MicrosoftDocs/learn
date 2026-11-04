@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=2e84f5b4-3807-415f-a81e-01d706aca8d7]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 GitHub repository organization determines how effectively your team can find, manage, and collaborate on prompt development.
 
 In the customer service scenario, the team needs a clear structure for storing multiple agent prompts, deployment scripts, and configurations. With proper organization, any team member can quickly locate the current production prompt, compare it to previous versions, and understand the deployment process.
@@ -178,3 +189,5 @@ git tag v2
 > [!TIP]
 > Git tags enable you to quickly identify which repository version corresponds to any deployed agent, simplifying debugging and rollback scenarios.
 This foundational structure establishes the groundwork for treating prompts as first-class code assets, enabling reliable collaboration, change tracking, and deployment processes essential for production GenAI systems.
+
+::: zone-end
