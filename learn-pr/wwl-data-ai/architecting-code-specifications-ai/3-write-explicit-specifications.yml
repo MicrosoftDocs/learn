@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.architecting-code-specifications-ai.write-explicit-specifications
+title: Write explicit specifications
+metadata:
+  title: Write Explicit Specifications
+  description: "Learn how to write clear, detailed specifications that AI can understand and work with effectively."
+  ms.date: 10/19/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-write-explicit-specifications.md)]

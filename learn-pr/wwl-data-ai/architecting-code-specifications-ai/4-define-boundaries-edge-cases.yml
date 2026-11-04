@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.architecting-code-specifications-ai.define-boundaries-edge-cases
+title: Define boundaries and edge cases
+metadata:
+  title: Define Boundaries and Edge Cases
+  description: "Learn how to identify and document boundary conditions and edge cases in your specifications."
+  ms.date: 10/19/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-define-boundaries-edge-cases.md)]
