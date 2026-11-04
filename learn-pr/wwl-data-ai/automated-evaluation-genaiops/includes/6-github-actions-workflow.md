@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=1d78941f-54d4-4839-80c5-6f388098c561]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Integrating automated evaluations into GitHub Actions creates continuous quality gates that catch quality regressions before they reach production.
 
 In the Adventure Works scenario, the team needs to validate a prompt update before deployment. GitHub Actions automatically runs evaluations on pull requests, providing objective quality metrics that guide the merge decision.
@@ -213,3 +224,5 @@ Evaluated 150 examples.
 The automated evaluation provides consistent quality metrics, but human judgment remains essential to interpret context and make final merge decisions.
 
 Now that you understand how to integrate automated evaluations into GitHub Actions workflows, you're ready to practice setting up this continuous quality assurance system.
+
+::: zone-end

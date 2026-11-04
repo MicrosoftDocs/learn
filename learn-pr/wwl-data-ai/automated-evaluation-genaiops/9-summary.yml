@@ -2,9 +2,10 @@
 uid: learn.wwl.automated-evaluation-genaiops.summary
 title: Summary
 metadata:
+  zone_pivot_groups: video-or-text
   title: Summary
   description: "Summary of automated evaluation with Microsoft Foundry and GitHub Actions"
-  ms.date: 02/22/2026
+  ms.date: 11/4/2026
   author: madiepev
   ms.author: madiepev
   ms.topic: unit

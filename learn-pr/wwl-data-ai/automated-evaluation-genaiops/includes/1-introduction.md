@@ -1,3 +1,11 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=fe581991-cb67-4207-8ee5-65051dcdd49d]
+
+::: zone-end
+
+::: zone pivot="text"
+
 
 Manually testing prompts with a handful of examples works fine at first. You try different variations, run quick smoke tests, and verify things look reasonable. But what happens when you want to test hundreds of scenarios? Or when you need to run quality checks regularly to catch regressions? Manual testing becomes a bottleneck that slows down improvements and blocks prompt updates until someone finds time to review every change.
 
@@ -18,3 +26,8 @@ By the end of this module, you're able to:
 - Integrate automated evaluation workflows into GitHub Actions for continuous testing.
 
 Let's start by understanding why automated evaluations matter and how they work alongside human judgment.
+
+::: zone-end
+
+> [!NOTE]
+> We recognize that different people like to learn in different ways. You can choose to complete this module in video-based format or you can read the content as text and images. The text contains greater detail than the videos, so in some cases you might want to refer to it as supplemental material to the video presentation.
