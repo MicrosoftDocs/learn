@@ -2,9 +2,10 @@
 uid: learn.wwl.prompt-versioning-genaiops.introduction
 title: Introduction
 metadata:
+  zone_pivot_groups: video-or-text
   title: Introduction
   description: "Introduction to prompt versioning for GenAIOps"
-  ms.date: 01/07/2026
+  ms.date: 11/4/2026
   author: madiepev
   ms.author: madiepev
   ms.topic: unit

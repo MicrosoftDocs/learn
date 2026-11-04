@@ -2,9 +2,10 @@
 uid: learn.wwl.prompt-versioning-genaiops.version-control-for-prompts
 title: Apply version control to prompts
 metadata:
+  zone_pivot_groups: video-or-text
   title: Apply version control to prompts
   description: "Learn why prompts need version control and how DevOps practices apply to prompt management"
-  ms.date: 01/26/2026
+  ms.date: 11/4/2026
   author: madiepev
   ms.author: madiepev
   ms.topic: unit
