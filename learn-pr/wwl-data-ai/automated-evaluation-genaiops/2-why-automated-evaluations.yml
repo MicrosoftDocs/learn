@@ -2,9 +2,10 @@
 uid: learn.wwl.automated-evaluation-genaiops.why-automated-evaluations
 title: Understand why automated evaluations matter
 metadata:
+  zone_pivot_groups: video-or-text
   title: Understand why automated evaluations matter
   description: "Understand the trade-offs between human and automated evaluation, and learn how human-in-the-loop approaches combine both strategically"
-  ms.date: 02/22/2026
+  ms.date: 11/4/2026
   author: madiepev
   ms.author: madiepev
   ms.topic: unit

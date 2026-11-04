@@ -2,9 +2,10 @@
 uid: learn.wwl.automated-evaluation-genaiops.batch-evaluations-python
 title: Implement batch evaluations with Python
 metadata:
+  zone_pivot_groups: video-or-text
   title: Implement batch evaluations with Python
   description: "Learn how to run batch evaluations using Python scripts with Microsoft Foundry"
-  ms.date: 02/22/2026
+  ms.date: 11/4/2026
   author: madiepev
   ms.author: madiepev
   ms.topic: unit

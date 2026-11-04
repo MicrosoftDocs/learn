@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=aa853760-3186-400b-b200-4a89f77c6d3f]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Automated evaluations transform AI quality assurance from manual, time-consuming processes into systematic, scalable workflows that complement human judgment with rapid feedback and consistent metrics.
 
 Throughout this module, you explored how automated evaluations enable quality assurance at scale, validating AI agent responses against established criteria without requiring human review of every example. You learned why automated evaluations complement rather than replace human judgment, as human evaluators establish quality standards while automation applies these standards consistently across thousands of examples.
@@ -18,3 +29,5 @@ You implemented batch evaluation workflows using Python scripts with Microsoft F
 
 - **GitHub Actions create quality gates**: Integrating evaluations into pull request workflows ensures every prompt change undergoes validation before merging, catching regressions early and maintaining production quality.
 
+
+::: zone-end

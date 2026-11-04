@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=0568a8e0-2032-41e8-89c7-477bd85597aa]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Comprehensive automated evaluation requires test datasets that represent the full range of scenarios your AI agent encounters. The quality and composition of your evaluation data directly determines how well testing predicts production performance.
 
 Adventure Works needs to test their prompt update against hundreds of scenarios before deployment. They need a well-composed test dataset that validates quality across common usage, variations, edge cases, and adversarial attempts.
@@ -110,3 +121,5 @@ dataset_id = project_client.datasets.upload_file(
 > When you upload a new file with the same dataset name, Foundry automatically creates a new version. This versioning enables you to track changes and compare evaluation results across different dataset iterations.
 
 Now that you understand how to create and prepare evaluation datasets, you're ready to learn how to implement batch evaluations using Python scripts with Microsoft Foundry to run automated evaluation at scale.
+
+::: zone-end

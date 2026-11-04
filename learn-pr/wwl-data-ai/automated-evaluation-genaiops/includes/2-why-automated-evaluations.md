@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=b78f53e6-b46f-427a-a56e-950d1e2c23d1]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Automated evaluations enable systematic quality assurance at scale by running consistent checks across hundreds or thousands of responses, complementing human judgment with rapid feedback. Testing a prompt update against hundreds of trail recommendation scenarios manually takes days. Automated evaluations run these checks in minutes, enabling quick, confident decisions about deploying prompt changes while maintaining quality standards.
 
 | Evaluation type | Best for | Limitations |
@@ -64,3 +75,5 @@ Once validated, integrate automated evaluation into your deployment workflow:
 The key insight: you're not replacing human judgment—you're amplifying it. Automation lets one trail guide review critical cases from 500 examples instead of struggling through all 500 with decreasing attention.
 
 Now that you understand why automated evaluations matter and how they work with human judgment, you're ready to learn how to select specific evaluators that align with your quality criteria.
+
+::: zone-end

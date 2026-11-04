@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=73ec87a5-7cdd-4e2e-867c-a435647ed13a]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 By now, you understand what to monitor and how Azure Monitor supports lightweight monitoring out-of-the-box. The final step before going hands-on is to explore **how to make sense of monitoring data**, and more importantly, how it can guide practical decisions.
 
 This unit focuses on interpretation, not prescribing specific actions, but helping you think critically about what the data means and how to apply it to solution development.
@@ -42,3 +53,5 @@ Errors tell you when your deployment is hitting a limit. For example:
 
 If your error rate increases with usage, that’s a sign your app needs optimization—either in compute capacity or flow design.
 
+
+::: zone-end

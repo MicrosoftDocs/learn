@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=bcf75965-4d0c-4753-8942-5c8e7a429a47]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Cloud evaluations enable systematic quality assessment by running multiple evaluators across entire test datasets in Microsoft Foundry. These automated evaluations eliminate the need to manage local compute infrastructure and support large-scale automated testing workflows.
 
 Adventure Works needs to evaluate 500 test examples against multiple quality criteria to validate their prompt update before deployment. Cloud evaluation with the Foundry SDK completes this work efficiently, running evaluators in parallel and storing results for analysis.
@@ -195,3 +206,5 @@ For aggregate results across your entire dataset, access `run.result_counts` for
 > Use the `report_url` to view results in the Foundry portal with filtering, sorting, and visualization tools. For CI/CD workflows, parse `output_items` programmatically to enforce quality gates.
 
 In the next unit, you learn how to integrate these evaluation workflows into GitHub Actions to automate quality assurance on every code change.
+
+::: zone-end

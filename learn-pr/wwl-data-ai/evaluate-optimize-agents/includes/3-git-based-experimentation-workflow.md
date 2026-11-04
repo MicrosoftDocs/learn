@@ -1,3 +1,13 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=026e4d8c-e07a-448f-a4b2-f134ef7987a5]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
 
 Optimization experiments require systematic organization to track which changes were tested and what results they produced. Git-based workflows enable you to test agent variants safely, document evaluation results, and compare experiments to identify which configuration performs best.
 
@@ -103,3 +113,5 @@ git push origin main --tags
 For experiments that don't meet criteria, document why before deciding whether to keep or delete the branch: "gpt4o-mini-model: Quality dropped below 4.2 threshold on complex trip planning prompts. Not recommended for production."
 
 With Git workflows established for organizing experiments, you're ready to execute the actual evaluations by running agents against test prompts and systematically scoring the results.
+
+::: zone-end
