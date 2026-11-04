@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1168" viewBox="0 0 1200 1168" role="img" aria-labelledby="management-models-title management-models-description" style="background-color: white">
+  <title id="management-models-title">Azure-managed VMs and Arc-enabled servers</title>
+  <desc id="management-models-description">Two columns compare management scope from top to bottom. On the left, an Azure Local VM enabled by Azure Arc has an Azure-managed lifecycle for supported creation, power operations, and changes to attached resources, while using local compute, storage, and networking. On the right, a physical or virtual machine connects through the Azure Connected Machine agent for supported guest services. Agent installation alone doesn't give Azure control of the underlying Hyper-V VM's creation, hardware, or deletion. Azure Local VMs can also use guest-management services when enabled.</desc>
+  <rect id="background" x="0" y="0" width="1200" height="1168" fill="#ffffff" data-role="canvas-background"/>
+  <defs>
+    <marker id="lifecycle-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="10" markerHeight="10" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#0078d4"/>
+    </marker>
+    <marker id="guest-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="10" markerHeight="10" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#5c2d91"/>
+    </marker>
+  </defs>
+  <g font-family="Segoe UI, Arial, sans-serif" fill="#000000">
+    <text x="48" y="54" font-size="30" font-weight="600">Azure-managed VMs and Arc-enabled servers</text>
+    <text x="48" y="91" font-size="19">Different management scopes. Read each column from 1 to 3.</text>
+    <g data-card="key-distinction">
+      <rect x="48" y="120" width="1104" height="72" rx="10" fill="#f3f2f1" stroke="#c8c6c4" data-role="card-boundary"/>
+      <text x="74" y="165" font-size="22" font-weight="600">Connecting a guest to Azure doesn't transfer the VM's lifecycle.</text>
+    </g>
+
+    <g data-model="azure-local-vm">
+      <rect x="48" y="224" width="536" height="796" rx="12" fill="none" stroke="#89bbdd" stroke-width="2" data-role="model-boundary"/>
+      <svg x="76" y="250" width="64" height="64" viewBox="0 0 18 18" aria-hidden="true" data-source-icon="compute\10021-icon-service-Virtual-Machine.svg">
+        <defs>
+          <linearGradient id="vm-screen" x1="8.88" y1="12.21" x2="8.88" y2="0.21" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#0078d4"/>
+            <stop offset="0.82" stop-color="#5ea0ef"/>
+          </linearGradient>
+          <linearGradient id="vm-stand" x1="8.88" y1="16.84" x2="8.88" y2="12.21" gradientUnits="userSpaceOnUse">
+            <stop offset="0.15" stop-color="#ccc"/>
+            <stop offset="1" stop-color="#707070"/>
+          </linearGradient>
+        </defs>
+        <rect x="-0.12" y="0.21" width="18" height="12" rx="0.6" fill="url(#vm-screen)"/>
+        <polygon points="11.88 4.46 11.88 7.95 8.88 9.71 8.88 6.21 11.88 4.46" fill="#50e6ff"/>
+        <polygon points="11.88 4.46 8.88 6.22 5.88 4.46 8.88 2.71 11.88 4.46" fill="#c3f1ff"/>
+        <polygon points="8.88 6.22 8.88 9.71 5.88 7.95 5.88 4.46 8.88 6.22" fill="#9cebff"/>
+        <polygon points="5.88 7.95 8.88 6.21 8.88 9.71 5.88 7.95" fill="#c3f1ff"/>
+        <polygon points="11.88 7.95 8.88 6.21 8.88 9.71 11.88 7.95" fill="#9cebff"/>
+        <path d="M12.49,15.84c-1.78-.28-1.85-1.56-1.85-3.63H7.11c0,2.07-.06,3.35-1.84,3.63a1,1,0,0,0-.89,1h9A1,1,0,0,0,12.49,15.84Z" fill="url(#vm-stand)"/>
+      </svg>
+      <text x="160" y="271" font-size="26" font-weight="600">Azure Local VM</text>
+      <text x="160" y="306" font-size="24" font-weight="600">enabled by Azure Arc</text>
+      <text x="76" y="352" font-size="20" font-weight="600">VM lifecycle management</text>
+      <line x1="72" y1="376" x2="560" y2="376" stroke="#89bbdd" data-role="divider"/>
+
+      <g data-card="lifecycle-1">
+        <rect x="72" y="400" width="488" height="152" rx="10" fill="#f0f7fd" stroke="#89bbdd" data-role="card-boundary"/>
+        <circle cx="104" cy="434" r="16" fill="#cfe4fa"/>
+        <text x="104" y="441" text-anchor="middle" font-size="19" font-weight="700" data-role="stage-number">1</text>
+        <text x="136" y="442" font-size="22" font-weight="600">Management connection</text>
+        <text x="96" y="483" font-size="19">Azure manages a VM deployed</text>
+        <text x="96" y="513" font-size="19">on your Azure Local infrastructure.</text>
+      </g>
+      <line x1="316" y1="564" x2="316" y2="588" stroke="#0078d4" stroke-width="2.5" marker-end="url(#lifecycle-arrow)" data-role="connector"/>
+
+      <g data-card="lifecycle-2">
+        <rect x="72" y="600" width="488" height="174" rx="10" fill="#f0f7fd" stroke="#89bbdd" data-role="card-boundary"/>
+        <circle cx="104" cy="634" r="16" fill="#cfe4fa"/>
+        <text x="104" y="641" text-anchor="middle" font-size="19" font-weight="700" data-role="stage-number">2</text>
+        <text x="136" y="642" font-size="22" font-weight="600">What Azure manages</text>
+        <text x="96" y="683" font-size="19">Creation, power operations, and</text>
+        <text x="96" y="713" font-size="19">changes to attached resources</text>
+        <text x="96" y="743" font-size="19">through supported Azure operations.</text>
+      </g>
+      <line x1="316" y1="786" x2="316" y2="810" stroke="#0078d4" stroke-width="2.5" marker-end="url(#lifecycle-arrow)" data-role="connector"/>
+
+      <g data-card="lifecycle-3">
+        <rect x="72" y="822" width="488" height="174" rx="10" fill="#f0f7fd" stroke="#89bbdd" data-role="card-boundary"/>
+        <circle cx="104" cy="856" r="16" fill="#cfe4fa"/>
+        <text x="104" y="863" text-anchor="middle" font-size="19" font-weight="700" data-role="stage-number">3</text>
+        <text x="136" y="864" font-size="22" font-weight="600">What stays local</text>
+        <text x="96" y="905" font-size="19">The VM consumes local compute,</text>
+        <text x="96" y="935" font-size="19">storage, and networking.</text>
+        <text x="96" y="965" font-size="19">Its workload still runs on your cluster.</text>
+      </g>
+    </g>
+
+    <g data-model="arc-enabled-server">
+      <rect x="616" y="224" width="536" height="796" rx="12" fill="none" stroke="#b8a0d4" stroke-width="2" data-role="model-boundary"/>
+      <svg x="644" y="250" width="64" height="64" viewBox="0 0 18 18" aria-hidden="true" data-source-icon="management + governance\01710-icon-service-Arc-Machines.svg">
+        <defs>
+          <linearGradient id="arc-machine-body" x1="9.23" x2="9.23" y2="18" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#a67af4"/>
+            <stop offset="0.999" stop-color="#773adc"/>
+          </linearGradient>
+        </defs>
+        <path d="M15.074,17.39A.645.645,0,0,1,14.4,18H4.062a.645.645,0,0,1-.675-.61V.61A.645.645,0,0,1,4.062,0H14.4a.645.645,0,0,1,.675.61Z" fill="url(#arc-machine-body)"/>
+        <path d="M13.461,7.7a1.34,1.34,0,0,0-1.27-1.4H6.375a1.34,1.34,0,0,0-1.27,1.4h0a1.34,1.34,0,0,0,1.27,1.4h5.816a1.34,1.34,0,0,0,1.27-1.4Z" fill="#552f99"/>
+        <path d="M13.461,3.537a1.34,1.34,0,0,0-1.27-1.4H6.375a1.34,1.34,0,0,0-1.27,1.4h0a1.34,1.34,0,0,0,1.27,1.4h5.816a1.34,1.34,0,0,0,1.27-1.4Z" fill="#552f99"/>
+        <circle cx="11.826" cy="3.537" r="0.939" fill="#50e6ff"/>
+        <circle cx="11.826" cy="7.695" r="0.939" fill="#50e6ff"/>
+      </svg>
+      <text x="728" y="271" font-size="26" font-weight="600">Arc-enabled server</text>
+      <text x="728" y="306" font-size="24">Physical or virtual machine</text>
+      <text x="644" y="352" font-size="20" font-weight="600">Guest management</text>
+      <line x1="640" y1="376" x2="1128" y2="376" stroke="#b8a0d4" data-role="divider"/>
+
+      <g data-card="guest-1">
+        <rect x="640" y="400" width="488" height="152" rx="10" fill="#f6f2fc" stroke="#b8a0d4" data-role="card-boundary"/>
+        <circle cx="672" cy="434" r="16" fill="#e8daef"/>
+        <text x="672" y="441" text-anchor="middle" font-size="19" font-weight="700" data-role="stage-number">1</text>
+        <text x="704" y="442" font-size="22" font-weight="600">Management connection</text>
+        <text x="664" y="483" font-size="19">Azure Connected Machine agent</text>
+        <text x="664" y="513" font-size="19">connects a physical or virtual machine.</text>
+      </g>
+      <line x1="884" y1="564" x2="884" y2="588" stroke="#5c2d91" stroke-width="2.5" marker-end="url(#guest-arrow)" data-role="connector"/>
+
+      <g data-card="guest-2">
+        <rect x="640" y="600" width="488" height="174" rx="10" fill="#f6f2fc" stroke="#b8a0d4" data-role="card-boundary"/>
+        <circle cx="672" cy="634" r="16" fill="#e8daef"/>
+        <text x="672" y="641" text-anchor="middle" font-size="19" font-weight="700" data-role="stage-number">2</text>
+        <text x="704" y="642" font-size="22" font-weight="600">What Azure manages</text>
+        <text x="664" y="683" font-size="19">Supported guest services, such as</text>
+        <text x="664" y="713" font-size="19">monitoring and guest configuration,</text>
+        <text x="664" y="743" font-size="19">with any required service setup.</text>
+      </g>
+      <line x1="884" y1="786" x2="884" y2="810" stroke="#5c2d91" stroke-width="2.5" marker-end="url(#guest-arrow)" data-role="connector"/>
+
+      <g data-card="guest-3">
+        <rect x="640" y="822" width="488" height="174" rx="10" fill="#f6f2fc" stroke="#b8a0d4" data-role="card-boundary"/>
+        <circle cx="672" cy="856" r="16" fill="#e8daef"/>
+        <text x="672" y="863" text-anchor="middle" font-size="19" font-weight="700" data-role="stage-number">3</text>
+        <text x="704" y="864" font-size="22" font-weight="600">Lifecycle doesn't transfer</text>
+        <text x="664" y="905" font-size="19">Azure doesn't gain control of the</text>
+        <text x="664" y="935" font-size="19">Hyper-V VM's creation, hardware, or</text>
+        <text x="664" y="965" font-size="19">deletion from agent installation alone.</text>
+      </g>
+    </g>
+
+    <g data-card="coexisting-capabilities">
+      <rect x="48" y="1044" width="1104" height="96" rx="10" fill="#f3f2f1" stroke="#c8c6c4" data-role="card-boundary"/>
+      <text x="74" y="1082" font-size="22" font-weight="600">These capabilities can coexist</text>
+      <text x="74" y="1114" font-size="19">An Azure Local VM can also use guest-management services when enabled.</text>
+    </g>
+  </g>
+</svg>

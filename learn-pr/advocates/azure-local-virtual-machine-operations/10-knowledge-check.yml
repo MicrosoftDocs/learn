@@ -1,0 +1,182 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-local-virtual-machine-operations.knowledge-check
+metadata:
+  title: Module Assessment
+  description: Assess your understanding of Azure Local virtual machine management, capacity, placement, servicing, recovery, and graphics acceleration.
+  ms.date: 11/01/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+  module_assessment: true
+title: Module assessment
+durationInMinutes: 15
+content: |
+  Choose the best answer for each question before reading the explanations.
+quiz:
+  questions:
+  - content: Several VMs continue serving users, but Azure lifecycle actions time out. What should you investigate first?
+    choices:
+    - content: Reinstall every guest operating system.
+      isCorrect: false
+      explanation: Incorrect. Local execution can continue while shared lifecycle management is unavailable. Reinstalling guests or deleting shared components doesn't diagnose that path.
+    - content: Delete and recreate the custom location.
+      isCorrect: false
+      explanation: Incorrect. Local execution can continue while shared lifecycle management is unavailable. Reinstalling guests or deleting shared components doesn't diagnose that path.
+    - content: The shared management path, including the bridge, cluster extension, and required connectivity.
+      isCorrect: true
+      explanation: Correct. Local execution can continue while shared lifecycle management is unavailable. Reinstalling guests or deleting shared components doesn't diagnose that path.
+  - content: You install the Azure Connected Machine agent in an existing locally managed Hyper-V VM. What has this established?
+    choices:
+    - content: Full Azure Local VM provisioning, resize, and deletion support.
+      isCorrect: false
+      explanation: Incorrect. Arc guest registration establishes guest services. VM lifecycle management requires a supported Azure Local provisioning or onboarding workflow.
+    - content: Supported guest-management capabilities, but not automatic Azure ownership of the Hyper-V lifecycle.
+      isCorrect: true
+      explanation: Correct. Arc guest registration establishes guest services. VM lifecycle management requires a supported Azure Local provisioning or onboarding workflow.
+    - content: A supported clone of the original VM.
+      isCorrect: false
+      explanation: Incorrect. Arc guest registration establishes guest services. VM lifecycle management requires a supported Azure Local provisioning or onboarding workflow.
+  - content: Your team publishes a patched version of an approved VM image. What happens to VMs created from the older image?
+    choices:
+    - content: Their operating-system disks are automatically replaced.
+      isCorrect: false
+      explanation: Incorrect. Images and deployed guests have independent lifecycles. Publishing an image doesn't patch existing VM disks.
+    - content: They receive every image change at their next restart.
+      isCorrect: false
+      explanation: Incorrect. Images and deployed guests have independent lifecycles. Publishing an image doesn't patch existing VM disks.
+    - content: They still need a separate guest patching or supported replacement process.
+      isCorrect: true
+      explanation: Correct. Images and deployed guests have independent lifecycles. Publishing an image doesn't patch existing VM disks.
+  - content: The supported Azure CLI expansion completes, but the application volume hasn't grown. What is the next appropriate check?
+    choices:
+    - content: Shrink the virtual disk and repeat the operation.
+      isCorrect: false
+      explanation: Incorrect. Virtual disk capacity and guest filesystem capacity are separate. Use the supported guest procedure after identifying the correct disk and layout.
+    - content: Verify guest disk visibility and whether the partition or filesystem needs a supported extension.
+      isCorrect: true
+      explanation: Correct. Virtual disk capacity and guest filesystem capacity are separate. Use the supported guest procedure after identifying the correct disk and layout.
+    - content: Delete the logical network to force resource reconciliation.
+      isCorrect: false
+      explanation: Incorrect. Virtual disk capacity and guest filesystem capacity are separate. Use the supported guest procedure after identifying the correct disk and layout.
+  - content: A local tool offers to clone a managed VM, including its disks. What should you do?
+    choices:
+    - content: Clone it and rename the Azure resource later.
+      isCorrect: false
+      explanation: Incorrect. Managed-VM cloning and copying are unsupported. An approved image and supported create workflow establish new identities and resource relationships.
+    - content: Clone it only while the original is stopped.
+      isCorrect: false
+      explanation: Incorrect. Managed-VM cloning and copying are unsupported. An approved image and supported create workflow establish new identities and resource relationships.
+    - content: Create the new VM through the supported provisioning path from an approved image.
+      isCorrect: true
+      explanation: Correct. Managed-VM cloning and copying are unsupported. An approved image and supported create workflow establish new identities and resource relationships.
+  - content: An operator proposes retaining a local checkpoint as the only protection for a production VM. What is the main problem?
+    choices:
+    - content: A checkpoint always updates the source image.
+      isCorrect: false
+      explanation: Incorrect. Checkpoints depend on the VM's storage and applicable support boundaries. Recovery protection requires a validated backup or application-native design.
+    - content: A checkpoint isn't an independent backup and remains subject to VM, storage, and security-type restrictions.
+      isCorrect: true
+      explanation: Correct. Checkpoints depend on the VM's storage and applicable support boundaries. Recovery protection requires a validated backup or application-native design.
+    - content: Checkpoints automatically move the VM to another cluster.
+      isCorrect: false
+      explanation: Incorrect. Checkpoints depend on the VM's storage and applicable support boundaries. Recovery protection requires a validated backup or application-native design.
+  - content: A team selects GPU-P because it needs uninterrupted planned maintenance. Is that selection sufficient?
+    choices:
+    - content: No, the exact hardware, processor, driver, platform, and destination-capacity combination must support the operation.
+      isCorrect: true
+      explanation: Correct. GPU-P is an allocation model, not an unconditional availability guarantee. Compatibility and destination resources determine whether migration is supported.
+    - content: Yes, if the team disables guest management.
+      isCorrect: false
+      explanation: Incorrect. GPU-P is an allocation model, not an unconditional availability guarantee. Compatibility and destination resources determine whether migration is supported.
+    - content: Yes, partitioning guarantees live migration on any host with free memory.
+      isCorrect: false
+      explanation: Incorrect. GPU-P is an allocation model, not an unconditional availability guarantee. Compatibility and destination resources determine whether migration is supported.
+  - content: A team keeps only the operating-system VHDX of a protected VM and assumes that it can always recreate the original VM. What should you explain?
+    choices:
+    - content: A copied disk is always equivalent to a supported full-VM backup.
+      isCorrect: false
+      explanation: Incorrect. Disk files alone might not include the protected state needed to boot or recover the VM. Weakening boot protection isn't a general recovery method.
+    - content: Recovery can require protected VM state, keys, and a supported security-specific workflow in addition to disks.
+      isCorrect: true
+      explanation: Correct. Disk files alone might not include the protected state needed to boot or recover the VM. Weakening boot protection isn't a general recovery method.
+    - content: Turning off Secure Boot is the standard recovery procedure.
+      isCorrect: false
+      explanation: Incorrect. Disk files alone might not include the protected state needed to boot or recover the VM. Weakening boot protection isn't a general recovery method.
+  - content: An operator needs to increase the vCPU count of an Azure Local VM enabled by Azure Arc. Hyper-V Manager exposes the setting. Which approach should the operator use?
+    choices:
+    - content: Use the documented Azure management workflow, with the required stopped state, permissions, and capacity approval.
+      isCorrect: true
+      explanation: Correct. Tool capability doesn't establish support. Use the documented Azure workflow for a managed-VM vCPU change rather than editing the local Hyper-V setting.
+    - content: Delete the Azure resource first so that the local setting becomes authoritative.
+      isCorrect: false
+      explanation: Incorrect. Tool capability doesn't establish support. Use the documented Azure workflow for a managed-VM vCPU change rather than editing the local Hyper-V setting.
+    - content: Change it locally and assume Azure will discover and preserve the new value.
+      isCorrect: false
+      explanation: Incorrect. Tool capability doesn't establish support. Use the documented Azure workflow for a managed-VM vCPU change rather than editing the local Hyper-V setting.
+  - content: Two eligible nodes each have 40 GiB of memory available after existing commitments and host needs are accounted for. A new VM requires 64 GiB of startup memory. Can its startup requirement be satisfied from those amounts as they stand?
+    choices:
+    - content: No. An eligible node must individually satisfy the startup requirement.
+      isCorrect: true
+      explanation: Correct. A VM's startup memory must fit on one eligible node. Cluster-wide free memory isn't pooled to satisfy a single VM's allocation.
+    - content: Yes. The custom location provides any missing memory.
+      isCorrect: false
+      explanation: Incorrect. A VM's startup memory must fit on one eligible node. Cluster-wide free memory isn't pooled to satisfy a single VM's allocation.
+    - content: Yes. The cluster combines the two amounts into one 80 GiB allocation.
+      isCorrect: false
+      explanation: Incorrect. A VM's startup memory must fit on one eligible node. Cluster-wide free memory isn't pooled to satisfy a single VM's allocation.
+  - content: An operator creates a managed VM with a custom location and a storage path. Which statement correctly describes node selection?
+    choices:
+    - content: The operator must supply a physical node name to `az stack-hci-vm create`.
+      isCorrect: false
+      explanation: Incorrect. The custom location selects the deployment. Node eligibility determines execution placement, while the storage path determines file placement.
+    - content: The custom location identifies the Azure Local deployment, and the platform selects an eligible node. Storage placement doesn't itself pin the VM.
+      isCorrect: true
+      explanation: Correct. The custom location selects the deployment. Node eligibility determines execution placement, while the storage path determines file placement.
+    - content: The storage path permanently pins the VM to the node that owns its volume.
+      isCorrect: false
+      explanation: Incorrect. The custom location selects the deployment. Node eligibility determines execution placement, while the storage path determines file placement.
+  - content: Automatic balancing is configured with `AutoBalancerMode` set to `2`. A team deploys another VM and expects all nodes to immediately have equal VM counts. What should you explain?
+    choices:
+    - content: Mode `2` disables balancing until an operator manually moves a VM.
+      isCorrect: false
+      explanation: Incorrect. Mode `2` balances on physical-node join and every 30 minutes. Resource demand and constraints govern movement, not an immediate equal-count rule after VM creation.
+    - content: Every VM creation forces immediate equal-count redistribution.
+      isCorrect: false
+      explanation: Incorrect. Mode `2` balances on physical-node join and every 30 minutes. Resource demand and constraints govern movement, not an immediate equal-count rule after VM creation.
+    - content: Balancing evaluates resource load when a physical node joins and periodically. A VM creation doesn't guarantee immediate redistribution or equal VM counts.
+      isCorrect: true
+      explanation: Correct. Mode `2` balances on physical-node join and every 30 minutes. Resource demand and constraints govern movement, not an immediate equal-count rule after VM creation.
+  - content: A successful Azure Local solution update completes. The workload owner assumes that all guest operating systems and applications are now patched. What is the correct response?
+    choices:
+    - content: Customer workloads need their own supported servicing process and application validation.
+      isCorrect: true
+      explanation: Correct. Azure Local solution updates service the platform, not customer guest workloads. Guest OS, application, agent, and extension servicing need their appropriate supported paths.
+    - content: All guests inherit the host's patch level at their next restart.
+      isCorrect: false
+      explanation: Incorrect. Azure Local solution updates service the platform, not customer guest workloads. Guest OS, application, agent, and extension servicing need their appropriate supported paths.
+    - content: Republishing the original VM image completes patching for the existing guests.
+      isCorrect: false
+      explanation: Incorrect. Azure Local solution updates service the platform, not customer guest workloads. Guest OS, application, agent, and extension servicing need their appropriate supported paths.
+  - content: A team creates a metric alert rule but hasn't configured or tested its notification destination or assigned an owner. Is the operational response ready?
+    choices:
+    - content: No. The team must establish ownership, notification delivery, and a response procedure.
+      isCorrect: true
+      explanation: Correct. An alert is actionable only when an accountable team receives it and has a defined response. Rule creation alone doesn't establish notification delivery.
+    - content: Yes. Azure automatically assigns the application owner to every alert.
+      isCorrect: false
+      explanation: Incorrect. An alert is actionable only when an accountable team receives it and has a defined response. Rule creation alone doesn't establish notification delivery.
+    - content: Yes. A visible dashboard replaces notification and escalation.
+      isCorrect: false
+      explanation: Incorrect. An alert is actionable only when an accountable team receives it and has a defined response. Rule creation alone doesn't establish notification delivery.
+  - content: A team uses the documented MABS alternate-location recovery path for an Azure Local managed VM. The recovered VM boots successfully. What must the team account for?
+    choices:
+    - content: A successful boot guarantees that the previous Azure resource IDs and lifecycle controls have been restored.
+      isCorrect: false
+      explanation: Incorrect. The documented MABS alternate-location path restores to an unmanaged VM. Guest connectivity and successful boot don't restore Azure lifecycle ownership by themselves.
+    - content: Installing the Connected Machine agent automatically restores its previous Azure VM lifecycle ownership.
+      isCorrect: false
+      explanation: Incorrect. The documented MABS alternate-location path restores to an unmanaged VM. Guest connectivity and successful boot don't restore Azure lifecycle ownership by themselves.
+    - content: This recovery path produces an unmanaged VM. The team must plan the management outcome and any supported migration or recreation before cutover.
+      isCorrect: true
+      explanation: Correct. The documented MABS alternate-location path restores to an unmanaged VM. Guest connectivity and successful boot don't restore Azure lifecycle ownership by themselves.

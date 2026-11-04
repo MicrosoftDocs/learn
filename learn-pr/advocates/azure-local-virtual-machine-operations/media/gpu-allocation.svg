@@ -1,0 +1,223 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1256" viewBox="0 0 1200 1256" role="img" aria-labelledby="gpu-allocation-title gpu-allocation-description" style="background: white; background-color: white;">
+  <title id="gpu-allocation-title">Whole GPU or GPU partitions</title>
+  <desc id="gpu-allocation-description">Discrete Device Assignment dedicates one physical GPU to one VM. GPU partitioning divides one physical GPU into supported equal partitions assigned to multiple VMs. The illustration shows four example partitions, not a hardware support claim. A physical GPU uses one mode at a time. DDA does not support live migration; maintenance requires a supported stop/restart workflow. GPU-P live migration is conditional on the exact supported hardware and software configuration.</desc>
+  <rect id="gpu-allocation-background" x="0" y="0" width="1200" height="1256" fill="#ffffff" data-role="canvas-background" />
+  <defs>
+    <marker id="gpu-allocation-arrow-blue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="10" markerHeight="10" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#426789" />
+    </marker>
+    <marker id="gpu-allocation-arrow-teal" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="10" markerHeight="10" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#087f8c" />
+    </marker>
+    <marker id="gpu-allocation-arrow-purple" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="10" markerHeight="10" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#7355a6" />
+    </marker>
+  </defs>
+  <text x="48" y="56" font-family="Segoe UI, Arial, sans-serif" font-size="32" fill="#172b4d" data-role="diagram-heading" font-weight="600">Whole GPU or GPU partitions</text>
+  <text x="48" y="94" font-family="Segoe UI, Arial, sans-serif" font-size="20" fill="#172b4d" data-role="diagram-subtitle">Read the left column, then the right. Compare alternatives, not sequential states.</text>
+  <g data-card="1">
+    <rect x="48" y="142" width="528" height="174" rx="12" fill="#f3f8fd" stroke="#9cb7ce" stroke-width="1.5" data-role="card-boundary" />
+    <circle cx="88" cy="184" r="21" fill="#005a9e" />
+    <text x="88" y="191" font-family="Segoe UI, Arial, sans-serif" font-size="20" fill="#ffffff" data-role="stage-number" font-weight="700" text-anchor="middle">1</text>
+    <text x="128" y="190" font-family="Segoe UI, Arial, sans-serif" font-size="28" fill="#172b4d" data-role="stage-title" font-weight="600">DDA</text>
+    <text x="76" y="244" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#172b4d" data-role="stage-body">One physical GPU is dedicated</text>
+    <text x="76" y="276" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#172b4d" data-role="stage-body">to one VM.</text>
+  </g>
+  <g data-card="2">
+    <rect x="624" y="142" width="528" height="174" rx="12" fill="#f5f1fb" stroke="#9cb7ce" stroke-width="1.5" data-role="card-boundary" />
+    <circle cx="664" cy="184" r="21" fill="#005a9e" />
+    <text x="664" y="191" font-family="Segoe UI, Arial, sans-serif" font-size="20" fill="#ffffff" data-role="stage-number" font-weight="700" text-anchor="middle">2</text>
+    <text x="704" y="190" font-family="Segoe UI, Arial, sans-serif" font-size="28" fill="#172b4d" data-role="stage-title" font-weight="600">GPU-P</text>
+    <text x="652" y="244" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#172b4d" data-role="stage-body">One physical GPU is divided into</text>
+    <text x="652" y="276" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#172b4d" data-role="stage-body">supported equal partitions for VMs.</text>
+  </g>
+  <text x="312" y="359" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#172b4d" data-role="stage-body" font-weight="600" text-anchor="middle">One physical GPU</text>
+  <text x="888" y="359" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#172b4d" data-role="stage-body" font-weight="600" text-anchor="middle">One physical GPU</text>
+  <g data-component="physical-gpu">
+    <line x1="200" y1="414" x2="212" y2="414" stroke="#6b8398" stroke-width="4" data-role="chip-pin" />
+    <line x1="412" y1="414" x2="424" y2="414" stroke="#6b8398" stroke-width="4" data-role="chip-pin" />
+    <line x1="200" y1="442" x2="212" y2="442" stroke="#6b8398" stroke-width="4" data-role="chip-pin" />
+    <line x1="412" y1="442" x2="424" y2="442" stroke="#6b8398" stroke-width="4" data-role="chip-pin" />
+    <line x1="200" y1="470" x2="212" y2="470" stroke="#6b8398" stroke-width="4" data-role="chip-pin" />
+    <line x1="412" y1="470" x2="424" y2="470" stroke="#6b8398" stroke-width="4" data-role="chip-pin" />
+    <line x1="200" y1="498" x2="212" y2="498" stroke="#6b8398" stroke-width="4" data-role="chip-pin" />
+    <line x1="412" y1="498" x2="424" y2="498" stroke="#6b8398" stroke-width="4" data-role="chip-pin" />
+    <line x1="240.57142857142858" y1="376" x2="240.57142857142858" y2="388" stroke="#6b8398" stroke-width="4" data-role="chip-pin" />
+    <line x1="240.57142857142858" y1="528" x2="240.57142857142858" y2="540" stroke="#6b8398" stroke-width="4" data-role="chip-pin" />
+    <line x1="269.14285714285717" y1="376" x2="269.14285714285717" y2="388" stroke="#6b8398" stroke-width="4" data-role="chip-pin" />
+    <line x1="269.14285714285717" y1="528" x2="269.14285714285717" y2="540" stroke="#6b8398" stroke-width="4" data-role="chip-pin" />
+    <line x1="297.7142857142857" y1="376" x2="297.7142857142857" y2="388" stroke="#6b8398" stroke-width="4" data-role="chip-pin" />
+    <line x1="297.7142857142857" y1="528" x2="297.7142857142857" y2="540" stroke="#6b8398" stroke-width="4" data-role="chip-pin" />
+    <line x1="326.2857142857143" y1="376" x2="326.2857142857143" y2="388" stroke="#6b8398" stroke-width="4" data-role="chip-pin" />
+    <line x1="326.2857142857143" y1="528" x2="326.2857142857143" y2="540" stroke="#6b8398" stroke-width="4" data-role="chip-pin" />
+    <line x1="354.8571428571429" y1="376" x2="354.8571428571429" y2="388" stroke="#6b8398" stroke-width="4" data-role="chip-pin" />
+    <line x1="354.8571428571429" y1="528" x2="354.8571428571429" y2="540" stroke="#6b8398" stroke-width="4" data-role="chip-pin" />
+    <line x1="383.42857142857144" y1="376" x2="383.42857142857144" y2="388" stroke="#6b8398" stroke-width="4" data-role="chip-pin" />
+    <line x1="383.42857142857144" y1="528" x2="383.42857142857144" y2="540" stroke="#6b8398" stroke-width="4" data-role="chip-pin" />
+    <rect x="212" y="388" width="200" height="140" rx="8" fill="#e5eef7" stroke="#6b8398" stroke-width="1.5" data-role="component-boundary" />
+    <rect x="232" y="412" width="160" height="92" rx="6" fill="#d4e9fa" stroke="#a3c4df" stroke-width="1.5" data-role="component-boundary" />
+    <text x="312.0" y="468" font-family="Segoe UI, Arial, sans-serif" font-size="28" fill="#172b4d" data-role="stage-body" font-weight="600" text-anchor="middle">GPU</text>
+  </g>
+  <g data-component="physical-gpu">
+    <line x1="702" y1="414" x2="714" y2="414" stroke="#6b8398" stroke-width="4" data-role="chip-pin" />
+    <line x1="1062" y1="414" x2="1074" y2="414" stroke="#6b8398" stroke-width="4" data-role="chip-pin" />
+    <line x1="702" y1="442" x2="714" y2="442" stroke="#6b8398" stroke-width="4" data-role="chip-pin" />
+    <line x1="1062" y1="442" x2="1074" y2="442" stroke="#6b8398" stroke-width="4" data-role="chip-pin" />
+    <line x1="702" y1="470" x2="714" y2="470" stroke="#6b8398" stroke-width="4" data-role="chip-pin" />
+    <line x1="1062" y1="470" x2="1074" y2="470" stroke="#6b8398" stroke-width="4" data-role="chip-pin" />
+    <line x1="702" y1="498" x2="714" y2="498" stroke="#6b8398" stroke-width="4" data-role="chip-pin" />
+    <line x1="1062" y1="498" x2="1074" y2="498" stroke="#6b8398" stroke-width="4" data-role="chip-pin" />
+    <line x1="763.7142857142857" y1="376" x2="763.7142857142857" y2="388" stroke="#6b8398" stroke-width="4" data-role="chip-pin" />
+    <line x1="763.7142857142857" y1="528" x2="763.7142857142857" y2="540" stroke="#6b8398" stroke-width="4" data-role="chip-pin" />
+    <line x1="813.4285714285714" y1="376" x2="813.4285714285714" y2="388" stroke="#6b8398" stroke-width="4" data-role="chip-pin" />
+    <line x1="813.4285714285714" y1="528" x2="813.4285714285714" y2="540" stroke="#6b8398" stroke-width="4" data-role="chip-pin" />
+    <line x1="863.1428571428571" y1="376" x2="863.1428571428571" y2="388" stroke="#6b8398" stroke-width="4" data-role="chip-pin" />
+    <line x1="863.1428571428571" y1="528" x2="863.1428571428571" y2="540" stroke="#6b8398" stroke-width="4" data-role="chip-pin" />
+    <line x1="912.8571428571429" y1="376" x2="912.8571428571429" y2="388" stroke="#6b8398" stroke-width="4" data-role="chip-pin" />
+    <line x1="912.8571428571429" y1="528" x2="912.8571428571429" y2="540" stroke="#6b8398" stroke-width="4" data-role="chip-pin" />
+    <line x1="962.5714285714286" y1="376" x2="962.5714285714286" y2="388" stroke="#6b8398" stroke-width="4" data-role="chip-pin" />
+    <line x1="962.5714285714286" y1="528" x2="962.5714285714286" y2="540" stroke="#6b8398" stroke-width="4" data-role="chip-pin" />
+    <line x1="1012.2857142857142" y1="376" x2="1012.2857142857142" y2="388" stroke="#6b8398" stroke-width="4" data-role="chip-pin" />
+    <line x1="1012.2857142857142" y1="528" x2="1012.2857142857142" y2="540" stroke="#6b8398" stroke-width="4" data-role="chip-pin" />
+    <rect x="714" y="388" width="348" height="140" rx="8" fill="#e5eef7" stroke="#6b8398" stroke-width="1.5" data-role="component-boundary" />
+    <rect x="734" y="412" width="68" height="92" rx="6" fill="#f5f1fb" stroke="#b4a1cf" stroke-width="1.5" data-role="component-boundary" />
+    <text x="768" y="467" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#172b4d" data-role="stage-body" font-weight="600" text-anchor="middle">P1</text>
+    <rect x="814" y="412" width="68" height="92" rx="6" fill="#f5f1fb" stroke="#b4a1cf" stroke-width="1.5" data-role="component-boundary" />
+    <text x="848" y="467" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#172b4d" data-role="stage-body" font-weight="600" text-anchor="middle">P2</text>
+    <rect x="894" y="412" width="68" height="92" rx="6" fill="#f5f1fb" stroke="#b4a1cf" stroke-width="1.5" data-role="component-boundary" />
+    <text x="928" y="467" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#172b4d" data-role="stage-body" font-weight="600" text-anchor="middle">P3</text>
+    <rect x="974" y="412" width="68" height="92" rx="6" fill="#f5f1fb" stroke="#b4a1cf" stroke-width="1.5" data-role="component-boundary" />
+    <text x="1008" y="467" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#172b4d" data-role="stage-body" font-weight="600" text-anchor="middle">P4</text>
+  </g>
+  <path d="M 312 554 V 688" fill="none" stroke="#426789" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" data-role="connector" marker-end="url(#gpu-allocation-arrow-blue)" />
+  <text x="338" y="633" font-family="Segoe UI, Arial, sans-serif" font-size="20" fill="#172b4d" data-role="connector-label">Whole device</text>
+  <rect x="210" y="704" width="204" height="142" rx="12" fill="#f3f8fd" stroke="#9cb7ce" stroke-width="1.5" data-role="card-boundary" />
+  <svg id="gpu-allocation-dda-vm-fd454f1c-5506-44b8-874e-8814b8b2f70b" width="64" height="64" viewBox="0 0 18 18" x="280" y="724" aria-hidden="true" data-source-icon="compute\10021-icon-service-Virtual-Machine.svg" data-icon-prefix="gpu-allocation-dda-vm">
+    <defs>
+      <linearGradient id="gpu-allocation-dda-vm-f34d9569-2bd0-4002-8f16-3d01d8106cb5" x1="8.88" y1="12.21" x2="8.88" y2="0.21" gradientUnits="userSpaceOnUse">
+        <stop offset="0" stop-color="#0078d4" />
+        <stop offset="0.82" stop-color="#5ea0ef" />
+      </linearGradient>
+      <linearGradient id="gpu-allocation-dda-vm-bdb45a0b-eb58-4970-a60a-fb2ce314f866" x1="8.88" y1="16.84" x2="8.88" y2="12.21" gradientUnits="userSpaceOnUse">
+        <stop offset="0.15" stop-color="#ccc" />
+        <stop offset="1" stop-color="#707070" />
+      </linearGradient>
+    </defs>
+    <title>Icon-compute-21</title>
+    <rect x="-0.12" y="0.21" width="18" height="12" rx="0.6" fill="url(#gpu-allocation-dda-vm-f34d9569-2bd0-4002-8f16-3d01d8106cb5)" />
+    <polygon points="11.88 4.46 11.88 7.95 8.88 9.71 8.88 6.21 11.88 4.46" fill="#50e6ff" />
+    <polygon points="11.88 4.46 8.88 6.22 5.88 4.46 8.88 2.71 11.88 4.46" fill="#c3f1ff" />
+    <polygon points="8.88 6.22 8.88 9.71 5.88 7.95 5.88 4.46 8.88 6.22" fill="#9cebff" />
+    <polygon points="5.88 7.95 8.88 6.21 8.88 9.71 5.88 7.95" fill="#c3f1ff" />
+    <polygon points="11.88 7.95 8.88 6.21 8.88 9.71 11.88 7.95" fill="#9cebff" />
+    <path d="M12.49,15.84c-1.78-.28-1.85-1.56-1.85-3.63H7.11c0,2.07-.06,3.35-1.84,3.63a1,1,0,0,0-.89,1h9A1,1,0,0,0,12.49,15.84Z" fill="url(#gpu-allocation-dda-vm-bdb45a0b-eb58-4970-a60a-fb2ce314f866)" />
+  </svg>
+  <text x="312" y="820" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#172b4d" data-role="stage-body" font-weight="600" text-anchor="middle">One VM</text>
+  <path d="M 768 554 L 702 688" fill="none" stroke="#7355a6" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" data-role="connector" marker-end="url(#gpu-allocation-arrow-purple)" />
+  <rect x="647" y="704" width="110" height="142" rx="12" fill="#f5f1fb" stroke="#9cb7ce" stroke-width="1.5" data-role="card-boundary" />
+  <svg id="gpu-allocation-gpup-vm-1-fd454f1c-5506-44b8-874e-8814b8b2f70b" width="56" height="56" viewBox="0 0 18 18" x="674" y="729" aria-hidden="true" data-source-icon="compute\10021-icon-service-Virtual-Machine.svg" data-icon-prefix="gpu-allocation-gpup-vm-1">
+    <defs>
+      <linearGradient id="gpu-allocation-gpup-vm-1-f34d9569-2bd0-4002-8f16-3d01d8106cb5" x1="8.88" y1="12.21" x2="8.88" y2="0.21" gradientUnits="userSpaceOnUse">
+        <stop offset="0" stop-color="#0078d4" />
+        <stop offset="0.82" stop-color="#5ea0ef" />
+      </linearGradient>
+      <linearGradient id="gpu-allocation-gpup-vm-1-bdb45a0b-eb58-4970-a60a-fb2ce314f866" x1="8.88" y1="16.84" x2="8.88" y2="12.21" gradientUnits="userSpaceOnUse">
+        <stop offset="0.15" stop-color="#ccc" />
+        <stop offset="1" stop-color="#707070" />
+      </linearGradient>
+    </defs>
+    <title>Icon-compute-21</title>
+    <rect x="-0.12" y="0.21" width="18" height="12" rx="0.6" fill="url(#gpu-allocation-gpup-vm-1-f34d9569-2bd0-4002-8f16-3d01d8106cb5)" />
+    <polygon points="11.88 4.46 11.88 7.95 8.88 9.71 8.88 6.21 11.88 4.46" fill="#50e6ff" />
+    <polygon points="11.88 4.46 8.88 6.22 5.88 4.46 8.88 2.71 11.88 4.46" fill="#c3f1ff" />
+    <polygon points="8.88 6.22 8.88 9.71 5.88 7.95 5.88 4.46 8.88 6.22" fill="#9cebff" />
+    <polygon points="5.88 7.95 8.88 6.21 8.88 9.71 5.88 7.95" fill="#c3f1ff" />
+    <polygon points="11.88 7.95 8.88 6.21 8.88 9.71 11.88 7.95" fill="#9cebff" />
+    <path d="M12.49,15.84c-1.78-.28-1.85-1.56-1.85-3.63H7.11c0,2.07-.06,3.35-1.84,3.63a1,1,0,0,0-.89,1h9A1,1,0,0,0,12.49,15.84Z" fill="url(#gpu-allocation-gpup-vm-1-bdb45a0b-eb58-4970-a60a-fb2ce314f866)" />
+  </svg>
+  <text x="702" y="820" font-family="Segoe UI, Arial, sans-serif" font-size="21" fill="#172b4d" data-role="stage-body" font-weight="600" text-anchor="middle">VM 1</text>
+  <path d="M 848 554 L 826 688" fill="none" stroke="#7355a6" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" data-role="connector" marker-end="url(#gpu-allocation-arrow-purple)" />
+  <rect x="771" y="704" width="110" height="142" rx="12" fill="#f5f1fb" stroke="#9cb7ce" stroke-width="1.5" data-role="card-boundary" />
+  <svg id="gpu-allocation-gpup-vm-2-fd454f1c-5506-44b8-874e-8814b8b2f70b" width="56" height="56" viewBox="0 0 18 18" x="798" y="729" aria-hidden="true" data-source-icon="compute\10021-icon-service-Virtual-Machine.svg" data-icon-prefix="gpu-allocation-gpup-vm-2">
+    <defs>
+      <linearGradient id="gpu-allocation-gpup-vm-2-f34d9569-2bd0-4002-8f16-3d01d8106cb5" x1="8.88" y1="12.21" x2="8.88" y2="0.21" gradientUnits="userSpaceOnUse">
+        <stop offset="0" stop-color="#0078d4" />
+        <stop offset="0.82" stop-color="#5ea0ef" />
+      </linearGradient>
+      <linearGradient id="gpu-allocation-gpup-vm-2-bdb45a0b-eb58-4970-a60a-fb2ce314f866" x1="8.88" y1="16.84" x2="8.88" y2="12.21" gradientUnits="userSpaceOnUse">
+        <stop offset="0.15" stop-color="#ccc" />
+        <stop offset="1" stop-color="#707070" />
+      </linearGradient>
+    </defs>
+    <title>Icon-compute-21</title>
+    <rect x="-0.12" y="0.21" width="18" height="12" rx="0.6" fill="url(#gpu-allocation-gpup-vm-2-f34d9569-2bd0-4002-8f16-3d01d8106cb5)" />
+    <polygon points="11.88 4.46 11.88 7.95 8.88 9.71 8.88 6.21 11.88 4.46" fill="#50e6ff" />
+    <polygon points="11.88 4.46 8.88 6.22 5.88 4.46 8.88 2.71 11.88 4.46" fill="#c3f1ff" />
+    <polygon points="8.88 6.22 8.88 9.71 5.88 7.95 5.88 4.46 8.88 6.22" fill="#9cebff" />
+    <polygon points="5.88 7.95 8.88 6.21 8.88 9.71 5.88 7.95" fill="#c3f1ff" />
+    <polygon points="11.88 7.95 8.88 6.21 8.88 9.71 11.88 7.95" fill="#9cebff" />
+    <path d="M12.49,15.84c-1.78-.28-1.85-1.56-1.85-3.63H7.11c0,2.07-.06,3.35-1.84,3.63a1,1,0,0,0-.89,1h9A1,1,0,0,0,12.49,15.84Z" fill="url(#gpu-allocation-gpup-vm-2-bdb45a0b-eb58-4970-a60a-fb2ce314f866)" />
+  </svg>
+  <text x="826" y="820" font-family="Segoe UI, Arial, sans-serif" font-size="21" fill="#172b4d" data-role="stage-body" font-weight="600" text-anchor="middle">VM 2</text>
+  <path d="M 928 554 L 950 688" fill="none" stroke="#7355a6" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" data-role="connector" marker-end="url(#gpu-allocation-arrow-purple)" />
+  <rect x="895" y="704" width="110" height="142" rx="12" fill="#f5f1fb" stroke="#9cb7ce" stroke-width="1.5" data-role="card-boundary" />
+  <svg id="gpu-allocation-gpup-vm-3-fd454f1c-5506-44b8-874e-8814b8b2f70b" width="56" height="56" viewBox="0 0 18 18" x="922" y="729" aria-hidden="true" data-source-icon="compute\10021-icon-service-Virtual-Machine.svg" data-icon-prefix="gpu-allocation-gpup-vm-3">
+    <defs>
+      <linearGradient id="gpu-allocation-gpup-vm-3-f34d9569-2bd0-4002-8f16-3d01d8106cb5" x1="8.88" y1="12.21" x2="8.88" y2="0.21" gradientUnits="userSpaceOnUse">
+        <stop offset="0" stop-color="#0078d4" />
+        <stop offset="0.82" stop-color="#5ea0ef" />
+      </linearGradient>
+      <linearGradient id="gpu-allocation-gpup-vm-3-bdb45a0b-eb58-4970-a60a-fb2ce314f866" x1="8.88" y1="16.84" x2="8.88" y2="12.21" gradientUnits="userSpaceOnUse">
+        <stop offset="0.15" stop-color="#ccc" />
+        <stop offset="1" stop-color="#707070" />
+      </linearGradient>
+    </defs>
+    <title>Icon-compute-21</title>
+    <rect x="-0.12" y="0.21" width="18" height="12" rx="0.6" fill="url(#gpu-allocation-gpup-vm-3-f34d9569-2bd0-4002-8f16-3d01d8106cb5)" />
+    <polygon points="11.88 4.46 11.88 7.95 8.88 9.71 8.88 6.21 11.88 4.46" fill="#50e6ff" />
+    <polygon points="11.88 4.46 8.88 6.22 5.88 4.46 8.88 2.71 11.88 4.46" fill="#c3f1ff" />
+    <polygon points="8.88 6.22 8.88 9.71 5.88 7.95 5.88 4.46 8.88 6.22" fill="#9cebff" />
+    <polygon points="5.88 7.95 8.88 6.21 8.88 9.71 5.88 7.95" fill="#c3f1ff" />
+    <polygon points="11.88 7.95 8.88 6.21 8.88 9.71 11.88 7.95" fill="#9cebff" />
+    <path d="M12.49,15.84c-1.78-.28-1.85-1.56-1.85-3.63H7.11c0,2.07-.06,3.35-1.84,3.63a1,1,0,0,0-.89,1h9A1,1,0,0,0,12.49,15.84Z" fill="url(#gpu-allocation-gpup-vm-3-bdb45a0b-eb58-4970-a60a-fb2ce314f866)" />
+  </svg>
+  <text x="950" y="820" font-family="Segoe UI, Arial, sans-serif" font-size="21" fill="#172b4d" data-role="stage-body" font-weight="600" text-anchor="middle">VM 3</text>
+  <path d="M 1008 554 L 1074 688" fill="none" stroke="#7355a6" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" data-role="connector" marker-end="url(#gpu-allocation-arrow-purple)" />
+  <rect x="1019" y="704" width="110" height="142" rx="12" fill="#f5f1fb" stroke="#9cb7ce" stroke-width="1.5" data-role="card-boundary" />
+  <svg id="gpu-allocation-gpup-vm-4-fd454f1c-5506-44b8-874e-8814b8b2f70b" width="56" height="56" viewBox="0 0 18 18" x="1046" y="729" aria-hidden="true" data-source-icon="compute\10021-icon-service-Virtual-Machine.svg" data-icon-prefix="gpu-allocation-gpup-vm-4">
+    <defs>
+      <linearGradient id="gpu-allocation-gpup-vm-4-f34d9569-2bd0-4002-8f16-3d01d8106cb5" x1="8.88" y1="12.21" x2="8.88" y2="0.21" gradientUnits="userSpaceOnUse">
+        <stop offset="0" stop-color="#0078d4" />
+        <stop offset="0.82" stop-color="#5ea0ef" />
+      </linearGradient>
+      <linearGradient id="gpu-allocation-gpup-vm-4-bdb45a0b-eb58-4970-a60a-fb2ce314f866" x1="8.88" y1="16.84" x2="8.88" y2="12.21" gradientUnits="userSpaceOnUse">
+        <stop offset="0.15" stop-color="#ccc" />
+        <stop offset="1" stop-color="#707070" />
+      </linearGradient>
+    </defs>
+    <title>Icon-compute-21</title>
+    <rect x="-0.12" y="0.21" width="18" height="12" rx="0.6" fill="url(#gpu-allocation-gpup-vm-4-f34d9569-2bd0-4002-8f16-3d01d8106cb5)" />
+    <polygon points="11.88 4.46 11.88 7.95 8.88 9.71 8.88 6.21 11.88 4.46" fill="#50e6ff" />
+    <polygon points="11.88 4.46 8.88 6.22 5.88 4.46 8.88 2.71 11.88 4.46" fill="#c3f1ff" />
+    <polygon points="8.88 6.22 8.88 9.71 5.88 7.95 5.88 4.46 8.88 6.22" fill="#9cebff" />
+    <polygon points="5.88 7.95 8.88 6.21 8.88 9.71 5.88 7.95" fill="#c3f1ff" />
+    <polygon points="11.88 7.95 8.88 6.21 8.88 9.71 11.88 7.95" fill="#9cebff" />
+    <path d="M12.49,15.84c-1.78-.28-1.85-1.56-1.85-3.63H7.11c0,2.07-.06,3.35-1.84,3.63a1,1,0,0,0-.89,1h9A1,1,0,0,0,12.49,15.84Z" fill="url(#gpu-allocation-gpup-vm-4-bdb45a0b-eb58-4970-a60a-fb2ce314f866)" />
+  </svg>
+  <text x="1074" y="820" font-family="Segoe UI, Arial, sans-serif" font-size="21" fill="#172b4d" data-role="stage-body" font-weight="600" text-anchor="middle">VM 4</text>
+  <rect x="48" y="888" width="528" height="68" rx="12" fill="#f3f8fd" stroke="#9cb7ce" stroke-width="1.5" data-role="note-boundary" />
+  <rect x="624" y="888" width="528" height="68" rx="12" fill="#f5f1fb" stroke="#9cb7ce" stroke-width="1.5" data-role="note-boundary" />
+  <text x="312" y="930" font-family="Segoe UI, Arial, sans-serif" font-size="23" fill="#172b4d" data-role="stage-body" font-weight="600" text-anchor="middle">Reserve whole devices</text>
+  <text x="888" y="930" font-family="Segoe UI, Arial, sans-serif" font-size="23" fill="#172b4d" data-role="stage-body" font-weight="600" text-anchor="middle">Reserve compatible partitions</text>
+  <text x="76" y="993" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#172b4d" data-role="stage-title" font-weight="600">DDA maintenance</text>
+  <text x="76" y="1025" font-family="Segoe UI, Arial, sans-serif" font-size="20" fill="#172b4d" data-role="stage-body">Use a supported stop/restart workflow.</text>
+  <text x="76" y="1055" font-family="Segoe UI, Arial, sans-serif" font-size="20" fill="#172b4d" data-role="stage-body">Live migration is not supported.</text>
+  <text x="652" y="993" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#172b4d" data-role="stage-title" font-weight="600">GPU-P maintenance</text>
+  <text x="652" y="1025" font-family="Segoe UI, Arial, sans-serif" font-size="20" fill="#172b4d" data-role="stage-body">Live migration is conditional on the</text>
+  <text x="652" y="1055" font-family="Segoe UI, Arial, sans-serif" font-size="20" fill="#172b4d" data-role="stage-body">exact supported hardware/software.</text>
+  <rect x="48" y="1090" width="1104" height="130" rx="12" fill="#f7f9fc" stroke="#cad7e2" stroke-width="1.5" data-role="note-boundary" />
+  <text x="72" y="1126" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#172b4d" data-role="stage-body" font-weight="600">A physical GPU uses one mode at a time.</text>
+  <text x="72" y="1162" font-family="Segoe UI, Arial, sans-serif" font-size="20" fill="#172b4d" data-role="stage-body">Selecting GPU-P alone does not establish live-migration eligibility.</text>
+  <text x="72" y="1192" font-family="Segoe UI, Arial, sans-serif" font-size="20" fill="#172b4d" data-role="stage-body">Partition count is illustrative; validate the supported configuration.</text>
+</svg>

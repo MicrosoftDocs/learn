@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-local-virtual-machine-operations.summary
+metadata:
+  title: Summary
+  description: Review Azure Local virtual machine operating principles and references for supported management, maintenance, and recovery.
+  ms.date: 11/01/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Summary
+durationInMinutes: 3
+content: |
+  [!include[](includes/11-summary.md)]
