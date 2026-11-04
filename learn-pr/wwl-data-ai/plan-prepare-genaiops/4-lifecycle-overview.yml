@@ -2,11 +2,12 @@
 uid: learn.wwl.plan-prepare-genaiops.lifecycle-overview
 title: Explore the GenAIOps lifecycle
 metadata:
+  zone_pivot_groups: video-or-text
   title: Explore the GenAIOps lifecycle
   description: Explore the GenAIOps lifecycle and how it structures a generative AI agent from exploration to production.
   author: madiepev
   ms.author: madiepev
-  ms.date: 07/18/2026
+  ms.date: 11/4/2026
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

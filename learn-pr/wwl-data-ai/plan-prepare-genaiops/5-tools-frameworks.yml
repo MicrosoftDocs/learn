@@ -2,11 +2,12 @@
 uid: learn.wwl.plan-prepare-genaiops.tools-frameworks
 title: Explore available tools and frameworks to implement GenAIOps
 metadata:
+  zone_pivot_groups: video-or-text
   title: Explore available tools and frameworks to implement GenAIOps
   description: Explore available tools and frameworks to implement GenAIOps.
   author: madiepev
   ms.author: madiepev
-  ms.date: 07/18/2026
+  ms.date: 11/4/2026
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

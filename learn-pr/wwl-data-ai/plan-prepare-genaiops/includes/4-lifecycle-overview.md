@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=b5003e97-8295-42d1-9c6d-576e170bb3b9]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Now that the Adventure Works team has specified and designed their agent, they need a way to take it from a working prototype to a reliable production service. That shift from prototype to production is what the **Generative AI Operations** (**GenAIOps**) lifecycle organizes.
 
 If you've applied DevOps to software, or **MLOps** to machine learning, GenAIOps builds on the same idea. It's a specialized domain within MLOps for applications that integrate language models. The difference is *what* you manage. Instead of building models from scratch, you work with pretrained models, prompts, agents, and data connectors, and you evaluate them with new quality and safety measures like coherence, groundedness, and cost per request, rather than accuracy alone.
@@ -21,3 +32,5 @@ Overarching all these phases is the **management loop**, which focuses on govern
 Think about the Adventure Works agent: the specification and design work you saw earlier belong to the **Explore** and **Build** loops. Which loop do you think a sudden spike in wrong recommendations would send the team back to?
 
 Next, you delve into the tools that support each phase of the GenAIOps lifecycle.
+
+::: zone-end

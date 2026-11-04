@@ -1,3 +1,11 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=64f960d8-8b19-4ebd-a6f6-fcf9b054ddc5]
+
+::: zone-end
+
+::: zone pivot="text"
+
 Adventure Works, an online retailer of hiking and camping gear, receives thousands of product questions every day. Shoppers ask things like *"Which backpack works for a three-day trek?"* or *"Is this tent warm enough for winter camping?"* The support team can't keep up, and shoppers leave before they buy.
 
 The team decides to build a generative AI **agent** that answers these questions on the website, using Adventure Works' own product catalog and each customer's purchase history. An agent is more than a single prompt: it uses one or more language models, connects to company data, and can take action on the customer's behalf.
@@ -14,3 +22,8 @@ In this module, you follow the Adventure Works team as they:
 - **Identify the tools and frameworks** that support each phase.
 
 By the end, you're able to plan and prepare a generative AI solution of your own, starting with a clear specification instead of a blank prompt.
+
+::: zone-end
+
+> [!NOTE]
+> We recognize that different people like to learn in different ways. You can choose to complete this module in video-based format or you can read the content as text and images. The text contains greater detail than the videos, so in some cases you might want to refer to it as supplemental material to the video presentation.

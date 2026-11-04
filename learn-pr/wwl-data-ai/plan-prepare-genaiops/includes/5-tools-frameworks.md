@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=93191c7e-b7d0-4b17-ab78-067f5e532c1c]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 By now the Adventure Works team has planned and designed their agent: an assistant that answers shopper questions on their outdoor-gear website. What they don't have yet is a working, reliable service—and getting there takes the right tool at each stage.
 
 :::image type="content" source="../media/overview-toolchain.png" alt-text="Diagram that shows the four GenAIOps phases: set up, customize, evaluate, and deploy, with a feedback loop from deploy back to evaluate.":::
@@ -43,3 +54,5 @@ To build and orchestrate the agent, Microsoft recommends the [**Microsoft Agent 
 Once it's live, the team keeps the agent healthy with a stack that builds on itself. [**Tracing**](/azure/foundry/observability/concepts/trace-agent-concept?azure-portal=true) records each request—which tools the agent called and why it answered as it did. [**Azure Monitor**](/azure/azure-monitor/overview?azure-portal=true) and [**Application Insights**](/azure/azure-monitor/app/app-insights-overview?azure-portal=true) collect those traces alongside metrics like latency, token usage, and error rates, so the team spots trouble in real time. [**GitHub Actions**](https://docs.github.com/actions?azure-portal=true) ships new versions automatically.
 
 This closes the loop: production traffic feeds continuous evaluation that re-scores live answers against the same rubric. If quality drifts, the team catches it and cycles back to improve the agent—the same planning discipline that got it launched now keeps it trustworthy.
+
+::: zone-end

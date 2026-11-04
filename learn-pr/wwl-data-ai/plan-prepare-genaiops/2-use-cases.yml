@@ -2,11 +2,12 @@
 uid: learn.wwl.plan-prepare-genaiops.use-cases
 title: Define agent specifications
 metadata:
+  zone_pivot_groups: video-or-text
   title: Define agent specifications
   description: Define the specifications for a generative AI agent, including user intent, prompts, capabilities, evaluation, and test data.
   author: madiepev
   ms.author: madiepev
-  ms.date: 07/18/2026
+  ms.date: 11/4/2026
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
