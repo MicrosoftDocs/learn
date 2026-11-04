@@ -1,3 +1,13 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=4de45d42-8c0f-480b-b22e-d9c60b0adfca]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
 
 Manual evaluation provides essential quality insights that automated metrics can't capture, but multiple human evaluators often score the same response differently without clear guidance. When three Adventure Works team members evaluate the same Trail Guide Agent response, one rates it 5 for Intent Resolution while another rates it 3—not because the response quality changed, but because they interpret the scoring criteria differently. Inconsistent evaluation undermines optimization decisions, making it impossible to determine whether quality improved or human evaluators judged responses more leniently. Here, you learn how to create evaluation consistency through rubrics, rater training with calibration examples, and inter-rater reliability testing.
 
@@ -74,3 +84,5 @@ Aim for at least 80% agreement within one point. When divergent scores occur, re
 Test inter-rater reliability at the start of each major optimization initiative and when adding new human evaluators to your team. As evaluation work continues over weeks or months, individual evaluators can drift from calibrated standards—periodic reliability checks catch this drift before it compromises evaluation quality.
 
 With consistent evaluation practices established, you're ready to analyze evaluation data systematically to make evidence-based optimization recommendations.
+
+::: zone-end

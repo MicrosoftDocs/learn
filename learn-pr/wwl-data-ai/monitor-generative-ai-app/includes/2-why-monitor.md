@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=81fffadb-5868-4032-af7f-8e55f3ce125c]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 When you move from experimentation to production with a generative AI solution, one of the earliest and most important decisions you face is choosing the optimal *deployment configuration*. Specifically, what kind of compute should you allocate to your model? This decision directly affects performance, cost, and scalability.
 
 ## Explore the importance of deployment configurations
@@ -56,3 +67,5 @@ Choosing a deployment option isn't just a checkbox, it's a design decision. The 
 
 Next, let's explore *what* to observe in your generative AI solution.
 
+
+::: zone-end

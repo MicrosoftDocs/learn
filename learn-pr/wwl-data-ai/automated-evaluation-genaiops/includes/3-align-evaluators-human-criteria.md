@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=f0e2b578-c0be-4439-9c15-24913b771271]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Aligning automated evaluators with human judgment isn't a one-time setup—it's an ongoing workflow that ensures automation measures what you actually care about.
 
 Adventure Works needs to validate that automated evaluators capture the same quality patterns their human evaluators identify. This lets them trust automated scores when deciding whether to deploy prompt updates. The alignment workflow ensures automation remains meaningful as evaluation criteria evolve.
@@ -252,3 +263,5 @@ print(f"Custom evaluator correlation: {custom_correlation[0]:.2f}")
 > Custom evaluators require ongoing maintenance. As your domain evolves or language models change, revalidate that custom logic still aligns with human judgment.
 
 Now that you understand how to align automated evaluators with human criteria, you're ready to learn how to create synthetic test datasets.
+
+::: zone-end

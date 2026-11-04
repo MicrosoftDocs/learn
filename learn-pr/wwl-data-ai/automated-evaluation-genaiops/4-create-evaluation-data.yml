@@ -2,9 +2,10 @@
 uid: learn.wwl.automated-evaluation-genaiops.create-evaluation-data
 title: Create evaluation datasets
 metadata:
+  zone_pivot_groups: video-or-text
   title: Create evaluation datasets
   description: "Create comprehensive evaluation datasets from production data and synthetic generation with proper composition across common scenarios, variations, edge cases, and adversarial examples"
-  ms.date: 02/22/2026
+  ms.date: 11/4/2026
   author: madiepev
   ms.author: madiepev
   ms.topic: unit

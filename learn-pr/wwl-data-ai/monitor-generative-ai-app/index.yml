@@ -28,7 +28,7 @@ metadata:
   description: Learn how to monitor the performance of your generative AI application using Microsoft Foundry. This module teaches you to track key metrics like latency and token usage to make informed, cost-effective deployment decisions.
   author: wwlpublish
   ms.author: madiepev
-  ms.date: 04/30/2025
+  ms.date: 11/4/2026
   ms.service: microsoft-foundry
   ms.topic: module-standard-task-based
   ms.collection:
