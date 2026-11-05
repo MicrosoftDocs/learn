@@ -20,8 +20,8 @@ metadata:
   gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/secure-azure-cosmos-db-nosql/index.yml
   title: Secure an Azure Cosmos DB Solution
   description: "Secure an Azure Cosmos DB account with Microsoft Entra authentication, key rotation, scoped role assignments, network isolation, and dynamic data masking."
-  ms.date: 10/02/2026
-  author: wwlpublish
+  ms.date: 11/5/2026
+  author: MScalopez
   ms.author: calopez
   ms.topic: module
   ms.service: azure-cosmos-db
@@ -35,9 +35,9 @@ abstract: |
   - Differentiate control-plane and data-plane access and implement role-based access control.
   - Configure private endpoints, service endpoints, firewall rules, and dynamic data masking.
 prerequisites: |
-  - Experience creating Azure Cosmos DB for NoSQL accounts, databases, and containers
-  - Experience using the Azure Cosmos DB SDK to read items and run queries in C# or Python
-  - Basic knowledge of Azure identities, role assignments, and virtual networking
+  - Experience creating Azure Cosmos DB for NoSQL accounts, databases, and containers.
+  - Experience using the Azure Cosmos DB SDK to read items and run queries in C# or Python.
+  - Basic knowledge of Azure identities, role assignments, and virtual networking.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate

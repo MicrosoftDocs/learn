@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=fdfd8b51-11fa-44de-a00f-f440ee91181a]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Contoso's support application needs customer context, but routine support work doesn't require complete email addresses or phone numbers. The previous units establish the application's identity, role permissions, and network boundary. Your final control addresses which customer values appear in its responses. You configure dynamic data masking and check its behavior with separate managed identities before considering production use.
 
 ## Limit field exposure in read responses
@@ -83,3 +94,5 @@ Writes need separate attention: create, replace, upsert, and patch act on underl
 Also, account for dependent services: backups and materialized views operate on original unmasked data. Fabric mirroring and analytical store aren't supported by default on DDM-enabled accounts. Contact Support when planning those combinations. Learn more about [dynamic data masking configuration and limitations](/azure/cosmos-db/dynamic-data-masking).
 
 For Contoso, acceptance evidence combines identity, permissions, network access, and the values its support application exposes. Carry those boundaries into the module's exercise without treating successful masked reads as a production-wide security guarantee.
+
+::: zone-end

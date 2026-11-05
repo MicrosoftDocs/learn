@@ -1,3 +1,12 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=f271e7d9-0067-4b16-a454-b1f5d42c2b85]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
 Contoso's application needs to read product data as the team prepares its Azure Cosmos DB account for production. Your first decision is which identity represents that application. A developer's successful connection doesn't prove that the deployed application has access. You need a credential appropriate to each environment and a data operation that demonstrates the intended access. This unit connects those decisions without treating Contoso's scenario as a deployment procedure.
 
 ## Choose a managed identity for the application
