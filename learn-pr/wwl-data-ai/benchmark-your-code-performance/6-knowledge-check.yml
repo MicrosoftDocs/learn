@@ -1,0 +1,71 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.benchmark-your-code-performance.knowledge-check
+title: Check your knowledge
+metadata:
+  title: Check Your Knowledge
+  description: Check your understanding of benchmarking and optimizing code performance.
+  author: wwlpublish
+  ms.author: buzahid
+  ms.date: 10/19/2026
+  ms.topic: unit
+  module_assessment: true
+  ai_generated_module_assessment: false
+durationInMinutes: 4
+content: |
+quiz:
+  questions:
+  - content: "What does Big O notation measure?"
+    choices:
+    - content: "The exact runtime of an algorithm in milliseconds"
+      isCorrect: false
+      explanation: "Incorrect. Big O notation doesn't measure exact runtime; it measures how an algorithm's efficiency scales with input size."
+    - content: "How an algorithm's time or space complexity grows as input size increases"
+      isCorrect: true
+      explanation: "Correct. Big O notation describes the asymptotic behavior of an algorithm relative to input size."
+    - content: "The number of lines of code in a function"
+      isCorrect: false
+      explanation: "Incorrect. Big O is not about code length; it's about algorithmic complexity and scalability."
+  - content: "Which Python module can you use to measure function execution time?"
+    choices:
+    - content: "`logging`"
+      isCorrect: false
+      explanation: "Incorrect. The `logging` module is for recording events, not measuring execution time."
+    - content: "`timeit`"
+      isCorrect: true
+      explanation: "Correct. The `timeit` module provides a simple way to measure the execution time of small code snippets."
+    - content: "`random`"
+      isCorrect: false
+      explanation: "Incorrect. The `random` module generates random numbers; it doesn't measure performance."
+  - content: "What is a performance bottleneck?"
+    choices:
+    - content: "Any function that takes longer than 1 second to run"
+      isCorrect: false
+      explanation: "Incorrect. A bottleneck isn't defined by an arbitrary time threshold. It's a part of code that significantly slows down overall performance."
+    - content: "The part of code that limits overall performance and consumes the most resources"
+      isCorrect: true
+      explanation: "Correct. A bottleneck is a component that restricts overall system performance and is typically the first optimization target."
+    - content: "An error that occurs during code execution"
+      isCorrect: false
+      explanation: "Incorrect. A bottleneck is a performance issue, not an error."
+  - content: "Which profiling tool helps identify which functions consume the most time?"
+    choices:
+    - content: "The `unittest` module"
+      isCorrect: false
+      explanation: "Incorrect. `unittest` is for testing, not profiling performance."
+    - content: "The `cProfile` module"
+      isCorrect: true
+      explanation: "Correct. `cProfile` is a profiler that shows which functions consume the most CPU time."
+    - content: "The `sys` module"
+      isCorrect: false
+      explanation: "Incorrect. The `sys` module provides system-specific parameters, not profiling."
+  - content: "What does a breakpoint do in the Visual Studio Code debugger?"
+    choices:
+    - content: "It pauses the program before a specific line runs so that you can inspect variables."
+      isCorrect: true
+      explanation: "Correct. When the program reaches a breakpoint, it pauses before running that line, and you can inspect variable values and step through the code."
+    - content: "It stops the program permanently and deletes its variables."
+      isCorrect: false
+      explanation: "Incorrect. A breakpoint pauses the program. You can resume it with Continue, or step through it one line at a time."
+    - content: "It measures how long each function takes to run."
+      isCorrect: false
+      explanation: "Incorrect. A profiler such as `cProfile` measures run time. A breakpoint pauses the program so that you can inspect it."

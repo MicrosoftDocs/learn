@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.benchmark-your-code-performance.exercise
+title: Exercise - Benchmark and optimize a sales report generator
+metadata:
+  title: Exercise - Benchmark and Optimize a Sales Report Generator
+  description: "Measure a slow sales report with timeit, find the bottleneck with cProfile, and confirm that a faster algorithm fixes it."
+  ms.date: 10/19/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 30
+content: |
+  [!include[](includes/5-exercise.md)]
