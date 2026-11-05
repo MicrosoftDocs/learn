@@ -56,13 +56,11 @@ First, check for an approved Work IQ connection in your Foundry project. If one 
 
 2. **Connect the tool in Foundry.** Open **Tools** > **Connect a Tool**, then select **Work IQ MCP** on the **Catalog** tab:
 
-   :::image type="content" source="../media/select-work-iq.png" alt-text="Screenshot of the Foundry tool catalog with the Work IQ MCP remote tool selected." lightbox="../media/select-work-iq.png":::
-
    - Enter the app's client ID and secret, plus your tenant's authorization, token, and refresh URLs.
    - Save the tool connection, then copy the OAuth redirect URL supplied by Foundry.
    - Add that URL under **Authentication** in the Entra app registration as a **Web** redirect URI. This completes the sign-in return path.
 
-   :::image type="content" source="../media/tool-config.png" alt-text="Screenshot of the Work IQ MCP connection form with client credentials and authentication URL fields." lightbox="../media/tool-config.png":::
+    :::image type="content" source="../media/select-work-iq.png" alt-text="Screenshot of the Foundry tool catalog with the Work IQ MCP remote tool selected." lightbox="../media/select-work-iq.png":::
 
 3. **Add Work IQ to your agent.** In the agent's tool configuration, select your configured **Work IQ MCP** tool. Add instructions to the agent on when to use workplace context and how to handle missing information.
 
