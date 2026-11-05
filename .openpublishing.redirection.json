@@ -73561,6 +73561,11 @@
       "source_path": "learn-pr/wwl-data-ai/design-machine-learning-operations-solution/6-summary.md",
       "redirect_url": "/training/modules/design-machine-learning-model-training-solution/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/implement-generative-ai-engineering-azure-databricks/index.md",
+      "redirect_url": "/training/paths/build-operate-machine-learning-solutions-azure-databricks/",
+      "redirect_document_id": false
     }
   ]
 }
