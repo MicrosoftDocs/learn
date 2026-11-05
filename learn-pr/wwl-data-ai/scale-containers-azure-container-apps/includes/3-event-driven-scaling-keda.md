@@ -117,7 +117,7 @@ For production workloads, prefer managed identity authentication when the scaler
 
 - **Use managed identity for authentication:** Managed identity eliminates secret management overhead and improves security posture for production deployments. Assign the minimum required permissions to your identity using Azure RBAC.
 
-- **Set message thresholds based on processing time:** If each message takes 10 seconds to process and you want 100 messages processed per minute, you need 10 replicas processing concurrently. Set your `messageCount` threshold to achieve the desired parallelism without over-provisioning.
+- **Set message thresholds based on processing capacity:** Measure each replica's throughput under expected load, accounting for both message processing time and the number of messages processed concurrently. Use that measured capacity and your acceptable queue delay to tune `messageCount`, which sets the target queue depth per replica rather than controlling message-processing concurrency.
 
 - **Scale to zero for event-driven workloads:** Message queue processors are ideal candidates for scale-to-zero configurations since new messages trigger scale-up automatically. This approach minimizes costs during idle periods while ensuring processing capacity scales with demand.
 
