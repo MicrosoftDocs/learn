@@ -84,8 +84,10 @@ Fill in the required fields:
 
 Select the distribution scope for your agent:
 
-- **Shared scope**: Agent appears under "Your agents" in the store. Available immediately. Best for testing and small teams.
-- **Organization scope**: Agent appears under "Built by your org" in the store. Requires admin approval. Best for production deployments.
+| Scope | Store availability | Recommended use |
+|-------|--------------------|-----------------|
+| **Shared scope** | Appears under **Your agents** immediately | Testing and small teams |
+| **Organization scope** | Appears under **Built by your org** after admin approval | Production deployments |
 
 ### Step 6: Prepare and optionally download the package
 
