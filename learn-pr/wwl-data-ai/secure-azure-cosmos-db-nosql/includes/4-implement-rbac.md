@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=838f1f9a-63d9-434a-b247-07d11381ae77]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Contoso's application uses a managed identity to read product data, while a separate integration uses the fallback key pattern from the previous unit. Your next task is to limit each identity to its required work. Authentication identifies the caller, but authorization determines its permitted operations. For the managed identity, you need a role assignment that allows product reads without allowing writes or access to unrelated containers.
 
 ## Distinguish control-plane and data-plane permissions
@@ -82,3 +93,5 @@ Turn the assignment into release evidence by testing with the intended identity.
 4. **Investigate failures before broadening access.** Assignment changes can take time to propagate. Recheck the assignment and retry without assuming a fixed delay. Network restrictions or an incorrect data address also cause failures, so use exception details to identify the boundary.
 
 For Contoso's review, record the principal, role, scope, environment, and allowed and denied results without tokens or product contents. Security reviewers get evidence of the access boundary, and operations gets a repeatable check. Role assignments control what an identity does. To restrict where requests originate, the next unit adds network controls.
+
+::: zone-end

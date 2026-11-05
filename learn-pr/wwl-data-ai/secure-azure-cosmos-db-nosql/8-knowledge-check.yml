@@ -2,10 +2,10 @@
 uid: learn.wwl.secure-azure-cosmos-db-nosql.knowledge-check
 title: Module assessment
 metadata:
-  title: Module assessment
+  title: Module Assessment
   description: "Check your ability to choose authentication, role assignments, network controls, and masking permissions for an Azure Cosmos DB solution."
-  ms.date: 10/02/2026
-  author: wwlpublish
+  ms.date: 11/5/2026
+  author: MScalopez
   ms.author: calopez
   ms.topic: unit
   module_assessment: true

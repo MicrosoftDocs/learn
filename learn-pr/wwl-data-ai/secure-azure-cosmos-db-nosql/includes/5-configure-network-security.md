@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=b5b9092d-8111-4e0f-ae62-6c051d544c44]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Contoso's application has an identity and a role scoped to product reads. Your next task is to restrict where those requests originate. A valid token or account key doesn't bypass network restrictions, and an allowed network doesn't grant data permissions. Building on the previous unit, you keep identity and roles unchanged while configuring and testing the application's network boundary.
 
 ## Choose a control for the required network path
@@ -66,3 +77,5 @@ Treat the change as an application rollout, not only a saved account setting. Fi
 Include operational clients in these checks. NoSQL Data Explorer needs an allowed client path, including the browser's public IP when public rules apply. For private-only access, use a host with private connectivity and DNS instead of loosening policy for the portal. Azure Cloud Shell doesn't automatically have virtual network access.
 
 Record the source, principal, request result, and validation time without credentials or product contents. This evidence supports operational acceptance and security review. With identity, permissions, and allowed sources established, the next unit examines masking sensitive customer fields.
+
+::: zone-end

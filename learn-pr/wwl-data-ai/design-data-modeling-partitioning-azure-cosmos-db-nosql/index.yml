@@ -44,9 +44,9 @@ abstract: |
   - Select partition keys based on cardinality, access patterns, and write distribution.
   - Implement hierarchical, synthetic, and multitenant partitioning strategies and identify anti-patterns.
 prerequisites: |
-  - Familiarity with Azure Cosmos DB containers, items, request units, and the change feed
-  - Experience querying an Azure Cosmos DB for NoSQL container
-  - Programming experience with C# or Python
+  - Familiarity with Azure Cosmos DB containers, items, request units, and the change feed.
+  - Experience querying an Azure Cosmos DB for NoSQL container.
+  - Programming experience with C# or Python.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate

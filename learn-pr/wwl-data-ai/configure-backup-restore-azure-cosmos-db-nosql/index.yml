@@ -38,9 +38,9 @@ abstract: |
   - Configure continuous backup and perform point-in-time recovery.
   - Describe Azure Backup for Azure Cosmos DB capabilities.
 prerequisites: |
-  - Experience creating Azure Cosmos DB for NoSQL accounts, databases, and containers
-  - Experience using the Azure Cosmos DB SDK to read items and run queries in C# or Python
-  - Basic knowledge of Azure resource management with the Azure CLI or Azure PowerShell
+  - Experience creating Azure Cosmos DB for NoSQL accounts, databases, and containers.
+  - Experience using the Azure Cosmos DB SDK to read items and run queries in C# or Python.
+  - Basic knowledge of Azure resource management with the Azure CLI or Azure PowerShell.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate
