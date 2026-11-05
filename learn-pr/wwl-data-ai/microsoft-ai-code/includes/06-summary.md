@@ -25,5 +25,5 @@ An AI coding model is most effective when you combine clear instructions and use
 
 ## Learn more
 
-- [MAI-Code-1.1-Flash model card](https://microsoft.ai/pdf/MAI-Code-1.1-Flash-Model-Card.PDF?azure-portal=true)
+- [MAI-Code-1.1-Flash model card](https://ai.azure.com/catalog/models/mai-code-1.1-flash?azure-portal=true)
 - [Models in GitHub Copilot](https://docs.github.com/copilot/concepts/models/overview?azure-portal=true)

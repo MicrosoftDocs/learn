@@ -25,23 +25,23 @@ quiz:
           explanation: "Incorrect. Trace logs help diagnose an application after it runs; they don't provide the model's intended-use guidance."
     - content: "Which model should you evaluate for an application that must analyze a complex problem through multiple reasoning steps?"
       choices:
-        - content: "MAI-Thinking-1"
+        - content: "MAI-Thinking"
           isCorrect: true
-          explanation: "Correct. MAI-Thinking-1 is designed for complex reasoning workloads such as mathematics, coding, planning, and analysis."
-        - content: "MAI-Transcribe-1.5"
+          explanation: "Correct. MAI-Thinking is designed for complex reasoning workloads such as mathematics, coding, planning, and analysis."
+        - content: "MAI-Transcribe"
           isCorrect: false
-          explanation: "Incorrect. MAI-Transcribe-1.5 converts spoken audio into text."
-        - content: "MAI-Voice-2-Flash"
+          explanation: "Incorrect. MAI-Transcribe converts spoken audio into text."
+        - content: "MAI-Voice"
           isCorrect: false
-          explanation: "Incorrect. MAI-Voice-2-Flash generates speech for latency-sensitive interactions."
-    - content: "You're building an interactive voice assistant. Which combination provides speech input and a low-latency spoken response?"
+          explanation: "Incorrect. MAI-Voice generates speech from text."
+    - content: "You're building an interactive voice assistant. Which combination provides speech input and a spoken response?"
       choices:
-        - content: "MAI-Transcribe-1.5 and MAI-Voice-2-Flash"
+        - content: "MAI-Transcribe and MAI-Voice"
           isCorrect: true
-          explanation: "Correct. MAI-Transcribe-1.5 converts the user's speech to text, and MAI-Voice-2-Flash generates a low-latency spoken response."
-        - content: "MAI-Image-2.5 and MAI-Voice-2"
+          explanation: "Correct. MAI-Transcribe converts the user's speech to text, and MAI-Voice generates a spoken response."
+        - content: "MAI-Image and MAI-Voice"
           isCorrect: false
-          explanation: "Incorrect. MAI-Image-2.5 works with images and doesn't transcribe speech input."
-        - content: "MAI-Thinking-1 and MAI-Image-2.5-Flash"
+          explanation: "Incorrect. MAI-Image works with images and doesn't transcribe speech input."
+        - content: "MAI-Thinking and MAI-Image"
           isCorrect: false
           explanation: "Incorrect. Neither model converts speech to text or generates spoken audio."

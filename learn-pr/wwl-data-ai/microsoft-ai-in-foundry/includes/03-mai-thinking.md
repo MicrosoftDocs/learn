@@ -9,11 +9,11 @@
 
 ::: zone pivot="text"
 
-**MAI-Thinking-1** is a Microsoft AI reasoning model designed to work through complex problems. Its mixture-of-experts architecture activates a subset of the model's parameters during inference, reducing the inference footprint compared with a similarly sized dense model.
+**MAI-Thinking** is a Microsoft AI reasoning model designed to work through complex problems. Its mixture-of-experts architecture activates a subset of the model's parameters during inference, reducing the inference footprint compared with a similarly sized dense model.
 
 ## Identify suitable reasoning workloads
 
-MAI-Thinking-1 is a candidate for tasks such as:
+MAI-Thinking is a candidate for tasks such as:
 
 - Solving multi-step mathematics and logic problems.
 - Analyzing requirements and producing or reviewing code.
