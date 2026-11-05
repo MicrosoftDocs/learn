@@ -9,7 +9,7 @@
 
 ::: zone pivot="text"
 
-**MAI-Transcribe-1.5** converts spoken audio into text. It supports 43 languages, includes automatic language detection, and is designed to work across accents, background noise, and variable recording quality.
+**MAI-Transcribe** converts spoken audio into text. It supports over 40 languages, includes automatic language detection, and is designed to work across accents, background noise, and variable recording quality.
 
 ## Apply speech recognition
 
@@ -46,6 +46,6 @@ Word error rate measures insertions, deletions, and substitutions, but a single 
 Recordings and transcripts can contain personal, confidential, or regulated information. Define retention and access policies, secure data in transit and at rest, and inform people when conversations are recorded or transcribed. Review important transcripts before using them for high-impact decisions.
 
 > [!TIP]
-> Review the [MAI-Transcribe-1.5 model card](https://microsoft.ai/pdf/MAI-Transcribe-1.5-Model-Card.PDF?azure-portal=true) for current capabilities, limitations, and responsible-use guidance.
+> Review the [MAI-Transcribe-2 model card](https://ai.azure.com/catalog/models/MAI-Transcribe-2?azure-portal=true) for current capabilities, limitations, and responsible-use guidance.
 
 ::: zone-end

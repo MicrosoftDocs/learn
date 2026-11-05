@@ -15,10 +15,10 @@ In this module, you'll explore four Microsoft AI model families:
 - **MAI-Transcribe** for converting speech to text.
 - **MAI-Voice** for generating expressive speech from text.
 
-You'll learn how Foundry supports a practical model-selection process. Instead of choosing a model from a name or a headline benchmark, you can review its model card, test it in an appropriate playground, compare results against your requirements, and evaluate quality, safety, latency, and cost.
+> [!NOTE]
+> Microsoft AI models are subject to continual development, with new versions becoming available frequently. Official model names include the version, for example *MAI-Thinking-1* or *MAI-Code-1.1-Flash*. In this module, the version number is omitted from model names for clarity. In most scenarios, you should use the most up to date version.
 
-> [!IMPORTANT]
-> A capable model isn't automatically the right model for every application. Selection should reflect the workload, expected users, deployment region, data requirements, responsible AI risks, and measurable acceptance criteria.
+You'll learn how Foundry supports a practical model-selection process. Instead of choosing a model from a name or a headline benchmark, you can review its model card, test it in an appropriate playground, compare results against your requirements, and evaluate quality, safety, latency, and cost.
 
 ::: zone-end
 
