@@ -58,7 +58,7 @@ Follow these steps to publish your agent from the Foundry portal:
 ### Step 2: Start the publishing process
 
 1. Select **Publish** to open the publishing dialog.
-2. Select **Publish** again, then choose **Publish to Teams and Microsoft 365 Copilot**.
+2. Select **Teams & Microsoft 365 Copilot**.
 3. The Microsoft 365 publishing configuration window opens.
 
 ### Step 3: Configure Azure Bot Service
@@ -91,9 +91,7 @@ Select the distribution scope for your agent:
 
 1. Select **Prepare Agent** to start packaging your agent.
 2. Wait for the packaging process to complete (typically 1-2 minutes).
-3. When ready, you can either:
-   - **Download the package** to test locally before distribution
-   - **Continue the in-product publishing flow** for direct distribution
+3. When packaging is complete, select **Download the package** to test locally before distribution, or continue the in-product publishing flow for direct distribution.
 
 ## Test the publishing package in Teams
 
