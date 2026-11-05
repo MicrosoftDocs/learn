@@ -9046,3 +9046,8 @@ achievements:
   title: Design a machine learning operations solution (MLOps)
   summary: Choose this module if you want to design an MLOps architecture for monitoring and retraining production models.
   iconUrl: /training/achievements/design-a-machine-learning-operations-solution.svg
+- uid: learn.wwl.implement-generative-ai-engineering-azure-databricks.trophy
+  type: trophy
+  title: Implement Generative AI Engineering with Azure Databricks
+  summary: Generative AI engineering with Azure Databricks uses the platform's capabilities to explore, fine-tune, evaluate, and integrate advanced language models. By using Apache Spark's scalability and Azure Databricks' collaborative environment, you can design complex AI systems.
+  iconUrl: /training/achievements/generic.svg
