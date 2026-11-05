@@ -120,6 +120,7 @@ Agent profile configuration provides three kinds of control:
 - Capability boundary: which tools are allowed (prefer allowlists)
 - Visibility boundary: whether the agent is user-selectable in interactive UI
 - Delegation boundary: which subagents can be invoked and how handoffs occur
+  
 Design guidance:
 - Use read-only toolsets for planning and review agents.
 - Restrict implementation tools to execution agents.
