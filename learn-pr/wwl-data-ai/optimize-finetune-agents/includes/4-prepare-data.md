@@ -1,10 +1,21 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=f7e8bdb7-146b-47db-8de6-39915104a9c8]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 You identified which fine-tuning method addresses your agent quality challenge. Now prepare training data that actually works. Quality training data determines whether fine-tuning succeeds or wastes resources. Data preparation involves three key stages: validating your data follows the correct format for your chosen method, verifying the content quality meets training standards, and creating your dataset using the right tools and workflow.
 
 ## Validate data format
 
-Different fine-tuning methods require different data structures. Before training, verify your data matches the exact format specification for your chosen method.
+Different fine-tuning methods require different data structures. The examples in this unit prepare data for Managed Training jobs. Before training, verify your data matches the exact format specification for your chosen method and supported model.
 
-# [Supervised Fine-Tuning (SFT)](#tab/sft)
+### [Supervised Fine-Tuning (SFT)](#tab/sft)
 
 SFT requires conversations in JSONL (JSON Lines) format with **system** instructions, **user** prompts, and ideal **assistant** responses.
 
@@ -30,7 +41,7 @@ For multi-turn conversations where you want to optimize only specific responses,
 - Assistant responses demonstrate desired behavior
 - Optional `weight` parameter is 0 or 1 (defaults to 1 if omitted)
 
-# [Direct Preference Optimization (DPO)](#tab/dpo)
+### [Direct Preference Optimization (DPO)](#tab/dpo)
 
 DPO requires preference pairs in JSONL format with three top-level fields: `input` (containing the system message and initial user message), `preferred_output` (the better response), and `non_preferred_output` (the worse response).
 
@@ -56,7 +67,7 @@ Each training example separates the prompt (`input`) from two alternative respon
 - `non_preferred_output` contains at least one assistant message demonstrating nonpreferred behavior
 - Difference between preferred and nonpreferred illustrates the specific quality you're optimizing (tone, safety balance, style)
 
-# [Reinforcement Fine-Tuning (RFT)](#tab/rft)
+### [Reinforcement Fine-Tuning (RFT)](#tab/rft)
 
 RFT requires prompts in JSONL format plus a separate grader function that scores model responses. The model learns through reinforcement by generating responses and receiving reward scores from the grader. Training data can include optional fields (like `ideal_itinerary`) that graders access for scoring.
 
@@ -129,7 +140,7 @@ High-quality training data shares predictable characteristics regardless of fine
 
 Follow this systematic workflow to create training data that meets format requirements and quality standards.
 
-:::image type="content" source="../media/workflow-data.png" alt-text="Diagram showing the five-step workflow for creating training datasets: choose strategy, prepare materials, generate examples, validate, and monitor performance." lightbox="../media/workflow-data.png":::
+:::image type="content" source="../media/workflow-data.png" alt-text="Diagram of the training data workflow: choose a strategy, prepare materials, generate examples, validate, and monitor performance." lightbox="../media/workflow-data.png":::
 
 1. **Choose your data acquisition strategy**: Real data works when you have documented interactions. Synthetic generation works when examples are scarce or contain sensitive information. Hybrid combines both, for example you can use real data for common scenarios, synthetic for edge cases.
 
@@ -145,3 +156,5 @@ Follow this systematic workflow to create training data that meets format requir
 > Learn more about how to [generate synthetic data for fine-tuning with Microsoft Foundry](/azure/ai-foundry/fine-tuning/data-generation?view=foundry&preserve-view=true#generate-synthetic-data-for-fine-tuning)
 
 With properly formatted, high-quality training data created, you're ready to learn how to optimize fine-tuning a model.
+
+::: zone-end
