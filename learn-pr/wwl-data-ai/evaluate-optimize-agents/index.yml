@@ -24,7 +24,7 @@ metadata:
   gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/evaluate-optimize-agents/index.yml
   title: Evaluate and optimize AI agents through structured experiments
   description: Learn how to evaluate and optimize AI agents systematically through structured experiments that measure quality, cost, and performance. Design evaluation metrics, apply Git-based workflows, create consistent scoring rubrics, and make evidence-based optimization decisions.
-  ms.date: 02/17/2026
+  ms.date: 11/4/2026
   author: madiepev
   ms.author: madiepev
   ms.topic: module

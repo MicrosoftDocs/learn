@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=e2302ab5-b1be-4932-81c9-03509c910e50]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Now that you understand what to monitor, it’s time to explore *how* Azure supports performance monitoring in practice. Azure gives you lightweight, code-first tools to inspect and reason about the behavior of your generative AI deployments, without needing to build out full observability stacks.
 
 Effective monitoring requires a multi-faceted approach that includes, **tracing**, **online evaluation**, and **observability** through **Azure Monitor Application Insights**.
@@ -46,3 +57,5 @@ Alert rules use **action groups**, which can take actions such as sending emai
 > Triggered alerts are stored for 30 days and are deleted after the 30-day retention period. The alert rules remain active.
 
 Now that you understand the key components of monitoring generative AI systems, let’s delve into how these concepts are implemented in code using Azure’s AI and observability tools.
+
+::: zone-end

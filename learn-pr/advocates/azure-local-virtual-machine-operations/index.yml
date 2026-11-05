@@ -1,0 +1,61 @@
+### YamlMime:Module
+uid: learn.devrel.azure-local-virtual-machine-operations
+metadata:
+  title: Operate Virtual Machine Workloads on Azure Local
+  description: Provision and operate Azure Local virtual machines through supported management, capacity planning, servicing, monitoring, recovery, and graphics acceleration.
+  ms.date: 11/01/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: module-standard-concept-based
+  ai-usage: ai-assisted
+  ms.service: azure-local
+title: Operate virtual machine workloads on Azure Local
+summary: |
+  Azure Local brings Azure management to virtual machines (VMs) that run on your own infrastructure. Successful operations require more than knowing how to start a VM. You need to understand which component owns a change, which dependencies the change requires, and what evidence proves that the workload is ready.
+
+  In this module, you learn to provision and operate Azure Local VMs enabled by Azure Arc. You trace management requests, select tools, assess capacity, prepare dependencies, interpret independent health states, and plan supported changes. You also coordinate servicing and host maintenance, respond to operational failures, manage recovery requirements, and evaluate graphics acceleration for AI workloads.
+
+abstract: |
+  After completing this module, you can:
+
+  - Explain how Azure resource ownership, the resource bridge, the local fabric, and guest agents work together.
+  - Select supported management tools and identify the least-privilege access required in Azure, on hosts, and inside guests.
+  - Assess node and cluster capacity and performance, including placement constraints, automatic balancing, and failure headroom.
+  - Prepare compatible images, storage, and networking, and provision an Azure Local VM through Azure.
+  - Interpret provisioning, power, guest-management, and application health, and define actionable alerts and response ownership.
+  - Plan supported VM lifecycle changes and retirement, including workload preparation for host maintenance.
+  - Plan and coordinate supported guest operating-system, agent, and extension servicing.
+  - Diagnose common VM and guest-management failures, including management outages, without disrupting shared infrastructure.
+  - Plan backup, restore, and disaster recovery drills to meet recovery point and recovery time objectives (RPO and RTO), accounting for differences between standard, Trusted Launch, and confidential VMs.
+  - Compare Discrete Device Assignment and GPU partitioning against performance, maintenance, and recovery requirements.
+prerequisites: |
+  Before you begin, confirm the following prerequisites:
+
+  - Familiarity with virtual machine administration, including operating systems, networking, and storage.
+  - Basic knowledge of Azure resources, role-based access control, and PowerShell.
+  - An approved environment, required permissions, supported tooling, and a recovery plan if you choose to run the operational examples.
+iconUrl: /training/achievements/generic-badge.svg
+ratingEnabled: false
+levels:
+- intermediate
+roles:
+- administrator
+- solution-architect
+products:
+- azure-local
+subjects:
+- infrastructure
+units:
+- learn.devrel.azure-local-virtual-machine-operations.introduction
+- learn.devrel.azure-local-virtual-machine-operations.virtual-machine-operations
+- learn.devrel.azure-local-virtual-machine-operations.virtual-machine-dependencies
+- learn.devrel.azure-local-virtual-machine-operations.virtual-machine-health
+- learn.devrel.azure-local-virtual-machine-operations.virtual-machine-lifecycle
+- learn.devrel.azure-local-virtual-machine-operations.network-mobility-restrictions
+- learn.devrel.azure-local-virtual-machine-operations.guest-management
+- learn.devrel.azure-local-virtual-machine-operations.security-aware-recovery
+- learn.devrel.azure-local-virtual-machine-operations.graphics-acceleration
+- learn.devrel.azure-local-virtual-machine-operations.knowledge-check
+- learn.devrel.azure-local-virtual-machine-operations.summary
+badge:
+  uid: learn.devrel.azure-local-virtual-machine-operations.badge

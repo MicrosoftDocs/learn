@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=af7419de-e6b6-45ff-9be8-070561227bed]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Prompt changes in production AI systems require the same systematic management approach as traditional software code changes.
 
 In the customer service team scenario, someone updated the agent's system prompt without any tracking or approval process. The team couldn't identify what changed, who made the change, or how to quickly restore the working version. This chaos could be prevented with proper version control.
@@ -47,3 +58,5 @@ Version control transforms prompt chaos into systematic operations:
 > This systematic approach gives you confidence to iterate quickly while maintaining reliability. Changes become improvements, not risks.
 
 Now that you understand why version control matters for prompts, you're ready to explore how Microsoft Foundry manages agent versions and how your prompts integrate with agent definitions.
+
+::: zone-end

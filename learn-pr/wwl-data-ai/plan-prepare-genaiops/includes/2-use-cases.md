@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=a0a25bc4-4908-41f0-9f3c-f28a60555a31]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 The Adventure Works team is tempted to open a chat playground and start writing prompts. But a vague idea like *"an agent that helps shoppers"* leads to endless rework: every reviewer imagines a different agent, and no one can agree on when it's *good enough* to launch.
 
 Instead, they write an **agent specification** first. Think of it as the blueprint, or job description, for your agent. It captures what the agent does, how it behaves, and how you know it works, before a single line of code is written.
@@ -51,3 +62,5 @@ Finally, prepare the data that proves the agent works.
 To trust those scores, use a deliberate **coverage mix**. This means choosing test questions that reflect the full range of real use, not just the easy ones. Include the common questions shoppers ask every day, along with rare edge cases like ambiguous requests, out-of-stock items, or questions the agent should refuse. A good coverage mix keeps a high score from hiding failures that only show up in the situations you forgot to test.
 
 With this specification in hand, the Adventure Works team can now make design choices, like which model to use, with clear targets to aim for.
+
+::: zone-end

@@ -1,9 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.evaluate-optimize-agents.design-evaluation-experiments
 metadata:
+  zone_pivot_groups: video-or-text
   title: Design evaluation experiments
   description: Learn how to design structured evaluation experiments with clear metrics for quality, cost, and performance that enable objective comparison of agent variants.
-  ms.date: 02/17/2026
+  ms.date: 11/4/2026
   author: madiepev
   ms.author: madiepev
   ms.topic: unit

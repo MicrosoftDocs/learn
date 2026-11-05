@@ -2,11 +2,12 @@
 uid: learn.wwl.plan-prepare-genaiops.select-model
 title: Design and optimize your agent
 metadata:
+  zone_pivot_groups: video-or-text
   title: Design and optimize your agent
   description: Design and optimize a generative AI agent by choosing a model, grounding it in your data, and optimizing against your evaluation rubric.
   author: madiepev
   ms.author: madiepev
-  ms.date: 07/18/2026
+  ms.date: 11/4/2026
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

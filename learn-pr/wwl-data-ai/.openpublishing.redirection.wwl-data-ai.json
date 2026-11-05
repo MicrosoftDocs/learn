@@ -3533,6 +3533,41 @@
       "redirect_document_id": false
     },
     {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/explore-concepts-of-data-analytics/index.yml",
+      "redirect_url": "/training/modules/data-analytics-microsoft/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/explore-concepts-of-data-analytics/1-introduction.yml",
+      "redirect_url": "/training/modules/data-analytics-microsoft/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/explore-concepts-of-data-analytics/2-describe-data-ingestion-process.yml",
+      "redirect_url": "/training/modules/data-analytics-microsoft/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/explore-concepts-of-data-analytics/3-explore-data-visualization.yml",
+      "redirect_url": "/training/modules/data-analytics-microsoft/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/explore-concepts-of-data-analytics/4-explore.yml",
+      "redirect_url": "/training/modules/data-analytics-microsoft/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/explore-concepts-of-data-analytics/5-knowledge-check.yml",
+      "redirect_url": "/training/modules/data-analytics-microsoft/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/explore-concepts-of-data-analytics/6-summary.yml",
+      "redirect_url": "/training/modules/data-analytics-microsoft/",
+      "redirect_document_id": false
+    },
+    {
       "source_path_from_root": "/learn-pr/wwl-data-ai/maintain-azure-cognitive-search-solution/01-introduction.yml",
       "redirect_url": "/training/paths/insight-visual-data/",
       "redirect_document_id": false
@@ -3620,6 +3655,46 @@
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/enrich-search-index-using-language-studio/index.yml",
       "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/query-relational-data/index.yml",
+      "redirect_url": "/training/modules/introduction-to-transact-sql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/query-relational-data/1-introduction.yml",
+      "redirect_url": "/training/modules/introduction-to-transact-sql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/query-relational-data/2-introduction-to-sql.yml",
+      "redirect_url": "/training/modules/introduction-to-transact-sql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/query-relational-data/3-sql-database.yml",
+      "redirect_url": "/training/modules/introduction-to-transact-sql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/query-relational-data/4-azure-database-for-postgresql.yml",
+      "redirect_url": "/training/modules/introduction-to-transact-sql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/query-relational-data/5-azure-database-for-mysql.yml",
+      "redirect_url": "/training/modules/introduction-to-transact-sql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/query-relational-data/6-exercise-perform-query.yml",
+      "redirect_url": "/training/modules/introduction-to-transact-sql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/query-relational-data/7-summary.yml",
+      "redirect_url": "/training/modules/introduction-to-transact-sql/",
       "redirect_document_id": false
     },
     {
@@ -3730,6 +3805,41 @@
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/improve-search-results-vector-search/index.yml",
       "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/describe-concepts-of-relational-data/index.yml",
+      "redirect_url": "/training/modules/explore-relational-data-offerings/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/describe-concepts-of-relational-data/1-introduction.yml",
+      "redirect_url": "/training/modules/explore-relational-data-offerings/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/describe-concepts-of-relational-data/2-explore-characteristics.yml",
+      "redirect_url": "/training/modules/explore-relational-data-offerings/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/describe-concepts-of-relational-data/3-explore-structures.yml",
+      "redirect_url": "/training/modules/explore-relational-data-offerings/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/describe-concepts-of-relational-data/4-choose-right-platform-relational-workload.yml",
+      "redirect_url": "/training/modules/explore-relational-data-offerings/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/describe-concepts-of-relational-data/5-knowledge-check.yml",
+      "redirect_url": "/training/modules/explore-relational-data-offerings/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/describe-concepts-of-relational-data/6-summary.yml",
+      "redirect_url": "/training/modules/explore-relational-data-offerings/",
       "redirect_document_id": false
     },
     {
@@ -5382,15 +5492,18 @@
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/query-relational-data/4-sql-database-for-postgresql.md",
-      "redirect_url": "/training/modules/query-relational-data/4-azure-database-for-postgresql"
+      "redirect_url": "/training/modules/introduction-to-transact-sql/",
+      "redirect_document_id": false
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/query-relational-data/5-sql-database-for-mysql.md",
-      "redirect_url": "/training/modules/query-relational-data/5-azure-database-for-mysql"
+      "redirect_url": "/training/modules/introduction-to-transact-sql/",
+      "redirect_document_id": false
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/query-relational-data/6-perform-query.md",
-      "redirect_url": "/training/modules/query-relational-data/6-exercise-perform-query"
+      "redirect_url": "/training/modules/introduction-to-transact-sql/",
+      "redirect_document_id": false
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/read-text-computer-vision/3-read-text-computer-vision.md",

@@ -13,9 +13,9 @@ Code-generation models can help developers move from an idea to working software
 
 ![Screenshot of the MAI Code model in GitHub Copilot.](../media/code-model.png)
 
-## Work with MAI-Code-1.1-Flash
+## Work with MAI-Code
 
-**MAI-Code-1.1-Flash** is a lightweight, agentic coding model optimized for efficient everyday software engineering. It can support workflows such as:
+**MAI-Code** is a lightweight, agentic coding model optimized for efficient everyday software engineering. It can support workflows such as:
 
 - Understanding requirements and planning an implementation.
 - Generating, explaining, and modifying code.
@@ -26,10 +26,10 @@ Code-generation models can help developers move from an idea to working software
 
 The model supports a broad range of programming languages and ecosystems, including Python, C++, HTML, CSS, .NET, Java, JavaScript, and TypeScript. This breadth is useful in projects that combine frontend, backend, scripting, and infrastructure code.
 
-MAI-Code-1.1-Flash is custom-trained for native integration with GitHub Copilot in Visual Studio Code and the Copilot CLI. Through these environments, the model can use repository context and development tools to work across a task rather than respond to an isolated prompt.
+MAI-Code is custom-trained for native integration with GitHub Copilot in Visual Studio Code and the Copilot CLI. Through these environments, the model can use repository context and development tools to work across a task rather than respond to an isolated prompt.
 
 > [!TIP]
-> Review the [MAI-Code-1.1-Flash model card](https://microsoft.ai/pdf/MAI-Code-1.1-Flash-Model-Card.PDF?azure-portal=true) for current capabilities, limitations, and intended uses.
+> Review the [MAI-Code-1.1-Flash model card](https://ai.azure.com/catalog/models/mai-code-1.1-flash?azure-portal=true) for current capabilities, limitations, and intended uses.
 
 ## Provide useful context
 

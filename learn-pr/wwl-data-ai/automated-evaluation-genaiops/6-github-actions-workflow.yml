@@ -2,9 +2,10 @@
 uid: learn.wwl.automated-evaluation-genaiops.github-actions-workflow
 title: Integrate evaluations into GitHub Actions
 metadata:
+  zone_pivot_groups: video-or-text
   title: Integrate evaluations into GitHub Actions
   description: "Learn how to automate Python evaluation scripts in GitHub Actions workflows triggered by pull requests"
-  ms.date: 02/22/2026
+  ms.date: 11/4/2026
   author: madiepev
   ms.author: madiepev
   ms.topic: unit

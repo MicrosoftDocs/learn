@@ -1,9 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.evaluate-optimize-agents.introduction
 metadata:
+  zone_pivot_groups: video-or-text
   title: Introduction
   description: Introduction to the challenge of optimizing AI agents systematically through structured evaluation rather than guesswork.
-  ms.date: 02/17/2026
+  ms.date: 11/4/2026
   author: madiepev
   ms.author: madiepev
   ms.topic: unit

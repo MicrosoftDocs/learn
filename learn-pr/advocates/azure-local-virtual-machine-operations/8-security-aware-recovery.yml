@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-local-virtual-machine-operations.security-aware-recovery
+metadata:
+  title: Plan Security-Aware Recovery
+  description: Plan backup and restore, preserve protected state, and evaluate security-specific recovery against business objectives.
+  ms.date: 11/01/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Plan security-aware recovery
+durationInMinutes: 12
+content: |
+  [!include[](includes/8-security-aware-recovery.md)]
