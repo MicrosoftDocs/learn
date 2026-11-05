@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=52b6f005-4742-42c9-a63c-fc7c7404776b]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Contoso uses managed identity as the default for its application, but an integration still requires an Azure Cosmos DB account key. You need to protect that credential and replace it without interrupting dependent workloads. Unlike the identity-based connection in the previous unit, this connection introduces a secret that your team manages. Your task is to choose an appropriate key, control its distribution, and prove that consumers use its replacement before retiring the old value.
 
 ## Choose the appropriate account key
@@ -37,3 +48,5 @@ For Contoso's release evidence, record the active slot, secret version identifie
 If every consumer migrates to Microsoft Entra authentication, have an authorized account administrator set `disableLocalAuth` to `true` to reject key-based requests. First, verify each consumer's identity-based operations, including scheduled jobs and operational tools. This setting affects the entire account, so keep key access enabled while Contoso's fallback integration still needs it. After the change, confirm that identity-based requests succeed and key-based requests fail. See [disable key-based authentication](/azure/cosmos-db/how-to-connect-role-based-access-control#disable-key-based-authentication).
 
 Authentication establishes how the application connects, but permissions determine the scope of its access. The next unit examines role-based access control across the account-management and data planes, including the permissions that govern access to account keys.
+
+::: zone-end

@@ -2,10 +2,11 @@
 uid: learn.wwl.secure-azure-cosmos-db-nosql.implement-rbac
 title: Implement role-based access control
 metadata:
+  zone_pivot_groups: video-or-text
   title: Implement Role-Based Access Control
   description: "Distinguish Azure Cosmos DB control-plane and data-plane permissions, assign a least-privilege role to a managed identity, and verify its access."
-  ms.date: 10/02/2026
-  author: wwlpublish
+  ms.date: 11/5/2026
+  author: MScalopez
   ms.author: calopez
   ms.topic: unit
   ai-usage: ai-generated
