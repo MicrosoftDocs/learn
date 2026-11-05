@@ -13,10 +13,10 @@ Microsoft Foundry provides a common environment for discovering, comparing, eval
 
 You explored these model families:
 
-- **MAI-Thinking-1** for complex reasoning, mathematics, coding, planning, and analysis.
-- **MAI-Image-2.5-Pro**, **MAI-Image-2.5**, and **MAI-Image-2.5-Flash** for different balances of visual capability, control, and cost.
-- **MAI-Transcribe-1.5** for multilingual, domain-aware speech recognition.
-- **MAI-Voice-2** for high-fidelity speech and **MAI-Voice-2-Flash** for latency-sensitive speech generation.
+- **MAI-Thinking** for complex reasoning, mathematics, coding, planning, and analysis.
+- **MAI-Image** for different balances of visual capability, control, and cost.
+- **MAI-Transcribe** for multilingual, domain-aware speech recognition.
+- **MAI-Voice** for high-fidelity speech and latency-sensitive speech generation.
 
 Model selection is an evidence-based process. Begin with the required input, output, and task; review current model documentation; test representative inputs; and evaluate the qualities that matter to the complete application. After deployment, monitor real behavior and reevaluate the choice as models, data, and requirements change.
 

@@ -22,7 +22,7 @@ metadata:
   gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/microsoft-ai-code/index.yml
   title: Use a Microsoft AI Code model for AI-assisted coding
   description: Learn how Microsoft AI Code models support AI-assisted software development and how to use an MAI-Code model in coding tools.
-  ms.date: 09/30/2026
+  ms.date: 11/04/2026
   author: graememalcolm
   ms.author: gmalc
   ms.topic: module-standard-task-based # Please don't edit, used for our analytics

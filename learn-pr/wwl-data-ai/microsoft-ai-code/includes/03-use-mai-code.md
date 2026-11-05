@@ -22,7 +22,7 @@ The exact interface varies between products and versions, but the general proces
 
 1. Open the coding assistant's chat or agent interface.
 1. Open the model picker.
-1. Select an available model whose name begins with **MAI-Code**, such as **MAI-Code-1.1-Flash**.
+1. Select the latest available model whose name begins with **MAI-Code**.
 1. Select the interaction mode for your task. Use a conversational mode to ask questions or plan, and an agent mode when you want the tool to edit files and run development tools.
 1. Confirm the selected model before you submit your prompt.
 
