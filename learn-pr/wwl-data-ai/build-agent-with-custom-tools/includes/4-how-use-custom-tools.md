@@ -213,7 +213,7 @@ agent = project_client.agents.create_version(
       definition=PromptAgentDefinition(
           model="gpt-4.1",
           instructions="You are a weather assistant. Use the API to fetch weather data.",
-          tools=[openapi_tool],
+          tools=[tool],
       ),
   )
   ```
