@@ -2,16 +2,16 @@
 uid: learn.wwl.optimize-finetune-agents.prepare-data
 title: Prepare training data for fine-tuning
 metadata:
+  zone_pivot_groups: video-or-text
   title: Prepare training data for fine-tuning
-  description: Learn how to validate data formats for SFT, DPO, and RFT fine-tuning methods, apply data quality principles, and follow a systematic workflow to create or generate high-quality training datasets.
+  description: Validate data formats for model-specific SFT, DPO, and RFT Managed Training jobs, apply data quality principles, and create or generate high-quality training datasets.
   author: madiepev
   ms.author: madiepev
-  ms.date: 02/25/2026
+  ms.date: 11/04/2026
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
 durationInMinutes: 5
 content: |
   [!include[](includes/4-prepare-data.md)]
-
 

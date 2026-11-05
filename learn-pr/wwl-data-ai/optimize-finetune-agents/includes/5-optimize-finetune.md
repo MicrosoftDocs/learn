@@ -1,4 +1,15 @@
-You selected your fine-tuning method and prepared quality training data. Before submitting your first training job, invest time in two critical decisions: establishing a clear optimization strategy and understanding how hyperparameters control the training process. These decisions determine whether your fine-tuning job produces a genuinely better model or wastes compute resources on a poorly configured run.
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=2d71736a-a36a-4d75-94fa-f9e6d7cc515e]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
+You selected your fine-tuning method and prepared quality training data. With Managed Training, you configure a job and Foundry runs the training workflow; you don't implement the training loop. Before submitting your first training job, invest time in two critical decisions: establishing a clear optimization strategy and understanding how hyperparameters control the training process. These decisions determine whether your fine-tuning job produces a genuinely better model or wastes compute resources on a poorly configured run.
 
 ## Design your optimization strategy
 
@@ -29,15 +40,14 @@ Divide your prepared data into training and validation sets before training begi
 
 > [!TIP]
 > If your dataset has fewer than 100 examples, consider a 90/10 split to maximize training data while preserving enough validation examples for meaningful evaluation.
-
-> [!NOTE]
+>
 > RFT can work effectively with far fewer examples than SFT because the model doesn't learn from ground-truth outputs—it learns from reward scores. A split like 100 training examples and 50 validation examples is often sufficient to get meaningful results.
 
 ## Configure training hyperparameters
 
-Hyperparameters control how the training algorithm learns from your data. Three hyperparameters appear across all fine-tuning methods—supervised fine-tuning (SFT), direct preference optimization (DPO), and reinforcement fine-tuning (RFT). Start with the defaults and adjust one at a time based on evaluation results.
+Hyperparameters control how the training algorithm learns from your data. The following examples illustrate job settings for supervised fine-tuning (SFT), direct preference optimization (DPO), and reinforcement fine-tuning (RFT) in Managed Training. Supported settings, defaults, and limits vary by model and method. Check the documentation for your selected [fine-tuning method](/azure/foundry/fine-tuning/overview#customization-methods), start with its defaults, and adjust one setting at a time based on evaluation results.
 
-| Hyperparameter | Default | Typical range | How to adjust |
+| Hyperparameter | Example starting value | Example range | How to adjust |
 |---|---|---|---|
 | `n_epochs` | 3 | 1–10 | Increase if evaluation scores remain low after training (underfitting). Decrease if scores are high but the model behaves unexpectedly on new inputs (overfitting). |
 | `batch_size` | 1 | 1–8 | Increase to 2–4 for larger datasets to speed up training. Keep at 1–2 when training stability matters, such as with DPO. |
@@ -45,7 +55,7 @@ Hyperparameters control how the training algorithm learns from your data. Three 
 
 Select the tab for your method to see how to pass these hyperparameters when creating a job.
 
-# [Supervised Fine-Tuning (SFT)](#tab/sft)
+### [Supervised Fine-Tuning (SFT)](#tab/sft)
 
 Pass hyperparameters inside the `supervised` method block:
 
@@ -67,7 +77,7 @@ fine_tuning_job = openai_client.fine_tuning.jobs.create(
 )
 ```
 
-# [Direct Preference Optimization (DPO)](#tab/dpo)
+### [Direct Preference Optimization (DPO)](#tab/dpo)
 
 Pass hyperparameters inside the `dpo` method block. DPO is more sensitive to training instability than SFT—keep `batch_size` at one or two, and reduce `learning_rate_multiplier` first if results are erratic:
 
@@ -89,7 +99,7 @@ fine_tuning_job = openai_client.fine_tuning.jobs.create(
 )
 ```
 
-# [Reinforcement Fine-Tuning (RFT)](#tab/rft)
+### [Reinforcement Fine-Tuning (RFT)](#tab/rft)
 
 RFT includes three extra parameters inside the `reinforcement` block. `eval_interval` controls how often (every N steps) the grader scores the model during training. `eval_samples` sets how many examples are scored at each interval. `reasoning_effort` (`low`, `medium`, or `high`) controls how much compute the model uses when generating responses during training. Because the grader provides continuous feedback, RFT typically needs fewer epochs than SFT—default is two instead of three:
 
@@ -124,3 +134,5 @@ Start with the default hyperparameters for your first training run. After evalua
 Fine-tuning rarely produces a perfect model on the first attempt. If your fine-tuned model doesn't meet your target thresholds, you don't have to start over. You can use the fine-tuned model itself as the base for another training round, adjusting hyperparameters, incorporating more data, or targeting a more specific task without discarding the progress already made.
 
 The most effective fine-tuning process is a loop: evaluate, adjust, retrain, and repeat until the model consistently meets your quality targets.
+
+::: zone-end

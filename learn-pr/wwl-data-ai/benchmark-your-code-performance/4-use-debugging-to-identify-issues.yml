@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.benchmark-your-code-performance.use-debugging-to-identify-issues
+title: Use debugging to identify issues
+metadata:
+  title: Use Debugging to Identify Issues
+  description: "Learn how to use the Visual Studio Code debugger to set breakpoints, inspect variables, and step through Python code."
+  ms.date: 10/19/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 12
+content: |
+  [!include[](includes/4-use-debugging-to-identify-issues.md)]

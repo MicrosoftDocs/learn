@@ -3,18 +3,29 @@ uid: learn.wwl.optimize-finetune-agents.knowledge-check
 title: Module assessment
 metadata:
   title: Module assessment
-  description: Knowledge check covering fine-tuning method selection for agent quality problems, DPO preference pair data format requirements, and optimization strategy design.
+  description: Knowledge check covering training approaches, model-specific Managed Training methods, DPO preference pair data format requirements, and baseline evaluation.
   author: madiepev
   ms.author: madiepev
-  ms.date: 02/25/2026
+  ms.date: 11/04/2026
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
   module_assessment: true
-durationInMinutes: 3
+durationInMinutes: 4
 content: |
 quiz:
   questions:
+  - content: "Your team wants Foundry to run a predefined fine-tuning workflow from uploaded data and supported job settings, without writing a Python training loop. Which training approach should you choose?"
+    choices:
+    - content: "Managed Training"
+      isCorrect: true
+      explanation: "Correct. Managed Training runs a job from your data and settings. You select a method supported by your model, such as SFT, DPO, or RFT; the method is separate from the training approach."
+    - content: "Programmed Training (preview)"
+      isCorrect: false
+      explanation: "Incorrect. Programmed Training is for controlling training operations in a Python loop. It requires explicit preview access approval and isn't recommended for production workloads."
+    - content: "Changing the agent's instructions and tools"
+      isCorrect: false
+      explanation: "Incorrect. Agent configuration can improve behavior, but it doesn't run a training job or update the model's weights."
   - content: "An AI agent generates trip plans that fail to consider how customer constraints like fitness level, experience, budget, and weather conditions interact with each other. Which fine-tuning method best addresses this problem?"
     choices:
     - content: "Supervised Fine-Tuning (SFT)"
@@ -48,5 +59,4 @@ quiz:
     - content: "To determine the correct number of epochs to use during training."
       isCorrect: false
       explanation: "Incorrect. Baseline evaluation measures current model quality against your metrics. Epoch count is a hyperparameter you set based on training results, adjusted one at a time after evaluating each run."
-
 
