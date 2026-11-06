@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=fd00c232-9094-4441-aabf-bcd34a2f4b94]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 With authentication configured, your GitHub Actions workflow can reach Azure Machine Learning. Next, decide what starts the workflow and what it submits.
 
 ## Trigger types
@@ -30,3 +41,5 @@ GitHub Actions doesn't natively subscribe to Azure Event Grid events. An interme
 
 > [!TIP]
 > Match each event to a trigger: a proposed change, an approved merge, a monthly run, and new data. When is an intermediary necessary?
+
+::: zone-end

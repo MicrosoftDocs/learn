@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=8dc3f16e-42d0-43aa-9a76-b5d98ee971f9]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Managing machine learning code manually — one notebook, one person, one run at a time — doesn't scale to a team that needs traceability, safe experimentation, and automated quality gates. This module explained how to build that automation layer step by step.
 
 ## What you learned
@@ -16,3 +27,5 @@ Managing machine learning code manually — one notebook, one person, one run at
 - [Workload identity federation](/entra/workload-id/workload-identity-federation)
 - [Security hardening for GitHub Actions](https://docs.github.com/actions/security-guides/security-hardening-for-github-actions)
 - [Azure Machine Learning CLI and Python SDK v2](/azure/machine-learning/concept-v2)
+
+::: zone-end

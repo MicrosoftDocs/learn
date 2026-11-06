@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=32a3da03-eef0-473b-ad33-046a9d0deea0]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 With the model registered and production promotion protected by a GitHub environment, you're ready to serve predictions without exposing every user to an untested version.
 
 ## Create an endpoint and a deployment
@@ -91,3 +102,5 @@ Changing traffic preserves the endpoint URL and provides a faster recovery than 
 
 > [!TIP]
 > Learn more about [connecting GitHub Actions to Azure with OpenID Connect](/azure/developer/github/connect-from-azure).
+
+::: zone-end

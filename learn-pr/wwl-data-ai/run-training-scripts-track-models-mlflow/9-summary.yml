@@ -2,14 +2,15 @@
 uid: learn.wwl.run-training-scripts-track-models-mlflow.summary
 title: Summary
 metadata:
+  zone_pivot_groups: video-or-text
   title: Summary
   description: In this module, you've learned how to run scripts as command jobs and track model training with MLflow in Azure Machine Learning.
   author: madiepev
   ms.author: madiepev
-  ms.date: 08/27/2026
+  ms.date: 11/6/2026
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
-durationInMinutes: 1
+durationInMinutes: 2
 content: |
   [!include[](includes/9-summary.md)]

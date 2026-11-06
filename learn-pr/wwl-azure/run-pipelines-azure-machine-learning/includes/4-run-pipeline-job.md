@@ -1,4 +1,13 @@
+::: zone pivot="video"
 
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=3214aea0-3b6b-4e30-b030-fd8918ba319a]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
 
 When you've built a component-based pipeline in Azure Machine Learning, you can run the workflow as a **pipeline job**.
 
@@ -107,3 +116,5 @@ ml_client.schedules.begin_delete(name=schedule_name).result()
 
 > [!TIP]
 > Learn more about [the schedules you can create to trigger pipeline jobs in Azure Machine Learning](/azure/machine-learning/how-to-schedule-pipeline-job?tabs=python&azure-portal=true). Or, explore an [example notebook to learn how to work with schedules](https://github.com/Azure/azureml-examples/blob/main/sdk/python/schedules/job-schedule.ipynb?azure-portal=true).
+
+::: zone-end

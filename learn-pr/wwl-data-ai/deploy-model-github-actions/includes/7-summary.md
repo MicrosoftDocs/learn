@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=82c4a535-6899-4a15-85e5-41825654ba56]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 In this module, you took a trained model from registration through automated deployment to production monitoring in Azure Machine Learning.
 
 ## What you learned
@@ -19,3 +30,5 @@ In this module, you took a trained model from registration through automated dep
 - [Connect GitHub Actions to Azure with OpenID Connect](/azure/developer/github/connect-from-azure)
 - [Monitor online endpoints](/azure/machine-learning/how-to-monitor-online-endpoints)
 - [Monitor the performance of models deployed to production](/azure/machine-learning/how-to-monitor-model-performance)
+
+::: zone-end

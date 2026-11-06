@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=7db6f862-7e3f-49d3-95c7-260c0518852c]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 When you have a script that trains a machine learning model, you can run it as a command job in Azure Machine Learning. 
 
 ## Configure and submit a command job
@@ -42,3 +53,5 @@ returned_job = ml_client.create_or_update(job)
 You can monitor and review the job in the Azure Machine Learning studio. All jobs with the same experiment name are grouped under the same experiment. You can find an individual job using the specified display name.
 
 All inputs and outputs of a command job are tracked. You can review which command you specified, which compute was used, and which environment was used to run the script on the specified compute.
+
+::: zone-end

@@ -28,7 +28,7 @@ metadata:
   gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/deploy-model-github-actions/index.yml
   title: Deploy and monitor a model in Azure Machine Learning
   description: Choose this module if you want to register, deploy, monitor, and roll back models by using GitHub Actions and protected environments.
-  ms.date: 08/27/2026
+  ms.date: 11/6/2026
   author: madiepev
   ms.author: madiepev
   ms.topic: module

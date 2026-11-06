@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=10c06f7b-c1d2-4563-ace9-e584020136af]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 With trunk-based development in place, every proposed change goes through a pull request. That pull request is also the natural moment to run automated checks. A change that breaks the training script shouldn't reach `main`, and a reviewer shouldn't have to catch every code error manually.
 
 ## Workflows, triggers, and the quality gate
@@ -29,3 +40,5 @@ Together, trunk-based development and required status checks form a quality gate
 
 > [!TIP]
 > Think about a preprocessing change with valid Python syntax but incorrect output. Which check could catch style problems, and which check must verify behavior?
+
+::: zone-end

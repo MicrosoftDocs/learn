@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=483fdfcc-3daa-4a21-8291-289a672d5e1e]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 You can increase the flexibility of your scripts by using parameters. Imagine you created a script that trains a machine learning model. You can use the same script to train a model on different datasets, or using various hyperparameter values. 
 
 ## Working with script arguments
@@ -77,3 +88,5 @@ job = command(
 ```
 
 After submitting a command job, you can review the input and output parameters you specified. 
+
+::: zone-end

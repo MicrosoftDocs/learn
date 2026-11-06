@@ -2,9 +2,10 @@
 uid: learn.wwl.deploy-model-github-actions.model-deployment
 title: Deploy, promote, and roll back a model with GitHub Actions
 metadata:
+  zone_pivot_groups: video-or-text
   title: Deploy, promote, and roll back a model with GitHub Actions
   description: "Explore how to deploy a model, safely shift traffic between versions, roll back a release, and automate the process with GitHub Actions."
-  ms.date: 08/27/2026
+  ms.date: 11/6/2026
   author: madiepev
   ms.author: madiepev
   ms.topic: unit

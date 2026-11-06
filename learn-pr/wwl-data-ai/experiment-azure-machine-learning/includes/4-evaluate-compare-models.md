@@ -1,3 +1,13 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=329d03a8-3c49-4c04-9030-46f4ce877f21]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
 
 When an automated machine learning (AutoML) experiment finishes, you want to review the models that were trained and decide which one performed best.
 
@@ -40,3 +50,5 @@ To explore a model even further, you can generate explanations for each model th
 > Learn more about [how to evaluate AutoML runs](/azure/machine-learning/how-to-understand-automated-ml?azure-portal=true).
 
 AutoML gives you a strong starting point — it searches broadly and surfaces the best algorithm and preprocessing combination for your data. But sometimes you want to go further: adjust hyperparameters, engineer custom features, or test an approach that AutoML doesn't cover. That's where notebooks come in.
+
+::: zone-end
