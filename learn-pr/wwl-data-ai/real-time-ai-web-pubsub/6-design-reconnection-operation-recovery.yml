@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.real-time-ai-web-pubsub.design-reconnection-operation-recovery
+title: Design reconnection and operation recovery
+metadata:
+  title: Design Reconnection and Operation Recovery
+  description: Restore authorized group membership and reconcile durable operation snapshots with sequenced live notifications
+  ms.date: 11/05/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+  zone_pivot_groups: video-or-text
+durationInMinutes: 11
+content: |
+  [!include[](includes/6-design-reconnection-operation-recovery.md)]

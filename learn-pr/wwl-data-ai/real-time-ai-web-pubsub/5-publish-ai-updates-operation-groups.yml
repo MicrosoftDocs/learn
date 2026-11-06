@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.real-time-ai-web-pubsub.publish-ai-updates-operation-groups
+title: Publish AI updates to operation groups
+metadata:
+  title: Publish AI Updates to Operation Groups
+  description: Define event envelopes and publish stored AI investigation updates to authorized operation groups
+  ms.date: 11/05/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+  zone_pivot_groups: video-or-text
+durationInMinutes: 11
+content: |
+  [!include[](includes/5-publish-ai-updates-operation-groups.md)]
