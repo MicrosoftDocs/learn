@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=3e11beaf-9c13-4e43-9f25-d99b04dc14a0]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 The Proseware diabetes classification model started in a Jupyter notebook on one laptop. When the team grows — data scientists, ML engineers, and reviewers — that approach breaks down. You need a place where everyone works from the same code, can review each other's changes, and can trace every model back to the code that produced it.
 
 ## What belongs in Git
@@ -29,3 +40,5 @@ This traceability is the foundation for everything that follows — branch-based
 
 > [!TIP]
 > Choose one project asset. Would you store it in Git, Azure Machine Learning, or a secret store? Explain why.
+
+::: zone-end

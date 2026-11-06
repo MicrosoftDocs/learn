@@ -2,11 +2,12 @@
 uid: learn.wwl.trigger-azure-machine-learn-jobs-github-actions.explore-solution-architecture
 title: Apply trunk-based development
 metadata:
+  zone_pivot_groups: video-or-text
   title: Apply trunk-based development
   description: Learn how short-lived branches, pull requests, reviews, and branch protection support trunk-based development.
   author: madiepev
   ms.author: madiepev
-  ms.date: 08/27/2026
+  ms.date: 11/6/2026
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

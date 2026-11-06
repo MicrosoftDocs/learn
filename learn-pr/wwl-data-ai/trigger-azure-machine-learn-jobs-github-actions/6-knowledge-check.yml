@@ -6,7 +6,7 @@ metadata:
   description: Test your understanding of source control for machine learning, trunk-based development, GitHub Actions quality gates, Azure authentication, and triggering Azure Machine Learning jobs.
   author: madiepev
   ms.author: madiepev
-  ms.date: 08/27/2026
+  ms.date: 11/6/2026
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
