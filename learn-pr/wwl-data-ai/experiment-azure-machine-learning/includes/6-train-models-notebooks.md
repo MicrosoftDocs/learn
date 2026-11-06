@@ -1,4 +1,15 @@
 
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=7fddeea4-af74-4390-8a6b-f695277e3775]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 As a data scientist, you use notebooks to experiment and train models. To group model training results, you use **experiments**. To track model metrics with MLflow when training a model in a notebook, you can use MLflow's logging capabilities.
 
 ## Create a MLflow experiment
@@ -87,3 +98,5 @@ Custom logging gives you more flexibility, but also creates more work as you hav
 When the job completes, you can review all logged metrics in the studio.
 
 :::image type="content" source="../media/custom-logging.png" alt-text="Screenshot overview page of MLflow experiment run with only custom logging in Azure Machine Learning studio." lightbox="../media/custom-logging.png":::
+
+::: zone-end

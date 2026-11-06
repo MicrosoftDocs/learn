@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=bb68205c-3b1d-47c8-a039-24d5ac7082b0]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Starting with the first step, you want to **define the problem** the model should solve, by understanding:
 
 - What the model’s output should be.
@@ -35,3 +46,5 @@ Understanding the entire process before you start gives you an opportunity to ma
 1. **Evaluate**: Calculate performance metrics.
 
 Training a machine learning model is often an iterative process, where you go through each of these steps multiple times to find the best performing model. Next, let's examine the data preparation process for developing a machine learning solution.
+
+::: zone-end

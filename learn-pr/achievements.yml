@@ -9046,3 +9046,43 @@ achievements:
   title: Design a machine learning operations solution (MLOps)
   summary: Choose this module if you want to design an MLOps architecture for monitoring and retraining production models.
   iconUrl: /training/achievements/design-a-machine-learning-operations-solution.svg
+- uid: learn.wwl.implement-generative-ai-engineering-azure-databricks.trophy
+  type: trophy
+  title: Implement Generative AI Engineering with Azure Databricks
+  summary: Generative AI engineering with Azure Databricks uses the platform's capabilities to explore, fine-tune, evaluate, and integrate advanced language models. By using Apache Spark's scalability and Azure Databricks' collaborative environment, you can design complex AI systems.
+  iconUrl: /training/achievements/generic.svg
+- uid: learn.wwl.evaluate-language-models-azure-databricks.badge
+  type: badge
+  title: Evaluate language models with Azure Databricks
+  summary: In this module, you explore Large Language Model evaluation using various metrics and approaches, learn about evaluation challenges and best practices, and discover automated evaluation techniques including LLM-as-a-judge methods.
+  iconUrl: /learn/achievements/azure-databricks.svg
+- uid: learn.wwl.fine-tune-azure-databricks.badge
+  type: badge
+  title: Fine-tune language models with Azure Databricks
+  summary: Fine-tuning uses Large Language Models' (LLMs) general knowledge to improve performance on specific tasks, allowing organizations to create specialized models that are more accurate and relevant while saving resources and time compared to training from scratch.
+  iconUrl: /learn/achievements/azure-databricks.svg
+- uid: learn.wwl.implement-llmops-azure-databricks.badge
+  type: badge
+  title: Implement LLMOps in Azure Databricks
+  summary: Streamline the implementation of Large Language Models (LLMs) with LLMOps (LLM Operations) in Azure Databricks. Learn how to deploy and manage LLMs throughout their lifecycle using Azure Databricks.
+  iconUrl: /learn/achievements/azure-databricks.svg
+- uid: learn.wwl.introduction-language-models-databricks.badge
+  type: badge
+  title: Get started with language models in Azure Databricks
+  summary: Large Language Models (LLMs) have revolutionized various industries by enabling advanced natural language processing (NLP) capabilities. These language models are utilized in a wide array of applications, including text summarization, sentiment analysis, language translation, zero-shot classification, and few-shot learning.
+  iconUrl: /learn/achievements/azure-databricks.svg
+- uid: learn.wwl.multistage-reasoning-azure-databricks.badge
+  type: badge
+  title: Implement multi-stage reasoning in Azure Databricks
+  summary: Multi-stage reasoning systems break down complex problems into multiple stages or steps, with each stage focusing on a specific reasoning task. The output of one stage serves as the input for the next, allowing for a more structured and systematic approach to problem-solving.
+  iconUrl: /learn/achievements/azure-databricks.svg
+- uid: learn.wwl.responsible-language-models-azure-databricks.badge
+  type: badge
+  title: Review responsible AI principles for language models in Azure Databricks
+  summary: When working with Large Language Models (LLMs) in Azure Databricks, it's important to understand the responsible AI principles for implementation, ethical considerations, and how to mitigate risks. Based on identified risks, learn how to implement key security tooling for language models.
+  iconUrl: /learn/achievements/azure-databricks.svg
+- uid: learn.wwl.retrieval-augmented-generation-azure-databricks.badge
+  type: badge
+  title: Implement Retrieval Augmented Generation (RAG) with Azure Databricks
+  summary: Retrieval Augmented Generation (RAG) is an advanced technique in natural language processing that enhances the capabilities of generative models by integrating external information retrieval mechanisms. When you use both generative models and retrieval systems, RAG dynamically fetches relevant information from external data sources to augment the generation process, leading to more accurate and contextually relevant outputs.
+  iconUrl: /learn/achievements/azure-databricks.svg

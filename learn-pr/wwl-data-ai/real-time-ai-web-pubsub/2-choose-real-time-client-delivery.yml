@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.real-time-ai-web-pubsub.choose-real-time-client-delivery
+title: Choose a real-time client delivery approach
+metadata:
+  title: Choose a Real-Time Client Delivery Approach
+  description: Compare HTTP streaming, Server-Sent Events, polling, and Azure Web PubSub for AI client updates
+  ms.date: 11/05/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+  zone_pivot_groups: video-or-text
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-choose-real-time-client-delivery.md)]

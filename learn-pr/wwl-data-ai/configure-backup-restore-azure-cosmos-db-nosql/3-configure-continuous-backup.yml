@@ -2,10 +2,11 @@
 uid: learn.wwl.configure-backup-restore-azure-cosmos-db-nosql.configure-continuous-backup
 title: Configure continuous backup
 metadata:
+  zone_pivot_groups: video-or-text
   title: Configure Continuous Backup
   description: "Enable continuous backup on a new Azure Cosmos DB account, migrate an account from periodic mode, and verify the policy and the restorable window."
-  ms.date: 10/03/2026
-  author: wwlpublish
+  ms.date: 11/05/2026
+  author: MScalopez
   ms.author: calopez
   ms.topic: unit
   ai-usage: ai-generated

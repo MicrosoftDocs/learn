@@ -2,16 +2,16 @@
 uid: learn.wwl.optimize-finetune-agents.introduction
 title: Introduction
 metadata:
+  zone_pivot_groups: video-or-text
   title: Introduction
-  description: Introduction to advanced fine-tuning decision-making for AI agents, covering method selection, agent quality problem recognition, training data preparation, and optimization strategy design.
+  description: Compare Managed Training and Programmed Training (preview) in Microsoft Foundry, then explore fine-tuning method selection, data preparation, and evaluation for models used by AI agents.
   author: madiepev
   ms.author: madiepev
-  ms.date: 02/25/2026
+  ms.date: 11/04/2026
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
-durationInMinutes: 1
+durationInMinutes: 3
 content: |
   [!include[](includes/1-introduction.md)]
-
 

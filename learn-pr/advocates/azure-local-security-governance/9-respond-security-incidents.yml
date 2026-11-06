@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-local-security-governance.respond-security-incidents
+metadata:
+  title: Respond to Security Incidents
+  description: Coordinate Azure Local incident triage, evidence preservation, cluster-aware containment, clinical-service continuity, and trusted recovery.
+  ms.date: 11/02/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Respond to security incidents
+durationInMinutes: 5
+content: |
+  [!include[](includes/9-respond-security-incidents.md)]

@@ -1,3 +1,11 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=b9a3243f-d813-4eb4-8259-4212ac8589c1]
+
+::: zone-end
+
+::: zone pivot="text"
+
 Securing an Azure Cosmos DB solution starts with decisions about who connects, what they can do, where requests originate, and which customer fields they need to see. As a developer, you make these choices before an account enters production and revisit them as application requirements change.
 
 Suppose you're a developer at Contoso preparing an account for production. The application needs an identity, permissions limited to its work, and access from approved networks. The team also needs to consider masking sensitive customer fields. These choices illustrate the security decisions you face in your own applications. They aren't a sequence of tasks to follow against a shared account or dataset.
@@ -7,3 +15,8 @@ This module starts with Microsoft Entra authentication and managed identities fo
 Next, you examine private endpoints, service endpoints, and firewall rules as network controls. You also consider dynamic data masking in relation to sensitive field exposure. C# provides the primary examples, with Python alternatives. The module concludes with an exercise, an assessment, and a summary of the security decisions.
 
 By the end of this module, you can select authentication methods, plan key rotation, distinguish and apply permissions across both planes, and choose network controls while accounting for sensitive customer field exposure.
+
+::: zone-end
+
+> [!NOTE]
+> We recognize that different people like to learn in different ways. You can choose to complete this module in video-based format or you can read the content as text and images. The text contains greater detail than the videos, so in some cases you might want to refer to it as supplemental material to the video presentation.

@@ -2,11 +2,12 @@
 uid: learn.wwl.trigger-azure-machine-learn-jobs-github-actions.trigger-azure-machine-learning-jobs
 title: Trigger Azure Machine Learning jobs and pipelines
 metadata:
+  zone_pivot_groups: video-or-text
   title: Trigger Azure Machine Learning jobs and pipelines
   description: Learn how GitHub events start workflows, how a workflow submits Azure Machine Learning jobs, and how an intermediary forwards Azure events to GitHub.
   author: madiepev
   ms.author: madiepev
-  ms.date: 08/27/2026
+  ms.date: 11/6/2026
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

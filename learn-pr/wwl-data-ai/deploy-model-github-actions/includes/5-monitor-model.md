@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=601d7e43-3506-4baa-a818-93e991ab466f]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Deploying the no-show model safely gets it into production, but production is where a model's real behavior, and the data it sees, can start to drift from what the data science team designed for. Monitoring is how you catch that.
 
 ## Watch the endpoint's operational health
@@ -35,3 +46,5 @@ A monitoring signal that crosses its configured threshold is a prompt to investi
 ## Choose between rollback and retraining
 
 Rollback is appropriate when a problem starts with a new deployment and the previous model remains healthy. Shift traffic to the retained deployment first, then investigate the new version. Retraining is more appropriate when production data or real-world behavior has changed enough that the previous model would have the same limitation. Monitoring provides evidence for the decision; it shouldn't trigger either response without evaluation.
+
+::: zone-end

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-local-security-governance.map-trust-boundaries
+metadata:
+  title: Map Trust Boundaries
+  description: Map Azure Local hardware, network, identity, and workload boundaries, then govern privileged administration and independent emergency access.
+  ms.date: 11/02/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Map trust boundaries
+durationInMinutes: 22
+content: |
+  [!include[](includes/2-map-trust-boundaries.md)]

@@ -38,9 +38,9 @@ abstract: |
   - Choose between latest version mode and all versions and deletes mode for a workload.
   - Handle change feed events with Azure Functions and move data with container copy jobs.
 prerequisites: |
-  - Experience creating and configuring an Azure Cosmos DB for NoSQL client with the SDK
-  - Experience performing point operations and queries against an Azure Cosmos DB for NoSQL container
-  - Programming experience with C# or Python
+  - Experience creating and configuring an Azure Cosmos DB for NoSQL client with the SDK.
+  - Experience performing point operations and queries against an Azure Cosmos DB for NoSQL container.
+  - Programming experience with C# or Python.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate

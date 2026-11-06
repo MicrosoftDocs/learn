@@ -3,7 +3,7 @@ uid: learn.wwl.run-pipelines-azure-machine-learning
 metadata:
   gs-content.levels: 200
   gs-content.locale: en-us
-  gs-duration: 40
+  gs-duration: 41
   gs-last.refresh.date: null
   gs-modality: module
   gs-products:
@@ -27,7 +27,7 @@ metadata:
   description: Choose this module if you want to automate multistep machine learning workflows with reusable components and Azure Machine Learning pipelines.
   author: madiepev
   ms.author: madiepev
-  ms.date: 08/27/2026
+  ms.date: 11/6/2026
   ms.service: azure-machine-learning
   ms.subservice: pipelines
   ms.topic: module-standard-task-based

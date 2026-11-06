@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.benchmark-your-code-performance.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "Learn why performance matters and how to measure code efficiency."
+  ms.date: 10/19/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

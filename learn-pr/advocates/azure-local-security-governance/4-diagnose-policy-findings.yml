@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-local-security-governance.diagnose-policy-findings
+metadata:
+  title: Diagnose Policy Findings
+  description: Distinguish Azure Local baseline enforcement from cloud assessment, investigate drift, and connect policy exemptions to requirements and evidence.
+  ms.date: 11/02/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Diagnose policy findings
+durationInMinutes: 15
+content: |
+  [!include[](includes/4-diagnose-policy-findings.md)]
