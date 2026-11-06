@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=2bb086b5-43d1-4ceb-b80c-7f0af30675ac]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 You should plan how you **integrate the model**, as it affects how you train the model or what training data you use. To integrate the model, you need to deploy a model to an **endpoint**. You can deploy a model to an endpoint for either **real-time or batch predictions**.
 
 ## Deploy a model to an endpoint
@@ -92,3 +103,5 @@ However, when you deploy a model to a real-time endpoint and use such container 
 Alternatively, if you need **batch predictions**, you need compute that can handle a large workload. Ideally, you'd use a **compute cluster** that can score the data in *parallel* batches by using multiple nodes.
 
 When working with compute clusters that can process data in parallel batches, the compute is provisioned by the workspace when the batch scoring is triggered, and scaled down to 0 nodes when there's no new data to process. By letting the workspace scale down an idle compute cluster, you can save significant costs.
+
+::: zone-end
