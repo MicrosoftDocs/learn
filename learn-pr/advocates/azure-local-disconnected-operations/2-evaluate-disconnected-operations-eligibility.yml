@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-local-disconnected-operations.evaluate-disconnected-operations-eligibility
+metadata:
+  title: Evaluate Disconnected Operations Eligibility
+  description: Evaluate Azure Local disconnected-operations eligibility, dedicated management capacity, commercial registration, and self-attestation requirements.
+  ms.date: 11/04/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Evaluate disconnected operations eligibility
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-evaluate-disconnected-operations-eligibility.md)]

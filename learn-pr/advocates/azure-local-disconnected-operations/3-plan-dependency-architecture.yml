@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-local-disconnected-operations.plan-dependency-architecture
+metadata:
+  title: Plan Dependency Architecture
+  description: Plan the Azure Local disconnected control plane, bootstrap sequence, local service catalog, networking, security boundaries, and independent dependencies.
+  ms.date: 11/04/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Plan dependency architecture
+durationInMinutes: 20
+content: |
+  [!include[](includes/3-plan-dependency-architecture.md)]

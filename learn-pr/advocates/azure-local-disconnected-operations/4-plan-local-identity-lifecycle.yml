@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-local-disconnected-operations.plan-local-identity-lifecycle
+metadata:
+  title: Plan the Local Identity Lifecycle
+  description: Plan local authentication, group synchronization, scoped authorization, policy enforcement, identity cleanup, and nonhuman credential lifecycles.
+  ms.date: 11/04/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Plan the local identity lifecycle
+durationInMinutes: 12
+content: |
+  [!include[](includes/4-plan-local-identity-lifecycle.md)]

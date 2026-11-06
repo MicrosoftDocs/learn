@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1700" viewBox="0 0 1200 1700" style="background-color:white" role="img" aria-labelledby="diagram-title" font-family="Segoe UI, Arial, sans-serif" fill="#000000" lang="en">
+  <title id="diagram-title">Diagram that shows six stages from seed-node preparation to a protected Azure Local management cluster.</title>
+  <metadata>
+    Azure icon artwork embedded from C:\Azure-Icons:
+    general\10797-icon-service-Download.svg;
+    general\10825-icon-service-Powershell.svg;
+    general\10007-icon-service-Resource-Groups.svg;
+    general\10835-icon-service-Server-Farm.svg;
+    iot\10114-icon-service-Azure-Stack.svg;
+    azure stack\10108-icon-service-Infrastructure-Backup.svg.
+  </metadata>
+  <rect id="canvas-background" x="0" y="0" width="1200" height="1700" fill="#FFFFFF"/>
+  <defs>
+    <marker id="sequence-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M 0 1 L 9 5 L 0 9 Z" fill="#596B7D"/>
+    </marker>
+    <symbol id="icon-download" viewBox="0 0 18 18">
+      <defs>
+        <linearGradient id="download-gradient" x1="-4014.225" y1="-119.864" x2="-4014.225" y2="-127.984" gradientTransform="translate(-4005.223 -119.364) rotate(180)" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#6bb9f2"/>
+          <stop offset="1" stop-color="#1b93eb"/>
+        </linearGradient>
+      </defs>
+      <path d="M12.649,16.631c-1.9-.255-1.866-1.475-1.857-3.452H7.237c.009,1.977.041,3.2-1.856,3.452a.967.967,0,0,0-.894.869h9.061A.972.972,0,0,0,12.649,16.631Z" fill="#1f56a3"/>
+      <rect x="0.83" y="1.665" width="16.34" height="11.571" rx="0.554" fill="#1490df"/>
+      <rect x="1.77" y="2.561" width="14.435" height="9.601" rx="0.277" fill="#fff"/>
+      <path d="M12.565,5.22,9.279,8.505a.392.392,0,0,1-.554,0L5.44,5.22a.175.175,0,0,1,.124-.3h2.02a.175.175,0,0,0,.175-.175V.64A.139.139,0,0,1,7.9.5h2.207a.139.139,0,0,1,.139.14V4.746a.176.176,0,0,0,.176.175h2.02A.175.175,0,0,1,12.565,5.22Z" fill="url(#download-gradient)"/>
+      <path d="M4.388,8.869h.724a.16.16,0,0,1,.16.16v2.024a0,0,0,0,1,0,0H4.549a.321.321,0,0,1-.321-.321V9.03A.16.16,0,0,1,4.388,8.869Z" fill="#999"/>
+      <path d="M4.388,8.869h.724a.16.16,0,0,1,.16.16v2.024a0,0,0,0,1,0,0H4.549a.321.321,0,0,1-.321-.321V9.03A.16.16,0,0,1,4.388,8.869Z" fill="#999" opacity="0.5"/>
+      <path d="M12.887,8.869h.724a.16.16,0,0,1,.16.16v1.7a.321.321,0,0,1-.321.321h-.724a0,0,0,0,1,0,0V9.03A.16.16,0,0,1,12.887,8.869Z" fill="#999"/>
+      <path d="M12.887,8.869h.724a.16.16,0,0,1,.16.16v1.7a.321.321,0,0,1-.321.321h-.724a0,0,0,0,1,0,0V9.03A.16.16,0,0,1,12.887,8.869Z" fill="#999" opacity="0.5"/>
+      <path d="M8.809,5.772h.7a0,0,0,0,1,0,0v9.544a0,0,0,0,1,0,0h-.7A.318.318,0,0,1,8.491,15V6.09A.318.318,0,0,1,8.809,5.772Z" transform="translate(-1.544 19.544) rotate(-90)" fill="#949494"/>
+    </symbol>
+    <symbol id="icon-powershell" viewBox="0 0 18 18">
+      <defs>
+        <linearGradient id="powershell-gradient" x1="9" y1="15.834" x2="9" y2="5.788" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#32bedd"/>
+          <stop offset="0.175" stop-color="#32caea"/>
+          <stop offset="0.41" stop-color="#32d2f2"/>
+          <stop offset="0.775" stop-color="#32d4f5"/>
+        </linearGradient>
+      </defs>
+      <path d="M.5,5.788h17a0,0,0,0,1,0,0v9.478a.568.568,0,0,1-.568.568H1.068A.568.568,0,0,1,.5,15.266V5.788A0,0,0,0,1,.5,5.788Z" fill="url(#powershell-gradient)"/>
+      <path d="M1.071,2.166H16.929a.568.568,0,0,1,.568.568V5.788a0,0,0,0,1,0,0H.5a0,0,0,0,1,0,0V2.734A.568.568,0,0,1,1.071,2.166Z" fill="#0078d4"/>
+      <path d="M4.292,7.153h.523a.167.167,0,0,1,.167.167v3.858a.335.335,0,0,1-.335.335H4.125a0,0,0,0,1,0,0V7.321a.167.167,0,0,1,.167-.167Z" transform="translate(-5.271 5.967) rotate(-45.081)" fill="#f2f2f2"/>
+      <path d="M4.32,9.647h.523a.167.167,0,0,1,.167.167v4.131a0,0,0,0,1,0,0H4.488a.335.335,0,0,1-.335-.335v-3.8a.167.167,0,0,1,.167-.167Z" transform="translate(-0.504 23.385) rotate(-135.081)" fill="#e6e6e6"/>
+      <rect x="7.221" y="12.64" width="4.771" height="1.011" rx="0.291" fill="#f2f2f2"/>
+    </symbol>
+    <symbol id="icon-resource-group" viewBox="0 0 18 18">
+      <path d="M.5,15.08a.16.16,0,0,0,.08.14l1.16.65L3.7,17a.17.17,0,0,0,.23-.06l.66-1.12a.16.16,0,0,0-.06-.21l-2.3-1.3a.17.17,0,0,1-.08-.14V3.85a.16.16,0,0,1,.08-.14l2.3-1.3a.16.16,0,0,0,.06-.21L3.93,1.08A.17.17,0,0,0,3.7,1L1.78,2.11l-1.2.67a.16.16,0,0,0-.08.14V15.08Z" fill="#949494"/>
+      <path d="M2.14,3.77l.06-.06,2.3-1.3a.14.14,0,0,0,.06-.21L3.9,1.08A.15.15,0,0,0,3.68,1L1.75,2.11.56,2.78s-.05,0-.06.06l.9.51Z" fill="#a3a3a3"/>
+      <path d="M4.5,15.59l-2.3-1.3a.22.22,0,0,1-.07-.09l-1.62,1,.05,0,1.15.65,2,1.11a.15.15,0,0,0,.22-.06l.66-1.12A.14.14,0,0,0,4.5,15.59Z" fill="#a3a3a3"/>
+      <path d="M17.5,15.08a.16.16,0,0,1-.08.14l-1.16.65L14.3,17a.17.17,0,0,1-.23-.06l-.66-1.12a.16.16,0,0,1,.06-.21l2.3-1.3a.17.17,0,0,0,.08-.14V3.85a.16.16,0,0,0-.08-.14l-2.3-1.3a.16.16,0,0,1-.06-.21l.66-1.12A.17.17,0,0,1,14.3,1l1.92,1.09,1.2.67a.16.16,0,0,1,.08.14V15.08Z" fill="#949494"/>
+      <path d="M15.86,3.77l-.06-.06-2.3-1.3a.14.14,0,0,1-.06-.21l.66-1.12A.15.15,0,0,1,14.32,1l1.93,1.09,1.19.67s0,0,.06.06l-.9.51Z" fill="#a3a3a3"/>
+      <path d="M13.5,15.59l2.3-1.3a.22.22,0,0,0,.07-.09l1.62,1,0,0-1.15.65-2,1.11a.15.15,0,0,1-.22-.06l-.66-1.12A.14.14,0,0,1,13.5,15.59Z" fill="#a3a3a3"/>
+      <polygon points="14.31 5.93 14.31 12.07 8.99 15.16 8.99 9.01 14.31 5.93" fill="#32bedd"/>
+      <polygon points="14.31 5.93 9 9.02 3.68 5.93 9 2.84 14.31 5.93" fill="#9cebff"/>
+      <polygon points="8.99 9.02 8.99 15.16 3.68 12.07 3.68 5.93 8.99 9.02" fill="#50e6ff"/>
+      <polygon points="3.68 12.07 8.99 9.01 8.99 15.16 3.68 12.07" fill="#9cebff"/>
+      <polygon points="14.31 12.07 8.99 9.01 8.99 15.16 14.31 12.07" fill="#50e6ff"/>
+    </symbol>
+    <symbol id="icon-servers" viewBox="0 0 18 18">
+      <defs>
+        <linearGradient id="servers-metal" x1="5.759" y1="0.5" x2="5.759" y2="16.523" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#b3b2b3"/>
+          <stop offset="0.375" stop-color="#afaeaf"/>
+          <stop offset="0.763" stop-color="#a2a2a2"/>
+          <stop offset="1" stop-color="#979797"/>
+        </linearGradient>
+        <linearGradient id="servers-blue" x1="11.676" y1="17.5" x2="11.676" y2="8.901" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#0078d4"/>
+          <stop offset="0.156" stop-color="#1380da"/>
+          <stop offset="0.528" stop-color="#3c91e5"/>
+          <stop offset="0.822" stop-color="#559cec"/>
+          <stop offset="1" stop-color="#5ea0ef"/>
+        </linearGradient>
+      </defs>
+      <path d="M10.96,15.98a.574.574,0,0,1-.6.543h-9.2a.574.574,0,0,1-.6-.543V1.043A.574.574,0,0,1,1.158.5h9.2a.574.574,0,0,1,.6.543Z" fill="url(#servers-metal)"/>
+      <path d="M2.086,7.35A1.193,1.193,0,0,1,3.217,6.1H8.394A1.193,1.193,0,0,1,9.525,7.35h0A1.193,1.193,0,0,1,8.394,8.6H3.217A1.193,1.193,0,0,1,2.086,7.35Z" fill="#003067"/>
+      <path d="M2.086,3.649A1.193,1.193,0,0,1,3.217,2.4H8.394A1.193,1.193,0,0,1,9.525,3.649h0A1.193,1.193,0,0,1,8.394,4.895H3.217A1.193,1.193,0,0,1,2.086,3.649Z" fill="#003067"/>
+      <circle cx="3.542" cy="3.649" r="0.836" fill="#50e6ff"/>
+      <circle cx="3.542" cy="7.35" r="0.836" fill="#50e6ff"/>
+      <path d="M14.849,10.484,11.676,8.9,8.388,10.484l-1.2,2.35v4.381a.286.286,0,0,0,.286.285h8.405a.286.286,0,0,0,.286-.285V12.834Z" fill="url(#servers-blue)"/>
+      <path d="M6.481,14.1a.438.438,0,0,1-.4-.62L7.491,10.4a.439.439,0,0,1,.191-.2l3.854-2.073a.438.438,0,0,1,.42,0L15.677,10.2a.434.434,0,0,1,.178.187L17.4,13.465a.437.437,0,1,1-.782.392L15.133,10.9l-3.394-1.89L8.226,10.9,6.879,13.843A.438.438,0,0,1,6.481,14.1Z" fill="#50e6ff"/>
+      <rect x="10.742" y="11.41" width="1.787" height="1.871" rx="0.285" fill="#005ba1"/>
+      <path d="M11.635,15.94l1.728-1.157a.283.283,0,0,0-.16-.049H10.067a.285.285,0,0,0-.16.049Z" fill="#005ba1"/>
+      <polygon points="13.488 17.18 13.488 15.053 11.899 16.117 13.488 17.18" fill="#005ba1"/>
+      <polygon points="11.371 16.117 9.782 15.053 9.782 17.18 11.371 16.117" fill="#005ba1"/>
+      <polygon points="13.475 17.5 13.488 17.5 13.488 17.479 13.475 17.5" fill="#005ba1"/>
+      <polygon points="9.782 17.479 9.782 17.5 9.796 17.5 9.782 17.479" fill="#005ba1"/>
+      <polygon points="9.833 17.5 13.437 17.5 11.635 16.294 9.833 17.5" fill="#005ba1"/>
+    </symbol>
+    <symbol id="icon-local-cloud" viewBox="0 0 18 18">
+      <defs>
+        <linearGradient id="local-cloud-building" x1="12.3" y1="0.49" x2="12.3" y2="17.33" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#5ea0ef"/>
+          <stop offset="0.18" stop-color="#559cec"/>
+          <stop offset="0.47" stop-color="#3c91e5"/>
+          <stop offset="0.84" stop-color="#1380da"/>
+          <stop offset="1" stop-color="#0078d4"/>
+        </linearGradient>
+        <linearGradient id="local-cloud-gradient" x1="9.48" y1="17.51" x2="9.48" y2="9.35" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#198ab3"/>
+          <stop offset="0" stop-color="#198ab3"/>
+          <stop offset="0.14" stop-color="#22a5cb"/>
+          <stop offset="0.3" stop-color="#29bade"/>
+          <stop offset="0.47" stop-color="#2ec9eb"/>
+          <stop offset="0.68" stop-color="#31d1f3"/>
+          <stop offset="1" stop-color="#32d4f5"/>
+        </linearGradient>
+      </defs>
+      <path d="M16.68.49H7.92a.57.57,0,0,0-.57.56V13.53a10.47,10.47,0,0,1,1.42-1h1.66l.92,1.22V15.6l-1.16.84-1.61-.2L7.35,15.08v1.69a.57.57,0,0,0,.57.56h8.76a.56.56,0,0,0,.56-.56V1.05A.56.56,0,0,0,16.68.49Z" fill="url(#local-cloud-building)"/>
+      <path d="M8.66,2.24h1.61a.14.14,0,0,1,.14.14V4.46a.14.14,0,0,1-.14.14H8.66a.14.14,0,0,1-.14-.14V2.38A.14.14,0,0,1,8.66,2.24Zm2.83,0H13.1a.14.14,0,0,1,.14.14V4.46a.14.14,0,0,1-.14.14H11.49a.14.14,0,0,1-.14-.14V2.38A.14.14,0,0,1,11.49,2.24Zm2.84,0h1.61a.14.14,0,0,1,.14.14V4.46a.14.14,0,0,1-.14.14H14.33a.14.14,0,0,1-.14-.14V2.38A.14.14,0,0,1,14.33,2.24ZM8.66,6h1.61a.14.14,0,0,1,.14.14V8.24a.14.14,0,0,1-.14.14H8.66a.14.14,0,0,1-.14-.14V6.16A.14.14,0,0,1,8.66,6Zm2.83,0H13.1a.14.14,0,0,1,.14.14V8.24a.14.14,0,0,1-.14.14H11.49a.14.14,0,0,1-.14-.14V6.16A.14.14,0,0,1,11.49,6Zm2.84,0h1.61a.14.14,0,0,1,.14.14V8.24a.14.14,0,0,1-.14.14H14.33a.14.14,0,0,1-.14-.14V6.16A.14.14,0,0,1,14.33,6ZM8.66,9.8h1.61a.14.14,0,0,1,.14.14V12a.14.14,0,0,1-.14.14H8.66A.14.14,0,0,1,8.52,12V9.94A.14.14,0,0,1,8.66,9.8Zm2.83,0H13.1a.14.14,0,0,1,.14.14V12a.14.14,0,0,1-.14.14H11.49a.14.14,0,0,1-.14-.14V9.94A.14.14,0,0,1,11.49,9.8Zm0,3.78H13.1a.14.14,0,0,1,.14.14V16.8a.14.14,0,0,1-.14.14H11.49a.14.14,0,0,1-.14-.14V13.72A.14.14,0,0,1,11.49,13.58ZM14.33,9.8h1.61a.14.14,0,0,1,.14.14V12a.14.14,0,0,1-.14.14H14.33a.14.14,0,0,1-.14-.14V9.94A.14.14,0,0,1,14.33,9.8Z" fill="#f2f2f2"/>
+      <path d="M9.5,13A1.3,1.3,0,0,0,8.26,14H3.76a2.82,2.82,0,0,0-.08.65v.06H8.26A1.29,1.29,0,1,0,9.5,13Z" fill="#50e6ff"/>
+      <path d="M13,12.46A3.26,3.26,0,0,0,9.6,9.35a3.34,3.34,0,0,0-3.2,2.18,3.18,3.18,0,0,0-2.54,2H8A1.72,1.72,0,1,1,9.5,16a1.73,1.73,0,0,1-1.53-1H3.75a3.2,3.2,0,0,0,3.18,2.42h5.54l.14,0A2.63,2.63,0,0,0,15.21,15,2.6,2.6,0,0,0,13,12.46Z" fill="url(#local-cloud-gradient)"/>
+      <path d="M9.5,13A1.3,1.3,0,0,0,8.26,14H3.76a2.22,2.22,0,0,1-.47-.06,2.32,2.32,0,0,1-1.82-2.19A2.33,2.33,0,0,1,3.54,9.46l.22,0,.07-.2A2.56,2.56,0,0,1,6.29,7.55,2.64,2.64,0,0,1,8.57,8.82a3.08,3.08,0,0,1,.75-.09,3.32,3.32,0,0,0-3-1.89A3.28,3.28,0,0,0,3.23,8.79,3,3,0,0,0,.76,11.71,3,3,0,0,0,3,14.55H3a2,2,0,0,0,.73.12H8.26A1.29,1.29,0,1,0,9.5,13Z" fill="#50e6ff"/>
+    </symbol>
+    <symbol id="icon-backup" viewBox="0 0 18 18">
+      <defs>
+        <linearGradient id="backup-metal" x1="6.49" y1="17.38" x2="6.49" y2="0.44" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#949494"/>
+          <stop offset="0.53" stop-color="#a2a2a2"/>
+          <stop offset="1" stop-color="#b3b3b3"/>
+        </linearGradient>
+        <linearGradient id="backup-storage" x1="10.06" y1="13.89" x2="16.48" y2="13.89" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#005ba1"/>
+          <stop offset="0.07" stop-color="#0060a9"/>
+          <stop offset="0.36" stop-color="#0071c8"/>
+          <stop offset="0.52" stop-color="#0078d4"/>
+          <stop offset="0.64" stop-color="#0074cd"/>
+          <stop offset="0.82" stop-color="#006abb"/>
+          <stop offset="1" stop-color="#005ba1"/>
+        </linearGradient>
+      </defs>
+      <path d="M11,9.57a6.72,6.72,0,0,0-2.23.32,6.64,6.64,0,0,0,2.23.33,6.56,6.56,0,0,0,2.23-.33A6.63,6.63,0,0,0,11,9.57Z" fill="#198ab3"/>
+      <path d="M11.47,16.81a.57.57,0,0,1-.58.57H2.09a.56.56,0,0,1-.57-.57V1A.57.57,0,0,1,2.09.44h8.8a.58.58,0,0,1,.58.57Z" fill="url(#backup-metal)"/>
+      <path d="M3,6.38A1.08,1.08,0,0,1,4.06,5.3H9a1.08,1.08,0,0,1,1.08,1.08h0A1.08,1.08,0,0,1,9,7.47H4.06A1.08,1.08,0,0,1,3,6.38Z" fill="#003067"/>
+      <path d="M3,3.17A1.08,1.08,0,0,1,4.06,2.09H9a1.08,1.08,0,0,1,1.08,1.08h0A1.08,1.08,0,0,1,9,4.25H4.06A1.08,1.08,0,0,1,3,3.17Z" fill="#003067"/>
+      <circle cx="4.11" cy="3.17" r="0.73" fill="#50e6ff"/>
+      <circle cx="4.11" cy="6.38" r="0.73" fill="#50e6ff"/>
+      <path d="M13.27,11.38c-1.77,0-3.21-.53-3.21-1.17V16.4c0,.63,1.42,1.15,3.17,1.16h0c1.78,0,3.21-.52,3.21-1.16V10.21C16.48,10.85,15.05,11.38,13.27,11.38Z" fill="url(#backup-storage)"/>
+      <path d="M16.48,10.21c0,.64-1.43,1.17-3.21,1.17s-3.21-.53-3.21-1.17,1.44-1.16,3.21-1.16,3.21.52,3.21,1.16" fill="#e6e6e6"/>
+      <path d="M15.73,10.12c0,.41-1.1.74-2.46.74s-2.46-.33-2.46-.74,1.1-.74,2.46-.74,2.46.33,2.46.74" fill="#50e6ff"/>
+      <path d="M13.68,8.66l2.13-2.13a.11.11,0,0,0-.08-.19H14.49c0-2.57-1.37-5.13-3.84-5.13a6.68,6.68,0,0,1,2,5.13H11.47a.11.11,0,0,0-.08.19l2.13,2.13A.12.12,0,0,0,13.68,8.66Z" fill="#50e6ff"/>
+    </symbol>
+  </defs>
+
+  <text x="48" y="34" font-size="16" font-weight="600" letter-spacing="1.5">DISCONNECTED OPERATIONS / DEPLOYMENT ORDER</text>
+  <text x="48" y="80" font-size="36" font-weight="600">Start the Azure Local management cluster</text>
+  <text x="48" y="116" font-size="22">Build the local control plane first. Keep tenant workloads on separate clusters.</text>
+
+  <g fill="none" stroke="#596B7D" stroke-width="3" marker-end="url(#sequence-arrow)">
+    <path d="M 82 220 V 360" data-connector="1-2"/>
+    <path d="M 82 420 V 560" data-connector="2-3"/>
+    <path d="M 82 620 V 760" data-connector="3-4"/>
+    <path d="M 82 820 V 960" data-connector="4-5"/>
+    <path d="M 82 1020 V 1160" data-connector="5-6"/>
+  </g>
+
+  <rect id="step-1" x="134" y="150" width="1018" height="180" rx="14" fill="#F3F8FD" stroke="#0078D4" stroke-width="2" data-card="true"/>
+  <circle cx="82" cy="190" r="24" fill="#FFFFFF" stroke="#0078D4" stroke-width="3" data-badge="1"/>
+  <text x="82" y="199" font-size="26" font-weight="700" text-anchor="middle" data-number="1">1</text>
+  <use href="#icon-download" x="1068" y="164" width="52" height="52" aria-hidden="true" data-icon="download" data-box="step-1"/>
+  <text x="162" y="192" font-size="27" font-weight="600" data-box="step-1">Stage installation inputs</text>
+  <text x="162" y="236" font-size="22" data-box="step-1">Prepare nodes, a compatible OS, OEM drivers, and Active Directory.</text>
+  <text x="162" y="272" font-size="22" data-box="step-1">Set up trust on every node. On the seed node, stage the manifest, virtual</text>
+  <text x="162" y="308" font-size="22" data-box="step-1">disks, Operations module, and management and ingress certificates.</text>
+
+  <rect id="step-2" x="134" y="350" width="1018" height="180" rx="14" fill="#F3F8FD" stroke="#0078D4" stroke-width="2" data-card="true"/>
+  <circle cx="82" cy="390" r="24" fill="#FFFFFF" stroke="#0078D4" stroke-width="3" data-badge="2"/>
+  <text x="82" y="399" font-size="26" font-weight="700" text-anchor="middle" data-number="2">2</text>
+  <use href="#icon-powershell" x="1068" y="364" width="52" height="52" aria-hidden="true" data-icon="powershell" data-box="step-2"/>
+  <text x="162" y="392" font-size="27" font-weight="600" data-box="step-2">Install the local control plane</text>
+  <text x="162" y="436" font-size="22" data-box="step-2">Configure management and ingress networks, identity, certificates, and time.</text>
+  <text x="162" y="472" font-size="22" data-box="step-2">Run Install-Appliance on the seed node. For air-gapped deployment, add</text>
+  <text x="162" y="508" font-size="22" data-box="step-2">-disconnectMachineDeploy. Wait until installation finishes successfully.</text>
+
+  <rect id="step-3" x="134" y="550" width="1018" height="180" rx="14" fill="#F8F5FC" stroke="#5C2D91" stroke-width="2" data-card="true"/>
+  <circle cx="82" cy="590" r="24" fill="#FFFFFF" stroke="#5C2D91" stroke-width="3" data-badge="3"/>
+  <text x="82" y="599" font-size="26" font-weight="700" text-anchor="middle" data-number="3">3</text>
+  <use href="#icon-resource-group" x="1068" y="564" width="52" height="52" aria-hidden="true" data-icon="resource-group" data-box="step-3"/>
+  <text x="162" y="592" font-size="27" font-weight="600" data-box="step-3">Configure the local Azure environment</text>
+  <text x="162" y="636" font-size="22" data-box="step-3">Run Add-AzLocalEnvironment on each node. Sign in as a subscription owner.</text>
+  <text x="162" y="672" font-size="22" data-box="step-3">Confirm the local subscription and resource group before node initialization.</text>
+  <text x="162" y="708" font-size="22" data-box="step-3">From a client, register providers and wait until they show Registered.</text>
+
+  <rect id="step-4" x="134" y="750" width="1018" height="180" rx="14" fill="#F8F5FC" stroke="#5C2D91" stroke-width="2" data-card="true"/>
+  <circle cx="82" cy="790" r="24" fill="#FFFFFF" stroke="#5C2D91" stroke-width="3" data-badge="4"/>
+  <text x="82" y="799" font-size="26" font-weight="700" text-anchor="middle" data-number="4">4</text>
+  <use href="#icon-servers" x="1068" y="764" width="52" height="52" aria-hidden="true" data-icon="servers" data-box="step-4"/>
+  <text x="162" y="792" font-size="27" font-weight="600" data-box="step-4">Initialize the nodes</text>
+  <text x="162" y="836" font-size="22" data-box="step-4">Initialize the seed node first, then the remaining nodes.</text>
+  <text x="162" y="872" font-size="22" data-box="step-4">Run Invoke-AzStackHciArcInitialization with -Cloud Azure.local.</text>
+  <text x="162" y="908" font-size="22" data-box="step-4">Use a TargetSolutionVersion compatible with the appliance.</text>
+
+  <rect id="step-5" x="134" y="950" width="1018" height="180" rx="14" fill="#F1F8F2" stroke="#107C10" stroke-width="2" data-card="true"/>
+  <circle cx="82" cy="990" r="24" fill="#FFFFFF" stroke="#107C10" stroke-width="3" data-badge="5"/>
+  <text x="82" y="999" font-size="26" font-weight="700" text-anchor="middle" data-number="5">5</text>
+  <use href="#icon-local-cloud" x="1068" y="964" width="52" height="52" aria-hidden="true" data-icon="local-cloud" data-box="step-5"/>
+  <text x="162" y="992" font-size="27" font-weight="600" data-box="step-5">Form the management cluster</text>
+  <text x="162" y="1036" font-size="22" data-box="step-5">Pre-create the vault in the nodes' resource group and assign required roles.</text>
+  <text x="162" y="1072" font-size="22" data-box="step-5">Wait about five minutes for permissions. Retry validation if needed.</text>
+  <text x="162" y="1108" font-size="22" data-box="step-5">Deploy via the local portal as root operator or subscription owner.</text>
+
+  <rect id="step-6" x="134" y="1150" width="1018" height="180" rx="14" fill="#F1F8F2" stroke="#107C10" stroke-width="2" data-card="true"/>
+  <circle cx="82" cy="1190" r="24" fill="#FFFFFF" stroke="#107C10" stroke-width="3" data-badge="6"/>
+  <text x="82" y="1199" font-size="26" font-weight="700" text-anchor="middle" data-number="6">6</text>
+  <use href="#icon-backup" x="1068" y="1164" width="52" height="52" aria-hidden="true" data-icon="backup" data-box="step-6"/>
+  <text x="162" y="1192" font-size="27" font-weight="600" data-box="step-6">Protect and register the deployment</text>
+  <text x="162" y="1236" font-size="22" data-box="step-6">Save BitLocker keys and exported Host Guardian Service certificates externally.</text>
+  <text x="162" y="1272" font-size="22" data-box="step-6">Complete self-attestation, limit operator access, and use policy to keep</text>
+  <text x="162" y="1308" font-size="22" data-box="step-6">tenant workloads off the management cluster.</text>
+
+  <text x="48" y="1376" font-size="20" font-weight="600">Keep these safeguards in place</text>
+  <rect id="deployment-safeguards" x="48" y="1400" width="540" height="250" rx="14" fill="#FFFFFF" stroke="#596B7D" stroke-width="2" data-card="true"/>
+  <text x="72" y="1444" font-size="25" font-weight="600" data-box="deployment-safeguards">During cluster creation</text>
+  <text x="72" y="1488" font-size="21" data-box="deployment-safeguards">The appliance becomes a clustered VM.</text>
+  <text x="72" y="1522" font-size="21" data-box="deployment-safeguards">Keep the thinly provisioned 2-TB</text>
+  <text x="72" y="1556" font-size="21" data-box="deployment-safeguards">infrastructure volume intact.</text>
+  <text x="72" y="1590" font-size="21" data-box="deployment-safeguards">Plan for control-plane interruptions</text>
+  <text x="72" y="1624" font-size="21" data-box="deployment-safeguards">during node reboots and updates.</text>
+  <rect id="recovery-safeguards" x="612" y="1400" width="540" height="250" rx="14" fill="#FFFFFF" stroke="#596B7D" stroke-width="2" data-card="true"/>
+  <text x="636" y="1444" font-size="25" font-weight="600" data-box="recovery-safeguards">Restore before deployment</text>
+  <text x="636" y="1488" font-size="21" data-box="recovery-safeguards">Install an appliance matching the</text>
+  <text x="636" y="1522" font-size="21" data-box="recovery-safeguards">backup version on the seed node.</text>
+  <text x="636" y="1556" font-size="21" data-box="recovery-safeguards">Restore its state before forming</text>
+  <text x="636" y="1590" font-size="21" data-box="recovery-safeguards">the replacement management cluster.</text>
+</svg>

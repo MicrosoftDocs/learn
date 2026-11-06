@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-local-disconnected-operations.manage-operational-lifecycle
+metadata:
+  title: Manage the Operational Lifecycle
+  description: Plan local monitoring, diagnostics, offline vulnerability management, incident response, and compatible control-plane, platform, and workload updates.
+  ms.date: 11/04/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Manage the operational lifecycle
+durationInMinutes: 16
+content: |
+  [!include[](includes/8-manage-operational-lifecycle.md)]
