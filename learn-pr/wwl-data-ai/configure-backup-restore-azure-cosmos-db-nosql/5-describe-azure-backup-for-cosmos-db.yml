@@ -2,10 +2,11 @@
 uid: learn.wwl.configure-backup-restore-azure-cosmos-db-nosql.describe-azure-backup-for-cosmos-db
 title: Describe Azure backup for Azure Cosmos DB
 metadata:
+  zone_pivot_groups: video-or-text
   title: Describe Azure Backup for Azure Cosmos DB
   description: "Explain vaulted backup for Azure Cosmos DB, including immutable recovery points, long-term retention, policy structure, and current supported scenarios."
-  ms.date: 10/03/2026
-  author: wwlpublish
+  ms.date: 11/05/2026
+  author: MScalopez
   ms.author: calopez
   ms.topic: unit
   ai-usage: ai-generated

@@ -4,8 +4,8 @@ title: Module assessment
 metadata:
   title: Module Assessment
   description: "Check your ability to choose a backup mode and tier, configure continuous backup, select a restore target, and place vaulted backup for Azure Cosmos DB."
-  ms.date: 10/03/2026
-  author: wwlpublish
+  ms.date: 11/05/2026
+  author: MScalopez
   ms.author: calopez
   ms.topic: unit
   module_assessment: true

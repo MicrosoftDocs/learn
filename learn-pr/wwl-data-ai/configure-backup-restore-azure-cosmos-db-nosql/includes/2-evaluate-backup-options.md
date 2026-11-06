@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=a85867bd-425c-4e6a-8e0e-667fa668f24f]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Contoso's catalog account runs in periodic backup mode because that mode is the default for every account. Before the account carries production traffic, you need to decide whether that default meets the team's recovery expectations. The choice is consequential: migrating to continuous mode is a one-way change, and the two modes differ in who can start a restore, how precisely you can target a moment in time, and what you pay.
 
 ## Compare the two backup modes
@@ -72,3 +83,5 @@ Use periodic mode when scheduled snapshots and a support-assisted restore meet t
 Learn more about [choosing a backup mode](/azure/cosmos-db/online-backup-and-restore), [periodic backup](/azure/cosmos-db/periodic-backup-restore-introduction), and [continuous backup](/azure/cosmos-db/continuous-backup-restore-introduction).
 
 With the mode and tier chosen, the next unit enables continuous backup on a new account, migrates an existing one, and verifies the window you have.
+
+::: zone-end
