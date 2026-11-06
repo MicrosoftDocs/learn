@@ -4,11 +4,11 @@ title: Configure multi-region writes
 metadata:
   title: Configure Multi-Region Writes
   description: "Enable multi-region writes on an Azure Cosmos DB account, understand the hub region and confirmed writes, and configure the .NET and Python SDKs to write locally."
-  ms.date: 10/03/2026
-  author: wwlpublish
+  ms.date: 11/06/2026
+  author: MScalopez
   ms.author: calopez
   ms.topic: unit
-  zone_pivot_groups: dev-lang-csharp-python
+  zone_pivot_groups: video-or-text,dev-lang-csharp-python
   ai-usage: ai-generated
 azureSandbox: false
 labModal: false
