@@ -1,4 +1,13 @@
+::: zone pivot="video"
 
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=ca181919-ea9a-4c2a-b84d-549e9cdf060a]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
 
 In Azure Machine Learning, a **pipeline** is a workflow of machine learning tasks in which each task is defined as a **component**.
 
@@ -100,3 +109,5 @@ settings: {}
 
 > [!TIP]
 > Learn more about [the pipeline job YAML schema to explore which parameters are included when building a component-based pipeline](/azure/machine-learning/reference-yaml-job-pipeline?azure-portal=true).
+
+::: zone-end
