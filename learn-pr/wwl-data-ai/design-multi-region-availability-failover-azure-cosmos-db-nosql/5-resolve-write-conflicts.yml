@@ -4,11 +4,11 @@ title: Resolve write conflicts
 metadata:
   title: Resolve Write Conflicts
   description: "Choose a conflict resolution policy for an Azure Cosmos DB container, write a merge stored procedure, and read unresolved conflicts from the conflict feed."
-  ms.date: 10/03/2026
-  author: wwlpublish
+  ms.date: 11/06/2026
+  author: MScalopez
   ms.author: calopez
   ms.topic: unit
-  zone_pivot_groups: dev-lang-csharp-python
+  zone_pivot_groups: video-or-text,dev-lang-csharp-python
   ai-usage: ai-generated
 azureSandbox: false
 labModal: false

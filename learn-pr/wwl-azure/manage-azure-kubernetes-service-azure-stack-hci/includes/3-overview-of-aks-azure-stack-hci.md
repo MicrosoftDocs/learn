@@ -30,7 +30,12 @@ Your organization remains responsible for capacity planning, local platform main
 
 Azure Local solution updates include its AKS infrastructure components. Plan workload-cluster Kubernetes upgrades and node-pool changes separately, using the supported AKS management operations. An infrastructure update doesn't automatically upgrade every workload cluster to the latest Kubernetes release.
 
-Before you make a change, check the supported release and version combinations, available capacity, application compatibility, and recovery requirements. Test applications during representative node maintenance and pod rescheduling.
+> [!IMPORTANT]
+> Before updating Azure Local, inspect every workload cluster's Kubernetes version and the versions available in the target Azure Local release. Upgrade Kubernetes first where needed to retain a supported upgrade path. Azure Local updates don't upgrade workload-cluster Kubernetes versions, and the target release can remove versions needed for subsequent cluster creation or upgrades. Supported Kubernetes minor-version upgrades are sequential: don't skip a minor version.
+
+AKS on Azure Local also requires an Azure Local version within its six-month support window. Plan workload-cluster servicing separately from infrastructure updates.
+
+Before you make a change, check supported release and version combinations and application compatibility. Reserve replacement-node capacity and upgrade IP addresses, and check application disruption and recovery requirements. Test applications during representative node maintenance and pod rescheduling, and validate workload behavior after maintenance.
 
 Check each layer separately:
 
@@ -39,4 +44,4 @@ Check each layer separately:
 - Is the workload cluster on a supported Kubernetes version?
 - Do the node images, storage configuration, and application dependencies support the intended workload?
 
-See [AKS on Azure Local architecture](/azure/aks-hybrid-edge/local/hyperconverged/cluster-architecture) for the current architecture and infrastructure lifecycle model.
+For the current architecture and infrastructure lifecycle model, see **AKS on Azure Local architecture** in the Summary unit's **More info** section.

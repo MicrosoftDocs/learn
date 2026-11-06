@@ -1,3 +1,12 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=4151b435-d371-4d2e-a6d9-6e6b3e1baf9d]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
 With writes accepted in Europe and in West US 2, two customers can change the same catalog item inside the replication window. Azure Cosmos DB doesn't reject either write. It commits both locally and then reconciles them, and a container-level policy decides how. In this unit, you choose that policy, write the resolution logic when the default isn't enough, and read the feed of conflicts the service couldn't settle on its own.
 
 Conflicts apply only to accounts with multiple write regions. A single-write-region account has one place where writes are ordered, so the resolution policies in this unit don't apply to it.

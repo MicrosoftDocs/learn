@@ -3,7 +3,7 @@ uid: learn.wwl.manage-azure-kubernetes-service-azure-stack-hci
 metadata:
   gs-content.levels: 300
   gs-content.locale: en-us
-  gs-duration: 66
+  gs-duration: 112
   gs-last.refresh.date: null
   gs-modality: module
   gs-products:
@@ -25,25 +25,30 @@ metadata:
   gs-solution.area: "Cloud & AI Platforms"
   gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/manage-azure-kubernetes-service-azure-stack-hci/index.yml
   title: Manage Azure Kubernetes Service on Azure Local
-  description: "Prepare, deploy, access, and operate AKS clusters on hyperconverged Azure Local deployments."
-  ms.date: 10/23/2026
-  author: wwlpublish
-  ms.author: robbarefoot
+  description: "Prepare, deploy, validate, and maintain AKS clusters on hyperconverged Azure Local deployments."
+  ms.date: 11/03/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: module
   ms.service: azure-kubernetes-service-hybrid
 title: Manage Azure Kubernetes Service on Azure Local
-summary: Prepare and manage AKS clusters on hyperconverged Azure Local deployments using Azure CLI, automatic Azure Arc integration, and Kubernetes tools.
+summary: Prepare, deploy, verify, and maintain AKS clusters on hyperconverged Azure Local deployments using Azure CLI, Azure Arc, and Kubernetes tools.
 abstract: |
   In this module, you learn how to:
+
   - Describe Kubernetes concepts and the AKS on Azure Local architecture.
-  - Identify infrastructure, networking, identity, and tool prerequisites.
+  - Verify infrastructure, networking, identity, and tool prerequisites.
   - Deploy an AKS cluster and verify its automatic Azure Arc integration.
   - Access the Kubernetes API using Microsoft Entra authentication.
   - Place workloads on appropriate Linux and Windows node pools.
-  - Configure persistent storage for containerized applications.
-  - Evaluate Windows workload requirements and platform limitations.
+  - Validate persistent storage and plan safe cleanup and application recovery.
+  - Prepare and verify Windows workloads against platform requirements.
+  - Plan supported Kubernetes servicing before Azure Local updates.
   - Troubleshoot deployment, access, scheduling, and storage issues.
+  - Plan and verify an optional monitoring integration.
 prerequisites: |
+  Before starting this module, you should have:
+
   - Familiarity with the key features of Windows Server
   - Familiarity with the concept of virtualization
   - Familiarity with hyperconverged Azure Local deployments and their Azure-connected management model

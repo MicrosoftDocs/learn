@@ -2,10 +2,11 @@
 uid: learn.wwl.design-multi-region-availability-failover-azure-cosmos-db-nosql.configure-account-failover
 title: Configure account failover
 metadata:
+  zone_pivot_groups: video-or-text
   title: Configure Account Failover
   description: "Set failover priorities on an Azure Cosmos DB account and choose between changing the write region, forcing a failover, and service-managed failover during a region outage."
-  ms.date: 10/03/2026
-  author: wwlpublish
+  ms.date: 11/06/2026
+  author: MScalopez
   ms.author: calopez
   ms.topic: unit
   ai-usage: ai-generated

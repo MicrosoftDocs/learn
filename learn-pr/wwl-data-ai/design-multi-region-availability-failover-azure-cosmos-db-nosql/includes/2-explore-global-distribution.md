@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=b4304205-0e1c-4bce-a6b6-be6cb8738b5b]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Before you add a region to Contoso's catalog account, it helps to know what a region buys you. Azure Cosmos DB offers redundancy at two different scopes, and they protect against different failures at different prices. In this unit, you learn how the service replicates data, how zone redundancy and regional redundancy differ, and how to read a replication choice as a statement about recovery objectives and cost.
 
 ## Understand how replication works
@@ -49,3 +60,5 @@ One constraint rules out this whole discussion for some accounts: **serverless a
 Learn more about [distributing data globally](/azure/cosmos-db/distribute-data-globally), [reliability in Azure Cosmos DB](/azure/reliability/reliability-cosmos-db), and [optimizing cost for multi-region deployments](/azure/cosmos-db/optimize-cost-regions).
 
 You know what a region costs and what it protects. The next unit adds one to Contoso's account and points the storefront's reads at it.
+
+::: zone-end

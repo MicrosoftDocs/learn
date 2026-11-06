@@ -3,17 +3,16 @@ uid: learn.wwl.manage-azure-kubernetes-service-azure-stack-hci.deploy-kubernetes
 title: Deploy a Kubernetes cluster to Azure Local
 metadata:
   title: Deploy a Kubernetes Cluster to Azure Local
-  description: "Validate and create an AKS cluster using Azure CLI, then connect through Azure Arc."
-  ms.date: 10/23/2026
-  author: wwlpublish
-  ms.author: robbarefoot
+  description: "Choose identity options, validate and create AKS on Azure Local, connect through Azure Arc, and plan Kubernetes upgrades."
+  ms.date: 11/03/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
 azureSandbox: false
-durationInMinutes: 5
+durationInMinutes: 12
 content: |
   [!include[](includes/5-deploy-kubernetes-cluster.md)]
 quiz:
-  title: "Knowledge check"
   questions:
   - content: "An administrator creates an AKS cluster with Microsoft Entra authentication and wants selected users to have Kubernetes administrator access. Which value should the administrator supply during cluster creation?"
     choices:

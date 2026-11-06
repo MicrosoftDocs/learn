@@ -1,3 +1,12 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=8b936d55-9df9-4277-81e0-3413e71a1ba3]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
 Contoso's catalog account runs in West US 2, and most of the storefront's customers are in Europe. Reads cross an ocean on every page load. In this unit, you add a European region to the account and configure the SDK so that clients running in Europe read from it, which is the change that turns a second region from an insurance policy into a latency improvement.
 
 ## Add and remove regions
