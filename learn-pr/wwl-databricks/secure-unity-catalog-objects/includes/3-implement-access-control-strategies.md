@@ -53,11 +53,11 @@ This approach simplifies management, especially when large numbers of tables exi
 
 ## Querying a table with inherited permissions from catalog
 
-Inheritance can also extend from the catalog level. By granting **USE CATALOG** and **ALL PRIVILEGES** (or SELECT) on the catalog, the grantee automatically inherits the necessary permissions on all schemas, tables, and views within that catalog. This includes any schemas or objects created in the future.
+Inheritance can also extend from the catalog level. By granting **USE CATALOG**, **USE SCHEMA**, and **SELECT** on the catalog, the grantee can query all current and future tables and views within that catalog. **USE SCHEMA** inherits to all current and future schemas, and **SELECT** inherits to their tables and views. **SELECT** alone doesn't grant **USE SCHEMA**. Alternatively, **ALL PRIVILEGES** on the catalog includes these privileges but grants broader capabilities than read access.
 
 ![Diagram showing permissions inherited from catalog.](../media/inherited-permissions-catalog.png)
 
-This model is the most permissive because it opens access across the entire catalog. It's convenient when broad access is desired, such as giving a group of analysts the ability to query everything within a specific catalog. However, administrators need to carefully assess whether all objects in the catalog should be exposed in this way, since there's no granularity at the schema or table level when inheriting from the catalog.
+These catalog-level grants provide broad read access across the catalog. They're convenient when a group of analysts needs to query all tables and views within a specific catalog. However, administrators need to carefully assess whether this access is appropriate for all current and future tables and views. Grant privileges at the schema or table level instead when access should be limited to specific objects.
 
 ## Creating a table: explicit at schema
 
