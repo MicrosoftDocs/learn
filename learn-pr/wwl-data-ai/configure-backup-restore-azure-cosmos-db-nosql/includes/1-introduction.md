@@ -1,3 +1,11 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=da7e8417-79d3-4734-880a-80aef9343ffa]
+
+::: zone-end
+
+::: zone pivot="text"
+
 Backup in Azure Cosmos DB isn't a feature you switch on and forget. The service always protects your data, so the real decision is how quickly you need to recover, how far back you need to reach, and who is allowed to perform the recovery. Those answers shape the backup mode you choose, and you can't change some of them later.
 
 Suppose you're a developer at Contoso preparing a retail catalog account for production. A support script once removed a set of product records, and the team wants to know how it recovers from that class of mistake. Compliance also asks how long the company retains recoverable copies. These questions illustrate the recovery decisions you make for your own applications. They aren't a sequence of steps to run against a shared account.
@@ -5,3 +13,8 @@ Suppose you're a developer at Contoso preparing a retail catalog account for pro
 This module starts by comparing periodic and continuous backup, including the retention tiers and the account conditions that constrain the choice. You then enable continuous backup on a new account and migrate an existing account, verifying the policy and the window you have. Next, you perform point-in-time recovery: identifying a restore point, choosing between restoring into the same account and restoring into a new one, and validating the result. The module closes with Azure Backup for Azure Cosmos DB for retention that reaches beyond the native window. Azure CLI, Azure PowerShell, and Bicep provide the configuration examples, and the exercise verifies recovered data in C# with a Python alternative.
 
 By the end of this module, you can select a backup mode and tier, enable continuous backup, recover a deleted resource to a chosen point in time, and describe when vaulted backup complements the native window.
+
+::: zone-end
+
+> [!NOTE]
+> We recognize that different people like to learn in different ways. You can choose to complete this module in video-based format or you can read the content as text and images. The text contains greater detail than the videos, so in some cases you might want to refer to it as supplemental material to the video presentation.

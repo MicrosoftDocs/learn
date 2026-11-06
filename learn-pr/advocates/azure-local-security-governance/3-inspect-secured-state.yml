@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-local-security-governance.inspect-secured-state
+metadata:
+  title: Inspect Azure Local Secured State
+  description: Inspect Azure Local encryption, antivirus, baseline features, and application control, then govern supported vulnerability remediation and updates.
+  ms.date: 11/02/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Inspect Azure Local secured state
+durationInMinutes: 12
+content: |
+  [!include[](includes/3-inspect-secured-state.md)]

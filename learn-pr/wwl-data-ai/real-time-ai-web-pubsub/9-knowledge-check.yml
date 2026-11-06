@@ -1,0 +1,69 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.real-time-ai-web-pubsub.knowledge-check
+title: Module assessment
+metadata:
+  title: Module Assessment
+  description: Module assessment
+  ms.date: 11/05/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 5
+content: "Choose the best response for each of the following questions."
+quiz:
+  questions:
+  - content: "An AI incident investigation already uses a durable backend workflow. Several authorized responders need the same live findings in separate browsers. The team wants a managed service to own the browser connections and distribute each worker update to the group. Which service should the team add?"
+    choices:
+    - content: "Azure Service Bus topics with subscriptions"
+      isCorrect: false
+      explanation: "Service Bus topics distribute durable messages to backend subscribers. They don't provide the managed browser WebSocket connections and operation-group delivery required here."
+    - content: "Azure Web PubSub"
+      isCorrect: true
+      explanation: "Web PubSub manages client connections and lets a worker publish once to a group of authorized browser connections. The existing workflow retains responsibility for durable processing."
+    - content: "Azure Event Grid event subscriptions"
+      isCorrect: false
+      explanation: "Event Grid subscriptions route events to interested handlers. They don't provide the managed browser WebSocket connection layer described in this requirement."
+  - content: "A negotiation endpoint verifies that a responder can view operation `op42` in tenant `t7`. The browser must join that operation's group to receive worker updates but mustn't publish group messages. Which client token role grants the required access without granting access to unrelated groups?"
+    choices:
+    - content: "`webpubsub.joinLeaveGroup`"
+      isCorrect: false
+      explanation: "This role permits joining and leaving any group in the hub. It grants broader group access than the authorized operation requires."
+    - content: "`webpubsub.sendToGroup.tenant-t7-operation-op42`"
+      isCorrect: false
+      explanation: "This role permits publishing to the named group. It doesn't grant the required group-join permission and adds a publishing capability the browser doesn't need."
+    - content: "`webpubsub.joinLeaveGroup.tenant-t7-operation-op42`"
+      isCorrect: true
+      explanation: "This role permits joining and leaving only the authorized operation group. It doesn't grant group publishing, and the backend still checks access before issuing the token."
+  - content: "A worker must preserve an investigation's completed result and eventually publish its completion notification even if it crashes. Which design addresses the state-to-notification handoff without treating a Web PubSub publish as a database transaction?"
+    choices:
+    - content: "Persist completion and its notification in a transactional outbox, then publish pending notifications with stable event IDs and sequences."
+      isCorrect: true
+      explanation: "The outbox records the notification with the durable state change so a publisher can retry after a crash. Reusing identifiers supports client deduplication if a send succeeds before the publisher records success."
+    - content: "Publish completion to the Web PubSub group, then persist the completed result."
+      isCorrect: false
+      explanation: "Clients can receive completion before the result exists. A crash between publishing and persistence can leave the notification inconsistent with authoritative operation state."
+    - content: "Persist completion, then make a direct Web PubSub publish call without storing a notification record."
+      isCorrect: false
+      explanation: "A crash after persistence but before publishing leaves no durable notification record for a publisher to retry. Status recovery can restore a browser's view, but this design doesn't ensure eventual notification publishing."
+  - content: "After a page reload, a browser joins the investigation group and buffers live notifications. Its authorized status snapshot has `lastSequence` set to 18 and contains all output through that sequence. The buffer contains notifications 17, 18, and 19. What should the browser do?"
+    choices:
+    - content: "Replace the displayed state with the snapshot, then apply buffered notifications 17, 18, and 19."
+      isCorrect: false
+      explanation: "The snapshot already contains the effects of notifications 17 and 18. Applying those text deltas again duplicates output."
+    - content: "Replace the displayed state with the snapshot, discard buffered notifications at or below 18, then apply notification 19."
+      isCorrect: true
+      explanation: "The snapshot watermark identifies the notifications already represented in durable state. Discarding those notifications prevents duplicates, while notification 19 is the next contiguous update."
+    - content: "Keep the empty page state and apply only buffered notification 19."
+      isCorrect: false
+      explanation: "A page reload loses the earlier in-memory output. Notification 19 doesn't reconstruct output through sequence 18, so the browser needs the snapshot before applying newer deltas."
+  - content: "A worker buffers a short batch of generated findings, but the model pauses before producing another fragment. The batch is below its count and size limits. Which batching policy prevents the findings from waiting indefinitely while preserving completion order?"
+    choices:
+    - content: "Check elapsed time only when a new model fragment arrives."
+      isCorrect: false
+      explanation: "No new fragment arrives during the pause, so this policy can't detect that the buffered batch has reached its time limit."
+    - content: "Flush only when the fragment count or serialized payload-size threshold is reached."
+      isCorrect: false
+      explanation: "Neither threshold is reached in this scenario. A short batch can remain buffered even though responders need its findings."
+    - content: "Use a timer or timed queue wait to flush when the oldest fragment reaches its delay limit, then flush remaining text before recording completion."
+      isCorrect: true
+      explanation: "A timer or timed wait can trigger a flush without another model fragment. Awaiting the final flush before recording completion preserves the order between remaining text and the terminal outcome."

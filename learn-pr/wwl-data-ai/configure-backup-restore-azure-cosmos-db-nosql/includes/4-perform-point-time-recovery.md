@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=b8df1356-dba8-456f-ac87-5e975aab0b4a]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 A support script at Contoso removed a set of catalog records, and someone then deleted the `product` container while investigating. The account runs in continuous mode, so the team can recover without a support request. What the team still has to decide is where the recovered data lands, which moment to recover to, and how to prove the recovery worked. Those three decisions are the point-in-time recovery workflow.
 
 ## Choose a restore target
@@ -106,3 +117,5 @@ Restore permissions are separate from ordinary account permissions. The built-in
 Learn more about [restoring an account with continuous backup](/azure/cosmos-db/restore-account-continuous-backup), [same-account restore](/azure/cosmos-db/restore-in-account-continuous-backup-introduction), the [steps to restore a deleted container or database](/azure/cosmos-db/how-to-restore-in-account-continuous-backup), and [restore permissions](/azure/cosmos-db/continuous-backup-restore-permissions).
 
 Continuous backup covers days. The next unit examines the option for retention measured in years.
+
+::: zone-end
