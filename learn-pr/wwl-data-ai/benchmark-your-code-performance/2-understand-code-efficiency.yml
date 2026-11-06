@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.benchmark-your-code-performance.understand-code-efficiency
+title: Understand code efficiency
+metadata:
+  title: Understand Code Efficiency
+  description: "Learn about algorithmic complexity, Big O notation, and how to evaluate code efficiency."
+  ms.date: 10/19/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-understand-code-efficiency.md)]

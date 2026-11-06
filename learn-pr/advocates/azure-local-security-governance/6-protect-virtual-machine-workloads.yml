@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-local-security-governance.protect-virtual-machine-workloads
+metadata:
+  title: Protect Virtual Machine Workloads
+  description: Compare standard, Trusted Launch, and confidential Azure Local virtual machines by trust boundary, supported operations, and recovery requirements.
+  ms.date: 11/02/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Protect virtual machine workloads
+durationInMinutes: 11
+content: |
+  [!include[](includes/6-protect-virtual-machine-workloads.md)]

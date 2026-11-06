@@ -2,17 +2,18 @@
 uid: learn.wwl.design-machine-learning-model-training-solution.summary
 title: Summary
 metadata:
+  zone_pivot_groups: video-or-text
   title: Summary
   description: Summary
   author: madiepev
   ms.author: gmalc
-  ms.date: 08/27/2026
+  ms.date: 11/6/2026
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
 azureSandbox: false
 labModal: false
-durationInMinutes: 1
+durationInMinutes: 2
 content: |
   [!include[](includes/7-summary.md)]
 

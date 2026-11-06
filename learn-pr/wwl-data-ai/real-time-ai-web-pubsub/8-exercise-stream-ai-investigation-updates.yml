@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.real-time-ai-web-pubsub.exercise-stream-ai-investigation-updates
+title: Exercise - Stream AI investigation updates with Azure Web PubSub
+metadata:
+  title: Exercise - Stream AI Investigation Updates with Azure Web PubSub
+  description: Share one AI investigation's progress, batched findings, and completion updates with authorized incident responders through Azure Web PubSub
+  ms.date: 11/05/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 30
+content: |
+  [!include[](includes/8-exercise-stream-ai-investigation-updates.md)]

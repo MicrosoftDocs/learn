@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="56" viewBox="0 0 420 56" font-family="Segoe UI, Arial, sans-serif" font-size="13" text-anchor="middle" fill="#6e6e6e">
+  <circle cx="60" cy="16" r="9" fill="#E51400"/>
+  <text x="60" y="48">Enabled</text>
+  <circle cx="210" cy="16" r="9" fill="#848484"/>
+  <text x="210" y="48">Disabled</text>
+  <circle cx="360" cy="16" r="8" fill="none" stroke="#848484" stroke-width="2"/>
+  <text x="360" y="48">Unverified</text>
+</svg>

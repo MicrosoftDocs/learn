@@ -4,9 +4,9 @@ title: Configure Azure Firewall rules and policies
 metadata:
   title: Configure Azure Firewall Rules and Policies
   description: "Configure Azure Firewall rule collections and Firewall Policy to enforce traffic control, including Destination Network Address Translation (DNAT), network, and application rules with threat-intelligence-based filtering and FQDN allow-listing for AI agent egress."
-  ms.date: 04/22/2026
-  author: r-c-stewart
-  ms.author: lumac
+  ms.date: 11/01/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
 durationInMinutes: 10
 content: |

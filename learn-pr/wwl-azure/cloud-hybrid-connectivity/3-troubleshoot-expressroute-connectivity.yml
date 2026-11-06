@@ -4,9 +4,9 @@ title: Troubleshoot ExpressRoute connectivity
 metadata:
   title: Troubleshoot ExpressRoute connectivity
   description: "Troubleshoot ExpressRoute connectivity"
-  ms.date: 04/27/2023
-  author: mistoyanwork
-  ms.author: lumac
+  ms.date: 11/01/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
   ms.custom:
     - devx-track-azurepowershell

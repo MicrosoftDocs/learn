@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=b9aa2c34-86fa-49d8-83e8-74586a3e8963]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Contoso's catalog account now recovers to any second in the past seven days, which handles the accidental delete the team was worried about. Compliance asks a different question: how long can the company produce the state of the catalog on a given date last year, and can an administrator with account access destroy that evidence? Native backups are immutable while retained, and continuous backup supports recovery of a deleted account within its configured retention period. However, the longest native window is 35 days, so it can't preserve last year's state. Azure Backup for Azure Cosmos DB provides longer retention and separate vault controls for that requirement.
 
 > [!NOTE]
@@ -57,3 +68,5 @@ For Contoso, the decision is a layered one rather than a choice between options.
 Learn more about [Azure Backup for Azure Cosmos DB](/azure/backup/backup-azure-cosmos-db-overview) and its [support matrix](/azure/backup/backup-azure-cosmos-db-support-matrix).
 
 The next unit puts the native workflow into practice: enabling continuous backup, deleting data, and recovering it to a point you choose.
+
+::: zone-end

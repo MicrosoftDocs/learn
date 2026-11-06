@@ -2,15 +2,15 @@
 uid: learn.wwl.optimize-finetune-agents.summary
 title: Summary
 metadata:
+  zone_pivot_groups: video-or-text
   title: Summary
-  description: Summary of advanced fine-tuning for AI agents, covering method selection, training data preparation, optimization strategy design, and hyperparameter configuration.
+  description: Review training approaches in Microsoft Foundry and Managed Training decisions for model fine-tuning, including method selection, data preparation, hyperparameters, and evaluation.
   author: madiepev
   ms.author: madiepev
-  ms.date: 02/25/2026
+  ms.date: 11/04/2026
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
-durationInMinutes: 1
+durationInMinutes: 2
 content: |
   [!include[](includes/7-summary.md)]
-

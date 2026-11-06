@@ -26,9 +26,9 @@ metadata:
   gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/centralize-traffic-inspection-azure-firewall/index.yml
   title: Centralize and Enforce Traffic Inspection Using Azure Firewall
   description: "Deploy Azure Firewall to centralize traffic inspection and enforce filtering policies across your Azure environment. Configure rule collections, apply threat-intelligence-based blocking, and extend centralized inspection to Virtual WAN deployments using Secured Virtual Hubs."
-  ms.date: 05/10/2026
-  author: r-c-stewart
-  ms.author: lumac
+  ms.date: 11/01/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: module
   ms.service: azure-firewall
   ai-usage: ai-generated

@@ -3,9 +3,9 @@ uid: learn.wwl.configure-defender-cloud-security-controls.introduction
 metadata:
   title: Introduction
   description: Introduction to configuring security controls and remediating recommendations in Defender for Cloud.
-  ms.date: 05/11/2026
-  author: r-c-stewart
-  ms.author: lumac
+  ms.date: 11/01/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
   ai-usage: ai-assisted
 title: Introduction

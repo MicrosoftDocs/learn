@@ -73561,6 +73561,326 @@
       "source_path": "learn-pr/wwl-data-ai/design-machine-learning-operations-solution/6-summary.md",
       "redirect_url": "/training/modules/design-machine-learning-model-training-solution/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/implement-generative-ai-engineering-azure-databricks/index.md",
+      "redirect_url": "/training/paths/build-operate-machine-learning-solutions-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/evaluate-language-models-azure-databricks/index.md",
+      "redirect_url": "/training/paths/build-operate-machine-learning-solutions-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/evaluate-language-models-azure-databricks/3-ai-systems.md",
+      "redirect_url": "/training/paths/build-operate-machine-learning-solutions-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/evaluate-language-models-azure-databricks/2-compare-evaluations.md",
+      "redirect_url": "/training/paths/build-operate-machine-learning-solutions-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/evaluate-language-models-azure-databricks/6-exercise.md",
+      "redirect_url": "/training/paths/build-operate-machine-learning-solutions-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/evaluate-language-models-azure-databricks/1-introduction.md",
+      "redirect_url": "/training/paths/build-operate-machine-learning-solutions-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/evaluate-language-models-azure-databricks/7-knowledge-check.md",
+      "redirect_url": "/training/paths/build-operate-machine-learning-solutions-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/evaluate-language-models-azure-databricks/5-language-model-judge.md",
+      "redirect_url": "/training/paths/build-operate-machine-learning-solutions-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/evaluate-language-models-azure-databricks/4-standard-metrics.md",
+      "redirect_url": "/training/paths/build-operate-machine-learning-solutions-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/evaluate-language-models-azure-databricks/8-summary.md",
+      "redirect_url": "/training/paths/build-operate-machine-learning-solutions-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/fine-tune-azure-databricks/index.md",
+      "redirect_url": "/training/paths/build-operate-machine-learning-solutions-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/fine-tune-azure-databricks/5-exercise.md",
+      "redirect_url": "/training/paths/build-operate-machine-learning-solutions-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/fine-tune-azure-databricks/2-fine-tune-concept.md",
+      "redirect_url": "/training/paths/build-operate-machine-learning-solutions-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/fine-tune-azure-databricks/4-how-to-fine-tune.md",
+      "redirect_url": "/training/paths/build-operate-machine-learning-solutions-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/fine-tune-azure-databricks/1-introduction.md",
+      "redirect_url": "/training/paths/build-operate-machine-learning-solutions-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/fine-tune-azure-databricks/6-knowledge-check.md",
+      "redirect_url": "/training/paths/build-operate-machine-learning-solutions-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/fine-tune-azure-databricks/3-prepare-data.md",
+      "redirect_url": "/training/paths/build-operate-machine-learning-solutions-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/fine-tune-azure-databricks/7-summary.md",
+      "redirect_url": "/training/paths/build-operate-machine-learning-solutions-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/implement-llmops-azure-databricks/index.md",
+      "redirect_url": "/training/paths/build-operate-machine-learning-solutions-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/implement-llmops-azure-databricks/03-deployments-overview.md",
+      "redirect_url": "/training/paths/build-operate-machine-learning-solutions-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/implement-llmops-azure-databricks/06-exercise.md",
+      "redirect_url": "/training/paths/build-operate-machine-learning-solutions-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/implement-llmops-azure-databricks/01-introduction.md",
+      "redirect_url": "/training/paths/build-operate-machine-learning-solutions-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/implement-llmops-azure-databricks/07-knowledge-check.md",
+      "redirect_url": "/training/paths/build-operate-machine-learning-solutions-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/implement-llmops-azure-databricks/02-lifecycle-overview.md",
+      "redirect_url": "/training/paths/build-operate-machine-learning-solutions-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/implement-llmops-azure-databricks/04-mlflow-overview.md",
+      "redirect_url": "/training/paths/build-operate-machine-learning-solutions-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/implement-llmops-azure-databricks/08-summary.md",
+      "redirect_url": "/training/paths/build-operate-machine-learning-solutions-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/implement-llmops-azure-databricks/05-unity-catalog.md",
+      "redirect_url": "/training/paths/build-operate-machine-learning-solutions-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/introduction-language-models-databricks/index.md",
+      "redirect_url": "/training/paths/build-operate-machine-learning-solutions-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/introduction-language-models-databricks/06-exercise.md",
+      "redirect_url": "/training/paths/build-operate-machine-learning-solutions-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/introduction-language-models-databricks/01-introduction.md",
+      "redirect_url": "/training/paths/build-operate-machine-learning-solutions-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/introduction-language-models-databricks/04-key-components-llms.md",
+      "redirect_url": "/training/paths/build-operate-machine-learning-solutions-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/introduction-language-models-databricks/07-knowledge-check.md",
+      "redirect_url": "/training/paths/build-operate-machine-learning-solutions-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/introduction-language-models-databricks/08-summary.md",
+      "redirect_url": "/training/paths/build-operate-machine-learning-solutions-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/introduction-language-models-databricks/05-use-llms.md",
+      "redirect_url": "/training/paths/build-operate-machine-learning-solutions-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/introduction-language-models-databricks/03-what-are-large-language-models.md",
+      "redirect_url": "/training/paths/build-operate-machine-learning-solutions-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/introduction-language-models-databricks/02-what-is-generative-ai.md",
+      "redirect_url": "/training/paths/build-operate-machine-learning-solutions-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/multistage-reasoning-azure-databricks/index.md",
+      "redirect_url": "/training/paths/build-operate-machine-learning-solutions-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/multistage-reasoning-azure-databricks/06-dspy-framework.md",
+      "redirect_url": "/training/paths/build-operate-machine-learning-solutions-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/multistage-reasoning-azure-databricks/07-exercise.md",
+      "redirect_url": "/training/paths/build-operate-machine-learning-solutions-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/multistage-reasoning-azure-databricks/05-haystack.md",
+      "redirect_url": "/training/paths/build-operate-machine-learning-solutions-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/multistage-reasoning-azure-databricks/01-introduction.md",
+      "redirect_url": "/training/paths/build-operate-machine-learning-solutions-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/multistage-reasoning-azure-databricks/08-knowledge-check.md",
+      "redirect_url": "/training/paths/build-operate-machine-learning-solutions-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/multistage-reasoning-azure-databricks/03-langchain.md",
+      "redirect_url": "/training/paths/build-operate-machine-learning-solutions-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/multistage-reasoning-azure-databricks/02-multi-stage-reasoning-concepts.md",
+      "redirect_url": "/training/paths/build-operate-machine-learning-solutions-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/multistage-reasoning-azure-databricks/04-llamaindex.md",
+      "redirect_url": "/training/paths/build-operate-machine-learning-solutions-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/multistage-reasoning-azure-databricks/09-summary.md",
+      "redirect_url": "/training/paths/build-operate-machine-learning-solutions-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/responsible-language-models-azure-databricks/index.md",
+      "redirect_url": "/training/paths/build-operate-machine-learning-solutions-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/responsible-language-models-azure-databricks/06-exercise.md",
+      "redirect_url": "/training/paths/build-operate-machine-learning-solutions-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/responsible-language-models-azure-databricks/03-identify.md",
+      "redirect_url": "/training/paths/build-operate-machine-learning-solutions-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/responsible-language-models-azure-databricks/01-introduction.md",
+      "redirect_url": "/training/paths/build-operate-machine-learning-solutions-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/responsible-language-models-azure-databricks/05-key-security-tooling.md",
+      "redirect_url": "/training/paths/build-operate-machine-learning-solutions-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/responsible-language-models-azure-databricks/07-knowledge-check.md",
+      "redirect_url": "/training/paths/build-operate-machine-learning-solutions-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/responsible-language-models-azure-databricks/04-mitigate.md",
+      "redirect_url": "/training/paths/build-operate-machine-learning-solutions-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/responsible-language-models-azure-databricks/02-responsible-ai-concepts.md",
+      "redirect_url": "/training/paths/build-operate-machine-learning-solutions-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/responsible-language-models-azure-databricks/08-summary.md",
+      "redirect_url": "/training/paths/build-operate-machine-learning-solutions-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/retrieval-augmented-generation-azure-databricks/index.md",
+      "redirect_url": "/training/paths/build-operate-machine-learning-solutions-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/retrieval-augmented-generation-azure-databricks/6-exercise.md",
+      "redirect_url": "/training/paths/build-operate-machine-learning-solutions-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/retrieval-augmented-generation-azure-databricks/1-introduction.md",
+      "redirect_url": "/training/paths/build-operate-machine-learning-solutions-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/retrieval-augmented-generation-azure-databricks/7-knowledge-check.md",
+      "redirect_url": "/training/paths/build-operate-machine-learning-solutions-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/retrieval-augmented-generation-azure-databricks/3-prepare-data.md",
+      "redirect_url": "/training/paths/build-operate-machine-learning-solutions-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/retrieval-augmented-generation-azure-databricks/5-ranking.md",
+      "redirect_url": "/training/paths/build-operate-machine-learning-solutions-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/retrieval-augmented-generation-azure-databricks/8-summary.md",
+      "redirect_url": "/training/paths/build-operate-machine-learning-solutions-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/retrieval-augmented-generation-azure-databricks/4-vector-search.md",
+      "redirect_url": "/training/paths/build-operate-machine-learning-solutions-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/retrieval-augmented-generation-azure-databricks/2-workflow.md",
+      "redirect_url": "/training/paths/build-operate-machine-learning-solutions-azure-databricks/",
+      "redirect_document_id": false
     }
   ]
 }

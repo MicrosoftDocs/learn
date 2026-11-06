@@ -1,3 +1,13 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=75254e25-6c20-49d1-9cd8-280768bb35f0]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
 
 To run an automated machine learning (AutoML) experiment, you can configure and submit the job with the Python SDK. 
 
@@ -101,3 +111,5 @@ You can monitor AutoML job runs in the Azure Machine Learning studio. To get a d
 aml_url = returned_job.studio_url
 print("Monitor your job at", aml_url)
 ```
+
+::: zone-end

@@ -1,0 +1,51 @@
+### YamlMime:Module
+uid: learn.wwl.benchmark-your-code-performance
+metadata:
+  title: Benchmark your code's performance
+  description: Learn how to measure, profile, and debug your Python code to find and fix performance problems.
+  ms.date: 10/19/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: module
+  ms.service: vs-code
+  ai-usage: ai-assisted
+title: Benchmark your code's performance
+summary: Learn how to measure, profile, and debug your Python code to find and fix performance problems.
+abstract: |
+  After you complete this module, you'll be able to:
+
+  -   Understand code efficiency and Big O notation.
+
+  -   Measure and compare function performance with timeit.
+
+  -   Use cProfile to find performance bottlenecks.
+
+  -   Use the Visual Studio Code debugger to inspect and fix incorrect results.
+
+  -   Optimize code for better performance.
+
+prerequisites: |
+  -   Familiarity with writing and running Python code in Visual Studio Code
+
+  -   Familiarity with functions, loops, and lists
+
+iconUrl: /training/achievements/benchmark-your-code-performance.svg
+levels:
+- intermediate
+roles:
+- developer
+- student
+products:
+- vs-code
+subjects:
+- app-development
+units:
+- learn.wwl.benchmark-your-code-performance.introduction
+- learn.wwl.benchmark-your-code-performance.understand-code-efficiency
+- learn.wwl.benchmark-your-code-performance.measure-profile-code-performance
+- learn.wwl.benchmark-your-code-performance.use-debugging-to-identify-issues
+- learn.wwl.benchmark-your-code-performance.exercise
+- learn.wwl.benchmark-your-code-performance.knowledge-check
+- learn.wwl.benchmark-your-code-performance.summary
+badge:
+  uid: learn.wwl.benchmark-your-code-performance.badge

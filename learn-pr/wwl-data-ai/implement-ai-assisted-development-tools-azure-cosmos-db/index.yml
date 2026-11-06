@@ -35,9 +35,9 @@ abstract: |
   - Follow recommended Azure Cosmos DB solutions by using AI-assisted tools.
   - Distinguish what the tools cover from the decisions you own.
 prerequisites: |
-  - Experience creating and configuring an Azure Cosmos DB for NoSQL client with the SDK
-  - Familiarity with generative AI, agents, and retrieval-augmented generation concepts
-  - Programming experience with Python
+  - Experience creating and configuring an Azure Cosmos DB for NoSQL client with the SDK.
+  - Familiarity with generative AI, agents, and retrieval-augmented generation concepts.
+  - Programming experience with Python.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate

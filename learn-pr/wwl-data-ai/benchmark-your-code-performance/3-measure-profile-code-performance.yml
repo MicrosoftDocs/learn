@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.benchmark-your-code-performance.measure-profile-code-performance
+title: Measure and profile code performance
+metadata:
+  title: Measure and Profile Code Performance
+  description: "Learn how to use timeit to compare function performance and cProfile to find performance bottlenecks."
+  ms.date: 10/19/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/3-measure-profile-code-performance.md)]
