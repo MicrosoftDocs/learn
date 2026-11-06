@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=90c5f126-feb1-4b4c-9497-f999ad5de476]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Contoso's catalog now spans two regions, and the operations team still can't answer the original question: if a region goes offline, what happens, and who does what. Azure Cosmos DB offers three account-level failover operations, and they aren't interchangeable. One of them doesn't work during an outage at all, and the other two differ substantially in how quickly they restore writes. In this unit, you learn which operation to use, configure the failover priorities used by forced and service-managed failover, and rehearse the outage procedure.
 
 ## Set the failover priorities first
@@ -85,3 +96,5 @@ To rehearse the failover procedure, temporarily disable service-managed failover
 Learn more about [managing an account in the Azure portal](/azure/cosmos-db/how-to-manage-database-account) and [resilience to region-wide failures](/azure/reliability/reliability-cosmos-db).
 
 Each of these operations moves the whole account. The next unit narrows the unit of failover to a single partition.
+
+::: zone-end

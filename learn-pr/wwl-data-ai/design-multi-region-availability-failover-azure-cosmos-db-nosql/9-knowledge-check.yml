@@ -2,10 +2,10 @@
 uid: learn.wwl.design-multi-region-availability-failover-azure-cosmos-db-nosql.knowledge-check
 title: Module assessment
 metadata:
-  title: Module assessment
+  title: Module Assessment
   description: "Check your ability to route reads to a region, choose a failover operation, configure conflict resolution, qualify an account for per-partition automatic failover, and reason about region cost and recovery objectives."
-  ms.date: 10/03/2026
-  author: wwlpublish
+  ms.date: 11/06/2026
+  author: MScalopez
   ms.author: calopez
   ms.topic: unit
   module_assessment: true
