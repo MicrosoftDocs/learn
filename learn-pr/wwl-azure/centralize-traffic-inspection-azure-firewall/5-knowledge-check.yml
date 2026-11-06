@@ -4,9 +4,9 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Check your knowledge of Azure Firewall capabilities, rule collection configuration, Firewall Policy, and Secured Virtual Hub deployment.
-  ms.date: 05/11/2026
-  author: r-c-stewart
-  ms.author: lumac
+  ms.date: 11/01/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
   ai-usage: ai-generated
 durationInMinutes: 5
