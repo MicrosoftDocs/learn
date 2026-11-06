@@ -3,17 +3,16 @@ uid: learn.wwl.manage-azure-kubernetes-service-azure-stack-hci.overview-of
 title: Overview of Azure Kubernetes Service on Azure Local
 metadata:
   title: Overview of Azure Kubernetes Service on Azure Local
-  description: "Describe the resource bridge, custom location, control plane, and node pools used by AKS on Azure Local."
-  ms.date: 10/23/2026
-  author: wwlpublish
-  ms.author: robbarefoot
+  description: "Describe AKS on Azure Local components and plan supported infrastructure and Kubernetes upgrade sequencing."
+  ms.date: 11/03/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
 azureSandbox: false
-durationInMinutes: 5
+durationInMinutes: 6
 content: |
   [!include[](includes/3-overview-of-aks-azure-stack-hci.md)]
 quiz:
-  title: "Knowledge check"
   questions:
   - content: "Contoso needs Azure-based provisioning of Kubernetes clusters on its hyperconverged Azure Local infrastructure. Which components provide the local orchestration interface for that provisioning?"
     choices:

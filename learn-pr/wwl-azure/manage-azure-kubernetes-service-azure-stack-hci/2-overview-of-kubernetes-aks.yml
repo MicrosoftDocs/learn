@@ -4,16 +4,15 @@ title: Overview of Kubernetes and AKS
 metadata:
   title: Overview of Kubernetes and AKS
   description: "Describe pods, Deployments, Services, namespaces, and Kubernetes access controls."
-  ms.date: 10/23/2026
-  author: wwlpublish
-  ms.author: robbarefoot
+  ms.date: 11/03/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
 azureSandbox: false
 durationInMinutes: 9
 content: |
   [!include[](includes/2-overview-of-kubernetes-aks.md)]
 quiz:
-  title: "Knowledge check"
   questions:
   - content: "Contoso's development teams share a Kubernetes cluster but need separate application administration scopes. Which design organizes their resources and limits each team's permissions?"
     choices:

@@ -3,17 +3,16 @@ uid: learn.wwl.manage-azure-kubernetes-service-azure-stack-hci.deploy-aks-cluste
 title: Prepare to deploy AKS on Azure Local
 metadata:
   title: Prepare to Deploy AKS on Azure Local
-  description: "Verify infrastructure, networking, permissions, and management tools before deploying an AKS cluster."
-  ms.date: 10/23/2026
-  author: wwlpublish
-  ms.author: robbarefoot
+  description: "Check networking, permissions, per-OS image readiness, and VM sizes before deploying AKS on Azure Local."
+  ms.date: 11/03/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
 azureSandbox: false
-durationInMinutes: 11
+durationInMinutes: 14
 content: |
   [!include[](includes/4-deploy-aks-cluster.md)]
 quiz:
-  title: "Knowledge check"
   questions:
   - content: "An administrator prepares to create an AKS cluster on an existing Azure Local deployment. Which infrastructure details identify the local deployment target and the VM network?"
     choices:
