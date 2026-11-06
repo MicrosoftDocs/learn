@@ -1,3 +1,11 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=8f6f5e02-71b6-4b82-ba93-fbf42410fc90]
+
+::: zone-end
+
+::: zone pivot="text"
+
 Deploying a trained machine learning model is only the midpoint of the model's life cycle. After deployment, you still need to promote a model safely and keep watching how it behaves in production. This module walks through that path, from registering a trained model to monitoring it after it serves live traffic.
 
 At Proseware, Inc., a health care technology company, you work with a data science team that trains a classification model to predict whether a patient is likely to miss an upcoming clinic appointment. Clinic staff want to use these no-show risk scores to decide who to call ahead of time and confirm, reducing wasted appointment slots. Your job as the machine learning engineer is to take the trained model from the data science team and get it running reliably in production, with a repeatable, automated process the team can trust as the model evolves.
@@ -15,3 +23,8 @@ In this module, you learn how to:
 - Deploy and troubleshoot a managed online endpoint, safely promote a model, and roll back to a previous version.
 - Automate model deployment and testing with GitHub Actions.
 - Monitor a deployed model and recognize signals that call for investigation or retraining.
+
+::: zone-end
+
+> [!NOTE]
+> We recognize that different people like to learn in different ways. You can choose to complete this module in video-based format or you can read the content as text and images. The text contains greater detail than the videos, so in some cases you might want to refer to it as supplemental material to the video presentation.
