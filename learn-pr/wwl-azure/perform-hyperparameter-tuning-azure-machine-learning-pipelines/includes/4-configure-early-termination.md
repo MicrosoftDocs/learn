@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=2885f98c-073b-453e-b5f7-6cd94d54b02c]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Hyperparameter tuning helps you select hyperparameter values that improve model performance.
 
 Each additional trial consumes time and compute. You need to decide whether continuing a poorly performing trial is likely to produce useful results.
@@ -87,3 +98,5 @@ sweep_job.early_termination = TruncationSelectionPolicy(
 Imagine the primary metric is model accuracy. At the fifth reporting interval, the policy ranks the active trials and cancels the lowest-performing 20%. The remaining trials and the overall sweep continue.
 
 :::image type="content" source="../media/truncation-selection.png" alt-text="Diagram of two examples when using a truncation selection policy: one model performs sufficiently good, the other underperforms.":::
+
+::: zone-end

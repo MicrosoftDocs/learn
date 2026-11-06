@@ -3,7 +3,7 @@ uid: learn.wwl.perform-hyperparameter-tuning-azure-machine-learning-pipelines
 metadata:
   gs-content.levels: 300
   gs-content.locale: en-us
-  gs-duration: 46
+  gs-duration: 47
   gs-last.refresh.date: null
   gs-modality: module
   gs-products:
@@ -24,7 +24,7 @@ metadata:
   description: Choose this module if you want to optimize model training by tuning hyperparameters with sweep jobs in Azure Machine Learning.
   author: madiepev
   ms.author: madiepev
-  ms.date: 08/27/2026
+  ms.date: 11/6/2026
   ms.service: azure-machine-learning
   ms.topic: module-standard-task-based
   ms.collection:
