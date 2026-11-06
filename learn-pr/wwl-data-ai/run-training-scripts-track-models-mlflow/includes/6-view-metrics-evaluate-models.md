@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=540b83a9-94ea-4018-8ee0-6453e858ff4d]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 After you trained and tracked models with MLflow in Azure Machine Learning, you can explore the metrics and evaluate your models. 
 
 - Review metrics in the Azure Machine Learning studio.
@@ -91,3 +102,5 @@ mlflow.search_runs(
 
 > [!Tip]
 > Explore the documentation on how to [search runs with MLflow](https://mlflow.org/docs/latest/search-runs.html?azure-portal=true)
+
+::: zone-end

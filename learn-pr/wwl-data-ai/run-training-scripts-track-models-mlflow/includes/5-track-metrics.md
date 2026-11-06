@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=9aa838b6-876b-4c43-bc22-45116ae6f9c5]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 When you train a model with a script, you can include MLflow in the scripts to track any parameters, metrics, and artifacts. When you run the script as a job in Azure Machine Learning, you're able to review all input parameters and outputs for each run.
 
 ## Understand MLflow
@@ -85,3 +96,5 @@ mlflow.log_param("Regularization rate", reg_rate)
 Finally, you need to submit the training script as a job in Azure Machine Learning. When you use MLflow in a training script, all tracked parameters, metrics, and artifacts are stored with the job run. You can review them for each run after submitting the job. 
 
 You configure the job as usual. You only need to make sure that the environment you refer to in the job includes the necessary packages, and the script describes which metrics you want to log.
+
+::: zone-end

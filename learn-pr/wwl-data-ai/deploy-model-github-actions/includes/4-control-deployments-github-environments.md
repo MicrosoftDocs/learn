@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=6d581428-8a5b-4150-a8e8-24a15107b2d0]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Proseware automates model deployment, but the team doesn't want every successful workflow run to change production traffic immediately. Automated tests should verify the deployment first. A reviewer should then decide whether the evidence supports promotion.
 
 ## Represent deployment stages
@@ -27,3 +38,5 @@ A practical workflow separates deployment from promotion. One job deploys and te
 > Before adding an approval, identify what evidence the reviewer needs. A gate without clear acceptance criteria delays deployment without improving the decision.
 
 Learn more about [managing GitHub environments for deployment](https://docs.github.com/actions/how-tos/deploy/configure-and-manage-deployments/manage-environments).
+
+::: zone-end

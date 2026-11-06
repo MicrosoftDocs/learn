@@ -2,11 +2,12 @@
 uid: learn.wwl.run-pipelines-azure-machine-learning.run-pipeline-job
 title: Run a pipeline job
 metadata:
+  zone_pivot_groups: video-or-text
   title: Run a pipeline job
   description: Run a pipeline job
   author: madiepev
   ms.author: madiepev
-  ms.date: 08/27/2026
+  ms.date: 11/6/2026
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

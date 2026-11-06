@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=16b4ffdc-733f-4393-96f0-ec5a0d3decb7]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 There are many services available to train machine learning models. Which service you use depends on factors like:
 
 - What type of model you need to train,
@@ -37,3 +48,5 @@ Azure Machine Learning provides the following features and capabilities to suppo
 - Built-in support for visualizing and evaluating metrics for responsible AI, including model explainability, fairness assessment, and others.
 
 Next, let's see how we can get started with Azure Machine Learning in a user interface.
+
+::: zone-end

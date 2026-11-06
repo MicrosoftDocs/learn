@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=67d68172-b052-4d45-891f-f41e7fa3afc6]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 The specific values used in a hyperparameter tuning run, or **sweep job**, depend on the type of **sampling** used.
 
 There are three main sampling methods available in Azure Machine Learning:
@@ -83,3 +94,4 @@ sweep_job = command_job_for_sweep.sweep(
 
 You can only use Bayesian sampling with **choice**, **uniform**, and **quniform** parameter expressions.
 
+::: zone-end

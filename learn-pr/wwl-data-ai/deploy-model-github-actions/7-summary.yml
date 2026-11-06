@@ -2,9 +2,10 @@
 uid: learn.wwl.deploy-model-github-actions.summary
 title: Summary
 metadata:
+  zone_pivot_groups: video-or-text
   title: Summary
   description: "This unit summarizes how to register, deploy, roll back, automate, and monitor models in Azure Machine Learning."
-  ms.date: 08/27/2026
+  ms.date: 11/6/2026
   author: madiepev
   ms.author: madiepev
   ms.topic: unit

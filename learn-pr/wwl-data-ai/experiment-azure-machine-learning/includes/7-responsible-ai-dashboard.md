@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=644a6f56-fc7b-48ac-b46b-d1c4ea751f64]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 After training a model in a notebook, you want to evaluate it — not just for accuracy, but also for fairness, transparency, and reliability. Azure Machine Learning's **Responsible AI dashboard** brings these evaluations together in one interactive view.
 
 ## Why responsible AI matters
@@ -71,3 +82,5 @@ Causal analysis estimates the average effect of a feature on an outcome using st
 
 > [!Tip]
 > Learn more about the [Responsible AI dashboard in Azure Machine Learning](/azure/machine-learning/how-to-responsible-ai-dashboard?azure-portal=true).
+
+::: zone-end

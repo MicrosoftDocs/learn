@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=3df876db-33fe-4527-9641-b05a91b39877]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 The set of hyperparameter values tried during hyperparameter tuning is known as the **search space**. The definition of the range of possible values that can be chosen depends on the type of hyperparameter.
 
 ## Discrete hyperparameters
@@ -34,3 +45,5 @@ command_job_for_sweep = job(
     learning_rate=Normal(mu=10, sigma=3),
 )
 ```
+
+::: zone-end

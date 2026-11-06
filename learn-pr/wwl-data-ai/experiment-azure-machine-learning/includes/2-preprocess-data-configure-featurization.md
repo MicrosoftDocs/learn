@@ -1,3 +1,13 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=e23c7967-73ea-45ab-a3de-6a75fd41f5f0]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
 
 Before you can run an automated machine learning (AutoML) experiment, you need to prepare your data. When you want to train a machine learning model, you only need to provide the training data. 
 
@@ -35,3 +45,5 @@ By default, AutoML performs featurization on your data. You can disable it if yo
 If you do want to make use of the integrated featurization function, you can customize it. For example, you can specify which imputation method should be used for a specific feature.
 
 After an AutoML experiment is completed, you can review which scaling and normalization methods were applied. You get notified if AutoML detected any issues with the data, like whether there are missing values or class imbalance.
+
+::: zone-end

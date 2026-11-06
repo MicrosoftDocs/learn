@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=63faf950-af48-45a0-953a-c6450df0d76f]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 With your training scripts and job definitions in source control, the next challenge is protecting them. Two data scientists editing the same file on the `main` branch at the same time can create conflicts and, more importantly, accidental breaks in code that others depend on. Trunk-based development gives your team a structured way to evolve the model while keeping production code stable.
 
 ## Keep the shared branch stable
@@ -29,3 +40,5 @@ GitHub Actions workflows can produce the checks that a rule requires. You explor
 
 > [!TIP]
 > Consider a model change that needs several weeks of work. How could you split it into smaller changes that merge into `main` without leaving a long-lived branch?
+
+::: zone-end

@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=0939f58b-7670-465d-b397-e1b7858d7444]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Data is the foundation of machine learning. Both data quantity and data quality affect the model’s accuracy.
 
 To train a machine learning model, you need to:
@@ -47,3 +58,5 @@ For example, to create a dataset you can use to train the forecasting model, you
 1. Transform the data to get the temperature per machine per minute.
 
 Next, let's explore the services we can use to train machine learning models.
+
+::: zone-end

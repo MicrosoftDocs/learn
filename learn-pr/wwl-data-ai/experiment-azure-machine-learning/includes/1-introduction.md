@@ -1,3 +1,10 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=483928e2-faad-4e3b-977c-e4ce8ecf323a]
+
+::: zone-end
+
+::: zone pivot="text"
 
 When you're asked to build a machine learning model, you rarely know up front which algorithm or preprocessing steps will give you the best results. Finding the right combination takes experimentation.
 
@@ -17,3 +24,8 @@ In this module, you learn how to:
 - Evaluate a trained model using the Responsible AI dashboard.
 
 Let's start by exploring how AutoML prepares your data before training begins.
+
+::: zone-end
+
+> [!NOTE]
+> We recognize that different people like to learn in different ways. You can choose to complete this module in video-based format or you can read the content as text and images. The text contains greater detail than the videos, so in some cases you might want to refer to it as supplemental material to the video presentation.

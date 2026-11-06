@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=bf9e2f11-4b3f-494a-b862-156db5eff22d]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Your validation workflows can now catch code errors before they reach `main`. The next step is letting those workflows talk to Azure Machine Learning — submitting jobs, reading results, and registering models. That requires authentication, and how you handle it matters for security.
 
 ## Secrets and variables
@@ -32,3 +43,5 @@ Git tracking and workflow authentication solve different problems. Tracking conn
 
 > [!TIP]
 > Which workflow values are identifiers, and which are credentials that must remain secret?
+
+::: zone-end

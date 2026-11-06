@@ -1,3 +1,13 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=d849e1de-2893-422e-a26b-95f611c56f07]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
 
 Working in a notebook lets you experiment interactively and iterate quickly. To make that experimentation meaningful, you need to track what you try. Without tracking, it's easy to lose sight of which configuration produced which result.
 
@@ -52,3 +62,5 @@ When you prefer working in notebooks on a local device, you can also make use of
 > Learn about alternative approaches to [set up the tracking environment when working on a local device](/azure/machine-learning/how-to-use-mlflow-cli-runs?azure-portal=true). For example, you can also use the Azure Machine Learning SDK v2 for Python, together with the workspace configuration file, to set the tracking URI.
 
 When you configured MLflow to track your model's results and store it in your Azure Machine Learning workspace, you're ready to experiment in a notebook.
+
+::: zone-end

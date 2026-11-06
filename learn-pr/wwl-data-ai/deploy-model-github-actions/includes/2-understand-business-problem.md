@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=2607bc23-3768-4955-bde5-25f384f88aa9]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 To get value from a machine learning model, you **deploy** it so it can generate predictions whenever the business needs them. Before you deploy, though, you make a few decisions that shape how the rest of the pipeline works.
 
 At Proseware, a health care technology company, the data science team trains a classification model that predicts whether a patient is likely to miss an upcoming clinic appointment. Clinic staff use this no-show risk score to decide which patients to call ahead of time to confirm, so the clinic can fill slots that would otherwise go empty. The model is accurate enough for production use. Your challenge is to get it serving predictions reliably, in a process the team can repeat every time the model gets retrained.
@@ -27,3 +38,5 @@ As the model evolves, register changed artifacts as new versions instead of repl
 ## Plan for repeatable deployment
 
 Registering and deploying a model manually works for a first release, but Proseware expects to retrain the no-show model regularly as new appointment data comes in. Repeating the same manual steps for every new version is slow and error-prone, so the team's goal is to automate registration, deployment, and testing through a pipeline, which is what the rest of this module builds toward.
+
+::: zone-end
