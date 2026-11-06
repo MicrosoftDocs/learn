@@ -4,8 +4,8 @@ title: 'Exercise - Recover from a recovery point'
 metadata:
   title: 'Exercise - Recover from a Recovery Point'
   description: Enable continuous backup on an Azure Cosmos DB for NoSQL account, delete a product and its container, and restore both to a recorded point in time.
-  ms.date: 10/03/2026
-  author: wwlpublish
+  ms.date: 11/05/2026
+  author: MScalopez
   ms.author: calopez
   ms.topic: unit
   zone_pivot_groups: dev-lang-csharp-python

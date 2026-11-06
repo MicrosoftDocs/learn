@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.real-time-ai-web-pubsub.separate-client-delivery-backend-coordination
+title: Separate client delivery from backend coordination
+metadata:
+  title: Separate Client Delivery from Backend Coordination
+  description: Separate live AI notifications from durable work scheduling, operation state, and authorized backend commands
+  ms.date: 11/05/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+  zone_pivot_groups: video-or-text
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-separate-client-delivery-backend-coordination.md)]

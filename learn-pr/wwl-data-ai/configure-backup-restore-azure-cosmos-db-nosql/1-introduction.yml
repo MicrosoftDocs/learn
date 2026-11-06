@@ -2,10 +2,11 @@
 uid: learn.wwl.configure-backup-restore-azure-cosmos-db-nosql.introduction
 title: Introduction
 metadata:
+  zone_pivot_groups: video-or-text
   title: Introduction
   description: "Frame backup and restore in Azure Cosmos DB as an operational design decision driven by recovery objectives, retention, and who performs the recovery."
-  ms.date: 10/03/2026
-  author: wwlpublish
+  ms.date: 11/05/2026
+  author: MScalopez
   ms.author: calopez
   ms.topic: unit
   ai-usage: ai-generated

@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=69ddf548-1968-4846-b13b-b0e4f28b3489]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Contoso settled on continuous backup at the 7-day tier. Two accounts need the change: a catalog account you're about to create, and an existing reporting account that already runs in periodic mode. Applying the policy takes a single command in both cases, but the migration path is one-way and the window you gain isn't immediately as long as the tier suggests. Your task is to apply the policy correctly and then verify what the account can restore.
 
 ## Enable continuous backup on a new account
@@ -127,3 +138,5 @@ Record the tier, the region, and a verified restorable timestamp alongside the a
 Learn more about [provisioning an account with continuous backup](/azure/cosmos-db/provision-account-continuous-backup), [migrating from periodic to continuous mode](/azure/cosmos-db/migrate-continuous-backup), and [getting the latest restorable timestamp](/azure/cosmos-db/get-latest-restore-timestamp).
 
 The account now has a window to restore from. To recover a resource to a chosen point in time, the next unit uses it.
+
+::: zone-end

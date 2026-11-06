@@ -25,9 +25,9 @@ metadata:
   gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/configure-defender-cloud-security-controls/index.yml
   title: Configure Security Controls and Remediate Recommendations in Defender for Cloud
   description: "Configure Defender for Cloud security standards at management group scope and systematically deploy security controls to remediate recommendations at scale using Fix, governance rules, Policy remediation tasks, and exemptions."
-  ms.date: 05/11/2026
-  author: r-c-stewart
-  ms.author: lumac
+  ms.date: 11/01/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: module
   ms.service: defender-for-cloud
   ai-usage: ai-assisted

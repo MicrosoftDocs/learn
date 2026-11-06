@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-local-security-governance.govern-application-exceptions
+metadata:
+  title: Govern Application Exceptions
+  description: Investigate application-control events and govern narrow supplemental policies through approval, deployment, verification, rollback, and retirement.
+  ms.date: 11/02/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Govern application exceptions
+durationInMinutes: 15
+content: |
+  [!include[](includes/5-govern-application-exceptions.md)]

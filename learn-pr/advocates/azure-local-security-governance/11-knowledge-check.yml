@@ -1,0 +1,182 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-local-security-governance.knowledge-check
+metadata:
+  title: Module Assessment
+  description: Assess your understanding of Azure Local trust boundaries, baseline enforcement, exceptions, workload protection, recovery, evidence, and retirement.
+  ms.date: 11/02/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+  module_assessment: true
+title: Module assessment
+durationInMinutes: 15
+content: |
+  Choose one answer for each question before reading the explanations.
+quiz:
+  questions:
+  - content: An administrator directly changes a protected setting on Azure Local 2610. Drift control restores the previous value. What should the administrator do next?
+    choices:
+    - content: Confirm the change is approved and customizable, then use `Set-AzsSecurity` at the correct scope.
+      isCorrect: true
+      explanation: Correct. Supported intent should define the approved value. Disabling drift protection weakens unrelated controls, and a cloud exemption doesn't change the host.
+    - content: Exempt the Azure Policy finding so the host adopts the new value.
+      isCorrect: false
+      explanation: Incorrect. Supported intent should define the approved value. Disabling drift protection weakens unrelated controls, and a cloud exemption doesn't change the host.
+    - content: Disable drift control permanently so the registry edit remains.
+      isCorrect: false
+      explanation: Incorrect. Supported intent should define the approved value. Disabling drift protection weakens unrelated controls, and a cloud exemption doesn't change the host.
+  - content: One node reports `True` for a security feature. The second node couldn't be inspected. What can you conclude?
+    choices:
+    - content: The second node is definitely noncompliant.
+      isCorrect: false
+      explanation: Incorrect. Local inspection has local scope. An unreachable node isn't proven compliant or noncompliant, and the coverage gap must be resolved.
+    - content: The result supports only the inspected node, and the other node remains an evidence gap.
+      isCorrect: true
+      explanation: Correct. Local inspection has local scope. An unreachable node isn't proven compliant or noncompliant, and the coverage gap must be resolved.
+    - content: The feature is enabled throughout the cluster because nodes share a baseline.
+      isCorrect: false
+      explanation: Incorrect. Local inspection has local scope. An unreachable node isn't proven compliant or noncompliant, and the coverage gap must be resolved.
+  - content: A utility is blocked by App Control. Which proposal best preserves the control boundary?
+    choices:
+    - content: Leave the cluster in audit mode until the utility is no longer needed.
+      isCorrect: false
+      explanation: Incorrect. A supplemental policy is a controlled expansion of trust. Broad scanning and indefinite audit mode authorize more execution than the justified exception.
+    - content: Scan the entire system drive and trust everything found so future installers won't fail.
+      isCorrect: false
+      explanation: Incorrect. A supplemental policy is a controlled expansion of trust. Broad scanning and indefinite audit mode authorize more execution than the justified exception.
+    - content: Validate support and host necessity, approve narrow supplemental rules, and define verification and retirement.
+      isCorrect: true
+      explanation: Correct. A supplemental policy is a controlled expansion of trust. Broad scanning and indefinite audit mode authorize more execution than the justified exception.
+  - content: A Trusted Launch VM's files were backed up, but its guest-state-protection key was lost with the cluster. Which statement is correct?
+    choices:
+    - content: Secure Boot can generate a replacement key that unlocks the existing state.
+      isCorrect: false
+      explanation: Incorrect. The protection key is needed to start the restored VM. Secure Boot doesn't recreate it, and Azure Site Recovery isn't supported for these Trusted Launch VMs.
+    - content: Azure Site Recovery automatically reconstructs the missing local key.
+      isCorrect: false
+      explanation: Incorrect. The protection key is needed to start the restored VM. Secure Boot doesn't recreate it, and Azure Site Recovery isn't supported for these Trusted Launch VMs.
+    - content: The backup is incomplete for recovery because the required guest-state-protection key is missing.
+      isCorrect: true
+      explanation: Correct. The protection key is needed to start the restored VM. Secure Boot doesn't recreate it, and Azure Site Recovery isn't supported for these Trusted Launch VMs.
+  - content: Which design best fits the current Azure Local confidential VM implementation?
+    choices:
+    - content: A Windows database with persistent local state and management extensions.
+      isCorrect: false
+      explanation: Incorrect. The current implementation has explicit image, hardware, statelessness, and cloud-dependency requirements. Host BitLocker doesn't supply confidential memory isolation.
+    - content: A tailored supported Ubuntu image on validated SEV-SNP hardware, with stateless processing and planned cloud key release.
+      isCorrect: true
+      explanation: Correct. The current implementation has explicit image, hardware, statelessness, and cloud-dependency requirements. Host BitLocker doesn't supply confidential memory isolation.
+    - content: Any Linux image on any AMD processor, provided the host disk uses BitLocker.
+      isCorrect: false
+      explanation: Incorrect. The current implementation has explicit image, hardware, statelessness, and cloud-dependency requirements. Host BitLocker doesn't supply confidential memory isolation.
+  - content: A host has been corrected, but its cloud audit result still shows the earlier state. What should you examine first?
+    choices:
+    - content: Whether the audit policy can replace the host's local enforcement engine.
+      isCorrect: false
+      explanation: Incorrect. Assessment can lag. First establish that the finding applies to the same control and reflects a sufficiently recent observation. Audit isn't local enforcement.
+    - content: Whether the resource, definition, assignment, and assessment timestamp correspond to the corrected control.
+      isCorrect: true
+      explanation: Correct. Assessment can lag. First establish that the finding applies to the same control and reflects a sufficiently recent observation. Audit isn't local enforcement.
+    - content: Whether disabling the host baseline makes the result disappear.
+      isCorrect: false
+      explanation: Incorrect. Assessment can lag. First establish that the finding applies to the same control and reflects a sufficiently recent observation. Audit isn't local enforcement.
+  - content: A vault lists a recent key backup and an authorized operator can view its metadata. What does that establish?
+    choices:
+    - content: Inventory and some access readiness, but not successful decryption or application recovery.
+      isCorrect: true
+      explanation: Correct. Metadata and access checks are useful but weaker than a restore test. Data consistency, old key dependencies, application function, and timing remain unproven.
+    - content: All historical VM backups are recoverable with the newest key.
+      isCorrect: false
+      explanation: Incorrect. Metadata and access checks are useful but weaker than a restore test. Data consistency, old key dependencies, application function, and timing remain unproven.
+    - content: The application will meet its RTO and RPO.
+      isCorrect: false
+      explanation: Incorrect. Metadata and access checks are useful but weaker than a restore test. Data consistency, old key dependencies, application function, and timing remain unproven.
+  - content: A node has stopped sending events, but the SIEM shows no security alerts. What's the appropriate response?
+    choices:
+    - content: Close the review because no alerts means no suspicious activity occurred.
+      isCorrect: false
+      explanation: Incorrect. A silent collector can hide a delivery failure. Validate the entire event path and monitor missing evidence without weakening transport authentication.
+    - content: Turn off TLS validation to increase the chance that messages arrive.
+      isCorrect: false
+      explanation: Incorrect. A silent collector can hide a delivery failure. Validate the entire event path and monitor missing evidence without weakening transport authentication.
+    - content: Investigate source and ingestion health, confirm delivery and parsing, and detect future gaps.
+      isCorrect: true
+      explanation: Correct. A silent collector can hide a delivery failure. Validate the entire event path and monitor missing evidence without weakening transport authentication.
+  - content: Contoso uses encrypted management connections, but clinical application VMs can reach the hosts' management interfaces without a business requirement. What remains necessary?
+    choices:
+    - content: Restrict permitted sources and paths, then demonstrate authorized access and denial of representative unauthorized connections.
+      isCorrect: true
+      explanation: Correct. Encryption protects communication in transit, but doesn't establish which sources may reach an interface. Segmentation and access rules must enforce the approved paths.
+    - content: Remove management authentication because the traffic is encrypted.
+      isCorrect: false
+      explanation: Incorrect. Encryption protects communication in transit, but doesn't establish which sources may reach an interface. Segmentation and access rules must enforce the approved paths.
+    - content: Nothing, because encryption determines which systems are authorized to connect.
+      isCorrect: false
+      explanation: Incorrect. Encryption protects communication in transit, but doesn't establish which sources may reach an interface. Segmentation and access rules must enforce the approved paths.
+  - content: An administrator's temporary Azure role activation has expired. The administrator also has a separately authorized node-local account. What can Contoso conclude?
+    choices:
+    - content: The node-local account has automatically been disabled.
+      isCorrect: false
+      explanation: Incorrect. PIM governs its assigned cloud roles. Expiry doesn't disable an independently managed local account or guarantee that a local session ends.
+    - content: Cloud elevation and local access have different enforcement boundaries and must be reviewed separately.
+      isCorrect: true
+      explanation: Correct. PIM governs its assigned cloud roles. Expiry doesn't disable an independently managed local account or guarantee that a local session ends.
+    - content: All local sessions have ended because the cloud role expired.
+      isCorrect: false
+      explanation: Incorrect. PIM governs its assigned cloud roles. Expiry doesn't disable an independently managed local account or guarantee that a local session ends.
+  - content: A generic cloud recommendation suggests deploying a vulnerability-assessment tool that isn't supported on Azure Local hosts. What should the platform team do?
+    choices:
+    - content: Record the applicability decision, assess exposure through supported evidence, and use the supported remediation workflow.
+      isCorrect: true
+      explanation: Correct. Tool support and actual vulnerability exposure must both be assessed. Unsupported installation and blanket dismissal of advisories are neither safe nor sufficient.
+    - content: Ignore all vulnerability advisories while the host baseline is compliant.
+      isCorrect: false
+      explanation: Incorrect. Tool support and actual vulnerability exposure must both be assessed. Unsupported installation and blanket dismissal of advisories are neither safe nor sufficient.
+    - content: Install it on every node because clearing the recommendation establishes support.
+      isCorrect: false
+      explanation: Incorrect. Tool support and actual vulnerability exposure must both be assessed. Unsupported installation and blanket dismissal of advisories are neither safe nor sufficient.
+  - content: Host syslog and Azure Activity Log are available, but an investigator needs to determine whether a recovery secret was retrieved from Azure Key Vault. Which additional evidence is required?
+    choices:
+    - content: Only the Azure Policy compliance percentage for the vault.
+      isCorrect: false
+      explanation: Incorrect. Secret retrieval is a data-plane operation. Host forwarding and Azure management-event logging don't replace the vault's own audit collection.
+    - content: Only the most recent successful VM backup timestamp.
+      isCorrect: false
+      explanation: Incorrect. Secret retrieval is a data-plane operation. Host forwarding and Azure management-event logging don't replace the vault's own audit collection.
+    - content: Key Vault audit events from a configured diagnostic collection path, correlated with the relevant identity and time.
+      isCorrect: true
+      explanation: Correct. Secret retrieval is a data-plane operation. Host forwarding and Azure management-event logging don't replace the vault's own audit collection.
+  - content: Security operations proposes immediate generic network isolation of one node in Contoso's two-node instance. What's the appropriate decision process?
+    choices:
+    - content: Move every workload first and assume that failover removes the compromise.
+      isCorrect: false
+      explanation: Incorrect. Containment can affect cluster operation and clinical availability. A witness isn't workload capacity, and moving a workload doesn't establish that it's clean.
+    - content: Use the incident plan to assess urgency, supported containment, quorum, storage, capacity, and clinical-service impact while preserving evidence.
+      isCorrect: true
+      explanation: Correct. Containment can affect cluster operation and clinical availability. A witness isn't workload capacity, and moving a workload doesn't establish that it's clean.
+    - content: Isolate both nodes automatically because a witness can run the clinical workloads.
+      isCorrect: false
+      explanation: Incorrect. Containment can affect cluster operation and clinical availability. A witness isn't workload capacity, and moving a workload doesn't establish that it's clean.
+  - content: A temporary Azure Policy exemption reaches its configured expiry time. Which statement is correct?
+    choices:
+    - content: The exemption is no longer honored, its object remains for records, and the resource still needs assessment and any required remediation.
+      isCorrect: true
+      explanation: Correct. Expiry ends the exemption's effect, not the underlying noncompliance. Retain the decision history and confirm the subsequent assessment and treatment.
+    - content: The host automatically adopts the required configuration.
+      isCorrect: false
+      explanation: Incorrect. Expiry ends the exemption's effect, not the underlying noncompliance. Retain the decision history and confirm the subsequent assessment and treatment.
+    - content: The entire initiative is permanently removed from the subscription.
+      isCorrect: false
+      explanation: Incorrect. Expiry ends the exemption's effect, not the underlying noncompliance. Retain the decision history and confirm the subsequent assessment and treatment.
+  - content: A clinical workload is retired, but its backups must remain recoverable for an approved retention period. What should happen to the required historical encryption keys?
+    choices:
+    - content: Copy them into the asset-disposal ticket so anyone can restore the backups.
+      isCorrect: false
+      explanation: Incorrect. Retained backups can still depend on their original keys. Preserve authorized recovery without exposing key values in ordinary records.
+    - content: Delete them immediately because the live VM no longer exists.
+      isCorrect: false
+      explanation: Incorrect. Retained backups can still depend on their original keys. Preserve authorized recovery without exposing key values in ordinary records.
+    - content: Retain them under controlled custody with a usable recovery path until their dependent obligations end.
+      isCorrect: true
+      explanation: Correct. Retained backups can still depend on their original keys. Preserve authorized recovery without exposing key values in ordinary records.
