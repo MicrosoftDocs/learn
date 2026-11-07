@@ -1,0 +1,164 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1190" viewBox="0 0 1200 1190" style="background-color:white" role="img" aria-labelledby="diagram-title diagram-description" font-family="Segoe UI, Arial, sans-serif" fill="#000000" lang="en">
+  <title id="diagram-title">Authentication and group state converge at local RBAC</title>
+  <desc id="diagram-description">Diagram of independent authentication and asynchronous group synchronization paths converging at local authorization. First, AD FS authenticates a user through OpenID Connect. Separately, AD Universal group membership synchronizes asynchronously into local identity. Third, local role assignments at subscription or resource-group scope are evaluated with user identity and synchronized group state. Operator subscription permissions do not inherit into tenant subscriptions. Fourth, a resource action is permitted only within the evaluated role and scope. DNS, time and certificates support every path.</desc>
+  <rect id="canvas-background" x="0" y="0" width="1200" height="1190" fill="white" />
+  <defs>
+    <marker id="arrow-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 Z" fill="#0078D4" />
+    </marker>
+    <marker id="arrow-purple" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 Z" fill="#5C2D91" />
+    </marker>
+    <marker id="arrow-teal" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 Z" fill="#006D77" />
+    </marker>
+    <marker id="arrow-gray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 Z" fill="#566573" />
+    </marker>
+  </defs>
+  <text x="48" y="62" font-size="36" font-weight="600" fill="#000000">Authentication and group state converge at local RBAC</text>
+  <text x="48" y="105" font-size="21" font-weight="400" fill="#000000">1 and 2 are separate inputs; group synchronization is not an AD lookup at every sign-in.</text>
+  <rect id="step-1" x="48" y="160" width="520" height="265" rx="14" fill="#F3F8FD" stroke="#0078D4" stroke-width="2" data-card="true" />
+  <circle cx="88" cy="200" r="20" fill="white" stroke="#0078D4" stroke-width="2" data-badge="1" />
+  <text x="88" y="208" font-size="24" font-weight="700" fill="#000000" data-box="step-1" text-anchor="middle" data-number="1">1</text>
+  <text x="124" y="208" font-size="25" font-weight="600" fill="#000000" data-box="step-1">User authentication</text>
+  <svg x="498" y="180" width="46" height="46" viewBox="284 97 305 375" preserveAspectRatio="xMidYMid meet" aria-hidden="true" data-icon="adfs">
+    <g id="icon-1-adfs-AD_FS">
+</g>
+    <g>
+      <g>
+        <path fill="#2A3282" d="M574.1,445.4l-97.8-162.2c-4.3-6.9-11.2-6.9-15.4,0l-97.8,162.2c-4.3,6.9-0.9,12,7.7,12h195.6    C575,458.3,578.4,452.3,574.1,445.4z M526.1,442h-42.9v-25.7h17.2v-17.2h-25.7H466h-25.7v17.2h17.2V442h-42.9v-25.7h17.2v-25.7    h8.6H466v-17.2h-17.2v-25.7h42.9v25.7h-17.2v17.2h25.7h8.6v25.7h17.2V442z" />
+        <g>
+          <path fill="#2A3282" d="M448.9,107.4H311.6c-9.4,0-17.2,7.7-17.2,17.2v334.6h48c0-3.4,0.9-7.7,3.4-11.2l13.7-23.2h-39.5v-17.2     h49.8l10.3-17.2h-60.1v-17.2h70.4l60.9-101.2c3.4-6,8.6-9.4,14.6-10.3V123.7C466,115.1,458.3,107.4,448.9,107.4z M440.3,176     H320.2v-17.2h120.1C440.3,158.9,440.3,176,440.3,176z" />
+        </g>
+      </g>
+      <g id="icon-1-adfs-paths">
+        <g id="icon-1-adfs-Access_control">
+		</g>
+        <g id="icon-1-adfs-Azure_active_directory">
+		</g>
+      </g>
+    </g>
+  </svg>
+  <text x="74" y="250" font-size="22" font-weight="400" fill="#000000" data-box="step-1">AD FS authenticates the user</text>
+  <text x="74" y="284" font-size="22" font-weight="400" fill="#000000" data-box="step-1">OpenID Connect (OIDC)</text>
+  <text x="74" y="318" font-size="22" font-weight="400" fill="#000000" data-box="step-1">Supplies authenticated user identity</text>
+  <rect id="step-2" x="632" y="160" width="520" height="265" rx="14" fill="#F8F3FC" stroke="#5C2D91" stroke-width="2" data-card="true" />
+  <circle cx="672" cy="200" r="20" fill="white" stroke="#5C2D91" stroke-width="2" data-badge="2" />
+  <text x="672" y="208" font-size="24" font-weight="700" fill="#000000" data-box="step-2" text-anchor="middle" data-number="2">2</text>
+  <text x="708" y="208" font-size="25" font-weight="600" fill="#000000" data-box="step-2">Group synchronization</text>
+  <svg x="1082" y="180" width="46" height="46" viewBox="-0.5 -0.5 19 19" preserveAspectRatio="xMidYMid meet" aria-hidden="true" data-icon="user">
+    <defs>
+      <linearGradient id="icon-2-user-be92901b-ec33-4c65-adf1-9b0eed06d677" x1="9" y1="6.88" x2="9" y2="20.45" gradientUnits="userSpaceOnUse">
+        <stop offset="0.22" stop-color="#32d4f5" />
+        <stop offset="1" stop-color="#198ab3" />
+      </linearGradient>
+      <linearGradient id="icon-2-user-b46fc246-25d8-4398-8779-1042e8cacae7" x1="8.61" y1="-0.4" x2="9.6" y2="11.92" gradientUnits="userSpaceOnUse">
+        <stop offset="0.22" stop-color="#32d4f5" />
+        <stop offset="1" stop-color="#198ab3" />
+      </linearGradient>
+    </defs>
+    <title>Icon-identity-230</title>
+    <path d="M15.72,18a1.45,1.45,0,0,0,1.45-1.45.47.47,0,0,0,0-.17C16.59,11.81,14,8.09,9,8.09S1.34,11.24.83,16.39A1.46,1.46,0,0,0,2.14,18H15.72Z" fill="url(#icon-2-user-be92901b-ec33-4c65-adf1-9b0eed06d677)" />
+    <path d="M9,9.17a4.59,4.59,0,0,1-2.48-.73L9,14.86l2.44-6.38A4.53,4.53,0,0,1,9,9.17Z" fill="#fff" opacity="0.8" />
+    <circle cx="9.01" cy="4.58" r="4.58" fill="url(#icon-2-user-b46fc246-25d8-4398-8779-1042e8cacae7)" />
+  </svg>
+  <text x="658" y="250" font-size="22" font-weight="400" fill="#000000" data-box="step-2">AD Universal group membership</text>
+  <text x="658" y="284" font-size="22" font-weight="400" fill="#000000" data-box="step-2">Asynchronous sync into local identity</text>
+  <text x="658" y="318" font-size="22" font-weight="400" fill="#000000" data-box="step-2">Separate from user sign-in</text>
+  <polyline points="308,437 308,548" fill="none" stroke="#0078D4" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" data-connector="true" marker-end="url(#arrow-blue)" />
+  <polyline points="892,437 892,548" fill="none" stroke="#5C2D91" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" data-connector="true" marker-end="url(#arrow-purple)" />
+  <text x="330" y="495" font-size="21" font-weight="400" fill="#000000">User identity</text>
+  <text x="914" y="495" font-size="21" font-weight="400" fill="#000000">Group state</text>
+  <rect id="step-3" x="210" y="560" width="780" height="220" rx="14" fill="#F3F8FD" stroke="#0078D4" stroke-width="2" data-card="true" />
+  <circle cx="250" cy="600" r="20" fill="white" stroke="#0078D4" stroke-width="2" data-badge="3" />
+  <text x="250" y="608" font-size="24" font-weight="700" fill="#000000" data-box="step-3" text-anchor="middle" data-number="3">3</text>
+  <text x="286" y="608" font-size="25" font-weight="600" fill="#000000" data-box="step-3">Evaluate local authorization</text>
+  <svg x="920" y="580" width="46" height="46" viewBox="-0.5 -0.5 19 19" preserveAspectRatio="xMidYMid meet" aria-hidden="true" data-icon="resource">
+    <title>Icon-general-7</title>
+    <g>
+      <g>
+        <path d="M.5,15.08a.16.16,0,0,0,.08.14l1.16.65L3.7,17a.17.17,0,0,0,.23-.06l.66-1.12a.16.16,0,0,0-.06-.21l-2.3-1.3a.17.17,0,0,1-.08-.14V3.85a.16.16,0,0,1,.08-.14l2.3-1.3a.16.16,0,0,0,.06-.21L3.93,1.08A.17.17,0,0,0,3.7,1L1.78,2.11l-1.2.67a.16.16,0,0,0-.08.14V15.08Z" fill="#949494" />
+        <path d="M2.14,3.77l.06-.06,2.3-1.3a.14.14,0,0,0,.06-.21L3.9,1.08A.15.15,0,0,0,3.68,1L1.75,2.11.56,2.78s-.05,0-.06.06l.9.51Z" fill="#a3a3a3" />
+        <path d="M4.5,15.59l-2.3-1.3a.22.22,0,0,1-.07-.09l-1.62,1,.05,0,1.15.65,2,1.11a.15.15,0,0,0,.22-.06l.66-1.12A.14.14,0,0,0,4.5,15.59Z" fill="#a3a3a3" />
+      </g>
+      <path d="M17.5,15.08a.16.16,0,0,1-.08.14l-1.16.65L14.3,17a.17.17,0,0,1-.23-.06l-.66-1.12a.16.16,0,0,1,.06-.21l2.3-1.3a.17.17,0,0,0,.08-.14V3.85a.16.16,0,0,0-.08-.14l-2.3-1.3a.16.16,0,0,1-.06-.21l.66-1.12A.17.17,0,0,1,14.3,1l1.92,1.09,1.2.67a.16.16,0,0,1,.08.14V15.08Z" fill="#949494" />
+      <path d="M15.86,3.77l-.06-.06-2.3-1.3a.14.14,0,0,1-.06-.21l.66-1.12A.15.15,0,0,1,14.32,1l1.93,1.09,1.19.67s0,0,.06.06l-.9.51Z" fill="#a3a3a3" />
+      <path d="M13.5,15.59l2.3-1.3a.22.22,0,0,0,.07-.09l1.62,1,0,0-1.15.65-2,1.11a.15.15,0,0,1-.22-.06l-.66-1.12A.14.14,0,0,1,13.5,15.59Z" fill="#a3a3a3" />
+      <polygon points="14.31 5.93 14.31 12.07 8.99 15.16 8.99 9.01 14.31 5.93" fill="#32bedd" />
+      <polygon points="14.31 5.93 9 9.02 3.68 5.93 9 2.84 14.31 5.93" fill="#9cebff" />
+      <polygon points="8.99 9.02 8.99 15.16 3.68 12.07 3.68 5.93 8.99 9.02" fill="#50e6ff" />
+      <polygon points="3.68 12.07 8.99 9.01 8.99 15.16 3.68 12.07" fill="#9cebff" />
+      <polygon points="14.31 12.07 8.99 9.01 8.99 15.16 14.31 12.07" fill="#50e6ff" />
+    </g>
+  </svg>
+  <text x="236" y="650" font-size="22" font-weight="400" fill="#000000" data-box="step-3">Identity + synchronized groups + local RBAC roles</text>
+  <text x="236" y="684" font-size="22" font-weight="400" fill="#000000" data-box="step-3">Assign roles at subscription or resource-group scope</text>
+  <text x="236" y="718" font-size="22" font-weight="400" fill="#000000" data-box="step-3">Operator rights do not inherit into tenant subscriptions.</text>
+  <polyline points="600,792 600,838" fill="none" stroke="#0078D4" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" data-connector="true" marker-end="url(#arrow-blue)" />
+  <rect id="step-4" x="210" y="850" width="780" height="145" rx="14" fill="#F0F9F8" stroke="#006D77" stroke-width="2" data-card="true" />
+  <circle cx="250" cy="890" r="20" fill="white" stroke="#006D77" stroke-width="2" data-badge="4" />
+  <text x="250" y="898" font-size="24" font-weight="700" fill="#000000" data-box="step-4" text-anchor="middle" data-number="4">4</text>
+  <text x="286" y="898" font-size="25" font-weight="600" fill="#000000" data-box="step-4">Permit the resource action</text>
+  <svg x="920" y="870" width="46" height="46" viewBox="262 135 270 342" preserveAspectRatio="xMidYMid meet" aria-hidden="true" data-icon="lock">
+    <g id="icon-4-lock-Layer_1_1_">
+      <g id="icon-4-lock-File_x2C__general">
+        <title>Sheet.1071</title>
+      </g>
+    </g>
+    <g id="icon-4-lock-Access_control">
+</g>
+    <g id="icon-4-lock-Azure_active_directory">
+</g>
+    <g id="icon-4-lock-Generic_code">
+</g>
+    <g id="icon-4-lock-Laptop">
+</g>
+    <g id="icon-4-lock-Load_balancer">
+</g>
+    <path fill="#2A3282" d="M504.2,272.1h-16.3v-30c0-63.5-40.3-96.1-87.6-96.1h-7.7c-48.1,0-87.6,31.8-87.6,96.1v30h-16.3  c-6.9,0-16.3,9.4-16.3,16.3v161.4c0,6.9,9.4,16.3,16.3,16.3h215.4c6.9,0,16.3-9.4,16.3-16.3V288.4  C519.6,281.5,510.2,272.1,504.2,272.1z M408,367.4v67h-24v-67c-9.4-4.3-16.3-13.7-16.3-24.9c0-15.5,12.9-28.3,28.3-28.3  c15.5,0,28.3,12.9,28.3,28.3C424.3,352.8,417.5,362.2,408,367.4z M457.8,272.1H335.1v-30c0-40.3,21.5-67.8,57.5-67.8h7.7  c36.9,0,57.5,27.5,57.5,67.8L457.8,272.1L457.8,272.1z" />
+    <g id="icon-4-lock-symbols">
+</g>
+    <g id="icon-4-lock-slices">
+</g>
+  </svg>
+  <text x="236" y="940" font-size="22" font-weight="400" fill="#000000" data-box="step-4">Only within the evaluated role and scope</text>
+  <rect id="shared-dependencies" x="48" y="1045" width="1104" height="110" rx="12" fill="#F7F8FA" stroke="#566573" stroke-width="2" data-card="true" />
+  <text x="74" y="1087" font-size="24" font-weight="600" fill="#000000" data-box="shared-dependencies">DNS, reliable time and valid certificates support all paths.</text>
+  <text x="74" y="1127" font-size="22" font-weight="400" fill="#000000" data-box="shared-dependencies">Maintain these prerequisites for authentication, synchronization and authorization.</text>
+  <svg x="1082" y="1065" width="46" height="46" viewBox="190 135 460 400" preserveAspectRatio="xMidYMid meet" aria-hidden="true" data-icon="certificate">
+    <g id="icon-5-certificate-Certificate">
+</g>
+    <g>
+      <g>
+        <g>
+          <path fill="#2A3282" d="M382.9,379.5H234.6c-7.7,0-13.7-6-13.7-13.7V212.4h42.8v-42h275.1c7.7,0,13.7,6,13.7,13.7v1.7     c6.9,1.7,14.6,5.1,21.4,7.7v-10.3c0-18.9-15.4-35.1-35.1-35.1H251.8l-51.4,52.3v165.4c0,18.9,15.4,35.1,35.1,35.1h161.1     C390.6,394.1,386.3,387.3,382.9,379.5z" />
+        </g>
+        <g id="icon-5-certificate-group954-1946_2_" transform="translate(59.286,-2749.37)">
+          <title>Sheet.954</title>
+          <g id="icon-5-certificate-shape955-1947_2_" transform="translate(1.9875,4.54747E-013)">
+            <title>Sheet.955</title>
+            <path fill="#2A3282" d="M507.4,3166.4l51.4,77.1l-48-12.9l-13.7,38.6l-51.4-68.6l-38.6,68.6l-18-41.1l-48,12.9l47.1-81.4      c0,0,12.9,22.3,59.1,22.3C494.5,3181.8,507.4,3166.4,507.4,3166.4z" />
+          </g>
+          <g id="icon-5-certificate-shape956-1949_2_" transform="translate(5.3475,-13.3447)">
+            <title>Sheet.956</title>
+            <path fill="#2A3282" d="M447.9,3165.5c-45.4,0-82.3-36.8-82.3-81.4c0-44.6,36.8-81.4,82.3-81.4s82.3,36.8,82.3,81.4      C529.4,3128.7,493.4,3165.5,447.9,3165.5z M447.9,3020.7c-35.1,0-64.3,28.3-64.3,63.4s29.1,63.4,64.3,63.4s64.3-28.3,64.3-63.4      S483.1,3020.7,447.9,3020.7z" />
+          </g>
+          <g id="icon-5-certificate-shape957-1951_2_" transform="translate(-5.79536E-014,-8.08875)">
+            <title>Sheet.957</title>
+            <path fill="#2A3282" d="M452.9,3203.5c-69.4,0-126-55.7-126-124.3s56.6-124.3,126-124.3s126,55.7,126,124.3      C578.9,3146.9,522.3,3203.5,452.9,3203.5z M452.9,2973c-59.1,0-108,48-108,106.3c0,58.3,48,106.3,108,106.3s108-48,108-106.3      C560.9,3020.1,512.9,2973,452.9,2973z" />
+          </g>
+        </g>
+      </g>
+      <g id="icon-5-certificate-paths">
+        <g id="icon-5-certificate-Access_control">
+		</g>
+        <g id="icon-5-certificate-Azure_active_directory">
+		</g>
+      </g>
+      <g id="icon-5-certificate-symbols">
+	</g>
+    </g>
+  </svg>
+</svg>

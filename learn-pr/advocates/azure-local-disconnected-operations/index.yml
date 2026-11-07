@@ -1,0 +1,56 @@
+### YamlMime:Module
+uid: learn.devrel.azure-local-disconnected-operations
+metadata:
+  title: Azure Local Disconnected Operations
+  description: Plan Azure Local disconnected operations, including local dependencies, controlled software supply, operating procedures, workload restrictions, and recovery.
+  ms.date: 11/04/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: module-standard-concept-based
+  ai-usage: ai-assisted
+  ms.service: azure-local
+title: Azure Local disconnected operations
+summary: |
+  Azure Local disconnected operations allows you to run Azure Local in a disconnected or airgapped environment. In this module, you'll design the local dependencies, controlled software supply, operating procedures, and recovery arrangements that make this model sustainable.
+abstract: |
+  After completing this module, you'll be able to:
+
+  - Distinguish purpose-built disconnected operations from a connectivity outage in a connected deployment.
+  - Plan procurement, dedicated management capacity, local services, and independent failure domains.
+  - Explain how local authentication, group synchronization, authorization, certificates, DNS, and time work together.
+  - Plan local workload onboarding, policy enforcement, security responsibilities, and nonhuman credential lifecycles.
+  - Evaluate management-client configuration and the provenance, integrity, and completeness of offline artifacts.
+  - Sequence compatible updates and apply disconnected workload restrictions.
+  - Plan offline vulnerability management, incident response, and secure retirement.
+  - Design separate control-plane and workload protection, then assess recovery readiness.
+prerequisites: |
+  Before starting this module, you should have:
+
+  - Familiarity with Azure Local, virtual machines, networking, and storage.
+  - Basic knowledge of Windows Server, Active Directory, certificate trust, and Azure resource management.
+iconUrl: /training/achievements/generic-badge.svg
+ratingEnabled: false
+levels:
+- intermediate
+roles:
+- administrator
+- solution-architect
+products:
+- azure-local
+subjects:
+- infrastructure
+units:
+- learn.devrel.azure-local-disconnected-operations.introduction
+- learn.devrel.azure-local-disconnected-operations.evaluate-disconnected-operations-eligibility
+- learn.devrel.azure-local-disconnected-operations.plan-dependency-architecture
+- learn.devrel.azure-local-disconnected-operations.plan-local-identity-lifecycle
+- learn.devrel.azure-local-disconnected-operations.maintain-certificate-trust
+- learn.devrel.azure-local-disconnected-operations.inspect-management-client-context
+- learn.devrel.azure-local-disconnected-operations.establish-trusted-artifact-supply
+- learn.devrel.azure-local-disconnected-operations.manage-operational-lifecycle
+- learn.devrel.azure-local-disconnected-operations.apply-workload-restrictions
+- learn.devrel.azure-local-disconnected-operations.plan-recovery-lifecycle
+- learn.devrel.azure-local-disconnected-operations.knowledge-check
+- learn.devrel.azure-local-disconnected-operations.summary
+badge:
+  uid: learn.devrel.azure-local-disconnected-operations.badge

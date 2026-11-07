@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-local-disconnected-operations.apply-workload-restrictions
+metadata:
+  title: Apply Disconnected Workload Restrictions
+  description: Apply disconnected Azure Local virtual machine, Kubernetes, networking, registry, authentication, and guest licensing restrictions.
+  ms.date: 11/04/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Apply disconnected workload restrictions
+durationInMinutes: 9
+content: |
+  [!include[](includes/9-apply-workload-restrictions.md)]
