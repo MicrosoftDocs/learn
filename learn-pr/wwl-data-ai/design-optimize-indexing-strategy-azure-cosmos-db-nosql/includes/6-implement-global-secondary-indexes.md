@@ -1,3 +1,12 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=f09abf37-2b9b-4dcf-b102-fb2932481928]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
 Indexing policies, composite indexes, and computed properties all improve a query that runs inside one partition, or reduce what a cross-partition query costs. None of them changes the fact that a query filtering on something other than the partition key has to visit every physical partition. The Contoso storefront's stock keeping unit lookup is that query: `product` is partitioned on `/categoryId`, and `sku` appears nowhere in the partition key.
 
 A global secondary index solves that problem by storing a second copy of the data with a different partition key. The index is a read-only container that Azure Cosmos DB keeps synchronized with a source container, and it has its own partition key, indexing policy, throughput, and data model.
