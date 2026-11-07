@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-local-disconnected-operations.plan-recovery-lifecycle
+metadata:
+  title: Plan Recovery Lifecycle
+  description: Plan independent backup access, recovery keys, same-version restore, cluster reconciliation, workload recovery, and secure retirement.
+  ms.date: 11/04/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Plan recovery lifecycle
+durationInMinutes: 16
+content: |
+  [!include[](includes/10-plan-recovery-lifecycle.md)]

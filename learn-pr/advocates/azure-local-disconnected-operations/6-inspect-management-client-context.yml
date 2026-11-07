@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-local-disconnected-operations.inspect-management-client-context
+metadata:
+  title: Inspect the Local Management-Client Context
+  description: Inspect Azure Local management-client versions, custom-cloud endpoints, selected subscriptions, certificate trust, and offline extension packages.
+  ms.date: 11/04/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Inspect the local management-client context
+durationInMinutes: 8
+content: |
+  [!include[](includes/6-inspect-management-client-context.md)]

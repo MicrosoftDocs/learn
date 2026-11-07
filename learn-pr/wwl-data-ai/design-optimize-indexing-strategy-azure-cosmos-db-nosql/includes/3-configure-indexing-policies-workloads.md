@@ -1,3 +1,12 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=5c0051c8-2400-4b3c-91c1-f7ec78d2996d]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
 Tuning an indexing policy is a workload question, not a database question. The same container can be over-indexed for its writes and under-indexed for its reads at the same time, which is exactly the position the Contoso catalog is in. This unit walks through fitting the policy to the read and write mix, then applying the change safely.
 
 ## Choose an include or exclude strategy
