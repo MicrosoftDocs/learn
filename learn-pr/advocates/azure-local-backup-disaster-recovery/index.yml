@@ -1,0 +1,55 @@
+### YamlMime:Module
+uid: learn.devrel.azure-local-backup-disaster-recovery
+metadata:
+  title: Azure Local Backup and Disaster Recovery
+  description: Design Azure Local backup and disaster recovery with supported protection, independent recovery dependencies, isolated restoration, and validated service recovery.
+  ms.date: 11/06/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: module-standard-concept-based
+  ai-usage: ai-assisted
+  ms.service: azure-local
+title: Azure Local backup and disaster recovery
+summary: |
+  A successful backup job doesn't prove that an application can recover. Recovery also depends on compatible infrastructure, usable identities and keys, consistent application data, and a controlled return to production. In this module, you'll design and evaluate those dependencies for workloads running on Azure Local.
+abstract: |
+  After completing this module, you'll be able to:
+
+  - Distinguish high availability, replication, backup, and disaster recovery.
+  - Select protection methods and restore scopes that support a workload's consistency, security, and recovery requirements.
+  - Translate recovery objectives into protection policies and assess recovery-time feasibility.
+  - Design independent access to recovery data, keys, identities, configuration, and target capacity.
+  - Plan recovery when backup infrastructure, Azure connectivity, or administrative trust is unavailable.
+  - Select and sequence supported physical-node repair and full-instance recovery paths.
+  - Monitor protection coverage and interpret evidence without treating job success as proof of recoverability.
+  - Sequence isolated restoration, application validation, production release, and reprotection.
+  - Evaluate recovery evidence against business recovery-point and recovery-time objectives.
+prerequisites: |
+  - Experience administering Azure Local, Hyper-V virtual machines, and Windows Server.
+  - Familiarity with clustering, storage, networking, identity, and Azure resource management.
+  - Basic understanding of backup, replication, recovery-point objectives, and recovery-time objectives.
+iconUrl: /training/achievements/generic-badge.svg
+ratingEnabled: false
+levels:
+- intermediate
+roles:
+- administrator
+- solution-architect
+products:
+- azure-local
+subjects:
+- infrastructure
+- storage
+units:
+- learn.devrel.azure-local-backup-disaster-recovery.introduction
+- learn.devrel.azure-local-backup-disaster-recovery.protection-method-boundaries
+- learn.devrel.azure-local-backup-disaster-recovery.determine-recovery-dependencies
+- learn.devrel.azure-local-backup-disaster-recovery.inspect-protection-evidence
+- learn.devrel.azure-local-backup-disaster-recovery.recover-failed-node
+- learn.devrel.azure-local-backup-disaster-recovery.recover-full-instance
+- learn.devrel.azure-local-backup-disaster-recovery.restore-workloads-isolation
+- learn.devrel.azure-local-backup-disaster-recovery.transition-to-production
+- learn.devrel.azure-local-backup-disaster-recovery.knowledge-check
+- learn.devrel.azure-local-backup-disaster-recovery.summary
+badge:
+  uid: learn.devrel.azure-local-backup-disaster-recovery.badge

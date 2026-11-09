@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-local-backup-disaster-recovery.recover-full-instance
+metadata:
+  title: Recover a Full Azure Local Instance
+  description: Classify Azure Local instance loss, preserve recovery artifacts, reconstruct the platform, and separate infrastructure from business acceptance.
+  ms.date: 11/06/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Recover a full Azure Local instance
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-recover-full-instance.md)]

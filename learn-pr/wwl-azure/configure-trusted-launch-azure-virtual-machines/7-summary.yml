@@ -3,9 +3,9 @@ uid: learn.wwl.configure-trusted-launch-azure-virtual-machines.summary
 metadata:
   title: Summary
   description: Summary of configuring Trusted Launch security features for Azure virtual machines, covering component identification, configuration, upgrade paths, and Azure Policy enforcement.
-  ms.date: 05/11/2026
-  author: r-c-stewart
-  ms.author: lumac
+  ms.date: 11/01/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
   ai-usage: ai-assisted
 title: Summary
