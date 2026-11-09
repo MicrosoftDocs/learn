@@ -24,9 +24,9 @@ metadata:
   gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/create-log-analytics-workspace-microsoft-defender-cloud/index.yml
   title: Create a Log Analytics workspace
   description: "Learn to create a Log Analytics workspace within the Azure portal, enabling robust data collection and analysis for Microsoft Defender for Cloud to enhance your security posture."
-  ms.date: 10/16/2024
-  author: wwlpublish
-  ms.author: lumac
+  ms.date: 11/01/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: module-standard-task-based
   ms.custom:
   - N/A
