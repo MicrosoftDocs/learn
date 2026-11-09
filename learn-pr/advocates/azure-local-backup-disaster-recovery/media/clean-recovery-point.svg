@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="650" viewBox="0 0 1200 650" role="img" aria-labelledby="diagram-title diagram-description" font-family="Segoe UI, Arial, sans-serif" style="background-color: white">
+  <title id="diagram-title">Choose the newest trusted point, not just the newest</title>
+  <desc id="diagram-description">A known clean point at 09:52 precedes corruption at 10:04. The newer 10:08 point includes affected state. Restore 09:52 and replay only validated clean logs.</desc>
+  <rect id="background" x="0" y="0" width="1200" height="650" fill="#ffffff" />
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#426789" />
+    </marker>
+    <marker id="green-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#176b3a" />
+    </marker>
+  </defs>
+  <text x="40" y="52" font-size="32" font-weight="600" fill="#172b4d" data-role="diagram-heading">Choose the newest trusted point, not just the newest</text>
+  <text x="40" y="88" font-size="20" font-weight="400" fill="#172b4d" data-role="diagram-subtitle">Supplied corruption scenario. Read left to right. Spacing is not a time scale.</text>
+  <g data-card="1">
+    <rect data-role="card-boundary" x="40" y="145" width="320" height="270" rx="10" fill="#f1faf4" stroke="#8aa8c2" stroke-width="1.5" />
+    <circle cx="72" cy="177" r="18" fill="#176b3a" />
+    <text x="72" y="184" font-size="21" font-weight="700" fill="#ffffff" text-anchor="middle" data-role="stage-number">1</text>
+    <svg id="card1-b4d0e6e2-12c1-4275-b717-890060dd1560" width="46" height="46" viewBox="0 0 18 18" x="290" y="157" aria-hidden="true" data-source-icon="storage\00017-icon-service-Recovery-Services-Vaults.svg">
+      <defs>
+        <linearGradient id="card1-f1a30f9e-7f48-44e2-9483-6a6db8928977" x1="11.13" y1="10.95" x2="11.13" y2="1.21" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#0078d4" />
+          <stop offset="0.16" stop-color="#1380da" />
+          <stop offset="0.53" stop-color="#3c91e5" />
+          <stop offset="0.82" stop-color="#559cec" />
+          <stop offset="1" stop-color="#5ea0ef" />
+        </linearGradient>
+        <linearGradient id="card1-b4a5ed8d-a28d-4d26-9aad-a57e6ad0c0b9" x1="7.06" y1="16.79" x2="7.06" y2="6.78" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#198ab3" />
+          <stop offset="0.13" stop-color="#21a0c7" />
+          <stop offset="0.31" stop-color="#28b7db" />
+          <stop offset="0.5" stop-color="#2ec7ea" />
+          <stop offset="0.72" stop-color="#31d1f2" />
+          <stop offset="1" stop-color="#32d4f5" />
+        </linearGradient>
+      </defs>
+      <title>Icon-manage-315</title>
+      <path d="M18,7.9a3.09,3.09,0,0,0-2.68-3,3.89,3.89,0,0,0-4-3.72A4,4,0,0,0,7.5,3.81,3.68,3.68,0,0,0,4.26,7.36,3.74,3.74,0,0,0,8.13,11l.34,0h6.26l.17,0A3.13,3.13,0,0,0,18,7.9Z" fill="url(#card1-f1a30f9e-7f48-44e2-9483-6a6db8928977)" />
+      <path d="M14.39,5.22,12.56,3.44c-.2-.2-.37-.13-.37.18v.8a.22.22,0,0,1-.23.22c-1.18,0-4.47.31-4.59,4.81a.23.23,0,0,0,.23.23H8.77A.23.23,0,0,0,9,9.43,2.76,2.76,0,0,1,12,6.1a.23.23,0,0,1,.23.23v.74c0,.37.12.43.37.18L14.39,5.6A.23.23,0,0,0,14.39,5.22Z" fill="#fff" />
+      <path d="M14.12,13.66a3.17,3.17,0,0,0-2.75-3.05A4,4,0,0,0,7.25,6.78,4.1,4.1,0,0,0,3.33,9.46,3.78,3.78,0,0,0,0,13.1a3.84,3.84,0,0,0,4,3.69h6.78a.47.47,0,0,0,.17,0A3.21,3.21,0,0,0,14.12,13.66Z" fill="url(#card1-b4a5ed8d-a28d-4d26-9aad-a57e6ad0c0b9)" />
+    </svg>
+    <text x="64" y="233" font-size="24" font-weight="600" fill="#172b4d" data-role="stage-title">09:52 | Clean point</text>
+    <text x="64" y="274" font-size="20" font-weight="400" fill="#172b4d" data-role="stage-body">Known to predate</text>
+    <text x="64" y="304" font-size="20" font-weight="400" fill="#172b4d" data-role="stage-body">the corruption.</text>
+    <text x="64" y="334" font-size="20" font-weight="400" fill="#172b4d" data-role="stage-body">Initial restore candidate.</text>
+  </g>
+  <g data-card="2">
+    <rect data-role="card-boundary" x="440" y="145" width="320" height="270" rx="10" fill="#fff5f5" stroke="#8aa8c2" stroke-width="1.5" />
+    <circle cx="472" cy="177" r="18" fill="#a4262c" />
+    <text x="472" y="184" font-size="21" font-weight="700" fill="#ffffff" text-anchor="middle" data-role="stage-number">2</text>
+    <svg id="card2-e4e764cd-2e73-472f-b88a-bf8bfc2c2994" width="46" height="46" viewBox="0 0 18 18" x="690" y="157" aria-hidden="true" data-source-icon="management + governance\00001-icon-service-Monitor.svg">
+      <defs>
+        <radialGradient id="card2-ac8b32da-30ca-4b92-8d0f-8d2d5ef278a0" cx="5.72" cy="7.45" r="8.42" gradientTransform="translate(3.23 1.51) scale(1.01 1.01)" gradientUnits="userSpaceOnUse">
+          <stop offset="0.18" stop-color="#5ea0ef" />
+          <stop offset="0.56" stop-color="#5c9fee" />
+          <stop offset="0.69" stop-color="#559ced" />
+          <stop offset="0.78" stop-color="#4a97e9" />
+          <stop offset="0.86" stop-color="#3990e4" />
+          <stop offset="0.93" stop-color="#2387de" />
+          <stop offset="0.99" stop-color="#087bd6" />
+          <stop offset="1" stop-color="#0078d4" />
+        </radialGradient>
+        <radialGradient id="card2-a9954820-cb38-4943-9842-f0a568d2b015" cx="28.18" cy="202.29" r="2.7" gradientTransform="translate(-17.77 -185.01) scale(0.95)" gradientUnits="userSpaceOnUse">
+          <stop offset="0.19" stop-color="#8c8e90" />
+          <stop offset="0.35" stop-color="#848688" />
+          <stop offset="0.6" stop-color="#6e7071" />
+          <stop offset="0.91" stop-color="#4a4b4c" />
+          <stop offset="1" stop-color="#3e3f3f" />
+        </radialGradient>
+      </defs>
+      <title>Icon-manage-317</title>
+      <ellipse cx="9" cy="9" rx="8.5" ry="8.47" fill="url(#card2-ac8b32da-30ca-4b92-8d0f-8d2d5ef278a0)" />
+      <ellipse cx="9" cy="9" rx="7.4" ry="7.37" fill="#fff" />
+      <path d="M2.72,9.44a6.24,6.24,0,0,0,1.82,4l2-2a3.53,3.53,0,0,1-1-2Z" fill="#9cebff" />
+      <path d="M13.13,4.27A6.25,6.25,0,0,0,9.44,2.74V5.53a3.41,3.41,0,0,1,1.71.7Z" fill="#32bedd" />
+      <path d="M4.87,4.27l2,2a3.41,3.41,0,0,1,1.71-.7V2.74A6.25,6.25,0,0,0,4.87,4.27Z" fill="#32bedd" />
+      <path d="M11.78,6.85a3.6,3.6,0,0,1,.71,1.71h2.79a6.16,6.16,0,0,0-1.53-3.67Z" fill="#32bedd" />
+      <path d="M6.22,6.85l-2-2A6.16,6.16,0,0,0,2.72,8.56H5.51A3.6,3.6,0,0,1,6.22,6.85Z" fill="#50e6ff" />
+      <path d="M14.14,7a.45.45,0,0,0-.57-.25L9.45,8.41l.32.81,4.12-1.63A.44.44,0,0,0,14.14,7Z" fill="#f04049" />
+      <ellipse cx="9" cy="9" rx="1.2" ry="1.2" fill="url(#card2-a9954820-cb38-4943-9842-f0a568d2b015)" />
+    </svg>
+    <text x="464" y="233" font-size="23" font-weight="600" fill="#172b4d" data-role="stage-title">10:04 | Corruption</text>
+    <text x="464" y="274" font-size="20" font-weight="400" fill="#172b4d" data-role="stage-body">Application evidence</text>
+    <text x="464" y="304" font-size="20" font-weight="400" fill="#172b4d" data-role="stage-body">identifies when the</text>
+    <text x="464" y="334" font-size="20" font-weight="400" fill="#172b4d" data-role="stage-body">bad state began.</text>
+  </g>
+  <g data-card="3">
+    <rect data-role="card-boundary" x="840" y="145" width="320" height="270" rx="10" fill="#fff5f5" stroke="#8aa8c2" stroke-width="1.5" />
+    <circle cx="872" cy="177" r="18" fill="#a4262c" />
+    <text x="872" y="184" font-size="21" font-weight="700" fill="#ffffff" text-anchor="middle" data-role="stage-number">3</text>
+    <svg id="card3-b4d0e6e2-12c1-4275-b717-890060dd1560" width="46" height="46" viewBox="0 0 18 18" x="1090" y="157" aria-hidden="true" data-source-icon="storage\00017-icon-service-Recovery-Services-Vaults.svg">
+      <defs>
+        <linearGradient id="card3-f1a30f9e-7f48-44e2-9483-6a6db8928977" x1="11.13" y1="10.95" x2="11.13" y2="1.21" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#0078d4" />
+          <stop offset="0.16" stop-color="#1380da" />
+          <stop offset="0.53" stop-color="#3c91e5" />
+          <stop offset="0.82" stop-color="#559cec" />
+          <stop offset="1" stop-color="#5ea0ef" />
+        </linearGradient>
+        <linearGradient id="card3-b4a5ed8d-a28d-4d26-9aad-a57e6ad0c0b9" x1="7.06" y1="16.79" x2="7.06" y2="6.78" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#198ab3" />
+          <stop offset="0.13" stop-color="#21a0c7" />
+          <stop offset="0.31" stop-color="#28b7db" />
+          <stop offset="0.5" stop-color="#2ec7ea" />
+          <stop offset="0.72" stop-color="#31d1f2" />
+          <stop offset="1" stop-color="#32d4f5" />
+        </linearGradient>
+      </defs>
+      <title>Icon-manage-315</title>
+      <path d="M18,7.9a3.09,3.09,0,0,0-2.68-3,3.89,3.89,0,0,0-4-3.72A4,4,0,0,0,7.5,3.81,3.68,3.68,0,0,0,4.26,7.36,3.74,3.74,0,0,0,8.13,11l.34,0h6.26l.17,0A3.13,3.13,0,0,0,18,7.9Z" fill="url(#card3-f1a30f9e-7f48-44e2-9483-6a6db8928977)" />
+      <path d="M14.39,5.22,12.56,3.44c-.2-.2-.37-.13-.37.18v.8a.22.22,0,0,1-.23.22c-1.18,0-4.47.31-4.59,4.81a.23.23,0,0,0,.23.23H8.77A.23.23,0,0,0,9,9.43,2.76,2.76,0,0,1,12,6.1a.23.23,0,0,1,.23.23v.74c0,.37.12.43.37.18L14.39,5.6A.23.23,0,0,0,14.39,5.22Z" fill="#fff" />
+      <path d="M14.12,13.66a3.17,3.17,0,0,0-2.75-3.05A4,4,0,0,0,7.25,6.78,4.1,4.1,0,0,0,3.33,9.46,3.78,3.78,0,0,0,0,13.1a3.84,3.84,0,0,0,4,3.69h6.78a.47.47,0,0,0,.17,0A3.21,3.21,0,0,0,14.12,13.66Z" fill="url(#card3-b4a5ed8d-a28d-4d26-9aad-a57e6ad0c0b9)" />
+    </svg>
+    <text x="864" y="233" font-size="24" font-weight="600" fill="#172b4d" data-role="stage-title">10:08 | Later point</text>
+    <text x="864" y="274" font-size="20" font-weight="400" fill="#172b4d" data-role="stage-body">Backup job succeeded,</text>
+    <text x="864" y="304" font-size="20" font-weight="400" fill="#172b4d" data-role="stage-body">but its data contains</text>
+    <text x="864" y="334" font-size="20" font-weight="400" fill="#172b4d" data-role="stage-body">the affected state.</text>
+  </g>
+  <polyline points="372,280 428,280" fill="none" stroke="#426789" stroke-width="2.5" marker-end="url(#arrow)" data-role="connector" />
+  <polyline points="772,280 828,280" fill="none" stroke="#426789" stroke-width="2.5" marker-end="url(#arrow)" data-role="connector" />
+  <text x="40" y="478" font-size="25" font-weight="600" fill="#172b4d">Recovery decision</text>
+  <text x="40" y="521" font-size="23" font-weight="600" fill="#176b3a">Restore 09:52 into an isolated environment.</text>
+  <text x="40" y="561" font-size="21" font-weight="400" fill="#172b4d">Replay application logs only when the supported recovery process proves they are safe.</text>
+  <text x="40" y="602" font-size="21" font-weight="400" fill="#172b4d">A newer backup can faithfully preserve an application fault.</text>
+</svg>

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-local-backup-disaster-recovery.recover-failed-node
+metadata:
+  title: Recover a Failed Azure Local Node
+  description: Select a supported Azure Local node repair path, preserve retained disks, assess surviving capacity, and confirm restored platform resilience.
+  ms.date: 11/06/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Recover a failed Azure Local node
+durationInMinutes: 12
+content: |
+  [!include[](includes/5-recover-failed-node.md)]

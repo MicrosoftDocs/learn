@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-local-backup-disaster-recovery.restore-workloads-isolation
+metadata:
+  title: Restore Workloads in Isolation
+  description: Select a clean recovery point, prepare an isolated destination, restore Azure Local workloads, and validate application integrity before release.
+  ms.date: 11/06/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Restore workloads in isolation
+durationInMinutes: 6
+content: |
+  [!include[](includes/7-restore-workloads-isolation.md)]

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-local-backup-disaster-recovery.inspect-protection-evidence
+metadata:
+  title: Inspect Protection Evidence
+  description: Inspect Azure Local protection coverage, replication health, backup jobs, recovery points, and alert delivery without assuming recoverability.
+  ms.date: 11/06/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Inspect protection evidence
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-inspect-protection-evidence.md)]

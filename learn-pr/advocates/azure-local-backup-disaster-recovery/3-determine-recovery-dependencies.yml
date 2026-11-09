@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-local-backup-disaster-recovery.determine-recovery-dependencies
+metadata:
+  title: Determine Recovery Dependencies
+  description: Design Azure Local recovery around independent copies, usable recovery points, target capacity, backup infrastructure, connectivity, and trust.
+  ms.date: 11/06/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Determine recovery dependencies
+durationInMinutes: 22
+content: |
+  [!include[](includes/3-determine-recovery-dependencies.md)]
