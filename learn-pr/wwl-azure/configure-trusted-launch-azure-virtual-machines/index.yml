@@ -27,9 +27,9 @@ metadata:
   gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/configure-trusted-launch-azure-virtual-machines/index.yml
   title: Configure Trusted Launch Security Features for Azure Virtual Machines
   description: "Configure Trusted Launch security features for Azure virtual machines. Enable Secure Boot, vTPM, and integrity monitoring to protect against boot-level malware and rootkits. Then upgrade existing VMs to the Trusted Launch security type, and enforce adoption at scale using Azure Policy."
-  ms.date: 05/11/2026
-  author: r-c-stewart
-  ms.author: lumac
+  ms.date: 11/01/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: module
   ms.service: azure-virtual-machines
   ai-usage: ai-assisted

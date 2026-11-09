@@ -3,9 +3,9 @@ uid: learn.wwl.configure-trusted-launch-azure-virtual-machines.knowledge-check
 metadata:
   title: Knowledge check
   description: Check your knowledge of Trusted Launch components, VM security types, and enforcing Trusted Launch adoption using Azure Policy.
-  ms.date: 05/11/2026
-  author: r-c-stewart
-  ms.author: lumac
+  ms.date: 11/01/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
   ai-usage: ai-generated
 title: Knowledge check
