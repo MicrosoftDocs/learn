@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.audit-ai-generated-python-code.exercise
+title: Exercise - Audit AI-generated code
+metadata:
+  title: Exercise - Audit AI-generated code
+  description: "Practice auditing AI-generated code by identifying incorrect information, inefficiencies, and issues."
+  ms.date: 10/19/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/6-exercise.md)]

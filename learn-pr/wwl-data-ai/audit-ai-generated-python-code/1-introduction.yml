@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.audit-ai-generated-python-code.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "Learn why it's important to review and audit AI-generated code and what you'll learn in this module."
+  ms.date: 10/19/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]
