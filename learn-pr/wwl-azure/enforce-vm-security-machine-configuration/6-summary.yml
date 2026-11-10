@@ -2,10 +2,10 @@
 uid: learn.wwl.enforce-vm-security-machine-configuration.summary
 metadata:
   title: Summary
-  description: Summary of enforcing VM security configuration with Azure Machine Configuration, covering extension capabilities, prerequisite deployment, built-in baseline policies, and custom configuration authoring.
-  ms.date: 05/11/2026
-  author: r-c-stewart
-  ms.author: lumac
+  description: Review how to audit built-in Windows and Linux security baselines, prepare Azure VMs and Arc-enabled servers, and safely deploy and operate custom configurations for selected OS settings.
+  ms.date: 11/07/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
   ai-usage: ai-assisted
 title: Summary
