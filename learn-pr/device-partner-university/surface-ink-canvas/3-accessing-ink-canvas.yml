@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.surface-ink-canvas.accessing-ink-canvas
+title: Accessing Ink Canvas
+metadata:
+  title: Accessing Ink Canvas
+  description: This content is part of the "Create and refine ideas with Ink Canvas on Surface" module.
+  ms.date: 11/09/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-accessing-ink-canvas.md)]
