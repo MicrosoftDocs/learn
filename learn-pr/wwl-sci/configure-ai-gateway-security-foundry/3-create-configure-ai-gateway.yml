@@ -3,7 +3,7 @@ uid: learn.wwl.configure-ai-gateway-security-foundry.create-configure-ai-gateway
 metadata:
   title: Create and configure AI Gateway
   description: Create an AI Gateway instance in Microsoft Foundry, configure route policies, set token rate limits, and apply security controls to govern AI model traffic.
-  ms.date: 04/21/2026
+  ms.date: 11/09/2026
   author: r-c-stewart
   ms.author: lumac
   ms.topic: unit

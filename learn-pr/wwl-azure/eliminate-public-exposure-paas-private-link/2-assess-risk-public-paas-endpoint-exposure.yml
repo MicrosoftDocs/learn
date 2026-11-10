@@ -4,7 +4,7 @@ title: Assess the risk of public PaaS endpoint exposure
 metadata:
   title: Assess the Risk of Public PaaS Endpoint Exposure
   description: "Assess the attack surface created by public PaaS endpoints, compare service endpoints and private endpoints, and understand data exfiltration scenarios that public endpoints enable."
-  ms.date: 11/01/2026
+  ms.date: 11/09/2026
   author: Orin-Thomas
   ms.author: orthomas
   ms.topic: unit

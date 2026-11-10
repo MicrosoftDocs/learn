@@ -214,10 +214,10 @@ At this point, you should have:
  - The Application (client) ID
  - The client secret or certificate
 
-To authenticate, send a post request to `https://login.microsoft.com` with the following parameters in the body:
+To authenticate, send a post request to `https://login.microsoftonline.com/<tenant-id>/oauth2/v2.0/token` with the following parameters in the body:
 
  - grant\_type: `client_credentials`
- - resource: `https://graph.microsoft.com`
+ - scope: `https://graph.microsoft.com/.default`
  - client\_id:
  - client\_secret:
 

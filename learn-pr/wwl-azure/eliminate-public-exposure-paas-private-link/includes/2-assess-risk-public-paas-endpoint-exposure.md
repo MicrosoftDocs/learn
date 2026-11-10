@@ -34,7 +34,7 @@ However, service endpoints leave critical security gaps:
 
 A **private endpoint** fundamentally changes the network architecture. Rather than accessing the service through its public IP, you deploy a network interface card (NIC) into your virtual network with a private IP address from your address space. The NIC connects to a specific Azure PaaS resource or a **sub-resource** (the specific service component you want to reach).
 
-When you create a private endpoint, Azure updates DNS configuration so the service FQDN resolves to the **private IP address** inside your virtual network instead of the public IP. Traffic from your virtual network to the PaaS service stays on the private IP path within the Microsoft network—it never reaches the public endpoint.
+When you create a private endpoint, you also need to update DNS configuration—typically by linking a private DNS zone to your virtual network—so the service FQDN resolves to the **private IP address** inside your virtual network instead of the public IP. Once DNS resolution is configured correctly, traffic from your virtual network to the PaaS service stays on the private IP path within the Microsoft network—it never reaches the public endpoint.
 
 With private endpoints deployed, you can disable the public endpoint entirely. The PaaS resource rejects traffic from public IP addresses, leaving only the private endpoint path available. Private endpoints provide:
 

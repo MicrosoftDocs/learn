@@ -4,7 +4,7 @@ title: Configure private endpoints to eliminate public PaaS exposure
 metadata:
   title: Configure Private Endpoints to Eliminate Public PaaS Exposure
   description: "Configure private endpoints and private DNS zone integration to route PaaS and AI service traffic through the private network, then disable public network access to complete the control."
-  ms.date: 11/01/2026
+  ms.date: 11/09/2026
   author: Orin-Thomas
   ms.author: orthomas
   ms.topic: unit

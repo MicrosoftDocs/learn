@@ -1,5 +1,8 @@
 Azure Dedicated HSM is an Azure service that provides cryptographic key storage in Azure. Dedicated HSM meets the most stringent security requirements. It's the ideal solution for customers who require FIPS 140-2 Level 3-validated devices and complete and exclusive control of the HSM appliance.
 
+> [!IMPORTANT]
+> Azure Dedicated HSM is being retired. Microsoft no longer accepts new customer onboardings for the service, and support for existing customers ends July 31, 2028. **Azure Cloud HSM** is the recommended successor for new single-tenant HSM requirements. The capabilities described in this unit remain accurate for existing Dedicated HSM deployments but shouldn't be used as guidance for new projects.
+
 HSM devices are deployed globally across several Azure regions. They can be easily provisioned as a pair of devices and configured for high availability. HSM devices can also be provisioned across regions to assure against regional-level failover. Microsoft delivers the Dedicated HSM service by using the Thales Luna 7 HSM model A790 appliances. This device offers the highest levels of performance and cryptographic integration options.
 
 After they're provisioned, HSM devices are connected directly to a customer’s virtual network. They can also be accessed by on-premises application and management tools when you configure point-to-site or site-to-site VPN connectivity. Customers get the software and documentation to configure and manage HSM devices from Thales customer support portal.
