@@ -1,0 +1,49 @@
+### YamlMime:Module
+uid: learn.wwl.get-started-foundry-voice-agents
+metadata:
+  title: Get started with voice agents in Microsoft Foundry
+  description: Learn how to create, configure, and test a voice agent in the Microsoft Foundry playground.
+  ms.date: 11/07/2026
+  author: buzahid
+  ms.author: buzahid
+  ai-usage: ai-assisted
+  ms.service: microsoft-foundry
+  ms.topic: module
+  ms.collection:
+    - wwl-ai-copilot
+title: Get started with voice agents in Microsoft Foundry
+summary: "Explore voice agents in Microsoft Foundry through a sample returns assistant. Create an agent, configure its instructions and voice, and test spoken conversations in the playground."
+abstract: |
+  By the end of this module, you're able to:
+  - Describe how voice agents listen, reason, and speak.
+  - Create a voice agent in Microsoft Foundry.
+  - Configure instructions, a voice, and a greeting for a focused scenario.
+  - Test spoken conversations and adjust turn detection in the Foundry playground.
+prerequisites: |
+  - Familiarity with Azure and the Azure portal.
+  - An understanding of generative AI. You can learn more with [Fundamentals of Generative AI](/training/modules/fundamentals-generative-ai/).
+  - It's highly recommended you have experience with the Microsoft Foundry Agent Service. You can learn more with [Develop an AI agent with Microsoft Foundry Agent Service](/training/modules/develop-ai-agent-azure/).
+  - Basic understanding of conversational AI and natural language processing concepts.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - beginner
+roles:
+  - ai-engineer
+  - developer
+  - solution-architect
+  - student
+products:
+  - microsoft-foundry
+  - foundry-agent-service
+subjects:
+  - artificial-intelligence
+units:
+- learn.wwl.get-started-foundry-voice-agents.introduction
+- learn.wwl.get-started-foundry-voice-agents.key-decision-points
+- learn.wwl.get-started-foundry-voice-agents.configuration-layers
+- learn.wwl.get-started-foundry-voice-agents.building-and-tuning
+- learn.wwl.get-started-foundry-voice-agents.exercise
+- learn.wwl.get-started-foundry-voice-agents.knowledge-check
+- learn.wwl.get-started-foundry-voice-agents.summary
+badge:
+  uid: learn.wwl.get-started-foundry-voice-agents.badge
