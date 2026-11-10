@@ -5,7 +5,7 @@ You can access the audit log through GitHub.com or GitHub Enterprise Server. Int
 > [!TIP]
 > Suppose a critical repository vanished overnight. You’ll use the audit logs to pinpoint the deletion event and restore continuity.
 
-## What are Log Records?
+## What are log records?
 
 Your organization’s audit log records actions taken by organization members. Available to organization owners, the log provides information about actions that affect the organization, including:
 
@@ -122,7 +122,7 @@ Stream logs in real time to SIEM platforms (Splunk, Datadog) for long-term stora
 - **Enterprise Managed Users (EMU):** Includes `user.login`, `repository.permissions_updated`, `repository.forked`.  
 - **Token Usage:** Filter by `phrase=token` to identify compromised credentials.  
 
-## Key security features of a GitHub Repository
+## Key security features of a GitHub repository
 
 - **SECURITY.md:** Define reporting process and supported versions.  
 - **Branch Protection:** Enforce reviews, status checks, and commit signing.  
