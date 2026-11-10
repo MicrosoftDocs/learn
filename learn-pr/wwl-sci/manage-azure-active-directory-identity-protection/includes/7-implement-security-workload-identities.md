@@ -1,4 +1,4 @@
-Microsoft Entra Identity Protection has historically protected users in detecting, investigating, and remediating identity-based risks. Identity protection has extended these capabilities to workload identities to protect applications, service principals, and Managed Identities.
+Microsoft Entra Identity Protection has historically protected users in detecting, investigating, and remediating identity-based risks. Identity protection has extended these capabilities to workload identities to protect applications and service principals. Managed identities aren't currently in scope for workload identity risk detection.
 
 A workload identity is an identity that allows an application or service principal access to resources, sometimes in the context of a user. These workload identities differ from traditional user accounts as they:
 

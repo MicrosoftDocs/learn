@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.enable-defender-cloud-azure-subscription.configure-defender-for-cloud-enhanced-security-features
-title: Exercise - Configuring Microsoft Defender for Cloud for Enhanced Protection
+title: Exercise - configuring Microsoft Defender for Cloud for enhanced protection
 metadata:
   title: Exercise - Configuring Microsoft Defender for Cloud for Enhanced Protection
   description: "Exercise - Configuring Microsoft Defender for Cloud for Enhanced Protection"
-  ms.date: 10/21/2024
-  author: wwlpublish
-  ms.author: lumac
+  ms.date: 11/07/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
   ms.custom:
   - N/A

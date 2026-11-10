@@ -4,9 +4,9 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 10/21/2024
-  author: wwlpublish
-  ms.author: lumac
+  ms.date: 11/07/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
   ms.custom:
   - N/A
@@ -15,30 +15,29 @@ durationInMinutes: 3
 content: |
   [!include[](includes/4-knowledge-check.md)]
 quiz:
-  title: "Check your knowledge"
   questions:
-  - content: "A team is tasked with enabling Microsoft Defender for Cloud on their Azure portal. They need to protect a specific subscription or workspace. After selecting 'Environment settings' in the Defender for Cloud menu, what should they do next?"
+  - content: "You have reviewed costs and have permission to enable Defender for Servers Plan 2. After opening Environment settings, what should you do?"
     choices:
-    - content: "They should disable all of the plans for Defender for Cloud."
+    - content: "Disable all Defender plans."
       isCorrect: false
-      explanation: "Incorrect. Disabling all plans would not provide the protection they are seeking."
-    - content: "They should uninstall the extensions used by the plan."
+      explanation: "Incorrect. Disabling plans removes protection rather than enabling the intended Servers plan."
+    - content: "Uninstall monitoring extensions from all machines."
       isCorrect: false
-      explanation: "Incorrect. Uninstalling the extensions would stop data collection, not enable protection."
-    - content: "They should select the subscription or workspace they want to protect and then select 'Enable all' to enable all of the plans for Defender for Cloud."
+      explanation: "Incorrect. Removing monitoring components doesn't enable a workload protection plan."
+    - content: "Select the Azure subscription, enable Servers, confirm Plan 2, and save. Then verify resource coverage and relevant component status."
       isCorrect: true
-      explanation: "Correct. This action enables all plans and deploys the necessary monitoring components to the protected resources."
-  - content: "A team is tasked with securing their company's cloud applications. They are using Microsoft Defender for Cloud to unify security management, enhance security posture, and protect workloads. What should they do to ensure comprehensive end-to-end protection across their multicloud environment?"
+      explanation: "Correct. Enable the required plan at the intended scope. Saving its configuration doesn't prove that every resource is fully onboarded."
+  - content: "A team wants to begin assessing the security posture of its Azure resources with Defender for Cloud. Which action is an appropriate first step?"
     choices:
-    - content: "Disconnect Azure subscriptions from Microsoft Defender for Cloud."
+    - content: "Disconnect its Azure subscriptions from Defender for Cloud."
       isCorrect: false
-      explanation: "Incorrect. Disconnecting Azure subscriptions from Microsoft Defender for Cloud would not enhance security monitoring or threat protection."
-    - content: "Avoid integrating Azure subscriptions for security monitoring."
+      explanation: "Incorrect. Disconnecting isn't an onboarding action."
+    - content: "Avoid connecting its Azure subscriptions for security monitoring."
       isCorrect: false
-      explanation: "Incorrect. Not integrating Azure subscriptions would limit the ability to manage and ensure compliance across connected Azure subscriptions."
-    - content: "Connect Azure subscriptions to Microsoft Defender for Cloud."
+      explanation: "Incorrect. The Azure resources must be in the connected scope for assessment."
+    - content: "Open Defender for Cloud in the Azure portal and confirm the intended subscription."
       isCorrect: true
-      explanation: "Correct. Connecting Azure subscriptions to Microsoft Defender for Cloud enhances security monitoring, manages compliance, and implements best practices for threat protection."
+      explanation: "Correct. This starts foundational Azure onboarding. Workload protection plans and any AWS, GCP, or development-environment connections require their own configuration."
   - content: "A security analyst is tasked with configuring and enabling Microsoft Defender for Cloud within an Azure subscription to monitor and protect cloud resources against security threats. What is the primary function of Microsoft Defender for Cloud?"
     choices:
     - content: "It provides a user interface for managing Azure resources."
@@ -58,6 +57,17 @@ quiz:
     - content: "It provides a user-friendly interface for managing Azure subscriptions."
       isCorrect: false
       explanation: "Incorrect. Although Microsoft Defender for Cloud does have a user-friendly interface, its primary benefit is not in managing Azure subscriptions."
-    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
+    - content: "Provides centralized visibility into resource security posture, with continuous assessments and actionable security recommendations."
       isCorrect: true
-      explanation: "Correct. Connecting Azure subscriptions to Microsoft Defender for Cloud enables automation and validation of environment creation and teardown, enhancing security and stability."
+      explanation: "Correct. Foundational CSPM provides security visibility and recommendations. Additional workload protection depends on the relevant Defender plans and configuration. Connecting a subscription doesn't automatically create or tear down application environments."
+  - content: "A compliance control can't be automatically assessed. What does that mean?"
+    choices:
+    - content: "The control has passed."
+      isCorrect: false
+      explanation: "Incorrect. An unavailable automated assessment isn't evidence of compliance."
+    - content: "The control requires review and appropriate evidence rather than assuming an automated pass."
+      isCorrect: true
+      explanation: "Correct. Some controls require manual assessment or evidence. The dashboard doesn't certify organizational compliance."
+    - content: "All Defender plans must be disabled and enabled again."
+      isCorrect: false
+      explanation: "Incorrect. Restarting plan configuration doesn't provide the missing compliance evidence."

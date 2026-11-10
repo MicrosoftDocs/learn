@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.audit-ai-generated-python-code.how-to-code-review
+title: How to code review
+metadata:
+  title: How to Code Review
+  description: "Learn effective code review techniques and best practices for reviewing AI-generated code."
+  ms.date: 10/19/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-how-to-code-review.md)]

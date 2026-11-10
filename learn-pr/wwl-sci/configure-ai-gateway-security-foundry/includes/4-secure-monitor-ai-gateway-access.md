@@ -45,14 +45,14 @@ In Azure Monitor, create a dashboard that displays these metrics over time. Add 
 Use KQL queries to analyze log data for specific insights. The following query summarizes successful request volume by API route over the past 24 hours, grouped by hour—helping you identify which model deployments are most heavily used and detect sudden changes in traffic patterns:
 
 ```kusto
-GatewayLogs
+ApiManagementGatewayLogs
 | where TimeGenerated > ago(24h)
 | where ResponseCode == 200
 | summarize TotalRequests = count() by ApiName, bin(TimeGenerated, 1h)
 | order by TotalRequests desc
 ```
 
-This query uses the **GatewayLogs** table in the Log Analytics workspace connected to your Azure API Management instance. It surfaces successful request volume by API name over the past 24 hours, helping you identify which model deployments are most heavily used and detect sudden changes in traffic patterns. If request volume for a specific API spikes unexpectedly, investigate for application errors or unauthorized access.
+This query uses the **ApiManagementGatewayLogs** table in the Log Analytics workspace connected to your Azure API Management instance. It surfaces successful request volume by API name over the past 24 hours, helping you identify which model deployments are most heavily used and detect sudden changes in traffic patterns. If request volume for a specific API spikes unexpectedly, investigate for application errors or unauthorized access.
 
 :::image type="content" source="../media/gateway-monitoring-pipeline.png" alt-text="Diagram showing the monitoring pipeline: AI Gateway logs flow through diagnostic settings to Log Analytics, triggering Azure Monitor alerts to the security team." lightbox="../media/gateway-monitoring-pipeline.png":::
 

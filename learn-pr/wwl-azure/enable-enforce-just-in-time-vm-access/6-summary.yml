@@ -2,13 +2,13 @@
 uid: learn.wwl.enable-enforce-just-in-time-vm-access.summary
 metadata:
   title: Summary
-  description: Summary of enabling and enforcing just-in-time VM access, covering JIT requirements, policy configuration, access requests, activity auditing, and Azure Policy enforcement.
-  ms.date: 05/11/2026
-  author: r-c-stewart
-  ms.author: lumac
+  description: Summarize JIT prerequisites, effective network controls, configuration, access requests, audit retention, and Azure Policy monitoring combined with controlled provisioning.
+  ms.date: 11/01/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
   ai-usage: ai-assisted
 title: Summary
-durationInMinutes: 2
+durationInMinutes: 3
 content: |
   [!include[](includes/6-summary.md)]

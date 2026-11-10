@@ -1,0 +1,60 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.audit-ai-generated-python-code.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Check your understanding of auditing AI-generated code."
+  author: wwlpublish
+  ms.author: buzahid
+  ms.date: 10/19/2026
+  ms.topic: unit
+  module_assessment: true
+  ai_generated_module_assessment: false
+durationInMinutes: 4
+content: |
+quiz:
+  questions:
+  - content: "Which example shows incorrect information in AI-generated code?"
+    choices:
+    - content: "Code that uses documented functions with the correct parameters"
+      isCorrect: false
+      explanation: "Incorrect. Using documented functions with the correct parameters doesn't indicate incorrect information."
+    - content: "Code that looks correct but uses nonexistent functions or makes false assumptions"
+      isCorrect: true
+      explanation: "Correct. AI can generate plausible but incorrect information, such as function names that don't exist or false assumptions about an API."
+    - content: "Code that raises a documented exception when it receives invalid input"
+      isCorrect: false
+      explanation: "Incorrect. Raising a documented exception for invalid input can be expected behavior, rather than evidence of incorrect information."
+  - content: "What should you always check when reviewing AI-generated code?"
+    choices:
+    - content: "Only that it follows style conventions"
+      isCorrect: false
+      explanation: "Incorrect. While style matters, code review should include correctness, efficiency, and security."
+    - content: "Whether functions and modules actually exist, if the logic is correct, if errors are handled, and if the code has security risks"
+      isCorrect: true
+      explanation: "Correct. A complete review checks correctness, error handling, efficiency, and security."
+    - content: "Only that the code runs without errors"
+      isCorrect: false
+      explanation: "Incorrect. Code can run but still have logical errors, inefficiencies, or security issues."
+  - content: "How can you identify inefficiencies in AI-generated code?"
+    choices:
+    - content: "By reading the variable names"
+      isCorrect: false
+      explanation: "Incorrect. Variable names don't indicate performance characteristics. You need to analyze the logic."
+    - content: "By checking for unnecessary loops, redundant operations, or inefficient algorithms"
+      isCorrect: true
+      explanation: "Correct. Look for algorithmic inefficiencies, redundant operations, and opportunities for optimization."
+    - content: "By counting the total number of lines"
+      isCorrect: false
+      explanation: "Incorrect. Line count doesn't determine efficiency. An efficient solution can be short or long."
+  - content: "AI-generated code builds a SQL query from user input. Which change makes the query safe?"
+    choices:
+    - content: "Escape quote characters with str.replace() before you insert the input into the f-string"
+      isCorrect: false
+      explanation: "Incorrect. Manual escaping is easy to get wrong, and the query is still built from text. Use a parameterized query instead."
+    - content: "Pass the input as a parameter, such as cursor.execute(\"SELECT * FROM users WHERE name = ?\", (name,))"
+      isCorrect: true
+      explanation: "Correct. The database driver treats the parameter as data, not as part of the SQL statement."
+    - content: "Convert the input to uppercase before you run the query"
+      isCorrect: false
+      explanation: "Incorrect. Changing case doesn't stop injection. The input can still change the meaning of the query."
