@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.dpu.windows-11-version-26h2
+title: 'Get ready for Windows 11, version 26H2: What to evaluate before deployment'
+metadata:
+  title: 'Get Ready For Windows 11, Version 26h2: What To Evaluate Before Deployment'
+  description: 'In this module, you follow a business as it reviews Windows 11, version 26H2, then examine how Microsoft recommends organizations validate and deploy the update.'
+  ms.date: 11/09/2026
+  author: sheridan-connor
+  ms.author: v-csheridan
+  ms.topic: module
+  ms.service: windows-11
+summary: >2+ 
+  Windows 11, version 26H2 is the 2026 annual feature update for Windows 11, building on the shared servicing foundation of versions 24H2 and 25H2 and capabilities delivered through monthly servicing updates. In this module, you follow Contoso as it evaluates the 26H2 servicing model, key productivity, accessibility, security, management, and AI-related experiences and their requirements, and considerations for validating the update before broader deployment.
+abstract: |2+
+  By the end of this module, you'll be able to:
+    - Explain how the servicing model for Windows 11, version 26H2 relates to continuous innovation and the annual feature-update cadence.
+    - Describe selected productivity, accessibility, security, management, recovery, and AI-related experiences associated with Windows 11, version 26H2.
+    - Distinguish Windows 11 update eligibility from requirements that apply to individual Windows experiences.
+    - Identify considerations for validating and planning a Windows 11, version 26H2 deployment.
+
+prerequisites: |
+  - None
+iconUrl: /training/achievements/windows-11-version-26h2.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - administrator
+  - business-leader
+  - business-owner
+  - business-user
+  - technology-manager
+products:
+  - windows-11
+units:
+  - learn.dpu.windows-11-version-26h2.introduction
+  - learn.dpu.windows-11-version-26h2.servicing-continuous-innovation
+  - learn.dpu.windows-11-version-26h2.productivity-windows-experiences
+  - learn.dpu.windows-11-version-26h2.security-management-recovery
+  - learn.dpu.windows-11-version-26h2.accessibility-ai-experiences
+  - learn.dpu.windows-11-version-26h2.deployment-validation-considerations
+  - learn.dpu.windows-11-version-26h2.knowledge-check
+  - learn.dpu.windows-11-version-26h2.summary
+badge:
+  uid: learn.dpu.windows-11-version-26h2.badge
