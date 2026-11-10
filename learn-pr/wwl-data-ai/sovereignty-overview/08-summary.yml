@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.sovereignty-overview.summary
+title: Summary
+metadata:
+  title: Summary
+  description: Review how Microsoft Sovereign Cloud models, digital commitments, and evidence-based risk management support workload-specific sovereignty requirements.
+  ms.date: 11/9/2026
+  author: salisburysimon
+  ms.author: sidicken
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/08-summary.md)]

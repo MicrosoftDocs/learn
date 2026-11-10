@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.sovereignty-overview.risk-resilience-framework
+title: Explore the sovereignty risk and resilience framework
+metadata:
+  zone_pivot_groups: video-or-text
+  title: Explore the sovereignty risk and resilience framework
+  description: Use evidence, likelihood, impact, mitigations, and accountable risk decisions to select and review a workload's sovereignty posture.
+  ms.date: 11/9/2026
+  author: salisburysimon
+  ms.author: sidicken
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/06-risk-resilience-framework.md)]

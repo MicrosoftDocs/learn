@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.windows-11-version-26h2.security-management-recovery
+title: Security, management, and recovery
+metadata:
+  title: Security, Management, And Recovery
+  description: 'This content is part of the "Get ready for Windows 11, version 26H2: What to evaluate before deployment" module.'
+  ms.date: 11/09/2026
+  author: sheridan-connor
+  ms.author: v-csheridan
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-security-management-recovery.md)]

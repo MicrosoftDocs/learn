@@ -1,0 +1,84 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.windows-11-version-26h2.knowledge-check
+title: Module assessment
+metadata:
+  title: Module Assessment
+  description: 'This content is part of the "Get ready for Windows 11, version 26H2: What to evaluate before deployment" module.'
+  ms.date: 11/09/2026
+  author: sheridan-connor
+  ms.author: v-csheridan
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Why can eligible devices running Windows 11, version 24H2 or 25H2 move to version 26H2 through an enablement package?"
+    choices:
+        - content: "The versions share a common servicing branch and underlying codebase"
+          isCorrect: true
+          explanation: ""
+        - content: "The enablement package performs a clean installation of Windows"
+          isCorrect: false
+          explanation: ""
+        - content: "Version 26H2 replaces existing Windows servicing processes"
+          isCorrect: false
+          explanation: ""
+        - content: "All version 26H2 capabilities are already enabled on those devices"
+          isCorrect: false
+          explanation: ""
+  - content: "A device is eligible to update to Windows 11, version 26H2. What should an IT team determine before assuming a specific 26H2 experience will be available on that device?"
+    choices:
+        - content: "Whether the device has completed a clean installation"
+          isCorrect: false
+          explanation: ""
+        - content: "Whether the experience has additional hardware, licensing, subscription, or configuration requirements"
+          isCorrect: true
+          explanation: ""
+        - content: "Whether every security capability is enabled by default"
+          isCorrect: false
+          explanation: ""
+        - content: "Whether the organization has created a new deployment process specifically for 26H2"
+          isCorrect: false
+          explanation: ""
+  - content: "Which Windows 11, version 26H2 capability is enabled by default for eligible commercial devices and can preserve supported Windows settings and Microsoft Store app lists?"
+    choices:
+        - content: "Administrator protection"
+          isCorrect: false
+          explanation: ""
+        - content: "Built-in Sysmon"
+          isCorrect: false
+          explanation: ""
+        - content: "Windows settings backup"
+          isCorrect: true
+          explanation: ""
+        - content: "Quick machine recovery"
+          isCorrect: false
+          explanation: ""
+  - content: "What approach does Microsoft recommend before broadly deploying Windows 11, version 26H2?"
+    choices:
+        - content: "Deploy immediately to all eligible devices and validate afterward"
+          isCorrect: false
+          explanation: ""
+        - content: "Replace existing update rings with a deployment process created specifically for 26H2"
+          isCorrect: false
+          explanation: ""
+        - content: "Wait until every 26H2 capability is supported on every device"
+          isCorrect: false
+          explanation: ""
+        - content: "Begin with targeted deployments to validate applications, devices, and business-critical workflows"
+          isCorrect: true
+          explanation: ""
+  - content: "A device meets the relevant version requirements for Windows 11, version 26H2, but the update isn't currently offered. Which documented factor could explain this situation?"
+    choices:
+        - content: "A safeguard hold related to a known compatibility issue"
+          isCorrect: true
+          explanation: ""
+        - content: "Administrator protection is turned off"
+          isCorrect: false
+          explanation: ""
+        - content: "The device doesn't have a Copilot license"
+          isCorrect: false
+          explanation: ""
+        - content: "Windows settings backup is enabled"
+          isCorrect: false
+          explanation: ""

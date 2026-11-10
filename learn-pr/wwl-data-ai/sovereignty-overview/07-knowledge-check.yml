@@ -1,0 +1,98 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.sovereignty-overview.check
+title: Module assessment
+metadata:
+  title: Module Assessment
+  description: Check your understanding of Microsoft Sovereign Cloud models, sovereignty controls, digital commitments, and risk and resilience decisions.
+  ms.date: 11/9/2026
+  author: salisburysimon
+  ms.author: sidicken
+  ms.topic: unit
+durationInMinutes: 6
+quiz:
+  title: Check what you learned
+  questions:
+  - content: Which statement best describes Microsoft Sovereign Cloud?
+    choices:
+    - content: A separate public cloud that requires every sovereign workload to migrate to a new region.
+      isCorrect: false
+      explanation: Incorrect. Sovereign Public Cloud builds on existing hyperscale cloud regions, and the broader portfolio also includes private and partner options.
+    - content: A workload-based continuum across Sovereign Public Cloud, Sovereign Private Cloud, and the Sovereign Partner Ecosystem.
+      isCorrect: true
+      explanation: Correct. Organizations can combine public, customer-operated private, and partner capabilities to apply the appropriate controls to each workload.
+    - content: A disconnected private cloud that replaces public cloud services for all regulated customers.
+      isCorrect: false
+      explanation: Incorrect. Disconnected operations are an option for workloads that require them, not a requirement for every regulated workload.
+    - content: A locally owned partner cloud that is the only way to use Microsoft sovereignty controls.
+      isCorrect: false
+      explanation: Incorrect. National Partner Clouds support local ownership requirements, but sovereignty controls also exist in public and private models.
+  - content: A team needs to protect sensitive data while it's being processed in memory. Which control most directly addresses this need?
+    choices:
+    - content: Deploy the application in a chosen Azure region.
+      isCorrect: false
+      explanation: Incorrect. Region selection supports residency requirements but doesn't by itself isolate data during processing.
+    - content: Require approval for applicable support access requests through Customer Lockbox.
+      isCorrect: false
+      explanation: Incorrect. Customer Lockbox governs applicable support access requests, rather than providing hardware-based protection for data in use.
+    - content: Use a supported confidential computing workload in a hardware-based, attested trusted execution environment.
+      isCorrect: true
+      explanation: Correct. Confidential computing extends protection to data in use. It must be supported and properly configured; encryption at rest alone doesn't provide this protection.
+    - content: Apply a location-based sign-in policy.
+      isCorrect: false
+      explanation: Incorrect. A location-based sign-in policy controls user access, not the protection of data in memory during computation.
+  - content: A defense workload must run on customer-managed infrastructure and continue operating without a connection to Azure public cloud services. Which model should the team evaluate first?
+    choices:
+    - content: Sovereign Public Cloud in an existing Azure region.
+      isCorrect: false
+      explanation: Incorrect. Public cloud controls don't turn a workload into a customer-operated, disconnected deployment.
+    - content: Sovereign Private Cloud with supported disconnected capabilities.
+      isCorrect: true
+      explanation: Correct. Sovereign Private Cloud supports customer-operated environments, including disconnected scenarios. The team must verify the capabilities and dependencies required by its workload.
+    - content: A National Partner Cloud solely because the organization operates in defense.
+      isCorrect: false
+      explanation: Incorrect. National Partner Clouds address local ownership and operation requirements, but the stated need is customer-managed, disconnected infrastructure. Industry alone doesn't determine the model.
+    - content: A public cloud deployment with geographic sign-in restrictions.
+      isCorrect: false
+      explanation: Incorrect. Geographic sign-in restrictions don't provide disconnected operation or customer ownership of the infrastructure.
+  - content: A multinational organization faces different sovereignty requirements in each country/region. Which approach best aligns with the digital commitments model described in this module?
+    choices:
+    - content: Apply one identical control set globally without reviewing local obligations.
+      isCorrect: false
+      explanation: Incorrect. A common baseline is useful. Regional and national requirements might need more controls or different operating models.
+    - content: Choose a single cloud model once and reuse it for every workload.
+      isCorrect: false
+      explanation: Incorrect. Data sensitivity, jurisdiction, operator access, and continuity requirements can differ between workloads.
+    - content: Use only disconnected private cloud in every country/region.
+      isCorrect: false
+      explanation: Incorrect. Disconnection is appropriate for some requirements, but it isn't a universal requirement and introduces operational trade-offs.
+    - content: Combine a global baseline, regional commitments, and country/region-specific implementation patterns for each workload.
+      isCorrect: true
+      explanation: Correct. A layered approach maintains a coherent strategy while accounting for local laws, operating authority, and workload needs.
+  - content: An EU organization wants a commitment to store and process in-scope Customer Data and personal data within the EU/EFTA. Which approach is most appropriate?
+    choices:
+    - content: Evaluate the EU Data Boundary, configure eligible services, and review documented transfer exceptions.
+      isCorrect: true
+      explanation: Correct. The EU Data Boundary covers eligible services and specified data categories, subject to configuration requirements and limited transfers. Professional Services Data has a storage-at-rest commitment.
+    - content: Enable geographic sign-in restrictions and assume they determine where all data is processed.
+      isCorrect: false
+      explanation: Incorrect. Sign-in restrictions control where users can access a service. They don't determine where the service stores or processes data.
+    - content: Assume all data for every Microsoft service stays in Europe without configuration or exceptions.
+      isCorrect: false
+      explanation: Incorrect. Eligibility, data categories, required configurations, and limited transfer exceptions must be reviewed.
+    - content: Use Microsoft 365 Advanced Data Residency as a replacement for the EU Data Boundary across all Azure services.
+      isCorrect: false
+      explanation: Incorrect. Advanced Data Residency applies to eligible Microsoft 365 data and local region geographies. It doesn't replace Azure service-specific EU Data Boundary requirements.
+  - content: What is the primary purpose of the sovereignty risk and resilience framework in this module?
+    choices:
+    - content: Eliminate all jurisdictional and operational risks before cloud adoption.
+      isCorrect: false
+      explanation: Incorrect. No deployment model eliminates all risks. Teams must evaluate residual risk and document accountable acceptance.
+    - content: Assign every sensitive workload to disconnected infrastructure without further assessment.
+      isCorrect: false
+      explanation: Incorrect. The framework evaluates evidence and trade-offs for each workload rather than prescribing one architecture.
+    - content: Support evidence-based sovereignty decisions using likelihood, impact, mitigations, and accountable risk acceptance.
+      isCorrect: true
+      explanation: Correct. Sovereignty is a continuous risk-management discipline that includes evidence, controls, contingency planning, and reassessment.
+    - content: Treat a compliance assessment template as proof that no further controls or reviews are needed.
+      isCorrect: false
+      explanation: Incorrect. Templates help organize assessments, but teams must implement and verify controls, assess residual risk, and review changes.

@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.wwl.sovereignty-overview
+metadata:
+  title: Introduction to Digital Sovereignty and Microsoft Sovereign Cloud
+  description: Explore digital sovereignty, Microsoft Sovereign Cloud deployment models, country/region and European digital commitments, and evidence-based sovereignty risk and resilience decisions.
+  ms.date: 11/9/2026
+  author: salisburysimon
+  ms.author: sidicken
+  ms.topic: module-standard-concept-based
+  ms.service: microsoft-sovereign-cloud
+title: Introduction to digital sovereignty and Microsoft Sovereign Cloud
+summary: Learn how to balance cloud innovation with sovereignty requirements for data, operations, technology dependencies, and business continuity by selecting controls for each workload.
+abstract: |
+  By the end of this module, you're able to:
+  - Explain digital sovereignty and why it matters for governments and regulated organizations.
+  - Describe how Microsoft Sovereign Cloud supports data controls, operational controls, and technological independence.
+  - Compare sovereign cloud deployment models for common scenarios and industry drivers.
+  - Map global, regional, and country/region-specific commitments to workload requirements.
+  - Explain Microsoft's five European digital commitments and the scope of the EU Data Boundary.
+  - Apply evidence-based risk and resilience questions to sovereignty decisions.
+prerequisites: |
+  - Familiarity with cloud computing concepts, such as public, private, and hybrid cloud.
+  - Basic knowledge of Azure services and cloud security responsibilities.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- solution-architect
+- administrator
+products:
+- azure
+subjects:
+- security
+- compliance
+- information-protection-governance
+units:
+- learn.wwl.sovereignty-overview.introduction-digital-sovereignty
+- learn.wwl.sovereignty-overview.microsoft-sovereign-cloud
+- learn.wwl.sovereignty-overview.scenarios-industry-drivers
+- learn.wwl.sovereignty-overview.regional-digital-commitments
+- learn.wwl.sovereignty-overview.european-digital-commitments
+- learn.wwl.sovereignty-overview.risk-resilience-framework
+- learn.wwl.sovereignty-overview.check
+- learn.wwl.sovereignty-overview.summary
+badge:
+  uid: learn.wwl.sovereignty-overview.badge
