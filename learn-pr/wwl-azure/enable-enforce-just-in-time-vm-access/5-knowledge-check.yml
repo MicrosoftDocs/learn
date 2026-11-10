@@ -1,50 +1,49 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.enable-enforce-just-in-time-vm-access.knowledge-check
 metadata:
-  title: Knowledge check
-  description: Check your knowledge of just-in-time VM access requirements, policy configuration, access requests, and Azure Policy enforcement.
-  ms.date: 05/11/2026
-  author: r-c-stewart
-  ms.author: lumac
+  title: Module Assessment
+  description: Check your knowledge of just-in-time network restrictions, access request parameters, and the distinction between Azure Policy monitoring and JIT provisioning.
+  ms.date: 11/01/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
   ai-usage: ai-generated
-title: Knowledge check
+title: Module assessment
 durationInMinutes: 3
 content: |
   [!include[](includes/5-knowledge-check.md)]
 quiz:
-  title: Check your knowledge
   questions:
-  - content: "A security engineer enables JIT VM access on an Azure virtual machine. What happens to the NSG rule for RDP port 3389 immediately after JIT is enabled on that VM?"
+  - content: "A VM has JIT configured for RDP port 3389, there's no active access grant, and no existing rule overrides the JIT restriction. How is a new inbound RDP connection handled?"
     choices:
-    - content: "The port remains open to the same source addresses as before; JIT takes effect only after the first approved request"
+    - content: "The connection is allowed because JIT restrictions take effect only after the first request"
       isCorrect: false
-      explanation: "When JIT is enabled, Defender for Cloud immediately modifies the NSG rules to block inbound access on the configured ports. The ports are locked down immediately—no access is permitted until an explicit JIT request is approved."
-    - content: "The port is locked down—inbound access on port 3389 is blocked until an approved JIT request opens it"
+      explanation: "JIT restrictions don't wait for the first request. With no active grant or overriding allow rule in this scenario, the new connection is blocked."
+    - content: "It's blocked until an authorized request opens the required path"
       isCorrect: true
-      explanation: "When JIT VM access is enabled, Defender for Cloud immediately modifies the network security group to block inbound traffic on the configured management ports (including RDP 3389 by default). The port only opens for the specific source IP and duration when an approved access request is submitted."
+      explanation: "The new connection is blocked under the stated conditions. An authorized request can open a network-access window for the configured port and source. Enabling JIT alone doesn't remove every pre-existing allow rule."
     - content: "The port opens for the requesting user's source IP address for a default period of 3 hours"
       isCorrect: false
-      explanation: "Enabling JIT doesn't open the port—it locks it down. A port only opens after a user submits an explicit access request that is approved, at which point the specified source IP and time window are applied."
-  - content: "A user submits a JIT access request from the Azure portal for a JIT-enabled VM. What information must the user provide in the access request?"
+      explanation: "Configuring JIT doesn't automatically create an access grant. The requester must obtain a grant within the policy's limits. The individual VM shortcut's three-hour maximum isn't an automatic three-hour opening."
+  - content: "A user submits a JIT access request from Defender for Cloud for a JIT-enabled VM. Which parameters should the user review and set?"
     choices:
     - content: "The ports to open, the source IP range, and the duration of access"
       isCorrect: true
-      explanation: "A JIT access request requires the user to specify: the ports to open (from ports configured in the JIT policy), the source IP addresses or ranges permitted to connect, and the time window for which the port is open. Defender for Cloud then modifies the NSG or Firewall rule accordingly."
-    - content: "Only the port number—Defender for Cloud automatically fills in the source IP and duration from the policy defaults"
+      explanation: "Review the configured ports to open, the source addresses permitted to connect, and the network-access window. The source must match the actual connection path. Defender for Cloud evaluates the request against authorization and policy limits."
+    - content: "Only the port number, because the detected source IP and default duration never need review"
       isCorrect: false
-      explanation: "While JIT policies define the maximum allowed duration and allowed source IPs, the user must actively specify the source IP and duration when submitting a request. Setting access specifically, ensures each access event is explicitly scoped and auditable."
+      explanation: "Review all three parameters even when values are prefilled. The browser's detected public IP might not match the VM connection source, and the duration should fit the task and policy."
     - content: "The port to open, the duration, and a PIM activation code for the Security Admin role"
       isCorrect: false
-      explanation: "JIT VM access is independent of Privileged Identity Management (PIM). No PIM activation code is required for a JIT access request. The request captures port, source IP, and duration."
-  - content: "An organization wants to ensure all new Azure VMs have JIT access configured automatically without manual intervention after deployment. Which approach works at scale?"
+      explanation: "The JIT request captures the port, connection source, and time window. It doesn't require a PIM activation code. Any separate role-activation or human-approval process is an additional organizational control."
+  - content: "An organization wants its approved provisioning workflow to configure JIT for eligible new VMs and monitor applicable Defender for Cloud assessments. Which approach meets both requirements?"
     choices:
-    - content: "Configure JIT from each VM's Configuration page after deployment"
+    - content: "Assign only the JIT audit built-in"
       isCorrect: false
-      explanation: "Configuring JIT from the VM Configuration page is a manual, per-VM operation. VM Configuration setup doesn't enforce JIT at scale or automatically configure new VMs after deployment."
-    - content: "Assign the Azure Policy definition 'Management ports of virtual machines should be protected with just-in-time network access control'"
+      explanation: "The definition audits a Defender for Cloud assessment but doesn't create JIT configurations, modify network rules, or block VM creation."
+    - content: "Configure JIT through the provisioning workflow using supported JIT deployment resources or PowerShell, and assign the audit built-in for monitoring"
       isCorrect: true
-      explanation: "This built-in Azure Policy definition audits VMs for JIT configuration and can be used to identify noncompliant VMs at scale. Combined with a DeployIfNotExists or remediation-enabled policy, it drives JIT adoption across new and existing VMs in the assigned scope."
-    - content: "Enable Defender for Servers Plan 2 at subscription scope—JIT is automatically configured for all VMs"
+      explanation: "Provisioning performs the configuration, while the audit definition supplies assessment-based compliance visibility. The built-in supports AuditIfNotExists and Disabled, not a deploying effect."
+    - content: "Enable Defender for Servers Plan 2 and take no further action"
       isCorrect: false
-      explanation: "Enabling Defender for Servers Plan 2 provides the JIT capability and makes VMs eligible for JIT configuration, but it doesn't automatically configure JIT policies on all VMs. JIT must be explicitly enabled on individual VMs or enforced through Azure Policy."
+      explanation: "Plan 2 provides the JIT capability, but JIT configuration must still be applied to the required eligible VMs."

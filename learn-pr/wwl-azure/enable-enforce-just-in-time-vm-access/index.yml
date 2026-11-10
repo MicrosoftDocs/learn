@@ -3,7 +3,7 @@ uid: learn.wwl.enable-enforce-just-in-time-vm-access
 metadata:
   gs-content.levels: 300
   gs-content.locale: en-us
-  gs-duration: 24
+  gs-duration: 30
   gs-last.refresh.date: null
   gs-modality: module
   gs-products:
@@ -27,27 +27,32 @@ metadata:
     - Automation
     - "Infrastructure Management"
   gs-solution.area: Security
-  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/enable-enforce-just-in-time-vm-access/index.yml
+  gs-source.content: null
   title: Enable and Enforce Just-in-Time VM Access
-  description: "Enable and configure just-in-time VM access in Microsoft Defender for Cloud to eliminate permanently open RDP and SSH ports. Configure per-port access policies, request time-bound access, audit access activity, and enforce JIT adoption across your VM estate using Azure Policy."
-  ms.date: 05/11/2026
-  author: r-c-stewart
-  ms.author: lumac
+  description: "Reduce broad direct management-port exposure with Microsoft Defender for Cloud just-in-time VM access. Configure policies, request authorized network-access windows, audit activity, and combine Azure Policy monitoring with an approved JIT provisioning workflow."
+  ms.date: 11/01/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: module
   ms.service: defender-for-cloud
   ai-usage: ai-assisted
 title: Enable and enforce just-in-time VM access
-summary: Enable and configure just-in-time VM access in Microsoft Defender for Cloud to eliminate permanently open RDP and SSH ports. Configure per-port access policies, request time-bound access to VMs, audit access activity, and enforce JIT adoption across your VM estate using Azure Policy.
+summary: Reduce broad direct management-port exposure with Microsoft Defender for Cloud just-in-time VM access. Configure policies, request authorized network-access windows, audit activity, and combine Azure Policy monitoring with an approved JIT provisioning workflow.
 abstract: |
   After completing this module, you can:
     - Examine how just-in-time VM access reduces the attack surface on management ports
     - Enable JIT and configure per-port access policies on Azure VMs
-    - Request and approve JIT access and audit access activity
-    - Enforce JIT adoption across a VM estate using Azure Policy
+    - Request authorized JIT access and audit access activity
+    - Monitor JIT adoption with Azure Policy and configure required JIT policies through an approved provisioning workflow
 prerequisites: |
-  - Microsoft Defender for Servers Plan 2 enabled on the subscription
+  Before you begin, make sure you have the following:
+
+  - An Azure public-cloud subscription with Microsoft Defender for Servers Plan 2 enabled
   - Working knowledge of Azure Virtual Machines and network security groups
   - Basic familiarity with Microsoft Defender for Cloud
+  - Azure RBAC permissions to configure JIT or request access, depending on the operation
+  - Access to administrators, or separately scoped permissions, for the network-rule changes, effective-rule inspection, Activity Log review and export, and Azure Policy assignment used in this module
+  - For the scenario's Bastion checks, access to an existing dedicated Azure Bastion deployment using the Basic, Standard, or Premium SKU and its approved target VMs
 iconUrl: /training/achievements/generic-badge.svg
 levels:
   - intermediate

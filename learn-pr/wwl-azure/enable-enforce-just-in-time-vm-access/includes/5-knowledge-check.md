@@ -1,1 +1,1 @@
-You configured just-in-time VM access for Contoso Manufacturing's factory floor virtual machines, replacing permanently open management ports with on-demand, time-limited access. Test your understanding of JIT configuration and access workflows with the following questions.
+You learned how Contoso Manufacturing can remove broad direct management access, preserve its approved Bastion path, and use just-in-time access for direct maintenance exceptions. Test your understanding of JIT configuration, access requests, and adoption workflows with the following questions.

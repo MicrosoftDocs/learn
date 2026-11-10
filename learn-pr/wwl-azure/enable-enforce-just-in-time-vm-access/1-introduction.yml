@@ -2,10 +2,10 @@
 uid: learn.wwl.enable-enforce-just-in-time-vm-access.introduction
 metadata:
   title: Introduction
-  description: Introduction to enabling and enforcing just-in-time VM access, covering the security risk of permanently open management ports that JIT access addresses.
-  ms.date: 05/11/2026
-  author: r-c-stewart
-  ms.author: lumac
+  description: Introduce just-in-time VM access for direct maintenance exceptions, removal of broad management-port allows, and preservation of an approved private Bastion path.
+  ms.date: 11/01/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
   ai-usage: ai-assisted
 title: Introduction
