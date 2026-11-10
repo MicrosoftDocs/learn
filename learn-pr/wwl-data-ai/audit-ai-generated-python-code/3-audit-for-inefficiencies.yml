@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.audit-ai-generated-python-code.audit-for-inefficiencies
+title: Audit for inefficiencies
+metadata:
+  title: Audit for Inefficiencies
+  description: "Learn to review AI-generated code for performance issues, redundancy, and optimization opportunities."
+  ms.date: 10/19/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-audit-for-inefficiencies.md)]

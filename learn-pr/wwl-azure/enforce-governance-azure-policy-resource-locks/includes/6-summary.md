@@ -1,14 +1,23 @@
-In this module, you addressed Contoso's compliance audit gap by implementing Azure Policy definitions and resource locks. You assigned built-in policy definitions at management group scope, starting with the Audit effect to discover noncompliant resources like the 47 storage accounts without secure transfer and 12 SQL databases without Transparent Data Encryption (TDE). Then you switched to Deny to block future violations. You created custom policy definitions with parameters and used DeployIfNotExists to automatically deploy diagnostic settings through remediation tasks. Policy exemption with compensating controls documented the few justified exceptions.
+In this module, you learned how Contoso can address its compliance audit gap with Azure Policy and management locks. You reviewed built-in policy assignments at management group scope, using supported audit effects to discover 47 storage accounts without secure transfer and 12 SQL databases without Transparent Data Encryption (TDE). The secure-transfer definition supports a later transition from Audit to Deny. The SQL TDE audit definition doesn't support Deny, so Contoso enables TDE separately, for example with the Deploy SQL DB transparent data encryption definition and a remediation task.
 
-You applied Delete locks on critical resource groups to prevent accidental deletion of core network and vault infrastructure. With separation of duties, Contributor role members can't remove these locks; only Owner or User Access Administrator can.
+You first considered parameterized built-ins, then created a custom definition to audit or deploy an enabled allLogs diagnostic setting to an approved workspace for production-tagged Key Vaults. Its embedded template and assignment identity support DeployIfNotExists remediation. Successful create/update requests can trigger deployment after the configured delay, while background scans only identify noncompliance. Existing resources require a remediation task, and log delivery must be confirmed separately from configuration compliance.
 
-Contoso's governance controls now prevent noncompliant deployments automatically, not through documentation and manual reviews. Azure Policy definitions enforce security configuration standards on every new resource, regardless of who deploys it. Remediation tasks systematically address the existing backlog of noncompliant resources.
+You distinguished the operator's permission to attach a user-assigned identity from the identity's deployment permissions. You also planned remediation recovery and test cleanup. Canceling a task isn't rollback, and deleting a managed identity doesn't automatically remove its Azure RBAC role assignments.
 
-Now that governance controls prevent noncompliant deployments, the next module addresses the operational side: configuring Defender for Cloud security standards and systematically deploying security controls to remediate the recommendations that existing resources generate.
+You also learned how scoped exemptions record approved waivers or mitigations without exempting unrelated controls. Exemptions remain visible in compliance reporting, while assignment exclusions are outside the compliance count. Compliance substate shows the state an exempt resource would have without its exemption and supports exception reviews. Neither a high aggregate percentage nor an exemption is proof that every technical control is implemented.
 
-## Learn more
+Delete locks protect critical resources and their descendants from accidental control-plane deletion. ReadOnly locks also restrict updates and some operations that use POST. Neither lock protects data-plane operations. Locks can't be applied to management groups and don't block subscription cancellation. Contributor alone can't remove locks, but principals with the required lock-delete permission can, including through Owner, User Access Administrator, or another applicable role. Test operational workflows before applying locks broadly.
+
+Together, carefully scoped assignments, authorized remediation, documented exceptions, and management locks provide complementary governance controls. The next module addresses configuring Defender for Cloud security standards and deploying controls to remediate recommendations.
+
+## More info
+
+The following resources provide more detail about the governance controls covered in this module:
 
 - [Azure Policy overview](/azure/governance/policy/overview)
 - [Create a custom policy definition](/azure/governance/policy/tutorials/create-custom-policy-definition)
 - [Remediation tasks](/azure/governance/policy/how-to/remediate-resources)
+- [Managed identity lifecycle and role-assignment cleanup](/entra/identity/managed-identities-azure-resources/managed-identity-best-practice-recommendations#maintenance)
+- [Policy exemptions](/azure/governance/policy/concepts/exemption-structure)
+- [Compliance states and rollup](/azure/governance/policy/concepts/compliance-states)
 - [Resource locks](/azure/azure-resource-manager/management/lock-resources)

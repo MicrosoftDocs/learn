@@ -1,4 +1,4 @@
-A Function app exposed as an HTTP endpoint with no authentication is directly accessible to any client that discovers the URL. Azure Functions doesn't enforce authentication by default—the platform trusts the application to implement it. For Contoso Retail's order processing functions, which receive inbound calls from external partner systems, that default is the wrong starting point.
+A Function app exposed as an HTTP endpoint with no authentication is directly accessible to any client that discovers the URL. By default, Azure Functions HTTP triggers use **function**-level authorization in C#, Java, PowerShell, and Python—requiring a function key—but the Node.js v4 programming model defaults to **anonymous**, which doesn't enforce authentication at all. For Contoso Retail's order processing functions, which receive inbound calls from external partner systems, relying on the platform default—whatever it is for the chosen language and model—is the wrong starting point.
 
 ## Understand Azure App Service Authentication
 

@@ -4,7 +4,7 @@ title: Expose internal services securely using Azure Private Link service
 metadata:
   title: Expose Internal Services Securely Using Azure Private Link Service
   description: "Configure Azure Private Link service to expose internal workloads to authorized consumers across subscriptions or tenants without creating a public endpoint."
-  ms.date: 11/01/2026
+  ms.date: 11/09/2026
   author: Orin-Thomas
   ms.author: orthomas
   ms.topic: unit

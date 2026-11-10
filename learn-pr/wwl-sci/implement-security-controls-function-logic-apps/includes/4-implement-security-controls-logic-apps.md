@@ -71,10 +71,10 @@ Enable secure inputs and outputs on any action that handles:
 > [!IMPORTANT]
 > Secure inputs and outputs are configured per action, not at the workflow level. Review each action in security-sensitive workflows individually and enable both settings where appropriate. An action earlier in the workflow that processes sensitive data without secure outputs enabled exposes that data in run history even if all downstream actions are secured.
 
-## Require OAuth 2.0 authentication for HTTP triggers (Standard plan)
+## Require OAuth 2.0 authentication for HTTP triggers (Consumption plan)
 
-Standard plan Logic app workflows support OAuth 2.0 token validation on HTTP triggers through Microsoft Entra ID. When configured, the trigger requires a valid Microsoft Entra access token before the workflow starts—the same enforcement model as EasyAuth on Function apps.
+Consumption plan Logic app workflows support OAuth 2.0 token validation on HTTP triggers through Microsoft Entra ID authorization policies. When configured, the trigger requires a valid Microsoft Entra access token before the workflow starts. Standard plan workflows that start with the Request trigger use the Azure Functions authentication provision (EasyAuth) instead—the same enforcement model used on Function apps.
 
-To enable OAuth 2.0 on a Standard plan HTTP trigger, configure an authorization policy on the trigger. Add a Microsoft Entra ID authorization policy specifying the allowed audience—the application (client) ID of the app registration—and the required tenant. Requests without a valid bearer token that matches the policy are rejected before any workflow action runs.
+To enable OAuth 2.0 on a Consumption plan HTTP trigger, configure a Microsoft Entra ID authorization policy on the trigger specifying the required **issuer** (your tenant's token-issuing endpoint) and **audience** (the app ID URI of the trigger's app registration). Requests without a valid bearer token that matches the policy are rejected before any workflow action runs.
 
-This configuration is valuable for Standard plan workflows exposed as API endpoints that should only be callable by specific Microsoft Entra registered applications or identities. When you combine the configuration with IP restrictions or a private endpoint, OAuth 2.0 token validation on the trigger creates two independent authentication barriers.
+This configuration is valuable for Consumption plan workflows exposed as API endpoints that should only be callable by specific Microsoft Entra registered applications or identities.
