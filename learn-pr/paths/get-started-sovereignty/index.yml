@@ -1,0 +1,43 @@
+### YamlMime:LearningPath
+uid: learn.wwl.get-started-sovereignty
+metadata:
+  title: Get Started with Microsoft Sovereign Cloud
+  description: Explore digital sovereignty and Microsoft Sovereign Cloud, then learn how Azure Policy initiatives, key and certificate management, and confidential computing support sovereignty requirements.
+  ms.date: 11/10/2026
+  author: salisburysimon
+  ms.author: sidicken
+  ms.topic: learning-path
+title: Get started with Microsoft Sovereign Cloud
+summary: |
+  Learn how Microsoft Sovereign Cloud helps organizations balance innovation with control over data, operations, and technology dependencies. Start with deployment models, country/region and European digital commitments, and evidence-based risk and resilience decisions. Then explore Azure Policy initiatives, Azure key and certificate management, and Azure confidential computing.
+
+  In this learning path, you:
+  - Compare sovereignty controls and cloud models for different workload requirements.
+  - Explore policy-based governance and compliance assessment with Azure Policy initiatives.
+  - Describe key and certificate management options for protecting sensitive cloud data.
+  - Explain how confidential computing helps protect data in use.
+prerequisites: |
+  - Knowledge of Azure fundamentals, cloud security concepts, and Azure infrastructure solutions.
+  - Familiarity with infrastructure as code (IaC) concepts for the Azure Policy module.
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- beginner
+- intermediate
+- advanced
+roles:
+- solution-architect
+- administrator
+products:
+- azure
+- azure-key-vault
+subjects:
+- security
+- compliance
+- information-protection-governance
+modules:
+- learn.wwl.sovereignty-overview
+- learn.wwl.sovereignty-policy-initiatives
+- learn.wwl.sovereignty-key-management
+- learn.wwl.sovereignty-confidential-computing
+trophy:
+  uid: learn.wwl.get-started-sovereignty.trophy
