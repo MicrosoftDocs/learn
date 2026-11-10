@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.dpu.surface-ink-canvas
+title: Create and refine ideas with Ink Canvas on Surface
+metadata:
+  title: Create and Refine Ideas with Ink Canvas on Surface
+  description: 'Learn how Microsoft Ink Canvas combines pen-first input, AI capabilities, and Surface hardware to transform handwritten notes, sketches, annotations, and visual ideas into reusable content. Explore how to access and configure Ink Canvas, use its core tools and AI capabilities, and extend your ideas into Microsoft 365 workflows.'
+  ms.date: 11/09/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: module
+  ms.service: surface
+summary: >
+  Learn how Microsoft Ink Canvas combines pen-first input, AI capabilities, and Surface hardware to transform handwritten notes, sketches, annotations, and visual ideas into reusable content. Explore how to access and configure Ink Canvas, use its core tools and AI capabilities, and extend your ideas into Microsoft 365 workflows.
+
+abstract: |
+  By the end of this module, you'll be able to:
+  - Describe how Ink Canvas uses ink and AI to transform ideas into content.
+  - Differentiate Ink Canvas from OneNote and Microsoft Whiteboard based on their core purposes and workflows.
+  - Access and configure Ink Canvas on supported Surface and Windows devices.
+  - Explain how Surface Slim Pen and Surface hardware enhance the Ink Canvas experience.
+  - Use Ink Canvas tools and AI capabilities to create, refine, summarize, and reuse content in Microsoft 365 workflows.
+
+prerequisites: |
+  - None
+iconUrl: /training/achievements/surface-ink-canvas-badge.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - administrator
+  - business-leader
+  - business-owner
+  - business-user
+  - technology-manager
+products:
+  - surface
+units:
+  - learn.dpu.surface-ink-canvas.introduction
+  - learn.dpu.surface-ink-canvas.what-is-ink-canvas
+  - learn.dpu.surface-ink-canvas.accessing-ink-canvas
+  - learn.dpu.surface-ink-canvas.optimized-for-surface
+  - learn.dpu.surface-ink-canvas.get-familiar-with-tools-in-ink-canvas
+  - learn.dpu.surface-ink-canvas.using-ink-canvas
+  - learn.dpu.surface-ink-canvas.knowledge-check
+  - learn.dpu.surface-ink-canvas.summary
+badge:
+  uid: learn.dpu.surface-ink-canvas.badge
