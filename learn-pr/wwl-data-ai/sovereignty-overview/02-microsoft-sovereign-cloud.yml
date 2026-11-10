@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.sovereignty-overview.microsoft-sovereign-cloud
+title: Understand how Microsoft Sovereign Cloud helps with digital sovereignty
+metadata:
+  zone_pivot_groups: video-or-text
+  title: Understand how Microsoft Sovereign Cloud helps with digital sovereignty
+  description: Describe data controls, operational controls, technological independence, and the workload-based continuum of Microsoft Sovereign Cloud.
+  ms.date: 11/9/2026
+  author: salisburysimon
+  ms.author: sidicken
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/02-microsoft-sovereign-cloud.md)]

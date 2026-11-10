@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.sovereignty-overview.introduction-digital-sovereignty
+title: Introduction to digital sovereignty
+metadata:
+  zone_pivot_groups: video-or-text
+  title: Introduction to digital sovereignty
+  description: Explain digital sovereignty, the benefits of cloud transformation, and the legal, risk, and trust requirements that shape sovereignty decisions.
+  ms.date: 11/9/2026
+  author: salisburysimon
+  ms.author: sidicken
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/01-introduction-digital-sovereignty.md)]

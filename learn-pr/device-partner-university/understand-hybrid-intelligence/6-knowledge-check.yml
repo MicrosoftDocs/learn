@@ -1,0 +1,84 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.understand-hybrid-intelligence.knowledge-check
+title: Module assessment
+metadata:
+  title: Module Assessment
+  description: This content is part of the "Understand the shift to hybrid intelligence on Windows" module.
+  ms.date: 11/09/2026
+  author: sheridan-connor
+  ms.author: v-csheridan
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "How does hybrid intelligence use local and cloud computing resources?"
+    choices:
+        - content: "It requires all AI operations to run locally on the PC."
+          isCorrect: false
+          explanation: ""
+        - content: "It treats local and cloud computing as complementary resources."
+          isCorrect: true
+          explanation: ""
+        - content: "It requires users to choose where each AI operation runs."
+          isCorrect: false
+          explanation: ""
+        - content: "It uses cloud computing only when local hardware is unavailable."
+          isCorrect: false
+          explanation: ""
+  - content: "Which concept helps determine how and when an AI experience uses available local and cloud capabilities?"
+    choices:
+        - content: "Agent identity"
+          isCorrect: false
+          explanation: ""
+        - content: "Containment"
+          isCorrect: false
+          explanation: ""
+        - content: "Intelligent orchestration"
+          isCorrect: true
+          explanation: ""
+        - content: "PC context"
+          isCorrect: false
+          explanation: ""
+  - content: "Which security concept addresses the question, \"Which actor performed an action?\""
+    choices:
+        - content: "Manageability"
+          isCorrect: false
+          explanation: ""
+        - content: "Identity"
+          isCorrect: true
+          explanation: ""
+        - content: "Containment"
+          isCorrect: false
+          explanation: ""
+        - content: "Orchestration"
+          isCorrect: false
+          explanation: ""
+  - content: "Why should an organization avoid a one-size-fits-all approach when evaluating PCs for local AI?"
+    choices:
+        - content: "All local AI models require specialized systems."
+          isCorrect: false
+          explanation: ""
+        - content: "Every hybrid AI workload must run entirely on the endpoint."
+          isCorrect: false
+          explanation: ""
+        - content: "Different local AI workloads can require different amounts and types of computing resources."
+          isCorrect: true
+          explanation: ""
+        - content: "Copilot+ PCs are intended only for specialized AI development workloads."
+          isCorrect: false
+          explanation: ""
+  - content: "What role do Microsoft Execution Containers play in supporting agentic workloads on Windows?"
+    choices:
+        - content: "They require agents to inherit all resources available to the interactive user."
+          isCorrect: false
+          explanation: ""
+        - content: "They determine which local AI model is best for each request."
+          isCorrect: false
+          explanation: ""
+        - content: "They move agent workloads from the PC to cloud infrastructure."
+          isCorrect: false
+          explanation: ""
+        - content: "They provide policy-driven containment that can give agent workloads a specific resource boundary."
+          isCorrect: true
+          explanation: ""

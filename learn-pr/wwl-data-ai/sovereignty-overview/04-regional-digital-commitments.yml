@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.sovereignty-overview.regional-digital-commitments
+title: Discuss Microsoft's digital commitments across regions
+metadata:
+  zone_pivot_groups: video-or-text
+  title: Discuss Microsoft's digital commitments across regions
+  description: Map a global sovereignty baseline, regional commitments, and country/region-specific implementation patterns to customer workload requirements.
+  ms.date: 11/9/2026
+  author: salisburysimon
+  ms.author: sidicken
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/04-regional-digital-commitments.md)]

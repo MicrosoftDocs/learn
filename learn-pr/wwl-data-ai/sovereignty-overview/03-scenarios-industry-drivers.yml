@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.sovereignty-overview.scenarios-industry-drivers
+title: Review sovereignty scenarios and industry drivers
+metadata:
+  zone_pivot_groups: video-or-text
+  title: Review sovereignty scenarios and industry drivers
+  description: Compare public, private, and partner cloud models for compliance, sovereign AI, operator access, residency, and business continuity scenarios.
+  ms.date: 11/9/2026
+  author: salisburysimon
+  ms.author: sidicken
+  ms.topic: unit
+durationInMinutes: 12
+content: |
+  [!include[](includes/03-scenarios-industry-drivers.md)]
