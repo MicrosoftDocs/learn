@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.enforce-governance-azure-policy-resource-locks.implement-resource-locks
 metadata:
-  title: Implement resource locks
-  description: Configure Azure resource locks to prevent critical resources from being deleted or modified accidentally or maliciously.
-  ms.date: 05/11/2026
-  author: r-c-stewart
-  ms.author: lumac
+  title: Implement Resource Locks
+  description: Configure management locks to safeguard critical resources against accidental control-plane deletion or modification, and understand supported scopes, lock inheritance, and operational and subscription-lifecycle limitations.
+  ms.date: 11/07/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
   ai-usage: ai-assisted
 title: Implement resource locks

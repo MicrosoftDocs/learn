@@ -3,7 +3,7 @@ uid: learn.wwl.enforce-governance-azure-policy-resource-locks
 metadata:
   gs-content.levels: 400
   gs-content.locale: en-us
-  gs-duration: 25
+  gs-duration: 29
   gs-last.refresh.date: null
   gs-modality: module
   gs-products:
@@ -28,25 +28,32 @@ metadata:
     - "Infrastructure Management"
   gs-solution.area: Security
   gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/enforce-governance-azure-policy-resource-locks/index.yml
-  title: Enforce Governance with Azure Policy and Resource Locks
-  description: "Enforce security standards before resources reach production using Azure Policy. Assign built-in policy definitions and initiatives at management group scope, author custom definitions with automated remediation tasks, and protect critical resources from deletion using Azure resource locks."
-  ms.date: 05/11/2026
-  author: r-c-stewart
-  ms.author: lumac
+  title: Enforce Governance With Azure Policy and Resource Locks
+  description: "Assess and enforce security standards using Azure Policy. Assign built-in definitions and initiatives, author custom policies, manage remediation and recovery, review exemptions, and protect critical resources using management locks."
+  ms.date: 11/07/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: module
   ms.service: azure-policy
   ai-usage: ai-assisted
 title: Enforce governance with Azure Policy and resource locks
-summary: Enforce security standards before resources reach production using Azure Policy. Assign built-in policy definitions and initiatives at management group scope, author custom definitions with automated remediation tasks, and protect critical resources from deletion using Azure resource locks.
+summary: Assess and enforce security standards using Azure Policy. Assign built-in definitions and initiatives, author custom policies, manage remediation and recovery, review exemptions, and protect critical resources using management locks.
 abstract: |
   After completing this module, you can:
     - Assign built-in Azure Policy definitions and initiatives to enforce security configurations at subscription and management group scope
-    - Create custom Azure Policy definitions with remediation tasks to enforce controls that built-in definitions don't cover
-    - Configure Azure resource locks to prevent critical resources from being deleted or modified
+    - Select parameterized built-ins or create custom definitions with remediation tasks when additional logic is required
+    - Plan remediation recovery and test-configuration cleanup
+    - Grant scoped policy exemptions with appropriate permissions and approval, and review their compliance substates
+    - Configure management locks and explain their control-plane scope and operational limitations
 prerequisites: |
+  Before starting this module, you should have:
+
   - Working knowledge of Azure administration at the AZ-104 level
   - Basic understanding of Azure resource hierarchy (management groups, subscriptions, resource groups, resources)
   - Familiarity with Azure role-based access control (RBAC) concepts
+  - To perform the optional walkthroughs, access to an isolated test scope and permissions to create policy definitions and assignments
+  - To grant remediation access or manage locks, the corresponding role-assignment or lock-management permissions
+  - To use an existing user-assigned managed identity, permission to read and assign that identity
 iconUrl: /training/achievements/generic-badge.svg
 levels:
   - intermediate
