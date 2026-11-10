@@ -1,18 +1,18 @@
-This module covers connecting your Azure subscriptions to Microsoft Defender for Cloud, enabling enhanced security monitoring, compliance management, and implementation of best practices for threat protection.
+This module covers enabling Microsoft Defender for Cloud on an Azure subscription, configuring a workload protection plan, and reviewing resource coverage and compliance assessments. You consider permissions, trial eligibility, and costs before making changes.
 
 ## Scenario
 
-Imagine you are tasked with securing your company’s cloud applications. Using Microsoft Defender for Cloud, you unify security management with DevSecOps, enhance security posture with CSPM, and protect workloads with CWPP, ensuring comprehensive end-to-end protection across your multicloud environment.
+You're responsible for assessing the security posture of your company's Azure resources. You start by enabling Defender for Cloud, selecting an appropriate workload protection plan, and reviewing coverage and security recommendations.
 
 ## Learning objectives
 
-By the end of this training module, participants will:
+By the end of this module, you're able to:
 
- -  Learn how to connect your Azure subscriptions to Microsoft Defender for Cloud.
- -  Understand the benefits of integrating Azure subscriptions for enhanced security monitoring.
- -  Explore methods to manage and ensure compliance across connected Azure subscriptions.
- -  Gain skills to implement best practices for threat protection within your Azure environment.
+- Enable foundational Defender for Cloud capabilities on an Azure subscription.
+- Select and configure a workload protection plan with appropriate permissions and cost awareness.
+- Review resource coverage and investigate an MCSB assessment.
+- Explain the prerequisites for assigning additional standards and the limits of automated compliance assessment.
 
 ## Goals
 
-By the end of this module, you will be able to connect your Azure subscriptions to Microsoft Defender for Cloud, enhance security monitoring, manage compliance, and implement best practices for threat protection.
+You use Defender for Servers Plan 2 as a focused workload protection example, review Microsoft Cloud Security Benchmark (MCSB) assessments, and learn how to clean up training changes without removing preexisting protection. Additional clouds and development environments require separate onboarding.
