@@ -3,7 +3,7 @@ uid: learn.wwl.enforce-vm-security-machine-configuration
 metadata:
   gs-content.levels: 400
   gs-content.locale: en-us
-  gs-duration: 24
+  gs-duration: 30
   gs-last.refresh.date: null
   gs-modality: module
   gs-products:
@@ -22,25 +22,30 @@ metadata:
   gs-solution.area: Security
   gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/enforce-vm-security-machine-configuration/index.yml
   title: Enforce VM Security Configuration with Azure Machine Configuration
-  description: "Audit and enforce OS security configuration on Azure virtual machines and Arc-enabled servers using Azure Machine Configuration. Apply built-in Windows and Linux security baseline policies, configure audit and enforce modes, and author custom machine configurations for organization-specific requirements."
-  ms.date: 05/11/2026
-  author: r-c-stewart
-  ms.author: lumac
+  description: "Audit built-in Windows and Linux security baselines, configure Azure VM and Arc prerequisites, and deploy tested custom configurations to remediate selected OS settings."
+  ms.date: 11/07/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: module
   ms.service: azure-virtual-machines
   ai-usage: ai-assisted
 title: Enforce VM security configuration with Azure Machine Configuration
-summary: Audit and enforce OS security configuration on Azure virtual machines and Arc-enabled servers using Azure Machine Configuration. Apply built-in Windows and Linux security baseline policies, configure audit and enforce modes, and author custom machine configurations for organization-specific security requirements.
+summary: Audit built-in Windows and Linux security baselines, configure Azure VM and Arc prerequisites, and deploy tested custom configurations to remediate selected OS settings.
 abstract: |
   After completing this module, you can:
     - Explore how Azure Machine Configuration audits and enforces OS-level settings using Azure Policy
-    - Deploy the Azure Machine Configuration extension and configure required prerequisites
-    - Assign built-in Windows and Linux security baseline policies in audit and enforce modes
-    - Author and publish a custom machine configuration for organization-specific requirements
+    - Prepare Azure VMs and Azure Arc-enabled servers for Machine Configuration
+    - Assign built-in Windows and Linux security baseline policies to audit operating system settings
+    - Author, test, and deploy custom configurations to safely remediate approved settings
 prerequisites: |
+  Before starting this module, you should have:
+
   - Understanding of Azure Policy fundamentals, including policy effects and initiative assignments
   - Familiarity with Azure Virtual Machines and Azure Arc-enabled servers
   - Basic understanding of OS configuration concepts for Windows and Linux
+  - Access to supported test machines and an Azure subscription with the required policy and role-assignment permissions
+  - A disposable Windows test VM with PowerShell 7 and a preinstalled application service for the custom authoring example
+  - Az.Resources and its Az.Accounts dependency for Azure policy publication
 iconUrl: /training/achievements/generic-badge.svg
 levels:
   - intermediate

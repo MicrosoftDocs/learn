@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.enforce-vm-security-machine-configuration.apply-built-in-security-baseline-policies
 metadata:
-  title: Apply built-in security baseline policies
-  description: Deploy the Azure Machine Configuration extension prerequisites and assign the built-in Windows and Linux compute security baseline policy initiatives in audit. Then enforce modes, interpret compliance results, and create remediation tasks.
-  ms.date: 05/11/2026
-  author: r-c-stewart
-  ms.author: lumac
+  title: Apply Built-In Security Baseline Policies
+  description: Audit built-in Windows and Linux security baselines, configure Azure VM and Arc prerequisites, interpret compliance results, and plan tested custom configurations to remediate selected OS settings.
+  ms.date: 11/07/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
   ai-usage: ai-assisted
 title: Apply built-in security baseline policies
-durationInMinutes: 6
+durationInMinutes: 12
 content: |
   [!include[](includes/3-apply-built-in-security-baseline-policies.md)]

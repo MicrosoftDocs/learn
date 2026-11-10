@@ -1,50 +1,49 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.enforce-vm-security-machine-configuration.knowledge-check
 metadata:
-  title: Knowledge check
-  description: Check your knowledge of Azure Machine Configuration extension capabilities, prerequisites, built-in baseline policies, and custom configuration authoring.
-  ms.date: 05/11/2026
-  author: r-c-stewart
-  ms.author: lumac
+  title: Module Assessment
+  description: Check your knowledge of Azure VM prerequisites, audit-only security baseline policies, and safe custom Machine Configuration deployment.
+  ms.date: 11/07/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
   ai-usage: ai-generated
-title: Knowledge check
+title: Module assessment
 durationInMinutes: 3
 content: |
   [!include[](includes/5-knowledge-check.md)]
 quiz:
-  title: Check your knowledge
   questions:
-  - content: "A security engineer assigns the 'Windows machines should meet requirements of the Azure compute security baseline' policy. The policy shows noncompliant resources for some VMs even though the VMs are healthy. What two prerequisites must be present on the VM for the policy to evaluate compliance?"
+  - content: "A security engineer assigns the 'Windows machines should meet requirements of the Azure compute security baseline' policy. What two components must be present on an Azure VM for Machine Configuration to evaluate its OS settings?"
     choices:
-    - content: "Log Analytics agent and Azure Monitor agent"
+    - content: "Azure Monitor agent and a data collection rule"
       isCorrect: false
-      explanation: "Azure Machine Configuration doesn't rely on the Log Analytics agent or Azure Monitor agent for OS compliance evaluation. These agents are used for monitoring and log collection, not for guest OS configuration assessment."
+      explanation: "Azure Monitor agent and data collection rules support monitoring and log collection. They aren't prerequisites for Machine Configuration guest OS assessment."
     - content: "Azure Machine Configuration extension and system-assigned managed identity"
       isCorrect: true
-      explanation: "The Azure Machine Configuration extension must be installed on the VM, and the VM must have a system-assigned managed identity. The extension uses the managed identity to authenticate to Azure and report compliance results. Without both prerequisites, the policy can't evaluate the VM's OS settings."
+      explanation: "An Azure VM needs the Machine Configuration extension and a system-assigned managed identity for authenticated service communication. Arc-enabled servers instead receive the Machine Configuration component and their identity through the Connected Machine agent."
     - content: "Microsoft Defender for Endpoint agent and Guest Attestation extension"
       isCorrect: false
       explanation: "The Defender for Endpoint agent is used for threat detection and vulnerability assessment, and the Guest Attestation extension supports Trusted Launch integrity monitoring. Neither is a prerequisite for Azure Machine Configuration OS baseline compliance evaluation."
   - content: "After admins author and locally test a custom Azure Machine Configuration package, what is the correct sequence of steps to deploy it using Azure Policy?"
     choices:
-    - content: "Upload to Azure Storage → create a custom policy definition referencing the package → assign the policy"
+    - content: "Publish to an accessible HTTPS location, create and import a policy definition referencing the package, then assign the policy"
       isCorrect: true
-      explanation: "The custom configuration package must first be uploaded to an accessible Azure Storage location. A custom Azure Policy definition is then created that references the package URL. Finally, the policy is assigned to the appropriate scope (management group, subscription, or resource group) to begin evaluating or enforcing the configuration."
-    - content: "Upload to Azure Key Vault → reference it in a policy initiative → deploy via Defender for Cloud"
+      explanation: "Azure Blob Storage is the recommended package host, but other suitable HTTPS locations are supported. The definition must reference the correct artifact and access method. Deployment assignments also need the required identity, permissions, and initial remediation for existing machines."
+    - content: "Upload the ZIP to Azure Key Vault, reference it in an initiative, then deploy through Defender for Cloud"
       isCorrect: false
-      explanation: "Custom Machine Configuration packages are stored in Azure Storage, not Azure Key Vault. Key Vault stores keys and secrets, not configuration packages. The deployment path is: Azure Storage → custom policy definition → policy assignment."
-    - content: "Commit to a GitHub repository → link to Azure Policy as a code-based policy → autodeploy"
+      explanation: "Key Vault stores keys, secrets, and certificates. It isn't the configuration ZIP host in this workflow, and Defender for Cloud isn't the custom policy deployment mechanism."
+    - content: "Commit the package to a repository and wait for Azure Policy to generate and assign a policy automatically"
       isCorrect: false
-      explanation: "Azure Machine Configuration doesn't support direct GitHub repository integration for policy deployment. The package must be uploaded to Azure Storage and referenced in a custom policy definition."
-  - content: "A security engineer is preparing to deploy Azure Machine Configuration OS baseline enforcement across Contoso Manufacturing's production VMs. Which initial approach minimizes the risk of service disruption?"
+      explanation: "Committing a file doesn't by itself generate, import, or assign a policy. A repository can host a downloadable package, but the remaining deployment steps still have to be implemented."
+  - content: "Contoso has audited its servers with the built-in Azure compute security baseline policies. How should it automatically correct selected organization-approved settings?"
     choices:
-    - content: "Assign in enforce mode immediately to close compliance gaps as quickly as possible"
+    - content: "Change the built-in baseline policy effect to DeployIfNotExists"
       isCorrect: false
-      explanation: "Deploying in enforce mode immediately can cause service disruptions if the baseline settings conflict with existing VM configurations—for example, by enforcing service states or security settings that the application depends on. Starting in audit mode is the recommended practice."
-    - content: "Deploy in audit mode first to identify noncompliant settings, then promote to enforce mode after reviewing the issues"
+      explanation: "These built-in policies support AuditIfNotExists and Disabled. Their assignment settings don't turn an audit baseline into an enforcement policy."
+    - content: "Test a custom AuditAndSet package, generate an ApplyAndAutoCorrect policy, and remediate eligible existing machines after a pilot"
       isCorrect: true
-      explanation: "The recommended approach is to start in audit mode (AuditIfNotExists), which reports noncompliant settings without making changes. After reviewing which settings are noncompliant and assessing the issues of enforcement on running workloads, you can promote the assignment to enforce mode (DeployIfNotExists) with confidence."
-    - content: "Apply Azure Policy built-in initiatives with Deny effect at the management group scope"
+      explanation: "The package must support applying changes. A deployment policy, an authorized assignment identity, and initial remediation cover existing machines. The guest agent then corrects later drift at its evaluation interval."
+    - content: "Use a Deny policy to stop the Windows or Linux service inside the guest"
       isCorrect: false
-      explanation: "Azure Policy Deny effects prevent resource creation or modification but don't configure or audit OS settings within VMs. Machine Configuration uses AuditIfNotExists and DeployIfNotExists effects, not Deny."
+      explanation: "Deny prevents applicable Azure resource operations. It doesn't stop a service or change registry values inside the guest operating system."
