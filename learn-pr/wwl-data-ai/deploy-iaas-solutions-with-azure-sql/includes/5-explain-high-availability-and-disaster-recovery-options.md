@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=a76ed3a7-ca42-4362-8bf7-ba8915f4d7e4]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Beyond its built-in high availability, the Azure platform offers two options for providing higher levels of availability for VM and some PaaS workloads. Availability Zones and Availability Sets protect your workloads from planned maintenance activity and potential hardware failures.
 
 ## High availability options
@@ -62,4 +73,6 @@ Azure Site Recovery is supported for use with SQL Server, but keep in mind that 
 1. Data is continuously replicated to cache
 1. Cache is replicated to the target storage account
 1. During failover the virtual machine is added to the target environment
+
+::: zone-end
 

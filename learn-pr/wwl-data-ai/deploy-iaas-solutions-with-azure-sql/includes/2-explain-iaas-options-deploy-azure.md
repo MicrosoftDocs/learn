@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=a2bbc495-9d85-496e-9ca2-9c65c888b8d9]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Many applications require a VM running SQL Server. Some reasons for this option include:
 
 - **Older versions of SQL Server**—If an application requires an older version of SQL Server for vendor support, running inside a VM is the best option for those applications, because it allows for the application to be supported by that vendor.
@@ -96,4 +107,6 @@ When you provision an Azure virtual machine running SQL Server, you can also con
 :::image type="content" source="../media/dp-3300-module-11-lab-51.png" alt-text="SQL Server settings tab when creating a SQL Server virtual machine":::
 
 For more information about the SQL Server settings available when creating a virtual machine, see [Provision SQL Server on Azure VM (Azure portal)](/azure/azure-sql/virtual-machines/windows/create-sql-vm-portal).
+
+::: zone-end
 
