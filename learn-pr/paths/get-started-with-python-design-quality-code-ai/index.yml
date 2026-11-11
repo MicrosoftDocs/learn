@@ -1,0 +1,34 @@
+### YamlMime:LearningPath
+uid: learn.wwl.get-started-with-python-design-quality-code-ai
+metadata:
+  title: "Get Started with Python Programming: Part 3 - Design Quality Code with AI"
+  description: Design reliable Python code with defensive programming, performance benchmarking, clear specifications for AI assistants, and reviews of AI-generated code.
+  ms.date: 11/10/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: learning-path
+title: "Get started with Python programming: Part 3 - Design quality code with AI"
+summary: |
+  Build on your Python programming skills to design, improve, and review code with AI-assisted development tools. In this learning path, you apply defensive programming practices, measure and improve performance, write clear specifications for AI assistants, and audit AI-generated code for correctness, efficiency, and security.
+prerequisites: |
+  - Experience writing and running Python programs in Visual Studio Code, including functions, loops, lists, and dictionaries. Complete [Get started with Python programming: Part 2 - building programs](/training/paths/get-started-with-python-programs/) or have equivalent knowledge.
+  - Intermediate-level software development experience and an understanding of software design concepts.
+  - Familiarity with writing requirements and specifications.
+  - Experience using an AI coding assistant, such as GitHub Copilot.
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+  - intermediate
+roles:
+  - developer
+  - student
+products:
+  - vs-code
+subjects:
+  - app-development
+modules:
+  - learn.wwl.code-defensively-with-best-practices
+  - learn.wwl.benchmark-your-code-performance
+  - learn.wwl.architecting-code-specifications-ai
+  - learn.wwl.audit-ai-generated-python-code
+trophy:
+  uid: learn.wwl.get-started-with-python-design-quality-code-ai.trophy
