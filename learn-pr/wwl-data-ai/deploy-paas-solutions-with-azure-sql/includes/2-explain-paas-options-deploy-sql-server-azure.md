@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=a62008d5-64d0-4706-88ee-e031f4efd9f0]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Platform as a Service (PaaS) provides a complete development and deployment environment in the cloud, which can be used for simple cloud-based applications and for advanced enterprise applications.
 
 Azure SQL Database and Azure SQL Managed Instance are part of PaaS offering for Azure SQL.
@@ -114,4 +125,6 @@ You can initiate a failover either manually by the user or programmatically by t
 ## Failover groups
 
 [Failover groups](/azure/azure-sql/database/failover-group-sql-db?azure-portal=true) are built on top of the technology used in geo-replication but provide a single endpoint for connection. The major reason for using failover groups is that they provide endpoints that can be utilized to route traffic to the appropriate replica. Your application can then connect after a failover without connection string changes.
+
+::: zone-end
 

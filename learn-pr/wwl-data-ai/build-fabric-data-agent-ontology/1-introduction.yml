@@ -5,9 +5,9 @@ metadata:
   zone_pivot_groups: video-or-text
   title: Introduction
   description: Introduction to using ontology as business context for source-native queries in a Fabric data agent.
-  ms.date: 10/22/2026
-  author: weslbo
-  ms.author: wedebols
+  ms.date: 11/05/2026
+  author: angierudduck
+  ms.author: anrudduc
   ms.topic: unit
   ai-usage: ai-generated
 azureSandbox: false

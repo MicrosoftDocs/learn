@@ -5,9 +5,9 @@ metadata:
   zone_pivot_groups: video-or-text
   title: Test, validate, and publish a Fabric data agent
   description: Validate source-native queries and answers, diagnose ontology context issues, and publish and share a Fabric data agent.
-  ms.date: 10/22/2026
-  author: weslbo
-  ms.author: wedebols
+  ms.date: 11/05/2026
+  author: angierudduck
+  ms.author: anrudduc
   ms.topic: unit
   ai-usage: ai-generated
 azureSandbox: false

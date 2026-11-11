@@ -4,9 +4,9 @@ title: Exercise - Build an ontology manually
 metadata:
   title: Exercise - Build an Ontology Manually
   description: "Hands-on practice creating an ontology from scratch with manual entity and relationship creation"
-  ms.date: 10/22/2026
-  author: weslbo
-  ms.author: wedebols
+  ms.date: 11/05/2026
+  author: angierudduck
+  ms.author: anrudduc
   ms.topic: unit
   ai-usage: ai-generated
 azureSandbox: false

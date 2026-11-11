@@ -6,58 +6,57 @@ metadata:
   module_assessment: true
   ai_generated_module_assessment: false
   description: "Check your knowledge of creating ontologies with Fabric IQ"
-  ms.date: 10/22/2026
-  author: weslbo
-  ms.author: wedebols
+  ms.date: 11/05/2026
+  author: angierudduck
+  ms.author: anrudduc
   ms.topic: unit
   ai-usage: ai-generated
 azureSandbox: false
 labModal: false
 durationInMinutes: 5
 quiz:
-  title: "Check your knowledge"
   questions:
   - content: "What is the main advantage of generating an ontology from a Power BI semantic model compared to building manually?"
     choices:
     - content: "It creates relationship data bindings automatically"
       isCorrect: false
-      explanation: "Incorrect. While semantic model generation creates relationship type definitions, you still need to configure relationship data bindings manually for both approaches."
-    - content: "It automatically creates entity types, properties, keys, and entity data bindings from existing model structure"
+      explanation: "Incorrect. Generation creates relationship type definitions, but you still review and configure their data bindings."
+    - content: "It creates entity types, properties, property bindings, relationship definitions, and metrics from existing semantic-model structure"
       isCorrect: true
-      explanation: "Correct. Generating from a semantic model automates the creation of entity types (from tables), properties (from columns), keys, and entity data bindings, saving significant setup time compared to manual creation."
+      explanation: "Correct. Generation reuses semantic-model structure and source-owned measures. Review and follow-up binding work establish whether the ontology represents the intended business facts."
     - content: "It allows you to use business-friendly names from the start"
       isCorrect: false
-      explanation: "Incorrect. Generated entity types often have technical names and require renaming to business vocabulary. Manual creation lets you use business-friendly names from the start."
-  - content: "What must you configure for an entity type before you can bind it to data sources?"
+      explanation: "Incorrect. Generated entity types can have technical names that need refinement. Manual creation also allows business-friendly names from the start."
+  - content: "When is an entity type key required?"
     choices:
-    - content: "Relationship types connecting it to other entities"
+    - content: "Before defining any property"
       isCorrect: false
-      explanation: "Incorrect. While relationships are important, you can bind entity types to data before configuring relationships. The required component is the entity type key."
-    - content: "An entity type key using one or more string or integer properties"
+      explanation: "Incorrect. You can define properties before configuring a key."
+    - content: "When projecting the entity into a materialized graph"
       isCorrect: true
-      explanation: "Correct. Every entity type needs a key that uniquely identifies each instance. The key must use string or integer properties and is required before binding the entity type to data sources."
-    - content: "At least one time series property"
+      explanation: "Correct. Ontology supports keyless entities, but graph projection requires a key using string or integer properties."
+    - content: "For every entity before any source binding"
       isCorrect: false
-      explanation: "Incorrect. Time series properties are optional. Many entity types use only static properties. The required component is the entity type key."
-  - content: "How does a time series binding differ from a static binding?"
+      explanation: "Incorrect. Keyless entities are supported in ontology, but graph projection requires an entity type key."
+  - content: "Equipment records contain EquipmentId, PatientId, and EquipmentType. A readings table contains ReadingId, EquipmentId, Timestamp, and HeartRate. How should you add the readings as a related source for the equipment entity?"
     choices:
-    - content: "Time series bindings connect to streaming or time-stamped columnar data with a timestamp column, while static bindings connect to lakehouse tables"
+    - content: "Match EquipmentId across both sources and retain Timestamp with the measured values"
       isCorrect: true
-      explanation: "Correct. Static bindings connect entity properties to lakehouse tables containing data that changes infrequently. Time series bindings connect to time-stamped columnar data\u2014from an eventhouse or a lakehouse table formatted as timestamped observations\u2014requiring a timestamp column to order the measurements over time."
-    - content: "Time series bindings can be added before static bindings"
+      explanation: "Correct. EquipmentId links observations to the intended device. Timestamp distinguishes successive readings for that same device."
+    - content: "Match ReadingId to EquipmentId because each reading must become a new device"
       isCorrect: false
-      explanation: "Incorrect. Time series bindings require an existing static binding first because they need the key property from the static binding to link streaming measurements back to entity instances."
-    - content: "Time series bindings don't require a key property"
+      explanation: "Incorrect. ReadingId identifies an observation, not the equipment. Using it as the matching field can associate values with the wrong entity or produce no matches."
+    - content: "Match PatientId in both tables and discard Timestamp"
       isCorrect: false
-      explanation: "Incorrect. Time series bindings require a linking key property from the static binding to connect each measurement back to the correct entity instance."
-  - content: "What information do you need to configure a relationship data binding?"
+      explanation: "Incorrect. The readings table doesn't contain PatientId. Discarding Timestamp also removes the distinction between observations at different times."
+  - content: "The hospitals source has HospitalId. Each row in the departments source has DepartmentId and the HospitalId of its parent hospital. How can you configure Hospital contains Department without adding a mapping table?"
     choices:
-    - content: "The source table containing identifying information for both entity types and the columns that match each entity type's key"
+    - content: "Keep Use mapping table? off and match HospitalId in the origin source to HospitalId in the target source"
       isCorrect: true
-      explanation: "Correct. Relationship configuration requires selecting a source table where each row contains values identifying both the source and target entity instances, and mapping columns to the keys of both entity types."
-    - content: "Only the source entity type and target entity type"
+      explanation: "Correct. The department source already records its parent hospital identifier. Direct property matching expresses that connection without a separate mapping table."
+    - content: "Match HospitalId to DepartmentId because endpoint keys always represent the same business value"
       isCorrect: false
-      explanation: "Incorrect. While you define source and target entity types when creating the relationship type, you also need to specify the source table and map columns to both entity type keys to make the relationship queryable."
-    - content: "The primary key and foreign key columns from your database schema"
+      explanation: "Incorrect. HospitalId and DepartmentId identify different concepts. Matching them doesn't represent which hospital contains a department."
+    - content: "Define only the relationship name because the connector automatically supplies the data mapping"
       isCorrect: false
-      explanation: "Incorrect. Ontology uses entity type keys and linking tables rather than database-specific primary and foreign key terminology. You need the source table and columns that reference both entity types."
+      explanation: "Incorrect. The name describes meaning, but you still configure the source properties that establish the connections."

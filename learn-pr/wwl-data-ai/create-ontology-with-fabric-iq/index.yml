@@ -24,15 +24,15 @@ metadata:
   gs-solution.area: "AI Business Solutions"
   gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/create-ontology-with-fabric-iq/index.yml
   title: Create an Ontology with Fabric IQ
-  description: Learn how to create ontologies in Fabric IQ by building manually or generating from Power BI semantic models, then bind ontology definitions to OneLake data sources including lakehouse tables and eventhouse streams.
-  ms.date: 10/22/2026
-  author: weslbo
-  ms.author: wedebols
+  description: Create shared business context for AI agents by creating ontologies in Microsoft Fabric IQ that connect organizational data to business concepts, relationships, and metrics.
+  ms.date: 11/05/2026
+  author: angierudduck
+  ms.author: anrudduc
   ms.topic: module
   ms.service: fabric
   ai-usage: ai-generated
 title: Create an ontology with Fabric IQ
-summary: Ontologies in Fabric IQ transform your data into a business vocabulary that everyone can understand. This module covers two ways to create ontologies—building manually to understand the core components, or generating automatically from Power BI semantic models to accelerate development. You practice both approaches and learn how to connect your ontology to OneLake data sources, including lakehouse tables and eventhouse streams.
+summary: Create shared business context for AI agents by creating ontologies in Microsoft Fabric IQ that connect organizational data to business concepts, relationships, and metrics.
 abstract: |
   By the end of this module, you'll be able to:
   - Evaluate two approaches for creating an ontology in Fabric IQ

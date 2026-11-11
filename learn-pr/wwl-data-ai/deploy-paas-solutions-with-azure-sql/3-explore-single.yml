@@ -2,11 +2,12 @@
 uid: learn.wwl.deploy-paas-solutions-with-azure-sql.explore-single
 title: Explore single SQL database
 metadata:
+  zone_pivot_groups: video-or-text
   adobe-target: true
   prefetch-feature-rollout: true
   title: Explore single SQL database
   description: "Explore single SQL database"
-  ms.date: 07/23/2026
+  ms.date: 11/11/2026
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit

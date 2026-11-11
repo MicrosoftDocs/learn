@@ -5,9 +5,9 @@ metadata:
   zone_pivot_groups: video-or-text
   title: Understand Fabric data agents and ontology context
   description: Explain how ontology context guides source selection and SQL, KQL, or DAX query generation, including permissions and context refresh.
-  ms.date: 10/22/2026
-  author: weslbo
-  ms.author: wedebols
+  ms.date: 11/05/2026
+  author: angierudduck
+  ms.author: anrudduc
   ms.topic: unit
   ai-usage: ai-generated
 azureSandbox: false

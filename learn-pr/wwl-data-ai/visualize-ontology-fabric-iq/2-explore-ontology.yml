@@ -3,10 +3,10 @@ uid: learn.wwl.visualize-ontology-fabric-iq.explore-ontology
 title: Explore the ontology
 metadata:
   title: Explore the Ontology
-  description: Learn how to open the entity type overview, view entity instances, and inspect individual entity instance details and relationships in Microsoft Fabric IQ.
-  ms.date: 04/13/2026
-  author: theresa-i
-  ms.author: lumac
+  description: Learn how to open entity type details, view bound instances, and inspect their static property values in Microsoft Fabric IQ.
+  ms.date: 11/05/2026
+  author: angierudduck
+  ms.author: anrudduc
   ms.topic: unit
   ai-usage: ai-generated
 azureSandbox: false

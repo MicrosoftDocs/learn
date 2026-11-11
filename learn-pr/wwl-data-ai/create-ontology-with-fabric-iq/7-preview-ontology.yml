@@ -4,10 +4,10 @@ title: Preview the ontology
 metadata:
   zone_pivot_groups: video-or-text
   title: Preview the ontology
-  description: "Verify ontology by viewing entity instances, relationship graphs, and property charts"
-  ms.date: 10/22/2026
-  author: weslbo
-  ms.author: wedebols
+  description: "Explore populated entity instances and source bindings, and understand when optional graph materialization supports relationship exploration."
+  ms.date: 11/05/2026
+  author: angierudduck
+  ms.author: anrudduc
   ms.topic: unit
   ai-usage: ai-generated
 azureSandbox: false

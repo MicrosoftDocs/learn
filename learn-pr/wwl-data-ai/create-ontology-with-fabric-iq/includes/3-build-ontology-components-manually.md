@@ -11,7 +11,7 @@
 
 Building an ontology starts with defining its fundamental building blocks. This unit focuses on ontology structure. You learn to create entity types representing business concepts and relationship types showing how they connect. Creating an ontology manually involves three steps:
 
-1. Define entity types—name each business concept, add properties, and set a key
+1. Define entity types: name each business concept, add properties, and choose identifiers where needed
 2. Define relationship types—connect entity types with named, directional relationships
 3. Bind to data—connect entity types and relationships to OneLake sources
 
@@ -23,7 +23,7 @@ Creating ontology components manually gives you complete control over business v
 
 The first step in creating an ontology manually is defining entity types—the business concepts in your domain.
 
-Entity types represent business concepts—the things your organization works with. In a healthcare scenario, this might include Hospital, Department, Room, and Patient. Each entity type needs properties describing its characteristics and a key uniquely identifying each instance.
+Entity types represent business concepts, such as Hospital, Department, Room, and Patient. Properties describe their characteristics. For this example, identifiers such as HospitalId distinguish individual records and support reliable connections between them.
 
 ### Define the entity type
 
@@ -41,25 +41,21 @@ Enter "Hospital" as the entity type name and select **Add Entity Type**. The sys
 
 After creating the entity type, define its properties. Properties describe the entity's characteristics. A Hospital entity might have HospitalName (string), City (string), and State (string). A Department entity might have DepartmentName (string), Floor (integer), and DepartmentId (integer).
 
-To add properties, select the entity type name in the **Explorer**, then select **View entity type details** from the top ribbon. The **Configure** page opens. Expand **Manage property bindings** and select **Add properties**. The dialog asks you to specify each property's name and property type, as shown below.
-
-:::image type="content" source="../media/entity-properties-unfilled.png" alt-text="Screenshot of the entity type configuration showing where to add properties." lightbox="../media/entity-properties-unfilled.png":::
+To add properties, select the entity type name in the **Explorer**, then select **View entity type details** from the top ribbon. The **Configure** page opens. Expand **Manage property bindings** and select **Add properties**. The dialog asks you to specify each property's name and property type.
 
 ## Define property characteristics
 
 For each property, you make two decisions:
 
-- **Property name** — Describes what the property represents. Use specific terms like `HospitalName` rather than generic terms like `Name`, so queries are unambiguous when the same concept appears across multiple entity types—`HospitalName`, `DepartmentName`, `PatientName` are each clearly distinct. Property names often match the column names in your source data. Property names must be 1–26 characters, contain only alphanumeric characters, hyphens, and underscores, and start and end with an alphanumeric character.
+- **Property name** — Describes what the property represents. Use specific terms like `HospitalName` rather than generic terms like `Name`, so consumers can distinguish `HospitalName`, `DepartmentName`, and `PatientName`. Property names can match source columns, but the binding also lets you use business-friendly names.
 
-- **Property type** — Defines whether the property represents static or time series data. Static properties describe attributes that change infrequently—a hospital's name, a department's floor number, a patient's date of birth. Time series properties represent continuously arriving observations, like vital signs readings that arrive every few seconds from monitoring equipment. All of Lamna Healthcare's entity types in this unit use static properties. You encounter time series properties in a later unit when you add the VitalSignsReadings entity type and connect it to eventhouse streaming data.
+- **Property type** — Describes the value, such as string, integer, boolean, datetime, or double. HospitalName is a string and HospitalId is an integer.
 
-  If you prefer to define your business concepts before deciding on data types, you can choose **Define at binding** as the property type to create an untyped property. The data type is assigned automatically when you bind a source column to that property later.
+  If you define the concept before choosing its source or data type, select **Unknown** as the property type. The property remains untyped and unbound until you bind a source column. Untyped properties don't appear in data previews or query results.
 
 ## Add properties to entity type
 
-You add properties for the Hospital entity type—HospitalName (string, static), City (string, static), State (string, static), and HospitalId (integer, static)—as shown in the image below. You select **Save** to create the properties.
-
-:::image type="content" source="../media/hospital-properties.png" alt-text="Screenshot of Add properties dialog with Hospital properties: HospitalName, City, State, and HospitalId." lightbox="../media/hospital-properties.png":::
+For Hospital, add HospitalName (string), City (string), State (string), and HospitalId (integer), then select **Save**. These properties describe the hospital rather than observations over time.
 
 Each row in the dialog becomes a property on the Hospital entity type. Once saved, the properties appear in the Entity type configuration pane on the right.
 
@@ -69,13 +65,13 @@ While you configure an entity type, add metadata that gives people and AI agents
 
 ### Configure the entity type key
 
-Every entity type needs a key identifying each unique instance of that entity. An instance represents one real-world occurrence of the entity type. The Hospital entity type represents the concept of hospitals, while individual instances represent specific hospitals—the hospital with HospitalId 1, the hospital with HospitalId 2, the hospital with HospitalId 1001. Similarly, the Patient entity type represents the concept of patients, while instances represent specific patients—PatientId 101, PatientId 102, PatientId 103.
+An entity type key identifies each unique instance of that entity. An instance represents one real-world occurrence of the entity type. The Hospital entity type represents the concept of hospitals, while individual instances represent specific hospitals: the hospital with HospitalId 1, the hospital with HospitalId 2, the hospital with HospitalId 1001. Similarly, the Patient entity type represents the concept of patients, while instances represent specific patients: PatientId 101, PatientId 102, PatientId 103.
 
-The key tells the system how to identify and distinguish these instances. Without a key, the system can't tell whether incoming data describes a new hospital or updates for an existing one. The key property must contain unique values—no two hospitals share the same HospitalId, no two patients share the same PatientId.
+The key tells the system how to identify and distinguish these instances when stable identity is required. The key property must contain unique values: no two hospitals share the same HospitalId, no two patients share the same PatientId.
 
 To configure the entity type key, select **Define entity type key** in the Entity type configuration pane. Choose one or more properties that uniquely identify instances. For Hospital, HospitalId uniquely identifies each hospital instance. For Department, DepartmentId uniquely identifies each department instance. For Patient, PatientId serves this purpose.
 
-Keys can only use string or integer properties—other data types don't work as identifiers. Keys are required before you can bind the entity type to data sources. Without a key, the system can't create instances from your source data.
+Keys use string or integer properties. Ontology also supports keyless entity types, so a key isn't a universal prerequisite for defining or binding an entity. Define a key when the business concept needs stable instance identity, as in this healthcare example. Keys are required if you later project entities into a materialized graph.
 
 :::image type="content" source="../media/configured-properties.png" alt-text="Screenshot of Hospital entity type configuration showing properties list and HospitalId configured as the key." lightbox="../media/configured-properties.png":::
 
@@ -111,6 +107,6 @@ Relationship direction matters for how people navigate and query the ontology. W
 
 You repeat this process for each relationship in your business domain. For a hospital scenario, you'd define Department "has rooms" Room to show how departments organize their spaces, and Room "has Patient" Patient to show patient assignments. Each relationship captures one aspect of how your organization operates.
 
-At this stage, relationship types are defined as conceptual connections—which entities relate and what those connections mean using business vocabulary. Later, when you configure data bindings, the system populates these relationships with actual data showing specific connections between entity instances. Next, you learn how to generate an ontology from an existing semantic model, automating this entire process. The system creates entity types, properties, keys, and relationship types from an existing semantic model.
+At this stage, relationship types are defined as conceptual connections: which entities relate and what those connections mean using business vocabulary. Later, when you configure data bindings, the system populates these relationships with actual data showing specific connections between entity instances. Next, you learn how to generate an ontology from an existing semantic model. The system creates entity types, properties, metrics, and relationship types from that semantic model, while you review keys and complete relationship bindings.
 
 ::: zone-end

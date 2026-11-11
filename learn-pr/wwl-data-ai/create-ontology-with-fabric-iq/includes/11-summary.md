@@ -9,10 +9,10 @@
 
 ::: zone pivot="text"
 
-In this module, you learned two approaches for creating ontologies in Fabric IQ: building manually to understand core concepts, or generating from a Power BI semantic model to automate initial structure. Both approaches produce entity types, properties, relationship types, and entity type keys that define your business vocabulary.
+In this module, you learned two approaches for creating ontologies in Fabric IQ: building manually to understand core concepts, or generating from a Power BI semantic model to automate initial structure. Both approaches produce entity types, properties, and relationship types that define your business vocabulary. You review keys where needed, and generated metrics retain calculations from the source semantic model.
 
-You connected ontology definitions to actual data by configuring bindings—static data from lakehouse tables and time series data from eventhouse streams. These bindings let your ontology represent real data without copying it, creating a unified layer that AI agents and other tools can query using business concepts instead of technical schemas.
+You connected ontology definitions to actual data by configuring bindings to lakehouse records and timestamped eventhouse observations. These bindings map business concepts to sources without copying data into the ontology. Consuming experiences use that context to query the relevant sources.
 
-Now that you've created a complete ontology, you're ready to explore and query it using Graph visualization and the Query builder.
+You can explore eligible connected data through an optional materialized graph. Unlike a source binding, [graph materialization](/fabric/iq/ontology/how-to-use-ontology-graph) loads selected data into a graph and requires you to consider source support and refresh.
 
 ::: zone-end

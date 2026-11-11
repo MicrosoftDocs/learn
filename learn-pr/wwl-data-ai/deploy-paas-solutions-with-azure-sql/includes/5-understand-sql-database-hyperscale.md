@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=9de7e071-e85e-49f3-9e81-ebb5a0f58c98]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Azure SQL Database was historically limited to 4 TB of storage per database due to physical infrastructure constraints. However, the Hyperscale service tier revolutionizes this by allowing databases to exceed 100 TB. Hyperscale uses horizontal scaling techniques to add compute nodes as data sizes grow. While the cost of Hyperscale is similar to Azure SQL Database, there's an extra per terabyte storage cost. It's important to note that once a database is converted to Hyperscale, it can't be reverted to a standard Azure SQL Database.
 
 Hyperscale is ideal for most business workloads, offering flexibility, and high performance with independently scalable compute and storage resources. It separates the query processing engine from the components providing long-term storage and durability, allowing storage capacity to scale smoothly as needed.
@@ -73,4 +84,6 @@ To deploy an Azure SQL Database with the Hyperscale tier, follow the same proces
 1. Optionally, review the other tabs to make adjustments if needed.
 
 1. On the **Review + create** tab, select **Create**.
+
+::: zone-end
 

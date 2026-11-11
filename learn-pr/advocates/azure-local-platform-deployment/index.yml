@@ -15,6 +15,8 @@ summary: |
 
   In this module, you learn to treat **readiness**, **orchestration**, and **acceptance** as separate engineering responsibilities. You review deployment inputs, distinguish different kinds of validation, investigate a failed operation, and decide whether a system is ready for handover.
 abstract: |
+  > [!VIDEO https://learn-video.azurefd.net/vod/player?id=0ce33a0e-da8c-404c-8da0-8b373a045499]
+
   After completing this module, you can:
 
   - Map hardware, identity, network, storage, and Azure prerequisites to their owners and dependent deployment stages.

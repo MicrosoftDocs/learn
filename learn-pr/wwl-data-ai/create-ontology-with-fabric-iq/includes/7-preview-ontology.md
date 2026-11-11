@@ -9,23 +9,22 @@
 
 ::: zone pivot="text"
 
-With entity types bound to data and relationships configured, the ontology is ready to explore. Selecting an entity type and choosing **Entity type overview** from the ribbon opens the preview experience—a dashboard showing how your bound data looks as a populated ontology.
+With entity types bound to data and relationships configured, the ontology is ready to explore. Entity type details show how source records populate your business concepts.
 
-## Explore the entity type overview
+## Explore entity instances
 
-The entity type overview shows three sections for the selected entity type.
+The **View Entity Type details** command opens an entity's details. Its **Instances** page displays populated instances and their static property values. For Room, these include RoomId, RoomNumber, DepartmentId, and RoomType.
 
-**Relationship graph**—a visual map showing how this entity type connects to others. For Room, you can see connections to VitalSignEquipment, Department, and Patient—confirmation that your relationship configuration worked.
+The ontology canvas shows definitions and modeled connections; **Instances** shows the associated records.
 
-**Property charts**—bar charts showing the distribution of property values across all instances. For Room, charts show the spread of RoomNumber, DepartmentId, and RoomType values across all 10 room instances.
+The **Configure** page shows property bindings and their source mappings. Together, these views help you distinguish an ontology definition from the data it represents.
 
-**Entity instances table**—the list of actual instances populated from your bound data, showing RoomId, RoomNumber, DepartmentId, and RoomType for each room. Selecting any instance opens its detail view, showing that room's property values and its connections to other entities.
+## Understand relationship exploration
 
-:::image type="content" source="../media/preview-experience.png" alt-text="Screenshot of Room entity overview with relationship graph, property charts, and entity instances table." lightbox="../media/preview-experience.png":::
+A relationship definition on the canvas describes which entity types can connect. Exploring those connections as a graph of actual records requires a separate, optional materialized graph.
 
-> [!NOTE]
-> When you first open the preview experience, you'll see an **"Updating your ontology"** message while the system processes your data in the background. After 1-2 minutes, refresh your browser to display the entity type overview.
+**Manage graph** identifies eligible entities and relationships for materialization. Eligibility depends on keys, bindings, and supported sources, so a valid ontology isn't necessarily eligible in its entirety. **Explore graph** opens the materialized data for visual queries. Graph data requires refresh after source changes.
 
-The entity type overview confirms your ontology is working—definitions are populated with real data and connected across entity types. The next module covers how to query and visualize this data using the Query builder and relationship graph.
+Your ontology now connects business definitions to source records. The next module covers [graph materialization](/fabric/iq/ontology/how-to-use-ontology-graph), visualization, and visual queries in more detail.
 
 ::: zone-end
