@@ -12,7 +12,7 @@ The Agent-to-Agent (A2A) protocol addresses this challenge by providing a standa
 
 For example, imagine a technical writer who wants to create compelling blog content. One agent generates compelling article headlines, while another creates detailed outlines. Using A2A, a routing agent coordinates the workflow: it sends the user's request to the title agent, passes the generated title to the outline agent, and returns the final outline to the user—all automatically.
 
-In this module, you learn how to implement the A2A protocol with Azure AI Agents. You also practice configuring a routing agent, registering remote agents, and building a coordinated workflow that allows multiple agents to collaborate effectively.
+In this module, you learn how to implement the A2A protocol with Microsoft Foundry agents and the Agent Framework. You also practice configuring a routing agent, registering remote agents, and building a coordinated workflow that allows multiple agents to collaborate effectively.
 
 ::: zone-end
 

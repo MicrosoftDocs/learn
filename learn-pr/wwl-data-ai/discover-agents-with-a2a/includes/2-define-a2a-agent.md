@@ -21,12 +21,12 @@ The **Agent-to-Agent (A2A) protocol** offers several advantages for AI agent int
   A2A enables agents from different vendors and platforms to **share context and work together**, allowing seamless automation across systems that are traditionally disconnected.
 
 - **Flexible Model Selection:**  
-  Each A2A agent can choose which large language model (LLM) to use for handling requests, enabling **optimized or fine-tuned models per agent**, unlike some MCP scenarios that rely on a single LLM connection.
+  Each A2A agent runs its own large language model (LLM), enabling **optimized or fine-tuned models per agent**.
 
-- **Integrated Authentication:**  
-  Authentication is built into the A2A protocol, providing a **robust security framework** for secure agent-to-agent communication.
+- **Standard Authentication:**  
+  A2A doesn't define its own authentication mechanism. Instead, agents declare standard web security schemes (such as OAuth 2.0 or API keys) in their Agent Card, providing a **familiar security framework** for secure agent-to-agent communication.
 
-## Agent Skills
+## Agent skills
 
 An Agent Skill describes a specific capability or function that the agent can perform. Think of it as a building block that communicates to clients or other agents what tasks the agent is designed to handle.
 
@@ -40,17 +40,17 @@ Key elements of an Agent Skill include:
 
 When defining a skill for your agent, consider the tasks it should perform, how to describe them clearly, and how other agents or clients might use them. For example, a simple "Hello World" skill could return a basic greeting in text format, whereas a blog-writing skill might accept a topic and return a suggested title or outline.
 
-## Agent Card
+## Agent card
 
 The Agent Card is like a digital business card for your agent. It's a structured document that a routing agent or client can retrieve to discover your agent’s capabilities and how to interact with it.
 
 Key elements of an Agent Card include:
 - Identity Information: Name, description, and version of the agent.
-- Endpoint URL: Where the agent’s A2A service can be accessed.
-- Capabilities: Supported A2A features such as streaming or push notifications.
+- Supported Interfaces: One or more endpoints where the agent's A2A service can be accessed. Each one has a URL, a protocol binding (such as JSON-RPC, gRPC, or HTTP/REST), and a protocol version.
+- Capabilities: Supported A2A features such as streaming, push notifications, or an extended Agent Card.
 - Default Input/Output Modes: The primary media types the agent can handle.
 - Skills: A list of the agent’s skills that other agents can invoke.
-- Authentication Support: Indicates if the agent requires credentials for access.
+- Security: The authentication schemes the agent accepts, such as OAuth 2.0 or API keys, if it requires credentials for access.
 
 When creating an Agent Card, ensure it accurately represents your agent’s skills and endpoints. This allows clients or routing agents to discover the agent, understand what it can do, and interact with it appropriately.
 

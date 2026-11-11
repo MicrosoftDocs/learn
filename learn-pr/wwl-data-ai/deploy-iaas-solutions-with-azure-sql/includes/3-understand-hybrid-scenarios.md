@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=c6289885-3ba8-47c0-98e5-d0806cd33987]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Suppose your organization has a significant investment in SQL Server infrastructure on-premises and in local data centers. In that case, it's crucial to be aware that using the cloud isn't an all-or-nothing proposition. There are ways to use existing on-premises infrastructure in a hybrid capacity with Azure to improve operational resiliency and reduce costs.
 
 Adopting a hybrid infrastructure is an excellent initial step for organizations that rely on on-premises solutions and are cautious about transitioning to the cloud. Many modern organizations use a combination of physical and virtualized SQL Server deployments on-premises, which can be extended to the cloud as part of a hybrid solution. The hybrid SQL Server platform combines the advantages of both on-premises and cloud services, serving as a complementary middle ground. Typically, the cloud component uses IaaS services such as storage or SQL Server virtual machines.
@@ -37,4 +48,6 @@ When deploying a hybrid SQL solution, all core infrastructure, such as Active Di
 :::image type="content" source="../media/module-22-plan-implement-final-12.png" alt-text="A connection diagram depicting an ExpressRoute connection to Azure.":::
 
 The ExpressRoute connections tend to be more costly, but they provide the best security and lowest latency as all communication flows over a direct secured channel independent of the public internet. However, common drawbacks for this solution include overall cost and the inability to apply ExpressRoute between cloud providers in a multicloud solution.
+
+::: zone-end
 
