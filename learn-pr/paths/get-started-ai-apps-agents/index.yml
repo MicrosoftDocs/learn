@@ -75,6 +75,7 @@ modules:
   - learn.wwl.get-started-with-computer-vision-in-azure
   - learn.wwl.get-started-information-extraction
   - learn.wwl.get-started-foundry-iq
+  - learn.wwl.get-started-foundry-voice-agents
 
 trophy:
   uid: learn.get-started-ai-apps-agents.trophy

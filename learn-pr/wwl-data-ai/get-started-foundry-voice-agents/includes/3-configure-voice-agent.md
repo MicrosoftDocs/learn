@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=ead1322e-c0e7-4cbc-b692-51e4b27847fe]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 After you create a voice agent, its instructions, voice, and greeting shape the caller experience. These settings define the agent's purpose, how it communicates, and the limits of what it does.
 
 ## Write instructions for a spoken conversation
@@ -46,3 +57,5 @@ Useful configuration considerations include:
 - **Boundaries**: Do the instructions distinguish between explaining a process and performing an action?
 
 These choices establish the expected behavior. The next unit explores how spoken conversations reveal problems with pauses, interruptions, and unclear requests.
+
+::: zone-end

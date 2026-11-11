@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=9e91adae-59c3-4b9d-87ee-04436f516c06]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Microsoft Foundry Agent Service supports voice agents that receive spoken requests and reply with speech. In this unit, you explore how a voice conversation works and how Foundry provides a starting configuration for an agent.
 
 ## Explore voice agents
@@ -34,3 +45,5 @@ After the agent is created, the playground brings together its instructions, AI 
 
 > [!NOTE]
 > Voice-agent availability depends on your project, subscription, and region. You can't change an existing agent's interaction mode from text to voice. For prerequisites and current availability, see [Create a voice-based prompt agent](/azure/foundry/agents/quickstarts/prompt-voice-agent).
+
+::: zone-end
