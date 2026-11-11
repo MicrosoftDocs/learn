@@ -11,15 +11,17 @@
 
 Imagine you're working at Lamna Healthcare and you already have a Power BI semantic model representing hospitals, departments, rooms, and patients—complete with relationships showing how they connect. Building an ontology manually would mean recreating all that structure from scratch. Instead, you can generate an ontology directly from the existing semantic model, getting entity types, properties, and relationship structure in minutes.
 
-Fabric reads your semantic model and translates it into ontology components. Tables become entity types, columns become properties with their data types preserved, and model relationships define how entity types connect. This automation doesn't just save time—it ensures your ontology mirrors the analytical model your teams already trust for reporting.
+Fabric reads your semantic model and translates it into ontology components. Tables become entity types, columns become properties with their data types preserved, and semantic-model relationships define how entity types connect. Existing DAX measures also appear as metrics, with calculations owned by the source semantic model.
 
 ## Generate ontology structure
 
-To generate an ontology from your Power BI semantic model, navigate to your semantic model in Fabric and select **Generate ontology**. The system prompts you to choose a workspace and name for your new ontology, then creates the foundational components automatically.
+You need a Fabric-enabled capacity, permission to create items in the destination workspace, and Read and Build permissions on the source semantic model. The required ontology and Fabric item tenant settings must also be enabled.
+
+To generate an ontology, select **Generate Ontology** from the semantic model ribbon or its **...** action menu. Choose the destination workspace and ontology name, then select **Create**.
 
 :::image type="content" source="../media/generate-ontology-button.png" alt-text="Screenshot of the Generate Ontology button in the Power BI semantic model ribbon in Fabric." lightbox="../media/generate-ontology-button.png":::
 
-The generation process creates entity types from all visible tables in your semantic model. In Lamna Healthcare's scenario, tables like hospitals, departments, rooms, patients, and vitalsignequipment become entity types with those same names.
+The generation process creates entity types from the tables in your semantic model. In Lamna Healthcare's scenario, tables like hospitals, departments, rooms, patients, and vitalsignequipment become entity types with those same names.
 
 ## Review what was generated
 
@@ -31,20 +33,22 @@ Generation handles several tasks automatically, saving significant manual effort
 
 **Entity types and properties** — Each table becomes an entity type, and each column becomes a property with its data type preserved. An integer column like HospitalId becomes an integer property, while a string column like HospitalName becomes a string property.
 
-**Entity data bindings** — The system configures bindings automatically because the semantic model already connects to your lakehouse tables through Direct Lake mode. These bindings map properties to source columns, making entity data queryable immediately.
+**Entity data bindings** — Generation creates property bindings to source data. These aren't necessarily direct bindings to lakehouse tables. An entity bound to a semantic model isn't currently eligible for optional graph projection.
 
-**Entity type keys** — Where the system can determine unique identifiers from your data, it configures keys automatically. For example, HospitalId becomes the key for hospitals, DepartmentId for departments.
+**Entity type keys** — Generation doesn't guarantee that every required key is complete. For example, HospitalId identifies hospitals and DepartmentId identifies departments; these keys might need configuration after generation.
 
 **Relationship type definitions** — Based on relationships in your semantic model, the system creates relationship types. If hospitals relate to departments in the model, a corresponding relationship type appears in your ontology.
 
+**Metrics** — DAX measures from the semantic model appear as metrics associated with entities. The source semantic model still owns the calculation.
+
 ## Complete remaining configuration
 
-After generation, complete these tasks to finalize your ontology:
+After generation, the remaining configuration includes:
 
-- **Review entity type keys** — Verify each entity type has a key defined. Keys are inferred from the semantic model's relationship structure, and most are configured automatically, but you should verify they're all present.
+- **Names and identifiers** — Technical names can be renamed to business vocabulary. Entity type keys need review, including any missing keys and composite identifiers.
 
-- **Verify and configure relationship types** — Relationship bindings are created based on the semantic model structure. Depending on how the model defines relationships, some bindings are configured automatically while others require manual configuration to make them queryable.
+- **Relationship bindings** — Generated relationship type definitions still need bindings to the appropriate source properties or mapping tables.
 
-- **Add time series bindings for streaming data** — Static entity bindings from the lakehouse are configured automatically. For entity types that need real-time streaming data, add time series bindings to connect eventhouse data sources.
+- **Time-series data** — Generation doesn't automatically create time-series properties and bindings. The eventhouse readings require an additional source linked to the equipment entity through EquipmentId.
 
 ::: zone-end

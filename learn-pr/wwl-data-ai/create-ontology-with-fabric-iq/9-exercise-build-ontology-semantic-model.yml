@@ -4,9 +4,9 @@ title: Exercise - Generate an ontology from a Power BI semantic model
 metadata:
   title: Exercise - Generate an Ontology from a Power BI Semantic Model
   description: "Hands-on practice generating an ontology automatically from a Power BI semantic model"
-  ms.date: 10/22/2026
-  author: weslbo
-  ms.author: wedebols
+  ms.date: 11/05/2026
+  author: angierudduck
+  ms.author: anrudduc
   ms.topic: unit
   ai-usage: ai-generated
 azureSandbox: false

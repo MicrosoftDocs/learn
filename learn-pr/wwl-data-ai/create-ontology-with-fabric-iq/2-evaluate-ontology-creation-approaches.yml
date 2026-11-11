@@ -5,9 +5,9 @@ metadata:
   zone_pivot_groups: video-or-text
   title: Choose an Ontology Creation Approach
   description: "Learn about the two approaches for creating ontologies in Fabric IQ and when to use each one"
-  ms.date: 10/22/2026
-  author: weslbo
-  ms.author: wedebols
+  ms.date: 11/05/2026
+  author: angierudduck
+  ms.author: anrudduc
   ms.topic: unit
   ai-usage: ai-generated
 azureSandbox: false

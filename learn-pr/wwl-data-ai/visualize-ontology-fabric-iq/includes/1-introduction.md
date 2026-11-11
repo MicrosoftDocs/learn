@@ -1,12 +1,10 @@
 Imagine you're a data analyst at Lamna Healthcare. You've built an ontology in Fabric IQ.
 
-Hospital, Department, Room, Patient, and VitalSignEquipment entity types are defined, bound to the lakehouse and eventhouse, and structurally sound. Now comes the reason you built it.
+Hospital, Department, Room, Patient, and VitalSignEquipment entity types are defined and bound to source data. Now comes the reason you built it.
 
-The clinical operations manager stops by with a question: "Which rooms in the Intensive Care Unit currently have patients, and which vital sign monitors are active there?" Before the ontology, answering that question meant writing a multi-table SQL join—linking patient assignment records to rooms, rooms to departments, and departments to equipment logs. With the ontology in place, you can explore the answer visually by following named relationships across your semantic layer.
+The clinical operations manager stops by with a question: "Which rooms in the Intensive Care Unit have patients, and which vital sign monitors are assigned there?" Before the ontology, answering that question meant writing a multi-table SQL join. With the ontology in place, you can inspect bound instances and explore eligible connected data through an optional materialized graph.
 
-In this module, you open the entity type overview to inspect the entity instances that your data bindings have populated. You see individual Department, Room, and Patient records are drawn from your OneLake sources. You expand the relationship graph to visualize how those instances connect—patients assigned to rooms, rooms belonging to departments, equipment monitoring patients. You use the Query builder to add filters for specific property values, control which entity types and relationship types appear using the Components pane, and explore data that spans your lakehouse and eventhouse without writing any SQL.
-
-By the end of this module, you're equipped to turn the ontology into answers: exploring connected healthcare data the way business users think about it.
+In this module, you learn how to inspect instances in entity type details, select eligible data for graph materialization, and use visual graph queries to filter connected records. By the end of this module, you're equipped to turn the ontology into answers: exploring connected healthcare data the way business users think about it.
 
 > [!IMPORTANT]
-> Fabric IQ is currently in [preview](/fabric/fundamentals/preview).
+> Ontology in Fabric IQ is in preview. This module also uses Graph in Microsoft Fabric for optional graph exploration. Check the [ontology documentation](/fabric/iq/ontology/overview) and [Graph overview](/fabric/graph/overview) for the latest availability of these features, including updates about general availability (GA). For preview conditions and limitations, see [Microsoft Fabric preview features](/fabric/fundamentals/preview).

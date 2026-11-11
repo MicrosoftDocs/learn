@@ -6,28 +6,27 @@ metadata:
   title: Module assessment
   module_assessment: true
   description: "Check your knowledge of Microsoft Fabric IQ fundamentals"
-  ms.date: 10/29/2026
-  author: weslbo
-  ms.author: wedebols
+  ms.date: 11/05/2026
+  author: angierudduck
+  ms.author: anrudduc
   ms.topic: unit
   ai-usage: ai-generated
 azureSandbox: false
 labModal: false
 durationInMinutes: 5
 quiz:
-  title: "Check your knowledge"
   questions:
-  - content: "What are the three core concepts that make up an ontology in Fabric IQ?"
+  - content: "A team needs shared definitions of equipment, maintenance orders, and task dependencies across business data. Which part of Microsoft IQ supplies this context?"
     choices:
-    - content: "Tables, columns, and foreign keys"
+    - content: "Work IQ"
       isCorrect: false
-      explanation: "Incorrect. These are relational database concepts. Ontology uses things (entity types), facts (properties), and connections (relationships)."
-    - content: "Things (entity types), facts (properties), and connections (relationships)"
+      explanation: "Incorrect. Work IQ provides context on how employees work. Fabric IQ provides context on business entities and data, including the equipment and task dependencies in this question."
+    - content: "Fabric IQ"
       isCorrect: true
-      explanation: "Correct. An ontology is made up of the things in your environment (entity types), their facts (properties), and the ways they connect (relationships)."
-    - content: "Lakehouses, warehouses, and semantic models"
+      explanation: "Correct. Fabric IQ connects business entities and data through shared context. An ontology can define equipment, maintenance orders, and their relationships to tasks."
+    - content: "Foundry IQ"
       isCorrect: false
-      explanation: "Incorrect. These are data storage and modeling options in Fabric. Ontology uses entity types, properties, and relationships."
+      explanation: "Incorrect. Foundry IQ provides context on policies and authoritative documents. The team needs shared definitions over business entities and data, which is Fabric IQ's focus."
   - content: "What is the primary role of a Fabric data agent?"
     choices:
     - content: "To move data from lakehouses to warehouses"
@@ -36,31 +35,31 @@ quiz:
     - content: "To visualize relationships between entities in a graph"
       isCorrect: false
       explanation: "Incorrect. This is the role of Graph in Microsoft Fabric, not the data agent."
-    - content: "To process natural language questions and generate queries grounded in ontology definitions"
+    - content: "To answer natural language questions by generating read-only queries over configured data sources"
       isCorrect: true
-      explanation: "Correct. Data agents use Azure OpenAI to process natural language questions, identify relevant data sources, and generate appropriate queries (SQL, DAX, or KQL) based on ontology vocabulary."
+      explanation: "Correct. Data agents identify relevant configured sources and generate read-only queries using their schema and context. An ontology supplies business vocabulary when it is a selected source; it isn't required for every data agent."
   - content: "How does data binding in ontology modeling differ from traditional ETL processes?"
     choices:
     - content: "Data binding copies data into a centralized warehouse, while ETL leaves data in place"
       isCorrect: false
-      explanation: "Incorrect. This is reversed. ETL copies data into warehouses, while data binding creates a semantic layer without copying data."
-    - content: "Data binding creates a semantic layer that references data in place, while ETL copies and transforms data into a warehouse"
+      explanation: "Incorrect. Data binding maps business definitions to source data. ETL extracts, transforms, and loads data into a destination."
+    - content: "Data binding maps ontology definitions to existing sources, while ETL extracts, transforms, and loads data into a destination"
       isCorrect: true
-      explanation: "Correct. Data binding connects ontology definitions to existing data sources in OneLake without copying data, unlike ETL which extracts, transforms, and loads data into a centralized warehouse."
+      explanation: "Correct. A binding creates a source mapping without copying source data into the ontology. Separately opting in to graph materialization loads selected eligible data into a queryable graph."
     - content: "Data binding and ETL are the same process with different names"
       isCorrect: false
-      explanation: "Incorrect. Data binding creates a semantic layer without moving data, while ETL physically copies and transforms data into a warehouse."
+      explanation: "Incorrect. A binding describes how ontology concepts map to sources. ETL performs data extraction, transformation, and loading."
   - content: "Which Fabric IQ component uses GQL (Graph Query Language) for querying?"
     choices:
     - content: "Ontology items"
       isCorrect: false
-      explanation: "Incorrect. While ontology items integrate with Graph, they use NL2Ontology queries and federated query execution."
+      explanation: "Incorrect. An ontology defines business context and source bindings. Its optional materialized graph provides Graph execution for relationship traversals."
     - content: "Data agents"
       isCorrect: false
       explanation: "Incorrect. Data agents generate SQL, DAX, or KQL queries depending on the data source."
     - content: "Graph in Microsoft Fabric"
       isCorrect: true
-      explanation: "Correct. Graph in Microsoft Fabric uses GQL (Graph Query Language), an international standard for graph queries, to traverse relationships and analyze connected data."
+      explanation: "Correct. Graph in Microsoft Fabric uses GQL (Graph Query Language) to traverse relationships and analyze connected data. In an ontology, this execution path requires opting in to materializing eligible entities and relationships."
   - content: "What makes entity types different from traditional database tables?"
     choices:
     - content: "Entity types are tied to specific databases and schemas"
@@ -71,4 +70,4 @@ quiz:
       explanation: "Correct. Entity types are reusable logical models elevated above any single table, allowing the same concept to be bound to multiple data sources while maintaining consistent business meaning."
     - content: "Entity types can only contain static data, not time-series data"
       isCorrect: false
-      explanation: "Incorrect. Entity types support both static data bindings and time-series data bindings from eventhouse streams."
+      explanation: "Incorrect. Entity types can use static data and time-series data bindings, including timestamped measurements from eventhouse tables."
