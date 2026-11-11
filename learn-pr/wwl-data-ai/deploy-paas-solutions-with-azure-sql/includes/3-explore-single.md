@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=e592d866-5dba-41ee-bb07-2e8404a598f9]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Let's look at several methods for deploying a single Azure SQL Database.
 
 ## Deploying via the portal
@@ -159,3 +170,5 @@ Read-Host -Prompt "Press [ENTER] to continue ..."
 ```
 
 This script automates the creation of an Azure resource group and the deployment of a SQL logical server within it. It prompts the user for a project name, Azure location, and SQL server administrator credentials, then creates a resource group using the provided details. Finally, it deploys a SQL logical server to the resource group using a predefined ARM template from a specified URI, and pauses execution until the user presses `ENTER`.
+
+::: zone-end
