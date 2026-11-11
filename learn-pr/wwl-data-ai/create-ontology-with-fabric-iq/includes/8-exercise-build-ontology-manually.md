@@ -1,12 +1,12 @@
 Now you have an opportunity to build a complete ontology manually in Fabric IQ.
 
 > [!NOTE]
-> You need a [Microsoft Fabric trial](/fabric/get-started/fabric-trial) to complete this exercise.
+> You need a workspace on a Fabric-enabled paid or [trial capacity](/fabric/get-started/fabric-trial) and permission to create items in it.
 
-You'll also need to enable the following [tenant settings](/fabric/iq/ontology/overview-tenant-settings):
+Ask your Fabric administrator to enable these [tenant settings](/fabric/iq/ontology/overview-tenant-settings) for your account:
 
-- Enable Ontology item (preview)
-- User can create Graph (preview)
+- Users can create Fabric items
+- Users can create ontology (preview) items
 
 Launch the exercise and follow the instructions.
 

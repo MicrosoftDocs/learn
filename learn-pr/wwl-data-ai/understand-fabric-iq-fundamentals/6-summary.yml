@@ -5,9 +5,9 @@ metadata:
   zone_pivot_groups: video-or-text
   title: Summary
   description: "Summary of Microsoft Fabric IQ fundamentals and key concepts"
-  ms.date: 10/29/2026
-  author: weslbo
-  ms.author: wedebols
+  ms.date: 11/05/2026
+  author: angierudduck
+  ms.author: anrudduc
   ms.topic: unit
   ai-usage: ai-generated
 durationInMinutes: 2

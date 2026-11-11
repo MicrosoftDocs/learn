@@ -2,11 +2,12 @@
 uid: learn.wwl.deploy-paas-solutions-with-azure-sql.examine-sql-managed-instance
 title: Examine SQL managed instance
 metadata:
+  zone_pivot_groups: video-or-text
   adobe-target: true
   prefetch-feature-rollout: true
   title: Examine SQL managed instance
   description: "Examine SQL managed instance"
-  ms.date: 07/23/2026
+  ms.date: 11/11/2026
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit

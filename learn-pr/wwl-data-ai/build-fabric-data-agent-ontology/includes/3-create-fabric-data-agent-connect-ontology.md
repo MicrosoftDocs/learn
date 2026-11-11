@@ -9,7 +9,7 @@
 
 ::: zone pivot="text"
 
-To build the Lamna Healthcare agent, you start with an existing ontology and the underlying sources it describes. You then add that context to a data agent and configure guidance for the questions you expect.
+To build the Lamna Healthcare agent, you start with an existing ontology and access to the underlying sources it describes. You then add that context to a data agent and configure guidance for the questions you expect.
 
 ## Check access and create the agent
 
@@ -30,7 +30,7 @@ In your Fabric workspace, select **+ New item**, search for **Fabric data agent*
 
 ## Add ontology context
 
-Use the current ontology-specific source workflow:
+The ontology-specific source workflow is:
 
 1. Open the Fabric data agent.
 1. In the **Sources** experience, select **Add sources**.
@@ -45,11 +45,11 @@ The agent loads a read-only representation of the ontology context. The associat
 For example, a room-occupancy question needs context that maps the relevant room, department, and assignment concepts to actual source data. An equipment-readings question needs an appropriate binding to the readings source. Don't infer that a source is available solely because its business concept appears in an ontology.
 
 > [!NOTE]
-> Entity selection within an ontology isn't supported in the initial experience. The [ontology integration documentation](/fabric/data-science/data-agent-ontology-sources) recommends the preview runtime for the best experience. Runtime selection is separate from the sources you add. See [Fabric data agent runtime](/fabric/data-science/data-agent-runtime).
+> Entity selection within an ontology isn't supported. The [ontology integration documentation](/fabric/data-science/data-agent-ontology-sources) recommends the preview runtime for the best experience. Runtime selection is separate from the sources you add. See [Fabric data agent runtime](/fabric/data-science/data-agent-runtime).
 
 ## Configure agent-level guidance
 
-Open **Data agent instructions** to provide plain-language guidance. The instruction area supports up to 15,000 characters. Use that space to explain the agent's objective, when to use its sources, relevant terminology, and the expected response format.
+Open **Agent instructions** to provide plain-language guidance. The instruction area supports up to 15,000 characters. Use that space to explain the agent's objective, when to use its sources, relevant terminology, and the expected response format.
 
 For the learning scenario, an initial instruction might read:
 
@@ -74,7 +74,9 @@ For the configuration options and instruction format, see [Configure your data a
 
 ## Supplement eligible underlying sources
 
-Agent-level instructions aren't the only configuration option. To configure an eligible ontology data source, open the agent's **Setup** tab. In the **Ontology data sources** list, select the plus (+) icon next to the data source that you want to configure. From the available setup options, select **Data source instructions** or **Example queries**. You can also provide a data source description where that option is available.
+Agent-level instructions aren't the only configuration option. You must mount an eligible underlying source in the data agent before you can supplement its query guidance. This makes the source available for configuration in the agent without changing its ontology bindings.
+
+To configure an eligible ontology data source, open the agent's **Setup** tab. In the **Ontology data sources** list, select the plus (+) icon next to the data source that you want to configure. From the available setup options, select **Data source instructions** or **Example queries**. You can also provide a data source description where that option is available.
 
 :::image type="content" source="../media/fabric-data-agent-data-source-instructions.png" alt-text="Screenshot of Fabric data agent Setup tab showing ontology data sources with Data source instructions and Example queries configuration options.":::
 

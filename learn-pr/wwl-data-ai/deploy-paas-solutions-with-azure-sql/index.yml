@@ -22,7 +22,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Deploy PaaS solutions with Azure SQL
   description: "Deploy PaaS solutions with Azure SQL"
-  ms.date: 07/23/2026
+  ms.date: 11/11/2026
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: module-standard-task-based

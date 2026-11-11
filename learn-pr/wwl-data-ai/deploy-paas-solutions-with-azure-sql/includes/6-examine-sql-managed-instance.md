@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=a8ee49d5-76b3-435a-be90-a51bffceb847]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 While many organizations initially migrate to Azure using IaaS offerings, the platform as a service (PaaS) provides extra benefits. With PaaS, the service handles installing and patching SQL Server, so you no longer need to perform these tasks. Consistency checks, backups, security, and performance tools are also included as part of the managed service.
 
 [Azure SQL Managed Instance](/azure/azure-sql/managed-instance/sql-managed-instance-paas-overview?azure-portal=true) is a fully functional SQL Server instance that is nearly 100% compatible with your on-premises ecosystem. It includes features like SQL Agent, access to tempdb, cross-database queries, and common language runtime (CLR). This service uses the same infrastructure as Azure SQL Database and offers all the benefits of PaaS, such as automatic backups, automatic patching, and built-in high availability.
@@ -63,4 +74,6 @@ As with Azure SQL Database, you can't restore over an existing database. You nee
 By default, databases in a managed instance are encrypted using [Transparent Data Encryption (TDE)](/sql/relational-databases/security/encryption/transparent-data-encryption?azure-portal=true) with a Microsoft-managed key. To take a user-initiated copy-only backup, you must disable TDE for the specific database. If a database is encrypted, you can restore it, but you need access to either the certificate or asymmetric key used for encryption. Without these, you can't restore the database to a SQL Managed Instance.
 
 To learn the new features for Azure SQL Managed Instance, see [What's new in Azure SQL Managed Instance?](/azure/azure-sql/managed-instance/doc-changes-updates-release-notes-whats-new?azure-portal=true).
+
+::: zone-end
 

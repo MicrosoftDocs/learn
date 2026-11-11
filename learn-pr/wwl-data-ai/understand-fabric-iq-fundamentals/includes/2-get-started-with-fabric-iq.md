@@ -9,20 +9,18 @@
 
 ::: zone pivot="text"
 
-Fabric IQ is part of Microsoft IQ, a set of capabilities that form the enterprise intelligence layer of the Microsoft stack. Microsoft IQ works across four areas: Work IQ provides context on how employees work, Foundry IQ provides context on policies and documents, Web IQ provides context from the web, and Fabric IQ provides context on business entities and data.
-
-Within Microsoft Fabric, IQ is a dedicated workload where you create **ontology items**—Fabric artifacts that contain your ontology definitions and data bindings.
+The installation-readiness question needs shared definitions of tasks, equipment, and maintenance. Fabric IQ supplies this business context as part of Microsoft IQ, the enterprise intelligence layer of the Microsoft stack. - Within Microsoft Fabric, IQ is a dedicated workload where you create **ontology items**.
 
 ## Define an ontology
 
-An ontology is a shared vocabulary of your business. It's made up of the things in your environment (represented as entity types), their facts (represented as properties of entity types), and the ways they connect (represented as relationships), while offering constraints and rules that keep those representations consistent.
+An **ontology** is a shared definition of business concepts and how they connect. These concepts are represented as **entity types**, their facts as **properties**, and their connections as **relationships**. Rules express business logic, while metrics preserve trusted calculations from source semantic models.
 
 You can also think of an ontology like a business context layer, containing:
 
 - A catalog of concepts (like Project, Vessel, and Equipment) with their properties and relationships
-- Data bindings to your lakehouse tables, eventhouse streams, and Power BI semantic models
-- A graphical representation that links related concepts for navigation and analysis
-- A query surface that lets you ask questions about concepts (not just tables), supporting federated queries across sources
+- Data bindings that map concepts to sources such as lakehouse tables, eventhouse tables, and Power BI semantic models
+- Business rules linked to the concepts they describe
+- Context that agents and other consumers use to query the appropriate sources, with optional graph execution for relationship analysis
 
 Instead of requiring data experts to translate business questions into SQL queries, you model data using business concepts that everyone understands.
 
@@ -42,87 +40,79 @@ Use the following guidance to decide where each item fits:
 
 :::image type="content" source="../media/fabric-ontology-semantic-model.png" alt-text="Diagram showing how Fabric ontologies and Power BI semantic models compare for business context and analytics." lightbox="../media/fabric-ontology-semantic-model.png":::
 
-**An ontology complements a semantic model rather than replacing it.** Use a semantic model for trusted metrics and reporting. Add an ontology when you need shared entity definitions and relationship exploration across business domains. Fabric can generate an initial ontology from an existing semantic model, so you can build on established definitions.
+**An ontology complements a semantic model rather than replacing it.** 
 
-Later in this module, you examine how ontology modeling shifts the design process from report-specific schemas to reusable business concepts.
+- Use a semantic model for trusted metrics and reporting.
+- Add an ontology when you need shared entity definitions and relationship exploration across business domains.
 
-For more information, see [Power BI semantic models and reusable business metrics](/power-bi/connect-data/semantic-models-third-party#power-bi-semantic-models) and [how semantic models and ontologies work together in Fabric IQ](/fabric/iq/overview#layers-of-fabric-iq).
+Fabric can generate an initial ontology from an existing semantic model, so you can build on established definitions.
 
 ## Where Fabric IQ fits in the data platform
 
+Microsoft IQ works across four areas:
+
+- Work IQ provides context on how employees work.
+- Foundry IQ provides context on policies and authoritative documents.
+- Web IQ provides context from the web.
+- Fabric IQ provides context on business entities and data. 
+
+For the readiness question, the missing context is how business records connect, rather than employee activity or web information.
+
 Fabric IQ delivers business context through three layers.
 
-**Unified data (OneLake):** OneLake is the foundation. All analytical and operational data—lakehouse tables, eventhouse streams, and Power BI semantic models—lives in one governed data lake. Fabric IQ references this data in place without duplicating it.
+**Unified data (OneLake):** OneLake is the foundation for accessing governed business data. Fabric IQ uses bindings to connect business definitions to source data. Defining those bindings doesn't copy source data into the ontology.
 
 **Business intelligence (Power BI semantic models):** Semantic models provide a curated analytics layer with measures, hierarchies, and relationships optimized for reporting. You can generate ontologies directly from semantic models already in production, keeping business language consistent across reports and agents.
 
-**Operational intelligence (ontologies):** The ontology defines core business entities, relationships, properties, and rules. Both humans and AI agents use this shared language for cross-domain reasoning. You can query your ontology using natural language, and operations agents monitor live data and trigger governed actions based on ontology rules.
+**Operational intelligence (ontologies):** The ontology defines core business entities, relationships, properties, and rules. Humans and AI agents use this shared language for cross-domain reasoning. Natural-language rules provide context, not executable monitoring. An operations agent needs its own configured and reviewed monitoring logic and actions.
 
-In the next unit, you explore the six items in the IQ workload and how they work together.
-
-## Access Fabric IQ in your workspace
-
-You create ontology items the same way you create other Fabric items:
-
-1. Navigate to your Fabric workspace
-2. Select **+ New item**
-3. Search for and select **Ontology (preview)**
-4. Enter a name for your ontology (use numbers, letters, and underscores—no spaces or dashes)
-5. Select **Create**
-
-:::image type="content" source="../media/new-ontology-item.png" alt-text="Screenshot showing the New item dialog with Ontology option selected." lightbox="../media/new-ontology-item.png":::
-
-The ontology opens on the **Home configuration canvas**, where you begin defining or reviewing its model.
-
-> [!IMPORTANT]
-> Your Fabric administrator needs to enable certain tenant settings before you can create ontology items. For more information, see [Ontology (preview) required tenant settings](/fabric/iq/ontology/overview-tenant-settings?azure-portal=true).
+These layers establish shared meaning. The remaining choice is which consuming experience fits the question: a trusted metric, a dependency path, or a monitored condition.
 
 ## Explore the ontology interface
 
-The **Home configuration canvas** displays the entity types and relationship types in your ontology. From this canvas, you add entity types, select relationships, and open configuration details.
+After a definition is published, the **Explorer** and canvas show the entity types and relationships. From this view, you inspect concepts and open their configuration details.
 
-:::image type="content" source="../media/ontology-blank.png" alt-text="Screenshot of an empty ontology Home configuration canvas with no entity types added." lightbox="../media/ontology-blank.png":::
+The built-in **Ontology agent** helps you draft definitions and bindings or ask questions about bound data. In **Plan mode**, you review proposals without changing the ontology. **Act mode** permits the agent to apply changes after you review them. Applying definitions requires Contributor or higher workspace permissions; read-only users can explain and query an existing ontology.
 
-Select an entity type, and then select **View Entity Type details** to open its details page. The **Configure** page shows the entity type's properties, key, data bindings, and relationships. Use this page to verify generated definitions or complete the configuration.
+The **Configure** page shows an entity type's properties, identifiers, data bindings, and relationships. Use this page to verify generated definitions or complete the configuration.
 
-:::image type="content" source="../media/configure-entity.png" alt-text="Screenshot of the data bindings in the Configure page." lightbox="../media/configure-entity.png":::
+You still own the business meaning. For example, inspect whether the proposed `requiresEquipment` relationship uses task requirements rather than every item carried on a vessel. A structurally valid draft can still represent the wrong dependency.
 
-After you bind source data, the entity type details also provide ways to inspect the resulting entity instances. The **Instances** tab lists instances and their static property values.
-
-:::image type="content" source="../media/entity-type-instances.png" alt-text="Screenshot of the Instances tab listing entity type instances with property values." lightbox="../media/entity-type-instances.png":::
-
-The **Overview** tab can display time-series data and a relationship graph. Expand the graph to explore connected entity types and use **Query builder** to filter entity instances and their connections.
+For more information, see [Use the ontology agent](/fabric/iq/ontology/how-to-use-ontology-agent).
 
 ## Understand the build-bind-query workflow
 
 Creating an ontology in Fabric IQ follows three main steps:
 
-**Build:** Define your business vocabulary by creating entity types, properties, and relationship types. For Contoso Offshore, you define an InstallationTask as a scheduled operation to install a foundation. Its properties include `TaskId`, `PlannedStart`, `PlannedEnd`, and `TaskStatus`. Its relationships identify the assigned vessel, the foundation to install, and the required equipment.
+**Build:** Define your business vocabulary by creating entity types, properties, and relationship types. For the offshore construction team, you define an InstallationTask as a scheduled operation to install a foundation. Its properties include `TaskId`, `PlannedStart`, `PlannedEnd`, and `TaskStatus`. Its relationships identify the assigned vessel, the foundation to install, and the required equipment.
 
 **Bind:** Connect your ontology definitions to prepared data sources. Lakehouse tables provide vessel records, task schedules, equipment registers, and maintenance orders. An optional eventhouse source provides timestamped equipment measurements. Data binding maps source columns to ontology properties, while a task-equipment mapping table links tasks to their required equipment. Reconcile identifiers across source systems before you bind the data.
 
-**Query:** Once your ontology is bound to data, you can query it using business concepts instead of database tables. Use Graph in Microsoft Fabric to visualize relationships and traverse connections. Use **Query builder** to filter and explore entity instances without writing SQL. Or connect AI agents that can answer natural language questions using your business vocabulary.
+**Query:** Once your ontology is bound to data, consuming experiences use business concepts to answer questions. The ontology agent can query lakehouse data with SQL, eventhouse data with KQL, and semantic-model data with DAX. When a dependency path is central to the question, you can opt in to graph materialization for eligible entities and relationships, then explore those connections with Graph in Microsoft Fabric.
 
 This workflow separates business meaning from physical data structures.
 
 ## How Fabric IQ connects to OneLake
 
-Fabric IQ doesn't move or duplicate your data. Instead, it creates a semantic layer that references existing data sources:
+Ontology bindings create a semantic reference layer over existing sources:
 
 - **Lakehouse tables** contain static data (project records, vessel information, task schedules, and maintenance orders)
-- **Eventhouse streams** contain time-series data (timestamped measurements from vessel equipment)
-- **Power BI semantic models** contain curated analytics definitions—measures, hierarchies, and relationships—that ontologies can align with directly
+- **Eventhouse tables** contain time-series data (timestamped measurements from vessel equipment)
+- **Power BI semantic models** contain curated analytics definitions, including measures, hierarchies, and relationships, that ontologies can build on
 
-When you query your ontology, Fabric IQ automatically sends your queries to the most efficient system to get results quickly. For graph traversals, it uses GQL for Graph in Microsoft Fabric. For time-series queries, it uses KQL for Eventhouse. This federated query capability means you can ask business-level questions that span multiple data sources without knowing the technical details of where data lives.
+These mappings let consumers use business terminology while the source retains its data and calculation logic. Optional graph materialization is different: it loads selected source data into a queryable graph. Choose that extra execution layer for relationship-heavy questions, not as a required step for every ontology. Source support and refresh behavior differ between direct source queries and graph queries.
 
 ## Two paths to create an ontology
 
 Fabric IQ offers two approaches for creating ontologies:
 
-**Generate from Power BI semantic model:** If you already have a well-structured Power BI semantic model, you can automatically generate an initial ontology structure from it. Fabric IQ creates entity types matching your tables, properties matching your columns, and relationship types following your model relationships. You then refine this generated ontology by renaming entity types, verifying keys and bindings, and enhancing it with additional data sources like time-series eventhouse streams.
+**Generate from a Power BI semantic model:** If you already have a well-structured Power BI semantic model, generate an initial ontology from it. Fabric IQ creates entity types matching your tables, properties matching your columns, relationship types following your semantic model relationships, and metrics linked to its DAX measures. You need Read and Build permissions on the source semantic model. You then verify keys and bindings, complete relationship bindings, and add other data such as time-series measurements.
 
-**Build from OneLake data:** If you don't have a semantic model, or want full control over ontology design, you can build directly from lakehouse and eventhouse data. You manually create entity types, define properties, and establish relationships. This approach gives you complete control over how you model your business vocabulary.
+**Build from prepared sources:** If you don't have a suitable semantic model, define the business concepts and bind them to prepared data. You can configure them manually or use the ontology agent to propose definitions from supported sources such as lakehouses and eventhouses. Review either approach against the business question before accepting the result.
 
-Both paths lead to the same result: a complete ontology that defines your business concepts.
+Both paths establish the same foundation: shared business concepts mapped to data. You now need to distinguish which workload items use that foundation to answer, explore, monitor, or plan.
+
+> [!IMPORTANT]
+> Your Fabric administrator must enable **Users can create Fabric items** and **Users can create ontology (preview) items**. Agent experiences have additional tenant settings, including regional AI processing requirements. For more information, see [Ontology (preview) required tenant settings](/fabric/iq/ontology/overview-tenant-settings).
 
 ::: zone-end
