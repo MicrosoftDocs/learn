@@ -4,8 +4,8 @@ title: Introduction
 metadata:
   zone_pivot_groups: video-or-text
   title: Introduction
-  description: "Learn how to use the A2A (Agent-to-Agent) protocol to discover and connect to remote Azure AI Agents."
-  ms.date: 5/29/2026
+  description: "Learn how to use the A2A (Agent-to-Agent) protocol to discover and connect to remote Microsoft Foundry agents."
+  ms.date: 11/10/2026
   author: buzahid
   ms.author: buzahid
   ms.topic: unit

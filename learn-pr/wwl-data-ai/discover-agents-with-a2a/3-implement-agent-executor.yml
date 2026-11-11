@@ -4,8 +4,8 @@ title: Implement an agent executor
 metadata:
   zone_pivot_groups: video-or-text
   title: Implement an Agent Executor
-  description: "Learn how to implement an Agent Executor to process incoming requests to your Azure AI Agent."
-  ms.date: 5/29/2026
+  description: "Learn how to implement an Agent Executor to process incoming requests to your Microsoft Foundry agent."
+  ms.date: 11/10/2026
   author: buzahid
   ms.author: buzahid
   ms.topic: unit

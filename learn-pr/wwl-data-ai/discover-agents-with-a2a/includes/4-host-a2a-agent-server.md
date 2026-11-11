@@ -26,7 +26,7 @@ To host an agent, you need three essential components working together:
 **Agent Card**
 - Describes the agent’s capabilities, skills, and input/output modes.  
 - Exposed at a standard endpoint (typically `/.well-known/agent-card.json`) so clients and other agents can discover your agent.  
-- Can include multiple versions or an "extended" card for authenticated users.
+- Can advertise an "extended" card with more details for authenticated users.  
 
 **Request Handler**
 - Routes incoming requests to the appropriate methods on your **Agent Executor** (for example, `execute` or `cancel`).  
@@ -35,14 +35,14 @@ To host an agent, you need three essential components working together:
 
 **Server Application**
 - Built using a web framework (Starlette in Python) to handle HTTP requests.  
-- Combined with an ASGI server (like Uvicorn) to start listening on a network interface and port.  
+- Combined with an Asynchronous Server Gateway Interface (ASGI) server (like Uvicorn) to start listening on a network interface and port.  
 - Exposes the agent card and request handler endpoints, enabling clients to interact with your agent.
 
 ## Set up the A2A agent server
 
 1. Define your agent’s skills and Agent Card.  
-1. Initialize a request handler that links your **Agent Executor** with a **Task Store**.  
-1. Set up the server application, providing the Agent Card and request handler.  
+1. Initialize a request handler that links your **Agent Executor** with a **Task Store** and your Agent Card.  
+1. Set up the server application by adding routes that serve the Agent Card and accept A2A messages for the request handler.  
 1. Start the server using an ASGI server (Uvicorn) to make it accessible on the network.  
 1. Once running, the agent listens for incoming requests and responds according to its defined skills.
 
