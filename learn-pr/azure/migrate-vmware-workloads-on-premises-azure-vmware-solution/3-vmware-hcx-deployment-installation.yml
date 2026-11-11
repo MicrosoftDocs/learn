@@ -5,7 +5,7 @@ metadata:
   unitType: learning-content
   title: Deploy and install VMware HCX
   description: Deploy and install VMware HCX.
-  ms.date: 06/19/2025
+  ms.date: 11/08/2026
   author: Orin-Thomas
   ms.author: orthomas
   ms.topic: unit
@@ -17,26 +17,25 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Which account is typically used to access the VMware HCX Connector on-premises?"
+  - content: "Which account is used to sign in to the on-premises HCX Connector appliance management interface on port 9443?"
     choices:
     - content: "Global Administrator"
       isCorrect: false
-      explanation: "The Global Administrator has access to all administrative features in the Azure Resource Manager portal."
+      explanation: "Global Administrator is a Microsoft Entra directory role, not the Connector's local appliance account."
     - content: "admin"
       isCorrect: true
-      explanation: "admin is the account used to access the VMware HCX Connector on-premises."
+      explanation: "Use admin with the password configured during OVA deployment for appliance management on port 9443. The HCX service UI on port 443 instead uses a vCenter SSO account in a role-mapped group."
     - content: "cloudadmin"
       isCorrect: false
-      explanation: "cloudadmin is the account used to access the Azure VMware Solution vCenter and HCX environment in Azure."
-  - content: "If you can't activate the HCX Enterprise Key on-premises, what could be the issue?"
+      explanation: "The Azure VMware Solution CloudAdmin account is separate from the on-premises Connector's local admin account."
+  - content: "What should you do if HCX Connector activation fails?"
     choices:
-    - content: "The on-premises environment doesn't have open internet access or a proxy configured for activation."
+    - content: "Check the reported error, activation information, DNS, time synchronization, and connectivity required by the deployment mode."
       isCorrect: true
-      explanation: "The on-premises environment needs open internet access or a proxy configured to activate the HCX Enterprise Key."
-    - content: "The HCX appliance wasn't deployed correctly."
+      explanation: "Activation depends on the applicable entitlement and deployment mode. Diagnose those requirements rather than assuming every environment needs unrestricted internet access. If the wizard doesn't match the documented AVS flow, stop and confirm the supported procedure with Microsoft Support."
+    - content: "Allow unrestricted internet access without checking the activation requirements."
       isCorrect: false
-      explanation: "If you got to this point, the HCX appliance deployed correctly."
-    - content: "A NAT rule isn't configured."
+      explanation: "Only allow connectivity required by the applicable activation workflow. Unrestricted access doesn't resolve an invalid key or entitlement."
+    - content: "Continue to production migration without confirming activation."
       isCorrect: false
-      explanation: "A NAT rule isn't configured to activate the HCX Enterprise Key."
-
+      explanation: "Resolve activation and confirm that the required services are available before configuring and using them."

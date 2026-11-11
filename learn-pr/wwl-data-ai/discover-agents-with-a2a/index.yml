@@ -26,14 +26,14 @@ metadata:
     - "Python (Programming Language)"
   gs-solution.area: "Cloud & AI Platforms"
   gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/discover-agents-with-a2a/index.yml
-  title: Discover Azure AI Agents with A2A
+  title: Discover Microsoft Foundry agents with A2A
   description: Learn how to implement the A2A protocol to enable agent discovery, direct communication, and coordinated task execution across remote agents.
-  ms.date: 5/29/2026
+  ms.date: 11/10/2026
   author: buzahid
   ms.author: buzahid
   ms.topic: module-standard-task-based # Please don't edit, used for our analytics
   ms.service: microsoft-foundry
-title: Discover Azure AI Agents with A2A
+title: Discover Microsoft Foundry agents with A2A
 summary: Learn how to implement the A2A protocol to enable agent discovery, direct communication, and coordinated task execution across remote agents.
 abstract: |
   After completing this module, you're able to:

@@ -30,7 +30,7 @@ There are two main types of requests a client can make:
 - **Non-Streaming Requests:** The client sends a message and waits for a complete response. This type of request is suitable for simple interactions or when a single response is expected.
 - **Streaming Requests:** The client sends a message and receives responses incrementally as the agent processes the request. This type of request is useful for long-running tasks or when you want to update the user in real-time.
 
-In both cases, requests usually include a `role` (fo example, user) and the message content. More complex agents may return **task objects** instead of immediate messages, allowing for task tracking or cancellation.
+In both cases, requests usually include a `role` (for example, user) and the message content. More complex agents may return **task objects** instead of immediate messages, allowing for task tracking or cancellation.
 
 ## Handle the agent response
 
@@ -46,6 +46,10 @@ Clients should be prepared to handle both response types and interpret the retur
 - Each request should be uniquely identifiable, often using a generated ID.
 - Streaming responses are asynchronous and may provide partial results before the final output.
 - Simple agents may return messages directly, while more advanced agents may manage multiple tasks simultaneously.
+
+## Use a remote agent as a tool
+
+In a multi-agent workflow, the client is often another agent. A routing agent can discover each remote agent from its Agent Card, connect to it, and expose it as a **tool**. The tool's name and description come from the Agent Card, so the routing agent's model can decide which remote agent to call for a given request, send it a message over A2A, and use the reply to answer the user. If a request needs several agents, such as a title followed by an outline, the routing agent can call them one after another and pass the result of the first to the next.
 
 Connecting a client to your agent server involves fetching the Agent Card, establishing a connection, sending requests, and handling responses. By grasping these core concepts, you can confidently interact with your remote agent, whether you're sending simple messages or managing complex tasks.
 

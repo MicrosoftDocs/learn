@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=ccb522c7-02c1-45b6-8726-7ace29f85ea6]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 After you configure a voice agent, spoken conversations help you assess both its answers and the caller experience. A useful response needs accurate information, clear speech, and appropriate timing.
 
 ## Test realistic conversations
@@ -43,3 +54,5 @@ Answer quality and conversation quality need separate assessment. An accurate an
 Comparisons are more useful when only one setting changes and the same test cases are repeated. Each save creates a new agent version, and playground sessions use the latest saved settings. Tracking the tested version helps distinguish configuration changes from differences between conversations. Monitoring over time can reveal knowledge gaps, unreliable tools, and timing that needs refinement.
 
 For model-specific controls, see [Configure a voice agent](/azure/foundry/agents/how-to/configure-voice-agent).
+
+::: zone-end

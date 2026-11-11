@@ -3,8 +3,8 @@ uid: learn.wwl.discover-agents-with-a2a.knowledge-check
 title: Module assessment
 metadata:
   title: Module Assessment
-  description: "Check your learning on discovering Azure AI Agents using the A2A (Agent-to-Agent) protocol."
-  ms.date: 5/29/2026
+  description: "Check your learning on discovering Microsoft Foundry agents using the A2A (Agent-to-Agent) protocol."
+  ms.date: 11/10/2026
   author: buzahid
   ms.author: buzahid
   ms.topic: unit
@@ -17,9 +17,9 @@ quiz:
     - content: "It executes business logic for the agent directly."
       isCorrect: false
       explanation: "Incorrect. The executor handles the agent's business logic, not the server."
-    - content: "It routes requests between clients and connected agents."
+    - content: "It hosts the agent over HTTP, exposing its Agent Card and passing incoming requests to the agent's executor."
       isCorrect: true
-      explanation: "Correct. The A2A server acts as a routing layer that delegates requests to the appropriate agent."
+      explanation: "Correct. The A2A server is the bridge between your agent's logic and the outside world. It serves the Agent Card and routes incoming A2A requests to the executor."
     - content: "It stores static agent responses for reuse."
       isCorrect: false
       explanation: "Incorrect. The agent generates responses dynamically."
@@ -38,10 +38,10 @@ quiz:
     choices:
     - content: "It stores the agent's API key for authentication."
       isCorrect: false
-      explanation: "Incorrect. Agent cards don't handle authentication credentials."
-    - content: "It provides metadata about the agent, such as its capabilities and available functions."
+      explanation: "Incorrect. An agent card can declare which authentication schemes the agent accepts, but it doesn't store credentials."
+    - content: "It provides metadata about the agent, such as its skills, capabilities, and endpoints."
       isCorrect: true
-      explanation: "Correct. Agent cards describe what an agent can do and help clients discover and interact with it."
+      explanation: "Correct. Agent cards describe what an agent can do and where to reach it, which helps clients and routing agents discover and interact with it."
     - content: "It visualizes the agent's workflow in a GUI dashboard."
       isCorrect: false
       explanation: "Incorrect. Agent cards are metadata, not a GUI element."

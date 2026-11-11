@@ -2,116 +2,69 @@ After VMware HCX Connector is installed on-premises, link it to VMware HCX Cloud
 
 ## What is a site pair?  
 
-The first step involves creating a *site pair*. A site pair provides network connectivity needed for management, authentication, and orchestration of VMware's HCX migration services across a source and destination VMware vSphere environment. In your scenario, the source is the on-premises VMware vSphere environment, and the destination is Azure VMware Solution. The following table provides more details:
+The first step involves creating a *site pair*. A site pair establishes the management, authentication, and orchestration relationship between the source and destination HCX systems over an existing routed connection. In this scenario, the source is the on-premises VMware vSphere environment, and the destination is Azure VMware Solution. The following table describes the components:
 
 | Component| Notes |
 | :------- | :----- |
-| HCX Connector (source) | - Deployed in the on-premises vSphere environment after Azure VMware Solution deploys. <br>- Creates a unidirectional site pairing to Azure VMware Solution. <br>- Starts migrations to Azure VMware Solution. |
-| HCX Cloud (destination) | - Provisioned with Azure VMware Solution when the private cloud deploys in Azure. <br>- Generally the destination for VMware HCX site pairing. <br>- VMware HCX Cloud site is always a software-defined datacenter. <br>- Supports network extension at layer 2 in the networking stack, which is optional. |
+| HCX Connector (source) | Deployed on-premises using the AVS-provided OVA. Initiates site pairing and the migration workflows in this module. |
+| HCX Cloud Manager (destination) | Installed as an add-on in the Azure VMware Solution private cloud. Confirm installation has completed before site pairing. Provides destination HCX services, including optional Layer 2 Network Extension. |
 
 ## Add a site pair
 
-1. Sign in to the on-premises vCenter Server.
+Before connecting, confirm that the on-premises Connector can route to the actual HCX Cloud Manager endpoint over TCP 443. Use the routed connection you configured for your private-cloud generation and network design. ExpressRoute isn't an inherent requirement of site pairing.
 
-1. Under **Menu**, select **HCX**.
+1. Open the on-premises HCX Connector service UI at `https://<connector-ip-or-fqdn>` on TCP 443. Sign in with a vCenter SSO account in a group mapped to an HCX role that permits site pairing.
+2. Under **Infrastructure**, select **Site Pairs**, then select **New Site Pair**.
+3. If prompted for the site type, select **VMware** for this vSphere-based site pair.
+4. Enter the remote HCX URL using the actual Azure VMware Solution HCX Cloud Manager IP address obtained in the last unit: `https://<cloud-manager-ip>`.
+5. Enter credentials for an Azure VMware Solution account with the CloudAdmin role. For ongoing connected-service use, prefer an appropriately authorized service account where the identity design supports one. The built-in **cloudadmin@vsphere.local** account can be used for this exercise.
+6. Confirm that the destination certificate is trusted. If prompted to trust or import a certificate, verify that it belongs to the intended HCX Cloud Manager before accepting it.
+7. Select **Create** and monitor the pairing operation. Resolve any authentication, certificate, or connectivity errors before continuing.
+8. Confirm that **Site Pairs** shows the intended Cloud Manager and Connector as connected.
 
-    :::image type="content" source="../media/4-select-hcx-on-premises.png" alt-text="Screenshot of where to find HCX in the menu within vCenter on-premises."lightbox="../media/4-select-hcx-on-premises.png":::
-
-1. Under **Infrastructure**, select **Site Pairing**.
-
-1. Under **Pair your first site**, select **Connect To Remote Site**.
-
-    :::image type="content" source="../media/4-connect-remote-site.png" alt-text="Screenshot of where to pair your first site and connect to the remote site in HCX Connector on-premises.":::
-
-1. Enter the Azure VMware Solution HCX Cloud Manager IP address that you obtained from the last unit.
-
-1. Enter the Azure VMware Solution **cloudadmin@vsphere.local** username and the password from the Azure portal.
-
-1. Select **Connect**. Note, if you receive a message about a certificate warning, select **Import Certificate** to continue.
-
-    :::image type="content" source="../media/4-connect-hcx-cloud-manager.png" alt-text="Screenshot of how to connect to the remote HCX URL from the on-premises HCX Connector."lightbox="../media/4-connect-hcx-cloud-manager.png":::
-
-    Note, if you receive a message about a certificate warning, select **Import Certificate** to continue.
-
-    :::image type="content" source="../media/4-import-certificate-complete-site-pairing.png" alt-text="Screenshot of the certificate warning page with the import certificate option to complete the site pairing."lightbox="../media/4-import-certificate-complete-site-pairing.png":::
-
-1. For the connection to work, VMware HCX Connector needs to route to the VMware HCX Cloud Manager IP over port 443. Use Azure ExpressRoute, which you deployed on-premises.
-
-1. You get a screen showing that VMware HCX Cloud Managers in Azure VMware Solution and the on-premises VMware HCX Connector are connected or paired.
-
-    :::image type="content" source="../media/4-import-certificate-complete-site-pairing.png" alt-text="Screenshot of the HCX Site Pairing tab that shows a new HCX-Connector-On-Premises connection or site pairing."lightbox="../media/4-hcx-on-premises-site-pairing-connected.png":::
+The service UI uses role-mapped vCenter SSO credentials. Don't use the local `admin` credentials for this sign-in or confuse this interface with appliance administration on TCP 9443.
 
 ## Create network profiles
 
-VMware HCX Connector on-premises deploys a set of automated virtual appliances that require multiple IP segments. You need to first configure network profiles so you can then create network profiles for each network intended for use with VMware HCX. When you create network profiles, you then use the IP segments identified during the VMware HCX deployment planning phase.
+The Connector deploys service appliances that use the networks and address pools identified during planning. Configure the Management, vMotion, Replication, and Uplink traffic profiles. These roles don't automatically require four separate subnets. Management, Uplink, and Replication can reuse network infrastructure where the design permits. Use a dedicated replication VMkernel network if your hosts have one.
 
-1. Sign in to the on-premises VMware HCX Connector.
+For VPN-connected deployments, set the uplink network-profile MTU to 1350 on both sides to account for encapsulation overhead. The default 1500 is sufficient for most ExpressRoute deployments, but confirm the effective path MTU. The on-premises traffic profiles aren't the separate cloud-side Generation 2 subnet layout.
 
-1. Create four network profiles:
+1. In the on-premises HCX Connector service UI, sign in with the role-mapped vCenter SSO account.
 
-    - Management
-    - vMotion
-    - Replication
-    - Uplink
+2. Under **Infrastructure**, select **Interconnect** > **Network Profiles**, then select **Create Network Profile**.
 
-1. Under **Infrastructure**, select **Interconnect** > **Multi-Site Service Mesh** > **Network Profiles**. Then select **Create Network Profile**.
+    :::image type="content" source="../media/4-hcx-create-network-profile.png" alt-text="Screenshot of creating an HCX network profile." lightbox="../media/4-hcx-create-network-profile.png":::
 
-    :::image type="content" source="../media/4-hcx-create-network-profile.png" alt-text="Screenshot of creating the network profile within HCX Connector on-premises."lightbox="../media/4-hcx-create-network-profile.png":::
-
-1. For each network profile, select the network and port group, provide a name, and create the segment's IP pool. Then select **Create**.
+3. For each network profile, select the network and port group, provide a name, and configure the planned address pool and applicable network settings. Ensure the pool has capacity for the service appliances in your design and doesn't overlap addresses already in use. Select **Create**.
 
     :::image type="content" source="../media/4-example-configurations-network-profile.png" alt-text="Screenshot of how to create a network profile within HCX Connector on-premises.":::
 
 ## Create a compute profile
 
-After the network profiles are created, you'll need to create a compute profile. The compute profile contains the compute, storage, and network settings that VMware HCX uses to configure the *service mesh*. The service mesh is what allows VM migrations from on-premises into Azure VMware Solution.
+The compute profile contains the compute, storage, network, and service settings that HCX uses when configuring the service mesh.
 
 1. Under **Infrastructure**, select **Interconnect** > **Compute Profiles** > **Create Compute Profile**.
+2. Enter a name for the profile and select **Continue**.
+3. Select the services needed for the chosen walkthrough. Enable **Hybrid Interconnect** and **Replication Assisted vMotion** for RAV. Enable **Hybrid Interconnect** and **Bulk Migration** for Bulk. If the lab will demonstrate both methods using different VMs, enable both migration services. For RAV, confirm the applicable Enterprise entitlement. Enable **Network Extension** only if the network plan requires it. Resolve unavailable services before selecting **Continue**.
+4. In **Select Service Resources**, select the on-premises clusters whose workloads will use the selected HCX services, then select **Continue**.
+5. On **Select Deployment Resources and Reservations**, use **Select Resource** to choose the cluster or resource pool where HCX will deploy its service appliances. This is appliance placement, not the list of workload clusters selected in the previous step.
+6. On the same page, use **Select Datastore** to choose storage for the appliances. If required, use **Select Folder** to choose their VM folder.
+7. Review the CPU and memory reservations and confirm that the selected deployment resources can satisfy them. Broadcom recommends 100-percent CPU and memory reservations as a best practice for HCX operations. Select **Continue**.
+8. In **Select Management Network Profile**, select the prepared management profile and select **Continue**.
+9. In **Select Uplink Network Profile**, select the prepared uplink profile and select **Continue**.
+10. In **Select vMotion Network Profile**, select the prepared vMotion profile and select **Continue**.
+11. In **Select vSphere Replication Network Profile**, select the prepared replication profile and select **Continue**.
+12. If you're using Network Extension, on **Select Distributed Switches for Network Extensions**, select the supported workload switches containing the networks you plan to extend, then select **Continue**. This selection concerns workload networks, not the switch used solely for vMotion. Skip it if you aren't using Layer 2 extension.
+13. Review the connection rules and select **Continue**.
+14. Select **Finish**, then confirm that the profile appears under **Interconnect** > **Compute Profiles** with the intended service and network selections.
 
-    :::image type="content" source="../media/4-hcx-create-compute-profile.png" alt-text="Screenshot of where to create an HCX compute profile in HCX Connector on-premises."lightbox="../media/4-hcx-create-compute-profile.png":::
+> [!NOTE]
+> If you select multiple compute resources or datastores, HCX uses the first selection until its capacity is exhausted. Check the selection order against your appliance-placement plan.
 
-1. Enter a name for the profile and select **Continue**.
+> [!NOTE]
+> Network Extension requires supported distributed networking, such as a vSphere distributed switch or supported NSX network. A workload network on a vSphere Standard Switch can't be extended by HCX. This doesn't mean every HCX vMotion network must use a distributed switch.
 
-    :::image type="content" source="../media/4-name-compute-profile.png" alt-text="Screenshot that shows the entry of a compute profile name and the Continue button in HCX Connector on-premises.":::
+If you change services in a compute profile already used by a healthy service mesh, use **Interconnect** > **Service Mesh** > **Resync** for the affected mesh and verify its service selection and health. Resync applies profile changes. It isn't a software upgrade or a generic repair for a failed deployment.
 
-1. The next screen shows you have services set for activation. Remember that VMware HCX Enterprise deploys with Azure VMware Solution. Leave all default services checked that can be enabled with the HCX Enterprise key and select **Continue**.
-
-    :::image type="content" source="../media/4-select-services-activated.png" alt-text="Screenshot of the services selected for activation with HCX Connector on-premises.":::
-
-1. In **Select Service Resources**, select one or more service resources (clusters) to enable the selected VMware HCX services.
-
-1. When you have the clusters in your on-premises datacenter, select **Continue**.
-
-1. From the **Select Datastore** drop down, select the datastore storage resource for deploying the VMware HCX Interconnect appliances. Then select **Continue**. Note when you select multiple resources, VMware HCX uses the first resource selected until its capacity is exhausted.
-
-    :::image type="content" source="../media/4-deployment-resources-and-reservations.png" alt-text="Screenshot that shows a selected data storage resource and the continue button in the on-premises HCX Connector.":::
-
-1. From the **Select Management Network Profile** drop down > **Network 1 - Management** > select the management network profile you created in previous steps, then select **Continue**.
-
-    :::image type="content" source="../media/4-select-management-network-profile.png" alt-text="Screenshot that shows the selection of a management network profile and the Continue button in the on-premises HCX Connector.":::
-
-1. From the **Select Uplink Network Profile** drop down, select the uplink network profile you created in the prior steps, then select **Continue**.
-
-    :::image type="content" source="../media/4-select-uplink-network-profile.png" alt-text="Screenshot that shows the selection of an uplink network profile and the Continue button in the on-premises HCX Connector.":::
-
-1. From the **Select vMotion Network Profile** drop down, select the vMotion network profile that you created in prior steps, then select **Continue**.
-
-    :::image type="content" source="../media/4-select-vmotion-network-profile.png" alt-text="Screenshot that shows the selection of a vMotion network profile and the Continue button in the on-premises HCX Connector.":::
-
-1. On the **Select vSphere Replication Network Profile** drop down, select the replication network profile that you created in prior steps, then select **Continue**.
-
-    :::image type="content" source="../media/4-select-replication-network-profile.png" alt-text="Screenshot that shows the selection of a replication network profile and the Continue button in the on-premises HCX Connector.":::
-
-1. Review the connection rules and select **Continue**.
-
-    :::image type="content" source="../media/4-review-connection-rules.png" alt-text="Screenshot that shows the connection rules and the Continue button in the on-premises HCX Connector.":::
-
-1. Select **Finish** to create the compute profile.
-
-    :::image type="content" source="../media/4-compute-profile-done.png" alt-text="Screenshot that shows the compute profile information in the on-premises HCX Connector.":::
-
-1. After the compute profile finishes creation, the compute profile is listed in the **Compute Profiles** within **Interconnect**.
-
-    :::image type="content" source="../media/4-finished-compute-profile.png" alt-text="Screenshot showing the compute profile completely configured in the on-premises HCX Connector.":::
-
-In the next unit, we'll cover how to set up a service mesh to complete the on-premises configuration of VMware HCX Connector.
+In the next unit, you'll create the service mesh and verify the appliances and transport connections.

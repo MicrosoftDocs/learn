@@ -27,7 +27,7 @@ metadata:
   moduleType: standard
   title: Migrate VMware vSphere Resources from On-Premises to Azure VMware Solution
   description: Learn how to migrate virtual machines from an on-premises VMware environment to Azure VMware Solution by using VMware HCX.
-  ms.date: 06/19/2025
+  ms.date: 11/08/2026
   ms.author: orthomas
   author: Orin-Thomas
   ms.topic: module
@@ -44,7 +44,9 @@ prerequisites: |
   - Experience using the Azure portal for accessing and creating resources.
   - Experience managing VMware infrastructure, such as ESXi, vCenter Server, NSX, and VMware HCX.
   - Basic knowledge of network concepts, such as classless inter-domain routing (CIDR) and subnets.
-  - (Optional) Access to an Azure subscription with contributor rights assigned to configure an Azure VMware Solution environment.
+  - (Optional for study) Access to deployment resources isn't needed to read the module.
+  - To perform the procedures, access to a deployed Azure VMware Solution private cloud with applicable licensing, an on-premises vSphere environment, and working connectivity between the environments and an administration host.
+  - To perform the procedures, Azure permissions to manage the HCX add-on, an on-premises vCenter registration account in the vSphere administrators group with the Administrator role, role-mapped vCenter SSO access to HCX operations, and an Azure VMware Solution account with the CloudAdmin role.
 iconUrl: /training/achievements/migrate-vmware-workloads-on-premises-azure-vmware-solution.svg
 levels: 
   - intermediate
@@ -69,4 +71,3 @@ units:
 
 badge:
   uid: learn.migrate-vmware-workloads-on-premises-azure-vmware-solution.badge
-

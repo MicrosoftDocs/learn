@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=cc0ffbec-2db8-4ee3-b5b9-9d0ba1319751]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 The Azure ecosystem offers several performance and security options for SQL Server instances on Azure virtual machines. Each option provides various capabilities, such as different disk types that meet the capacity and performance requirements of your workload.
 
 ## Storage considerations
@@ -121,4 +132,6 @@ Below is a list of additional SQL Server features and actions to consider for pr
 - Monitor and manage the health and size of the transaction log files
 
 For more information about performance best practices, see [Best practices for SQL Server on Azure VMs](/azure/azure-sql/virtual-machines/windows/performance-guidelines-best-practices-checklist).
+
+::: zone-end
 

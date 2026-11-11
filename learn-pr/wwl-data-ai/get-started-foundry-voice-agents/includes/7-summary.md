@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=dd161247-f229-442c-b7bc-38316f54d3e6]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 In this module, you explored how voice agents listen, reason, and speak. The Contoso returns assistant provided a focused example for creating an agent, configuring its behavior, and testing a spoken conversation in the Foundry playground.
 
 ## Key takeaways
@@ -12,3 +23,5 @@ In this module, you explored how voice agents listen, reason, and speak. The Con
 
 - [Create a voice-based prompt agent](/azure/foundry/agents/quickstarts/prompt-voice-agent)
 - [Configure a voice agent](/azure/foundry/agents/how-to/configure-voice-agent)
+
+::: zone-end

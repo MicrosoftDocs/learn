@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.discover-agents-with-a2a.exercise
-title: Exercise - Connect to remote Azure AI Agents with the A2A protocol
+title: Exercise - Connect to remote Microsoft Foundry agents with the A2A protocol
 metadata:
-  title: Exercise - Connect to remote Azure AI Agents with the A2A protocol
-  description: "Build an A2A (Agent-to-Agent) client-server application that coordinates and connects to remote Azure AI Agent."
-  ms.date: 5/29/2026
+  title: Exercise - Connect to remote Microsoft Foundry agents with the A2A protocol
+  description: "Build an A2A (Agent-to-Agent) client-server application that coordinates and connects to remote Microsoft Foundry agents."
+  ms.date: 11/10/2026
   author: buzahid
   ms.author: buzahid
   ms.topic: unit
