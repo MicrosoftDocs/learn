@@ -1,3 +1,11 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=3c0c8ed0-1419-4018-80e3-1bcde43fface]
+
+::: zone-end
+
+::: zone pivot="text"
+
 An application that behaves perfectly in testing can still degrade in production, and the degradation rarely announces itself. Requests slow down, a few operations come back as errors, and by the time anyone opens a ticket, customers already noticed. Monitoring reverses that order. It gives you the signals to see a problem forming and the evidence to explain it once it does.
 
 At Contoso, the retail catalog runs on Azure Cosmos DB for NoSQL. Over the past week, the checkout service logs intermittent HTTP 429 responses, and *P99* latency on the product page drifts from around 20 milliseconds to well over 100. Nothing is down. No code changed. The team's first instinct is to raise the throughput on the container, but nobody can say whether raising the throughput helps, because nobody establishes what the account does under load. Every design decision behind the catalog, the partition key, the throughput model, the connection mode, now carries a measurable consequence, and monitoring is where those consequences surface.
@@ -7,3 +15,8 @@ This module works the problem the way an on-call engineer does. You start with t
 :::image type="content" source="../media/monitoring-surfaces.png" alt-text="Diagram showing four monitoring surfaces for Azure Cosmos DB: client-side signals, portal metrics, Azure Monitor metrics, and Azure Monitor logs." lightbox="../media/monitoring-surfaces.png":::
 
 By the end of this module, you can interpret Azure Cosmos DB response codes, monitor latency and partition utilization against your service objectives, configure Azure Monitor alerts, and query diagnostic logs to find the cause of an incident.
+
+::: zone-end
+
+> [!NOTE]
+> We recognize that different people like to learn in different ways. You can choose to complete this module in video-based format or you can read the content as text and images. The text contains greater detail than the videos, so in some cases you might want to refer to it as supplemental material to the video presentation.

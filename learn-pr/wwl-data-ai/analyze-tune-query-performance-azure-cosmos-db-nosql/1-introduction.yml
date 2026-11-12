@@ -2,10 +2,11 @@
 uid: learn.wwl.analyze-tune-query-performance-azure-cosmos-db-nosql.introduction
 title: Introduction
 metadata:
+  zone_pivot_groups: video-or-text
   title: Introduction
   description: "Frame query tuning in Azure Cosmos DB for NoSQL as a measurement discipline: measure the request charge, read the metrics, then apply the remediation the evidence points to."
-  ms.date: 10/03/2026
-  author: wwlpublish
+  ms.date: 11/11/2026
+  author: MScalopez
   ms.author: calopez
   ms.topic: unit
   ai-usage: ai-generated

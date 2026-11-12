@@ -20,8 +20,8 @@ metadata:
   gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/analyze-tune-query-performance-azure-cosmos-db-nosql/index.yml
   title: Analyze and Tune Query and Operation Performance in Azure Cosmos DB
   description: "Measure request unit consumption, read server-side query and index metrics to find scans and hot partitions, and reduce the cost of queries that span physical partitions."
-  ms.date: 10/03/2026
-  author: wwlpublish
+  ms.date: 11/11/2026
+  author: MScalopez
   ms.author: calopez
   ms.topic: module
   ms.service: azure-cosmos-db

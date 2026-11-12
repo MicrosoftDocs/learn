@@ -8,7 +8,7 @@ In this exercise, you use query metrics and request charges to diagnose and opti
 
 Launch the C# exercise and follow the instructions.
 
-[![Diagram of the Launch Exercise button used to open the hands-on exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2379345&clcid=0x409)
+[![Diagram of a button used to launch the hands-on exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2379345&clcid=0x409)
 
 ::: zone-end
 
@@ -16,6 +16,6 @@ Launch the C# exercise and follow the instructions.
 
 Launch the Python exercise and follow the instructions.
 
-[![Diagram of the Launch Exercise button used to open the hands-on exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2379041&clcid=0x409)
+[![Diagram of a button used to launch the hands-on exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2379041&clcid=0x409)
 
 ::: zone-end

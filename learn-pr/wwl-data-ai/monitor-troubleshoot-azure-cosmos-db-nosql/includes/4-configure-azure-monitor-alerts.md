@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=a0b84730-e111-4b12-a8a1-a044b75ba3d0]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Contoso's incident started a week before anyone opened a ticket. The metrics that would show it were being collected the whole time, and nobody was looking. An alert closes that gap: it watches a condition continuously and tells you when the condition is met, so the first person to notice a problem works for you rather than buying from you. In this unit, you build an alert rule on rate-limited requests, choose a threshold you can defend, and learn which conditions are worth alerting on in the first place.
 
 ## Understand what an alert rule is made of
@@ -82,3 +93,5 @@ These conditions are worth a rule on most accounts:
 The logical partition key rule is a log alert rather than a metric alert, because per-partition-key storage isn't a platform metric. It comes from the `PartitionKeyStatistics` diagnostic log category, which means enabling diagnostic settings is a prerequisite. It's also the rule that saves the most painful failure in this list. A logical partition's default limit is 20 GB. Remediation can include removing data that no longer needs to be retained or migrating to a container with a more suitable partition key. Hierarchical partition keys are one recommended option for distributing a large first-level key across multiple logical partitions.
 
 Your alerting strategy now links service objectives to signals, thresholds, and action groups. In the next unit, diagnostic logs provide the request-level detail you need when an alert calls for investigation.
+
+::: zone-end
