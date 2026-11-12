@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: Knowledge check.
-  ms.date: 07/22/2025
+  ms.date: 11/09/2026
   author: Orin-Thomas
   ms.author: orthomas
   ms.custom: team=cloud_advocates
@@ -27,7 +27,7 @@ quiz:
         - content: Layer 5
           isCorrect: false
           explanation: Incorrect. Azure Load Balancer functions at Layer 4 of the OSI model. Layer 5 of the OSI model is the session layer that addresses opening, closing, and managing application sessions.  
-    - content: Which of the following components should you configure to ensure that traffic from a specific client computer is always directed to the same server in the back-end pool?
+    - content: When back-end membership and health remain unchanged, which setting can direct new connections from the same client IP to the same back-end instance for a given destination IP?
       choices: 
         - content: Health probe
           isCorrect: false
@@ -37,8 +37,8 @@ quiz:
           explanation: Incorrect. High availability ports are a type of rule in which all Transmission Control Protocol (TCP) and User Datagram Protocol (UDP) traffic that arrives on all ports is load balanced.
         - content: Session persistence
           isCorrect: true
-          explanation: Correct. Session persistence allows you to ensure that traffic from a client computer interacting with Azure Load Balancer is always forwarded to the same server in the back-end pool.
-    - content: Which of the following components would you configure to ensure that back-end pool instances that are no longer responding to traffic on TCP port 443 no longer have traffic directed to them by Load Balancer?
+          explanation: Correct. Session persistence with Client IP affinity uses the source and destination IP addresses to select a back-end instance. It doesn't guarantee the same instance after back-end membership or health changes.
+    - content: Which component determines whether a back-end instance listening on TCP port 443 should receive new TCP connections through a load-balancing rule?
       choices:
         - content: High availability port
           isCorrect: false
@@ -48,5 +48,5 @@ quiz:
           explanation: Incorrect. Outbound rules are used to configure traffic flow from back-end pool instances to the internet.
         - content: Health probe
           isCorrect: true
-          explanation: Correct. Health probes allow you to determine whether a back-end pool instance is responding to traffic.
+          explanation: Correct. A health probe checks the configured endpoint and lets Load Balancer determine whether the instance should receive new TCP connections. This is different from guaranteeing the behavior of every existing connection.
           
