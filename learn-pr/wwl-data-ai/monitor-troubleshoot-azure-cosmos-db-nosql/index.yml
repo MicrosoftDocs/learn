@@ -23,8 +23,8 @@ metadata:
   gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/monitor-troubleshoot-azure-cosmos-db-nosql/index.yml
   title: Monitor and Troubleshoot Azure Cosmos DB
   description: "Interpret Azure Cosmos DB response codes, diagnose the four causes of a 429, monitor latency and partition utilization against service objectives, and configure Azure Monitor alerts and diagnostic logs."
-  ms.date: 10/03/2026
-  author: wwlpublish
+  ms.date: 11/11/2026
+  author: MScalopez
   ms.author: calopez
   ms.topic: module
   ms.service: azure-cosmos-db

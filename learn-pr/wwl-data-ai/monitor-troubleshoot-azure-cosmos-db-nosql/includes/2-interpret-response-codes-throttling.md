@@ -1,3 +1,12 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=ff1df7da-1571-4678-9a96-f091063de1c5]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
 The Contoso checkout service logs a handful of failed writes every hour. Before anyone opens the Azure portal, the application already holds the cheapest diagnostic signal available: the status code on each response and the headers that come with it. In this unit, you read those codes, decide which ones your application retries, distinguish the four causes of a 429 response, and capture the diagnostics the SDK collects on every request.
 
 ## Read the status code before you change anything

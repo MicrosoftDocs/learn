@@ -2,10 +2,11 @@
 uid: learn.wwl.monitor-troubleshoot-azure-cosmos-db-nosql.introduction
 title: Introduction
 metadata:
+  zone_pivot_groups: video-or-text
   title: Introduction
   description: "Frame monitoring as the practice that turns an Azure Cosmos DB incident from a report into evidence, and preview the response codes, metrics, alerts, and logs the module covers."
-  ms.date: 10/03/2026
-  author: wwlpublish
+  ms.date: 11/11/2026
+  author: MScalopez
   ms.author: calopez
   ms.topic: unit
   ai-usage: ai-generated

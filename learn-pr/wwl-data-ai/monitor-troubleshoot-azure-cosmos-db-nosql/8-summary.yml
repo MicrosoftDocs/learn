@@ -4,8 +4,8 @@ title: Summary
 metadata:
   title: Summary
   description: "Recap response code interpretation, latency and partition utilization metrics, Azure Monitor alert rules, and diagnostic log analysis for Azure Cosmos DB for NoSQL."
-  ms.date: 10/03/2026
-  author: wwlpublish
+  ms.date: 11/11/2026
+  author: MScalopez
   ms.author: calopez
   ms.topic: unit
   ai-usage: ai-generated
