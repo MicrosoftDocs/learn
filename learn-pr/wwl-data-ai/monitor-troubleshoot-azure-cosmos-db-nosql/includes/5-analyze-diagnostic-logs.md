@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=affa3e3f-bff7-4268-98b7-3f1de2435286]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Metrics tell you that a container returned 4,000 rate-limited responses this afternoon and can split that count by operation type. They don't identify the individual requests, logical partition key values, or query text behind the count. Diagnostic logs provide those details through the relevant log categories. In this unit, you enable the log categories worth collecting, query them with Kusto Query Language (KQL), and join a log row back to the client request that produced it.
 
 The difference from metrics is worth stating plainly: **metrics are collected automatically and cost nothing to read. Logs are collected only after you create a diagnostic setting, and you pay for what you ingest.** That asymmetry shapes how you use them. Metrics run continuously as the standing watch, and logs go on when you have a question that metrics raised.
@@ -113,3 +124,5 @@ Treat diagnostic settings as an investigative tool rather than a permanent confi
 - Delete a diagnostic setting before you delete, rename, or move the account it targets. A setting left behind can attach itself to a resource recreated with the same name and quietly resume ingesting.
 
 Diagnostic logs connect account-level symptoms to specific requests and partition keys. You can now combine those records with metrics and client diagnostics while keeping log collection focused on the investigation.
+
+::: zone-end

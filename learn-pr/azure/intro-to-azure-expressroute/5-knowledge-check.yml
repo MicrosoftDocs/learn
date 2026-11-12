@@ -2,9 +2,9 @@
 uid: learn.azure.intro-to-azure-expressroute.knowledge-check
 title: Module assessment
 metadata:
-  title: Module assessment
+  title: Module Assessment
   description: Knowledge check.
-  ms.date: 07/03/2025
+  ms.date: 11/09/2026
   author: Orin-Thomas
   ms.author: orthomas
   ms.custom: team=cloud_advocates
@@ -14,19 +14,19 @@ durationInMinutes: 4
 content: |
   [!include[](includes/5-knowledge-check.md)]
 quiz:
-  title: Check your knowledge
+  title: Module assessment
   questions:
-    - content: Your employer Adatum has branch office locations in Auckland and Seattle. Each branch office location has an ExpressRoute connection configured. You want to ensure that data transferred from servers in Auckland to servers in Seattle use the Azure global network backbone instead of being transferred across the public internet. Which ExpressRoute feature would you use to achieve this goal?
+    - content: Your employer Adatum has branch offices in Auckland and Seattle. Each office connects through a provisioned ExpressRoute Premium circuit with Azure private peering at a different Global Reach-supported peering location. Which feature can you configure to exchange traffic between the two on-premises networks over Microsoft's global network rather than the public internet?
       choices:
         - content: Site-to-site VPN
           isCorrect: false
           explanation: Incorrect. Site-to-site VPNs usually use the public internet, and they aren't a feature of Azure ExpressRoute.
         - content: ExpressRoute Global Reach
           isCorrect: true
-          explanation: Correct. ExpressRoute Global Reach allows you to route traffic between on-premises locations that have ExpressRoute connections across the Azure global network backbone.
+          explanation: Correct. ExpressRoute Global Reach links the eligible circuits' private peerings so that the on-premises networks can exchange traffic over Microsoft's network. Both circuits require Premium because this connection crosses geopolitical regions.
         - content: ExpressRoute Direct
           isCorrect: false
-          explanation: Incorrect. ExpressRoute Direct is a model for how your on-premises location connects to ExpressRoute. ExpressRoute Direct doesn't ensure that traffic doesn't pass across the public internet.          
+          explanation: Incorrect. ExpressRoute Direct provides private connectivity into Microsoft's network through dedicated port pairs. Choosing Direct doesn't itself link the two on-premises networks. ExpressRoute Global Reach provides that intersite connectivity.
     - content: At which of the following Open Systems Interconnection (OSI) model layers does ExpressRoute provide connectivity between hosts on an on-premises network and IaaS virtual machine hosts on an Azure virtual network?
       choices: 
         - content: OSI Layer 1
@@ -37,7 +37,7 @@ quiz:
           explanation: Incorrect. ExpressRoute doesn't provide connectivity between hosts on an on-premises network at OSI Layer 2.          
         - content: OSI Layer 3
           isCorrect: true
-          explanation: Correct. ExpressRoute provides connectivity between hosts on an on-premises network at OSI Layer 3 or greater.          
+          explanation: Correct. ExpressRoute provides Layer 3 IP connectivity between the on-premises network and Azure. It doesn't extend Layer 2 Ethernet connectivity between the hosts.
     - content: Several users at Adatum work remotely using laptops with cellular internet connections. These users visit Adatum's on-premises sites only once or twice a month. Which of the following methods should these users use to connect to resources in Azure?
       choices:
         - content: Azure ExpressRoute
@@ -53,4 +53,3 @@ quiz:
 
 
         
-

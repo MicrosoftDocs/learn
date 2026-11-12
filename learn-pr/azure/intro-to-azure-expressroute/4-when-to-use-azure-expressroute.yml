@@ -2,14 +2,13 @@
 uid: learn.azure.intro-to-azure-expressroute.when-to-use-azure-expressroute
 title: When to use Azure ExpressRoute
 metadata:
-  title: When to use Azure ExpressRoute
+  title: When to Use Azure ExpressRoute
   description: Learn when you should choose to use Azure ExpressRoute as a solution to meet your organization's needs.
-  ms.date: 07/03/2025
+  ms.date: 11/09/2026
   author: Orin-Thomas
   ms.author: orthomas
   ms.custom: team=cloud_advocates
   ms.topic: unit
-durationInMinutes: 3
+durationInMinutes: 4
 content: |
   [!include[](includes/4-when-to-use-azure-expressroute.md)]
-

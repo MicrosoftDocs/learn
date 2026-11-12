@@ -2,10 +2,11 @@
 uid: learn.wwl.monitor-troubleshoot-azure-cosmos-db-nosql.analyze-diagnostic-logs
 title: Analyze diagnostic logs in Log Analytics
 metadata:
+  zone_pivot_groups: video-or-text
   title: Analyze Diagnostic Logs in Log Analytics
   description: "Enable Azure Cosmos DB diagnostic settings, choose between resource-specific and legacy tables, query data-plane and partition key logs with Kusto Query Language, and correlate a log row with a client request."
-  ms.date: 10/03/2026
-  author: wwlpublish
+  ms.date: 11/11/2026
+  author: MScalopez
   ms.author: calopez
   ms.topic: unit
   ai-usage: ai-generated

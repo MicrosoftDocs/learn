@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=7892a82d-8b6b-41b9-b6a0-1c494efc5913]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Response codes tell you that something failed. They don't tell you that something is *degrading*. The Contoso product page still returns 200 for nearly every request, and its 99th-percentile (P99) latency still tripled. In this unit, you separate the latency the service is responsible for from the latency your application adds, read normalized request unit (RU) consumption without misinterpreting it, and use physical partition metrics to tell a container that needs more throughput from one that needs a better partition key.
 
 Azure Monitor collects these metrics automatically. You configure nothing, and there's no cost to look. Most arrive at one-minute granularity, and a few report less often. Platform metrics are retained for 93 days. The metrics explorer displays up to 30 days on a single chart, and you can move that interval through the retained history.
@@ -64,3 +75,5 @@ A metric only means something against a target. Azure Cosmos DB publishes a serv
 Availability has its own metric. **Service Availability** reports the percentage of successful account requests at hourly, daily, or monthly granularity, which matches the way availability commitments are written.
 
 Set your own objectives before an incident rather than during one. Decide what P99 latency your application tolerates, what rate of 429 responses is acceptable, and how much normalized RU consumption headroom you want to keep. Those three numbers turn a chart from something you interpret in the moment into something you can alert on, which is the subject of the next unit.
+
+::: zone-end

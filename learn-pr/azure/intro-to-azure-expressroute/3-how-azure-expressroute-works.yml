@@ -2,14 +2,13 @@
 uid: learn.azure.intro-to-azure-expressroute.how-azure-expressroute-works
 title: How Azure ExpressRoute works
 metadata:
-  title: How Azure ExpressRoute works
+  title: How Azure ExpressRoute Works
   description: Learn how Azure ExpressRoute works and how to implement it in your organization.
-  ms.date: 07/03/2025
+  ms.date: 11/09/2026
   author: Orin-Thomas
   ms.author: orthomas
   ms.custom: team=cloud_advocates
   ms.topic: unit
-durationInMinutes: 5
+durationInMinutes: 6
 content: |
   [!include[](includes/3-how-azure-expressroute-works.md)]
-

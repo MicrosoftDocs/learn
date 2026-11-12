@@ -4,8 +4,8 @@ title: Module assessment
 metadata:
   title: Module Assessment
   description: "Check your ability to read query and index metrics, diagnose a 429 response, choose a remediation for a high-cost query, and predict how a filter routes across physical partitions."
-  ms.date: 10/03/2026
-  author: wwlpublish
+  ms.date: 11/11/2026
+  author: MScalopez
   ms.author: calopez
   ms.topic: unit
   module_assessment: true

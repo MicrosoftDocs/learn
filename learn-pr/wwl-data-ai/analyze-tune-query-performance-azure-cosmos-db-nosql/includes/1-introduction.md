@@ -1,3 +1,11 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=4327a506-cede-4b68-92b0-46f5d47f72dd]
+
+::: zone-end
+
+::: zone pivot="text"
+
 Every Azure Cosmos DB for NoSQL operation returns what it costs. A point read of a small item costs about 1 request unit. A query that scans a container can cost thousands. The difference between those two numbers is where a database bill comes from, and it's also where latency and throttling come from, because a container has only so many request units per second to spend.
 
 At Contoso, the retail catalog service starts returning intermittent errors during the morning traffic peak. The team's first instinct is to raise the container's throughput, which makes the errors stop and the bill go up. Nobody knows which operation is expensive, so nobody knows whether the extra throughput is buying capacity or covering for a single badly shaped query. A week later, the same errors return at the new throughput level.
@@ -7,3 +15,8 @@ The way out of that loop is measurement. Azure Cosmos DB reports the request cha
 This module works through that sequence. You start by measuring the request charge of individual operations and identifying the ones that recur often enough to matter. You then read the server-side query metrics to see where the time and the request units go, read the index metrics to see whether the index is carrying the filter, and reduce the cost of queries that span physical partitions. An exercise ties the sequence together against a real catalog.
 
 By the end of this module, you can diagnose a high-cost Azure Cosmos DB for NoSQL query from its metrics and apply the remediation the metrics point to.
+
+::: zone-end
+
+> [!NOTE]
+> We recognize that different people like to learn in different ways. You can choose to complete this module in video-based format or you can read the content as text and images. The text contains greater detail than the videos, so in some cases you might want to refer to it as supplemental material to the video presentation.

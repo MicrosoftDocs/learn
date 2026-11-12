@@ -1,3 +1,12 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=b1dfbc44-f0df-4e9f-a376-2d9c99a11c87]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
 Tuning starts with a number. Before you change an indexing policy or rewrite a filter, you need to know what the current operation costs and how often it runs, because those two values together decide whether the operation is worth your attention at all. A 200 request unit (RU) query that runs twice a day costs less over a month than a 4 RU query that runs 50 times a second.
 
 In this unit, you measure the cost of individual operations and identify the ones that dominate a workload.
