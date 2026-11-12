@@ -1,3 +1,12 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=44d0d4a9-f537-424a-934e-b6b0b9983a88]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
 When a query retrieves roughly what it outputs and the charge is still higher than you want, inspect the index metrics and partition breakdown. Similar document counts don't prove fan-out or rule out expensive index work. If the query uses suitable indexes but visits more physical partitions than necessary, reducing those visits can lower its cost.
 
 In this unit, you scope queries to fewer partitions and tune the ones that genuinely can't be scoped.

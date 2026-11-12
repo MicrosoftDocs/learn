@@ -72,16 +72,17 @@ To query agent identities programmatically, you need appropriate Microsoft Graph
 
 ### Read agent identities
 
-There are two ways to read information about agent identities.
+To read information about agent identities, you need:
 
-- **AgentIdentity.Read.All** (application permission) or **AgentIdentity.Read** (delegated permission)
-- Alternatively, broader permissions like **Directory.Read.All** include agent identity read access
+- **AgentIdentity.Read.All** (delegated or application permission) — the least-privileged option
+- **Application.Read.All** (delegated or application permission) — a higher-privileged alternative
 
 ### Manage agent identities
 
 Similar methods exist to modify agents.
 
-- **AgentIdentity.ReadWrite.All** (application permission) or **AgentIdentity.ReadWrite** (delegated permission)
+- **AgentIdentity.EnableDisable.All** (delegated or application permission) — the least-privileged option for updating agent identities
+- **AgentIdentity.ReadWrite.All** (delegated or application permission) — a higher-privileged alternative
 - For creating blueprints: **AgentIdentityBlueprint.Create**
 
 ### Request admin consent

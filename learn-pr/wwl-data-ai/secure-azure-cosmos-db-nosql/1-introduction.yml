@@ -2,10 +2,11 @@
 uid: learn.wwl.secure-azure-cosmos-db-nosql.introduction
 title: Introduction
 metadata:
+  zone_pivot_groups: video-or-text
   title: Introduction
   description: "Introduce authentication, key rotation, role-based access control across control and data planes, network controls, and sensitive field exposure in an Azure Cosmos DB solution."
-  ms.date: 10/02/2026
-  author: wwlpublish
+  ms.date: 11/5/2026
+  author: MScalopez
   ms.author: calopez
   ms.topic: unit
   ai-usage: ai-generated

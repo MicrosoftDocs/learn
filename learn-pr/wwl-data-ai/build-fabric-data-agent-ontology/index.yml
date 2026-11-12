@@ -25,15 +25,15 @@ metadata:
   gs-solution.area: "AI Business Solutions"
   gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/build-fabric-data-agent-ontology/index.yml
   title: Build a Fabric data agent with an ontology
-  description: Learn how to add ontology context to a Fabric data agent, configure eligible underlying sources, validate SQL, KQL, or DAX queries, and publish and share the agent.
-  ms.date: 10/22/2026
-  author: weslbo
-  ms.author: wedebols
+  description: Build a data agent in Microsoft Fabric using ontology context from Fabric IQ so colleagues can ask business questions without understanding underlying data structures.
+  ms.date: 11/05/2026
+  author: angierudduck
+  ms.author: anrudduc
   ms.topic: module
   ms.service: fabric
   ai-usage: ai-generated
 title: Build a Fabric data agent with an ontology
-summary: Create a Fabric data agent that uses a Microsoft Fabric IQ ontology as business context. Configure agent guidance and eligible underlying sources, validate source-native queries and answers, and publish and share the agent with the required data permissions.
+summary: Build a data agent in Microsoft Fabric using ontology context from Fabric IQ so colleagues can ask business questions without understanding underlying data structures.
 abstract: |
   By the end of this module, you can:
   - Explain how an ontology provides context for source-native queries
@@ -48,7 +48,7 @@ prerequisites: |
   - Familiarity with tables, relationships, and basic data queries
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
-- beginner
+- intermediate
 roles:
 - data-analyst
 - data-engineer

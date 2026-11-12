@@ -4,8 +4,8 @@ title: Connect to your A2A agent
 metadata:
   zone_pivot_groups: video-or-text
   title: Connect to your A2A Agent
-  description: "Learn how to connect a client to your A2A (Agent-to-Agent) server"
-  ms.date: 5/29/2026
+  description: "Learn how to connect a client or routing agent to your A2A (Agent-to-Agent) server."
+  ms.date: 11/10/2026
   author: buzahid
   ms.author: buzahid
   ms.topic: unit

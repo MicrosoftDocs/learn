@@ -5,9 +5,9 @@ metadata:
   zone_pivot_groups: video-or-text
   title: Configure Ontology Relationships
   description: "Learn how to configure relationship data sources to connect entity instances"
-  ms.date: 10/22/2026
-  author: weslbo
-  ms.author: wedebols
+  ms.date: 11/05/2026
+  author: angierudduck
+  ms.author: anrudduc
   ms.topic: unit
   ai-usage: ai-generated
 azureSandbox: false

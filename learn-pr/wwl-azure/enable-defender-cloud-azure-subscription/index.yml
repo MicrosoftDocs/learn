@@ -27,29 +27,31 @@ metadata:
     - "Security Analytics"
   gs-solution.area: Security
   gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/enable-defender-cloud-azure-subscription/index.yml
-  title: Enable Defender for Cloud on your Azure subscription
-  description: "Learn how to connect your Azure subscriptions to Microsoft Defender for Cloud, enabling enhanced security monitoring, compliance management, and the implementation of best practices for threat protection."
-  ms.date: 10/21/2024
-  author: wwlpublish
-  ms.author: lumac
+  title: Enable Defender for Cloud on Your Azure Subscription
+  description: "Enable Defender for Cloud on an Azure subscription, configure a workload protection plan, and review resource coverage and compliance assessments with appropriate permissions and cost awareness."
+  ms.date: 11/07/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: module
   ms.custom:
   - N/A
   ms.service: defender-for-cloud
-  ai-usage: human-only
+  ai-usage: ai-assisted
 title: Enable Defender for Cloud on your Azure subscription
-summary: In this module, we will focus on enabling Microsoft Defender for Cloud on your Azure subscription to enhance security monitoring, compliance management, and threat protection for your cloud-based applications.
+summary: Enable foundational Defender for Cloud capabilities on an Azure subscription, configure Defender for Servers Plan 2, and review resource coverage and Microsoft Cloud Security Benchmark assessments. Consider permissions, trial eligibility, costs, and safe cleanup of training changes.
 abstract: |
-  By the end of this training module, participants will:
+  By the end of this module, you'll be able to:
 
-  -   Learn how to connect your Azure subscriptions to Microsoft Defender for Cloud.
+  - Enable foundational Defender for Cloud capabilities on an Azure subscription.
 
-  -   Understand the benefits of integrating Azure subscriptions for enhanced security monitoring.
+  - Select and configure a workload protection plan with appropriate permissions and cost awareness.
 
-  -   Explore methods to manage and ensure compliance across connected Azure subscriptions.
+  - Review resource coverage and investigate an MCSB assessment.
 
-  -   Gain skills to implement best practices for threat protection within your Azure environment.
-prerequisites: None
+  - Explain the prerequisites for assigning additional standards and the limits of automated compliance assessment.
+prerequisites: |
+  Basic familiarity with Azure subscriptions and role-based access control.
+  For the hands-on exercise, access to an authorized Azure commercial training subscription with the permissions described in the module.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate

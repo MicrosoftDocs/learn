@@ -5,9 +5,9 @@ metadata:
   zone_pivot_groups: video-or-text
   title: Create a Fabric data agent and connect it to an ontology
   description: Create a Fabric data agent, add ontology context, and configure agent guidance and eligible underlying sources.
-  ms.date: 10/22/2026
-  author: weslbo
-  ms.author: wedebols
+  ms.date: 11/05/2026
+  author: angierudduck
+  ms.author: anrudduc
   ms.topic: unit
   ai-usage: ai-generated
 azureSandbox: false

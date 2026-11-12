@@ -33,12 +33,15 @@ Begin with the input, output, and task that your application requires:
 
 | Application requirement | Microsoft AI model to evaluate |
 | --- | --- |
-| Reason over a difficult text-based problem | MAI-Thinking-1 |
-| Generate or edit visual content | MAI-Image-2.5 family |
-| Convert spoken audio into text | MAI-Transcribe-1.5 |
-| Convert text into natural speech | MAI-Voice-2 family |
+| Reason over a difficult text-based problem | MAI-Thinking |
+| Generate or edit visual content | MAI-Image family |
+| Convert spoken audio into text | MAI-Transcribe |
+| Convert text into natural speech | MAI-Voice family |
 
 Then define measurable criteria. For example, a transcription workload might prioritize recognition of domain terminology, while a voice assistant might prioritize the delay before audio begins. An image workflow might prioritize instruction following, object consistency, or cost per accepted asset.
+
+> [!IMPORTANT]
+> A capable model isn't automatically the right model for every application. Selection should reflect the workload, expected users, deployment region, data requirements, responsible AI risks, and measurable acceptance criteria.
 
 ## Experiment before deployment
 

@@ -1,4 +1,13 @@
+::: zone pivot="video"
 
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=a9394737-48db-4a35-b0b1-807ebb67bc55]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
 
 **Components** allow you to create reusable scripts that can easily be shared across users within the same Azure Machine Learning workspace. You can also use components to build an Azure Machine Learning pipeline.
 
@@ -120,3 +129,5 @@ You can register a component with the following code:
 ```python
 prep = ml_client.components.create_or_update(loaded_component_prep)
 ```
+
+::: zone-end

@@ -2,10 +2,11 @@
 uid: learn.wwl.monitor-troubleshoot-azure-cosmos-db-nosql.configure-azure-monitor-alerts
 title: Configure Azure Monitor alerts
 metadata:
+  zone_pivot_groups: video-or-text
   title: Configure Azure Monitor Alerts
   description: "Build metric, log, and activity log alert rules for an Azure Cosmos DB account, filter a rule by the StatusCode dimension, and choose a threshold that fires only when something is wrong."
-  ms.date: 10/03/2026
-  author: wwlpublish
+  ms.date: 11/11/2026
+  author: MScalopez
   ms.author: calopez
   ms.topic: unit
   ai-usage: ai-generated

@@ -1,3 +1,12 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=2f1e5a71-e041-4a4e-aabe-405cb10671c6]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
 A request charge tells you that a query is expensive. It doesn't tell you why. The server-side query metrics do: they report how much work the query engine did, how that work split across physical partitions, and how much of it the index absorbed. Reading those metrics turns "this query costs 400 request units (RU)" into "this query loaded 60,000 documents to return seven."
 
 In this unit, you read the metrics a query returns and use them to distinguish three different problems.

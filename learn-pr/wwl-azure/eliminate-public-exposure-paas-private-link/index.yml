@@ -32,9 +32,9 @@ metadata:
   gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/eliminate-public-exposure-paas-private-link/index.yml
   title: Eliminate Public Network Exposure of Azure PaaS Services
   description: "Eliminate public network exposure of Azure PaaS and AI services using private endpoints and Azure Private Link. Configure private endpoints, integrate private DNS, expose internal services using Private Link service, and enforce private access adoption using Azure Policy and Defender for Cloud."
-  ms.date: 05/10/2026
-  author: r-c-stewart
-  ms.author: lumac
+  ms.date: 11/01/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: module
   ms.service: azure-private-link
   ai-usage: ai-generated

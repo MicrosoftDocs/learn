@@ -5,7 +5,7 @@ metadata:
   unitType: knowledge_check
   title: Module assessment
   description: Knowledge check.
-  ms.date: 06/19/2025
+  ms.date: 11/08/2026
   author: Orin-Thomas
   ms.author: orthomas
   ms.topic: unit
@@ -16,47 +16,47 @@ durationInMinutes: 5
 content: |
 quiz:
   questions:
-  - content: "Let's say Monica has vSphere 5.5 deployed within an on-premises VMware environment. What needs to be done to deploy VMware HCX?"
+  - content: "Monica discovers that the source vSphere and HCX combination isn't supported. What should she do before proceeding?"
     choices:
-    - content: "Deploy and downgrade the VMware HCX connector appliance on-premises to get support for the migration."
+    - content: "Check interoperability and lifecycle requirements, then establish a supported upgrade or migration plan."
       isCorrect: true
-      explanation: "Monica must deploy and downgrade the VMware HCX Connector appliance on-premises, which allows for a supported migration pattern into Azure VMware Solution."
-    - content: "VMware HCX can't be deployed to conduct any migrations into Azure VMware Solution."
+      explanation: "Compatibility and lifecycle support are separate requirements. Use supported source and destination combinations rather than downgrading HCX as a generic workaround."
+    - content: "Assume any numerically newer version is compatible."
       isCorrect: false
-      explanation: "VMware HCX can still be used for an older vSphere version."
-    - content: "Deploy Azure VMware Solution in a different region."
+      explanation: "A version-number comparison doesn't establish interoperability or current support for the exact product combination."
+    - content: "Ignore support requirements if the network is reachable."
       isCorrect: false
-      explanation: "While possible, deploying Azure VMware Solution to a different region won't help migrate VMs from vSphere 5.5 to Azure VMware Solution."
+      explanation: "Working connectivity doesn't establish software compatibility or vendor support."
   - content: "Alberto can't successfully establish a VMware HCX site pairing. What might be the issue?"
     choices:
     - content: "Download the VMware HCX Connector OVA file again."
       isCorrect: false
-      explanation: "If Alberto is at this step in the process, VMware HCX downloaded correctly."
+      explanation: "Downloading the OVA again doesn't establish the routed connection needed for site pairing. Check the actual connectivity failure first."
     - content: "The VMware HCX Connector OVA file needs redeployment on-premises."
       isCorrect: false
-      explanation: "If Alberto is at this step in the process, VMware HCX deployed correctly."
-    - content: "The VMware HCX Connector can't route to Alberto's VMware HCX Cloud Manager IP over port 443."
+      explanation: "Redeployment isn't the first remedy for a routing or firewall failure between the HCX managers."
+    - content: "The VMware HCX Connector can't reach Alberto's VMware HCX Cloud Manager IP over TCP 443."
       isCorrect: true
-      explanation: "The ability to route traffic over port 443 must be accounted for if Alberto can't establish a VMware HCX site pairing."
+      explanation: "Site pairing requires routing and firewall access from the on-premises Connector to the actual HCX Cloud Manager endpoint over TCP 443."
   - content: "For the VMware HCX Connector to route to the VMware HCX Cloud Manager environment, which port needs to be open?"
     choices:
     - content: "443"
       isCorrect: true
-      explanation: "Port 443 needs to be open between the on-premises VMware HCX Connector and the VMware HCX Cloud Manager environment in Azure VMware Solution."
+      explanation: "TCP 443 is required from the on-premises HCX Connector to the HCX Cloud Manager for site pairing and management."
     - content: "3389"
       isCorrect: false
       explanation: "Port 3389 is for Remote Desktop Protocol, and it doesn't have to do with the HCX Connector on-premises routing traffic to the VMware HCX Cloud Manager environment."
     - content: "53"
       isCorrect: false
-      explanation: "Port 53 is for DNS, and doesn't have to do with the VMware HCX Connector on-premises routing traffic to the VMware HCX Cloud Manager environment."
-  - content: "Sai can't create a service mesh within VMware HCX. What might be the issue?"
+      explanation: "Port 53 serves DNS, not the HCX Manager HTTPS connection. Working name resolution is still required when the deployment uses hostnames."
+  - content: "Sai has paired the sites but can't establish the HCX service-mesh transport. Which network condition could cause this?"
     choices:
-    - content: "Check permissions on the subscription and resource group."
+    - content: "The Azure portal account doesn't have a different role assigned."
       isCorrect: false
-      explanation: "This issue involves VMware HCX directly, not any permissions in the Azure portal."
-    - content: "Ports UDP 500/4500 aren't open between the on-premises and Azure VMware Solution network profiles."
+      explanation: "Changing Azure RBAC permissions doesn't open the network path between HCX service appliances."
+    - content: "UDP 4500 isn't allowed between the on-premises and Azure VMware Solution HCX uplink addresses."
       isCorrect: true
-      explanation: "UDP ports 500/4500 need to be open between the on-premises and Azure VMware Solution 'uplink' network profiles."
-    - content: "Redeploy VMware HCX on-premises to connect to Azure VMware Solution."
+      explanation: "The current service-mesh baseline requires UDP 4500 between service-appliance uplinks. Site pairing separately uses TCP 443 between managers."
+    - content: "The Connector OVA hasn't been downloaded a second time."
       isCorrect: false
-      explanation: "Redeploying the VMware HCX appliance on-premises won't help create the service mesh."
+      explanation: "Downloading the OVA again doesn't resolve a blocked service-appliance transport path."

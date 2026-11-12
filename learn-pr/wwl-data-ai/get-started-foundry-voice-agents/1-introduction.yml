@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-foundry-voice-agents.introduction
+title: Introduction
+metadata:
+  zone_pivot_groups: video-or-text
+  title: Introduction
+  description: "Introduction to building voice agents that deliver natural, responsive experiences."
+  ms.date: 11/10/2026
+  author: buzahid
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

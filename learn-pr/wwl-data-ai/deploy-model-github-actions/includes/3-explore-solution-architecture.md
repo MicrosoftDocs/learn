@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=3bfd21a4-9372-451d-841b-c189adcf6bef]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 To keep the no-show model reliable as it evolves, Proseware's team follows a **machine learning operations** (**MLOps**) process that spans everything from initial setup to ongoing monitoring.
 
 :::image type="content" source="../media/01-01-architecture.png" alt-text="Diagram of machine learning operations architecture.":::
@@ -24,3 +35,5 @@ You could perform each of these later stages manually in Azure Machine Learning 
 > Automation is central to MLOps, but it doesn't replace human judgment. It's a best practice to keep a person in the loop for decisions such as promoting a new model version to full production traffic or investigating a monitoring alert.
 
 The next unit shows how a protected GitHub environment turns that review point into an enforceable deployment gate.
+
+::: zone-end

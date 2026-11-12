@@ -4,8 +4,8 @@ title: 'Exercise: Optimize an indexing strategy'
 metadata:
   title: "Exercise: Optimize an Indexing Strategy"
   description: "Measure a baseline, trim an indexing policy, add a composite index, and create a global secondary index, comparing the request charge after each change."
-  ms.date: 10/03/2026
-  author: wwlpublish
+  ms.date: 11/06/2026
+  author: MScalopez
   ms.author: calopez
   ms.topic: unit
   zone_pivot_groups: dev-lang-csharp-python

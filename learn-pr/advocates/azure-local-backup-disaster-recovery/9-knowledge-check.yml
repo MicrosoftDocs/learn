@@ -1,0 +1,232 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-local-backup-disaster-recovery.knowledge-check
+metadata:
+  title: Module Assessment
+  description: Assess Azure Local protection, recovery dependencies, platform repair, isolated restoration, and production-release decisions in recovery scenarios.
+  ms.date: 11/06/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+  module_assessment: true
+title: Module assessment
+durationInMinutes: 18
+content: |
+quiz:
+  questions:
+  - content: |
+      An offsite backup repository is immutable. Its only decryption material and emergency credentials are stored on the protected Azure Local cluster. What's the most important gap?
+    choices:
+    - content: The backup schedule must run more frequently.
+      isCorrect: false
+      explanation: Incorrect. Retained data is unusable if the required access and decryption material are lost with production. More frequent backups don't resolve that dependency.
+    - content: Immutability must be disabled before the plan can be tested.
+      isCorrect: false
+      explanation: Incorrect. Retained data is unusable if the required access and decryption material are lost with production. More frequent backups don't resolve that dependency.
+    - content: Recovery access doesn't survive loss of the protected cluster.
+      isCorrect: true
+      explanation: Correct. Retained data is unusable if the required access and decryption material are lost with production. More frequent backups don't resolve that dependency.
+  - content: |
+      A Windows VM backup uses supported Hyper-V VSS coordination. What can you conclude?
+    choices:
+    - content: The backup automatically provides every database log-management and item-level recovery feature.
+      isCorrect: false
+      explanation: Incorrect. Supported VSS coordination can improve consistency, but it doesn't imply all application-specific operations or coordinated multi-VM recovery.
+    - content: All VMs in the application have been captured at one coordinated transaction boundary.
+      isCorrect: false
+      explanation: Incorrect. Supported VSS coordination can improve consistency, but it doesn't imply all application-specific operations or coordinated multi-VM recovery.
+    - content: VSS can improve consistency, but the required application recovery semantics still need confirmation.
+      isCorrect: true
+      explanation: Correct. Supported VSS coordination can improve consistency, but it doesn't imply all application-specific operations or coordinated multi-VM recovery.
+  - content: |
+      An engineer proposes Azure Local's automated Azure Site Recovery extension for production replication of a Trusted Launch VM. Which response is correct at this module's baseline?
+    choices:
+    - content: Switching to manual Azure Site Recovery setup removes the Trusted Launch restriction.
+      isCorrect: false
+      explanation: Incorrect. The automated extension is preview and test-environment-only at this baseline. Trusted Launch Azure Site Recovery replication is separately unsupported, including through manual setup.
+    - content: Both the automated route's preview restriction and Trusted Launch's replication restriction must be addressed.
+      isCorrect: true
+      explanation: Correct. The automated extension is preview and test-environment-only at this baseline. Trusted Launch Azure Site Recovery replication is separately unsupported, including through manual setup.
+    - content: A generation 2 VM is supported regardless of security type.
+      isCorrect: false
+      explanation: Incorrect. The automated extension is preview and test-environment-only at this baseline. Trusted Launch Azure Site Recovery replication is separately unsupported, including through manual setup.
+  - content: |
+      Corruption began at 10:04. A known clean point exists at 09:52, and a successful backup at 10:08 contains the corruption. What should the team do?
+    choices:
+    - content: Select 10:08 because a successful job proves the application data is valid.
+      isCorrect: false
+      explanation: Incorrect. Select a trusted point and validate any replayable logs. Freshness and successful job status don't prove that the point is clean.
+    - content: Start from 09:52 and assess whether validated application logs can safely advance recovery.
+      isCorrect: true
+      explanation: Correct. Select a trusted point and validate any replayable logs. Freshness and successful job status don't prove that the point is clean.
+    - content: Start the newest replica and skip integrity checks to minimize recovery time.
+      isCorrect: false
+      explanation: Incorrect. Select a trusted point and validate any replayable logs. Freshness and successful job status don't prove that the point is clean.
+  - content: |
+      The source site is unreachable, and the recovery VM passes application tests. What must occur before the destination accepts production writes?
+    choices:
+    - content: The old VM must be deleted from every management inventory.
+      isCorrect: false
+      explanation: Incorrect. An unreachable source might restart or still be running. Fencing and an explicit release decision prevent competing writers.
+    - content: The team must establish approved fencing and authorize the destination as the sole writer.
+      isCorrect: true
+      explanation: Correct. An unreachable source might restart or still be running. Fencing and an explicit release decision prevent competing writers.
+    - content: A successful ping to the destination is sufficient.
+      isCorrect: false
+      explanation: Incorrect. An unreachable source might restart or still be running. Fencing and an explicit release decision prevent competing writers.
+  - content: |
+      The last recovered transaction is at 09:52, failure occurs at 10:00, and business acceptance occurs at 10:48. The objectives are a ten-minute RPO and a 45-minute RTO. What's the result?
+    choices:
+    - content: The RPO is met, and the RTO is missed.
+      isCorrect: true
+      explanation: Correct. The data-loss interval is eight minutes, within the ten-minute RPO. The interruption is 48 minutes, exceeding the RTO by three minutes.
+    - content: Both objectives are met because the VM started before business acceptance.
+      isCorrect: false
+      explanation: Incorrect. The data-loss interval is eight minutes, within the ten-minute RPO. The interruption is 48 minutes, exceeding the RTO by three minutes.
+    - content: The RPO is missed, and the RTO is met.
+      isCorrect: false
+      explanation: Incorrect. The data-loss interval is eight minutes, within the ten-minute RPO. The interruption is 48 minutes, exceeding the RTO by three minutes.
+  - content: |
+      A VM restored through the MABS alternate-host option boots on a cluster node. Which assumption is unsafe?
+    choices:
+    - content: Its application still needs validation.
+      isCorrect: false
+      explanation: Incorrect. MABS alternate-location recovery has unmanaged-VM restrictions, and recovery to a cluster node doesn't automatically make the VM highly available.
+    - content: It automatically regains high availability and Azure Local lifecycle management.
+      isCorrect: true
+      explanation: Correct. MABS alternate-location recovery has unmanaged-VM restrictions, and recovery to a cluster node doesn't automatically make the VM highly available.
+    - content: Its identity must be reconciled with the recovery inventory.
+      isCorrect: false
+      explanation: Incorrect. MABS alternate-location recovery has unmanaged-VM restrictions, and recovery to a cluster node doesn't automatically make the VM highly available.
+  - content: |
+      Log backups are scheduled every five minutes, but the latest complete, usable chain ends 12 minutes before failure. The RPO is ten minutes. Which statement is correct?
+    choices:
+    - content: The RPO is met because the configured interval is less than ten minutes.
+      isCorrect: false
+      explanation: Incorrect. A configured schedule isn't the recovered transaction boundary. The usable chain is 12 minutes behind, exceeding the ten-minute objective.
+    - content: Only the time of the latest notification matters.
+      isCorrect: false
+      explanation: Incorrect. A configured schedule isn't the recovered transaction boundary. The usable chain is 12 minutes behind, exceeding the ten-minute objective.
+    - content: The observed recovery-point gap exceeds the RPO despite the configured schedule.
+      isCorrect: true
+      explanation: Correct. A configured schedule isn't the recovered transaction boundary. The usable chain is 12 minutes behind, exceeding the ten-minute objective.
+  - content: |
+      A restore must transfer 1 TiB at an effective 100 MiB/s. Its RTO is 45 minutes. What should the designer conclude?
+    choices:
+    - content: The route meets the RTO if the backup job completed successfully.
+      isCorrect: false
+      explanation: Incorrect. Moving 1,048,576 MiB at 100 MiB/s takes about 174.8 minutes before additional work. The recovery design or agreed objective must change.
+    - content: An available encryption key removes the transfer-time constraint.
+      isCorrect: false
+      explanation: Incorrect. Moving 1,048,576 MiB at 100 MiB/s takes about 174.8 minutes before additional work. The recovery design or agreed objective must change.
+    - content: Transfer alone takes about 175 minutes, so this route can't meet the RTO as designed.
+      isCorrect: true
+      explanation: Correct. Moving 1,048,576 MiB at 100 MiB/s takes about 174.8 minutes before additional work. The recovery design or agreed objective must change.
+  - content: |
+      The original MABS server is lost, but its online recovery points and encryption passphrase survive. A supported replacement is registered to the same vault. What distinction matters?
+    choices:
+    - content: The documented alternate-server workflow can recover online data without first restoring the original DPMDB, subject to its prerequisites.
+      isCorrect: true
+      explanation: Correct. Online-data recovery through a supported alternate server is distinct from rebuilding the original backup service. It still requires source encryption material, vault access, metadata, and a supported configuration.
+    - content: Restoring DPMDB recreates all destroyed disk recovery points.
+      isCorrect: false
+      explanation: Incorrect. Online-data recovery through a supported alternate server is distinct from rebuilding the original backup service. It still requires source encryption material, vault access, metadata, and a supported configuration.
+    - content: Downloading vault credentials replaces the need for the original encryption passphrase.
+      isCorrect: false
+      explanation: Incorrect. Online-data recovery through a supported alternate server is distinct from rebuilding the original backup service. It still requires source encryption material, vault access, metadata, and a supported configuration.
+  - content: |
+      An attacker gained access on Monday and began encryption on Friday. Why isn't Thursday's backup automatically an approved recovery point?
+    choices:
+    - content: Every backup taken before Friday must've been deleted.
+      isCorrect: false
+      explanation: Incorrect. Initial access and persistence can precede encryption. Recovery-point selection needs investigation and security approval as well as application validation.
+    - content: A backup can preserve persistence or malicious changes introduced before encryption.
+      isCorrect: true
+      explanation: Correct. Initial access and persistence can precede encryption. Recovery-point selection needs investigation and security approval as well as application validation.
+    - content: Immutability proves that the stored operating system is uncompromised.
+      isCorrect: false
+      explanation: Incorrect. Initial access and persistence can precede encryption. Recovery-point selection needs investigation and security approval as well as application validation.
+  - content: |
+      Azure management reports disconnected after a WAN outage, but local application transactions still succeed. What's the appropriate first response?
+    choices:
+    - content: Identify the unavailable dependencies and supported management paths before deciding whether workload recovery is needed.
+      isCorrect: true
+      explanation: Correct. A lost management connection doesn't by itself mean the local workload has failed. Determine the affected services and supported operations before taking recovery action.
+    - content: Immediately activate another production writer.
+      isCorrect: false
+      explanation: Incorrect. A lost management connection doesn't by itself mean the local workload has failed. Determine the affected services and supported operations before taking recovery action.
+    - content: Treat all cloud and local recovery operations as equally available.
+      isCorrect: false
+      explanation: Incorrect. A lost management connection doesn't by itself mean the local workload has failed. Determine the affected services and supported operations before taking recovery action.
+  - content: |
+      An existing VM backup job succeeds, but a newly added application disk isn't included. What does the successful job prove?
+    choices:
+    - content: Only that the job completed its configured scope, so coverage must be reconciled with the workload inventory.
+      isCorrect: true
+      explanation: Correct. Successful jobs don't detect every inventory gap. Newly added disks and applications must be reconciled with the actual protected scope.
+    - content: All data associated with the business service is protected.
+      isCorrect: false
+      explanation: Incorrect. Successful jobs don't detect every inventory gap. Newly added disks and applications must be reconciled with the actual protected scope.
+    - content: Offsite copies automatically include the new disk.
+      isCorrect: false
+      explanation: Incorrect. Successful jobs don't detect every inventory gap. Newly added disks and applications must be reconciled with the actual protected scope.
+  - content: |
+      A user deletes an ordinary report file. Supported item-level recovery is available, and the application is otherwise healthy. Which approach best limits unnecessary rollback?
+    choices:
+    - content: Restore the entire application VM to yesterday's point.
+      isCorrect: false
+      explanation: Incorrect. Supported item-level recovery avoids rolling back unrelated valid application data and configuration. Validate the item before replacing production content.
+    - content: Recover and validate the required file in an alternate location, then return it through an approved process.
+      isCorrect: true
+      explanation: Correct. Supported item-level recovery avoids rolling back unrelated valid application data and configuration. Validate the item before replacing production content.
+    - content: Fail over the whole site.
+      isCorrect: false
+      explanation: Incorrect. Supported item-level recovery avoids rolling back unrelated valid application data and configuration. Validate the item before replacing production content.
+  - content: |
+      A member of an otherwise viable instance needs an operating-system reimage. Its data disks are retained. Which approach is appropriate?
+    choices:
+    - content: Apply the new-deployment disk-cleaning instructions to every drive.
+      isCorrect: false
+      explanation: Incorrect. Azure Local node repair preserves retained data disks and uses lifecycle orchestration. New-deployment disk-cleaning instructions don't apply to that repair scenario.
+    - content: Evict the node and join it as a generic Hyper-V server without Azure Local orchestration.
+      isCorrect: false
+      explanation: Incorrect. Azure Local node repair preserves retained data disks and uses lifecycle orchestration. New-deployment disk-cleaning instructions don't apply to that repair scenario.
+    - content: Preserve retained data disks and use the approved orchestrated node-repair workflow.
+      isCorrect: true
+      explanation: Correct. Azure Local node repair preserves retained data disks and uses lifecycle orchestration. New-deployment disk-cleaning instructions don't apply to that repair scenario.
+  - content: |
+      A repaired node reports **Up**, but storage jobs are still rebuilding the required resilience. What should the operator conclude?
+    choices:
+    - content: Membership has returned, but storage and platform acceptance remain incomplete.
+      isCorrect: true
+      explanation: Correct. Cluster membership, storage resilience, and platform health are separate milestones. Ongoing storage recovery can make another node outage unsafe.
+    - content: Another node can immediately be taken offline because the repair command completed.
+      isCorrect: false
+      explanation: Incorrect. Cluster membership, storage resilience, and platform health are separate milestones. Ongoing storage recovery can make another node outage unsafe.
+    - content: An **Up** status proves all workloads have met their RPO and RTO.
+      isCorrect: false
+      explanation: Incorrect. Cluster membership, storage resilience, and platform health are separate milestones. Ongoing storage recovery can make another node outage unsafe.
+  - content: |
+      All operating-system disks in a multi-node instance are lost, but the data disks survive. What's the correct next step?
+    choices:
+    - content: Reset the data disks before investigating their contents.
+      isCorrect: false
+      explanation: Incorrect. The ordinary repair workflow assumes a surviving instance member. Surviving disks must be preserved while the appropriate reconstruction path is established.
+    - content: Treat automatic secret backup as a complete cluster snapshot.
+      isCorrect: false
+      explanation: Incorrect. The ordinary repair workflow assumes a surviving instance member. Surviving disks must be preserved while the appropriate reconstruction path is established.
+    - content: Preserve disks, keys, metadata, and configuration, then establish a product-specific recovery plan before provisioning writes.
+      isCorrect: true
+      explanation: Correct. The ordinary repair workflow assumes a surviving instance member. Surviving disks must be preserved while the appropriate reconstruction path is established.
+  - content: |
+      Automatic system-secret backup contains BitLocker and Trusted Launch recovery material. What does it establish?
+    choices:
+    - content: Some required recovery secrets are protected, but platform reconstruction and workload data protection remain separate requirements.
+      isCorrect: true
+      explanation: Correct. Protected keys can enable recovery, but they don't contain the VM disks, application data, or complete connected-instance platform state.
+    - content: VM disks and application data can be recreated without workload backups.
+      isCorrect: false
+      explanation: Incorrect. Protected keys can enable recovery, but they don't contain the VM disks, application data, or complete connected-instance platform state.
+    - content: Every restored VM automatically regains Azure Local lifecycle management.
+      isCorrect: false
+      explanation: Incorrect. Protected keys can enable recovery, but they don't contain the VM disks, application data, or complete connected-instance platform state.

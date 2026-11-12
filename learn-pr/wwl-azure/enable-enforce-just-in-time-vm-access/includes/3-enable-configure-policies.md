@@ -1,74 +1,106 @@
-Enabling just-in-time access on eligible virtual machines moves them from the Not configured state to the Configured state, immediately closing the attack surface on management ports. Defender for Cloud provides multiple enablement paths designed for different operational workflows—bulk enablement from the centralized Just-in-Time (JIT) interface for large-scale deployment, or individual VM enablement for targeted protection.
+Enabling just-in-time (JIT) access configures network restrictions and access-policy limits for eligible VMs. It doesn't automatically remove existing allow rules. Coordinate enablement with a review of the effective network rules and the administrative paths that must remain available.
 
-| Enablement Method | Best For | Starting Point |
-|-------------------|----------|----------------|
-| Defender for Cloud bulk enables | Initial deployment across multiple VMs | Workload protections → Just-in-time VM access → Not configured tab |
-| Individual VM enables | Single VM or per-VM workflow | VM → Configuration → Just-in-time access |
-| Programmatic enable | Automation and infrastructure-as-code | PowerShell `Set-AzJitNetworkAccessPolicy` or REST API |
+Choose the entry point that fits your workflow.
+
+| Enablement method | Best for | Starting point |
+| --- | --- | --- |
+| Defender for Cloud | Initial configuration across multiple VMs | Workload protections > Just-in-time VM access > Not configured |
+| Individual VM | Single-VM configuration | VM > Configuration > Just-in-time access |
+| Programmatic configuration | Automation and infrastructure as code | PowerShell `Set-AzJitNetworkAccessPolicy` for NSG-only policies, or deployment resources or REST API for the full configuration |
 
 ## Enable JIT from Defender for Cloud
 
-The centralized JIT interface in Defender for Cloud provides the most efficient path for protecting multiple virtual machines simultaneously. Navigate to Defender for Cloud, select **Workload protections**, then select **Just-in-time VM access**. The interface displays three tabs: Configured, Not configured, and Unsupported. Select the **Not configured** tab to view all eligible VMs that currently lack JIT protection.
+Contoso's security team uses the centralized interface to configure the factory VMs after reviewing their existing network rules. To configure the selected VMs:
 
-Select the virtual machines you want to protect using the checkboxes in the left column. For Contoso Manufacturing's initial deployment, the security team selects all factory floor VMs in the primary production resource group. After selecting VMs, select **Enable JIT on VMs** from the command bar. Defender for Cloud immediately applies the default JIT policy and modifies the associated network security groups to block management ports.
+1. In Defender for Cloud, open **Workload protections**, then **Just-in-time VM access**.
+1. On **Not configured**, select the VMs and select **Enable JIT on VMs**. This opens the configuration page.
+1. Review the recommended ports. Edit or add the ports needed for the workload, and set each port's protocol, allowed sources, and maximum request time.
+1. Confirm each port edit with **OK**, then select **Save** to apply the configuration.
+1. Confirm that the intended VMs appear under **Configured**, then validate their effective network access.
 
-The default policy configuration includes commonly targeted management ports with conservative access parameters:
+The starting configuration differs between the centralized editor and the individual VM shortcut.
 
-- **RDP (3389)**: Maximum request time 3 hours, allowed source IPs: Any, protocol: TCP
-- **SSH (22)**: Maximum request time 3 hours, allowed source IPs: Any, protocol: TCP  
-- **WinRM (5985)**: Maximum request time 3 hours, allowed source IPs: Any, protocol: TCP
-- **WinRM over HTTPS (5986)**: Maximum request time 3 hours, allowed source IPs: Any, protocol: TCP
+| Entry point | Documented starting behavior |
+| --- | --- |
+| Defender for Cloud JIT page | Recommends SSH 22, RDP 3389, and WinRM 5985 and 5986. Review and configure the required ports before saving. |
+| Windows VM > Configuration | Enables RDP 3389 with a three-hour maximum request and Any source. |
+| Linux VM > Configuration | Enables SSH 22 with a three-hour maximum request and Any source. |
 
-Linux VMs receive JIT protection on port 22, while Windows VMs are protected on ports 3389, 5985, and 5986. This automatic port selection aligns with the most common remote management protocols. When admins enable JIT from the individual VM Configuration page rather than the Defender for Cloud interface, only port 3389 appears as the Windows default. Other ports like the WinRM ports (5985, 5986) are included only when enabling through the Defender for Cloud bulk path or programmatically.
+Don't assume the centralized editor filters the recommended list to the ports required by the guest OS. Contoso explicitly selects TCP for its TCP management connections and removes unnecessary port entries.
 
 ## Enable JIT from an individual virtual machine
 
-For operators who manage VMs individually rather than through centralized security operations, the VM Configuration page provides direct JIT enablement. Navigate to the virtual machine in the Azure portal, select **Configuration** from the left navigation menu, then locate the **Just-in-time access** section.
+For a single VM, open the VM in the Azure portal, select **Configuration**, and locate **Just-in-time access**.
 
-Select **Enable just-in-time**. Defender for Cloud applies the default policy with the same port configurations described. This approach works well for newly deployed VMs or when JIT enablement is part of a VM-specific security review process.
+Select **Enable just-in-time** to apply the individual VM defaults. To change the source restriction, duration, protocol, or protected ports, open the VM's JIT configuration in Defender for Cloud, edit it, and save.
 
 ## Customize the JIT policy
 
-The default JIT policy provides broad protection but allows access from any source IP address, which can’t align with organizational security requirements. Contoso Manufacturing's security standards require restricting JIT access to connections originating from the corporate office IP range (203.0.113.0/24) and the VPN concentrator IP range (198.51.100.0/24).
+Allowed source IPs define where permitted traffic to the protected port can originate. They don't restrict where a person or application can sign in to Azure to submit the JIT request. Azure RBAC authorizes the requester, and the JIT policy constrains the requested network access.
 
-To customize a JIT policy, navigate to Defender for Cloud → **Just-in-time VM access** → **Configured** tab. Right-click the virtual machine you want to modify and select **Edit**. The policy editor displays the current port configurations with options to add, remove, or modify rules.
+> [!NOTE]
+> The `203.0.113.0/24` and `198.51.100.0/24` addresses in this module are documentation examples. Replace them with approved addresses for your environment. Don't use them as real corporate or VPN addresses.
 
-To restrict source IP addresses, select the port row and modify the **Allowed source IPs** field. Replace **Any** with a CIDR notation range such as `203.0.113.0/24` or a comma-separated list of ranges: `203.0.113.0/24,198.51.100.0/24`. This change ensures that JIT access requests succeed only when the requester's source IP falls within the approved corporate network ranges.
+To customize a policy:
 
-To add a custom port, select **Add** and specify the port number, protocol (TCP, UDP, or Any), allowed source IPs, and maximum request time. For example, Contoso Manufacturing adds port 5432 (PostgreSQL) for database administration access with a one-hour maximum window and source IP restricted to the database team's subnet.
+1. In Defender for Cloud, open **Just-in-time VM access** > **Configured**.
+1. Right-click the VM and select **Edit**.
+1. Select a port and set **Allowed source IPs** to an approved address or range, such as `203.0.113.0/24`, instead of leaving **Any** where a narrower restriction is required.
+1. Set the protocol and maximum request time. Select **Add** if an additional port is required, then configure its settings. For example, a database administration workflow might require TCP 5432 from the database team's approved subnet.
+1. Confirm port edits with **OK**. When you finish adding, removing, or editing entries, select **Save**. Reopen the configuration to confirm the intended values and check the resulting effective network rules.
 
-To remove a port from JIT protection, uncheck the port in the policy editor or delete the rule entirely. Removing a port from the JIT policy doesn't restore the previous NSG rule—the port remains blocked unless you manually create an NSG ALLOW rule.
+Removing a port changes its JIT-managed configuration. Don't assume the resulting network rules leave it either open or blocked. If the requirement is to keep the port inaccessible, establish and verify the replacement network restriction as part of the controlled change before removing JIT protection. Save the change and inspect the resulting effective rules again.
 
-The maximum request time parameter controls the longest duration a user can request for a single JIT session. Setting this value to 1 hour instead of the default 3 hours reduces the exposure window for each access grant. Contoso Manufacturing uses 1-hour windows for production VMs and 3-hour windows for development and testing environments where longer sessions support troubleshooting workflows.
+Source restrictions narrow which network addresses can use a grant. Maximum request time controls the duration of a network-access window, not the lifetime of an established session. Contoso chooses one-hour limits for production and three-hour limits for development and testing. These are organizational choices, not universal defaults.
 
 ## Enable JIT programmatically
 
-Automation pipelines and infrastructure-as-code workflows can enable and configure JIT policies using PowerShell or REST API. The PowerShell approach uses the `Set-AzJitNetworkAccessPolicy` cmdlet:
+> [!IMPORTANT]
+> The following PowerShell configuration example is for a JIT policy whose VM entries use NSGs without Azure Firewall integration. The typed VM model used by `Get-AzJitNetworkAccessPolicy` and `Set-AzJitNetworkAccessPolicy` doesn't include the `publicIpAddress` field that associates an Azure Firewall with a VM entry. A Get-to-Set round trip therefore isn't a complete representation of a Firewall-linked policy. If any entry in a shared policy uses that integration, use the Defender for Cloud portal or an appropriate deployment or REST workflow that supports the full configuration. Don't add an unsupported `publicIpAddress` property to the cmdlet's VM hashtable.
+
+Automation can configure JIT with `Set-AzJitNetworkAccessPolicy`, a supported JIT deployment resource, or the REST API. Run the following example in Azure Cloud Shell with PowerShell, or in an authenticated local session with the required Az modules and permissions. Select the intended subscription and replace the subscription, resource-group, VM, location, and policy-name placeholders. Use the actual location of the intended JIT policy.
+
+This example supplies one VM's configuration. Before updating an existing NSG-only policy, retrieve it with `Get-AzJitNetworkAccessPolicy` and review every VM and port entry. Preserve unaffected entries in the complete intended configuration rather than treating `Set-AzJitNetworkAccessPolicy` as an append-only operation. For a policy with Azure Firewall integration, review and preserve the Firewall association and all other intended configuration fields through the chosen portal, deployment, or REST workflow.
 
 ```powershell
-$JitPolicy = (@{
-    id="/subscriptions/SUBSCRIPTION_ID/resourceGroups/RESOURCE_GROUP/providers/Microsoft.Compute/virtualMachines/VM_NAME";
-    ports=(@{
-        number=22;
-        protocol="*";
-        allowedSourceAddressPrefixes=@("203.0.113.0/24");
-        maxRequestAccessDuration="PT1H"
+$JitPolicy = @{
+    id = "/subscriptions/SUBSCRIPTION_ID/resourceGroups/RESOURCE_GROUP/providers/Microsoft.Compute/virtualMachines/VM_NAME"
+    ports = @(@{
+        number = 22
+        protocol = "TCP"
+        allowedSourceAddressPrefixes = [string[]]@("203.0.113.0/24")
+        maxRequestAccessDuration = "PT1H"
     })
-})
+}
 
-$JitPolicyArr=@($JitPolicy)
-Set-AzJitNetworkAccessPolicy -ResourceGroupName "RESOURCE_GROUP" -Location "eastus" -Kind "Basic" -Name "JIT_POLICY_NAME" -VirtualMachine $JitPolicyArr
+$JitPolicyArr = @($JitPolicy)
+Set-AzJitNetworkAccessPolicy `
+    -ResourceGroupName "RESOURCE_GROUP" `
+    -Location "POLICY_LOCATION" `
+    -Kind "Basic" `
+    -Name "JIT_POLICY_NAME" `
+    -VirtualMachine $JitPolicyArr `
+    -ErrorAction Stop
 ```
 
-This script creates a JIT policy protecting SSH port 22 with a one-hour maximum window and source IP restricted to the Contoso Manufacturing office range. The `maxRequestAccessDuration` parameter uses ISO 8601 duration format (PT1H = 1 hour).
+The configuration protects TCP port 22 with a one-hour maximum request and the example office source range. `maxRequestAccessDuration` uses ISO 8601 duration format, so `PT1H` represents one hour. The explicit `[string[]]` value binds to the cmdlet's typed source-prefix list. For a single prefix, a scalar `allowedSourceAddressPrefix` is also supported, but don't populate both the singular and plural properties.
 
-## What happens after JIT is enabled
+> [!WARNING]
+> Coordinate changes to shared policies and prevent simultaneous deployments from overwriting one another. Confirm the saved VM and port configuration and the resulting effective rules after an update. Don't delete a shared policy to remove only one VM.
 
-Immediately after JIT enablement, Defender for Cloud modifies the network security group associated with the virtual machine. Any existing NSG rules that allow inbound traffic on the JIT-protected ports are overridden or replaced with DENY rules. The management ports become inaccessible from all sources, including previously permitted IP ranges.
+The combined length of the JIT policy name and VM name can't exceed 56 characters. If provisioning fails, check these names as well as the reported error details.
 
-Users who attempt to connect to the VM using RDP or SSH after JIT enablement receive connection timeout or connection refused errors until they submit a JIT access request. This immediate blocking behavior closes the attack surface instantly, which is why Contoso Manufacturing's security team coordinates JIT deployment with operations teams to ensure administrators understand the new access request workflow.
+## Validate the configured access paths
 
-> [!NOTE]
-> The combined length of the JIT policy name and virtual machine name can't exceed 56 characters. If you encounter provisioning errors during JIT enablement, verify that resource names fall within this constraint and shorten names if necessary.
+Coordinate effective-rule inspection and any NSG changes with a network administrator, or use the separately scoped permissions described in the preceding unit. JIT configuration permissions alone don't authorize these operations.
 
-Now that you understand how to enable JIT and customize port policies, you're ready to submit access requests and audit JIT activity across your VM estate.
+After saving the policy, verify the intended baseline before requesting access:
+
+1. Record the VM, management ports, connection path, and permitted sources. Review the current JIT policy and network rules.
+1. For a running VM, open each relevant NIC's **Effective security rules** and inspect the subnet and NIC NSGs. Review other applicable controls, including Azure Firewall and security admin rules, where present. Resolve broad or overriding allows without disrupting approved workload traffic.
+1. With no active direct-access grant, attempt a new connection through the direct path from a source that should be denied. Confirm that the separate approved Bastion path still works if it's retained by design.
+
+> [!IMPORTANT]
+> **Configured** isn't proof that broad access has been removed. Check effective rules and test new connections before declaring the audit finding resolved. Coordinate changes to shared subnet NSGs so that unrelated workloads and the intended Bastion path continue to work.
+
+Next, request a narrow access window and verify the behavior during and after that grant.

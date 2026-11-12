@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=53e8647d-587a-4d04-b52f-c81381357f60]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Including a path gets you a range index, and a range index supports many query shapes. It doesn't answer everything. Sorting across several properties requires a composite index, while filtering across several properties can benefit from one. Spatial indexes support efficient geospatial filters on coordinates. This unit covers both index types. You add the index to meet a specific query requirement or improve its performance, not because the property looks important.
 
 ## Composite indexes
@@ -111,3 +122,5 @@ The two index types answer different questions, and the decision is mechanical o
 | Uses `ST_DISTANCE`, `ST_WITHIN`, or `ST_INTERSECTS` in a nonaggregate filter | Spatial index on the coordinate path for indexed evaluation |
 
 Learn more about [composite indexes](/azure/cosmos-db/index-policy#composite-indexes) and [indexing and querying GeoJSON data](/azure/cosmos-db/how-to-geospatial-index-query).
+
+::: zone-end

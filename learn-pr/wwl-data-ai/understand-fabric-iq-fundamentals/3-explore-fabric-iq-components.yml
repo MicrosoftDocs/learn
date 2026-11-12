@@ -5,9 +5,9 @@ metadata:
   zone_pivot_groups: video-or-text
   title: Explore Microsoft Fabric IQ Components
   description: Learn about the components that make up the Fabric IQ ecosystem, including ontology items, data agents, Graph in Microsoft Fabric, and Power BI semantic models.
-  ms.date: 10/29/2026
-  author: weslbo
-  ms.author: wedebols
+  ms.date: 11/05/2026
+  author: angierudduck
+  ms.author: anrudduc
   ms.topic: unit
   ai-usage: ai-generated
 durationInMinutes: 10

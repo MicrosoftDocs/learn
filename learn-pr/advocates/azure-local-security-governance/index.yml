@@ -1,0 +1,63 @@
+### YamlMime:Module
+uid: learn.devrel.azure-local-security-governance
+metadata:
+  title: Azure Local Security and Governance
+  description: Inspect Azure Local security controls, govern access and exceptions, and plan workload protection, recovery, incident response, and secure retirement.
+  ms.date: 11/02/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: module-standard-concept-based
+  ai-usage: ai-assisted
+  ms.service: azure-local
+title: Azure Local security and governance
+summary: |
+  Azure Local combines on-premises infrastructure with Azure-based management. Securing that environment requires more than enabling a collection of features. You need to know which component enforces a control, who can change it, how to detect a deviation, and how to recover without losing access to protected data.
+
+  In this module, you connect security controls to their actual trust boundaries. You protect administrative and network access, inspect host protection, investigate baseline and vulnerability findings, govern exceptions, and choose workload protections. You also assemble evidence for recovery, incident response, and secure retirement.
+
+  The examples focus on cloud-connected, hyperconverged Azure Local 2610 deployments. Domain-joined and Local Identity administration have different requirements, which are identified where relevant. The module develops security decisions and evidence requirements without replacing the supported platform lifecycle with generic Windows or Azure hardening procedures.
+abstract: |
+  After completing this module, you can:
+
+  - Map network, host, Azure, guest, and application controls to trust boundaries, privileged-access safeguards, and accountable owners.
+  - Interpret encryption, antimalware, baseline, and application-control evidence without overstating what it proves.
+  - Investigate drift, describe supported 2610 customization, and govern policy exemptions against documented requirements.
+  - Design narrow, time-bounded supplemental application-control policies with verification and retirement plans.
+  - Compare standard, Trusted Launch, and confidential VMs against workload and recovery requirements.
+  - Define independent key custody, recovery tests, and an evidence pipeline spanning host, cloud, identity, and application activity.
+  - Prioritize vulnerabilities and plan supported security updates with accountable treatment of residual risk.
+  - Plan cluster-aware incident response and secure retirement without losing required data, evidence, or recovery access.
+prerequisites: |
+  Before you begin, confirm the following prerequisites:
+
+  - Familiarity with Azure Local architecture, Windows Server administration, virtual machines, networking, and storage.
+  - Basic understanding of Azure resources, identity, role-based access control, and PowerShell.
+  - An approved environment, required permissions, supported tooling, and a recovery plan if you choose to run the operational examples.
+iconUrl: /training/achievements/generic-badge.svg
+ratingEnabled: false
+levels:
+- intermediate
+roles:
+- administrator
+- security-engineer
+- solution-architect
+products:
+- azure-local
+subjects:
+- security
+- infrastructure
+units:
+- learn.devrel.azure-local-security-governance.introduction
+- learn.devrel.azure-local-security-governance.map-trust-boundaries
+- learn.devrel.azure-local-security-governance.inspect-secured-state
+- learn.devrel.azure-local-security-governance.diagnose-policy-findings
+- learn.devrel.azure-local-security-governance.govern-application-exceptions
+- learn.devrel.azure-local-security-governance.protect-virtual-machine-workloads
+- learn.devrel.azure-local-security-governance.prepare-secure-workload-recovery
+- learn.devrel.azure-local-security-governance.retain-security-evidence
+- learn.devrel.azure-local-security-governance.respond-security-incidents
+- learn.devrel.azure-local-security-governance.retire-resources-securely
+- learn.devrel.azure-local-security-governance.knowledge-check
+- learn.devrel.azure-local-security-governance.summary
+badge:
+  uid: learn.devrel.azure-local-security-governance.badge

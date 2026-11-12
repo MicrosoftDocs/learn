@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=0a2f4406-810e-43e7-90ce-8134e58a5dc5]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 
 You learned the characteristics of each fine-tuning method—now apply that knowledge to real-world agent quality challenges. Not every performance issue requires fine-tuning; some stem from insufficient prompts, missing knowledge sources, or architectural gaps. Your task: analyze each scenario, identify the core problem, and determine which fine-tuning method (if any) provides the most effective solution.
 
@@ -12,11 +23,13 @@ Adventure Works faces three distinct agent quality problems. For each scenario, 
 
 ### Problem: Inconsistent response format
 
-:::image type="content" source="../media/inconsistent-response.png" alt-text="Screenshot of conversation showing inconsistent gear specification responses where one question receives a vague answer while another gets detailed technical specifications." lightbox="../media/inconsistent-response.png":::
+:::image type="content" source="../media/inconsistent-response.png" alt-text="Screenshot comparing a vague gear response with a detailed answer that includes technical specifications." lightbox="../media/inconsistent-response.png":::
 
-| Microsoft Foundry Evaluation Metrics |
-|--------------------------------------|
-| **Coherence**: 2.8/5 ⚠️ \| **Fluency**: 3.1/5 ⚠️ \| **Groundedness**: 4.2/5 ✓ \| **Relevance**: 4.1/5 ✓ |
+**Microsoft Foundry evaluation metrics**
+
+| Coherence | Fluency | Groundedness | Relevance |
+|---|---|---|---|
+| 2.8/5 ⚠️ | 3.1/5 ⚠️ | 4.2/5 ✓ | 4.1/5 ✓ |
 
 **Challenge**
 
@@ -37,11 +50,13 @@ Supervised Fine-Tuning (SFT) excels at teaching format consistency and terminolo
 
 ### Problem: Inappropriate tone for sensitive topics
 
-:::image type="content" source="../media/inappropriate-tone.png" alt-text="Screenshot of conversation showing tone mismatches in safety recommendations where one response is overly alarmist and another dismisses genuine risks." lightbox="../media/inappropriate-tone.png":::
+:::image type="content" source="../media/inappropriate-tone.png" alt-text="Screenshot showing safety advice with mismatched tones: one response is alarmist, while another dismisses genuine risks." lightbox="../media/inappropriate-tone.png":::
 
-| Microsoft Foundry Evaluation Metrics |
-|--------------------------------------|
-| **Coherence**: 3.0/5 ⚠️ \| **Content Safety**: 7% flagged ⚠️ \| **Groundedness**: 4.3/5 ✓ \| **Relevance**: 4.2/5 ✓ |
+**Microsoft Foundry evaluation metrics**
+
+| Coherence | Content Safety | Groundedness | Relevance |
+|---|---|---|---|
+| 3.0/5 ⚠️ | 7% flagged ⚠️ | 4.3/5 ✓ | 4.2/5 ✓ |
 
 **Challenge**
 
@@ -62,11 +77,13 @@ Direct Preference Optimization (DPO) specializes in subjective alignment challen
 
 ### Problem: Illogical reasoning in complex planning
 
-:::image type="content" source="../media/illogical-reasoning.png" alt-text="Screenshot of conversation showing flawed trip planning logic where recommendations ignore constraint interactions like fitness level, experience, budget, and weather conditions." lightbox="../media/illogical-reasoning.png":::
+:::image type="content" source="../media/illogical-reasoning.png" alt-text="Screenshot showing a trip plan that ignores interactions between fitness, experience, budget, and weather constraints." lightbox="../media/illogical-reasoning.png":::
 
-| Microsoft Foundry Evaluation Metrics |
-|--------------------------------------|
-| **Tool Call Accuracy**: 2.7/5 ⚠️ \| **Relevance**: 2.8/5 ⚠️ \| **Groundedness**: 4.1/5 ✓ \| **Fluency**: 4.3/5 ✓ |
+**Microsoft Foundry evaluation metrics**
+
+| Tool Call Accuracy | Relevance | Groundedness | Fluency |
+|---|---|---|---|
+| 2.7/5 ⚠️ | 2.8/5 ⚠️ | 4.1/5 ✓ | 4.3/5 ✓ |
 
 **Challenge**
 
@@ -86,3 +103,5 @@ Reinforcement Fine-Tuning (RFT) develops sophisticated reasoning capabilities th
 > **Budget constraint**: RFT's time-based training plus grading tokens plus hosting fees can consume 80% of your budget for one use case. Justify with return on investment (ROI): does this use case drive enough revenue to warrant concentrated investment over spreading budget across multiple use cases?
 
 Now that you understand how to compare fine-tuning methods and select approaches based on project requirements, you're ready to develop strategies for creating and managing the training data each method requires.
+
+::: zone-end

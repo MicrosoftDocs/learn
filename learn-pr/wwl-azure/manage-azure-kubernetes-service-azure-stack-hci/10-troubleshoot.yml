@@ -3,17 +3,16 @@ uid: learn.wwl.manage-azure-kubernetes-service-azure-stack-hci.troubleshoot
 title: Troubleshoot Azure Kubernetes Service on Azure Local
 metadata:
   title: Troubleshoot Azure Kubernetes Service on Azure Local
-  description: "Distinguish provisioning, access, scheduling, storage, and node diagnostic issues in AKS on Azure Local."
-  ms.date: 10/23/2026
-  author: wwlpublish
-  ms.author: robbarefoot
+  description: "Diagnose AKS on Azure Local provisioning and access failures, inspect Kubernetes resources, and collect logs with or without API discovery."
+  ms.date: 11/03/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
 azureSandbox: false
-durationInMinutes: 6
+durationInMinutes: 12
 content: |
   [!include[](includes/10-troubleshoot.md)]
 quiz:
-  title: "Knowledge check"
   questions:
   - content: "An administrator needs to collect full diagnostic logs from an AKS on Azure Local cluster using the documented log-collection command. Which credential material should the administrator preserve from provisioning?"
     choices:

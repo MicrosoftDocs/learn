@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-local-backup-disaster-recovery.protection-method-boundaries
+metadata:
+  title: Protection Method Boundaries
+  description: Compare Azure Local protection methods, data consistency, restore scopes, replication workflows, and protected virtual machine restrictions.
+  ms.date: 11/06/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Protection method boundaries
+durationInMinutes: 30
+content: |
+  [!include[](includes/2-protection-method-boundaries.md)]

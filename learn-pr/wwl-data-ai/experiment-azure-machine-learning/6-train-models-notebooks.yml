@@ -2,11 +2,12 @@
 uid: learn.wwl.experiment-azure-machine-learning.train-models-notebooks
 title: Train and track models in notebooks
 metadata:
+  zone_pivot_groups: video-or-text
   title: Train and track models in notebooks
   description: Learn how to train and track models in Jupyter notebooks using MLflow in Azure Machine Learning.
   author: madiepev
   ms.author: madiepev
-  ms.date: 08/27/2026
+  ms.date: 11/6/2026
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

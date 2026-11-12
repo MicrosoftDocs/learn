@@ -2,11 +2,11 @@
 uid: learn.wwl.enable-defender-cloud-azure-subscription.connect-azure-subscriptions
 title: Connect your Azure subscriptions
 metadata:
-  title: Connect your Azure subscriptions
+  title: Connect Your Azure Subscriptions
   description: "Connect your Azure subscriptions"
-  ms.date: 10/21/2024
-  author: wwlpublish
-  ms.author: lumac
+  ms.date: 11/07/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
   ms.custom:
   - N/A

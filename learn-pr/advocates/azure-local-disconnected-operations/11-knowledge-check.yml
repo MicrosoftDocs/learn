@@ -1,0 +1,160 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-local-disconnected-operations.knowledge-check
+metadata:
+  title: Module Assessment
+  description: Assess your understanding of Azure Local disconnected operating boundaries, permissions, artifact trust, update ordering, backup, recovery, and security.
+  ms.date: 11/04/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+  module_assessment: true
+title: Module assessment
+durationInMinutes: 13
+content: |
+  Choose one answer for each question, then compare your choices with the explanations.
+quiz:
+  questions:
+  - content: A team disconnects an ordinary connected Azure Local cluster and adds an Arc gateway. What's still missing?
+    choices:
+    - content: Nothing, because workload VMs can keep running.
+      isCorrect: false
+      explanation: Incorrect. Connectivity loss and gateways don't create a local resource manager, identity integration, artifact services, or the disconnected commercial and support model.
+    - content: Only a different DNS name for the public Azure portal.
+      isCorrect: false
+      explanation: Incorrect. Connectivity loss and gateways don't create a local resource manager, identity integration, artifact services, or the disconnected commercial and support model.
+    - content: The dedicated local control-plane architecture and its supported operating model.
+      isCorrect: true
+      explanation: Correct. Connectivity loss and gateways don't create a local resource manager, identity integration, artifact services, or the disconnected commercial and support model.
+  - content: An administrator has an operator role on the operator subscription. Why can a workload operation in another subscription still be denied?
+    choices:
+    - content: The administrator must authenticate to public Azure first.
+      isCorrect: false
+      explanation: Incorrect. Authorization is scoped. Platform operator rights aren't inherited by individual tenant subscriptions. Public-cloud sign-in isn't a repair for missing local authorization.
+    - content: Operator-subscription assignments don't automatically grant rights in tenant subscriptions.
+      isCorrect: true
+      explanation: Correct. Authorization is scoped. Platform operator rights aren't inherited by individual tenant subscriptions. Public-cloud sign-in isn't a repair for missing local authorization.
+    - content: Every operator role is read-only.
+      isCorrect: false
+      explanation: Incorrect. Authorization is scoped. Platform operator rights aren't inherited by individual tenant subscriptions. Public-cloud sign-in isn't a repair for missing local authorization.
+  - content: A user is removed from an Active Directory group. Which action best establishes that local access has been revoked?
+    choices:
+    - content: Assume the next portal sign-in always refreshes group synchronization immediately.
+      isCorrect: false
+      explanation: Incorrect. Upstream membership, synchronized state, local assignments, and effective access are related but distinct. A timer or successful sign-in isn't proof of revocation.
+    - content: Wait a fixed interval without checking local assignments.
+      isCorrect: false
+      explanation: Incorrect. Upstream membership, synchronized state, local assignments, and effective access are related but distinct. A timer or successful sign-in isn't proof of revocation.
+    - content: Inspect effective local access and apply the supported removal process, accounting for synchronization and cleanup limitations.
+      isCorrect: true
+      explanation: Correct. Upstream membership, synchronized state, local assignments, and effective access are related but distinct. A timer or successful sign-in isn't proof of revocation.
+  - content: An archive matches a SHA-256 file stored beside it on a transfer drive. The publisher and approval manifest aren't authenticated. What should the operator do?
+    choices:
+    - content: Keep it quarantined until provenance, signature, compatibility, and the other approval checks are complete.
+      isCorrect: true
+      explanation: Correct. A digest detects disagreement with a trusted reference. An attacker can replace adjacent artifact and hash files together, so authenticity and suitability require separate checks.
+    - content: Import it, because a hash match proves publisher identity.
+      isCorrect: false
+      explanation: Incorrect. A digest detects disagreement with a trusted reference. An attacker can replace adjacent artifact and hash files together, so authenticity and suitability require separate checks.
+    - content: Rename the archive and calculate a new digest.
+      isCorrect: false
+      explanation: Incorrect. A digest detects disagreement with a trusted reference. An attacker can replace adjacent artifact and hash files together, so authenticity and suitability require separate checks.
+  - content: A proposed data-plane update requires a newer disconnected control plane. What's the correct approach?
+    choices:
+    - content: Install whichever public Azure Local release has the highest number.
+      isCorrect: false
+      explanation: Incorrect. Compatibility determines the dependency order. A newer required control plane must be ready before the downstream update that depends on it.
+    - content: Update the data plane first because running workloads have priority.
+      isCorrect: false
+      explanation: Incorrect. Compatibility determines the dependency order. A newer required control plane must be ready before the downstream update that depends on it.
+    - content: Approve the complete combination, update the control plane first, and then apply the compatible downstream update.
+      isCorrect: true
+      explanation: Correct. Compatibility determines the dependency order. A newer required control plane must be ready before the downstream update that depends on it.
+  - content: Release 2609 adds Windows node-pool support for disconnected AKS. What does that establish?
+    choices:
+    - content: Every Windows VM image is also a supported Kubernetes node image.
+      isCorrect: false
+      explanation: Incorrect. A specific feature announcement doesn't grant full public-cloud parity or approve every image. The disconnected authentication restrictions remain separately documented.
+    - content: All public AKS add-ons and Microsoft Entra authentication are now available offline.
+      isCorrect: false
+      explanation: Incorrect. A specific feature announcement doesn't grant full public-cloud parity or approve every image. The disconnected authentication restrictions remain separately documented.
+    - content: Windows node pools are supported within the applicable release constraints, but node images and authentication still need their own checks.
+      isCorrect: true
+      explanation: Correct. A specific feature announcement doesn't grant full public-cloud parity or approve every image. The disconnected authentication restrictions remain separately documented.
+  - content: 'A backup resource reports `provisioningState: Succeeded`, while the backup operation is still running. What can you conclude?'
+    choices:
+    - content: The backup is complete and can be used immediately.
+      isCorrect: false
+      explanation: Incorrect. Resource provisioning and data capture have different status. Appliance backup also doesn't include workload-cluster or application-data protection.
+    - content: Provisioning succeeded, but you still need a terminal successful backup result before counting it as a new recovery point.
+      isCorrect: true
+      explanation: Correct. Resource provisioning and data capture have different status. Appliance backup also doesn't include workload-cluster or application-data protection.
+    - content: Application data is protected even if control-plane backup hasn't completed.
+      isCorrect: false
+      explanation: Incorrect. Resource provisioning and data capture have different status. Appliance backup also doesn't include workload-cluster or application-data protection.
+  - content: A surviving data cluster was created after the control-plane backup being restored. Which recovery approach applies?
+    choices:
+    - content: Restore only the appliance and assume all cluster metadata is reconstructed automatically.
+      isCorrect: false
+      explanation: Incorrect. The restored management state predates the cluster. Reconnection restores communication, and re-registration recreates its management representation. Application recovery is a separate concern.
+    - content: Reconnect and re-register the cluster through the applicable recovery workflow, then reconcile and validate workloads separately.
+      isCorrect: true
+      explanation: Correct. The restored management state predates the cluster. Reconnection restores communication, and re-registration recreates its management representation. Application recovery is a separate concern.
+    - content: Delete the surviving cluster because the restored portal doesn't know it.
+      isCorrect: false
+      explanation: Incorrect. The restored management state predates the cluster. Reconnection restores communication, and re-registration recreates its management representation. Application recovery is a separate concern.
+  - content: A user has permission to create resource groups, but a request without the required `OwnerTeam` tag is denied by a local policy. What does this show?
+    choices:
+    - content: RBAC can permit an action while policy rejects the requested configuration.
+      isCorrect: true
+      explanation: Correct. RBAC authorizes the caller's action, while policy evaluates the resource configuration. A valid role assignment doesn't bypass an applicable policy.
+    - content: The operator subscription must grant the user access to public Azure.
+      isCorrect: false
+      explanation: Incorrect. RBAC authorizes the caller's action, while policy evaluates the resource configuration. A valid role assignment doesn't bypass an applicable policy.
+    - content: The user's RBAC assignment is necessarily broken.
+      isCorrect: false
+      explanation: Incorrect. RBAC authorizes the caller's action, while policy evaluates the resource configuration. A valid role assignment doesn't bypass an applicable policy.
+  - content: Which statement best describes the security responsibilities of an air-gapped deployment?
+    choices:
+    - content: The appliance supplies built-in network IDS and IPS, so the organization needs only to manage user accounts.
+      isCorrect: false
+      explanation: Incorrect. An air gap doesn't prevent local compromise or lateral movement. The appliance doesn't supply built-in IDS or IPS, and its protections don't replace customer-managed network and workload controls.
+    - content: Platform protections complement customer-managed segmentation, privileged access controls, and network intrusion detection or prevention.
+      isCorrect: true
+      explanation: Correct. An air gap doesn't prevent local compromise or lateral movement. The appliance doesn't supply built-in IDS or IPS, and its protections don't replace customer-managed network and workload controls.
+    - content: Workload systems inside the air gap should have unrestricted management access.
+      isCorrect: false
+      explanation: Incorrect. An air gap doesn't prevent local compromise or lateral movement. The appliance doesn't supply built-in IDS or IPS, and its protections don't replace customer-managed network and workload controls.
+  - content: The backup-share password has changed. Which result best demonstrates that routine rotation is complete?
+    choices:
+    - content: Supported consumer configurations use the replacement, a backup completes, recovery access is verified, and the old credential no longer authenticates.
+      isCorrect: true
+      explanation: Correct. Rotation includes both the issuing system and every consumer. A real completed operation is stronger evidence than a changed stored value, and retained backups still need their decryption material.
+    - content: Old backup decryption keys have been deleted, regardless of retained backups.
+      isCorrect: false
+      explanation: Incorrect. Rotation includes both the issuing system and every consumer. A real completed operation is stronger evidence than a changed stored value, and retained backups still need their decryption material.
+    - content: The new password appears in the secret store, even though no consumer has used it.
+      isCorrect: false
+      explanation: Incorrect. Rotation includes both the issuing system and every consumer. A real completed operation is stronger evidence than a changed stored value, and retained backups still need their decryption material.
+  - content: An approved image has a valid signature and matching digest, but a new advisory identifies a vulnerability in its version. What should the operator do?
+    choices:
+    - content: Install an arbitrary replacement package inside the appliance without checking the supported update path.
+      isCorrect: false
+      explanation: Incorrect. Integrity and authenticity don't establish continuing suitability. New vulnerability information can change the risk of software whose bytes haven't changed.
+    - content: Assess affected deployments and local exposure, review further promotion, and apply an approved compatible fix or supported mitigation.
+      isCorrect: true
+      explanation: Correct. Integrity and authenticity don't establish continuing suitability. New vulnerability information can change the risk of software whose bytes haven't changed.
+    - content: Ignore the advisory because unchanged bytes can't become a security concern.
+      isCorrect: false
+      explanation: Incorrect. Integrity and authenticity don't establish continuing suitability. New vulnerability information can change the risk of software whose bytes haven't changed.
+  - content: Which statement correctly describes secure retirement?
+    choices:
+    - content: Technical cleanup, access revocation, data retention and sanitization, and commercial closure are separate responsibilities that require evidence.
+      isCorrect: true
+      explanation: Correct. Resource deletion, media sanitization, backup retention, credential removal, and agreement closure address different objects and obligations. None should be inferred solely from another's completion.
+    - content: All recovery keys should be destroyed immediately, even when backups must be retained.
+      isCorrect: false
+      explanation: Incorrect. Resource deletion, media sanitization, backup retention, credential removal, and agreement closure address different objects and obligations. None should be inferred solely from another's completion.
+    - content: Deleting the local VM automatically erases all copies of its data and ends the disconnected environment's annual commitment.
+      isCorrect: false
+      explanation: Incorrect. Resource deletion, media sanitization, backup retention, credential removal, and agreement closure address different objects and obligations. None should be inferred solely from another's completion.

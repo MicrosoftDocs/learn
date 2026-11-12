@@ -22,20 +22,20 @@ metadata:
   gs-solution.area: "Cloud & AI Platforms"
   gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/understand-fabric-iq-fundamentals/index.yml
   title: Understand Microsoft Fabric IQ fundamentals
-  description: Learn the fundamentals of Microsoft Fabric IQ, including how ontologies create a shared business vocabulary, the six items in the IQ workload, and how ontology modeling differs from traditional data modeling approaches.
-  ms.date: 10/29/2026
-  author: weslbo
-  ms.author: wedebols
+  description: Understand how Microsoft Fabric IQ connects business concepts to data so teams can investigate dependencies and use consistent definitions across analytics and agents.
+  ms.date: 11/05/2026
+  author: angierudduck
+  ms.author: anrudduc
   ms.topic: module
   ms.service: fabric
   ai-usage: ai-generated
 title: Understand Microsoft Fabric IQ fundamentals
-summary: Microsoft Fabric IQ is part of Microsoft IQ, an enterprise intelligence layer that elevates business data into shared concepts usable by people and AI agents. Learn about the six items in the IQ workload—ontology items, data agents, Graph in Microsoft Fabric, Power BI semantic models, operations agents, and planning—and discover how ontology modeling starts with business concepts rather than specific use cases.
+summary: Understand how Microsoft Fabric IQ connects business concepts to data so teams can investigate dependencies and use consistent definitions across analytics and agents.
 abstract: |
-  By the end of this module, you'll be able to:
+  By the end of this module, you can:
   - Explain what Fabric IQ is and how it fits within the Microsoft IQ enterprise intelligence layer
   - Describe the role of ontology items in creating entity types, entity instances, properties, relationships, and rules
-  - Distinguish between the roles of each IQ workload item: ontology items, data agents, Graph in Microsoft Fabric, semantic models, operations agents, and planning
+  - Distinguish between the roles of each IQ workload item: ontology items, data agents, Graph in Microsoft Fabric, Power BI semantic models, operations agents, and planning
   - Compare ontology modeling's concept-driven approach with traditional use-case-driven data modeling
 prerequisites: |
   Before starting this module, you should have:

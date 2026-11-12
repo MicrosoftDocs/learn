@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-local-security-governance.retain-security-evidence
+metadata:
+  title: Retain Security Evidence
+  description: Build Azure Local security evidence from cloud, identity, vault, host, and application sources, with protected forwarding and demonstrated coverage.
+  ms.date: 11/02/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Retain security evidence
+durationInMinutes: 14
+content: |
+  [!include[](includes/8-retain-security-evidence.md)]

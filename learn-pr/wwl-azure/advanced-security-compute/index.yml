@@ -31,9 +31,9 @@ metadata:
   gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/advanced-security-compute/index.yml
   title: Plan and Implement Advanced Security for Compute
   description: "This module is designed to provide administrators with the knowledge and skills needed to plan and implement advanced security measures for Azure compute resources, safeguarding applications and data against evolving security threats."
-  ms.date: 01/07/2026
-  author: wwlpublish
-  ms.author: lumac
+  ms.date: 11/01/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: module-intro-to-product
   ms.custom:
   - N/A

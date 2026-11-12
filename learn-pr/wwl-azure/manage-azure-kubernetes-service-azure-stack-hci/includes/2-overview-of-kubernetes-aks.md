@@ -38,4 +38,4 @@ Permission on one surface doesn't automatically grant every permission on the ot
 
 Use this separation to assign infrastructure tasks to platform administrators and application tasks to development teams. It also helps you choose where to start troubleshooting: an Azure deployment error and a pod scheduling error belong to different layers.
 
-See [AKS on Azure Local architecture](/azure/aks-hybrid-edge/local/hyperconverged/cluster-architecture) and [Kubernetes namespaces](https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/) for more information.
+For more information, see **AKS on Azure Local architecture** and **Kubernetes namespaces** in the Summary unit's **More info** section.

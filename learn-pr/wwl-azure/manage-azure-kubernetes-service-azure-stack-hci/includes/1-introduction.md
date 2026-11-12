@@ -4,7 +4,7 @@ With Azure Kubernetes Service (AKS) on Azure Local, you deploy and manage Kubern
 
 Contoso is a financial services company that runs Windows and Linux applications in its datacenter. Its developers are containerizing selected applications. The infrastructure team needs a repeatable way to deploy Kubernetes without moving all application processing to Azure.
 
-As Contoso's lead system engineer, you evaluate AKS on Azure Local. You need to separate infrastructure preparation from workload-cluster creation, give administrators appropriate access, and verify that each application's operating system, storage, and authentication requirements fit the platform.
+As Contoso's lead system engineer, you evaluate AKS on Azure Local. You need to separate infrastructure preparation from workload-cluster creation, give administrators appropriate access, and verify that each application's operating system, storage, and authentication requirements fit the platform. You also need to plan supported maintenance and application recovery.
 
 ## Scope and learning objectives
 
@@ -13,13 +13,15 @@ This module covers **AKS on Azure Local for hyperconverged deployments**. It doe
 In this module, you learn how to:
 
 - Describe Kubernetes concepts and the AKS on Azure Local architecture.
-- Identify infrastructure, networking, identity, and tool prerequisites.
+- Verify infrastructure, networking, identity, and tool prerequisites.
 - Deploy an AKS cluster and verify its automatic Azure Arc integration.
 - Access the Kubernetes API using Microsoft Entra authentication.
 - Place workloads on appropriate Linux and Windows node pools.
-- Configure persistent storage for containerized applications.
-- Evaluate Windows workload requirements and platform limitations.
+- Validate persistent storage and plan safe cleanup and application recovery.
+- Prepare and verify Windows workloads against platform requirements.
+- Plan supported Kubernetes servicing before Azure Local updates.
 - Troubleshoot deployment, access, scheduling, and storage issues.
+- Plan and verify an optional monitoring integration.
 
 ## Prerequisites
 
@@ -31,3 +33,7 @@ To follow the examples, you need:
 - Access to the Azure resources and Microsoft Entra group described in the deployment preparation unit.
 
 The examples illustrate administrative workflows. Before you use them in production, review current release requirements, capacity, licensing, and application support.
+
+Use isolated, nonproduction resources and disposable sample data for the exercises. Review maintenance and cleanup procedures separately before running them: they can change or remove cluster resources and data. The monitoring exercise is optional and has additional service and permission prerequisites.
+
+Documentation references for all units are collected in the Summary unit's **More info** section.

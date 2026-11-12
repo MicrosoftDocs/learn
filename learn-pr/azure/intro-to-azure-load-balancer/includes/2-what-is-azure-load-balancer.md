@@ -1,9 +1,13 @@
-Some applications have so much incoming traffic that the single server hosting them becomes overwhelmed and can't respond to client requests in a timely manner. Instead of continuously adding network capacity, processors, disk resources, and RAM, you can address this traffic by implementing load balancing. Load balancing is a process in which you distribute incoming traffic equitably across multiple computers. A pool of computers that have lower levels of resources often responds to traffic more effectively than a single server with higher performance. 
+Some applications have so much incoming traffic that the single server hosting them becomes overwhelmed and can't respond to client requests in a timely manner. Instead of continuously adding network capacity, processors, disk resources, and RAM, you can address this traffic by implementing load balancing. Load balancing distributes incoming network flows across multiple back-end instances. Azure Load Balancer uses hash-based distribution, so it doesn't guarantee equal request counts, data volumes, or processing load on every instance. A pool of computers that have lower levels of resources often responds to traffic more effectively than a single server with higher performance.
 
-Azure Load Balancer is an Azure service that allows you to evenly distribute incoming network traffic across a group of Azure VMs, or across instances in a Virtual Machine Scale Set. Load Balancer delivers high availability and network performance in the following ways:  
+Azure Load Balancer distributes incoming network traffic across a group of Azure VMs or instances in a Virtual Machine Scale Set.
+
+This module describes Standard Load Balancer for regional public and internal application load balancing. Public front ends use Standard public IP addresses. Select the load balancer type, front-end configuration, back-end pool, and network-access rules together.
+
+Load Balancer delivers high availability and network performance in the following ways:
 
 - Load-balancing rules determine how traffic is distributed to instances that comprise the back end.
-- Health probes ensure the resources in the back end are healthy and that traffic isn't directed to unhealthy back-end instances.
+- With the default probe-controlled behavior, health probes determine whether back-end instances can receive new flows.
 
 You can deploy **public** load balancers and **internal** (or *private*) load balancers in Azure:  
 
@@ -15,6 +19,6 @@ An internal load balancer enables the following types of load balancing:
 - **Within a virtual network**: Load balancing from VMs in the virtual network to a set of VMs that reside within the same virtual network.
 - **For a cross-premises virtual network**: Load balancing from on-premises computers to a set of VMs that reside within the same virtual network.
 - **For multi-tier applications**: Load balancing for internet-facing multi-tier applications where the back-end tiers aren't internet-facing. The back-end tiers require traffic load balancing from the internet-facing tier.
-- **For LOB applications**: Load balancing for LOB applications that are hosted in Azure without added load balancer hardware or software. This scenario includes on-premises servers that are in the set of computers whose traffic is load balanced.
+- **For LOB applications**: Load balance traffic to line-of-business applications hosted on Azure VMs. On-premises computers can access an internal load balancer through a VPN or ExpressRoute connection. These computers are clients of the application, not members of the load balancer's back-end pool.
 
-Each Load Balancer type can be used for inbound and outbound scenarios and scale up to millions of Transmission Control Protocol (TCP) and User Datagram Protocol (UDP) application flows.
+Both public and internal load balancers distribute incoming traffic to back-end instances and can scale to millions of Transmission Control Protocol (TCP) and User Datagram Protocol (UDP) flows. A regional public Standard Load Balancer can also provide source network address translation (SNAT) for connections initiated by those instances. An internal load balancer doesn't itself provide public internet egress. Its back-end VMs need a separate explicit outbound method when they must reach public endpoints. Return traffic for an established inbound connection is different from a new connection initiated by a back-end VM.

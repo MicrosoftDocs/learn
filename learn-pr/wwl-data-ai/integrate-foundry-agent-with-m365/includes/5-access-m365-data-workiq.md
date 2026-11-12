@@ -1,6 +1,6 @@
 ::: zone pivot="video"
 
->[!VIDEO https://learn-video.azurefd.net/vod/player?id=757b6fae-8663-419e-a9e4-eb69ec034388]
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=dec6e3dc-6a85-41be-b9af-4d939c9cf210]
 
 > [!TIP]
 > See the **Text and images** tab for more details!
@@ -9,11 +9,13 @@
 
 ::: zone pivot="text"
 
-When building agents that help users with workplace tasks, access to organizational data can dramatically improve the agent's usefulness. Microsoft Work IQ provides a way to connect AI agents to Microsoft 365 data, including emails, meetings, documents, Teams messages, and people information.
+When you build agents for workplace tasks, you need access to the data, context, and tools that support those tasks. Microsoft Work IQ provides a workplace intelligence layer that helps your agents access and reason over organizational and business information.
 
 ## What is Work IQ?
 
-Microsoft Work IQ is a command-line interface (CLI) and server that connects AI assistants to your Microsoft 365 Copilot data. It enables agents to query workplace information using natural language, providing rich context that helps agents give more relevant and accurate responses.
+Work IQ continuously builds a semantic understanding of information across Microsoft 365 and external systems. This understanding captures meaning and relationships across your workplace data, with built-in, permission-aware governance.
+
+Work IQ combines chat, context, tools, and workspaces to support high-volume, multistep interactions. It works across frameworks and runtimes through standard protocols, providing a foundation for the agents, applications, and workflows you build.
 
 With Work IQ, your agents can answer questions like:
 
@@ -32,149 +34,62 @@ Work IQ accesses data across multiple Microsoft 365 services:
 | **Teams messages** | Summarize channel discussions, find specific conversations |
 | **People** | Identify team members, find collaborators on projects |
 
-## Understanding MCP servers
+## How your Foundry agent uses Work IQ
 
-Work IQ is built on the **Model Context Protocol (MCP)**, an open protocol that enables AI assistants to connect to external data sources and tools. Understanding MCP helps explain how Work IQ functions.
+Your Foundry agent uses Work IQ as a tool when it needs workplace context. You don't need to build separate search logic for emails, meetings, and files.
 
-An MCP server exposes capabilities that AI agents can use. These capabilities might include:
+For example, you ask, "What decisions from this week's project meetings should I include in the review?" Here's how your agent responds:
 
-- **Tools**: Actions the agent can take, like searching for documents or sending messages
-- **Resources**: Data sources the agent can query
-- **Prompts**: Predefined templates for common queries
+1. Your agent sends the task to Work IQ.
+2. Work IQ finds and summarizes relevant information, respecting your Microsoft 365 permissions.
+3. Your agent uses the summary to answer your question.
 
-When you configure an MCP server for your agent, the agent discovers what tools and resources are available and can use them to fulfill user requests. Work IQ acts as an MCP server specifically designed for Microsoft 365 data.
+## Configure the connection and agent
 
-## How Work IQ operates
+First, check for an approved Work IQ connection in your Foundry project. If one exists, skip to adding the tool to your agent. Otherwise, setup involves three steps:
 
-Work IQ runs in two modes:
+1. **Authorize the application in Microsoft Entra.** For a custom OAuth connection, an administrator provisions the Work IQ service principal and configures a single-tenant app under **Entra ID** > **App registrations**:
+   - **API permissions**: Add the delegated `WorkIQAgent.Ask` permission and grant admin consent.
+   - **Certificates & secrets**: Create a client secret for the Foundry connection.
 
-### CLI mode
+   :::image type="content" source="../media/api-permissions.png" alt-text="Screenshot of the Entra API permissions picker showing Work IQ under APIs my organization uses." lightbox="../media/api-permissions.png":::
 
-In CLI mode, you run queries directly from your terminal:
+2. **Connect the tool in Foundry.** Open **Tools** > **Connect a Tool**, then select **Work IQ MCP** on the **Catalog** tab:
 
-```bash
-workiq ask -q "What requirements did Sarah share about the authentication feature?"
-```
+   - Enter the app's client ID and secret, plus your tenant's authorization, token, and refresh URLs.
+   - Save the tool connection, then copy the OAuth redirect URL supplied by Foundry.
+   - Add that URL under **Authentication** in the Entra app registration as a **Web** redirect URI. This completes the sign-in return path.
 
-This mode is useful for quick queries during development or for scripts that need to retrieve workplace information.
+    :::image type="content" source="../media/select-work-iq.png" alt-text="Screenshot of the Foundry tool catalog with the Work IQ MCP remote tool selected." lightbox="../media/select-work-iq.png":::
 
-### MCP server mode
+3. **Add Work IQ to your agent.** In the agent's tool configuration, select your configured **Work IQ MCP** tool. Add instructions to the agent on when to use workplace context and how to handle missing information.
 
-In MCP server mode, Work IQ integrates with AI assistants like GitHub Copilot in Visual Studio Code. Your AI assistant can automatically access workplace context when relevant to your work.
+Keep these access and security requirements in mind:
 
-For example, if you're implementing a feature that was discussed in a recent meeting, your AI assistant can access that meeting context to provide more relevant suggestions.
+- **Foundry roles**: Creating connections requires **Foundry Project Manager**. The developer, runtime identity, and users in OAuth flows need **Foundry User** on the project.
+- **User permissions**: Work IQ acts on behalf of the signed-in user. Admin consent doesn't expand that user's Microsoft 365 access, and application-only authentication isn't supported.
+- **Billing**: Enable **Copilot Credits** for Work IQ API usage. Connector-backed tools have separate licensing requirements.
+- **Secrets**: Store client secrets in an approved secret store and rotate them before expiration. Don't include them in agent instructions or source code.
 
-## Installing Work IQ
+Review connection values before saving because you can't edit them after creation.
 
-You can install Work IQ in several ways depending on your preferred workflow.
+For more setup details, see [Connect a Microsoft Foundry project to Work IQ](/microsoft-365/copilot/extensibility/work-iq/mcp/quickstart/foundry).
 
-### Install using npm
+## Validate user context and data boundaries
 
-```bash
-# Global installation
-npm install -g @microsoft/workiq
+Before you share your agent, check that it uses Work IQ correctly:
 
-# Or run directly without installation
-npx -y @microsoft/workiq mcp
-```
+1. **Ask about workplace information.** Use a question about a recent meeting or document you can access, and complete any sign-in prompt.
+2. **Verify the tool call.** Confirm that the agent calls Work IQ and uses the result rather than guessing.
+3. **Test permissions.** Try different user accounts, including one without access to the relevant content. Confirm that restricted information stays protected.
 
-### Install using GitHub Copilot CLI
+The following example shows an approved Work IQ tool call and the agent's project status response.
 
-If you use GitHub Copilot CLI, you can install Work IQ as a plugin:
+:::image type="content" source="../media/work-iq-output.png" alt-text="Screenshot of Foundry chat showing an approved Work IQ tool call and a Contoso product launch status response." lightbox="../media/work-iq-output.png":::
 
-1. Open GitHub Copilot CLI by running `copilot`.
-2. Add the plugins marketplace (one-time setup): `/plugin marketplace add github/copilot-plugins`
-3. Install Work IQ: `/plugin install workiq@copilot-plugins`
-4. Restart Copilot CLI and start querying your Microsoft 365 data.
-
-### Configure for Visual Studio Code
-
-You can add Work IQ as an MCP server through the VS Code settings. Add the following to your MCP configuration:
-
-```json
-{
-  "workiq": {
-    "command": "npx",
-    "args": [
-      "-y",
-      "@microsoft/workiq",
-      "mcp"
-    ],
-    "tools": [
-      "*"
-    ]
-  }
-}
-```
-
-Before first use, accept the End User License Agreement:
-
-```bash
-workiq accept-eula
-```
-
-## Prerequisites for Work IQ
-
-To use Work IQ, you need:
-
-- Node.js installed on your machine (if using the CLI locally)
-- A Microsoft 365 subscription with a Microsoft 365 Copilot license
-- Administrative consent for the Work IQ application in your Microsoft Entra tenant
+If a call fails, check sign-in, the redirect URI, admin consent for `WorkIQAgent.Ask`, Foundry roles, and billing before changing the agent's instructions.
 
 > [!IMPORTANT]
-> Work IQ requires administrative consent because it accesses organization-wide Microsoft 365 data. If you're not a tenant administrator, contact your IT department to request access.
-
-## Security and data access
-
-Work IQ inherits the security model of Microsoft 365 Copilot:
-
-- **Permission-based access**: Work IQ can only access data you already have permission to view
-- **No data storage**: Work IQ doesn't store your Microsoft 365 data; it retrieves information on-demand
-- **Enterprise security**: All data access follows your organization's security policies
-- **Admin visibility**: Administrators can monitor and control Work IQ usage
-
-When you query Work IQ, it accesses data through Microsoft Graph with your authenticated identity. This means:
-
-- You can't access documents you don't have permission to view
-- Queries are auditable by your organization
-- Data protection policies apply to Work IQ queries
-
-## Using Work IQ with agent development
-
-Work IQ helps you understand the context your users work in during agent development. You can interact with Work IQ through either the CLI or the MCP server, depending on your workflow.
-
-### CLI approach
-
-The CLI is useful for quick, ad-hoc queries during development. Run the `workiq ask` command directly from your terminal:
-
-```bash
-# Find project context
-workiq ask -q "What were the key decisions in last week's architecture review meeting?"
-
-# Understand requirements from documents
-workiq ask -q "Summarize the requirements in the user portal spec document"
-
-# Check team communications
-workiq ask -q "What has the engineering team discussed about the API changes?"
-```
-
-The CLI approach works well for scripts, one-off queries, or when you need quick answers without opening an IDE.
-
-### MCP server approach
-
-When Work IQ runs as an MCP server, your AI assistant can access the same Microsoft 365 data automatically. Instead of running CLI commands, you interact naturally with your AI assistant, which calls Work IQ tools behind the scenes.
-
-For example, in VS Code with GitHub Copilot configured to use Work IQ:
-
-- Ask Copilot: "What requirements did Sarah share about the authentication feature?"
-- Copilot uses Work IQ's MCP tools to query your Microsoft 365 data
-- You receive the answer in the chat without running any commands
-
-The MCP approach integrates workplace context seamlessly into your development workflow. Your AI assistant decides when to query Work IQ based on your questions, making the experience feel natural rather than requiring explicit commands.
-
-Both approaches access the same underlying data with the same permissions. Choose the CLI for scripting and quick terminal queries, or the MCP server for integrated AI assistant experiences.
-
-> [!NOTE]
-> Work IQ APIs reached general availability in June 2026. Work IQ also supports remote MCP server connections, enabling agents to securely invoke external tools and services through remote MCP-compatible endpoints.
+> Work IQ respects Microsoft 365 permissions and policies, but processing might occur outside the Azure compliance boundary. Foundry can also process or store the response according to your configuration. Review service terms, data-handling policies, and regional requirements before deployment, even if you publish the agent to Teams or Microsoft 365 Copilot.
 
 ::: zone-end

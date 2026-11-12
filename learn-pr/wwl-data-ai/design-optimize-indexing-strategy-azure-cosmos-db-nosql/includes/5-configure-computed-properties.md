@@ -1,3 +1,12 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=b66bfcc4-b9e3-43f0-8d02-37c66b30b9b2]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
 Some query logic gets written once and then copied forever. A storefront that groups products by their top-level category has to split `categoryName` on its comma in every query that does the grouping, and every one of those queries pays for a scan because the split happens at run time over loaded items. A computed property moves that logic into the container definition, where you can index it.
 
 A computed property has a value derived from other properties in the same item, and that value isn't stored in the item. You reference it in a query as though it were a persisted property.

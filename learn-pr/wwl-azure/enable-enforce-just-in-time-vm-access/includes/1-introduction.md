@@ -1,15 +1,23 @@
-Contoso Manufacturing deployed Azure Bastion to provide secure, browser-based access to factory floor virtual machines, eliminating the need for direct RDP and SSH connections. Despite this deployment, an internal security audit revealed a critical gap: network security group (NSG) rules still permanently allow inbound traffic on RDP port 3389 and SSH port 22 from broad source IP ranges. These open management ports create a persistent attack surface that malicious actors can discover and target. The audit finding requires immediate remediation: eliminate all permanently open management ports across the VM estate.
+Contoso Manufacturing uses a dedicated Azure Bastion deployment with the Basic, Standard, or Premium SKU for normal browser-based administration of its factory floor virtual machines. An audit finds additional network security group (NSG) rules that allow broad direct access to Remote Desktop Protocol (RDP) port 3389 and Secure Shell (SSH) port 22. Contoso must remove this unnecessary exposure while preserving the approved private management path used by Bastion. Some approved maintenance tasks still require direct access, so Contoso uses just-in-time (JIT) VM access for those exceptions.
 
-Microsoft Defender for Cloud's just-in-time (JIT) VM access provides the solution. JIT replaces permanent ALLOW rules with on-demand, time-limited, IP-scoped access—management ports remain blocked until a verified user requests access for a specific purpose and duration. Here, you learn how to close Contoso Manufacturing's security gap using JIT VM access.
+Microsoft Defender for Cloud's JIT VM access restricts selected management ports and opens a time-limited network-access window for an authorized request. Existing network rules can take precedence over JIT restrictions. Closing Contoso's audit finding therefore requires reviewing and removing or narrowing broad allow rules, configuring JIT, and verifying effective access.
+
+The goal in this scenario is to eliminate broad direct management access, not every permanent private management rule. A persistent allow restricted to the approved Bastion path is still standing network access and must be documented as an exception. It doesn't meet a requirement for zero standing access on every management path.
 
 In this module, you:
 
 - Examine how just-in-time VM access reduces the attack surface on management ports
 - Enable JIT and configure per-port access policies on Azure VMs
-- Request and approve JIT access and audit access activity
-- Enforce JIT adoption across a VM estate using Azure Policy
+- Request authorized JIT access and audit access activity
+- Monitor JIT adoption with Azure Policy and configure required JIT policies through an approved provisioning workflow
 
 ## Prerequisites
 
-- Defender for Servers Plan 2 enabled on the subscription
+Before you begin, make sure you have the following:
+
+- An Azure public-cloud subscription with Microsoft Defender for Servers Plan 2 enabled
 - Intermediate-level familiarity with Azure virtual machines and network security groups
+- Basic familiarity with Microsoft Defender for Cloud
+- Azure role-based access control (RBAC) permissions to configure JIT or request access, depending on the operation you perform
+- Access to administrators, or separately scoped permissions, for the network-rule changes, effective-rule inspection, Activity Log review and export, and Azure Policy assignment used in this module
+- For the scenario's Bastion checks, access to an existing dedicated Azure Bastion deployment using the Basic, Standard, or Premium SKU and its approved target VMs

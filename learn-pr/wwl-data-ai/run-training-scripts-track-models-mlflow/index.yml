@@ -3,7 +3,7 @@ uid: learn.wwl.run-training-scripts-track-models-mlflow
 metadata:
   gs-content.levels: 200
   gs-content.locale: en-us
-  gs-duration: 49
+  gs-duration: 50
   gs-last.refresh.date: null
   gs-modality: module
   gs-products:
@@ -29,7 +29,7 @@ metadata:
   description: Choose this module if you want to convert notebooks to training scripts, run command jobs, and track models with MLflow.
   author: madiepev
   ms.author: madiepev
-  ms.date: 08/27/2026
+  ms.date: 11/6/2026
   ms.service: azure-machine-learning
   ms.topic: module
   ms.collection:

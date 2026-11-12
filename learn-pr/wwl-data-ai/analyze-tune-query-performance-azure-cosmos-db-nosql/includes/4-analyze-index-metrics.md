@@ -1,3 +1,12 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=944b7bd0-1b65-499a-bff9-a7c0ad6d7427]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
 The query metrics tell you how much work a query did. The index metrics tell you which indexed paths absorbed that work and which paths would absorb it if they existed. Together, they answer the question that decides your next move: is this query expensive because the index can't serve its filter, or because the query is doing an appropriate amount of work in too many places?
 
 In this unit, you read that answer out of the metrics.

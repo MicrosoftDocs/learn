@@ -2,10 +2,10 @@
 uid: learn.wwl.enforce-governance-azure-policy-resource-locks.introduction
 metadata:
   title: Introduction
-  description: Introduction to enforcing governance with Azure Policy and resource locks.
-  ms.date: 05/11/2026
-  author: r-c-stewart
-  ms.author: lumac
+  description: Introduce Azure Policy and resource locks, including policy, managed identity, and lock-management prerequisites.
+  ms.date: 11/07/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
   ai-usage: ai-assisted
 title: Introduction

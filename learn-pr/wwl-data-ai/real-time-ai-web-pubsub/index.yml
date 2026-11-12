@@ -1,0 +1,50 @@
+### YamlMime:Module
+uid: learn.wwl.real-time-ai-web-pubsub
+metadata:
+  title: Deliver Real-Time AI Experiences with Azure Web PubSub
+  description: Learn how to deliver real-time updates in AI applications with Azure Web PubSub through authenticated client connections, group-based messaging, reconnection recovery, and bounded update delivery.
+  ms.date: 11/05/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: module-standard-task-based
+  ai-usage: ai-assisted
+  ms.service: azure-web-pubsub
+title: Deliver real-time AI experiences with Azure Web PubSub
+summary: |
+  Build real-time client experiences for AI applications with Azure Web PubSub. Choose a delivery approach, authorize client access, and publish updates to groups of connected clients while keeping durable backend processing separate from client delivery. Implement recovery and batching strategies for disconnected or slow clients.
+abstract: |
+  After completing this module, you'll be able to:
+    - Choose a client delivery approach based on communication direction, fan-out, and connection-scale requirements.
+    - Explain how Azure Web PubSub complements durable backend messaging and workflow coordination.
+    - Implement authenticated client negotiation with operation-scoped group access.
+    - Build group-based delivery for AI updates from backend workers.
+    - Implement recovery and bounded update delivery for slow or disconnected clients.
+prerequisites: |
+  Before beginning this module, you should have:
+  - Programming experience with Python.
+  - Familiarity with asynchronous programming and browser-based application concepts.
+  - Familiarity with HTTP APIs, authenticated requests, and background workers.
+  - Basic understanding of Azure services, queues, event-driven architectures, and durable application state.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-web-pubsub
+subjects:
+- app-development
+- artificial-intelligence
+units:
+- learn.wwl.real-time-ai-web-pubsub.introduction
+- learn.wwl.real-time-ai-web-pubsub.choose-real-time-client-delivery
+- learn.wwl.real-time-ai-web-pubsub.separate-client-delivery-backend-coordination
+- learn.wwl.real-time-ai-web-pubsub.negotiate-authenticated-client-connections
+- learn.wwl.real-time-ai-web-pubsub.publish-ai-updates-operation-groups
+- learn.wwl.real-time-ai-web-pubsub.design-reconnection-operation-recovery
+- learn.wwl.real-time-ai-web-pubsub.batch-updates-support-slow-clients
+- learn.wwl.real-time-ai-web-pubsub.exercise-stream-ai-investigation-updates
+- learn.wwl.real-time-ai-web-pubsub.knowledge-check
+- learn.wwl.real-time-ai-web-pubsub.summary
+badge:
+  uid: learn.wwl.real-time-ai-web-pubsub.badge

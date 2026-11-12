@@ -64,7 +64,7 @@ When `InheritDelegatedPermissions` is enabled on the agent identity service prin
 
 Application permissions (for app-only operations) can be assigned:
 - Directly to the agent identity for instance-specific access requirements
-- To the blueprint (though agent identities don't inherit application permissions automatically)
+- To the blueprint as an inheritable permission, in which case agent identities created from that blueprint automatically receive the permission without requiring individual consent
 
 ## Permission reassignment when publishing agents
 

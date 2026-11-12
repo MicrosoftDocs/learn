@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=55b3313a-4d3f-4d22-b83f-af03cf15a25c]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 You can use **Azure Machine Learning studio**, a browser-based portal for managing your machine learning resources and jobs, to access many types of machine learning capabilities. 
 
 In Azure Machine Learning studio, you can (among other things):
@@ -37,3 +48,5 @@ When you use Azure Machine Learning's Automated machine learning capabilities, y
 In Azure Machine Learning studio, you can use Automated machine learning to design and run your training experiments with the same steps described in this module, without needing to write code. Azure Automated machine learning provides a step-by-step wizard that helps you run machine learning training jobs. The automated training can be used for many machine learning tasks, including regression, time-series forecasting, classification, computer vision, and natural language processing tasks. Within AutoML, you have access to your own datasets. Your trained machine learning models can be deployed as services. 
 
 Next, let's look at model deployment options.
+
+::: zone-end

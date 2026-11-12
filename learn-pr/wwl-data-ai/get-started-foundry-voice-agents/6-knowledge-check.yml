@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-foundry-voice-agents.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Check your knowledge of voice agents in Microsoft Foundry."
+  ms.date: 11/10/2026
+  author: buzahid
+  ms.author: buzahid
+  ms.topic: unit
+  module_assessment: true
+durationInMinutes: 3
+content: |
+quiz:
+  questions:
+    - content: "Your voice agent uses Basic turn detection and replies before callers finish a mid-sentence pause. What should you adjust first?"
+      choices:
+        - content: "Increase the turn detection silence duration."
+          isCorrect: true
+          explanation: "Correct. Silence duration controls how much silence ends a turn. Increasing it gives callers more time to pause, but can also delay the agent's response."
+        - content: "The voice selection to a slower-paced voice."
+          isCorrect: false
+          explanation: "Incorrect. Voice selection won't fix turn detection issues."
+        - content: "Add more interim responses to cover the silence."
+          isCorrect: false
+          explanation: "Incorrect. Interim responses address tool latency, not turn detection problems."
+    - content: "The returns assistant gives accurate but lengthy spoken answers. What instruction best improves the caller experience?"
+      choices:
+        - content: "Use one or two short sentences and ask one question at a time."
+          isCorrect: true
+          explanation: "Correct. Short replies and one question at a time make an answer easier to follow by ear."
+        - content: "Format every answer as a detailed markdown table."
+          isCorrect: false
+          explanation: "Incorrect. Callers can't inspect a table in a spoken conversation."
+        - content: "Explain every policy detail before letting the caller respond."
+          isCorrect: false
+          explanation: "Incorrect. A long explanation makes the response harder to follow and delays the caller's next turn."
+    - content: "The returns assistant has policy instructions but no connected tools. A caller asks it to issue a refund. How should it respond?"
+      choices:
+        - content: "Explain that it can't issue refunds and recommend contacting the support team."
+          isCorrect: true
+          explanation: "Correct. Instructions don't provide transaction capabilities. The agent must state its limitation rather than claim to perform an action."
+        - content: "Confirm that the refund is complete because the product meets the policy."
+          isCorrect: false
+          explanation: "Incorrect. Explaining eligibility doesn't issue a refund. The agent has no tool that performs the transaction."
+        - content: "Ask for payment details so it can process the refund in the conversation."
+          isCorrect: false
+          explanation: "Incorrect. Collecting payment details doesn't give the agent a refund capability and violates the sample instructions."

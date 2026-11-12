@@ -1,0 +1,84 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.surface-ink-canvas.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: This content is part of the "Create and refine ideas with Ink Canvas on Surface" module.
+  ms.date: 11/09/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What primarily distinguishes Ink Canvas from OneNote and Microsoft Whiteboard?"
+    choices:
+        - content: "Ink Canvas is primarily a long-term repository for organizing notes, research, and reference material."
+          isCorrect: false
+          explanation: ""
+        - content: "Ink Canvas uses ink, sketches, and annotations as inputs that can be transformed into new content."
+          isCorrect: true
+          explanation: ""
+        - content: "Ink Canvas is primarily designed for real-time, multi-user visual collaboration."
+          isCorrect: false
+          explanation: ""
+        - content: "Ink Canvas is primarily designed to store handwritten notes without transforming them."
+          isCorrect: false
+          explanation: ""
+  - content: "A customer wants to use Copilot-powered features in Ink Canvas. What should you verify before demonstrating those capabilities?"
+    choices:
+        - content: "That Ink Canvas was preinstalled rather than downloaded from Microsoft Store."
+          isCorrect: false
+          explanation: ""
+        - content: "That the device has a touchscreen, regardless of its pen support."
+          isCorrect: false
+          explanation: ""
+        - content: "That the account being used has an eligible Microsoft 365 subscription and access to the AI features."
+          isCorrect: true
+          explanation: ""
+        - content: "That the customer can use core inking while offline."
+          isCorrect: false
+          explanation: ""
+  - content: "You draw a shape with one stroke in Ink Canvas and want it converted into a precise shape. What should you do immediately after finishing the stroke?"
+    choices:
+        - content: "Keep the pen tip pressed against the screen briefly."
+          isCorrect: true
+          explanation: ""
+        - content: "Select the shape with the Lasso tool."
+          isCorrect: false
+          explanation: ""
+        - content: "Double-click the Surface Slim Pen shortcut button."
+          isCorrect: false
+          explanation: ""
+        - content: "Select Undo and then Redo."
+          isCorrect: false
+          explanation: ""
+  - content: "A user wants to turn a rough product idea into an AI-generated visual that reflects specific design requirements. Which Ink Canvas workflow best supports this goal?"
+    choices:
+        - content: "Write a description in another application and use Ink Canvas only to store the finished image."
+          isCorrect: false
+          explanation: ""
+        - content: "Highlight the handwritten notes and leave them unchanged on the canvas."
+          isCorrect: false
+          explanation: ""
+        - content: "Use Draw with touch to create the final image manually without providing additional context."
+          isCorrect: false
+          explanation: ""
+        - content: "Sketch the idea, add annotations and visual references, select the relevant content, and use image generation."
+          isCorrect: true
+          explanation: ""
+  - content: "A user has completed an Ink Canvas brainstorming session and wants to continue working with the results in Microsoft 365. Which approach best reflects the workflow described in the module?"
+    choices:
+        - content: "Keep all generated content in Ink Canvas because its outputs cannot be used in other applications."
+          isCorrect: false
+          explanation: ""
+        - content: "Use generated images, summaries, charts, or canvas content as starting points for work in applications such as Word, PowerPoint, Outlook, and Teams."
+          isCorrect: true
+          explanation: ""
+        - content: "Transfer only handwritten ink because generated content cannot be reused elsewhere."
+          isCorrect: false
+          explanation: ""
+        - content: "Convert the entire canvas into a Whiteboard before using the content in Microsoft 365."
+          isCorrect: false
+          explanation: ""

@@ -6,7 +6,7 @@ metadata:
   description: Explore how to run a script as a command job and track model metrics with MLflow in Azure Machine Learning through hands-on exercises.
   author: madiepev
   ms.author: madiepev
-  ms.date: 08/27/2026
+  ms.date: 11/6/2026
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

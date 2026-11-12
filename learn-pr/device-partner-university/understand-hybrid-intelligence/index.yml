@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.dpu.understand-hybrid-intelligence
+title: Understand the shift to hybrid intelligence on Windows
+metadata:
+  title: Understand The Shift To Hybrid Intelligence On Windows
+  description: 'In this module, you explore hybrid intelligence, local AI in Copilot experiences, security for agentic work, and the relationship between local AI workloads and PC hardware.'
+  ms.date: 11/09/2026
+  author: sheridan-connor
+  ms.author: v-csheridan
+  ms.topic: module
+  ms.service: windows-11
+summary: >2+
+  Hybrid intelligence brings local and cloud computing together to support more capable AI experiences on Windows. Explore how local models, intelligent routing, security controls, and capable PC hardware contribute to AI experiences across the PC and cloud.
+abstract: |2+
+  After completing this module, you can:
+    - Describe how hybrid intelligence combines local and cloud AI on Windows.
+    - Explain how local AI capabilities can contribute to Copilot experiences.
+    - Identify security and governance concepts that support agentic workloads.
+    - Explain the role of PC hardware in enabling local AI workloads.
+
+prerequisites: |
+  - None
+iconUrl: /training/achievements/understand-hybrid-intelligence.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - administrator
+  - business-leader
+  - business-owner
+  - business-user
+  - technology-manager
+products:
+  - windows-11
+units:
+  - learn.dpu.understand-hybrid-intelligence.introduction
+  - learn.dpu.understand-hybrid-intelligence.local-cloud-intelligence
+  - learn.dpu.understand-hybrid-intelligence.copilot-experiences
+  - learn.dpu.understand-hybrid-intelligence.security-agentic-work
+  - learn.dpu.understand-hybrid-intelligence.pc-capabilities
+  - learn.dpu.understand-hybrid-intelligence.knowledge-check
+  - learn.dpu.understand-hybrid-intelligence.summary
+badge:
+  uid: learn.dpu.understand-hybrid-intelligence.badge

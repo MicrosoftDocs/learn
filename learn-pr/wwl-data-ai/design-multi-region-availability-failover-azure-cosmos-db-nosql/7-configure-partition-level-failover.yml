@@ -4,11 +4,11 @@ title: Configure partition-level failover
 metadata:
   title: Configure Partition-Level Failover
   description: "Check the prerequisites for per-partition automatic failover in Azure Cosmos DB, enable it, configure the client for circuit breaking and hedging, and rehearse it with an injected fault."
-  ms.date: 10/03/2026
-  author: wwlpublish
+  ms.date: 11/06/2026
+  author: MScalopez
   ms.author: calopez
   ms.topic: unit
-  zone_pivot_groups: dev-lang-csharp-python
+  zone_pivot_groups: video-or-text,dev-lang-csharp-python
   ai-usage: ai-generated
 azureSandbox: false
 labModal: false

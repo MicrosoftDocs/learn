@@ -1,3 +1,12 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=d03c73f8-9408-4a98-a0e5-880cb1d325a6]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
 Contoso's storefront now reads locally in Europe, but every European checkout still writes to West US 2. Enabling writes in more than one region removes that round trip and turns a regional outage from a write outage into a routing change. It also introduces the possibility that two regions change the same item at the same time. In this unit, you enable multi-region writes and learn how the service arbitrates those changes, so that the next unit can cover what to do about them.
 
 ## Enable writes in every region

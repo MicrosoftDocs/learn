@@ -1,3 +1,11 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=f120e8ae-929a-43b7-a1b5-a62dc8cb5b04]
+
+::: zone-end
+
+::: zone pivot="text"
+
 Training a machine learning model manually works once. It doesn't scale when your team iterates daily, needs to retrain on fresh data, or must demonstrate that every model version traces back to a reviewed and approved change.
 
 Imagine you're a data scientist at Proseware. Your team is developing a mobile app that helps practitioners identify patients who may need further diabetes screening or treatment. You have a training script for the classification model, but every run requires someone to remember the right command, supply credentials, and watch the output. When a colleague changes how patient data is prepared, there's no automatic check that the model still trains successfully or meets its accuracy requirement.
@@ -5,3 +13,8 @@ Imagine you're a data scientist at Proseware. Your team is developing a mobile a
 This module builds the automation layer from the ground up. You start with source control — what to version and what to keep in purpose-built stores. You then explore trunk-based development as a way to protect production code while the team iterates. From there, you look at how GitHub Actions validates proposed changes automatically before they merge, how to connect those workflows to Azure securely, and how to trigger Azure Machine Learning jobs from GitHub events and Azure-side signals.
 
 By the end of this module, you can identify which machine learning assets belong in Git, describe how trunk-based development governs changes, and explain how a GitHub Actions workflow validates code, authenticates to Azure, and submits Azure Machine Learning jobs.
+
+::: zone-end
+
+> [!NOTE]
+> We recognize that different people like to learn in different ways. You can choose to complete this module in video-based format or you can read the content as text and images. The text contains greater detail than the videos, so in some cases you might want to refer to it as supplemental material to the video presentation.

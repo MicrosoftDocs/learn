@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-local-backup-disaster-recovery.transition-to-production
+metadata:
+  title: Transition to Production
+  description: Control production handover for recovered Azure Local workloads through fencing, release approval, reprotection, and supported management recovery.
+  ms.date: 11/06/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Transition to production
+durationInMinutes: 8
+content: |
+  [!include[](includes/8-transition-to-production.md)]

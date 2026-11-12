@@ -1,0 +1,255 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1260" viewBox="0 0 1200 1260" style="background-color:white" role="img" aria-labelledby="diagram-title diagram-description" font-family="Segoe UI, Arial, sans-serif" fill="#000000" lang="en">
+  <title id="diagram-title">Move trusted artifacts through explicit approval gates</title>
+  <desc id="diagram-description">Diagram of a six-step artifact pipeline crossing a controlled boundary. On a connected acquisition station, acquire authentic publisher artifacts and all dependencies, verify provenance and signatures against an independently trusted manifest, then authorize transfer. Inside the isolated environment, quarantine transferred artifacts, recheck hashes and scan for malware. A hash match demonstrates integrity, not authenticity. Approve promotion and import, then consume approved local catalogs and registries only. Any failure remains quarantined. The boundary is not automated internet synchronization.</desc>
+  <rect id="canvas-background" x="0" y="0" width="1200" height="1260" fill="white" />
+  <defs>
+    <marker id="arrow-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 Z" fill="#0078D4" />
+    </marker>
+    <marker id="arrow-purple" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 Z" fill="#5C2D91" />
+    </marker>
+    <marker id="arrow-teal" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 Z" fill="#006D77" />
+    </marker>
+    <marker id="arrow-gray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 Z" fill="#566573" />
+    </marker>
+  </defs>
+  <text x="48" y="62" font-size="36" font-weight="600" fill="#000000">Move trusted artifacts through explicit approval gates</text>
+  <text x="48" y="105" font-size="21" font-weight="400" fill="#000000">Read down the connected lane (1-3), then down the isolated lane (4-6).</text>
+  <rect id="connected-lane" x="48" y="150" width="480" height="880" rx="18" fill="none" stroke="#566573" stroke-width="2" data-enclosure="true" />
+  <text x="72" y="190" font-size="22" font-weight="600" fill="#000000" data-box="connected-lane">CONNECTED ACQUISITION STATION</text>
+  <rect id="isolated-lane" x="656" y="150" width="496" height="880" rx="18" fill="none" stroke="#566573" stroke-width="2" data-enclosure="true" />
+  <text x="680" y="190" font-size="22" font-weight="600" fill="#000000" data-box="isolated-lane">ISOLATED ENVIRONMENT</text>
+  <line x1="592" y1="150" x2="592" y2="1030" stroke="#9A5700" stroke-width="2" stroke-dasharray="9 8" data-boundary-line="true" />
+  <rect id="step-1" x="72" y="220" width="432" height="210" rx="14" fill="#F3F8FD" stroke="#0078D4" stroke-width="2" data-card="true" />
+  <circle cx="112" cy="260" r="20" fill="white" stroke="#0078D4" stroke-width="2" data-badge="1" />
+  <text x="112" y="268" font-size="24" font-weight="700" fill="#000000" data-box="step-1" text-anchor="middle" data-number="1">1</text>
+  <text x="148" y="268" font-size="25" font-weight="600" fill="#000000" data-box="step-1">Acquire artifacts</text>
+  <svg x="434" y="240" width="46" height="46" viewBox="-0.5 -0.5 19 19" preserveAspectRatio="xMidYMid meet" aria-hidden="true" data-icon="registry">
+    <defs>
+      <linearGradient id="icon-1-registry-bdf27dc6-025c-4805-8bfd-3a05defd3fbd" x1="8.637" y1="-1.991" x2="8.637" y2="16.739" gradientUnits="userSpaceOnUse">
+        <stop offset="0" stop-color="#5ea0ef" />
+        <stop offset="1" stop-color="#0078d4" />
+      </linearGradient>
+      <linearGradient id="icon-1-registry-fcd6c6c7-e2eb-4a32-b914-3a8485585a1b" x1="12.96" y1="8.561" x2="12.96" y2="6.141" gradientTransform="matrix(1, 0, 0, -1, 0, 20)" gradientUnits="userSpaceOnUse">
+        <stop offset="0" stop-color="#333132" />
+        <stop offset="1" stop-color="#5b5a5c" />
+      </linearGradient>
+    </defs>
+    <path d="M7.43,8.178l2.589-1.573,7.255,2.731A3.664,3.664,0,0,0,16.23,7.49l-.01-.05A4.194,4.194,0,0,0,14,6.32a4.91,4.91,0,0,0-5.1-4.7A5.071,5.071,0,0,0,4.06,4.91,4.621,4.621,0,0,0,0,9.39a4.73,4.73,0,0,0,4.89,4.54H7.43Z" fill="url(#icon-1-registry-bdf27dc6-025c-4805-8bfd-3a05defd3fbd)" />
+    <polygon points="10.07 7.159 10.08 11.439 17.99 13.119 17.99 10.139 10.07 7.159" fill="#767676" />
+    <polyline points="10.07 7.159 7.93 8.459 7.93 12.439 10.08 11.439" fill="#999" />
+    <polygon points="13.68 11.499 14.4 11.699 14.4 9.369 13.68 9.119 13.68 11.499" fill="#a3a3a3" />
+    <polygon points="12.96 8.889 12.24 8.629 12.24 11.119 12.96 11.319 12.96 8.889" fill="#a3a3a3" />
+    <polygon points="15.12 11.889 15.82 12.079 15.84 9.859 15.12 9.619 15.12 11.889" fill="#a3a3a3" />
+    <polygon points="10.81 10.749 11.53 10.929 11.53 8.399 10.81 8.159 10.81 10.749" fill="#a3a3a3" />
+    <polygon points="17.27 10.349 16.55 10.099 16.55 12.269 17.27 12.469 17.27 10.349" fill="#a3a3a3" />
+    <path id="icon-1-registry-ef0d1b54-a1e7-4cb9-a4e5-8a8518e7c127" d="M8.66,11.369l-.36.21V8.749l.36-.19Zm.71-3.22L9,8.389v2.75l.37-.2Z" fill="#b3b3b3" />
+    <polygon points="17.99 13.119 15.83 13.859 7.93 12.439 10.08 11.439 17.99 13.119" fill="url(#icon-1-registry-fcd6c6c7-e2eb-4a32-b914-3a8485585a1b)" />
+    <polygon points="17.99 16.169 10.04 17.679 10.08 12.089 17.99 13.559 17.99 16.169" fill="#767676" />
+    <polygon points="10.81 16.759 10.81 13.209 11.53 13.299 11.53 16.639 10.81 16.759" fill="#a3a3a3" />
+    <polygon points="12.96 16.399 12.24 16.529 12.24 13.389 12.96 13.499 12.96 16.399 12.96 16.399" fill="#a3a3a3" />
+    <polygon points="13.68 16.289 13.68 13.569 14.4 13.659 14.4 16.159 13.68 16.289" fill="#a3a3a3" />
+    <polygon points="15.83 15.909 15.12 16.039 15.12 13.749 15.83 13.859 15.83 15.909" fill="#a3a3a3" />
+    <polygon points="17.29 15.679 16.55 15.809 16.55 13.929 17.24 14.019 17.29 15.679" fill="#a3a3a3" />
+    <path id="icon-1-registry-b9f25eb4-4c88-45c2-bc4d-f992757d7e0e" d="M7.93,16.4v-3.26l2.16-1v5.6Z" fill="#999" />
+    <path id="icon-1-registry-eb9200a7-4693-4427-bdae-b33ce90ff7f2" d="M8.61,16.389l-.32-.16v-2.76l.32-.15Zm.77-3.45-.38.19v3.48l.37.19v-3.86Z" fill="#b3b3b3" />
+  </svg>
+  <text x="98" y="310" font-size="22" font-weight="400" fill="#000000" data-box="step-1">Authentic publisher packages</text>
+  <text x="98" y="344" font-size="22" font-weight="400" fill="#000000" data-box="step-1">Include every dependency</text>
+  <text x="98" y="378" font-size="22" font-weight="400" fill="#000000" data-box="step-1">Record source and release</text>
+  <rect id="step-2" x="72" y="500" width="432" height="230" rx="14" fill="#F3F8FD" stroke="#0078D4" stroke-width="2" data-card="true" />
+  <circle cx="112" cy="540" r="20" fill="white" stroke="#0078D4" stroke-width="2" data-badge="2" />
+  <text x="112" y="548" font-size="24" font-weight="700" fill="#000000" data-box="step-2" text-anchor="middle" data-number="2">2</text>
+  <text x="148" y="548" font-size="25" font-weight="600" fill="#000000" data-box="step-2">Verify authenticity</text>
+  <svg x="434" y="520" width="46" height="46" viewBox="190 135 460 400" preserveAspectRatio="xMidYMid meet" aria-hidden="true" data-icon="certificate">
+    <g id="icon-2-certificate-Certificate">
+</g>
+    <g>
+      <g>
+        <g>
+          <path fill="#2A3282" d="M382.9,379.5H234.6c-7.7,0-13.7-6-13.7-13.7V212.4h42.8v-42h275.1c7.7,0,13.7,6,13.7,13.7v1.7     c6.9,1.7,14.6,5.1,21.4,7.7v-10.3c0-18.9-15.4-35.1-35.1-35.1H251.8l-51.4,52.3v165.4c0,18.9,15.4,35.1,35.1,35.1h161.1     C390.6,394.1,386.3,387.3,382.9,379.5z" />
+        </g>
+        <g id="icon-2-certificate-group954-1946_2_" transform="translate(59.286,-2749.37)">
+          <title>Sheet.954</title>
+          <g id="icon-2-certificate-shape955-1947_2_" transform="translate(1.9875,4.54747E-013)">
+            <title>Sheet.955</title>
+            <path fill="#2A3282" d="M507.4,3166.4l51.4,77.1l-48-12.9l-13.7,38.6l-51.4-68.6l-38.6,68.6l-18-41.1l-48,12.9l47.1-81.4      c0,0,12.9,22.3,59.1,22.3C494.5,3181.8,507.4,3166.4,507.4,3166.4z" />
+          </g>
+          <g id="icon-2-certificate-shape956-1949_2_" transform="translate(5.3475,-13.3447)">
+            <title>Sheet.956</title>
+            <path fill="#2A3282" d="M447.9,3165.5c-45.4,0-82.3-36.8-82.3-81.4c0-44.6,36.8-81.4,82.3-81.4s82.3,36.8,82.3,81.4      C529.4,3128.7,493.4,3165.5,447.9,3165.5z M447.9,3020.7c-35.1,0-64.3,28.3-64.3,63.4s29.1,63.4,64.3,63.4s64.3-28.3,64.3-63.4      S483.1,3020.7,447.9,3020.7z" />
+          </g>
+          <g id="icon-2-certificate-shape957-1951_2_" transform="translate(-5.79536E-014,-8.08875)">
+            <title>Sheet.957</title>
+            <path fill="#2A3282" d="M452.9,3203.5c-69.4,0-126-55.7-126-124.3s56.6-124.3,126-124.3s126,55.7,126,124.3      C578.9,3146.9,522.3,3203.5,452.9,3203.5z M452.9,2973c-59.1,0-108,48-108,106.3c0,58.3,48,106.3,108,106.3s108-48,108-106.3      C560.9,3020.1,512.9,2973,452.9,2973z" />
+          </g>
+        </g>
+      </g>
+      <g id="icon-2-certificate-paths">
+        <g id="icon-2-certificate-Access_control">
+		</g>
+        <g id="icon-2-certificate-Azure_active_directory">
+		</g>
+      </g>
+      <g id="icon-2-certificate-symbols">
+	</g>
+    </g>
+  </svg>
+  <text x="98" y="590" font-size="22" font-weight="400" fill="#000000" data-box="step-2">Validate publisher provenance</text>
+  <text x="98" y="624" font-size="22" font-weight="400" fill="#000000" data-box="step-2">and signatures; check an</text>
+  <text x="98" y="658" font-size="22" font-weight="400" fill="#000000" data-box="step-2">independently trusted manifest.</text>
+  <rect id="step-3" x="72" y="810" width="432" height="185" rx="14" fill="#FFF9EB" stroke="#9A5700" stroke-width="2" data-card="true" />
+  <circle cx="112" cy="850" r="20" fill="white" stroke="#9A5700" stroke-width="2" data-badge="3" />
+  <text x="112" y="858" font-size="24" font-weight="700" fill="#000000" data-box="step-3" text-anchor="middle" data-number="3">3</text>
+  <text x="148" y="858" font-size="25" font-weight="600" fill="#000000" data-box="step-3">Approve transfer</text>
+  <svg x="434" y="830" width="46" height="46" viewBox="325 163 145 285" preserveAspectRatio="xMidYMid meet" aria-hidden="true" data-icon="usb">
+    <g id="icon-3-usb-paths">
+      <g id="icon-3-usb-Access_control">
+	</g>
+      <g id="icon-3-usb-Azure_active_directory">
+	</g>
+      <g id="icon-3-usb-Generic_code">
+	</g>
+      <g id="icon-3-usb-Laptop">
+	</g>
+      <g id="icon-3-usb-Load_balancer">
+	</g>
+      <g id="icon-3-usb-Lock_x2C__protected">
+	</g>
+    </g>
+    <g id="icon-3-usb-symbols">
+</g>
+    <g id="icon-3-usb-slices">
+</g>
+    <g id="icon-3-usb-USB">
+      <path fill="#00188F" d="M457.1,241.9h-38.5v38.5H432c0.4,8.8,0.5,19.9-3.5,23.9c-2.1,2.1-7.7,4.3-12.4,6c-4.6,1.7-9.9,3.7-14.5,6.4   v-96.2h21.4l-26.1-47l-29.5,47h21.4v125.9c-3-1.9-6.2-3.5-9-5c-4.3-1.7-7.7-3.4-9.8-5.6c-5.2-4.8-7.1-12.7-7.2-30.4   c8.7-2.7,14.9-10.7,14.9-20.4c0-12-9.4-21.4-21.4-21.4s-21.4,9.4-21.4,21.4c0,9.7,6.2,17.8,15,20.4c0.2,18.6,2.2,30.9,11.1,39.4   c3.8,3.4,8.5,6,13.2,8.1c9,4.3,14.5,7.7,14.5,13.7v25.7c-9.8,2.8-17.1,12-17.1,22.6c0,12.8,10.7,23.5,23.5,23.5   s23.5-10.7,23.5-23.5c0-10.6-7.3-19.7-17.1-22.6v-56.1c0-6.4,7.7-9.8,19.2-14.5c6.8-2.6,13.2-4.7,17.1-9c7.5-7.9,7.3-21.1,6.9-32.5   h12.3V241.9z" />
+    </g>
+  </svg>
+  <text x="98" y="900" font-size="22" font-weight="400" fill="#000000" data-box="step-3">Authorize the transfer set</text>
+  <text x="98" y="934" font-size="22" font-weight="400" fill="#000000" data-box="step-3">Record chain of custody</text>
+  <rect id="step-4" x="680" y="220" width="448" height="210" rx="14" fill="#F3F8FD" stroke="#0078D4" stroke-width="2" data-card="true" />
+  <circle cx="720" cy="260" r="20" fill="white" stroke="#0078D4" stroke-width="2" data-badge="4" />
+  <text x="720" y="268" font-size="24" font-weight="700" fill="#000000" data-box="step-4" text-anchor="middle" data-number="4">4</text>
+  <text x="756" y="268" font-size="25" font-weight="600" fill="#000000" data-box="step-4">Quarantine and recheck</text>
+  <svg x="1058" y="240" width="46" height="46" viewBox="262 135 270 342" preserveAspectRatio="xMidYMid meet" aria-hidden="true" data-icon="lock">
+    <g id="icon-4-lock-Layer_1_1_">
+      <g id="icon-4-lock-File_x2C__general">
+        <title>Sheet.1071</title>
+      </g>
+    </g>
+    <g id="icon-4-lock-Access_control">
+</g>
+    <g id="icon-4-lock-Azure_active_directory">
+</g>
+    <g id="icon-4-lock-Generic_code">
+</g>
+    <g id="icon-4-lock-Laptop">
+</g>
+    <g id="icon-4-lock-Load_balancer">
+</g>
+    <path fill="#2A3282" d="M504.2,272.1h-16.3v-30c0-63.5-40.3-96.1-87.6-96.1h-7.7c-48.1,0-87.6,31.8-87.6,96.1v30h-16.3  c-6.9,0-16.3,9.4-16.3,16.3v161.4c0,6.9,9.4,16.3,16.3,16.3h215.4c6.9,0,16.3-9.4,16.3-16.3V288.4  C519.6,281.5,510.2,272.1,504.2,272.1z M408,367.4v67h-24v-67c-9.4-4.3-16.3-13.7-16.3-24.9c0-15.5,12.9-28.3,28.3-28.3  c15.5,0,28.3,12.9,28.3,28.3C424.3,352.8,417.5,362.2,408,367.4z M457.8,272.1H335.1v-30c0-40.3,21.5-67.8,57.5-67.8h7.7  c36.9,0,57.5,27.5,57.5,67.8L457.8,272.1L457.8,272.1z" />
+    <g id="icon-4-lock-symbols">
+</g>
+    <g id="icon-4-lock-slices">
+</g>
+  </svg>
+  <text x="706" y="310" font-size="21" font-weight="400" fill="#000000" data-box="step-4">Recheck hashes; scan for malware.</text>
+  <text x="706" y="344" font-size="21" font-weight="400" fill="#000000" data-box="step-4">A hash match proves integrity,</text>
+  <text x="706" y="378" font-size="21" font-weight="400" fill="#000000" data-box="step-4">not publisher authenticity.</text>
+  <rect id="step-5" x="680" y="500" width="448" height="230" rx="14" fill="#F3F8FD" stroke="#0078D4" stroke-width="2" data-card="true" />
+  <circle cx="720" cy="540" r="20" fill="white" stroke="#0078D4" stroke-width="2" data-badge="5" />
+  <text x="720" y="548" font-size="24" font-weight="700" fill="#000000" data-box="step-5" text-anchor="middle" data-number="5">5</text>
+  <text x="756" y="548" font-size="25" font-weight="600" fill="#000000" data-box="step-5">Promote and import</text>
+  <svg x="1058" y="520" width="46" height="46" viewBox="-0.5 -0.5 19 19" preserveAspectRatio="xMidYMid meet" aria-hidden="true" data-icon="resource">
+    <title>Icon-general-7</title>
+    <g>
+      <g>
+        <path d="M.5,15.08a.16.16,0,0,0,.08.14l1.16.65L3.7,17a.17.17,0,0,0,.23-.06l.66-1.12a.16.16,0,0,0-.06-.21l-2.3-1.3a.17.17,0,0,1-.08-.14V3.85a.16.16,0,0,1,.08-.14l2.3-1.3a.16.16,0,0,0,.06-.21L3.93,1.08A.17.17,0,0,0,3.7,1L1.78,2.11l-1.2.67a.16.16,0,0,0-.08.14V15.08Z" fill="#949494" />
+        <path d="M2.14,3.77l.06-.06,2.3-1.3a.14.14,0,0,0,.06-.21L3.9,1.08A.15.15,0,0,0,3.68,1L1.75,2.11.56,2.78s-.05,0-.06.06l.9.51Z" fill="#a3a3a3" />
+        <path d="M4.5,15.59l-2.3-1.3a.22.22,0,0,1-.07-.09l-1.62,1,.05,0,1.15.65,2,1.11a.15.15,0,0,0,.22-.06l.66-1.12A.14.14,0,0,0,4.5,15.59Z" fill="#a3a3a3" />
+      </g>
+      <path d="M17.5,15.08a.16.16,0,0,1-.08.14l-1.16.65L14.3,17a.17.17,0,0,1-.23-.06l-.66-1.12a.16.16,0,0,1,.06-.21l2.3-1.3a.17.17,0,0,0,.08-.14V3.85a.16.16,0,0,0-.08-.14l-2.3-1.3a.16.16,0,0,1-.06-.21l.66-1.12A.17.17,0,0,1,14.3,1l1.92,1.09,1.2.67a.16.16,0,0,1,.08.14V15.08Z" fill="#949494" />
+      <path d="M15.86,3.77l-.06-.06-2.3-1.3a.14.14,0,0,1-.06-.21l.66-1.12A.15.15,0,0,1,14.32,1l1.93,1.09,1.19.67s0,0,.06.06l-.9.51Z" fill="#a3a3a3" />
+      <path d="M13.5,15.59l2.3-1.3a.22.22,0,0,0,.07-.09l1.62,1,0,0-1.15.65-2,1.11a.15.15,0,0,1-.22-.06l-.66-1.12A.14.14,0,0,1,13.5,15.59Z" fill="#a3a3a3" />
+      <polygon points="14.31 5.93 14.31 12.07 8.99 15.16 8.99 9.01 14.31 5.93" fill="#32bedd" />
+      <polygon points="14.31 5.93 9 9.02 3.68 5.93 9 2.84 14.31 5.93" fill="#9cebff" />
+      <polygon points="8.99 9.02 8.99 15.16 3.68 12.07 3.68 5.93 8.99 9.02" fill="#50e6ff" />
+      <polygon points="3.68 12.07 8.99 9.01 8.99 15.16 3.68 12.07" fill="#9cebff" />
+      <polygon points="14.31 12.07 8.99 9.01 8.99 15.16 14.31 12.07" fill="#50e6ff" />
+    </g>
+  </svg>
+  <text x="706" y="590" font-size="22" font-weight="400" fill="#000000" data-box="step-5">Approval releases verified</text>
+  <text x="706" y="624" font-size="22" font-weight="400" fill="#000000" data-box="step-5">artifacts from quarantine</text>
+  <text x="706" y="658" font-size="22" font-weight="400" fill="#000000" data-box="step-5">Import only the accepted set</text>
+  <rect id="step-6" x="680" y="810" width="448" height="185" rx="14" fill="#F0F9F8" stroke="#006D77" stroke-width="2" data-card="true" />
+  <circle cx="720" cy="850" r="20" fill="white" stroke="#006D77" stroke-width="2" data-badge="6" />
+  <text x="720" y="858" font-size="24" font-weight="700" fill="#000000" data-box="step-6" text-anchor="middle" data-number="6">6</text>
+  <text x="756" y="858" font-size="25" font-weight="600" fill="#000000" data-box="step-6">Consume locally</text>
+  <svg x="1058" y="830" width="46" height="46" viewBox="-0.5 -0.5 19 19" preserveAspectRatio="xMidYMid meet" aria-hidden="true" data-icon="registry">
+    <defs>
+      <linearGradient id="icon-6-registry-bdf27dc6-025c-4805-8bfd-3a05defd3fbd" x1="8.637" y1="-1.991" x2="8.637" y2="16.739" gradientUnits="userSpaceOnUse">
+        <stop offset="0" stop-color="#5ea0ef" />
+        <stop offset="1" stop-color="#0078d4" />
+      </linearGradient>
+      <linearGradient id="icon-6-registry-fcd6c6c7-e2eb-4a32-b914-3a8485585a1b" x1="12.96" y1="8.561" x2="12.96" y2="6.141" gradientTransform="matrix(1, 0, 0, -1, 0, 20)" gradientUnits="userSpaceOnUse">
+        <stop offset="0" stop-color="#333132" />
+        <stop offset="1" stop-color="#5b5a5c" />
+      </linearGradient>
+    </defs>
+    <path d="M7.43,8.178l2.589-1.573,7.255,2.731A3.664,3.664,0,0,0,16.23,7.49l-.01-.05A4.194,4.194,0,0,0,14,6.32a4.91,4.91,0,0,0-5.1-4.7A5.071,5.071,0,0,0,4.06,4.91,4.621,4.621,0,0,0,0,9.39a4.73,4.73,0,0,0,4.89,4.54H7.43Z" fill="url(#icon-6-registry-bdf27dc6-025c-4805-8bfd-3a05defd3fbd)" />
+    <polygon points="10.07 7.159 10.08 11.439 17.99 13.119 17.99 10.139 10.07 7.159" fill="#767676" />
+    <polyline points="10.07 7.159 7.93 8.459 7.93 12.439 10.08 11.439" fill="#999" />
+    <polygon points="13.68 11.499 14.4 11.699 14.4 9.369 13.68 9.119 13.68 11.499" fill="#a3a3a3" />
+    <polygon points="12.96 8.889 12.24 8.629 12.24 11.119 12.96 11.319 12.96 8.889" fill="#a3a3a3" />
+    <polygon points="15.12 11.889 15.82 12.079 15.84 9.859 15.12 9.619 15.12 11.889" fill="#a3a3a3" />
+    <polygon points="10.81 10.749 11.53 10.929 11.53 8.399 10.81 8.159 10.81 10.749" fill="#a3a3a3" />
+    <polygon points="17.27 10.349 16.55 10.099 16.55 12.269 17.27 12.469 17.27 10.349" fill="#a3a3a3" />
+    <path id="icon-6-registry-ef0d1b54-a1e7-4cb9-a4e5-8a8518e7c127" d="M8.66,11.369l-.36.21V8.749l.36-.19Zm.71-3.22L9,8.389v2.75l.37-.2Z" fill="#b3b3b3" />
+    <polygon points="17.99 13.119 15.83 13.859 7.93 12.439 10.08 11.439 17.99 13.119" fill="url(#icon-6-registry-fcd6c6c7-e2eb-4a32-b914-3a8485585a1b)" />
+    <polygon points="17.99 16.169 10.04 17.679 10.08 12.089 17.99 13.559 17.99 16.169" fill="#767676" />
+    <polygon points="10.81 16.759 10.81 13.209 11.53 13.299 11.53 16.639 10.81 16.759" fill="#a3a3a3" />
+    <polygon points="12.96 16.399 12.24 16.529 12.24 13.389 12.96 13.499 12.96 16.399 12.96 16.399" fill="#a3a3a3" />
+    <polygon points="13.68 16.289 13.68 13.569 14.4 13.659 14.4 16.159 13.68 16.289" fill="#a3a3a3" />
+    <polygon points="15.83 15.909 15.12 16.039 15.12 13.749 15.83 13.859 15.83 15.909" fill="#a3a3a3" />
+    <polygon points="17.29 15.679 16.55 15.809 16.55 13.929 17.24 14.019 17.29 15.679" fill="#a3a3a3" />
+    <path id="icon-6-registry-b9f25eb4-4c88-45c2-bc4d-f992757d7e0e" d="M7.93,16.4v-3.26l2.16-1v5.6Z" fill="#999" />
+    <path id="icon-6-registry-eb9200a7-4693-4427-bdae-b33ce90ff7f2" d="M8.61,16.389l-.32-.16v-2.76l.32-.15Zm.77-3.45-.38.19v3.48l.37.19v-3.86Z" fill="#b3b3b3" />
+  </svg>
+  <text x="706" y="900" font-size="22" font-weight="400" fill="#000000" data-box="step-6">Use approved local catalogs</text>
+  <text x="706" y="934" font-size="22" font-weight="400" fill="#000000" data-box="step-6">and container registries</text>
+  <polyline points="288,442 288,488" fill="none" stroke="#0078D4" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" data-connector="true" marker-end="url(#arrow-blue)" />
+  <polyline points="288,742 288,798" fill="none" stroke="#0078D4" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" data-connector="true" marker-end="url(#arrow-blue)" />
+  <polyline points="516,902 632,902 632,325 668,325" fill="none" stroke="#566573" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" data-connector="true" marker-end="url(#arrow-gray)" />
+  <polyline points="904,442 904,488" fill="none" stroke="#0078D4" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" data-connector="true" marker-end="url(#arrow-blue)" />
+  <polyline points="904,742 904,798" fill="none" stroke="#0078D4" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" data-connector="true" marker-end="url(#arrow-blue)" />
+  <rect id="failed-checks" x="48" y="1080" width="1104" height="120" rx="12" fill="#FFF9EB" stroke="#9A5700" stroke-width="2" data-card="true" />
+  <text x="74" y="1122" font-size="24" font-weight="600" fill="#000000" data-box="failed-checks">Any failed check stays quarantined.</text>
+  <text x="74" y="1162" font-size="22" font-weight="400" fill="#000000" data-box="failed-checks">Reject or investigate; never promote, import or consume failed artifacts.</text>
+  <svg x="1082" y="1100" width="46" height="46" viewBox="262 135 270 342" preserveAspectRatio="xMidYMid meet" aria-hidden="true" data-icon="lock">
+    <g id="icon-7-lock-Layer_1_1_">
+      <g id="icon-7-lock-File_x2C__general">
+        <title>Sheet.1071</title>
+      </g>
+    </g>
+    <g id="icon-7-lock-Access_control">
+</g>
+    <g id="icon-7-lock-Azure_active_directory">
+</g>
+    <g id="icon-7-lock-Generic_code">
+</g>
+    <g id="icon-7-lock-Laptop">
+</g>
+    <g id="icon-7-lock-Load_balancer">
+</g>
+    <path fill="#2A3282" d="M504.2,272.1h-16.3v-30c0-63.5-40.3-96.1-87.6-96.1h-7.7c-48.1,0-87.6,31.8-87.6,96.1v30h-16.3  c-6.9,0-16.3,9.4-16.3,16.3v161.4c0,6.9,9.4,16.3,16.3,16.3h215.4c6.9,0,16.3-9.4,16.3-16.3V288.4  C519.6,281.5,510.2,272.1,504.2,272.1z M408,367.4v67h-24v-67c-9.4-4.3-16.3-13.7-16.3-24.9c0-15.5,12.9-28.3,28.3-28.3  c15.5,0,28.3,12.9,28.3,28.3C424.3,352.8,417.5,362.2,408,367.4z M457.8,272.1H335.1v-30c0-40.3,21.5-67.8,57.5-67.8h7.7  c36.9,0,57.5,27.5,57.5,67.8L457.8,272.1L457.8,272.1z" />
+    <g id="icon-7-lock-symbols">
+</g>
+    <g id="icon-7-lock-slices">
+</g>
+  </svg>
+  <text x="48" y="1235" font-size="21" font-weight="400" fill="#000000">The dashed boundary is controlled transfer, not automated internet synchronization.</text>
+</svg>

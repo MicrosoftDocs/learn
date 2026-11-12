@@ -36,7 +36,7 @@ Azure Private DNS zones use standardized zone names for each service type — zo
 
 The portal simplifies this process through **auto-registration**. When you create a private endpoint and select "integrate with private DNS zone," Azure creates the zone if it doesn't exist, creates the A record, and links the zone to the VNet — in a single step. Auto-registration eliminates manual DNS configuration errors.
 
-For hybrid environments, Contoso's on-premises clients also need to resolve the private IP. You configure DNS forwarders on-premises to forward queries for `privatelink.*.windows.net` and `privatelink.*.azure.com` to Azure DNS at 168.63.129.16. The forwarding rule applies to all private endpoints — configure it once, not per resource.
+For hybrid environments, Contoso's on-premises clients also need to resolve the private IP. The Azure-provided DNS address (168.63.129.16) is only reachable from inside an Azure virtual network, so on-premises DNS servers can't forward directly to it. Instead, deploy a DNS forwarder inside the virtual network linked to the private DNS zone — either a VM running DNS services or a managed service such as Azure DNS Private Resolver — and configure on-premises conditional forwarders to send queries for the recommended public DNS zone (for example, `database.windows.net`, not `privatelink.database.windows.net`) to that in-Azure forwarder.
 
 > [!IMPORTANT]
 > If you disable the public endpoint before configuring DNS correctly, clients that attempt to connect fail with a connection error rather than a "public access disabled" error. Always configure the private endpoint and verify DNS resolution before disabling public access.

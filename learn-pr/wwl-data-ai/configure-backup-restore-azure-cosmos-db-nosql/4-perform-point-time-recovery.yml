@@ -2,10 +2,11 @@
 uid: learn.wwl.configure-backup-restore-azure-cosmos-db-nosql.perform-point-in-time-recovery
 title: Perform point-in-time recovery
 metadata:
+  zone_pivot_groups: video-or-text
   title: Perform Point-in-Time Recovery
   description: "Choose a restore target, identify a restore point from the event feed, run a same-account or new-account restore, and validate the recovered data."
-  ms.date: 10/03/2026
-  author: wwlpublish
+  ms.date: 11/05/2026
+  author: MScalopez
   ms.author: calopez
   ms.topic: unit
   ai-usage: ai-generated

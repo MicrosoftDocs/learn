@@ -6,7 +6,7 @@ metadata:
   description: Trigger an Azure Machine Learning training job with a GitHub Actions workflow and observe the result in the repository.
   author: madiepev
   ms.author: madiepev
-  ms.date: 08/27/2026
+  ms.date: 11/6/2026
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

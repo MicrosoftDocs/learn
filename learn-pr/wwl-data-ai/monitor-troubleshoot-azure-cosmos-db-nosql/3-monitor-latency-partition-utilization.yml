@@ -2,10 +2,11 @@
 uid: learn.wwl.monitor-troubleshoot-azure-cosmos-db-nosql.monitor-latency-partition-utilization
 title: Monitor latency and partition utilization
 metadata:
+  zone_pivot_groups: video-or-text
   title: Monitor Latency and Partition Utilization
   description: "Separate server-side latency from end-to-end latency, read normalized request unit consumption correctly under manual and autoscale throughput, and use physical partition metrics to find skew."
-  ms.date: 10/03/2026
-  author: wwlpublish
+  ms.date: 11/11/2026
+  author: MScalopez
   ms.author: calopez
   ms.topic: unit
   ai-usage: ai-generated

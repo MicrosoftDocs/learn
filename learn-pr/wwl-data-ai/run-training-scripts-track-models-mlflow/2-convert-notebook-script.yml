@@ -2,11 +2,12 @@
 uid: learn.wwl.run-training-scripts-track-models-mlflow.convert-notebook-script
 title: Convert a notebook to a script
 metadata:
+  zone_pivot_groups: video-or-text
   title: Convert a notebook to a script
   description: Learn how to get your code production ready.
   author: madiepev
   ms.author: madiepev
-  ms.date: 08/27/2026
+  ms.date: 11/6/2026
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

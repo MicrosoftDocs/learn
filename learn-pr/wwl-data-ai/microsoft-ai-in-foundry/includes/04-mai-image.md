@@ -9,15 +9,15 @@
 
 ::: zone pivot="text"
 
-The **MAI-Image-2.5** family generates images from text and edits existing images from natural-language instructions. It supports photorealistic scenes, design assets, product imagery, and controlled changes to uploaded content.
+The **MAI-Image** family generates images from text and edits existing images from natural-language instructions. It supports photorealistic scenes, design assets, product imagery, and controlled changes to uploaded content.
 
 ## Choose a model variant
 
 The family provides variants for different priorities:
 
-- **MAI-Image-2.5-Pro** emphasizes object consistency, visual reasoning, and world knowledge for demanding creative work.
-- **MAI-Image-2.5** balances high-quality generation with precise, controllable editing.
-- **MAI-Image-2.5-Flash** targets production-ready quality at a lower cost than the flagship model.
+- **MAI-Image** balances high-quality generation with precise, controllable editing.
+- **MAI-Image-Flash** targets production-ready quality at a lower cost than the flagship model.
+- **MAI-Image-Pro** emphasizes object consistency, visual reasoning, and world knowledge for demanding creative work.
 
 Treat these descriptions as a starting point. In Foundry, confirm current model availability and compare variants with the prompts, source images, sizes, and output volumes expected in production.
 
@@ -47,6 +47,6 @@ Create a prompt set that includes ordinary and difficult cases. Assess:
 Image quality is partly subjective, so define a review rubric and use multiple reviewers when consistency matters. Confirm that you have rights to uploaded source material, disclose generated content when appropriate, and don't use generated or edited images to deceive people.
 
 > [!TIP]
-> Review the model cards for [MAI-Image-2.5-Pro](https://microsoft.ai/pdf/MAI-Image-2.5_Pro-Model_Card.pdf?azure-portal=true), [MAI-Image-2.5](https://microsoft.ai/pdf/MAI-Image-2.5-Model-Card.PDF?azure-portal=true), and [MAI-Image-2.5-Flash](https://microsoft.ai/pdf/MAI-Image-2.5-Flash-Model-Card.pdf?azure-portal=true).
+> Review the model cards for [MAI-Image-2.5-Pro](https://ai.azure.com/catalog/models/MAI-Image-2.5-Pro?azure-portal=true), [MAI-Image-2.6](https://ai.azure.com/catalog/models/MAI-Image-2.6?azure-portal=true), and [MAI-Image-2.6-Flash](https://ai.azure.com/catalog/models/MAI-Image-2.6-Flash?azure-portal=true) for current capabilities, limitations, and intended uses.
 
 ::: zone-end

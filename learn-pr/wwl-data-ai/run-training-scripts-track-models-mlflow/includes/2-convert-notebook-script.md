@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=fea70172-15cd-40f8-a06b-7cc22321da2f]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 When you used notebooks for experimentation and development, you first need to convert a notebook to a script. Alternatively, you can choose to skip using notebooks and work only with scripts. Either way, there are some recommendations when creating scripts to have production-ready code.
 
 Scripts are ideal for testing and automation in your production environment. To create a production-ready script, you need to:
@@ -84,3 +95,5 @@ python train.py
 ```
 
 Outputs of `print` statements show in the terminal. Any possible errors also appear in the terminal.
+
+::: zone-end

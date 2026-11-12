@@ -3,10 +3,10 @@ uid: learn.wwl.visualize-ontology-fabric-iq.visualize-relationships
 title: Visualize relationships in the relationship graph
 metadata:
   title: Visualize Relationships in the Relationship Graph
-  description: Learn how to expand the relationship graph, run the default query to see entity instances as nodes and relationships as edges, and navigate connected business concepts in Microsoft Fabric IQ.
-  ms.date: 04/13/2026
-  author: theresa-i
-  ms.author: lumac
+  description: Understand graph nodes and edges, select eligible ontology data for optional materialization, and check graph freshness in Microsoft Fabric IQ.
+  ms.date: 11/05/2026
+  author: angierudduck
+  ms.author: anrudduc
   ms.topic: unit
   ai-usage: ai-generated
 azureSandbox: false

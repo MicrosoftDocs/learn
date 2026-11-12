@@ -59,7 +59,7 @@ Both Azure Private Link Service and virtual network peering enable private conne
 | Scenario | Virtual network peering | Azure Private Link Service |
 |---|---|---|
 | Both VNets in the same organization | Simpler—full network connectivity | Possible but unnecessary |
-| Cross-tenant (different Microsoft Entra directory) |  Not supported |  Designed to support |
+| Cross-tenant (different Microsoft Entra directory) |  Supported, but requires coordinating address spaces and exposes both VNets fully |  Designed to support, without exposing either virtual network |
 | Overlapping IP address spaces | Requires nonoverlapping classless inter-domain routing (CIDR) ranges | NAT eliminates IP conflicts |
 | Provider controls which resources consumers can reach | Peering exposes the full virtual network | Only the load balancer frontend is reachable |
 | Consumer doesn't want to expose their virtual network topology | Works but full mutual visibility | Consumer virtual network remains opaque to provider |

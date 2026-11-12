@@ -1,4 +1,10 @@
+::: zone pivot="video"
 
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=d18a8a76-fae4-4dfb-a3a9-d48005630bbd]
+
+::: zone-end
+
+::: zone pivot="text"
 
 In Azure Machine Learning, you can experiment in notebooks and train (and retrain) machine learning models by running scripts as jobs. 
 
@@ -19,3 +25,8 @@ In this module, you'll learn how to:
 - Create components.
 - Build an Azure Machine Learning pipeline.
 - Run an Azure Machine Learning pipeline.
+
+::: zone-end
+
+> [!NOTE]
+> We recognize that different people like to learn in different ways. You can choose to complete this module in video-based format or you can read the content as text and images. The text contains greater detail than the videos, so in some cases you might want to refer to it as supplemental material to the video presentation.

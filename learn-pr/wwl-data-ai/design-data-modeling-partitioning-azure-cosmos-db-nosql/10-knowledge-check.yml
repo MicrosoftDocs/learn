@@ -2,7 +2,7 @@
 uid: learn.wwl.design-data-modeling-partitioning-azure-cosmos-db-nosql.knowledge-check
 title: Module assessment
 metadata:
-  title: Module assessment
+  title: Module Assessment
   description: "Answer the following questions to check your understanding of access-pattern modeling. Review when to embed or reference data. Check your knowledge of partition key selection and common anti-patterns. The questions also cover hierarchical and synthetic keys."
   ms.date: 10/30/2026
   author: MScalopez

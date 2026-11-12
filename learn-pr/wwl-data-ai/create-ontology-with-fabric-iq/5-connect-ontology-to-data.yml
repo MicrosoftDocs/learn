@@ -5,9 +5,9 @@ metadata:
   zone_pivot_groups: video-or-text
   title: Connect an Ontology to Data
   description: "Learn how to bind entity types to lakehouse tables and eventhouse streams using static and time series data bindings"
-  ms.date: 10/22/2026
-  author: weslbo
-  ms.author: wedebols
+  ms.date: 11/05/2026
+  author: angierudduck
+  ms.author: anrudduc
   ms.topic: unit
   ai-usage: ai-generated
 azureSandbox: false

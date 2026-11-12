@@ -26,8 +26,8 @@ metadata:
   gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/design-optimize-indexing-strategy-azure-cosmos-db-nosql/index.yml
   title: Design and Optimize an Indexing Strategy in Azure Cosmos DB
   description: "Tune indexing policies for read-heavy and write-heavy workloads, add composite and spatial indexes, define and index computed properties, and use global secondary indexes to avoid cross-partition queries."
-  ms.date: 10/03/2026
-  author: wwlpublish
+  ms.date: 11/06/2026
+  author: MScalopez
   ms.author: calopez
   ms.topic: module
   ms.service: azure-cosmos-db

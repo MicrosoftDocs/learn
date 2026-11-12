@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-local-security-governance.prepare-secure-workload-recovery
+metadata:
+  title: Prepare Secure Workload Recovery
+  description: Plan independent key custody, wrapping-key backup, supported restoration, recovery testing, and secret rotation for protected Azure Local workloads.
+  ms.date: 11/02/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Prepare secure workload recovery
+durationInMinutes: 17
+content: |
+  [!include[](includes/7-prepare-secure-workload-recovery.md)]

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-foundry-voice-agents.summary
+title: Summary
+metadata:
+  zone_pivot_groups: video-or-text
+  title: Summary
+  description: "Review the key takeaways and mental model for building effective voice agents."
+  ms.date: 11/10/2026
+  author: buzahid
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/7-summary.md)]

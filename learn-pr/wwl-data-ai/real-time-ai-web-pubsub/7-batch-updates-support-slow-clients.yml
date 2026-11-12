@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.real-time-ai-web-pubsub.batch-updates-support-slow-clients
+title: Batch updates and support slow clients
+metadata:
+  title: Batch Updates and Support Slow Clients
+  description: Batch generated findings and bound worker and browser buffers while preserving durable AI operation state
+  ms.date: 11/05/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+  zone_pivot_groups: video-or-text
+durationInMinutes: 10
+content: |
+  [!include[](includes/7-batch-updates-support-slow-clients.md)]

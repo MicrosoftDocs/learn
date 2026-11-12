@@ -47,6 +47,6 @@ Use the model iteratively:
 This cycle combines the speed of AI-assisted generation with human oversight and measurable validation.
 
 > [!TIP]
-> Review the [MAI-Code-1.1-Flash model card](https://microsoft.ai/pdf/MAI-Code-1.1-Flash-Model-Card.PDF?azure-portal=true) for detailed information about that model's capabilities, evaluation, limitations, and intended uses.
+> Review the [MAI-Code-1.1-Flash model card](https://ai.azure.com/catalog/models/mai-code-1.1-flash?azure-portal=true) for detailed information about that model's capabilities, evaluation, limitations, and intended uses.
 
 ::: zone-end

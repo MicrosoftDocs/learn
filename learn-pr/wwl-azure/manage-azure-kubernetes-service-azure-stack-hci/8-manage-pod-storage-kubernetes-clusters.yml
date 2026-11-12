@@ -3,17 +3,16 @@ uid: learn.wwl.manage-azure-kubernetes-service-azure-stack-hci.manage-pod-storag
 title: Manage pod storage on Kubernetes clusters
 metadata:
   title: Manage Pod Storage on Kubernetes Clusters
-  description: "Request and mount persistent storage and manage volume and claim lifecycles."
-  ms.date: 10/23/2026
-  author: wwlpublish
-  ms.author: robbarefoot
+  description: "Verify persistent storage across pod replacement, inspect reclaim outcomes, and plan application-consistent recovery."
+  ms.date: 11/03/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
 azureSandbox: false
-durationInMinutes: 5
+durationInMinutes: 15
 content: |
   [!include[](includes/8-manage-pod-storage-kubernetes-clusters.md)]
 quiz:
-  title: "Knowledge check"
   questions:
   - content: "Contoso's cluster has a suitable storage class configured for dynamic provisioning. Which resource should an application developer create to request persistent capacity from that class?"
     choices:

@@ -5,9 +5,9 @@ metadata:
   zone_pivot_groups: video-or-text
   title: Understand the Ontology Modeling Paradigm
   description: Learn how ontology modeling differs from traditional analytical data modeling by starting with business concepts and relationships rather than designing tables for specific use cases.
-  ms.date: 10/29/2026
-  author: weslbo
-  ms.author: wedebols
+  ms.date: 11/05/2026
+  author: angierudduck
+  ms.author: anrudduc
   ms.topic: unit
   ai-usage: ai-generated
 durationInMinutes: 10

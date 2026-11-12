@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=b8398bdc-5c82-4a61-a60a-62f82ccb0084]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 An indexing policy is a JSON document attached to a container. It decides which property paths get indexed, what kind of index each path gets, and whether indexing happens at all. Everything you tune later in this module is a change to that document, so it helps to understand what the service does with it before you start editing it.
 
 The Contoso catalog is a good example of why the default doesn't always fit. Its `product` items carry a long `description` string and a `tags` array that no query filters on, and both are indexed because the default policy indexes everything.
@@ -58,3 +69,5 @@ A query's total charge combines the index lookup with the cost of loading the ma
 Aggregates behave differently and deserve their own warning. `COUNT`, `SUM`, `AVG`, `MIN`, and `MAX` can use indexes, but some filters require the engine to load items to compute the aggregate. An aggregate query with only a `CONTAINS` filter can require a full scan. Adding a selective equality or range filter can let the engine use the index first and reduce the number of items it loads.
 
 Learn more about [how Azure Cosmos DB indexes data](/azure/cosmos-db/index-overview) and [indexing policies](/azure/cosmos-db/index-policy).
+
+::: zone-end

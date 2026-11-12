@@ -3,7 +3,7 @@ uid: learn.wwl.configure-ai-gateway-security-foundry.secure-monitor-ai-gateway-a
 metadata:
   title: Secure and monitor AI Gateway access
   description: Apply authentication and authorization controls to AI Gateway, configure diagnostic logging for model traffic, and use monitoring data to detect anomalous usage patterns.
-  ms.date: 04/21/2026
+  ms.date: 11/09/2026
   author: r-c-stewart
   ms.author: lumac
   ms.topic: unit

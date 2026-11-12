@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.audit-ai-generated-python-code.spot-ai-hallucinations
+title: Spot incorrect information in AI-generated code
+metadata:
+  title: Spot Incorrect Information in AI-Generated Code
+  description: "Learn to identify incorrect information, false assumptions, and nonexistent APIs in AI-generated code."
+  ms.date: 10/19/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-spot-ai-hallucinations.md)]

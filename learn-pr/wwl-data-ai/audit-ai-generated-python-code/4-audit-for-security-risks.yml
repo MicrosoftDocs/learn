@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.audit-ai-generated-python-code.audit-for-security-risks
+title: Audit for security risks
+metadata:
+  title: Audit for Security Risks
+  description: "Learn to find common security risks in AI-generated Python code, including injection, hardcoded secrets, unsafe file access, and untrusted packages."
+  ms.date: 10/19/2026
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 12
+content: |
+  [!include[](includes/4-audit-for-security-risks.md)]

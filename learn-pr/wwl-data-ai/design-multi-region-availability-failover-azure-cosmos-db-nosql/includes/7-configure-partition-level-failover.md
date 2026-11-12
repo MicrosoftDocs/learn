@@ -1,3 +1,12 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=851bcb46-1260-413b-9b58-142b1b5b9f72]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
 Every failover in the previous unit moves the entire account. An account-level failover is a blunt response to a failure that's often narrower: Azure Cosmos DB spreads a container across many physical partitions, and infrastructure problems frequently affect some of them and leave the rest serving traffic normally. Per-partition automatic failover (PPAF) fails over only the affected partitions, which is how Contoso's catalog stays writable through a partial region failure. In this unit, you check whether an account qualifies, enable PPAF, configure the client for it, and rehearse it with an injected fault.
 
 ## Understand what PPAF changes

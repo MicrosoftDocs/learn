@@ -3,9 +3,9 @@ uid: learn.wwl.configure-trusted-launch-azure-virtual-machines.migrate-gen-1-con
 metadata:
   title: Migrate Gen1 VMs and configure Trusted Launch components
   description: Migrate Generation 1 virtual machines to Gen2 architecture with Trusted Launch enabled, adjust individual Secure Boot, vTPM, and integrity monitoring settings, and verify the final Trusted Launch configuration.
-  ms.date: 05/11/2026
-  author: r-c-stewart
-  ms.author: lumac
+  ms.date: 11/01/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
   ai-usage: ai-assisted
 title: Migrate Gen1 VMs and configure Trusted Launch components
