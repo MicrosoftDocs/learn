@@ -1,7 +1,7 @@
 When an unexpected event occurs—like a repository deletion or a failed workflow run—you need precise details: who did it, when, and how. GitHub’s audit logs capture this information for troubleshooting, compliance, and security investigations.
 
 You can access the audit log through GitHub.com or GitHub Enterprise Server. Interacting with the audit log via either the GraphQL API or the REST API allows you to retrieve specific types of information, though there are some limitations.
-/
+
 > [!TIP]
 > Suppose a critical repository vanished overnight. You’ll use the audit logs to pinpoint the deletion event and restore continuity.
 
@@ -112,7 +112,7 @@ query {
 Stream logs in real time to SIEM platforms (Splunk, Datadog) for long-term storage:
 
 1. Go to **Settings > Audit log**.  
-2. Under **Log Streaming**, configure a destination (Amazon S3, Azure Blob Storage, Azure Event Hubs Google Cloud Storage).  
+2. Under **Log streaming**, configure a destination (Amazon S3, Azure Blob Storage, Azure Event Hubs, Google Cloud Storage).  
 3. Verify events arrive in your SIEM.  
 
 ## Additional Audit Log types
