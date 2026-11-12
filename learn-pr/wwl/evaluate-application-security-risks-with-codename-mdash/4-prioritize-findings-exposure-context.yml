@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.evaluate-application-security-risks-with-codename-mdash.prioritize-findings-exposure-context
+title: Prioritize findings with exposure context
+metadata:
+  title: Prioritize Findings with Exposure Context
+  description: "Evaluate Codename MDASH findings by using severity, confidence, evidence, and repository context."
+  ms.date: 10/28/2026
+  author: kirkpatrickalbert-prog
+  ms.author: akirkpatrick
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-prioritize-findings-exposure-context.md)]

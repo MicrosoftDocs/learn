@@ -13,6 +13,8 @@ title: Azure Local storage architecture and maintenance
 summary: |
   Azure Local storage is resilient only when the hosted workload can use its data after the failures that the design promises to withstand. Redundant drives are important, but so are copy placement, storage-network paths, quorum, repair capacity, and enough surviving compute capacity to run the workload.
 abstract: |
+  > [!VIDEO https://learn-video.azurefd.net/vod/player?id=5daedd24-291f-4f2a-b340-3e4664af290a]
+
   After completing this module, you can:
 
   - Select a supported Azure Local storage architecture and resiliency layout for a specified failure requirement.

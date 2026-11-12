@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.evaluate-application-security-risks-with-codename-mdash.recognize-gaps-conventional-code-scanning
+title: Recognize gaps in conventional code scanning
+metadata:
+  title: Recognize Gaps in Conventional Code Scanning
+  description: "Explain why complex exploit paths and logic flaws require analysis beyond pattern matching."
+  ms.date: 10/28/2026
+  author: kirkpatrickalbert-prog
+  ms.author: akirkpatrick
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-recognize-gaps-conventional-code-scanning.md)]

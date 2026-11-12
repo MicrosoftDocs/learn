@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.evaluate-application-security-risks-with-codename-mdash.explain-how-mdash-validates-vulnerabilities
+title: Explain how Codename MDASH validates vulnerabilities
+metadata:
+  title: Explain How Codename MDASH Validates Vulnerabilities
+  description: "Describe the multi-model agentic pipeline that discovers, debates, validates, and consolidates findings."
+  ms.date: 10/28/2026
+  author: kirkpatrickalbert-prog
+  ms.author: akirkpatrick
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-explain-how-mdash-validates-vulnerabilities.md)]
