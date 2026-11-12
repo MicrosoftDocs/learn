@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.evaluate-application-security-risks-with-codename-mdash.exercise-secure-caldova-pharmacy
+title: "Exercise: Secure Caldova Pharmacy"
+metadata:
+  title: "Exercise: Secure Caldova Pharmacy"
+  description: "Investigate a simulated security incident at Caldova and use Codename MDASH to review the vulnerable code."
+  ms.date: 10/28/2026
+  author: kirkpatrickalbert-prog
+  ms.author: akirkpatrick
+  ms.topic: unit
+durationInMinutes: 20
+content: |
+  [!include[](includes/6-exercise-secure-caldova-pharmacy.md)]
