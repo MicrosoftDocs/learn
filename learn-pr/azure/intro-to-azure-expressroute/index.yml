@@ -3,7 +3,7 @@ uid: learn.azure.intro-to-azure-expressroute
 metadata:
   gs-content.levels: 200
   gs-content.locale: en-us
-  gs-duration: 18
+  gs-duration: 23
   gs-last.refresh.date: null
   gs-modality: module
   gs-products:
@@ -24,14 +24,14 @@ metadata:
   moduleType: introduction
   title: Introduction to Azure ExpressRoute
   description: This module explains what Azure ExpressRoute does, how it works, and when you should choose to use Azure ExpressRoute as a solution.
-  ms.date: 07/03/2025
+  ms.date: 11/09/2026
   author: Orin-Thomas
   ms.author: orthomas
   ms.custom: team=cloud_advocates
   ms.topic: module-intro-to-product
   ms.service: azure-expressroute
 title: Introduction to Azure ExpressRoute
-summary: Azure ExpressRoute allows your organization to use a high-speed private connection to connect on-premises networks to Microsoft cloud services including Microsoft Azure and Microsoft 365. This module explains what Azure ExpressRoute does, how it works, and when you should choose to use Azure ExpressRoute as a solution. 
+summary: Azure ExpressRoute provides private connectivity between on-premises networks and Microsoft cloud services. Learn how it works, when it meets your organization's needs, and how it differs from Azure VPN connectivity. Microsoft 365 connectivity is available only in specific, Microsoft-authorized scenarios.
 abstract: |
   In this module, you will:
   - Learn what Azure ExpressRoute is and the functionality it provides.
