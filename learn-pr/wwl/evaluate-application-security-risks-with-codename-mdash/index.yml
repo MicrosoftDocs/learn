@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.wwl.evaluate-application-security-risks-with-codename-mdash
+metadata:
+  title: Evaluate Application Security Risks with Codename MDASH
+  description: "Evaluate how Codename MDASH detects, validates, and prioritizes complex source-code vulnerabilities so security and engineering teams can focus remediation decisions."
+  ms.date: 11/09/2026
+  author: kirkpatrickalbert-prog
+  ms.author: akirkpatrick
+  ms.topic: module
+  ms.service: microsoft-defender
+  ai-usage: ai-generated
+title: Evaluate application security risks with Codename MDASH
+summary: Evaluate how Codename MDASH helps a robotic pharmacy-delivery service investigate source-code risks that could expose customer orders or disrupt pharmacy operations. Identify appropriate use cases, integration choices, and preview limitations before adoption.
+abstract: |
+  After completing this module, you can:
+  - Explain the source-code security problems that Codename MDASH is designed to address.
+  - Describe how the multi-model agentic pipeline discovers, validates, and consolidates vulnerability findings.
+  - Evaluate findings by using severity, confidence, exposure context, and supporting evidence.
+  - Identify scenarios where Codename MDASH adds value and recognize its current preview limitations.
+  - Investigate a simulated Caldova security incident and review vulnerable code with Codename MDASH.
+prerequisites: |
+  - Basic familiarity with how software is developed and tested.
+  - No prior experience with Codename MDASH or AI-based code scanning is required.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- security-engineer
+- developer
+products:
+- microsoft-defender
+units:
+- learn.wwl.evaluate-application-security-risks-with-codename-mdash.introduction
+- learn.wwl.evaluate-application-security-risks-with-codename-mdash.recognize-gaps-conventional-code-scanning
+- learn.wwl.evaluate-application-security-risks-with-codename-mdash.explain-how-mdash-validates-vulnerabilities
+- learn.wwl.evaluate-application-security-risks-with-codename-mdash.prioritize-findings-exposure-context
+- learn.wwl.evaluate-application-security-risks-with-codename-mdash.evaluate-where-mdash-adds-value
+- learn.wwl.evaluate-application-security-risks-with-codename-mdash.exercise-secure-caldova-pharmacy
+- learn.wwl.evaluate-application-security-risks-with-codename-mdash.knowledge-check
+- learn.wwl.evaluate-application-security-risks-with-codename-mdash.summary
+badge:
+  uid: learn.wwl.evaluate-application-security-risks-with-codename-mdash.badge

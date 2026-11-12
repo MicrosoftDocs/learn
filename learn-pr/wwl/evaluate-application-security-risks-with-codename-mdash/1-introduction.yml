@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.evaluate-application-security-risks-with-codename-mdash.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "This unit defines Codename MDASH and introduces its role in an application security program."
+  ms.date: 10/28/2026
+  author: kirkpatrickalbert-prog
+  ms.author: akirkpatrick
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/1-introduction.md)]
