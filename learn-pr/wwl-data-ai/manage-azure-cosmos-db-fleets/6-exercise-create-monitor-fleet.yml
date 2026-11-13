@@ -4,8 +4,8 @@ title: Exercise - Create and monitor a fleet
 metadata:
   title: Exercise - Create and Monitor a Fleet
   description: "Create a fleet and a pooled fleetspace, enroll two Azure Cosmos DB accounts, read pool and dedicated throughput in Azure Monitor, and send fleet analytics to Data Lake Storage Gen2."
-  ms.date: 10/03/2026
-  author: wwlpublish
+  ms.date: 11/12/2026
+  author: MScalopez
   ms.author: calopez
   ms.topic: unit
   ai-usage: ai-generated

@@ -31,8 +31,8 @@ metadata:
   gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/manage-azure-cosmos-db-fleets/index.yml
   title: Manage Azure Cosmos DB at Scale with Fleets
   description: "Organize many Azure Cosmos DB accounts into a fleet, share throughput across accounts and subscriptions with fleetspace pools, and analyze estate-wide usage and cost with fleet analytics."
-  ms.date: 10/03/2026
-  author: wwlpublish
+  ms.date: 11/12/2026
+  author: MScalopez
   ms.author: calopez
   ms.topic: module
   ms.service: azure-cosmos-db
@@ -46,10 +46,10 @@ abstract: |
   - Configure fleet-level throughput management by using fleetspaces and pools.
   - Configure fleet monitoring with fleet analytics.
 prerequisites: |
-  - Knowledge of request units and throughput models in Azure Cosmos DB, including manual and autoscale throughput
-  - Knowledge of monitoring Azure Cosmos DB with metrics in Azure Monitor
-  - Basic understanding of multitenant application patterns
-  - Basic familiarity with Azure subscriptions, resource groups, and the Azure portal
+  - Knowledge of request units and throughput models in Azure Cosmos DB, including manual and autoscale throughput.
+  - Knowledge of monitoring Azure Cosmos DB with metrics in Azure Monitor.
+  - Basic understanding of multitenant application patterns.
+  - Basic familiarity with Azure subscriptions, resource groups, and the Azure portal.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate

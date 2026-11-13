@@ -43,10 +43,10 @@ abstract: |
   - Configure multi-region reads and writes, including conflict resolution policies.
   - Configure service-managed, forced, and partition-level failover.
 prerequisites: |
-  - Experience creating Azure Cosmos DB for NoSQL accounts, databases, and containers
-  - Experience using the Azure Cosmos DB SDK to read and write items in C# or Python
-  - Knowledge of Azure Cosmos DB consistency levels and their trade-offs
-  - Basic knowledge of Azure resource management with the Azure CLI
+  - Experience creating Azure Cosmos DB for NoSQL accounts, databases, and containers.
+  - Experience using the Azure Cosmos DB SDK to read and write items in C# or Python.
+  - Knowledge of Azure Cosmos DB consistency levels and their trade-offs.
+  - Basic knowledge of Azure resource management with the Azure CLI.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate

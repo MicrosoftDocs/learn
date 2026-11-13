@@ -3,9 +3,9 @@ uid: learn.wwl.manage-azure-cosmos-db-fleets.summary
 title: Summary
 metadata:
   title: Summary
-  description: "Recap the fleet resource model, the throughput pool rules, and the fleet analytics schema, and find further reading on Azure Cosmos DB fleets."
-  ms.date: 10/03/2026
-  author: wwlpublish
+  description: "Review how Azure Cosmos DB fleets organize resources. Recap the rules for pooled throughput. Review the schema for fleet analytics. Find resources for further reading."
+  ms.date: 11/12/2026
+  author: MScalopez
   ms.author: calopez
   ms.topic: unit
   ai-usage: ai-generated
