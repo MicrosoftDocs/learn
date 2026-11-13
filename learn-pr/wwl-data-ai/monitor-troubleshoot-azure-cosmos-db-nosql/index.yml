@@ -38,10 +38,10 @@ abstract: |
   - Monitor physical partition utilization and end-to-end latency against service objectives.
   - Configure Azure Monitor alerts and analyze diagnostic logs in Log Analytics.
 prerequisites: |
-  - Experience using the Azure Cosmos DB SDK to read and write items in C# or Python
-  - Knowledge of request units and provisioned throughput in Azure Cosmos DB, including manual and autoscale throughput
-  - Knowledge of partitioning in Azure Cosmos DB, including logical and physical partitions
-  - Basic familiarity with Azure Monitor and the Azure portal
+  - Experience using the Azure Cosmos DB SDK to read and write items in C# or Python.
+  - Knowledge of request units and provisioned throughput in Azure Cosmos DB, including manual and autoscale throughput.
+  - Knowledge of partitioning in Azure Cosmos DB, including logical and physical partitions.
+  - Basic familiarity with Azure Monitor and the Azure portal.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate

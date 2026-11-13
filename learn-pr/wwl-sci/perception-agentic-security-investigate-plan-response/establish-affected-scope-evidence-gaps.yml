@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.perception-agentic-security-investigate-plan-response.establish-affected-scope-evidence-gaps
+title: Establish affected scope and evidence gaps
+metadata:
+  title: Establish affected scope and evidence gaps
+  description: "Separate affected entities from investigation leads, distinguish absent findings from absent coverage, and turn each consequential gap into follow-up."
+  ms.date: 11/09/2026
+  author: wwlpublish
+  ms.author: hrasheed
+  ms.topic: unit
+  ROBOTS: NOINDEX
+  no_index_ks: true
+durationInMinutes: 6
+content: |
+  [!include[](includes/establish-affected-scope-evidence-gaps.md)]

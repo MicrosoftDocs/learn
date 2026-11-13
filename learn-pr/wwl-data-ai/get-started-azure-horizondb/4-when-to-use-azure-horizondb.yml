@@ -4,8 +4,8 @@ title: Decide when to use Azure HorizonDB
 metadata:
   zone_pivot_groups: video-or-text
   title: Decide when to use Azure HorizonDB
-  description: "Evaluate when Azure HorizonDB is the right choice by mapping its capabilities to transactional, AI, read-scale, and hybrid workloads, and account for preview limitations."
-  ms.date: 09/29/2026
+  description: "Evaluate Azure HorizonDB workloads, backup retention, geo-restore, security requirements, maintenance, connectivity, and current service limitations."
+  ms.date: 11/12/2026
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit

@@ -1,0 +1,84 @@
+### YamlMime:Module
+uid: learn.devrel.understand-network-atc-windows-server
+metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 92
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products: null
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+  - network-engineer
+  - systems-administrator
+  gs-skills:
+  - IT Networking
+  - Infrastructure Management
+  - Virtualization
+  gs-solution.area: Cloud & AI Platforms
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/advocates/understand-network-atc-windows-server/index.yml
+  title: Understand Network ATC on Windows Server 2025
+  description: Plan, deploy, manage, and troubleshoot Network ATC host networking for Windows Server 2025 Hyper-V clusters.
+  ms.date: 11/10/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: module
+  ai-usage: ai-assisted
+  ms.service: windows-server
+title: Understand Network ATC on Windows Server 2025
+summary: |
+  Network ATC turns host-networking requirements into managed configuration. You declare how physical adapters will carry management, compute, and storage traffic. Network ATC creates the required host resources, applies policy, and reconciles configuration drift.
+
+  This module follows a Windows Server 2025 Hyper-V cluster from design through operation. It explains the settings Network ATC owns, the dependencies it doesn't own, and the evidence needed before workloads can use a changed network.
+
+  > [!NOTE]
+  > Network ATC is the full product name and isn't an acronym or abbreviation. ATC as an acronym doesn't need to be spelled out and has no official expansion.
+abstract: |
+  After completing this module, you can:
+
+  - Select an intent topology from workload, isolation, capacity, and failure-domain requirements.
+  - Assess host, adapter, and physical-network readiness.
+  - Create correctly scoped intents and explain the resulting resources.
+  - Apply justified overrides without introducing competing configuration ownership.
+  - Integrate host networking with Hyper-V, SMB, and live migration.
+  - Validate desired state, every expected node, and actual workload paths.
+  - Distinguish automatic drift remediation from an intentional policy change.
+  - Diagnose provisioning, fabric, RDMA, and authentication failures.
+  - Plan adoption, maintenance, monitoring, and recovery without assuming automatic rollback.
+prerequisites: |
+  Before starting this module, you should have:
+
+  - Experience administering Windows Server and running PowerShell commands.
+  - Familiarity with Hyper-V, failover clustering, physical networking, virtual LANs, IP addressing, and SMB storage.
+  - Familiarity with remote direct memory access and data center bridging.
+iconUrl: /training/achievements/generic-badge.svg
+ratingEnabled: false
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- windows-server
+subjects:
+- networking
+- infrastructure
+units:
+- learn.devrel.understand-network-atc-windows-server.introduction
+- learn.devrel.understand-network-atc-windows-server.understand-network-intents
+- learn.devrel.understand-network-atc-windows-server.plan-network-topology
+- learn.devrel.understand-network-atc-windows-server.prepare-network-infrastructure
+- learn.devrel.understand-network-atc-windows-server.create-network-intents
+- learn.devrel.understand-network-atc-windows-server.configure-storage-networking
+- learn.devrel.understand-network-atc-windows-server.configure-virtual-machine-networking
+- learn.devrel.understand-network-atc-windows-server.configure-network-overrides
+- learn.devrel.understand-network-atc-windows-server.validate-network-health
+- learn.devrel.understand-network-atc-windows-server.manage-network-lifecycle
+- learn.devrel.understand-network-atc-windows-server.troubleshoot-network-configuration
+- learn.devrel.understand-network-atc-windows-server.assess-network-performance-under-failure
+- learn.devrel.understand-network-atc-windows-server.knowledge-check
+- learn.devrel.understand-network-atc-windows-server.summary
+badge:
+  uid: learn.devrel.understand-network-atc-windows-server.badge

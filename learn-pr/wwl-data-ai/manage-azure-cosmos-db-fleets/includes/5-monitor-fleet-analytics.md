@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=585450e6-6d38-4a1a-a0dc-728e465352b9]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Contoso's finance request, cost by customer for the quarter, is the kind of question that per-account monitoring answers badly. Metrics live in each account. They're retained for 93 days, and joining 200 of them by hand is a week of work that has to be repeated every quarter. Fleet analytics exists for that class of question. This unit covers what it collects, how to send it somewhere you can query, and how to read the schema it produces.
 
 ## What fleet analytics collects, and when to reach for it
@@ -83,3 +94,5 @@ The `ResourceName` filter restricts the count to data-plane operations, so contr
 Cost analysis works the same way against `FactMeterUsageHourly`, joined to `DimMeter` for the meter's name and base price and to `DimResource` for the account it belongs to. Storage rankings come from `FactResourceUsageHourly`, whose `MaxDataStorageInKB` and `MaxIndexStorageInKB` columns are reported in kilobytes and usually want converting before they're charted.
 
 In a Fabric workspace, save a query as a view and visualize it with Power BI directly from the SQL endpoint. Against Data Lake Storage Gen2, create Delta tables over the exported folders in a Spark notebook and query them with SQL. The schema is identical either way; only the surrounding tooling changes.
+
+::: zone-end

@@ -10,9 +10,6 @@ Organizations that run mission-critical applications on PostgreSQL need a databa
 
 This module introduces Azure HorizonDB. You explore what the service is, how its disaggregated compute-and-storage and database-as-a-log architecture works, and how to decide when it's the right choice for a workload.
 
-> [!NOTE]
-> Azure HorizonDB is currently in preview.
-
 By the end of this module, you can describe what Azure HorizonDB is, explain how its architecture delivers predictable performance and high availability, identify the components of an Azure HorizonDB cluster, and evaluate when to use it.
 
 ::: zone-end

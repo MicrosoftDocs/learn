@@ -5,7 +5,7 @@ metadata:
   zone_pivot_groups: video-or-text
   title: Introduction
   description: "Introduction to Azure HorizonDB, an AI-ready, PostgreSQL-compatible database service for mission-critical workloads."
-  ms.date: 09/29/2026
+  ms.date: 11/12/2026
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit

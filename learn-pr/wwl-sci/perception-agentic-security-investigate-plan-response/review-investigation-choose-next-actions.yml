@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.perception-agentic-security-investigate-plan-response.review-investigation-choose-next-actions
+title: Review an investigation and choose the next actions
+metadata:
+  title: Review an investigation and choose the next actions
+  description: "Work through a fictional incident to review a sample report against its evidence, update the response as new evidence arrives, and prepare the incident handoff."
+  ms.date: 11/09/2026
+  author: wwlpublish
+  ms.author: hrasheed
+  ms.topic: unit
+  ROBOTS: NOINDEX
+  no_index_ks: true
+durationInMinutes: 13
+content: |
+  [!include[](includes/review-investigation-choose-next-actions.md)]

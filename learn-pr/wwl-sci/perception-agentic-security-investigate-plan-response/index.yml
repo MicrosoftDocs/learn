@@ -1,0 +1,78 @@
+### YamlMime:Module
+uid: learn.wwl.perception-agentic-security-investigate-plan-response
+metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 56
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - microsoft-defender
+    - azure
+    - entra
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - security-operations-analyst
+    - security-engineer
+    - solution-architect
+    - administrator
+  gs-skills:
+    - "Agentic AI"
+    - "Agent Operations"
+    - "Security Operations Management"
+    - "Threat Management"
+    - "Incident Response"
+    - "Security Automation"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/perception-agentic-security-investigate-plan-response/index.yml
+  title: Investigate Detected Threats and Plan a Response in Microsoft Perception
+  description: "Use Perception to turn a detected threat into checked investigation findings and a justified response plan. Review the evidence, distinguish affected entities from investigation leads, and assign actions and route unresolved questions to the people who handle them."
+  ms.date: 11/09/2026
+  author: wwlpublish
+  ms.author: hrasheed
+  ms.topic: module
+  ms.service: defender-xdr
+  ai-usage: ai-assisted
+  ROBOTS: NOINDEX
+  no_index_ks: true
+title: Investigate detected threats and plan a response in Microsoft Perception
+summary: 'Use Perception to turn a detected threat into checked investigation findings and a justified response plan. Review the evidence, distinguish affected entities from investigation leads, and assign actions and route unresolved questions to the people who handle them.'
+abstract: |
+  In this module, you learn how to:
+  - Define an investigation question and select a suitable alert or incident input
+  - Inspect an investigation's progress, evidence, and report
+  - Validate the incident verdict and attack timeline against supporting evidence
+  - Distinguish affected entities from possible scope and unassessed resources
+  - Prepare a prioritized response plan with owners, approval requirements, and completion checks
+prerequisites: |
+  - Knowledge of Perception's capabilities and coordinated workflows, as covered in [What is Microsoft Perception?](/training/modules/project-perception-agentic-security-introduction/?azure-portal=true) and [Understand how Microsoft Perception coordinates security operations](/training/modules/project-perception-agentic-security-orientation/?azure-portal=true)
+  - Familiarity with starting, supervising, and reviewing sessions, as covered in Run and supervise sessions in Microsoft Perception, or equivalent experience
+  - Familiarity with Microsoft Defender incidents, alerts, affected entities, and incident-response procedures
+  - No live environment is required to complete the module. To apply the investigation procedures, you need Perception access in the Microsoft Defender portal, the Attack Investigation Agent configured and enabled, and permission to run and supervise its sessions
+  - The Attack Investigation Agent requires Microsoft 365 E5, Microsoft Defender XDR, and onboarding to the Microsoft Defender data lake and unified security experience. The agent also needs access to the workloads and scoped resources required for the investigation.
+iconUrl: /training/achievements/generic-badge.svg
+hidden: true
+levels:
+- intermediate
+roles:
+- administrator
+- security-engineer
+products:
+- defender-xdr
+subjects:
+- threat-protection
+units:
+- learn.wwl.perception-agentic-security-investigate-plan-response.introduction
+- learn.wwl.perception-agentic-security-investigate-plan-response.understand-investigation-develops
+- learn.wwl.perception-agentic-security-investigate-plan-response.run-inspect-investigation
+- learn.wwl.perception-agentic-security-investigate-plan-response.validate-verdict-attack-story
+- learn.wwl.perception-agentic-security-investigate-plan-response.establish-affected-scope-evidence-gaps
+- learn.wwl.perception-agentic-security-investigate-plan-response.plan-response-handover-ownership
+- learn.wwl.perception-agentic-security-investigate-plan-response.review-investigation-choose-next-actions
+- learn.wwl.perception-agentic-security-investigate-plan-response.knowledge-check
+- learn.wwl.perception-agentic-security-investigate-plan-response.summary
+badge:
+  uid: learn.wwl.perception-agentic-security-investigate-plan-response.badge

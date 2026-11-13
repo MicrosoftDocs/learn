@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.perception-agentic-security-configure-validate-agents.verify-analyst-access
+title: Verify security practitioner access
+metadata:
+  title: Verify security practitioner access
+  description: "Establish the access people need, check the configuration with the intended account, and keep the test within the approved role."
+  ms.date: 11/09/2026
+  author: wwlpublish
+  ms.author: hrasheed
+  ms.topic: unit
+  ROBOTS: NOINDEX
+  no_index_ks: true
+durationInMinutes: 4
+content: |
+  [!include[](includes/verify-analyst-access.md)]

@@ -1,3 +1,11 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=e61b6c83-7fdd-4dbf-a2da-496c77c2ac08]
+
+::: zone-end
+
+::: zone pivot="text"
+
 Isolation is the easiest promise a business-to-business platform can make and the hardest one to operate. Giving every customer a database account of their own settles the questions a security review asks, because nothing is shared: not the data, not the keys, not the throughput. The cost of that promise arrives later, in the operations team, once the number of accounts passes the point where anyone can hold the estate in their head.
 
 At Contoso, a business-to-business software provider, the platform team reached that point somewhere past 200 customers. Each customer runs on a dedicated Azure Cosmos DB for NoSQL account, and those accounts are scattered across several subscriptions. Every account is provisioned for its own peak, so the estate carries a large amount of throughput that almost never runs. Nobody can answer a question such as which 20 customers drive the most traffic without opening 20 portal panes, and a finance request for cost by customer takes a week. The team refuses to merge customers into shared containers, because the isolation is the product.
@@ -7,3 +15,8 @@ Azure Cosmos DB fleets are built for exactly that position. A fleet groups accou
 In this module, you learn what a fleet, a fleetspace, and a pool are, how to create a fleet and enroll accounts that span subscriptions, how to size a throughput pool and apply the rules that govern which accounts can share one, and how to export and query fleet analytics.
 
 By the end of this module, you can organize a multitenant Azure Cosmos DB estate into a fleet, share throughput across accounts with a pool, and monitor usage and cost across the whole fleet from a single dataset.
+
+::: zone-end
+
+> [!NOTE]
+> We recognize that different people like to learn in different ways. You can choose to complete this module in video-based format or you can read the content as text and images. The text contains greater detail than the videos, so in some cases you might want to refer to it as supplemental material to the video presentation.
