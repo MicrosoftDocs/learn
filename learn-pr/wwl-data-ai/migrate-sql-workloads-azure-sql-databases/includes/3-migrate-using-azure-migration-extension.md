@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=22e66491-8ad9-4182-bf91-96cea4ac839e]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 If you can afford to take the database offline while you migrate to Azure, you have a few tools you can use.
 
 In our bicycle manufacturing scenario, the HR database is considered business-critical but is rarely used at weekends. You've planned to execute an offline migration between Friday evening and Monday morning, but you want to assess the best migration method.
@@ -242,3 +253,5 @@ New-AzDataMigrationToSqlDb `
 ```
 
 To learn more about database migration commands, refer to the following links: [PowerShell module for data migration](/powershell/module/az.datamigration) and [Azure CLI for data migration](/cli/azure/datamigration).
+
+::: zone-end
