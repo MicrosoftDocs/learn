@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.perception-agentic-security-configure-validate-agents.understand-agent-readiness
+title: Understand what makes an agent ready for use
+metadata:
+  title: Understand what makes an agent ready for use
+  description: "Learn how requirements connect to agent and security practitioner access. Understand why authority to set up the agent and the two kinds of access must stay separate, and why you test the setup with a security practitioner's account."
+  ms.date: 11/09/2026
+  author: wwlpublish
+  ms.author: hrasheed
+  ms.topic: unit
+  ROBOTS: NOINDEX
+  no_index_ks: true
+durationInMinutes: 5
+content: |
+  [!include[](includes/understand-agent-readiness.md)]
