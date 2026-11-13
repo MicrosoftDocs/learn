@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.plan-integrated-security-operations-microsoft-defender.explain-isoc-operating-model
+title: Explain the ISOC operating model
+metadata:
+  title: Explain the ISOC Operating Model
+  description: "Explain how ISOC brings security signals, context, workflows, and response capabilities together in Microsoft Defender."
+  ms.date: 10/30/2026
+  author: wwlpublish
+  ms.author: hrasheed
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-explain-operating-model.md)]

@@ -1,3 +1,11 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=af096b9c-bbf9-4904-bf96-1288a49bd080]
+
+::: zone-end
+
+::: zone pivot="text"
+
 Azure SQL Database is a Platform as a Service (PaaS) database engine that provides a complete development and deployment environment in the cloud, which can be used for simple cloud-based applications and for advanced enterprise applications.
 
 Migrating to SQL Database allows you to modernize your application by taking advantage of its PaaS capabilities. This enables you to eliminate dependencies on technical components that are scoped at the instance level, such as SQL Agent jobs. Azure SQL Database offers a low-maintenance solution that can be an excellent choice for certain workloads.
@@ -21,4 +29,9 @@ Throughout this module, we're using an example scenario to explain key data migr
 Suppose you work for a company that builds bikes and bicycle parts. You have several legacy database servers that you want to upgrade, including a product database, a parts stock database, and a human resources database. You also want to move from a capital expenditure model to an operational expenditure model, and benefit from the scalability and availability of Azure services. You plan to migrate your SQL Server databases to Azure SQL Database. Your board of directors has asked you to plan the migration project and has made you responsible for the execution of the migration tasks.
 
 You'll learn how to migrate SQL Server databases to Azure SQL Database. You'll begin by exploring the pre-migration considerations you need to take into account before a migration, and how to create an Azure SQL database. You'll then explore the different methods for offline and online migrations, and look at ways to move data to Azure SQL Database.
+
+::: zone-end
+
+> [!NOTE]
+> We recognize that different people like to learn in different ways. You can choose to complete this module in video-based format or you can read the content as text and images. The text contains greater detail than the videos, so in some cases you might want to refer to it as supplemental material to the video presentation.
 

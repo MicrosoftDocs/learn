@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.perception-agentic-security-run-supervise-sessions.validate-findings
+title: Validate the findings
+metadata:
+  title: Validate the Findings
+  description: "Trace important findings to the evidence, check a report against its source, and decide whether missing work changes what can be used."
+  ms.date: 11/09/2026
+  author: wwlpublish
+  ms.author: hrasheed
+  ms.topic: unit
+  ROBOTS: NOINDEX
+  no_index_ks: true
+durationInMinutes: 7
+content: |
+  [!include[](includes/validate-findings.md)]

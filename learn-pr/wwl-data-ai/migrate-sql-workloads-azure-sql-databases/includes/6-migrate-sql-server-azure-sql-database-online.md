@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=0bb118b6-e382-48a2-817c-7386559f9c24]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 If you need a database to remain online to users throughout the migration process, you can use transactional replication to move the data. Transactional replication is the only online method available for migrating to Azure SQL Database.
 
 In our bicycle manufacturer scenario, warehouses run on a 24 hour, 7 days a week basis, and there are no periods of inactivity. Your board of directors wants to be sure that the inventory database is constantly available, even during the migration to Azure SQL Database.
@@ -261,3 +272,5 @@ To view the synchronization status, right-click on the subscription, select **Vi
 After the data is fully replicated to Azure SQL Database, you can direct the connections to the subscriber database, and then stop and remove the replication.
 
 To learn more about supported configurations, see [Replication to Azure SQL Database](/azure/azure-sql/database/replication-to-sql-database).
+
+::: zone-end

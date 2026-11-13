@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.perception-agentic-security-run-supervise-sessions.understand-requests-playbooks-sessions
+title: Understand how requests, playbooks, and sessions connect
+metadata:
+  title: Understand How Requests, Playbooks, and Sessions Connect
+  description: "Follow the work from request to result, and check what a completed session establishes."
+  ms.date: 11/09/2026
+  author: wwlpublish
+  ms.author: hrasheed
+  ms.topic: unit
+  ROBOTS: NOINDEX
+  no_index_ks: true
+durationInMinutes: 4
+content: |
+  [!include[](includes/understand-requests-playbooks-sessions.md)]

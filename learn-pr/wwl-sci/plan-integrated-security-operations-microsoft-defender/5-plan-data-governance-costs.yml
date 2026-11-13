@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.plan-integrated-security-operations-microsoft-defender.plan-data-governance-costs
+title: Plan data, governance, retention, and costs
+metadata:
+  title: Plan ISOC Data, Governance, Retention, and Costs
+  description: "Plan data scope, access, retention, operational ownership, and billing for an ISOC adoption."
+  ms.date: 10/30/2026
+  author: wwlpublish
+  ms.author: hrasheed
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/5-plan-data-governance-costs.md)]
