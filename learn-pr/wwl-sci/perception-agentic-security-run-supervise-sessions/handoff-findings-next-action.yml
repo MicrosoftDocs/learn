@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.perception-agentic-security-run-supervise-sessions.handoff-findings-next-action
+title: Hand off the findings and next action
+metadata:
+  title: Hand Off the Findings and Next Action
+  description: "State what the findings support, and leave a clear handoff for the next person."
+  ms.date: 11/09/2026
+  author: wwlpublish
+  ms.author: hrasheed
+  ms.topic: unit
+  ROBOTS: NOINDEX
+  no_index_ks: true
+durationInMinutes: 4
+content: |
+  [!include[](includes/handoff-findings-next-action.md)]
