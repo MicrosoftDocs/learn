@@ -3,7 +3,7 @@ uid: learn.deploy-azure-vmware-solution.plan-azure-vmware-solution
 metadata:
   title: Plan an Azure VMware Solution deployment
   description: Plan an Azure VMware Solution deployment.
-  ms.date: 11/15/2025
+  ms.date: 11/10/2026
   author: Orin-Thomas
   ms.author: orthomas
   ms.topic: unit
@@ -16,26 +16,25 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "What version of vCenter Server is deployed with Azure VMware Solution?"
+  - content: "What should you use to determine software compatibility for a new Azure VMware Solution private cloud?"
     choices:
-    - content: "7.0 Update 3o"
+    - content: "The current Microsoft-documented AVS software baseline and the compatibility requirements of the source environment and migration tools."
       isCorrect: true
-      explanation: "Azure VMware Solution deploys with vSphere 7.0 Update 3o."
-    - content: "7.0 Update 1"
+      explanation: "Microsoft validates the managed platform. New-deployment versions and existing-cloud update schedules can differ, so check the current documented baseline and compatibility requirements."
+    - content: "Assume every private cloud automatically runs the newest upstream VMware release."
       isCorrect: false
-      explanation: "Azure VMware Solution doesn't deploy with vSphere 7.0 Update 1."
-    - content: "6.5 Update 2"
+      explanation: "An upstream release doesn't establish the software available in an AVS private cloud. Microsoft validates and manages the supported platform."
+    - content: "Use a fixed software table without checking the deployment date."
       isCorrect: false
-      explanation: "Azure VMware Solution doesn't deploy with vSphere 6.5 Update 2."
-  - content: "What is the minimum number of nodes required for Azure VMware Solution?"
+      explanation: "A static table can become outdated and doesn't establish an existing private cloud's running version. Check current Microsoft guidance and the source and migration-tool requirements."
+  - content: "What is the minimum host count for a standard Azure VMware Solution cluster?"
     choices:
     - content: "Four"
       isCorrect: false
-      explanation: "For a minimum deployment, Azure VMware Solution requires fewer than four nodes."
+      explanation: "The supported minimum for a standard cluster is three hosts. Four hosts are recommended for AV64 operational resilience, but aren't the minimum."
     - content: "Eight"
       isCorrect: false
-      explanation: "For a minimum deployment, Azure VMware Solution requires fewer than eight nodes."
+      explanation: "A standard cluster requires at least three hosts. A supported stretched cluster has a different minimum of six hosts, split equally across two zones."
     - content: "Three"
       isCorrect: true
-      explanation: "For a minimum deployment, Azure VMware Solution requires three nodes."
-
+      explanation: "A standard Azure VMware Solution cluster supports 3-16 hosts, but the selected storage policy can require more than the three-host service minimum. For example, OSA RAID-5 with FTT 1 needs four hosts. Stretched clusters require at least six hosts and a separate policy assessment."

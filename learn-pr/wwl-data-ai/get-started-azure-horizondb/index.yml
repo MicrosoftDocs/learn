@@ -27,7 +27,7 @@ metadata:
   gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/get-started-azure-horizondb/index.yml
   title: Get started with Azure HorizonDB
   description: "Learn what Azure HorizonDB is, how its disaggregated compute-and-storage and database-as-a-log architecture works, and when to use this AI-ready, PostgreSQL-compatible database service for transactional, AI, and read-scale workloads."
-  ms.date: 09/29/2026
+  ms.date: 11/12/2026
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: module-intro-to-product
@@ -39,7 +39,7 @@ abstract: |
   By the end of this module, you're able to:
   - Describe what Azure HorizonDB is and the mission-critical workloads it's designed for.
   - Explain how the disaggregated compute-and-storage and database-as-a-log architecture delivers predictable performance and high availability.
-  - Identify the core components of an Azure HorizonDB cluster, including compute replicas, WAL and data storage fleets, and zone-resilient blob storage.
+  - Identify the core components of an Azure HorizonDB cluster, including compute pools, writer and reader nodes, endpoints, and zone-resilient storage.
   - Evaluate when Azure HorizonDB is the right choice for transactional, AI, and large-scale read workloads.
   - Create an Azure HorizonDB cluster in the Azure portal and connect to it to run a query.
 prerequisites: |

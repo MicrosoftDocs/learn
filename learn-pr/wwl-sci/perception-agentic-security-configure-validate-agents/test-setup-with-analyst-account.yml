@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.perception-agentic-security-configure-validate-agents.test-setup-with-analyst-account
+title: Test the setup with a security practitioner's account
+metadata:
+  title: Test the setup with a security practitioner's account
+  description: "Test with the account used for security work, record evidence that answers the readiness question, and separate readiness from security conclusions."
+  ms.date: 11/09/2026
+  author: wwlpublish
+  ms.author: hrasheed
+  ms.topic: unit
+  ROBOTS: NOINDEX
+  no_index_ks: true
+durationInMinutes: 6
+content: |
+  [!include[](includes/test-setup-with-analyst-account.md)]

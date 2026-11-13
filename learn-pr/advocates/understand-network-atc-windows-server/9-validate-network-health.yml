@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.understand-network-atc-windows-server.validate-network-health
+title: Validate network health
+metadata:
+  title: Validate Network Health
+  description: Validate intent state across every expected node, observe configuration reconciliation, and monitor ongoing workload health.
+  ms.date: 11/10/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 6
+content: |
+  [!include[](includes/9-validate-network-health.md)]

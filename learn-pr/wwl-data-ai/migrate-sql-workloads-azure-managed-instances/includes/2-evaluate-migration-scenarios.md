@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=3e1cc721-3cfc-4040-8cbf-8249a1356d97]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Azure SQL managed instance is designed to make it easy to host existing databases in the cloud by providing almost 100 percent compatibility with on-premises versions of SQL Server.
 
 In your sports clothing company, you have a database that stores the product details for your entire catalog. The website uses the database to display product details to customers, by the sales representatives' smartphone apps to keep them informed about the catalog, and by a data analysis solution to populate product dimensions in a data cube. The database is considered business-critical by the board of directors. You've been asked to migrate this database to the cloud so the systems that depend on it need as little modification as possible. You want to evaluate Azure SQL Managed Instance for this project.
@@ -46,3 +57,5 @@ While most of the tools facilitate [migration to Azure SQL Database](/training/m
 
 > [!Tip]
 > Learn more about how to [design a SQL Server migration strategy](/training/modules/introduction-data-platform-modernization?azure-portal=true).
+
+::: zone-end

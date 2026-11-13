@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.perception-agentic-security-configure-validate-agents.verify-data-resource-access
+title: Verify required data and resource access
+metadata:
+  title: Verify required data and resource access
+  description: "Confirm that required services are available, check the agent's access to required data, and confirm data access during a test."
+  ms.date: 11/09/2026
+  author: wwlpublish
+  ms.author: hrasheed
+  ms.topic: unit
+  ROBOTS: NOINDEX
+  no_index_ks: true
+durationInMinutes: 4
+content: |
+  [!include[](includes/verify-data-resource-access.md)]

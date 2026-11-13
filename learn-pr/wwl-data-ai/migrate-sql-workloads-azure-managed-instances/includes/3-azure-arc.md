@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=ca9d5684-d43c-4d84-890b-831ad2b81ec3]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Azure Arc provides a streamlined pathway to migrate SQL Server databases to Azure SQL Managed Instance directly from the Azure portal. When your SQL Server instance is enabled by Azure Arc, you gain access to integrated assessment, target selection, and migration capabilities—all managed through a unified experience.
 
 In our bicycle manufacturing company scenario, the distribution team runs business-critical databases that require minimal downtime during migration. The team wants to use the Azure portal for a simplified migration experience while maintaining control over the migration method.
@@ -24,3 +35,5 @@ Microsoft Copilot is integrated into the Azure portal migration experience to as
 Additionally, Azure Arc provides visibility into your overall migration status, showing the number of databases migrated, migrations in progress, and your recommended target configuration. This centralized view helps you track progress across your data estate and ensures nothing is overlooked during large-scale migration projects.
 
 For detailed guidance on migrating SQL Server databases to Azure SQL Managed Instance using Azure Arc, see [Migration to Azure SQL Managed Instance](/sql/sql-server/azure-arc/migrate-to-azure-sql-managed-instance).
+
+::: zone-end

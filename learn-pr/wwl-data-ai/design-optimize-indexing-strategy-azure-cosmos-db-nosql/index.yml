@@ -41,10 +41,10 @@ abstract: |
   - Configure composite and spatial indexes and computed properties.
   - Implement global secondary indexes to convert cross-partition queries into single-partition queries.
 prerequisites: |
-  - Experience writing queries against Azure Cosmos DB for NoSQL
-  - Experience using the Azure Cosmos DB SDK to read and write items in C# or Python
-  - Knowledge of partitioning in Azure Cosmos DB, including logical and physical partitions
-  - Basic knowledge of Azure resource management with the Azure CLI
+  - Experience writing queries against Azure Cosmos DB for NoSQL.
+  - Experience using the Azure Cosmos DB SDK to read and write items in C# or Python.
+  - Knowledge of partitioning in Azure Cosmos DB, including logical and physical partitions.
+  - Basic knowledge of Azure resource management with the Azure CLI.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate

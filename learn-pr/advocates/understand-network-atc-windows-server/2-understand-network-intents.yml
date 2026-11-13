@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.understand-network-atc-windows-server.understand-network-intents
+title: Understand network intents
+metadata:
+  title: Understand Network Intents
+  description: Explain intent roles, managed resources, configuration boundaries, standalone and cluster scope, and remoting requirements.
+  ms.date: 11/10/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-understand-network-intents.md)]

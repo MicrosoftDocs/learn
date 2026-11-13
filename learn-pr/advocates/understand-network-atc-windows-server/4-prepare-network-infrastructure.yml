@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.understand-network-atc-windows-server.prepare-network-infrastructure
+title: Prepare network infrastructure
+metadata:
+  title: Prepare Network Infrastructure
+  description: Prepare operational records, software, adapters, existing network resources, and the physical switch fabric.
+  ms.date: 11/10/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 9
+content: |
+  [!include[](includes/4-prepare-network-infrastructure.md)]

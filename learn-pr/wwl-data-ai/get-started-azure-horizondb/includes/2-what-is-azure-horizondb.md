@@ -19,17 +19,26 @@ Because the service is fully managed, Azure handles provisioning, patching, back
 
 ## Keep full PostgreSQL compatibility
 
-Azure HorizonDB retains full PostgreSQL compatibility. Existing PostgreSQL applications, drivers, and tools work against Azure HorizonDB, so you can migrate workloads without rewriting application code. Teams keep the PostgreSQL skills, extensions, and ecosystem they already use.
+Azure HorizonDB works with PostgreSQL applications, drivers, and tools. You keep your PostgreSQL skills and tooling, but assess supported extensions, engine versions, and service limits before you migrate a workload.
+
+For migration into HorizonDB, the documented options include dump and restore and an offline workflow through Azure Database Migration Service (DMS). Offline migration requires a period when source writes stop. DMS support for PostgreSQL-to-HorizonDB migration is in preview. Choose an approach based on workload size, compatibility, and acceptable downtime.
 
 ## Build AI-ready applications
 
-Azure HorizonDB is designed for intelligent applications. It provides native support for vector embeddings and integrates with Microsoft Foundry tools, so you can build retrieval-augmented generation (RAG) pipelines, recommendation engines, and semantic search directly in the database layer. Built-in AI model management and AI pipelines further simplify building intelligent applications close to your data.
+Azure HorizonDB supports retrieval-augmented generation (RAG), recommendation engines, and semantic search alongside your operational data. Its AI capabilities include:
+
+- **Vector and hybrid search**: The `pgvector` extension stores and searches vectors. Combine vector similarity with full-text search and semantic reranking to improve retrieval relevance.
+- **AI functions in SQL**: The `azure_ai` extension provides functions for embedding generation, text generation, extraction, and reranking by calling AI models.
+- **Durable AI pipelines**: Define workflows for chunking, embedding, and other AI tasks in SQL. Pipelines track progress and retry failed steps.
+- **AI Model Management (preview)**: Provision managed models for embedding, chat completion, and reranking, or register your own Microsoft Foundry model deployments.
+
+These capabilities let you prepare data and retrieve relevant context inside HorizonDB. Model calls still depend on configured model access and incur model usage charges. See [AI capabilities in Azure HorizonDB](/azure/horizondb/ai/ai-overview).
 
 | Characteristic | What it means |
-|---|---|
+| --- | --- |
 | Cloud-native and fully managed | Azure operates the database platform, including high availability, backups, and scaling. |
-| Built on PostgreSQL | Full compatibility with existing PostgreSQL applications, drivers, and tools. |
-| AI-ready | Native vector and embedding support, plus Microsoft Foundry integration. |
+| Built on PostgreSQL | Uses PostgreSQL applications, drivers, and tools, subject to supported versions, extensions, and service limits. |
+| AI-ready | Extension-based vector search, SQL AI functions, durable AI pipelines, and Microsoft Foundry integration. |
 | Built for scale | A disaggregated architecture scales compute and storage independently. |
 
 ::: zone-end
