@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.perception-agentic-security-investigate-plan-response.run-inspect-investigation
+title: Run and inspect an investigation
+metadata:
+  title: Run and inspect an investigation
+  description: "Confirm readiness and start the investigation, inspect progress and answer specific requests, and open the report to identify what it answers."
+  ms.date: 11/09/2026
+  author: wwlpublish
+  ms.author: hrasheed
+  ms.topic: unit
+  ROBOTS: NOINDEX
+  no_index_ks: true
+durationInMinutes: 7
+content: |
+  [!include[](includes/run-inspect-investigation.md)]

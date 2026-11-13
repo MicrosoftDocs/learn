@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.perception-agentic-security-investigate-plan-response.validate-verdict-attack-story
+title: Validate the verdict and attack story
+metadata:
+  title: Validate the verdict and attack story
+  description: "Check the reasoning behind the verdict, trace connections through the timeline, and follow up claims that need more evidence."
+  ms.date: 11/09/2026
+  author: wwlpublish
+  ms.author: hrasheed
+  ms.topic: unit
+  ROBOTS: NOINDEX
+  no_index_ks: true
+durationInMinutes: 8
+content: |
+  [!include[](includes/validate-verdict-attack-story.md)]

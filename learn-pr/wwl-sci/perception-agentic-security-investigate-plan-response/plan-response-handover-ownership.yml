@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.perception-agentic-security-investigate-plan-response.plan-response-handover-ownership
+title: Plan the response and hand over ownership
+metadata:
+  title: Plan the response and hand over ownership
+  description: "Prioritize actions by what they address, specify actions someone can carry out and verify, hand over findings and open decisions, and check response outcomes before incident closure."
+  ms.date: 11/09/2026
+  author: wwlpublish
+  ms.author: hrasheed
+  ms.topic: unit
+  ROBOTS: NOINDEX
+  no_index_ks: true
+durationInMinutes: 7
+content: |
+  [!include[](includes/plan-response-handover-ownership.md)]
