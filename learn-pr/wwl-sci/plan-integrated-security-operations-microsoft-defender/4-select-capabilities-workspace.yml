@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.plan-integrated-security-operations-microsoft-defender.select-capabilities-workspace
+title: Select capabilities and decide on a workspace
+metadata:
+  title: Select ISOC Capabilities and Decide on a Workspace
+  description: "Differentiate built-in ISOC capabilities from workspace-dependent capabilities and make a workspace decision."
+  ms.date: 10/30/2026
+  author: wwlpublish
+  ms.author: hrasheed
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-select-capabilities-workspace.md)]

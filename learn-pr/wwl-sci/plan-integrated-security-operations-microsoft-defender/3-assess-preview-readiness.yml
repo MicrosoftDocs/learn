@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.plan-integrated-security-operations-microsoft-defender.assess-preview-readiness
+title: Assess preview readiness
+metadata:
+  title: Assess ISOC Preview Readiness
+  description: "Assess licensing, tenant state, Azure, permission, and preview requirements before planning ISOC adoption."
+  ms.date: 10/30/2026
+  author: wwlpublish
+  ms.author: hrasheed
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-assess-preview-readiness.md)]
