@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.understand-network-atc-windows-server.create-network-intents
+title: Create network intents
+metadata:
+  title: Create Network Intents
+  description: Create management, compute, and storage intents with explicit scope, repeatable execution, and deployment safeguards.
+  ms.date: 11/10/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-create-network-intents.md)]

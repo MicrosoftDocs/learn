@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="795" viewBox="0 0 1200 795" role="img" aria-labelledby="validation-title validation-desc" font-family="Segoe UI, Arial, sans-serif">
+<title id="validation-title">Three ordered Network ATC acceptance gates</title>
+<desc id="validation-desc">Gate one verifies the desired intent, scope, roles, adapters and overrides. Gate two requires verified provisioning and reachability on every expected node, with no missing nodes. Gate three proves workload paths for management, guests, active SMB and RDMA, and live migration. Successful provisioning is not proof of fabric or workload health. Missing or unreachable nodes cannot pass. These are conceptual acceptance gates, not runtime status enum values.</desc>
+<rect x="0" y="0" width="1200" height="795" fill="#ffffff"/>
+<metadata>Conceptual educational diagram for Windows Server 2025 only. Embedded icon geometry is reused from: C:\Azure-Icons\CnE_Enterprise\Server (generic).svg. Original viewBoxes and aspect ratios are preserved. Not runtime output.</metadata>
+<defs><marker id="validation-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M1 1 L9 5 L1 9 Z" fill="#718398"/></marker><symbol id="validation-icon-server" viewBox="0 0 83.4 83.4" preserveAspectRatio="xMidYMid meet">
+<g id="validation-server-Layer_1">
+	<g id="validation-server-File_x2C__general">
+		
+	</g>
+	<g id="validation-server-Message">
+	</g>
+	<g id="validation-server-Monitor">
+	</g>
+	<g id="validation-server-validation-server-Monitor_running_apps">
+	</g>
+	<g id="validation-server-Mouse">
+	</g>
+	<g id="validation-server-Network_card">
+	</g>
+	<g id="validation-server-Not_allowed">
+	</g>
+	<g id="validation-server-Performance">
+	</g>
+	<g id="validation-server-Phone">
+	</g>
+	<g id="validation-server-Plug_and_play">
+	</g>
+	<g id="validation-server-Powershell_script_file">
+	</g>
+	<g id="validation-server-Protocol_stack">
+	</g>
+	<g id="validation-server-Queue_x2C__general">
+	</g>
+	<g id="validation-server-RMS_connector">
+	</g>
+	<g id="validation-server-Router">
+	</g>
+	<g id="validation-server-Script_file">
+	</g>
+	<g id="validation-server-Secure_virtual_machine">
+	</g>
+</g>
+<g id="validation-server-paths">
+	<g id="validation-server-Access_control">
+	</g>
+	<g id="validation-server-Azure_active_directory">
+	</g>
+	<g id="validation-server-Generic_code">
+	</g>
+	<g id="validation-server-Laptop">
+	</g>
+	<g id="validation-server-Load_balancer">
+	</g>
+	<g id="validation-server-Lock_x2C__protected">
+	</g>
+</g>
+<g id="validation-server-symbols">
+	<g>
+		<path fill="#2A3282" d="M52.6,19.1h-16c-1.1,0-2,0.9-2,2v39h20v-39C54.6,20,53.7,19.1,52.6,19.1z M51.6,56.1h-14v-2h14V56.1z
+			 M51.6,52.1h-14v-2h14V52.1z M51.6,27.1h-14v-2h14V27.1z"/>
+	</g>
+</g>
+<g id="validation-server-slices">
+</g>
+</symbol></defs>
+<text id="validation-text-1" x="40" y="36" font-size="18" font-weight="600" fill="#4d6275" text-anchor="start" >WINDOWS SERVER 2025  ·  CONCEPTUAL</text>
+<text id="validation-text-2" x="40" y="81" font-size="34" font-weight="650" fill="#17324d" text-anchor="start" >Acceptance requires configuration and working paths</text>
+<text id="validation-text-3" x="40" y="118" font-size="20" font-weight="400" fill="#4d6275" text-anchor="start" >Three ordered gates. Do not infer workload health from an intent provisioning result.</text>
+<circle cx="205" cy="211" r="20" fill="#0067b8"/>
+<text id="validation-text-4" x="205" y="219" font-size="24" font-weight="700" fill="#fff" text-anchor="middle" >1</text>
+<rect id="validation-desired" data-kind="box" x="40" y="255" width="330" height="329" rx="12" fill="#edf5fc" stroke="#0067b8" stroke-width="1.6" />
+<text id="validation-text-5" x="205" y="302" font-size="25" font-weight="600" fill="#17324d" text-anchor="middle" data-box="validation-desired" >Desired state</text>
+<text id="validation-text-6" x="65" y="362" font-size="22" font-weight="400" fill="#17324d" text-anchor="start" data-box="validation-desired" >Intent + scope are correct</text>
+<text id="validation-text-7" x="65" y="403" font-size="22" font-weight="400" fill="#17324d" text-anchor="start" data-box="validation-desired" >Roles + adapters match</text>
+<text id="validation-text-8" x="65" y="444" font-size="22" font-weight="400" fill="#17324d" text-anchor="start" data-box="validation-desired" >Overrides are reviewed</text>
+<text id="validation-text-9" x="65" y="552" font-size="19" font-weight="600" fill="#4d6275" text-anchor="start" data-box="validation-desired" >Required input evidence</text>
+<circle cx="600" cy="211" r="20" fill="#0067b8"/>
+<text id="validation-text-10" x="600" y="219" font-size="24" font-weight="700" fill="#fff" text-anchor="middle" >2</text>
+<rect id="validation-nodes" data-kind="box" x="435" y="255" width="330" height="329" rx="12" fill="#edf5fc" stroke="#0067b8" stroke-width="1.6" />
+<text id="validation-text-11" x="600" y="302" font-size="25" font-weight="600" fill="#17324d" text-anchor="middle" data-box="validation-nodes" >All expected nodes</text>
+<text id="validation-text-12" x="460" y="362" font-size="22" font-weight="400" fill="#17324d" text-anchor="start" data-box="validation-nodes" >Provisioning verified</text>
+<text id="validation-text-13" x="460" y="403" font-size="22" font-weight="400" fill="#17324d" text-anchor="start" data-box="validation-nodes" >Reachability confirmed</text>
+<text id="validation-text-14" x="460" y="444" font-size="22" font-weight="400" fill="#17324d" text-anchor="start" data-box="validation-nodes" >No missing nodes</text>
+<text id="validation-text-15" x="460" y="552" font-size="19" font-weight="600" fill="#4d6275" text-anchor="start" data-box="validation-nodes" >Required node evidence</text>
+<circle cx="995" cy="211" r="20" fill="#0067b8"/>
+<text id="validation-text-16" x="995" y="219" font-size="24" font-weight="700" fill="#fff" text-anchor="middle" >3</text>
+<rect id="validation-workload" data-kind="box" x="830" y="255" width="330" height="329" rx="12" fill="#edf8f7" stroke="#007a80" stroke-width="1.6" />
+<text id="validation-text-17" x="995" y="302" font-size="25" font-weight="600" fill="#17324d" text-anchor="middle" data-box="validation-workload" >Workload paths</text>
+<text id="validation-text-18" x="855" y="362" font-size="22" font-weight="400" fill="#17324d" text-anchor="start" data-box="validation-workload" >Management + guest</text>
+<text id="validation-text-19" x="855" y="403" font-size="22" font-weight="400" fill="#17324d" text-anchor="start" data-box="validation-workload" >Active SMB / RDMA paths</text>
+<text id="validation-text-20" x="855" y="444" font-size="22" font-weight="400" fill="#17324d" text-anchor="start" data-box="validation-workload" >Live migration</text>
+<text id="validation-text-21" x="855" y="552" font-size="19" font-weight="600" fill="#4d6275" text-anchor="start" data-box="validation-workload" >Required workload evidence</text>
+<use href="#validation-icon-server" x="655" y="453" width="104" height="104" aria-hidden="true"/>
+<path data-kind="connector" data-route="[[370,414],[435,414]]" d="M370 414 L435 414" fill="none" stroke="#718398" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#validation-arrow)"/>
+<path data-kind="connector" data-route="[[765,414],[830,414]]" d="M765 414 L830 414" fill="none" stroke="#718398" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#validation-arrow)"/>
+<rect id="validation-warning" data-kind="box" x="40" y="632" width="1120" height="112" rx="12" fill="#fff8e8" stroke="#946000" stroke-width="1.6" />
+<text id="validation-text-22" x="600" y="675" font-size="25" font-weight="600" fill="#17324d" text-anchor="middle" data-box="validation-warning" >Successful provisioning is not proof of fabric or workload health</text>
+<text id="validation-text-23" x="600" y="714" font-size="22" font-weight="400" fill="#17324d" text-anchor="middle" data-box="validation-warning" >Missing or unreachable nodes cannot pass the acceptance gates.</text>
+</svg>

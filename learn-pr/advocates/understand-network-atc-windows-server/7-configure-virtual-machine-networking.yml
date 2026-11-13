@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.understand-network-atc-windows-server.configure-virtual-machine-networking
+title: Configure virtual machine networking
+metadata:
+  title: Configure Virtual Machine Networking
+  description: Inspect Hyper-V switch relationships, connect virtual machines, and configure live-migration transport, bandwidth, and authentication.
+  ms.date: 11/10/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 5
+content: |
+  [!include[](includes/7-configure-virtual-machine-networking.md)]
