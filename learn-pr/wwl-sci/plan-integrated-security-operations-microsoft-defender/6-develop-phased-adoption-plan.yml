@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.plan-integrated-security-operations-microsoft-defender.develop-phased-adoption-plan
+title: Develop a phased adoption plan
+metadata:
+  title: Develop a Phased ISOC Adoption Plan
+  description: "Translate requirements and constraints into a phased ISOC adoption plan with outcomes, controls, and decision gates."
+  ms.date: 10/30/2026
+  author: wwlpublish
+  ms.author: hrasheed
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/6-develop-phased-adoption-plan.md)]

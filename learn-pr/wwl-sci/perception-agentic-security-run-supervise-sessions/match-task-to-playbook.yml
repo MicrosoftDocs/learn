@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.perception-agentic-security-run-supervise-sessions.match-task-to-playbook
+title: Discover what outcomes the playbooks drive
+metadata:
+  title: Discover What Outcomes the Playbooks Drive
+  description: "Clarify what the team is asking, check the playbook before choosing it, and choose where to start the session."
+  ms.date: 11/09/2026
+  author: wwlpublish
+  ms.author: hrasheed
+  ms.topic: unit
+  ROBOTS: NOINDEX
+  no_index_ks: true
+durationInMinutes: 6
+content: |
+  [!include[](includes/match-task-to-playbook.md)]

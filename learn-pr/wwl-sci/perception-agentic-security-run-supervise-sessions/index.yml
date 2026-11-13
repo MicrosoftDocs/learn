@@ -1,0 +1,75 @@
+### YamlMime:Module
+uid: learn.wwl.perception-agentic-security-run-supervise-sessions
+metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 44
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - microsoft-defender
+    - azure
+    - entra
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - security-operations-analyst
+    - security-engineer
+    - solution-architect
+    - administrator
+  gs-skills:
+    - "Agentic AI"
+    - "Agent Operations"
+    - "Security Operations Management"
+    - "Threat Management"
+    - "Security Automation"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/perception-agentic-security-run-supervise-sessions/index.yml
+  title: Run and Supervise Sessions in Microsoft Perception
+  description: "Learn how to run and supervise work in Perception from the initial security request through review and handoff. Review how to choose a playbook, follow agent activity, respond to requests, and decide how the team can use the result."
+  ms.date: 11/09/2026
+  author: wwlpublish
+  ms.author: hrasheed
+  ms.topic: module
+  ms.service: defender-xdr
+  ai-usage: ai-assisted
+  ROBOTS: NOINDEX
+  no_index_ks: true
+title: Run and supervise sessions in Microsoft Perception
+summary: 'Learn how to run and supervise work in Perception from the initial security request through review and handoff. Review how to choose a playbook, follow agent activity, respond to requests, and decide how the team can use the result.'
+abstract: |
+  In this module, you learn how to:
+  - Identify the needed security outcome and choose an appropriate playbook
+  - Confirm the required input and access, start a session, and follow its progress
+  - Respond to agent requests and redirect or stop work when appropriate
+  - Review the session findings against the available evidence and the original request
+  - Record what can be used, what remains unresolved, and who acts next
+prerequisites: |
+  - Knowledge of Perception's capabilities and coordinated workflows, as covered in [What is Microsoft Perception?](/training/modules/project-perception-agentic-security-introduction/?azure-portal=true) and [Understand how Microsoft Perception coordinates security operations](/training/modules/project-perception-agentic-security-orientation/?azure-portal=true)
+  - Familiarity with threat intelligence, security operations, and the Microsoft Defender portal
+  - No live environment is required to complete the module. To apply the procedures in the portal, you need Perception preview access, the required agents configured and enabled with appropriate data access, and permission to run and supervise sessions
+iconUrl: /training/achievements/generic-badge.svg
+hidden: true
+levels:
+- intermediate
+roles:
+- administrator
+- security-engineer
+products:
+- defender-xdr
+subjects:
+- threat-protection
+units:
+- learn.wwl.perception-agentic-security-run-supervise-sessions.introduction
+- learn.wwl.perception-agentic-security-run-supervise-sessions.understand-requests-playbooks-sessions
+- learn.wwl.perception-agentic-security-run-supervise-sessions.match-task-to-playbook
+- learn.wwl.perception-agentic-security-run-supervise-sessions.verify-readiness-start-monitor-session
+- learn.wwl.perception-agentic-security-run-supervise-sessions.respond-to-agent-requests
+- learn.wwl.perception-agentic-security-run-supervise-sessions.validate-findings
+- learn.wwl.perception-agentic-security-run-supervise-sessions.handoff-findings-next-action
+- learn.wwl.perception-agentic-security-run-supervise-sessions.knowledge-check
+- learn.wwl.perception-agentic-security-run-supervise-sessions.summary
+badge:
+  uid: learn.wwl.perception-agentic-security-run-supervise-sessions.badge
