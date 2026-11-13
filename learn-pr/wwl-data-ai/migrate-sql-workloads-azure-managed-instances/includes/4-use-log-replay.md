@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=54ff3190-3d4e-4626-bd46-a53217636b8a]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Log Replay Service (LRS) is a tool that enables custom migrations of databases from on-premises SQL Servers to SQL Managed Instance in the cloud. It uses log shipping technology and is useful in cases where more control is needed, when there's little tolerance for downtime, or when Azure Database Migration Service can't be used. 
 
 :::image type="content" source="../media/3-log-replay-service.png" alt-text="Diagram showing how Log Replay Service (LRS) works.":::
@@ -34,3 +45,5 @@ You can split full and differential backups into multiple files, instead of usin
 Also, enabling backup compression can help improve network transfer speeds. Compressed backups are smaller in size, which means they take less time to transfer over the network. This can be especially useful when transferring large backups to or from Azure.
 
 We strongly recommend enabling `CHECKSUM` for backups, even though it isn't required. SQL Managed Instance performs an integrity check on backups without `CHECKSUM`, which can increase the time it takes to restore the database. By enabling `CHECKSUM`, you can speed up the restore operations.
+
+::: zone-end

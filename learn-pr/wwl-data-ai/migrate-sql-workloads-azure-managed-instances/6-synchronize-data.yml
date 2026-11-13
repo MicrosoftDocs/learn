@@ -2,9 +2,10 @@
 uid: learn-wwl.migrate-sql-workloads-azure-managed-instances.synchronize-data
 title: Move data to SQL Managed Instance
 metadata:
+  zone_pivot_groups: video-or-text
   title: Move data to SQL Managed Instance
   description: "Learn how to move data to SQL Managed Instance."
-  ms.date: 07/23/2026
+  ms.date: 11/13/2026
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
