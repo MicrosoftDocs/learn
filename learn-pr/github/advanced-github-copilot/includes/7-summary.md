@@ -7,20 +7,27 @@ Now that you have finished this module, you should be able to:
 
 ## Delete your Codespaces resources
 
-To avoid consuming all your monthly GitHub Codespaces time, it's important to delete all your resources after you upload your changes to your repository. Follow these steps to remove your resources:
+When you're finished, preserve your work and delete the Codespace created for this exercise. Don't delete Codespaces used for other projects.
 
-1. Go to [Codespaces on GitHub here](https://github.com/codespaces).
-1. Find your Codespace instance from the list, and select the three dots menu to display your options.
-1. Select **Delete** to remove your Codespace instance.
+Stopping a codespace ends compute usage, but its storage continues to count while it exists. Closing the browser tab doesn't stop the codespace. Deleting it ends future storage usage but doesn't refund usage already accumulated.
 
->[!Note]
-> If you don't commit your changes to your repository, you'll lose all your work. Therefore, it's important to commit and push your changes before deleting your Codespace instance.
+Follow these steps to preserve your work before removing the environment:
+
+1. Save your files and review the changes in the Source Control view. Stage only the exercise changes you want to keep, then commit them.
+2. If Codespaces asks to create or link a fork, follow the prompt. Push or publish your current branch to the repository you own.
+3. Open that repository on GitHub and confirm that the branch contains your latest changes.
+4. Open [your Codespaces page](https://github.com/codespaces), find the codespace used for this exercise, open its three-dot menu, and select **Delete**.
+
+> [!WARNING]
+> Deleting the codespace removes work that hasn't been pushed or otherwise backed up, including commits that exist only inside the codespace.
 
 ## References
 
 * [What is GitHub Copilot?](/shows/introduction-to-github-copilot/what-is-github-copilot-1-of-6?WT.mc_id=academic-105743-bethanycheum )
 * [Introduction to GitHub Copilot](/training/modules/introduction-to-github-copilot/?WT.mc_id=academic-105778-alfredodeza)
 * [Code with GitHub Codespaces](/training/modules/code-with-github-codespaces/?WT.mc_id=academic-105779-alfredodeza)
+* [Codespaces billing](https://docs.github.com/en/billing/concepts/product-billing/github-codespaces)
+* [Automatic forking and source control in Codespaces](https://docs.github.com/en/codespaces/developing-in-a-codespace/using-source-control-in-your-codespace#about-automatic-forking)
 
 ## Provide feedback
 

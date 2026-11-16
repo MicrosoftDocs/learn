@@ -25,7 +25,7 @@ metadata:
   description: Use advanced features of GitHub Copilot with Visual Studio Code to make changes and updates to a Python application.
   author: abrilurena
   ms.author: orthomas
-  ms.date: 11/15/2025
+  ms.date: 11/11/2026
   ms.update-cycle: 180-days
   ms.service: github-copilot
   ms.topic: module
@@ -35,9 +35,9 @@ title: Using advanced GitHub Copilot features
 summary: "Use advanced GitHub Copilot features with a Python application."
 abstract: |
   By the end of this module, you'll be able to:
-    - Apply slash commands to make code changes
+    - Use slash commands to plan code changes, then review and implement the changes.
     - Interact with GitHub Copilot using the Chat feature.
-    - Ask questions about your project using an agent. 
+    - Ask context-grounded questions about your project and use Agent to implement reviewed changes.
 prerequisites: |
   - Basic understanding of Python, like variables and conditionals
   - Ability to use Git and GitHub for version control
