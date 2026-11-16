@@ -1,3 +1,5 @@
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=0ce33a0e-da8c-404c-8da0-8b373a045499]
+
 Azure Local brings Azure management to infrastructure that runs at your location. In a *hyperconverged* deployment, the same physical hosts, called *Azure Local nodes*, provide compute and software-defined storage. Hyper-V runs virtual machines (VMs), and Storage Spaces Direct combines eligible local drives into resilient shared storage. A *cluster* coordinates these nodes so that infrastructure and workloads can tolerate the failures covered by the design.
 
 Azure supplies a management control plane, but the Azure Local nodes, switches, and storage devices remain local to your server room or datacenter. The *control plane* handles management requests such as creating a virtual machine. The *data plane* carries a workload's application and storage traffic. A functioning control plane doesn't prove that the local data plane is healthy, and a running application doesn't prove that its Azure management connection is healthy.
