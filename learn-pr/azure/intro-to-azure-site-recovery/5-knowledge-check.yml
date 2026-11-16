@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: Knowledge check
-  ms.date: 11/15/2025
+  ms.date: 11/11/2026
   author: orin-thomas
   ms.author: orthomas
   ms.topic: unit
@@ -15,37 +15,36 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: You're replicating Hyper-V virtual machines from an on-premises datacenter to Azure. Which of the following Azure Site Recovery items can you use during a failover to recover the virtual machine and its memory state at the time the recovery point was taken?
+  - content: For a supported Windows application protected by Site Recovery, which recovery point uses application coordination to persist consistent application data?
     choices:
-    - content: Crash consistent recovery point
+    - content: Crash-consistent recovery point
       isCorrect: false
-      explanation: Incorrect. A crash-consistent recovery point contains on-disk data, as if you pulled the power cord from the server during the snapshot. It doesn't include anything that was in memory when the snapshot was taken.
+      explanation: Incorrect. A crash-consistent point reflects data already persisted on disk without application-aware coordination for that point.
     - content: App-consistent recovery point
       isCorrect: true
-      explanation: Correct. App-consistent recovery points are created from app-consistent snapshots. They capture the same data as crash-consistent snapshots, and in addition capture data in memory, and all transactions in process.
-    - content: Hyper-V Snapshot
+      explanation: Correct. Application coordination, such as VSS, creates a consistent point-in-time copy of persisted data. It doesn't save the running VM's memory state or guarantee that later changes won't be lost.
+    - content: A copy of the running VM's memory
       isCorrect: false
-      explanation: Incorrect. App-consistent recovery points are created from app-consistent snapshots.
-  - content: You're replicating Hyper-V virtual machines from an on-premises datacenter to Azure. Which of the following paths to Azure can be the conduit for Azure Site Recovery replication traffic from an on-premises primary site to an Azure secondary site?
+      explanation: Incorrect. Site Recovery doesn't recover the VM by restoring a saved RAM execution state.
+  - content: You use Hyper-V-to-Azure replication with Azure Storage endpoints rather than private endpoints. Which ExpressRoute peering should you use for this replication path?
     choices:
-    - content: Azure Point-to-Site VPN
-      isCorrect: false
-      explanation: Incorrect. You can't configure replication to occur over an Azure VPN.
-    - content: Azure Site-to-Site VPN
-      isCorrect: false
-      explanation: Incorrect. You can't configure replication to occur over an Azure VPN.
-    - content: Azure ExpressRoute
+    - content: Microsoft peering
       isCorrect: true
-      explanation: Correct. While you can't configure replication to occur over a VPN, you can configure replication to occur over Azure ExpressRoute.
-  - content: You're replicating Hyper-V virtual machines from an on-premises datacenter to Azure. What's the longest period of time that recovery points are stored?
+      explanation: Correct. Microsoft peering provides the documented ExpressRoute path to Azure service endpoints used for replication.
+    - content: Private peering without private endpoints
+      isCorrect: false
+      explanation: Incorrect. The documented private-peering replication design requires private endpoints and the associated routing and DNS configuration.
+    - content: No peering configuration
+      isCorrect: false
+      explanation: Incorrect. The ExpressRoute connection needs the appropriate peering configuration to reach the intended endpoints.
+  - content: For Azure-to-Azure Site Recovery using managed disks, what is the maximum configurable recovery-point retention period?
     choices:
     - content: 24 hours
       isCorrect: false
-      explanation: Incorrect. Although the default is 24 hours, recovery points can be stored for a maximum of 15 days.
-    - content: 15 Days
+      explanation: Incorrect. One day is the documented Azure-to-Azure default, not its maximum.
+    - content: 15 days
       isCorrect: true
-      explanation: Correct. Recovery points can be stored for a maximum of 15 days.
+      explanation: Correct. Azure-to-Azure managed-disk recovery supports retention of up to 15 days. Older recovery points are pruned, so this doesn't retain every five-minute point for the entire period.
     - content: 48 hours
       isCorrect: false
-      explanation: Incorrect. Recovery points can be stored for a maximum of 15 days.
-
+      explanation: Incorrect. This is shorter than the documented maximum of 15 days for this scenario.

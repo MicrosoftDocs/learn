@@ -23,7 +23,7 @@ metadata:
   gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/intro-to-azure-site-recovery/index.yml
   title: Introduction to Azure Site Recovery
   description: This module explains what Azure Site Recovery does, how it works, and when you should choose to use Azure Site Recovery as a solution to meet your organization's needs.
-  ms.date: 11/15/2025
+  ms.date: 11/11/2026
   author: orin-thomas
   ms.author: orthomas
   ms.topic: module-intro-to-product
@@ -57,4 +57,3 @@ units:
 - learn.intro-to-azure-site-recovery.summary
 badge:
   uid: learn.intro-to-azure-site-recovery-badge
-
