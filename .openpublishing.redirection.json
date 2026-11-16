@@ -1,6 +1,51 @@
 {
   "redirections": [
     {
+      "source_path": "learn-pr/student-evangelism/implement-cicd-iot-edge/1-introduction.yml",
+      "redirect_url": "/azure/iot-edge/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/implement-cicd-iot-edge/2-design-cicd-pipeline-iot-edge.yml",
+      "redirect_url": "/azure/iot-edge/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/implement-cicd-iot-edge/3-how-create-ci-pipeline.yml",
+      "redirect_url": "/azure/iot-edge/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/implement-cicd-iot-edge/4-exercise-create-ci-pipeline-iot-edge.yml",
+      "redirect_url": "/azure/iot-edge/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/implement-cicd-iot-edge/5-how-create-release-pipeline.yml",
+      "redirect_url": "/azure/iot-edge/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/implement-cicd-iot-edge/6-exercise-create-release-pipeline-iot-edge.yml",
+      "redirect_url": "/azure/iot-edge/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/implement-cicd-iot-edge/9-summary.yml",
+      "redirect_url": "/azure/iot-edge/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/implement-cicd-iot-edge/index.yml",
+      "redirect_url": "/azure/iot-edge/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/implement-cicd-iot-edge/10-knowledge-check.yml",
+      "redirect_url": "/azure/iot-edge/",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "learn-pr/device-partner-university/introducton-to-arm-surface/4-when-to-use-surface-with-arm.yml",
       "redirect_url": "/training/modules/introducton-to-arm-surface/5-when-to-use-surface-with-arm/",
       "redirect_document_id": true

@@ -5,6 +5,11 @@ achievements:
 #  title: Module template
 #  summary: Module template badge.
 #  iconUrl: http://via.placeholder.com/120x120
+- uid: learn.oxford.implementing-cicd-iot-edge.badge 
+  type: badge
+  title: Implement CI/CD for IoT Edge  
+  summary: Define a solution for smoke testing for virtual Azure IoT Edge devices. Your solution employs a CI/CD (continuous integration/continuous deployment) strategy using Azure DevOps and Azure Pipelines on a Kubernetes cluster.  
+  iconUrl: /training/achievements/student-evangelism/implement-cicd-for-iot-edge.svg 
 - uid: learn.wwl.describe-concepts-of-relational-data.badge
   type: badge
   title: Describe concepts of relational data
