@@ -11,7 +11,7 @@
 
 Chat applications range from straightforward question answering to conversations that require planning, analysis, and tool use. When a chat experience must work through a difficult problem rather than only produce a fluent response, a reasoning model is an appropriate choice.
 
-![Screenshot of the MAI Thinking model in the playground.](../media/thinking-model.png)
+![Screenshot of the MAI-Thinking model in the playground.](../media/thinking-model.png)
 
 ## MAI-Thinking
 
@@ -28,7 +28,7 @@ MAI-Thinking is designed for workloads such as:
 The model is integrated with Microsoft Foundry capabilities for evaluation, observability, safety, and deployment. These capabilities help teams assess output quality, trace application behavior, and apply controls when moving from an experiment to production.
 
 > [!TIP]
-> Review the [MAI-Thinking-1 model card](https://aka.ms/mai-thinking-1-foundrycard?azure-portal=true) for current capabilities, limitations, and deployment details.
+> Review the [MAI-Thinking model card](https://aka.ms/mai-thinking-1-foundrycard?azure-portal=true) for current capabilities, limitations, and deployment details.
 
 ## Match the model to the chat experience
 

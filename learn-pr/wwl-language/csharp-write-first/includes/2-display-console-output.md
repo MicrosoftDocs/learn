@@ -37,10 +37,10 @@ Notice the semicolon (`;`) at the end of the line. In C#, every instruction must
 
 ## Printing multiple items
 
-You can pass multiple values to `Console.WriteLine()` by separating them with commas. C# automatically inserts a space between each item:
+To display more than one piece of text on the same line, join the pieces with the `+` operator:
 
 ```csharp
-Console.WriteLine("Hello", "world!");
+Console.WriteLine("Hello" + " " + "world!");
 ```
 
 Output:
