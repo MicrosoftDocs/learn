@@ -11,7 +11,7 @@
 
 Image models can create a new visual from a text prompt or transform an uploaded image according to an instruction. The **MAI-Image** family is designed for high-quality, photorealistic, and design-ready generation and editing.
 
-![Screenshot of the MAI Image model in the playground.](../media/image-model.png)
+![Screenshot of the MAI-Image model in the playground.](../media/image-model.png)
 
 ## Create and edit visual content
 
@@ -32,10 +32,9 @@ The family provides variants for different production priorities:
 
 - **MAI-Image** balances high-quality generation with precise, controllable editing.
 - **MAI-Image-Flash** targets production-ready quality at lower cost than the flagship model.
-- **MAI-Image-Pro** provides stronger object consistency, visual reasoning, and world knowledge for demanding creative work.
 
 > [!TIP]
-> Review the model cards for [MAI-Image-2.5-Pro](https://ai.azure.com/catalog/models/MAI-Image-2.5-Pro?azure-portal=true), [MAI-Image-2.6](https://ai.azure.com/catalog/models/MAI-Image-2.6?azure-portal=true), and [MAI-Image-2.6-Flash](https://ai.azure.com/catalog/models/MAI-Image-2.6-Flash?azure-portal=true) for current capabilities, limitations, and intended uses.
+> Review the [MAI-Image model card](https://microsoft.ai/pdf/MAI-Image-2.7-Model-Card.pdf?azure-portal=true) for current capabilities, limitations, and intended uses.
 
 Start with the variant that appears to fit your quality and latency requirements, then compare outputs using a prompt set drawn from the intended workload. Include difficult cases such as multiple objects, exact layout constraints, text rendering, edits to uploaded content, and consistency across several related assets.
 

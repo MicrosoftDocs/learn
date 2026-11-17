@@ -19,7 +19,7 @@ metadata:
   gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-language/csharp-write-first/index.yml
   title: Write your first C# code
   description: "Get started by writing code examples to learn the basics of the C# syntax."
-  ms.date: 9/24/2026
+  ms.date: 11/17/2026
   author: wwlpublish
   ms.author: buzahid
   ms.topic: module
@@ -34,11 +34,11 @@ abstract: |
 
   -   Write your first lines of C# code
 
-  -   Use two different techniques to print a message to a text console
+  -   Display messages in the console by using `Console.WriteLine()` and `Console.Write()`
 
-  -   Diagnose errors when you type code incorrectly
+  -   Accept user input by using `Console.ReadLine()`
 
-  -   Identify different C# syntax elements like operators, classes, and methods
+  -   Combine text and variables by using concatenation and string interpolation
 prerequisites: None
 iconUrl: /training/achievements/csharp-write-first.svg
 levels:

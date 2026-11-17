@@ -1,6 +1,41 @@
 {
   "redirections": [
     {
+      "source_path": "learn-pr/student-evangelism/intro-mlops-iot-edge/index.yml",
+      "redirect_url": "/azure/iot-edge/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/intro-mlops-iot-edge/1-introduction.yml",
+      "redirect_url": "/azure/iot-edge/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/intro-mlops-iot-edge/2-what-mlops.yml",
+      "redirect_url": "/azure/iot-edge/",
+      "redirect_document_id": true      
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/intro-mlops-iot-edge/3-how-mlops-works.yml",
+      "redirect_url": "/azure/iot-edge/",
+      "redirect_document_id": true      
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/intro-mlops-iot-edge/4-when-use-mlops.yml",
+      "redirect_url": "/azure/iot-edge/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/intro-mlops-iot-edge/5-knowledge-check.yml",
+      "redirect_url": "/azure/iot-edge/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/intro-mlops-iot-edge/6-summary.yml",
+      "redirect_url": "/azure/iot-edge/",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "learn-pr/student-evangelism/implement-cicd-iot-edge/1-introduction.yml",
       "redirect_url": "/azure/iot-edge/",
       "redirect_document_id": true
