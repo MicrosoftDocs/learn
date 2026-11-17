@@ -1,11 +1,15 @@
 In this module, you learned about Azure Virtual Machine Scale Sets, a service that provides you with a scalable way to run applications on a set of virtual machines (VMs).
 
+With autoscale configured to respond to demand:
+
 - As demand grows, the number of VMs running in the scale set increases.
 - As demand decreases, the number of VMs running in the scale set decreases. 
 
 Virtual Machine Scale Sets are ideal for scenarios that include compute workloads, big-data workloads, and container workloads.
 
-## Learn more
+## More info
+
+Explore these resources for scale set guidance and Windows Server scaling training:
 
 - Read more detail about [What Virtual Machine Scale Sets are](/azure/virtual-machine-scale-sets/overview).
 - Learn how to [Implement scale and high availability with Windows Server Virtual Machine](/training/modules/implement-scale-high-availability-windows-server-virtual-machine).
