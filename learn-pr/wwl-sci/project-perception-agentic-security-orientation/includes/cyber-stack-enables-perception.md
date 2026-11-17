@@ -1,6 +1,10 @@
+---
+no_index_ks: true
+---
+
 Coordinated multi-agent defense runs your security operations as one connected workflow at machine speed. That claim only holds if something under the agents makes cross-agent coordination technically possible. Handoffs have to be near-instant, context has to be shared, and the whole workflow has to run continuously without compute costs becoming unmanageable. The layered architecture that makes those handoffs possible is called the Cyber Stack. Its six layers combine to enable coordinated defense, and their names come back in the playbook walkthrough that follows.
 
-:::image type="content" source="../media/cyber-stack.png" alt-text="Diagram that shows Project Perception Cyber Stack layers from Signals and sensors through Context, Models, Harness, Agents, and Actuators." lightbox="../media/cyber-stack.png":::
+:::image type="content" source="../media/cyber-stack.png" alt-text="Diagram that shows Perception Cyber Stack layers from Signals and sensors through Context, Models, Harness, Agents, and Actuators." lightbox="../media/cyber-stack.png":::
 
 ## How the six layers combine
 
@@ -18,11 +22,11 @@ The other four layers each play a specific role in that flow. The table summariz
 | --- | --- |
 | **Actuators** | Translate agent decisions into real changes in the environment such as configuration adjustments, detection rules, code fixes, and firewall changes. |
 | **Agents** | Red, Blue, and Green team agents that handle defined security operations tasks, which the harness dispatches. |
-| **Models** | Provide the intelligence and reasoning the harness sequences. Project Perception uses a **multi-model architecture**, so different security tasks can run on different models rather than a single model doing everything. Matching the model to the task means better accuracy and lower compute cost per task. |
+| **Models** | Provide the intelligence and reasoning the harness sequences. Perception uses a **multi-model architecture**, so different security tasks can run on different models rather than a single model doing everything. Matching the model to the task means better accuracy and lower compute cost per task. |
 | **Signals and sensors** | Provide visibility across endpoints, identities, applications, data, clouds, AI systems, and code repositories. Without broad, current signals, the security context has nothing to correlate. |
 
 Together, all six layers make coordinated multi-agent defense possible.
 
 ## Where this leaves you
 
-The Cyber Stack is the architecture Project Perception runs on. Its six layers combine to enable cross-agent coordination at machine speed. None of them is a user-configurable surface. You don't configure security context or the harness in the portal, and you don't build signals or actuators there either. When the playbook walkthrough in the next unit shows one agent handing findings to another, that handoff runs through security context, and the sequencing across the agents is the harness at work.
+The Cyber Stack is the architecture Perception runs on. Its six layers combine to enable cross-agent coordination at machine speed. None of them is a user-configurable surface. You don't configure security context or the harness in the portal, and you don't build signals or actuators there either. When the playbook walkthrough in the next unit shows one agent handing findings to another, that handoff runs through security context, and the sequencing across the agents is the harness at work.

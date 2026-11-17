@@ -1,3 +1,7 @@
+---
+no_index_ks: true
+---
+
 A situation lands on your desk. Identifying the areas of security work involved helps you understand its scope, but doesn't determine the right tool. These three situations help you distinguish work that benefits from focused agent support from work that needs coordination across several capabilities.
 
 ## The recognition question

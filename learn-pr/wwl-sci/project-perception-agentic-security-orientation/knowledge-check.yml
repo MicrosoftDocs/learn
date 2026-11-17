@@ -10,22 +10,24 @@ metadata:
   ms.topic: unit
   module_assessment: true
   ai_generated_module_assessment: false
+  ROBOTS: NOINDEX
+  no_index_ks: true
 durationInMinutes: 7
 quiz:
   title: ""
   questions:
-  - content: "Contoso Financial Services runs the standard six areas of work. Its current pipeline from initial threat intelligence extraction to new detection rules typically takes eight business days as findings move across specialist queues. Contoso's leadership is evaluating whether Project Perception can compress that pipeline. Which statement best explains what Project Perception changes to make the compression possible?"
+  - content: "Contoso Financial Services runs the standard six areas of work. Its current pipeline from initial threat intelligence extraction to new detection rules typically takes eight business days as findings move across specialist queues. Contoso's leadership is evaluating whether Perception can compress that pipeline. Which statement best explains what Perception changes to make the compression possible?"
     choices:
-    - content: "Project Perception replaces the six areas of work with a single unified security analysis process that no longer requires separate specialists for threat intelligence, attack path analysis, or detection engineering."
+    - content: "Perception replaces the six areas of work with a single unified security analysis process that no longer requires separate specialists for threat intelligence, attack path analysis, or detection engineering."
       isCorrect: false
-      explanation: "Coordinated multi-agent defense doesn't replace or collapse the areas of work. Contoso's threat intelligence analysts, attack-path specialists, and detection engineers still bring the same expertise. Project Perception changes how the areas of work connect, not what they are."
-    - content: "Project Perception runs Contoso's six existing areas of work as one continuously connected workflow, so each area's output flows into the next through shared security context instead of waiting in specialist queues."
+      explanation: "Coordinated multi-agent defense doesn't replace or collapse the areas of work. Contoso's threat intelligence analysts, attack-path specialists, and detection engineers still bring the same expertise. Perception changes how the areas of work connect, not what they are."
+    - content: "Perception runs Contoso's six existing areas of work as one continuously connected workflow, so each area's output flows into the next through shared security context instead of waiting in specialist queues."
       isCorrect: true
       explanation: "Correct. The areas of work themselves don't change. Contoso still needs threat intelligence extraction, attack path analysis, posture prioritization, and detection authoring. What changes is that they run as one coordinated workflow with the handoffs closed at machine speed, not as separate human-paced projects."
-    - content: "Project Perception skips the threat intelligence extraction and attack path analysis areas by having AI generate detection rules directly from the raw advisory, cutting four areas out of the pipeline."
+    - content: "Perception skips the threat intelligence extraction and attack path analysis areas by having AI generate detection rules directly from the raw advisory, cutting four areas out of the pipeline."
       isCorrect: false
-      explanation: "Project Perception doesn't skip areas of work. Each one still runs, because a well-authored detection rule depends on the threat intelligence extraction and attack path analysis that came before it. What's compressed is the time between the areas, not the number of them."
-  - content: "Continuing the scenario: A new threat intelligence advisory arrives at Contoso about a state-linked actor. The SOC lead wants to run the Protect against a threat playbook against the advisory. Which sequence of work does that playbook orchestrate, and how do the participating Project Perception agents map to the Red, Blue, and Green teams of agents?"
+      explanation: "Perception doesn't skip areas of work. Each one still runs, because a well-authored detection rule depends on the threat intelligence extraction and attack path analysis that came before it. What's compressed is the time between the areas, not the number of them."
+  - content: "Continuing the scenario: A new threat intelligence advisory arrives at Contoso about a state-linked actor. The SOC lead wants to run the Protect against a threat playbook against the advisory. Which sequence of work does that playbook orchestrate, and how do the participating Perception agents map to the Red, Blue, and Green teams of agents?"
     choices:
     - content: "Threat intelligence analysis (Threat Intelligence Agent, Blue), then attack path analysis (Recon Agent, Red), then posture prioritization (Posture Prioritization Agent, Green), then detection engineering (Detection Authoring Agent, Blue). Four areas of work across all three teams."
       isCorrect: true
