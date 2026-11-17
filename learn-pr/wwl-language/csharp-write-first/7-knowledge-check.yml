@@ -6,7 +6,7 @@ metadata:
   ai_generated_module_assessment: false
   title: Module Assessment
   description: "Knowledge check"
-  ms.date: 9/24/2026
+  ms.date: 11/17/2026
   author: wwlpublish
   ms.author: buzahid
   ms.topic: unit
@@ -15,28 +15,28 @@ durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What is the primary job of the compiler?"
+  - content: "A user types `42` when a program runs `string answer = Console.ReadLine();`. What kind of value does `answer` hold?"
     choices:
-    - content: "The compiler primarily locates spelling mistakes in your code."
-      isCorrect: false
-      explanation: "Incorrect. While it's possible you misspelled something in your code and that produces an error that isn't the primary job of the compiler."
-    - content: "The compiler primarily executes your code."
-      isCorrect: false
-      explanation: "Incorrect. The compiler doesn't execute your code, but makes it possible for your code to be executed."
-    - content: "The compiler primarily converts your code into an executable format that the computer can understand."
+    - content: "The text `\"42\"`."
       isCorrect: true
-      explanation: "Correct! The primary job of the compiler is to convert your code into a format that the computer can understand."
-  - content: "Which of the following statements is **true** about C#?"
+      explanation: "Correct! `Console.ReadLine()` returns text, even when the user types digits."
+    - content: "The whole number `42`."
+      isCorrect: false
+      explanation: "Incorrect. `Console.ReadLine()` doesn't convert input to a number. The value is text."
+    - content: "A number or text, depending on what the user types."
+      isCorrect: false
+      explanation: "Incorrect. The value is always text when it comes from `Console.ReadLine()`."
+  - content: "The variable `name` holds the text `Sam`. Which line displays `Hello, Sam!` in the console?"
     choices:
-    - content: "C# is case *insensitive*."
-      isCorrect: false
-      explanation: "Incorrect. Actually, C# is case-sensitive."
-    - content: "`Console` is a method, and `WriteLine()` is a class."
-      isCorrect: false
-      explanation: "Incorrect. Actually, the reverse is true.  `Console` is a class.  `WriteLine()` is a method."
-    - content: "You use double quotation marks to create a literal string."
+    - content: "`Console.WriteLine($\"Hello, {name}!\");`"
       isCorrect: true
-      explanation: "Correct! You can create a literal string in C# using double quotation marks."
+      explanation: "Correct! The `$` prefix tells C# to replace `{name}` with the value of the variable."
+    - content: "`Console.WriteLine(\"Hello, {name}!\");`"
+      isCorrect: false
+      explanation: "Incorrect. Without the `$` prefix, C# prints the text `{name}` literally."
+    - content: "`Console.WriteLine(\"Hello, \", name, \"!\");`"
+      isCorrect: false
+      explanation: "Incorrect. Commas don't join text. C# treats the first value as a format string and ignores the rest, so this code prints only `Hello, `."
   - content: "What is **wrong** with this line of code?  `Console.WriteLine(\"What is wrong with me?\")`"
     choices:
     - content: "The `L` in `WriteLine` should be lower-case."
