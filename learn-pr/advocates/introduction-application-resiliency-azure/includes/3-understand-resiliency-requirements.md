@@ -1,20 +1,20 @@
-When you design for resiliency, you must understand the application's availability requirements. How much application downtime is acceptable? One way of thinking about this is answering the question "How much will potential downtime cost your business?" You also should consider how much should you invest in making the application highly available? You also must define what it means for the application to be available. For example, is the application "down" if you can submit an order but the system can'no't process it within the normal timeframe? Also consider the probability of an outage occurring and whether a mitigation strategy is cost-effective. Resilience planning starts with business requirements. Here are some approaches for thinking about resiliency in those terms.
+When you design for resiliency, you must understand the application's availability requirements. How much application downtime is acceptable? One way to approach this is to ask, "How much will potential downtime cost your business?" Also consider how much you should invest in making the application highly available. Define what it means for the application to be available. For example, is the application "down" if you can submit an order but the system can't process it within the normal time frame? Also consider the probability of an outage occurring and whether a mitigation strategy is cost-effective. Resilience planning starts with business requirements. Here are some approaches for thinking about resiliency in those terms.
 
 ## Assess by workload resiliency requirements
 
-Many cloud solutions consist of multiple application workloads. The term "workload" in this context means a discrete capability or computing task, which can be logically separated from other tasks, in terms of business logic and data storage requirements. For example, an ecommerce app might include the following workloads:
+Many cloud solutions consist of multiple application workloads. The term "workload" in this context means a discrete capability or computing task that can be logically separated from other tasks in terms of business logic and data storage requirements. For example, an e-commerce app might include the following workloads:
 
 - Browse and search a product catalog
 - Create and track orders
 - View recommendations
 
-Workloads often have different requirements for availability, scalability, data consistency, and disaster recovery. There are business decisions to be made in terms of balancing cost versus risk. Whilst it may be nice for the application leave applications to be highly resiliency, is it worth the added cost of implementing those resilient features?
+Workloads often have different requirements for availability, scalability, data consistency, and disaster recovery. Business decisions involve balancing cost against risk. While it might be useful for a leave-request application to be highly resilient, is it worth the added cost of implementing those resiliency features?
 
 It's also important to consider usage patterns. Are there certain critical periods when the system must be available? For example, a tax-filing service can't go down right before the filing deadline and a sports video streaming service must stay up during a big game final. During the critical periods, you might have redundant deployments across several regions, so the application could fail over if one region failed. However, a multi-region deployment is potentially more expensive, so during less critical times, you might run the application in a single region.  
 
 Qualifying applications into different tiers is a common strategy. Tier 1 applications are made up of those applications that shouldn't experience any loss in data. The Recovery Time Objective (RTO)/Recovery Point Objective (RPO) for this tier needs to be as close to zero as possible. Tier 2 applications consist of those applications that can lose minimal amounts of data with RTO and RPO in the order of a few minutes. Tier 3 and 4 applications are those that affect internal operations for a few hours and while inconvenient, don't pose a huge risk to the business.
 
-The following table lists some example of different application tiers.
+The following table lists examples of different application tiers.
 
 | **Tier** | **Application type** |
 |:---|:---|
@@ -23,15 +23,15 @@ The following table lists some example of different application tiers.
 | Tier 3 | Internal tools like knowledge management, project tracking |
 | Tier 4 | Batch processing, data extraction, transfer, and load jobs |
 
-## Service Level Agreements (SLA)
+## Service-level agreements and reliability objectives
 
-A Service Level Agreement (SLA) is a commitment between a service provider and a client. It defines the expected level of service, including the availability and performance of the service. If the SLA for a particular service is 99.9%, it means you should expect the service to be available 99.9% of the time.
+A service-level agreement (SLA) is a contractual commitment between a provider and a customer. It defines the covered service, how availability is measured, applicable conditions and exclusions, and the consequences of not meeting the commitment.
 
-You should define your own target SLAs for each workload in your solution. An SLA makes it possible to evaluate whether the resiliency of the architecture meets the business requirements. 
+For your workload, define service-level objectives (SLOs): measurable reliability targets based on business requirements and the experience of critical user flows. Use provider SLAs as design inputs, not as guarantees of your application's availability.
 
-The following table shows the potential cumulative downtime for various SLA levels.
+The following table illustrates cumulative downtime budgets for time-based availability objectives, using a seven-day week, a 30-day month, and a 365-day year. These conversions don't override the measurement periods or conditions in a provider's SLA.
 
-| **SLA** | **Downtime per week** | **Downtime per month** | **Downtime per year** |
+| **Availability objective** | **Downtime per week** | **Downtime per month** | **Downtime per year** |
 |:---|:---|:---|:---|
 | 99% | 1.68 hours | 7.2 hours | 3.65 days |
 | 99.9% | 10.1 minutes | 43.2 minutes | 8.76 hours |
@@ -39,51 +39,52 @@ The following table shows the potential cumulative downtime for various SLA leve
 | 99.99% | 1.01 minutes | 4.32 minutes | 52.56 minutes |
 | 99.999% | 6 seconds | 25.9 seconds | 5.26 minutes |
 
-As you strive for more 9s, the cost and complexity to achieve that level of availability grows. An uptime of 99.99% translates to about 5 minutes of total downtime per month. The answer to the question of whether it's worth the additional complexity and cost to reach five 9s depends on the business requirements.
+As you strive for more 9s, the cost and complexity of achieving that level of availability grow. An uptime of 99.99% translates to about 5 minutes of total downtime per month. Whether it's worth the additional complexity and cost to reach five 9s depends on the business requirements.
 
-Achieving four 9s (99.99%) requires minimizing manual intervention to recover from failures. To achieve this level of reliability, an application must be self-diagnosing and self-healing. This is because it is challenging to detect outages quickly enough to meet the SLA. The lower the SLA, the less frequently the service can go down, and the quicker the service must recover.
+High availability targets generally require rapid failure detection and automated recovery to limit manual delays. The higher the availability objective, the smaller the allowable cumulative downtime. Reducing the frequency of failures, reducing recovery time, or both can help meet that objective.
 
-### Composite SLAs
+### Dependencies and availability
 
-Consider an App Service web app that writes to Azure SQL Database. At the time of this writing, these Azure services have the following SLAs:
+If a critical user flow requires both a web app and a database, either dependency can make that flow unavailable. A fallback can preserve some functionality, but first define whether that reduced functionality meets the flow's requirements.
 
-- App Service Web Apps = 99.95%
-- SQL Database = 99.99%
+For a simplified probability example, assume availability estimates of 99.95% for a web app, 99.99% for a database, and 99.9% for a queue. Also assume that their failures are independent and that availability is measured consistently. Under these assumptions, the combined availability is:
 
-What is the maximum downtime you would expect for this application? If either service fails, the whole application fails. In general, the probability of each service failing is independent, so the composite SLA for this application is 99.95% × 99.99% = 99.94%. That's lower than the individual SLAs because an application that relies on multiple services has more potential failure points.
+- Web app AND database: `0.9995 * 0.9999` = 99.940005%, or approximately 99.94%.
 
-On the other hand, you can improve the composite SLA by creating independent fallback paths.
+If the business permits orders to be durably accepted into a queue and processed later, either the database or the queue can support the order-acceptance flow:
 
-For example, if the SQL Database used by an application is unavailable, put transactions into a queue that can be processed later.  
+- Database OR queue: `1 - (0.0001 * 0.001)` = 99.99999%.
+- Web app AND (database OR queue): `0.9995 * 0.9999999` = 99.949990005%, or approximately 99.95%.
 
-With this design, the application is still available even if it can't connect to the database. However, it fails if the database and the queue both fail at the same time. The expected percentage of time for a simultaneous failure is 0.0001 × 0.001, so the composite SLA for this combined path is:
+This fallback preserves order acceptance, not necessarily immediate order completion. It adds cost and application complexity, and requires appropriate handling of delayed processing and data consistency.
 
-- Database OR queue = 1.0 − (0.0001 × 0.001) = 99.99999% The total composite SLA is:
-- Web app AND (database OR queue) = 99.95% × 99.99999% = ~99.95%
+> [!IMPORTANT]
+> These numbers are illustrative assumptions, not published Azure SLAs or predictions of application uptime. Real failures can be correlated through shared infrastructure, dependencies, configuration, or application defects. Define workload SLOs and validate the design through failure mode analysis, monitoring, and recovery testing.
 
-There are tradeoffs to this approach. The application logic is more complex, you will have to pay for the queue, and there may be data consistency issues to consider.
+### Illustrative availability across independent regions
 
-### SLA for multi-region deployments
+Deploying across regions can reduce the effect of a regional failure. For a simplified probability example, assume that each regional deployment can serve the complete workload, that failures are independent, and that routing and shared dependencies don't introduce additional failures.
 
-Another HA technique is to deploy the application in more than one region and use Azure Traffic Manager to fail over if the application fails in one region. For a multi-region deployment, the composite SLA is calculated as follows.
+Let N be each regional deployment's availability expressed as a fraction, and R the number of deployments. The probability that all deployments are unavailable is `(1 - N)^R`, so the modeled availability is `1 - (1 - N)^R`.
 
-Let _N_ be the composite SLA for the application deployed in one region, and _R_ be the number of regions where the application is deployed. The expected chance that the application will fail in all regions at the same time is ((1 − N) ^ R).
+For N = 0.9995:
 
-For example, if the single-region SLA is 99.95%,
+- Two regions: `1 - (0.0005^2)` = 99.999975%.
+- Four regions: `1 - (0.0005^4)` = 99.99999999999375%.
 
-- The combined SLA for two regions = (1 − (0.9995 ^ 2)) = 99.999975%
-- The combined SLA for four regions = (1 − (0.9995 ^ 4)) = 99.999999%
+> [!IMPORTANT]
+> These are mathematical illustrations, not workload availability guarantees. Real designs must account for correlated failures, shared dependencies, available capacity, data recovery, and failover delays.
 
-You must also factor in the SLA for Traffic Manager which, at the time of this writing is 99.99%. In addition remember that failing over is not instantaneous in active-passive configurations, which can result in some downtime during a failover.
+Azure Traffic Manager currently provides a 100% availability SLA for DNS query responses when failed DNS queries are retried as required by its SLA. This commitment doesn't guarantee uninterrupted access to your application. Include endpoint health detection, DNS caching and TTLs, and application and data recovery in your failover planning. Review the current [Traffic Manager reliability guidance and SLA information](/azure/reliability/reliability-traffic-manager#service-level-agreement) for coverage and conditions.
 
 ## RTO and RPO
 
 Two important metrics to consider are the recovery time objective and recovery point objective, as they pertain to disaster recovery. These are defined as follows:
 
 - Recovery time objective (RTO) is the maximum acceptable time that an application can be unavailable after an incident. If your RTO is 90 minutes, you must be able to restore the application to a running state within 90 minutes from the start of a disaster. If you have a very low RTO, you might keep a second regional deployment continually running an active/passive configuration on standby, to protect against a regional outage. In some cases, you might deploy an active/active configuration to achieve even lower RTO.
-- Recovery point objective (RPO) is the maximum duration of data loss that is acceptable during a disaster. For example, if you store data in a single database, with no replication to other databases, and perform hourly backups, you could lose up to an hour of data.
+- Recovery point objective (RPO) is the maximum duration of data loss that's acceptable during a disaster. For example, if you store data in a single database, with no replication to other databases, and perform hourly backups, you could lose up to an hour of data.
 
-RTO and RPO are non-functional requirements of a system and should be dictated by business requirements. To derive these values, it's a good idea to conduct a risk assessment, and clearly understanding the cost of downtime or data loss.
+RTO and RPO are nonfunctional requirements of a system and should be dictated by business requirements. To derive these values, conduct a risk assessment and clearly understand the cost of downtime or data loss.
 
 ## MTTR and MTBF
 
@@ -91,8 +92,8 @@ Two other common measures of availability are mean time to recover (MTTR) and me
 
 ### Mean time to recover (MTTR)
 
-The average time that it takes to restore a component after a failure. MTTR is an empirical fact about a component. Based on the MTTR of each component, you can estimate the MTTR of an entire application. Building applications from multiple components with low MTTR values results in an application with a low overall MTTR — one that recovers quickly from failures.
+Mean time to recover (MTTR) is the average observed time taken to restore a component or workload after a failure. Low component MTTR values can help, but don't establish the application's recovery time. Dependencies, recovery sequencing, and validation can extend the overall recovery. Define the measurement boundaries and measure recovery across critical user flows. When checking the workload's RTO, measure from the start of the outage through validated recovery, including detection and response time.
 
 ### Mean time between failures (MTBF)
 
-The runtime that a component can reasonably expect to last between outages. This metric can help you to calculate how frequently a service will become unavailable. An unreliable component has a low MTBF, resulting in a low SLA number for that component. However, a low MTBF can be mitigated by deploying multiple instances of the component and implementing failover between them.
+Mean time between failures (MTBF) measures the average operating time between failures. A lower MTBF indicates more frequent failures. The effect on workload availability also depends on recovery time and whether redundancy and failover prevent component failures from interrupting users. Multiple instances help only when the design addresses shared failure causes and can successfully route work to healthy instances.
