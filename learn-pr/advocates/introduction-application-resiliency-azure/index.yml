@@ -25,8 +25,8 @@ metadata:
   gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/advocates/introduction-application-resiliency-azure/index.yml
   ms.author: orthomas
   author: Orin-Thomas
-  ms.date: 11/15/2025
-  title: Introduction to application resiliency in Azure
+  ms.date: 11/14/2026
+  title: Introduction to Application Resiliency in Azure
   description: A description of how to assess and implement resiliency technologies in Azure.
   ms.topic: module
   moduleType: standard
