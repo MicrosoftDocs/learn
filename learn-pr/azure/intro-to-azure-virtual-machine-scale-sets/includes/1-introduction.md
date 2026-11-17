@@ -4,9 +4,9 @@ Now, you want to determine if Azure Virtual Machine Scale Sets might be useful i
 
 - One application regularly exceeds processor loads for as long as two hours. During this time, the application is frustrating and nonresponsive. The application functions normally when client traffic returns to normal.
 - Another application has regular traffic spikes on Friday evenings and lulls on Wednesday mornings. You’d like to ensure that the required instances are available to address increases and decreases in demand.
-- You want to ensure that no matter how much client load is placed on applications, no more than 50 instances are deployed in a scale set. Doing so helps you control costs.
+- You want autoscale to use at most 50 VM instances in the scale set, even during a traffic surge. Setting this limit helps control compute costs, but it doesn't guarantee sufficient capacity for unlimited demand or cap all subscription charges.
 - You have one application on a single virtual machine (VM) that doesn't experience variance in utilization and doesn't have an architecture that allows load balancing.
-- You have one application on a single VM that is only used during business hours by a limited number of people.
+- You have one application on a single VM that's only used during business hours by a limited number of people.
 
 Azure Virtual Machine Scale Sets let you create and manage a group of load balanced VMs. The number of VM instances can automatically increase or decrease in response to demand or a defined schedule.
 

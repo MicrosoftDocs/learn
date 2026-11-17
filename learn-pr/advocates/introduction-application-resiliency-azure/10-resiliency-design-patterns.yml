@@ -2,9 +2,9 @@
 uid: learn.introduction-to-application-resiliency-azure.resiliency-design-patterns
 title: Resiliency design patterns
 metadata:
-  title: Resiliency design patterns
+  title: Resiliency Design Patterns
   description: Learn about resiliency design patterns in Azure
-  ms.date: 11/15/2025
+  ms.date: 11/14/2026
   author: Orin-Thomas
   ms.author: orthomas
   ms.topic: unit

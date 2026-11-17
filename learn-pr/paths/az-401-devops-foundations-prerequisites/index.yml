@@ -1,0 +1,59 @@
+### YamlMime:LearningPath
+uid: learn.wwl.az-401-devops-foundations-prerequisites
+metadata:
+  title: "DevOps foundations for the transition to agentic DevOps"
+  description: "Draft prerequisite inventory of existing modules, copied without content changes."
+  ms.date: 11/16/2026
+  ms.topic: learning-path
+  ai-usage: ai-assisted
+  author: petender
+  ms.author: petender
+title: "DevOps foundations for the transition to agentic DevOps"
+summary: "Self-paced foundations outside of the AZ-401 agentic DevOps course. This relies more on traditional DevOps concepts."
+prerequisites: |
+  - Basic familiarity with how software applications are developed, tested, and deployed.
+  - Awareness of source control concepts, such as repositories and commits.
+  - Basic understanding of cloud computing concepts, such as compute, storage, and networking.
+  - Familiarity with using a code editor and running basic command-line commands.
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+  - beginner
+  - intermediate
+roles:
+  - devops-engineer
+products:
+  - azure
+  - azure-devops
+  - github
+subjects:
+  - devops
+modules:
+  # Plan: establish DevOps practices, organize work, and plan for security.
+  - learn.wwl.introduction-to-devops
+  - learn.wwl.plan-agile-github-projects-azure-boards
+  - learn.wwl.introduction-to-secure-devops
+  # Build: manage code and dependencies, automate CI, and produce artifacts.
+  - learn.wwl.manage-git-branches-workflows
+  - learn.wwl.implement-open-source-software-azure
+  - learn.wwl.explore-azure-pipelines
+  - learn.wwl.introduction-to-github-actions
+  - learn.wwl.learn-continuous-integration-github-actions
+  - learn.wwl.design-container-build-strategy
+  - learn.wwl.understand-package-management
+  - learn.wwl.implement-versioning-strategy
+  - learn.wwl.introduction-github-packages
+  # Deploy: provision infrastructure, create releases, and validate safe rollout.
+  - learn.wwl.explore-infrastructure-as-code-configuration-management
+  - learn.wwl.create-azure-resources-by-using-azure-cli
+  - learn.wwl.implement-bicep
+  - learn.wwl.configure-provision-environments
+  - learn.wwl.create-release-pipeline
+  - learn.wwl.automate-inspection-of-health
+  - learn.wwl.introduction-to-deployment-patterns
+  - learn.wwl.implement-testing-progressive-exposure-deployment
+  # Operate: automate operations, manage drift, and collect usage feedback.
+  - learn.wwl.explore-azure-automation-devops
+  - learn.wwl.implement-desired-state-configuration-dsc
+  - learn.wwl.implement-tools-to-track-usage-flow
+trophy:
+  uid: learn.wwl.az-401-devops-foundations-prerequisites.trophy
