@@ -1,6 +1,10 @@
-The model is clear. What isn't yet: which agents Project Perception ships, what a playbook actually is, and where any of this lives in the Defender portal.
+---
+no_index_ks: true
+---
 
-Perception is the Defender portal section that houses Project Perception's chat, sessions, agents, and playbooks. Chat is the default landing surface: describe a task in natural language and Project Perception routes it to the right playbook and agents. (Other chat surfaces in the Defender portal serve different purposes.) Sessions are the individual runs of an agent or playbook, listed on the **Sessions** page across all agents so you can watch progress, review pending approvals, and inspect output. If you already know what you want, you can also start playbooks and agents directly from the **Playbooks** and **Agents** pages of Perception. "Project Perception" names the underlying system, and "Perception" names the Defender portal section you'll click into.
+The model is clear. What isn't yet: which agents Perception ships, what a playbook actually is, and where any of this lives in the Defender portal.
+
+Perception is the Defender portal section that houses Perception's chat, sessions, agents, and playbooks. Chat is the default landing surface: describe a task in natural language and Perception routes it to the right playbook and agents. (Other chat surfaces in the Defender portal serve different purposes.) Sessions are the individual runs of an agent or playbook, listed on the **Sessions** page across all agents so you can watch progress, review pending approvals, and inspect output. If you already know what you want, you can also start playbooks and agents directly from the **Playbooks** and **Agents** pages of Perception. "Microsoft Perception" names the underlying system, and "Perception" names the Defender portal section you'll click into.
 
 :::image type="content" source="../media/perception-welcome.png" alt-text="Screenshot of the Perception chat welcome page in the Defender portal with recent sessions and playbook cards." lightbox="../media/perception-welcome.png":::
 
@@ -30,7 +34,7 @@ When you see an agent name, picture the primary work it accelerates and the team
 
 A **coordinated playbook** takes a security objective and orchestrates the sequence of agents and capabilities needed to close it. Instead of running threat intelligence analysis on Monday, waiting for attack path analysis Wednesday, and getting posture prioritization by the next Monday, a playbook runs the work as one connected workflow with automatic handoffs.
 
-Project Perception currently ships several named playbooks in the preview, each combining a different set of agents and capabilities. [Playbooks are preset by Microsoft](/security/agentic-security/agentic-security-concepts?azure-portal=true#playbook), triggered manually from Perception, and only run when every agent they call is enabled. A specific playbook walkthrough comes later, alongside the operating mechanics.
+Perception currently ships several named playbooks in the preview, each combining a different set of agents and capabilities. [Playbooks are preset by Microsoft](/security/agentic-security/agentic-security-concepts?azure-portal=true#playbook), triggered manually from Perception, and only run when every agent they call is enabled. A specific playbook walkthrough comes later, alongside the operating mechanics.
 
 ## Humans stay in control at the handoffs
 

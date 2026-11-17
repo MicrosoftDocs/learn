@@ -1,3 +1,7 @@
+---
+no_index_ks: true
+---
+
 Your SOC still does everything it did before. Threat intelligence analysts still write actor profiles. Detection engineers still author rules. Attack-path specialists still map exposures. So why can't a well-run SOC keep up with today's attackers?
 
 ## The attacker side is running at machine speed
@@ -28,7 +32,7 @@ That workflow also shifts where analyst attention lands. Agents carry the mechan
 
 ## Red, Blue, and Green team agents
 
-Project Perception labels its agents as [Red team, Blue team, or Green team](/security/agentic-security/agentic-security-agent-categories?azure-portal=true) agents, based on the kind of work each does. Coordinated multi-agent defense uses those team labels as its top-level structure, and you'll see them named this way in the product itself. Agents and playbooks live under the **Agents** and **Playbooks** pages of Perception, and the team label appears on each agent.
+Perception labels its agents as [Red team, Blue team, or Green team](/security/agentic-security/agentic-security-agent-categories?azure-portal=true) agents, based on the kind of work each does. Coordinated multi-agent defense uses those team labels as its top-level structure, and you'll see them named this way in the product itself. Agents and playbooks live under the **Agents** and **Playbooks** pages of Perception, and the team label appears on each agent.
 
 :::image type="content" source="../media/project-perception-red-blue-green.png" alt-text="Diagram that shows three agent teams: Red identifies weaknesses, Blue investigates and assesses risk, Green remediates and hardens." lightbox="../media/project-perception-red-blue-green.png":::
 
@@ -38,8 +42,8 @@ Project Perception labels its agents as [Red team, Blue team, or Green team](/se
 | **Blue team agents**: investigate and assess risk | Threat intelligence analysis, alert triage, incident investigation, detection engineering | Where most day-to-day security operations already live. |
 | **Green team agents**: remediate and harden | Posture prioritization and remediation ranking | Close to the vulnerability management and exposure management practices you might already run. Answers "what should we fix first, and why?" |
 
-Each Project Perception agent carries a team label (Red, Blue, or Green) and a primary area of work, and its playbooks connect sequences of work across all three teams.
+Each Perception agent carries a team label (Red, Blue, or Green) and a primary area of work, and its playbooks connect sequences of work across all three teams.
 
 ## Where this leaves you
 
-Coordinated multi-agent defense runs your existing security operations as one connected workflow, handled by Red, Blue, and Green team agents, with humans in control of critical decisions. Project Perception's agents and playbooks map directly onto that shape.
+Coordinated multi-agent defense runs your existing security operations as one connected workflow, handled by Red, Blue, and Green team agents, with humans in control of critical decisions. Perception's agents and playbooks map directly onto that shape.
