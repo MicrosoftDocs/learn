@@ -11,7 +11,7 @@
 
 Code-generation models can help developers move from an idea to working software. Some coding assistants complete a line or explain a function. Agentic coding models go further by planning, reasoning, and executing across a sequence of development tasks.
 
-![Screenshot of the MAI Code model in GitHub Copilot.](../media/code-model.png)
+![Screenshot of the MAI-Code model in GitHub Copilot.](../media/code-model.png)
 
 ## Work with MAI-Code
 
@@ -29,7 +29,7 @@ The model supports a broad range of programming languages and ecosystems, includ
 MAI-Code is custom-trained for native integration with GitHub Copilot in Visual Studio Code and the Copilot CLI. Through these environments, the model can use repository context and development tools to work across a task rather than respond to an isolated prompt.
 
 > [!TIP]
-> Review the [MAI-Code-1.1-Flash model card](https://ai.azure.com/catalog/models/mai-code-1.1-flash?azure-portal=true) for current capabilities, limitations, and intended uses.
+> Review the [MAI-Code model card](https://microsoft.ai/pdf/MAI-Code-2-And-MAI-Code-2-Flash-Model-Card.pdf?v=3&azure-portal=true) for current capabilities, limitations, and intended uses.
 
 ## Provide useful context
 
