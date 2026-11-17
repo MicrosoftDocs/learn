@@ -1,3 +1,5 @@
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=0cb569f2-7308-4cdb-8916-6dd4a5ab1d63]
+
 With Azure Kubernetes Service (AKS) on Azure Local, you deploy and manage Kubernetes clusters on your own infrastructure from Azure. In this module, you explore how to prepare, deploy, access, and operate those clusters.
 
 ## Scenario: Modernize Contoso's container platform
