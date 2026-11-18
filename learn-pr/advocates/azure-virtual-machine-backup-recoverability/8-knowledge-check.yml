@@ -1,0 +1,160 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-virtual-machine-backup-recoverability.knowledge-check
+metadata:
+  title: Module assessment
+  description: Assess recovery-point selection, isolated restoration, application validation, recovery objectives, workload authority, and continued backup protection.
+  ms.date: 11/18/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+  module_assessment: true
+title: Module assessment
+durationInMinutes: 12
+content: |
+quiz:
+  questions:
+  - content: |
+      A backup job succeeds, but its recovery point includes only the operating system disk. The order ledger is on a separate managed data disk. What should the recovery operator conclude?
+    choices:
+    - content: A new-VM restore will recover the ledger because the backup job succeeded.
+      isCorrect: false
+      explanation: Incorrect. Job success applies to the configured backup scope. It doesn't establish that an excluded data disk or its application records were captured.
+    - content: The point can't meet the ledger recovery objective, so recovery needs a point or another protection mechanism containing the required data disk.
+      isCorrect: true
+      explanation: Correct. Required application data must be within the recovery scope. If no suitable protected copy exists, report the scope gap rather than accepting a successful VM restore.
+    - content: The point can recover the ledger if its consistency label is application-consistent.
+      isCorrect: false
+      explanation: Incorrect. Application consistency doesn't add excluded disks to a recovery point. Both the disk scope and recovered application content need verification.
+  - content: |
+      Order A102 was deleted at 11:55. An application-consistent point at 11:58 includes both disks but lacks A102. A complete point at 11:45 contains A102. Which recovery-point decision is defensible?
+    choices:
+    - content: Select the 11:58 point because application consistency makes the newest point suitable.
+      isCorrect: false
+      explanation: Incorrect. A consistent point can preserve an unwanted deletion. This point lacks the record required for recovery.
+    - content: Accept the 11:45 point without further review because it contains the deleted order.
+      isCorrect: false
+      explanation: Incorrect. Recovering A102 doesn't establish acceptable loss of newer legitimate writes. The content gap and application behavior still need assessment and owner approval.
+    - content: Investigate the 11:45 point, validate its content, and assess missing newer writes against the agreed recovery criteria.
+      isCorrect: true
+      explanation: Correct. The older point is a candidate because it predates the deletion and contains the required data. Measure its actual content gap and obtain the application owner's acceptance rather than assuming it meets every objective.
+  - content: |
+      Snapshot creation succeeded, and the point is available for a supported snapshot restore. Transfer to the vault reaches 100%, but Validate backup is still running. Which readiness statement is justified?
+    choices:
+    - content: The vault point is ready because the transfer progress bar reached 100%.
+      isCorrect: false
+      explanation: Incorrect. The progress bar covers transfer, not all backup phases. Vault readiness also requires successful service validation and an available vault recovery point.
+    - content: Neither restore path is usable until vault validation finishes.
+      isCorrect: false
+      explanation: Incorrect. A successfully created, available snapshot can support an approved snapshot restore without waiting for vault transfer or validation.
+    - content: The snapshot path is available, but vault readiness remains unverified until validation succeeds and the vault point is available.
+      isCorrect: true
+      explanation: Correct. Establish readiness separately for each restore tier. Service-side backup validation also remains distinct from validating the recovered application.
+  - content: |
+      You need to rehearse recovery of the database, Python runtime, and guest together without overwriting the source. Create-new eligibility, destination compatibility, and permissions are confirmed. Which approach matches the module's recovery plan?
+    choices:
+    - content: Create a new VM in the approved isolated network, with approved management access and required Azure service connectivity.
+      isCorrect: true
+      explanation: Correct. An isolated new VM supports application testing while preserving the source. Verify routes, network security rules, and connectivity, block production application paths, and keep the restored copy nonauthoritative.
+    - content: Replace the source VM's disks with the selected recovery point and validate the application in place.
+      isCorrect: false
+      explanation: Incorrect. Replacing disks changes current source state and can discard newer legitimate data. This exercise excludes that recovery method.
+    - content: Create a new VM on the source subnet and rely on a different resource name to isolate it.
+      isCorrect: false
+      explanation: Incorrect. Naming doesn't establish isolation. The destination needs verified network controls that prevent unintended production access while preserving approved management and service connections.
+  - content: |
+      The recovered ledger matches the independently preserved manifest's identifiers, amounts, and logical hash. Its integrity check succeeds, but the write-and-rollback probe fails with a permission error. What is required before accepting recovery?
+    choices:
+    - content: Accept recovery because the matching hash proves that the application is usable.
+      isCorrect: false
+      explanation: Incorrect. A matching logical hash establishes equality of the compared fields, not that the application can perform its required transactions.
+    - content: Correct the isolated guest permissions through the approved process and rerun the required data and application checks.
+      isCorrect: true
+      explanation: Correct. Recovery requires both correct data and working application behavior. A failed transaction probe blocks acceptance even when data equality and database integrity pass.
+    - content: Accept recovery because successful infrastructure restoration takes precedence over the failed probe.
+      isCorrect: false
+      explanation: Incorrect. Restore-job completion isn't application acceptance. Required transaction behavior must succeed before the recovered application is considered usable.
+  - content: |
+      The isolated recovery contains A101, A102, and A103. The write-frozen original source contains A101, A103, and the legitimate newer order A104. No promotion is authorized. How should the operator restore the intended operating state?
+    choices:
+    - content: Repair only A102 on the original source using its validated recovered amount, then verify all four orders against the independent pre-failure manifest.
+      isCorrect: true
+      explanation: Correct. The source remains authoritative. A controlled record repair restores the missing order while preserving A104, and the independent manifest verifies the complete intended state.
+    - content: Replace the source database with the recovered three-order database.
+      isCorrect: false
+      explanation: Incorrect. Replacing the database would discard the legitimate newer A104 record. Recovering a deleted order doesn't authorize rolling back unrelated valid data.
+    - content: Promote the recovered VM and let both copies accept writes until their records can be merged.
+      isCorrect: false
+      explanation: Incorrect. Promotion isn't authorized, and competing writers can create divergent records. Preserve the agreed authority and write freeze during reconciliation.
+  - content: |
+      The laboratory has a 60-minute recovery time objective. Recovery is authorized at 09:22, the infrastructure job runs from 09:24 to 09:39, application checks first pass at 09:47, and independent validation completes at 09:50. Which duration should be assessed against the objective?
+    choices:
+    - content: 15 minutes, from infrastructure-job start to infrastructure completion.
+      isCorrect: false
+      explanation: Incorrect. The job duration omits request overhead, access, and application validation. The laboratory timer starts at recovery authorization.
+    - content: 25 minutes, from recovery authorization to the first passing application check.
+      isCorrect: false
+      explanation: Incorrect. The first passing check is an intermediate milestone. This laboratory's acceptance clock stops when independent validation completes.
+    - content: 28 minutes, from recovery authorization to independent validation completion.
+      isCorrect: true
+      explanation: Correct. Subtracting 09:22 from 09:50 gives 28 minutes, which meets the 60-minute laboratory RTO. Record detection time and other milestones separately.
+  - content: |
+      A recovery point has a 09:10 content boundary. The last legitimate pre-incident write was acknowledged at 09:20, and recovery was authorized at 09:22. The restored copy lacks only that newer order, worth 600 cents. The limits are a 15-minute acknowledged-write gap and at most one missing order. What is the observed result?
+    choices:
+    - content: A 12-minute acknowledged-write gap and one missing order worth 600 cents.
+      isCorrect: false
+      explanation: Incorrect. Twelve minutes is the point's age at authorization. The acknowledged-write gap uses the 09:20 post-commit acknowledgement, not the authorization time.
+    - content: No data loss because the recovery point contains the previously deleted order.
+      isCorrect: false
+      explanation: Incorrect. Restoring the deleted order doesn't recover the newer order that was written after the selected point. Report that missing acknowledged write explicitly.
+    - content: A ten-minute acknowledged-write gap and one missing order worth 600 cents, meeting the stated numeric limits.
+      isCorrect: true
+      explanation: Correct. The gap from 09:10 to 09:20 is ten minutes, and one missing order is within the record-loss allowance. Acceptance still requires the application owner's approval.
+  - content: |
+      One rehearsal demonstrates a ten-minute acknowledged-write gap. The VM uses an Enhanced policy scheduled every four hours, while the workload requires a continuous 15-minute recovery point objective. What should the protection-design review conclude?
+    choices:
+    - content: Change the Enhanced VM backup schedule to every 15 minutes.
+      isCorrect: false
+      explanation: Incorrect. Four hours is the most frequent supported scheduled interval for Enhanced Azure VM backup. Tightening that policy alone can't provide a 15-minute schedule.
+    - content: The selected point meets the observed criterion, but the ongoing design needs a suitable complementary protection mechanism to meet the continuous target.
+      isCorrect: true
+      explanation: Correct. A favorable point doesn't prove continuous protection. Have the owner select and validate an appropriate mechanism, such as supported application-native log backup and point-in-time recovery, while retaining required VM protection.
+    - content: The successful rehearsal proves that the four-hour schedule meets the continuous target.
+      isCorrect: false
+      explanation: Incorrect. Legitimate writes can be almost four hours newer than the latest scheduled point. One passing rehearsal doesn't remove that protection-design gap.
+  - content: |
+      An ordinary same-region restore selects a point with both snapshot and vault tiers available and finishes within the RTO. No job detail explicitly identifies the restore source. How should the evidence describe the source?
+    choices:
+    - content: Record a confirmed vault restore because vault transfer completed before restoration.
+      isCorrect: false
+      explanation: Incorrect. Waiting for vault transfer doesn't select the vault copy. The ordinary same-region workflow automatically uses the available local snapshot.
+    - content: Record snapshot as an explicitly labeled inference from the documented same-region selection behavior.
+      isCorrect: true
+      explanation: Correct. Distinguish documented inference from observed job evidence. The dual-tier label describes availability, and this result doesn't establish vault-only recovery performance.
+    - content: Record snapshot as directly observed because the recovery point lists both tiers.
+      isCorrect: false
+      explanation: Incorrect. A tier-availability label isn't restore-source telemetry. Without direct source evidence, identify the conclusion as an inference rather than a live observation.
+  - content: |
+      In a live drill, the original source is repaired and passes application validation. Its backup policy is assigned and the next scheduled backup is visible, but evidence of a subsequent backup job and recovery point is missing. What is the correct closure decision?
+    choices:
+    - content: Block closure and assign the backup owner to obtain the subsequent successful backup job and recovery-point evidence.
+      isCorrect: true
+      explanation: Correct. A repaired application and a future schedule don't prove continued protection. Retain the applicable phase results and point details, including successful transfer and service validation if claiming vault readiness.
+    - content: Close the drill because enabled protection and a scheduled run guarantee that the next backup succeeds.
+      isCorrect: false
+      explanation: Incorrect. Configuration and scheduling don't establish the outcome of a backup execution. Continued protection remains unverified until the required evidence is available.
+    - content: Use the supplied synthetic P3 record as proof that the live source's subsequent backup ran.
+      isCorrect: false
+      explanation: Incorrect. P3 supports the analysis-only track and must retain its fixture provenance. It can't replace observed evidence from a live drill.
+  - content: |
+      Recovery evidence and continued source protection are approved. Which cleanup approach is appropriate for the isolated test restore?
+    choices:
+    - content: Preserve evidence, remove only approved test resources, and inspect remaining resources while retaining the authoritative source and its protection.
+      isCorrect: true
+      explanation: Correct. Track the restored VM, test disks, network interface, and staging artifacts separately. Record retained resources, remaining costs, and their owners without deleting protected recovery points or changing retention.
+    - content: Deallocate the restored VM and report that all laboratory resource charges have stopped.
+      isCorrect: false
+      explanation: Incorrect. Deallocation stops usage-based VM compute charges, not charges for retained disks, backups, storage, and other services.
+    - content: Delete the restored VM and assume its disks, network interface, and staging artifacts were removed automatically.
+      isCorrect: false
+      explanation: Incorrect. VM deletion doesn't necessarily remove dependent resources. Inspect the approved resource inventory and remove only the test artifacts authorized for cleanup.

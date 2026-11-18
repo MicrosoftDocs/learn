@@ -1,3 +1,12 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=8dd31b2b-ad60-4714-8310-6bffd01e0e08]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
 The retrieval half of the loop reads whatever an earlier process wrote. That process makes one decision that shapes every answer the assistant ever gives, and it isn't which embedding model to call. It's what counts as one retrieval unit. In this unit, you size a retrieval unit, separate the text you embed from the text you ground on, and attach the metadata that lets an answer cite its sources.
 
 ## Size the retrieval unit
