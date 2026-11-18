@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=4618a1c3-7774-4706-855c-dcd8b03985f1]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Tuning a query controls what one request costs. It doesn't control what a search workload does to the container that also takes orders. Retrieval traffic is read-heavy and bursty. It wants vector and full-text indexes that transactional writes gain nothing from, and it competes for the same provisioned throughput. In this unit, you move retrieval onto a global secondary index so the two workloads stop sharing a budget.
 
 ## Separate the search copy from the source
@@ -87,3 +98,5 @@ Two alerts are worth setting up when the index goes live. One on propagation lat
 Lag also sets a product constraint. An item written to the source container isn't searchable until it propagates. If a user has to find something they just created, retrieval from an index container is the wrong design for that path, and the query belongs on the source.
 
 In this unit, you learn how to isolate search functionality using global secondary indexes in Azure Cosmos DB for NoSQL. You see how to evaluate the throughput and storage implications, monitor propagation lag, and set up alerts to maintain operational awareness.
+
+::: zone-end

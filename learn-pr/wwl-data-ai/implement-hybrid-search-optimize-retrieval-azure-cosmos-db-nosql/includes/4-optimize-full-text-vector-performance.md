@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=768477d8-984a-44ba-a539-57766d40452f]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 A hybrid query that returns the right items can still be the wrong query. Retrieval runs on every request a search feature serves, so its request charge and its latency are recurring costs, and relevance that arrives too late or too expensively doesn't reach the user. In this unit, you account for where a hybrid query spends its budget, narrow what gets ranked without undoing the fusion, and measure relevance as deliberately as you measure cost.
 
 ## Account for both halves of a hybrid query
@@ -60,3 +71,5 @@ Record both numbers for every step, the evaluation score and the request charge.
 Repeat the measurement as the corpus grows. BM25 scores depend on how rare a term is across the container, so term rarity shifts as items are added, and the vector index behaves differently once the corpus crosses the thresholds that make an approximate index worthwhile. Weights tuned against 10,000 items are a hypothesis about 1,000,000 of them.
 
 In this unit, you learn how to optimize the performance of full-text and vector search in Azure Cosmos DB for NoSQL. You see how to establish a ground truth with brute-force queries, tune query parameters methodically, and balance relevance against request charge. The next unit covers advanced strategies for measuring and adjusting these optimizations in a production environment.
+
+::: zone-end

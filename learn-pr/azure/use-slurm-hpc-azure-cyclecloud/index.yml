@@ -26,7 +26,7 @@ metadata:
   gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/use-slurm-hpc-azure-cyclecloud/index.yml
   title: Use Slurm for HPC on Azure CycleCloud
   description: Learn how to use the Slurm job scheduler with Azure CycleCloud.
-  ms.date: 11/15/2025
+  ms.date: 11/15/2026
   author: Orin-Thomas
   ms.author: orthomas
   ms.topic: module
@@ -39,6 +39,7 @@ abstract: |
   - Understand how Slurm integrates with Azure CycleCloud.
   - Troubleshoot common problems for Slurm-managed jobs that run in Azure CycleCloud.
 prerequisites: |
+  Before starting this module, you should have:
   - Basic understanding of Azure CycleCloud at the beginner level
   - Basic understanding of HPC job management at the beginner level
 iconUrl: /training/achievements/generic-badge.svg

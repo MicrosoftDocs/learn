@@ -2,16 +2,15 @@
 uid: learn.azure.use-slurm-hpc-azure-cyclecloud.knowledge-check
 title: Module assessment
 metadata:
-  title: Module assessment
+  title: Module Assessment
   description: This content is part of the "Use Slurm for HPC on Azure CycleCloud" module.
-  ms.date: 11/15/2025
+  ms.date: 11/15/2026
   author: Orin-Thomas
   ms.author: orthomas
   ms.topic: unit
   module_assessment: true
 durationInMinutes: 4
 quiz:
-  title: Knowledge Check
   questions:
     - content: "Which command can you use to display information on jobs, partitions, and nodes that Slurm manages?"
       choices:
@@ -27,25 +26,25 @@ quiz:
         - content: "`sbatch`"
           isCorrect: false
           explanation: Incorrect. Use this command to submit a job script for later execution. These scripts generally include one or more srun commands to initiate parallel tasks.
-    - content: "You have a job that has a large number of complex sequential steps, with each new step depending on calculations performed in the previous step. Which type of Azure CycleCloud partition is appropriate for this job?"
+    - content: "A multinode MPI simulation runs concurrently and exchanges data frequently between nodes. Which appropriately configured Slurm partition is intended for this workload?"
       choices:
         - content: "HTC partition"
           isCorrect: false
-          explanation: "Incorrect. HTC partitions are appropriate for workloads that are largely independent of one another and where similar tasks can be delegated across different cluster nodes."
+          explanation: "Incorrect. HTC partitions are intended for independent or loosely coupled tasks that generally don't require specialized internode communication."
         - content: "HPC partition"
           isCorrect: true
-          explanation: "Correct. HPC partitions are appropriate for workloads that have dependencies on prior steps and where the job executes more quickly when greater resources are allocated to the job."
-    - content: "Which of the following tools do you run after changing the Slurm configuration to apply the changes to the Azure CycleCloud cluster?"
+          explanation: "Correct. An HPC partition can provide suitable VM placement and networking for tightly coupled multinode workloads. Sequential dependencies alone don't identify this workload type."
+    - content: "After changing the CycleCloud cluster definition for a running Slurm project-4.x cluster, which command should an administrator run as root on the scheduler to regenerate the integration configuration?"
       choices:
         - content: "`sinfo`"
           isCorrect: false
-          explanation: "Incorrect. This command displays information on partitions and nodes managed by Slurm."
-        - content: "`cyclecloud_slurm.sh`"
+          explanation: "Incorrect. This command reports partition and node information."
+        - content: "`azslurm scale`"
           isCorrect: true
-          explanation: "Correct. You use the `cyclecloud_slurm.sh` script to apply changes after you have modified the Slurm configuration."
+          explanation: "Correct. This command regenerates the integration configuration, updates nodes and partitions, and restarts the Slurm controller. It doesn't upgrade the Slurm project."
         - content: "`srun`"
           isCorrect: false
-          explanation: "Incorrect. You use this tool to run a job task."
+          explanation: "Incorrect. This command launches job tasks."
         - content: "`sbatch`"
           isCorrect: false
-          explanation: "Incorrect. You use this command to submit a job script for later execution. These scripts generally include one or more `srun` commands to initiate parallel tasks."
+          explanation: "Incorrect. This command submits a batch script."
