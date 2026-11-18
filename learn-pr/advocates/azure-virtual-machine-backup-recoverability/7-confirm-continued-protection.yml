@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-virtual-machine-backup-recoverability.confirm-continued-protection
+metadata:
+  title: Confirm Continued Protection
+  description: Repair the authoritative source, confirm subsequent backup protection, preserve evidence, clean up safely, and assess recovery decisions.
+  ms.date: 11/15/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Confirm continued protection
+durationInMinutes: 30
+content: |
+  [!include[](includes/7-confirm-continued-protection.md)]
