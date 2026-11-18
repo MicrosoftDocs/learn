@@ -15,9 +15,4 @@ In this module, we've introduced Azure, Microsoft's cloud service for global sca
 
 ::: zone-end
 
-Use the links below to learn more.
-
-- [Explore the latest Foundry portal has to offer](/azure/foundry/what-is-foundry?tabs=python#whats-new&preserve-view=true)
-- [Use a QuickStart to create a Foundry project and deploy a model](/azure/ai-foundry/tutorials/quickstart-create-foundry-resources?tabs=portal&preserve-view=true)
-- [Learn more about Foundry's Agent Service](/azure/ai-foundry/agents/overview)
-- [Learn more about Foundry Models' REST API](/azure/ai-foundry/openai/reference)
+View the [Microsoft Foundry documentation](/azure/foundry/) to learn more.
