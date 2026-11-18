@@ -4,8 +4,8 @@ title: 'Exercise: Build and tune hybrid search'
 metadata:
   title: 'Exercise: Build and Tune Hybrid Search'
   description: "Load a catalog with searchable text and embeddings, measure keyword and semantic retrieval separately, fuse them with RRF, weight the fusion, and optimize the query against measured request charges."
-  ms.date: 10/03/2026
-  author: wwlpublish
+  ms.date: 11/17/2026
+  author: MScalopez
   ms.author: calopez
   ms.topic: unit
   zone_pivot_groups: dev-lang-csharp-python

@@ -2,10 +2,10 @@
 uid: learn.wwl.implement-hybrid-search-optimize-retrieval-azure-cosmos-db-nosql.knowledge-check
 title: Module assessment
 metadata:
-  title: Module assessment
+  title: Module Assessment
   description: "Check your ability to select a retrieval strategy, reason about positional reciprocal rank fusion (RRF) weights, place scoring functions correctly, diagnose a filter that undoes a fusion, and weigh the cost of search isolation."
-  ms.date: 10/03/2026
-  author: wwlpublish
+  ms.date: 11/17/2026
+  author: MScalopez
   ms.author: calopez
   ms.topic: unit
   module_assessment: true

@@ -4,8 +4,8 @@ title: Summary
 metadata:
   title: Summary
   description: "Recap retrieval strategy selection, hybrid search with RRF and weights, retrieval optimization measured against relevance and cost, and search isolation with global secondary indexes."
-  ms.date: 10/03/2026
-  author: wwlpublish
+  ms.date: 11/17/2026
+  author: MScalopez
   ms.author: calopez
   ms.topic: unit
   ai-usage: ai-generated
