@@ -2,10 +2,11 @@
 uid: learn.wwl.implement-hybrid-search-optimize-retrieval-azure-cosmos-db-nosql.choose-retrieval-strategy
 title: Choose a retrieval strategy
 metadata:
+  zone_pivot_groups: video-or-text
   title: Choose a Retrieval Strategy
   description: "Compare what BM25 and vector similarity rank on, audit the indexed text before you commit to a method, and decide when hybrid retrieval earns its extra cost."
-  ms.date: 10/03/2026
-  author: wwlpublish
+  ms.date: 11/17/2026
+  author: MScalopez
   ms.author: calopez
   ms.topic: unit
   ai-usage: ai-generated

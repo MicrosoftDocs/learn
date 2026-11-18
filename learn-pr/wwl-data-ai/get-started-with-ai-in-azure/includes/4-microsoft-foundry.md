@@ -54,7 +54,6 @@ A **Foundry project** is a *workspace* inside that resource where you build AI a
 - Evaluations
 - Files and datasets
 - Vector indexes
-- Flows (AI logic)
 - Connections
 - Project‑specific settings
 
@@ -64,7 +63,7 @@ You might have one Foundry resource for a team or department, and many Foundry p
 
 The Foundry portal provides a modern web-based interface for developing, testing, and operating AI solutions. This is where you'll spend a lot of your time when working with models, agents, and other assets.
 
-![Screenshot of Foundry main page.](../media/new-portal-1.png)
+![Screenshot of Foundry main page.](../media/new-portal.png)
 
 In the Foundry portal you can discover models and tools, build agents, manage the operation of those agents, and much more.
 

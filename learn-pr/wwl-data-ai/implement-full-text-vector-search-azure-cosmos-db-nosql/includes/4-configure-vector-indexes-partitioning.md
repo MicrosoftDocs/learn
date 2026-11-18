@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=39724723-a2e3-4781-94ef-b06c8cf9272e]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 A vector policy makes similarity queries possible. A vector index makes them affordable. Without one, each query performs a brute-force comparison against every eligible vector after partition routing and filters are applied. The request charge grows with the size of that candidate set. In this unit, you choose an index type for the size of your data, tune the build when the defaults aren't enough, and decide how the container is partitioned so that queries touch as little of it as possible.
 
 ## Choose a vector index type
@@ -90,3 +101,5 @@ Two rules govern the shape. The lowest level needs high cardinality, which is wh
 > Running vector search against a container with hierarchical partition keys requires the Azure Cosmos DB team to configure the account so the search uses the partitioning scheme. Request that configuration at `cosmossearch@microsoft.com` before you commit a design to it.
 
 One more operational consideration is initial ingestion. Inserting more than approximately 5,000,000 vectors in a short period can extend index-build time. Pace and monitor large initial loads, and allow the vector index to become ready before relying on production query performance.
+
+::: zone-end

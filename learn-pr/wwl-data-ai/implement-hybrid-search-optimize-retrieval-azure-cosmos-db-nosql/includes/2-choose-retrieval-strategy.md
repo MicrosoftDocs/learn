@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=6ac562f9-6d1f-4a7b-8411-0f3c6d7fc9aa]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Contoso's search box accepts whatever a shopper types. Some of that input is a product name. Some of it describes a need, and one box has to serve both. In this unit, you match a retrieval method to the query it answers and the text it runs against, and you decide when running two methods is worth what it costs.
 
 ## Compare what each method scores on
@@ -53,3 +64,5 @@ One prerequisite belongs in the decision rather than in the implementation. Hybr
 Hybrid also isn't limited to one keyword method plus one semantic method. `RRF` fuses any set of scoring functions, so two full-text scores over a title path and a body path fuse equally well, and so do two vector distances over a text embedding and an image embedding. Reading hybrid as a family of fusions rather than one fixed pairing opens designs that a strict keyword-plus-vector reading hides.
 
 In this unit, you learn how to evaluate the shape of your queries and the structure of your indexed text to choose between keyword, semantic, and hybrid retrieval strategies effectively. Next, you can apply these principles to design and implement a search feature that balances coverage, cost, and performance.
+
+::: zone-end

@@ -2,10 +2,11 @@
 uid: learn.wwl.implement-hybrid-search-optimize-retrieval-azure-cosmos-db-nosql.optimize-fulltext-vector-performance
 title: Optimize full-text and vector performance
 metadata:
+  zone_pivot_groups: video-or-text
   title: Optimize Full-Text and Vector Performance
   description: "Account for both halves of a hybrid query, narrow the ranked set without undoing the fusion, and measure relevance against a fixed evaluation set alongside request charge."
-  ms.date: 10/03/2026
-  author: wwlpublish
+  ms.date: 11/17/2026
+  author: MScalopez
   ms.author: calopez
   ms.topic: unit
   ai-usage: ai-generated

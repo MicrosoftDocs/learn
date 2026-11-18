@@ -1,3 +1,11 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=f543a2b2-32ed-4859-9178-fea0068fc33b]
+
+::: zone-end
+
+::: zone pivot="text"
+
 A search box that returns results is not the same as a search box that answers well. The Contoso product knowledge base now runs keyword and semantic retrieval against one container, and the query logs show where each one gives up. A shopper who types *something to see the road at night* wants the three lights in the catalog. Keyword search can't find them, because no product name or category contains the words *see* or *night*, while 96 items contain the word *road*. A shopper who types *Touring-1000 Blue, 50* wants that one bike. Semantic search can't guarantee it, because the catalog holds four near-identical size variants of the same model.
 
 Both results are correct for the method that produced them. Keyword search scores documents on the terms they contain, so it can't reach a phrase that shares no words with the catalog. Vector search scores documents on meaning, so it has no notion of an exact token. Real users type both kinds of query into one box, and the gap between the two methods is where answer quality goes missing.
@@ -7,3 +15,8 @@ Azure Cosmos DB for NoSQL closes that gap in the query language. The `RRF` funct
 In this module, you choose a retrieval strategy, write and weight hybrid queries with `RRF`, optimize a retrieval pipeline for relevance alongside request charge, and isolate a search workload from transactional traffic with a global secondary index.
 
 By the end of this module, you can build and tune a hybrid retrieval pipeline in Azure Cosmos DB for NoSQL that holds relevance, cost, and latency inside a production budget.
+
+::: zone-end
+
+> [!NOTE]
+> We recognize that different people like to learn in different ways. You can choose to complete this module in video-based format or you can read the content as text and images. The text contains greater detail than the videos, so in some cases you might want to refer to it as supplemental material to the video presentation.
