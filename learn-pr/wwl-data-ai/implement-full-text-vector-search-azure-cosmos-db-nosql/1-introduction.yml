@@ -2,10 +2,11 @@
 uid: learn.wwl.implement-full-text-vector-search-azure-cosmos-db-nosql.introduction
 title: Introduction
 metadata:
+  zone_pivot_groups: video-or-text
   title: Introduction
   description: "Frame the need for keyword and semantic retrieval over one product catalog, and preview implementing both natively in Azure Cosmos DB for NoSQL."
-  ms.date: 10/03/2026
-  author: wwlpublish
+  ms.date: 11/17/2026
+  author: MScalopez
   ms.author: calopez
   ms.topic: unit
   ai-usage: ai-generated

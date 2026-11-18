@@ -1,3 +1,12 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=5dd61f68-88fa-4123-aaa1-318801ffe8c5]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
 The Contoso catalog already holds everything a keyword search needs. Each product carries a name such as `Sport-100 Helmet, Red` and a category such as `Accessories, Helmets`. What it lacks is a way to rank those strings by relevance instead of scanning them character by character. In this unit, you configure the two pieces of container configuration that full-text search depends on, then query the text with the four full-text system functions.
 
 Full-text search in Azure Cosmos DB for NoSQL applies the processing you expect from a search engine: tokenization splits text into terms, stemming reduces those terms to a common root so *helmets* matches *helmet*, and stop words drop out. Relevance ranking uses `BM25`, which weighs how often a term appears in an item, how rare the term is across the container, and how long the text is.

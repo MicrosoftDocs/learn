@@ -26,8 +26,8 @@ metadata:
   gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/implement-full-text-vector-search-azure-cosmos-db-nosql/index.yml
   title: Implement Full-Text and Vector Search in Azure Cosmos DB for NoSQL
   description: "Configure full-text policies and indexes and rank text with BM25, design vector data and vector indexes, run similarity queries with VectorDistance, and keep embeddings current with the change feed."
-  ms.date: 10/03/2026
-  author: wwlpublish
+  ms.date: 11/17/2026
+  author: MScalopez
   ms.author: calopez
   ms.topic: module
   ms.service: azure-cosmos-db
@@ -41,9 +41,9 @@ abstract: |
   - Design vector data and configure vector indexes, including vector partitioning.
   - Implement vector search with the VectorDistance function and keep embeddings current with the change feed.
 prerequisites: |
-  - Familiarity with vector embeddings and their role in AI applications, and experience calling an embedding API such as Azure OpenAI
-  - Working knowledge of Azure Cosmos DB for NoSQL containers, items, indexing policies, and queries
-  - Programming experience with Python or C#
+  - Familiarity with vector embeddings and their role in AI applications, and experience calling an embedding API such as Azure OpenAI.
+  - Working knowledge of Azure Cosmos DB for NoSQL containers, items, indexing policies, and queries.
+  - Programming experience with Python or C#.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - advanced

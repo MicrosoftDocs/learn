@@ -1,3 +1,12 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=12eacb3a-a4af-4587-b3a9-b04d8e4da9d7]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
 Full-text search finds the words that are there. A Contoso shopper who types *something to protect my head* uses none of the words in `Sport-100 Helmet, Red`, and `BM25` has nothing to score. Answering that request means comparing meaning rather than tokens, and meaning is represented as a vector.
 
 An embedding model converts text, an image, or audio into an array of floating-point numbers. Each position in the array corresponds to a learned feature, and the array as a whole places the item at a point in a high-dimensional space. Items with similar meanings occupy points near each other. Vector search measures the distance between a query vector and the stored vectors and returns the nearest ones, which is why it retrieves the helmet for a request that never says *helmet*.
