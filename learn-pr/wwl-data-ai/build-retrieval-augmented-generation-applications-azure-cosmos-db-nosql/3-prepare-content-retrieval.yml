@@ -2,13 +2,13 @@
 uid: learn.wwl.build-retrieval-augmented-generation-applications-azure-cosmos-db-nosql.prepare-content-retrieval
 title: Prepare and embed content for retrieval
 metadata:
+  zone_pivot_groups: video-or-text,dev-lang-csharp-python
   title: Prepare and Embed Content for Retrieval
   description: "Size a retrieval unit so each result answers something on its own, separate the text you embed from the text you ground on, and store the metadata that lets a generated answer cite its sources."
-  ms.date: 10/04/2026
-  author: wwlpublish
+  ms.date: 11/18/2026
+  author: MScalopez
   ms.author: calopez
   ms.topic: unit
-  zone_pivot_groups: dev-lang-csharp-python
   ai-usage: ai-generated
 azureSandbox: false
 labModal: false

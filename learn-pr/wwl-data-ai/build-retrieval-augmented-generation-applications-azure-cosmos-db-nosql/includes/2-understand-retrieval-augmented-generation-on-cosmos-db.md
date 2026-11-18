@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=7f865b5d-abf2-4b43-885f-da47af2512ed]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 A language model answers from what it learned during training. Ask it about a private product catalog and it produces something catalog-shaped, because producing plausible text is the job it was trained to do. Retrieval-augmented generation (RAG) changes the question the model is asked, from *what do you know about this* to *what does this evidence say about this*. In this unit, you work through the loop that makes that substitution, and the two properties of it that decide whether the answers hold up.
 
 ## Follow the loop
@@ -61,3 +72,5 @@ Some questions don't have that shape. *Which of our lights works best for a comm
 Multi-step retrieval handles those questions by answering, noticing what's missing, asking a narrower question, and retrieving again. It's more accurate on questions with several parts and it costs several model calls per answer. Unit 5 covers when the trade pays and what implements it.
 
 In this unit, you learn how to understand retrieval-augmented generation (RAG) on Azure Cosmos DB for NoSQL. You see how to treat retrieved content as data rather than instructions, decide the number of retrieval passes needed for a question, and design your pipeline to handle multi-step retrieval effectively.
+
+::: zone-end
