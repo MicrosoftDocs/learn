@@ -1,3 +1,12 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=49d82fa5-db33-43c8-8141-9594091611c5]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
 Retrieval hands back a ranked list. The model needs a prompt. The step between them decides how many results become evidence, what shape that evidence takes, and which parts of the prompt the answer is allowed to obey. In this unit, you narrow a retrieval result into a grounding block, assemble a prompt that produces a citable answer, and keep retrieved text on the data side of the trust boundary.
 
 ## Retrieve wider than you ground
@@ -175,12 +184,12 @@ An attack of this shape doesn't target your application directly. It puts the pa
 
 Defense runs in layers, and the application owns the first two.
 
-**Structure the prompt so evidence has no authority.** Keep retrieved content out of the system message. Label it, fence it, and state in the system message that text inside the fence is data. None of these steps is a guarantee, and all of them raise the cost of an attack from trivial to deliberate.
+**Structure the prompt so evidence has no authority** - Keep retrieved content out of the system message. Label it, fence it, and state in the system message that text inside the fence is data. None of these steps is a guarantee, and all of them raise the cost of an attack from trivial to deliberate.
 
-**Constrain what an answer can cause.** An assistant that only produces text has a bounded blast radius. One that can call a tool, send a message, or write to the database inherits the trust of whatever content reached it, so treat any action a grounded answer requests as originating from an untrusted source and gate it accordingly.
+**Constrain what an answer can cause** - An assistant that only produces text has a bounded blast radius. One that can call a tool, send a message, or write to the database inherits the trust of whatever content reached it, so treat any action a grounded answer requests as originating from an untrusted source and gate it accordingly.
 
-**Turn on the service-side controls.** Prompt Shields in Microsoft Foundry detects both user prompt attacks and document attacks, and returns an annotation on each request reporting whether an attack was detected and whether the request was filtered. Spotlighting, a preview capability within it, transforms document content so the model treats it as lower trust than the system and user turns, at the cost of extra tokens.
+**Turn on the service-side controls** - Prompt Shields in Microsoft Foundry detects both user prompt attacks and document attacks, and returns an annotation on each request reporting whether an attack was detected and whether the request was filtered. Spotlighting, a preview capability within it, transforms document content so the model treats it as lower trust than the system and user turns, at the cost of extra tokens.
 
-**Control what enters the corpus.** The cheapest defense is the one furthest upstream. Content arriving from partners, customers, or scraped sources deserves review before it becomes retrievable, because after ingestion every safeguard downstream is a filter on an attack that's already inside.
+**Control what enters the corpus** - The cheapest defense is the one furthest upstream. Content arriving from partners, customers, or scraped sources deserves review before it becomes retrievable, because after ingestion every safeguard downstream is a filter on an attack that's already inside.
 
 In this unit, you learn how to retrieve context and ground responses in a retrieval-augmented generation application. You see how to structure prompts to minimize the authority of retrieved content, constrain the actions an answer can trigger, use service-side controls, and control what enters the corpus.

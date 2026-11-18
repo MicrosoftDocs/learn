@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-virtual-machine-backup-recoverability.inspect-protection-scope
+metadata:
+  title: Inspect Protection Scope
+  description: Prepare a supported backup baseline, verify access and staging, inspect recovery points, and distinguish backup tiers from restore sources.
+  ms.date: 11/15/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Inspect protection scope
+durationInMinutes: 35
+content: |
+  [!include[](includes/3-inspect-protection-scope.md)]

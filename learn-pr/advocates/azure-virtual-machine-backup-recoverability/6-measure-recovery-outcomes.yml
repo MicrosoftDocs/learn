@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-virtual-machine-backup-recoverability.measure-recovery-outcomes
+metadata:
+  title: Measure Recovery Outcomes
+  description: Calculate recovery duration and observed data loss, record restore-source provenance, and assess protection-design suitability.
+  ms.date: 11/15/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Measure recovery outcomes
+durationInMinutes: 20
+content: |
+  [!include[](includes/6-measure-recovery-outcomes.md)]
