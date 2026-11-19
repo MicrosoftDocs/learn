@@ -10,8 +10,6 @@ metadata:
   ms.topic: unit
   module_assessment: true
   ai_generated_module_assessment: false
-  ROBOTS: NOINDEX
-  no_index_ks: true
 durationInMinutes: 7
 quiz:
   title: ""

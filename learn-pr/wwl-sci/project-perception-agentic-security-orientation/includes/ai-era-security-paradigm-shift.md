@@ -1,7 +1,3 @@
----
-no_index_ks: true
----
-
 Your SOC still does everything it did before. Threat intelligence analysts still write actor profiles. Detection engineers still author rules. Attack-path specialists still map exposures. So why can't a well-run SOC keep up with today's attackers?
 
 ## The attacker side is running at machine speed

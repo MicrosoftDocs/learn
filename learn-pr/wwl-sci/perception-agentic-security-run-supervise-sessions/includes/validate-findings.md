@@ -1,7 +1,3 @@
----
-no_index_ks: true
----
-
 The session has produced findings, and the team is ready to use them. Before passing them on, check whether the evidence supports the important claims and whether anything missing changes the next decision.
 
 ## Trace important findings to the evidence

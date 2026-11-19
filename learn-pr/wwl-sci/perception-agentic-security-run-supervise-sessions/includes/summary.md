@@ -1,7 +1,3 @@
----
-no_index_ks: true
----
-
 The team needs an answer it can rely on, whether the request concerns a threat report, an incident, or security issues to fix. Perception can carry out that work, but the agents' output still needs your review before the team uses it.
 
 In this module, you learned how to:

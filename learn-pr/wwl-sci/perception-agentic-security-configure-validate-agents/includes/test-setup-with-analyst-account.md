@@ -1,7 +1,3 @@
----
-no_index_ks: true
----
-
 Test whether the agent's configuration supports the approved security task. Use a known input and agreed acceptance criteria to check access, required actions, and the resulting output.
 
 ## Test with the account used for security work

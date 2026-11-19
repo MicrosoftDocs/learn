@@ -37,8 +37,6 @@ metadata:
   ms.topic: module
   ms.service: defender-xdr
   ai-usage: ai-assisted
-  ROBOTS: NOINDEX
-  no_index_ks: true
 title: Understand how Microsoft Perception coordinates security operations
 summary: 'Microsoft Perception is Microsoft''s agentic security system, accessed through the Agentic security section of the Microsoft Defender portal. Machine-paced attackers move faster than security teams can coordinate work across specialist boundaries. This module explains how Perception connects security operations while humans stay in control of critical decisions. Learn to distinguish focused execution from coordination needs and choose a response based on supported capabilities, available inputs, authorization, and organizational objectives.'
 abstract: |
@@ -52,7 +50,7 @@ prerequisites: |
   - High-level familiarity with the Microsoft Defender portal and Microsoft Defender XDR workflows
   - Basic familiarity with AI agents that act on a user's behalf
 iconUrl: /training/achievements/generic-badge.svg
-hidden: true
+hidden: false
 levels:
 - intermediate
 roles:

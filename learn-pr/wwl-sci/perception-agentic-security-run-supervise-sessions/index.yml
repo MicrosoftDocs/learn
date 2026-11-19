@@ -35,8 +35,6 @@ metadata:
   ms.topic: module
   ms.service: defender-xdr
   ai-usage: ai-assisted
-  ROBOTS: NOINDEX
-  no_index_ks: true
 title: Run and supervise sessions in Microsoft Perception
 summary: 'Learn how to run and supervise work in Perception from the initial security request through review and handoff. Review how to choose a playbook, follow agent activity, respond to requests, and decide how the team can use the result.'
 abstract: |
@@ -51,7 +49,7 @@ prerequisites: |
   - Familiarity with threat intelligence, security operations, and the Microsoft Defender portal
   - No live environment is required to complete the module. To apply the procedures in the portal, you need Perception preview access, the required agents configured and enabled with appropriate data access, and permission to run and supervise sessions
 iconUrl: /training/achievements/generic-badge.svg
-hidden: true
+hidden: false
 levels:
 - intermediate
 roles:

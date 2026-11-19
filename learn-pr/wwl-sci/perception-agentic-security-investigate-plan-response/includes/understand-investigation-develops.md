@@ -1,7 +1,3 @@
----
-no_index_ks: true
----
-
 A malicious file runs on a workstation, and a related file server appears in the incident. The investigation needs to show how they connect and whether the server is affected.
 
 ## Start with what needs explaining

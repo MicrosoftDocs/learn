@@ -1,7 +1,3 @@
----
-no_index_ks: true
----
-
 The incident lists a workstation, a file server, and an account. Before planning the same response for all three, check why each appears and what the investigation shows about it.
 
 ## Separate affected entities from investigation leads

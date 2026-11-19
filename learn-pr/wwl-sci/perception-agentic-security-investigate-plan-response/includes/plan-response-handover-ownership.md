@@ -1,7 +1,3 @@
----
-no_index_ks: true
----
-
 The next responder needs to know which action comes first, who handles it, and how to check the result.
 
 ## Prioritize actions by what they address
