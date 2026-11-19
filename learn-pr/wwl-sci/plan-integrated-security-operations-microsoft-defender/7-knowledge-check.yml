@@ -1,0 +1,70 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.plan-integrated-security-operations-microsoft-defender.knowledge-check
+title: Module assessment
+metadata:
+  title: Module Assessment
+  ai_generated_module_assessment: false
+  description: "Assess your ability to plan an ISOC adoption approach in Microsoft Defender."
+  ms.date: 10/30/2026
+  author: wwlpublish
+  ms.author: hrasheed
+  ms.topic: unit
+  module_assessment: true
+durationInMinutes: 5
+quiz:
+  questions:
+  - content: "An organization has Microsoft 365 E5 and an active production Microsoft Sentinel workspace. What should its ISOC preview plan specify?"
+    choices:
+    - content: "Disconnect the production workspace and begin the ISOC preview with the existing E5 license."
+      isCorrect: false
+      explanation: "Incorrect. Organizations shouldn't disconnect a production Microsoft Sentinel workspace to qualify for the ISOC preview."
+    - content: "Continue using the existing Microsoft Sentinel experience during this preview phase."
+      isCorrect: true
+      explanation: "Correct. The current preview is for eligible customers that don't have an active Microsoft Sentinel workspace. Existing Microsoft Sentinel customers continue using their current experience."
+    - content: "Keep the production workspace and begin the ISOC preview because E5 establishes eligibility."
+      isCorrect: false
+      explanation: "Incorrect. E5 alone doesn't establish preview eligibility. The tenant must also have no active Microsoft Sentinel workspace."
+  - content: "A security team wants to begin with case management, workbooks, and enhanced automation rules that use supported Defender data. What is the appropriate initial workspace decision?"
+    choices:
+    - content: "Use the built-in capabilities first and add a workspace when an operational need requires one."
+      isCorrect: true
+      explanation: "Correct. Case management, workbooks, natural-language playbook generation, and enhanced automation rules are available without an ISOC workspace for eligible customers during this preview."
+    - content: "Create an ISOC workspace first and use it to enable these built-in capabilities for analysts."
+      isCorrect: false
+      explanation: "Incorrect. Several ISOC capabilities are built into Microsoft Defender and don't require an ISOC workspace during the preview."
+    - content: "Create a workspace first and copy native Defender data into it to support these capabilities."
+      isCorrect: false
+      explanation: "Incorrect. Native Microsoft Defender data is available directly in the Defender experience and doesn't require separate ingestion into an ISOC workspace."
+  - content: "A security operations lead wants analysts to share investigation context while people retain response ownership. Which description of ISOC best supports this operating model?"
+    choices:
+    - content: "It uses a separate SIEM as the starting point for sharing Defender signals, investigation context, automation, and AI."
+      isCorrect: false
+      explanation: "Incorrect. ISOC doesn't require a traditional SIEM deployment as a starting point. It brings XDR and SIEM capabilities together in the Microsoft Defender portal."
+    - content: "It replaces analysts' response ownership with AI decisions across Defender investigations, threat intelligence, automation, and case management."
+      isCorrect: false
+      explanation: "Incorrect. Shared context and AI support security operations, but the team still owns priorities, approvals, and response decisions."
+    - content: "It combines XDR, SIEM, threat intelligence, automation, and AI in Defender while the team retains operational responsibilities."
+      isCorrect: true
+      explanation: "Correct. ISOC brings these capabilities into the Defender portal with shared signals, context, and workflows. The operating model still assigns human ownership and governance responsibilities."
+  - content: "A team assumes that included Defender data retention satisfies a 12-month audit requirement. What should the adoption plan do?"
+    choices:
+    - content: "Accept the retention assumption and budget only for additional connector-based data sources during the preview."
+      isCorrect: false
+      explanation: "Incorrect. During this phase of the preview, eligible customers receive 30 days of included retention for Defender data."
+    - content: "Document the retention gap, identify an appropriate retention approach, and estimate associated costs before adoption."
+      isCorrect: true
+      explanation: "Correct. The plan compares the 30 days of included Defender data retention in the current preview with the audit requirement and resolves the gap before implementation."
+    - content: "Copy all native Defender data into a workspace and treat that ingestion as satisfying the audit requirement."
+      isCorrect: false
+      explanation: "Incorrect. Native Defender data doesn't need separate ingestion, and the team should evaluate retention design, data scope, and cost deliberately."
+  - content: "A team wants consistent case ownership first and additional connector-based visibility later. Which proposal best translates those priorities into a phased ISOC adoption plan?"
+    choices:
+    - content: "Sequence capabilities by outcomes, with owners, dependencies, data and cost reviews, validation measures, and preview decision gates."
+      isCorrect: true
+      explanation: "Correct. A phased plan defines why and when capabilities are adopted, who owns the work, which constraints apply, and how the organization decides whether to proceed."
+    - content: "Sequence portal actions by setup order, with workspace creation, connector installation, configuration screenshots, and a deployment completion checklist."
+      isCorrect: false
+      explanation: "Incorrect. This proposal describes implementation steps. It doesn't establish outcome-based phases, operational ownership, or criteria for expanding adoption."
+    - content: "Sequence capabilities by feature availability, with an inventory of options, release announcements, documentation links, and a single final review."
+      isCorrect: false
+      explanation: "Incorrect. Feature availability alone doesn't prioritize operational outcomes or resolve dependencies. A final review also omits the decision gates that control expansion between phases."

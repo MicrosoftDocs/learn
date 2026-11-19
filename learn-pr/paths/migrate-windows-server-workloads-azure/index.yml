@@ -32,7 +32,7 @@ metadata:
   gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/paths/migrate-windows-server-workloads-azure/index.yml
   title: Migrate Windows Server workloads to Azure
   description: Learn to migrate physical and virtual on-premises Windows Server workloads to Azure.
-  ms.date: 11/15/2025
+  ms.date: 11/10/2026
   author: Orin-Thomas
   ms.author: orthomas
   ms.topic: learning-path

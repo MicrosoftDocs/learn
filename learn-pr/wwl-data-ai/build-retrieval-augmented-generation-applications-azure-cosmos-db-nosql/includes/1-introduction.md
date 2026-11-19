@@ -1,3 +1,11 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=3bea0d53-b7d2-4e94-962f-573d2e418447]
+
+::: zone-end
+
+::: zone pivot="text"
+
 Retrieval works. Contoso's product knowledge base returns the three headlights for a shopper who types *something to see the road at night*, and the exact touring bike for a shopper who types a model number. What it returns is a ranked list of records, and the shopper still has to read them.
 
 The next request from the business is an assistant that answers in sentences. *Which light should I buy for commuting, and how much is it?* No ranked list answers that question. A language model can, and on its own it answers confidently and wrongly, because Contoso's catalog isn't in its training data. It invents a product and a price, and states both with the fluency it uses for facts.
@@ -9,3 +17,8 @@ The engineering sits in three places a demonstration skips. Deciding what a retr
 In this module, you work through the retrieval-augmented generation loop, prepare content for retrieval, ground and cite an answer, and orchestrate the pipeline for multi-turn and multi-step questions.
 
 By the end of this module, you can build a retrieval-augmented generation application on Azure Cosmos DB for NoSQL whose answers trace back to the data that produced them.
+
+::: zone-end
+
+> [!NOTE]
+> We recognize that different people like to learn in different ways. You can choose to complete this module in video-based format or you can read the content as text and images. The text contains greater detail than the videos, so in some cases you might want to refer to it as supplemental material to the video presentation.

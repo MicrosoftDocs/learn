@@ -1,0 +1,178 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1525" viewBox="0 0 1200 1525" role="img" aria-labelledby="topology-title topology-desc" font-family="Segoe UI, Arial, sans-serif">
+<title id="topology-title">HVCL01 two-node Hyper-V host and storage topology</title>
+<desc id="topology-desc">Conceptual Windows Server 2025 single-site cluster HVCL01 has HV01 and HV02 with identical pNIC aliases. HostVM combines Management and Compute through a SET virtual switch on pNIC01 and pNIC02, connected to separate switch paths A and B. Each host management vNIC uses example VLAN 10. App01 runs only on HV01 with a guest vNIC on example VLAN 120; the HV02 guest attachment is a migration-target placeholder, not a second running VM. The Storage intent uses dedicated physical pNIC03 on path A and VLAN 711, and pNIC04 on path B and VLAN 712, without a storage virtual switch. Existing SMB endpoints are reachable on both storage networks. Repeated A and B labels identify the same physical switches. ATC does not configure those switches, file-service endpoints, or guest IPs.</desc>
+<rect x="0" y="0" width="1200" height="1525" fill="#ffffff"/>
+<metadata>Conceptual educational diagram for Windows Server 2025 only. Embedded icon geometry is reused from: C:\Azure-Icons\CnE_Enterprise\Server (generic).svg; C:\Azure-Icons\compute\10021-icon-service-Virtual-Machine.svg; C:\Azure-Icons\networking\10080-icon-service-Network-Interfaces.svg. Original viewBoxes and aspect ratios are preserved. Not runtime output.</metadata>
+<defs><marker id="topology-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M1 1 L9 5 L1 9 Z" fill="#718398"/></marker><symbol id="topology-icon-server" viewBox="0 0 83.4 83.4" preserveAspectRatio="xMidYMid meet">
+<g id="topology-server-Layer_1">
+	<g id="topology-server-File_x2C__general">
+		
+	</g>
+	<g id="topology-server-Message">
+	</g>
+	<g id="topology-server-Monitor">
+	</g>
+	<g id="topology-server-topology-server-Monitor_running_apps">
+	</g>
+	<g id="topology-server-Mouse">
+	</g>
+	<g id="topology-server-Network_card">
+	</g>
+	<g id="topology-server-Not_allowed">
+	</g>
+	<g id="topology-server-Performance">
+	</g>
+	<g id="topology-server-Phone">
+	</g>
+	<g id="topology-server-Plug_and_play">
+	</g>
+	<g id="topology-server-Powershell_script_file">
+	</g>
+	<g id="topology-server-Protocol_stack">
+	</g>
+	<g id="topology-server-Queue_x2C__general">
+	</g>
+	<g id="topology-server-RMS_connector">
+	</g>
+	<g id="topology-server-Router">
+	</g>
+	<g id="topology-server-Script_file">
+	</g>
+	<g id="topology-server-Secure_virtual_machine">
+	</g>
+</g>
+<g id="topology-server-paths">
+	<g id="topology-server-Access_control">
+	</g>
+	<g id="topology-server-Azure_active_directory">
+	</g>
+	<g id="topology-server-Generic_code">
+	</g>
+	<g id="topology-server-Laptop">
+	</g>
+	<g id="topology-server-Load_balancer">
+	</g>
+	<g id="topology-server-Lock_x2C__protected">
+	</g>
+</g>
+<g id="topology-server-symbols">
+	<g>
+		<path fill="#2A3282" d="M52.6,19.1h-16c-1.1,0-2,0.9-2,2v39h20v-39C54.6,20,53.7,19.1,52.6,19.1z M51.6,56.1h-14v-2h14V56.1z
+			 M51.6,52.1h-14v-2h14V52.1z M51.6,27.1h-14v-2h14V27.1z"/>
+	</g>
+</g>
+<g id="topology-server-slices">
+</g>
+</symbol><symbol id="topology-icon-vm" viewBox="0 0 18 18" preserveAspectRatio="xMidYMid meet"><defs><linearGradient id="topology-vm-f34d9569-2bd0-4002-8f16-3d01d8106cb5" x1="8.88" y1="12.21" x2="8.88" y2="0.21" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#0078d4" /><stop offset="0.82" stop-color="#5ea0ef" /></linearGradient><linearGradient id="topology-vm-bdb45a0b-eb58-4970-a60a-fb2ce314f866" x1="8.88" y1="16.84" x2="8.88" y2="12.21" gradientUnits="userSpaceOnUse"><stop offset="0.15" stop-color="#ccc" /><stop offset="1" stop-color="#707070" /></linearGradient></defs><rect x="-0.12" y="0.21" width="18" height="12" rx="0.6" fill="url(#topology-vm-f34d9569-2bd0-4002-8f16-3d01d8106cb5)" /><polygon points="11.88 4.46 11.88 7.95 8.88 9.71 8.88 6.21 11.88 4.46" fill="#50e6ff" /><polygon points="11.88 4.46 8.88 6.22 5.88 4.46 8.88 2.71 11.88 4.46" fill="#c3f1ff" /><polygon points="8.88 6.22 8.88 9.71 5.88 7.95 5.88 4.46 8.88 6.22" fill="#9cebff" /><polygon points="5.88 7.95 8.88 6.21 8.88 9.71 5.88 7.95" fill="#c3f1ff" /><polygon points="11.88 7.95 8.88 6.21 8.88 9.71 11.88 7.95" fill="#9cebff" /><path d="M12.49,15.84c-1.78-.28-1.85-1.56-1.85-3.63H7.11c0,2.07-.06,3.35-1.84,3.63a1,1,0,0,0-.89,1h9A1,1,0,0,0,12.49,15.84Z" fill="url(#topology-vm-bdb45a0b-eb58-4970-a60a-fb2ce314f866)" /></symbol><symbol id="topology-icon-nic" viewBox="0 0 18 18" preserveAspectRatio="xMidYMid meet"><defs><linearGradient id="topology-nic-fcad3287-b71c-44fa-971a-6a18bcf384a0" x1="9.01" y1="16.5" x2="9.01" y2="1.5" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#5e9641" /><stop offset="0.34" stop-color="#6baa42" /><stop offset="0.67" stop-color="#73b743" /><stop offset="1" stop-color="#76bb43" /></linearGradient></defs><path d="M15.89,2.91h1.27a.34.34,0,0,1,.34.34v3.5a.34.34,0,0,1-.34.34H15.89a0,0,0,0,1,0,0V2.91A0,0,0,0,1,15.89,2.91Z" fill="#ffca00" /><path d="M15.89,9h1.27a.34.34,0,0,1,.34.34v5.86a.34.34,0,0,1-.34.34H15.89a0,0,0,0,1,0,0V9A0,0,0,0,1,15.89,9Z" fill="#ffca00" /><rect x="2.13" y="1.5" width="13.76" height="15" rx="0.69" fill="url(#topology-nic-fcad3287-b71c-44fa-971a-6a18bcf384a0)" /><path d="M5.9,12.9H5.19A.2.2,0,0,1,5,12.69V4.34a.19.19,0,0,1,.19-.2H7.12a.19.19,0,0,1,.19.2.2.2,0,0,1-.19.21H5.38v7.93H5.9a.2.2,0,0,1,.19.21A.21.21,0,0,1,5.9,12.9Z" fill="#b4ec36" /><path d="M6,13.92H4.4a.2.2,0,0,1-.19-.21L4.08,3.38a.2.2,0,0,1,.06-.15.16.16,0,0,1,.13-.06H7.12v.41H4.47l.12,9.92H6Z" fill="#b4ec36" /><path d="M12,13H10.41a.19.19,0,0,1-.14-.07.18.18,0,0,1-.06-.14V7.9a.19.19,0,0,1,.19-.2l.91,0,0-2.25h.38l0,2.44a.2.2,0,0,1-.18.21l-.91,0v4.42H12Z" fill="#b4ec36" /><rect x="7.07" y="2.29" width="6.14" height="3.11" rx="0.26" fill="#365615" /><rect x="5.86" y="12.69" width="4.9" height="1.09" rx="0.26" transform="translate(21.54 4.93) rotate(90)" fill="#365615" /><rect x="3.99" y="12.71" width="4.9" height="1.09" rx="0.26" transform="translate(19.7 6.82) rotate(90)" fill="#365615" /><rect x="9.98" y="12.71" width="4.9" height="1.09" rx="0.26" transform="translate(25.68 0.83) rotate(90)" fill="#f2f2f2" /><ellipse cx="8.11" cy="8.06" rx="1.04" ry="1.12" fill="#f2f2f2" /><path d="M.5,5.7H1.77A.34.34,0,0,1,2.11,6v5.86a.34.34,0,0,1-.34.34H.5a0,0,0,0,1,0,0V5.7A0,0,0,0,1,.5,5.7Z" transform="translate(2.61 17.95) rotate(180)" fill="#3b3b3b" /></symbol></defs>
+<text id="topology-text-1" x="40" y="36" font-size="18" font-weight="600" fill="#4d6275" text-anchor="start" >WINDOWS SERVER 2025  ·  CONCEPTUAL</text>
+<text id="topology-text-2" x="40" y="81" font-size="34" font-weight="650" fill="#17324d" text-anchor="start" >HVCL01: two hosts, two intents, redundant paths</text>
+<text id="topology-text-3" x="40" y="118" font-size="20" font-weight="400" fill="#4d6275" text-anchor="start" >Single-site Hyper-V example · identical pNIC aliases on HV01 and HV02 · VLANs are design inputs.</text>
+<rect id="topology-hostvm" data-kind="box" x="40" y="153" width="1120" height="774" rx="12" fill="#fff" stroke="#c6d3df" stroke-width="1.6" />
+<text id="topology-text-4" x="64" y="191" font-size="25" font-weight="600" fill="#17324d" text-anchor="start" data-box="topology-hostvm" >HostVM intent · Management + Compute</text>
+<text id="topology-text-5" x="64" y="224" font-size="20" font-weight="400" fill="#4d6275" text-anchor="start" data-box="topology-hostvm" >SET uplinks use pNIC01 on path A and pNIC02 on path B.</text>
+<rect id="topology-HV01" data-kind="box" x="60" y="252" width="790" height="300" rx="12" fill="#f5f7fa" stroke="#c6d3df" stroke-width="1.6" />
+<use href="#topology-icon-server" x="54" y="239" width="90" height="90" aria-hidden="true"/>
+<text id="topology-text-6" x="128" y="288" font-size="24" font-weight="600" fill="#17324d" text-anchor="start" data-box="topology-HV01" >HV01 · member of HVCL01</text>
+<rect id="topology-HV01-mgmt" data-kind="box" x="90" y="317" width="310" height="96" rx="12" fill="#edf5fc" stroke="#0067b8" stroke-width="1.6" />
+<text id="topology-text-7" x="110" y="352" font-size="22" font-weight="600" fill="#17324d" text-anchor="start" data-box="topology-HV01-mgmt" >Host management vNIC</text>
+<text id="topology-text-8" x="110" y="390" font-size="22" font-weight="400" fill="#17324d" text-anchor="start" data-box="topology-HV01-mgmt" >VLAN 10</text>
+<rect id="topology-HV01-guest" data-kind="box" x="450" y="317" width="355" height="106" rx="12" fill="#f5f0fb" stroke="#6b4ba1" stroke-width="1.6" />
+<use href="#topology-icon-vm" x="467" y="329" width="24" height="24" aria-hidden="true"/>
+<text id="topology-text-9" x="506" y="348" font-size="21" font-weight="600" fill="#17324d" text-anchor="start" data-box="topology-HV01-guest" >App01 · active on HV01</text>
+<text id="topology-text-10" x="473" y="381" font-size="21" font-weight="400" fill="#17324d" text-anchor="start" data-box="topology-HV01-guest" >Guest vNIC · VLAN 120</text>
+<text id="topology-text-11" x="473" y="412" font-size="18" font-weight="400" fill="#4d6275" text-anchor="start" data-box="topology-HV01-guest" >Hyper-V configuration</text>
+<rect id="topology-HV01-set" data-kind="box" x="190" y="458" width="330" height="76" rx="12" fill="#edf5fc" stroke="#0067b8" stroke-width="1.6" />
+<text id="topology-text-12" x="355" y="491" font-size="22" font-weight="600" fill="#17324d" text-anchor="middle" data-box="topology-HV01-set" >SET virtual switch</text>
+<text id="topology-text-13" x="355" y="522" font-size="18" font-weight="400" fill="#17324d" text-anchor="middle" data-box="topology-HV01-set" >Intent: HostVM</text>
+<path data-kind="connector" data-route="[[245,413],[245,435],[295,435],[295,458]]" d="M245 413 L245 435 L295 435 L295 458" fill="none" stroke="#0067b8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path data-kind="connector" data-route="[[628,423],[628,435],[435,435],[435,458]]" d="M628 423 L628 435 L435 435 L435 458" fill="none" stroke="#6b4ba1" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<rect id="topology-HV01-nic1" data-kind="box" x="610" y="442" width="210" height="42" rx="12" fill="#fff" stroke="#0067b8" stroke-width="1.6" />
+<text id="topology-text-14" x="715" y="470" font-size="21" font-weight="600" fill="#17324d" text-anchor="middle" data-box="topology-HV01-nic1" >pNIC01 · path A</text>
+<path data-kind="connector" data-route="[[520,496],[570,496],[570,463],[610,463]]" d="M520 496 L570 496 L570 463 L610 463" fill="none" stroke="#0067b8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<rect id="topology-HV01-switchA" data-kind="box" x="920" y="442" width="220" height="42" rx="12" fill="#fff" stroke="#0067b8" stroke-width="1.6" />
+<text id="topology-text-15" x="1030" y="470" font-size="20" font-weight="600" fill="#17324d" text-anchor="middle" data-box="topology-HV01-switchA" >Physical switch A</text>
+<path data-kind="connector" data-route="[[820,463],[920,463]]" d="M820 463 L920 463" fill="none" stroke="#0067b8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<rect id="topology-HV01-nic2" data-kind="box" x="610" y="497" width="210" height="42" rx="12" fill="#fff" stroke="#007a80" stroke-width="1.6" />
+<text id="topology-text-16" x="715" y="525" font-size="21" font-weight="600" fill="#17324d" text-anchor="middle" data-box="topology-HV01-nic2" >pNIC02 · path B</text>
+<path data-kind="connector" data-route="[[520,496],[570,496],[570,518],[610,518]]" d="M520 496 L570 496 L570 518 L610 518" fill="none" stroke="#007a80" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<rect id="topology-HV01-switchB" data-kind="box" x="920" y="497" width="220" height="42" rx="12" fill="#fff" stroke="#007a80" stroke-width="1.6" />
+<text id="topology-text-17" x="1030" y="525" font-size="20" font-weight="600" fill="#17324d" text-anchor="middle" data-box="topology-HV01-switchB" >Physical switch B</text>
+<path data-kind="connector" data-route="[[820,518],[920,518]]" d="M820 518 L920 518" fill="none" stroke="#007a80" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<rect id="topology-HV02" data-kind="box" x="60" y="582" width="790" height="300" rx="12" fill="#f5f7fa" stroke="#c6d3df" stroke-width="1.6" />
+<use href="#topology-icon-server" x="54" y="569" width="90" height="90" aria-hidden="true"/>
+<text id="topology-text-18" x="128" y="618" font-size="24" font-weight="600" fill="#17324d" text-anchor="start" data-box="topology-HV02" >HV02 · member of HVCL01</text>
+<rect id="topology-HV02-mgmt" data-kind="box" x="90" y="647" width="310" height="96" rx="12" fill="#edf5fc" stroke="#0067b8" stroke-width="1.6" />
+<text id="topology-text-19" x="110" y="682" font-size="22" font-weight="600" fill="#17324d" text-anchor="start" data-box="topology-HV02-mgmt" >Host management vNIC</text>
+<text id="topology-text-20" x="110" y="720" font-size="22" font-weight="400" fill="#17324d" text-anchor="start" data-box="topology-HV02-mgmt" >VLAN 10</text>
+<rect id="topology-HV02-guest" data-kind="box" x="450" y="647" width="355" height="106" rx="12" fill="#f5f0fb" stroke="#6b4ba1" stroke-width="1.6" stroke-dasharray="7 5"/>
+<use href="#topology-icon-vm" x="467" y="659" width="24" height="24" aria-hidden="true"/>
+<text id="topology-text-21" x="506" y="678" font-size="21" font-weight="600" fill="#17324d" text-anchor="start" data-box="topology-HV02-guest" >App01 migration target</text>
+<text id="topology-text-22" x="473" y="711" font-size="21" font-weight="400" fill="#17324d" text-anchor="start" data-box="topology-HV02-guest" >Guest vNIC · VLAN 120</text>
+<text id="topology-text-23" x="473" y="742" font-size="18" font-weight="400" fill="#4d6275" text-anchor="start" data-box="topology-HV02-guest" >Placeholder · not a running copy</text>
+<rect id="topology-HV02-set" data-kind="box" x="190" y="788" width="330" height="76" rx="12" fill="#edf5fc" stroke="#0067b8" stroke-width="1.6" />
+<text id="topology-text-24" x="355" y="821" font-size="22" font-weight="600" fill="#17324d" text-anchor="middle" data-box="topology-HV02-set" >SET virtual switch</text>
+<text id="topology-text-25" x="355" y="852" font-size="18" font-weight="400" fill="#17324d" text-anchor="middle" data-box="topology-HV02-set" >Intent: HostVM</text>
+<path data-kind="connector" data-route="[[245,743],[245,765],[295,765],[295,788]]" d="M245 743 L245 765 L295 765 L295 788" fill="none" stroke="#0067b8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path data-kind="connector" data-route="[[628,753],[628,765],[435,765],[435,788]]" d="M628 753 L628 765 L435 765 L435 788" fill="none" stroke="#6b4ba1" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="7 6"/>
+<rect id="topology-HV02-nic1" data-kind="box" x="610" y="772" width="210" height="42" rx="12" fill="#fff" stroke="#0067b8" stroke-width="1.6" />
+<text id="topology-text-26" x="715" y="800" font-size="21" font-weight="600" fill="#17324d" text-anchor="middle" data-box="topology-HV02-nic1" >pNIC01 · path A</text>
+<path data-kind="connector" data-route="[[520,826],[570,826],[570,793],[610,793]]" d="M520 826 L570 826 L570 793 L610 793" fill="none" stroke="#0067b8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<rect id="topology-HV02-switchA" data-kind="box" x="920" y="772" width="220" height="42" rx="12" fill="#fff" stroke="#0067b8" stroke-width="1.6" />
+<text id="topology-text-27" x="1030" y="800" font-size="20" font-weight="600" fill="#17324d" text-anchor="middle" data-box="topology-HV02-switchA" >Physical switch A</text>
+<path data-kind="connector" data-route="[[820,793],[920,793]]" d="M820 793 L920 793" fill="none" stroke="#0067b8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<rect id="topology-HV02-nic2" data-kind="box" x="610" y="827" width="210" height="42" rx="12" fill="#fff" stroke="#007a80" stroke-width="1.6" />
+<text id="topology-text-28" x="715" y="855" font-size="21" font-weight="600" fill="#17324d" text-anchor="middle" data-box="topology-HV02-nic2" >pNIC02 · path B</text>
+<path data-kind="connector" data-route="[[520,826],[570,826],[570,848],[610,848]]" d="M520 826 L570 826 L570 848 L610 848" fill="none" stroke="#007a80" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<rect id="topology-HV02-switchB" data-kind="box" x="920" y="827" width="220" height="42" rx="12" fill="#fff" stroke="#007a80" stroke-width="1.6" />
+<text id="topology-text-29" x="1030" y="855" font-size="20" font-weight="600" fill="#17324d" text-anchor="middle" data-box="topology-HV02-switchB" >Physical switch B</text>
+<path data-kind="connector" data-route="[[820,848],[920,848]]" d="M820 848 L920 848" fill="none" stroke="#007a80" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text id="topology-text-30" x="880" y="911" font-size="18" font-weight="400" fill="#4d6275" text-anchor="middle" data-box="topology-hostvm" >A / B = separate physical paths</text>
+<rect id="topology-storage" data-kind="box" x="40" y="959" width="1120" height="426" rx="12" fill="#fff" stroke="#c6d3df" stroke-width="1.6" />
+<use href="#topology-icon-nic" x="64" y="981" width="33" height="33" aria-hidden="true"/>
+<text id="topology-text-31" x="111" y="1007" font-size="25" font-weight="600" fill="#17324d" text-anchor="start" data-box="topology-storage" >Storage intent · dedicated physical adapters</text>
+<text id="topology-text-32" x="64" y="1040" font-size="20" font-weight="400" fill="#4d6275" text-anchor="start" data-box="topology-storage" >No storage vSwitch in this design. Both storage networks reach the existing SMB file service.</text>
+<text id="topology-text-33" x="249" y="1075" font-size="19" font-weight="600" fill="#17324d" text-anchor="start" data-box="topology-storage" >Storage networks</text>
+<text id="topology-text-34" x="604" y="1075" font-size="19" font-weight="600" fill="#17324d" text-anchor="start" data-box="topology-storage" >Same physical switches</text>
+<text id="topology-text-35" x="933" y="1075" font-size="18" font-weight="600" fill="#17324d" text-anchor="start" data-box="topology-storage" >Existing SMB endpoints</text>
+<rect id="topology-storage-HV01" data-kind="box" x="60" y="1086" width="470" height="125" rx="12" fill="#f5f7fa" stroke="#c6d3df" stroke-width="1.6" />
+<text id="topology-text-36" x="85" y="1134" font-size="25" font-weight="650" fill="#17324d" text-anchor="start" data-box="topology-storage-HV01" >HV01</text>
+<text id="topology-text-37" x="85" y="1167" font-size="19" font-weight="400" fill="#4d6275" text-anchor="start" data-box="topology-storage-HV01" >HVCL01</text>
+<rect id="topology-storage-HV01-nic3" data-kind="box" x="240" y="1095" width="230" height="46" rx="12" fill="#fff" stroke="#0067b8" stroke-width="1.6" />
+<text id="topology-text-38" x="355" y="1125" font-size="21" font-weight="600" fill="#17324d" text-anchor="middle" data-box="topology-storage-HV01-nic3" >pNIC03 · VLAN 711</text>
+<rect id="topology-storage-HV01-switchA" data-kind="box" x="590" y="1095" width="250" height="46" rx="12" fill="#fff" stroke="#0067b8" stroke-width="1.6" />
+<text id="topology-text-39" x="715" y="1125" font-size="21" font-weight="600" fill="#17324d" text-anchor="middle" data-box="topology-storage-HV01-switchA" >Switch A · path A</text>
+<rect id="topology-storage-HV01-smbA" data-kind="box" x="930" y="1095" width="210" height="46" rx="12" fill="#f5f0fb" stroke="#6b4ba1" stroke-width="1.6" />
+<text id="topology-text-40" x="1035" y="1125" font-size="20" font-weight="400" fill="#17324d" text-anchor="middle" data-box="topology-storage-HV01-smbA" >VLAN 711 subnet</text>
+<path data-kind="connector" data-route="[[470,1118],[590,1118]]" d="M470 1118 L590 1118" fill="none" stroke="#0067b8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path data-kind="connector" data-route="[[840,1118],[930,1118]]" d="M840 1118 L930 1118" fill="none" stroke="#0067b8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<rect id="topology-storage-HV01-nic4" data-kind="box" x="240" y="1156" width="230" height="46" rx="12" fill="#fff" stroke="#007a80" stroke-width="1.6" />
+<text id="topology-text-41" x="355" y="1186" font-size="21" font-weight="600" fill="#17324d" text-anchor="middle" data-box="topology-storage-HV01-nic4" >pNIC04 · VLAN 712</text>
+<rect id="topology-storage-HV01-switchB" data-kind="box" x="590" y="1156" width="250" height="46" rx="12" fill="#fff" stroke="#007a80" stroke-width="1.6" />
+<text id="topology-text-42" x="715" y="1186" font-size="21" font-weight="600" fill="#17324d" text-anchor="middle" data-box="topology-storage-HV01-switchB" >Switch B · path B</text>
+<rect id="topology-storage-HV01-smbB" data-kind="box" x="930" y="1156" width="210" height="46" rx="12" fill="#f5f0fb" stroke="#6b4ba1" stroke-width="1.6" />
+<text id="topology-text-43" x="1035" y="1186" font-size="20" font-weight="400" fill="#17324d" text-anchor="middle" data-box="topology-storage-HV01-smbB" >VLAN 712 subnet</text>
+<path data-kind="connector" data-route="[[470,1179],[590,1179]]" d="M470 1179 L590 1179" fill="none" stroke="#007a80" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path data-kind="connector" data-route="[[840,1179],[930,1179]]" d="M840 1179 L930 1179" fill="none" stroke="#007a80" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<rect id="topology-storage-HV02" data-kind="box" x="60" y="1225" width="470" height="125" rx="12" fill="#f5f7fa" stroke="#c6d3df" stroke-width="1.6" />
+<text id="topology-text-44" x="85" y="1273" font-size="25" font-weight="650" fill="#17324d" text-anchor="start" data-box="topology-storage-HV02" >HV02</text>
+<text id="topology-text-45" x="85" y="1306" font-size="19" font-weight="400" fill="#4d6275" text-anchor="start" data-box="topology-storage-HV02" >HVCL01</text>
+<rect id="topology-storage-HV02-nic3" data-kind="box" x="240" y="1234" width="230" height="46" rx="12" fill="#fff" stroke="#0067b8" stroke-width="1.6" />
+<text id="topology-text-46" x="355" y="1264" font-size="21" font-weight="600" fill="#17324d" text-anchor="middle" data-box="topology-storage-HV02-nic3" >pNIC03 · VLAN 711</text>
+<rect id="topology-storage-HV02-switchA" data-kind="box" x="590" y="1234" width="250" height="46" rx="12" fill="#fff" stroke="#0067b8" stroke-width="1.6" />
+<text id="topology-text-47" x="715" y="1264" font-size="21" font-weight="600" fill="#17324d" text-anchor="middle" data-box="topology-storage-HV02-switchA" >Switch A · path A</text>
+<rect id="topology-storage-HV02-smbA" data-kind="box" x="930" y="1234" width="210" height="46" rx="12" fill="#f5f0fb" stroke="#6b4ba1" stroke-width="1.6" />
+<text id="topology-text-48" x="1035" y="1264" font-size="20" font-weight="400" fill="#17324d" text-anchor="middle" data-box="topology-storage-HV02-smbA" >VLAN 711 subnet</text>
+<path data-kind="connector" data-route="[[470,1257],[590,1257]]" d="M470 1257 L590 1257" fill="none" stroke="#0067b8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path data-kind="connector" data-route="[[840,1257],[930,1257]]" d="M840 1257 L930 1257" fill="none" stroke="#0067b8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<rect id="topology-storage-HV02-nic4" data-kind="box" x="240" y="1295" width="230" height="46" rx="12" fill="#fff" stroke="#007a80" stroke-width="1.6" />
+<text id="topology-text-49" x="355" y="1325" font-size="21" font-weight="600" fill="#17324d" text-anchor="middle" data-box="topology-storage-HV02-nic4" >pNIC04 · VLAN 712</text>
+<rect id="topology-storage-HV02-switchB" data-kind="box" x="590" y="1295" width="250" height="46" rx="12" fill="#fff" stroke="#007a80" stroke-width="1.6" />
+<text id="topology-text-50" x="715" y="1325" font-size="21" font-weight="600" fill="#17324d" text-anchor="middle" data-box="topology-storage-HV02-switchB" >Switch B · path B</text>
+<rect id="topology-storage-HV02-smbB" data-kind="box" x="930" y="1295" width="210" height="46" rx="12" fill="#f5f0fb" stroke="#6b4ba1" stroke-width="1.6" />
+<text id="topology-text-51" x="1035" y="1325" font-size="20" font-weight="400" fill="#17324d" text-anchor="middle" data-box="topology-storage-HV02-smbB" >VLAN 712 subnet</text>
+<path data-kind="connector" data-route="[[470,1318],[590,1318]]" d="M470 1318 L590 1318" fill="none" stroke="#007a80" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path data-kind="connector" data-route="[[840,1318],[930,1318]]" d="M840 1318 L930 1318" fill="none" stroke="#007a80" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text id="topology-text-52" x="40" y="1432" font-size="19" font-weight="400" fill="#4d6275" text-anchor="start" >A/B labels repeat the same redundant physical switches; SMB boxes are views of the same existing service.</text>
+<text id="topology-text-53" x="40" y="1463" font-size="19" font-weight="400" fill="#4d6275" text-anchor="start" >ATC does not configure physical switches, file-service endpoints, or guest IPs.</text>
+<text id="topology-text-54" x="40" y="1494" font-size="19" font-weight="400" fill="#4d6275" text-anchor="start" >App01 is active only on HV01. The HV02 guest attachment represents its migration target.</text>
+</svg>

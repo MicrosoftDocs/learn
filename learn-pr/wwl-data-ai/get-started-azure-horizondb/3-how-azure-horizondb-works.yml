@@ -4,8 +4,8 @@ title: Explain how Azure HorizonDB works
 metadata:
   zone_pivot_groups: video-or-text
   title: Explain how Azure HorizonDB works
-  description: "Explain the disaggregated compute-and-storage and database-as-a-log architecture, and identify the components of an Azure HorizonDB cluster."
-  ms.date: 09/29/2026
+  description: "Explain Azure HorizonDB architecture, compute pools, endpoints, private connectivity, encryption, Microsoft Entra authentication, and parameter groups."
+  ms.date: 11/12/2026
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit

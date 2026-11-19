@@ -1,3 +1,7 @@
+---
+no_index_ks: true
+---
+
 Triggering a playbook launches several coordinated stages of work with a single click. Understanding what actually happens inside that click is the difference between trusting the output and treating it like a black box.
 
 ## A playbook walkthrough: Protect against a threat
@@ -17,9 +21,9 @@ At each stage, the agent for the next stage reads what the previous one produced
 
 :::image type="content" source="../media/perception-overview.png" alt-text="Screenshot of the Perception overview dashboard with an agent-activity Sankey diagram from inputs to playbooks to agents." lightbox="../media/perception-overview.png":::
 
-_Protect against a threat_ is the canonical playbook that coordinates across several areas of work. Project Perception also ships playbooks focused on one area of work that dig into it deeply. Both patterns use the same primitives: a specialized agent handling each stage, shared context, and approval gates. The difference is how many areas of work each playbook covers.
+_Protect against a threat_ is the canonical playbook that coordinates across several areas of work. Perception also ships playbooks focused on one area of work that dig into it deeply. Both patterns use the same primitives: a specialized agent handling each stage, shared context, and approval gates. The difference is how many areas of work each playbook covers.
 
-The following table shows the two coordination patterns across Project Perception's preview playbook catalog. Each focused playbook concentrates on one area of work you saw in the previous unit.
+The following table shows the two coordination patterns across Perception's preview playbook catalog. Each focused playbook concentrates on one area of work you saw in the previous unit.
 
 | Pattern | Example playbooks |
 | --- | --- |
@@ -28,7 +32,7 @@ The following table shows the two coordination patterns across Project Perceptio
 
 ## How humans stay in control
 
-Project Perception's agents each specialize in a defined area of work rather than one super-agent doing everything, and each agent operates under a [least-privilege identity](/security/agentic-security/agentic-security-application-card?azure-portal=true#safety-components-and-mitigations) scoped to the minimum permissions its task requires. Attack path analysis needs different access than posture prioritization, and posture prioritization needs different access than alert triage. Agents run at machine speed. Humans stay in control through safeguards built into the workflow rather than a separate governance module:
+Perception's agents each specialize in a defined area of work rather than one super-agent doing everything, and each agent operates under a [least-privilege identity](/security/agentic-security/agentic-security-application-card?azure-portal=true#safety-components-and-mitigations) scoped to the minimum permissions its task requires. Attack path analysis needs different access than posture prioritization, and posture prioritization needs different access than alert triage. Agents run at machine speed. Humans stay in control through safeguards built into the workflow rather than a separate governance module:
 
 - **[Approval gates](/security/agentic-security/agentic-security-supervise-work?azure-portal=true).** Pause the workflow before high-impact actions.
 
@@ -38,7 +42,7 @@ Project Perception's agents each specialize in a defined area of work rather tha
 - **URBAC prerequisite.** As covered in the module prerequisites, [unified role-based access control (URBAC)](/defender-xdr/manage-rbac?azure-portal=true) across Microsoft Defender workloads is currently required before Perception can be used.
 - **Audit logging.** Every agent action is logged.
 
-Project Perception inherits the identity, permission, and audit controls already in use in the Defender portal rather than introducing a parallel governance model.
+Perception inherits the identity, permission, and audit controls already in use in the Defender portal rather than introducing a parallel governance model.
 
 ## Where this leaves you
 

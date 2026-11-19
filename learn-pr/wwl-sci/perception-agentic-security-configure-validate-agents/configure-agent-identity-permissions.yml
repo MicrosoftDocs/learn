@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.perception-agentic-security-configure-validate-agents.configure-agent-identity-permissions
+title: Configure the agent identity and required permissions
+metadata:
+  title: Configure the agent identity and required permissions
+  description: "Check the required agent permissions, set up the Threat Intelligence Agent, and resolve common setup problems."
+  ms.date: 11/09/2026
+  author: wwlpublish
+  ms.author: hrasheed
+  ms.topic: unit
+  ROBOTS: NOINDEX
+  no_index_ks: true
+durationInMinutes: 7
+content: |
+  [!include[](includes/configure-agent-identity-permissions.md)]

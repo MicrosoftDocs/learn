@@ -1,0 +1,37 @@
+### YamlMime:LearningPath
+uid: learn.wwl.az-401-plan-govern-agentic-devops
+metadata:
+  title: "AZ-401: Plan and govern work for agentic DevOps"
+  description: "Explore agentic DevOps, manage work with Azure Boards and GitHub Copilot, and use Azure DevOps MCP Server with access controls and human oversight."
+  ms.date: 11/16/2026
+  author: petender
+  ms.author: petender
+  ms.topic: learning-path
+  ai-usage: ai-assisted
+title: "AZ-401: Plan and govern work for agentic DevOps"
+summary: |
+  Explore how agentic approaches support DevOps teams while maintaining human oversight.
+  Connect Azure Boards with GitHub Copilot to refine and delegate work, and use Azure DevOps MCP Server
+  to manage work items, pull requests, and pipelines.
+prerequisites: |
+  - Familiarity with Agile backlogs in Azure Boards and Git-based repositories, branches, and pull requests.
+  - Experience designing or managing CI/CD pipelines in Azure Pipelines or GitHub Actions.
+  - Familiarity with Azure resources and infrastructure as code using Bicep or similar tools.
+  - Working knowledge of Azure resource governance, monitoring, and incident response.
+  - Familiarity with GitHub Copilot Chat in Visual Studio Code.
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+  - advanced
+roles:
+  - devops-engineer
+products:
+  - azure-devops
+  - github
+subjects:
+  - devops
+modules:
+  - learn.wwl.introduction-agentic-devops-microsoft-tools-azure
+  - learn.wwl.manage-azure-boards-using-github-copilot
+  - learn.wwl.manage-ado-mcp-server
+trophy:
+  uid: learn.wwl.az-401-plan-govern-agentic-devops.trophy

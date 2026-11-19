@@ -1,0 +1,73 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.perception-agentic-security-configure-validate-agents.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Knowledge check"
+  ms.date: 11/09/2026
+  author: wwlpublish
+  ms.author: hrasheed
+  ms.topic: unit
+  module_assessment: true
+  ai_generated_module_assessment: false
+  ROBOTS: NOINDEX
+  no_index_ks: true
+durationInMinutes: 6
+quiz:
+  title: ""
+  questions:
+  - content: "A security team approves article extraction using the Threat Intelligence Agent. A proposed rollout also enables additional agents for coordinated protection. What should the administrator do?"
+    choices:
+    - content: "Enable the additional agents and validate only the approved extraction workflow."
+      isCorrect: false
+      explanation: "Incorrect. The approved task doesn't require those additional agents. Their configuration expands the rollout without an approved need."
+    - content: "Configure the extraction workflow and seek approval before adding broader protection."
+      isCorrect: true
+      explanation: "Correct. The Threat Intelligence Agent supports the approved extraction task. Coordinated protection introduces additional capabilities that need their own requirements and access decisions."
+    - content: "Edit the coordinated playbook to remove agents beyond the extraction task."
+      isCorrect: false
+      explanation: "Incorrect. Microsoft manages the playbooks. Use the supported extraction workflow instead of trying to change a broader playbook's agents."
+  - content: "An administrator with Security Admin access is setting up an agent. The permission check finds that a documented agent API permission hasn't been granted. Which action addresses the missing permission?"
+    choices:
+    - content: "Give the intended security practitioner Security Admin access and repeat the test."
+      isCorrect: false
+      explanation: "Incorrect. The security practitioner's administrative role doesn't grant the missing API permission to the agent identity."
+    - content: "Use a new article and accept the report if the session completes."
+      isCorrect: false
+      explanation: "Incorrect. Changing the source doesn't correct a missing required grant. A completed session alone doesn't establish that the dependency is available."
+    - content: "Arrange the required grant and confirm it before testing."
+      isCorrect: true
+      explanation: "Correct. Setup authority and agent data permissions are separate. Obtain any grant outside the setup account's authority through the organization's grant process. Confirm it for the agent identity before testing the approved task."
+  - content: "The approved task requires full MDTI data and enrichment. Source extraction works, but the person responsible for the service confirms that the required MDTI access is unavailable. What should the readiness record include?"
+    choices:
+    - content: "Not ready. Record unavailable MDTI enrichment, identify the operational owner, and assign access follow-up and validation."
+      isCorrect: true
+      explanation: "Correct. The approved task requires enrichment as well as extraction. Record the unresolved requirement and operational owner, and identify what follow-up and validation are needed."
+    - content: "Ready. Record unavailable MDTI enrichment as an accepted limitation, identify the operational owner, and assign routine follow-up."
+      isCorrect: false
+      explanation: "Incorrect. Recording the limitation and owner doesn't satisfy a required part of the approved task. A narrower task needs its own approval and validation before the configuration can be recorded as ready."
+    - content: "Not ready. Record the operational owner, assign the security practitioner Security Admin, and retest enrichment with elevated access."
+      isCorrect: false
+      explanation: "Incorrect. The confirmed issue is unavailable MDTI access, not the security practitioner's setup authority. Record that limitation and arrange service access and validation rather than elevating the security practitioner's role."
+  - content: "A security practitioner has the required portal role. The agent settings allow the security practitioner to view sessions, but not start or steer them. The approved task requires both actions. What should change?"
+    choices:
+    - content: "Add more Defender API permissions to the existing agent identity."
+      isCorrect: false
+      explanation: "Incorrect. Agent API grants don't change the security practitioner's permission to execute or steer sessions."
+    - content: "Have an administrator make the approved execution and steering access change."
+      isCorrect: true
+      explanation: "Correct. The security practitioner needs access for the approved actions, not viewing alone. Save the approved agent-level settings and test with the security practitioner's account."
+    - content: "Have an administrator run sessions and send downloaded reports to the security practitioner."
+      isCorrect: false
+      explanation: "Incorrect. That workaround doesn't demonstrate that the intended security practitioner can complete the approved task."
+  - content: "An administrator approves the plan in an extraction session and retrieves a report containing the expected source facts. In a separate test, the security practitioner starts a session and reaches Waiting for input, but the test ends before the security practitioner responds to the plan. Plan response is a required acceptance criterion. What should the administrator record for the security practitioner's plan response?"
+    choices:
+    - content: "Passed, because the administrator's completed session demonstrates the interactions required for the security practitioner's task."
+      isCorrect: false
+      explanation: "Incorrect. The administrator's session demonstrates plan response under that account. The separate security practitioner test still needs evidence that the security practitioner can perform the required interaction."
+    - content: "Failed, because the missing evidence establishes that the security practitioner lacks permission to respond."
+      isCorrect: false
+      explanation: "Incorrect. The security practitioner hasn't attempted the plan response, so the record doesn't establish an access failure. Observe the action before deciding whether permissions need correction."
+    - content: "Not tested, pending a demonstration of plan response using the security practitioner's own account."
+      isCorrect: true
+      explanation: "Correct. The record establishes neither success nor failure for plan response. Keep configuration readiness unconfirmed until the security practitioner demonstrates this required action and the result is recorded."

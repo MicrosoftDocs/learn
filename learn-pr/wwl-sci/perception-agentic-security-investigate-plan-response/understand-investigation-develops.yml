@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.perception-agentic-security-investigate-plan-response.understand-investigation-develops
+title: Understand how an investigation develops
+metadata:
+  title: Understand how an investigation develops
+  description: "Start with what needs explaining, build the account from connected evidence, let the evidence establish the affected scope, and carry the findings into the response."
+  ms.date: 11/09/2026
+  author: wwlpublish
+  ms.author: hrasheed
+  ms.topic: unit
+  ROBOTS: NOINDEX
+  no_index_ks: true
+durationInMinutes: 6
+content: |
+  [!include[](includes/understand-investigation-develops.md)]

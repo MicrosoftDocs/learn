@@ -2,10 +2,11 @@
 uid: learn.wwl.manage-azure-cosmos-db-fleets.understand-azure-cosmos-db-fleets
 title: Understand Azure Cosmos DB fleets
 metadata:
+  zone_pivot_groups: video-or-text
   title: Understand Azure Cosmos DB Fleets
   description: "Explain what fleets, fleetspaces, fleetspace accounts, pools, and fleet analytics are, learn the default limits, and decide when a fleet suits a multitenant workload."
-  ms.date: 10/03/2026
-  author: wwlpublish
+  ms.date: 11/12/2026
+  author: MScalopez
   ms.author: calopez
   ms.topic: unit
   ai-usage: ai-generated

@@ -4,8 +4,8 @@ title: Summary
 metadata:
   title: Summary
   description: "Recaps the retrieval-augmented generation loop, retrieval unit sizing, grounded prompt assembly, and pipeline orchestration on Azure Cosmos DB for NoSQL, and links to further reading."
-  ms.date: 10/04/2026
-  author: wwlpublish
+  ms.date: 11/18/2026
+  author: MScalopez
   ms.author: calopez
   ms.topic: unit
   ai-usage: ai-generated

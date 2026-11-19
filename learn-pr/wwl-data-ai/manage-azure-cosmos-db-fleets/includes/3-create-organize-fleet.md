@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=216e969b-6390-423d-882e-9e8ebae298e9]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Contoso's accounts already exist, spread across three subscriptions. Building the fleet doesn't touch them: you create the fleet, create at least one fleetspace inside it, and then register each account as a fleetspace account. This unit walks that sequence in the Azure portal and shows the equivalent command-line calls, so you can organize an estate by hand once and script it afterward.
 
 The order is fixed. A fleetspace can't exist without a fleet, and an account can't be enrolled without a fleetspace to put it in.
@@ -111,3 +122,5 @@ The temptation with a new grouping resource is to mirror something that already 
 A fleet corresponds to one multitenant application, because the application is the scope at which the reporting question is asked. "What does it cost to serve each customer?" is a question about a product, and if the product's accounts are split across two fleets, the answer has to be reassembled by hand, which is the problem the fleet was adopted to remove.
 
 Fleetspaces are where the physical constraints land. Because every account in a pooled fleetspace shares a regional configuration and a service tier, the fleetspace layout falls out of the accounts themselves: one fleetspace per distinct combination of regions and write configuration in use. Accounts that don't need to share throughput can sit in a fleetspace with pooling turned off, which still gives them fleet-level analytics.
+
+::: zone-end

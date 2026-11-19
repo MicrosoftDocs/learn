@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.evaluate-application-security-risks-with-codename-mdash.evaluate-where-mdash-adds-value
+title: Evaluate where Codename MDASH adds value
+metadata:
+  title: Evaluate Where Codename MDASH Adds Value
+  description: "Identify appropriate use cases, integration approaches, safeguards, and preview limitations for Codename MDASH."
+  ms.date: 10/28/2026
+  author: kirkpatrickalbert-prog
+  ms.author: akirkpatrick
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-evaluate-where-mdash-adds-value.md)]

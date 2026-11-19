@@ -35,10 +35,10 @@ abstract: |
   - Analyze query performance metrics, including physical partition utilization and throttling.
   - Analyze index performance metrics and optimize cross-partition queries.
 prerequisites: |
-  - Experience writing queries against Azure Cosmos DB for NoSQL
-  - Experience using the Azure Cosmos DB SDK to read and write items in C# or Python
-  - Knowledge of indexing policies in Azure Cosmos DB, including included and excluded paths and composite indexes
-  - Knowledge of partitioning in Azure Cosmos DB, including logical and physical partitions
+  - Experience writing queries against Azure Cosmos DB for NoSQL.
+  - Experience using the Azure Cosmos DB SDK to read and write items in C# or Python.
+  - Knowledge of indexing policies in Azure Cosmos DB, including included and excluded paths and composite indexes.
+  - Knowledge of partitioning in Azure Cosmos DB, including logical and physical partitions.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate

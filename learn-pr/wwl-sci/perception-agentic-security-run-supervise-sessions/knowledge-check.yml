@@ -1,0 +1,73 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.perception-agentic-security-run-supervise-sessions.knowledge-check
+title: Module assessment
+metadata:
+  title: Module Assessment
+  description: "Knowledge check"
+  ms.date: 11/09/2026
+  author: wwlpublish
+  ms.author: hrasheed
+  ms.topic: unit
+  module_assessment: true
+  ai_generated_module_assessment: false
+  ROBOTS: NOINDEX
+  no_index_ks: true
+durationInMinutes: 5
+quiz:
+  title: ""
+  questions:
+  - content: "A team asks to analyze a threat report and provides an MDTI article URL. The request doesn't specify whether the team needs reported indicators and behaviors or an assessment of its defenses against the threat. What should the session owner do before choosing a playbook?"
+    choices:
+    - content: "Choose Extract threat intelligence because the team supplied a threat article URL."
+      isCorrect: false
+      explanation: "Incorrect. The article URL supplies an input, but it doesn't establish the required outcome. Extraction fits a request for reported intelligence, while assessing defenses calls for different analysis."
+    - content: "Clarify whether the team needs reported intelligence or an assessment of its defenses."
+      isCorrect: true
+      explanation: "Correct. The requested outcome determines the playbook. Clarify the question before choosing extraction or coordinated protection analysis."
+    - content: "Choose Protect against a threat because it provides the broader analysis of defenses."
+      isCorrect: false
+      explanation: "Incorrect. A broader workflow can add work the team hasn't requested. Confirm that assessing defenses is the intended outcome before selecting it."
+  - content: "A team selects Protect against a threat, but one participating agent is not configured. What should happen before the session starts?"
+    choices:
+    - content: "Arrange configuration of the missing agent before starting the selected playbook."
+      isCorrect: true
+      explanation: "Correct. Check that every participating agent is configured and enabled before starting. Arrange the missing setup through the team's configuration process."
+    - content: "Start the playbook and treat the missing agent as a coverage limitation."
+      isCorrect: false
+      explanation: "Incorrect. A required agent's missing configuration is a prerequisite to resolve before starting, rather than a gap to document after the work runs."
+    - content: "Select another playbook based only on which agents are already enabled."
+      isCorrect: false
+      explanation: "Incorrect. Agent readiness alone doesn't establish that a different playbook answers the team's request. Confirm both workflow suitability and required-agent readiness."
+  - content: "A team has authorized an investigation into possible credential theft involving one account during an agreed time period. The agent proposes examining endpoint activity with no apparent connection to the case. The credential-theft investigation is still needed. How should the session owner respond?"
+    choices:
+    - content: "Approve the broader work and separate any unrelated findings when reviewing the final report."
+      isCorrect: false
+      explanation: "Incorrect. Approval lets the unrelated work proceed. Clarify or redirect the request before authorizing that work."
+    - content: "Stop the investigation because the unsupported expansion makes the remaining incident analysis unsuitable."
+      isCorrect: false
+      explanation: "Incorrect. The investigation is still needed. Clarify the connection or redirect the proposed expansion while useful work continues. Stopping ends the session and can't be undone."
+    - content: "Suggest an alternative focused on the account and time period, requesting evidence for expansion."
+      isCorrect: true
+      explanation: "Correct. Endpoint activity could be relevant, but the agent needs to establish the connection. Specific guidance keeps the work focused on the approved case. Review the agent's response before assuming the change took effect."
+  - content: "A threat article describes actor attribution as provisional and lists a URL as an observed download location. An extraction report preserves the URL but calls the attribution confirmed. No additional attribution evidence is supplied. How should the reviewer prepare these findings for handoff?"
+    choices:
+    - content: "Keep the indicator and confirmed attribution because the agent completed the analysis successfully."
+      isCorrect: false
+      explanation: "Incorrect. Session completion doesn't supply the missing attribution evidence. The report overstates the certainty supported by the source."
+    - content: "Keep the source-reported indicator and correct the attribution to provisional in the handoff."
+      isCorrect: true
+      explanation: "Correct. The source supports sharing the URL as a reported observation, not as independently verified infrastructure. Preserve the source's provisional attribution rather than increasing its certainty."
+    - content: "Mark both the attribution and the source-reported indicator as unsubstantiated before sharing either."
+      isCorrect: false
+      explanation: "Incorrect. The source supports the reported download URL and the attribution's provisional status. Correct the overstated claim while retaining the supported observation and uncertainty."
+  - content: "A posture-prioritization session produces useful recommendations, but the agent couldn't access part of the cloud environment. What should the handoff include?"
+    choices:
+    - content: "Share supported recommendations, state the unassessed scope, and name who arranges follow-up."
+      isCorrect: true
+      explanation: "Correct. The recommendations can still be useful. The next team also needs to know which resources weren't assessed and who handles the follow-up."
+    - content: "Share the ranking as complete, record the access issue, and assign routine follow-up."
+      isCorrect: false
+      explanation: "Incorrect. The ranking doesn't account for resources the agent couldn't access. Make that gap clear before the team uses it to plan remediation."
+    - content: "Withhold all recommendations until the agent can assess every resource in the intended scope."
+      isCorrect: false
+      explanation: "Incorrect. Supported recommendations can remain useful with clear coverage limits. Share what the evidence supports and assign follow-up for the unassessed resources."

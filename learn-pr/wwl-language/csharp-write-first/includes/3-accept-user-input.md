@@ -51,7 +51,7 @@ Every value in C# has a **data type**, which tells the computer what kind of val
 - **String (`string`)**: Text wrapped in quotes, like `"Blue"` or `"25"`. Even a number becomes text when it's inside quotes.
 - **Integer (`int`)**: A whole number without quotes, like `25` or `100`. You can do math with these.
 
-Why does this matter? C# treats these types differently. You can add numbers together (`25 + 1` equals `26`), but you can't directly add a number to text without special handling.
+Why does this matter? C# treats these types differently. Adding two numbers performs arithmetic (`25 + 1` equals `26`). When either value is a string, the `+` operator joins the values as text instead. This is called **string concatenation**.
 
 ## Console.ReadLine() always returns a string
 
@@ -59,12 +59,17 @@ An essential rule to remember is that `Console.ReadLine()` *always* returns text
 
 ```csharp
 string age = Console.ReadLine();
-Console.WriteLine(age + 1); // This causes an error!
+Console.WriteLine(age + 1);
 ```
 
-If you run this code and type `25`, the program won't print `26`. Instead, it tries to add `1` to the text `"25"`, which C# doesn't allow. This is a common beginner mistake!
+This code compiles. If you run it and type `25`, it prints:
 
-To do math with user input, you'd need to convert the text to a number first—but we'll cover that later. For now, remember: whatever the user types is always treated as text.
+```output
+251
+```
+
+Because `age` is a string, `+` joins `"25"` and the text representation of `1` to produce `"251"`, rather than the number `26`. C# doesn't automatically convert `"25"` to a number.
+
+To do math with user input, you need to convert the text to a number first. For now, remember: input from `Console.ReadLine()` is text, even when it contains digits.
 
 ::: zone-end
-

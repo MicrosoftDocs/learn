@@ -2,10 +2,10 @@
 uid: learn.wwl.manage-azure-cosmos-db-fleets.knowledge-check
 title: Module assessment
 metadata:
-  title: Module assessment
+  title: Module Assessment
   description: "Check your ability to choose between fleets and container-level multitenancy, apply fleetspace membership rules, calculate a physical partition's pooled throughput ceiling, decide which accounts can share a pool, and read the fleet analytics schema."
-  ms.date: 10/03/2026
-  author: wwlpublish
+  ms.date: 11/12/2026
+  author: MScalopez
   ms.author: calopez
   ms.topic: unit
   module_assessment: true

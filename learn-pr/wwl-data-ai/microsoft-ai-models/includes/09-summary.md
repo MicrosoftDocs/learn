@@ -17,7 +17,8 @@ You learned that:
 - **MAI-Code** supports efficient agentic coding workflows, including planning, implementation, debugging, and prototyping from visual designs.
 - **MAI-Voice** prioritizes natural, consistent speech, while **MAI-Voice-Flash** prioritizes low latency for interactive experiences.
 - **MAI-Transcribe** creates domain-aware transcripts across languages and challenging audio conditions.
-- **MAI-Image-Pro**, **MAI-Image**, and **MAI-Image-Flash** provide different balances of visual capability, quality, and cost for image generation and editing.
+- **MAI-Realtime** combines speech recognition and synthesis for interactive voice conversations.
+- **MAI-Image** and **MAI-Image-Flash** provide different balances of visual capability, quality, and cost for image generation and editing.
 
 The right model is the one that meets the quality, latency, cost, language, and safety requirements of your workload. Evaluate candidate models with representative inputs, measure the complete application experience, and review current model cards and service documentation before deploying to production.
 

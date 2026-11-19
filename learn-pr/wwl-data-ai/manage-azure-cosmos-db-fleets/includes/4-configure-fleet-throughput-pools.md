@@ -1,6 +1,26 @@
-Contoso's over-provisioning problem has a shape. Each tenant's catalog container is sized for a peak of a few thousand request units per second (RU/s) that arrives for a few minutes a day, and the rest of the time it runs at a fraction of that. Multiply by 200 tenants and the estate is paying continuously for capacity that's almost never in use. A throughput pool is the lever that addresses it. This unit covers how a pool allocates request units, how to size and price one, which accounts are allowed to share one, and how to confirm that it's being used.
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=4bb47b7d-4c3b-46f7-a602-68990263cd7a]
+
+> [!TIP]
+> For more information, see the **Text and images** tab.
+
+::: zone-end
+
+::: zone pivot="text"
+
+Contoso pays for capacity that its tenants rarely use outside brief daily peaks. A throughput pool provides shared capacity to handle these peaks.
 
 ## How pooled throughput works
+
+Contoso provisions each tenant's catalog container to handle a few thousand request units per second (RU/s). Peak demand lasts only a few minutes each day. During the rest of the day, each container uses a fraction of its provisioned capacity. Across 200 tenants, Contoso pays continuously for capacity that it rarely uses.
+
+In this unit, you learn how to:
+
+- Explain how a pool allocates request units.
+- Size and price a pool.
+- Identify which accounts can share a pool.
+- Confirm that resources use pooled throughput.
 
 Pooling doesn't replace the throughput a container already has. It adds a second, shared allowance on top of it.
 
@@ -23,7 +43,7 @@ Without a pool, a container that exceeds its provisioned throughput is throttled
 The pool is large, but a single physical partition can't consume all of it. Two limits apply, and they compose:
 
 - A physical partition draws up to 5,000 extra RU/s from the pool, on top of its dedicated throughput.
-- A physical partition's combined dedicated and pooled consumption can't exceed 10,000 RU/s, however much the pool has left.
+- Combined dedicated and pooled consumption on a physical partition can't exceed 10,000 RU/s. This limit applies even when the pool has available capacity.
 
 So the most a physical partition can consume is the lesser of two numbers: its dedicated throughput plus 5,000, or 10,000. A physical partition holding 1,000 dedicated RU/s reaches 6,000; one holding 8,000 reaches 10,000 rather than 13,000. The first of those limits can be raised with a support ticket.
 
@@ -39,11 +59,11 @@ Three rules govern the numbers:
 - The maximum is at most 10 times the minimum. A minimum of 100,000 RU/s allows a maximum anywhere up to 1,000,000 RU/s.
 - The maximum can't be lower than the minimum.
 
-Billing follows the highest RU/s the pool scaled to during each hour, charged for every region the pool is available in. An idle pool is billed at its minimum for each region. The billing rule makes the minimum the number that deserves the most attention: it's the floor you pay for continuously, and unlike a container's autoscale minimum, it starts at 100,000 RU/s.
+Billing follows the highest RU/s the pool scaled to during each hour, charged for every region the pool is available in. An idle pool is billed at its minimum for each region. Pay particular attention to the pool minimum because you pay for this capacity even when the pool is idle. Unlike a container's autoscale minimum, the pool minimum starts at 100,000 RU/s.
 
-The published example makes the trade-off concrete. Take a provider with 1,000 tenants, one account and one container each, where a container's typical load is small but an active tenant can reach 5,000 RU/s. Without pooling, every container is provisioned at 5,000 RU/s to survive its peak, and the estate pays for 5,000,000 RU/s. With pooling, the containers are provisioned at 100 to 1,000 RU/s and a fleetspace pool of 100,000 to 500,000 RU/s absorbs the spikes. The saving comes from the fact that the tenants don't peak simultaneously.
+The published example makes the trade-off concrete. Consider a provider with 1,000 tenants. Each tenant has one account and one container. A container's typical load is small, but an active tenant can reach 5,000 RU/s. Without pooling, the provider provisions every container at 5,000 RU/s to handle peak demand. The provider pays for 5,000,000 RU/s in total. With pooling, the containers are provisioned at 100 to 1,000 RU/s and a fleetspace pool of 100,000 to 500,000 RU/s absorbs the spikes. The saving comes from the fact that the tenants don't peak simultaneously.
 
-That last clause is the assumption the whole model rests on. Pooling suits many tenants with different traffic patterns, most of them quiet at any moment. A workload with a handful of tenants, or one where every tenant is either always idle or always busy, gets little from a pool, and the 100,000 RU/s floor can cost more than the over-provisioning it was meant to remove.
+That last clause is the assumption the whole model rests on. Pooling suits many tenants with different traffic patterns, most of them quiet at any moment. Pooling offers little benefit for workloads with only a few tenants. It also offers little benefit when every tenant is either always idle or always busy. In these cases, the 100,000 RU/s minimum can cost more than provisioning each tenant for peak demand.
 
 ## Rules that decide which accounts can share a pool
 
@@ -57,17 +77,17 @@ Some combinations are worth reading twice:
 
 | Configuration | Allowed in one pool |
 | :--- | :--- |
-| 2 single-region write accounts, each in a different Azure region | Yes |
-| 2 multi-region write accounts, each in a different Azure region | Yes |
-| 1 single-region write account distributed to 2 regions, plus a single-region write account in 1 region | No |
-| 2 accounts with global distribution across different sets of regions | No |
-| 1 multi-region write account and 1 single-region write account | No |
+| Two accounts with single-region writes, each in a different Azure region | Yes |
+| Two accounts with multi-region writes, each in a different Azure region | Yes |
+| One account with single-region writes distributed to two regions, plus an account with single-region writes in one region | No |
+| Two accounts with global distribution across different sets of regions | No |
+| One account with multi-region writes and one account with single-region writes | No |
 
 Because the service tier and the data regions are fixed when the fleetspace is created, these rules are effectively a design exercise you complete before you create anything. Group your accounts by regional configuration and write type first, and create one fleetspace per group.
 
 ## Confirm that pooling is doing something
 
-A pool that's configured but never drawn from is pure cost, so verify the behavior rather than assuming it.
+You pay for a pool even when no resources draw from it. Verify that resources use the pool rather than assume they do.
 
 At the fleet level, the `FleetspaceAutoscaledThroughput` metric reports the RU/s the pool scaled to, which is also the quantity you're billed for.
 
@@ -78,4 +98,6 @@ At the account level, Azure Monitor separates the two allowances:
 1. Select the **Total Requests** metric and split it by **Capacity Type** to see whether requests were served from the pool or from the resource's dedicated throughput.
 1. To see how many request units came from each source, select **Total Request Units** and split it the same way.
 
-If the pooled split stays at zero over a representative period, the dedicated allowances are already large enough and the pool isn't earning its minimum. If it's consistently saturated, the tenants' dedicated sizing is too small, or the traffic is concentrated on too few physical partitions to use what the pool offers.
+If the pooled split stays at zero over a representative period, the dedicated allowances are already large enough and the pool isn't earning its minimum. If resources consistently reach their pooled throughput limits, investigate two possible causes. The tenants might need more dedicated throughput. Alternatively, traffic might target too few physical partitions to use the pool's available capacity.
+
+::: zone-end

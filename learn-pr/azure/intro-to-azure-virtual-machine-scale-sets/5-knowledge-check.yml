@@ -3,9 +3,9 @@ uid: learn.introduction-to-azure-virtual-machine-scale-sets.knowledge-check
 title: Module assessment
 metadata:
   unitType: knowledge_check
-  title: Module assessment
+  title: Module Assessment
   description: Check your knowledge about Azure Virtual Machine Scale Sets.
-  ms.date: 11/15/2025
+  ms.date: 11/14/2026
   ms.reviewer: mimckitt
   author: Orin-Thomas
   ms.author: orthomas
@@ -22,16 +22,16 @@ quiz:
       explanation: "Incorrect. As the surges in utilization are unpredictable, scaling according to a schedule doesn't result in an application that is responsive to user numbers."
     - content: "Autoscale according to metrics"
       isCorrect: true
-      explanation: "Correct. Configuring autoscale according to metrics lets the application be responsible for utilization, which meets your goals."
-  - content: "What is the maximum number of VMs in an Azure Virtual Machine Scale Set?"
+      explanation: "Correct. Metric-based autoscale adjusts the scale set's instance count according to configured metric rules, helping the application respond to unpredictable demand."
+  - content: "What is the documented maximum number of VMs supported by Flexible orchestration in a Virtual Machine Scale Set?"
     choices:
     - content: "1000"
       isCorrect: true
-      explanation: "Correct. The maximum number of IaaS VMs in an Azure Virtual Machine Scale Set is 1000."
+      explanation: "Correct. Flexible orchestration supports up to 1,000 VMs. Particular VM and placement configurations can have lower limits."
     - content: "1024"
       isCorrect: false
-      explanation: "Incorrect. The maximum number of IaaS VMs in an Azure Virtual Machine Scale Set is 1000."
+      explanation: "Incorrect. Flexible orchestration supports up to 1,000 VMs, with lower limits for some configurations."
     - content: "2056"
       isCorrect: false
-      explanation: "Incorrect. The maximum number of IaaS VMs in an Azure Virtual Machine Scale Set is 1000."
+      explanation: "Incorrect. Flexible orchestration supports up to 1,000 VMs, with lower limits for some configurations."
 

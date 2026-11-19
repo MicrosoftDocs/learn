@@ -1,48 +1,33 @@
-In previous units, we showed how to set up Copilot and mentioned how it can make you faster as a developer starting to write code.
-
-In this unit, let's discuss how Copilot can help you with existing projects and help you with more complicated tasks.
+Now that the portfolio is open in your codespace, you can give Copilot the same context you'd give a teammate: what you want to change, where it belongs, and how you'll know it worked.
 
 ## Developing with GitHub Copilot
 
-Often when we build out projects, we need to continuously ensure our code is fresh and updated. Additionally, we might need to fix any bugs that come up or add new features to improve its functionality and usability. Let's explore some ways to make updates with GitHub Copilot and GitHub Copilot Chat, an interactive chat interface to ask and receive answers to code-related questions.
+Use inline suggestions when you're already writing code. Use GitHub Copilot Chat when you want to ask a question about existing code or discuss a proposed change.
 
 ### Prompt engineering
 
-Although GitHub Copilot can suggest code as you type, you can also build prompts to create useful suggestions. A prompt, which is our input, is a collection of instructions or guidelines that help generate code. A prompt is useful to generate specific responses from Copilot. The prompt might be a comment or input when using GitHub Copilot Chat that steers Copilot to generate code on your behalf or writing code that Copilot autocompletes.
-
-The quality of output from Copilot is dependent on how well you craft your prompt. Creating an effective prompt is essential for achieving desired outcomes. For example, if you have the following prompt:
+A *prompt* is input to Copilot. It can be a request typed in Chat, a comment describing the code you want, or code you start typing for Copilot to complete. Compare these example prompts; you don't need to change the footer in this unit.
 
 ```javascript
-// Create an API endpoint
+// Update the footer.
 ```
 
-Since the prompt is ambiguous and vague, the result from GitHub Copilot might not be what you need. For example, it could use a framework that you don't know, or an endpoint that requires data that you don't recognize. However, if you have the following prompt:
+The first prompt could mean changing the layout, the links, or the styling. The second names a file, an observable result, and what should stay the same:
 
 ```javascript
-// Create an API endpoint using the React framework that accepts a JSON payload in a POST request
+// In App.jsx, hide only the portfolio's email icon by changing siteProps.email.
+// Leave the footer component and the other icons unchanged.
 ```
 
-This last prompt is specific, clear and allows GitHub Copilot to understand the goal and scope of the task. Although you can also provide context and examples to Copilot using comments or code you can also use the chat option of GitHub Copilot Chat. Having a good prompt ensures that the model generates a high-quality output.
+The [portfolio's footer component](https://github.com/MicrosoftDocs/mslearn-copilot-codespaces-javascript/blob/4ee124077555bba7f613ca56b86f0a308402a8b8/src/Components/Footer.jsx#L63-L118) already shows the email icon only when an address is set. A suggestion that sets `siteProps.email` to an empty string fits the request. One that removes every footer link doesn't.
 
 ### Best practices using GitHub Copilot
 
-Copilot supercharges your productivity but requires some good practices to ensure quality. Some best practices when using Copilot are:
+Use these techniques to refine a suggestion and check the result:
 
-- Keep your prompts simple then add more elaborate components as you keep going for example:
+- **Refine a question in Chat.** For an explanation or a snippet to review yourself, select **Ask** in the [Chat agent picker](https://docs.github.com/en/copilot/how-tos/copilot-in-your-ide/chat-with-copilot/chat-in-ide?tool=vscode#using-ask-mode). Start with "What makes the email icon appear?" Then ask, "Show the one-line change that hides it by setting the email field to an empty string." A focused follow-up gives Copilot more useful direction than extra detail unrelated to the change.
+- **Compare inline alternatives.** If alternatives appear, use the arrows in the suggestion toolbar, or `Alt+]` / `Alt+[` on Windows and Linux (`Option+]` / `Option+[` on macOS). Press <kbd>Tab</kbd> to accept a visible completion or <kbd>Esc</kbd> to dismiss it.
+- **Check the result.** A clear prompt helps but doesn't guarantee correct code. [Review the proposed change](https://docs.github.com/en/copilot/tutorials/review-ai-generated-code) and compare the preview with the behavior you requested. If more changed than you intended, reject the suggestion or narrow the request.
 
-    ```text
-    create an HTML form with a text field and button
-    ```
-
-    Next, elaborate more on the prompt to get more specific suggestions:
-    
-    ```text
-    Add an event listen to the button to send a POST request to /generate endpoint and display response in a div with id "result"
-    ```
-
-- Cycle between suggestions, you can do this using <kbd>Ctrl</kbd>+<kbd>Enter</kbd> (or <kbd>Cmd</kbd>+<kbd>Enter</kbd> on a Mac). You get various suggestions from Copilot, and you can pick the best output. Optionally, when using GitHub Copilot Chat, you can use the chat input to add your prompt and interact with the output.
-
-If you're stuck or not getting the results you want, then you can reword the prompt or start writing code for Copilot to autocomplete.
-
->[!Note]
-> GitHub Copilot uses open files in your text editor as additional context. This is helpful because it provides useful information in addition to the prompt or code you may be writing. If you need GitHub Copilot to provide suggestions based on other files you can open them when using GitHub Copilot Chat.
+> [!NOTE]
+> Related open files can help Copilot generate inline completions. To tell **Chat** to use a specific file, drag **App.jsx** from the **src** folder in Explorer into the chat input, or choose **Add Context** > **Files**. Confirm that **App.jsx** appears as an attachment before sending your prompt. See [Add context to chat](https://code.visualstudio.com/docs/chat/copilot-chat-context#_add-files-as-context).

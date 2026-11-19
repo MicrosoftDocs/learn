@@ -1,3 +1,12 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=c9a29be3-83a9-4cad-b047-378cceb81bf7]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
 The container is configured and loaded. Turning it into a search feature takes one system function and a few habits that keep the request charge proportionate. In this unit, you run a similarity query with `VectorDistance`, narrow it with metadata filters, and use the function's options to trade recall against cost deliberately rather than by accident.
 
 ## Query with `VectorDistance`

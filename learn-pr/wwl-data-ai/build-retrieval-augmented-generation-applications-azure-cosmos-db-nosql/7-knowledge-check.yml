@@ -2,10 +2,10 @@
 uid: learn.wwl.build-retrieval-augmented-generation-applications-azure-cosmos-db-nosql.knowledge-check
 title: Module assessment
 metadata:
-  title: Module assessment
+  title: Module Assessment
   description: "Check your ability to diagnose a failing grounded answer, separate embedded text from grounding text, place retrieved content correctly in a prompt, resolve a follow-up question, and judge when multi-step retrieval earns its cost."
-  ms.date: 10/04/2026
-  author: wwlpublish
+  ms.date: 11/18/2026
+  author: MScalopez
   ms.author: calopez
   ms.topic: unit
   module_assessment: true

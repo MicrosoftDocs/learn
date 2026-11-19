@@ -1,0 +1,73 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.perception-agentic-security-investigate-plan-response.knowledge-check
+title: Module assessment
+metadata:
+  title: Module Assessment
+  description: "Knowledge check"
+  ms.date: 11/09/2026
+  author: wwlpublish
+  ms.author: hrasheed
+  ms.topic: unit
+  module_assessment: true
+  ai_generated_module_assessment: false
+  ROBOTS: NOINDEX
+  no_index_ks: true
+durationInMinutes: 5
+quiz:
+  title: ""
+  questions:
+  - content: "A security team needs to establish whether malicious activity from an incident created 42 days ago has returned and reached a related server. A new alert created today identifies malicious execution on the original workstation and references that server. Which investigation question and input best address the request?"
+    choices:
+    - content: "Investigate whether activity has returned and affected the server, using the original 42-day-old incident ID."
+      isCorrect: false
+      explanation: "Incorrect. The question addresses the request, but the original incident is outside the agent's supported 30-day input window. Use the relevant current alert as the starting input and retain the older incident as context."
+    - content: "Investigate whether activity has returned, affected the server, and requires containment, using the new related alert ID."
+      isCorrect: true
+      explanation: "Correct. The question addresses current scope and response needs, and the new related alert supplies a suitable input within the supported age window."
+    - content: "Investigate only how the workstation file executes, using the new related alert ID as the input."
+      isCorrect: false
+      explanation: "Incorrect. The input is suitable, but the question leaves out the related server and response needs. Frame the investigation to cover the request rather than only the already detected workstation execution."
+  - content: "A report links a delivered attachment to malicious execution on a device because delivery occurs six minutes earlier. The cited process evidence confirms malicious execution but doesn't connect the attachment to that process. What should the reviewer record?"
+    choices:
+    - content: "Keep the malicious-execution finding and leave the attachment's role unresolved pending linking evidence."
+      isCorrect: true
+      explanation: "Correct. The process evidence supports malicious execution. The earlier delivery supplies chronology but doesn't establish that the attachment caused the execution. Preserve the finding and request the missing connection."
+    - content: "Keep the malicious-execution finding and confirm the attachment as the initial-access route."
+      isCorrect: false
+      explanation: "Incorrect. Temporal order alone doesn't supply the missing causal link. A plausible attack story still needs evidence connecting the attachment to the process."
+    - content: "Downgrade the malicious-execution finding until the attachment's connection to the process is confirmed."
+      isCorrect: false
+      explanation: "Incorrect. The execution evidence remains valid even when initial access is unresolved. Don't discard an independently supported finding because another claim lacks evidence."
+  - content: "A session records a failed remote connection from a compromised workstation to a server. The agent can't retrieve the server's activity because it lacks access to the relevant device group. How should the reviewer describe the server?"
+    choices:
+    - content: "Unaffected, because the failed connection establishes that the server receives no malicious activity."
+      isCorrect: false
+      explanation: "Incorrect. One failed attempt doesn't establish the server's state across the investigation period. The session lacks destination evidence needed for that conclusion."
+    - content: "Compromised, because a connection from an affected workstation establishes successful spread to it."
+      isCorrect: false
+      explanation: "Incorrect. A failed connection doesn't establish successful access or execution. The server is relevant to scope review, but compromise isn't demonstrated."
+    - content: "Related but unassessed, with destination-evidence review and agent access follow-up assigned to owners."
+      isCorrect: true
+      explanation: "Correct. Record the observed connection and the coverage gap separately. Assign someone to obtain destination evidence and someone to resolve agent scope, then reassess impact using the new findings."
+  - content: "Current evidence confirms a malicious process remains active on WS-17. An assigned responder has authority to isolate it under the approved procedure, and the device is eligible. Account acct-17 authenticates from WS-17 to a server, but account impact remains unassessed. The report recommends resetting acct-17. Account actions require a documented risk assessment and separate approval, neither of which is recorded. What should the response plan prioritize?"
+    choices:
+    - content: "Delay workstation isolation until account review establishes whether acct-17 also needs a reset under the procedure."
+      isCorrect: false
+      explanation: "Incorrect. The account question doesn't invalidate the active workstation finding or its existing authorization. Workstation containment can proceed while account review continues."
+    - content: "Isolate WS-17 under existing authority and assess account risk before seeking approval for an acct-17 reset."
+      isCorrect: true
+      explanation: "Correct. The device evidence and stated authority justify workstation containment now. The sign-in warrants account review, but the proposed reset still needs the required risk assessment and separate approval. Precautionary account action can be justified without confirmed credential theft when its risk and authority are established."
+    - content: "Isolate WS-17 and reset acct-17 from the report recommendation, then seek approval during the account review."
+      isCorrect: false
+      explanation: "Incorrect. The report recommendation doesn't supply the required account-risk assessment or approval. Workstation isolation authority doesn't extend to the account reset, and approval after execution doesn't meet the stated procedure."
+  - content: "An investigation report recommends containment and remediation for a confirmed compromise. No response action is recorded, and a consequential coverage gap remains open. What should the incident handoff include?"
+    choices:
+    - content: "Record response completion from the report and assign remaining coverage review to routine follow-up."
+      isCorrect: false
+      explanation: "Incorrect. Recommended actions aren't completed actions. The open coverage gap also needs explicit ownership and review against the incident's closure criteria."
+    - content: "Defer the handoff until complete coverage allows responders to finalize every recommended response action."
+      isCorrect: false
+      explanation: "Incorrect. Supported findings can guide response before every question is resolved. Share the usable conclusions with explicit limits and owners instead of withholding the entire handoff."
+    - content: "Share supported findings and limits, assign action owners, and specify execution checks and gap review."
+      isCorrect: true
+      explanation: "Correct. The next responder needs evidence references, action status, ownership, and checks for completion. Keep consequential open questions visible and verify response outcomes before incident closure."
