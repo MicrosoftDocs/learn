@@ -1,0 +1,51 @@
+### YamlMime:Module
+uid: learn.devrel.azure-virtual-machine-capacity-cost-optimization
+metadata:
+  title: Azure Virtual Machine Optimization
+  description: Evaluate Azure virtual machine resize recommendations against workload demand, allocation constraints, and total cost, including unused commitments.
+  ms.date: 11/16/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: module-standard-concept-based
+  ms.service: azure-virtual-machines
+  ai-usage: ai-assisted
+title: Azure virtual machine optimization
+summary: |
+  An Azure virtual machine (VM) can look oversized on an ordinary day yet need all its memory to finish a month-end job. In this module, you compare Azure Advisor resize recommendations with measurements of memory use, disk activity, and application response times during normal and peak demand. You use that evidence to accept, reject, or defer a recommendation, then check whether the proposed size is compatible and whether quota or regional capacity could block the change. You decide what evidence would justify testing a resize on one isolated VM, accepting the result, or stopping rollout. Finally, you compare costs under similar demand, including unused reservations, savings plan commitments, and ongoing disk and backup charges, to distinguish a lower hourly price from a lower bill.
+abstract: |
+  The goal of rightsizing an Azure VM is to meet the application's performance targets without paying for capacity the workload doesn't need. By the end of this module, you can:
+
+  - Establish a baseline for rightsizing: measure application performance and VM resource use during normal and peak demand, and record the cost of running the workload.
+  - Decide with the workload and finance owners whether to accept, reject, or defer an Azure Advisor resize recommendation based on performance targets and expected savings.
+  - Identify what could block the resize: check size compatibility, subscription restrictions, regional and VM-family quotas, and placement constraints. Distinguish quota headroom from hardware Azure can actually allocate.
+  - Decide whether a proposed resize should proceed to a canary, a trial on one isolated VM, and explain what evidence would justify acceptance or recovery.
+  - Compare application correctness, response time, and throughput before and after the resize under similar demand. Use the agreed thresholds to decide whether to accept the change or start recovery.
+  - Determine whether the resize lowered total cost by comparing equivalent usage periods and accounting for unused reservations, savings plan commitments, and ongoing disk and backup charges.
+prerequisites: |
+  Before you start, you should have the following background:
+
+  - Familiarity with diagnosing compute and disk bottlenecks (M03) and making safe virtual machine changes (M04).
+  - Basic knowledge of cloud financial operations, including reservations and savings plans.
+
+  The cases use supplied records. No Azure subscription or running virtual machine is required.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+- solution-architect
+products:
+- azure-virtual-machines
+subjects:
+- infrastructure
+units:
+- learn.devrel.azure-virtual-machine-capacity-cost-optimization.introduction
+- learn.devrel.azure-virtual-machine-capacity-cost-optimization.establish-workload-baselines
+- learn.devrel.azure-virtual-machine-capacity-cost-optimization.evaluate-resize-recommendations
+- learn.devrel.azure-virtual-machine-capacity-cost-optimization.distinguish-quota-from-capacity
+- learn.devrel.azure-virtual-machine-capacity-cost-optimization.plan-controlled-resize
+- learn.devrel.azure-virtual-machine-capacity-cost-optimization.reconcile-rightsize-costs
+- learn.devrel.azure-virtual-machine-capacity-cost-optimization.knowledge-check
+- learn.devrel.azure-virtual-machine-capacity-cost-optimization.summary
+badge:
+  uid: learn.devrel.azure-virtual-machine-capacity-cost-optimization.badge

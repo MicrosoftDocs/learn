@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="858" viewBox="0 0 960 858" role="img" aria-labelledby="allocation-decision-gates-title allocation-decision-gates-desc" font-family="Segoe UI, Arial, sans-serif">
+  <title id="allocation-decision-gates-title">Can Azure allocate the target VM?</title>
+  <desc id="allocation-decision-gates-desc">Read down the six checks. A failed check leads right to its remedy. Only a successful allocation confirms hardware for this VM.</desc>
+  <metadata>Azure icon source: other\02951-icon-service-Azure-Quotas.svg</metadata>
+  <rect x="0" y="0" width="960" height="858" fill="#ffffff" data-kind="background" />
+  <defs>
+    <marker id="allocation-decision-gates-tip-0" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#9b6829" />
+    </marker>
+    <marker id="allocation-decision-gates-tip-1" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#507186" />
+    </marker>
+  </defs>
+  <svg width="52" height="52" viewBox="0 0 18 18" x="34" y="30" aria-hidden="true">
+    <defs>
+      <linearGradient id="allocation-decision-gates-b34ec488-362d-4e56-ba08-b30b594400e7" x1="9" y1="2.619" x2="9" y2="15.381" gradientUnits="userSpaceOnUse">
+        <stop offset="0" stop-color="#5ea0ef" />
+        <stop offset="1" stop-color="#0078d4" />
+      </linearGradient>
+      <linearGradient id="allocation-decision-gates-a991103a-cd8c-4c10-9187-45efb6afaa60" x1="9.001" y1="6.17" x2="9.001" y2="15.458" gradientUnits="userSpaceOnUse">
+        <stop offset="0.33" stop-color="#b4ec36" />
+        <stop offset="1" stop-color="#86d633" />
+      </linearGradient>
+      <linearGradient id="allocation-decision-gates-b85f8f17-e712-4c0f-bc80-cfc59ff8aa95" x1="9" y1="9.652" x2="9" y2="15.442" gradientUnits="userSpaceOnUse">
+        <stop offset="0.429" stop-color="#86d633" />
+        <stop offset="0.999" stop-color="#76bc2d" />
+      </linearGradient>
+    </defs>
+    <g id="allocation-decision-gates-fcc94818-5718-45fa-b758-f361ca38dd4e">
+      <g>
+        <path d="M18,11.383a4.093,4.093,0,0,1-3.667,3.922,3.919,3.919,0,0,1-.394.021.825.825,0,0,1-.216.033H5.516c-.138.012-.285.019-.431.019H5.07A4.894,4.894,0,0,1,0,10.677,4.824,4.824,0,0,1,4.244,6.029a5.228,5.228,0,0,1,5-3.407A5.1,5.1,0,0,1,14.49,7.5,4.042,4.042,0,0,1,18,11.383Z" fill="url(#allocation-decision-gates-b34ec488-362d-4e56-ba08-b30b594400e7)" />
+        <path d="M11.441,9.279H10.146a.15.15,0,0,0-.15.15v5.93H8V9.429a.15.15,0,0,0-.15-.15H6.56a.15.15,0,0,1-.113-.248L8.886,6.2a.151.151,0,0,1,.228,0l2.441,2.827A.15.15,0,0,1,11.441,9.279Z" fill="url(#allocation-decision-gates-a991103a-cd8c-4c10-9187-45efb6afaa60)" />
+        <path d="M13.51,9.693l-1.642,1.9a.15.15,0,0,0,.114.248h.783a.151.151,0,0,1,.15.151v3.366h.808a.825.825,0,0,0,.216-.033,3.919,3.919,0,0,0,.394-.021V11.993a.151.151,0,0,1,.15-.151h.783a.15.15,0,0,0,.114-.248l-1.642-1.9A.15.15,0,0,0,13.51,9.693Zm-9.248,0-1.642,1.9a.15.15,0,0,0,.114.248h.783a.151.151,0,0,1,.15.151v3.233a4.9,4.9,0,0,0,1.4.152h.015V11.993a.151.151,0,0,1,.15-.151h.783a.15.15,0,0,0,.114-.248L4.49,9.693A.15.15,0,0,0,4.262,9.693Z" opacity="0.9" fill="url(#allocation-decision-gates-b85f8f17-e712-4c0f-bc80-cfc59ff8aa95)" />
+      </g>
+    </g>
+  </svg>
+  <text x="106" y="34" font-size="15" font-weight="700" fill="#172f40" text-anchor="start" data-kind="label">ALLOCATION DECISION TREE</text>
+  <text x="106" y="73" font-size="32" font-weight="700" fill="#172f40" text-anchor="start" data-kind="label">Can Azure allocate the target VM?</text>
+  <text x="36" y="112" font-size="19" font-weight="400" fill="#172f40" text-anchor="start" data-kind="label">Passing the prechecks permits an attempt; it does not reserve a host.</text>
+  <text x="36" y="155" font-size="16" font-weight="700" fill="#172f40" text-anchor="start" data-kind="label">IF YES: CONTINUE DOWN</text>
+  <text x="536" y="155" font-size="16" font-weight="700" fill="#172f40" text-anchor="start" data-kind="label">IF NO: FOLLOW THE BRANCH</text>
+  <rect x="36" y="174" width="404" height="72" rx="8" fill="#eef6fc" stroke="#6a97b8" stroke-width="1.5" data-kind="card" />
+  <text x="54" y="205" font-size="20" font-weight="700" fill="#172f40" text-anchor="start" data-kind="label">1. Is the size compatible?</text>
+  <text x="54" y="230" font-size="17" font-weight="400" fill="#172f40" text-anchor="start" data-kind="label">Check OS, disks, network and security.</text>
+  <polyline points="444,210 527,210" fill="none" stroke="#9b6829" stroke-width="2.5" stroke-linejoin="round" data-kind="wire" marker-end="url(#allocation-decision-gates-tip-0)" />
+  <rect x="536" y="174" width="388" height="72" rx="8" fill="#fff7e6" stroke="#ae802c" stroke-width="1.5" data-kind="card" />
+  <text x="554" y="205" font-size="19" font-weight="700" fill="#172f40" text-anchor="start" data-kind="label">Choose a supported size.</text>
+  <text x="554" y="230" font-size="17" font-weight="400" fill="#172f40" text-anchor="start" data-kind="label">If none fits, redesign the change.</text>
+  <polyline points="238,249 238,268" fill="none" stroke="#507186" stroke-width="2.5" stroke-linejoin="round" data-kind="wire" marker-end="url(#allocation-decision-gates-tip-1)" />
+  <rect x="36" y="274" width="404" height="72" rx="8" fill="#eef6fc" stroke="#6a97b8" stroke-width="1.5" data-kind="card" />
+  <text x="54" y="305" font-size="20" font-weight="700" fill="#172f40" text-anchor="start" data-kind="label">2. Is the size allowed here?</text>
+  <text x="54" y="330" font-size="17" font-weight="400" fill="#172f40" text-anchor="start" data-kind="label">Check subscription, region and zone.</text>
+  <polyline points="444,310 527,310" fill="none" stroke="#9b6829" stroke-width="2.5" stroke-linejoin="round" data-kind="wire" marker-end="url(#allocation-decision-gates-tip-0)" />
+  <rect x="536" y="274" width="388" height="72" rx="8" fill="#fff7e6" stroke="#ae802c" stroke-width="1.5" data-kind="card" />
+  <text x="554" y="305" font-size="19" font-weight="700" fill="#172f40" text-anchor="start" data-kind="label">Resolve the size restriction.</text>
+  <text x="554" y="330" font-size="17" font-weight="400" fill="#172f40" text-anchor="start" data-kind="label">Or select an approved, eligible target.</text>
+  <polyline points="238,349 238,368" fill="none" stroke="#507186" stroke-width="2.5" stroke-linejoin="round" data-kind="wire" marker-end="url(#allocation-decision-gates-tip-1)" />
+  <rect x="36" y="374" width="404" height="72" rx="8" fill="#eef6fc" stroke="#6a97b8" stroke-width="1.5" data-kind="card" />
+  <text x="54" y="405" font-size="20" font-weight="700" fill="#172f40" text-anchor="start" data-kind="label">3. Is there room in both quotas?</text>
+  <text x="54" y="430" font-size="17" font-weight="400" fill="#172f40" text-anchor="start" data-kind="label">Count regional and family vCPUs.</text>
+  <polyline points="444,410 527,410" fill="none" stroke="#9b6829" stroke-width="2.5" stroke-linejoin="round" data-kind="wire" marker-end="url(#allocation-decision-gates-tip-0)" />
+  <rect x="536" y="374" width="388" height="72" rx="8" fill="#fff7e6" stroke="#ae802c" stroke-width="1.5" data-kind="card" />
+  <text x="554" y="405" font-size="19" font-weight="700" fill="#172f40" text-anchor="start" data-kind="label">Address the specific quota limit.</text>
+  <text x="554" y="430" font-size="17" font-weight="400" fill="#172f40" text-anchor="start" data-kind="label">Request an increase or reduce the footprint.</text>
+  <polyline points="238,449 238,468" fill="none" stroke="#507186" stroke-width="2.5" stroke-linejoin="round" data-kind="wire" marker-end="url(#allocation-decision-gates-tip-1)" />
+  <rect x="36" y="474" width="404" height="72" rx="8" fill="#eef6fc" stroke="#6a97b8" stroke-width="1.5" data-kind="card" />
+  <text x="54" y="505" font-size="20" font-weight="700" fill="#172f40" text-anchor="start" data-kind="label">4. Can placement be preserved?</text>
+  <text x="54" y="530" font-size="17" font-weight="400" fill="#172f40" text-anchor="start" data-kind="label">Check zone, host groups and reservations.</text>
+  <polyline points="444,510 527,510" fill="none" stroke="#9b6829" stroke-width="2.5" stroke-linejoin="round" data-kind="wire" marker-end="url(#allocation-decision-gates-tip-0)" />
+  <rect x="536" y="474" width="388" height="72" rx="8" fill="#fff7e6" stroke="#ae802c" stroke-width="1.5" data-kind="card" />
+  <text x="554" y="505" font-size="19" font-weight="700" fill="#172f40" text-anchor="start" data-kind="label">Review the placement constraint.</text>
+  <text x="554" y="530" font-size="17" font-weight="400" fill="#172f40" text-anchor="start" data-kind="label">Change placement only with approval.</text>
+  <polyline points="238,549 238,568" fill="none" stroke="#507186" stroke-width="2.5" stroke-linejoin="round" data-kind="wire" marker-end="url(#allocation-decision-gates-tip-1)" />
+  <rect x="36" y="574" width="404" height="72" rx="8" fill="#eef6fc" stroke="#6a97b8" stroke-width="1.5" data-kind="card" />
+  <text x="54" y="605" font-size="20" font-weight="700" fill="#172f40" text-anchor="start" data-kind="label">5. Is the attempt approved?</text>
+  <text x="54" y="630" font-size="17" font-weight="400" fill="#172f40" text-anchor="start" data-kind="label">Confirm budget, fallback and time window.</text>
+  <polyline points="444,610 527,610" fill="none" stroke="#9b6829" stroke-width="2.5" stroke-linejoin="round" data-kind="wire" marker-end="url(#allocation-decision-gates-tip-0)" />
+  <rect x="536" y="574" width="388" height="72" rx="8" fill="#fff7e6" stroke="#ae802c" stroke-width="1.5" data-kind="card" />
+  <text x="554" y="605" font-size="19" font-weight="700" fill="#172f40" text-anchor="start" data-kind="label">Abort before attempting the resize.</text>
+  <text x="554" y="630" font-size="17" font-weight="400" fill="#172f40" text-anchor="start" data-kind="label">Obtain approval or a viable recovery plan.</text>
+  <polyline points="238,649 238,668" fill="none" stroke="#507186" stroke-width="2.5" stroke-linejoin="round" data-kind="wire" marker-end="url(#allocation-decision-gates-tip-1)" />
+  <rect x="36" y="674" width="404" height="72" rx="8" fill="#eef6fc" stroke="#6a97b8" stroke-width="1.5" data-kind="card" />
+  <text x="54" y="705" font-size="20" font-weight="700" fill="#172f40" text-anchor="start" data-kind="label">6. Did allocation succeed?</text>
+  <text x="54" y="730" font-size="17" font-weight="400" fill="#172f40" text-anchor="start" data-kind="label">Check the actual operation result.</text>
+  <polyline points="444,710 527,710" fill="none" stroke="#9b6829" stroke-width="2.5" stroke-linejoin="round" data-kind="wire" marker-end="url(#allocation-decision-gates-tip-0)" />
+  <rect x="536" y="674" width="388" height="72" rx="8" fill="#fff7e6" stroke="#ae802c" stroke-width="1.5" data-kind="card" />
+  <text x="554" y="705" font-size="19" font-weight="700" fill="#172f40" text-anchor="start" data-kind="label">Stop and record the failure.</text>
+  <text x="554" y="730" font-size="17" font-weight="400" fill="#172f40" text-anchor="start" data-kind="label">Use only an approved alternative or retry.</text>
+  <polyline points="238,750 238,773" fill="none" stroke="#507186" stroke-width="2.5" stroke-linejoin="round" data-kind="wire" marker-end="url(#allocation-decision-gates-tip-1)" />
+  <rect x="36" y="780" width="888" height="64" rx="8" fill="#eaf6ef" stroke="#588a6b" stroke-width="1.5" data-kind="card" />
+  <text x="54" y="811" font-size="21" font-weight="700" fill="#172f40" text-anchor="start" data-kind="label">Allocation succeeded for this VM.</text>
+  <text x="54" y="836" font-size="17" font-weight="400" fill="#172f40" text-anchor="start" data-kind="label">Verify the running guest resources, then test the application.</text>
+</svg>
