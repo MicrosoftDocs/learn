@@ -65,30 +65,35 @@ The Project API enables you to:
 Let's take a look at a Python code sample to use an agent:
 
 ```python
+# Before running the sample:
+#    pip install "azure-ai-projects>=2.1.0"
+
 from azure.identity import DefaultAzureCredential
 from azure.ai.projects import AIProjectClient
 
-myEndpoint = "https://<resource>.services.ai.azure.com/api/projects/<resource-name>"
+endpoint = "https://ai-resrce.services.ai.azure.com/api/projects/ai-project"
+agent_name = "helpful-agent"
+user_message = "Hi helpful-agent"
 
-project_client = AIProjectClient(
-    endpoint=myEndpoint,
-    credential=DefaultAzureCredential(),
-)
+with (
+    DefaultAzureCredential() as credential,
+    AIProjectClient(
+        endpoint=endpoint,
+        credential=credential,
+        allow_preview=True,
+    ) as project_client,
+):
+    # Bind the OpenAI client to the existing agent endpoint.
+    openai_client = project_client.get_openai_client(agent_name=agent_name)
 
-myAgent = "learning-agent"
-# Get an existing agent
-agent = project_client.agents.get(agent_name=myAgent)
-print(f"Retrieved agent: {agent.name}")
+    # Get a response.
+    conversation = openai_client.conversations.create()
+    response = openai_client.responses.create(
+        conversation=conversation.id,
+        input=[{"role": "user", "content": user_message}],
+    )
 
-openai_client = project_client.get_openai_client()
-
-# Reference the agent to get a response
-response = openai_client.responses.create(
-    input=[{"role": "user", "content": "Tell me what you can help with."}],
-    extra_body={"agent": {"name": agent.name, "type": "agent_reference"}},
-)
-
-print(f"Response output: {response.output_text}")
+    print(f"Response output: {response.output_text}")
 ```
 
 ::: zone-end
