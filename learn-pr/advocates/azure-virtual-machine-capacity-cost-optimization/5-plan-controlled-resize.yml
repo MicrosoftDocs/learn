@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-virtual-machine-capacity-cost-optimization.plan-controlled-resize
+metadata:
+  title: Plan a Controlled Resize
+  description: Define the interruption limit, peak observation window, acceptance criteria, and recovery options for a canary resize.
+  ms.date: 11/16/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Plan a controlled resize
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-plan-controlled-resize.md)]

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-virtual-machine-capacity-cost-optimization.distinguish-quota-from-capacity
+metadata:
+  title: Distinguish Quota from Capacity
+  description: Use regional and family quotas, catalog restrictions, placement constraints, and allocation results to identify why a resize might fail.
+  ms.date: 11/16/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Distinguish quota from capacity
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-distinguish-quota-from-capacity.md)]

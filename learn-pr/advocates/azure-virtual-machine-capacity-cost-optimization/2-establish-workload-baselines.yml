@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-virtual-machine-capacity-cost-optimization.establish-workload-baselines
+metadata:
+  title: Establish Workload Baselines
+  description: Compare workload objectives with resource measurements at peak demand and establish what each workload costs before a resize.
+  ms.date: 11/16/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Establish workload baselines
+durationInMinutes: 14
+content: |
+  [!include[](includes/2-establish-workload-baselines.md)]
