@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.devrel.azure-virtual-machine-capacity-cost-optimization
 metadata:
-  title: Azure Virtual Machine Optimization
+  title: Azure Virtual Machine Rightsizing
   description: Evaluate Azure virtual machine resize recommendations against workload demand, allocation constraints, and total cost, including unused commitments.
   ms.date: 11/16/2026
   author: Orin-Thomas
@@ -9,7 +9,7 @@ metadata:
   ms.topic: module-standard-concept-based
   ms.service: azure-virtual-machines
   ai-usage: ai-assisted
-title: Azure virtual machine optimization
+title: Azure virtual machine rightsizing
 summary: |
   An Azure virtual machine (VM) can look oversized on an ordinary day yet need all its memory to finish a month-end job. In this module, you compare Azure Advisor resize recommendations with measurements of memory use, disk activity, and application response times during normal and peak demand. You use that evidence to accept, reject, or defer a recommendation, then check whether the proposed size is compatible and whether quota or regional capacity could block the change. You decide what evidence would justify testing a resize on one isolated VM, accepting the result, or stopping rollout. Finally, you compare costs under similar demand, including unused reservations, savings plan commitments, and ongoing disk and backup charges, to distinguish a lower hourly price from a lower bill.
 abstract: |
