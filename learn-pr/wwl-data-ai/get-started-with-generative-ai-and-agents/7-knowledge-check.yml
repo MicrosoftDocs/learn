@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "This unit provides a knowledge check on Microsoft Foundry's generative AI models and agents."
-  ms.date: 1/28/2026
+  ms.date: 11/18/2026
   author: GraemeMalcolm
   ms.author: gmalc
   ms.topic: unit
@@ -23,17 +23,6 @@ quiz:
     - content: "A tool that replaces the need for an Azure subscription"
       isCorrect: false
       explanation: "An Azure subscription is required to access and use Foundry. Foundry projects, deployments, model usage, and governance features are all tied to Azure resources and billing."
-  - content: "Which statement best describes a foundation model in Microsoft Foundry"
-    choices:
-    - content: "A small, task‑specific model that must be fine‑tuned before it can perform any useful function"
-      isCorrect: false
-      explanation: "This describes small or domain‑specific models, not foundation models."
-    - content: "A benchmarking tool used to compare different model families"
-      isCorrect: false
-      explanation: "Benchmarks and leaderboards compare models, but they are not foundation models themselves."
-    - content: "A large, pretrained model that provides general capabilities and can be used immediately or customized"
-      isCorrect: true
-      explanation: "Foundation models are large, pretrained models that offer broad language, reasoning, or multimodal abilities out of the box. They can be deployed immediately or fine‑tuned."
   - content: "In the Foundry portal, what is the primary benefit of using the Model Playground before writing code?"
     choices:
     - content: "It lets you test prompts, compare models, and capture working settings that you can reuse in code."
