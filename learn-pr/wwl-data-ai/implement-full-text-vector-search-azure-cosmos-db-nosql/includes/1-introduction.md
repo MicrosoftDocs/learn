@@ -1,3 +1,11 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=9e538d0e-758a-45a9-8bef-a6033fb39d67]
+
+::: zone-end
+
+::: zone pivot="text"
+
 Search is the feature a catalog gets judged by. A shopper who types *helmet* expects the three helmets, and a shopper who types *something to protect my head* expects the same three. Those two requests need different machinery. The first is keyword matching over tokens. The second is semantic matching over meaning. For years, the answer was to stand up a separate search service, copy the catalog into it, and then spend the rest of the project keeping the copy current.
 
 At Contoso, the team running the product knowledge base is at exactly that decision. The catalog already lives in Azure Cosmos DB for NoSQL, and product managers are asking for a search box that handles both kinds of request. The obvious plan is to add a dedicated search service, and the obvious cost of that plan arrives later: a second store to provision, a second security boundary to review, and a synchronization job that quietly falls behind every time a product description changes.
@@ -7,3 +15,8 @@ Azure Cosmos DB for NoSQL removes the second store from the design. Full-text se
 In this module, you configure a full-text policy and index and rank results with `BM25`, design a container vector policy that matches your embedding model, choose a vector index type and a partitioning strategy that suit the size of your corpus, run similarity queries with `VectorDistance`, and use the change feed to keep embeddings aligned with the text they came from.
 
 By the end of this module, you can implement keyword and semantic retrieval natively in Azure Cosmos DB for NoSQL and keep both current as your data changes.
+
+::: zone-end
+
+> [!NOTE]
+> We recognize that different people like to learn in different ways. You can choose to complete this module in video-based format or you can read the content as text and images. The text contains greater detail than the videos, so in some cases you might want to refer to it as supplemental material to the video presentation.

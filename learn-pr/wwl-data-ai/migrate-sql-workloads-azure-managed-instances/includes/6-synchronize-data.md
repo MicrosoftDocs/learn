@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=7c8c4aa6-b556-4e83-b5ae-a90a846c80e8]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Many migrations involve a period when the on-premises and the cloud database must be kept synchronized. For example, there might be a time when clients make changes to both databases.
 
 You've migrated the sports retail products database into Azure SQL Managed Instance. The website is already using the cloud database. You're starting to reconfigure clients to use the new database. You’ve decided to transition users to the new system in batches. For each team, you'll take time to resolve any problems before migrating the next users. This approach allows for troubleshooting and problem resolution without disrupting all users at once. Next, you'll reconfigure the data analysis system to use the new database in Azure. During this time, you want to ensure that the cloud and on-premises databases are synchronized every hour.
@@ -81,3 +92,5 @@ A SQL managed instance must be placed inside an Azure virtual network subnet tha
 Users and client applications can connect to the managed instance database through the Azure portal, PowerShell, Azure CLI, and the REST API.
 
 All communications are encrypted and signed using certificates. To check the trustworthiness of communicating parties, managed instances constantly verify these certificates through certificate revocation lists. If the certificates are revoked, the SQL managed instance closes the connections to protect the data.
+
+::: zone-end

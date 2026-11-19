@@ -4,8 +4,8 @@ title: Understand Azure HorizonDB
 metadata:
   zone_pivot_groups: video-or-text
   title: Understand Azure HorizonDB
-  description: "Describe Azure HorizonDB as a cloud-native, fully managed, AI-ready database service built on PostgreSQL, and the mission-critical workloads it targets."
-  ms.date: 09/29/2026
+  description: "Describe Azure HorizonDB, its AI capabilities, migration considerations, and the mission-critical workloads it targets."
+  ms.date: 11/12/2026
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit

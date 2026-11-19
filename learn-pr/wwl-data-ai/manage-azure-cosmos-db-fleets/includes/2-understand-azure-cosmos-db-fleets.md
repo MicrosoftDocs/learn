@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=896d7ee6-2a51-4b4b-b066-ae0cbf0159d9]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Contoso's platform team already made the isolation decision, and it was the right one. What they need now is a way to operate the result. This unit describes the resource model Azure Cosmos DB fleets add above the account, so you can explain what a fleet, a fleetspace, and a pool each do, and recognize the workload signals that make a fleet worth adopting.
 
 > [!NOTE]
@@ -64,3 +75,5 @@ Fleets pay off under a specific combination of conditions, and the honest answer
 Adopt a fleet when tenants need account-level isolation for contractual, regulatory, or performance reasons; when the number of accounts is large enough that per-account management is a recurring cost; when those accounts span subscriptions or resource groups, which is where estate-wide reporting is hardest; and when tenant activity is uneven, because uneven activity is what makes shared throughput valuable.
 
 Pooling in particular has a shape it suits. It assumes many tenants with different traffic patterns, most of them quiet at any given moment. A workload with a few tenants, or one where every tenant is either continuously idle or continuously busy, might gain little from a pool. Pool throughput is provisioned and billed separately from dedicated throughput. Resources can't consume another tenant's unused dedicated request units.
+
+::: zone-end

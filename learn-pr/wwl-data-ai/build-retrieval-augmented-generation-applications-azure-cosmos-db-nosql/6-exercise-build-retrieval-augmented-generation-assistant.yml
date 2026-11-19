@@ -4,8 +4,8 @@ title: 'Exercise: Build a grounded RAG assistant'
 metadata:
   title: "Exercise: Build a Grounded RAG Assistant"
   description: "Load the CosmicWorks catalog with embeddings, compare an ungrounded answer with a grounded one, test the refusal path, and observe what a prompt does with an instruction planted in retrieved data."
-  ms.date: 10/04/2026
-  author: wwlpublish
+  ms.date: 11/18/2026
+  author: MScalopez
   ms.author: calopez
   ms.topic: unit
   zone_pivot_groups: dev-lang-csharp-python

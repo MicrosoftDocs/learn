@@ -23,9 +23,9 @@ metadata:
   gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/github/introduction-copilot-javascript/index.yml
   title: Using GitHub Copilot with JavaScript
   description: Develop updates in a JavaScript application using GitHub Copilot with Visual Studio Code.
-  author: abrilurena
+  author: Orin-Thomas
   ms.author: orthomas
-  ms.date: 11/15/2025
+  ms.date: 11/16/2026
   ms.update-cycle: 180-days
   ms.service: github-copilot
   ms.topic: module-standard-task-based
@@ -35,14 +35,18 @@ metadata:
 title: Using GitHub Copilot with JavaScript
 summary: "To work with JavaScript, take advantage of GitHub Copilot, an AI pair programmer that boosts productivity with autocomplete-style suggestions."
 abstract: |
-  By the end of this module, you're able to:
-    - Enable the GitHub Copilot extension in Visual Studio Code.
-    - Craft prompts that can generate useful suggestions from GitHub Copilot.
-    - Use GitHub Copilot to improve a JavaScript project.
+  By the end of this module, you'll be able to:
+
+  - Open the portfolio in a GitHub codespace and verify that Copilot is enabled in its Visual Studio Code editor.
+  - Craft prompts that can generate useful suggestions from GitHub Copilot.
+  - Use GitHub Copilot to update a JavaScript portfolio and check the changes in the preview.
 prerequisites: |
-  - Basic understanding of JavaScript, like variables and conditionals.
-  - Ability to use Git and GitHub for version control.
-  - A GitHub Account with an active subscription for GitHub Copilot is required for either your personal GitHub account or a GitHub account managed by an organization or enterprise. For learning purposes, you should find the Copilot Free option with usage limits to be sufficient.
+  Before you start, make sure you have:
+
+  - A basic understanding of JavaScript variables and conditionals.
+  - The ability to use Git and GitHub for version control.
+  - A GitHub account that can receive Copilot inline completions and use Copilot Chat in VS Code. If you use an organization-assigned seat, your organization must [allow Chat in the IDE](https://docs.github.com/en/copilot/how-tos/copilot-in-your-ide/chat-with-copilot/chat-in-ide?tool=vscode#prerequisites). Eligible individuals without Copilot access can [activate Copilot Free](https://docs.github.com/en/copilot/how-tos/manage-your-account/get-started-with-a-copilot-plan). A Copilot Pro trial isn't required.
+  - Permission to create a codespace on the MicrosoftDocs portfolio repository. To launch the portfolio, use **Open in GitHub Codespaces** in the [setup unit](/training/modules/introduction-copilot-javascript/3-exercise-setup#open-the-sample-in-a-codespace). If you have read-only access, you need [permission to fork it](https://docs.github.com/en/codespaces/developing-in-a-codespace/using-source-control-in-your-codespace#about-automatic-forking). An [Enterprise Managed User account](https://docs.github.com/en/enterprise-cloud@latest/admin/managing-iam/understanding-iam-for-enterprises/abilities-and-restrictions-of-managed-user-accounts#github-codespaces) can't create a codespace on a repository outside its organization, even with a Copilot seat.
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
   - beginner

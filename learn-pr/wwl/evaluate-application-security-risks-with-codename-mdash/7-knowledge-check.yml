@@ -1,0 +1,60 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.evaluate-application-security-risks-with-codename-mdash.knowledge-check
+title: Module assessment
+metadata:
+  title: Module Assessment
+  description: "Assess how Codename MDASH supports vulnerability discovery, validation, prioritization, and remediation decisions."
+  ms.date: 10/28/2026
+  author: kirkpatrickalbert-prog
+  ms.author: akirkpatrick
+  ms.topic: unit
+  module_assessment: true
+  ai_generated_module_assessment: true
+durationInMinutes: 4
+quiz:
+  title: ""
+  questions:
+  - content: "Caldova suspects that one customer can access another customer's pharmacy order. Why might the team use Codename MDASH with its existing code scanners?"
+    choices:
+    - content: "It uses specialized agents to reason across complex code paths."
+      isCorrect: true
+      explanation: "MDASH adds reasoning-based analysis for code paths that can be difficult for pattern-based tools to evaluate."
+    - content: "It scans only compiled binaries for known malware."
+      isCorrect: false
+      explanation: "MDASH analyzes source code. It isn't a binary or malware scanner."
+    - content: "It replaces all testing and human code review."
+      isCorrect: false
+      explanation: "MDASH complements existing security practices rather than replacing them."
+  - content: "MDASH reports a possible path that could let an attacker pause Caldova's pharmacy operations. Which pipeline stage checks whether the path is reachable?"
+    choices:
+    - content: "Prepare"
+      isCorrect: false
+      explanation: "The Prepare stage identifies and ranks code for analysis."
+    - content: "Validate"
+      isCorrect: true
+      explanation: "The Validate stage challenges findings and checks reachability."
+    - content: "Deduplicate"
+      isCorrect: false
+      explanation: "The Deduplicate stage combines reports about the same issue."
+  - content: "Caldova receives a high-severity finding about customer order access that is flagged for review. What should the team do?"
+    choices:
+    - content: "Ignore it because the scanner isn't fully certain."
+      isCorrect: false
+      explanation: "A high potential impact makes the finding important to investigate."
+    - content: "Apply a fix immediately without reviewing the code."
+      isCorrect: false
+      explanation: "Developers need to review and test proposed changes."
+    - content: "Review the evidence before deciding how to respond."
+      isCorrect: true
+      explanation: "Flagged findings require human investigation."
+  - content: "What is the best role for Codename MDASH in an application security program?"
+    choices:
+    - content: "Replace every existing security control."
+      isCorrect: false
+      explanation: "MDASH doesn't replace static analysis, testing, threat modeling, or human review."
+    - content: "Automatically make and merge every code change."
+      isCorrect: false
+      explanation: "Developers review and test suggested fixes before merging them."
+    - content: "Complement existing controls with deeper code analysis."
+      isCorrect: true
+      explanation: "MDASH adds reasoning and evidence to a layered security program."

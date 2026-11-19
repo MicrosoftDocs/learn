@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.understand-network-atc-windows-server.manage-network-lifecycle
+title: Manage network lifecycle
+metadata:
+  title: Manage Network Lifecycle
+  description: Plan adoption, retain reconstruction evidence, expand and service the cluster, and distinguish intent removal from recovery.
+  ms.date: 11/10/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 9
+content: |
+  [!include[](includes/10-manage-network-lifecycle.md)]

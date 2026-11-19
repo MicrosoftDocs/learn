@@ -1,85 +1,99 @@
-After the Azure VMware Solution is deployed, network connectivity is the next step for a successful deployment. The Azure VMware Solution deploys a VCF private cloud onto dedicated servers. These servers are assigned to a single customer. The bare-metal servers need to connect to the Azure network backbone so customers can use Azure resources. The Azure VMware Solution-provided Azure ExpressRoute circuit helps the environment talk to Azure services. To reach the on-premises environment, a customer-provided ExpressRoute circuit is used, along with an ExpressRoute Global Reach configuration.
+This walkthrough connects a standard, single-zone Generation 1 Azure VMware Solution private cloud to an on-premises VMware environment. ExpressRoute Global Reach links the AVS-managed ExpressRoute circuit directly to a functioning customer-provided ExpressRoute circuit.
 
-## Establish an ExpressRoute Global Reach connection to the on-premises VMware vSphere environment
+Global Reach is the preferred direct hybrid connection for this design. Where it isn't available or doesn't meet routing and inspection requirements, supported VPN or network virtual appliance (NVA) transit designs can provide connectivity. Those alternatives require their own configuration. Simply attaching two circuits to one ExpressRoute gateway doesn't make that gateway transit traffic between them.
 
-Global Reach will connect your on-premises VMware vSphere environment to the Azure VMware Solution private cloud. Connectivity is established between the Azure VMware Solution ExpressRoute circuit and a new or existing ExpressRoute circuit to an on-premises vSphere environment.
+Generation 2 uses direct VNet attachment and a different on-premises connectivity workflow. Don't apply this AVS circuit-to-circuit procedure to a Generation 2 private cloud.
 
-To create an ExpressRoute Global Reach authorization key in the private cloud:
+## Prepare the connection
 
-1. From the Azure VMware Solution private cloud **Overview**, under **Manage**, select **Connectivity** > **ExpressRoute** > **Request an authorization key**.
+Before creating the connection, confirm the following prerequisites:
 
-    :::image type="content" source="../media/5-request-expressroute-connectivity-auth-key.png" alt-text="Screenshot of the Azure portal showing how to request an authorization key for an ExpressRoute circuit."lightbox="../media/5-request-expressroute-connectivity-auth-key.png":::
+- A separate, provisioned customer ExpressRoute circuit with working Azure private peering is required. Its tier must support Global Reach. ExpressRoute Local doesn't support Global Reach.
+- Confirm Global Reach availability for the selected peering locations and topology. Connections across geopolitical regions require Premium circuits at both endpoints. Validate the customer circuit's tier and confirm AVS-side eligibility with Microsoft before proceeding with such a connection. Don't attempt to modify the Microsoft-managed AVS circuit.
+- All gateways, including the provider's service, support four-byte autonomous system numbers (ASNs).
+- Customer ASN assignments and the provider routing design have been reviewed for conflicts with the AVS-reserved ASNs described in the network-planning unit: `64513`, `64600-64940`, `65000-65412`, `398656-398670`, and `400572-400581`. Coordinate any conflict with the responsible network owner, provider, and Microsoft Support before connecting. Don't change AVS-managed or provider-managed ASNs as part of this walkthrough.
+- The administrators have the required permissions on the customer circuit and the AVS private cloud.
+- The address ranges don't overlap, and specific return routes exist for on-premises management networks.
+- Circuit route-advertisement limits and customer/provider receive-side maximum-prefix settings have been checked for the routes expected after Global Reach is enabled, with capacity for planned growth.
 
-1. Enter a name for the authorization key.
-1. Select **Create**.
+> [!IMPORTANT]
+> The following portal and CLI examples create one Global Reach connection for the standard private cloud used in this walkthrough. For a separately planned stretched private cloud, use the stretched-cloud portal workflow to connect each availability zone's AVS circuit to the customer circuit. Create a different customer-circuit authorization for each connection, and confirm that both connections are successfully provisioned and connected. Don't assume that creating a second connection name with the same single-connection CLI inputs selects the other zone's circuit.
 
-    :::image type="content" source="../media/5-create-name-expressroute-connectivity-auth-key.png" alt-text="Screenshot of the Azure portal UI for entering the name of the authorization key and selecting Create."lightbox="../media/5-create-name-expressroute-connectivity-auth-key.png":::
+Choose either the portal or CLI procedure below. They create the same kind of connection, so don't run both for the same intended connection.
 
-1. The new key appears in the list of authorization keys for the private cloud:
+## Use the Azure portal to configure Global Reach
 
-    :::image type="content" source="../media/5-new-expressroute-connectivity-auth-key-created.png" alt-text="Screenshot of the Azure portal showing the new ExpressRoute Global Reach authorization key in the key list for the private cloud."lightbox="../media/5-new-expressroute-connectivity-auth-key-created.png":::
+Create the authorization on the customer circuit, then consume it from the AVS private cloud:
 
-1. Use the authorization key and ExpressRoute ID to complete the peering.
+1. Open the **customer-provided ExpressRoute circuit** in the Azure portal.
+1. Under **Settings > Authorizations**, enter a new authorization name and save it.
+1. Record the customer circuit's resource ID and the new authorization key. Use the circuit ID, not the ID of the authorization child resource. Treat the key as a secret.
+1. Open the **Generation 1 AVS private cloud**. Select **Manage > Connectivity > ExpressRoute Global Reach > Add**.
+1. Select the customer circuit where the portal supports selection, or enter its circuit ID. Supply the authorization created on that customer circuit.
+1. Select **Create**, wait for successful provisioning, and confirm that the circuit connection is connected.
 
-## Peer the Azure VMware Solution private cloud to the on-premises environment by using the authorization key
+> [!NOTE]
+> This Global Reach workflow consumes authorization from the customer circuit. Connecting an Azure VNet gateway to the AVS circuit is a different operation and uses an authorization created on the AVS side. Don't exchange these keys or reuse an authorization already consumed by another connection.
 
-After the authorization key is created, you can peer the Azure VMware Solution ExpressRoute circuit to the on-premises circuit. You can configure the peering by using either the Azure portal or the Azure CLI in Cloud Shell.
+When separate administrators own the resources, have the circuit owner securely provide the circuit ID and authorization key to the AVS administrator. Don't include the key in screenshots, shared scripts, or troubleshooting messages.
 
-For either method, you'll need the resource ID and authorization key of the Azure VMware Solution private cloud ExpressRoute circuit for peering.
+## Use the Azure CLI to configure Global Reach
 
-### Use the Azure portal to configure peering
+As an alternative to the portal, use Azure Cloud Shell Bash with Azure CLI 2.75.0 or later and the `vmware` extension required by the AVS command. The extension supports automatic installation on first use. If your environment disables that behavior, install the supported extension through your approved CLI extension process before starting.
 
-To use the Azure portal for peering:
+The following script assumes the signed-in identity has the required permissions on both the customer circuit and the private cloud. Replace every `REPLACE_WITH_...` value before running it. Stop and resolve command errors rather than continuing with missing values.
 
-1. In the Azure portal, select the Azure VMware Solution private cloud.
-1. From the private cloud **Overview**, under **Manage**, select **Connectivity** > **ExpressRoute Global Reach** > **Add**:
-1. Create an on-premises cloud connection by using one of the following methods:
-    - Select the ExpressRoute circuit from the list.
-    - Copy and paste the circuit ID.
+```bash
+set -euo pipefail
 
-1. Select **Create**.
+customerSubscriptionId="REPLACE_WITH_CUSTOMER_CIRCUIT_SUBSCRIPTION_ID"
+customerResourceGroup="REPLACE_WITH_CUSTOMER_CIRCUIT_RESOURCE_GROUP"
+customerCircuitName="REPLACE_WITH_CUSTOMER_CIRCUIT_NAME"
+avsSubscriptionId="REPLACE_WITH_AVS_SUBSCRIPTION_ID"
+avsResourceGroup="REPLACE_WITH_AVS_RESOURCE_GROUP"
+privateCloudName="REPLACE_WITH_PRIVATE_CLOUD_NAME"
+authorizationName="REPLACE_WITH_NEW_AUTHORIZATION_NAME"
+connectionName="REPLACE_WITH_NEW_CONNECTION_NAME"
 
-    :::image type="content" source="../media/5-expressroute-global-reach-configuration.png" alt-text="Screenshot of the Azure portal fields for configuring ExpressRoute and adding the authorization key."lightbox="../media/5-expressroute-global-reach-configuration.png":::
+customerCircuitId="/subscriptions/${customerSubscriptionId}/resourceGroups/${customerResourceGroup}/providers/Microsoft.Network/expressRouteCircuits/${customerCircuitName}"
 
-1. The new connection will appear in the list of on-premises cloud connections.
+authorizationKey="$(az network express-route auth create \
+  --subscription "$customerSubscriptionId" \
+  --resource-group "$customerResourceGroup" \
+  --circuit-name "$customerCircuitName" \
+  --name "$authorizationName" \
+  --query authorizationKey \
+  --output tsv)"
 
-### Use the Azure CLI to configure peering
+if [[ -z "$authorizationKey" ]]; then
+  printf '%s\n' "No authorization key was returned. Stop and inspect the circuit authorization." >&2
+  exit 1
+fi
 
-To use the Azure CLI for peering:
+az vmware global-reach-connection create \
+  --subscription "$avsSubscriptionId" \
+  --resource-group "$avsResourceGroup" \
+  --private-cloud "$privateCloudName" \
+  --name "$connectionName" \
+  --peer-express-route-circuit "$customerCircuitId" \
+  --authorization-key "$authorizationKey" \
+  --output none
 
-1. Sign in to the Azure portal by using the same subscription as the on-premises ExpressRoute circuit uses.
-1. Open an Azure CLI in Cloud Shell. Leave the shell as Bash.
-1. Gather your specific information:
-    - Resource ID
-    - Authorization key
-1. Enter the following Azure CLI command to create the authorization key:
+unset authorizationKey
+```
 
-    ```azurecli
-    az network express-route auth create --circuit-name <Circuit2Name> -g <Circuit2ResourceGroupName> -n <AuthorizationName>
-    ```
+If you have access only to AVS, don't run the whole script. Have the circuit owner create the customer-side authorization and securely supply the circuit ID and key. Set the AVS resource details and supplied values, then run only the AVS connection-creation step.
 
-1. The Azure CLI output will look like this:
+The AVS connection API allocates its Global Reach address prefix from the private-cloud management block. Don't add a manually selected /29 parameter to this command. A generic ExpressRoute peering-connection procedure has a different address-allocation contract.
 
-    ```azurecli
-    {
-      "authorizationKey": "<authorizationKey>",
-      "authorizationUseStatus": "Available",
-      "etag": "W/\"cfd15a2f-43a1-4361-9403-6a0be00746ed\"",
-      "id": "/subscriptions/<SubscriptionID>/resourceGroups/<Circuit2ResourceGroupName>/providers/Microsoft.Network/expressRouteCircuits/<Circuit2Name>/authorizations/<AuthorizationName>",
-      "name": "<AuthorizationName>",
-      "provisioningState": "Succeeded",
-      "resourceGroup": "<Circuit2ResourceGroupName>",
-      "type": "Microsoft.Network/expressRouteCircuits/authorizations"
-    }
-    ```
+## Verify the hybrid connection
 
-1. Make note of the resource ID and authorization key to peer the circuit.
-1. Run the following command against the first circuit, passing in the second circuit's resource ID and authorization key:
+Open the private cloud's **ExpressRoute Global Reach** connections and confirm successful provisioning and a connected circuit state. Resource creation alone isn't proof of application connectivity.
 
-    ```azurecli
-    az network express-route peering connection create -g <ResourceGroupName> --circuit-name <Circuit1Name> --peering-name AzurePrivatePeering -n <ConnectionName> --peer-circuit <Circuit2ResourceID> --authorization-key <authorizationKey>
-    ```
+On the on-premises edge router, confirm the learned AVS management and workload prefixes. Verify that required routes propagate through the on-premises network and that AVS has specific return routes to your private management networks. A customer-advertised default route alone doesn't provide that management return path.
 
-When this operation is complete, you'll have connectivity between your on-premises environment and Azure VMware Solution through the two ExpressRoute circuits.
+Test permitted management HTTPS access and the required application paths in both directions. Keep firewalls enabled and check their policies if a path fails.
 
-In the next unit, we'll walk through how to configure NSX networking components in the Azure portal. NSX Manager provides the software-defined networking layer for Azure VMware Solution.
+If you're retaining the Bastion management path, start a new Bastion connection to the jumpbox after hybrid routing is configured, then open the private vCenter Server and NSX Manager HTTPS endpoints. If this path no longer works, inspect learned default routes and the Bastion service prerequisites from the deployment unit. Don't treat successful Global Reach provisioning as proof that the Bastion path still works.
+
+The next unit configures NSX workload networking and completes the end-to-end connectivity checks.

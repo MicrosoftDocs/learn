@@ -1,4 +1,4 @@
-Resiliency is the ability of a system to recover from failures and continue to function. You implement resiliency to avoid application failures and to ensure that if a failure occurs, the application is able to rely upon underlying services to return to a fully functioning state. The level of resiliency an application requires is dependent on the importance of the application to the organization. A business critical application that takes customer orders over the internet requires a higher level of resiliency than an application that tracks leave requests. 
+Resiliency is the ability of a system to recover from failures and continue to function. You implement resiliency to avoid application failures and to ensure that if a failure occurs, the application can rely on underlying services to return to a fully functioning state. The level of resiliency an application requires depends on its importance to the organization. A business-critical application that takes customer orders over the internet requires a higher level of resiliency than an application that tracks leave requests.
 
 ## Resilient services in Azure
 
@@ -11,17 +11,29 @@ Azure includes built-in resiliency services that you can implement to make your 
 - Azure Site Recovery allows you to replicate virtual machines to another Azure region for business continuity and disaster recovery needs.
 - Azure Backup service provides simple, secure, and cost-effective solutions to back up your data and recover it from the Microsoft Azure cloud.
 - Geo Replication for Azure SQL Database allows the application to perform quick disaster recovery of individual databases in case of a regional disaster or large-scale outage.  
-- Locally redundant storage (LRS) provides object durability by replicating your data to a storage scale unit.
-- Zone-redundant storage (ZRS) replicates your data synchronously across three storage clusters in a single region.  
-- Geo-redundant storage (GRS) is designed to provide durability of objects over a given year by replicating your data to a secondary region that is hundreds of miles away from the primary region.
+- Locally redundant storage (LRS) keeps redundant copies in a single physical datacenter. It protects against local hardware failures, but not the loss of that datacenter.
+- Zone-redundant storage (ZRS) synchronously replicates data across availability zones in the primary region, providing resilience to a zone failure.
+- Geo-redundant storage (GRS) adds asynchronous replication to a secondary region for protection against regional disasters.
+- Geo-zone-redundant storage (GZRS) combines zone redundancy in the primary region with asynchronous replication to a secondary region.
+
+> [!IMPORTANT]
+> Durability, or retaining data, is different from availability, or being able to access it. GRS and GZRS can lose recent, unreplicated writes during an unplanned regional failover, and secondary-region access normally requires failover. Where supported, read-access variants provide a read-only secondary endpoint.
+
+For supported services, regions, and access options, see [Azure Storage redundancy](/azure/storage/common/storage-redundancy).
 
 ## Shared responsibility model
 
-When implementing the resiliency of your applications, keep in mind that being resilient in the event of any failure is a shared responsibility between cloud provider and application developer. Which party is responsible for a specific element of resiliency depends on the cloud service model you use: IaaS, PaaS, or SaaS.  The exhibit shows the different types of responsibilities depending on the cloud service model.
+Resiliency is a shared responsibility between Microsoft and the customer. Your responsibilities depend on the services you use:
 
-![Diagram of the shared responsibility model for cloud services.](../media/shared-responsibility.png)
+- In an on-premises deployment, you manage the entire stack, from physical infrastructure to applications, and plan its failure recovery.
+- With infrastructure as a service (IaaS), Microsoft operates the physical infrastructure and virtualization platform. You manage the guest operating system, applications, and workload configuration.
+- With platform as a service (PaaS), Microsoft also manages the underlying operating system and platform. You remain responsible for your application and for selecting and configuring the service's reliability capabilities.
+- With software as a service (SaaS), the provider operates the application. You still define your availability and recovery requirements and manage customer-controlled configuration and data responsibilities.
 
-In the traditional on-premises model, the entire responsibility of managing, from the hardware for compute, storage, and networking to the application falls on you. In an on-premises model, you must plan for various types of failures and how to deal with them on-premises. With an IaaS model, the cloud service provider is responsible for the core infrastructure resiliency, including storage, networking, and compute. As you move from the IaaS model to the PaaS model and then to a full SaaS model, you'll find that you're responsible for less with respect to the application's resiliency and the cloud service provider is responsible for more.
+> [!IMPORTANT]
+> A managed service doesn't make every reliability capability automatic. Verify which responsibilities apply to each service, and configure and test your workload accordingly.
+
+For more information, see [Shared responsibility for reliability](/azure/reliability/concept-shared-responsibility).
 
 ## Design your applications to be resilient
 

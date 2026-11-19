@@ -2,10 +2,11 @@
 uid: learn.wwl.manage-azure-cosmos-db-fleets.create-organize-fleet
 title: Create and organize a fleet
 metadata:
+  zone_pivot_groups: video-or-text
   title: Create and Organize a Fleet
   description: "Create a fleet and a fleetspace in the Azure portal and with the Azure CLI, enroll Azure Cosmos DB accounts that span subscriptions, and choose a fleet and fleetspace layout."
-  ms.date: 10/03/2026
-  author: wwlpublish
+  ms.date: 11/12/2026
+  author: MScalopez
   ms.author: calopez
   ms.topic: unit
   ai-usage: ai-generated

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-virtual-machine-backup-recoverability.introduction
+metadata:
+  title: Introduction
+  description: Review the recovery rehearsal, synthetic workload, prerequisite skills, safety controls, and evidence requirements.
+  ms.date: 11/15/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Introduction
+durationInMinutes: 15
+content: |
+  [!include[](includes/1-introduction.md)]

@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check for the Get started with Azure HorizonDB module."
-  ms.date: 09/29/2026
+  ms.date: 11/12/2026
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
@@ -15,7 +15,7 @@ quiz:
     choices:
     - content: "PostgreSQL"
       isCorrect: true
-      explanation: "Correct. Azure HorizonDB is built on PostgreSQL and retains full PostgreSQL compatibility, so existing PostgreSQL applications, drivers, and tools work without code rewrites."
+      explanation: "Correct. Azure HorizonDB is built on PostgreSQL and works with PostgreSQL applications, drivers, and tools. Assess supported engine versions, extensions, and service limits before migration."
     - content: "MySQL"
       isCorrect: false
       explanation: "Incorrect. Azure HorizonDB is built on PostgreSQL, not MySQL."
@@ -35,12 +35,12 @@ quiz:
       explanation: "Incorrect. Only the WAL is written from compute to storage; writing data pages as well would reintroduce the write amplification the architecture is designed to avoid."
   - content: "A team needs to scale out read throughput for an Azure HorizonDB workload. Which approach does the architecture support?"
     choices:
-    - content: "Add readable standby replicas that share the same zone-resilient storage, and route reads through the read-only endpoint."
+    - content: "Add reader nodes to the read-write pool and route reads through its read-only endpoint."
       isCorrect: true
-      explanation: "Correct. Because compute and storage are separate, you can add readable replicas that share the same storage—no data copy is needed—and the read-only endpoint load-balances reads across them."
+      explanation: "Correct. Reader nodes share the cluster's storage, so adding them doesn't require a data copy. The pool's read-only endpoint load-balances connections across its readers. Additional read pools aren't currently available."
     - content: "Copy the database to a second cluster and keep the two in sync manually."
       isCorrect: false
-      explanation: "Incorrect. Azure HorizonDB scales reads by adding replicas that share the cluster's storage; a manually synchronized second copy isn't required."
+      explanation: "Incorrect. Azure HorizonDB scales reads by adding reader nodes that share the cluster's storage. A manually synchronized second copy isn't required."
     - content: "Increase backup retention so reads can be served from backups."
       isCorrect: false
-      explanation: "Incorrect. Backups aren't a read-scale mechanism. Reads scale out through readable replicas and the read-only endpoint."
+      explanation: "Incorrect. Backups aren't a read-scale mechanism. Reads scale out through reader nodes and the pool's read-only endpoint."

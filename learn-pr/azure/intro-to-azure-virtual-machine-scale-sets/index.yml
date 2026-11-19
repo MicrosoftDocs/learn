@@ -23,7 +23,7 @@ metadata:
   gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/intro-to-azure-virtual-machine-scale-sets/index.yml
   title: Introduction to Azure Virtual Machine Scale Sets
   description: Learn about what Azure Virtual Machine Scale Sets do, how they work, and when you should use Azure Virtual Machine Scale Sets as a solution for your organization.
-  ms.date: 11/15/2025
+  ms.date: 11/14/2026
   author: Orin-Thomas
   ms.author: orthomas
   ms.reviewer: mimckitt

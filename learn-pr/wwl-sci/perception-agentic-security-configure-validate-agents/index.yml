@@ -1,0 +1,79 @@
+### YamlMime:Module
+uid: learn.wwl.perception-agentic-security-configure-validate-agents
+metadata:
+  gs-content.levels: 300
+  gs-content.locale: en-us
+  gs-duration: 46
+  gs-last.refresh.date: null
+  gs-modality: module
+  gs-products:
+    - microsoft-defender
+    - azure
+    - entra
+  gs-publish.locations: null
+  gs-release.date: null
+  gs-retired.data: null
+  gs-reusable: null
+  gs-roles:
+    - security-operations-analyst
+    - security-engineer
+    - solution-architect
+    - administrator
+  gs-skills:
+    - "Agentic AI"
+    - "Agent Operations"
+    - "Identity and Access Management (IAM)"
+    - "Security Operations Management"
+    - "Threat Management"
+    - "Security Automation"
+  gs-solution.area: Security
+  gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-sci/perception-agentic-security-configure-validate-agents/index.yml
+  title: Configure and Validate Agents in Microsoft Perception
+  description: "Learn how to set up a Perception agent for approved security work. Review the access checks, testing procedures, and evidence needed to hand over the configuration and results."
+  ms.date: 11/09/2026
+  author: wwlpublish
+  ms.author: hrasheed
+  ms.topic: module
+  ms.service: defender-xdr
+  ai-usage: ai-assisted
+  ROBOTS: NOINDEX
+  no_index_ks: true
+title: Configure and validate agents in Microsoft Perception
+summary: 'Learn how to set up a Perception agent for approved security work. Review the access checks, testing procedures, and evidence needed to hand over the configuration and results.'
+abstract: |
+  In this module, you learn how to:
+  - Turn an approved task into setup requirements and acceptance criteria
+  - Configure the agent identity and check its required permissions
+  - Confirm required services and security practitioner access separately
+  - Test the approved task, diagnose an access failure, and retest after correction
+  - Record the readiness decision, limitations, and operational owner
+prerequisites: |
+  - Familiarity with Perception's capabilities and coordinated workflows, as covered in [What is Microsoft Perception?](/training/modules/project-perception-agentic-security-introduction/?azure-portal=true) and [Understand how Microsoft Perception coordinates security operations](/training/modules/project-perception-agentic-security-orientation/?azure-portal=true)
+  - Familiarity with Microsoft Entra identities, role assignments, and Microsoft Defender access management
+  - Familiarity with starting, supervising, and reviewing sessions, as covered in Run and supervise sessions in Microsoft Perception, or equivalent experience
+  - No live environment is required to complete the module. To apply the setup procedures, you need an approved task, Perception preview access in the Microsoft Defender portal, Security Admin access, unified role-based access control enabled across Defender workloads, and authority to arrange required grants
+  - To apply the Threat Intelligence Agent procedures, you also need Microsoft Defender XDR, Microsoft Defender Threat Intelligence access for full data and enrichment, and a security practitioner account with the access needed for the task
+iconUrl: /training/achievements/generic-badge.svg
+hidden: true
+levels:
+- intermediate
+roles:
+- administrator
+- security-engineer
+products:
+- defender-xdr
+subjects:
+- threat-protection
+units:
+- learn.wwl.perception-agentic-security-configure-validate-agents.introduction
+- learn.wwl.perception-agentic-security-configure-validate-agents.understand-agent-readiness
+- learn.wwl.perception-agentic-security-configure-validate-agents.translate-approved-use-into-requirements
+- learn.wwl.perception-agentic-security-configure-validate-agents.configure-agent-identity-permissions
+- learn.wwl.perception-agentic-security-configure-validate-agents.verify-data-resource-access
+- learn.wwl.perception-agentic-security-configure-validate-agents.verify-analyst-access
+- learn.wwl.perception-agentic-security-configure-validate-agents.test-setup-with-analyst-account
+- learn.wwl.perception-agentic-security-configure-validate-agents.resolve-access-failures-handoff
+- learn.wwl.perception-agentic-security-configure-validate-agents.knowledge-check
+- learn.wwl.perception-agentic-security-configure-validate-agents.summary
+badge:
+  uid: learn.wwl.perception-agentic-security-configure-validate-agents.badge

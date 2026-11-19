@@ -1,3 +1,5 @@
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=1b91e978-ceac-4c32-b3c6-c2baee53bbb9]
+
 Contoso operates a research facility whose workloads and routine management must stay within an isolated network. The facility runs Windows and Linux VMs, plus containerized analysis services. Approved staff can acquire software on a separate connected administrative station and transfer it through a controlled process. The facility can't depend on public Azure being reachable to create or manage local workloads.
 
 Your task is to decide whether Contoso's design is ready for production. A three-node cluster and a successful portal sign-in aren't enough. You also need to know how administrators obtain access, how new software enters the environment, how security events remain visible, and how the team recovers after losing management services.

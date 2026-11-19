@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="588" viewBox="0 0 960 588" role="img" aria-labelledby="reservation-reuse-costs-title reservation-reuse-costs-desc" font-family="Segoe UI, Arial, sans-serif">
+  <title id="reservation-reuse-costs-title">Why a $72 estimate can save $0 or $36</title>
+  <desc id="reservation-reuse-costs-desc">Comparable 720-hour totals: $158.40 before resize, $158.40 without reservation reuse and $122.40 with eligible batch reuse. The reservation costs $86.40 in every case. Only the $36 on-demand batch charge disappears.</desc>
+  <metadata>Azure icon source: management + governance\00004-icon-service-Cost-Management-and-Billing.svg</metadata>
+  <rect x="0" y="0" width="960" height="588" fill="#ffffff" data-kind="background" />
+  <defs />
+  <svg id="reservation-reuse-costs-b731f684-7cb9-4db7-b2c1-15068abf133d" width="52" height="52" viewBox="0 0 18 18" x="34" y="30" aria-hidden="true">
+    <defs>
+      <radialGradient id="reservation-reuse-costs-f65398a3-df69-4689-8d5a-25969160d437" cx="7.18" cy="9.5" r="7.38" gradientUnits="userSpaceOnUse">
+        <stop offset="0" stop-color="#76bc2d" />
+        <stop offset="0.41" stop-color="#74b92c" />
+        <stop offset="0.66" stop-color="#6fb12a" />
+        <stop offset="0.88" stop-color="#66a227" />
+        <stop offset="1" stop-color="#5e9624" />
+      </radialGradient>
+    </defs>
+    <g>
+      <path d="M10,10.24a1,1,0,0,1-.31.79,1.49,1.49,0,0,1-.89.37V12H8.36v-.62a2.36,2.36,0,0,1-1.1-.28v-.81a1.8,1.8,0,0,0,.5.25,2.49,2.49,0,0,0,.6.14V9.64a2.42,2.42,0,0,1-.91-.53,1.15,1.15,0,0,1,.06-1.55,1.41,1.41,0,0,1,.85-.38V6.63h.43v.54a2.21,2.21,0,0,1,.92.2v.8a2.28,2.28,0,0,0-.92-.31V9a2.34,2.34,0,0,1,.92.54A1,1,0,0,1,10,10.24ZM8.36,8.81V7.88A.4.4,0,0,0,8,8.3c0,.21.13.38.4.51Zm.85,1.47c0-.19-.14-.34-.42-.47v.9c.28-.05.42-.19.42-.43Z" fill="#258277" />
+      <path d="M16.54,9.49h-3.6a4.43,4.43,0,0,1-1.48,3.3l2.39,2.69a8,8,0,0,0,2.69-6" fill="#ffca00" />
+      <path d="M8.52,13.93a4.43,4.43,0,0,1,0-8.86V1.49a8,8,0,0,0-8,8h0a8,8,0,0,0,8,8h0a8,8,0,0,0,5.34-2l-2.4-2.69A4.38,4.38,0,0,1,8.52,13.93Z" fill="url(#reservation-reuse-costs-f65398a3-df69-4689-8d5a-25969160d437)" />
+      <path d="M8.15.48h0V4.64h0a5.09,5.09,0,0,1,5.17,5.18H17.5A9.34,9.34,0,0,0,8.15.48Z" fill="#ccc" />
+      <path d="M13.34,9.82A5.13,5.13,0,0,0,8.28,4.64H8.15l.33.62a4.5,4.5,0,0,1,4.23,4.25Z" fill="#999" />
+    </g>
+  </svg>
+  <text x="106" y="34" font-size="15" font-weight="700" fill="#172f40" text-anchor="start" data-kind="label">COST COMPARISON</text>
+  <text x="106" y="73" font-size="32" font-weight="700" fill="#172f40" text-anchor="start" data-kind="label">Why a $72 estimate can save $0 or $36</text>
+  <text x="36" y="112" font-size="19" font-weight="400" fill="#172f40" text-anchor="start" data-kind="label">Atlas and the batch worker over comparable 720-hour periods. Amounts in dollars ($).</text>
+  <text x="36" y="163" font-size="21" font-weight="700" fill="#172f40" text-anchor="start" data-kind="label">1. Before resize</text>
+  <text x="920" y="163" font-size="21" font-weight="700" fill="#172f40" text-anchor="end" data-kind="label">$158.40 total</text>
+  <rect x="36" y="176" width="482.11" height="69" rx="0" fill="#cae4fa" stroke="#628aad" stroke-width="1.5" data-kind="card" />
+  <text x="277.055" y="200" font-size="17" font-weight="400" fill="#172f40" text-anchor="middle" data-kind="label">Atlas share</text>
+  <text x="277.055" y="230" font-size="20" font-weight="700" fill="#172f40" text-anchor="middle" data-kind="label">$86.40</text>
+  <rect x="518.11" y="176" width="200.88" height="69" rx="0" fill="#e2d9ed" stroke="#9c8cac" stroke-width="1.5" data-kind="card" />
+  <text x="618.55" y="200" font-size="17" font-weight="400" fill="#172f40" text-anchor="middle" data-kind="label">Batch on demand</text>
+  <text x="618.55" y="230" font-size="20" font-weight="700" fill="#172f40" text-anchor="middle" data-kind="label">$36.00</text>
+  <rect x="718.99" y="176" width="200.88" height="69" rx="0" fill="#e4e9ed" stroke="#94a4af" stroke-width="1.5" data-kind="card" />
+  <text x="819.4300000000001" y="200" font-size="17" font-weight="400" fill="#172f40" text-anchor="middle" data-kind="label">Residual costs</text>
+  <text x="819.4300000000001" y="230" font-size="20" font-weight="700" fill="#172f40" text-anchor="middle" data-kind="label">$36.00</text>
+  <text x="36" y="269" font-size="21" font-weight="700" fill="#172f40" text-anchor="start" data-kind="label">2. After resize: no reuse</text>
+  <text x="920" y="269" font-size="21" font-weight="700" fill="#172f40" text-anchor="end" data-kind="label">$158.40 total</text>
+  <rect x="36" y="282" width="241.06" height="69" rx="0" fill="#cae4fa" stroke="#628aad" stroke-width="1.5" data-kind="card" />
+  <text x="156.53" y="306" font-size="17" font-weight="400" fill="#172f40" text-anchor="middle" data-kind="label">Atlas share</text>
+  <text x="156.53" y="336" font-size="20" font-weight="700" fill="#172f40" text-anchor="middle" data-kind="label">$43.20</text>
+  <rect x="277.06" y="282" width="241.06" height="69" rx="0" fill="#ffe2a6" stroke="#b48a3d" stroke-width="1.5" data-kind="card" />
+  <text x="397.59000000000003" y="306" font-size="17" font-weight="400" fill="#172f40" text-anchor="middle" data-kind="label">Unused</text>
+  <text x="397.59000000000003" y="336" font-size="20" font-weight="700" fill="#172f40" text-anchor="middle" data-kind="label">$43.20</text>
+  <rect x="518.12" y="282" width="200.88" height="69" rx="0" fill="#e2d9ed" stroke="#9c8cac" stroke-width="1.5" data-kind="card" />
+  <text x="618.56" y="306" font-size="17" font-weight="400" fill="#172f40" text-anchor="middle" data-kind="label">Batch on demand</text>
+  <text x="618.56" y="336" font-size="20" font-weight="700" fill="#172f40" text-anchor="middle" data-kind="label">$36.00</text>
+  <rect x="719.0" y="282" width="200.88" height="69" rx="0" fill="#e4e9ed" stroke="#94a4af" stroke-width="1.5" data-kind="card" />
+  <text x="819.44" y="306" font-size="17" font-weight="400" fill="#172f40" text-anchor="middle" data-kind="label">Residual costs</text>
+  <text x="819.44" y="336" font-size="20" font-weight="700" fill="#172f40" text-anchor="middle" data-kind="label">$36.00</text>
+  <text x="36" y="375" font-size="21" font-weight="700" fill="#172f40" text-anchor="start" data-kind="label">3. After resize: eligible batch reuse</text>
+  <text x="920" y="375" font-size="21" font-weight="700" fill="#172f40" text-anchor="end" data-kind="label">$122.40 total</text>
+  <rect x="36" y="388" width="241.06" height="69" rx="0" fill="#cae4fa" stroke="#628aad" stroke-width="1.5" data-kind="card" />
+  <text x="156.53" y="412" font-size="17" font-weight="400" fill="#172f40" text-anchor="middle" data-kind="label">Atlas share</text>
+  <text x="156.53" y="442" font-size="20" font-weight="700" fill="#172f40" text-anchor="middle" data-kind="label">$43.20</text>
+  <rect x="277.06" y="388" width="120.53" height="69" rx="0" fill="#bfebe4" stroke="#568e85" stroke-width="1.5" data-kind="card" />
+  <text x="337.325" y="412" font-size="17" font-weight="400" fill="#172f40" text-anchor="middle" data-kind="label">Batch share</text>
+  <text x="337.325" y="442" font-size="20" font-weight="700" fill="#172f40" text-anchor="middle" data-kind="label">$21.60</text>
+  <rect x="397.59000000000003" y="388" width="120.53" height="69" rx="0" fill="#ffe2a6" stroke="#b48a3d" stroke-width="1.5" data-kind="card" />
+  <text x="457.855" y="412" font-size="17" font-weight="400" fill="#172f40" text-anchor="middle" data-kind="label">Unused</text>
+  <text x="457.855" y="442" font-size="20" font-weight="700" fill="#172f40" text-anchor="middle" data-kind="label">$21.60</text>
+  <rect x="518.12" y="388" width="200.88" height="69" rx="0" fill="#e4e9ed" stroke="#94a4af" stroke-width="1.5" data-kind="card" />
+  <text x="618.56" y="412" font-size="17" font-weight="400" fill="#172f40" text-anchor="middle" data-kind="label">Residual costs</text>
+  <text x="618.56" y="442" font-size="20" font-weight="700" fill="#172f40" text-anchor="middle" data-kind="label">$36.00</text>
+  <rect x="36" y="470" width="884" height="100" rx="8" fill="#f5f7f9" stroke="#93a5b1" stroke-width="1.5" data-kind="card" />
+  <text x="54" y="501" font-size="20" font-weight="700" fill="#172f40" text-anchor="start" data-kind="label">Only the on-demand batch charge disappears.</text>
+  <text x="54" y="526" font-size="17" font-weight="400" fill="#172f40" text-anchor="start" data-kind="label">Atlas, batch and unused shares still add up to the same $86.40 reservation.</text>
+  <text x="54" y="550" font-size="17" font-weight="400" fill="#172f40" text-anchor="start" data-kind="label">The $36.00 for disks, networking, backup and monitoring remains in all three totals.</text>
+</svg>

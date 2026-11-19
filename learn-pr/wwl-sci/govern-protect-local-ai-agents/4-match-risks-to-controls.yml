@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.govern-protect-local-ai-agents.match-risks-to-controls
+title: Match local-agent risks to the right controls
+metadata:
+  title: Match local-agent risks to the right controls
+  description: "Learn how discovery, identity, network, runtime, data protection, and containment controls address local-agent risks, and which coverage limits still apply."
+  ms.date: 11/05/2026
+  author: jdetwiler
+  ms.author: jdetwiler
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 9
+content: |
+  [!include[](includes/4-match-risks-to-controls.md)]

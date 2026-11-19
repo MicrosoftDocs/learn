@@ -21,6 +21,7 @@ abstract: |
   - Interpret storage and quorum evidence during a degradation or capacity incident.
   - Explain data-integrity protection and select monitoring evidence for storage failures and recovery.
   - Distinguish repair, resynchronization, rebalancing, and recovery from an independent recovery point.
+  
 prerequisites: |
   - Familiarity with Azure Local architecture, virtualization, and storage.
   - Working knowledge of failover clustering and redundant network connections.

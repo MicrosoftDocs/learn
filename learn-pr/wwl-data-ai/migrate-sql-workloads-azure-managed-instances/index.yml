@@ -22,7 +22,7 @@ metadata:
   gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/migrate-sql-workloads-azure-managed-instances/index.yml
   title: Migrate SQL Server workloads to Azure SQL Managed Instance
   description: "Migrate SQL Server workloads to Azure SQL Managed Instance"
-  ms.date: 07/23/2026
+  ms.date: 11/13/2026
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: module

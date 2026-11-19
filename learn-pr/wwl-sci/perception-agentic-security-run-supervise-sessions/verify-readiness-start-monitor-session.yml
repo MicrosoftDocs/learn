@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.perception-agentic-security-run-supervise-sessions.verify-readiness-start-monitor-session
+title: Verify readiness, start, and monitor the session
+metadata:
+  title: Verify Readiness, Start, and Monitor the Session
+  description: "Check the input, agents, and access; start the session from Playbooks; and monitor what actually runs."
+  ms.date: 11/09/2026
+  author: wwlpublish
+  ms.author: hrasheed
+  ms.topic: unit
+  ROBOTS: NOINDEX
+  no_index_ks: true
+durationInMinutes: 7
+content: |
+  [!include[](includes/verify-readiness-start-monitor-session.md)]

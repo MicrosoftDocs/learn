@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=b2d5c40a-c388-4abe-a609-cb05b6e480da]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 A SQL Server database can be imported into an Azure SQL database using a **.bacpac** file. 
 
 A **.bacpac** file is a compressed file containing the metadata and data from the database. The data can be imported from the Azure Blob Storage or from a local storage in an on-premises environment. 
@@ -23,4 +34,6 @@ SqlPackage.exe /a:import /tcs:"Data Source=<server-name>.database.windows.net;In
 
 >[!TIP]
 >To increase the speed of the import process, you can scale your database to a higher service tier and compute size, providing more and faster resources. Once the import is complete, you can scale down to your desired service tier and compute size. 
+
+::: zone-end
 

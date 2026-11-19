@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.govern-protect-local-ai-agents.assess-exposure-discovery-evidence
+title: Assess exposure using discovery evidence
+metadata:
+  title: Assess exposure using discovery evidence
+  description: "Learn how to interpret local agent inventory, relationships, and discovery surfaces without confusing visibility with usage or protection."
+  ms.date: 11/05/2026
+  author: jdetwiler
+  ms.author: jdetwiler
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-assess-exposure-discovery-evidence.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "A Contoso administrator sees an inventory entry for a command-line agent associated with a developer's account on a laptop. Which conclusion does the entry support?"
+    choices:
+    - content: "The agent was observed on that device for that user, but active use can't be concluded."
+      isCorrect: true
+      explanation: "An entry reflects a combination of a user, a device, and an agent type. Observing the agent process can be enough to create it, so the entry shows presence and association. It doesn't show prompts or successful access to an AI service."
+    - content: "The developer sent prompts to the agent and successfully reached an AI service."
+      isCorrect: false
+      explanation: "For process-based discovery, the user doesn't need to submit a prompt for an entry to appear. An entry also doesn't show that any request to an AI service succeeded, so this conclusion goes beyond the evidence."
+    - content: "The laptop has no other local agents, because the inventory lists all installed software."
+      isCorrect: false
+      explanation: "Local agent discovery isn't a complete inventory of installed software. Coverage depends on the agent type and operating system, and installing an agent doesn't by itself guarantee an entry."
+  - content: "A Contoso administrator wants to assess the potential exposure of a command-line agent that appears in the inventory. Which additional evidence helps most?"
+    choices:
+    - content: "The MCP servers configured for the agent and the identity-to-resource relationships on the exposure map."
+      isCorrect: true
+      explanation: "Configured connections and the resources that the associated identities can access describe the agent's possible reach. This evidence helps size the potential impact, even though it doesn't show what the agent actually did."
+    - content: "The total number of agents that appear in the inventory across the organization."
+      isCorrect: false
+      explanation: "A count of entries describes how many agents were discovered. It says nothing about the connections or access of this specific agent, so it doesn't help size the exposure of one agent."
+    - content: "The version number of the agent that appears in the inventory entry for the laptop."
+      isCorrect: false
+      explanation: "The version identifies which release is installed. It doesn't describe the tools the agent connects to or the resources that the account running it can reach, which determine potential impact."

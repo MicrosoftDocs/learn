@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.understand-network-atc-windows-server.troubleshoot-network-configuration
+title: Troubleshoot network configuration
+metadata:
+  title: Troubleshoot Network Configuration
+  description: Diagnose host, fabric, authentication, and workload failures with status, events, targeted retries, and support evidence.
+  ms.date: 11/10/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 6
+content: |
+  [!include[](includes/11-troubleshoot-network-configuration.md)]

@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.wwl.plan-integrated-security-operations-microsoft-defender
+metadata:
+  title: Plan Integrated Security Operations Using ISOC in Microsoft Defender
+  description: "Plan a phased adoption approach for Integrated Security Operations Center (ISOC) in Microsoft Defender by assessing eligibility, selecting capabilities, and accounting for data, access, retention, billing, and preview constraints."
+  ms.date: 10/30/2026
+  author: wwlpublish
+  ms.author: hrasheed
+  ms.topic: module
+  ms.service: defender-xdr
+  ai-usage: ai-generated
+title: Plan integrated security operations using ISOC in Microsoft Defender
+summary: Plan an Integrated Security Operations Center (ISOC) adoption approach that aligns Microsoft Defender capabilities, workspace decisions, security data, governance, and operational priorities.
+abstract: |
+  After completing this module, you can:
+  - Describe how ISOC combines XDR, SIEM, threat intelligence, automation, and AI capabilities in the Microsoft Defender portal.
+  - Identify the eligibility, licensing, and permission requirements for the ISOC preview.
+  - Identify which ISOC capabilities work without an ISOC workspace and which require one.
+  - Describe the elements of a phased ISOC adoption plan that accounts for security data, operational workflows, access, retention, billing, and preview limitations.
+prerequisites: |
+  - Familiarity with security operations center processes for detecting, investigating, and responding to threats.
+  - Basic knowledge of security information and event management (SIEM) and extended detection and response (XDR) concepts.
+  - Familiarity with the Microsoft Defender portal and Microsoft Defender XDR.
+  - Awareness of your organization's security data sources, retention needs, and incident-response workflows.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- administrator
+- security-engineer
+- security-operations-analyst
+products:
+- defender-xdr
+subjects:
+- threat-protection
+units:
+- learn.wwl.plan-integrated-security-operations-microsoft-defender.introduction
+- learn.wwl.plan-integrated-security-operations-microsoft-defender.explain-isoc-operating-model
+- learn.wwl.plan-integrated-security-operations-microsoft-defender.assess-preview-readiness
+- learn.wwl.plan-integrated-security-operations-microsoft-defender.select-capabilities-workspace
+- learn.wwl.plan-integrated-security-operations-microsoft-defender.plan-data-governance-costs
+- learn.wwl.plan-integrated-security-operations-microsoft-defender.develop-phased-adoption-plan
+- learn.wwl.plan-integrated-security-operations-microsoft-defender.knowledge-check
+- learn.wwl.plan-integrated-security-operations-microsoft-defender.summary
+badge:
+  uid: learn.wwl.plan-integrated-security-operations-microsoft-defender.badge

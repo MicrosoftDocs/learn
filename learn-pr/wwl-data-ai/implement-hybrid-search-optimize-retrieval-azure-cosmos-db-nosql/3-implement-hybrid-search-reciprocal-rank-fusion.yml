@@ -2,13 +2,13 @@
 uid: learn.wwl.implement-hybrid-search-optimize-retrieval-azure-cosmos-db-nosql.implement-hybrid-search-rrf
 title: Implement hybrid search with RRF
 metadata:
+  zone_pivot_groups: video-or-text,dev-lang-csharp-python
   title: Implement Hybrid Search with RRF
   description: "Fuse a BM25 ranking and a vector ranking into one result with the RRF function, apply weights to bias the fusion, and work within the rules of the ORDER BY RANK clause."
-  ms.date: 10/03/2026
-  author: wwlpublish
+  ms.date: 11/17/2026
+  author: MScalopez
   ms.author: calopez
   ms.topic: unit
-  zone_pivot_groups: dev-lang-csharp-python
   ai-usage: ai-generated
 azureSandbox: false
 labModal: false
