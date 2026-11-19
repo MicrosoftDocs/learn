@@ -1,3 +1,7 @@
+---
+no_index_ks: true
+---
+
 The speed gap between AI-scale attackers and human-paced defense has a specific cause. Security tools were built to work in isolation, and a person is still the one carrying findings between them. That's fine when attackers also move at human speed. It stops working when they don't.
 
 ## Security tools were built to work one at a time
@@ -16,4 +20,4 @@ By the time a person finishes interpreting one tool's output and starts the next
 
 Once you accept that framing, the shape of the answer shifts. Making any single tool faster still leaves a person in the middle of every handoff. What has to change is the handoffs themselves. Speed becomes a coordination problem, not just a tooling problem.
 
-Project Perception is designed to close that gap.
+Perception is designed to close that gap.

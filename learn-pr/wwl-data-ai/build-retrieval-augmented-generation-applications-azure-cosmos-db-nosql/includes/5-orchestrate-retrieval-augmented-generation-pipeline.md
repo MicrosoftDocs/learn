@@ -1,3 +1,12 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=fed7c0cb-ac3d-444f-8971-1df0dab337f5]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
 One grounded answer is a demonstration. An assistant is a pipeline that runs the same stages for every question, survives the second question in a conversation, and knows which questions one retrieval pass can't reach. In this unit, you assemble the stages into replaceable functions, handle the follow-up question that breaks naive retrieval, and decide when a question earns a multi-step pass.
 
 ## Assemble the stages as replaceable functions

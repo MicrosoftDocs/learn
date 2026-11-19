@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-virtual-machine-backup-recoverability.plan-isolated-recovery
+metadata:
+  title: Plan Isolated Recovery
+  description: Compare supported restore methods, confirm destination compatibility, and establish network and identity isolation.
+  ms.date: 11/15/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Plan isolated recovery
+durationInMinutes: 20
+content: |
+  [!include[](includes/4-plan-isolated-recovery.md)]

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.perception-agentic-security-configure-validate-agents.resolve-access-failures-handoff
+title: Resolve access failures and hand off ownership
+metadata:
+  title: Resolve access failures and hand off ownership
+  description: "Find the failed access check, record configuration readiness, and hand over the result and ownership."
+  ms.date: 11/09/2026
+  author: wwlpublish
+  ms.author: hrasheed
+  ms.topic: unit
+  ROBOTS: NOINDEX
+  no_index_ks: true
+durationInMinutes: 5
+content: |
+  [!include[](includes/resolve-access-failures-handoff.md)]

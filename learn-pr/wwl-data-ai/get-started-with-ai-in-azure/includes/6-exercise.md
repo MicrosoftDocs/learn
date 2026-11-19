@@ -1,6 +1,6 @@
 In this exercise, you’ll create and explore a Microsoft Foundry project, and explore the assets that you can create to support an AI application; including generative AI models and tools to support AI functionality like speech. Then you’ll connect a client application to your project so it can use those assets to implement common AI workloads.
 
-![Screenshot of the Foundry portal used in the lab.](../media/new-portal-1.png)
+![Screenshot of the Foundry portal used in the lab.](../media/new-portal.png)
 
 If you have an Azure subscription, you can use it to create and explore an AI project.
 

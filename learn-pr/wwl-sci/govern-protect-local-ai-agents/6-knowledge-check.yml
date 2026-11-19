@@ -1,0 +1,61 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.govern-protect-local-ai-agents.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Check your understanding of local AI agent risks, discovery evidence, control layers, and response options."
+  ms.date: 11/05/2026
+  author: jdetwiler
+  ms.author: jdetwiler
+  ms.topic: unit
+  ai-usage: ai-assisted
+  module_assessment: true
+  ai_generated_module_assessment: false
+durationInMinutes: 4
+quiz:
+  title: ""
+  questions:
+  - content: "A Contoso developer runs a command-line agent in a repository. The agent reads a documentation page that contains hidden text instructing it to read a local credentials file and post the contents to an external address. Which statement best identifies why this exposure is possible?"
+    choices:
+    - content: "The agent's AI model runs locally, so the model can read any file regardless of the developer's access."
+      isCorrect: false
+      explanation: "Where an agent's AI model runs doesn't define what the agent can reach. The model can be a remote service. What matters is the agent software on the device and the access it uses."
+    - content: "The agent runs with the developer's access and treats hidden instructions in content it reads as part of its task."
+      isCorrect: true
+      explanation: "A local agent inherits the access of the user who runs it, and it can't reliably separate trusted content from hidden instructions. Together, local execution, inherited access, and untrusted input make this exposure possible."
+    - content: "The agent appears in the inventory, so the security service grants the agent permission to read files on the device."
+      isCorrect: false
+      explanation: "Discovery provides visibility into which agents are present and what they can reach. An inventory entry doesn't grant or change an agent's permissions."
+  - content: "An administrator finds an inventory entry for a desktop agent on a laptop. The entry lists two configured remote MCP servers, and the associated user can open sensitive repositories. Which conclusion does this evidence support?"
+    choices:
+    - content: "The agent has already called both servers and read the sensitive repositories."
+      isCorrect: false
+      explanation: "A configured MCP server shows a possible connection, not proof that the agent used the tool. An inventory entry also doesn't show actual access to data."
+    - content: "The agent is protected by runtime inspection, because discovery support confirms the agent is covered."
+      isCorrect: false
+      explanation: "Discovery support and runtime protection support are listed separately. An agent that appears in the inventory isn't necessarily one that runtime protection supports."
+    - content: "The agent has possible reach through those connections and the user's access, but actual tool use or data access isn't established."
+      isCorrect: true
+      explanation: "Configured connections and the user's access describe what the agent could reach. Showing what the agent did requires evidence of observed activity, such as an alert or related activity."
+  - content: "Contoso needs to address hidden instructions in content that agents read, and then deploy that protection to managed Windows devices. Which pairing of responsibilities fits?"
+    choices:
+    - content: "Microsoft Intune inspects agent activity for prompt injection, and Microsoft Defender deploys the setting to devices."
+      isCorrect: false
+      explanation: "Intune is a deployment surface for settings and policies. It isn't an inspection engine, and Defender doesn't take over the role of distributing configuration to enrolled devices."
+    - content: "Microsoft Defender runtime protection inspects agent activity, and Microsoft Intune deploys the setting to devices."
+      isCorrect: true
+      explanation: "Runtime protection inspects content that enters or leaves the agent loop, for supported agents and inspection methods. Intune configures and distributes the setting to enrolled devices."
+    - content: "Microsoft Entra Conditional Access inspects content the agent reads, and Microsoft Intune deploys the setting to devices."
+      isCorrect: false
+      explanation: "Conditional Access evaluates policies when Microsoft Entra issues or refreshes a token for a protected resource. It doesn't inspect the content an agent reads."
+  - content: "Contoso runs Microsoft Defender AI agent runtime protection in audit mode. An alert shows a prompt injection on a developer's laptop, and the agent's action still ran. Which response is the most sound?"
+    choices:
+    - content: "Review the alert's accuracy and weigh the impact on legitimate work before enabling block mode on the affected device group."
+      isCorrect: true
+      explanation: "Audit mode records the detection and raises an alert but allows the action. Validating accuracy and checking the impact on developers before enforcement avoids interrupting legitimate work."
+    - content: "Conclude that audit mode blocked the action after it ran, and remove the developer's access to all resources."
+      isCorrect: false
+      explanation: "Audit mode doesn't block anything. Removing a user's access is also a broad response that affects legitimate work and isn't justified by one alert alone."
+    - content: "Conclude that inspection failed, and block execution of every agent across all managed devices."
+      isCorrect: false
+      explanation: "The alert shows that inspection detected the injection. A broad execution block can affect legitimate workloads and other agents that share a run type, so it isn't equivalent to remediating one agent."

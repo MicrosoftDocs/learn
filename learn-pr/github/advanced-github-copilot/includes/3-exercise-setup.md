@@ -1,30 +1,44 @@
-
-In this exercise, we create a new repository using the GitHub template for a web API that uses the Python programming language.
+In this exercise, you'll open a codespace for the provided Python web API repository. You can experiment in this environment without first creating your own repository.
 
 ## Environment setup
 
-First you need to launch the Codespaces environment, which comes preconfigured with the GitHub Copilot extension.
-
-1. Open the [Codespace with the preconfigured environment](https://codespaces.new/MicrosoftDocs/mslearn-advanced-copilot?azure-portal=true) in your browser.
-1. On the **Create codespace** page, review the Codespace configuration settings, and then select **Create new codespace**.
-1. Wait for the Codespace to start. This startup process can take a few minutes.
-1. The remaining exercises in this project take place in the context of this development container.
+First, launch the Codespaces environment, which comes preconfigured with the GitHub Copilot extension. Review the machine type, payer, remaining allowance, and spending controls before creating the codespace.
 
 > [!IMPORTANT]
-> All GitHub accounts can use Codespaces for up to 60 hours free each month with two core instances. For more information, see [GitHub Codespaces monthly included storage and core hours](https://docs.github.com/billing/managing-billing-for-github-codespaces/about-billing-for-github-codespaces#monthly-included-storage-and-core-hours-for-personal-accounts).
+> Personal GitHub Free accounts include 120 Codespaces core-hours and 15 GB-month of storage each month. On a two-core machine, 120 core-hours is 60 hours of running time, provided you haven't used any of that allowance elsewhere. Personal GitHub Pro accounts have a different allowance. Organization and enterprise plans don't include a free Codespaces quota.
 
-> [!TIP]
-> GitHub Copilot offers a free tier with **2,000 code autocompletes and 50 chat messages per month**. To get started, open Visual Studio Code, click on the GitHub Copilot icon, and then click "Sign in to Use GitHub Copilot for Free". [Learn more](https://gh.io/copilot). Educators, Students and, select open-source maintainers can receive Copilot Pro for free, learn how at: [https://aka.ms/Copilot4Students](https://aka.ms/Copilot4Students).
+The [Codespaces billing documentation](https://docs.github.com/en/billing/concepts/product-billing/github-codespaces) describes current allowances and charges. After reviewing your account's settings, create the environment:
 
-### Python Web API
+1. Open the [codespace with the preconfigured environment](https://codespaces.new/MicrosoftDocs/mslearn-advanced-copilot?azure-portal=true) in your browser.
+2. On the **Create codespace** page, review the configuration settings, then select **Create new codespace**.
+3. Wait for container setup and extension installation to finish. This process can take a few minutes.
 
-When complete, Codespaces loads with a terminal section at the bottom. Codespaces installs all the required extensions in your container. Once the package installs are complete, Codespaces executes the `uvicorn` command to start your web application running within your Codespace.
+The remaining exercises take place in this development container. Use the Python environment already configured for the project rather than creating a second environment.
 
-When the web application starts successfully, a message in the terminal **Ports** tab shows that the server is running on port 8000 within your Codespace.
+The launch link opens a codespace associated with the provided repository. If you have read access and permission to fork, Codespaces can create or link a fork under your account when you commit or push a new branch. Follow the fork prompt if one appears. A commit stored only in the codespace isn't a backup on GitHub.
 
-## Sign up for GitHub Copilot
+## Enable GitHub Copilot
 
-If you haven't already, you need to register by setting up [a free trial or subscription for your account](https://github.com/github-copilot/signup).
+Sign in to VS Code with the GitHub account that has your Copilot access. If you don't have access yet, enable Copilot Free or use an eligible plan provided by your organization. Select **Chat** in the title bar, then **Open Chat**, and confirm that you can send a request before continuing.
 
->[!Note]
-> Educators, Students and select open-source maintainers can sign up for Copilot for free, learn how at [Setting up GitHub Student and GitHub Copilot as an Authenticated Student Developer](https://aka.ms/Copilot4Students).
+You don't need to purchase a paid Copilot plan just to start this exercise. Copilot Free includes limited usage, including 2,000 monthly code completions and an allowance of AI credits. Check your current allowance before starting. Feature availability and usage depend on your account and organization policies. See [Copilot plans](https://docs.github.com/en/copilot/get-started/plans) for current details.
+
+Verified students can activate [Copilot Student through GitHub Education](https://docs.github.com/en/copilot/how-tos/copilot-on-github/set-up-copilot/enable-copilot/set-up-for-students). Verified teachers and eligible maintainers of popular open-source projects may qualify for [Copilot Pro at no cost](https://docs.github.com/en/copilot/how-tos/copilot-on-github/set-up-copilot/enable-copilot/set-up-for-teachers-and-os-maintainers). Eligibility and activation requirements differ.
+
+## Run the Python web API
+
+The container installs the project requirements into its configured Python environment. When you attach to the codespace, the configured startup command runs Uvicorn on port 8000 with automatic reload.
+
+1. Check the startup terminal for successful application startup. If an error appears, resolve it before continuing. A port entry alone doesn't prove the application is running.
+2. Open the **Ports** view and locate port **8000**, labeled **Application**.
+3. Open that port in your browser and keep its visibility **Private**. The application's root redirects to its interactive API documentation at `/docs`.
+
+The server is normally already running. Don't start a second copy on port 8000. Saved Python changes trigger the configured reload. If you need to restart the server manually, stop its existing process with **Ctrl+C** in the terminal running it before starting another copy.
+
+After the previous server has stopped, run this recovery command from the repository root in the Codespace:
+
+```bash
+/home/vscode/venv/bin/python -m uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+```
+
+Use the forwarded application URL in your browser, not your own computer's `localhost:8000`. For more information, see [forwarding ports in your codespace](https://docs.github.com/en/codespaces/developing-in-a-codespace/forwarding-ports-in-your-codespace).

@@ -45,14 +45,14 @@ quiz:
         - content: "MAI-Transcribe"
           isCorrect: false
           explanation: "Incorrect. MAI-Transcribe provides speech-to-text transcription rather than generating a spoken response."
-    - content: "Which MAI-Image variant should you evaluate first when strong object consistency and visual reasoning are the highest priorities?"
+    - content: "Which model is optimized for cost-efficient image generation?"
       choices:
         - content: "MAI-Image-Flash"
-          isCorrect: false
-          explanation: "Incorrect. MAI-Image-Flash targets production-ready quality at lower cost rather than the family's strongest visual reasoning."
+          isCorrect: true
+          explanation: "Correct. MAI-Image-Flash targets production-ready quality at lower cost."
         - content: "MAI-Image"
           isCorrect: false
           explanation: "Incorrect. The standard variant balances high-quality generation and controllable editing, but the Pro variant targets more demanding visual work."
-        - content: "MAI-Image-Pro"
-          isCorrect: true
-          explanation: "Correct. MAI-Image-Pro provides stronger object consistency, visual reasoning, and world knowledge for demanding creative work."
+        - content: "MAI-Realtime"
+          isCorrect: false
+          explanation: "Incorrect. MAI-Realtime is designed for real-time voice interactions rather than cost-efficient image generation."

@@ -1,3 +1,12 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=a1a90579-234d-4222-9960-2c59af151dc9]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
 The strategy decision points at hybrid retrieval, and one system function implements it: reciprocal rank fusion (RRF). In this unit, you fuse a keyword ranking and a similarity ranking into a single ordered result with `RRF`, bias the fusion with weights, and learn the rules that decide where the function can and can't appear in a query.
 
 ## Fuse two rankings with RRF

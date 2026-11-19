@@ -1,11 +1,11 @@
 When an unexpected event occurs—like a repository deletion or a failed workflow run—you need precise details: who did it, when, and how. GitHub’s audit logs capture this information for troubleshooting, compliance, and security investigations.
 
-You can access the audit log through GitHub.com, GitHub Enterprise Server, or GitHub AE. Interacting with the audit log via either the GraphQL API or the REST API allows you to retrieve specific types of information, though there are some limitations.
+You can access the audit log through GitHub.com or GitHub Enterprise Server. Interacting with the audit log via either the GraphQL API or the REST API allows you to retrieve specific types of information, though there are some limitations.
 
 > [!TIP]
 > Suppose a critical repository vanished overnight. You’ll use the audit logs to pinpoint the deletion event and restore continuity.
 
-## What are Log Records?
+## What are log records?
 
 Your organization’s audit log records actions taken by organization members. Available to organization owners, the log provides information about actions that affect the organization, including:
 
@@ -16,7 +16,7 @@ Your organization’s audit log records actions taken by organization members. A
 - The action’s date and time.  
 
 > [!NOTE]
-> Logs are retained for up to 90 days in GitHub Enterprise Cloud (120 days via GraphQL on Enterprise Server).
+> Logs are retained for up to 180 days in GitHub Enterprise Cloud (120 days via GraphQL on Enterprise Server).
 
 ## Viewing and exporting Audit Logs via the GitHub UI
 
@@ -39,7 +39,7 @@ Your organization’s audit log records actions taken by organization members. A
 
 ### REST API
 
-- **Scope:** Enterprise Cloud (up to 90 days; Git events for 7 days).  
+- **Scope:** Enterprise Cloud (up to 180 days; Git events for 7 days).  
 - **Monitors:** Settings changes, permission updates, team membership, application changes, plus Git events (push, pull, merge).  
 
 ```http
@@ -102,7 +102,7 @@ query {
 
 ## Security and compliance
 
-- **Data Retention:** 90 days on Enterprise Cloud; 120 days on Enterprise Server.  
+- **Data Retention:** 180 days on Enterprise Cloud; 120 days on Enterprise Server.  
 - **Access Control:** Only owners and security managers can view logs.  
 - **IP Logging:** Records source IP to detect suspicious access.  
 - **Regional Compliance:** Meets data-handling requirements.  
@@ -112,7 +112,7 @@ query {
 Stream logs in real time to SIEM platforms (Splunk, Datadog) for long-term storage:
 
 1. Go to **Settings > Audit log**.  
-2. Under **Streaming**, configure a destination (AWS S3, Azure Event Hubs).  
+2. Under **Log streaming**, configure a destination (Amazon S3, Azure Blob Storage, Azure Event Hubs, Google Cloud Storage).  
 3. Verify events arrive in your SIEM.  
 
 ## Additional Audit Log types
@@ -122,7 +122,7 @@ Stream logs in real time to SIEM platforms (Splunk, Datadog) for long-term stora
 - **Enterprise Managed Users (EMU):** Includes `user.login`, `repository.permissions_updated`, `repository.forked`.  
 - **Token Usage:** Filter by `phrase=token` to identify compromised credentials.  
 
-## Key security features of a GitHub Repository
+## Key security features of a GitHub repository
 
 - **SECURITY.md:** Define reporting process and supported versions.  
 - **Branch Protection:** Enforce reviews, status checks, and commit signing.  

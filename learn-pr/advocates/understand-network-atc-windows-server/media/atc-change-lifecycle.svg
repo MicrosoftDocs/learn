@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1090" viewBox="0 0 1200 1090" role="img" aria-labelledby="change-title change-desc" font-family="Segoe UI, Arial, sans-serif">
+<title id="change-title">Safe Network ATC change and recovery lifecycle</title>
+<desc id="change-desc">Ordered safe change workflow: one, baseline and snapshot intended and effective configuration; two, plan dependencies, protect management, and drain workloads; three, apply a supported intent change; four, validate every expected node and management, guest, SMB, RDMA and migration workloads; five, resume only after acceptance gates pass. Cluster-scoped policy can affect every node, and draining one node does not localize it. Failure from applying or validating the change branches to stop rollout and recover management and dependencies using the known-good design. Remove-NetIntent is not a rollback of generated configuration.</desc>
+<rect x="0" y="0" width="1200" height="1090" fill="#ffffff"/>
+<metadata>Conceptual educational diagram for Windows Server 2025 only. Embedded icon geometry is reused from: C:\Azure-Icons\CnE_Enterprise\Server (generic).svg. Original viewBoxes and aspect ratios are preserved. Not runtime output.</metadata>
+<defs><marker id="change-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M1 1 L9 5 L1 9 Z" fill="#718398"/></marker><symbol id="change-icon-server" viewBox="0 0 83.4 83.4" preserveAspectRatio="xMidYMid meet">
+<g id="change-server-Layer_1">
+	<g id="change-server-File_x2C__general">
+		
+	</g>
+	<g id="change-server-Message">
+	</g>
+	<g id="change-server-Monitor">
+	</g>
+	<g id="change-server-change-server-Monitor_running_apps">
+	</g>
+	<g id="change-server-Mouse">
+	</g>
+	<g id="change-server-Network_card">
+	</g>
+	<g id="change-server-Not_allowed">
+	</g>
+	<g id="change-server-Performance">
+	</g>
+	<g id="change-server-Phone">
+	</g>
+	<g id="change-server-Plug_and_play">
+	</g>
+	<g id="change-server-Powershell_script_file">
+	</g>
+	<g id="change-server-Protocol_stack">
+	</g>
+	<g id="change-server-Queue_x2C__general">
+	</g>
+	<g id="change-server-RMS_connector">
+	</g>
+	<g id="change-server-Router">
+	</g>
+	<g id="change-server-Script_file">
+	</g>
+	<g id="change-server-Secure_virtual_machine">
+	</g>
+</g>
+<g id="change-server-paths">
+	<g id="change-server-Access_control">
+	</g>
+	<g id="change-server-Azure_active_directory">
+	</g>
+	<g id="change-server-Generic_code">
+	</g>
+	<g id="change-server-Laptop">
+	</g>
+	<g id="change-server-Load_balancer">
+	</g>
+	<g id="change-server-Lock_x2C__protected">
+	</g>
+</g>
+<g id="change-server-symbols">
+	<g>
+		<path fill="#2A3282" d="M52.6,19.1h-16c-1.1,0-2,0.9-2,2v39h20v-39C54.6,20,53.7,19.1,52.6,19.1z M51.6,56.1h-14v-2h14V56.1z
+			 M51.6,52.1h-14v-2h14V52.1z M51.6,27.1h-14v-2h14V27.1z"/>
+	</g>
+</g>
+<g id="change-server-slices">
+</g>
+</symbol></defs>
+<text id="change-text-1" x="40" y="36" font-size="18" font-weight="600" fill="#4d6275" text-anchor="start" >WINDOWS SERVER 2025  ·  CONCEPTUAL</text>
+<text id="change-text-2" x="40" y="81" font-size="34" font-weight="650" fill="#17324d" text-anchor="start" >Make a controlled change—and keep recovery explicit</text>
+<text id="change-text-3" x="40" y="118" font-size="20" font-weight="400" fill="#4d6275" text-anchor="start" >Safe change workflow for a cluster-scoped Network ATC policy.</text>
+<rect id="change-scope" data-kind="box" x="40" y="143" width="1120" height="65" rx="12" fill="#fff8e8" stroke="#946000" stroke-width="1.6" />
+<text id="change-text-4" x="62" y="183" font-size="22" font-weight="600" fill="#17324d" text-anchor="start" data-box="change-scope" >Cluster-scoped policy can affect every node; draining one node does not localize it.</text>
+<rect id="change-baseline" data-kind="box" x="40" y="255" width="320" height="195" rx="12" fill="#edf5fc" stroke="#0067b8" stroke-width="1.6" />
+<circle cx="77" cy="293" r="20" fill="#0067b8"/>
+<text id="change-text-5" x="77" y="301" font-size="24" font-weight="700" fill="#fff" text-anchor="middle" >1</text>
+<text id="change-text-6" x="112" y="300" font-size="24" font-weight="600" fill="#17324d" text-anchor="start" data-box="change-baseline" >Baseline / snapshot</text>
+<text id="change-text-7" x="64" y="353" font-size="22" font-weight="400" fill="#17324d" text-anchor="start" data-box="change-baseline" >Capture intended and</text>
+<text id="change-text-8" x="64" y="388" font-size="22" font-weight="400" fill="#17324d" text-anchor="start" data-box="change-baseline" >effective configuration</text>
+<text id="change-text-9" x="64" y="423" font-size="22" font-weight="400" fill="#17324d" text-anchor="start" data-box="change-baseline" >Keep known-good design</text>
+<rect id="change-plan" data-kind="box" x="440" y="255" width="320" height="195" rx="12" fill="#edf5fc" stroke="#0067b8" stroke-width="1.6" />
+<circle cx="477" cy="293" r="20" fill="#0067b8"/>
+<text id="change-text-10" x="477" y="301" font-size="24" font-weight="700" fill="#fff" text-anchor="middle" >2</text>
+<text id="change-text-11" x="512" y="300" font-size="24" font-weight="600" fill="#17324d" text-anchor="start" data-box="change-plan" >Plan and drain</text>
+<text id="change-text-12" x="464" y="353" font-size="22" font-weight="400" fill="#17324d" text-anchor="start" data-box="change-plan" >Map dependencies</text>
+<text id="change-text-13" x="464" y="388" font-size="22" font-weight="400" fill="#17324d" text-anchor="start" data-box="change-plan" >Protect management</text>
+<text id="change-text-14" x="464" y="423" font-size="22" font-weight="400" fill="#17324d" text-anchor="start" data-box="change-plan" >Drain affected workloads</text>
+<rect id="change-apply" data-kind="box" x="840" y="255" width="320" height="195" rx="12" fill="#edf5fc" stroke="#0067b8" stroke-width="1.6" />
+<circle cx="877" cy="293" r="20" fill="#0067b8"/>
+<text id="change-text-15" x="877" y="301" font-size="24" font-weight="700" fill="#fff" text-anchor="middle" >3</text>
+<text id="change-text-16" x="912" y="300" font-size="24" font-weight="600" fill="#17324d" text-anchor="start" data-box="change-apply" >Apply the change</text>
+<text id="change-text-17" x="864" y="353" font-size="22" font-weight="400" fill="#17324d" text-anchor="start" data-box="change-apply" >Use a supported</text>
+<text id="change-text-18" x="864" y="388" font-size="22" font-weight="400" fill="#17324d" text-anchor="start" data-box="change-apply" >intent change</text>
+<text id="change-text-19" x="864" y="423" font-size="22" font-weight="400" fill="#17324d" text-anchor="start" data-box="change-apply" >Respect policy scope</text>
+<rect id="change-validate" data-kind="box" x="840" y="555" width="320" height="195" rx="12" fill="#edf5fc" stroke="#0067b8" stroke-width="1.6" />
+<circle cx="877" cy="593" r="20" fill="#0067b8"/>
+<text id="change-text-20" x="877" y="601" font-size="24" font-weight="700" fill="#fff" text-anchor="middle" >4</text>
+<text id="change-text-21" x="912" y="600" font-size="24" font-weight="600" fill="#17324d" text-anchor="start" data-box="change-validate" >Validate</text>
+<text id="change-text-22" x="864" y="653" font-size="22" font-weight="400" fill="#17324d" text-anchor="start" data-box="change-validate" >Check every expected node</text>
+<text id="change-text-23" x="864" y="688" font-size="22" font-weight="400" fill="#17324d" text-anchor="start" data-box="change-validate" >Test management, guest,</text>
+<text id="change-text-24" x="864" y="723" font-size="22" font-weight="400" fill="#17324d" text-anchor="start" data-box="change-validate" >SMB / RDMA and migration</text>
+<rect id="change-resume" data-kind="box" x="440" y="555" width="320" height="195" rx="12" fill="#edf8f7" stroke="#007a80" stroke-width="1.6" />
+<circle cx="477" cy="593" r="20" fill="#0067b8"/>
+<text id="change-text-25" x="477" y="601" font-size="24" font-weight="700" fill="#fff" text-anchor="middle" >5</text>
+<text id="change-text-26" x="512" y="600" font-size="24" font-weight="600" fill="#17324d" text-anchor="start" data-box="change-resume" >Resume</text>
+<text id="change-text-27" x="464" y="653" font-size="22" font-weight="400" fill="#17324d" text-anchor="start" data-box="change-resume" >Only after all gates pass</text>
+<text id="change-text-28" x="464" y="688" font-size="22" font-weight="400" fill="#17324d" text-anchor="start" data-box="change-resume" >Restore workload service</text>
+<text id="change-text-29" x="464" y="723" font-size="22" font-weight="400" fill="#17324d" text-anchor="start" data-box="change-resume" >Record the new baseline</text>
+<path data-kind="connector" data-route="[[360,353],[440,353]]" d="M360 353 L440 353" fill="none" stroke="#718398" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#change-arrow)"/>
+<path data-kind="connector" data-route="[[760,353],[840,353]]" d="M760 353 L840 353" fill="none" stroke="#718398" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#change-arrow)"/>
+<path data-kind="connector" data-route="[[1000,450],[1000,555]]" d="M1000 450 L1000 555" fill="none" stroke="#718398" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#change-arrow)"/>
+<text id="change-text-30" x="831" y="511" font-size="20" font-weight="400" fill="#4d6275" text-anchor="start" >Change applied</text>
+<path data-kind="connector" data-route="[[840,651],[760,651]]" d="M840 651 L760 651" fill="none" stroke="#718398" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#change-arrow)"/>
+<text id="change-text-31" x="800" y="626" font-size="19" font-weight="600" fill="#4d6275" text-anchor="middle" >Pass</text>
+<use href="#change-icon-server" x="37" y="559" width="135" height="135" aria-hidden="true"/>
+<text id="change-text-32" x="143" y="604" font-size="22" font-weight="600" fill="#17324d" text-anchor="start" >Recovery readiness</text>
+<text id="change-text-33" x="143" y="642" font-size="20" font-weight="400" fill="#4d6275" text-anchor="start" >Preserve an independent</text>
+<text id="change-text-34" x="143" y="672" font-size="20" font-weight="400" fill="#4d6275" text-anchor="start" >management recovery path</text>
+<text id="change-text-35" x="143" y="702" font-size="20" font-weight="400" fill="#4d6275" text-anchor="start" >before applying changes.</text>
+<path data-kind="connector" data-route="[[1160,353],[1181,353],[1181,819],[210,819],[210,855]]" d="M1160 353 L1181 353 L1181 819 L210 819 L210 855" fill="none" stroke="#718398" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#change-arrow)"/>
+<path data-kind="connector" data-route="[[1000,750],[1000,819]]" d="M1000 750 L1000 819" fill="none" stroke="#718398" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text id="change-text-36" x="63" y="795" font-size="21" font-weight="600" fill="#946000" text-anchor="start" >If the change or validation fails: stop the rollout and recover deliberately.</text>
+<rect id="change-recovery" data-kind="box" x="40" y="855" width="1120" height="183" rx="12" fill="#fff8e8" stroke="#946000" stroke-width="1.6" />
+<text id="change-text-37" x="63" y="891" font-size="20" font-weight="700" fill="#946000" text-anchor="start" data-box="change-recovery" >FAILURE RECOVERY</text>
+<rect id="change-stop" data-kind="box" x="60" y="911" width="300" height="80" rx="12" fill="#fff" stroke="#946000" stroke-width="1.6" />
+<text id="change-text-38" x="210" y="959" font-size="26" font-weight="600" fill="#17324d" text-anchor="middle" data-box="change-stop" >Stop rollout</text>
+<rect id="change-recover" data-kind="box" x="440" y="911" width="680" height="80" rx="12" fill="#fff" stroke="#946000" stroke-width="1.6" />
+<text id="change-text-39" x="463" y="943" font-size="24" font-weight="600" fill="#17324d" text-anchor="start" data-box="change-recover" >Recover management and dependencies</text>
+<text id="change-text-40" x="463" y="975" font-size="20" font-weight="400" fill="#17324d" text-anchor="start" data-box="change-recover" >Use the known-good design and a workload-aware recovery plan.</text>
+<path data-kind="connector" data-route="[[360,951],[440,951]]" d="M360 951 L440 951" fill="none" stroke="#718398" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#change-arrow)"/>
+<text id="change-text-41" x="63" y="1020" font-size="20" font-weight="600" fill="#17324d" text-anchor="start" data-box="change-recovery" >Remove-NetIntent is not a rollback of generated configuration.</text>
+</svg>

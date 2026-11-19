@@ -26,8 +26,8 @@ metadata:
   gs-solution.area: "Cloud & AI Platforms"
   gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/azure/deploy-azure-vmware-solution/index.yml
   title: Prepare for VMware resource migration by deploying Azure VMware Solution
-  description: Prepare to migrate VMware resources to Azure by deploying an Azure VMware Solution resource. Then, connect your VMware environment to Azure VMware Solution.
-  ms.date: 11/15/2025
+  description: Plan an Azure VMware Solution deployment and its licensing prerequisites. Deploy a standard, single-zone Generation 1 private cloud and connect your VMware environment through ExpressRoute Global Reach.
+  ms.date: 11/10/2026
   author: Orin-Thomas
   ms.author: orthomas
   ms.topic: module
@@ -35,11 +35,11 @@ metadata:
   ms.contributors: shkuehn-03222021, orthomas-08092023
   ms.service: azure-vmware
 title: Prepare to migrate VMware resources to Azure by deploying Azure VMware Solution
-summary: Learn how to plan an Azure VMware Solution deployment by reviewing the requirements and assessing your migration. Prepare for the VMware resource migration by deploying an Azure VMware Solution private cloud resource. Then, configure Azure ExpressRoute Global Reach to connect your on-premises VMware vSphere environment to the Azure VMware Solution.
+summary: Compare Azure VMware Solution deployment generations and plan licensing, capacity, and networking for migration. Deploy a standard, single-zone Generation 1 private cloud, connect it to an Azure virtual network, and configure ExpressRoute Global Reach to connect your on-premises VMware vSphere environment.
 abstract: |
   By the end of this module, you'll be able to:
-  - Plan a successful Azure VMware Solution deployment.
-  - Connect to an on-premises VMware vSphere environment.
+  - Plan an Azure VMware Solution deployment, including the generation and licensing prerequisites.
+  - Connect a standard Generation 1 private cloud to an on-premises VMware vSphere environment by using ExpressRoute Global Reach.
 prerequisites: |
   - Experience managing VMware solution infrastructure, such as vCenter Server, ESXi, NSX Data Center, and vSAN.
   - Basic knowledge of network concepts, such as Classless Inter-Domain Routing (CIDR), Border Gateway Protocol (BGP) routing, Dynamic Host Configuration Protocol (DHCP), and IPv4 network subnets.
@@ -65,4 +65,3 @@ units:
 - learn.deploy-azure-vmware-solution.configure-nsx-network-components
 - learn.deploy-azure-vmware-solution.knowledge-check
 - learn.deploy-azure-vmware-solution.summary
-

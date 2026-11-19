@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.understand-network-atc-windows-server.plan-network-topology
+title: Plan network topology
+metadata:
+  title: Plan Network Topology
+  description: Choose a network topology based on isolation, capacity, physical failure paths, and storage connectivity.
+  ms.date: 11/10/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-plan-network-topology.md)]

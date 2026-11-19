@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.understand-network-atc-windows-server.summary
+title: Summary
+metadata:
+  title: Summary
+  description: Review Network ATC operational practices, production handoff requirements, and related Windows Server resources.
+  ms.date: 11/10/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 5
+content: |
+  [!include[](includes/14-summary.md)]

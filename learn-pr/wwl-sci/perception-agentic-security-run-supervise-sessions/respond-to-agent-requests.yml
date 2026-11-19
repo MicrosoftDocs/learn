@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.perception-agentic-security-run-supervise-sessions.respond-to-agent-requests
+title: Respond to agent requests
+metadata:
+  title: Respond to Agent Requests
+  description: "Decide whether proposed work belongs in the investigation, use the response options for a request, and stop a session that should no longer run."
+  ms.date: 11/09/2026
+  author: wwlpublish
+  ms.author: hrasheed
+  ms.topic: unit
+  ROBOTS: NOINDEX
+  no_index_ks: true
+durationInMinutes: 6
+content: |
+  [!include[](includes/respond-to-agent-requests.md)]

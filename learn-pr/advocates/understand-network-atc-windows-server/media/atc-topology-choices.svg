@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="870" viewBox="0 0 1200 870" role="img" aria-labelledby="choices-title choices-desc" font-family="Segoe UI, Arial, sans-serif">
+<title id="choices-title">Alternative Network ATC intent sharing boundaries</title>
+<desc id="choices-desc">Three alternatives, not process steps. Fully converged uses one Management plus Compute plus Storage intent on pNIC01 and pNIC02. The main example uses HostVM for Management plus Compute on pNIC01 and pNIC02, and Storage on pNIC03 and pNIC04. The third alternative isolates Management on pNIC01 and pNIC02 and combines Compute plus Storage on pNIC03 and pNIC04. Every adapter belongs to only one intent. The tradeoffs are shared capacity, separated storage paths, or isolated management. Capacity must be sized for failed paths and workload demand.</desc>
+<rect x="0" y="0" width="1200" height="870" fill="#ffffff"/>
+<metadata>Conceptual educational diagram for Windows Server 2025 only. Embedded icon geometry is reused from: C:\Azure-Icons\networking\10080-icon-service-Network-Interfaces.svg. Original viewBoxes and aspect ratios are preserved. Not runtime output.</metadata>
+<defs><marker id="choices-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M1 1 L9 5 L1 9 Z" fill="#718398"/></marker><symbol id="choices-icon-nic" viewBox="0 0 18 18" preserveAspectRatio="xMidYMid meet"><defs><linearGradient id="choices-nic-fcad3287-b71c-44fa-971a-6a18bcf384a0" x1="9.01" y1="16.5" x2="9.01" y2="1.5" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#5e9641" /><stop offset="0.34" stop-color="#6baa42" /><stop offset="0.67" stop-color="#73b743" /><stop offset="1" stop-color="#76bb43" /></linearGradient></defs><path d="M15.89,2.91h1.27a.34.34,0,0,1,.34.34v3.5a.34.34,0,0,1-.34.34H15.89a0,0,0,0,1,0,0V2.91A0,0,0,0,1,15.89,2.91Z" fill="#ffca00" /><path d="M15.89,9h1.27a.34.34,0,0,1,.34.34v5.86a.34.34,0,0,1-.34.34H15.89a0,0,0,0,1,0,0V9A0,0,0,0,1,15.89,9Z" fill="#ffca00" /><rect x="2.13" y="1.5" width="13.76" height="15" rx="0.69" fill="url(#choices-nic-fcad3287-b71c-44fa-971a-6a18bcf384a0)" /><path d="M5.9,12.9H5.19A.2.2,0,0,1,5,12.69V4.34a.19.19,0,0,1,.19-.2H7.12a.19.19,0,0,1,.19.2.2.2,0,0,1-.19.21H5.38v7.93H5.9a.2.2,0,0,1,.19.21A.21.21,0,0,1,5.9,12.9Z" fill="#b4ec36" /><path d="M6,13.92H4.4a.2.2,0,0,1-.19-.21L4.08,3.38a.2.2,0,0,1,.06-.15.16.16,0,0,1,.13-.06H7.12v.41H4.47l.12,9.92H6Z" fill="#b4ec36" /><path d="M12,13H10.41a.19.19,0,0,1-.14-.07.18.18,0,0,1-.06-.14V7.9a.19.19,0,0,1,.19-.2l.91,0,0-2.25h.38l0,2.44a.2.2,0,0,1-.18.21l-.91,0v4.42H12Z" fill="#b4ec36" /><rect x="7.07" y="2.29" width="6.14" height="3.11" rx="0.26" fill="#365615" /><rect x="5.86" y="12.69" width="4.9" height="1.09" rx="0.26" transform="translate(21.54 4.93) rotate(90)" fill="#365615" /><rect x="3.99" y="12.71" width="4.9" height="1.09" rx="0.26" transform="translate(19.7 6.82) rotate(90)" fill="#365615" /><rect x="9.98" y="12.71" width="4.9" height="1.09" rx="0.26" transform="translate(25.68 0.83) rotate(90)" fill="#f2f2f2" /><ellipse cx="8.11" cy="8.06" rx="1.04" ry="1.12" fill="#f2f2f2" /><path d="M.5,5.7H1.77A.34.34,0,0,1,2.11,6v5.86a.34.34,0,0,1-.34.34H.5a0,0,0,0,1,0,0V5.7A0,0,0,0,1,.5,5.7Z" transform="translate(2.61 17.95) rotate(180)" fill="#3b3b3b" /></symbol></defs>
+<text id="choices-text-1" x="40" y="36" font-size="18" font-weight="600" fill="#4d6275" text-anchor="start" >WINDOWS SERVER 2025  ·  CONCEPTUAL</text>
+<text id="choices-text-2" x="40" y="81" font-size="34" font-weight="650" fill="#17324d" text-anchor="start" >Choose the sharing boundary—not a deployment order</text>
+<text id="choices-text-3" x="40" y="118" font-size="20" font-weight="400" fill="#4d6275" text-anchor="start" >Three alternative intent layouts. Each adapter is assigned exclusively to one intent.</text>
+<rect id="choices-full" data-kind="box" x="40" y="175" width="350" height="565" rx="12" fill="#fff" stroke="#c6d3df" stroke-width="1.6" />
+<text id="choices-text-4" x="62" y="217" font-size="25" font-weight="600" fill="#17324d" text-anchor="start" data-box="choices-full" >Fully converged</text>
+<text id="choices-text-5" x="62" y="252" font-size="20" font-weight="400" fill="#4d6275" text-anchor="start" data-box="choices-full" >One shared adapter pair</text>
+<rect id="choices-main" data-kind="box" x="425" y="175" width="350" height="565" rx="12" fill="#fff" stroke="#0067b8" stroke-width="1.6" />
+<text id="choices-text-6" x="447" y="217" font-size="25" font-weight="600" fill="#17324d" text-anchor="start" data-box="choices-main" >HostVM + Storage</text>
+<text id="choices-text-7" x="447" y="252" font-size="20" font-weight="400" fill="#4d6275" text-anchor="start" data-box="choices-main" >Main example · two pairs</text>
+<rect id="choices-split" data-kind="box" x="810" y="175" width="350" height="565" rx="12" fill="#fff" stroke="#c6d3df" stroke-width="1.6" />
+<text id="choices-text-8" x="832" y="217" font-size="25" font-weight="600" fill="#17324d" text-anchor="start" data-box="choices-split" >Management split</text>
+<text id="choices-text-9" x="832" y="252" font-size="20" font-weight="400" fill="#4d6275" text-anchor="start" data-box="choices-split" >Two pairs, different sharing</text>
+<rect id="choices-full-intent" data-kind="box" x="60" y="298" width="310" height="322" rx="12" fill="#edf5fc" stroke="#0067b8" stroke-width="1.6" />
+<text id="choices-text-10" x="82" y="336" font-size="22" font-weight="650" fill="#17324d" text-anchor="start" data-box="choices-full-intent" >One intent</text>
+<text id="choices-text-11" x="82" y="393" font-size="25" font-weight="400" fill="#17324d" text-anchor="start" data-box="choices-full-intent" >Management</text>
+<text id="choices-text-12" x="82" y="434" font-size="25" font-weight="400" fill="#17324d" text-anchor="start" data-box="choices-full-intent" >+ Compute</text>
+<text id="choices-text-13" x="82" y="475" font-size="25" font-weight="400" fill="#17324d" text-anchor="start" data-box="choices-full-intent" >+ Storage</text>
+<rect id="choices-full-p1" data-kind="box" x="77" y="552" width="126" height="43" rx="12" fill="#fff" stroke="#718398" stroke-width="1.6" />
+<use href="#choices-icon-nic" x="87" y="564" width="21" height="21" aria-hidden="true"/>
+<text id="choices-text-14" x="119" y="581" font-size="19" font-weight="600" fill="#17324d" text-anchor="start" data-box="choices-full-p1" >pNIC01</text>
+<rect id="choices-full-p2" data-kind="box" x="227" y="552" width="126" height="43" rx="12" fill="#fff" stroke="#718398" stroke-width="1.6" />
+<use href="#choices-icon-nic" x="237" y="564" width="21" height="21" aria-hidden="true"/>
+<text id="choices-text-15" x="269" y="581" font-size="19" font-weight="600" fill="#17324d" text-anchor="start" data-box="choices-full-p2" >pNIC02</text>
+<rect id="choices-main-intent1" data-kind="box" x="445" y="298" width="310" height="145" rx="12" fill="#edf5fc" stroke="#0067b8" stroke-width="1.6" />
+<text id="choices-text-16" x="463" y="334" font-size="21" font-weight="650" fill="#17324d" text-anchor="start" data-box="choices-main-intent1" >HostVM · Mgmt + Compute</text>
+<rect id="choices-main-first-p1" data-kind="box" x="462" y="378" width="126" height="43" rx="12" fill="#fff" stroke="#718398" stroke-width="1.6" />
+<use href="#choices-icon-nic" x="472" y="390" width="21" height="21" aria-hidden="true"/>
+<text id="choices-text-17" x="504" y="407" font-size="19" font-weight="600" fill="#17324d" text-anchor="start" data-box="choices-main-first-p1" >pNIC01</text>
+<rect id="choices-main-first-p2" data-kind="box" x="612" y="378" width="126" height="43" rx="12" fill="#fff" stroke="#718398" stroke-width="1.6" />
+<use href="#choices-icon-nic" x="622" y="390" width="21" height="21" aria-hidden="true"/>
+<text id="choices-text-18" x="654" y="407" font-size="19" font-weight="600" fill="#17324d" text-anchor="start" data-box="choices-main-first-p2" >pNIC02</text>
+<rect id="choices-main-intent2" data-kind="box" x="445" y="475" width="310" height="145" rx="12" fill="#edf8f7" stroke="#007a80" stroke-width="1.6" />
+<text id="choices-text-19" x="463" y="512" font-size="22" font-weight="650" fill="#17324d" text-anchor="start" data-box="choices-main-intent2" >Storage</text>
+<rect id="choices-main-second-p3" data-kind="box" x="462" y="555" width="126" height="43" rx="12" fill="#fff" stroke="#718398" stroke-width="1.6" />
+<use href="#choices-icon-nic" x="472" y="567" width="21" height="21" aria-hidden="true"/>
+<text id="choices-text-20" x="504" y="584" font-size="19" font-weight="600" fill="#17324d" text-anchor="start" data-box="choices-main-second-p3" >pNIC03</text>
+<rect id="choices-main-second-p4" data-kind="box" x="612" y="555" width="126" height="43" rx="12" fill="#fff" stroke="#718398" stroke-width="1.6" />
+<use href="#choices-icon-nic" x="622" y="567" width="21" height="21" aria-hidden="true"/>
+<text id="choices-text-21" x="654" y="584" font-size="19" font-weight="600" fill="#17324d" text-anchor="start" data-box="choices-main-second-p4" >pNIC04</text>
+<rect id="choices-split-intent1" data-kind="box" x="830" y="298" width="310" height="145" rx="12" fill="#edf5fc" stroke="#0067b8" stroke-width="1.6" />
+<text id="choices-text-22" x="848" y="334" font-size="21" font-weight="650" fill="#17324d" text-anchor="start" data-box="choices-split-intent1" >Management</text>
+<rect id="choices-split-first-p1" data-kind="box" x="847" y="378" width="126" height="43" rx="12" fill="#fff" stroke="#718398" stroke-width="1.6" />
+<use href="#choices-icon-nic" x="857" y="390" width="21" height="21" aria-hidden="true"/>
+<text id="choices-text-23" x="889" y="407" font-size="19" font-weight="600" fill="#17324d" text-anchor="start" data-box="choices-split-first-p1" >pNIC01</text>
+<rect id="choices-split-first-p2" data-kind="box" x="997" y="378" width="126" height="43" rx="12" fill="#fff" stroke="#718398" stroke-width="1.6" />
+<use href="#choices-icon-nic" x="1007" y="390" width="21" height="21" aria-hidden="true"/>
+<text id="choices-text-24" x="1039" y="407" font-size="19" font-weight="600" fill="#17324d" text-anchor="start" data-box="choices-split-first-p2" >pNIC02</text>
+<rect id="choices-split-intent2" data-kind="box" x="830" y="475" width="310" height="145" rx="12" fill="#edf8f7" stroke="#007a80" stroke-width="1.6" />
+<text id="choices-text-25" x="848" y="512" font-size="22" font-weight="650" fill="#17324d" text-anchor="start" data-box="choices-split-intent2" >Compute + Storage</text>
+<rect id="choices-split-second-p3" data-kind="box" x="847" y="555" width="126" height="43" rx="12" fill="#fff" stroke="#718398" stroke-width="1.6" />
+<use href="#choices-icon-nic" x="857" y="567" width="21" height="21" aria-hidden="true"/>
+<text id="choices-text-26" x="889" y="584" font-size="19" font-weight="600" fill="#17324d" text-anchor="start" data-box="choices-split-second-p3" >pNIC03</text>
+<rect id="choices-split-second-p4" data-kind="box" x="997" y="555" width="126" height="43" rx="12" fill="#fff" stroke="#718398" stroke-width="1.6" />
+<use href="#choices-icon-nic" x="1007" y="567" width="21" height="21" aria-hidden="true"/>
+<text id="choices-text-27" x="1039" y="584" font-size="19" font-weight="600" fill="#17324d" text-anchor="start" data-box="choices-split-second-p4" >pNIC04</text>
+<text id="choices-text-28" x="62" y="670" font-size="21" font-weight="400" fill="#17324d" text-anchor="start" data-box="choices-full" >2 adapters; all roles share</text>
+<text id="choices-text-29" x="62" y="701" font-size="21" font-weight="400" fill="#17324d" text-anchor="start" data-box="choices-full" >capacity and failure exposure.</text>
+<text id="choices-text-30" x="447" y="670" font-size="21" font-weight="400" fill="#17324d" text-anchor="start" data-box="choices-main" >4 adapters; storage has its</text>
+<text id="choices-text-31" x="447" y="701" font-size="21" font-weight="400" fill="#17324d" text-anchor="start" data-box="choices-main" >own capacity and paths.</text>
+<text id="choices-text-32" x="832" y="670" font-size="21" font-weight="400" fill="#17324d" text-anchor="start" data-box="choices-split" >Mgmt isolated; compute and</text>
+<text id="choices-text-33" x="832" y="701" font-size="21" font-weight="400" fill="#17324d" text-anchor="start" data-box="choices-split" >storage still share uplinks.</text>
+<rect id="choices-note" data-kind="box" x="40" y="781" width="1120" height="60" rx="12" fill="#f5f7fa" stroke="#c6d3df" stroke-width="1.6" />
+<text id="choices-text-34" x="63" y="819" font-size="21" font-weight="400" fill="#17324d" text-anchor="start" data-box="choices-note" >Size each alternative for a failed path, workload demand, oversubscription and headroom.</text>
+</svg>

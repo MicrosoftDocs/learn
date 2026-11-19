@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-virtual-machine-backup-recoverability.define-recovery-acceptance-criteria
+metadata:
+  title: Define Recovery Acceptance Criteria
+  description: Define the failure, workload authority, recovery objectives, measurement boundaries, and evidence needed to accept recovery.
+  ms.date: 11/15/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Define recovery acceptance criteria
+durationInMinutes: 15
+content: |
+  [!include[](includes/2-define-recovery-acceptance-criteria.md)]

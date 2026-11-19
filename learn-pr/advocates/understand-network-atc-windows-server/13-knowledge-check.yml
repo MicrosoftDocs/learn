@@ -1,0 +1,138 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.understand-network-atc-windows-server.knowledge-check
+title: Module assessment
+metadata:
+  title: Module Assessment
+  description: Assess your understanding of network design, intent scope, storage paths, overrides, maintenance, and recovery.
+  ms.date: 11/10/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+  module_assessment: true
+durationInMinutes: 15
+content: |
+  [!include[](includes/13-knowledge-check.md)]
+quiz:
+  questions:
+  - content: A host has two converged 25-Gbps uplinks. During migration, combined demand is 30 Gbps. One uplink fails. Which conclusion is best supported?
+    choices:
+    - content: SET guarantees the original 50-Gbps aggregate after the failure.
+      isCorrect: false
+      explanation: Incorrect. Losing a link reduces available capacity. VLANs and teaming don't recreate it.
+    - content: The workload requires a degraded-capacity plan, such as reduced migration demand.
+      isCorrect: true
+      explanation: Correct. Losing a link reduces available capacity. VLANs and teaming don't recreate it.
+    - content: Adding a storage VLAN restores the lost bandwidth.
+      isCorrect: false
+      explanation: Incorrect. Losing a link reduces available capacity. VLANs and teaming don't recreate it.
+  - content: Both nodes have adapters named `pNIC03` and `pNIC04`. One node uses a different model and link speed. What should happen before deployment?
+    choices:
+    - content: Correct the hardware/configuration mismatch against the approved design.
+      isCorrect: true
+      explanation: Correct. Matching aliases don't compensate for mismatched supported hardware or configuration.
+    - content: Skip interface validation because the aliases already match.
+      isCorrect: false
+      explanation: Incorrect. Matching aliases don't compensate for mismatched supported hardware or configuration.
+    - content: Rename the intent to make the adapters equivalent.
+      isCorrect: false
+      explanation: Incorrect. Matching aliases don't compensate for mismatched supported hardware or configuration.
+  - content: An administrator encounters a double-hop issue while accessing the cluster name from a remote session on `HV01`. Which response preserves cluster scope?
+    choices:
+    - content: Use `-ComputerName HV01` and treat it as the same repository.
+      isCorrect: false
+      explanation: Incorrect. The local cluster endpoint preserves cluster scope. `-ComputerName` targets a different repository.
+    - content: Remove the cluster intent and recreate it locally.
+      isCorrect: false
+      explanation: Incorrect. The local cluster endpoint preserves cluster scope. `-ComputerName` targets a different repository.
+    - content: Use the documented local cluster endpoint or an approved authentication path.
+      isCorrect: true
+      explanation: Correct. The local cluster endpoint preserves cluster scope. `-ComputerName` targets a different repository.
+  - content: An external SMB file service uses enterprise-assigned storage subnets that don't match the generated host addresses. What is the correct response?
+    choices:
+    - content: Assume matching VLAN numbers establish IP reachability.
+      isCorrect: false
+      explanation: Incorrect. Host and endpoint addressing must form a usable path. VLAN identity alone is insufficient.
+    - content: Use an approved addressing design, including a storage override when manual assignment is required.
+      isCorrect: true
+      explanation: Correct. Host and endpoint addressing must form a usable path. VLAN identity alone is insufficient.
+    - content: Register every isolated storage interface in DNS and add a default gateway to each.
+      isCorrect: false
+      explanation: Incorrect. Host and endpoint addressing must form a usable path. VLAN identity alone is insufficient.
+  - content: '`Get-NetAdapterRdma` reports enabled adapters, but the administrator hasn''t run an SMB workload. What does that establish?'
+    choices:
+    - content: The relevant interface configuration is enabled, but workload use remains unproven.
+      isCorrect: true
+      explanation: Correct. Administrative enablement isn't proof of an active RDMA data path.
+    - content: Every SMB connection will use both RDMA paths.
+      isCorrect: false
+      explanation: Incorrect. Administrative enablement isn't proof of an active RDMA data path.
+    - content: The external file service has working RDMA.
+      isCorrect: false
+      explanation: Incorrect. Administrative enablement isn't proof of an active RDMA data path.
+  - content: An administrator sets an explicit SMB performance option but leaves automatic transport selection governing the result. What should the administrator review?
+    choices:
+    - content: Only the guest's IP address.
+      isCorrect: false
+      explanation: Incorrect. Explicit selection must be consistent with automatic-selection policy and verified effective settings.
+    - content: Whether the requested explicit transport is paired with the appropriate automatic-selection override, then the effective host settings.
+      isCorrect: true
+      explanation: Correct. Explicit selection must be consistent with automatic-selection policy and verified effective settings.
+    - content: Whether changing the SMB cap also changes the guest VLAN.
+      isCorrect: false
+      explanation: Incorrect. Explicit selection must be consistent with automatic-selection policy and verified effective settings.
+  - content: The expected-node inventory contains `HV01` and `HV02`. The status query returns a healthy-looking record only for `HV01`. How should automation respond?
+    choices:
+    - content: Declare success because every returned record looks healthy.
+      isCorrect: false
+      explanation: Incorrect. The expected inventory, not returned records alone, defines completeness.
+    - content: Remove `HV02` from the expected list automatically.
+      isCorrect: false
+      explanation: Incorrect. The expected inventory, not returned records alone, defines completeness.
+    - content: Treat the missing node as an unresolved readiness failure.
+      isCorrect: true
+      explanation: Correct. The expected inventory, not returned records alone, defines completeness.
+  - content: A direct edit to an ATC-managed adapter property is later restored. A typed override to the same property persists after convergence. What explains the difference?
+    choices:
+    - content: The direct edit changed observed state, while the override changed desired state.
+      isCorrect: true
+      explanation: Correct. Reconciliation restores desired state. An override changes that target.
+    - content: Any manually entered command permanently disables reconciliation.
+      isCorrect: false
+      explanation: Incorrect. Reconciliation restores desired state. An override changes that target.
+    - content: Property values remain stable only when the intent is removed.
+      isCorrect: false
+      explanation: Incorrect. Reconciliation restores desired state. An override changes that target.
+  - content: An existing switch carries management and several VMs. The target adapters are already bound to it. What is the safest adoption approach?
+    choices:
+    - content: Delete every switch whose name resembles the intended configuration.
+      isCorrect: false
+      explanation: Incorrect. Dependencies and recovery must be handled before occupied resources are released.
+    - content: Map dependencies and perform a planned transition with independent management and recovery.
+      isCorrect: true
+      explanation: Correct. Dependencies and recovery must be handled before occupied resources are released.
+    - content: Submit `Add-NetIntent` and assume it converts the occupied switch in place.
+      isCorrect: false
+      explanation: Incorrect. Dependencies and recovery must be handled before occupied resources are released.
+  - content: '`HV01` is drained, but `HV02` still runs production VMs. What is true of a cluster-scoped intent change?'
+    choices:
+    - content: Draining `HV01` restricts the policy update to that node.
+      isCorrect: false
+      explanation: Incorrect. Cluster policy can reach nodes that weren't drained.
+    - content: The update can't affect any running VM.
+      isCorrect: false
+      explanation: Incorrect. Cluster policy can reach nodes that weren't drained.
+    - content: The policy can affect both nodes and needs a cluster-wide impact assessment.
+      isCorrect: true
+      explanation: Correct. Cluster policy can reach nodes that weren't drained.
+  - content: An administrator removes an intent and still sees its virtual switch and QoS classes. Which explanation is correct?
+    choices:
+    - content: Intent removal isn't teardown, and recovery requires dependency-aware actions.
+      isCorrect: true
+      explanation: Correct. Provisioned resources remain and require separate ownership and dependency review.
+    - content: The remaining resources prove that the intent removal failed.
+      isCorrect: false
+      explanation: Incorrect. Provisioned resources remain and require separate ownership and dependency review.
+    - content: Repeating removal until the switch disappears is the supported rollback procedure.
+      isCorrect: false
+      explanation: Incorrect. Provisioned resources remain and require separate ownership and dependency review.

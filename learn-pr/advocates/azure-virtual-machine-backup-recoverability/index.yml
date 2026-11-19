@@ -1,0 +1,51 @@
+### YamlMime:Module
+uid: learn.devrel.azure-virtual-machine-backup-recoverability
+metadata:
+  title: Azure Virtual Machine Backup and Recoverability
+  description: Assess Azure virtual machine backups, restore workloads in isolation, validate application data, measure recovery outcomes, and confirm ongoing protection.
+  ms.date: 11/15/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: module
+  ms.service: azure-virtual-machines
+  ai-usage: ai-assisted
+title: Azure virtual machine backup and recoverability
+summary: |
+  Virtual machine backup and recovery involve more than preserving disks and restarting a machine. Backup policies must balance capture frequency, retention, cost, and acceptable data loss, while recovery points must contain the required disks and application data in a recoverable state. Restoring that data also depends on compatible infrastructure, encryption keys, permissions, network access, and application dependencies. An older recovery point can omit valid newer transactions, and a successful restore job doesn't prove that the application works or that recovery objectives have been met. Reliable recovery therefore requires isolated validation, control over which copy can accept new writes, and confirmation that backup protection continues.
+abstract: |
+  By completing this module, you can demonstrate the following operational outcomes.
+
+  - Evaluate recovery-point content, consistency, disk scope, and retention.
+  - Select a supported recovery method and an isolated destination.
+  - Validate recovered records and application transactions independently of job status.
+  - Calculate recovery duration and observed data loss, and distinguish a passing rehearsal from a suitable ongoing protection design.
+  - Confirm workload authority, subsequent protection, retained evidence, and safe cleanup.
+prerequisites: |
+  - Completion of the prerequisite virtual machine operations module (M01).
+  - Existing Azure Backup configuration and virtual machine restore skills.
+  - Windows guest administration experience.
+  - Basic recovery-planning knowledge.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+- solution-architect
+products:
+- azure-virtual-machines
+- azure-backup
+subjects:
+- storage
+- infrastructure
+units:
+- learn.devrel.azure-virtual-machine-backup-recoverability.introduction
+- learn.devrel.azure-virtual-machine-backup-recoverability.define-recovery-acceptance-criteria
+- learn.devrel.azure-virtual-machine-backup-recoverability.inspect-protection-scope
+- learn.devrel.azure-virtual-machine-backup-recoverability.plan-isolated-recovery
+- learn.devrel.azure-virtual-machine-backup-recoverability.exercise-prove-application-recoverability
+- learn.devrel.azure-virtual-machine-backup-recoverability.measure-recovery-outcomes
+- learn.devrel.azure-virtual-machine-backup-recoverability.confirm-continued-protection
+- learn.devrel.azure-virtual-machine-backup-recoverability.knowledge-check
+- learn.devrel.azure-virtual-machine-backup-recoverability.summary
+badge:
+  uid: learn.devrel.azure-virtual-machine-backup-recoverability.badge

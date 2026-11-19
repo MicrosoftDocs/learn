@@ -2,10 +2,10 @@
 uid: learn.wwl.implement-full-text-vector-search-azure-cosmos-db-nosql.knowledge-check
 title: Module assessment
 metadata:
-  title: Module assessment
+  title: Module Assessment
   description: "Check your ability to choose what to index for full-text search, select a vector index type from the search scope, place FullTextScore correctly, diagnose a self-feeding embedding refresh, and respond to a vector policy that has to change."
-  ms.date: 10/03/2026
-  author: wwlpublish
+  ms.date: 11/17/2026
+  author: MScalopez
   ms.author: calopez
   ms.topic: unit
   module_assessment: true

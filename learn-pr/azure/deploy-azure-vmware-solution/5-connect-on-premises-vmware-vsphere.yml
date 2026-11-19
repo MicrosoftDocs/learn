@@ -2,8 +2,8 @@
 uid: learn.deploy-azure-vmware-solution.connect-on-premises-vmware
 metadata:
   title: Connect to an on-premises VMware vSphere environment
-  description: Connect to an on-premises VMware vSphere environment.
-  ms.date: 11/15/2025
+  description: Connect a standard Azure VMware Solution Generation 1 private cloud to an on-premises VMware vSphere environment with ExpressRoute Global Reach.
+  ms.date: 11/10/2026
   author: Orin-Thomas
   ms.author: orthomas
   ms.topic: unit
@@ -16,26 +16,25 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Which resource is required to configure ExpressRoute peering on the Azure VMware Solution private cloud to the on-premises vSphere environment?"
+  - content: "Which customer resource is required for the Generation 1 ExpressRoute Global Reach connection shown in this module?"
     choices:
     - content: "Customer-provided ExpressRoute circuit"
       isCorrect: true
-      explanation: "Azure VMware Solution deploys with an ExpressRoute circuit that connects you to Azure from the bare-metal hosts. Also, a customer-provided ExpressRoute circuit is required to establish full connectivity to Azure VMware Solution from the on-premises environment for migrations."
+      explanation: "This design links a customer-provided circuit with working Azure private peering to the AVS-managed circuit. ExpressRoute Local doesn't support Global Reach. Connections across geopolitical regions require Premium circuits at both endpoints."
     - content: "Application gateway"
       isCorrect: false
       explanation: "An Azure application gateway is a web-traffic load balancer that enables you to manage traffic to your web applications. This functionality isn't required to peer the Azure VMware Solution environment to on-premises."
     - content: "Network virtual appliance"
       isCorrect: false
-      explanation: "A network virtual appliance (NVA) is a virtual appliance that primarily performs network functions through virtualization. This appliance isn't required to peer the Azure VMware Solution environment to on-premises."
-  - content: "For on-premises vSphere network traffic to reach Azure VMware Solution, which component is required?"
+      explanation: "An NVA isn't required for the direct Global Reach connection shown here. NVA transit is a different supported architecture with its own routing configuration."
+  - content: "In the Generation 1 design shown in this module, which service connects the customer ExpressRoute circuit directly to the AVS ExpressRoute circuit?"
     choices: 
-    - content: "Virtual private network"
+    - content: "A site-to-site VPN alone"
       isCorrect: false
-      explanation: "A virtual private network provides site-to-site connectivity over the public internet. Azure VMware Solution requires dedicated site-to-site connectivity."
+      explanation: "A site-to-site VPN doesn't directly link these ExpressRoute circuits. Supported VPN designs can provide AVS connectivity through a different architecture."
     - content: "ExpressRoute Global Reach"
       isCorrect: true
-      explanation: "ExpressRoute is a dedicated, site-to-site circuit, and Global Reach allows you to connect Azure VMware Solution private cloud ExpressRoute circuits to an on-premises VMware environment. Without Global Reach, the ExpressRoute Gateway doesn't provide transitive routing between its connected circuits."
+      explanation: "Global Reach provides the direct circuit-to-circuit connection in this design. Merely connecting both circuits to one ExpressRoute gateway doesn't make the gateway transit traffic between them."
     - content: "Load balancer"
       isCorrect: false
-      explanation: "A load balancer provides high availability by distributing incoming traffic among healthy VMs. This functionality isn't required for on-premises network traffic to reach Azure VMware Solution."
-
+      explanation: "A load balancer distributes application traffic. It doesn't establish the direct connection between the two ExpressRoute circuits."

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.perception-agentic-security-configure-validate-agents.translate-approved-use-into-requirements
+title: Translate the approved use into requirements
+metadata:
+  title: Translate the approved use into requirements
+  description: "Define the task before configuring access, confirm agent prerequisites, agree on what the test must show, and start the setup record."
+  ms.date: 11/09/2026
+  author: wwlpublish
+  ms.author: hrasheed
+  ms.topic: unit
+  ROBOTS: NOINDEX
+  no_index_ks: true
+durationInMinutes: 6
+content: |
+  [!include[](includes/translate-approved-use-into-requirements.md)]

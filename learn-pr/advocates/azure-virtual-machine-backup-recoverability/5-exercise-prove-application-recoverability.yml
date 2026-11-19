@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-virtual-machine-backup-recoverability.exercise-prove-application-recoverability
+metadata:
+  title: Exercise - Prove Application Recoverability
+  description: Create synthetic records, capture a backup, restore an isolated workload, and verify recovered data and application transactions.
+  ms.date: 11/15/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Exercise - Prove application recoverability
+durationInMinutes: 45
+content: |
+  [!include[](includes/5-exercise-prove-application-recoverability.md)]

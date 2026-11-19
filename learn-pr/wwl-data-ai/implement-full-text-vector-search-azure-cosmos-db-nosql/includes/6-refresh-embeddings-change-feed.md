@@ -1,3 +1,12 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=f0d605d4-e05f-4fb3-9f2a-79b28b1013b3]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
 An embedding is a snapshot of text at the moment it was embedded. Change the text and the snapshot stops describing it, but nothing fails: the query still runs, the index still returns results, and the results are quietly about the old wording. Contoso renames a product line, and semantic search keeps recommending it under the name it had last quarter.
 
 Full-text indexes are maintained automatically as items change. Vector embeddings also need to be regenerated when their source content changes. You can generate the embedding before writing the item, refresh it asynchronously through the change feed, or use Integrated Embeddings when its preview capabilities meet your requirements.

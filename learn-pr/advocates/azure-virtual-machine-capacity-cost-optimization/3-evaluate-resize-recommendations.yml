@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-virtual-machine-capacity-cost-optimization.evaluate-resize-recommendations
+metadata:
+  title: Evaluate Resize Recommendations
+  description: Assess Azure Advisor recommendations against workload evidence and size compatibility to decide which changes to test, reject, or defer.
+  ms.date: 11/16/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Evaluate resize recommendations
+durationInMinutes: 9
+content: |
+  [!include[](includes/3-evaluate-resize-recommendations.md)]

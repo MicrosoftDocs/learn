@@ -1,3 +1,5 @@
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=e4ab4cd9-756d-487e-929d-a848eb4ff6bf]
+
 Contoso owns and operates healthcare facilities and must comply with the government regulations that apply to its services, locations, and handling of patient information. One of its facilities runs a two-node Azure Local instance that supports clinical and administrative workloads.
 
 Its platform team manages the hosts, and a central security team reviews posture and alerts. Application owners manage workloads, while a separate recovery team holds emergency access and backup material. Contoso's legal, privacy, and compliance teams identify applicable regulatory obligations and the evidence needed to demonstrate that those obligations are met.

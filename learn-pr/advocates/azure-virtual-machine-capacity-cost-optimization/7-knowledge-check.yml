@@ -1,0 +1,77 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-virtual-machine-capacity-cost-optimization.knowledge-check
+metadata:
+  title: Module Assessment
+  description: Apply workload measurements, allocation evidence, canary acceptance criteria, and reservation costs to five virtual machine rightsizing decisions.
+  ms.date: 11/16/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+  module_assessment: true
+title: Module assessment
+durationInMinutes: 7
+content: |
+  Choose one answer for each question.
+quiz:
+  questions:
+  - content: |
+      Suppose Azure Advisor suggests a 16-GiB target for the Ledger database. The owner's month-end measurements show that Ledger needs 24 GiB, even though its average CPU utilization is only 7%. What should the owner do about this target?
+    choices:
+    - content: Accept it for a canary.
+      isCorrect: false
+      explanation: Incorrect. A canary would test a size already known to fall 8 GiB short of the month-end memory requirement.
+    - content: Reject it and evaluate a different size.
+      isCorrect: true
+      explanation: Correct. The proposed size has only 16 GiB for work that needs 24 GiB. Low CPU utilization doesn't offset the memory shortfall.
+    - content: Defer until another month of CPU data is available.
+      isCorrect: false
+      explanation: Incorrect. More CPU measurements wouldn't resolve the known memory shortfall.
+  - content: |
+      You want to know whether a resize changed Atlas's P95 latency during its weekday peak. Which comparison gives the strongest evidence?
+    choices:
+    - content: P95 latency from individual operations in matched peak windows.
+      isCorrect: true
+      explanation: Correct. Using the same statistic, workload, concurrency, and peak duration lets you compare the two sizes under similar demand.
+    - content: The baseline peak versus the first quiet hour after restart.
+      isCorrect: false
+      explanation: Incorrect. Both demand and VM size changed, so the comparison can't isolate the effect of resizing.
+    - content: Average latency before the resize versus P95 latency after it.
+      isCorrect: false
+      explanation: Incorrect. An average and a percentile measure different things. An average can hide the slow operations reflected in P95.
+  - content: |
+      The target VM size is permitted in the selected zone, and both regional and VM-family quotas have room. Azure returns `ZonalAllocationFailed` when the VM starts. What blocked this attempt?
+    choices:
+    - content: Insufficient regional vCPU quota.
+      isCorrect: false
+      explanation: Incorrect. The regional and family quotas both have room. A quota increase wouldn't supply the missing hardware.
+    - content: A subscription restriction on the target size.
+      isCorrect: false
+      explanation: Incorrect. The subscription permits the size in this zone. Eligibility doesn't establish available capacity.
+    - content: Insufficient hardware capacity for the target in that zone.
+      isCorrect: true
+      explanation: Correct. Azure couldn't allocate hardware for this size in the selected zone at the time of the request. Quota and permission don't reserve a host.
+  - content: |
+      Fifteen minutes after a canary resize, the smoke test passes and the service meets its performance targets. No stop condition has occurred. The required 24-hour observation window includes a peak that hasn't happened yet. What should you do next?
+    choices:
+    - content: Accept the canary now.
+      isCorrect: false
+      explanation: Incorrect. The early results don't show that the smaller VM can handle the required peak.
+    - content: Roll back because peak measurements aren't available yet.
+      isCorrect: false
+      explanation: Incorrect. The scheduled peak hasn't occurred, and no stop condition has been met. A measurement that isn't due yet isn't a failed check.
+    - content: Continue monitoring through the peak and the full window.
+      isCorrect: true
+      explanation: Correct. The early results justify continuing, not accepting. Stop immediately if a requirement fails or essential telemetry stops arriving.
+  - content: |
+      After a resize, $21.60 of an existing reservation is assigned to a batch worker instead of going unused. That coverage replaces a $36 on-demand charge. The reservation price and all other charges stay the same. How much does total cost fall?
+    choices:
+    - content: $36.00
+      isCorrect: true
+      explanation: Correct. Only the $36 on-demand charge disappears. The reservation price doesn't change.
+    - content: $21.60
+      isCorrect: false
+      explanation: Incorrect. The $21.60 is part of the reservation cost that was already payable.
+    - content: $57.60
+      isCorrect: false
+      explanation: Incorrect. Adding $21.60 to $36 counts a change in cost allocation as an additional saving.

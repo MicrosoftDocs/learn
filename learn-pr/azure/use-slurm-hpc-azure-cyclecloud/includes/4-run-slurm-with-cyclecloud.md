@@ -1,87 +1,186 @@
 After completing this unit, you should be able to use Slurm on Azure CycleCloud.
 
-## Enabling Slurm on CycleCloud
+This unit uses standalone CycleCloud with the Slurm project 4.x integration. The field descriptions and template example target [project 4.0.11](https://github.com/Azure/cyclecloud-slurm/tree/4.0.11). Record your CycleCloud application version, Slurm project/template release, Slurm scheduler version, and node images separately. Use a compatible combination from the [project release notes](https://github.com/Azure/cyclecloud-slurm/releases); upgrading the CycleCloud application doesn't upgrade an existing cluster's template or node software.
 
-You can deploy a High Performance Computing (HPC) cluster using Azure CycleCloud by performing the following steps:
+## Prepare for deployment
 
-1. Connect to a deployed Azure CycleCloud Instance and authenticate.
-1. On the Create a New Cluster page, review the available options, and in the **Schedulers** section, select **Slurm**.
+Before creating an exercise-owned cluster, confirm the following prerequisites:
 
-   :::image type="content" border="false" source="../media/4-new-cluster.png" alt-text="A screenshot depicting the Create a New Cluster page of the Azure CycleCloud web application." lightbox="../media/4-new-cluster.png":::
+- You have a functioning CycleCloud server, an authorized application account, configured Azure subscription credentials, and a usable [storage locker](/azure/cyclecloud/how-to/storage-blobs?view=cyclecloud-8&preserve-view=true). The deployment identity needs the necessary Azure permissions; use a [managed identity](/azure/cyclecloud/how-to/managed-identities?view=cyclecloud-8&preserve-view=true) where appropriate.
+- With built-in user management, select **Enable node access for this user**, grant cluster node-access authorization through ownership, sharing, or an applicable role, and upload the user's SSH public key. Confirm an approved network path to the scheduler or login node. Application login, Azure resource permissions, and [node-login authorization](/azure/cyclecloud/how-to/user-access?view=cyclecloud-8&preserve-view=true) are separate; enabling the user setting alone doesn't grant access.
+- Choose supported images and VM sizes for the project, region, and workload. Check both regional and VM-family [vCPU quotas](/azure/virtual-machines/quotas), including scheduler and other infrastructure nodes. Spot has separate quota requirements.
+- Confirm subnet capacity, name resolution, and required CycleCloud, Slurm, storage, and package-download traffic against the [network requirements](/azure/cyclecloud/how-to/network-security?view=cyclecloud-8&preserve-view=true). Don't expose cluster services publicly just to complete the exercise.
+- Start with a small limit, such as one HTC compute node for the hostname test. Quotas and configured limits don't reserve Azure capacity. Your account and quality of service (QOS) permissions must also allow the test job.
 
-1. On the **About** tab of the New Slurm Cluster page, provide a name for the Slurm cluster in the **Cluster Name** text box.
-1. On the **Required Settings** tab of the New Slurm Cluster page, configure the following settings in the **Cluster Name** text box:
+## Enable Slurm on CycleCloud
 
-   - **Region**: Defines which datacenter will host cluster nodes.
-   - **Scheduler VM Type**: Allows you to specify the VM SKU of the virtual machine that will host the job scheduler.
-   - **HPC VM Type**: Allows you to specify the VM SKU of the virtual machine that will host HPC partition workloads.
-   - **HTC VM Type**: Allows you to specify the VM SKU of the virtual machine that will host HTC partition workloads.
-   - **Autoscale**: Allows you to enable or disable the starting and stopping of VM instances that host partition nodes when those nodes are required or no longer required.
-   - **Max HPC Cores**: The maximum number of CPU cores that can be allocated to HPC partitions when autoscaling.
-   - **Max HTC Cores**: The maximum number of CPU cores that can be allocated to HTC partitions when autoscaling.
-   - **Max VMs per Scaleset**: The maximum number of VMs that can be used to host partition workloads.
-   - **Use Spot Instances**: Determines whether you want to allow using Azure spot instances. Although spot instances are substantially cheaper to run, they can be removed without warning which can impact job execution.
-   - **Subnet ID**: The Azure virtual network subnet that will host cluster node VMs.
+Use the [cluster creation workflow](/azure/cyclecloud/how-to/create-cluster?view=cyclecloud-8&preserve-view=true) with the matching Slurm template:
 
-   :::image type="content" border="false" source="../media/4-new-cluster-settings.png" alt-text="A screenshot depicting the Required Settings tab of the New Slurm Cluster page of the Azure CycleCloud web application." lightbox="../media/4-new-cluster-settings.png":::
+1. Connect to the deployed Azure CycleCloud web application and sign in.
+1. If clusters are already listed, select **Add**. On the **Create a New Cluster** page, select **Slurm** in the **Schedulers** section.
 
-1. On the **Network Attached Storage** page, configure whether you'll use the **Builtin** or **External NFS** options for the network attached storage mount. When you select **Builtin**, the scheduler node is configured as an NFS server that functions as the mountpoint for other nodes. If you specify **External NFS**, you can then provide the details of a network attached storage device such as Azure NetApp Files, HPC Cache, or a specially configured VM running an NFS server.
-1. On the **Advanced Settings** page, you can specify the following settings:
+   :::image type="content" border="false" source="../media/4-new-cluster.png" alt-text="Screenshot of the Create a New Cluster page with the Slurm scheduler option." lightbox="../media/4-new-cluster.png":::
 
-   - **Slurm Version**: Choose the Slurm version to be used with the cluster.
-   - **Job Accounting**: Specify whether you want to enable job accounting and the settings you'll choose to store accounting data.
-   - **Shutdown Policy**: You can choose between terminating the instance or deallocating the instance.
-   - **Credentials**: The credentials to connect to the associated Azure subscription.
-   - **Scheduler OS**: Choose which Linux operating system is used to host the scheduler. 
-   - **HPC OS**: Specify which Linux operating system is used to host the scheduler. 
-   - **Scheduler Cluster Init**: Here, you specify custom instructions to apply to the scheduler VM.
-   - **HTC Cluster Init**: Specify custom instructions to apply to HTC nodes.
-   - **Advanced Networking**: This option allows you to enable Return Proxy, whether the head node can be accessed from internet addresses, and whether execute nodes can be accessed from the internet.
+1. On the **About** tab, enter a unique name in **Cluster Name**.
+1. On **Required Settings**, enter the following settings in their corresponding fields. These descriptions match the [project 4.0.11 template](https://github.com/Azure/cyclecloud-slurm/blob/4.0.11/templates/slurm.txt).
 
-    :::image type="content" border="false" source="../media/4-new-cluster-advanced-settings.png" alt-text="A screenshot depicting the Advanced Settings tab of the New Slurm Cluster page of the Azure CycleCloud web application." lightbox="../media/4-new-cluster-advanced-settings.png":::
+   | Field | Purpose |
+   | --- | --- |
+   | **Region** | Azure region that hosts the cluster nodes. |
+   | **Scheduler VM Type** | VM size for the Slurm scheduler. |
+   | **HPC VM Type** | VM size for the HPC node array, suitable for its intended tightly coupled workloads. |
+   | **HTC VM Type** | VM size for the HTC node array used by this exercise. |
+   | **Autoscale** | Enable automatic compute-node provisioning and idle-node suspension for this exercise. |
+   | **Max HPC Nodes**, **Max HTC Nodes**, **Max GPU Nodes** | Maximum VM counts for these arrays. Set **Max HTC Nodes** to `1` for the test; keep unused arrays disabled or capped at zero where supported. |
+   | **Max Dyn Cores** | Core-based limit for the optional dynamic array; this isn't a node count. |
+   | **Max VMs per VMSS** | Maximum VMs in each applicable virtual machine scale set, not the overall cluster cap. |
+   | **HTC Spot** | Whether HTC uses interruptible Spot capacity. Leave it disabled for the initial test; Spot eviction can interrupt work. |
+   | **Subnet ID** | Subnet in which the cluster node VMs are deployed. |
 
-1. The **Cloud-init** page allows you to pass custom configuration settings to virtual machine nodes after they're deployed.
+   In these stock HPC, HTC, and GPU arrays, `MaxCount` limits nodes. `MaxCoreCount` still limits cores in other arrays or custom templates. Azure compute quotas are expressed in vCPUs, so don't interpret a node limit as a vCPU limit.
+
+1. On **Network Attached Storage**, configure the `/sched` and `/shared` mounts. For a simple, non-HA cluster, **Use Builtin NFS** uses the scheduler as an NFS server. For an external export, clear that option and select **External NFS** as the **FS Type**. Supply a reachable NFS server address, export path, and suitable mount options, such as those for an Azure NetApp Files NFS volume or an appropriately configured NFS server VM. A non-NFS filesystem requires its own compatible mount configuration, not an entry in an External NFS field. See [Mount an existing file server](/azure/cyclecloud/how-to/mount-fileserver?view=cyclecloud-8&preserve-view=true).
+
+   A locker distributes initialization projects; it isn't automatically shared storage for application inputs and outputs. Make application files available at consistent paths on the nodes that run the jobs.
+
+   > [!IMPORTANT]
+   > Don't keep the only copy of application data or results on disposable compute-local storage. Confirm which paths are shared and durable, who owns them, and what's retained when the exercise cluster is terminated.
+
+1. On **Advanced Settings**, review these settings for the selected project release:
+
+   | Setting | Purpose |
+   | --- | --- |
+   | **Slurm Version** | Use the scheduler package version specified by the selected project's release and template, rather than a version from another release. |
+   | **Job Accounting** | Enable only when the database prerequisites described below are ready. Leave disabled for the minimal hostname exercise otherwise. |
+   | **Credentials** | Select the configured Azure subscription credentials authorized to deploy the cluster. |
+   | **Scheduler OS** | Supported Linux image for the scheduler. |
+   | **HPC OS** | Supported Linux image for compute nodes in the HPC node array, not the scheduler. |
+   | **HTC OS**, **GPU OS**, **Login Node OS**, **Dynamic OS** | Supported images for the corresponding node roles you enable. |
+   | **Scheduler Cluster-Init**, **HTC Cluster-Init**, and other role-specific cluster-init fields | Additional initialization projects for the named node role. Preserve the matching project's initialization requirements. |
+   | **Return Proxy**, **Public Head Node**, **Public Execute** | Use only the approved network design. Return Proxy relays node communication with CycleCloud through the head node; public node access isn't a prerequisite for this exercise. |
+
+   Use the [supported operating-system guidance](/azure/cyclecloud/slurm-4-operations?view=cyclecloud-8&preserve-view=true#supported-versions-and-operating-systems) together with the selected release and VM requirements. For example, the project 4.0.11 template defaults to Ubuntu 24.04 images. Verify image architecture and required interconnect or GPU drivers for the VM sizes you select; a supported scheduler image isn't automatically appropriate for every compute workload.
+
+   For [job accounting](/azure/cyclecloud/slurm-4-operations?view=cyclecloud-8&preserve-view=true#configure-slurm-job-accounting), supply a reachable MySQL database's hostname, database name, user credentials, and any required TLS certificate configuration. Verify database network access from the scheduler. Selecting **Job Accounting** doesn't provision every database prerequisite, and installed accounting commands alone don't guarantee historical records. Deleting the cluster doesn't delete its accounting database; plan its retention separately.
+
+1. Review any site-required **Security** and **Cloud-init** settings. Cloud-init supplies node initialization configuration; no custom cloud-init is needed for the hostname test.
+1. Select **Save** to create the cluster definition.
+1. Select **Start** and confirm. Wait for the scheduler and any configured infrastructure nodes to finish initialization. Inspect the cluster event log and **Issues** if configuration fails; an Azure VM being running isn't proof that Slurm is ready.
+1. Select the scheduler, or a configured login node, and select **Connect** to obtain the [SSH connection command](/azure/cyclecloud/how-to/connect-to-node?view=cyclecloud-8&preserve-view=true). Run it from your approved client using the authorized account and key over the approved network path. Keep your private key on your client.
+1. In that Linux scheduler or login-node session, as a normal cluster user, inspect the HTC partition and run a small compute-node command:
+
+   ```bash
+   sinfo -p htc
+   srun --partition=htc --nodes=1 --ntasks=1 --time=00:10:00 hostname
+   ```
+
+1. Confirm that `srun` returns a compute-node hostname. If it remains pending or fails, inspect the scheduling reason and follow the troubleshooting unit rather than assuming deployment succeeded.
+
+The test requires an enabled HTC array with room for at least one node, adequate quota and capacity, and permission to submit to the partition. Supply your site's account or QOS options to `srun` if required. Cold node provisioning takes time. A powered-down elastic node, commonly shown as `idle~` in [`sinfo`](https://slurm.schedmd.com/sinfo.html), isn't automatically a failure.
 
 ## Memory settings
 
-CycleCloud automatically sets the amount of available memory for Slurm to use for scheduling purposes. Because the amount of available memory can change slightly due to different Linux kernel options, and the OS and VM can use up a small amount of memory that would otherwise be available for jobs, CycleCloud automatically reduces the amount of memory in the Slurm configuration. By default, CycleCloud holds back five percent of the reported available memory in a VM, but you can override this value in the cluster template by setting `slurm.dampen_memory` to the percentage of memory to hold back. For example, to hold back 20 percent of a VM's memory, use:
+CycleCloud Slurm reserves memory for operating-system and VM overhead before advertising memory to the scheduler. In project 4.0.11, the default reservation is 5% or 1 GiB, whichever is larger. An explicit percentage still observes the 1-GiB minimum.
 
-`slurm.dampen_memory=20`
+To request a 20% reservation, add this setting to the existing node array's `[[[configuration]]]` section in a copy of the matching cluster template:
 
-## Configuring Slurm partitions
-
-The default template that ships with Azure CycleCloud has two partitions (HPC and HTC), and you can define custom node arrays that map directly to Slurm partitions. For example, to create a GPU partition, add the following section to your cluster template:
-
-```
-[[nodearray gpu]]
-    MachineType = $GPUMachineType
-    ImageName = $GPUImageName
-    MaxCoreCount = $MaxGPUExecuteCoreCount
-    Interruptible = $GPUUseLowPrio
-    AdditionalClusterInitSpecs = $ExecuteClusterInitSpecs
-
-        [[[configuration]]]
-        slurm.autoscale = true
-        # Set to true if nodes are used for tightly-coupled multi-node jobs
-        slurm.hpc = false
-
-        [[[cluster-init cyclecloud/slurm:execute:2.0.1]]]
-        [[[network-interface eth0]]]
-        AssociatePublicIpAddress = $ExecuteNodesPublic
+```ini
+slurm.dampen_memory = 20
 ```
 
-## Editing existing Slurm clusters
+A 4-GiB node still reserves 1 GiB in this example. Follow the same-project template workflow below and [apply the configuration on the scheduler](#apply-changes-to-an-existing-slurm-cluster). Then run `scontrol show nodes` from the scheduler or login node to inspect the resulting resources. Size jobs using Slurm's configured memory, not just the Azure VM's advertised memory. See [Adjust reported memory](/azure/cyclecloud/slurm-4-operations?view=cyclecloud-8&preserve-view=true#adjust-reported-memory).
 
-If you modify and apply changes to an existing Slurm cluster, you need to rebuild the `slurm.conf` file and update the existing nodes in the cluster. You can do this using a script that's present on Slurm clusters deployed in Azure cyclecloud using a special script named `cyclecloud_slurm.sh`. The script is located in the `/opt/cycle/slurm` directory on the Slurm scheduler node. Once you've made any changes to the cluster, run the following script as root with the `apply_changes` parameter. For example, use`/opt/cycle/slurm/cyclecloud_slurm.sh apply_changes` if you make changes that impact nodes that participate in a Message Passing Interface (MPI) partition.
+## Configure an additional Slurm partition
 
-## Disabling autoscale for nodes or partitions
+The stock project 4.0.11 template defines `hpc`, `htc`, `gpu`, and `dynamic` partitions; their configured limits and settings determine which resources can be used. The existing GPU partition is sufficient for ordinary GPU workloads. The following optional example illustrates adding a separate partition, not a requirement for the hostname exercise.
 
-You can disable autoscale for a running Slurm cluster by editing the `slurm.conf` file directly. You can exclude either individual nodes or entire partitions from being autoscaled.
+In a copy of the template from the **same installed project version**, preserve site customizations and insert this section inside the cluster definition, before the parameter sections:
 
-To exclude a node or multiple nodes from autoscale, add `SuspendExcNodes=&lt;listofnodes&gt;` to the Slurm configuration file. For example, to exclude nodes 1 and 2 from the HPC partition, add the following to /`sched/slurm.conf` and then restart the slurmctld service:
+```ini
+[[nodearray specialgpu]]
+    Extends = gpu
+    MaxCount = 1
 
-`SuspendExcNodes=hpc-pg0-[1-2]`
+    [[[configuration]]]
+    slurm.partition = specialgpu
+    slurm.default_partition = false
+```
 
-To exclude partitions, you also modify the `/sched/slurm.conf` file. For example, to exclude the HPC partition from autoscale, add the following line to `slurm.conf` and restart the `slurmctld` service:
+This inherits the existing GPU VM/image settings and execute-node initialization. The explicit `slurm.partition` override prevents both arrays from mapping to the inherited `gpu` partition. The default-partition override avoids inheriting that choice too. Check inherited GPU settings, supported image/SKU, regional availability, and quota before submitting GPU work.
 
-`SuspendExcParts=hpc`
+Use an initialized CycleCloud CLI on your Linux management host for an intentional **same-project-version** configuration change. Plan an administrative maintenance window. Save your edited template as `modified-slurm.txt` and retain the original template and parameters. Record and verify site-specific **Security** and **Cloud-init** settings separately; these standard form sections aren't exported as template parameters. Work in an access-restricted directory: exported parameters can contain credentials. Don't commit them to source control or share them publicly. Replace `CLUSTER_NAME` with the actual exercise cluster name and confirm the target before using `--force`.
+
+> [!WARNING]
+> Don't overwrite an older cluster with a newer project/template release using this workflow. For upgrades, validate a replacement cluster using the [migration procedure](/azure/cyclecloud/how-to/migrate-slurm-cluster?view=cyclecloud-8&preserve-view=true) before moving workloads.
+
+The `-c Slurm` option identifies the exact cluster-definition name in the stock template. These commands export the parameters, reimport the modified definition, and start the cluster:
+
+```bash
+umask 077
+cyclecloud export_parameters CLUSTER_NAME -o cluster-parameters.json
+cyclecloud import_cluster CLUSTER_NAME -c Slurm -f modified-slurm.txt -p cluster-parameters.json --force
+cyclecloud start_cluster CLUSTER_NAME
+```
+
+This example adds a partition; it doesn't change live nodes' VM types/images or remove active nodes. Apply the resulting configuration on the scheduler as described next. Afterward, from the scheduler or login node, run `sinfo -p specialgpu` to verify that the new partition is present.
+
+## Apply changes to an existing Slurm cluster
+
+After saving supported changes to a running project-4.x cluster's CycleCloud definition, connect to the **scheduler** as an authorized administrator and run:
+
+```bash
+sudo -i
+azslurm scale
+exit
+```
+
+`azslurm scale` rebuilds `azure.conf`, updates partition/node and GRES configuration, and restarts `slurmctld`. Follow the matching template workflow for topology changes such as an additional partition, and schedule the controller restart appropriately. This isn't a per-job command, a blanket replacement for Slurm's own reconfiguration operations, or a software/template upgrade command. See [Make cluster changes](/azure/cyclecloud/slurm-4?view=cyclecloud-8&preserve-view=true#make-cluster-changes).
+
+## Keep nodes or partitions running
+
+> [!WARNING]
+> Preventing automatic suspension can keep VMs running and accruing charges after jobs finish. These settings don't prevent every explicit termination operation and aren't a complete manual-scaling configuration.
+
+Use an authorized administrator's session on the **scheduler** for the commands in this section. Before making changes, record the existing persistent and runtime exclusions so that you can preserve settings that predate the exercise:
+
+```bash
+scontrol show config | grep -E 'SuspendExcNodes|SuspendExcParts|ReconfigFlags'
+```
+
+For an individual running node on project 4.0.5 or later, use CycleCloud [KeepAlive](/azure/cyclecloud/how-to/keep-alive?view=cyclecloud-8&preserve-view=true). Verify that `KeepPowerSaveSettings` is included in `ReconfigFlags`. Select a real running node with KeepAlive disabled and no existing `SuspendExcNodes` exclusion. In the CycleCloud node's **Edit** interface, enable **KeepAlive**, then inspect the runtime configuration to confirm that the node is excluded from automatic suspension. When finished, disable only the KeepAlive setting introduced by this exercise and verify the resulting exclusions.
+
+In [project 4.0.11](https://github.com/Azure/cyclecloud-slurm/blob/4.0.11/azure-slurm/slurmcc/allocation.py#L238-L270), once `azslurmd` observes KeepAlive enabled, disabling it removes that node's runtime exclusion even if the exclusion existed before the exercise. Don't toggle KeepAlive on a manually excluded node.
+
+For an entire partition, an authorized administrator can keep `hpc` out of automatic suspension. If `hpc` is already excluded, leave that setting in place and don't remove it during cleanup. Otherwise, follow these steps:
+
+1. On the scheduler, merge `hpc` into the existing `SuspendExcParts` setting in `/etc/slurm/site_specific.conf`, preserving other entries. If there are no existing exclusions, the setting is:
+
+   ```ini
+   SuspendExcParts=hpc
+   ```
+
+1. Apply the corresponding runtime change without replacing other exclusions, and inspect it:
+
+   ```bash
+   sudo scontrol update SuspendExcParts+=hpc
+   scontrol show config | grep -E 'SuspendExcParts|ReconfigFlags'
+   ```
+
+1. When finished, remove only the `hpc` exclusion introduced for this exercise from the persistent setting, preserving all other entries. Remove the setting if it was created by this exercise and no entries remain. Remove the exercise's runtime exclusion and verify the result:
+
+   ```bash
+   sudo scontrol update SuspendExcParts-=hpc
+   scontrol show config | grep -E 'SuspendExcParts|ReconfigFlags'
+   ```
+
+With `KeepPowerSaveSettings`, Slurm preserves runtime power-save settings during reconfiguration. Editing the file and running only `scontrol reconfigure` can therefore leave the previous runtime exclusion in place. Maintain both the intended persistent setting and effective runtime value; don't remove exclusions that predated the exercise. For a different operating model, follow the separate [manual-scaling procedure](/azure/cyclecloud/slurm-4?view=cyclecloud-8&preserve-view=true#scale-manually).
+
+## Preserve results and clean up
+
+After the exercise, use the [cluster termination guidance](/azure/cyclecloud/how-to/terminate-cluster?view=cyclecloud-8&preserve-view=true) to clean up only resources you own:
+
+1. Let your exercise jobs finish, or cancel only your own jobs if appropriate. Copy valuable output to the intended durable destination before removing nodes or storage.
+1. Remove only KeepAlive settings and suspension exclusions added for this exercise, using the procedures above.
+1. For an exercise-owned cluster, select **Terminate** in CycleCloud and verify that termination completes. Inspect the event log and **Issues** if it fails. Don't terminate a shared or production cluster.
+1. Review retained persistent disks, external storage, accounting databases, and the CycleCloud application server separately. Terminating compute nodes doesn't necessarily remove these resources or their charges.
+1. Delete only explicitly exercise-owned resources whose data is no longer needed. Don't delete a shared resource group as a shortcut.

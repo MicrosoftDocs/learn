@@ -2,8 +2,8 @@
 uid: learn.deploy-azure-vmware-solution.configure-nsx-network-components
 metadata:
   title: Configure NSX network components
-  description: Configure NSX network components.
-  ms.date: 11/15/2025
+  description: Configure NSX network components, manage temporary port mirroring, validate connectivity, and establish a capacity and health monitoring baseline.
+  ms.date: 11/10/2026
   author: Orin-Thomas
   ms.author: orthomas
   ms.topic: unit
@@ -13,4 +13,3 @@ title: Configure NSX network components
 durationInMinutes: 10
 content: |
   [!include[](includes/6-configure-nsx-t-network-components.md)]
-

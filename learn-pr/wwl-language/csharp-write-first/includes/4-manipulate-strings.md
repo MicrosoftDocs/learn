@@ -69,7 +69,18 @@ C# strings have many built-in methods for common operations. To use a method, ty
 | `.ToUpper()` | Converts text to uppercase | `"hello".ToUpper()` | `"HELLO"` |
 | `.ToLower()` | Converts text to lowercase | `"HELLO".ToLower()` | `"hello"` |
 | `.Replace(old, new)` | Swaps out specific characters | `"cat".Replace("c", "b")` | `"bat"` |
-| `.Length` | Returns the number of characters | `"Alex".Length` | `4` |
+
+Strings also have a **property** named `Length` that holds the number of characters in the string. A property looks like a method but doesn't use parentheses:
+
+```csharp
+string name = "Alex";
+Console.WriteLine(name.Length);
+```
+
+Output:
+```output
+4
+```
 
 ## Practical example
 

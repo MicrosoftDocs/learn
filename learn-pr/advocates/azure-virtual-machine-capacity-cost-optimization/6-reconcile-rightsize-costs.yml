@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-virtual-machine-capacity-cost-optimization.reconcile-rightsize-costs
+metadata:
+  title: Reconcile Rightsizing Costs
+  description: Distinguish retail savings estimates from lower total costs by tracing usage, reused or unused commitments, and charges that continue after a resize.
+  ms.date: 11/16/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Reconcile rightsizing costs
+durationInMinutes: 16
+content: |
+  [!include[](includes/6-reconcile-rightsize-costs.md)]

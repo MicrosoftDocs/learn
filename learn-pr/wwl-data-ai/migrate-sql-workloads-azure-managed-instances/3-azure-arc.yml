@@ -2,9 +2,10 @@
 uid: learn-wwl.migrate-sql-workloads-azure-managed-instances.azure-arc-migration
 title: Migrate using Azure Arc
 metadata:
+  zone_pivot_groups: video-or-text
   title: Migrate using Azure Arc
   description: "Learn to migrate SQL Server databases to Azure SQL Managed Instance using Azure Arc"
-  ms.date: 07/23/2026
+  ms.date: 11/13/2026
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit

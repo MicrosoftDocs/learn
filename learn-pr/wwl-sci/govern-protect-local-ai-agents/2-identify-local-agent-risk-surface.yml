@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.govern-protect-local-ai-agents.identify-local-agent-risk-surface
+title: Identify how local agents expand your risk surface
+metadata:
+  title: Identify how local agents expand your risk surface
+  description: "Learn how local execution, inherited access, and untrusted input expose devices, data, tools, and connected applications when local AI agents run on user devices."
+  ms.date: 11/05/2026
+  author: jdetwiler
+  ms.author: jdetwiler
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-identify-local-agent-risk-surface.md)]

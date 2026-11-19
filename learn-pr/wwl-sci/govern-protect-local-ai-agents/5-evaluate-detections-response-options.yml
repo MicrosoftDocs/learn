@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.govern-protect-local-ai-agents.evaluate-detections-response-options
+title: Evaluate agent detections and response options
+metadata:
+  title: Evaluate agent detections and response options
+  description: "Learn how audit and block modes differ, how exposure and incident evidence support scoping, and how to weigh the impact of response options across the agent lifecycle."
+  ms.date: 11/05/2026
+  author: jdetwiler
+  ms.author: jdetwiler
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-evaluate-detections-response-options.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Contoso enables Microsoft Defender AI agent runtime protection for the first time, and an administrator wants to confirm that detections are accurate before enforcing any blocking. Which approach should the administrator take?"
+    choices:
+    - content: "Enable block mode on all managed devices, and then review alerts after developers report interrupted work."
+      isCorrect: false
+      explanation: "Incorrect. This approach enforces before the detections are validated. A false positive in block mode stops legitimate developer work, which is the outcome a phased rollout is meant to avoid."
+    - content: "Enable audit mode on a small set of devices, and then review the alerts before widening or enforcing."
+      isCorrect: true
+      explanation: "Correct. Audit mode records each detection and raises an informational alert without stopping the action. The administrator can review and classify alerts, confirm that they are accurate and actionable, and then expand the rollout or enforce."
+    - content: "Keep runtime protection disabled until every supported agent appears in the inventory, and then review alerts."
+      isCorrect: false
+      explanation: "Incorrect. In disabled mode, Defender doesn't inspect agent activity, so no detections exist to review. A complete inventory shows presence and potential reach. It doesn't validate the accuracy of detections."
+  - content: "An administrator at Contoso considers blocking execution of a detected agent type across all managed devices from the Microsoft 365 admin center. Which impact should the administrator check first?"
+    choices:
+    - content: "Whether the agent appears in the inventory more than once for the same device."
+      isCorrect: false
+      explanation: "Incorrect. The number of inventory entries describes where Defender observed the agent. It doesn't show which workloads would be affected when execution is blocked on managed devices."
+    - content: "Whether the detection alert includes a process tree for the affected agent."
+      isCorrect: false
+      explanation: "Incorrect. A process tree helps investigate what happened on a device, but it doesn't show who or what depends on the agent across the managed devices that the block reaches."
+    - content: "Whether legitimate workloads or other agents that share the same run type depend on the agent."
+      isCorrect: true
+      explanation: "Correct. Agents that share a run type are blocked together, so a broader execution block isn't the same as remediating one agent instance. Checking dependencies first shows who and what the response affects."

@@ -1,3 +1,5 @@
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=5daedd24-291f-4f2a-b340-3e4664af290a]
+
 Imagine that you operate an Azure Local environment for a manufacturing organization. The application owner asks for production VMs to recover if an entire rack loses power. The storage proposal lists four copies of each data block. The networking proposal lists redundant links. The operations proposal says that a cloud witness will keep the cluster online.
 
 Each proposal addresses part of the requirement. None, on its own, demonstrates that the application will recover.

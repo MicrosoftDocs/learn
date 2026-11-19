@@ -6,35 +6,44 @@ Scale sets are designed for cost-effectiveness, scalability, and reliability. Ne
 
 ## Scaling a scale set
 
-Virtual Machine Scale Sets address the need to quickly create and manage VMs for fluctuating workloads. You can configure two types of scaling for a scale set:
+Virtual Machine Scale Sets help you create and manage VMs for fluctuating workloads. Two common ways to configure automatic scaling are:
 
-- **Scheduled scaling:** You can proactively schedule the scale set to deploy one or *N* number of extra instances to accommodate a spike in traffic, then scale back down when the spike ends.
+- **Scheduled autoscale:** Use fixed-date or recurring profiles to provide capacity for predictable changes in demand.
+- **Metric-based autoscale:** Use performance-metric rules to scale out or in as the workload changes.
 
-- **Autoscaling:** If the workload is variable and can’t always be scheduled, you can use metric-based threshold scaling. Autoscaling scales out based on node usage. It then scales back in when the resources return to a baseline.
+You can combine these approaches by configuring metric rules within scheduled profiles.
 
-Autoscaling is based on a set of scale conditions, rules, and limits. A scale condition combines time and a set of scale rules. If the current time falls within the period defined in the scale condition, the condition's scale rules are evaluated. The results of this evaluation determine whether to add or remove instances in the scale set.
+Autoscaling uses scale conditions, also called profiles. Azure Monitor selects one applicable profile for the current date and time, then evaluates that profile's capacity limits and any metric-based scale rules to determine whether to add or remove VM instances.
 
-The scale condition also defines the limits of scaling for the maximum and minimum number of instances. Limiting the maximum number of metrics lets you restrict the number of VMs that are created so that an unplanned traffic surge doesn’t automatically leave you with unexpected subscription charges.
+Each autoscale profile defines the minimum and maximum number of VM instances. Limiting the maximum instance count constrains autoscale-driven expansion and helps control costs. This limit applies to VM instances, not to the number of metrics.
 
 You can base the autoscale on:
 
-- **Schedule:** Use this approach if you know you have an increased workload on a specified date or period of time. Schedule-based scaling specifies a start and end time and the number of instances to add to the scale set.
+- **Schedule:** Schedule-based autoscale selects a profile for a particular period. Configure a fixed total instance count, or minimum and maximum instance counts with metric-based rules, for that period. For example, you could target 10 instances during business hours and 2 outside business hours. For each fixed-count profile, set its minimum, maximum, and default instance counts to the same target value; no metric rules are needed. This sets a total count rather than adding that many VMs.
 
-- **Metrics:** Adjust scaling by monitoring performance metrics associated with the scale set. When these metrics exceed a specified threshold, the scale set can automatically start new virtual machine instances. When the metrics indicate that the extra resources are no longer required, the scale set can stop any excess instances.
+  Fixed-date profiles specify start and end dates and times. Recurring profiles take effect on a weekly schedule, and the start of the next applicable profile ends the previous recurring period. Configure the return to off-hours capacity as well as the increase. In the portal, specifying a recurring schedule's end time schedules a return to the default profile.
+
+- **Metrics:** Metric-based autoscale evaluates configured performance-metric rules. Scale-out creates additional VM instances. When the scale-in conditions are met, scale-in deletes VM instances selected according to the scale-in policy and applicable instance protections; it doesn't simply stop those instances for later restart.
+
+> [!IMPORTANT]
+> Design the application to tolerate instance removal. Preserve required state and arrange for in-progress work to finish, be handed off, or be retried safely. Scale-in selection doesn't guarantee that the selected VM is idle, and application draining doesn't happen automatically merely because autoscale is enabled.
 
 These metrics are commonly used to monitor a Virtual Machine Scale Set:
 
 - **Percentage CPU:** This metric indicates the CPU usage across all instances. A high value shows that instances are becoming CPU-bound, which could delay the processing of client requests.
 
-- **Inbound flows and outbound flows:** These metrics show how fast network traffic is flowing into and out of virtual machines in the scale set.
+- **Inbound flows and outbound flows:** These metrics count the current network flows into and out of the virtual machines. They measure flow counts, not network throughput.
 
 - **Disk read operations/sec and disk write operations/sec:** These metrics show the volume of disk I/O across the scale set.
 
 - **Data disk queue depth:** This metric shows how many I/O requests are waiting to be serviced for only the data disks on the virtual machines.
 
-A Virtual Machine Scale Set can contain many scale conditions. Each matching scale condition is acted on. A scale set can also contain a default scale condition that's used if no other scale conditions match the current time and performance metrics.
+An autoscale setting can contain multiple profiles, but only one applies at a time. Azure Monitor checks fixed-date profiles first, recurring profiles next, and the default profile when no scheduled profile applies. It uses the first applicable profile. Metric rules are evaluated within that profile; a rule that doesn't trigger doesn't cause Azure Monitor to select a different profile.
 
-The default scale condition is always active. It contains no scale rules, effectively acting like a null scale condition that doesn't scale in or out. However, you can modify the default scale condition to set a default instance count, or you can add a pair of scale rules that scale out and back in again.
+The default profile can contain scale-out and scale-in rules. Even a profile without metric rules can change the instance count to enforce its minimum and maximum capacity.
+
+> [!NOTE]
+> The default profile and a profile's default instance count are different concepts. If Azure Monitor can't read the resource metric and the current capacity is below the default instance count, autoscale scales out to that count. It doesn't scale in to the default count when current capacity is higher. The default instance count isn't a scheduled target.
 
 ## Scale sets with Azure Spot instances
 
@@ -43,7 +52,10 @@ A Virtual Machine Scale Set comprised of Azure Spot instance VMs lets you use Az
 > [!NOTE]
 > When you use these VMs, keep in mind that they're temporary. Availability depends on size, region, time of day, and so on. These VMs have no SLA.
 
-When Azure needs the computing power again, you get a notification that the VM was removed from your scale set. Using spot instances in scale sets is useful for workloads that run with interruptions, or when you need larger VMs at a much-reduced cost. Just keep in mind that you can't control when a VM might be removed.
+Azure can evict Spot VMs when it needs capacity or when the Spot price exceeds your configured maximum. With the default Deallocate eviction policy, evicted instances remain stopped-deallocated and their retained disks continue to incur charges. The Delete eviction policy removes the evicted VM instances instead.
+
+> [!IMPORTANT]
+> Applications can opt in to Azure Scheduled Events for best-effort eviction notifications up to 30 seconds before eviction. Don't depend on receiving a full 30-second warning or on replacement Spot capacity being available. Use Spot VMs only for workloads that can tolerate interruptions.
 
 ## How Virtual Machine Scale Sets are different from manual VM pools
 
@@ -55,5 +67,5 @@ This table outlines the benefits of scale sets compared to manually managing mul
 |---|---|---|
 | **Add extra VM instances** | Manual process to create, configure, and ensure compliance | Automatically create from central configuration |
 | **Traffic balancing and distribution** | Manual process to create and configure Azure Load Balancer or Application Gateway | Can automatically create and integrate with Azure Load Balancer or Application Gateway |
-| **High availability and redundancy** | Manually create Availability Set or distribute and track VMs across Availability Zones | Automatic distribution of VM instances across Availability Zones or Availability Sets |
+| **High availability and redundancy** | Manually create Availability Set or distribute and track VMs across Availability Zones | Automatic distribution of instances across fault domains and, when configured for multiple zones, across Availability Zones |
 | **Scaling of VMs** | Manual monitoring and Azure Automation | Autoscale based on host metrics, in-guest metrics, Application Insights, or schedule
