@@ -1,7 +1,3 @@
----
-no_index_ks: true
----
-
 The agent needs both available services and access to the data required for its task. Check service availability and resource access separately.
 
 ## Confirm that the required services are available

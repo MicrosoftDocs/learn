@@ -36,8 +36,6 @@ metadata:
   ms.topic: module
   ms.service: defender-xdr
   ai-usage: ai-assisted
-  ROBOTS: NOINDEX
-  no_index_ks: true
 title: What is Microsoft Perception?
 summary: 'Attackers now operate at AI scale, while most defensive tools still run one at a time. Microsoft Perception is Microsoft''s answer: an agentic security system, accessed through the Agentic security section of the Microsoft Defender portal. This module gives you a grounded picture of what Perception is, why it exists, and the core capabilities it provides today. A companion practitioner module walks through how Perception coordinates specific areas of SOC work.'
 abstract: |
@@ -49,7 +47,7 @@ prerequisites: |
   - Familiarity with common security operations concepts such as alerts, investigations, and threat intelligence
   - Familiarity with the Microsoft Defender portal is helpful but not required
 iconUrl: /training/achievements/generic-badge.svg
-hidden: true
+hidden: false
 levels:
 - beginner
 roles:

@@ -1,7 +1,3 @@
----
-no_index_ks: true
----
-
 Perception is Microsoft's agentic security system, built for a moment when attackers move faster than manual defense can respond. Specialized agents each handle a piece of security work, connected by a shared context layer and sequenced through coordinated playbooks. Approval gates keep humans in control of critical decisions. All of it sits in the **Agentic security** section of the Microsoft Defender portal.
 
 In this module, you learned how to:

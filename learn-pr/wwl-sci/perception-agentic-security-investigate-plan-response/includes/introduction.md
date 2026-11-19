@@ -1,7 +1,3 @@
----
-no_index_ks: true
----
-
 A threat is detected on a workstation in your organization. Your security team needs to establish what happened, how far the activity extends, and what needs attention now.
 
 ## Understand the attack and prepare the response

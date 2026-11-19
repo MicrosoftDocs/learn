@@ -36,8 +36,6 @@ metadata:
   ms.topic: module
   ms.service: defender-xdr
   ai-usage: ai-assisted
-  ROBOTS: NOINDEX
-  no_index_ks: true
 title: Investigate detected threats and plan a response in Microsoft Perception
 summary: 'Use Perception to turn a detected threat into checked investigation findings and a justified response plan. Review the evidence, distinguish affected entities from investigation leads, and assign actions and route unresolved questions to the people who handle them.'
 abstract: |
@@ -54,7 +52,7 @@ prerequisites: |
   - No live environment is required to complete the module. To apply the investigation procedures, you need Perception access in the Microsoft Defender portal, the Attack Investigation Agent configured and enabled, and permission to run and supervise its sessions
   - The Attack Investigation Agent requires Microsoft 365 E5, Microsoft Defender XDR, and onboarding to the Microsoft Defender data lake and unified security experience. The agent also needs access to the workloads and scoped resources required for the investigation.
 iconUrl: /training/achievements/generic-badge.svg
-hidden: true
+hidden: false
 levels:
 - intermediate
 roles:

@@ -8,8 +8,6 @@ metadata:
   author: wwlpublish
   ms.author: hrasheed
   ms.topic: unit
-  ROBOTS: NOINDEX
-  no_index_ks: true
 durationInMinutes: 13
 content: |
   [!include[](includes/review-investigation-choose-next-actions.md)]

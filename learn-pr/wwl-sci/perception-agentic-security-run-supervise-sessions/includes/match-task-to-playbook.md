@@ -1,7 +1,3 @@
----
-no_index_ks: true
----
-
 Several playbooks can sound relevant to the same request. Before choosing one, check what the team needs to know and what information you have to start the work.
 
 ## Clarify what the team is asking

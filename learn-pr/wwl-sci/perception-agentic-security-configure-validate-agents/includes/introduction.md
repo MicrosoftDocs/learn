@@ -1,7 +1,3 @@
----
-no_index_ks: true
----
-
 > [!NOTE]
 > Some information in this module relates to a prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, with respect to the information provided here. Perception is available in limited public preview to invited customers, and features and interface labels may change.
 

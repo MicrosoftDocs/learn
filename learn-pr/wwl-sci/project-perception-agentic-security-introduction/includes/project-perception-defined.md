@@ -1,7 +1,3 @@
----
-no_index_ks: true
----
-
 Running multiple security agents as one system means solving several architectural problems at once: how the agents share what they know, who decides which one runs next, and how humans stay in control when work happens at machine speed.
 
 Perception is a new agentic security system designed for the realities of AI. Perception brings together signals, context, models, and specialized agents into a continuously learning system of defense. It can reason, prioritize, and act at machine speed while keeping humans firmly in control and empowering them with powerful new workflows.

@@ -8,8 +8,6 @@ metadata:
   author: wwlpublish
   ms.author: hrasheed
   ms.topic: unit
-  ROBOTS: NOINDEX
-  no_index_ks: true
 durationInMinutes: 7
 content: |
   [!include[](includes/run-inspect-investigation.md)]

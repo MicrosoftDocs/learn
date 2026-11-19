@@ -8,8 +8,6 @@ metadata:
   author: wwlpublish
   ms.author: riswinto
   ms.topic: unit
-  ROBOTS: NOINDEX
-  no_index_ks: true
 durationInMinutes: 6
 content: |
   [!include[](includes/recognize-perception-work-shapes.md)]

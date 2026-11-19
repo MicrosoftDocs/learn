@@ -1,7 +1,3 @@
----
-no_index_ks: true
----
-
 A suitable playbook still needs the right input and access to do useful work. Check these before starting so a missing source or unavailable agent doesn't interrupt the analysis.
 
 ## Check the input, agents, and access

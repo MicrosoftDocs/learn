@@ -1,7 +1,3 @@
----
-no_index_ks: true
----
-
 The model is clear. What isn't yet: which agents Perception ships, what a playbook actually is, and where any of this lives in the Defender portal.
 
 Perception is the Defender portal section that houses Perception's chat, sessions, agents, and playbooks. Chat is the default landing surface: describe a task in natural language and Perception routes it to the right playbook and agents. (Other chat surfaces in the Defender portal serve different purposes.) Sessions are the individual runs of an agent or playbook, listed on the **Sessions** page across all agents so you can watch progress, review pending approvals, and inspect output. If you already know what you want, you can also start playbooks and agents directly from the **Playbooks** and **Agents** pages of Perception. "Microsoft Perception" names the underlying system, and "Perception" names the Defender portal section you'll click into.
