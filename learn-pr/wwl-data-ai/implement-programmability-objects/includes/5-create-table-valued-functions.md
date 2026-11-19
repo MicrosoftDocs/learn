@@ -42,7 +42,8 @@ RETURNS TABLE
 AS
 RETURN
 (
-    SELECT 
+    SELECT
+        CustomerID,
         OrderID,
         OrderDate,
         TotalAmount,
@@ -132,19 +133,26 @@ CROSS APPLY dbo.GetCustomerOrders(c.CustomerID) o
 WHERE o.Status = 'Completed';
 ```
 
-This query retrieves all completed orders for each customer, demonstrating how table-valued functions enable row-by-row processing within your queries. The function acts as a correlated subquery but with better readability and reusability.
+This query retrieves all completed orders for each customer, demonstrating how table-valued functions can reference values from the preceding table source. The function acts as a correlated table expression, while the query optimizer can optimize the combined query.
 
-For inline table-valued functions that don't require row-by-row evaluation, you can use `INNER JOIN` syntax as well:
+When a table-valued function does not depend on column values from the preceding table source, you can use `INNER JOIN` to combine its results with other tables. Unlike `CROSS APPLY`, `INNER JOIN` does not support passing columns from the left table as arguments to the function.
 
+For example, the following query retrieves orders for a specific customer and joins the function results with the Customers table:
 ```sql
-SELECT 
+SELECT
     c.CustomerName,
     o.OrderDate,
     o.TotalAmount
-FROM Customers c
-INNER JOIN dbo.GetCustomerOrders(c.CustomerID) o ON 1=1
-WHERE YEAR(o.OrderDate) = 2024;
+FROM Customers AS c
+INNER JOIN dbo.GetCustomerOrders(1001) AS o
+    ON c.CustomerID = o.CustomerID
+WHERE o.OrderDate >= '20240101'
+  AND o.OrderDate < '20250101'
 ```
+
+In this example, the function receives a constant parameter and returns a result set that can be joined with the Customers table using the CustomerID column.
+
+When a function requires values from the preceding table source, use `CROSS APPLY` or `OUTER APPLY` instead. Note that `CROSS APPLY` does not necessarily imply row-by-row physical execution, as the query optimizer can inline the function definition and optimize the resulting query.
 
 With these techniques, you can build complex queries from simpler, tested function components, improving both code maintainability and development efficiency.
 
