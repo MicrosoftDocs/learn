@@ -1,30 +1,23 @@
+GitHub Copilot uses language models to [suggest code as you type](https://docs.github.com/en/copilot/responsible-use/inline-suggestions). A function name, nearby code or comments, and related open files give Copilot context for an inline suggestion. It might suggest the next line or a whole function. You decide what to accept, change, or dismiss.
 
-GitHub Copilot is an AI coding partner that provides autocomplete suggestions while you code. Get suggestions by typing code or describing it in natural language.
+## Scenario: Personalize a portfolio
 
-Copilot analyses your file and related files, offering suggestions in your text editor. It uses OpenAI Codex, a new AI system developed by OpenAI, to help derive context from written code and comments, and then suggests new lines or entire functions.
+The sample React portfolio still shows the original developer's name, title, and GitHub profile link. You'll use Copilot to update those details and make the footer icons pulse on hover. You'll check both changes in the live preview.
 
-GitHub Codespaces a hosted developer environment operating in the cloud that can be run with Visual Studio Code. You can customize the development experience for any development project on GitHub, preinstalling dependencies, libraries, and even Visual Studio Code extensions and settings.
-
-## Scenario: Improving a project
-
-As a developer, you want to be more productive typing code faster both for net new projects and existing ones. For this task, you hope that an AI assistant is what you need to improve your developer workflows in code writing, documentation, testing and more.
-
-In this module, you'll understand how you can use GitHub Copilot with applied examples modifying a repository using a prompt to customize scroll behavior and live suggestions after typing initial code.
+GitHub Codespaces provides a cloud-hosted development environment that you can open in Visual Studio Code (VS Code) in your browser. The sample repository configures the tools and dependencies for you.
 
 ## What will I learn?
 
-By the conclusion of this module, you'll acquire the skills to:
+By the end of this module, you'll be able to:
 
-- Configure a GitHub repository in Codespaces and install GitHub Copilot extension.
-- Crafted prompts to generate suggestions from GitHub Copilot
-- Applied GitHub Copilot to improve your projects.
-
-## What is the main objective?
-
-After successfully finishing this module, you'll be capable of using a prompt to customize a JavaScript project with GitHub Copilot in GitHub Codespaces.
+- Open the portfolio in a codespace and verify that Copilot is enabled for JavaScript in the browser editor.
+- Prompt Copilot to change the portfolio's name, title, and GitHub profile link, then review and apply the suggested values.
+- Guide an inline suggestion with a CSS comment and check the footer's hover animation in the live preview, including with reduced motion enabled.
 
 ## Prerequisites
 
-- Basic understanding of JavaScript and text editors.
-- Basic comprehension of Git and GitHub Fundamentals and running basic `git` commands like `git add` and `git push`.
-- A [GitHub account](https://github.com/login) with an active subscription for GitHub Copilot is required for either your personal GitHub account or a GitHub account managed by an organization or enterprise. For learning, the Copilot Free option with usage limits should be sufficient.
+Before you start, check your skills and account access:
+
+- **Skills:** You should be comfortable editing JavaScript in a text editor and using Git to commit and push changes.
+- **Codespaces access:** Use a GitHub account that can create a codespace on the MicrosoftDocs sample repository. If you have read-only access, you need [permission to fork the repository](https://docs.github.com/en/codespaces/developing-in-a-codespace/using-source-control-in-your-codespace#about-automatic-forking). If MicrosoftDocs is outside your organization, an Enterprise Managed User account can't create a codespace on this sample, even with a Copilot seat.
+- **Copilot access:** Use a GitHub account that can receive inline completions and use Copilot Chat in VS Code. If your organization or enterprise assigns your seat, it must also [allow Chat in the IDE](https://docs.github.com/en/copilot/how-tos/copilot-in-your-ide/chat-with-copilot/chat-in-ide?tool=vscode#prerequisites). If you don't have an individual plan or an assigned seat, [check your eligibility for Copilot Free](https://docs.github.com/en/copilot/how-tos/manage-your-account/get-started-with-a-copilot-plan#accessing-copilot-free). Activating Free doesn't require a Pro trial or payment card.
