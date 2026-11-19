@@ -1,7 +1,3 @@
----
-no_index_ks: true
----
-
 The review is finished, but the next person needs more than a link to the report. Leave enough detail to show which findings can be used, what is still unresolved, and who takes the next action.
 
 ## State what the findings support

@@ -1,7 +1,3 @@
----
-no_index_ks: true
----
-
 "Analyze this threat report" might mean extracting the reported indicators and behaviors or assessing how the threat affects the organization. Before handing the work to Perception, clarify what the team needs to know. That request guides both the playbook you choose and the checks you make when the findings are ready.
 
 ## Follow the work from request to result

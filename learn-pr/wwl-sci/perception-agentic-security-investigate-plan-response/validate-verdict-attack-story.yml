@@ -8,8 +8,6 @@ metadata:
   author: wwlpublish
   ms.author: hrasheed
   ms.topic: unit
-  ROBOTS: NOINDEX
-  no_index_ks: true
 durationInMinutes: 8
 content: |
   [!include[](includes/validate-verdict-attack-story.md)]

@@ -1,7 +1,3 @@
----
-no_index_ks: true
----
-
 As session findings arrive, compare them with the workstation and server questions for the incident. Note what the investigation answers and what still needs follow-up.
 
 ## Confirm readiness and start the investigation

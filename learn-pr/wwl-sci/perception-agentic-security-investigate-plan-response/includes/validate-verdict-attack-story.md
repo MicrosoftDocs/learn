@@ -1,7 +1,3 @@
----
-no_index_ks: true
----
-
 The report connects a delivered attachment to malicious execution on a workstation, then describes activity involving a file server. Check the evidence behind those connections to identify the findings ready for response and the questions needing more investigation.
 
 ## Check the reasoning behind the verdict

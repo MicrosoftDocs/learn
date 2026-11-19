@@ -1,7 +1,3 @@
----
-no_index_ks: true
----
-
 A request to enable an agent doesn't yet tell you what access to configure or how to test it. Confirm the approved task and intended users before assigning permissions.
 
 ## Define the task before configuring access

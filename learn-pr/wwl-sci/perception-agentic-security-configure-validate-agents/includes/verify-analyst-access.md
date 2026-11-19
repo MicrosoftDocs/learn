@@ -1,7 +1,3 @@
----
-no_index_ks: true
----
-
 Check people's access separately from the agent's data permissions. Establish who needs to use the agent and whether their permitted actions match the approved task.
 
 ## Establish the access people need

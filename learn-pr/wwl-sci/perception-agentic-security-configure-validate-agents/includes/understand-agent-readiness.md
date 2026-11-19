@@ -1,7 +1,3 @@
----
-no_index_ks: true
----
-
 An agent marked Enabled is available for use, but that status doesn't prove that a security practitioner can complete the required task. Readiness depends on how the work, agent access, and security practitioner access fit together.
 
 ## Connect the work from requirements to handoff

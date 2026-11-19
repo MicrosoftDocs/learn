@@ -1,7 +1,3 @@
----
-no_index_ks: true
----
-
 Triggering a playbook launches several coordinated stages of work with a single click. Understanding what actually happens inside that click is the difference between trusting the output and treating it like a black box.
 
 ## A playbook walkthrough: Protect against a threat

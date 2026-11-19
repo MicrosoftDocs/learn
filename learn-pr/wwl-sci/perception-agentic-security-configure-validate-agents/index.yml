@@ -36,8 +36,6 @@ metadata:
   ms.topic: module
   ms.service: defender-xdr
   ai-usage: ai-assisted
-  ROBOTS: NOINDEX
-  no_index_ks: true
 title: Configure and validate agents in Microsoft Perception
 summary: 'Learn how to set up a Perception agent for approved security work. Review the access checks, testing procedures, and evidence needed to hand over the configuration and results.'
 abstract: |
@@ -54,7 +52,7 @@ prerequisites: |
   - No live environment is required to complete the module. To apply the setup procedures, you need an approved task, Perception preview access in the Microsoft Defender portal, Security Admin access, unified role-based access control enabled across Defender workloads, and authority to arrange required grants
   - To apply the Threat Intelligence Agent procedures, you also need Microsoft Defender XDR, Microsoft Defender Threat Intelligence access for full data and enrichment, and a security practitioner account with the access needed for the task
 iconUrl: /training/achievements/generic-badge.svg
-hidden: true
+hidden: false
 levels:
 - intermediate
 roles:

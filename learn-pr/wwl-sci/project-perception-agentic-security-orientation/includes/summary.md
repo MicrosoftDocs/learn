@@ -1,7 +1,3 @@
----
-no_index_ks: true
----
-
 Perception's current agent catalog covers six areas of security operations work: threat intelligence analysis, alert triage, incident investigation, detection engineering, attack path analysis, and posture prioritization. Running those areas as separate human-paced projects can't keep up with machine-paced attackers who exploit the handoff gaps between them. Coordinated multi-agent defense runs the same areas of work as one continuous workflow at machine speed, with humans in control of critical decisions. Findings move across the coordinated workflow without manual handoffs between them, with humans still gating high-impact actions. Microsoft Perception is Microsoft's implementation of coordinated multi-agent defense, exposed in the Microsoft Defender portal as **Perception**.
 
 You now have the framework to reason about where Perception fits alongside the tools your SOC already runs.

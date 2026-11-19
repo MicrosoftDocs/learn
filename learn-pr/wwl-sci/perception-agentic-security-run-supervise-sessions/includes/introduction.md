@@ -1,7 +1,3 @@
----
-no_index_ks: true
----
-
 A security request arrives, and the team needs an answer it can rely on. It might involve a new threat report, a suspicious incident, or a decision about which security issues to fix first. Gathering the evidence and turning it into useful findings takes time.
 
 Perception can carry out that work through playbooks that use one or more agents. The agents perform the analysis and organize the findings. You focus on requests that need your input and the evidence behind the conclusions the team plans to use.

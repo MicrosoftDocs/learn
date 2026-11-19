@@ -1,7 +1,3 @@
----
-no_index_ks: true
----
-
 The speed gap between AI-scale attackers and human-paced defense has a specific cause. Security tools were built to work in isolation, and a person is still the one carrying findings between them. That's fine when attackers also move at human speed. It stops working when they don't.
 
 ## Security tools were built to work one at a time

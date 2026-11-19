@@ -1,7 +1,3 @@
----
-no_index_ks: true
----
-
 To set up the Threat Intelligence Agent, configure its identity and check its permissions against the approved requirements.
 
 ## Check the required agent permissions

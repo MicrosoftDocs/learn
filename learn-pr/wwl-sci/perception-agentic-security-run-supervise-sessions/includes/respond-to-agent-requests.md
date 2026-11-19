@@ -1,7 +1,3 @@
----
-no_index_ks: true
----
-
 A session waiting for input needs attention, but approval isn't always the right response. Read what the agent is asking for and why before deciding whether the work should proceed.
 
 ## Decide whether proposed work belongs in the investigation

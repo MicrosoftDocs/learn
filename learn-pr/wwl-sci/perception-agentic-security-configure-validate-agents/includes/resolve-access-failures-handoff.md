@@ -1,7 +1,3 @@
----
-no_index_ks: true
----
-
 When validation fails, use the configuration and test evidence to identify which requirement needs correction. Make the approved change within your authority, or request it through the appropriate access-management process before you verify the task again.
 
 ## Find the failed access check

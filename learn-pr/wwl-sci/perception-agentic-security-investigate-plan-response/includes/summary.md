@@ -1,7 +1,3 @@
----
-no_index_ks: true
----
-
 Use investigation findings to explain what happened, establish affected scope, and plan the response. Investigate attack starts from a single alert or incident ID and doesn't require prior triage.
 
 In this module, you learned how to:

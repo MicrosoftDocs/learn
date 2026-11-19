@@ -1,7 +1,3 @@
----
-no_index_ks: true
----
-
 Review the fictional incident below to see what the evidence supports and which response actions are justified. No live session or portal access is needed.
 
 ## Review the evidence and sample report

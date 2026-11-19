@@ -1,7 +1,3 @@
----
-no_index_ks: true
----
-
 Coordinated multi-agent defense runs your security operations as one connected workflow at machine speed. That claim only holds if something under the agents makes cross-agent coordination technically possible. Handoffs have to be near-instant, context has to be shared, and the whole workflow has to run continuously without compute costs becoming unmanageable. The layered architecture that makes those handoffs possible is called the Cyber Stack. Its six layers combine to enable coordinated defense, and their names come back in the playbook walkthrough that follows.
 
 :::image type="content" source="../media/cyber-stack.png" alt-text="Diagram that shows Perception Cyber Stack layers from Signals and sensors through Context, Models, Harness, Agents, and Actuators." lightbox="../media/cyber-stack.png":::

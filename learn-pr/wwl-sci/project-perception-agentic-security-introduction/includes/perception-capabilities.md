@@ -1,7 +1,3 @@
----
-no_index_ks: true
----
-
 The previous unit walked through how Perception is built. This unit walks through what it does. Perception ships a broad set of capabilities across security operations. The sections that follow show the primary areas of security work those capabilities target in the current preview.
 
 ## Turn threat intelligence articles into structured intelligence

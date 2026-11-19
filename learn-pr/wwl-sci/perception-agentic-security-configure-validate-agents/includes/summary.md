@@ -1,7 +1,3 @@
----
-no_index_ks: true
----
-
 Your configuration work is complete when the required access is confirmed and a security practitioner demonstrates the approved task. An agent marked Enabled is a starting point, not proof of readiness.
 
 Approved task → required agent → agent and security practitioner access → testing → handoff
