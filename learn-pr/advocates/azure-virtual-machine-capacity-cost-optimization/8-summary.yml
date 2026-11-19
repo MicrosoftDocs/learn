@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-virtual-machine-capacity-cost-optimization.summary
+metadata:
+  title: Summary
+  description: Review how workload evidence, allocation constraints, and commitment costs inform a virtual machine rightsizing decision.
+  ms.date: 11/16/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Summary
+durationInMinutes: 2
+content: |
+  [!include[](includes/8-summary.md)]
