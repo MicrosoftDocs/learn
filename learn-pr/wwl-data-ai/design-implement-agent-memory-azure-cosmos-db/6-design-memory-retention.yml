@@ -2,10 +2,11 @@
 uid: learn.wwl.design-implement-agent-memory-azure-cosmos-db.design-memory-retention-pruning
 title: Design memory retention, pruning, and consolidation
 metadata:
+  zone_pivot_groups: video-or-text
   title: Design Memory Retention, Pruning, and Consolidation
   description: "Set retention per memory type with time to live, retire contradictory facts with a supersession pointer instead of deleting them, and make erasure cascade across every derived layer of a memory store."
-  ms.date: 10/04/2026
-  author: wwlpublish
+  ms.date: 11/19/2026
+  author: MScalopez
   ms.author: calopez
   ms.topic: unit
   ai-usage: ai-generated

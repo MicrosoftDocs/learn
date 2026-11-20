@@ -28,8 +28,8 @@ metadata:
   gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/design-implement-agent-memory-azure-cosmos-db/index.yml
   title: Design and Implement Agent Memory Stores in Azure Cosmos DB
   description: "Design durable agent memory on Azure Cosmos DB for NoSQL: separate conversation state from long-term memory, distill turns into facts searchable by meaning, budget a context window, and set retention, reconciliation, and erasure policies."
-  ms.date: 10/04/2026
-  author: wwlpublish
+  ms.date: 11/19/2026
+  author: MScalopez
   ms.author: calopez
   ms.topic: module
   ms.service: azure-cosmos-db
@@ -45,10 +45,10 @@ abstract: |
   - Retrieve the right memory into a limited context window and inject it safely.
   - Design memory retention, pruning, consolidation, and erasure policies.
 prerequisites: |
-  - Experience running vector and full-text queries in Azure Cosmos DB for NoSQL
-  - Familiarity with vector embeddings and calling an embedding API such as Azure OpenAI
-  - Working knowledge of Azure Cosmos DB for NoSQL partitioning, queries, and request units
-  - Programming experience with Python
+  - Experience running vector and full-text queries in Azure Cosmos DB for NoSQL.
+  - Familiarity with vector embeddings and calling an embedding API such as Azure OpenAI.
+  - Working knowledge of Azure Cosmos DB for NoSQL partitioning, queries, and request units.
+  - Programming experience with Python.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate

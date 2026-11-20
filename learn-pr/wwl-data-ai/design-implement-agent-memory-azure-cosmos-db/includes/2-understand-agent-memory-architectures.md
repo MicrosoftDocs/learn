@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=02bedfe4-c9a0-4b0b-870c-7cc621f5da5a]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 An agent that remembers is an agent with a second data store behind it. In this unit, you separate the two kinds of memory that store holds, name the record types worth writing, and lay out the containers and partition keys that make both retrievable.
 
 ## Separate what the conversation needs from what the user needs
@@ -63,3 +74,5 @@ Long-term memory inverts the choice. Its whole purpose is recall across threads 
 Hierarchical keys go up to three levels and are declared with `kind` set to `MultiHash`. They aren't a free upgrade: the Azure CLI's `az cosmosdb sql container create` takes a single `--partition-key-path` value, so a hierarchical key comes from the portal, an SDK call, or an Azure Resource Manager template rather than from that command.
 
 One constraint applies to every layout. Creating a database or a container is a control-plane operation, and the [data-plane security reference](/azure/cosmos-db/reference-data-plane-security) lists no action that grants it. On an account with key-based authentication disabled, application code holding a data-plane role can write memories but can't create the containers that hold them. Provision the memory store as infrastructure, and let the agent connect to it.
+
+::: zone-end

@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=95f7cb64-2aa9-4c98-b52b-c68195a2c440]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 A conversation log answers *what was said*. Long-term memory answers *what's true about this person*, and nothing in the log is in that shape. In this unit, you distill turns into individual memory records, store them so a later session finds them by meaning, and decide when to hand the loop to the Agent Memory Toolkit instead of writing it.
 
 ## Distill turns into facts
@@ -141,3 +152,5 @@ Select one processing backend for the store. The SDK's in-process trigger runs u
 :::image type="content" source="../media/agent-memory-pipeline.png" alt-text="Diagram showing conversation turns flowing through the processing pipeline into memory and summary containers, then back out through search." lightbox="../media/agent-memory-pipeline.png":::
 
 In this unit, you learn how to implement semantic memory for an agent using Azure Cosmos DB, including how to extract, embed, store, and search facts, and how to configure the Agent Memory Toolkit for background processing.
+
+::: zone-end
