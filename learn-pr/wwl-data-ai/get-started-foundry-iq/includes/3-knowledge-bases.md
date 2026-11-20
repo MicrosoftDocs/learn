@@ -19,7 +19,7 @@ For example, a **Finance** knowledge base could combine expense policy documenta
 
 ![Screenshot of a knowledge base configuration.](../media/foundry-iq-knowledge-base.png)
 
-The knowledge base configuration includes a generative AI model to support *agentic retrieval*. You can define prompts to help the Foundry IQ layer determine which knowledge sources to prioritize for specific type of information, and to provide guidance for AI-generated responses based on the retrieved knowledge.
+The knowledge base configuration includes a generative AI model to support *agentic retrieval*. You can define a prompt to help the Foundry IQ layer determine which knowledge sources to prioritize for specific type of information.
 
 ## Connect knowledge sources
 
