@@ -32,7 +32,7 @@ metadata:
   gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-data-ai/get-started-foundry-iq/index.yml
   title: Get started with Microsoft Foundry IQ
   description: "Learn how Microsoft Foundry IQ helps AI agents retrieve relevant information from enterprise data and generate grounded, citation-backed responses."
-  ms.date: 07/31/2026
+  ms.date: 11/20/2026
   author: GraemeMalcolm
   ms.author: gmalc
   ai-usage: ai-assisted
