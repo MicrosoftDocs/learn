@@ -3,9 +3,9 @@ uid: learn.wwl.design-implement-agent-memory-azure-cosmos-db.exercise-build-memo
 title: 'Exercise: Build a durable agent memory store'
 metadata:
   title: 'Exercise: Build a Durable Agent Memory Store'
-  description: "Write conversation turns that expire on their own, distill durable facts and embed them, recall one by meaning in a new session, measure what memory costs in a prompt, then supersede a contradiction and erase the user."
-  ms.date: 10/04/2026
-  author: wwlpublish
+  description: "Store conversation turns that expire automatically. Extract durable facts, create embeddings for them, and retrieve relevant facts by meaning in a new session. Measure how many prompt tokens the recalled memory uses. Then supersede an outdated fact that conflicts with newer information and delete the user's stored memory."
+  ms.date: 11/19/2026
+  author: MScalopez
   ms.author: calopez
   ms.topic: unit
   ai-usage: ai-generated

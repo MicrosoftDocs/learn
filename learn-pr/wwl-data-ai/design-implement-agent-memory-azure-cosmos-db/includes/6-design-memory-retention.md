@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=da126641-11c1-4de9-b28b-0be9208b2eae]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 A memory store that only accumulates becomes slower, more expensive, and less accurate at the same time. Old records crowd retrieval. Contradictions sit side by side, and a deletion request has nowhere obvious to land. In this unit, you set retention per memory type, retire contradictions without losing the audit trail, and make erasure an operation the design supports rather than a project.
 
 ## Set retention by memory type
@@ -68,3 +79,5 @@ Three requirements sit around that call, and the call itself satisfies none of t
 **Stop the pipeline first.** If a background processor is mid-extraction over the turns you're deleting, it writes new facts derived from them after the deletion finishes. Suspend the processing for that user, delete, then confirm the store is empty before resuming.
 
 Design for erasure at the same time as you design for retrieval. The partition key that makes a user's memory cheap to recall is the one that makes it cheap to remove, so the two requirements point the same way, and discovering later that retrieval and erasure share a partition key costs a data migration.
+
+::: zone-end

@@ -2,10 +2,11 @@
 uid: learn.wwl.implement-operational-analytics-fabric-azure-cosmos-db.introduction
 title: Introduction
 metadata:
+  zone_pivot_groups: video-or-text
   title: Introduction
   description: "Frame Microsoft Fabric mirroring as no-ETL analytics on operational Azure Cosmos DB data, replicated continuously into OneLake without consuming request units."
-  ms.date: 10/04/2026
-  author: wwlpublish
+  ms.date: 11/19/2026
+  author: MScalopez
   ms.author: calopez
   ms.topic: unit
   ai-usage: ai-generated

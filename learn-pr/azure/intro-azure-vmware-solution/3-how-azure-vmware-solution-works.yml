@@ -2,9 +2,9 @@
 uid: learn.azure.intro-azure-vmware-solution.how-azure-vmware-solution-works
 title: How Azure VMware Solution works
 metadata:
-  title: How Azure VMware Solution works
+  title: How Azure VMware Solution Works
   description: Learn how Azure VMware Solution is set up and how it works on Azure.
-  ms.date: 01/05/2026
+  ms.date: 11/17/2026
   author: Orin-Thomas
   ms.author: orthomas
   ms.topic: unit
@@ -14,40 +14,38 @@ durationInMinutes: 7
 content: |
   [!include[](includes/3-how-azure-vmware-solution-works.md)]
 quiz:
-  title: "Check your knowledge"
   questions:
-  - content: "What component of Azure VMware Solution is the customer not responsible for?"
+  - content: "Which task does Microsoft perform for an Azure VMware Solution private cloud?"
     choices:
-    - content: "Tier 1 gateways"
+    - content: "Creating additional Tier-1 gateways for workload networks"
       isCorrect: false
-      explanation: "Incorrect. The customer manages tier 1 gateways."
-    - content: "Lifecycle management of VMware software (ESXi, vCenter Server, and vSAN)"
+      explanation: "Incorrect. AVS provisions the default Tier-1 gateway. The customer can create additional Tier-1 gateways in NSX Manager."
+    - content: "Patching and upgrading the VMware platform, including ESXi, vCenter Server, and vSAN"
       isCorrect: true
-      explanation: "Correct. Microsoft, in partnership with VMware, supports and maintains the lifecycle management of VMware software (ESXi, vCenter, and vSAN)."
-    - content: "Virtual machines"
+      explanation: "Correct. Microsoft manages the lifecycle of the VMware platform on the dedicated hosts."
+    - content: "Patching the guest operating systems of workload VMs"
       isCorrect: false
-      explanation: "Incorrect. Microsoft doesn't manage the virtual machines."
-  - content: "Shannon wants to start migrating to Azure VMware Solution. What minimum number of nodes must Shannon have to get started?"
+      explanation: "Incorrect. The customer patches the guest operating systems and applications, even when Microsoft maintains the hosts."
+  - content: "Shannon is planning a standard, non-stretched AVS cluster. What is the minimum supported number of hosts?"
     choices:
-    - content: "Three nodes"
+    - content: "Three hosts"
       isCorrect: true
-      explanation: "Correct. The minimum number of nodes required in a cluster is three."
-    - content: "Twenty-four nodes"
+      explanation: "Correct. A standard cluster starts at three hosts. A supported Gen 1 stretched cluster starts with three hosts in each of two zones and scales in pairs, up to 16 hosts in total."
+    - content: "Four hosts"
       isCorrect: false
-      explanation: "Incorrect. The minimum number of nodes required in a cluster is 3."
-    - content: "Sixteen nodes"
+      explanation: "Incorrect. Four is the recommendation for production, not the minimum for a standard cluster."
+    - content: "Sixteen hosts"
       isCorrect: false
-      explanation: "Incorrect. The maximum number of nodes in a cluster is 16."
-  - content: "What does the CloudAdmin role in the Azure VMware Solution vCenter Server do?"
+      explanation: "Incorrect. Sixteen is the maximum size for a standard cluster, not its minimum."
+  - content: "Which operation does the CloudAdmin role authorize in the private cloud's vCenter Server?"
     choices:
-    - content: "The local CloudAdmin user sets up users in Active Directory."
+    - content: "Create users in Windows Server Active Directory"
       isCorrect: false
-      explanation: "Incorrect. The CloudAdmin user is a member of the CloudAdmin role."
-    - content: "The CloudAdmin role creates and manages workloads in your private cloud."
+      explanation: "Incorrect. An external identity provider authenticates named users; their vCenter role authorizes workload operations. Assigning CloudAdmin doesn't create directory accounts."
+    - content: "Create and manage workload VMs"
       isCorrect: true
-      explanation: "Correct. The CloudAdmin role creates and manages workloads in your private cloud."
-    - content: "The CloudAdmin role has access to the ESXi hosts in Azure."
+      explanation: "Correct. CloudAdmin can manage workload VMs and perform delegated datastore tasks, such as allocating space for their files."
+    - content: "Sign in to ESXi hosts as root to change host settings"
       isCorrect: false
-      explanation: "Incorrect. The CloudAdmin role doesn't have access to, and can't configure, specific management components that Microsoft supports and manages."
-  
+      explanation: "Incorrect. CloudAdmin is a vCenter role, not an ESXi root login. Microsoft manages the host configuration."
 

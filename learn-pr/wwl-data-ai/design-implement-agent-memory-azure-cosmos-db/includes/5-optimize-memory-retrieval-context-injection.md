@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=73363508-1068-4728-8aaa-39382e8c1acb]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Memory is only useful in the few hundred tokens you spend on it. In this unit, you divide a context window between the parts competing for it, rank memories by more than similarity, and keep recalled text from acting as an instruction.
 
 ## Budget the context window before you fill it
@@ -83,3 +94,5 @@ Three defenses hold, and none of them is the prompt alone.
 - **Turn on the service-side controls.** [Prompt Shields](/azure/foundry/openai/concepts/content-filter-prompt-shields) detects both user prompt attacks and attacks arriving in document content, and annotates each request with what it found.
 
 The property that makes memory valuable, that it outlives the conversation, is the same property that makes a bad entry expensive. That property is the argument for the retention and reconciliation policies in the next unit.
+
+::: zone-end
