@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-virtual-machine-compute-disk-performance.summary
+metadata:
+  title: Summary
+  description: Review why a faster disk increased the read rate in one stock reporting environment but not the other, and what to investigate before recommending a resize.
+  ms.date: 11/17/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Summary
+durationInMinutes: 2
+content: |
+  [!include[](includes/12-summary.md)]

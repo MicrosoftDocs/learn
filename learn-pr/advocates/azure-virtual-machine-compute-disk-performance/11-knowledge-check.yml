@@ -1,0 +1,148 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-virtual-machine-compute-disk-performance.knowledge-check
+metadata:
+  title: Module assessment
+  description: Assess your ability to interpret workload measurements, distinguish Azure VM compute, disk, and network bottlenecks, and justify performance changes.
+  ms.date: 11/20/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-generated
+  module_assessment: true
+title: Module assessment
+durationInMinutes: 12
+content: For each assessment question, choose the answer that the measurements support.
+quiz:
+  questions:
+  - content: "The stock reporting service must complete 6,000 reads/s with application p95 below 10 ms. During one window, it receives 2,000 reads/s, completes all of them, and records p95 of 8 ms. What does this window establish?"
+    choices:
+    - content: "The service has demonstrated that it meets both targets at representative demand."
+      isCorrect: false
+      explanation: "Incorrect. The service wasn't offered enough work to test the 6,000 reads/s target. Meeting the latency target at a lower load doesn't establish performance at the required load."
+    - content: "The service meets the p95 target at its current load, but its ability to sustain 6,000 reads/s remains untested."
+      isCorrect: true
+      explanation: "Correct. The service completes all offered work and meets the p95 target at this load. A comparable window with enough offered work is needed to establish whether it can sustain the required read rate."
+    - content: "The difference of 4,000 reads/s proves that the data disk is throttling the workload."
+      isCorrect: false
+      explanation: "Incorrect. A gap between the target and the completed rate isn't evidence of unmet demand when only 2,000 reads/s were needed. No rejected work or growing backlog is reported."
+  - content: "A four-core VM has 25% total processor utilization. Per-thread samples show the application's sole I/O-issuing thread using almost all of one core and remaining running or runnable while its work queue grows. Memory is healthy, storage consumed percentages are low, and there's no burst or cache transition. What should you investigate first?"
+    choices:
+    - content: "Investigate the I/O-issuing thread's CPU work and whether supported parallelism would help."
+      isCorrect: true
+      explanation: "Correct. The thread's processor use, runnable state, and growing work queue connect one saturated core to unmet demand. Check useful work versus spinning before testing parallelism that the application supports."
+    - content: "Increase the data disk's IOPS allocation because a growing application queue establishes disk saturation."
+      isCorrect: false
+      explanation: "Incorrect. The application queue can grow before reads reach the disk. Low storage consumed percentages and the busy I/O-issuing thread support investigating the thread rather than buying more disk IOPS."
+    - content: "Treat 25% total processor utilization as sufficient CPU headroom and investigate storage burst credits first."
+      isCorrect: false
+      explanation: "Incorrect. A VM-wide average can hide a single-thread bottleneck. The observations already identify a busy I/O-issuing thread and exclude a burst transition."
+  - content: "During a slow window, available memory falls to 120 MiB of 8 GiB, a process's working set grows, and OS-disk reads and Windows Pages Input/sec rise. The application data disk's IOPS and bandwidth consumed percentages stay below 20%. Which next step is best supported?"
+    choices:
+    - content: "Investigate the process's memory growth and the source of memory-related reads before upgrading the data disk."
+      isCorrect: true
+      explanation: "Correct. Low available memory, working-set growth, and rising memory-related disk reads support investigating memory pressure. Identify the backing files and responsible process; hard faults can involve mapped files and the pagefile."
+    - content: "Disable paging on the production VM to determine whether the application's latency improves."
+      isCorrect: false
+      explanation: "Incorrect. Disabling paging isn't a safe diagnostic test. Investigate process memory demand and correlate the affected device's activity with the incident instead."
+    - content: "Increase data-disk IOPS because hard page faults prove that the application data disk is saturated."
+      isCorrect: false
+      explanation: "Incorrect. A hard page fault establishes that a memory page needed a disk read, not which disk supplied it or whether that disk was saturated. The data disk's measured consumption remains low."
+  - content: "An uncached workload needs 1,200 reads/s, each 256 KiB. The disk supports 250 MiB/s and the VM's uncached path supports 150 MiB/s. Ignoring other traffic, what sustained bandwidth must both layers support to meet the target, before adding headroom?"
+    choices:
+    - content: "150 MiB/s on the VM path and 250 MiB/s on the disk."
+      isCorrect: false
+      explanation: "Incorrect. At 0.25 MiB per read, the VM's current limit permits only 600 reads/s. The disk's current limit permits at most 1,000 reads/s, so neither supports the target."
+    - content: "300 MiB/s on both the disk and the VM's uncached path."
+      isCorrect: true
+      explanation: "Correct. The required rate is 1,200 multiplied by 256 divided by 1,024, or 300 MiB/s. Both layers must support that rate, with additional headroom in practice."
+    - content: "300 MiB/s on the VM path while retaining the disk's 250 MiB/s limit."
+      isCorrect: false
+      explanation: "Incorrect. Raising only the VM bandwidth limit leaves the disk capped at 1,000 reads/s. The lower remaining bandwidth limit still prevents 1,200 reads/s."
+  - content: "The input file is on Windows volume F: on guest Disk 4. The attachment inventory maps that disk to LUN 2; another same-sized disk uses LUN 3. Host caching is off. Which Azure rate should you compare with the guest's read rate for 12:12 to 12:13 UTC?"
+    choices:
+    - content: "Data Disk Read Operations/Sec for LUN 4 on the same VM over 12:12 to 12:13 UTC."
+      isCorrect: false
+      explanation: "Incorrect. A Windows guest disk number isn't an Azure LUN. The verified attachment mapping identifies LUN 2, not LUN 4."
+    - content: "Data Disk Read Operations/Sec for LUN 2 on the same VM averaged over the entire incident."
+      isCorrect: false
+      explanation: "Incorrect. The attachment matches, but the observation windows don't. A whole-incident average can hide the behavior in the guest's one-minute interval."
+    - content: "Data Disk Read Operations/Sec for LUN 2 on the same VM over 12:12 to 12:13 UTC."
+      isCorrect: true
+      explanation: "Correct. Match the input file through the guest volume and disk to the Azure attachment, then compare the same full time interval. Disk size alone doesn't establish identity."
+  - content: "During a sustained, nonburst interval, an uncached workload needs 6,000 reads/s but completes 2,990. Its disk limit is 3,000 IOPS and its VM uncached aggregate limit is 12,000 IOPS. Other-disk traffic is negligible, bandwidth stays well below both limits, and CPU and memory show no pressure. Which limit is the workload approaching?"
+    choices:
+    - content: "The VM's uncached aggregate IOPS limit."
+      isCorrect: false
+      explanation: "Incorrect. The workload uses about 24.9% of the VM's 12,000-IOPS limit. With negligible other-disk traffic, the VM path has substantial IOPS headroom."
+    - content: "The data disk's bandwidth limit."
+      isCorrect: false
+      explanation: "Incorrect. The observations state that bandwidth is below both ceilings. Operation rate and byte rate are separate constraints, so compare each with its matching limit."
+    - content: "The data disk's IOPS limit."
+      isCorrect: true
+      explanation: "Correct. Dividing 2,990 by 3,000 gives about 99.7% of the disk's IOPS limit, while the VM path remains near 24.9%. The sustained evidence supports a disk-IOPS bottleneck."
+  - content: "After raising only the disk's IOPS ceiling, the service completes 5,200 reads/s with application p95 of 13 ms. VM-wide CPU utilization is 96% with a runnable backlog. The targets remain 6,000 reads/s and p95 below 10 ms. Which conclusion is justified?"
+    choices:
+    - content: "Accept the change as successful because a higher completed read rate is sufficient."
+      isCorrect: false
+      explanation: "Incorrect. Both application targets must pass. The completed rate is still below 6,000 reads/s and p95 is still above 10 ms, despite the improvement."
+    - content: "Recommend more vCPUs immediately because the readings prove that the application's own threads are CPU-bound."
+      isCorrect: false
+      explanation: "Incorrect. VM-wide CPU pressure doesn't identify which process used the CPU or whose threads waited. Other work could account for the runnable backlog."
+    - content: "Record that both targets remain unmet and attribute CPU use and waiting threads before recommending more compute."
+      isCorrect: true
+      explanation: "Correct. CPU contention is a candidate newly exposed constraint, not an established application bottleneck. Match process and thread evidence to the slow window before choosing another change."
+  - content: "A disk-only upgrade in environment V leaves its read rate at 3,990 reads/s with VM uncached IOPS near 100%. In a separate controlled fixture, raising only the VM's uncached IOPS limit produces 6,000 8-KiB reads/s and application p95 of 8 ms. Which recommendation is justified?"
+    choices:
+    - content: "Evaluate compatible VM sizes with sufficient sustained uncached IOPS and bandwidth, then verify both targets under representative production demand."
+      isCorrect: true
+      explanation: "Correct. The fixture supports evaluating a VM-path change. The workload needs 6,000 uncached reads/s and 46.875 MiB/s, plus headroom. Production validation must also confirm application p95 below 10 ms and account for cost, capacity, disruption, and roll back."
+    - content: "Upgrade the disk again because its IOPS allocation, rather than the VM path, must be preventing further improvement."
+      isCorrect: false
+      explanation: "Incorrect. The disk-only trial produced no read-rate gain while the VM's uncached path remained saturated. A higher disk limit doesn't raise the VM's aggregate ceiling."
+    - content: "Treat the successful simulation as proof that a production VM resize delivers the same result without further measurements."
+      isCorrect: false
+      explanation: "Incorrect. A real resize changes several characteristics and isn't equivalent to changing one limit in a fixture. Confirm the operation succeeded and measure a comparable steady window after restart and warm-up."
+  - content: "A matched database call's send-to-reply time rises from 5 ms to 38 ms, while server receipt-through-reply time, including queuing, stays at 3 ms. Independent TCP checks all succeed, but their mean round-trip time rises from 2 ms to 33 ms. Local CPU, memory, and disk behavior remain healthy. What is the best interpretation?"
+    choices:
+    - content: "The network time for this particular database call is exactly 35 ms."
+      isCorrect: false
+      explanation: "Incorrect. The 35-ms difference is time outside the measured server interval, not a direct measurement of this call's network time. The independent TCP checks measure separate operations."
+    - content: "The network path is the leading hypothesis; compare the same destination and port from another source before assigning a cause."
+      isCorrect: true
+      explanation: "Correct. Stable server handling and increased independent round-trip time support investigating the path. They don't establish a faulty hop or precisely measure the network contribution to this database call."
+    - content: "Successful TCP checks rule out the network path and establish a database-processing fault."
+      isCorrect: false
+      explanation: "Incorrect. Successful connectivity checks don't establish low latency or query success. Here, probe latency increased while the matched database handling time stayed unchanged."
+  - content: "A caller's dependency record reports 80 ms, but you can't match it to a database-server record. Independent TCP checks have a mean round-trip time of 2 ms. What can you safely report?"
+    choices:
+    - content: "The database spent 78 ms processing this call after subtracting the probe's round-trip time."
+      isCorrect: false
+      explanation: "Incorrect. The probe describes separate checks, not a component of the dependency timer. Without a matched server record and known timer boundaries, subtraction doesn't isolate database processing."
+    - content: "Report caller elapsed time and probe results separately; this call's database-processing and network times remain unresolved."
+      isCorrect: true
+      explanation: "Correct. Seek a matching trace or shared request identifier and verify what each timer covers. The probe doesn't reveal how long the database spent on this request."
+    - content: "Calculate this call's network time by subtracting the database chart's p95 from the caller chart's p95."
+      isCorrect: false
+      explanation: "Incorrect. Percentiles from separate charts can describe different requests. Subtracting them doesn't recover a duration for this call."
+  - content: "An uncached workload completes 3,400 reads/s for two minutes, then falls to 240 reads/s without a workload change. The disk's nonburst baseline is 240 IOPS, its burst envelope is 3,500 IOPS, and the fixture confirms that its burst credits are exhausted. VM storage headroom remains. Which conclusion is supported?"
+    choices:
+    - content: "The disk can sustain 3,400 reads/s because it achieved that rate before the slowdown."
+      isCorrect: false
+      explanation: "Incorrect. The first two-minutes measure burst performance, not sustained capacity. Evaluate the workload after the burst period rather than treating its fastest window as a baseline."
+    - content: "The throughput drop proves that the VM's uncached aggregate IOPS limit was reached."
+      isCorrect: false
+      explanation: "Incorrect. The fixture identifies exhausted disk credits and remaining VM headroom. A similar drop without that evidence wouldn't identify which layer reached a limit."
+    - content: "The drop is consistent with disk burst-credit exhaustion; assess sustained capacity against the 240-IOPS baseline."
+      isCorrect: true
+      explanation: "Correct. Disk and VM bursting are independent. Confirm the affected layer and use its nonburst limit for sustained utilization; coarse credit reports don't identify the exact instant credits ran out."
+  - content: "A disk's IOPS consumed-percentage metric is unavailable. Of 10,000 reads/s on its cache-enabled attachment, 8,000 hit the host cache and 2,000 reach the managed disk. The disk has a 5,000-IOPS nonburst limit with matching operation accounting, no writes, and no active bursting. VM-path utilization metrics are also unavailable. What should you report?"
+    choices:
+    - content: "Estimated disk IOPS utilization is 40%; the VM's cached and uncached utilization remain unknown."
+      isCorrect: true
+      explanation: "Correct. Only the 2,000 disk reads belong in the disk numerator: 2,000 divided by 5,000 multiplied by 100 is 40%. Label this as an estimate. Disk rates don't establish aggregate VM-path utilization."
+    - content: "Disk IOPS utilization is 200%, and VM uncached IOPS utilization is also 200%."
+      isCorrect: false
+      explanation: "Incorrect. Using all 10,000 attachment reads counts host-cache hits as managed-disk reads and overstates disk demand fivefold. The disk limit also isn't the VM-path limit."
+    - content: "Estimated disk IOPS utilization is 40%, so both VM-path utilization values must also be 40%."
+      isCorrect: false
+      explanation: "Incorrect. The disk estimate is valid, but VM cached and uncached paths have different accounting and limits. Missing VM measurements must remain unknown rather than inheriting one disk's percentage."

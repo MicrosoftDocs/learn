@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="900" height="440" viewBox="0 0 900 440" role="img" aria-labelledby="mount-title mount-description" font-family="Segoe UI, Arial, sans-serif" fill="#000000">
+  <title id="mount-title">One Linux path, two possible disks</title>
+  <desc id="mount-description">The application writes /srv/reports/stock.csv. If the data filesystem is mounted at /srv/reports, the write goes to the data disk. Without that mount, the writable directory in this example is on the OS disk.</desc>
+  <metadata>Azure icon sources: general\10800-icon-service-File.svg; compute\10032-icon-service-Disks.svg (C:\Azure-Icons).</metadata>
+  <defs>
+    <symbol id="mount-file" viewBox="0 0 18 18">
+      <defs>
+        <linearGradient id="mount-file-e5371565-cc9b-4729-9e54-9bac135a92bd" x1="9" y1="18" x2="9" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#0078d4" />
+          <stop offset="0.817" stop-color="#5ea0ef" />
+        </linearGradient>
+      </defs>
+      <g id="mount-file-abc3e3f9-d4db-41ad-8b60-378d1c3348f7">
+        <g>
+          <g>
+            <path d="M10.023.134H2.362A.605.605,0,0,0,1.757.74V17.26a.605.605,0,0,0,.605.606H15.638a.605.605,0,0,0,.6-.606V6.327a.605.605,0,0,0-.6-.606H11.232a.605.605,0,0,1-.6-.605V.74A.6.6,0,0,0,10.023.134Z" fill="#fff" />
+            <path d="M9.743.908V5.057a1.524,1.524,0,0,0,1.52,1.523h4.18V17.092H2.557V.908H9.743M10.036,0H2.264A.614.614,0,0,0,1.65.615v16.77A.614.614,0,0,0,2.264,18H15.736a.614.614,0,0,0,.614-.615V6.286a.614.614,0,0,0-.614-.614H11.263a.614.614,0,0,1-.613-.615V.615A.614.614,0,0,0,10.036,0Z" fill="url(#mount-file-e5371565-cc9b-4729-9e54-9bac135a92bd)" />
+            <path d="M16.116,5.794,10.438.134V4.746a1.041,1.041,0,0,0,1.035,1.048Z" fill="#0078d4" />
+          </g>
+          <rect x="4" y="8.196" width="9.999" height="1.341" rx="0.603" fill="#5ea0ef" />
+          <rect x="4" y="10.599" width="9.999" height="1.341" rx="0.603" fill="#5ea0ef" />
+          <rect x="4" y="13.002" width="6.302" height="1.341" rx="0.603" fill="#5ea0ef" />
+        </g>
+      </g>
+    </symbol>
+    <symbol id="mount-disk" viewBox="0 0 18 18">
+      <defs>
+        <linearGradient id="mount-disk-a3aecb5c-11f5-4ece-99f7-9672f3236156" x1="15.35" y1="13.41" x2="15.37" y2="13.41" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#0078d4" />
+          <stop offset="0.14" stop-color="#1782da" />
+          <stop offset="0.37" stop-color="#368fe3" />
+          <stop offset="0.59" stop-color="#4c98ea" />
+          <stop offset="0.8" stop-color="#599eee" />
+          <stop offset="0.99" stop-color="#5ea0ef" />
+        </linearGradient>
+        <linearGradient id="mount-disk-b4dfb3ab-25fe-416c-a6fa-f33fcfbf22dc" x1="5.51" y1="802.5" x2="12.94" y2="810.58" gradientTransform="translate(0 -1278.76) scale(1 1.59)" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#0078d4" />
+          <stop offset="0.02" stop-color="#0d7ed8" />
+          <stop offset="0.08" stop-color="#2b8ae0" />
+          <stop offset="0.15" stop-color="#4194e7" />
+          <stop offset="0.22" stop-color="#519beb" />
+          <stop offset="0.29" stop-color="#5b9fee" />
+          <stop offset="0.4" stop-color="#5ea0ef" />
+          <stop offset="0.55" stop-color="#5b9fee" />
+          <stop offset="0.68" stop-color="#509aeb" />
+          <stop offset="0.8" stop-color="#3f92e6" />
+          <stop offset="0.91" stop-color="#2688df" />
+          <stop offset="0.99" stop-color="#127fd9" />
+        </linearGradient>
+      </defs>
+      <ellipse cx="8.96" cy="11.82" rx="7.5" ry="3.08" fill="#76bc2d" />
+      <ellipse cx="9.15" cy="11.79" rx="2.49" ry="0.68" fill="#5e9624" />
+      <path d="M15.35,13.4l0,0Z" fill="url(#mount-disk-a3aecb5c-11f5-4ece-99f7-9672f3236156)" />
+      <ellipse cx="8.96" cy="4.99" rx="7.5" ry="3.08" fill="url(#mount-disk-b4dfb3ab-25fe-416c-a6fa-f33fcfbf22dc)" />
+      <ellipse cx="9.15" cy="4.95" rx="2.49" ry="0.68" fill="#005ba1" />
+      <path d="M9,14.84c4.15,0,7.5-1.38,7.5-3.08h0v1.82h0c-.14,1.65-3.44,3-7.5,3s-7.5-1.38-7.5-3.08V11.76C1.46,13.46,4.82,14.84,9,14.84Z" fill="#5e9624" />
+      <path d="M15.35,13.4l0,0Z" fill="url(#mount-disk-a3aecb5c-11f5-4ece-99f7-9672f3236156)" />
+      <path d="M9,8c4.15,0,7.5-1.38,7.5-3.08h0V6.74h0c-.14,1.65-3.44,3-7.5,3s-7.5-1.38-7.5-3.08V4.92C1.46,6.62,4.82,8,9,8Z" fill="#0078d4" />
+    </symbol>
+    <marker id="mount-arrow" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" viewBox="0 0 12 12">
+      <path d="M1 1 L10 6 L1 11 Z" fill="#40566f" />
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="900" height="440" fill="#ffffff" data-kind="background" />
+  <text x="30" y="43" font-size="30" font-weight="600" text-anchor="start">One Linux path, two possible disks</text>
+  <text x="30" y="74" font-size="20" font-weight="400" text-anchor="start">Example: the root filesystem is on the OS disk and the reports directory is writable.</text>
+  <g data-step="1">
+    <rect x="30" y="98" width="840" height="66" rx="10" fill="#f4f9fd" stroke="#87abc6" stroke-width="1.5" data-kind="card" />
+    <circle cx="65" cy="131" r="19" fill="#cfe4fa" />
+    <text x="65" y="137" font-size="17" font-weight="600" text-anchor="middle">1</text>
+    <use x="100" y="113" width="36" height="36" href="#mount-file" aria-hidden="true" data-kind="icon" xlink:href="#mount-file" />
+    <text x="152" y="139" font-size="22" font-weight="600" text-anchor="start">Application writes the report</text>
+    <text x="556" y="139" font-size="20" font-weight="400" text-anchor="start" font-family="Consolas, 'Courier New', monospace">/srv/reports/stock.csv</text>
+  </g>
+  <path d="M450 167 V185" fill="none" stroke="#40566f" stroke-width="2.5" stroke-linejoin="round" data-kind="connector" />
+  <path d="M450 185 H232 V214" fill="none" stroke="#40566f" stroke-width="2.5" stroke-linejoin="round" data-kind="connector" marker-end="url(#mount-arrow)" />
+  <path d="M450 185 H668 V214" fill="none" stroke="#40566f" stroke-width="2.5" stroke-linejoin="round" data-kind="connector" marker-end="url(#mount-arrow)" />
+  <g data-step="2A">
+    <rect x="30" y="220" width="404" height="149" rx="10" fill="#eef8f1" stroke="#82a58a" stroke-width="1.5" data-kind="card" />
+    <circle cx="65" cy="249" r="19" fill="#d4ebda" />
+    <text x="65" y="255" font-size="17" font-weight="600" text-anchor="middle">2A</text>
+    <text x="97" y="257" font-size="22" font-weight="600" text-anchor="start">Data disk mounted</text>
+    <text x="52" y="291" font-size="20" font-weight="400" text-anchor="start">The data filesystem is mounted</text>
+    <text x="52" y="316" font-size="20" font-weight="400" text-anchor="start">at /srv/reports.</text>
+    <use x="52" y="330" width="29" height="29" href="#mount-disk" aria-hidden="true" data-kind="icon" xlink:href="#mount-disk" />
+    <text x="95" y="353" font-size="20" font-weight="600" text-anchor="start">Write goes to the data disk.</text>
+  </g>
+  <g data-step="2B">
+    <rect x="466" y="220" width="404" height="149" rx="10" fill="#fff8e9" stroke="#b89a56" stroke-width="1.5" data-kind="card" />
+    <circle cx="501" cy="249" r="19" fill="#ffebbe" />
+    <text x="501" y="255" font-size="17" font-weight="600" text-anchor="middle">2B</text>
+    <text x="533" y="257" font-size="22" font-weight="600" text-anchor="start">Data disk not mounted</text>
+    <text x="488" y="291" font-size="20" font-weight="400" text-anchor="start">The directory still exists, but it is</text>
+    <text x="488" y="316" font-size="20" font-weight="400" text-anchor="start">part of the root filesystem.</text>
+    <use x="488" y="330" width="29" height="29" href="#mount-disk" aria-hidden="true" data-kind="icon" xlink:href="#mount-disk" />
+    <text x="531" y="353" font-size="20" font-weight="600" text-anchor="start">Write goes to the OS disk.</text>
+  </g>
+  <text x="30" y="412" font-size="20" font-weight="400" text-anchor="start">A directory can exist in both cases. Check which filesystem backs the path.</text>
+</svg>
