@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.devrel.azure-virtual-machine-compute-disk-performance
 metadata:
-  title: Identify Azure Virtual Machine Disk Performance Bottlenecks
+  title: Identify Azure Virtual Machine Performance Bottlenecks
   description: Use workload measurements to distinguish compute, disk, and network bottlenecks on Azure virtual machines and decide whether a resize would help.
   ms.date: 11/20/2026
   author: Orin-Thomas
@@ -9,7 +9,7 @@ metadata:
   ms.topic: module-standard-concept-based
   ms.service: azure-virtual-machines
   ai-usage: ai-assisted
-title: Identify Azure virtual machine disk performance bottlenecks
+title: Identify Azure virtual machine performance bottlenecks
 summary: |
   A busy disk isn't always the reason an application slows down. Low memory, for example, can force an Azure virtual machine (VM) to read from disk more often. Compare application, guest, and Azure measurements to identify what makes requests wait. When a database call slows down, compare caller and server timings for the same call. Independent network checks can help you assess whether the path is a likely cause.
 
