@@ -2,10 +2,10 @@
 uid: learn.wwl.implement-operational-analytics-fabric-azure-cosmos-db.knowledge-check
 title: Module assessment
 metadata:
-  title: Module assessment
+  title: Module Assessment
   description: "Check your ability to choose between the two Cosmos DB implementations, grant the permission mirroring requires, interpret replication status, choose the right recovery for one stalled table, and expand nested JSON without losing rows."
-  ms.date: 10/04/2026
-  author: wwlpublish
+  ms.date: 11/19/2026
+  author: MScalopez
   ms.author: calopez
   ms.topic: unit
   module_assessment: true

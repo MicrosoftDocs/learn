@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=b035a189-e602-4b26-abcc-92d4fcea6339]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 The mirrored data is Delta in OneLake, and Delta is the format every Fabric engine reads. That single fact is what makes the rest of this unit straightforward: Transact-SQL (T-SQL) and Spark aren't two integrations you configure. They're two engines pointed at the same files. In this unit, you query the mirror both ways, expand the nested JSON a document database inevitably produces, and learn which engine to reach for when the two disagree.
 
 ## The SQL analytics endpoint
@@ -105,3 +116,5 @@ One practical asymmetry between the two engines is worth remembering. When a rec
 Once the data is in OneLake, Power BI can build a semantic model on it and report in Direct Lake mode, reading the Delta files without importing them. Building those reports is its own subject and out of scope here, but it's the reason the format matters: one replicated copy serves T-SQL, Spark, notebooks, and business intelligence without another hop.
 
 In this unit, you learn how to query mirrored data from an Azure Cosmos DB account in Fabric OneLake using both T-SQL and Spark, understand the differences between the two approaches, and make informed decisions about which tool to use for different analytical workloads.
+
+::: zone-end
