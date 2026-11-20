@@ -1,3 +1,5 @@
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=6d11ab2a-25f1-42a1-be1c-c071b40a9106]
+
 A restore job can succeed while the recovered application remains unusable. The database might be on a disk excluded from backup, the latest recovery point might have been created after the deletion, or the application might lack required access. Successful infrastructure recovery is necessary, but it isn't the acceptance test.
 
 This module follows a controlled recovery rehearsal for an Azure virtual machine that hosts a test order ledger. You'll define recovery acceptance criteria, inspect backup coverage and recovery points, and choose a supported restore method and isolated destination. You'll then validate the recovered data and application behavior, measure recovery duration and data loss, and decide whether the evidence meets the agreed objectives. Finally, you'll repair the original source, confirm continued backup protection, and preserve evidence before cleanup and assessment. You can complete the exercise in an approved Azure lab or analyze the supplied synthetic records.
