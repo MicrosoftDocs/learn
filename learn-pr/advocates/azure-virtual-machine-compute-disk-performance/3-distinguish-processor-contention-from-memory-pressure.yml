@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-virtual-machine-compute-disk-performance.distinguish-processor-contention-from-memory-pressure
+metadata:
+  title: Distinguish Processor Contention from Memory Pressure
+  description: Use thread activity, available memory, paging, and per-disk reads to distinguish processor contention from memory pressure in Windows and Linux guests.
+  ms.date: 11/17/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Distinguish processor contention from memory pressure
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-distinguish-processor-contention-from-memory-pressure.md)]

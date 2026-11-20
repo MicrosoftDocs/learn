@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-virtual-machine-compute-disk-performance.introduction
+metadata:
+  title: Introduction
+  description: Use a late stock report to define the application's performance targets and match its data file to the correct Azure disk.
+  ms.date: 11/17/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Introduction
+durationInMinutes: 3
+content: |
+  [!include[](includes/1-introduction.md)]

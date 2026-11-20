@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-virtual-machine-compute-disk-performance.compare-workload-demand-across-observation-windows
+metadata:
+  title: Compare Workload Demand Across Observation Windows
+  description: Compare offered load, successful completions, and response times in matching healthy and incident windows to establish a performance shortfall.
+  ms.date: 11/17/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Compare workload demand across observation windows
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-compare-workload-demand-across-observation-windows.md)]

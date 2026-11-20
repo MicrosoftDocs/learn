@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-virtual-machine-compute-disk-performance.interpret-change-performance-limit
+metadata:
+  title: Interpret a Change to One Performance Limit
+  description: Check whether changing one disk or VM limit improved the read rate. Without a post-change application p95, you can't tell whether tail latency improved.
+  ms.date: 11/17/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Interpret a change to one performance limit
+durationInMinutes: 2
+content: |
+  [!include[](includes/7-interpret-change-performance-limit.md)]
