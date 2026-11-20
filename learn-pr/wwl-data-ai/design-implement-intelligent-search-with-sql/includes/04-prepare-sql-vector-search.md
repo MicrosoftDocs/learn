@@ -106,16 +106,21 @@ Recall measures how many of the true nearest neighbors the approximate search re
 
 ## Consider index limitations
 
-Vector indexes in SQL Server have specific requirements to be aware of:
+Vector indexes have specific requirements and limitations that depend on the index version and SQL platform:
 
-- The table must have a single-column integer primary key with a clustered index
-- Tables with vector indexes become read-only while the index exists—you must drop the index to modify data, then recreate it
-- Vector indexes can't be partitioned
+- **DML support:** The latest DiskANN vector indexes support `INSERT`, `UPDATE`, `DELETE`, and `MERGE`. Changes are automatically maintained and become visible to vector search queries after the transaction commits, without dropping or rebuilding the index.
+- **Primary key requirements:** Earlier vector index versions require a clustered primary key on an `INT` column. This restriction is no longer listed among the limitations of the latest index version.
+- **Partitioning:** Vector indexes cannot be partitioned.
+- **Additional limitations:** Tables with vector indexes cannot be truncated using `TRUNCATE TABLE`, and vector indexes are not replicated to subscribers. Creating an index using the latest format also requires at least 100 rows with non-`NULL` vector values.
 
 > [!NOTE]
-> Vector indexes are currently in preview. In Azure SQL Database and SQL database in Microsoft Fabric, you can set the `ALLOW_STALE_VECTOR_INDEX` database scoped configuration to `ON` to allow writes, but the index doesn't reflect new data until you rebuild it. This option isn't currently available in SQL Server 2025. Check the current documentation for the latest on these limitations.
+> The latest vector index format is generally available in Azure SQL Database, SQL database in Microsoft Fabric, and Azure SQL Managed Instance with the Always-up-to-date update policy. Vector indexing remains in preview in SQL Server 2025 and Azure SQL Managed Instance with the SQL Server 2025 update policy, where the latest index format is not yet available.
+>
+> Earlier vector index versions can make tables read-only. In Azure SQL Database and SQL database in Microsoft Fabric, `ALLOW_STALE_VECTOR_INDEX = ON` permits DML operations against tables with these older indexes, but the indexes are not automatically updated. Refreshing them requires dropping and recreating the index. This configuration is not available in SQL Server 2025.
+>
+> Existing indexes can be migrated to the latest format by dropping and recreating them.
 
-These limitations affect how you design your tables and maintenance workflows. For tables that change frequently, you might use exact search until the data stabilizes, then add a vector index.
+These limitations still affect table design and maintenance workflows, but frequently changing data is no longer a reason to avoid vector indexes on platforms supporting the latest format. For workloads involving large-scale replacement of embeddings, however, recreating the index after loading the new data may improve search quality.
 
 ## Key takeaways
 
