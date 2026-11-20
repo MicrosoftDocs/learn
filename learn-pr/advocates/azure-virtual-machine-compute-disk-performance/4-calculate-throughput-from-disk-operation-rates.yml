@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-virtual-machine-compute-disk-performance.calculate-throughput-from-disk-operation-rates
+metadata:
+  title: Calculate Throughput from Disk Operation Rates
+  description: Calculate bandwidth from operation size and completion rate, then use queue depth to estimate mean disk latency rather than application tail latency.
+  ms.date: 11/17/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Calculate throughput from disk operation rates
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-calculate-throughput-from-disk-operation-rates.md)]

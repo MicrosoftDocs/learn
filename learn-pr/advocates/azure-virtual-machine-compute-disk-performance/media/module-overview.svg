@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 1200 984" width="1200" height="984" role="img" aria-labelledby="azure-virtual-machine-compute-disk-performance-diagram-title azure-virtual-machine-compute-disk-performance-diagram-description" font-family="Segoe UI, Arial, sans-serif" xmlns="http://www.w3.org/2000/svg">
+  <title id="azure-virtual-machine-compute-disk-performance-diagram-title">Performance diagnosis: identify the limiting layer</title>
+  <desc id="azure-virtual-machine-compute-disk-performance-diagram-description">Align workload, guest, disk, and virtual machine measurements before changing capacity. Read the numbered cards from top to bottom. Changing a disk cannot remove an unrelated guest or aggregate virtual machine limit.</desc>
+  <metadata id="azure-virtual-machine-compute-disk-performance-icon-provenance">{"sourceRoot":"C:\\Azure-Icons","icons":["compute\\10021-icon-service-Virtual-Machine.svg","compute\\10032-icon-service-Disks.svg","monitor\\00020-icon-service-Metrics.svg"]}</metadata>
+  <defs>
+    <symbol viewBox="0 0 18 18" id="azure-virtual-machine-compute-disk-performance-icon-disk">
+      <defs>
+        <linearGradient id="azure-virtual-machine-compute-disk-performance-disk-a3aecb5c-11f5-4ece-99f7-9672f3236156" x1="15.35" y1="13.41" x2="15.37" y2="13.41" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#0078d4" />
+          <stop offset="0.14" stop-color="#1782da" />
+          <stop offset="0.37" stop-color="#368fe3" />
+          <stop offset="0.59" stop-color="#4c98ea" />
+          <stop offset="0.8" stop-color="#599eee" />
+          <stop offset="0.99" stop-color="#5ea0ef" />
+        </linearGradient>
+        <linearGradient id="azure-virtual-machine-compute-disk-performance-disk-b4dfb3ab-25fe-416c-a6fa-f33fcfbf22dc" x1="5.51" y1="802.5" x2="12.94" y2="810.58" gradientTransform="translate(0 -1278.76) scale(1 1.59)" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#0078d4" />
+          <stop offset="0.02" stop-color="#0d7ed8" />
+          <stop offset="0.08" stop-color="#2b8ae0" />
+          <stop offset="0.15" stop-color="#4194e7" />
+          <stop offset="0.22" stop-color="#519beb" />
+          <stop offset="0.29" stop-color="#5b9fee" />
+          <stop offset="0.4" stop-color="#5ea0ef" />
+          <stop offset="0.55" stop-color="#5b9fee" />
+          <stop offset="0.68" stop-color="#509aeb" />
+          <stop offset="0.8" stop-color="#3f92e6" />
+          <stop offset="0.91" stop-color="#2688df" />
+          <stop offset="0.99" stop-color="#127fd9" />
+        </linearGradient>
+      </defs>
+      <ellipse cx="8.96" cy="11.82" rx="7.5" ry="3.08" fill="#76bc2d" />
+      <ellipse cx="9.15" cy="11.79" rx="2.49" ry="0.68" fill="#5e9624" />
+      <path d="M15.35,13.4l0,0Z" fill="url(#azure-virtual-machine-compute-disk-performance-disk-a3aecb5c-11f5-4ece-99f7-9672f3236156)" />
+      <ellipse cx="8.96" cy="4.99" rx="7.5" ry="3.08" fill="url(#azure-virtual-machine-compute-disk-performance-disk-b4dfb3ab-25fe-416c-a6fa-f33fcfbf22dc)" />
+      <ellipse cx="9.15" cy="4.95" rx="2.49" ry="0.68" fill="#005ba1" />
+      <path d="M9,14.84c4.15,0,7.5-1.38,7.5-3.08h0v1.82h0c-.14,1.65-3.44,3-7.5,3s-7.5-1.38-7.5-3.08V11.76C1.46,13.46,4.82,14.84,9,14.84Z" fill="#5e9624" />
+      <path d="M15.35,13.4l0,0Z" fill="url(#azure-virtual-machine-compute-disk-performance-disk-a3aecb5c-11f5-4ece-99f7-9672f3236156)" />
+      <path d="M9,8c4.15,0,7.5-1.38,7.5-3.08h0V6.74h0c-.14,1.65-3.44,3-7.5,3s-7.5-1.38-7.5-3.08V4.92C1.46,6.62,4.82,8,9,8Z" fill="#0078d4" />
+    </symbol>
+    <symbol viewBox="0 0 18 18" id="azure-virtual-machine-compute-disk-performance-icon-machine">
+      <defs>
+        <linearGradient id="azure-virtual-machine-compute-disk-performance-machine-f34d9569-2bd0-4002-8f16-3d01d8106cb5" x1="8.88" y1="12.21" x2="8.88" y2="0.21" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#0078d4" />
+          <stop offset="0.82" stop-color="#5ea0ef" />
+        </linearGradient>
+        <linearGradient id="azure-virtual-machine-compute-disk-performance-machine-bdb45a0b-eb58-4970-a60a-fb2ce314f866" x1="8.88" y1="16.84" x2="8.88" y2="12.21" gradientUnits="userSpaceOnUse">
+          <stop offset="0.15" stop-color="#ccc" />
+          <stop offset="1" stop-color="#707070" />
+        </linearGradient>
+      </defs>
+      <rect x="-0.12" y="0.21" width="18" height="12" rx="0.6" fill="url(#azure-virtual-machine-compute-disk-performance-machine-f34d9569-2bd0-4002-8f16-3d01d8106cb5)" />
+      <polygon points="11.88 4.46 11.88 7.95 8.88 9.71 8.88 6.21 11.88 4.46" fill="#50e6ff" />
+      <polygon points="11.88 4.46 8.88 6.22 5.88 4.46 8.88 2.71 11.88 4.46" fill="#c3f1ff" />
+      <polygon points="8.88 6.22 8.88 9.71 5.88 7.95 5.88 4.46 8.88 6.22" fill="#9cebff" />
+      <polygon points="5.88 7.95 8.88 6.21 8.88 9.71 5.88 7.95" fill="#c3f1ff" />
+      <polygon points="11.88 7.95 8.88 6.21 8.88 9.71 11.88 7.95" fill="#9cebff" />
+      <path d="M12.49,15.84c-1.78-.28-1.85-1.56-1.85-3.63H7.11c0,2.07-.06,3.35-1.84,3.63a1,1,0,0,0-.89,1h9A1,1,0,0,0,12.49,15.84Z" fill="url(#azure-virtual-machine-compute-disk-performance-machine-bdb45a0b-eb58-4970-a60a-fb2ce314f866)" />
+    </symbol>
+    <symbol viewBox="0 0 18 18" id="azure-virtual-machine-compute-disk-performance-icon-metrics">
+      <defs>
+        <linearGradient id="azure-virtual-machine-compute-disk-performance-metrics-e1d73f47-752a-4159-9841-f0e298db8522" x1="6.57" y1="7.06" x2="6.57" y2="3.76" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#773adc" />
+          <stop offset="1" stop-color="#b77af4" />
+        </linearGradient>
+        <linearGradient id="azure-virtual-machine-compute-disk-performance-metrics-e8c6440a-2701-4507-8d04-c5dedd18bcf2" x1="11.02" y1="11.15" x2="11.02" y2="7.86" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#773adc" />
+          <stop offset="1" stop-color="#b77af4" />
+        </linearGradient>
+        <linearGradient id="azure-virtual-machine-compute-disk-performance-metrics-b40385c6-522c-4b7d-afa0-c8216f314bdf" x1="15.15" y1="3.79" x2="15.15" y2="0.5" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#773adc" />
+          <stop offset="1" stop-color="#b77af4" />
+        </linearGradient>
+        <linearGradient id="azure-virtual-machine-compute-disk-performance-metrics-a5c9d1e7-33fb-4353-b4bd-5d3732a54634" x1="2.85" y1="11.86" x2="2.85" y2="8.57" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#773adc" />
+          <stop offset="1" stop-color="#b77af4" />
+        </linearGradient>
+      </defs>
+      <polygon points="14.73 1.62 10.74 8.72 6.52 4.42 2.17 10.06 3.19 10.86 6.64 6.41 11.02 10.88 15.86 2.27 14.73 1.62" fill="#b796f9" />
+      <ellipse cx="6.57" cy="5.41" rx="1.64" ry="1.65" fill="url(#azure-virtual-machine-compute-disk-performance-metrics-e1d73f47-752a-4159-9841-f0e298db8522)" />
+      <ellipse cx="11.02" cy="9.5" rx="1.64" ry="1.65" fill="url(#azure-virtual-machine-compute-disk-performance-metrics-e8c6440a-2701-4507-8d04-c5dedd18bcf2)" />
+      <ellipse cx="15.15" cy="2.15" rx="1.64" ry="1.65" fill="url(#azure-virtual-machine-compute-disk-performance-metrics-b40385c6-522c-4b7d-afa0-c8216f314bdf)" />
+      <ellipse cx="2.85" cy="10.22" rx="1.64" ry="1.65" fill="url(#azure-virtual-machine-compute-disk-performance-metrics-a5c9d1e7-33fb-4353-b4bd-5d3732a54634)" />
+      <rect x="5.67" y="9.92" width="2.58" height="7.58" rx="0.28" fill="#0078d4" />
+      <rect x="9.78" y="12.54" width="2.58" height="4.96" rx="0.28" fill="#005ba1" />
+      <rect x="13.89" y="7.38" width="2.58" height="10.12" rx="0.28" fill="#005ba1" />
+      <rect x="1.56" y="12.54" width="2.58" height="4.96" rx="0.28" fill="#5ea0ef" />
+    </symbol>
+    <marker refX="6" markerUnits="userSpaceOnUse" refY="4" markerWidth="8" orient="auto" id="azure-virtual-machine-compute-disk-performance-flow-arrow" markerHeight="8">
+      <path fill="#40566f" d="M 0 0 L 7 4 L 0 8 Z" />
+    </marker>
+  </defs>
+  <rect x="0" width="1200" height="984" data-kind="background" id="azure-virtual-machine-compute-disk-performance-white-background" y="0" fill="#ffffff" />
+  <text x="60" data-kind="heading" font-weight="600" font-size="28" y="53" fill="#000000">Performance diagnosis: identify the limiting layer</text>
+  <text fill="#000000" font-size="18" y="88" data-kind="subtitle" x="60">Align workload, guest, disk, and virtual machine measurements before changing capacity.</text>
+  <rect stroke="#0078d4" x="80" stroke-width="2" width="1040" data-order="1" fill="#f3f8fd" data-kind="card" height="112" rx="12" id="azure-virtual-machine-compute-disk-performance-step-1-card" y="140" />
+  <circle cy="196" fill="#cfe4fa" cx="122" stroke="#0078d4" r="23" />
+  <text data-kind="number" y="204" font-weight="600" text-anchor="middle" font-size="23" fill="#000000" data-card="azure-virtual-machine-compute-disk-performance-step-1-card" x="122">1</text>
+  <use x="174" width="52" height="52" aria-hidden="true" data-kind="azure-icon" y="170" href="#azure-virtual-machine-compute-disk-performance-icon-metrics" />
+  <text x="252" data-kind="step-heading" data-card="azure-virtual-machine-compute-disk-performance-step-1-card" font-weight="600" font-size="23" y="183" fill="#000000">Define the workload baseline</text>
+  <text x="252" data-kind="step-description" data-card="azure-virtual-machine-compute-disk-performance-step-1-card" font-size="17" y="217" fill="#000000">Fix operation size, concurrency, duration, and the application objective.</text>
+  <path stroke="#40566f" stroke-width="2" marker-end="url(#azure-virtual-machine-compute-disk-performance-flow-arrow)" d="M 600 262 L 600 285" data-kind="connector" fill="none" />
+  <rect stroke="#0078d4" x="80" stroke-width="2" width="1040" data-order="2" fill="#f3f8fd" data-kind="card" height="112" rx="12" id="azure-virtual-machine-compute-disk-performance-step-2-card" y="296" />
+  <circle cy="352" fill="#cfe4fa" cx="122" stroke="#0078d4" r="23" />
+  <text data-kind="number" y="360" font-weight="600" text-anchor="middle" font-size="23" fill="#000000" data-card="azure-virtual-machine-compute-disk-performance-step-2-card" x="122">2</text>
+  <use x="174" width="52" height="52" aria-hidden="true" data-kind="azure-icon" y="326" href="#azure-virtual-machine-compute-disk-performance-icon-machine" />
+  <text x="252" data-kind="step-heading" data-card="azure-virtual-machine-compute-disk-performance-step-2-card" font-weight="600" font-size="23" y="339" fill="#000000">Check guest pressure</text>
+  <text x="252" data-kind="step-description" data-card="azure-virtual-machine-compute-disk-performance-step-2-card" font-size="17" y="373" fill="#000000">Correlate processor contention, memory pressure, paging, and swapping.</text>
+  <path stroke="#40566f" stroke-width="2" marker-end="url(#azure-virtual-machine-compute-disk-performance-flow-arrow)" d="M 600 418 L 600 441" data-kind="connector" fill="none" />
+  <rect stroke="#0078d4" x="80" stroke-width="2" width="1040" data-order="3" fill="#f3f8fd" data-kind="card" height="112" rx="12" id="azure-virtual-machine-compute-disk-performance-step-3-card" y="452" />
+  <circle cy="508" fill="#cfe4fa" cx="122" stroke="#0078d4" r="23" />
+  <text data-kind="number" y="516" font-weight="600" text-anchor="middle" font-size="23" fill="#000000" data-card="azure-virtual-machine-compute-disk-performance-step-3-card" x="122">3</text>
+  <use x="174" width="52" height="52" aria-hidden="true" data-kind="azure-icon" y="482" href="#azure-virtual-machine-compute-disk-performance-icon-disk" />
+  <text x="252" data-kind="step-heading" data-card="azure-virtual-machine-compute-disk-performance-step-3-card" font-weight="600" font-size="23" y="495" fill="#000000">Check individual disk limits</text>
+  <text x="252" data-kind="step-description" data-card="azure-virtual-machine-compute-disk-performance-step-3-card" font-size="17" y="529" fill="#000000">Compare operation rate, throughput, queueing, latency, and burst behavior.</text>
+  <path stroke="#40566f" stroke-width="2" marker-end="url(#azure-virtual-machine-compute-disk-performance-flow-arrow)" d="M 600 574 L 600 597" data-kind="connector" fill="none" />
+  <rect stroke="#0078d4" x="80" stroke-width="2" width="1040" data-order="4" fill="#f3f8fd" data-kind="card" height="112" rx="12" id="azure-virtual-machine-compute-disk-performance-step-4-card" y="608" />
+  <circle cy="664" fill="#cfe4fa" cx="122" stroke="#0078d4" r="23" />
+  <text data-kind="number" y="672" font-weight="600" text-anchor="middle" font-size="23" fill="#000000" data-card="azure-virtual-machine-compute-disk-performance-step-4-card" x="122">4</text>
+  <use x="174" width="52" height="52" aria-hidden="true" data-kind="azure-icon" y="638" href="#azure-virtual-machine-compute-disk-performance-icon-machine" />
+  <text x="252" data-kind="step-heading" data-card="azure-virtual-machine-compute-disk-performance-step-4-card" font-weight="600" font-size="23" y="651" fill="#000000">Check aggregate machine limits</text>
+  <text x="252" data-kind="step-description" data-card="azure-virtual-machine-compute-disk-performance-step-4-card" font-size="17" y="685" fill="#000000">Inspect cached and uncached constraints across the attached disks.</text>
+  <path stroke="#40566f" stroke-width="2" marker-end="url(#azure-virtual-machine-compute-disk-performance-flow-arrow)" d="M 600 730 L 600 753" data-kind="connector" fill="none" />
+  <rect stroke="#0078d4" x="80" stroke-width="2" width="1040" data-order="5" fill="#f3f8fd" data-kind="card" height="112" rx="12" id="azure-virtual-machine-compute-disk-performance-step-5-card" y="764" />
+  <circle cy="820" fill="#cfe4fa" cx="122" stroke="#0078d4" r="23" />
+  <text data-kind="number" y="828" font-weight="600" text-anchor="middle" font-size="23" fill="#000000" data-card="azure-virtual-machine-compute-disk-performance-step-5-card" x="122">5</text>
+  <use x="174" width="52" height="52" aria-hidden="true" data-kind="azure-icon" y="794" href="#azure-virtual-machine-compute-disk-performance-icon-metrics" />
+  <text x="252" data-kind="step-heading" data-card="azure-virtual-machine-compute-disk-performance-step-5-card" font-weight="600" font-size="23" y="807" fill="#000000">Test one causal hypothesis</text>
+  <text x="252" data-kind="step-description" data-card="azure-virtual-machine-compute-disk-performance-step-5-card" font-size="17" y="841" fill="#000000">Change one variable and explain improvement, nonimprovement, or a new limit.</text>
+  <text fill="#000000" font-size="17" y="935" data-kind="note" x="80">Changing a disk cannot remove an unrelated guest or aggregate virtual machine limit.</text>
+</svg>
