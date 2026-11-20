@@ -1,3 +1,11 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=ac19d331-281b-40ce-9048-5c994c6b7c79]
+
+::: zone-end
+
+::: zone pivot="text"
+
 The Contoso storefront runs on Azure Cosmos DB for NoSQL. The catalog container answers point reads in single-digit milliseconds, the order container absorbs a spike every time a promotion goes out, and neither is why a page runs slow. Then, the merchandising team asks a question the storefront was never built to answer: which product categories are growing, and are the customers buying them the same ones who bought last quarter?
 
 That question is an aggregate across two containers and a join against a spreadsheet that lives somewhere else. Running it where the data sits means a cross-partition scan competing for the request units the storefront depends on. Contoso's first answer was a nightly copy job into a separate store, which solved the contention and created two new problems: the analysts see yesterday, and somebody owns a pipeline that breaks whenever a developer adds a property.
@@ -7,3 +15,8 @@ Microsoft Fabric mirroring removes that pipeline. Azure Cosmos DB replicates its
 This module starts with the decision behind the feature, because Azure Cosmos DB and Cosmos DB in Microsoft Fabric are two products built on one engine and they suit different situations. From there, you configure mirroring on an existing account, learn to read the replication status that tells you whether the analytical copy is trustworthy, and query the mirrored data with both T-SQL and Spark, including the nested JSON that a document database produces and a warehouse table doesn't natively understand.
 
 By the end of this module, you can choose the right Cosmos DB implementation for an analytics workload, mirror an Azure Cosmos DB database into Fabric, verify that replication is healthy, and query the results.
+
+::: zone-end
+
+> [!NOTE]
+> We recognize that different people like to learn in different ways. You can choose to complete this module in video-based format or you can read the content as text and images. The text contains greater detail than the videos, so in some cases you might want to refer to it as supplemental material to the video presentation.

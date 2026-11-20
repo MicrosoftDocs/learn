@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=4c6534ee-70d1-429e-9742-01f8126e22a4]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Contoso keeps its account in Azure and mirrors it into Fabric. Setting up mirroring takes a handful of portal steps, but two of the prerequisites are irreversible changes and one of them can't be satisfied with any built-in role. In this unit, you work through what the source account needs, what identity Fabric connects with, and what you're choosing when you select a database to mirror.
 
 ## What the source account has to be
@@ -96,3 +107,5 @@ An account behind a virtual network or private endpoint can still be mirrored. F
 On cost, the replication compute is free and your capacity size covers OneLake storage for mirrored data. What you do pay for is the compute that runs your queries, the continuous backup you enabled on the source account at standard Azure Cosmos DB rates, and any browsing you do through the mirrored database's source view. That browsing cost surprises people: the read-only data explorer in Fabric routes its reads to Azure and **consumes request units on the source account**, which is exactly what mirroring exists to avoid. Query the SQL analytics endpoint instead when you want a free read.
 
 In this unit, you learn how to configure mirroring from an Azure Cosmos DB account into Fabric OneLake, understand the networking and cost implications, and make informed decisions about how to set up and use the mirrored data.
+
+::: zone-end

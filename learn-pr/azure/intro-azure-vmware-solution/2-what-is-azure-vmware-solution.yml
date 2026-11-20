@@ -2,9 +2,9 @@
 uid: learn.azure.intro-azure-vmware-solution.what-is-azure-vmware-solution
 title: What is Azure VMware Solution?
 metadata:
-  title: What is Azure VMware Solution?
+  title: What Is Azure VMware Solution?
   description: Learn about what Azure VMware Solution is and what it does.
-  ms.date: 01/05/2026
+  ms.date: 11/17/2026
   author: Orin-Thomas
   ms.author: orthomas
   ms.topic: unit
@@ -14,29 +14,26 @@ durationInMinutes: 7
 content: |
   [!include[](includes/2-what-is-azure-vmware-solution.md)]
 quiz:
-  title: "Check your knowledge"
   questions:
   - content: "Which of the following features is key to Azure VMware Solution?"
     choices:
     - content: "Customers can seamlessly modernize apps over time with Azure services."
       isCorrect: true
-      explanation: "Correct. Customers can modernize applications running on VMware over time through integration with Azure native management, security, and services."
+      explanation: "Correct. An application can stay on VMware while its team adopts an Azure service, such as Azure SQL Database."
     - content: "Customers manage all components of Azure VMware Solution."
       isCorrect: false
-      explanation: "Incorrect. Microsoft manages the platform for the customer."
-    - content: "Azure VMware Solution is the fastest way to force a move off Azure-centric operational processes."
+      explanation: "Incorrect. Microsoft operates the hosts and patches the VMware platform. Customers manage their guest operating systems and applications."
+    - content: "AVS requires administrators to replace their VMware management tools with the Azure portal."
       isCorrect: false
-      explanation: "Incorrect. Azure VMware Solution provides a fast path to cloud."
-  - content: "Which native Azure service can be used to mount virtual machine (VM) file shares using server message block (SMB) or network file system (NFS)?"
+      explanation: "Incorrect. Administrators still use vSphere Client for VMs and NSX Manager for workload networks. They can also start or stop a VM in the Azure portal after onboarding that VM for virtual hardware management through Azure Arc."
+  - content: "Your team has an AVS host reservation and enough portable VCF cores for the hosts. What must you allocate to license a four-vCPU Windows Server VM individually using Azure Hybrid Benefit?"
     choices:
-    - content: "Azure Databricks"
+    - content: "Four more portable VCF cores."
       isCorrect: false
-      explanation: "Incorrect. Azure Databricks is a data solution available to integrate with Azure VMware Solution."
-    - content: "Azure Monitor"
+      explanation: "Incorrect. Portable VCF licenses the VMware platform on the hosts, not Windows Server in the guest VM."
+    - content: "The Azure host reservation."
       isCorrect: false
-      explanation: "Incorrect. Azure Monitor can be integrated to monitor VMs on Azure and on Azure VMware Solution."
-    - content: "Azure NetApp Files"
+      explanation: "Incorrect. A reservation discounts matching host usage. It doesn't license the guest operating system."
+    - content: "At least eight eligible Windows Server core licenses."
       isCorrect: true
-      explanation: "Correct. Azure NetApp Files supports mounting volumes using SMB or NFS on VMs."
-  
-
+      explanation: "Correct. Cover every virtual core, with a minimum of eight core licenses per Windows Server VM. Use Windows Server licenses with active Software Assurance or qualifying subscription licenses under your agreement."

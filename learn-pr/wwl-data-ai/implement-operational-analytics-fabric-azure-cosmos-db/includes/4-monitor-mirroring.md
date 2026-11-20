@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=d211d025-e6d6-45e2-8dd6-e1e1b24a7383]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 A mirror is a copy, and a copy is only useful while somebody can say how far behind it is. Contoso's analysts build reports on the mirrored tables and stop thinking about where the numbers came from, which is the point. Your job is to know when the answer they're reading is stale, and to be able to tell the difference between a mirror that's broken and one that has nothing new to do. In this unit, you read the replication status, interpret what mirroring does to a schema, and choose the right intervention when something looks wrong.
 
 ## The replication status view
@@ -65,3 +76,5 @@ The **mirroring REST API** exposes replication status for a mirrored database or
 **Workspace monitoring** is the richer option. Enable it in workspace settings, and mirrored database execution logs flow automatically into a `MirroredDatabaseTableExecution` table in the workspace's monitoring Kusto Query Language (KQL) database, covering data replication, table changes, mirroring status, failures, and replication latency. From there, you query the logs with KQL directly, build a dashboard on them, or set alerts on the values you care about, which is how you find out a mirror stalled without anyone having the pane open.
 
 In this unit, you learn how to monitor mirroring from an Azure Cosmos DB account into Fabric OneLake, understand the replication behaviors that might surprise you, and use the available tools to ensure your mirrored data stays fresh and accurate.
+
+::: zone-end

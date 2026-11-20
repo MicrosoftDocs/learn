@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=aa2ea7db-7ea5-491f-bd00-2f04adacb56c]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Conversation state is the memory every agent needs and the one most demonstrations skip, because a demonstration only asks one question. In this unit, you model a turn, write it to Azure Cosmos DB for NoSQL, read back the recent history a follow-up question depends on, and expire the log on a schedule instead of pruning it by hand.
 
 ## Model a turn as one item
@@ -91,3 +102,5 @@ Set `DefaultTimeToLive` on the container to enable expiry, then let individual i
 Expired items disappear from query results the moment they expire, even before the background deletion runs. On a provisioned-throughput account, that deletion uses leftover request units, so it doesn't compete with the agent. On a serverless account, it's billed at the delete rate, which is a real line item when the deletions are conversation turns.
 
 30 days is a defensible default for turns because it covers the window in which a user might resume a conversation and reference something specific. It's also the point where the log's only remaining value is what a distillation step already extracted from it, which is the subject of the next unit.
+
+::: zone-end

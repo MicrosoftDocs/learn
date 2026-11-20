@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=d4ac21cb-0191-42d0-81e7-df27c5fd49d3]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Contoso already runs Azure Cosmos DB, so mirroring looks like the obvious answer. It usually is. But the decision is worth making deliberately, because Cosmos DB now ships as two products, and picking the wrong one costs a migration rather than a configuration change. In this unit, you learn what separates them and which signals point to each.
 
 ## One engine, two implementations
@@ -46,3 +57,5 @@ Mirroring replicates inserts, updates, and deletes from an Azure Cosmos DB for N
 - **The replication compute is free.** You pay for OneLake storage against your capacity, for the compute that runs your queries, and for continuous backup on the source account, which mirroring requires.
 
 The next unit turns that requirement into a configuration.
+
+::: zone-end

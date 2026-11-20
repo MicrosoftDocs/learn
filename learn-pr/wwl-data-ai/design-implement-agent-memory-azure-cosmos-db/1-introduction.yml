@@ -2,10 +2,11 @@
 uid: learn.wwl.design-implement-agent-memory-azure-cosmos-db.introduction
 title: Introduction
 metadata:
+  zone_pivot_groups: video-or-text
   title: Introduction
   description: "Meet the assistant that answers well and forgets everything, and see why durable agent memory is a data design problem on Azure Cosmos DB before it's a model problem."
-  ms.date: 10/04/2026
-  author: wwlpublish
+  ms.date: 11/19/2026
+  author: MScalopez
   ms.author: calopez
   ms.topic: unit
   ai-usage: ai-generated

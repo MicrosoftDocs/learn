@@ -1,29 +1,17 @@
-In this module, you learned about Azure VMware Solution, an Azure service to deploy and extend VMware vSphere environments in the cloud.
+Azure VMware Solution lets you keep a compatible application on vSphere while moving it to dedicated Azure hosts. For the healthcare scenario, use these four criteria to decide where each workload belongs:
 
-Specifically, you learned:
+- **Workload fit:** Check application support, dependencies, and where the application data and recovery copies may reside. Choose a migration method that meets the cutover window and test the application before retiring its source.
+- **Operations and recovery:** Microsoft maintains the hosts and VMware platform. Your team manages the guests, application access, backups, and tested recovery plans.
+- **Capacity and connectivity:** Size for management overhead, host failures, and usable storage. Gen 1 uses an AVS-managed ExpressRoute circuit for VNet access; Gen 2 attaches directly to a VNet. Plan on-premises connectivity separately if you need it.
+- **Cost:** Estimate Azure host charges, the portable VMware Cloud Foundation subscription, guest licensing, and the gateways, circuits, and data transfer your workloads require. Check the [eligible guest license types](/azure/azure-vmware/license-sql-windows-in-avs#type-of-licenses) and the [Microsoft Product Terms for your agreement](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftAzure) to determine whether Azure Hybrid Benefit applies to your Windows Server or SQL Server workloads.
 
-- The business value of Azure VMware Solution:
-  - VMware solution tools and technology that you know.
-  - Azure native integration. 
-  - High-performance cloud infrastructure.
+Add the cost of the Azure services you plan to use. For example, estimate the volume of [VMware syslog you export](/azure/azure-monitor/reference/supported-logs/microsoft-avs-privateclouds-logs). If you use Azure NetApp Files, price the [capacity you provision](/azure/azure-netapp-files/azure-netapp-files-cost-model#billing-fundamentals), not just the space your files use. [Compare the total AVS cost](/azure/cloud-adoption-framework/azure-vmware-solution/strategy#what-does-azure-vmware-solution-cost) with the cost of refreshing your hosts and running the same workloads in your datacenter over the same period.
 
-- The basic components of Azure VMware Solution and how it works in Azure:
-  - What Microsoft manages with the solution.
-  - Private cloud concepts and storage.
-  - Interconnectivity in Azure.
-  - Security and compliance.
-  
-- Use cases that drive adoption of Azure VMware Solution:
-  - Migrate existing assets *as is*. 
-  - Reduce your datacenter footprint.
-  - Prepare for disaster recovery and business continuity.
-  - Modernize your workloads.
-  
-- Pricing for Azure VMware Solution
+Continue with [Run VMware resources on Azure VMware Solution](/training/paths/run-vmware-workloads-azure-vmware-solution/) to learn how to deploy a private cloud and migrate workloads.
 
-Continue this path to learn about how to deploy and migrate VMs to Azure VMware Solution.
+## More info
 
-## Learn more
+Use these resources to explore AVS and plan a VMware migration:
 
 - [Azure VMware Solution documentation](/azure/azure-vmware/)
 - [Run your VMware workloads natively on Azure](https://azure.microsoft.com/services/azure-vmware/)
