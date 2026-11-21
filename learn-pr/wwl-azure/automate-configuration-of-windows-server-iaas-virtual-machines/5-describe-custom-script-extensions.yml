@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.automate-configuration-of-windows-server-iaas-vms.describe-custom-script-extensions
-title: Describe Custom Script Extensions
+title: Describe custom script extensions
 metadata:
   title: Describe Custom Script Extensions
   description: "Describe Custom Script Extensions"
-  ms.date: 01/23/2026
+  ms.date: 11/18/2026
   author: Orin-Thomas
   ms.author: orthomas
   ms.topic: unit
