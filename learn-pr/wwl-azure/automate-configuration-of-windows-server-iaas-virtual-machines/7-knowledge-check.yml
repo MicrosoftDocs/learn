@@ -2,9 +2,9 @@
 uid: learn.wwl.automate-configuration-of-windows-server-iaas-vms.knowledge-check
 title: Module assessment
 metadata:
-  title: Module assessment
-  description: "Knowledge check"
-  ms.date: 01/23/2026
+  title: Module Assessment
+  description: "Module assessment"
+  ms.date: 11/18/2026
   author: Orin-Thomas
   ms.author: orthomas
   ms.topic: unit
@@ -12,38 +12,37 @@ metadata:
 azureSandbox: false
 durationInMinutes: 3
 quiz:
-  title: "Check your knowledge"
   questions:
-  - content: "Which of the following statements best describes Azure Automation State Configuration?"
+  - content: "Which statement correctly describes the identities used to deliver a private Machine Configuration package through Azure Policy?"
     choices:
-    - content: "A declarative management platform to configure, deploy, and control systems."
+    - content: "The policy-assignment identity replaces the VM identity for every guest operation."
       isCorrect: false
-      explanation: "Incorrect. PowerShell DSC is a declarative management platform to configure, deploy, and control systems."
-    - content: "A service used to write, manage, and compile PowerShell DSC configurations, import DSC resources, and assign configurations to target nodes."
+      explanation: "Incorrect. The VM still needs its own system-assigned identity to authenticate to Machine Configuration and read a private package when identity-based access is configured."
+    - content: "The VM identity authenticates the guest and reads its authorized package, while the policy-assignment identity performs authorized Azure deployments."
       isCorrect: true
-      explanation: "Correct. Azure Automation State Configuration enables you to ensure that all the VMs in a collection are in the same consistent state."
-    - content: "A service that manages the state configuration on each destination, or node."
+      explanation: "Correct. Guest authentication and private-blob access are separate from the deployment permissions used by Azure Policy remediation."
+    - content: "A storage account key is always required, even when the VM has an authorized managed identity."
       isCorrect: false
-      explanation: "Incorrect. The LCM is responsible for updating the configuration to match the desired state on a node."
-  - content: "Why should Contoso use pull mode instead of push mode for DSC?"
+      explanation: "Incorrect. A correctly configured VM managed identity with blob-read permission can download a private package without a storage account key."
+  - content: "Which Machine Configuration guest assignment type reports configuration state without changing the machine?"
     choices:
-    - content: "Pull mode is best for complex environments that need redundancy and scale."
+    - content: "Audit."
       isCorrect: true
-      explanation: "Correct. The LCM on each node automatically polls the pull server at regular intervals to get the latest configuration details. In push mode, an administrator manually sends the configurations toward the nodes."
-    - content: "Pull mode is easy to set up and doesn't need its own dedicated infrastructure."
+      explanation: "Correct. Audit reports compliance without applying configuration changes."
+    - content: "ApplyAndMonitor."
       isCorrect: false
-      explanation: "Incorrect. Push mode is easy to set up and doesn't need its own dedicated infrastructure."
-    - content: "Pull mode uses the LCM to make sure that the state on each node matches the state specified by the configuration."
+      explanation: "Incorrect. ApplyAndMonitor applies configuration and then reports subsequent drift without automatically correcting it."
+    - content: "ApplyAndAutoCorrect."
       isCorrect: false
-      explanation: "Incorrect. Both pull mode and push mode use the LCM. The LCM is responsible for updating the configuration to match the desired state on a node."
-  - content: "When you onboard servers with Azure Automation State Configuration, you set the configuration mode to one of the following. Which should you choose to enable remediation for servers so that they remain compliant automatically?"
+      explanation: "Incorrect. ApplyAndAutoCorrect applies configuration and corrects subsequent drift during guest evaluation."
+  - content: "After initial deployment of a compatible set-capable package, which guest assignment type corrects subsequent drift without a new policy remediation task for each occurrence?"
     choices:
-    - content: "ApplyOnly."
+    - content: "Audit."
       isCorrect: false
-      explanation: "Incorrect. Choosing this option requires you to manually remediate noncompliant servers."
-    - content: "ApplyandMonitor."
+      explanation: "Incorrect. Audit reports configuration state and doesn't make changes."
+    - content: "ApplyAndMonitor."
       isCorrect: false
-      explanation: "Incorrect. Choosing this option requires you to manually remediate noncompliant servers."
+      explanation: "Incorrect. ApplyAndMonitor reports subsequent drift, but another remediation action is required to correct it."
     - content: "ApplyAndAutoCorrect."
       isCorrect: true
-      explanation: "Correct. With this option, servers that drift from a compliant state are auto-remediated."
+      explanation: "Correct. After the initial deployment, the guest agent corrects drift during subsequent evaluation without a new policy remediation task for each occurrence."

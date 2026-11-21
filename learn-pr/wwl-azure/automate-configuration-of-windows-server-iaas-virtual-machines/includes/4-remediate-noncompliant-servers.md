@@ -1,78 +1,86 @@
-When you onboard servers with Azure Automation State Configuration, you set the configuration mode to one of the following modes:
+Azure Machine Configuration reports whether a VM matches its assigned configuration and can correct configuration drift. If you execute the workflow described in the preceding unit, first obtain and prepare a maintained, tested package. A successful Azure deployment alone doesn't prove that the declared settings are compliant inside the VM.
 
-- **ApplyOnly**
-- **ApplyandMonitor**
-- **ApplyAndAutoCorrect**
+## Choose a guest assignment type
 
-If you don't choose **ApplyAndAutoCorrect**, servers that drift from a compliant state for any reason remain noncompliant until you manually correct them. To force an Azure Automation State Configuration node to download the latest configuration and apply it, you must use the **Update-DscConfiguration** cmdlet, as in the following code example:
+The guest assignment type controls what happens inside the machine:
 
-```powershell
-Update-DscConfiguration -Wait -Verbose
-```
+| Assignment type | Behavior |
+| --- | --- |
+| `Audit` | Reports configuration state without changing the machine. |
+| `ApplyAndMonitor` | Applies the configuration, then reports subsequent drift without automatically correcting it. Trigger remediation when you want to restore the declared state. |
+| `ApplyAndAutoCorrect` | Applies the configuration and corrects subsequent drift during guest evaluation. |
 
-However, to run this cmdlet against your noncompliant server, you must use an Azure compute feature *Run Command*.
+These case-sensitive values aren't Windows DSC Local Configuration Manager modes or Azure Policy enforcement modes. A package must support setting configuration, such as an `AuditAndSet` package, to perform remediation. Changing an assignment type doesn't make an audit-only implementation capable of applying settings.
 
-## What is the Run Command?
+Azure Policy's `deployIfNotExists` effect delivers the guest assignment. An initial policy remediation task can deliver and apply the configuration to an existing noncompliant VM. After that initial deployment, `ApplyAndAutoCorrect` corrects guest drift without a new policy remediation task for each occurrence.
 
-The **Run Command** feature enables you to run scripts inside VMs. You can use this feature when manually correcting configuration drift. **Run Command** uses the VM agent to run PowerShell scripts within an Azure Windows VM. You can use these scripts for a general machine or application management. They can help you to quickly diagnose and remediate VM access and network issues, and get the VM back to a good state.
+## Remediate and verify a noncompliant VM
 
-> [!TIP]
-> **Run Command** enables VM and application management, and troubleshooting by using scripts. It's available even when the machine is not reachable—for example, if the guest firewall doesn't have the Remote Desktop Protocol (RDP) or the Secure Shell (SSH) port open.
+Use the following process for the isolated Windows Server lab VM:
+
+1. Inspect the guest assignment and its detailed compliance reasons. Confirm the intended package version and content hash, the effective assignment type, and the settings the package actually manages.
+1. Resolve prerequisite failures before retrying remediation. Distinguish service or assignment-retrieval failures from custom-package download failures. Check the Machine Configuration extension, VM identity, and the service endpoints for the VM's cloud and region. Separately check HTTPS access to the package host and the VM identity's blob-read permission. Both paths need working DNS and routing. A successful blob download doesn't prove that the service endpoints are reachable.
+1. For an existing VM that needs the configuration applied initially, create a remediation task for the relevant Azure Policy assignment. You can select **Create a remediation task** when assigning the policy, or create one after evaluation. The task only targets noncompliant resources. If an initial audit assignment already reports compliance, follow the walkthrough's conditional baseline procedure and confirm the delivered type instead of assuming the task applied settings. The policy-assignment identity needs the deployment permissions declared by the definition; it isn't the VM identity that reads the package.
+1. For subsequent drift under `ApplyAndMonitor`, trigger another remediation for that assignment, for example through an Azure Policy remediation task after noncompliance is reported. Under `ApplyAndAutoCorrect`, allow the next guest evaluation to correct the drift and investigate any reported errors. An `Audit` assignment won't apply settings.
+1. Confirm both the actual setting values inside the VM and the guest compliance result. If remediation fails, use the detailed reasons to resolve the failure rather than repeatedly submitting the same deployment.
+
+When changing remediation modes, update the existing lab definition and deliver the corresponding change to its guest assignment. If the existing assignment is compliant, changing the definition might not trigger another deployment. Follow the controlled transition in the walkthrough and confirm the effective guest-assignment type before testing drift. Don't leave conflicting assignments active.
+
+Test only an outcome that the package declares. Stopping W3SVC demonstrates service-state drift only if the package manages that service's running state. It doesn't demonstrate drift in a package that checks only whether the Web-Server role is installed. With automatic correction, the reported result might already be compliant after correction, so don't require a transient noncompliant portal result as proof of the test.
+
+## Optional diagnostics with Action Run Command
+
+Action Run Command uses the Azure VM agent to run PowerShell inside a Windows VM. It's useful for diagnostics or an approved one-time correction, but it isn't the Machine Configuration enforcement mechanism.
+
+The VM must be running with a ready Azure VM agent. Action Run Command can work when inbound Remote Desktop Protocol (RDP) access is blocked, but it can't execute through an agent that isn't ready. Check the agent status in the VM's properties before using it.
+
+Outbound connectivity on port 443 to the documented Azure public endpoints is required to return results. If those endpoints are blocked, a script might run without returning its results. Where appropriate for your network policy, use the `AzureCloud` service tag to allow that traffic.
 
 ### Restrictions
 
-There are some restrictions to using **Run Command**. Because it's designed to quickly remedy issues affecting VMs, its software features have been kept to a minimum. The following restrictions apply when using **Run Command**:
+The following limits apply to Action Run Command:
 
-- Output is limited to the last 4,096 bytes.
+- Returned output is limited to the last 4,096 bytes.
 - The minimum time to run a script is about 20 seconds.
-- Scripts run as the System account on Windows.
+- Scripts run as LocalSystem on Windows.
 - Only one script can run at a time.
-- Scripts that prompt for information (interactive mode) are not supported.
+- Interactive prompts aren't supported.
 - You can't cancel a running script.
-- The maximum time a script can run is 90 minutes. After that, it will time out.
-- Outbound connectivity from the VM is required to return the results of the script.
+- A script times out after 90 minutes.
+- Don't stop or update the VM agent from inside the script; doing so can leave the operation in a transitioning state until it times out.
 
-> [!NOTE]
-> To function correctly, **Run Command** requires connectivity (port 443) to Azure public IP addresses. If the extension doesn't have access to these endpoints, the scripts might run successfully but not return the results. If you're blocking traffic on the VM, you can use service tags to allow traffic to Azure public IP addresses by using the AzureCloud tag.
+Managed Run Command is a separate resource-based option with capabilities such as configurable timeouts, an execution user, multiple scripts, and external output storage. Don't infer its limits or authorization from this Action Run Command procedure.
 
-### Available PowerShell commands
+### Limit access to Action Run Command
 
-You can launch a number of PowerShell commands against your Windows VMs. The following table describes the list of commands available for Windows VMs.
+Catalog access and execution use different permissions and scopes:
 
-|Name|Description|
-|---|---|
-|**RunPowerShellScript**|Runs a PowerShell script. You can use the **RunPowerShellScript** command to run any custom script that you want.|
-|**DisableNLA**|Disables Network Level Authentication (NLA).|
-|**DisableWindowsUpdate**|Disables Automatic Updates through Windows Update.|
-|**EnableAdminAccount**|Checks if the local administrator account is disabled, and if so enables it.|
-|**EnableEMS**|Enables Emergency Management Services (EMS) to allow for serial console connection in troubleshooting scenarios.|
-|**EnableRemotePS**|Configures the machine to enable PowerShell remoting.|
-|**EnableWindowsUpdate**|Enables Automatic Updates through Windows Update.|
-|**IPConfig**|Provides detailed information for the IP address, subnet mask, and default gateway for each adapter bound to Transmission Control Protocol (TCP)/IP.|
-|**RDPSettings**|Checks registry settings and domain policy settings. Suggests policy actions if the machine is part of a domain, or modifies the settings to default values.|
-|**ResetRDPCert**|Removes the Transport Layer Security (TLS)/SSL certificate tied to the RDP listener and restores the RDP listener security to default. Use this script if you find any issues with the certificate.|
-|**SetRDPPort**|Sets the default or user-specified port number for Microsoft Remote Desktop connections. Enables firewall rules for inbound access to the port.|
+| Operation | Required permission | Scope |
+| --- | --- | --- |
+| List available command definitions or display their details | `Microsoft.Compute/locations/runCommands/read` | Subscription scope |
+| Execute a command on a VM | `Microsoft.Compute/virtualMachines/runCommand/action` | The VM or an inherited scope |
 
-### Limiting access to the Run Command feature
+Reader includes the catalog-read permission. Virtual Machine Contributor includes the execute permission. Effective access depends on role assignments and their scopes, not a hierarchy of higher roles. A VM-scoped role assignment doesn't provide subscription-scoped catalog access. Use an appropriately scoped built-in role or a custom role with the permissions needed for the task.
 
-Because **Run Command** can overrule some firewall port restrictions, it's important to ensure only authorized personnel can use it. Listing the run commands or displaying the details of a command requires the **Microsoft.Compute/locations/runCommand/read** permission.
+> [!CAUTION]
+> Action Run Command executes as LocalSystem on Windows. Treat execution permission as privileged guest access, even when inbound remote-management ports are closed.
 
-> [!NOTE]
-> The built-in Reader role and higher levels have this permission.
+### Inspect the IIS role
 
-Running a command requires the **Microsoft.Compute/virtualMachines/runCommand/action** permission.
+For a read-only check, open the VM in the Azure portal, select **Run command**, and choose **RunPowerShellScript**. Review the following script before running it:
 
-> [!NOTE]
-> The Virtual Machine Contributor role and higher levels have this permission.
+```powershell
+Import-Module ServerManager -ErrorAction Stop
+Get-WindowsFeature -Name 'Web-Server'
+Get-Service -Name 'W3SVC' -ErrorAction Stop
+```
 
-You can use one of the built-in roles or create a custom role to use **Run Command**.
+The role and service results describe current state; they don't establish continuous enforcement or full website health. For network diagnostics, the built-in **IPConfig** command reports the VM's adapter configuration.
 
 ## Additional reading
 
-You can learn more by reviewing the following documents:
+Use these references for remediation behavior and the Run Command variants:
 
-- [Run PowerShell scripts in your Windows VM by using Run Command](https://aka.ms/VM-windows-run-command?azure-portal=true).
-- [Update-DscConfiguration](https://aka.ms/update-dscconfiguration?azure-portal=true).
-
-> [!NOTE]
-> Azure Machine Configuration is a replacement service combines features of the DSC extension handler, Azure Automation State Configuration, and incorporates commonly requested features based on customer feedback. Azure Machine Configuration is currently in preview. Azure Automation State Configuration is still available and will be retired on September 30, 2027.
+- [Machine Configuration remediation options](/azure/governance/machine-configuration/concepts/remediation-options).
+- [Run scripts in a Windows VM with Action Run Command](/azure/virtual-machines/windows/run-command).
+- [Compare Run Command options](/azure/virtual-machines/run-command-overview).

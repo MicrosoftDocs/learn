@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.automate-configuration-of-windows-server-iaas-vms.implement-azure-automation-with-dsc
-title: Implement Azure Automation with DSC
+title: Understand Azure Machine Configuration deployment
 metadata:
-  title: Implement Azure Automation with DSC
-  description: "Implement Azure Automation with DSC"
-  ms.date: 01/23/2026
+  title: Understand Azure Machine Configuration Deployment
+  description: "Explain the Windows Server VM prerequisites and the deployment sequence for Azure Machine Configuration packages, guest assignments, and Azure Policy. Package-dependent execution requires a separately obtained, tested artifact."
+  ms.date: 11/18/2026
   author: Orin-Thomas
   ms.author: orthomas
   ms.topic: unit

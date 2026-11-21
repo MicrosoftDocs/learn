@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.automate-configuration-of-windows-server-iaas-vms.configure-vm-by-using-dsc
-title: Configure a Virtual Machine by using DSC
+title: Compare configuration drift and remediation
 metadata:
-  title: Configure a Virtual Machine by using DSC
-  description: "Configure a Virtual Machine by using DSC"
-  ms.date: 01/23/2026
+  title: Compare Configuration Drift and Remediation
+  description: "Interpret a conceptual IIS configuration workflow and compare monitored drift with automatic correction. Executing the package-dependent steps requires a separately obtained, tested Machine Configuration package."
+  ms.date: 11/18/2026
   author: Orin-Thomas
   ms.author: orthomas
   ms.topic: unit

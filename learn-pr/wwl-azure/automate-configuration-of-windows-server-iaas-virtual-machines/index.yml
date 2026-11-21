@@ -24,22 +24,21 @@ metadata:
     - Virtualization
   gs-solution.area: "Cloud & AI Platforms"
   gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/wwl-azure/automate-configuration-of-windows-server-iaas-virtual-machines/index.yml
-  title: Automate the configuration of Windows Server IaaS Virtual Machines
-  description: "Learn how to deploy Desired State Configuration (DSC) extensions, implement those extensions to remediate noncompliant servers, and use custom script extension."
-  ms.date: 01/23/2026
+  title: Automate the Configuration of Windows Server IaaS Virtual Machines
+  description: "Explore Azure Automation, one-time Windows Server VM setup with Custom Script Extension, and the Azure Machine Configuration deployment and drift-remediation workflow."
+  ms.date: 11/18/2026
   author: Orin-Thomas
   ms.author: orthomas
   ms.topic: module
   ms.service: windows-server
-title: Automate the configuration of Windows Server IaaS Virtual Machines
-summary: Learn how to deploy Desired State Configuration (DSC) extensions, implement those extensions to remediate noncompliant servers, and use custom script extension.
+title: Automate the configuration of Windows Server IaaS virtual machines
+summary: Explore Azure Automation, one-time Windows Server VM setup with Custom Script Extension, and the Azure Machine Configuration deployment and drift-remediation workflow.
 abstract: |
   After completing this module, you'll be able to:
-  - Describe Azure Automation.
-  - Implement Azure Automation with DSC.
-  - Remediate noncompliant servers.
-  - Describe custom script extension.
-  - Configure a VM by using DSC extensions.
+  - Describe Azure Automation runbooks and their execution environments.
+  - Explain the prerequisites and deployment sequence for configuring Windows Server VMs with Azure Machine Configuration.
+  - Interpret configuration compliance and distinguish monitored drift from automatic correction.
+  - Use Custom Script Extension for one-time VM configuration.
 prerequisites: |
   In order to get the best learning experience from this module, it's important that you have knowledge and experience of the following technologies:
   - Managing the Windows Server operating system and Windows Server workloads in on-premises scenarios, including Active Directory Domain Services (AD DS), Domain Name System (DNS), the Distributed File System (DFS), Microsoft Hyper-V, and file and storage services
@@ -50,7 +49,7 @@ prerequisites: |
   - Microsoft Entra ID
   - Security-related technologies such as firewalls, encryption, and multifactor authentication
   - Windows PowerShell scripting
-  - Automation and monitoring
+  - Desired State Configuration (DSC)
 iconUrl: /training/achievements/automate-the-configuration-of-windows-server-iaaa-vms.svg
 levels:
 - intermediate

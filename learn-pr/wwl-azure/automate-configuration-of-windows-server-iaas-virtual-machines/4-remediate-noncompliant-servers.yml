@@ -2,9 +2,9 @@
 uid: learn.wwl.automate-configuration-of-windows-server-iaas-vms.remediate-noncompliant-servers
 title: Remediate noncompliant servers
 metadata:
-  title: Remediate noncompliant servers
+  title: Remediate Noncompliant Servers
   description: "Remediate noncompliant servers"
-  ms.date: 01/23/2026
+  ms.date: 11/18/2026
   author: Orin-Thomas
   ms.author: orthomas
   ms.topic: unit
