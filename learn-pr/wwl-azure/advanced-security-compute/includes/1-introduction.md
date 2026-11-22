@@ -1,3 +1,5 @@
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=3c550e01-5d47-4164-8e83-9c3e8c28e33c]
+
 This module is designed to provide administrators with the knowledge and skills needed to plan and implement advanced security measures for Azure compute resources, safeguarding applications and data against evolving security threats.
 
 ## Scenario

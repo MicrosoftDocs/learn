@@ -1,3 +1,5 @@
+:::image type="content" source="../media/10-azure-data-encryption.svg" alt-text="Diagram providing an overview of the important concepts in this unit.":::
+
 Encryption at Rest is a common security requirement. In Azure, organizations can encrypt data at rest without the risk or cost of a custom key management solution. Organizations have the option of letting Azure completely manage Encryption at Rest. Additionally, organizations have various options to closely manage encryption or encryption keys.
 
 ## What is encryption at rest?

@@ -1,3 +1,5 @@
+:::image type="content" source="../media/06-best-practices-authentication-authorization.svg" alt-text="Diagram providing an overview of the important concepts in this unit.":::
+
 As you deploy and maintain clusters in Azure Kubernetes Service (AKS), you implement ways to manage access to resources and services. Without these controls:
 
 - Accounts could have access to unnecessary resources and services.

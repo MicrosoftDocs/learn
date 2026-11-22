@@ -1,3 +1,5 @@
+:::image type="content" source="../media/05-microsoft-defender-containers.svg" alt-text="Diagram providing an overview of the important concepts in this unit.":::
+
 Microsoft Defender for Containers is a cloud-native solution to improve, monitor, and maintain the security of your containerized assets (Kubernetes clusters, Kubernetes nodes, Kubernetes workloads, container registries, container images and more), and their applications, across multicloud and on-premises environments.
 
 Defender for Containers assists you with five core domains of container security:

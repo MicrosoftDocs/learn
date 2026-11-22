@@ -1,3 +1,5 @@
+:::image type="content" source="../media/03-azure-kubernetes-service-overview.svg" alt-text="Diagram providing an overview of the important concepts in this unit.":::
+
 Azure Kubernetes Service (AKS) is a managed Kubernetes service that you can use to deploy and manage containerized applications. You don't need container orchestration expertise to use AKS. AKS reduces the complexity and operational overhead of managing Kubernetes by offloading much of that responsibility to Azure. AKS is an ideal platform for deploying and managing containerized applications that require high availability, scalability, and portability. AKS supports deploying applications to multiple regions, using open-source tools, and integrating with existing DevOps tools.
 
 ## Overview of Azure Kubernetes Service
