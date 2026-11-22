@@ -1,3 +1,5 @@
+:::image type="content" source="../media/10-automate-evidence-collection.svg" alt-text="Diagram providing an overview of the important concepts in this unit.":::
+
 Using automation should make evidence repeatable. You should be careful that implementing automation, especially if you're using generative AI to create new PowerShell scripts, shouldn't lead you to make changes to your environment faster than they can be reviewed.
 
 ## Inventory policy objects

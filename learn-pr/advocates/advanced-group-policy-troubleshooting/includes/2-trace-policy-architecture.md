@@ -1,3 +1,5 @@
+:::image type="content" source="../media/02-trace-policy-architecture.svg" alt-text="Diagram providing an overview of the important concepts in this unit.":::
+
 During advanced Group Policy troubleshooting, you can investigate the discrepancy between setting in question and the result observed by examining the following elements in sequence:
 
 1. Policy definition.

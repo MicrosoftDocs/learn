@@ -1,8 +1,8 @@
+:::image type="content" source="../media/07-diagnose-policy-replication.svg" alt-text="Diagram providing an overview of the important concepts in this unit.":::
+
 GPO metadata plus GPO files use independent replication systems. Consistency must be proven on the domain controller path used by the client. The following diagram separates the GPC path replicated through AD DS from the GPT file path replicated through DFSR. The paths converge independently: DC01 has GPC and GPT version 18, while DC02 has GPC version 18 but GPT version 17. A client that selects DC02 therefore observes the mismatch, so diagnosis must prove both paths on the server the client used.
 
-:::image type="complex" source="../media/dual-policy-replication.svg" alt-text="Diagram that shows separate AD DS and DFSR replication paths for Group Policy.":::
-[Diagram that shows separate AD DS and DFSR replication paths for Group Policy.]
-:::image-end:::
+:::image type="content" source="../media/dual-policy-replication.svg" alt-text="Diagram that shows separate AD DS and DFSR replication paths for Group Policy.":::
 
 ## Recognize split-state failures
 

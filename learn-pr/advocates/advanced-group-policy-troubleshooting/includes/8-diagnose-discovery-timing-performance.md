@@ -1,3 +1,5 @@
+:::image type="content" source="../media/08-diagnose-discovery-timing-performance.svg" alt-text="Diagram providing an overview of the important concepts in this unit.":::
+
 Troubleshooting Group Policy can be challenging because:
 
 - Policy can be correct yet arrive late.
@@ -6,9 +8,7 @@ Troubleshooting Group Policy can be challenging because:
 
 The diagram shows the timeline running from startup and computer foreground processing through user sign-in, user foreground processing, desktop availability, and background refresh. Foreground work can be asynchronous or synchronous. Software Installation, Folder Redirection, and startup, shutdown, sign-in, and sign-out scripts are foreground-only or trigger-dependent examples. Background refresh can't replace a required trigger, and every processing instance has a fixed 60-minute limit.
 
-:::image type="complex" source="../media/policy-processing-timeline.svg" alt-text="Diagram that shows Group Policy startup, sign-in, foreground, and background timing.":::
-[Diagram that shows Group Policy startup, sign-in, foreground, and background timing.]
-:::image-end:::
+:::image type="content" source="../media/policy-processing-timeline.svg" alt-text="Diagram that shows Group Policy startup, sign-in, foreground, and background timing.":::
 
 ## Validate domain controller discovery
 
