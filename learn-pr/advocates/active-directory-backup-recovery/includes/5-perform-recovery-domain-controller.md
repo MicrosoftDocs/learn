@@ -1,3 +1,5 @@
+:::image type="content" source="../media/05-perform-domain-controller-recovery.svg" alt-text="Diagram providing an overview of the important concepts in this unit.":::
+
 Once you've determined the scope of your recovery action, you need to perform the actual recovery using appropriate tools. In this unit, we examine recovering objects and recovering or restoring domain controllers.
 
 ## Active Directory Recycle Bin

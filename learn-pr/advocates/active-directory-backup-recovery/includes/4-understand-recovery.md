@@ -1,3 +1,5 @@
+:::image type="content" source="../media/04-understand-recovery.svg" alt-text="Diagram providing an overview of the important concepts in this unit.":::
+
 Selecting the scope of recovery is a risk decision. The preferred method resolves the incident with the smallest authority change, smallest replication impact, and least data loss.
 
 The following sequence allows you to determine the minimum scope required:

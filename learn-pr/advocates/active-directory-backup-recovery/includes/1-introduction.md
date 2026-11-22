@@ -1,3 +1,5 @@
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=e280e5ea-5037-40aa-b18b-83629e508ca9]
+
 Active Directory Domain Services (AD DS) is the primary identity control plane of millions of organization's Windows environments. If Active Directory is unavailable, users, computers, services, applications, trusts, Group Policy, and administrative tools are also unavailable. If Active Directory is compromised, restoring availability without restoring trust can preserve an attacker's access.
 
 In this module you learn data protection, recovery strategies, and techniques to address:

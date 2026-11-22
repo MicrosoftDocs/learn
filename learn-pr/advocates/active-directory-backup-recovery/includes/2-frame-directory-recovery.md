@@ -1,3 +1,5 @@
+:::image type="content" source="../media/02-frame-directory-recovery.svg" alt-text="Diagram providing an overview of the important concepts in this unit.":::
+
 An Active Directory recovery plan begins with decisions about business impact, acceptable data loss, security state, and service dependency order.
 
 Use four related measures to define your organization's recovery requirements:
