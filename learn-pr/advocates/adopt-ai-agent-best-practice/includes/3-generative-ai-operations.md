@@ -1,3 +1,5 @@
+:::image type="content" source="../media/03-generative-ai-operations.svg" alt-text="Diagram providing an overview of the important concepts in this unit.":::
+
 Generative Artificial Intelligence Operations, or GenAI Ops (sometimes
 called LLMOps), describes the operational practices and strategies for
 managing large language model (LLM) based applications in production.
