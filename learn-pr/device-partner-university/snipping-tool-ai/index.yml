@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.dpu.snipping-tool-ai
+title: Capture the perfect screenshot with Snipping Tool on a Copilot+ PC
+metadata:
+  title: Capture The Perfect Screenshot With Snipping Tool On A Copilot+ PC
+  description: 'Learn how to capture, refine, and share screenshots with Snipping Tool, including how Perfect Screenshot simplifies image capture on a Copilot+ PC.'
+  ms.date: 11/20/2026
+  author: sheridan-connor
+  ms.author: v-csheridan
+  ms.topic: module
+  ms.service: windows-11
+summary: >2+
+  Learn how to create clear, useful screenshots with Snipping Tool in Windows 11. Explore standard capture and markup options, then see how Perfect Screenshot on a Copilot+ PC can automatically adjust a rough rectangular selection to frame prominent on-screen content, reducing the need for post-capture cropping. You'll also use Text actions to remove unnecessary contact information and consider when a screenshot is the right way to communicate information. 
+abstract: |2+
+  By the end of this module, you'll be able to:
+  - Choose an appropriate method for capturing on-screen content with Snipping Tool.
+  - Capture focused on-screen content by using Perfect Screenshot on a Copilot+ PC.
+  - Refine a screenshot so that important information is easy to identify.
+  - Prepare a screenshot for sharing by removing unnecessary text information.
+  - Determine when a screenshot is an appropriate way to share on-screen information.
+
+prerequisites: |
+  - A Windows 11 PC with Snipping Tool is sufficient for the standard screenshot capture, markup, Text actions, and sharing concepts covered in this module.
+  - A supported Copilot+ PC is required to follow the Perfect Screenshot portion of the exercise.
+
+iconUrl: /training/achievements/snipping-tool-ai.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - administrator
+  - business-leader
+  - business-owner
+  - business-user
+  - technology-manager
+products:
+  - windows-11
+units:
+  - learn.dpu.snipping-tool-ai.introduction
+  - learn.dpu.snipping-tool-ai.choose-right-screenshot
+  - learn.dpu.snipping-tool-ai.capture-focused-screenshot
+  - learn.dpu.snipping-tool-ai.refine-screenshot
+  - learn.dpu.snipping-tool-ai.remove-unnecessary-information
+  - learn.dpu.snipping-tool-ai.when-use-screenshots
+  - learn.dpu.snipping-tool-ai.knowledge-check
+  - learn.dpu.snipping-tool-ai.summary
+badge:
+  uid: learn.dpu.snipping-tool-ai.badge

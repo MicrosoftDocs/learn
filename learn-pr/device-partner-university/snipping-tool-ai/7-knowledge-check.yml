@@ -1,0 +1,84 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.snipping-tool-ai.knowledge-check
+title: Module assessment
+metadata:
+  title: Module Assessment
+  description: This content is part of the "Capture the perfect screenshot with Snipping Tool on a Copilot+ PC" module.
+  ms.date: 11/20/2026
+  author: sheridan-connor
+  ms.author: v-csheridan
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "You need to capture one focused section of a dashboard on a Copilot+ PC without precisely positioning the initial selection. Which Snipping Tool feature should you use?"
+    choices:
+        - content: "Full screen"
+          isCorrect: false
+          explanation: "Incorrect. Full screen captures the entire screen rather than focusing the capture on prominent content within a selected area."
+        - content: "Perfect screenshot"
+          isCorrect: true
+          explanation: "Correct. Perfect Screenshot analyzes the visible screen and adjusts the capture area around prominent on-screen content, reducing the need for precise initial selection and post-capture cropping."
+        - content: "Freeform"
+          isCorrect: false
+          explanation: "Incorrect. Freeform lets you draw a custom shape around an area but doesn't automatically adjust the capture area around prominent content."
+        - content: "Text actions"
+          isCorrect: false
+          explanation: "Incorrect. Text actions works with recognized text in a captured image rather than adjusting the capture area."
+  - content: "After capturing the Contoso dashboard, you want colleagues to immediately notice the current milestone without obscuring the underlying information. What should you do?"
+    choices:
+        - content: "Capture the entire screen again"
+          isCorrect: false
+          explanation: "Incorrect. Capturing more screen content doesn't help make the current milestone easier to identify."
+        - content: "Use an annotation such as the Highlighter or a shape"
+          isCorrect: true
+          explanation: "Correct. Snipping Tool's annotation tools, such as the highlighter or shapes, can emphasize important information without overwhelming the underlying content."
+        - content: "Use Quick redact on the milestone"
+          isCorrect: false
+          explanation: "Incorrect. Quick redact is used in this scenario to remove unnecessary recognized email addresses and phone numbers, not to emphasize a milestone."
+        - content: "Replace the screenshot with the underlying dashboard"
+          isCorrect: false
+          explanation: "Incorrect. The scenario calls for a focused visual update, so annotating the screenshot helps direct attention to the important milestone."
+  - content: "The screenshot contains an email address and phone number that your audience doesn't need. Which Snipping Tool option can redact these recognized details?"
+    choices:
+        - content: "Perfect screenshot"
+          isCorrect: false
+          explanation: "Incorrect. Perfect Screenshot adjusts the capture area around prominent on-screen content."
+        - content: "Quick redact"
+          isCorrect: true
+          explanation: "Correct. Quick redact, available through Text actions, can redact recognized email addresses and phone numbers."
+        - content: "Highlighter"
+          isCorrect: false
+          explanation: "Incorrect. The Highlighter adds visual emphasis to information rather than redacting recognized contact details."
+        - content: "Crop"
+          isCorrect: false
+          explanation: "Incorrect. Cropping changes the visible area of an image rather than using text recognition to redact email addresses and phone numbers."
+  - content: "Your colleagues need to explore and edit the underlying project information rather than view a snapshot of its current state. What should you consider sharing instead of a screenshot?"
+    choices:
+        - content: "The original document, data, or a link to the source"
+          isCorrect: true
+          explanation: "Correct. When the audience needs to explore, edit, or reuse information, the module recommends sharing the original document, data, or a link to the source."
+        - content: "A full-screen screenshot"
+          isCorrect: false
+          explanation: "Incorrect. A full-screen screenshot is still a static image and doesn't allow the audience to explore or edit the underlying information."
+        - content: "A screenshot with additional annotations"
+          isCorrect: false
+          explanation: "Incorrect. Annotations can emphasize information, but the resulting screenshot remains a static snapshot."
+        - content: "A Freeform capture of the project information"
+          isCorrect: false
+          explanation: "Incorrect. Freeform changes how an area is captured, but the resulting screenshot doesn't let the audience interact with the underlying source."
+  - content: "When should you consider a recording or demonstration instead of a still screenshot?"
+    choices:
+        - content: "When the visual appearance of information matters"
+          isCorrect: false
+          explanation: "Incorrect. A screenshot can be useful when visual appearance and context matter."
+        - content: "When you need to capture the state of something at a particular moment"
+          isCorrect: false
+          explanation: "Incorrect. Capturing the state of something at a particular moment is an appropriate use for a screenshot."
+        - content: "When your audience needs to see something change over time"
+          isCorrect: true
+          explanation: "Correct. The module recommends considering a recording or demonstration when the audience needs to see something change over time, such as the steps in a process."
+        - content: "When you want to focus attention on a specific portion of on-screen content"
+          isCorrect: false
+          explanation: "Incorrect. Focusing attention on a specific portion of on-screen content is an appropriate use for Snipping Tool."

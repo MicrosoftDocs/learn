@@ -1,0 +1,52 @@
+### YamlMime:Module
+uid: learn.devrel.azure-virtual-machine-diagnose-guest-agent-extension
+metadata:
+  title: "Diagnose Windows and Linux Azure Virtual Machine Guest, Agent, and Extension Failures"
+  description: Diagnose Azure virtual machine guest, platform agent, and extension failures on Windows and Linux by correlating evidence, selecting usable channels, and verifying targeted corrections.
+  ms.date: 11/20/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: module-standard-concept-based
+  ms.service: azure-virtual-machines
+  ai-usage: ai-assisted
+title: "Diagnose Windows and Linux Azure virtual machine guest, agent, and extension failures"
+summary: |
+  Azure can show a Windows or Linux VM as **Running** even when its guest operating system stalls during startup. A configuration update can also fail on a healthy guest: a network rule might prevent the VM agent from receiving instructions from Azure, or an extension the agent starts might run a setup script that fails. The update status alone doesn't tell you which happened. A stalled guest can leave the application offline, while a failed script might leave it serving users with its old settings. Rebooting the VM in the latter case can interrupt a working service without fixing the script.
+abstract: |
+  After completing this module, you'll be able to:
+
+  - Distinguish the existence of a VM resource, its power state, and its provisioning state (the result of a create or update request) from the health of the guest, extensions, and agents.
+  - Select a diagnostic channel whose dependencies remain usable.
+  - Use timestamps, logs, and output from the Custom Script extension's handler (the program that runs the submitted command) to identify where the operation failed.
+  - Choose a change you can undo, verify the original operation on a new attempt, and check the application (the workload) through an independent channel.
+  - Prepare a support packet: a record of the evidence, changes, and results that another operator can use. Identify when to hand the VM over for recovery from backup or recovery in another region.
+prerequisites: |
+  Before you begin, you should have:
+
+  - Experience troubleshooting Windows startup and virtual machine extension failures.
+  - Familiarity with Azure virtual machine operations and Windows or Linux guest administration.
+
+  The examples use a worked incident and supplied evidence. You don't need an Azure subscription or a running virtual machine.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- advanced
+roles:
+- administrator
+- support-engineer
+products:
+- azure-virtual-machines
+subjects:
+- infrastructure
+units:
+- learn.devrel.azure-virtual-machine-diagnose-guest-agent-extension.introduction
+- learn.devrel.azure-virtual-machine-diagnose-guest-agent-extension.distinguish-virtual-machine-states
+- learn.devrel.azure-virtual-machine-diagnose-guest-agent-extension.select-diagnostic-channels
+- learn.devrel.azure-virtual-machine-diagnose-guest-agent-extension.interpret-guest-agent-evidence
+- learn.devrel.azure-virtual-machine-diagnose-guest-agent-extension.classify-guest-extension-failures
+- learn.devrel.azure-virtual-machine-diagnose-guest-agent-extension.trace-contoso-extension-failure
+- learn.devrel.azure-virtual-machine-diagnose-guest-agent-extension.verify-repair-evidence
+- learn.devrel.azure-virtual-machine-diagnose-guest-agent-extension.close-guest-incidents
+- learn.devrel.azure-virtual-machine-diagnose-guest-agent-extension.knowledge-check
+- learn.devrel.azure-virtual-machine-diagnose-guest-agent-extension.summary
+badge:
+  uid: learn.devrel.azure-virtual-machine-diagnose-guest-agent-extension.badge

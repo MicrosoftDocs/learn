@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-virtual-machine-diagnose-guest-agent-extension.classify-guest-extension-failures
+metadata:
+  title: "Classify Guest Extension Failures"
+  description: "Use execution context and boot, storage, agent, and handler evidence to classify failures without disruptive guessing."
+  ms.date: 11/20/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: "Classify guest extension failures"
+durationInMinutes: 18
+content: |
+  [!include[](includes/5-classify-guest-extension-failures.md)]

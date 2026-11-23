@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-virtual-machine-diagnose-guest-agent-extension.trace-contoso-extension-failure
+metadata:
+  title: "Trace Contoso Extension Failure"
+  description: "Match the failed extension sequence to its command output and exit code, then correct only the demonstrated cause."
+  ms.date: 11/20/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: "Trace Contoso extension failure"
+durationInMinutes: 18
+content: |
+  [!include[](includes/6-trace-contoso-extension-failure.md)]

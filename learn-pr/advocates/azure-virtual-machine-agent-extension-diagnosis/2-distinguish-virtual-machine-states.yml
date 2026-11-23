@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-virtual-machine-diagnose-guest-agent-extension.distinguish-virtual-machine-states
+metadata:
+  title: "Distinguish Virtual Machine States"
+  description: "Separate Azure resource, power, provisioning, agent, extension, and workload evidence before choosing a repair."
+  ms.date: 11/20/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: "Distinguish virtual machine states"
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-distinguish-virtual-machine-states.md)]
