@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.snipping-tool-ai.when-use-screenshots
+title: Choose when to use Snipping Tool for screenshots
+metadata:
+  title: Choose When To Use Snipping Tool For Screenshots
+  description: This content is part of the "Capture the perfect screenshot with Snipping Tool on a Copilot+ PC" module.
+  ms.date: 11/20/2026
+  author: sheridan-connor
+  ms.author: v-csheridan
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-when-use-screenshots.md)]

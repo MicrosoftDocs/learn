@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.snipping-tool-ai.capture-focused-screenshot
+title: Capture a focused screenshot with Perfect Screenshot
+metadata:
+  title: Capture A Focused Screenshot With Perfect Screenshot
+  description: This content is part of the "Capture the perfect screenshot with Snipping Tool on a Copilot+ PC" module.
+  ms.date: 11/20/2026
+  author: sheridan-connor
+  ms.author: v-csheridan
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-capture-focused-screenshot.md)]
