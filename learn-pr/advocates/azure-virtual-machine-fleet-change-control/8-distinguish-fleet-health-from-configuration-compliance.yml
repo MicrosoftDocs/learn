@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-virtual-machine-fleet-change-control.distinguish-fleet-health-from-configuration-compliance
+metadata:
+  title: Distinguish Fleet Health from Configuration Compliance
+  description: Use Azure Monitor, Microsoft Defender for Cloud, Azure Policy, and Azure Resource Graph to distinguish service problems, security alerts, configuration drift, and missing evidence.
+  ms.date: 11/18/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Distinguish fleet health from configuration compliance
+durationInMinutes: 13
+content: |
+  [!include[](includes/8-distinguish-fleet-health-from-configuration-compliance.md)]

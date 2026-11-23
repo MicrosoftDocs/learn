@@ -1,3 +1,5 @@
+:::image type="content" source="../media/04-kerberos-hardening.svg" alt-text="Diagram providing an overview of the important concepts in this unit.":::
+
 Windows Server 2025 updates Kerberos and related authentication behavior in several important ways. These changes improve security, but they also expose legacy dependencies that earlier domain controllers or permissive fallback paths might have hidden.
 
 ## Windows Server 2025 changes to plan for

@@ -1,0 +1,215 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-virtual-machine-fleet-change-control.knowledge-check
+metadata:
+  title: Module Assessment
+  description: Use per-machine evidence, workload approvals, capacity limits, and recovery objectives to make fleet change decisions.
+  ms.date: 11/18/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+  module_assessment: true
+title: Module assessment
+durationInMinutes: 18
+content: |
+  Choose one answer for each question. Identify the evidence or approval that supports your choice.
+quiz:
+  questions:
+  - content: "You need to change a setting inside Windows once and retain a named command with its own execution result on each VM. Which mechanism best fits?"
+    choices:
+    - content: "An Azure Machine Configuration assignment that corrects drift."
+      isCorrect: false
+      explanation: "Incorrect. An enforcing assignment is intended to correct later drift, not to record a single command execution on each approved machine."
+    - content: "An Action Run Command that returns a one-time script result."
+      isCorrect: false
+      explanation: "Incorrect. Action Run Command can run the script once, but it doesn't leave the named command resource the request requires."
+    - content: "A Managed Run Command created as a child resource of each approved VM."
+      isCorrect: true
+      explanation: "Correct. Managed Run Command gives the operation a named resource on the target VM. Action Run Command can run a one-time script, but it doesn't create that named child resource."
+  - content: "Before dispatching the 19-VM pilot, you find that the manifest hash matches but one backend has a different `vmId`. What should you do?"
+    choices:
+    - content: "Hold the pilot, capture the replacement's baseline, and request approval for the revised manifest."
+      isCorrect: true
+      explanation: "Correct. The hash establishes that the list hasn't changed, not that every listed VM still exists with its approved identity. A mismatch blocks dispatch of the pilot as approved."
+    - content: "Proceed because the matching hash confirms that the portal workload owner approved the resource path."
+      isCorrect: false
+      explanation: "Incorrect. The hash confirms the file contents, not that the machine at that resource path is still the approved instance."
+    - content: "Update the manifest with the new identifier and carry the original approval forward."
+      isCorrect: false
+      explanation: "Incorrect. Changing the identifier changes the target. The workload owner needs to approve the replacement against its own baseline."
+  - content: "In a what-if preview for a display change, a minus sign appears beside `properties.storageProfile.dataDisks[0]` under the canary VM. What should you report?"
+    choices:
+    - content: "A disk attachment would be removed from the VM, which is outside the display-change request."
+      isCorrect: true
+      explanation: "Correct. The minus sign applies to an entry in the VM's disk attachment list, not to the managed disk resource. Detachment alone can interrupt access to data."
+    - content: "The attachment would be preserved because the template uses incremental deployment mode."
+      isCorrect: false
+      explanation: "Incorrect. Incremental mode doesn't preserve every omitted property of a redeclared resource. The preview explicitly predicts a detachment."
+    - content: "The managed disk resource itself would be deleted, so the portal workload owner must approve its deletion."
+      isCorrect: false
+      explanation: "Incorrect. The minus sign is under the VM attachment list, not beside the managed disk resource. Detachment can still interrupt data access."
+  - content: "Azure accepted the canary command, but your workstation timed out. A direct check still shows the original setting. What is your next step?"
+    choices:
+    - content: "Hold further writes and inspect the original command's instance view to see whether it's still running."
+      isCorrect: true
+      explanation: "Correct. A timeout describes the caller, not the script. The setting could still change after you read it. If you can't establish the outcome, record it as unknown rather than retrying."
+    - content: "Retry on the canary because the original setting shows that the first attempt finished without writing."
+      isCorrect: false
+      explanation: "Incorrect. The original script might still be running. A second command could write after the first one does."
+    - content: "Record the attempt as failed and request correction approval on the strength of the timeout alone."
+      isCorrect: false
+      explanation: "Incorrect. A caller timeout isn't a script exit code. Inspect the original attempt before requesting a correction."
+  - content: "The canary command exits with code `42`, but a direct check on that VM returns `VmOpsDisplay:green` at revision `1`. Which change-record entry is accurate?"
+    choices:
+    - content: "Change succeeded with a warning. The application response takes precedence over the exit code."
+      isCorrect: false
+      explanation: "Incorrect. The new link proves the write took effect, but it doesn't turn exit code 42 into a successful command."
+    - content: "Command failed after a write. The canary serves the new link. Expansion is on hold."
+      isCorrect: true
+      explanation: "Correct. The exit code records a failed attempt. The direct response and revision independently show that the write took effect. Preserve both facts."
+    - content: "Command failed and the canary rolled back. The next attempt should start from `blue / 0`."
+      isCorrect: false
+      explanation: "Incorrect. The direct check shows the new link at revision 1. There's no evidence that the canary rolled back."
+  - content: "The portal workload owner approved a canary correction at 09:12. At 09:14 the corrected canary is healthy. What is still needed before changing any VM in the 19-member pilot?"
+    choices:
+    - content: "A successful application response from the portal through its load balancer."
+      isCorrect: false
+      explanation: "Incorrect. A load-balanced response may come from an untouched backend. Even a healthy direct result can't authorize a new wave."
+    - content: "The portal workload owner's separate approval for the identified pilot instances in the manifest."
+      isCorrect: true
+      explanation: "Correct. Correction approval covered the canary only. The healthy result supports a request to expand, but it doesn't authorize expansion."
+    - content: "A new copy of the manifest showing that `fc-later` still has its original tag."
+      isCorrect: false
+      explanation: "Incorrect. A tag can identify a candidate, but it can't grant approval for a wave."
+  - content: "All 60 trial VMs are at `green / 1` before an approved repeat. Which observation shows the repeat was idempotent?"
+    choices:
+    - content: "All 60 still served `green` at revision `1`; the 130 deferred and 10 excluded VMs stayed at `blue / 0`."
+      isCorrect: true
+      explanation: "Correct. The before-and-after values show that the repeat preserved the intended behavior without another write. Exit codes or display colors alone can't establish that."
+    - content: "All 60 still served `green`, but their revisions increased from `1` to `2`."
+      isCorrect: false
+      explanation: "Incorrect. The higher revision records another write even though the color is unchanged."
+    - content: "All 60 commands exited with `0`, but no guest or application checks were recorded."
+      isCorrect: false
+      explanation: "Incorrect. Exit code 0 says what the script reported, not whether it wrote the same value again."
+  - content: "After restoration, all 60 trial VMs return `blue / 2`, but one excluded staff VM returns `blue / 1` instead of `blue / 0`. Can you close the change?"
+    choices:
+    - content: "No. Return all 200 counters to zero so the final records match the baseline."
+      isCorrect: false
+      explanation: "Incorrect. Resetting counters would erase evidence and require new writes, including to machines outside the trial."
+    - content: "Yes. Every checked application returns the original color, so the revision discrepancy doesn't matter."
+      isCorrect: false
+      explanation: "Incorrect. The original color doesn't explain why the excluded machine has a new revision. It can't yet be reported as untouched."
+    - content: "No. Preserve the unexpected revision and investigate the excluded VM before claiming it was untouched."
+      isCorrect: true
+      explanation: "Correct. Revision `2` is expected on the restored VMs: one write applied the setting and one restored it. The excluded VM's counter should never have moved."
+  - content: "The portal workload owner wants a service to start automatically on all 190 public backends, even if its startup setting drifts in one pool. Which approach meets that requirement?"
+    choices:
+    - content: "Use Managed Run Command once and keep its exit code as evidence of future compliance."
+      isCorrect: false
+      explanation: "Incorrect. A successful one-time command can't detect or correct a later change to the startup setting."
+    - content: "Test a Machine Configuration policy on the canary, then enforce it within the approved scope."
+      isCorrect: true
+      explanation: "Correct. An enforcing policy can detect and correct later drift. A one-time command establishes only a point-in-time result, while audit-only mode reports drift without correcting it."
+    - content: "Assign an audit-only Machine Configuration policy and review its drift reports."
+      isCorrect: false
+      explanation: "Incorrect. Audit-only mode can report drift, but it doesn't correct the setting."
+  - content: "Your 200-VM size control has results for 199 expected VMs. One of the 199 has an approved exemption. How do you report coverage?"
+    choices:
+    - content: "Report evaluated states, show the exemption separately, and investigate the missing VM."
+      isCorrect: true
+      explanation: "Correct. A missing evaluation is a coverage gap. An exemption is an approved exception, not proof that the setting matches the baseline."
+    - content: "Use the number of recent agent heartbeats as the number of compliant VMs."
+      isCorrect: false
+      explanation: "Incorrect. A heartbeat shows that a machine reported to the monitoring system, not that the size control evaluated it."
+    - content: "Count the absent VM as compliant because the policy hasn't flagged it."
+      isCorrect: false
+      explanation: "Incorrect. Without an evaluation, the missing machine has no known compliance state."
+  - content: "A CPU alert names `fc-canary`, while the fleet average is normal. What should you do first?"
+    choices:
+    - content: "Roll back the entire fleet because a single VM exceeded its threshold."
+      isCorrect: false
+      explanation: "Incorrect. One high processor measurement doesn't show that every machine is affected or that the rollout caused the increase."
+    - content: "Compare the canary's CPU history, application behavior, and traffic with the change window."
+      isCorrect: true
+      explanation: "Correct. The alert evaluates each VM, so a fleet average can hide the symptom. CPU alone doesn't establish its cause."
+    - content: "Dismiss the alert because the load balancer is serving requests from the fleet."
+      isCorrect: false
+      explanation: "Incorrect. Healthy responses from peers can mask a problem on the named canary."
+  - content: "A pool still serves returns, but the compliance report flags three backends for missing disk attachments. Which evidence establishes the extent of the problem?"
+    choices:
+    - content: "Each expected backend's current disk IDs and LUNs compared with its own approved baseline."
+      isCorrect: true
+      explanation: "Correct. A disk can exist after detachment, and healthy peers can mask a backend that's missing storage. Compare attachments by VM before reporting which pool members are affected."
+    - content: "A recent heartbeat from every guest operating system in the pool."
+      isCorrect: false
+      explanation: "Incorrect. A guest can send a heartbeat even when an expected data disk is missing."
+    - content: "The continued existence of the pool's managed disks in the resource group."
+      isCorrect: false
+      explanation: "Incorrect. A managed disk can still exist in the resource group after it's detached. Its existence doesn't identify which backends lost an attachment."
+  - content: "All ten backends in one pool use 65% CPU at peak. Two are scheduled to drain together, but the portal workload owner requires nine healthy backends and an 80% CPU ceiling. What should you do first?"
+    choices:
+    - content: "Begin both drains because the other 18 pools still have healthy backends."
+      isCorrect: false
+      explanation: "Incorrect. Capacity in other pools doesn't satisfy the requirement to keep nine healthy backends in this pool."
+    - content: "Approve both drains because average CPU is below 80% before maintenance."
+      isCorrect: false
+      explanation: "Incorrect. The 65% measurement is from before the drains. With the same load shared by eight backends, utilization rises above the 80% ceiling."
+    - content: "Drain at most one at a time unless additional validated capacity meets both limits."
+      isCorrect: true
+      explanation: "Correct. Two drains leave only eight backends at about 81% each. One drain leaves nine at about 72%; confirm latency and other limits before proceeding."
+  - content: "A scale-set canary was patched inside the guest. Which observation best demonstrates that the change will survive instance replacement?"
+    choices:
+    - content: "A new image version is visible in Azure Compute Gallery."
+      isCorrect: false
+      explanation: "Incorrect. Publishing an image doesn't change the model. The model could still refer to the previous version."
+    - content: "The existing canary continues to report its new build after a service restart."
+      isCorrect: false
+      explanation: "Incorrect. Restarting the existing guest tests that machine, not what a fresh instance will receive from the scale-set model."
+    - content: "A fresh instance from the approved model reports the intended build and passes an application test."
+      isCorrect: true
+      explanation: "Correct. A new instance exercises the scale-set model and its image reference. Patching an existing guest or publishing an unused image doesn't change that model."
+  - content: "A known-good recovery point predates corruption by 20 minutes. The isolated application works after 42 minutes. Your RPO is 15 minutes and your RTO is 60. What do you report?"
+    choices:
+    - content: "Both targets were met because a synthetic transaction succeeded within an hour."
+      isCorrect: false
+      explanation: "Incorrect. The transaction verifies application recovery within the time limit. It doesn't make the recovery point recent enough."
+    - content: "Neither target can be evaluated without switching production traffic to the restored VM."
+      isCorrect: false
+      explanation: "Incorrect. The isolated restore provides the application result and timestamps needed to measure both objectives; production traffic isn't required."
+    - content: "Recovery time met its target, but the recovery point is too old for the data-loss target."
+      isCorrect: true
+      explanation: "Correct. The 42-minute recovery is inside 60 minutes, but 20 minutes of potential data loss exceeds the 15-minute objective."
+  - content: "A regional test failover starts every VM, but the recovered frontend can't reach its database. What should you do?"
+    choices:
+    - content: "Commit a production failover so the application can use the production DNS records."
+      isCorrect: false
+      explanation: "Incorrect. A production failover would expose users to a known dependency failure instead of proving recovery in isolation."
+    - content: "Keep the drill isolated, correct the dependency, and rerun a transaction before reporting recovery."
+      isCorrect: true
+      explanation: "Correct. Recovery is measured at the workload, not the VM power state. A test network lets you repair and retest without risking production writes."
+    - content: "Mark the drill successful and track database reachability as a nonblocking issue."
+      isCorrect: false
+      explanation: "Incorrect. Running machines can't serve the workload if its frontend can't reach the database. A successful transaction is still missing."
+  - content: "The portal workload owner is deciding whether to rotate certificates across the next pool. The new certificate is in the canary's store, but its listener still presents the old thumbprint. What evidence is missing?"
+    choices:
+    - content: "Proof that all the other VMs can download the same certificate."
+      isCorrect: false
+      explanation: "Incorrect. Download capability doesn't establish which certificate the canary listener presents to a client."
+    - content: "Verification that the canary listener is bound to and serving the replacement certificate."
+      isCorrect: true
+      explanation: "Correct. Certificate distribution and listener activation are separate. Keep the previous credential available during an ordinary rotation until consumers verify the new one."
+    - content: "Revocation of the old certificate before testing the canary again."
+      isCorrect: false
+      explanation: "Incorrect. Revoking the old certificate before the listener serves the new one could interrupt clients and remove the recovery option."
+  - content: "A retirement batch includes a VM whose data disk would be deleted with it, but the records retention owner must retain that data. What should you do before releasing the batch?"
+    choices:
+    - content: "Stop the guest operating system and assume its compute and storage charges have ended."
+      isCorrect: false
+      explanation: "Incorrect. Stopping the guest doesn't change the disk deletion policy or demonstrate that the records can be retrieved."
+    - content: "Delete the VM and rely on the disk's resource ID as evidence that the records still exist."
+      isCorrect: false
+      explanation: "Incorrect. A disk resource ID identifies the disk; it can't recover data if VM deletion also deletes that disk."
+    - content: "Hold deletion, document the retention decision, and demonstrate that the required records can be retrieved."
+      isCorrect: true
+      explanation: "Correct. Delete options can remove the disk with the VM. Approval to retire compute isn't approval to destroy retained data."

@@ -1,3 +1,5 @@
+:::image type="content" source="../media/03-migrate-kerberos.svg" alt-text="Diagram providing an overview of the important concepts in this unit.":::
+
 Organizations that still use NTLM should be migrating to Kerberos. NTLM is deprecated but still supported in Windows Server 2025. Windows applications commonly request Negotiate authentication, and Negotiate selects Kerberos when the client, service, identity, name, and trust path meet Kerberos requirements. NTLM use often indicates that one of those requirements isn't met or that an application explicitly requests NTLM.
 
 A safe migration therefore has two related goals:

@@ -1,3 +1,5 @@
+:::image type="content" source="../media/02-protocol-kerberos.svg" alt-text="Diagram providing an overview of the important concepts in this unit.":::
+
 SSPI (Security Support Provider Interface) is the Windows API that applications use to perform authentication and establish secure communications without needing to implement authentication protocols themselves. Applications commonly use SSPI rather than directly implementing Kerberos or NTLM. SSPI lets the application acquire credentials, initialize or accept a security context, and exchange opaque tokens until authentication completes. While that abstraction is useful for developers, but it can hide the protocol path from administrators.
 
 ## SSPI and the Negotiate package

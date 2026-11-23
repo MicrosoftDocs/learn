@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-virtual-machine-fleet-change-control.roll-out-fleet-software-updates
+metadata:
+  title: Roll Out Fleet Software Updates
+  description: Release a versioned application package and schedule operating system security updates in separate waves. Check package versions, patch results, and application health before expansion.
+  ms.date: 11/18/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Roll out fleet software updates
+durationInMinutes: 5
+content: |
+  [!include[](includes/9-roll-out-fleet-software-updates.md)]

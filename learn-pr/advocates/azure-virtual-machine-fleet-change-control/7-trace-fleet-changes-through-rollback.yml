@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-virtual-machine-fleet-change-control.trace-fleet-changes-through-rollback
+metadata:
+  title: Trace Fleet Changes Through Rollback
+  description: Use per-instance revision counters and application responses to verify that a repeat made no additional writes and that rollback restored only the machines that changed.
+  ms.date: 11/18/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Trace fleet changes through rollback
+durationInMinutes: 8
+content: |
+  [!include[](includes/7-trace-fleet-changes-through-rollback.md)]

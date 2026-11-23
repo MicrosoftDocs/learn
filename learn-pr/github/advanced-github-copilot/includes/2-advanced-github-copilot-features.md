@@ -1,3 +1,4 @@
+:::image type="content" source="../media/02-advanced-github-copilot-features.svg" alt-text="Diagram providing an overview of the important concepts in this unit.":::
 
 Often, when you work with code, you need to review the project's documentation in addition to libraries and framework documentation. In order to write code or documentation, you must have a good understanding of the codebase. Tasks like fixing bugs and writing tests can be time intensive, but at the same time necessary for most projects. Fortunately, GitHub Copilot has several advanced features that can make these tasks easier and more efficient.
 

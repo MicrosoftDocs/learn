@@ -1,0 +1,56 @@
+### YamlMime:Module
+uid: learn.devrel.azure-virtual-machine-fleet-change-control
+metadata:
+  title: Azure Virtual Machine Fleet Operations
+  description: Plan changes across an Azure virtual machine fleet, protect service capacity, and use per-machine evidence to decide when to expand, pause, or restore service.
+  ms.date: 11/18/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: module-standard-concept-based
+  ms.service: azure-virtual-machines
+  ai-usage: ai-assisted
+title: Azure virtual machine fleet operations
+summary: |
+  Operating a fleet of Azure virtual machines (VMs) means keeping applications available while you patch, resize, or replace individual machines. In this module, you plan how much capacity to keep online, monitor fleet health and security, and roll out changes in waves. You use evidence from each VM to decide when to continue, pause, or restore service.
+abstract: |
+  By completing this module, you are able to:
+
+  - Choose the right tool for an Azure resource change, a one-time guest operation, or a setting that must stay enforced.
+  - Define which VMs may change, limit administrative access, and use deployment previews to identify effects outside the approved scope.
+  - Plan application, patch, storage, and network changes in waves that leave enough capacity to serve users.
+  - Use per-VM evidence to determine what actually changed, whether a repeat had any additional effect, and when to stop, expand, or roll back.
+  - Interpret health telemetry, compliance reports, and security alerts to distinguish service problems, configuration drift, and gaps in monitoring.
+  - Choose between guest repair, backup restoration, and regional failover, and judge recovery against the workload's data-loss and downtime limits.
+  - Decide when it's safe to replace a scale-set image, retire an old credential, or remove idle capacity without losing service or required data.
+prerequisites: |
+  - Familiarity with Azure virtual machines, managed disks, virtual networks, and load balancers.
+  - Basic knowledge of Azure role-based access control and Windows Server administration.
+
+  The examples use supplied fleet records. You don't need an Azure subscription or a running virtual machine.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- advanced
+roles:
+- administrator
+- solution-architect
+products:
+- azure-virtual-machines
+subjects:
+- infrastructure
+units:
+- learn.devrel.azure-virtual-machine-fleet-change-control.introduction
+- learn.devrel.azure-virtual-machine-fleet-change-control.choose-fleet-change-tools
+- learn.devrel.azure-virtual-machine-fleet-change-control.document-approved-rollout-targets
+- learn.devrel.azure-virtual-machine-fleet-change-control.interpret-incremental-deployment-previews
+- learn.devrel.azure-virtual-machine-fleet-change-control.define-rollout-stop-conditions
+- learn.devrel.azure-virtual-machine-fleet-change-control.respond-partial-canary-failure
+- learn.devrel.azure-virtual-machine-fleet-change-control.trace-fleet-changes-through-rollback
+- learn.devrel.azure-virtual-machine-fleet-change-control.distinguish-fleet-health-from-configuration-compliance
+- learn.devrel.azure-virtual-machine-fleet-change-control.roll-out-fleet-software-updates
+- learn.devrel.azure-virtual-machine-fleet-change-control.protect-service-capacity-across-infrastructure-changes
+- learn.devrel.azure-virtual-machine-fleet-change-control.recover-workloads-from-infrastructure-failures
+- learn.devrel.azure-virtual-machine-fleet-change-control.retire-fleet-resources-without-service-disruption
+- learn.devrel.azure-virtual-machine-fleet-change-control.knowledge-check
+- learn.devrel.azure-virtual-machine-fleet-change-control.summary
+badge:
+  uid: learn.devrel.azure-virtual-machine-fleet-change-control.badge

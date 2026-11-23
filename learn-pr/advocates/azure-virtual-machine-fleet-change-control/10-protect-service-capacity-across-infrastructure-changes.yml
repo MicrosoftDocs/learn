@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-virtual-machine-fleet-change-control.protect-service-capacity-across-infrastructure-changes
+metadata:
+  title: Protect Service Capacity Across Infrastructure Changes
+  description: Calculate how many backends a pool can drain at peak demand and verify that an approved resize, disk change, or network change preserves service.
+  ms.date: 11/18/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Protect service capacity across infrastructure changes
+durationInMinutes: 5
+content: |
+  [!include[](includes/10-protect-service-capacity-across-infrastructure-changes.md)]

@@ -1,3 +1,5 @@
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=b49880b1-9f7b-450c-9417-f58c31f7eb37]
+
 Being able to successfully troubleshoot Windows authentication requires you to separate identity proof, ticket issuance, service identity, delegation, and authorization. A single "access denied" or repeated credential prompt might be caused by DNS, Service Principal Names (SPNs), Kerberos encryption types, trust configuration, Privilege Attribute Certificate (PAC) validation, token size, service account configuration, NTLM fallback, or application impersonation.
 
 In this module you learn how to troubleshoot Windows integrated authentication, migrate eligible authentication flows from NTLM to Kerberos, and prepare Kerberos-dependent environments for Windows Server 2025 hardening.

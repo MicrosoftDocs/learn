@@ -1,3 +1,4 @@
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=af6c0065-a7b5-4a2e-9c60-fa5a4ebf5fc1]
 
 GitHub Copilot is an AI coding partner that provides autocomplete suggestions while you code. Get suggestions by typing code or interactively using natural language.
 

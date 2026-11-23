@@ -1,3 +1,5 @@
+:::image type="content" source="../media/11-azure-security-baseline-api-management.svg" alt-text="Diagram providing an overview of the important concepts in this unit.":::
+
 The Azure security baseline for API Management applies guidance from Microsoft's Cloud Security Benchmark to API Management. The Microsoft cloud security benchmark provides recommendations on how you can secure your cloud solutions on Azure. Microsoft cloud security benchmark controls organize content, with related guidance for API Management.
 
 > [!NOTE]

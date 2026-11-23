@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-virtual-machine-fleet-change-control.respond-partial-canary-failure
+metadata:
+  title: Respond to Partial Canary Failure
+  description: Reconcile a failed command with evidence that the canary serves the new link. Distinguish approval to correct the canary from approval to release the pilot.
+  ms.date: 11/18/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Respond to partial canary failure
+durationInMinutes: 4
+content: |
+  [!include[](includes/6-respond-partial-canary-failure.md)]

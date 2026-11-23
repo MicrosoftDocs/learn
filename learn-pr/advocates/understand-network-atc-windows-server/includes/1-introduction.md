@@ -1,3 +1,5 @@
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=2957e5df-f032-4d96-b9a4-dc90bfbd46e4]
+
 A host can have the correct VLAN and still use the wrong SMB path. An intent can finish provisioning while a switch drops storage traffic. A VM can migrate to a healthy node and lose connectivity because its destination switch doesn't match.
 
 > [!NOTE]

@@ -1,3 +1,5 @@
+:::image type="content" source="../media/07-validate-restored-directory-services.svg" alt-text="Diagram providing an overview of the important concepts in this unit.":::
+
 After you've performed recovery, you need to validate restored directory services. Define pass criteria before recovery starts. Validation must prove service health, replication health, data authority, security state, and dependency readiness.
 
 ## Validate role-aware services

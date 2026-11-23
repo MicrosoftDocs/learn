@@ -1,3 +1,5 @@
+:::image type="content" source="../media/05-replication-priority-boost.svg" alt-text="Diagram providing an overview of the important concepts in this unit.":::
+
 When replication is healthy, the metadata from the previous unit converges quietly in the background. When it isn't, you need a repeatable way to find *which* partner, *which* naming context, and *which* error is blocking convergence—and occasionally a way to tell the engine that a particular partner matters more than its defaults suggest. This unit builds a diagnosis workflow and then introduces the Windows Server 2025 **Replication Priority Boost** feature for the cases where the built-in priorities aren't the most efficient choice.
 
 ## A replication failure diagnosis workflow

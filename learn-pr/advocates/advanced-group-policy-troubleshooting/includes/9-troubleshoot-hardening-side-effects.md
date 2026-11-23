@@ -1,3 +1,5 @@
+:::image type="content" source="../media/09-troubleshoot-hardening-side-effects.svg" alt-text="Diagram providing an overview of the important concepts in this unit.":::
+
 Improving the security of an Active Directory environment can pose challenges when it impacts the functionality of Group Policy settings. A security hardening rollout can succeed as Group Policy yet fail as an application change. When troubleshooting the rollout of policies related to security, separate policy delivery from security-control enforcement and dependency compatibility.
 
 ## Use three validation points

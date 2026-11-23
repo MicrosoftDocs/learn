@@ -1,3 +1,5 @@
+:::image type="content" source="../media/02-remote-access-public-endpoints-include-azure-bastion.svg" alt-text="Diagram providing an overview of the important concepts in this unit.":::
+
 Azure Bastion is a service you deploy that lets you connect to a virtual machine using your browser and the Azure portal. Or you connect via the native SSH or remote desktop protocol (RDP) client already installed on your local computer. The Azure Bastion service is a fully platform-managed PaaS service that you deploy inside your virtual network. It provides secure and seamless RDP/SSH connectivity to your virtual machines directly over TLS from the Azure portal or via native client. When you connect via Azure Bastion, your virtual machines don't need a public IP address, agent, or special client software.
 
 Bastion provides secure RDP and SSH connectivity to all of the VMs in the virtual network in which it's provisioned. Using Azure Bastion protects your virtual machines from exposing RDP/SSH ports to the outside world, while still providing secure access using RDP/SSH.

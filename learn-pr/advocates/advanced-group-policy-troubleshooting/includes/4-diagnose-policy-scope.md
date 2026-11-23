@@ -1,3 +1,5 @@
+:::image type="content" source="../media/04-diagnose-policy-scope.svg" alt-text="Diagram providing an overview of the important concepts in this unit.":::
+
 There are various ways that the settings in a GPO might apply to a user or computer:
 
 - Scope determines the candidate GPO list.
@@ -5,9 +7,7 @@ There are various ways that the settings in a GPO might apply to a user or compu
 - Precedence determines the source of single-valued settings.
 - Extension semantics determine how additive or ordered settings combine.
 
-:::image type="complex" source="../media/policy-scope-precedence.svg" alt-text="Diagram that shows LSDOU precedence, filtering, inheritance, and loopback processing.":::
-[Diagram that shows LSDOU precedence, filtering, inheritance, and loopback processing.]
-:::image-end:::
+:::image type="content" source="../media/policy-scope-precedence.svg" alt-text="Diagram that shows LSDOU precedence, filtering, inheritance, and loopback processing.":::
 
 ## Build the candidate list
 

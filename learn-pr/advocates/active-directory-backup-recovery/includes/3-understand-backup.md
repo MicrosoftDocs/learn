@@ -1,3 +1,5 @@
+:::image type="content" source="../media/03-understand-backup.svg" alt-text="Diagram providing an overview of the important concepts in this unit.":::
+
 A usable AD DS backup is more than a copy of `NTDS.dit`. It must preserve the operating system state and application-consistent relationships required to restore a domain controller safely.
 
 The following actions don't constitute an AD DS backup strategy:

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-virtual-machine-fleet-change-control.interpret-incremental-deployment-previews
+metadata:
+  title: Interpret Incremental Deployment Previews
+  description: Read what-if output at the resource and property level. Identify when a proposed guest change would also resize a virtual machine, detach a disk, or remove a backend from its pool.
+  ms.date: 11/18/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Interpret incremental deployment previews
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-interpret-incremental-deployment-previews.md)]
