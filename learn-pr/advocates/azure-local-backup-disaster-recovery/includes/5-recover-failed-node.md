@@ -89,20 +89,19 @@ A node reporting **Up** confirms cluster membership, not completion of every rec
 Run the following read-only inspection on an authorized existing Azure Local node. It requires the installed Azure Local, failover-clustering, and storage management commands and appropriate administrative rights. It doesn't start a repair or change storage.
 
 ```powershell
-$ErrorActionPreference = 'Stop'
-
-Get-ClusterNode | Select-Object Name, State
-Get-MocPhysicalNode
-
-Get-StoragePool -IsPrimordial $false |
-    Select-Object FriendlyName, HealthStatus, OperationalStatus
-Get-VirtualDisk |
-    Select-Object FriendlyName, HealthStatus, OperationalStatus,
-        ResiliencySettingName
-Get-VirtualDisk | Get-StorageJob |
-    Select-Object Name, JobState, PercentComplete
-
-Get-SolutionHealthSummary -Detailed -IncludeInformational
+ $ErrorActionPreference = 'Stop'
+ 
+ Get-ClusterNode | Select-Object Name, State
+-Get-MocPhysicalNode
+ 
+ Get-StoragePool -IsPrimordial $false |
+     Select-Object FriendlyName, HealthStatus, OperationalStatus
+@@ -103,6 +102,8 @@
+     Select-Object Name, JobState, PercentComplete
+ 
+ Get-SolutionHealthSummary -Detailed -IncludeInformational
++
++(Get-MocNode -Location (Get-MocConfig).cloudLocation).Name
 ```
 
 Compare the returned nodes, pools, and virtual disks with the inventory. No returned storage job can mean that the repair or rebalance work is complete, but an empty job list doesn't prove that the expected volumes are present or healthy. Investigate missing objects and unexpected health states.
