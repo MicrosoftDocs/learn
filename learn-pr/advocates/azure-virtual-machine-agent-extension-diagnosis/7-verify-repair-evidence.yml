@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-virtual-machine-diagnose-guest-agent-extension.verify-repair-evidence
+metadata:
+  title: "Verify Repair Evidence"
+  description: "Verify the original operation and independent workload probe, then preserve a private, reproducible support packet."
+  ms.date: 11/20/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: "Verify repair evidence"
+durationInMinutes: 8
+content: |
+  [!include[](includes/7-verify-repair-evidence.md)]

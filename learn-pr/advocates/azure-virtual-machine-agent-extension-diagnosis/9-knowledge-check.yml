@@ -1,0 +1,149 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-virtual-machine-diagnose-guest-agent-extension.knowledge-check
+metadata:
+  title: Module Assessment
+  description: Assess your ability to classify guest failures, choose usable diagnostic channels, preserve evidence, and verify an Azure virtual machine extension repair.
+  ms.date: 11/20/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-generated
+  module_assessment: true
+title: Module assessment
+durationInMinutes: 12
+content: |
+  Choose one answer for each question. Use the evidence from the current operation rather than assuming that a healthy status proves every component works.
+quiz:
+  questions:
+  - content: "Contoso's VM is Running, its platform agent reports Ready, and Azure Monitor Agent has a recent heartbeat. The current Custom Script update is Failed. What do these observations establish?"
+    choices:
+    - content: "Several components reported activity, but the current handler sequence and command evidence are still needed to explain the failed update."
+      isCorrect: true
+      explanation: "Correct. Power state, agent readiness, and monitoring communication answer different questions. None establishes whether this extension's command started, what it printed, or how it exited."
+    - content: "The extension command succeeded because the platform agent reports Ready."
+      isCorrect: false
+      explanation: "Incorrect. Agent readiness doesn't establish every extension command's result. A healthy agent can start a handler whose command returns a nonzero exit code."
+    - content: "The failed extension proves that the guest operating system and application are unavailable."
+      isCorrect: false
+      explanation: "Incorrect. An extension update can fail on a responsive guest while an application continues working. Verify guest and workload behavior separately."
+  - content: "The Linux platform agent can't retrieve current goal state, but an approved SSH session still runs guest commands. Which channel should you use to collect the agent log and test host connectivity?"
+    choices:
+    - content: "Action Run Command, because it bypasses the agent when SSH is available."
+      isCorrect: false
+      explanation: "Incorrect. Action Run Command depends on the platform agent. A working SSH session doesn't remove that dependency or make Run Command an independent test."
+    - content: "Boot diagnostics, because its screenshot provides an interactive guest shell."
+      isCorrect: false
+      explanation: "Incorrect. Boot diagnostics provides startup evidence, not an interactive shell. It doesn't replace the working SSH session for these commands."
+    - content: "The existing SSH session, because it can inspect the guest without asking the platform agent to execute another command."
+      isCorrect: true
+      explanation: "Correct. Use a channel whose dependencies still work. Keep the approved SSH session open and collect the relevant guest evidence through it."
+  - content: "A Linux VM's Serial Console opens in the portal and displays a password prompt. The operator normally signs in with an SSH key. What is required before counting Serial Console as a usable recovery shell?"
+    choices:
+    - content: "A Ready platform-agent status, because the console runs its commands through the agent."
+      isCorrect: false
+      explanation: "Incorrect. Serial Console doesn't depend on platform-agent command execution. A Ready status also doesn't prove that the operator can authenticate to a guest shell."
+    - content: "No further evidence, because permission to open the console also authorizes guest sign-in."
+      isCorrect: false
+      explanation: "Incorrect. Azure permission to open Serial Console and guest authentication are separate. A password prompt proves neither successful sign-in nor command execution."
+    - content: "Successful sign-in with an approved password-based guest account and execution of a harmless command such as hostname."
+      isCorrect: true
+      explanation: "Correct. Test the prepared account and a guest command while the VM is healthy. An SSH key alone doesn't satisfy the console's password-based guest sign-in."
+  - content: "A Linux handler reports No space left on device before command launch. Its working directory is on a separate filesystem mounted at /var, where free data blocks remain but no free inodes remain. What is the supported next step?"
+    choices:
+    - content: "Investigate file growth on the /var filesystem and arrange approved cleanup or capacity correction before retrying."
+      isCorrect: true
+      explanation: "Correct. A filesystem can exhaust inodes while data blocks remain. Check the filesystem containing the actual handler path, identify what is growing, and preserve evidence before an approved correction."
+    - content: "Rule out filesystem capacity because the root filesystem has free space."
+      isCorrect: false
+      explanation: "Incorrect. The handler path is on a different filesystem. Free space on root doesn't establish free blocks or inodes on /var."
+    - content: "Change the report's command arguments because its process must have returned the error."
+      isCorrect: false
+      explanation: "Incorrect. The evidence places the failure before command launch. Changing arguments in a command that didn't start doesn't address inode exhaustion."
+  - content: "At 12:00:04, an extension command failed while its package manager was locked. Cloud-init's final task was installing packages until 12:00:30. At 12:02, cloud-init status is done. Which conclusion is supported?"
+    choices:
+    - content: "Cloud-init completion observed later doesn't rule out contention during the failed command; correlate the lock owner and the matching sequence before retry."
+      isCorrect: true
+      explanation: "Correct. The timeline supports overlap at the failure time. Preserve the relevant output, establish that legitimate work has finished, and assess partial changes before approving a retry."
+    - content: "The later done status proves that cloud-init couldn't have held the package-manager lock during the failure."
+      isCorrect: false
+      explanation: "Incorrect. Current completion status doesn't establish earlier ordering. The final task was still active when the extension command failed."
+    - content: "An expired agent cloud-init wait would prove that cloud-init finished successfully and released every package-manager lock."
+      isCorrect: false
+      explanation: "Incorrect. The agent can proceed after its wait fails or times out. That doesn't establish successful initialization or release of a package-manager lock."
+  - content: "An elevated Ubuntu probe receives versions XML from 168.63.129.16 on TCP 80, and a TCP connection to port 32526 opens. A script download from a private blob still fails. What should you conclude?"
+    choices:
+    - content: "All extension dependencies are healthy because the two host probes succeeded."
+      isCorrect: false
+      explanation: "Incorrect. These probes test particular host paths. They don't establish a private blob's DNS resolution, route, authentication, or access controls."
+    - content: "The tested host paths responded, but the script download's separate network and authentication dependencies still need investigation."
+      isCorrect: true
+      explanation: "Correct. Keep agent host communication separate from the script's outbound dependencies. Even a successful host probe doesn't prove that the agent completed a valid exchange or downloaded every required artifact."
+    - content: "The results justify a broad NSG rule for WireServer traffic before investigating the private blob."
+      isCorrect: false
+      explanation: "Incorrect. Agent traffic to this platform address on TCP 80 and 32526 isn't governed by the VM's configured NSGs. A broad rule isn't a justified repair for the separate download failure."
+  - content: "The matching handler sequence printed report-ready os=ubuntu and recorded command exit 23. The submitted command ran the report, wrote a diagnostic message to stderr, then unconditionally executed exit 23. A direct SSH run of the report exits 0. What correction addresses the demonstrated cause?"
+    choices:
+    - content: "Reinstall the platform agent because different exit codes prove it couldn't deliver the command."
+      isCorrect: false
+      explanation: "Incorrect. The matching command output and exit record show that execution reached the command. The wrapper explains the different result without establishing an agent delivery failure."
+    - content: "Redirect stderr to stdout while retaining the unconditional exit 23."
+      isCorrect: false
+      explanation: "Incorrect. Stderr content alone isn't the failure criterion. Retaining exit 23 keeps the submitted command unsuccessful even if its output changes streams."
+    - content: "Update the owning deployment so the existing extension invokes the report directly and returns the report's own exit status."
+      isCorrect: true
+      explanation: "Correct. Remove the demonstrated forced failure rather than reinstalling components or masking output. Direct invocation still requires verification on a new sequence; it doesn't guarantee success."
+  - content: "You have approval to retry unchanged Custom Script settings. The previous operation has finished, but its stdout and stderr exist only in the failed sequence's download directory. What should happen before using the supported force-update mechanism?"
+    choices:
+    - content: "Run the retry first, because sequence directories are guaranteed to remain available for the VM's lifetime."
+      isCorrect: false
+      explanation: "Incorrect. Depending on the installed handler version, a later execution can remove older sequence directories and their output. These files aren't a durable archive."
+    - content: "Preserve the failed sequence's relevant output privately, assess partial changes and remaining work, and confirm the retry preserves the owning deployment's configuration."
+      isCorrect: true
+      explanation: "Correct. Evidence preservation and exclusion of overlapping work come before a retry. Keep the existing instance, publisher, type, version policy, and unrelated settings intact."
+    - content: "Replace all settings with the one-field commandToExecute excerpt before the retry."
+      isCorrect: false
+      explanation: "Incorrect. The excerpt explains a command change; it isn't a complete replacement for every existing configuration. Replacing unrelated or protected settings could introduce another failure."
+  - content: "An installer invoked by Custom Script requests a reboot, and handler progress stops during that sequence. Required maintenance still includes a platform-agent update. What is the appropriate next step?"
+    choices:
+    - content: "Force another extension execution immediately because rebooting guarantees the original script resumed and finished."
+      isCorrect: false
+      explanation: "Incorrect. A reboot doesn't resume the original Custom Script execution. Determine its outcome and any remaining work before approving another run."
+    - content: "Move the platform-agent update into the same Custom Script command so that all maintenance shares one sequence."
+      isCorrect: false
+      explanation: "Incorrect. Custom Script must not stop or update its platform agent. Such actions can interrupt execution and leave the operation Transitioning."
+    - content: "Preserve evidence, assess partial changes, and move reboot and agent maintenance into a separately approved step outside the extension command."
+      isCorrect: true
+      explanation: "Correct. After approved maintenance, establish guest and agent readiness and exclude lingering work before a separately approved extension retry. Transitioning alone isn't proof of a particular interruption."
+  - content: "After the command change, SSH still returns the expected report and exit 0. Azure's instance view shows Succeeded, but the available handler success record belongs to an older sequence and the retry's command output hasn't been collected. Is the incident ready to close?"
+    choices:
+    - content: "Yes, because SSH success proves that the corrected extension operation ran successfully."
+      isCorrect: false
+      explanation: "Incorrect. SSH also succeeded before the correction. It is an independent workload observation, not evidence of the retry's extension execution."
+    - content: "No. Correlate the retry's sequence, command exit, expected output, and reported completion while retaining the separate guest and workload checks."
+      isCorrect: true
+      explanation: "Correct. Match evidence to the operation being closed. An older handler success and a separate SSH result don't establish the retry's command outcome."
+    - content: "Yes, because any handler success record can be combined with the latest instance view."
+      isCorrect: false
+      explanation: "Incorrect. Combining different attempts can conceal the current failure. Sequence and time correlation prevent an earlier success from being treated as the retry's result."
+  - content: "The original extension command reached the guest and exited 23. After preparing a correction, the operator's update request is rejected with AuthorizationFailed before guest execution. How should the handoff describe the situation?"
+    choices:
+    - content: "The retry confirms that the corrected command still exits 23 because that remains the latest guest exit record."
+      isCorrect: false
+      explanation: "Incorrect. The latest guest record belongs to the original attempt. A retry rejected before guest execution produces no new command result and can't establish whether the correction works."
+    - content: "The original command failure is diagnosed; the correction remains untested because the retry was rejected. Record the denied action and resource scope, then request the required permission."
+      isCorrect: true
+      explanation: "Correct. The two failures occurred at different stages. A denied Azure request isn't a new guest exit code and doesn't test the prepared correction."
+    - content: "The new authorization error proves that the platform agent is broken and should be reinstalled."
+      isCorrect: false
+      explanation: "Incorrect. The retry never reached guest execution. Agent replacement doesn't address the operator's authorization at the requested resource scope."
+  - content: "A Linux agent service is active, but there is no handler start for a new extension request. The configuration file contains Extensions. Enabled=n. What is the evidence-led next step?"
+    choices:
+    - content: "Compare the file with the agent's loaded configuration, service history, and logs, then confirm who owns the setting before proposing a change."
+      isCorrect: true
+      explanation: "Correct. An active service doesn't prove extension processing is enabled, and file contents alone don't establish effective runtime configuration. Determine whether disablement is intentional before changing it."
+    - content: "Treat the active service as proof that extension processing is enabled and investigate only the report's arguments."
+      isCorrect: false
+      explanation: "Incorrect. The agent can remain active while extension handling is disabled. No matching handler start also means the report's arguments haven't yet been implicated."
+    - content: "Interpret an omitted Azure allowExtensionOperations property as false and use it to explain the guest file's effective state."
+      isCorrect: false
+      explanation: "Incorrect. The Azure control and guest configuration are different controls. An omitted or null Azure value isn't evidence of explicit false or of the agent's loaded configuration."

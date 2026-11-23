@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-virtual-machine-diagnose-guest-agent-extension.close-guest-incidents
+metadata:
+  title: "Close Guest Incidents"
+  description: "Respond to new failures, distinguish incomplete evidence, and retire only approved temporary incident resources."
+  ms.date: 11/20/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: "Close guest incidents"
+durationInMinutes: 6
+content: |
+  [!include[](includes/8-close-guest-incidents.md)]

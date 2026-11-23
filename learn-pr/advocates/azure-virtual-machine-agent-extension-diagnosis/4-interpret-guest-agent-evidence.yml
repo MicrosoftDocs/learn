@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-virtual-machine-diagnose-guest-agent-extension.interpret-guest-agent-evidence
+metadata:
+  title: "Interpret Guest Agent Evidence"
+  description: "Correlate Windows and Linux logs, cloud-init activity, filesystem capacity, extension controls, and host connectivity."
+  ms.date: 11/20/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: "Interpret guest agent evidence"
+durationInMinutes: 25
+content: |
+  [!include[](includes/4-interpret-guest-agent-evidence.md)]
