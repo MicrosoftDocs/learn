@@ -1,3 +1,5 @@
+:::image type="content" source="../media/02-site-link-design.svg" alt-text="Diagram providing an overview of the important concepts in this unit.":::
+
 Site topology is the bridge between your physical network and the logical Active Directory Domain Services (AD DS) directory. You describe the network to AD DS with a small set of configuration objects—sites, subnets, site links, and (optionally) site link bridges—and the directory's automatic topology engine turns that description into a concrete graph of replication connections between domain controllers. This unit explains those building blocks and the components that consume them: the Knowledge Consistency Checker (KCC), the Inter-Site Topology Generator (ISTG), bridgehead servers, and connection objects.
 
 Everything in this unit lives in the **Configuration** naming context (NC), so it replicates to every DC in the forest. A design mistake in one site is visible forest-wide.

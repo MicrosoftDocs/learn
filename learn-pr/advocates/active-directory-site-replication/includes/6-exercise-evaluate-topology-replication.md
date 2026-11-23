@@ -1,3 +1,5 @@
+:::image type="content" source="../media/06-exercise-evaluate-topology-replication.svg" alt-text="Diagram providing an overview of the important concepts in this unit.":::
+
 In this practical exercise you work end to end in an isolated lab forest: inspect a site topology and spot its defects, validate DC Locator under the Windows Server 2025 DNS-only default, read replication metadata to prove convergence, diagnose an induced replication failure, and apply a Replication Priority Boost. Every step uses fictitious names and runs only against lab systems.
 
 > [!CAUTION]

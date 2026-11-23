@@ -1,3 +1,5 @@
+:::image type="content" source="../media/03-topology-anti-patterns.svg" alt-text="Diagram providing an overview of the important concepts in this unit.":::
+
 A replication topology rarely fails all at once. It degrades quietly: convergence stretches from minutes to hours, a branch authenticates against a DC three time zones away, or a functional-level upgrade stalls because one DC never received a change. This unit catalogs the topology anti-patterns that cause these symptoms, then shows how to validate DC Locator and replication behavior on computers running Windows Server 2025, where NetBIOS-style discovery is blocked by default.
 
 ## Common topology anti-patterns
