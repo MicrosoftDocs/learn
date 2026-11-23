@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-virtual-machine-diagnose-guest-agent-extension.select-diagnostic-channels
+metadata:
+  title: "Select Diagnostic Channels"
+  description: "Choose usable guest access, understand Action Run Command dependencies, and establish Serial Console readiness."
+  ms.date: 11/20/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: "Select diagnostic channels"
+durationInMinutes: 12
+content: |
+  [!include[](includes/3-select-diagnostic-channels.md)]

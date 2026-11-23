@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="480" viewBox="0 0 1000 480" role="img" aria-labelledby="linux-startup-failure-stages-title linux-startup-failure-stages-description" font-family="Segoe UI, Arial, sans-serif" fill="#000000">
+  <title id="linux-startup-failure-stages-title">Where did Linux startup stop?</title>
+  <desc id="linux-startup-failure-stages-description">Read left to right: the bootloader loads the kernel, the kernel and initramfs find the root filesystem, then Linux mounts the required filesystems. Each clue narrows the stage to investigate without proving a single cause.</desc>
+  <metadata>{&quot;sourceRoot&quot;:&quot;C:\\Azure-Icons&quot;,&quot;icons&quot;:[&quot;compute\\10032-icon-service-Disks.svg&quot;]}</metadata>
+  <defs>
+    <marker id="linux-startup-failure-stages-tip" viewBox="0 0 10 10" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#455e75"/></marker>
+    <symbol id="linux-startup-failure-stages-icon-disk" viewBox="0 0 18 18"><defs><linearGradient id="linux-startup-failure-stages-icon-disk-a3aecb5c-11f5-4ece-99f7-9672f3236156" x1="15.35" y1="13.41" x2="15.37" y2="13.41" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#0078d4" /><stop offset="0.14" stop-color="#1782da" /><stop offset="0.37" stop-color="#368fe3" /><stop offset="0.59" stop-color="#4c98ea" /><stop offset="0.8" stop-color="#599eee" /><stop offset="0.99" stop-color="#5ea0ef" /></linearGradient><linearGradient id="linux-startup-failure-stages-icon-disk-b4dfb3ab-25fe-416c-a6fa-f33fcfbf22dc" x1="5.51" y1="802.5" x2="12.94" y2="810.58" gradientTransform="translate(0 -1278.76) scale(1 1.59)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#0078d4" /><stop offset="0.02" stop-color="#0d7ed8" /><stop offset="0.08" stop-color="#2b8ae0" /><stop offset="0.15" stop-color="#4194e7" /><stop offset="0.22" stop-color="#519beb" /><stop offset="0.29" stop-color="#5b9fee" /><stop offset="0.4" stop-color="#5ea0ef" /><stop offset="0.55" stop-color="#5b9fee" /><stop offset="0.68" stop-color="#509aeb" /><stop offset="0.8" stop-color="#3f92e6" /><stop offset="0.91" stop-color="#2688df" /><stop offset="0.99" stop-color="#127fd9" /></linearGradient></defs><ellipse cx="8.96" cy="11.82" rx="7.5" ry="3.08" fill="#76bc2d" /><ellipse cx="9.15" cy="11.79" rx="2.49" ry="0.68" fill="#5e9624" /><path d="M15.35,13.4l0,0Z" fill="url(#linux-startup-failure-stages-icon-disk-a3aecb5c-11f5-4ece-99f7-9672f3236156)" /><ellipse cx="8.96" cy="4.99" rx="7.5" ry="3.08" fill="url(#linux-startup-failure-stages-icon-disk-b4dfb3ab-25fe-416c-a6fa-f33fcfbf22dc)" /><ellipse cx="9.15" cy="4.95" rx="2.49" ry="0.68" fill="#005ba1" /><path d="M9,14.84c4.15,0,7.5-1.38,7.5-3.08h0v1.82h0c-.14,1.65-3.44,3-7.5,3s-7.5-1.38-7.5-3.08V11.76C1.46,13.46,4.82,14.84,9,14.84Z" fill="#5e9624" /><path d="M15.35,13.4l0,0Z" fill="url(#linux-startup-failure-stages-icon-disk-a3aecb5c-11f5-4ece-99f7-9672f3236156)" /><path d="M9,8c4.15,0,7.5-1.38,7.5-3.08h0V6.74h0c-.14,1.65-3.44,3-7.5,3s-7.5-1.38-7.5-3.08V4.92C1.46,6.62,4.82,8,9,8Z" fill="#0078d4" /></symbol>
+  </defs>
+  <rect id="linux-startup-failure-stages-background" data-kind="background" x="0" y="0" width="1000" height="480" rx="0" fill="#ffffff" stroke="none" stroke-width="1.6"/>
+  <text x="38" y="34" font-size="15" font-weight="600" text-anchor="start">LINUX BOOT EVIDENCE</text>
+  <text x="38" y="81" font-size="36" font-weight="600" text-anchor="start">Where did Linux startup stop?</text>
+  <text x="39" y="115" font-size="20" font-weight="400" text-anchor="start">Match the last visible message to a stage before choosing a repair.</text>
+  <use data-kind="azure-icon" href="#linux-startup-failure-stages-icon-disk" x="903" y="32" width="64" height="64" aria-hidden="true"/>
+  <rect id="linux-startup-failure-stages-stage-1" data-kind="card" x="38" y="148" width="282" height="200" rx="12" fill="#f1f7fc" stroke="#276496" stroke-width="1.6"/>
+  <text x="54" y="178" font-size="15" font-weight="600" text-anchor="start" data-card="linux-startup-failure-stages-stage-1">01   BOOTLOADER</text>
+  <text x="54" y="217" font-size="21" font-weight="600" text-anchor="start" data-card="linux-startup-failure-stages-stage-1">Load the kernel</text>
+  <text x="54" y="248" font-size="18" font-weight="400" text-anchor="start" data-card="linux-startup-failure-stages-stage-1">The bootloader selects a</text>
+  <text x="54" y="272" font-size="18" font-weight="400" text-anchor="start" data-card="linux-startup-failure-stages-stage-1">kernel and starts it.</text>
+  <text x="54" y="306" font-size="14" font-weight="600" text-anchor="start" data-card="linux-startup-failure-stages-stage-1">EXAMPLE CLUE</text>
+  <text x="54" y="330" font-size="18" font-weight="400" text-anchor="start" data-card="linux-startup-failure-stages-stage-1">Bootloader rescue prompt</text>
+  <path data-kind="connector" d="M326 247 L352 247" fill="none" stroke="#455e75" stroke-width="2.5" marker-end="url(#linux-startup-failure-stages-tip)"/>
+  <rect id="linux-startup-failure-stages-stage-2" data-kind="card" x="359" y="148" width="282" height="200" rx="12" fill="#f1f7fc" stroke="#276496" stroke-width="1.6"/>
+  <text x="375" y="178" font-size="15" font-weight="600" text-anchor="start" data-card="linux-startup-failure-stages-stage-2">02   KERNEL + INITRAMFS</text>
+  <text x="375" y="217" font-size="21" font-weight="600" text-anchor="start" data-card="linux-startup-failure-stages-stage-2">Find the root filesystem</text>
+  <text x="375" y="248" font-size="18" font-weight="400" text-anchor="start" data-card="linux-startup-failure-stages-stage-2">Early startup code locates</text>
+  <text x="375" y="272" font-size="18" font-weight="400" text-anchor="start" data-card="linux-startup-failure-stages-stage-2">and mounts the real root.</text>
+  <text x="375" y="306" font-size="14" font-weight="600" text-anchor="start" data-card="linux-startup-failure-stages-stage-2">EXAMPLE CLUE</text>
+  <text x="375" y="330" font-size="18" font-weight="400" text-anchor="start" data-card="linux-startup-failure-stages-stage-2">Unable to mount root</text>
+  <path data-kind="connector" d="M647 247 L673 247" fill="none" stroke="#455e75" stroke-width="2.5" marker-end="url(#linux-startup-failure-stages-tip)"/>
+  <rect id="linux-startup-failure-stages-stage-3" data-kind="card" x="680" y="148" width="282" height="200" rx="12" fill="#f1f7fc" stroke="#276496" stroke-width="1.6"/>
+  <text x="696" y="178" font-size="15" font-weight="600" text-anchor="start" data-card="linux-startup-failure-stages-stage-3">03   REQUIRED MOUNTS</text>
+  <text x="696" y="217" font-size="21" font-weight="600" text-anchor="start" data-card="linux-startup-failure-stages-stage-3">Mount other filesystems</text>
+  <text x="696" y="248" font-size="18" font-weight="400" text-anchor="start" data-card="linux-startup-failure-stages-stage-3">Linux reads /etc/fstab for</text>
+  <text x="696" y="272" font-size="18" font-weight="400" text-anchor="start" data-card="linux-startup-failure-stages-stage-3">the configured mounts.</text>
+  <text x="696" y="306" font-size="14" font-weight="600" text-anchor="start" data-card="linux-startup-failure-stages-stage-3">EXAMPLE CLUE</text>
+  <text x="696" y="330" font-size="18" font-weight="400" text-anchor="start" data-card="linux-startup-failure-stages-stage-3">Timed out waiting for UUID</text>
+  <rect id="linux-startup-failure-stages-implication" data-kind="card" x="38" y="374" width="924" height="80" rx="12" fill="#fff5e6" stroke="#955116" stroke-width="1.6"/>
+  <text x="56" y="405" font-size="22" font-weight="600" text-anchor="start" data-card="linux-startup-failure-stages-implication">A startup clue narrows the investigation; it does not prove the cause.</text>
+  <text x="56" y="435" font-size="19" font-weight="400" text-anchor="start" data-card="linux-startup-failure-stages-implication">When boot stalls, investigate that stage before treating an unready VM agent as the fault.</text>
+</svg>

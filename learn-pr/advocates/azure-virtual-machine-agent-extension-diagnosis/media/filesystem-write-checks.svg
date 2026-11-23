@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="607" viewBox="0 0 1040 607" role="img" aria-labelledby="title description" font-family="Segoe UI, Arial, sans-serif" fill="#000000">
+<title id="title">Why can a handler fail to create a file?</title>
+<desc id="description">Three independent checks on the filesystem containing the handler directory distinguish exhausted data blocks, exhausted inode entries, and a read-only mount. The example results are alternatives, not one sequence of events.</desc>
+<metadata>{&quot;sourceRoot&quot;:&quot;C:\\Azure-Icons&quot;,&quot;icons&quot;:[&quot;compute\\10032-icon-service-Disks.svg&quot;]}</metadata>
+<defs><symbol id="filesystem-write-checks-icon-disk" viewBox="0 0 18 18"><defs><linearGradient id="filesystem-write-checks-icon-disk-a3aecb5c-11f5-4ece-99f7-9672f3236156" x1="15.35" y1="13.41" x2="15.37" y2="13.41" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#0078d4" /><stop offset="0.14" stop-color="#1782da" /><stop offset="0.37" stop-color="#368fe3" /><stop offset="0.59" stop-color="#4c98ea" /><stop offset="0.8" stop-color="#599eee" /><stop offset="0.99" stop-color="#5ea0ef" /></linearGradient><linearGradient id="filesystem-write-checks-icon-disk-b4dfb3ab-25fe-416c-a6fa-f33fcfbf22dc" x1="5.51" y1="802.5" x2="12.94" y2="810.58" gradientTransform="translate(0 -1278.76) scale(1 1.59)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#0078d4" /><stop offset="0.02" stop-color="#0d7ed8" /><stop offset="0.08" stop-color="#2b8ae0" /><stop offset="0.15" stop-color="#4194e7" /><stop offset="0.22" stop-color="#519beb" /><stop offset="0.29" stop-color="#5b9fee" /><stop offset="0.4" stop-color="#5ea0ef" /><stop offset="0.55" stop-color="#5b9fee" /><stop offset="0.68" stop-color="#509aeb" /><stop offset="0.8" stop-color="#3f92e6" /><stop offset="0.91" stop-color="#2688df" /><stop offset="0.99" stop-color="#127fd9" /></linearGradient></defs><ellipse cx="8.96" cy="11.82" rx="7.5" ry="3.08" fill="#76bc2d" /><ellipse cx="9.15" cy="11.79" rx="2.49" ry="0.68" fill="#5e9624" /><path d="M15.35,13.4l0,0Z" fill="url(#filesystem-write-checks-icon-disk-a3aecb5c-11f5-4ece-99f7-9672f3236156)" /><ellipse cx="8.96" cy="4.99" rx="7.5" ry="3.08" fill="url(#filesystem-write-checks-icon-disk-b4dfb3ab-25fe-416c-a6fa-f33fcfbf22dc)" /><ellipse cx="9.15" cy="4.95" rx="2.49" ry="0.68" fill="#005ba1" /><path d="M9,14.84c4.15,0,7.5-1.38,7.5-3.08h0v1.82h0c-.14,1.65-3.44,3-7.5,3s-7.5-1.38-7.5-3.08V11.76C1.46,13.46,4.82,14.84,9,14.84Z" fill="#5e9624" /><path d="M15.35,13.4l0,0Z" fill="url(#filesystem-write-checks-icon-disk-a3aecb5c-11f5-4ece-99f7-9672f3236156)" /><path d="M9,8c4.15,0,7.5-1.38,7.5-3.08h0V6.74h0c-.14,1.65-3.44,3-7.5,3s-7.5-1.38-7.5-3.08V4.92C1.46,6.62,4.82,8,9,8Z" fill="#0078d4" /></symbol></defs>
+<rect data-kind="background" x="0" y="0" width="1040" height="607" fill="#ffffff"/>
+<text x="40" y="35" font-size="16" font-weight="700">LINUX GUEST EVIDENCE</text>
+<text x="40" y="84" font-size="38" font-weight="600">Why can a handler fail to create a file?</text>
+<text x="40" y="120" font-size="21" font-weight="400">Check the filesystem containing the handler directory, not necessarily the root mount.</text>
+<use data-kind="azure-icon" href="#filesystem-write-checks-icon-disk" x="934" y="36" width="60" height="60" aria-hidden="true"/>
+<text x="40" y="164" font-size="21" font-weight="500" font-family="Consolas, monospace">Example: target=/var/lib/waagent</text>
+<text x="100" y="208" font-size="16" font-weight="700">CHECK</text>
+<text x="460" y="208" font-size="16" font-weight="700">EXAMPLE RESULT</text>
+<text x="681" y="208" font-size="16" font-weight="700">MEANING</text>
+<rect id="blocks" data-kind="card" x="40" y="221" width="960" height="83" rx="12" fill="#f1f7fc" stroke="#276496" stroke-width="1.6"/>
+<text x="57" y="268" font-size="21" font-weight="700" data-card="blocks">01</text>
+<text x="100" y="253" font-size="22" font-weight="600" data-card="blocks">Free data blocks</text>
+<text x="100" y="283" font-size="18" font-weight="400" font-family="Consolas, monospace" data-card="blocks">df -h &quot;$target&quot;</text>
+<text x="460" y="269" font-size="23" font-weight="600" font-family="Consolas, monospace" data-card="blocks">Avail: 0</text>
+<text x="681" y="254" font-size="19" font-weight="400" data-card="blocks">No space available</text>
+<text x="681" y="280" font-size="19" font-weight="400" data-card="blocks">for more file data.</text>
+<rect id="inodes" data-kind="card" x="40" y="318" width="960" height="83" rx="12" fill="#f1f7fc" stroke="#276496" stroke-width="1.6"/>
+<text x="57" y="365" font-size="21" font-weight="700" data-card="inodes">02</text>
+<text x="100" y="350" font-size="22" font-weight="600" data-card="inodes">Free file entries</text>
+<text x="100" y="380" font-size="18" font-weight="400" font-family="Consolas, monospace" data-card="inodes">df -i &quot;$target&quot;</text>
+<text x="460" y="366" font-size="23" font-weight="600" font-family="Consolas, monospace" data-card="inodes">IFree: 0</text>
+<text x="681" y="351" font-size="19" font-weight="400" data-card="inodes">No inode for a new file,</text>
+<text x="681" y="377" font-size="19" font-weight="400" data-card="inodes">even if blocks are free.</text>
+<rect id="mount" data-kind="card" x="40" y="415" width="960" height="83" rx="12" fill="#fff5e6" stroke="#955116" stroke-width="1.6"/>
+<text x="57" y="462" font-size="21" font-weight="700" data-card="mount">03</text>
+<text x="100" y="447" font-size="22" font-weight="600" data-card="mount">Mount options</text>
+<text x="100" y="477" font-size="18" font-weight="400" font-family="Consolas, monospace" data-card="mount">findmnt -T &quot;$target&quot;</text>
+<text x="460" y="463" font-size="23" font-weight="600" font-family="Consolas, monospace" data-card="mount">Options: ro</text>
+<text x="681" y="448" font-size="19" font-weight="400" data-card="mount">This mount rejects writes,</text>
+<text x="681" y="474" font-size="19" font-weight="400" data-card="mount">even with free capacity.</text>
+<rect id="takeaway" data-kind="card" x="40" y="513" width="960" height="71" rx="12" fill="#f6f8fa" stroke="#697b89" stroke-width="1.6"/>
+<text x="60" y="538" font-size="15" font-weight="700" data-card="takeaway">IF ALL THREE CHECKS PASS</text>
+<text x="60" y="565" font-size="21" font-weight="500" data-card="takeaway">Check the exact path, ownership, and permissions before changing capacity.</text>
+</svg>

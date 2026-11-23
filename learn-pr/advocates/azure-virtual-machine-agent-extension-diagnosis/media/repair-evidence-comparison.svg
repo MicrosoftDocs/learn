@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="642" viewBox="0 0 1040 642" role="img" aria-labelledby="title description" font-family="Segoe UI, Arial, sans-serif" fill="#000000">
+<title id="title">What proves the retry worked?</title>
+<desc id="description">Compare the failed attempt with the retry in four rows. The Azure operation and current handler result must change to success. Guest health and an independent workload check must remain good.</desc>
+<metadata>{&quot;sourceRoot&quot;:&quot;C:\\Azure-Icons&quot;,&quot;icons&quot;:[&quot;general\\10799-icon-service-Extensions.svg&quot;]}</metadata>
+<defs><symbol id="repair-evidence-comparison-icon-extension" viewBox="0 0 18 18"><defs><linearGradient id="repair-evidence-comparison-icon-extension-a7ee2b34-5d31-4c40-9ffe-8433e6b85e09" x1="8.144" y1="13.837" x2="8.144" y2="6.11" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#32bedd" /><stop offset="0.175" stop-color="#32caea" /><stop offset="0.41" stop-color="#32d2f2" /><stop offset="0.775" stop-color="#32d4f5" /></linearGradient></defs><g id="repair-evidence-comparison-icon-extension-b60cdf7c-998d-4b07-83eb-3c17ec41d74f"><g><rect x="4.281" y="6.11" width="7.726" height="7.726" rx="0.303" fill="url(#repair-evidence-comparison-icon-extension-a7ee2b34-5d31-4c40-9ffe-8433e6b85e09)" /><path d="M16.894.66h-7.3a.3.3,0,0,0-.3.3V2.287a.3.3,0,0,0,.3.3h5.371a.605.605,0,0,1,.605.606V8.651a.3.3,0,0,0,.3.3H17.2a.3.3,0,0,0,.3-.3V1.266A.606.606,0,0,0,16.894.66Z" fill="#773adc" /><path d="M14.333,10.223v4.806a.552.552,0,0,1-.552.552H2.81a.552.552,0,0,1-.552-.552V4.672A.552.552,0,0,1,2.81,4.12h5.5a.3.3,0,0,0,.3-.3V2.665a.3.3,0,0,0-.3-.3H1.052A.552.552,0,0,0,.5,2.914V16.788a.552.552,0,0,0,.552.552H15.539a.553.553,0,0,0,.553-.552V10.223a.3.3,0,0,0-.3-.3H14.636A.3.3,0,0,0,14.333,10.223Z" fill="#b3b3b3" /></g></g></symbol></defs>
+<rect data-kind="background" x="0" y="0" width="1040" height="642" fill="#ffffff"/>
+<text x="40" y="35" font-size="16" font-weight="700">CONTOSO  /  TICKET CLOSURE</text>
+<text x="40" y="84" font-size="38" font-weight="600">What proves the retry worked?</text>
+<text x="40" y="120" font-size="21" font-weight="400">Compare the two attempts on the same VM and extension instance.</text>
+<use data-kind="azure-icon" href="#repair-evidence-comparison-icon-extension" x="934" y="36" width="60" height="60" aria-hidden="true"/>
+<text x="57" y="169" font-size="16" font-weight="700">CHECK</text>
+<text x="349" y="169" font-size="16" font-weight="700">BEFORE THE CHANGE</text>
+<text x="681" y="169" font-size="16" font-weight="700">EVIDENCE FOR CLOSURE</text>
+<rect id="operation" data-kind="card" x="40" y="184" width="960" height="74" rx="12" fill="#f1f7fc" stroke="#276496" stroke-width="1.6"/>
+<text x="57" y="228" font-size="20" font-weight="700" data-card="operation">01</text>
+<text x="99" y="228" font-size="22" font-weight="600" data-card="operation">Azure operation</text>
+<text x="349" y="228" font-size="19" font-weight="400" data-card="operation">Update reported Failed.</text>
+<text x="681" y="228" font-size="19" font-weight="400" data-card="operation">Retry reports Succeeded.</text>
+<rect id="handler" data-kind="card" x="40" y="270" width="960" height="74" rx="12" fill="#f1f7fc" stroke="#276496" stroke-width="1.6"/>
+<text x="57" y="314" font-size="20" font-weight="700" data-card="handler">02</text>
+<text x="99" y="314" font-size="22" font-weight="600" data-card="handler">Handler result</text>
+<text x="349" y="298" font-size="19" font-weight="400" data-card="handler">Failed sequence: exit 23</text>
+<text x="349" y="329" font-size="19" font-weight="400" data-card="handler">after the report printed.</text>
+<text x="681" y="298" font-size="19" font-weight="400" data-card="handler">New sequence: exit 0</text>
+<text x="681" y="329" font-size="19" font-weight="400" data-card="handler">and expected report in stdout.</text>
+<rect id="guest" data-kind="card" x="40" y="356" width="960" height="74" rx="12" fill="#edf8f5" stroke="#216e65" stroke-width="1.6"/>
+<text x="57" y="400" font-size="20" font-weight="700" data-card="guest">03</text>
+<text x="99" y="400" font-size="22" font-weight="600" data-card="guest">Guest health</text>
+<text x="349" y="384" font-size="19" font-weight="400" data-card="guest">SSH worked. The VM</text>
+<text x="349" y="415" font-size="19" font-weight="400" data-card="guest">agent service was active.</text>
+<text x="681" y="384" font-size="19" font-weight="400" data-card="guest">Guest still responds.</text>
+<text x="681" y="415" font-size="19" font-weight="400" data-card="guest">Agent service remains active.</text>
+<rect id="workload" data-kind="card" x="40" y="442" width="960" height="74" rx="12" fill="#edf8f5" stroke="#216e65" stroke-width="1.6"/>
+<text x="57" y="486" font-size="20" font-weight="700" data-card="workload">04</text>
+<text x="99" y="486" font-size="22" font-weight="600" data-card="workload">Workload via SSH</text>
+<text x="349" y="470" font-size="19" font-weight="400" data-card="workload">The report printed the</text>
+<text x="349" y="501" font-size="19" font-weight="400" data-card="workload">expected line and exited 0.</text>
+<text x="681" y="470" font-size="19" font-weight="400" data-card="workload">A separate SSH run returns</text>
+<text x="681" y="501" font-size="19" font-weight="400" data-card="workload">the same line and exit 0.</text>
+<rect id="takeaway" data-kind="card" x="40" y="547" width="960" height="71" rx="12" fill="#f6f8fa" stroke="#697b89" stroke-width="1.6"/>
+<text x="60" y="572" font-size="15" font-weight="700" data-card="takeaway">DECISION</text>
+<text x="60" y="599" font-size="21" font-weight="500" data-card="takeaway">SSH already worked before the change. It cannot, by itself, prove the repair.</text>
+</svg>

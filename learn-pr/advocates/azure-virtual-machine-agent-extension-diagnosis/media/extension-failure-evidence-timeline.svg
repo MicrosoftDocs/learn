@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="656" viewBox="0 0 1000 656" role="img" aria-labelledby="extension-failure-evidence-timeline-title extension-failure-evidence-timeline-description" font-family="Segoe UI, Arial, sans-serif" fill="#000000">
+  <title id="extension-failure-evidence-timeline-title">Which component returned exit code 23?</title>
+  <desc id="extension-failure-evidence-timeline-description">Simulated events for m02-command, sequence 0. Azure accepts the update; the guest agent requests the handler; the submitted command prints its report and exits 23; Azure records failure. An independent SSH check still succeeds.</desc>
+  <metadata>{&quot;sourceRoot&quot;:&quot;C:\\Azure-Icons&quot;,&quot;icons&quot;:[&quot;general\\10799-icon-service-Extensions.svg&quot;,&quot;monitor\\00007-icon-service-Activity-Log.svg&quot;]}</metadata>
+  <defs>
+    <marker id="extension-failure-evidence-timeline-tip" viewBox="0 0 10 10" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#455e75"/></marker>
+    <symbol id="extension-failure-evidence-timeline-icon-extension" viewBox="0 0 18 18"><defs><linearGradient id="extension-failure-evidence-timeline-icon-extension-a7ee2b34-5d31-4c40-9ffe-8433e6b85e09" x1="8.144" y1="13.837" x2="8.144" y2="6.11" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#32bedd" /><stop offset="0.175" stop-color="#32caea" /><stop offset="0.41" stop-color="#32d2f2" /><stop offset="0.775" stop-color="#32d4f5" /></linearGradient></defs><g id="extension-failure-evidence-timeline-icon-extension-b60cdf7c-998d-4b07-83eb-3c17ec41d74f"><g><rect x="4.281" y="6.11" width="7.726" height="7.726" rx="0.303" fill="url(#extension-failure-evidence-timeline-icon-extension-a7ee2b34-5d31-4c40-9ffe-8433e6b85e09)" /><path d="M16.894.66h-7.3a.3.3,0,0,0-.3.3V2.287a.3.3,0,0,0,.3.3h5.371a.605.605,0,0,1,.605.606V8.651a.3.3,0,0,0,.3.3H17.2a.3.3,0,0,0,.3-.3V1.266A.606.606,0,0,0,16.894.66Z" fill="#773adc" /><path d="M14.333,10.223v4.806a.552.552,0,0,1-.552.552H2.81a.552.552,0,0,1-.552-.552V4.672A.552.552,0,0,1,2.81,4.12h5.5a.3.3,0,0,0,.3-.3V2.665a.3.3,0,0,0-.3-.3H1.052A.552.552,0,0,0,.5,2.914V16.788a.552.552,0,0,0,.552.552H15.539a.553.553,0,0,0,.553-.552V10.223a.3.3,0,0,0-.3-.3H14.636A.3.3,0,0,0,14.333,10.223Z" fill="#b3b3b3" /></g></g></symbol>
+    <symbol id="extension-failure-evidence-timeline-icon-activity" viewBox="0 0 18 18"><defs><linearGradient id="extension-failure-evidence-timeline-icon-activity-f8a6a4fc-9e8d-423a-97d1-d514179ece73" x1="8.15" y1="17.5" x2="8.15" y2="2.09" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#1988d9" /><stop offset="0.9" stop-color="#54aef0" /></linearGradient></defs><path d="M1.93,2.11,3.14.7A.59.59,0,0,1,3.59.5H15.2a.81.81,0,0,1,.89.83v14.5a.57.57,0,0,1-.2.43l-1.3,1.19H2.72l-.81-.33Z" fill="#005ba1" /><path d="M2.91,2.1l.74-.84A.5.5,0,0,1,4,1.08H14.89a.52.52,0,0,1,.52.52V15.38a.52.52,0,0,1-.17.39l-1.16,1.05Z" fill="#fff" /><path d="M14,2.09H2a.06.06,0,0,0-.06.06v15a.39.39,0,0,0,.39.38H14a.38.38,0,0,0,.38-.38V2.48A.39.39,0,0,0,14,2.09Z" fill="url(#extension-failure-evidence-timeline-icon-activity-f8a6a4fc-9e8d-423a-97d1-d514179ece73)" /><rect x="4.72" y="6.2" width="6.58" height="2.38" rx="0.28" fill="#fff" /></symbol>
+  </defs>
+  <rect id="extension-failure-evidence-timeline-background" data-kind="background" x="0" y="0" width="1000" height="656" rx="0" fill="#ffffff" stroke="none" stroke-width="1.6"/>
+  <text x="38" y="34" font-size="15" font-weight="600" text-anchor="start">WORKED EXAMPLE  /  SEQUENCE 0</text>
+  <text x="38" y="81" font-size="36" font-weight="600" text-anchor="start">Which component returned exit code 23?</text>
+  <text x="39" y="115" font-size="20" font-weight="400" text-anchor="start">Read down the UTC timestamps for the same VM and extension request.</text>
+  <use data-kind="azure-icon" href="#extension-failure-evidence-timeline-icon-extension" x="903" y="32" width="64" height="64" aria-hidden="true"/>
+  <text x="38" y="155" font-size="15" font-weight="600" text-anchor="start">TIME (UTC)</text>
+  <text x="223" y="155" font-size="15" font-weight="600" text-anchor="start">EVIDENCE SOURCE</text>
+  <text x="501" y="155" font-size="15" font-weight="600" text-anchor="start">WHAT THE RECORD SHOWS</text>
+  <rect id="extension-failure-evidence-timeline-event-1" data-kind="card" x="204" y="170" width="758" height="64" rx="12" fill="#f1f7fc" stroke="#276496" stroke-width="1.6"/>
+  <text x="38" y="209" font-size="21" font-weight="400" text-anchor="start">11:40:00</text>
+  <circle data-kind="number-badge" cx="165" cy="202" r="17" fill="#ffffff" stroke="#276496" stroke-width="2"/>
+  <text x="165" y="208" font-size="17" font-weight="600" text-anchor="middle">1</text>
+  <text x="223" y="209" font-size="21" font-weight="600" text-anchor="start" data-card="extension-failure-evidence-timeline-event-1">Azure control plane</text>
+  <text x="501" y="197" font-size="18" font-weight="400" text-anchor="start" data-card="extension-failure-evidence-timeline-event-1">Azure accepted the update.</text>
+  <text x="501" y="221" font-size="18" font-weight="400" text-anchor="start" data-card="extension-failure-evidence-timeline-event-1">Guest execution is not yet confirmed.</text>
+  <path data-kind="connector" d="M165 223 L165 258" fill="none" stroke="#455e75" stroke-width="2.5" marker-end="url(#extension-failure-evidence-timeline-tip)"/>
+  <rect id="extension-failure-evidence-timeline-event-2" data-kind="card" x="204" y="248" width="758" height="64" rx="12" fill="#f1f7fc" stroke="#276496" stroke-width="1.6"/>
+  <text x="38" y="287" font-size="21" font-weight="400" text-anchor="start">11:40:11</text>
+  <circle data-kind="number-badge" cx="165" cy="280" r="17" fill="#ffffff" stroke="#276496" stroke-width="2"/>
+  <text x="165" y="286" font-size="17" font-weight="600" text-anchor="middle">2</text>
+  <text x="223" y="287" font-size="21" font-weight="600" text-anchor="start" data-card="extension-failure-evidence-timeline-event-2">Linux VM agent</text>
+  <text x="501" y="275" font-size="18" font-weight="400" text-anchor="start" data-card="extension-failure-evidence-timeline-event-2">The agent asked the handler to apply settings</text>
+  <text x="501" y="299" font-size="18" font-weight="400" text-anchor="start" data-card="extension-failure-evidence-timeline-event-2">for m02-command, sequence 0.</text>
+  <path data-kind="connector" d="M165 301 L165 336" fill="none" stroke="#455e75" stroke-width="2.5" marker-end="url(#extension-failure-evidence-timeline-tip)"/>
+  <rect id="extension-failure-evidence-timeline-event-3" data-kind="card" x="204" y="326" width="758" height="64" rx="12" fill="#fff5e6" stroke="#955116" stroke-width="1.6"/>
+  <text x="38" y="365" font-size="21" font-weight="400" text-anchor="start">11:40:12</text>
+  <circle data-kind="number-badge" cx="165" cy="358" r="17" fill="#ffffff" stroke="#276496" stroke-width="2"/>
+  <text x="165" y="364" font-size="17" font-weight="600" text-anchor="middle">3</text>
+  <text x="223" y="365" font-size="21" font-weight="600" text-anchor="start" data-card="extension-failure-evidence-timeline-event-3">Handler and command</text>
+  <text x="501" y="353" font-size="18" font-weight="400" text-anchor="start" data-card="extension-failure-evidence-timeline-event-3">The application printed report-ready os=ubuntu.</text>
+  <text x="501" y="377" font-size="18" font-weight="400" text-anchor="start" data-card="extension-failure-evidence-timeline-event-3">The submitted command then exited with code 23.</text>
+  <path data-kind="connector" d="M165 379 L165 414" fill="none" stroke="#455e75" stroke-width="2.5" marker-end="url(#extension-failure-evidence-timeline-tip)"/>
+  <rect id="extension-failure-evidence-timeline-event-4" data-kind="card" x="204" y="404" width="758" height="64" rx="12" fill="#f1f7fc" stroke="#276496" stroke-width="1.6"/>
+  <text x="38" y="443" font-size="21" font-weight="400" text-anchor="start">11:40:18</text>
+  <circle data-kind="number-badge" cx="165" cy="436" r="17" fill="#ffffff" stroke="#276496" stroke-width="2"/>
+  <text x="165" y="442" font-size="17" font-weight="600" text-anchor="middle">4</text>
+  <text x="223" y="443" font-size="21" font-weight="600" text-anchor="start" data-card="extension-failure-evidence-timeline-event-4">Azure instance view</text>
+  <text x="501" y="431" font-size="18" font-weight="400" text-anchor="start" data-card="extension-failure-evidence-timeline-event-4">The extension reported Failed for this run.</text>
+  <text x="501" y="455" font-size="18" font-weight="400" text-anchor="start" data-card="extension-failure-evidence-timeline-event-4">That status alone does not identify the cause.</text>
+  <path data-kind="connector" d="M165 457 L165 492" fill="none" stroke="#455e75" stroke-width="2.5" marker-end="url(#extension-failure-evidence-timeline-tip)"/>
+  <rect id="extension-failure-evidence-timeline-event-5" data-kind="card" x="204" y="482" width="758" height="64" rx="12" fill="#edf8f5" stroke="#216e65" stroke-width="1.6"/>
+  <text x="38" y="521" font-size="21" font-weight="400" text-anchor="start">11:40:20</text>
+  <circle data-kind="number-badge" cx="165" cy="514" r="17" fill="#ffffff" stroke="#276496" stroke-width="2"/>
+  <text x="165" y="520" font-size="17" font-weight="600" text-anchor="middle">5</text>
+  <text x="223" y="521" font-size="21" font-weight="600" text-anchor="start" data-card="extension-failure-evidence-timeline-event-5">Independent SSH check</text>
+  <text x="501" y="509" font-size="18" font-weight="400" text-anchor="start" data-card="extension-failure-evidence-timeline-event-5">The agent service was active. A direct run of</text>
+  <text x="501" y="533" font-size="18" font-weight="400" text-anchor="start" data-card="extension-failure-evidence-timeline-event-5">the sample application returned the expected report.</text>
+  <rect id="extension-failure-evidence-timeline-finding" data-kind="card" x="38" y="568" width="924" height="66" rx="12" fill="#f6f8fa" stroke="#697b89" stroke-width="1.6"/>
+  <use data-kind="azure-icon" href="#extension-failure-evidence-timeline-icon-activity" x="56" y="582" width="34" height="34" aria-hidden="true"/>
+  <text x="108" y="608" font-size="21" font-weight="600" text-anchor="start" data-card="extension-failure-evidence-timeline-finding">Correct the submitted command. The handler ran it and reported its exit code.</text>
+</svg>
