@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-virtual-machine-fleet-change-control.retire-fleet-resources-without-service-disruption
+metadata:
+  title: Retire Fleet Resources Without Service Disruption
+  description: Test a replacement instance, verify the certificate a listener serves, and confirm retained data is retrievable before retiring an image, credential, or idle machine.
+  ms.date: 11/18/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Retire fleet resources without service disruption
+durationInMinutes: 8
+content: |
+  [!include[](includes/12-retire-fleet-resources-without-service-disruption.md)]

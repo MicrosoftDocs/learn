@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-virtual-machine-fleet-change-control.document-approved-rollout-targets
+metadata:
+  title: Document Approved Rollout Targets
+  description: Record instance identities, original settings, exclusions, and approvals in a manifest. Decide when a replacement instance needs a new baseline and approval.
+  ms.date: 11/18/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Document approved rollout targets
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-document-approved-rollout-targets.md)]

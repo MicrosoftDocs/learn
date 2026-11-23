@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-virtual-machine-fleet-change-control.choose-fleet-change-tools
+metadata:
+  title: Choose Fleet Change Tools
+  description: Match resource deployments, one-time guest commands, and desired-state policies to the change request. Limit administrative access and release changes in waves.
+  ms.date: 11/18/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Choose fleet change tools
+durationInMinutes: 16
+content: |
+  [!include[](includes/2-choose-fleet-change-tools.md)]
