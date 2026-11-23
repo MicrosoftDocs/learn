@@ -1,3 +1,5 @@
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=4143bbb5-5cb1-4c0a-8254-7585380452ea]
+
 An AI Center of Excellence (CoE) fosters broad adoption of AI by driving organizational and technical readiness. Organizational readiness takes into account use case prioritization, skilling, change management, and solution adoption. Technical readiness takes into account the platform, data, infrastructure, Trustworthy AI, and genAI ops. It's a strategic hub within an organization for AI strategy and governance to standardize and facilitate solution teams who are implementing solutions. This team establishes best practices, reusable frameworks, and standardized tools
 that accelerate AI development while ensuring compliance, transparency, and value alignment. By centralizing knowledge, fostering innovation, and promoting responsible experimentation, the CoE acts as both a catalyst and a safeguard, enabling teams to deploy AI solutions efficiently and ethically across diverse domains.
 

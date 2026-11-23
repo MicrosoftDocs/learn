@@ -1,3 +1,5 @@
+:::image type="content" source="../media/06-recover-domains-forests.svg" alt-text="Diagram providing an overview of the important concepts in this unit.":::
+
 Domain recovery sits between single domain controller recovery and forest recovery. Perform domain recovery only when damage is confined to one domain naming context and the shared forest state remains trustworthy.
 
 ## Establish the boundary

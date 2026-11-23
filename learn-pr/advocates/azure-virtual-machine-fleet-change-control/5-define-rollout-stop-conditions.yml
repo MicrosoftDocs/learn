@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-virtual-machine-fleet-change-control.define-rollout-stop-conditions
+metadata:
+  title: Define Rollout Stop Conditions
+  description: Set canary stop conditions before dispatch and use the original command record and direct application checks to investigate an unknown result.
+  ms.date: 11/18/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Define rollout stop conditions
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-define-rollout-stop-conditions.md)]

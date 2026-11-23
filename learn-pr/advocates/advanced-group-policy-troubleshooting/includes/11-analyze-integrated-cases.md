@@ -1,3 +1,5 @@
+:::image type="content" source="../media/11-analyze-integrated-cases.svg" alt-text="Diagram providing an overview of the important concepts in this unit.":::
+
 These fictional cases apply the same troubleshooting method across different failure domains as a way of operationalizing the content of this module. Each case separates symptom, evidence, reasoning, correction, plus validation.
 
 ## Case 1: Kiosk policy is denied

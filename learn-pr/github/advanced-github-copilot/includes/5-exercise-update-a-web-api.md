@@ -1,3 +1,5 @@
+:::image type="content" source="../media/05-exercise-update-a-web-api.svg" alt-text="Diagram providing an overview of the important concepts in this unit.":::
+
 Let's explore how you can modify a Python repository using advanced GitHub Copilot techniques for an API endpoint. Gain more practical experience by using this repository that contains a Python web application that hosts a Travel Weather API.
 
 ## What is an API?

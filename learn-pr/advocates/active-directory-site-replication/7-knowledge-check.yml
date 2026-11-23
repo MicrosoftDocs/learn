@@ -10,7 +10,6 @@ metadata:
   ms.topic: unit
 durationInMinutes: 5
 quiz:
-  title: Module assessment
   questions:
   - content: "You're performing an over-the-wire promotion of a new Windows Server 2025 domain controller and want the destination DC to converge the domain naming context from one specific partner ahead of its peers. How do you apply Replication Priority Boost?"
     choices:

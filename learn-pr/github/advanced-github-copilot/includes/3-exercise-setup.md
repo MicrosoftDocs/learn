@@ -1,3 +1,5 @@
+:::image type="content" source="../media/03-exercise-setup.svg" alt-text="Diagram providing an overview of the important concepts in this unit.":::
+
 In this exercise, you'll open a codespace for the provided Python web API repository. You can experiment in this environment without first creating your own repository.
 
 ## Environment setup

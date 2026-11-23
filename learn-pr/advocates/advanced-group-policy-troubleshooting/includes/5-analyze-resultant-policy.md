@@ -1,8 +1,8 @@
+:::image type="content" source="../media/05-analyze-resultant-policy.svg" alt-text="Diagram providing an overview of the important concepts in this unit.":::
+
 Resultant Set of Policy (RSoP) evidence explains policy selection. It doesn't prove file retrieval, client-side extension success, effective state, or application compatibility.
 
-:::image type="complex" source="../media/effective-policy-state.svg" alt-text="Diagram that shows policy evidence layers from configuration through application behavior.":::
-[Diagram that shows policy evidence layers from configuration through application behavior.]
-:::image-end:::
+:::image type="content" source="../media/effective-policy-state.svg" alt-text="Diagram that shows policy evidence layers from configuration through application behavior.":::
 
 ## Select the correct tool
 

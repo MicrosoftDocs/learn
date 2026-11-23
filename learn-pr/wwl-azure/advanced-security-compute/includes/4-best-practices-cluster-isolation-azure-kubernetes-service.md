@@ -1,3 +1,5 @@
+:::image type="content" source="../media/04-best-practices-cluster-isolation-azure-kubernetes-service.svg" alt-text="Diagram providing an overview of the important concepts in this unit.":::
+
 As you manage clusters in Azure Kubernetes Service (AKS), you often need to isolate teams and workloads. AKS allows flexibility in how you run multitenant clusters and isolate resources. To maximize your investment in Kubernetes, it's important you understand AKS multi-tenancy and isolation features.
 
 ## Design clusters for multi-tenancy

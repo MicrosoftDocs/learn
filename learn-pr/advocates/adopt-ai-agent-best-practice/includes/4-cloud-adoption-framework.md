@@ -1,3 +1,5 @@
+:::image type="content" source="../media/04-cloud-adoption-framework.svg" alt-text="Diagram providing an overview of the important concepts in this unit.":::
+
 The Cloud Adoption Framework (CAF) provides a structured process for adopting AI solutions in Azure. This framework outlines clear steps, many of which apply to Microsoft Copilot adoption.
 
 The Microsoft Cloud Adoption Framework (CAF) provides a structured approach to cloud transformation, and it plays a critical role in guiding successful Microsoft Copilot deployments. By aligning Copilot adoption with CAF's phases of Strategy, Plan, Ready, Govern, Secure, and Manage, organizations can ensure that AI integration supports business

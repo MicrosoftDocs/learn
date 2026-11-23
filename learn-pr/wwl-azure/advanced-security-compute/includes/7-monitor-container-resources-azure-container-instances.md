@@ -1,3 +1,5 @@
+:::image type="content" source="../media/07-monitor-container-resources-azure-container-instances.svg" alt-text="Diagram providing an overview of the important concepts in this unit.":::
+
 Azure Monitor provides insight into the compute resources used by your containers instances. This resource usage data helps you determine the best resource settings for your container groups. Azure Monitor also provides metrics that track network activity in your container instances.
 
 ## Preview limitations

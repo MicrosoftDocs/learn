@@ -1,3 +1,5 @@
+:::image type="content" source="../media/05-well-architected-framework.svg" alt-text="Diagram providing an overview of the important concepts in this unit.":::
+
 The Well-Architected Framework (WAF) provides a structured approach to designing, building, and optimizing cloud solutions and it's especially critical when deploying AI agents at scale. By applying WAF's five pillars (cost optimization, operational excellence, performance efficiency, reliability, and security) organizations can ensure that
 their AI workloads aren't only technically sound but also aligned with business goals. For AI, this means designing architectures that can handle dynamic workloads, protect sensitive data, and deliver consistent performance across use cases, all while managing cost and governance. When applied to AI, WAF helps teams proactively address challenges like
 model drift, data integrity, and scalability.

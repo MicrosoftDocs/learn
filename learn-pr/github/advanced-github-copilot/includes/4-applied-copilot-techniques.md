@@ -1,3 +1,4 @@
+:::image type="content" source="../media/04-applied-copilot-techniques.svg" alt-text="Diagram providing an overview of the important concepts in this unit.":::
 
 In previous units, we showed how to set up Copilot and mentioned how it can make you faster as a developer starting to write code.
 

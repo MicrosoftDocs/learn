@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-virtual-machine-fleet-change-control.recover-workloads-from-infrastructure-failures
+metadata:
+  title: Recover Workloads from Infrastructure Failures
+  description: Choose between backend repair, backup restoration, and regional failover. Test the recovered application against its downtime and data-loss objectives.
+  ms.date: 11/18/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Recover workloads from infrastructure failures
+durationInMinutes: 7
+content: |
+  [!include[](includes/11-recover-workloads-from-infrastructure-failures.md)]

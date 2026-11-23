@@ -1,3 +1,5 @@
+:::image type="content" source="../media/03-apply-evidence-first-diagnosis.svg" alt-text="Diagram providing an overview of the important concepts in this unit.":::
+
 All forms of advanced troubleshooting are processes of controlled elimination. You eliminate possible causes systematically until the actual cause of what you observed becomes apparent.
 
 ## Define the expected result
@@ -53,9 +55,7 @@ Next record your environment and expectations:
 
 ## Start from the observed symptom
 
-:::image type="complex" source="../media/evidence-first-workflow.svg" alt-text="Diagram that shows a decision tree for eight Group Policy troubleshooting symptoms.":::
-[Diagram that shows a decision tree for eight Group Policy troubleshooting symptoms.]
-:::image-end:::
+:::image type="content" source="../media/evidence-first-workflow.svg" alt-text="Diagram that shows a decision tree for eight Group Policy troubleshooting symptoms.":::
 
 The first question asks which of eight symptoms is present? Each symptom leads to an evidence decision and one or more hypothesis exits:
 

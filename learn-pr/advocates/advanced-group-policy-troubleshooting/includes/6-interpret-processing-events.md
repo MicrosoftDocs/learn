@@ -1,3 +1,5 @@
+:::image type="content" source="../media/06-interpret-processing-events.svg" alt-text="Diagram providing an overview of the important concepts in this unit.":::
+
 To determine how a Group Policy was processed, it's important to understand that several mechanisms are interacting together and not necessarily in a strict sequence.
 
 ## Separate the Group Policy Container from the Group Policy Template

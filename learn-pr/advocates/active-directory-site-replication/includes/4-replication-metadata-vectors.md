@@ -1,3 +1,5 @@
+:::image type="content" source="../media/04-replication-metadata-vectors.svg" alt-text="Diagram providing an overview of the important concepts in this unit.":::
+
 Active Directory tracks changes using monotonically increasing counters and a pair of vectors that let any destination Domain Controllers (DCs) say precisely what the state of each record it stores is. In this unit, you learn about update sequence numbers (USNs), the high-watermark and up-to-dateness vectors, and how to read the per-attribute, linked-value, and deleted-object metadata that the engine maintains.
 
 ## Update sequence numbers (USNs)
