@@ -47,9 +47,10 @@ Allowed configuration keys for the `copilot-setup-steps` job: `steps, permission
 
 **Larger GitHub-hosted runners**
 
-- Add larger runners first 
-- In `copilot-setup-steps.yml`, set `runs-on` to the label/group (for example, `ubuntu-4-core`).
-- Only Ubuntu x64 runners are supported; self-hosted runners aren't supported.
+1. Add a larger GitHub-hosted runner.
+2. In `copilot-setup-steps.yml`, set `runs-on` to the runner label or group (for example, `ubuntu-4-core`).
+
+Only Ubuntu x64 runners are supported; self-hosted runners aren't supported.
 
 **Git LFS**
 
@@ -75,7 +76,8 @@ Default internet access is limited to reduce exfiltration risk. You can customiz
 
 MCP is an open standard for connecting LLMs to tools and data. The agent can use **tools** provided by local or remote MCP servers to expand its capabilities.
 
-Note: Copilot in the cloud supports MCP tools only (not resources or prompts). Remote MCP servers that require OAuth aren't supported.
+> [!NOTE]
+> Copilot in the cloud supports MCP tools only (not resources or prompts). Remote MCP servers that require OAuth aren't supported.
 
 **Default MCP servers**
 
@@ -98,14 +100,14 @@ You remain accountable for quality and security:
 
 - Run CI (tests, linters, scanning) on every agent PR; these checks won't run until you click Approve and run workflows.
 - Manually inspect high-impact or sensitive areas.
-- Ask the agent to generate tests (e.g., "Add Jest unit tests for all functions in `src/utils/` following repo style") - multi-file test generation consumes PRUs.
+- Ask the agent to generate tests (e.g., "Add Jest unit tests for all functions in `src/utils/` following repo style"). Copilot in the cloud consumes AI credits for model interactions, and running its build and test environment counts toward GitHub Actions compute usage.
 - Enforce rulesets so agent PRs must pass tests + scanning + linting before merge.
 - Label agent PRs (e.g., `agent-refactor, agent-tests`) to monitor, triage, and revert if needed.
 - Iterate instructions in .github/copilot-instructions.md when you see repeated mistakes.
 - Revert quickly if needed and request new changes from the agent.
 
-**Using PRUs intentionally for validation** 
+**Managing AI credit usage for validation**
 
-Leverage PRUs for deeper validation tasks such as test coverage expansion, audits across directories, or risky area scans. Lightweight checks consume fewer PRUs, so apply them intentionally to maximize value.
+Manage AI credit usage when you use the agent for validation tasks. More capable models consume more AI credits.
 
 With configuration, extensions, and validation practices in place, the final step is to use the agent responsibly scoping tasks well, safeguarding environments, and continuously reviewing outcomes.

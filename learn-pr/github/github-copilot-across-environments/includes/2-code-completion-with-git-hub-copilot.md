@@ -24,7 +24,7 @@ GitHub Copilot provides robust support for a wide range of programming languages
 While these languages receive exceptional support, GitHub Copilot can assist with many other languages and frameworks as well.
 
 > [!TIP]
-> GitHub Copilot offers a free tier with **2,000 code autocompletes and 50 chat messages per month**. To get started, open Visual Studio Code, click on the GitHub Copilot icon, and then click "Sign in to Use GitHub Copilot for Free". Log in to your GitHub account in the window that will open in the browser. [Learn more](https://gh.io/copilot). Educators, Students and select open-source maintainers can receive Copilot Pro for free, learn how at: [https://aka.ms/Copilot4Students](https://aka.ms/Copilot4Students).
+> GitHub Copilot offers a free tier with **2,000 code completions per month and an allowance of AI credits**. To get started in Visual Studio Code, hover over the Copilot icon in the Status Bar, select **Use AI Features**, and follow the sign-in prompts. [Learn more](https://gh.io/copilot). Verified students can get [Copilot Student for free](https://docs.github.com/en/copilot/how-tos/copilot-on-github/set-up-copilot/enable-copilot/set-up-for-students). Verified teachers and maintainers of popular open-source projects may qualify for free Copilot Pro.
 
 ## Auto suggestions
 

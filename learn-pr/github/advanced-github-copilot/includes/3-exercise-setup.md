@@ -21,7 +21,7 @@ The launch link opens a codespace associated with the provided repository. If yo
 
 ## Enable GitHub Copilot
 
-Sign in to VS Code with the GitHub account that has your Copilot access. If you don't have access yet, enable Copilot Free or use an eligible plan provided by your organization. Select **Chat** in the title bar, then **Open Chat**, and confirm that you can send a request before continuing.
+In VS Code, hover over the Copilot icon in the Status Bar, select **Use AI Features**, and follow the sign-in prompts using the GitHub account that has your Copilot access. If you don't have access yet, enable Copilot Free or use an eligible plan provided by your organization. Select **Chat** in the title bar, then **Open Chat**, and confirm that you can send a request before continuing.
 
 You don't need to purchase a paid Copilot plan just to start this exercise. Copilot Free includes limited usage, including 2,000 monthly code completions and an allowance of AI credits. Check your current allowance before starting. Feature availability and usage depend on your account and organization policies. See [Copilot plans](https://docs.github.com/en/copilot/get-started/plans) for current details.
 

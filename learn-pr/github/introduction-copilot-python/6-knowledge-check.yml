@@ -32,13 +32,13 @@ quiz:
     choices:
     - content: "It's a free unrestricted AI tool that works independent of code editors."
       isCorrect: false
-      explanation: "Incorrect. GitHub Copilot Free has a quota for code completions and chat messages."
+      explanation: "Incorrect. Copilot Free includes limited monthly code completions and an allowance of AI credits."
     - content: "It provides several suggestions and chats per month directly in your IDE and on github.com."
       isCorrect: true
-      explanation: "Correct. It also supports multi-file editing and switching models!"
+      explanation: "Correct. Copilot Free includes limited monthly code completions and AI credits, with model access through automatic selection."
     - content: "An option to enable slower responses, preserving your Copilot Pro quota."
       isCorrect: false
-      explanation: "Incorrect. Copilot Free has quota restrictions. Copilot Pro provides unlimited code suggestions and chat."
+      explanation: "Incorrect. Copilot Pro provides unlimited code completions. Copilot Chat consumes AI credits."
   - content: "How can you accept GitHub Copilot's suggestions?"
     choices:
     - content: "Press the <kbd>Tab</kbd> key."

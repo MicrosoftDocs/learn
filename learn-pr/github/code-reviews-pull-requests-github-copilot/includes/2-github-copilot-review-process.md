@@ -3,7 +3,7 @@ Code reviews and pull request reviews are essential for quality, but they can al
 By the end of this unit, you'll be able to:
 
 - Identify the key features of Copilot in code reviews.
-- Explain how PRUs unlock advanced review capabilities.
+- Explain how AI credits and GitHub Actions compute usage affect Copilot code review costs.
 - Recognize different ways Copilot review complements and helps developers.
 
 ## Key features of Copilot in code reviews 
@@ -20,13 +20,13 @@ Copilot introduces several features designed to streamline reviews:
 - **Drafting Comments**: Copilot can generate review comments based on best practices or team guidelines, making feedback clear and actionable.
 - **Reviews in Your IDE**: In addition to working directly on GitHub.com, Copilot can also review code inside your IDE. This allows developers to catch and resolve issues before opening a pull request, speeding up the process and reducing rework.
 
-## Understand how PRUs unlock advanced review capabilities
+## Understand usage of AI credits for Copilot code review
 
-PRUs power these advanced capabilities. For example, assigning Copilot as a PR reviewer uses a PRU each time it posts comments. When combined with custom `.github/copilot-instructions.md` files, PRU-powered reviews align with your team's rules, whether they focus on readability, security, or style.
+Copilot code review consumes AI credits for model interactions. Pull request reviews also use GitHub Actions runners for agentic capabilities. In private repositories, runner costs draw on included GitHub Actions compute usage; runner usage is free in public repositories. IDE reviews consume AI credits. Later in the module, you'll learn how to manage usage of AI credits. Custom instructions in `.github/copilot-instructions.md` help align reviews with your team's rules, whether they focus on readability, security, or style.
 
 Example:
 
-Without Copilot, a PR might include vague comments from a reviewer like *"Fix security issue here"*. With the help of Copilot + PRUs, the review becomes:
+Without Copilot, a PR might include vague comments from a reviewer like *"Fix security issue here"*. With Copilot, the review becomes:
 
   "The use of `exec()` introduces a code injection vulnerability. Consider replacing it with `subprocess.run()` for safer command execution. Here's a suggested patch:"
 
