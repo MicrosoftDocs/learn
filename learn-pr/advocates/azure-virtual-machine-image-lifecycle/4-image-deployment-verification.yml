@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-virtual-machine-image-lifecycle.image-deployment-verification
+metadata:
+  title: "Image Deployment and Verification"
+  description: "Enforce the active approved image and current release decision, then distinguish resource identity, guest execution, and learner access."
+  ms.date: "11/21/2026"
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: "Image deployment and verification"
+durationInMinutes: 15
+content: |
+  [!include[](includes/4-image-deployment-verification.md)]

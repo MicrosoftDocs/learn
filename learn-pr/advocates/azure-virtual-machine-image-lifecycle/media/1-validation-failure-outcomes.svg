@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="428" viewBox="0 0 960 428" role="img" aria-labelledby="failure-title failure-desc" font-family="Segoe UI, Arial, sans-serif" fill="#172b40">
+  <title id="failure-title">Can a failed run leave a gallery version?</title>
+  <desc id="failure-desc">The validator expected application marker 4.7.2 and read 0.0.0. The run fails in both branches. With continueDistributeOnFailure set to false, publication stops. With true, a gallery version can be published despite the failure. Neither branch qualifies the image for approval.</desc>
+  <metadata>Azure service icons are embedded from C:\Azure-Icons. Each symbol records its source file.</metadata>
+  <defs>
+    <symbol id="failure-diagnostics" viewBox="0 0 18 18" data-source="monitor/00008-icon-service-Diagnostics-Settings.svg"><defs><linearGradient id="failure-diagnostics-ef71ca8b-e0c3-42a3-b174-28e7219ff221" x1="8.15" y1="17.49" x2="8.15" y2="2.09" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#5e9624" /><stop offset="0.31" stop-color="#69a828" /><stop offset="0.93" stop-color="#86d633" /></linearGradient></defs><path d="M15.2.5H3.59a.57.57,0,0,0-.44.2L1.93,2.11,15.31,15.67l-2,1.83h1a.71.71,0,0,0,.46-.17l1.17-1.07a.59.59,0,0,0,.19-.43V1.33A.81.81,0,0,0,15.2.5Z" fill="#5e9624" /><path d="M2.91,2.1l.74-.84A.5.5,0,0,1,4,1.08H14.88a.52.52,0,0,1,.52.52V15.38a.52.52,0,0,1-.17.38l-1.15,1.06" fill="#fff" /><path d="M14,2.09H2a.06.06,0,0,0-.05.06v15a.38.38,0,0,0,.38.38H14a.38.38,0,0,0,.38-.38V2.48A.38.38,0,0,0,14,2.09Z" fill="url(#failure-diagnostics-ef71ca8b-e0c3-42a3-b174-28e7219ff221)" /><path d="M12.5,7.82a.37.37,0,0,0-.37-.39H10.28a.16.16,0,0,0-.15.09L9.36,8.9,8.1,6.35,6.93,10l-1-2.6L4.61,9.84a.18.18,0,0,1-.15.1h-.6a.37.37,0,0,0-.37.33h0a.37.37,0,0,0,.37.41h1a.18.18,0,0,0,.16-.1L5.8,9.11l1.21,3L8.24,8.25l1.08,2.19,1.21-2.17a.16.16,0,0,1,.15-.09h1.45a.37.37,0,0,0,.37-.36Z" fill="#fff" /></symbol>
+    <symbol id="failure-gallery" viewBox="0 0 18 18" data-source="compute/02864-icon-service-Azure-Compute-Galleries.svg"><defs><linearGradient id="failure-gallery-b9a9ff0b-7dac-405b-a6dd-a489a2813f83" x1="8.898" y1="16.345" x2="8.898" y2="1.887" gradientUnits="userSpaceOnUse"><stop offset="0.001" stop-color="#773adc" /><stop offset="1" stop-color="#a67af4" /></linearGradient></defs><g id="failure-gallery-b489344a-7430-4172-84c3-3a0d8c5a38b5"><g><g><path d="M7.855,2.526H7.247A.431.431,0,0,1,6.816,2.1V.431A.431.431,0,0,1,7.247,0h.608a.43.43,0,0,1,.43.431V2.1A.43.43,0,0,1,7.855,2.526ZM10.979,2.1V.431A.431.431,0,0,0,10.548,0H9.941A.431.431,0,0,0,9.51.431V2.1a.431.431,0,0,0,.431.431h.607A.431.431,0,0,0,10.979,2.1ZM8.285,17.612V16.338A.388.388,0,0,0,7.9,15.95H7.2a.388.388,0,0,0-.388.388v1.274A.388.388,0,0,0,7.2,18H7.9A.388.388,0,0,0,8.285,17.612Zm2.694,0V16.338a.388.388,0,0,0-.388-.388H9.9a.388.388,0,0,0-.388.388v1.274A.388.388,0,0,0,9.9,18h.693A.388.388,0,0,0,10.979,17.612Zm4.8-9.114h1.777A.445.445,0,0,0,18,8.053V7.46a.445.445,0,0,0-.445-.445H15.778a.445.445,0,0,0-.445.445v.593A.445.445,0,0,0,15.778,8.5Zm0,2.719h1.777A.445.445,0,0,0,18,10.772v-.594a.444.444,0,0,0-.445-.444H15.778a.444.444,0,0,0-.445.444v.594A.445.445,0,0,0,15.778,11.217ZM.385,8.5h1.23A.385.385,0,0,0,2,8.113V7.4a.385.385,0,0,0-.385-.385H.385A.385.385,0,0,0,0,7.4v.713A.385.385,0,0,0,.385,8.5Zm0,2.719h1.23A.385.385,0,0,0,2,10.832v-.713a.385.385,0,0,0-.385-.385H.385A.385.385,0,0,0,0,10.119v.713A.385.385,0,0,0,.385,11.217Z" fill="#773adc" /><rect x="1.734" y="1.887" width="14.327" height="14.458" rx="0.88" fill="url(#failure-gallery-b9a9ff0b-7dac-405b-a6dd-a489a2813f83)" /></g><g><polygon points="12.097 7.198 12.097 10.802 9.004 12.612 9.004 9 12.097 7.198" fill="#50e6ff" /><polygon points="12.097 7.198 9.004 9.008 5.903 7.198 9.004 5.388 12.097 7.198" fill="#c3f1ff" /><polygon points="9.004 9.008 9.004 12.612 5.903 10.802 5.903 7.198 9.004 9.008" fill="#9cebff" /><polygon points="5.903 10.802 9.004 9 9.004 12.612 5.903 10.802" fill="#c3f1ff" /><polygon points="12.097 10.802 9.004 9 9.004 12.612 12.097 10.802" fill="#9cebff" /></g></g></g></symbol>
+    <marker id="failure-arrow" viewBox="0 0 10 10" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L10 5 L0 10 Z" fill="#40566f" /></marker>
+  </defs>
+  <rect width="960" height="428" fill="#ffffff" data-kind="background" />
+  <text x="32" y="45" font-size="29" font-weight="600">Can a failed run leave a gallery version?</text>
+  <text x="32" y="77" font-size="18">The template's continueDistributeOnFailure setting controls publication, not the test result.</text>
+  <g data-order="1">
+    <rect id="failure-test-box" x="32" y="102" width="896" height="84" rx="10" fill="#f2f8fd" stroke="#5085a8" stroke-width="2" />
+    <use href="#failure-diagnostics" x="52" y="124" width="39" height="39" aria-hidden="true" />
+    <text x="109" y="136" font-size="21" font-weight="600" data-card="failure-test-box">1. The validator finds a mismatch</text>
+    <text x="109" y="165" font-size="18" data-card="failure-test-box">Expected marker: 4.7.2. Actual marker: 0.0.0. The run ends in Failed.</text>
+  </g>
+  <g fill="none" stroke="#40566f" stroke-width="2">
+    <path d="M480 186 V209" data-kind="connector" />
+    <path d="M480 209 H247 V232" marker-end="url(#failure-arrow)" data-kind="connector" />
+    <path d="M480 209 H713 V232" marker-end="url(#failure-arrow)" data-kind="connector" />
+  </g>
+  <g data-order="2">
+    <rect id="failure-block-box" x="32" y="242" width="431" height="111" rx="10" fill="#f2f8fd" stroke="#5085a8" stroke-width="2" />
+    <use href="#failure-gallery" x="51" y="258" width="30" height="30" aria-hidden="true" />
+    <text x="94" y="283" font-size="20" font-weight="600" data-card="failure-block-box">2a. false: block publication</text>
+    <text x="52" y="311" font-size="17" data-card="failure-block-box">No version is published by this run.</text>
+    <text x="52" y="338" font-size="17" data-card="failure-block-box">Confirm the requested gallery ID is absent.</text>
+  </g>
+  <g data-order="3">
+    <rect id="failure-allow-box" x="497" y="242" width="431" height="111" rx="10" fill="#fff6df" stroke="#9b650b" stroke-width="2" />
+    <use href="#failure-gallery" x="516" y="258" width="30" height="30" aria-hidden="true" />
+    <text x="559" y="283" font-size="20" font-weight="600" data-card="failure-allow-box">2b. true: allow publication</text>
+    <text x="517" y="311" font-size="17" data-card="failure-allow-box">A version can appear in the gallery even</text>
+    <text x="517" y="338" font-size="17" data-card="failure-allow-box">though its application failed the check.</text>
+  </g>
+  <text x="32" y="398" font-size="18" font-weight="600">Reject the candidate in both cases. The presence of a gallery version is not a pass.</text>
+</svg>
