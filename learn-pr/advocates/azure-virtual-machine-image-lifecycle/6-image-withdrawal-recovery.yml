@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-virtual-machine-image-lifecycle.image-withdrawal-recovery
+metadata:
+  title: "Image Withdrawal and Recovery"
+  description: "Withdraw image releases, preserve a tested recovery path, distinguish regional consumption from publication, and retire dependencies safely."
+  ms.date: "11/21/2026"
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: "Image withdrawal and recovery"
+durationInMinutes: 15
+content: |
+  [!include[](includes/6-image-withdrawal-recovery.md)]

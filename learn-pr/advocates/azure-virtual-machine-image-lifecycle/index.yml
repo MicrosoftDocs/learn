@@ -1,0 +1,53 @@
+### YamlMime:Module
+uid: learn.devrel.azure-virtual-machine-image-lifecycle
+metadata:
+  title: "Manage Azure Virtual Machine Image Lifecycle"
+  description: "A shared image gives Azure virtual machines a consistent starting point, but a mistake in that image can affect every machine built from it."
+  ms.date: "11/21/2026"
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: module-standard-concept-based
+  ms.service: azure-virtual-machines
+  ai-usage: ai-assisted
+title: "Manage Azure virtual machine image lifecycle"
+summary: |
+  A shared image gives Azure virtual machines a consistent starting point, but a mistake in that image can affect every machine built from it. This module follows an image from build to retirement. You learn how to decide which version to approve, where to deploy it, and what to keep for recovery when you withdraw it.
+
+  A virtual machine (VM) image supplies the initial disk contents for a new VM. A successful build means the steps in the recipe passed. If none of those steps ran the application, you still don't know whether it works. You also need separate evidence that Azure can deploy the image in the requested region and that its owner has approved its use.
+abstract: |
+  After completing this module, you can:
+
+  - Define compatible, reproducible inputs for an Azure VM image release.
+  - Build and validate an image with scoped identities and the required network paths.
+  - Approve a specific gallery version using validation, regional readiness, and consumer evidence.
+  - Maintain and roll back image revisions without assuming that existing VM disks change automatically.
+  - Withdraw an image and retain a tested recovery path before deleting dependencies.
+prerequisites: |
+  Before you start, you should have the following background:
+
+  - Familiarity with Azure virtual machines, Azure Compute Gallery, and virtual networks.
+  - Experience with Linux administration and basic Azure CLI or PowerShell commands.
+  - Basic knowledge of Azure role-based access control and managed identities.
+
+  This module uses an explanatory worked scenario, not a hands-on lab. You don't need a live Azure subscription to complete it.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- advanced
+roles:
+- administrator
+- solution-architect
+products:
+- azure-virtual-machines
+subjects:
+- infrastructure
+units:
+- learn.devrel.azure-virtual-machine-image-lifecycle.introduction
+- learn.devrel.azure-virtual-machine-image-lifecycle.image-release-readiness
+- learn.devrel.azure-virtual-machine-image-lifecycle.image-lifecycle-permissions
+- learn.devrel.azure-virtual-machine-image-lifecycle.image-deployment-verification
+- learn.devrel.azure-virtual-machine-image-lifecycle.image-maintenance-rollback
+- learn.devrel.azure-virtual-machine-image-lifecycle.image-withdrawal-recovery
+- learn.devrel.azure-virtual-machine-image-lifecycle.knowledge-check
+- learn.devrel.azure-virtual-machine-image-lifecycle.summary
+badge:
+  uid: learn.devrel.azure-virtual-machine-image-lifecycle.badge

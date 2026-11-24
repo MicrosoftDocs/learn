@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-virtual-machine-image-lifecycle.image-release-readiness
+metadata:
+  title: "Image Release Readiness"
+  description: "Decide release eligibility from regional replication, source compatibility, canary evidence, and a protected release manifest."
+  ms.date: "11/21/2026"
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: "Image release readiness"
+durationInMinutes: 15
+content: |
+  [!include[](includes/2-image-release-readiness.md)]

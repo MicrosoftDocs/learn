@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-virtual-machine-image-lifecycle.image-maintenance-rollback
+metadata:
+  title: "Image Maintenance and Rollback"
+  description: "Select pinned updates, test a new candidate, protect promotion with revision-aware approval, and restore an eligible predecessor."
+  ms.date: "11/21/2026"
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: "Image maintenance and rollback"
+durationInMinutes: 15
+content: |
+  [!include[](includes/5-image-maintenance-rollback.md)]

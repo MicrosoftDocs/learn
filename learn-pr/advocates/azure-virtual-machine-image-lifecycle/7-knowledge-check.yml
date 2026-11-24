@@ -1,0 +1,72 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-virtual-machine-image-lifecycle.knowledge-check
+metadata:
+  title: "Module Assessment"
+  description: "Assess image validation, identity, regional readiness, deployment evidence, and rollback decisions in the classroom scenario."
+  ms.date: "11/21/2026"
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+  module_assessment: true
+title: "Module assessment"
+durationInMinutes: 7
+content: |
+  Use Contoso's classroom rollout to test your release decisions. Choose one answer for each question.
+quiz:
+  questions:
+  - content: "Image Builder reports that the application validator failed, but the requested version appears in the gallery. What should the release owner do?"
+    choices:
+    - content: "Approve the candidate once both regional replicas finish copying."
+      isCorrect: false
+      explanation: "Incorrect. Completed replication makes an image available in those regions; it doesn't turn a failed application validator into a passing release."
+    - content: "Approve the candidate if the customizer installed the application without an error."
+      isCorrect: false
+      explanation: "Incorrect. Customizer success doesn't replace the independent application check. The failed validator still disqualifies the candidate."
+    - content: "Reject the candidate and check whether the template allowed distribution after validation failed."
+      isCorrect: true
+      explanation: "Correct. Publication isn't a passing test. If `continueDistributeOnFailure` is `true`, a version can appear in the gallery even though its run failed."
+  - content: "A script running on the temporary build VM needs to download a package from a private blob container. Which identity needs Storage Blob Data Reader on that container?"
+    choices:
+    - content: "The identity of the operator who submitted the template."
+      isCorrect: false
+      explanation: "Incorrect. The operator submitted the template, but the script makes its storage request from the build virtual machine using the identity selected by that script."
+    - content: "The managed identity assigned to the built VM and used by the script."
+      isCorrect: true
+      explanation: "Correct. Azure checks the identity making the storage request. A script doesn't inherit the template identity's permissions just because Image Builder started the VM. The template identity separately needs Managed Identity Operator to attach the selected build VM identity."
+    - content: "The identity attached only to the Image Builder template."
+      isCorrect: false
+      explanation: "Incorrect. An identity attached only to the template isn't automatically available inside the build virtual machine. Assign the identity explicitly and grant the required blob data access."
+  - content: "Contoso promised to deploy in both regions. East US reports `Completed` at 100%, while West US 2 reports `Replicating` at 62%. What should the approver do?"
+    choices:
+    - content: "Hold the two-region release until both replicas are confirmed ready."
+      isCorrect: true
+      explanation: "Correct. Creating the version resource isn't the same as completing both copies. Releasing only to East US would require an explicit change to the approved scope."
+    - content: "Approve both regions because East US can supply the image to West US 2 until replication finishes."
+      isCorrect: false
+      explanation: "Incorrect. The West US 2 classroom needs a ready image copy in West US 2. A completed East US copy doesn't satisfy that regional requirement."
+    - content: "Approve both regions because the gallery version's provisioning state is `Succeeded`."
+      isCorrect: false
+      explanation: "Incorrect. A successful version provisioning state doesn't establish that replication has completed in every promised region."
+  - content: "A learner runs `vmops-release` and gets `VmOpsRelease:4.7.2`. What additional evidence shows that the VM was created from the approved gallery image `1.0.1`?"
+    choices:
+    - content: "The gallery lists `1.0.1` as its highest version eligible for automatic selection."
+      isCorrect: false
+      explanation: "Incorrect. The highest version eligible for automatic selection isn't evidence that the virtual machine was created from the approved explicit version."
+    - content: "The VM's `storageProfile.imageReference.id` matches the full version ID in the approved manifest."
+      isCorrect: true
+      explanation: "Correct. Two gallery images can contain the same application version. The guest output identifies the application; the VM's image reference identifies its source."
+    - content: "The guest agent reports that the command ran successfully with exit code zero."
+      isCorrect: false
+      explanation: "Incorrect. A successful guest command proves that its checks passed, not which gallery image version supplied the virtual machine disks."
+  - content: "After gallery version `1.0.2` becomes active, a lesson fails on VMs created from it. Version `1.0.1` is still supported, permitted, and ready in both regions. Which response protects new and existing classes?"
+    choices:
+    - content: "Pause deployments, restore `1.0.1` for new VMs with approval, and repair or replace affected VMs while preserving learner work."
+      isCorrect: true
+      explanation: "Correct. Changing the active version affects future deployments, not existing OS disks. VMs created from the faulty image need a separate recovery action."
+    - content: "Restore `1.0.1` for new VMs and leave affected VMs unchanged because their disks will revert at the next boot."
+      isCorrect: false
+      explanation: "Incorrect. Existing virtual machines have their own disks. Changing the active gallery version doesn't revert those disks on the next boot."
+    - content: "Exclude `1.0.2` from `latest` but leave its explicit ID active; restart affected VMs."
+      isCorrect: false
+      explanation: "Incorrect. Exclusion from latest doesn't block explicit deployment while the faulty version remains active, and a restart doesn't replace the existing disks."
