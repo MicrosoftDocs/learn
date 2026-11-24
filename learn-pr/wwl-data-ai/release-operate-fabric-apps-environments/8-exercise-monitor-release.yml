@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.release-operate-fabric-apps-environments.exercise-monitor-release
+title: Exercise - Monitor an app and decide whether to release
+metadata:
+  title: Exercise - monitor an app and decide whether to release
+  description: "Generate app activity, read App Metrics, diagnose supplied failures by layer, and justify a release or stop decision."
+  ms.date: 11/20/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+durationInMinutes: 9
+content: |
+  [!include[](includes/8-exercise-monitor-release.md)]

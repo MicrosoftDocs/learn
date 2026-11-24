@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.evaluate-fabric-apps-deploy-first-app.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "This unit introduces the module on evaluating Fabric Apps by deploying a first app to Microsoft Fabric."
+  ms.date: 11/20/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

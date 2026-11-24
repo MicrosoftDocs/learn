@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.wwl.release-operate-fabric-apps-environments
+metadata:
+  title: Release, share, and monitor Fabric apps across environments
+  description: "Release a Fabric app through development and production workspaces, share it with the right people, and monitor and troubleshoot it after launch."
+  ms.date: 11/20/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: module
+  ms.service: fabric
+  ai-usage: ai-generated
+title: Release, share, and monitor Fabric apps across environments
+summary: Release a Fabric app through development and production workspaces, share it with the right people, and monitor and troubleshoot it after launch.
+abstract: |
+  After completing this module, you will be able to:
+  - Set up development and production workspaces, promote an app between them with `rayfin up`, and compare that path with Fabric Git integration and deployment pipelines.
+  - Automate deployment with a GitHub Actions workflow and an approach that protects production.
+  - Share a Fabric app and review the related items and permissions its authentication modes require.
+  - Monitor an app with App Metrics and diagnose deployment, authentication, schema, and secret failures.
+prerequisites: |
+  - Familiarity with Git and GitHub Actions workflows.
+  - Understanding of Fabric workspace roles and item permissions.
+  - Familiarity with Microsoft Entra app registrations and service principals, and a Fabric tenant setting that allows service principals to use Fabric APIs, enabled by an administrator, with a service principal that has Contributor on the target workspace.
+  - A Fabric Apps project that signs in and deploys, and two workspaces on a Fabric trial or paid capacity.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- fabric
+subjects:
+- data-engineering
+units:
+- learn.wwl.release-operate-fabric-apps-environments.introduction
+- learn.wwl.release-operate-fabric-apps-environments.promote-apps-environments
+- learn.wwl.release-operate-fabric-apps-environments.exercise-deploy-environments
+- learn.wwl.release-operate-fabric-apps-environments.automate-deployment
+- learn.wwl.release-operate-fabric-apps-environments.exercise-deployment-workflow
+- learn.wwl.release-operate-fabric-apps-environments.share-apps
+- learn.wwl.release-operate-fabric-apps-environments.monitor-troubleshoot-apps
+- learn.wwl.release-operate-fabric-apps-environments.exercise-monitor-release
+- learn.wwl.release-operate-fabric-apps-environments.knowledge-check
+- learn.wwl.release-operate-fabric-apps-environments.summary
+badge:
+  uid: learn.wwl.release-operate-fabric-apps-environments.badge

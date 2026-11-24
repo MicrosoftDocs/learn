@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.secure-fabric-app-sso-data-permissions.anonymous-access-and-denial
+title: Decide when anonymous access is appropriate and verify denial
+metadata:
+  title: Decide when anonymous access is appropriate and verify denial
+  description: "Learn the controls that govern anonymous access, how it differs from protected hosting, and how to test that denied operations stay denied."
+  ms.date: 11/20/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/6-anonymous-access-denial.md)]

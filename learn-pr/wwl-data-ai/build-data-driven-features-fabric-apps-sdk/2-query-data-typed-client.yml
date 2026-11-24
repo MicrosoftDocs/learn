@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-data-driven-features-fabric-apps-sdk.query-data-typed-client
+title: Query data with the typed client
+metadata:
+  title: Query data with the typed client
+  description: "Compose the Rayfin client and use select, where, orderBy, and relationship paths to read exactly the data you need."
+  ms.date: 11/20/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-query-data-typed-client.md)]

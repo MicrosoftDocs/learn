@@ -48,9 +48,6 @@ GitHub Copilot on GitHub.com significantly accelerates your pull request workflo
 
 These features help maintain development velocity by reducing the manual effort required to prepare and review pull requests, allowing teams to focus on code quality rather than administrative tasks.
 
-> [!NOTE]
-> PR summary generation and advanced pull request assistance features consume Premium Request Units (PRUs). Typically, generating a PR summary uses 1-2 PRUs depending on the complexity and size of the changes. Monitor your usage to stay within monthly allowances. For current details on PRU consumption and limits, refer to the [Requests in GitHub Copilot documentation](https://docs.github.com/en/copilot/concepts/billing/copilot-requests).
-
 Example: "Summarize the changes in this pull request and highlight any potential concerns"
 
 :::image type="content" source="../media/copilot-pull-request-assistance.png" lightbox="../media/copilot-pull-request-assistance.png" alt-text="Screenshot of GitHub Copilot PR Summary Button.":::
@@ -78,7 +75,7 @@ GitHub Copilot enhances your code review process by providing intelligent insigh
 - **Performance optimization**: Suggest improvements for code efficiency and performance
 
 > [!NOTE]
-> Code review features consume Premium Request Units (PRUs) as part of Copilot's advanced capabilities. Each code review request typically uses 1-3 PRUs depending on the scope and complexity of the analysis. For details on PRU consumption, monthly allowances, and rate limits, see the [Requests in GitHub Copilot documentation](https://docs.github.com/en/copilot/concepts/billing/copilot-requests).
+> Copilot code review consumes AI credits for model interactions and uses GitHub Actions runners for agentic capabilities, such as gathering repository context and running tools. In private repositories, runner costs draw on included GitHub Actions compute usage; runner usage is free in public repositories. For details, see [Code review usage and billing](https://docs.github.com/en/copilot/concepts/agent-capabilities/agent-powered-workflows-and-operations/code-review#code-review-usage-and-billing).
 
 Example: "Review this code change and provide feedback on security and performance considerations"
 

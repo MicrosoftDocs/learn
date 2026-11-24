@@ -1,4 +1,4 @@
-This unit explains what the agent is, how it differs from traditional AI coding assistants, what plans and repositories support it, and how to enable and budget for it-including Premium Request Units (PRUs) and GitHub Actions minutes.
+This unit explains what the agent is, how it differs from traditional AI coding assistants, what plans and repositories support it, and how to enable and budget for it, including AI credits and included GitHub Actions compute usage.
 
 By the end of this unit, you'll be able to:
 
@@ -6,7 +6,7 @@ By the end of this unit, you'll be able to:
 - Describe the tasks it can perform and how to delegate work.
 - Distinguish it from IDE-only assistants and Copilot's "agent mode."
 - Enable the agent at the organization or repository level.
-- Understand how GitHub Actions minutes and Premium Request Units (PRUs) are used and manage them effectively.
+- Understand how included GitHub Actions compute usage and AI credits are used and manage them effectively.
 
 ### How can you use Copilot in the cloud
 
@@ -61,11 +61,11 @@ Before assigning tasks to Copilot, ensure the agent is enabled:
 - **Organization-owned repositories:** Availability is managed by organization or enterprise administrators.
 - **Personal repositories:** Configure availability in your account settings.
 
-**Usage Costs: GitHub minutes + AI credits**
+**Usage costs: GitHub Actions compute usage and AI credits**
 Copilot in the cloud uses two main resources:
 
-- **GitHub Actions minutes** for the ephemeral build/test environment where the agent works.
-- **AI credits** for the AI models that power its work. Each plan includes an allowance of AI credits. The cost depends on the model and the number of tokens it uses.
+- **GitHub Actions compute usage** for the ephemeral build/test environment where the agent works.
+- **AI credits** for the AI models that power its work. Included AI credits vary by plan; Copilot access has no included allowance. The cost depends on the model and the number of tokens it uses.
 
 > [!NOTE]
 > For usage allowances and costs, see [GitHub Copilot billing and usage](https://docs.github.com/en/copilot/concepts/billing-and-usage).

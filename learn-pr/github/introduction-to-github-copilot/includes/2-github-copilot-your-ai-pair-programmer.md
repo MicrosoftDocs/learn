@@ -80,14 +80,14 @@ GitHub Copilot is available in several plans, each offering different capabiliti
 
 ### GitHub Copilot Free
 
-GitHub Copilot Free allows individual developers to use GitHub Copilot at no cost. To get started, open Visual Studio Code, click on the GitHub Copilot icon, and then click "Sign in to Use GitHub Copilot for Free". Log in to your GitHub account in the window that will open in the browser.
+GitHub Copilot Free allows individual developers to use GitHub Copilot at no cost. To get started in Visual Studio Code, hover over the Copilot icon in the Status Bar, select **Use AI Features**, and follow the sign-in prompts.
 
 The Copilot Free plan includes limited monthly usage for code completions and chat, along with access to supported AI models. 
 
 **Key features:**
 
 - Code completions in supported editors
-- Limited monthly completions and chat requests
+- Limited monthly completions and chat
 - Access to advanced AI models
 
 ### GitHub Copilot Pro
@@ -106,7 +106,7 @@ GitHub Copilot Pro is designed for individual developers who want enhanced capab
 
 **Key features:** 
 - All Pro features
--  Additional premium request capacity
+- A higher monthly allowance of AI credits than Copilot Pro
 - Priority infrastructure access
 
 ### GitHub Copilot Business

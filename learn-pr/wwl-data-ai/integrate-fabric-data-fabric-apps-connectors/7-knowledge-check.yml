@@ -1,0 +1,71 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.integrate-fabric-data-fabric-apps-connectors.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Knowledge check"
+  ms.date: 11/20/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+  module_assessment: true
+  ai_generated_module_assessment: false
+durationInMinutes: 4
+quiz:
+  title: ""
+  questions:
+  - content: "You must show each manager only the sales figures that the manager is allowed to see at the source. Which connector setting fits?"
+    choices:
+    - content: "`auth.type: application`, because the app owner has the widest access."
+      isCorrect: false
+      explanation: "Application access runs as the app owner, so every user sees the same view and source-level restrictions on the caller are bypassed."
+    - content: "`auth.type: delegated`, so each call runs as the signed-in user."
+      isCorrect: true
+      explanation: "Delegated access runs each call as the caller, so source permissions apply per user."
+    - content: "No `auth` block, so the connector picks an identity at runtime."
+      isCorrect: false
+      explanation: "Omitting `auth.type` is a validation error."
+  - content: "You share a Fabric app with a regional manager who has no access to the semantic model behind the sales view. The connector uses delegated access. What does the manager experience?"
+    choices:
+    - content: "The manager opens the app, and the sales view fails because the manager lacks access to the model."
+      isCorrect: true
+      explanation: "Delegated calls run as the signed-in user, so the manager needs their own access to the model. Sharing the app doesn't grant access to related items that stay unshared."
+    - content: "The manager sees the sales view, because sharing the app grants access to every related item."
+      isCorrect: false
+      explanation: "Sharing presents related items for review, and the sharer chooses which to grant. Completing the share doesn't prove that every data-dependent feature works."
+    - content: "The manager sees the sales view, because the connector falls back to the app identity."
+      isCorrect: false
+      explanation: "Semantic model connectors accept only delegated access. They don't fall back to the app identity."
+  - content: "A connector returns rows from `rayfin connector invoke` but fails inside the app during `npm run dev`. What explains this?"
+    choices:
+    - content: "The connector needs write access to the workspace."
+      isCorrect: false
+      explanation: "Direct semantic model calls need Read and Build on the model, not workspace write access, and the failure is specific to the development session."
+    - content: "`rayfin dev` reads the connectors block but doesn't wire it."
+      isCorrect: true
+      explanation: "Connectors don't run under `rayfin dev`, so the app must be deployed to test them."
+    - content: "The connector can't be used by apps built with TypeScript."
+      isCorrect: false
+      explanation: "Connectors are used from TypeScript apps and are typed there."
+  - content: "A query on a warehouse connector entity uses `where` and `orderBy` but no `select`, and it throws an error. What is the fix?"
+    choices:
+    - content: "Pass an explicit `select([...])` listing the fields to read."
+      isCorrect: true
+      explanation: "A chain with `where`, `orderBy`, or `first` needs an explicit selection, or it throws `SELECTION_REQUIRED`."
+    - content: "Use the class form of the entity."
+      isCorrect: false
+      explanation: "The class form supports relationship selections and doesn't remove the need for a selection."
+    - content: "Switch the connector to `application` auth."
+      isCorrect: false
+      explanation: "The identity mode doesn't affect whether a selection is required."
+  - content: "You want to expose only read access to a warehouse table through a connector. Which approach is correct?"
+    choices:
+    - content: "Rely on the TypeScript types to prevent writes."
+      isCorrect: false
+      explanation: "Types aren't an authorization boundary. They don't stop a write request."
+    - content: "Hide the write buttons in the UI."
+      isCorrect: false
+      explanation: "A UI change doesn't restrict what the connector allows."
+    - content: "Restrict the connector's `operations` to `read` and apply entity roles."
+      isCorrect: true
+      explanation: "Limiting operations and adding roles narrows what the connector can do, independent of the UI."

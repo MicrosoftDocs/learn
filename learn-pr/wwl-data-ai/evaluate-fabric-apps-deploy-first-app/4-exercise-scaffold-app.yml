@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.evaluate-fabric-apps-deploy-first-app.exercise-scaffold-app
+title: Exercise - Scaffold a first Fabric app
+metadata:
+  title: Exercise - scaffold a first Fabric app
+  description: "Confirm your environment, scaffold a Universal App with the Rayfin CLI, and identify its service configuration and frontend."
+  ms.date: 11/20/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-exercise-scaffold-app.md)]

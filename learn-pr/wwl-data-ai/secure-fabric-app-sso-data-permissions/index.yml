@@ -1,0 +1,49 @@
+### YamlMime:Module
+uid: learn.wwl.secure-fabric-app-sso-data-permissions
+metadata:
+  title: Secure a Fabric app with Fabric SSO and data permissions
+  description: "Choose a sign-in path, implement Fabric single sign-on, and enforce server-side data permissions in a Fabric app."
+  ms.date: 11/20/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: module
+  ms.service: fabric
+  ai-usage: ai-generated
+title: Secure a Fabric app with Fabric SSO and data permissions
+summary: Secure a Fabric app by choosing a sign-in path, implementing Fabric single sign-on, and writing server-enforced data permissions. Verify that restricted data stays restricted when callers bypass your UI.
+abstract: |
+  After completing this module, you will be able to:
+  - Choose a sign-in path for a Fabric app: Fabric SSO popup, embedded mode, direct Entra token exchange, or an external parent portal.
+  - Implement Fabric SSO sign-in and sign-out in a React app and scope allowed redirect origins.
+  - Write role-based permissions with row-level policies, field-level include and exclude rules, and action-specific rules.
+  - Determine when anonymous access is appropriate and identify the controls that govern it.
+  - Verify that denied operations stay denied when a caller bypasses the app UI.
+prerequisites: |
+  - Understanding of authentication versus authorization.
+  - Familiarity with token claims such as subject and email.
+  - Ability to define data entities with TypeScript decorators in a Fabric Apps project.
+  - Familiarity with React.
+  - Access to a Microsoft Fabric tenant where a Fabric administrator enabled Fabric Apps, and a workspace where you have Contributor or Admin permissions on a trial or paid capacity.
+  - A Fabric Apps project with the data service enabled that runs locally and deploys.
+  - Node.js 24 installed locally.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- fabric
+subjects:
+- data-engineering
+units:
+- learn.wwl.secure-fabric-app-sso-data-permissions.introduction
+- learn.wwl.secure-fabric-app-sso-data-permissions.choose-sign-in-path
+- learn.wwl.secure-fabric-app-sso-data-permissions.exercise-add-fabric-sso
+- learn.wwl.secure-fabric-app-sso-data-permissions.write-data-permissions
+- learn.wwl.secure-fabric-app-sso-data-permissions.exercise-enforce-permissions
+- learn.wwl.secure-fabric-app-sso-data-permissions.anonymous-access-and-denial
+- learn.wwl.secure-fabric-app-sso-data-permissions.exercise-verify-denial
+- learn.wwl.secure-fabric-app-sso-data-permissions.knowledge-check
+- learn.wwl.secure-fabric-app-sso-data-permissions.summary
+badge:
+  uid: learn.wwl.secure-fabric-app-sso-data-permissions.badge

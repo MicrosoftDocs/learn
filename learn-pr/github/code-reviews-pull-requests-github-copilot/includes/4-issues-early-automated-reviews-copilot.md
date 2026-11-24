@@ -1,10 +1,10 @@
-GitHub Copilot reviews don't have to wait until you open a pull request. In VS Code or JetBrains IDEs, you can request Copilot to review changes before committing. This lets you address style violations, security gaps, or best practice issues earlier-saving cycles in the review process. You can also configure Copilot to review all pull requests automatically, scaling this approach across repositories and teams.
+GitHub Copilot reviews don't have to wait until you open a pull request. In VS Code or JetBrains IDEs, you can request Copilot to review changes before committing. This lets you address style violations, security gaps, or best-practice issues earlier—saving cycles in the review process. You can also configure Copilot to review all pull requests automatically, scaling this approach across repositories and teams.
 
 ### By the end of this unit, you'll be able to:
 
 - Use Copilot reviews locally in VS Code or JetBrains IDEs.
 - Customize Copilot's review behavior with repository and path-specific instructions.
-- Leverage Premium Request Units (PRUs) for deeper analysis in your IDE.
+- Use Copilot reviews for early analysis in your IDE
 - Configure automatic Copilot reviews for all pull requests.
 - Combine Copilot with rulesets and status checks.
 - Recognize the benefits of automation at scale.
@@ -22,7 +22,7 @@ Copilot then applies these rules automatically to reviews to analyze larger diff
 
 ## Creating path-specific custom instructions
 
-You can use path-specific custom instructions to guide Copilot code review or the   for specific files or folders. Here's how to set them up:
+You can use path-specific custom instructions to guide Copilot code review or Copilot in the cloud for specific files or folders. Here's how to set them up:
 
 1. **Create the instructions directory**
    
@@ -58,11 +58,11 @@ You can use path-specific custom instructions to guide Copilot code review or th
 
    Below the frontmatter, add your review guidance in plain language using Markdown. You can write it as a paragraph, on separate lines, or with blank lines for readability. Copilot will follow these instructions whenever it reviews or generates code for the matching paths.
 
+## Use Copilot reviews for early analysis in your IDE
+
+When you run Copilot reviews directly inside your IDE, such as Visual Studio Code, you get feedback on your changes before you commit them. In these local reviews, Copilot can apply your repository's custom instructions and surface suggestions before code ever reaches a pull request. This means you can spot style violations, security gaps, and best-practice issues earlier in the development cycle, saving time during formal reviews and reducing back-and-forth with teammates. Reviews in your IDE consume AI credits and give you analysis right where you write and test code, while still leaving final judgment and sign-off to the pull request review.
+
 You've seen how Copilot helps locally. Now let's explore how to scale reviews across teams and repositories.
-
-## Leverage PRUs for deeper analysis in your IDE
-
-When you run Copilot reviews directly inside your IDE-such as Visual Studio Code or JetBrains-you're not limited to the lightweight checks available on GitHub.com. By allocating Premium Request Units (PRUs) to these local reviews, Copilot can tap into more advanced models that analyze larger diffs, apply your repository's custom instructions, and surface higher-quality suggestions before code ever reaches a pull request. This means you can spot style violations, security gaps, and best-practice issues earlier in the development cycle, saving time during formal reviews and reducing back-and-forth with teammates. PRU-powered reviews in your IDE give you a deeper, context-rich analysis right where you write and test code, while still leaving final judgment and sign-off to human reviewers.
 
 ## Automating reviews and scaling with Rulesets
 
@@ -74,7 +74,7 @@ Pair Copilot reviews with status checks like tests or code scanning. This create
 - Code scanning flags vulnerabilities.
 - Tests validate functionality.
 
-Because each Copilot review uses PRUs, organizations should budget PRU consumption to match review volume and perform automated reviews at appropriate times in the development process.. Tracking usage helps balance cost and coverage.
+Automatic reviews increase review volume. Organizations should budget AI credits and, for private repositories, GitHub Actions compute usage to match that volume. Track both types of usage to balance cost and coverage.
 
 With automation, even small fixes or dependency updates are reviewed consistently, reducing the risk of unnoticed regressions.
 
@@ -100,7 +100,7 @@ From now on, Copilot will always be added to your pull requests.
 
 ## Automatic reviews for a repository
 
-Sometimes you'll only want automatic reviews in certain repositories-like production services that require stricter quality control. Repository admins can enforce this by creating a branch ruleset.
+Sometimes you'll only want automatic reviews in certain repositories—like production services that require stricter quality control. Repository admins can enforce this by creating a branch ruleset.
 
 Steps:
 

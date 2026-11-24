@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.evaluate-fabric-apps-deploy-first-app.evaluate-fit-limits-cost
+title: Evaluate fit, limits, licensing, and capacity cost
+metadata:
+  title: Evaluate fit, limits, licensing, and capacity cost
+  description: "Compare Fabric Apps capabilities, constraints, licensing options, and capacity cost against an application scenario."
+  ms.date: 11/20/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-evaluate-fit-limits-cost.md)]

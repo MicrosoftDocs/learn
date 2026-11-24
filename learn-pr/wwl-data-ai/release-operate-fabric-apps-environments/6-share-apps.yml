@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.release-operate-fabric-apps-environments.share-apps
+title: Share a Fabric app and trace access across layers
+metadata:
+  title: Share a Fabric app and trace access across layers
+  description: "Share a Fabric app through item permissions, review related items, and separate access to the app from access to the data behind it."
+  ms.date: 11/20/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/6-share-apps.md)]

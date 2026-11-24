@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.integrate-fabric-data-fabric-apps-connectors.choose-connector-identity
+title: Choose a connector type and identity mode
+metadata:
+  title: Choose a connector type and identity mode
+  description: "Select a connector type for a Fabric source and decide whether the app or each signed-in user accesses the data."
+  ms.date: 11/20/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-choose-connector-identity.md)]

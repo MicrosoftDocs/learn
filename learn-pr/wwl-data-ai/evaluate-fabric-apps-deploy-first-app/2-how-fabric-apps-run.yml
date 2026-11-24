@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.evaluate-fabric-apps-deploy-first-app.how-fabric-apps-run
+title: Describe how a Fabric app runs on Microsoft Fabric
+metadata:
+  title: Describe how a Fabric app runs on Microsoft Fabric
+  description: "Explore the child services of a Fabric app, the roles of the Rayfin CLI and SDK, and the layout of a scaffolded project."
+  ms.date: 11/20/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-how-fabric-apps-run.md)]

@@ -7,7 +7,7 @@ Best practices:
 - Treat Copilot's comments as accelerators, not mandates. Continue to use your release CI/CD pipelines, scans, and other best practices alongside Copilot reviews.
 - Always validate and test fixes before merging.
 
-With PRUs, you unlock premium-powered features that make Copilot an even stronger partner. By monitoring usage and aligning workflows, you ensure reviews stay fast, high-quality, and cost-effective.
+Copilot code review consumes AI credits for model interactions. Its agentic capabilities use GitHub Actions runners; in private repositories, runner costs draw on included compute usage, while runner usage is free in public repositories. Monitor both types of usage to manage review costs.
 
 Now that you've completed this module, you can:
 
@@ -15,7 +15,7 @@ Now that you've completed this module, you can:
 - Use Copilot as a reviewer on GitHub and in your IDE.
 - Automate reviews with rulesets and custom instructions.
 - Apply Copilot's suggestions and peer review fixes.
-- Define PRUs, explain their benefits, and optimize their usage.
+- Explain how Copilot code review consumes AI credits and contributes to GitHub Actions compute usage, and manage both.
 - Measure Copilot's impact on velocity, quality, and satisfaction.
 
 With these practices, your team can transform code reviews from bottlenecks into collaborative, high-value moments-scaling expertise and delivering software faster.
@@ -28,6 +28,8 @@ To deepen your understanding of GitHub Copilot code review and related workflows
 - [About GitHub Copilot Code Review](https://docs.github.com/copilot/concepts/agents/code-review)
 
 - [Using GitHub Copilot code review](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/request-a-code-review/use-code-review)
+
+- [GitHub-hosted runners](https://docs.github.com/en/actions/concepts/runners/github-hosted-runners)
 
 - [Incorporating Feedback in Your Pull Request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/incorporating-feedback-in-your-pull-request)
 

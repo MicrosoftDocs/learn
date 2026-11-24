@@ -93,7 +93,7 @@ For example, you might start with a basic implementation, then iteratively add e
 **Turn 5:** "Optimize the function for better performance"
 
 > [!NOTE]
-> Long prompts with full conversation history can consume 2–3 PRUs per turn. Summarizing context or resetting the conversation can keep it closer to 1 PRU per request.
+> Longer conversations consume more AI credits. Usage depends on the model and tokens used.
 
 To manage this efficiently:
 

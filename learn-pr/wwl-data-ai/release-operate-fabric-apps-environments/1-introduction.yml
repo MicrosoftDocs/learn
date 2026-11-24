@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.release-operate-fabric-apps-environments.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "This unit introduces the module on releasing, sharing, and monitoring Fabric apps across environments."
+  ms.date: 11/20/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

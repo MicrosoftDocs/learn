@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-data-driven-features-fabric-apps-sdk.exercise-attach-photos-challenge
+title: Exercise - Attach and manage photos
+metadata:
+  title: Exercise - attach and manage photos
+  description: "Configure Storage folders and permissions, upload and manage photos through the typed client, and complete an issue-tracker challenge."
+  ms.date: 11/23/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/7-exercise-attach-photos-challenge.md)]

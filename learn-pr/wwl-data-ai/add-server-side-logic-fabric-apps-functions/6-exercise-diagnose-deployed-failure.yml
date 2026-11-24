@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.add-server-side-logic-fabric-apps-functions.exercise-diagnose-deployed-failure
+title: Exercise - Diagnose a function that fails after deployment
+metadata:
+  title: Exercise - diagnose a function that fails after deployment
+  description: "Diagnose a function that works locally and fails after deployment, identify the identity and missing permission, and propose the narrowest fix."
+  ms.date: 11/23/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-exercise-diagnose-deployed-failure.md)]

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-evolve-app-data-models-fabric-apps.exercise-relate-issues-stores
+title: Exercise - Relate issues to stores and apply the schema
+metadata:
+  title: Exercise - relate issues to stores and apply the schema
+  description: "Add a Store entity, relate issues to stores, apply the schema, verify it, and display seeded records in the app."
+  ms.date: 11/20/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-exercise-relate-issues-stores.md)]

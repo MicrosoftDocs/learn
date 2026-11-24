@@ -1,0 +1,71 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-evolve-app-data-models-fabric-apps.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Knowledge check"
+  ms.date: 11/20/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+  module_assessment: true
+  ai_generated_module_assessment: false
+durationInMinutes: 3
+quiz:
+  title: ""
+  questions:
+  - content: "You add a `@text()` field to a new entity without a `max` value. The deployment succeeds, but queries against the entity fail with an internal server error. What is the most likely cause?"
+    choices:
+    - content: "The column becomes NVARCHAR(MAX), which can break GraphQL schema generation."
+      isCorrect: true
+      explanation: "On SQL Server, a text field without `max` becomes NVARCHAR(MAX). The deployment can report success, and queries then fail at runtime."
+    - content: "The entity name matches the name of another registered entity."
+      isCorrect: false
+      explanation: "A name collision is rejected by the CLI before apply. It doesn't produce a runtime error after a successful deployment."
+    - content: "The entity needs a join entity before queries can succeed."
+      isCorrect: false
+      explanation: "A join entity is needed only to model many-to-many relationships and is unrelated to text length."
+  - content: "A model needs to link products to categories, and each product can belong to several categories. Which design fits Fabric Apps?"
+    choices:
+    - content: "Declare a `@many()` field on each entity that refers to the other."
+      isCorrect: false
+      explanation: "`@many()` is the inverse side of a one-to-many relationship. Many-to-many relationships aren't supported directly."
+    - content: "Declare a composite primary key on a single combined entity."
+      isCorrect: false
+      explanation: "Composite primary keys aren't supported. Every entity has a single UUID `id`."
+    - content: "Create a join entity with two `@one()` fields, one for each side."
+      isCorrect: true
+      explanation: "An explicit join entity with two `@one()` fields is the supported way to model many-to-many relationships."
+  - content: "You define a new entity class in a Universal App, but the typed client doesn't expose the entity. Which step did you most likely skip?"
+    choices:
+    - content: "Adding the class to the `schema` array and its record type to `UniversalAppSchema`."
+      isCorrect: true
+      explanation: "The client and CLI only see registered entities. Registration adds the class to the data package and the record type to the shared schema map."
+    - content: "Creating a SQL view for the entity in the Fabric portal."
+      isCorrect: false
+      explanation: "Views in the portal aren't part of the model workflow, and manual database changes conflict with the code."
+    - content: "Adding a foreign key field to every other entity in the model."
+      isCorrect: false
+      explanation: "A foreign key is only needed for relationships, and it doesn't make an entity visible to the client."
+  - content: "The CLI blocks `rayfin up db apply` after you remove a field from a populated entity, and the business confirms the stored values are obsolete. What should you do next?"
+    choices:
+    - content: "Drop the column in the Fabric portal, and then apply the schema again."
+      isCorrect: false
+      explanation: "Manual changes to the database conflict with the code and can break the app and its deployment."
+    - content: "Review each listed operation, confirm the data loss, and then apply with `--force`."
+      isCorrect: true
+      explanation: "The force option is a reviewed exception. It fits once you know which data the operations drop and accept the loss."
+    - content: "Run `rayfin up` repeatedly until the CLI warning disappears from the output."
+      isCorrect: false
+      explanation: "Repeating the command doesn't change the pending destructive operation, so the warning remains."
+  - content: "You want to add a field to an entity with existing records and keep every record valid. Which approach is lowest risk?"
+    choices:
+    - content: "Add the field as required with no default."
+      isCorrect: false
+      explanation: "Existing rows can't get a value for a required field without a default, which makes the change risky."
+    - content: "Rename an existing field so that it matches the new meaning."
+      isCorrect: false
+      explanation: "A rename drops the old column and adds a new one, which can cause data loss."
+    - content: "Add the field as optional, or give it a default value."
+      isCorrect: true
+      explanation: "An optional or defaulted field adds a column without invalidating existing rows."

@@ -66,8 +66,8 @@ Consider how Agent Mode handles feature development through an integrated approa
 This orchestrated approach eliminates traditional back-and-forth review cycles, enabling faster delivery of production-ready features.
 
 > [!NOTE]
-> Each handoff in Agent Mode consumes ~1 PRU. A 2-step draft–review sequence typically uses 2–3 PRUs.
-> For more details, see [GitHub Copilot billing and requests](https://docs.github.com/en/copilot/concepts/billing/copilot-requests).
+> Agent mode can make multiple model calls during a task. AI credit usage depends on the model and tokens used.
+> For more details, see [GitHub Copilot billing](https://docs.github.com/en/copilot/concepts/billing-and-usage/individuals/billing).
 
 ### Automated foundation building
 
@@ -102,8 +102,8 @@ For complex scenarios requiring deeper analysis, Agent Mode can leverage premium
 - **Security vulnerability analysis:** Detect and propose fixes for potential security issues
 
 > [!NOTE]
-> Premium reasoning (using more advanced models) provides richer context and deeper analysis, but it often doubles PRU consumption. A single request may use ~4+ PRUs compared to ~2 with the standard model.
-> For more details, see [GitHub Copilot billing and requests](https://docs.github.com/en/copilot/concepts/billing/copilot-requests).
+> More capable models consume more AI credits.
+> For more details, see [GitHub Copilot billing](https://docs.github.com/en/copilot/concepts/billing-and-usage/individuals/billing).
 
 ## Using intelligent tools and context awareness
 

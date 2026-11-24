@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.release-operate-fabric-apps-environments.automate-deployment
+title: Automate protected deployments with GitHub Actions
+metadata:
+  title: Automate protected deployments with GitHub Actions
+  description: "Automate deployment with a GitHub Actions workflow that signs in with a service principal, previews changes, and protects production."
+  ms.date: 11/20/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-automate-deployment.md)]

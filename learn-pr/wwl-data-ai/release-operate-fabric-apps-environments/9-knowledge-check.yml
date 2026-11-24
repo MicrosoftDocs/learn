@@ -1,0 +1,71 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.release-operate-fabric-apps-environments.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Knowledge check"
+  ms.date: 11/20/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+  module_assessment: true
+  ai_generated_module_assessment: false
+durationInMinutes: 3
+quiz:
+  title: ""
+  questions:
+  - content: "A team wants to confirm which workspace a production deployment targets before anything changes. Which command provides that confirmation?"
+    choices:
+    - content: "npx rayfin up status"
+      isCorrect: false
+      explanation: "`rayfin up status` reports the health of the active deployment. It doesn't preview a new deployment."
+    - content: "npx rayfin up --workspace \"Prod\" --dry-run"
+      isCorrect: true
+      explanation: "A dry run validates local inputs and resolves the workspace without deploying or modifying resources."
+    - content: "npx rayfin up --force"
+      isCorrect: false
+      explanation: "`--force` permits destructive changes and doesn't confirm the target."
+  - content: "A deployment workflow must authenticate without a person present. Which approach does the CLI support for automation?"
+    choices:
+    - content: "Run `rayfin login` and complete the browser sign-in on the runner."
+      isCorrect: false
+      explanation: "A runner can't complete an interactive browser sign-in."
+    - content: "Use `rayfin login --service-principal` with a client ID, client secret, and tenant ID from protected secrets."
+      isCorrect: true
+      explanation: "Service principal sign-in uses client credentials, and the values belong in the CI secret store."
+    - content: "Commit the user's token cache file to the repository."
+      isCorrect: false
+      explanation: "Committing tokens exposes credentials and is never appropriate."
+  - content: "A workflow lets any push deploy to production with `--force` in the command. What is the main risk?"
+    choices:
+    - content: "Unreviewed destructive schema changes can drop data without a decision."
+      isCorrect: true
+      explanation: "`--force` permits data loss, so it should be an explicit, reviewed choice for each run."
+    - content: "The workflow can't sign in with a service principal."
+      isCorrect: false
+      explanation: "Service principal sign-in doesn't depend on the `--force` flag."
+    - content: "The static hosting URL changes."
+      isCorrect: false
+      explanation: "`--force` doesn't change hosting URLs."
+  - content: "A manager can open a shared Fabric app but sees no inventory data. The inventory connector uses delegated access. What is the most likely cause?"
+    choices:
+    - content: "The manager lacks permission on the related warehouse item."
+      isCorrect: true
+      explanation: "Delegated access runs queries as the signed-in user, and sharing the app doesn't grant access to unshared related items."
+    - content: "The app's Run and interact permission is missing."
+      isCorrect: false
+      explanation: "The manager can already open the app, so app access works."
+    - content: "App Metrics is turned off."
+      isCorrect: false
+      explanation: "App Metrics reports usage and doesn't affect what a user sees."
+  - content: "A team wants to know how much capacity a Fabric app consumes. Which tool provides that information?"
+    choices:
+    - content: "App Metrics for the app item."
+      isCorrect: false
+      explanation: "App Metrics reports usage such as sign-ins and queries. It isn't a capacity report."
+    - content: "The Fabric Capacity Metrics app."
+      isCorrect: true
+      explanation: "The Capacity Metrics app shows actual capacity unit consumption."
+    - content: "The `rayfin up status` command."
+      isCorrect: false
+      explanation: "`rayfin up status` reports deployment health, not capacity consumption."

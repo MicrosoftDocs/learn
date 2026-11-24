@@ -70,17 +70,17 @@ quiz:
     - content: "Suggesting code review comments"
       isCorrect: false
       explanation: "Incorrect. Generating thoughtful code review comments is a common use case for Copilot on GitHub.com."
-  - content: "When using Copilot Code Review on GitHub.com, what important billing consideration should you be aware of?"
+  - content: "When using Copilot code review on GitHub.com, what important billing consideration should you be aware of?"
     choices:
     - content: "It's completely free with no usage limits"
       isCorrect: false
-      explanation: "Incorrect. Copilot Code Review consumes Premium Request Units (PRUs) which have allowances and limits."
-    - content: "It consumes Premium Request Units (PRUs)"
+      explanation: "Incorrect. Copilot code review consumes AI credits. In private repositories, runner costs for agentic capabilities draw on included GitHub Actions compute usage; runner usage is free in public repositories."
+    - content: "It consumes AI credits and uses GitHub Actions runners for agentic capabilities"
       isCorrect: true
-      explanation: "Correct. Copilot Code Review uses Premium Request Units (PRUs), and the consumption can vary. For current details on PRU allowances and limits, refer to the GitHub Docs on Requests in GitHub Copilot."
+      explanation: "Correct. AI credits cover model interactions, and GitHub Actions runners support agentic capabilities such as gathering repository context. In private repositories, runner costs draw on included compute usage; runner usage is free in public repositories."
     - content: "It only works with paid GitHub Enterprise accounts"
       isCorrect: false
-      explanation: "Incorrect. While PRUs are involved, the availability isn't limited to Enterprise accounts only."
+      explanation: "Incorrect. Copilot code review isn't limited to Enterprise accounts."
     - content: "It requires a separate subscription beyond GitHub Copilot"
       isCorrect: false
-      explanation: "Incorrect. Copilot Code Review is part of GitHub Copilot but uses PRUs from your allowance."
+      explanation: "Incorrect. Copilot code review is part of GitHub Copilot. It consumes AI credits; in private repositories, its runner costs draw on included GitHub Actions compute usage."

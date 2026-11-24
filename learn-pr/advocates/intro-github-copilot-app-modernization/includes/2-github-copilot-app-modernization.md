@@ -40,7 +40,7 @@ GitHub Copilot app modernization has the following IDE and platform requirements
 | **Any** | Copilot CLI (terminal-based, with Node.js 22+ and npm 10+) | Any platform supporting Copilot CLI |
 | **Any** | Copilot in the cloud (via GitHub issues and pull requests) | Any platform |
 
-GitHub Copilot app modernization is a feature of GitHub Copilot. App modernization tasks consume premium requests, with each subscription plan offering a monthly allowance. 
+GitHub Copilot app modernization uses the same subscription billing model as GitHub Copilot.
 
 GitHub Copilot app modernization has the following software prerequisites:
 

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.integrate-fabric-data-fabric-apps-connectors.exercise-query-semantic-model
+title: Exercise - Query a semantic model and build a sales view
+metadata:
+  title: Exercise - query a semantic model and build a sales view
+  description: "Understand delegated access, DAX query results, limits, and errors while building and verifying a sales view backed by a semantic model."
+  ms.date: 11/23/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+durationInMinutes: 13
+content: |
+  [!include[](includes/5-exercise-query-semantic-model.md)]
