@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.secure-fabric-app-sso-data-permissions.write-data-permissions
+title: Write server-enforced data permissions
+metadata:
+  title: Write server-enforced data permissions
+  description: "Write role-based permissions with row-level policies, field-level rules, and action-specific rules that the server enforces."
+  ms.date: 11/20/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-write-data-permissions.md)]

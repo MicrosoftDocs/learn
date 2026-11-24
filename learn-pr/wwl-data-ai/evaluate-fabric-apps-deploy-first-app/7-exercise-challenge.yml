@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.evaluate-fabric-apps-deploy-first-app.exercise-challenge
+title: Exercise - Redeploy a change and revisit the fit decision
+metadata:
+  title: Exercise - redeploy a change and revisit the fit decision
+  description: "Make a visible frontend change, deploy it, revisit the fit decision with evidence, and clean up."
+  ms.date: 11/20/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-exercise-challenge.md)]

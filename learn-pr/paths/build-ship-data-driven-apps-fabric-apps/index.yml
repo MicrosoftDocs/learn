@@ -1,0 +1,51 @@
+### YamlMime:LearningPath
+uid: learn.wwl.build-ship-data-driven-apps-fabric-apps
+metadata:
+  title: Build and ship data-driven apps using Fabric Apps
+  description: "Build, secure, and release data-driven web applications on Microsoft Fabric using TypeScript and the Rayfin CLI and SDK."
+  ms.date: 11/18/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: learning-path
+  ai-usage: ai-generated
+title: Build and ship data-driven apps using Fabric Apps
+summary: |
+  Build, secure, and release data-driven web applications on Microsoft Fabric using TypeScript. You define data models with decorators, sign users in with Fabric single sign-on, connect to existing Fabric data, add server-side logic, and deploy with the Rayfin CLI, with or without a coding agent.
+
+  In this learning path, you:
+
+  - Evaluate whether an application scenario fits Fabric Apps based on its capabilities, constraints, licensing, and capacity cost.
+  - Design and evolve app data models using TypeScript decorators and safe schema changes.
+  - Secure an app with Fabric single sign-on and server-enforced data permissions.
+  - Build app features that read, change, and store data by using the typed Fabric Apps client.
+  - Integrate existing Fabric data into an app by using connectors and the appropriate identity.
+  - Add server-side logic that calls external and Microsoft services by using Fabric Apps Functions.
+  - Direct and review the work of an AI coding agent that builds a Fabric app.
+  - Release, share, and monitor an app across development and production environments.
+prerequisites: |
+  - Access to a Microsoft Fabric tenant where a Fabric administrator enabled Fabric Apps, and a workspace with Contributor or Admin permissions assigned to a Fabric trial or paid capacity in a region where Fabric Apps is available.
+  - Working knowledge of TypeScript and JavaScript, including async and await and ES modules.
+  - Familiarity with a frontend framework such as React and with npm-based build tools.
+  - Familiarity with REST or GraphQL API concepts.
+  - Familiarity with Microsoft Fabric workspaces, capacity, and item permissions.
+  - Node.js 24 installed locally.
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- fabric
+subjects:
+- data-engineering
+modules:
+- learn.wwl.evaluate-fabric-apps-deploy-first-app
+- learn.wwl.design-evolve-app-data-models-fabric-apps
+- learn.wwl.secure-fabric-app-sso-data-permissions
+- learn.wwl.build-data-driven-features-fabric-apps-sdk
+- learn.wwl.integrate-fabric-data-fabric-apps-connectors
+- learn.wwl.add-server-side-logic-fabric-apps-functions
+- learn.wwl.build-review-fabric-apps-ai-coding-agents
+- learn.wwl.release-operate-fabric-apps-environments
+trophy:
+  uid: learn.wwl.build-ship-data-driven-apps-fabric-apps.trophy

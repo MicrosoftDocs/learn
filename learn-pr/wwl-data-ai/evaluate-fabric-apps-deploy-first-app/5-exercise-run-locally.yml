@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.evaluate-fabric-apps-deploy-first-app.exercise-run-locally
+title: Exercise - Run the app against a backend hosted in Fabric
+metadata:
+  title: Exercise - run the app against a backend hosted in Fabric
+  description: "Sign in with the Rayfin CLI, run the scaffolded app in a development session, and identify which parts run locally and which run in Fabric."
+  ms.date: 11/20/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/5-exercise-run-locally.md)]

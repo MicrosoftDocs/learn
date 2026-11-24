@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.release-operate-fabric-apps-environments.exercise-deploy-environments
+title: Exercise - Deploy an app to development and production workspaces
+metadata:
+  title: Exercise - deploy an app to development and production workspaces
+  description: "Deploy an app to a development workspace, preview and deploy it to production with the CLI, and verify the active target and health."
+  ms.date: 11/20/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-exercise-deploy-environments.md)]

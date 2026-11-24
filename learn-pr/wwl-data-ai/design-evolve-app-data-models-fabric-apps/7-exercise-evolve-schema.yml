@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-evolve-app-data-models-fabric-apps.exercise-evolve-schema
+title: Exercise - Evolve the schema without losing data
+metadata:
+  title: Exercise - evolve the schema without losing data
+  description: "Add an optional field and verify that existing records remain, then attempt a rename and stop at the CLI data-loss warning."
+  ms.date: 11/20/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+durationInMinutes: 9
+content: |
+  [!include[](includes/7-exercise-evolve-schema.md)]

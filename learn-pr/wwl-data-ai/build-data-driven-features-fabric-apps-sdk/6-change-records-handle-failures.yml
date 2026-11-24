@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-data-driven-features-fabric-apps-sdk.change-records-handle-failures
+title: Change records and handle failures
+metadata:
+  title: Change records and handle failures
+  description: "Create, update, delete, and upsert records through the typed client, understand what each returns, and surface failures."
+  ms.date: 11/20/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/6-change-records-handle-failures.md)]

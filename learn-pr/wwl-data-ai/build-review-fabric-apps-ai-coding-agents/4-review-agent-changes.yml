@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-review-fabric-apps-ai-coding-agents.review-agent-changes
+title: Review agent-generated changes for risk
+metadata:
+  title: Review agent-generated changes for risk
+  description: "Review an agent's diff for permission gaps, destructive schema changes, exposed secrets, unsafe patterns, and version drift."
+  ms.date: 11/20/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-review-agent-changes.md)]

@@ -1,0 +1,71 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-data-driven-features-fabric-apps-sdk.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Knowledge check"
+  ms.date: 11/20/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+  module_assessment: true
+  ai_generated_module_assessment: false
+durationInMinutes: 3
+quiz:
+  title: ""
+  questions:
+  - content: "You call `client.data.Todo.select(['id']).execute()` and then read `todo.title` in the UI. What is the result?"
+    choices:
+    - content: "The code compiles, and title is read as an empty string."
+      isCorrect: false
+      explanation: "Results contain only the selected fields, and the result type reflects that, so the compiler doesn't allow this read."
+    - content: "The code fails to compile because `title` wasn't selected."
+      isCorrect: true
+      explanation: "In 2.0, the result type contains exactly the selected fields, so reading an unselected field is a compile-time error."
+    - content: "The client fetches the missing field automatically."
+      isCorrect: false
+      explanation: "The client doesn't add fields. It returns only what the query requests."
+  - content: "An issue list returns exactly 100 rows even though the table contains 250. No error appears. What should you do?"
+    choices:
+    - content: "Add an `orderBy` clause to the query."
+      isCorrect: false
+      explanation: "`orderBy` sorts rows. It doesn't control how many rows a query returns."
+    - content: "Use `first(n)` with `executePaginated()` and pass `endCursor` to `after()`."
+      isCorrect: true
+      explanation: "`execute()` returns one page and doesn't signal truncation, so cursor pagination is the way to reach every row."
+    - content: "Read `totalCount` and loop until the count is reached."
+      isCorrect: false
+      explanation: "`totalCount` exists on the type but is never populated, so it can't drive a loop."
+  - content: "A dashboard needs the number of issues per status. Which approach follows the client's constraints?"
+    choices:
+    - content: "Combine `groupBy`, `aggregate`, and `select` in one query to get rows and counts together."
+      isCorrect: false
+      explanation: "Grouped aggregation can't be combined with `select`, `orderBy`, `first`, or `after`."
+    - content: "Use `aggregate` with `count` on the text field `status`."
+      isCorrect: false
+      explanation: "Aggregation operations accept numeric fields only, so counting a text field isn't allowed."
+    - content: "Group by status and aggregate a non-nullable numeric field with `count`, as a separate query."
+      isCorrect: true
+      explanation: "`count` counts non-null numeric values, so it equals a row count when it targets a non-nullable numeric column, and aggregation must run as its own query."
+  - content: "You create an issue, and then render `created.status` in the UI. The form didn't send `status`, and the entity default sets it. The value is missing. What should you do?"
+    choices:
+    - content: "Read the record back with `select([...]).where({ id: { eq: created.id } }).findFirst()`."
+      isCorrect: true
+      explanation: "A mutation returns the primary key plus the fields you sent. Fields you didn't send, such as server defaults, need an explicit selected read."
+    - content: "Call `create` again, because the first call failed silently."
+      isCorrect: false
+      explanation: "The create succeeded. The result simply contains only the key and the fields in the input."
+    - content: "Call `findById(created.id)` and read `status` from the result."
+      isCorrect: false
+      explanation: "`findById` returns only the primary key, so `status` is still missing. Select the fields you need explicitly."
+  - content: "You want to remove one uploaded file from a Storage folder by deleting the folder class and applying the change. What is the consequence?"
+    choices:
+    - content: "Only the one file is removed."
+      isCorrect: false
+      explanation: "Removing a folder declaration affects the whole folder, not a single object."
+    - content: "Every object in the folder is deleted permanently, and apply refuses unless forced."
+      isCorrect: true
+      explanation: "Removing a declaration deletes the folder's data, and apply blocks a non-empty folder unless `--force` is passed."
+    - content: "The folder is hidden but its files are kept."
+      isCorrect: false
+      explanation: "Deleted folders can't be restored, and objects are deleted in the background."

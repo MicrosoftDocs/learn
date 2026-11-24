@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-evolve-app-data-models-fabric-apps.exercise-define-issue-entity
+title: Exercise - Define an issue entity
+metadata:
+  title: Exercise - define an issue entity
+  description: "Enable the data service in a Universal App and define an Issue entity with bounded fields and an explicit permission decorator."
+  ms.date: 11/20/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-exercise-define-issue-entity.md)]

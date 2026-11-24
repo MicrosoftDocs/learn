@@ -1,0 +1,71 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.evaluate-fabric-apps-deploy-first-app.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Knowledge check"
+  ms.date: 11/20/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+  module_assessment: true
+  ai_generated_module_assessment: false
+durationInMinutes: 4
+quiz:
+  title: ""
+  questions:
+  - content: "A team wants an internal tool where managers sign in with their work accounts and view data that lives in Fabric. Which characteristic of Fabric Apps makes this scenario a good fit?"
+    choices:
+    - content: "Authentication uses Microsoft Entra ID through Fabric single sign-on."
+      isCorrect: true
+      explanation: "Deployed apps sign users in through Fabric single sign-on with Microsoft Entra ID, which matches an internal audience with work accounts."
+    - content: "The app can attach to any existing database schema."
+      isCorrect: false
+      explanation: "An app defines its schema in TypeScript code. Existing Fabric data is reached through connectors, not by attaching a schema."
+    - content: "The app can use any custom identity provider."
+      isCorrect: false
+      explanation: "Custom identity providers aren't available after deployment, so this isn't a capability the scenario relies on."
+  - content: "You deploy an app and need a Functions service, but the workspace is a Power BI Pro workspace. What is the result?"
+    choices:
+    - content: "Functions run with lower limits in the Pro workspace."
+      isCorrect: false
+      explanation: "Functions aren't available at reduced limits. They aren't supported in Power BI Pro workspaces."
+    - content: "Functions aren't supported, so you need a capacity-backed workspace."
+      isCorrect: true
+      explanation: "Power BI Pro apps don't support Functions, Storage, anonymous access, or public sites. A capacity-backed workspace is required."
+    - content: "Functions are enabled automatically after the first deployment."
+      isCorrect: false
+      explanation: "Deployment doesn't change the licensing limits of the workspace."
+  - content: "A finance partner asks for the exact capacity unit cost of the app. Which response best reflects how to plan cost for Fabric Apps?"
+    choices:
+    - content: "Quote the current consumption rates, because they are fixed for the life of the app."
+      isCorrect: false
+      explanation: "Consumption rates can change, so a quoted rate becomes outdated."
+    - content: "State that Fabric Apps has a flat monthly fee per app."
+      isCorrect: false
+      explanation: "There is no separate charge for Fabric Apps. The services behind the app consume capacity units."
+    - content: "Identify the services that consume capacity and measure actual usage in the Capacity Metrics app."
+      isCorrect: true
+      explanation: "The SQL database, GraphQL API, Functions, and OneLake storage consume capacity units, and the Capacity Metrics app shows real usage."
+  - content: "You run `npm run dev` and later press Ctrl+C. Which statement describes the result?"
+    choices:
+    - content: "The local frontend stops, and the Fabric backend remains available."
+      isCorrect: true
+      explanation: "`rayfin dev` runs the frontend locally and keeps the backend in Fabric. Stopping the session doesn't delete the backend."
+    - content: "The local frontend and the Fabric backend both stop and are deleted."
+      isCorrect: false
+      explanation: "The Fabric backend is durable, and stopping the session doesn't delete it."
+    - content: "The deployed static site is replaced with the local build."
+      isCorrect: false
+      explanation: "`rayfin dev` never builds or uploads the production frontend. `rayfin up` publishes it."
+  - content: "You changed only frontend code and want to confirm what a deployment does before it runs against a shared workspace. Which command should you run first?"
+    choices:
+    - content: "npx rayfin up status"
+      isCorrect: false
+      explanation: "`rayfin up status` reports the state of an existing deployment. It doesn't preview a new one."
+    - content: "npx rayfin up --dry-run"
+      isCorrect: true
+      explanation: "`--dry-run` previews the planned work without making changes, so you can review it first."
+    - content: "npx rayfin dev"
+      isCorrect: false
+      explanation: "`rayfin dev` starts the development loop and doesn't preview a deployment."

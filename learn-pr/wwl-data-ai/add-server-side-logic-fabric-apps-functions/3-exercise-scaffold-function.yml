@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.add-server-side-logic-fabric-apps-functions.exercise-scaffold-function
+title: Exercise - Check Functions availability and scaffold a function
+metadata:
+  title: Exercise - check Functions availability and scaffold a function
+  description: "Confirm that Functions deploy in your workspace, scaffold a function package, and run a sample function locally."
+  ms.date: 11/23/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-exercise-scaffold-function.md)]

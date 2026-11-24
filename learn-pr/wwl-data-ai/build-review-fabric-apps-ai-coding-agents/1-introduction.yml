@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-review-fabric-apps-ai-coding-agents.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "This unit introduces the module on building and reviewing Fabric apps with AI coding agents."
+  ms.date: 11/20/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

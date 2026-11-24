@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.integrate-fabric-data-fabric-apps-connectors.exercise-add-connectors
+title: Exercise - Add and verify connectors with the Rayfin CLI
+metadata:
+  title: Exercise - add and verify connectors with the Rayfin CLI
+  description: "Search for Fabric sources, add a warehouse and a semantic model connector with explicit identities, and prove that each returns data."
+  ms.date: 11/20/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-exercise-add-connectors.md)]

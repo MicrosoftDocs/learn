@@ -1,0 +1,71 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-review-fabric-apps-ai-coding-agents.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Knowledge check"
+  ms.date: 11/20/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+  module_assessment: true
+  ai_generated_module_assessment: false
+durationInMinutes: 3
+quiz:
+  title: ""
+  questions:
+  - content: "You want an agent to add a feature and deploy it safely. Which prompt design best protects your control?"
+    choices:
+    - content: "Ask the agent to deploy when it's done, and review the deployment afterward."
+      isCorrect: false
+      explanation: "A deployment can change the workspace before any review. You need an approval gate first."
+    - content: "State the outcome, require commands such as a dry run, and forbid `rayfin up` and `--force` until you approve."
+      isCorrect: true
+      explanation: "A strong prompt names the outcome, requires the agent to run commands, and sets approval gates for deployment and destructive flags."
+    - content: "Describe the steps in prose and run the commands yourself."
+      isCorrect: false
+      explanation: "Printing steps doesn't use the agent's ability to run and verify commands, and it doesn't set any approval gate."
+  - content: "An agent's diff adds an entity with fields and a UI. The build passes. Which finding is most important to catch before deployment?"
+    choices:
+    - content: "The UI file uses double quotes."
+      isCorrect: false
+      explanation: "Quote style doesn't affect security or behavior."
+    - content: "The entity file name is long."
+      isCorrect: false
+      explanation: "File names don't affect permissions or deployment."
+    - content: "The entity has no explicit permission decorator."
+      isCorrect: true
+      explanation: "An entity without a decorator silently receives full access for any signed-in user. A passing build doesn't reveal that missing decision, so the entity needs an explicit rule."
+  - content: "A diff changes a package version so that `rayfin-data` is on a different version than the other Rayfin packages. What is the risk?"
+    choices:
+    - content: "The CLI refuses to sign in."
+      isCorrect: false
+      explanation: "Package versions don't affect sign-in."
+    - content: "Type errors or two copies of the data package in one app."
+      isCorrect: true
+      explanation: "Every Rayfin package shares one version number, and mixed versions can cause type errors or duplicate data packages."
+    - content: "The static hosting URL changes."
+      isCorrect: false
+      explanation: "Hosting URLs don't depend on dependency versions."
+  - content: "An agent proposes `npx rayfin up db apply --force` after it removed a field. What should you do first?"
+    choices:
+    - content: "Review the operations the CLI listed, confirm which data is affected, and decide whether the loss is acceptable."
+      isCorrect: true
+      explanation: "`--force` is a reviewed exception, and you own the decision."
+    - content: "Run it, because the agent already tested the change."
+      isCorrect: false
+      explanation: "`--force` permits data loss and needs your decision."
+    - content: "Rename the field instead, because a rename doesn't need `--force`."
+      isCorrect: false
+      explanation: "Renames can also drop data, and the CLI reports them as potentially destructive, so they need the same review."
+  - content: "A team's client tests pass for a new entity. Which statement is accurate about the evidence?"
+    choices:
+    - content: "The tests prove that backend permissions are enforced."
+      isCorrect: false
+      explanation: "Tests that stub the client or `fetch` verify client code, not backend enforcement."
+    - content: "The tests replace the need for a deployment preview."
+      isCorrect: false
+      explanation: "`--dry-run` validates the target and inputs, which tests don't cover."
+    - content: "The tests show client code behaves as described, and a deployed check is still needed for permissions."
+      isCorrect: true
+      explanation: "Backend enforcement shows up only when the deployed app hides another owner's record and rejects a signed-out request."

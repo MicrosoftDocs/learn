@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.evaluate-fabric-apps-deploy-first-app.exercise-deploy-app
+title: Exercise - Deploy the app and verify the deployment
+metadata:
+  title: Exercise - deploy the app and verify the deployment
+  description: "Preview a deployment, deploy the app to Microsoft Fabric with the Rayfin CLI, and verify its health."
+  ms.date: 11/20/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/6-exercise-deploy-app.md)]

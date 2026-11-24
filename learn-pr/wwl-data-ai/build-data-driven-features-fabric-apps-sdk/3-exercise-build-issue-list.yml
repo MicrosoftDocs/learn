@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-data-driven-features-fabric-apps-sdk.exercise-build-issue-list
+title: Exercise - Build the issue list with a typed query
+metadata:
+  title: Exercise - build the issue list with a typed query
+  description: "Define the issue tracker entities, deploy them, and build a list with explicit field selection, a filter, ordering, and a related store field."
+  ms.date: 11/20/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-exercise-build-issue-list.md)]

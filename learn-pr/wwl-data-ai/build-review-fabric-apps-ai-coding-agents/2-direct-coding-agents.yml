@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-review-fabric-apps-ai-coding-agents.direct-coding-agents
+title: Direct a coding agent with project context and prompts
+metadata:
+  title: Direct a coding agent with project context and prompts
+  description: "Prepare a project for coding agents with managed agent files and write prompts that run commands and set approval gates."
+  ms.date: 11/20/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-direct-coding-agents.md)]

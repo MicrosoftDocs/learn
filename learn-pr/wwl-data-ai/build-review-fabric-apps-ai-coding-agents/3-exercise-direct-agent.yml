@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-review-fabric-apps-ai-coding-agents.exercise-direct-agent
+title: Exercise - Direct an agent to build a vendor feature
+metadata:
+  title: Exercise - direct an agent to build a vendor feature
+  description: "Create a new app, install the managed agent files, and direct GitHub Copilot in agent mode to add a vendor entity and UI with approval gates."
+  ms.date: 11/24/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+durationInMinutes: 9
+content: |
+  [!include[](includes/3-exercise-direct-agent.md)]

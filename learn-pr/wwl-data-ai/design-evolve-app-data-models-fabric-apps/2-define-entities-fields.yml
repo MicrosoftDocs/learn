@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-evolve-app-data-models-fabric-apps.define-entities-fields
+title: Define entities and fields with decorators
+metadata:
+  title: Define entities and fields with decorators
+  description: "Learn how entity and field decorators describe tables and columns, and which platform constraints shape a model."
+  ms.date: 11/20/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-define-entities-fields.md)]

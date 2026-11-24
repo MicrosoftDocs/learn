@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-review-fabric-apps-ai-coding-agents.exercise-review-seeded-patch
+title: Exercise - Review a seeded-defect patch
+metadata:
+  title: Exercise - review a seeded-defect patch
+  description: "Review a supplied patch for permission gaps, unbounded text, exposed secrets, unsafe data access, and version drift, and fix the permission gap."
+  ms.date: 11/20/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/5-exercise-review-seeded-patch.md)]

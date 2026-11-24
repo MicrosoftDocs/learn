@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.wwl.integrate-fabric-data-fabric-apps-connectors
+metadata:
+  title: Integrate existing Fabric data using Fabric Apps connectors
+  description: "Connect a Fabric app to a warehouse, lakehouse, SQL database, or semantic model, choose whether the app or each user accesses the data, and verify the result."
+  ms.date: 11/23/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: module
+  ms.service: fabric
+  ai-usage: ai-generated
+title: Integrate existing Fabric data using Fabric Apps connectors
+summary: Connect a Fabric app to data in a warehouse, lakehouse, SQL database, or semantic model, and choose whether the app or each user accesses it. Verify the connection and build an analytical view.
+abstract: |
+  After completing this module, you'll be able to:
+  - Select a connector type and an identity mode based on the Fabric source and per-user access needs.
+  - Add and verify a connector with `rayfin connector search`, `add`, `inspect`, and `invoke`.
+  - Define typed entity connectors for tabular sources and query them through the connectors client.
+  - Run DAX queries against a semantic model through a connector, interpret the results, and build an analytical view.
+  - Secure connector access with limited operations, entity roles, and an accurate view of what sharing grants.
+prerequisites: |
+  - Familiarity with Fabric items such as lakehouses, warehouses, and semantic models.
+  - Ability to read basic SQL and DAX queries.
+  - Understanding of Fabric workspace and item permissions.
+  - Working knowledge of TypeScript and a frontend framework such as React.
+  - A Fabric workspace on a trial or paid capacity where Fabric Apps is enabled and you have Contributor or Admin permissions.
+  - Access to a workspace that contains a warehouse or SQL database and a semantic model, with Build and Read permissions on the model, and the Semantic Model Execute Queries REST API tenant setting enabled by an administrator.
+  - Node.js 24 installed locally.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- fabric
+subjects:
+- data-engineering
+units:
+- learn.wwl.integrate-fabric-data-fabric-apps-connectors.introduction
+- learn.wwl.integrate-fabric-data-fabric-apps-connectors.choose-connector-identity
+- learn.wwl.integrate-fabric-data-fabric-apps-connectors.exercise-add-connectors
+- learn.wwl.integrate-fabric-data-fabric-apps-connectors.exercise-define-entity-connectors
+- learn.wwl.integrate-fabric-data-fabric-apps-connectors.exercise-query-semantic-model
+- learn.wwl.integrate-fabric-data-fabric-apps-connectors.exercise-access-challenge
+- learn.wwl.integrate-fabric-data-fabric-apps-connectors.knowledge-check
+- learn.wwl.integrate-fabric-data-fabric-apps-connectors.summary
+badge:
+  uid: learn.wwl.integrate-fabric-data-fabric-apps-connectors.badge

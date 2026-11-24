@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.integrate-fabric-data-fabric-apps-connectors.exercise-define-entity-connectors
+title: Exercise - Define entity connectors and build an inventory view
+metadata:
+  title: Exercise - define entity connectors and build an inventory view
+  description: "Define an inventory entity from connector metadata, limit access, wire the typed client, and build and verify a deployed inventory view."
+  ms.date: 11/23/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/4-exercise-define-entity-connectors.md)]

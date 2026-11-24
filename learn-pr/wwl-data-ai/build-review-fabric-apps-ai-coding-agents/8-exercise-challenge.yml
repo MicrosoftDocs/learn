@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-review-fabric-apps-ai-coding-agents.exercise-challenge
+title: Exercise - Direct and verify a follow-up change
+metadata:
+  title: Exercise - direct and verify a follow-up change
+  description: "Direct a small follow-up UI change with a new prompt, review and verify it independently, remove lab-only entities, and clean up."
+  ms.date: 11/20/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/8-exercise-challenge.md)]

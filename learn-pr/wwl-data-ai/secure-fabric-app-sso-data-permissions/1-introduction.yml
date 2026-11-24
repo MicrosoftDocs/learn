@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.secure-fabric-app-sso-data-permissions.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "This unit introduces the module on securing a Fabric app with Fabric SSO and data permissions."
+  ms.date: 11/20/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

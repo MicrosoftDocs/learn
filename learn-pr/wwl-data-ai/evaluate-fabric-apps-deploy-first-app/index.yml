@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.wwl.evaluate-fabric-apps-deploy-first-app
+metadata:
+  title: Evaluate Fabric Apps by deploying a first app to Microsoft Fabric
+  description: "Decide whether Fabric Apps fits an application scenario by learning how a Fabric app runs and what it costs, then scaffold, run, and deploy a first app."
+  ms.date: 11/20/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: module
+  ms.service: fabric
+  ai-usage: ai-generated
+title: Evaluate Fabric Apps by deploying a first app to Microsoft Fabric
+summary: Decide whether Fabric Apps fits your application by understanding how a Fabric app runs, what it costs, and where it has limits. Then scaffold, run, and deploy a first app to Microsoft Fabric with the Rayfin CLI.
+abstract: |
+  After completing this module, you will be able to:
+  - Describe how a Fabric app runs on Microsoft Fabric, including its child services and the roles of the Rayfin CLI and SDK.
+  - Evaluate whether an application scenario fits Fabric Apps by comparing capabilities, constraints, licensing options, and capacity cost.
+  - Scaffold a Fabric Apps project and run it with `rayfin dev` against a Fabric-hosted backend.
+  - Deploy a Fabric app with `rayfin up` and verify the deployment.
+prerequisites: |
+  - Access to a Microsoft Fabric tenant where a Fabric administrator enabled Fabric Apps. Without a tenant, you can start a Fabric trial, and an administrator must enable the Fabric Apps tenant setting.
+  - Access to a Fabric workspace where you have the Contributor, Member, or Admin role, assigned to a Fabric trial or paid capacity in a region where Fabric Apps is available.
+  - Working knowledge of TypeScript and npm.
+  - Familiarity with a frontend framework such as React.
+  - Familiarity with Microsoft Fabric workspaces and capacity concepts.
+  - Node.js 24 installed locally. The Rayfin CLI supports Node.js 20, 22, and 24, and the default project template needs 22.13 or later.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- fabric
+subjects:
+- data-engineering
+units:
+- learn.wwl.evaluate-fabric-apps-deploy-first-app.introduction
+- learn.wwl.evaluate-fabric-apps-deploy-first-app.how-fabric-apps-run
+- learn.wwl.evaluate-fabric-apps-deploy-first-app.evaluate-fit-limits-cost
+- learn.wwl.evaluate-fabric-apps-deploy-first-app.exercise-scaffold-app
+- learn.wwl.evaluate-fabric-apps-deploy-first-app.exercise-run-locally
+- learn.wwl.evaluate-fabric-apps-deploy-first-app.exercise-deploy-app
+- learn.wwl.evaluate-fabric-apps-deploy-first-app.exercise-challenge
+- learn.wwl.evaluate-fabric-apps-deploy-first-app.knowledge-check
+- learn.wwl.evaluate-fabric-apps-deploy-first-app.summary
+badge:
+  uid: learn.wwl.evaluate-fabric-apps-deploy-first-app.badge

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.add-server-side-logic-fabric-apps-functions.decide-function-or-client
+title: Decide when logic belongs in a function
+metadata:
+  title: Decide when logic belongs in a function
+  description: "Decide which work to move to a server-side function, and learn how functions are written, registered, and called."
+  ms.date: 11/20/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-decide-function-client.md)]

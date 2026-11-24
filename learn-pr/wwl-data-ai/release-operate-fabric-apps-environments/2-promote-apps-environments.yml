@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.release-operate-fabric-apps-environments.promote-apps-environments
+title: Promote an app between development and production workspaces
+metadata:
+  title: Promote an app between development and production workspaces
+  description: "Use separate workspaces and the Rayfin CLI to promote an app, and compare that path with Fabric Git integration and deployment pipelines."
+  ms.date: 11/20/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-promote-apps-environments.md)]
