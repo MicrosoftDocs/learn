@@ -85,7 +85,7 @@ Consider a basic two-agent workflow for feature development:
 This coordinated approach ensures that code meets quality standards before human review, significantly reducing the number of review iterations needed.
 
 > [!NOTE]
-> Each handoff consumes ~1 PRU. A 2-agent draft–review flow typically uses 2–3 PRUs.
+> Agent mode can make multiple model calls during a task. AI credit usage depends on the model and tokens used.
 
 ### Advanced orchestration capabilities
 
@@ -100,8 +100,6 @@ Advanced AI reasoning provides deeper analysis for complex development challenge
 - **Complex refactoring coordination:** Orchestrate changes across multiple files and modules while preserving system functionality and performance.
 - **Integration pattern optimization:** Suggest optimal patterns for connecting new features with existing system architecture.
 
-> [!NOTE]
-> Premium runs add more context and reasoning but often double PRU consumption (~4+ per request).
 
 #### Comprehensive feature delivery workflows
 

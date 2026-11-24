@@ -22,7 +22,7 @@ Learning new programming languages or frameworks can be challenging, but GitHub 
 Let’s take a look at an example.
 Imagine working on a Golang project in a language you're unfamiliar with. GitHub Copilot can generate the code for you. You can then use the "Explain this" option in the context menu to explain what the code does.
 
-:::image type="content" source="../media/accelerate-learning.gif" alt-text="Screenshot of Accelerate learning.":::
+:::image type="content" source="../media/accelerate-learning.gif" alt-text="Animation of a developer using Copilot in VS Code to generate Go code and ask how it works.":::
 
 ### Minimizing context switching
 
@@ -75,7 +75,7 @@ GitHub Copilot can handle more sophisticated automation tasks that would typical
 For example, when building a new microservice, Copilot can generate the entire project structure including Docker configurations, CI/CD pipeline files, and basic monitoring setup based on a few descriptive comments about your service requirements.
 
 > [!NOTE]
-> Complex multi-file generations consume more PRUs (~3–5 PRUs for complete project scaffolding). Simple boilerplate tasks typically use 1–2 PRUs. Learn more about [Premium Request Units](https://docs.github.com/en/copilot/concepts/billing/copilot-requests).
+> When you use Copilot Chat or Copilot in the cloud to generate a project, it consumes AI credits. Usage depends on the model and tokens used. Learn more about [GitHub Copilot billing](https://docs.github.com/en/copilot/concepts/billing-and-usage/individuals/billing).
 
 #### Story-driven development automation
 
@@ -115,7 +115,7 @@ Copilot can help prepare code for review and even assist during the review proce
 This streamlined approach significantly reduces the number of review rounds required, enabling faster feature delivery while maintaining high code quality standards.
 
 > [!NOTE]
-> Asking Copilot for multiple refactor drafts in a PR can consume 2–3 PRUs per draft. Learn more about [Premium Request Units](https://docs.github.com/en/copilot/concepts/billing/copilot-requests).
+> When you use Copilot Chat to request refactor drafts, it consumes AI credits. Longer conversations consume more AI credits. Learn more about [GitHub Copilot billing](https://docs.github.com/en/copilot/concepts/billing-and-usage/individuals/billing).
 
 #### Collaborative development workflows
 
@@ -134,15 +134,15 @@ Modern development increasingly benefits from coordinated AI assistance across d
 
 Consider a workflow where different AI agents handle distinct aspects of feature development:
 
-1. **Draft agent:** Copilot generates initial code implementations based on feature requirements
-2. **Review agent:** A secondary AI reviews the draft for code quality, security issues, and adherence to project standards
-3. **Documentation agent:** Automatically generates or updates documentation based on the code changes
-4. **Test agent:** Creates comprehensive test suites for the new functionality
+- **Draft agent:** Copilot generates initial code implementations based on feature requirements
+- **Review agent:** A secondary AI reviews the draft for code quality, security issues, and adherence to project standards
+- **Documentation agent:** Automatically generates or updates documentation based on the code changes
+- **Test agent:** Creates comprehensive test suites for the new functionality
 
 This orchestrated approach ensures comprehensive coverage of development tasks while maintaining high quality standards. Each agent brings specialized focus to its domain, resulting in more thorough and production-ready code.
 
 > [!NOTE]
-> Each handoff consumes ~1 PRU. A 2-agent draft–review flow typically uses 2–3 PRUs.
+> Agent mode and the cloud agent can make multiple model calls during a task. AI credit usage depends on the model and tokens used.
 
 #### Advanced reasoning capabilities
 
@@ -152,9 +152,6 @@ For complex development scenarios, GitHub Copilot offers premium reasoning modes
 - **Advanced architectural suggestions:** Provides recommendations for system design and integration patterns
 - **Complex refactoring assistance:** Handles sophisticated code transformations while preserving functionality
 - **Multi-file coordination:** Orchestrates changes across multiple files while maintaining consistency
-
-> [!NOTE]
-> Premium runs add more context and reasoning but often double PRU consumption (~4+ per request).
 
 #### Automated story completion workflows
 

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-evolve-app-data-models-fabric-apps.model-relationships-apply-schema
+title: Model relationships and apply the schema
+metadata:
+  title: Model relationships and apply the schema
+  description: "Model one-to-many relationships, work around many-to-many with a join entity, register entities, and apply and verify schema changes."
+  ms.date: 11/20/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-model-relationships-apply-schema.md)]

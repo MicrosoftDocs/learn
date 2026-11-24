@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.secure-fabric-app-sso-data-permissions.exercise-add-fabric-sso
+title: Exercise - Add Fabric SSO sign-in and sign-out
+metadata:
+  title: Exercise - Add Fabric SSO sign-in and sign-out
+  description: "Review sign-in configuration, add sign-in and sign-out controls that surface errors, and scope allowed redirect origins."
+  ms.date: 11/20/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-exercise-add-fabric-sso.md)]

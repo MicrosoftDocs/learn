@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.release-operate-fabric-apps-environments.exercise-deployment-workflow
+title: Exercise - Build a protected deployment workflow
+metadata:
+  title: Exercise - build a protected deployment workflow
+  description: "Build a GitHub Actions workflow with protected secrets, production approval, per-target concurrency, and explicit handling of destructive changes."
+  ms.date: 11/20/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+durationInMinutes: 9
+content: |
+  [!include[](includes/5-exercise-deployment-workflow.md)]

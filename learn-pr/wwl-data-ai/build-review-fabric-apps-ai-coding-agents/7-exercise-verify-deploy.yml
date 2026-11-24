@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-review-fabric-apps-ai-coding-agents.exercise-verify-deploy
+title: Exercise - Verify and deploy the agent's work
+metadata:
+  title: Exercise - verify and deploy the agent's work
+  description: "Run the build, type-check, and dry run, approve a deployment, and verify the deployed app with an owner-only check and an unauthenticated request."
+  ms.date: 11/20/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/7-exercise-verify-deploy.md)]

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-evolve-app-data-models-fabric-apps.evaluate-schema-changes
+title: Evaluate schema changes for data-loss risk
+metadata:
+  title: Evaluate schema changes for data-loss risk
+  description: "Classify schema changes as safe or destructive, understand how the CLI protects data, and decide when a reviewed force is justified."
+  ms.date: 11/20/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/6-evaluate-schema-changes.md)]

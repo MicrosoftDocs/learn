@@ -35,7 +35,7 @@ By the end of this unit, you'll be able to:
 
    Copilot proposes a patch using `subprocess.run().` The developer tests it locally, commits, and ensures tests pass.
 
-   PRUs make these fixes faster and smarter-enabling Copilot to analyze review comments alongside code context to propose high-quality solutions.
+   Copilot can analyze review comments alongside code context to propose high-quality solutions.
 
 1. **Understanding the limits**
 

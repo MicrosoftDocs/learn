@@ -12,7 +12,7 @@ To use GitHub Copilot, you need to complete the following steps:
    - It's important to be aware of the GitHub Copilot free trial conditions: if you choose the free trial offer for GitHub Copilot, a form of payment is requested at sign-up. Charges aren't applied until the trial is over, unless you cancel before the conclusion of the 30-day period.
 
    > [!TIP]
-   > GitHub Copilot offers a free tier with **2,000 code autocompletes and 50 chat messages per month**. To get started, open Visual Studio Code, select the GitHub Copilot icon, and then select **Sign in to Use GitHub Copilot for Free**. Sign-in to your GitHub account in the window that opens in the browser. [Learn more](https://gh.io/copilot). Educators, Students, and select open-source maintainers, can receive Copilot Pro for free, learn how at: [https://aka.ms/Copilot4Students](https://aka.ms/Copilot4Students).
+   > GitHub Copilot offers a free tier with **2,000 code completions per month and an allowance of AI credits**. To get started in Visual Studio Code, hover over the Copilot icon in the Status Bar, select **Use AI Features**, and follow the sign-in prompts. [Learn more](https://gh.io/copilot). Verified students can get [Copilot Student for free](https://docs.github.com/en/copilot/how-tos/copilot-on-github/set-up-copilot/enable-copilot/set-up-for-students). Verified teachers and maintainers of popular open-source projects may qualify for free Copilot Pro.
 
 1. **Install the Extension**:
    - GitHub Copilot is available as an extension for major Integrated Development Environments (IDEs), including Visual Studio, Visual Studio Code, JetBrains IDEs, VIM, and XCode.

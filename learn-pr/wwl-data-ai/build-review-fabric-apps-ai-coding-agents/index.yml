@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.wwl.build-review-fabric-apps-ai-coding-agents
+metadata:
+  title: Build and Review Fabric Apps Using AI Coding Agents
+  description: "Use a coding agent to scaffold, change, and deploy a Fabric app, and learn to review its work before it reaches production."
+  ms.date: 11/20/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: module
+  ms.service: fabric
+  ai-usage: ai-generated
+title: Build and review Fabric apps using AI coding agents
+summary: Use a coding agent to scaffold, change, and deploy a Fabric app, and learn to review its work. Spot the common agent mistakes, such as missing permissions and unnecessary destructive changes, before they reach production.
+abstract: |
+  In this module, you learn how to:
+  - Prepare a Fabric Apps project for coding agents by using the managed agent files and Rayfin documentation.
+  - Write prompts that direct an agent to scaffold, change, and deploy an app by running commands rather than describing them.
+  - Review agent-generated changes for permission gaps, destructive schema operations, exposed secrets, and version drift.
+  - Verify agent work with builds, tests, `rayfin up --dry-run`, `rayfin up status`, and a deployed-app check.
+prerequisites: |
+  - Experience using an AI coding agent in an editor, such as GitHub Copilot in agent mode.
+  - Ability to read entity definitions, permission decorators, and `rayfin.yml` service settings.
+  - Familiarity with reviewing a source control diff.
+  - A Fabric Apps project that signs in and deploys, in a workspace on a Fabric trial or paid capacity.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- fabric
+subjects:
+- data-engineering
+units:
+- learn.wwl.build-review-fabric-apps-ai-coding-agents.introduction
+- learn.wwl.build-review-fabric-apps-ai-coding-agents.direct-coding-agents
+- learn.wwl.build-review-fabric-apps-ai-coding-agents.exercise-direct-agent
+- learn.wwl.build-review-fabric-apps-ai-coding-agents.review-agent-changes
+- learn.wwl.build-review-fabric-apps-ai-coding-agents.exercise-review-seeded-patch
+- learn.wwl.build-review-fabric-apps-ai-coding-agents.verify-agent-work
+- learn.wwl.build-review-fabric-apps-ai-coding-agents.exercise-verify-deploy
+- learn.wwl.build-review-fabric-apps-ai-coding-agents.exercise-challenge
+- learn.wwl.build-review-fabric-apps-ai-coding-agents.knowledge-check
+- learn.wwl.build-review-fabric-apps-ai-coding-agents.summary
+badge:
+  uid: learn.wwl.build-review-fabric-apps-ai-coding-agents.badge

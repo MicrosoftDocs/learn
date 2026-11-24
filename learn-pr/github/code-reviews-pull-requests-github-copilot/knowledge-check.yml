@@ -3,7 +3,7 @@ uid: learn.github.code-reviews-pull-requests-github-copilot.knowledge-check
 title: Module assessment
 metadata:
   title: Module assessment
-  description: Check what you learned about GitHub Copilot code reviews and Premium Request Units.
+  description: Check what you learned about GitHub Copilot code review, AI credits, and GitHub Actions compute usage.
   ms.date: 08/24/2026
   author: a-a-ron
   ms.author: aastewar
@@ -86,20 +86,20 @@ quiz:
     - content: "In the `node_modules` directory using Markdown files."
       isCorrect: false
       explanation: "The `node_modules` directory isn't used for repository-specific Copilot instructions."
-  - content: "What are Premium Request Units (PRUs) used for in GitHub Copilot?"
+  - content: "What do GitHub AI Credits measure in GitHub Copilot?"
     choices:
-    - content: "They provide additional capacity for advanced, context-rich Copilot requests."
+    - content: "Usage of supported AI-powered features, including Copilot code review."
       isCorrect: true
-      explanation: "PRUs support premium-level capabilities that require additional processing, context, and reasoning."
-    - content: "They are GitHub Actions minutes used to run CI workflows."
+      explanation: "Copilot code review consumes AI credits for model interactions. In private repositories, agentic capabilities on GitHub Actions runners draw on included compute usage; runner usage is free in public repositories."
+    - content: "They measure GitHub Actions compute usage for CI workflows."
       isCorrect: false
-      explanation: "PRUs are associated with Copilot premium requests, not GitHub Actions workflow execution time."
+      explanation: "AI credits measure Copilot AI usage, not GitHub Actions compute usage."
     - content: "They are repository storage units for pull request files."
       isCorrect: false
-      explanation: "PRUs are not a form of repository storage."
+      explanation: "AI credits aren't repository storage units."
     - content: "They are required for every basic Copilot autocomplete suggestion."
       isCorrect: false
-      explanation: "Not every lightweight Copilot interaction is a premium request."
+      explanation: "Code completions don't consume AI credits."
   - content: "A team wants Copilot to review every pull request targeting its protected production branch. Which GitHub feature can the team use to automate this?"
     choices:
     - content: "A branch ruleset configured to require a pull request review from Copilot."
@@ -114,17 +114,17 @@ quiz:
     - content: "A repository topic named `copilot-review`."
       isCorrect: false
       explanation: "Repository topics are descriptive metadata and don't configure review requirements."
-  - content: "A team has limited PRUs and receives many small documentation-only pull requests. Which approach best helps optimize PRU usage?"
+  - content: "A team wants to control Copilot code review costs. What should it do?"
     choices:
-    - content: "Use premium reviews for every change regardless of size."
+    - content: "Request a Copilot review for every change regardless of need."
       isCorrect: false
-      explanation: "Using premium reviews indiscriminately can consume PRUs without providing proportional value."
-    - content: "Reserve premium reviews for large or high-risk changes and use standard Copilot capabilities for simpler work."
+      explanation: "Each review consumes AI credits, even for small changes."
+    - content: "Monitor AI credits and GitHub Actions compute usage and request reviews at appropriate times."
       isCorrect: true
-      explanation: "Strategically reserving PRUs for changes where deeper analysis provides the most value helps control usage while maintaining review quality."
+      explanation: "Copilot code review consumes AI credits for model interactions. In private repositories, agentic capabilities on GitHub Actions runners draw on included compute usage; runner usage is free in public repositories. Monitoring both types of usage helps teams manage costs."
     - content: "Disable all Copilot reviews permanently."
       isCorrect: false
-      explanation: "Disabling Copilot entirely removes its benefits rather than optimizing premium usage."
-    - content: "Repeat the same premium request several times for every pull request."
+      explanation: "Disabling all Copilot reviews also removes their benefits."
+    - content: "Request the same code review several times for every pull request."
       isCorrect: false
-      explanation: "Unnecessary retries can waste PRUs. Clear prompts and targeted use of premium capabilities are better strategies."
+      explanation: "Repeated reviews consume more AI credits. In private repositories, agentic capabilities on GitHub Actions runners also draw on included compute usage."

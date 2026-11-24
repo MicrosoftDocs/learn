@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-data-driven-features-fabric-apps-sdk.exercise-fix-truncation-summarize
+title: Exercise - Fix truncation and summarize issues by status
+metadata:
+  title: Exercise - fix truncation and summarize issues by status
+  description: "Reproduce the 100-record truncation, fix it with forward cursor pagination, and add a grouped status summary."
+  ms.date: 11/20/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/5-exercise-fix-truncation-summarize.md)]

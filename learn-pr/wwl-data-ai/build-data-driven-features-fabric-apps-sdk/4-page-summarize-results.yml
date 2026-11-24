@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-data-driven-features-fabric-apps-sdk.page-and-summarize-results
+title: Page and summarize query results
+metadata:
+  title: Page and summarize query results
+  description: "Use cursor pagination to avoid silent truncation and use aggregation with grouping to summarize data on the server."
+  ms.date: 11/20/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-page-summarize-results.md)]

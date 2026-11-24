@@ -1,0 +1,71 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.add-server-side-logic-fabric-apps-functions.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Knowledge check"
+  ms.date: 11/20/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+  module_assessment: true
+  ai_generated_module_assessment: false
+durationInMinutes: 3
+quiz:
+  title: ""
+  questions:
+  - content: "An app must call a third-party API that requires a long-lived key. Where should the key and the call live?"
+    choices:
+    - content: "In frontend code, because publishable keys are safe in client code."
+      isCorrect: false
+      explanation: "Publishable keys are designed for client code. A third-party API key isn't one, and the browser can't keep a secret."
+    - content: "In `rayfin.yml`, so every environment shares the value."
+      isCorrect: false
+      explanation: "`rayfin.yml` records only secret names and descriptions. The value isn't written there."
+    - content: "In a function, with the key stored as a Rayfin secret and read through `ctx.Secrets`."
+      isCorrect: true
+      explanation: "Functions run on the server, and `rayfin secret set` stores the value on the deployed app so it never reaches the browser."
+  - content: "A function calls the Fabric REST API and works during `rayfin dev` but fails with an authorization error after `rayfin up`. What is the most likely cause?"
+    choices:
+    - content: "The function declared the wrong audience name in `rayfin.yml`."
+      isCorrect: false
+      explanation: "Audiences are declared in the `RayfinContext` annotation, and an undeclared audience fails in both environments."
+    - content: "The local host uses the developer's account, and the deployed call uses the app identity, which lacks access."
+      isCorrect: true
+      explanation: "Local tokens belong to the signed-in account. Deployed tokens belong to the app identity, which needs its own permissions."
+    - content: "Functions can't call Microsoft APIs after deployment."
+      isCorrect: false
+      explanation: "Deployed functions can call Microsoft APIs with `ctx.Tokens` when the app identity has access."
+  - content: "A function creates a row in an owner-scoped entity by using `ctx.getDataClient()`. Whose permissions apply to the write?"
+    choices:
+    - content: "The signed-in caller's, so the entity's policies still apply."
+      isCorrect: true
+      explanation: "`ctx.getDataClient()` uses the invocation's Rayfin token and preserves the caller's data permissions."
+    - content: "The app identity, because functions use application authentication."
+      isCorrect: false
+      explanation: "Application authentication governs external-resource tokens. It doesn't change `ctx.getDataClient()`."
+    - content: "No one's, because function writes bypass entity policies."
+      isCorrect: false
+      explanation: "Policies apply to writes made through the data client. Raw SQL is the experimental path that bypasses them."
+  - content: "A function needs a token for an internal API protected by Microsoft Entra ID that isn't one of the five built-in audiences. What should you do?"
+    choices:
+    - content: "Declare a custom audience as an application ID or an `api://` or `https://` resource URI."
+      isCorrect: true
+      explanation: "A custom audience covers any other Entra-protected resource, and the token is read with the same string."
+    - content: "Use `AudienceType.KeyVault`, because it covers any resource."
+      isCorrect: false
+      explanation: "`KeyVault` isn't an audience member. `AudienceType` has five members."
+    - content: "Declare the audience with a `/.default` scope suffix."
+      isCorrect: false
+      explanation: "Declaring a scope is rejected. Declare the resource, not a scope."
+  - content: "You want to confirm that Functions work in a new workspace before designing around them. Which step provides the evidence?"
+    choices:
+    - content: "Read the region availability article only."
+      isCorrect: false
+      explanation: "A general availability article can't confirm that the service works in your specific workspace and tenant."
+    - content: "Run a local function and check that it responds."
+      isCorrect: false
+      explanation: "A local run doesn't prove that the service is available in the target workspace."
+    - content: "Deploy a minimal app with Functions enabled and confirm that `rayfin up` succeeds."
+      isCorrect: true
+      explanation: "A smoke test deployment shows whether the service is available in the target workspace and tenant."

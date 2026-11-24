@@ -80,23 +80,21 @@ Slash commands in GitHub Copilot Chat allow you to quickly specify the intent of
 
   :::image type="content" source="../media/tests-slash-commands.png" lightbox="../media/tests-slash-commands.png" alt-text="Screenshot of /tests slash commands.":::
 
-### Model selection and premium features
+### Model selection and AI credits
 
-GitHub Copilot Chat offers different AI models to optimize your development workflow. Some environments provide model selection options that let you choose between different capability levels based on your specific needs:
+GitHub Copilot Chat offers different AI models to optimize your development workflow. AI credit usage depends on the model and tokens used. Some environments provide model selection options that let you choose a model based on your task. For example:
 
-**Standard models (GPT-4o):**
+**General-purpose coding and agent tasks:**
 - Provide fast, reliable responses for most development tasks
-- Consume 1 PRU per request
 - Ideal for routine coding assistance, code explanations, and basic debugging
 - Examples: Simple function generation, syntax help, basic refactoring suggestions
 
-**Premium models (o1-preview, o1-mini):**
+**Deep reasoning and debugging:**
 - Offer enhanced reasoning capabilities for complex problems
-- Consume 2 PRUs per request (double the standard rate)
 - Better suited for sophisticated analysis, complex algorithms, and architectural decisions
 - Examples: Advanced debugging of multi-threaded code, complex algorithm design, security analysis
 
-When working on challenging problems that require deep reasoning, premium models can provide more thorough analysis and comprehensive solutions. However, consider your PRU usage when selecting models for different types of tasks.
+For challenging problems, choose a model suited to deep reasoning. Consider AI credit usage when selecting models for different types of tasks.
 
 
 ### Copilot agents

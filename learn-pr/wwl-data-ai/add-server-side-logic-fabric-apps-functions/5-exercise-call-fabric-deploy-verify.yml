@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.add-server-side-logic-fabric-apps-functions.exercise-call-fabric-deploy-verify
+title: Exercise - Call the Fabric REST API as the app identity
+metadata:
+  title: Exercise - call the Fabric REST API as the app identity
+  description: "Understand audiences, caller and app identities, and source permissions while building a Fabric API function and verifying its deployed responses."
+  ms.date: 11/23/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/5-exercise-call-fabric-deploy-verify.md)]

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.integrate-fabric-data-fabric-apps-connectors.exercise-access-challenge
+title: Exercise - Predict and verify access for app recipients
+metadata:
+  title: Exercise - predict and verify access for app recipients
+  description: "Learn what sharing a Fabric app grants, predict what recipients see under each identity mode, verify the declared identities and operations, and clean up."
+  ms.date: 11/20/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/6-exercise-access-challenge.md)]

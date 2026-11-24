@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.wwl.add-server-side-logic-fabric-apps-functions
+metadata:
+  title: Add secure server-side logic using Fabric Apps Functions
+  description: "Add server-side functions to a Fabric app to keep secrets off the client and call external and Microsoft services as the app identity."
+  ms.date: 11/23/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: module
+  ms.service: fabric
+  ai-usage: ai-generated
+title: Add secure server-side logic using Fabric Apps Functions
+summary: Add server-side functions to a Fabric app to keep secrets off the client and to call external and Microsoft services. Learn how function identities work, and verify a function after deployment.
+abstract: |
+  After completing this module, you will be able to:
+  - Decide when logic belongs in a function instead of the client.
+  - Create, run locally, and deploy a function with `rayfin functions init`, `rayfin dev`, and `rayfin up`.
+  - Store secrets with `rayfin secret set` and read them in a function through `ctx.Secrets`.
+  - Declare audiences and call Microsoft resources as the app identity, and grant that identity the required permissions.
+  - Explain how local and deployed identities differ and preserve caller policies with `ctx.getDataClient()`.
+prerequisites: |
+  - Working knowledge of server-side TypeScript and Node.js.
+  - Node.js 24 and Visual Studio Code installed locally.
+  - Familiarity with HTTP APIs and bearer-token or API-key authentication.
+  - Familiarity with assigning roles on Azure or Fabric resources.
+  - Azure Functions Core Tools installed locally, or consent for the CLI to install them.
+  - Permission to create app items in a Fabric workspace on a trial or paid capacity, in a region and tenant where Functions are available. The exercises create a new app, so no existing project or completed module is required.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- fabric
+subjects:
+- data-engineering
+units:
+- learn.wwl.add-server-side-logic-fabric-apps-functions.introduction
+- learn.wwl.add-server-side-logic-fabric-apps-functions.decide-function-or-client
+- learn.wwl.add-server-side-logic-fabric-apps-functions.exercise-scaffold-function
+- learn.wwl.add-server-side-logic-fabric-apps-functions.exercise-use-stored-secret
+- learn.wwl.add-server-side-logic-fabric-apps-functions.exercise-call-fabric-deploy-verify
+- learn.wwl.add-server-side-logic-fabric-apps-functions.exercise-diagnose-deployed-failure
+- learn.wwl.add-server-side-logic-fabric-apps-functions.knowledge-check
+- learn.wwl.add-server-side-logic-fabric-apps-functions.summary
+badge:
+  uid: learn.wwl.add-server-side-logic-fabric-apps-functions.badge

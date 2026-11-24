@@ -1,0 +1,71 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.secure-fabric-app-sso-data-permissions.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Check your understanding of sign-in paths, server-enforced data permissions, and anonymous access in a Fabric app."
+  ms.date: 11/20/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+  module_assessment: true
+  ai_generated_module_assessment: false
+durationInMinutes: 3
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Adventure Works runs its own intranet portal. Users already sign in to the portal with Microsoft Entra ID, and the portal must embed a Fabric app without prompting for a second sign-in. Which path fits?"
+    choices:
+    - content: "The external embed host: `createEmbedHost()` in the portal, `initEmbeddedAuth()` in the app, and `externalEntraExchange` enabled."
+      isCorrect: true
+      explanation: "A trusted parent portal that already holds a delegated Entra identity brokers a single-use handoff code to the embedded app. The portal doesn't send its token to the iframe."
+    - content: "The Fabric SSO popup flow with `ensureSignedInWithFabric()` called on page load."
+      isCorrect: false
+      explanation: "The popup flow opens a separate sign-in window and must run from a user gesture. It doesn't reuse the portal's sign-in, and calling it on page load triggers popup blockers."
+    - content: "Email and password sign-in against the deployed backend."
+      isCorrect: false
+      explanation: "Email and password sign-in works only against a local backend. Deployed Fabric apps authenticate with Microsoft Entra ID only."
+  - content: "You add `https://partner.example.net`, an origin the team doesn't control, to `allowedRedirectUris` to test a demo. What is the main risk?"
+    choices:
+    - content: "Sign-in sessions expire sooner for every user."
+      isCorrect: false
+      explanation: "The redirect list doesn't control session lifetime."
+    - content: "The site can start a sign-in against the app's backend."
+      isCorrect: true
+      explanation: "`allowedRedirectUris` is a security boundary that lists origins allowed to complete sign-in. Extra origins widen that boundary."
+    - content: "The static frontend can no longer load."
+      isCorrect: false
+      explanation: "The redirect list affects sign-in handoff, not whether the frontend files load."
+  - content: "An entity decorated with `@authenticated('*')` and no policy is deployed. A signed-in user calls the API directly. Which result is expected?"
+    choices:
+    - content: "The user can read and change only their own rows."
+      isCorrect: false
+      explanation: "Without a policy, no row-level filtering is applied, so ownership isn't enforced."
+    - content: "The user is denied because the UI doesn't send the request."
+      isCorrect: false
+      explanation: "The server doesn't know about the UI. Callers can send requests directly."
+    - content: "The user can create, read, update, and delete every row."
+      isCorrect: true
+      explanation: "The rule grants all actions to any signed-in user, and there's no row-level restriction."
+  - content: "A team wants unauthenticated visitors to read a public recall notice, but only signed-in owners to change it. Which design fits, and what must be in place before the schema applies?"
+    choices:
+    - content: "`@anonymous('read')` plus `@authenticated(['create', 'update', 'delete'], { policy })` with an owner policy. A Fabric tenant administrator must enable anonymous data access."
+      isCorrect: true
+      explanation: "Combining roles gives each audience a different action set, and the policy restricts changes to the owner. Without the tenant setting, applying a schema that grants the anonymous role fails."
+    - content: "`@anonymous('*')` and protected static hosting."
+      isCorrect: false
+      explanation: "This grants every action to anyone who reaches the data API. Protected hosting controls only who loads the frontend files."
+    - content: "`@authenticated('read')` and public static hosting."
+      isCorrect: false
+      explanation: "Public hosting doesn't make data readable without a session. Reads still require the authenticated role."
+  - content: "You have one test account and need to confirm that owner-only rules hide another user's record. Which approach provides that evidence?"
+    choices:
+    - content: "Hide the record in the UI and check that it's missing."
+      isCorrect: false
+      explanation: "A UI check doesn't prove that the server enforces the rule."
+    - content: "Create a record on a lab-only entity with a different owner ID, then check that it's hidden and can't be changed."
+      isCorrect: true
+      explanation: "A lab-only create rule can set any owner. The test then proves that the server's read, update, and delete policies run for the signed-in user."
+    - content: "Review the TypeScript types and confirm that the policy compiles."
+      isCorrect: false
+      explanation: "Compiling shows that the syntax is valid, not that the deployed server rejects the operation."

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.secure-fabric-app-sso-data-permissions.choose-sign-in-path
+title: Choose a sign-in path for a Fabric app
+metadata:
+  title: Choose a sign-in path for a Fabric app
+  description: "Compare the Fabric SSO popup, embedded mode, direct Entra token exchange, and external embed host, and learn how redirect origins protect sign-in."
+  ms.date: 11/20/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-choose-sign-in-path.md)]

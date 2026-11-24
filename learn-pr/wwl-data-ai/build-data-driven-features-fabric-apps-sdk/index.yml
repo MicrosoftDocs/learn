@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.wwl.build-data-driven-features-fabric-apps-sdk
+metadata:
+  title: Build data-driven app features using the Fabric Apps SDK
+  description: "Build app features that query, change, and store data through the typed Fabric Apps client, and learn the client behaviors that cause silent bugs."
+  ms.date: 11/23/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: module
+  ms.service: fabric
+  ai-usage: ai-generated
+title: Build data-driven app features using the Fabric Apps SDK
+summary: Build app features that list, filter, summarize, edit, and attach files to data by using the typed Fabric Apps client. Learn the client behaviors that cause silent bugs, such as page truncation and field selection.
+abstract: |
+  After completing this module, you will be able to:
+  - Compose a typed client and query data with select, where, orderBy, and relationship paths.
+  - Page through large result sets with cursors and summarize data with aggregation and grouping.
+  - Create, update, delete, and upsert records, and handle failures.
+  - Configure a Storage folder and upload, list, download, and delete files within folder permissions.
+prerequisites: |
+  - Working knowledge of TypeScript with async and await.
+  - Familiarity with React state and data fetching.
+  - Basic understanding of GraphQL concepts. You don't write raw GraphQL.
+  - A Fabric workspace with capacity. Storage isn't available in Power BI Pro workspaces.
+  - A Fabric Apps project with the data service enabled that runs locally and deploys.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- fabric
+subjects:
+- data-engineering
+units:
+- learn.wwl.build-data-driven-features-fabric-apps-sdk.introduction
+- learn.wwl.build-data-driven-features-fabric-apps-sdk.query-data-typed-client
+- learn.wwl.build-data-driven-features-fabric-apps-sdk.exercise-build-issue-list
+- learn.wwl.build-data-driven-features-fabric-apps-sdk.page-and-summarize-results
+- learn.wwl.build-data-driven-features-fabric-apps-sdk.exercise-fix-truncation-summarize
+- learn.wwl.build-data-driven-features-fabric-apps-sdk.change-records-handle-failures
+- learn.wwl.build-data-driven-features-fabric-apps-sdk.exercise-attach-photos-challenge
+- learn.wwl.build-data-driven-features-fabric-apps-sdk.knowledge-check
+- learn.wwl.build-data-driven-features-fabric-apps-sdk.summary
+badge:
+  uid: learn.wwl.build-data-driven-features-fabric-apps-sdk.badge

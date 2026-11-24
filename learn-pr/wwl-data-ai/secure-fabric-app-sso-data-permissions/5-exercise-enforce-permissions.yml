@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.secure-fabric-app-sso-data-permissions.exercise-enforce-permissions
+title: Exercise - Enforce owner-scoped permissions and test cross-owner access
+metadata:
+  title: Exercise - Enforce owner-scoped permissions and test cross-owner access
+  description: "Write owner-only rules for a lab entity, create a record owned by another user, and verify that the server hides and protects it."
+  ms.date: 11/20/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-exercise-enforce-permissions.md)]

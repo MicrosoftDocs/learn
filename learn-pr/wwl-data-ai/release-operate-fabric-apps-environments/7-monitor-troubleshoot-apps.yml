@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.release-operate-fabric-apps-environments.monitor-troubleshoot-apps
+title: Monitor a Fabric app and diagnose failures by layer
+metadata:
+  title: Monitor a Fabric app and diagnose failures by layer
+  description: "Monitor an app with App Metrics and diagnose deployment, authentication, schema, and secret failures by layer."
+  ms.date: 11/20/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/7-monitor-troubleshoot-apps.md)]

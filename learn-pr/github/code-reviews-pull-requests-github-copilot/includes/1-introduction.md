@@ -2,8 +2,7 @@ Code reviews are vital for maintaining code quality and collaboration, but they 
 
 GitHub Copilot helps resolve these challenges by acting as a collaborative reviewer and assistant. It doesn't replace humans but works alongside them-catching issues, suggesting improvements, drafting summaries, and even auto-fixing vulnerabilities. You can also customize Copilot with your own review guidelines, so it looks for the same patterns and standards you care about as a human reviewer. This means Copilot not only accelerates reviews but also enforces your team's best practices consistently across repositories. The result is faster reviews, higher quality, and less cognitive load for teams.
 
-Premium Request Units (PRUs) power Copilot's most advanced capabilities. Each time you ask Copilot to perform a premium-level task-such as reviewing an entire pull request, running in agent mode, or generating complex multi-step suggestions-it consumes a PRU. These premium requests give Copilot the additional processing power and context depth it needs to deliver richer reasoning, stronger best-practice checks, and more reliable outputs. Later in the course, you'll learn how to monitor your PRU usage, optimize your plan, and make the most of each premium request.
-
+Copilot code review uses AI credits for model interactions, based on the model and tokens processed, and GitHub Actions compute for agentic capabilities in private repositories. Public-repository runner use is free; self-hosted runners don't draw on included compute. Later in this module, you'll learn to monitor usage and costs.
 
 ## Learning objectives
 
@@ -13,7 +12,7 @@ By the end of this module, you'll be able to:
 - Identify the key features Copilot adds to the review process.
 - Request and interpret Copilot reviews on GitHub.com and understand their limits.
 - Run Copilot reviews locally in your IDE and apply custom instructions.
-- Leverage Premium Request Units (PRUs) for deeper, context-rich analysis.
+- Explain how Copilot code review consumes AI credits and contributes to GitHub Actions compute usage.
 - Automate Copilot reviews across repositories with rulesets and status checks.
 - Apply Copilot's suggestions responsibly, combining them with human judgment and testing.
 

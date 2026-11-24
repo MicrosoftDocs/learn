@@ -1,0 +1,7 @@
+Most apps need data that an organization already governs. In Microsoft Fabric, that data lives in warehouses, lakehouses, SQL databases, and semantic models, each with its own permissions. A Fabric app reaches it through connectors, and the most important decision is which identity runs each query: the app, or the person using it.
+
+The analysts at Adventure Works Cycles maintain a warehouse of inventory data and a semantic model of sales performance in Fabric. You build an app that shows shared inventory levels and per-manager sales figures. You must decide which data the app accesses as itself and which data each signed-in manager accesses under their own permissions, and then prove that both connections return data before building any screens.
+
+In this module, you explore the connector types and the application and delegated identity modes. You learn how to find, add, inspect, and invoke a connector from the Rayfin CLI, how entity connectors give typed access to tabular sources, and how a semantic model connector runs DAX queries. You also learn which controls limit connector access and what sharing an app does and doesn't grant. Hands-on exercises in your own Fabric tenant let you add two connectors, build an inventory view and a sales view, deploy them, and reason about who can see what.
+
+By the end of this module, you're able to bring existing Fabric data into an app and choose the identity that accesses it.

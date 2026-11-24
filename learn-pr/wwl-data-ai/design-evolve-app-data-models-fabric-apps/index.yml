@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.wwl.design-evolve-app-data-models-fabric-apps
+metadata:
+  title: Design and evolve app data models using Fabric Apps
+  description: "Define entities and relationships in TypeScript for a Fabric app, apply schema changes, and evolve the model without losing data."
+  ms.date: 11/20/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: module
+  ms.service: fabric
+  ai-usage: ai-generated
+title: Design and evolve app data models using Fabric Apps
+summary: Design the data model for a Fabric app by defining entities and relationships in TypeScript. Learn how schema changes reach the database and how to evolve a model safely.
+abstract: |
+  After completing this module, you're able to:
+  - Define entities with decorators, field types, and modifiers that generate a SQL schema.
+  - Model one-to-many relationships and use a join entity when a many-to-many relationship is required.
+  - Register entities and apply schema changes with `rayfin up` and `rayfin up db apply`.
+  - Assess a schema change for data-loss risk before you approve `--force`.
+prerequisites: |
+  - Working knowledge of TypeScript classes and decorators.
+  - Familiarity with relational modeling concepts such as primary keys, foreign keys, and one-to-many relationships.
+  - Permission to deploy to a Fabric workspace that has capacity, in a tenant where a Fabric administrator enabled Fabric Apps.
+  - Node.js 24 installed locally.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- fabric
+subjects:
+- data-engineering
+units:
+- learn.wwl.design-evolve-app-data-models-fabric-apps.introduction
+- learn.wwl.design-evolve-app-data-models-fabric-apps.define-entities-fields
+- learn.wwl.design-evolve-app-data-models-fabric-apps.exercise-define-issue-entity
+- learn.wwl.design-evolve-app-data-models-fabric-apps.model-relationships-apply-schema
+- learn.wwl.design-evolve-app-data-models-fabric-apps.exercise-relate-issues-stores
+- learn.wwl.design-evolve-app-data-models-fabric-apps.evaluate-schema-changes
+- learn.wwl.design-evolve-app-data-models-fabric-apps.exercise-evolve-schema
+- learn.wwl.design-evolve-app-data-models-fabric-apps.exercise-extend-model
+- learn.wwl.design-evolve-app-data-models-fabric-apps.knowledge-check
+- learn.wwl.design-evolve-app-data-models-fabric-apps.summary
+badge:
+  uid: learn.wwl.design-evolve-app-data-models-fabric-apps.badge
