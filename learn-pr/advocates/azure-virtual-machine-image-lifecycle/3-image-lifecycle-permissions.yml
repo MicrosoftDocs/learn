@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-virtual-machine-image-lifecycle.image-lifecycle-permissions
+metadata:
+  title: "Image Lifecycle Permissions"
+  description: "Separate build, publication, approval, and deployment identities, then establish network, staging, policy, and quota prerequisites."
+  ms.date: "11/21/2026"
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: "Image lifecycle permissions"
+durationInMinutes: 20
+content: |
+  [!include[](includes/3-image-lifecycle-permissions.md)]

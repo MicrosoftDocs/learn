@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-virtual-machine-image-lifecycle.summary
+metadata:
+  title: "Summary"
+  description: "Review image release, deployment, maintenance, withdrawal, and recovery decisions, and consult the supporting official references."
+  ms.date: "11/21/2026"
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: "Summary"
+durationInMinutes: 3
+content: |
+  [!include[](includes/8-summary.md)]
