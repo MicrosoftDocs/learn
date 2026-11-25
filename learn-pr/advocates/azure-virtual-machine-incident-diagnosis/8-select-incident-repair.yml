@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-virtual-machine-incident-diagnosis.select-incident-repair
+metadata:
+  title: "Decide Whether to Start the Worker, Fix the Log Filter, or Change the Query Scope"
+  description: "Choose whether to repair the worker, collection rule, or dashboard query, then verify recovery with fresh evidence."
+  ms.date: 11/22/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: "Decide whether to start the worker, fix the log filter, or change the query scope"
+durationInMinutes: 8
+content: |
+  [!include[](includes/8-select-incident-repair.md)]

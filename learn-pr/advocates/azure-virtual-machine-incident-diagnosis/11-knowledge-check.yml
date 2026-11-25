@@ -1,0 +1,72 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-virtual-machine-incident-diagnosis.knowledge-check
+metadata:
+  title: "Module Assessment"
+  description: "Assess your ability to diagnose missing order completions, choose a narrow repair, and verify processing and notification delivery."
+  ms.date: 11/22/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+  module_assessment: true
+title: "Module assessment"
+durationInMinutes: 5
+content: |
+  Choose one answer for each question. Use the evidence available to the on-call engineer, not just the dashboard symptom.
+quiz:
+  questions:
+  - content: "ContosoLinuxA still writes `user.warning` completions locally. Its data collection rule now requires Error, but the approved minimum is Warning. Which change restores collection without collecting more than the approved rule allows?"
+    choices:
+    - content: "Restore the minimum for the `user` facility to Warning."
+      isCorrect: true
+      explanation: "Correct. Warning includes the worker's messages and more severe events without collecting the additional levels included by Debug."
+    - content: "Leave the minimum at Error and restart Azure Monitor Agent."
+      isCorrect: false
+      explanation: "Incorrect. Restarting the agent leaves the Error threshold in place, so the rule still excludes Warning messages."
+    - content: "Lower the minimum for the `user` facility to Debug."
+      isCorrect: false
+      explanation: "Incorrect. Debug includes less severe messages than the approved Warning threshold."
+  - content: "ContosoWinSrvB has a recent heartbeat but no new completions in the workspace. Which check best distinguishes a stopped worker from a log collection failure?"
+    choices:
+    - content: "Compare the VM's availability in Resource Health with CPU usage over the same interval."
+      isCorrect: false
+      explanation: "Incorrect. Resource Health and host CPU describe the VM, not whether this worker emitted an event."
+    - content: "Compare worker service transitions in the local System log with `OrderWorker` completions in the local Application log."
+      isCorrect: true
+      explanation: "Correct. Service Control Manager records show service transitions; local Application events show whether the worker emitted completions. Comparing them distinguishes a stop from a delivery gap."
+    - content: "Compare the agent's latest heartbeat with its extension provisioning status."
+      isCorrect: false
+      explanation: "Incorrect. Heartbeat and provisioning status describe the agent and extension. Neither establishes that the worker ran."
+  - content: "A data collection rule was edited at `10:00Z`. Activity Log export to the workspace began at `10:15Z` that day. Where should the engineer look for the earlier edit?"
+    choices:
+    - content: "In the workspace's `AzureActivity` table, filtered to the rule's resource ID."
+      isCorrect: false
+      explanation: "Incorrect. The workspace export began after the write. Enabling export doesn't backfill earlier operations."
+    - content: "In the native subscription Activity Log, filtered to the rule's resource ID."
+      isCorrect: true
+      explanation: "Correct. The native Activity Log records the earlier write against the data collection rule without requiring a workspace export."
+    - content: "In the native subscription Activity Log, filtered to the VM's resource ID."
+      isCorrect: false
+      explanation: "Incorrect. The edit targeted the rule, not the associated virtual machine. Searching the VM resource ID can miss the write."
+  - content: "A repair took effect at `10:12:00Z`. The order owner checked the authoritative order history: for each distinct order below, its **first successful commit** occurred at the listed source UTC. Each local event matches its workspace row. Which row proves both a new commit and delivery after repair?"
+    choices:
+    - content: "Source `10:12:10Z`; ingested `10:13:00Z`."
+      isCorrect: true
+      explanation: "Correct. The order history places the first commit at `10:12:10Z`, after the repair. The matching record was ingested later, at `10:13:00Z`."
+    - content: "Source `10:11:55Z`; ingested `10:12:15Z`."
+      isCorrect: false
+      explanation: "Incorrect. The first commit was at `10:11:55Z`, before the repair. The later ingestion time doesn't move that commit past the repair."
+    - content: "Source `10:11:50Z`; ingested `10:13:10Z`."
+      isCorrect: false
+      explanation: "Incorrect. The first commit was at `10:11:50Z`, before the repair. Its later ingestion establishes delivery, not new work."
+  - content: "An action-group test email reached the on-call mailbox. What evidence would establish that the responder also received the *actual rule's firing notification*?"
+    choices:
+    - content: "The rule is enabled, its evaluation succeeded, and the action-group test email arrived."
+      isCorrect: false
+      explanation: "Incorrect. An action-group test is a sample, not the firing notification from the scheduled rule."
+    - content: "An event matched the query, the alert fired, and Azure later marked the alert resolved."
+      isCorrect: false
+      explanation: "Incorrect. Resolution doesn't establish that the recipient received the firing notification. A resolved message can refer to the same instance."
+    - content: "An event matched the query, the alert fired, and the responder received the **Fired** notification for that instance."
+      isCorrect: true
+      explanation: "Correct. The instance identifies the alert, and the Fired condition in the recipient's message distinguishes the firing notification from a resolution or sample."

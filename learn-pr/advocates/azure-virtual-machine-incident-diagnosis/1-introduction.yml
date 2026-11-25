@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-virtual-machine-incident-diagnosis.introduction
+metadata:
+  title: "Introduction"
+  description: "Use a gap in order completions on two virtual machines to define the incident, the evidence needed, and the permissions required."
+  ms.date: 11/22/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: "Introduction"
+durationInMinutes: 3
+content: |
+  [!include[](includes/1-introduction.md)]

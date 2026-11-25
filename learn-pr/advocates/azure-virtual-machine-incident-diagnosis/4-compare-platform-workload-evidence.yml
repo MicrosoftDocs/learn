@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-virtual-machine-incident-diagnosis.compare-platform-workload-evidence
+metadata:
+  title: "Cross-Check Azure Platform Signals Against Guest Logs and Workload Results"
+  description: "Compare Azure platform signals, guest logs, and independent order results to find out what each source can establish."
+  ms.date: 11/22/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: "Cross-check Azure platform signals against guest logs and workload results"
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-compare-platform-workload-evidence.md)]

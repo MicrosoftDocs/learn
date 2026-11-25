@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-virtual-machine-incident-diagnosis.configure-guest-log-collection
+metadata:
+  title: "Configure Azure Monitor to Collect Windows and Linux VM Logs"
+  description: "Configure Windows Event Log and Linux Syslog collection, check access and network paths, and verify delivery to the intended Log Analytics workspace."
+  ms.date: 11/22/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: "Configure Azure Monitor to collect Windows and Linux VM logs"
+durationInMinutes: 13
+content: |
+  [!include[](includes/2-configure-guest-log-collection.md)]

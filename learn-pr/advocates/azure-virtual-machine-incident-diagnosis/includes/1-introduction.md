@@ -1,0 +1,15 @@
+At `10:05 UTC`, Contoso's order desk calls the on-call engineer. The last completions on the dashboard from ContosoLinuxA and ContosoWinSrvB are both stamped just before `10:00`. At `10:00`, an Azure Monitor data collection rule for ContosoLinuxA changed: the minimum severity for forwarding application Syslog messages to Log Analytics went from Warning to Error. That rule doesn't apply to ContosoWinSrvB. The desk needs to know which orders stopped processing and which finished without showing up.
+
+Each VM runs a **worker**: a background process that picks up orders, processes them, and writes a local event when each order is complete. Restarting both VMs before checking those local records could interrupt a healthy worker without fixing the dashboard.
+
+You want to identify which orders, if any, are affected before changing either VM. Azure Resource Health can show you whether Azure reported an availability problem for that VM. The Azure Activity Log can show whether the data collection rule was modified around the time the records disappeared. Neither tells you whether a particular order finished.
+
+To trace one order, read the worker's local record in the Linux journal on ContosoLinuxA or in **Event Viewer > Windows Logs > Application** on ContosoWinSrvB. Azure Monitor Agent collects the records selected by a data collection rule. Search the destination Log Analytics workspace for the same **completion ID**: the identifier the application writes into the message for that occurrence. A Windows **Event ID**, by contrast, identifies a type of event and can repeat for every completed order.
+
+After a repair, look for a new completion event in both places. Check notification delivery separately: Azure Monitor Alerts shows whether a rule fired, its action group specifies whom to notify, and the recipient can confirm whether the message arrived. Keep three boundaries in mind throughout the investigation:
+
+1. **Identify the VM.** Its Azure resource ID is the full path naming the subscription, resource group, resource type, and VM. The computer name comes from the guest and can be the same on two VMs.
+1. **Identify the search.** Record the destination workspace and time interval. Searching the wrong workspace for longer won't find an event delivered elsewhere.
+1. **Separate inspection from repair.** Azure role-based access control determines what you can do and where. **Reader** on the VM and collection rule lets you inspect their settings; **Log Analytics Reader** on the workspace lets you query its logs. Changing a rule requires write permission on that rule, not subscription-wide access. For example, **Contributor** on the rule's resource group can edit it but can't assign roles. Guest sign-in, access to local logs, and permission to start a service are separate on both operating systems.
+
+:::image type="content" source="../media/order-completion-gap.svg" alt-text="Diagram that shows why two workers disappear from one dashboard: a filter drops Linux events, while the Windows service has stopped.":::
