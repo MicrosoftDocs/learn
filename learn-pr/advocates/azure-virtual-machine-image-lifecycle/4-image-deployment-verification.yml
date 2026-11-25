@@ -3,7 +3,7 @@ uid: learn.devrel.azure-virtual-machine-image-lifecycle.image-deployment-verific
 metadata:
   title: "Image Deployment and Verification"
   description: "Enforce the active approved image and current release decision, then distinguish resource identity, guest execution, and learner access."
-  ms.date: "11/21/2026"
+  ms.date: 11/21/2026
   author: Orin-Thomas
   ms.author: orthomas
   ms.topic: unit
