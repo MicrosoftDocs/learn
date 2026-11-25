@@ -3,7 +3,7 @@ uid: learn.devrel.azure-virtual-machine-image-lifecycle
 metadata:
   title: "Manage Azure Virtual Machine Image Lifecycle"
   description: "A shared image gives Azure virtual machines a consistent starting point, but a mistake in that image can affect every machine built from it."
-  ms.date: "11/21/2026"
+  ms.date: 11/21/2026
   author: Orin-Thomas
   ms.author: orthomas
   ms.topic: module-standard-concept-based

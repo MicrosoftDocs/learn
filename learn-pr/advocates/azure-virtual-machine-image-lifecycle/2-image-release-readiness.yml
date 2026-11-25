@@ -3,7 +3,7 @@ uid: learn.devrel.azure-virtual-machine-image-lifecycle.image-release-readiness
 metadata:
   title: "Image Release Readiness"
   description: "Decide release eligibility from regional replication, source compatibility, canary evidence, and a protected release manifest."
-  ms.date: "11/21/2026"
+  ms.date: 11/21/2026
   author: Orin-Thomas
   ms.author: orthomas
   ms.topic: unit
