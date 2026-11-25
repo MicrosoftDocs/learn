@@ -3,7 +3,7 @@ uid: learn.devrel.azure-virtual-machine-image-lifecycle.introduction
 metadata:
   title: "Introduction"
   description: "Explore the classroom image scenario, Image Builder validation, manual publication, and the gallery image model."
-  ms.date: "11/21/2026"
+  ms.date: 11/21/2026
   author: Orin-Thomas
   ms.author: orthomas
   ms.topic: unit

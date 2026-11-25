@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-virtual-machine-incident-diagnosis.troubleshoot-telemetry-gaps
+metadata:
+  title: "Troubleshoot Missing Logs and Notifications, Then Remove Temporary Resources"
+  description: "Investigate missing records and notifications, then remove temporary diagnostics without disrupting shared monitoring."
+  ms.date: 11/22/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: "Troubleshoot missing logs and notifications, then remove temporary resources"
+durationInMinutes: 6
+content: |
+  [!include[](includes/10-troubleshoot-telemetry-gaps.md)]

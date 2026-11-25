@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-virtual-machine-incident-diagnosis.trace-guest-events
+metadata:
+  title: "Trace a Guest Log Event From the VM to Log Analytics"
+  description: "Follow a guest event through source selection, agent configuration, transformations, and routing to its destination."
+  ms.date: 11/22/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: "Trace a guest log event from the VM to Log Analytics"
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-trace-guest-events.md)]

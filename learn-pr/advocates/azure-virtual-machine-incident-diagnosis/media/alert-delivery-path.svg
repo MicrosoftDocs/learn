@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1124" height="280" viewBox="0 0 1124 280" role="img" aria-labelledby="fig-title fig-desc" fill="#000000" font-family="Arial, Helvetica, sans-serif">
+<title id="fig-title">Trace a log alert to confirmed receipt</title>
+<desc id="fig-desc">Follow one real matching event from its workspace query row to the fired alert for the same resource, then to the intended recipient’s confirmation. Record all three times in UTC. Check the evaluation window and frequency, ingestion lag, recipient verification, and suppression if evidence is missing. A test of the action group alone does not establish end-to-end delivery.</desc>
+<metadata>{"sourceRoot":"C:\\Azure-Icons","icons":["monitor\\00009-icon-service-Log-Analytics-Workspaces.svg","management + governance\\00002-icon-service-Alerts.svg"]}</metadata>
+<defs><symbol id="icon-query" viewBox="0 0 18 18"><defs><linearGradient id="a997e203-1d7d-4cb9-b131-5dc44e029b46" x1="5.23" y1="17.45" x2="5.23" y2="8.09" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#1988d9" /><stop offset="0.9" stop-color="#54aef0" /></linearGradient><linearGradient id="e122e9d8-aee5-4f1a-a60e-b1eae355daa5" x1="11.5" y1="12.45" x2="11.5" y2="0.55" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#198ab3" /><stop offset="0.01" stop-color="#198bb4" /><stop offset="0.44" stop-color="#27b2d7" /><stop offset="0.79" stop-color="#2fcbed" /><stop offset="1" stop-color="#32d4f5" /></linearGradient></defs><path d="M5.59,13.13H9.91v4.32H5.59ZM1.15,17.45H4.87V13.13H.55v3.72A.6.6,0,0,0,1.15,17.45Zm-.6-5H4.87V8.09H.55Z" fill="url(#a997e203-1d7d-4cb9-b131-5dc44e029b46)" /><path d="M11.5.55a5.89,5.89,0,0,1,5.95,6,5.89,5.89,0,0,1-5.95,5.95H5.55V6.5A5.89,5.89,0,0,1,11.5.55Z" fill-rule="evenodd" fill="url(#e122e9d8-aee5-4f1a-a60e-b1eae355daa5)" /><rect x="7.59" y="5.65" width="1.36" height="4.08" fill="#fff" /><rect x="10.31" y="7.01" width="1.36" height="2.72" fill="#fff" /><rect x="13.03" y="4.29" width="1.36" height="5.44" fill="#fff" /></symbol>
+<symbol id="icon-alert" viewBox="0 0 18 18"><defs><linearGradient id="e4e1e494-21f1-4e9c-a6fa-0993efff08d3" x1="9" y1="17.2" x2="9" y2="-3.28" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#5e9624" /><stop offset="0.18" stop-color="#629c25" /><stop offset="0.44" stop-color="#6dae2a" /><stop offset="0.73" stop-color="#7fcb30" /><stop offset="0.82" stop-color="#86d633" /></linearGradient></defs><g><path d="M17.5,2.5V13.33a.58.58,0,0,1-.58.58H12.4a.15.15,0,0,0-.15.14V15.8a.28.28,0,0,1-.45.23L9.08,13.94l-.09,0H1.08a.58.58,0,0,1-.58-.58V2.5a.58.58,0,0,1,.58-.59H16.92A.58.58,0,0,1,17.5,2.5Z" fill="url(#e4e1e494-21f1-4e9c-a6fa-0993efff08d3)" /><path d="M9.54,9.63H8.38A.36.36,0,0,1,8,9.29L7.8,3.43a.35.35,0,0,1,.35-.36h1.7a.35.35,0,0,1,.35.37L9.89,9.3A.35.35,0,0,1,9.54,9.63Z" fill="#fff" /><rect x="8.13" y="10.62" width="1.69" height="1.69" rx="0.61" fill="#fff" /></g></symbol>
+<symbol id="icon-recipient" viewBox="0 0 18 18"><rect x="1" y="3" width="16" height="12" rx="1.5" fill="#e1f1e6" stroke="#38644a"/><path d="M2 4 L9 10 L16 4" fill="none" stroke="#38644a" stroke-width="1.2"/></symbol><marker id="arrow" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" viewBox="0 0 12 12" refX="10" refY="6" orient="auto"><path d="M 0 1 L 10 6 L 0 11 Z" fill="#47637a"/></marker></defs>
+<rect data-kind="background" x="0" y="0" width="1124" height="280" fill="#ffffff"/>
+<text id="heading" x="32" y="49" font-size="32" font-weight="bold">Trace an alert from query to mailbox</text>
+<rect id="query-card" data-card="true" x="32" y="78" width="322" height="134" rx="12" fill="#f2f7fc" stroke="#527ea2" stroke-width="1.6"/>
+<use href="#icon-query" x="49" y="94" width="34" height="34" aria-hidden="true"/>
+<text id="query-heading" x="94" y="119" font-size="21" font-weight="bold" data-owner="query-card">1. Find the query row</text>
+<text id="query-0" x="50" y="159" font-size="17" data-owner="query-card">Check scope, threshold and window.</text>
+<text id="query-1" x="50" y="184" font-size="17" data-owner="query-card">Allow for ingestion delay.</text>
+<path id="query-to-alert" data-arrow="true" d="M 363 145 h 28" marker-end="url(#arrow)" fill="none" stroke="#47637a" stroke-width="2.4"/>
+<rect id="alert-card" data-card="true" x="401" y="78" width="322" height="134" rx="12" fill="#f7f6fb" stroke="#8677a1" stroke-width="1.6"/>
+<use href="#icon-alert" x="418" y="94" width="34" height="34" aria-hidden="true"/>
+<text id="alert-heading" x="463" y="119" font-size="21" font-weight="bold" data-owner="alert-card">2. Match the fired alert</text>
+<text id="alert-0" x="419" y="159" font-size="17" data-owner="alert-card">Match resource and evaluation time.</text>
+<text id="alert-1" x="419" y="184" font-size="17" data-owner="alert-card">Check action group and suppression.</text>
+<path id="alert-to-mail" data-arrow="true" d="M 732 145 h 28" marker-end="url(#arrow)" fill="none" stroke="#47637a" stroke-width="2.4"/>
+<rect id="recipient-card" data-card="true" x="770" y="78" width="322" height="134" rx="12" fill="#f2f8f4" stroke="#65836b" stroke-width="1.6"/>
+<use href="#icon-recipient" x="787" y="94" width="34" height="34" aria-hidden="true"/>
+<text id="recipient-heading" x="832" y="119" font-size="21" font-weight="bold" data-owner="recipient-card">3. Confirm receipt</text>
+<text id="recipient-0" x="788" y="159" font-size="17" data-owner="recipient-card">Match the recipient’s message</text>
+<text id="recipient-1" x="788" y="184" font-size="17" data-owner="recipient-card">to the actual alert.</text>
+<text id="time-note" x="32" y="253" font-size="19" font-weight="bold">Record all three times in UTC.</text>
+<text id="limit" x="470" y="253" font-size="18">An action-group test alone does not prove the rule fired.</text>
+</svg>

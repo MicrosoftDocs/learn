@@ -1,0 +1,54 @@
+### YamlMime:Module
+uid: learn.devrel.azure-virtual-machine-incident-diagnosis
+metadata:
+  title: "Diagnose Incidents on Azure Virtual Machines"
+  description: Diagnose missing order completions on Windows and Linux Azure virtual machines by comparing workload, guest, and platform evidence and verifying recovery.
+  ms.date: 11/22/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: module-standard-concept-based
+  ms.service: azure-virtual-machines
+  ai-usage: ai-assisted
+title: "Diagnose incidents on Azure virtual machines"
+summary: |
+  Two Azure virtual machines can show the same symptom and need different repairs. A dashboard shows no completed orders from either a Linux VM or a Windows VM. The Linux worker is still processing orders, but a Syslog filter drops its completion messages. On Windows, the order-processing service has stopped, so there are no new completions to collect. Configure monitoring before an incident so you can trace each event and decide which repair the evidence supports.
+abstract: |
+  By the end of this module, you can:
+
+  - Distinguish a problem with the workload (the application doing the work) from a problem collecting its logs, searching the wrong resources, or running the VM on Azure.
+  - Build a timeline for each VM that distinguishes when an event happened from when you could find it.
+  - Distinguish a collection filter that excludes valid events from a stopped worker. On Linux, trace Syslog messages; on Windows, trace records from the Windows Event Log.
+  - Show that the application produced new events, the alert rule detected a test event, and the intended recipient received the notification.
+  - Hand the incident to the next investigator with a record of what you ruled out, what remains unknown, and what you cleaned up.
+prerequisites: |
+  This module assumes familiarity with two topics:
+
+  - Azure virtual machines and basic Windows and Linux administration.
+  - Azure Monitor and Log Analytics.
+
+  You don't need a live Azure subscription to follow the worked incident.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- advanced
+roles:
+- administrator
+products:
+- azure-virtual-machines
+- azure-monitor
+subjects:
+- infrastructure
+units:
+- learn.devrel.azure-virtual-machine-incident-diagnosis.introduction
+- learn.devrel.azure-virtual-machine-incident-diagnosis.configure-guest-log-collection
+- learn.devrel.azure-virtual-machine-incident-diagnosis.build-incident-timeline
+- learn.devrel.azure-virtual-machine-incident-diagnosis.compare-platform-workload-evidence
+- learn.devrel.azure-virtual-machine-incident-diagnosis.trace-guest-events
+- learn.devrel.azure-virtual-machine-incident-diagnosis.correlate-incident-records
+- learn.devrel.azure-virtual-machine-incident-diagnosis.inspect-worker-services
+- learn.devrel.azure-virtual-machine-incident-diagnosis.select-incident-repair
+- learn.devrel.azure-virtual-machine-incident-diagnosis.confirm-alert-delivery
+- learn.devrel.azure-virtual-machine-incident-diagnosis.troubleshoot-telemetry-gaps
+- learn.devrel.azure-virtual-machine-incident-diagnosis.knowledge-check
+- learn.devrel.azure-virtual-machine-incident-diagnosis.summary
+badge:
+  uid: learn.devrel.azure-virtual-machine-incident-diagnosis.badge

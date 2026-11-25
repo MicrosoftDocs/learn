@@ -3,7 +3,7 @@ uid: learn.devrel.azure-virtual-machine-image-lifecycle.knowledge-check
 metadata:
   title: "Module Assessment"
   description: "Assess image validation, identity, regional readiness, deployment evidence, and rollback decisions in the classroom scenario."
-  ms.date: "11/21/2026"
+  ms.date: 11/21/2026
   author: Orin-Thomas
   ms.author: orthomas
   ms.topic: unit

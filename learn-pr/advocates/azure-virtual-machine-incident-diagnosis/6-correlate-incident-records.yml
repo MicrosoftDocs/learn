@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-virtual-machine-incident-diagnosis.correlate-incident-records
+metadata:
+  title: "Correlate Worker Events, Agent Heartbeats, and Rule Changes With KQL"
+  description: "Use scoped Kusto queries to correlate worker events, agent heartbeats, and changes to data collection rules."
+  ms.date: 11/22/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: "Correlate worker events, agent heartbeats, and rule changes with KQL"
+durationInMinutes: 7
+content: |
+  [!include[](includes/6-correlate-incident-records.md)]

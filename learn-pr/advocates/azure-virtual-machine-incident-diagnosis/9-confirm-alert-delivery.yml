@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-virtual-machine-incident-diagnosis.confirm-alert-delivery
+metadata:
+  title: "Confirm Alert Delivery and Document the Incident Handoff"
+  description: "Trace a firing notification to the intended recipient, distinguish missing events from missing work, and document the incident handoff."
+  ms.date: 11/22/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: "Confirm alert delivery and document the incident handoff"
+durationInMinutes: 9
+content: |
+  [!include[](includes/9-confirm-alert-delivery.md)]
