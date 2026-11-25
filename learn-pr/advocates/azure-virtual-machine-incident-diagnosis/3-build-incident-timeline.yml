@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-virtual-machine-incident-diagnosis.build-incident-timeline
+metadata:
+  title: "Identify Affected Orders and Build a UTC Incident Timeline"
+  description: "Identify affected orders and distinguish event emission, cloud receipt, ingestion, and observation on a UTC timeline."
+  ms.date: 11/22/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: "Identify affected orders and build a UTC incident timeline"
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-build-incident-timeline.md)]

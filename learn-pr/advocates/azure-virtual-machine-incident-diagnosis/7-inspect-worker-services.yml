@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-virtual-machine-incident-diagnosis.inspect-worker-services
+metadata:
+  title: "Check the Worker Service and Local Logs Inside Each VM"
+  description: "Use read-only Linux and Windows checks to distinguish a stopped worker from a collection failure and reconcile orders against committed results."
+  ms.date: 11/22/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: "Check the worker service and local logs inside each VM"
+durationInMinutes: 9
+content: |
+  [!include[](includes/7-inspect-worker-services.md)]

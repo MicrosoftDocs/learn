@@ -1,0 +1,46 @@
+An absent application event is an observation to explain, not a diagnosis. On ContosoLinuxA, the worker kept logging completions locally while the Syslog rule excluded them. On ContosoWinSrvB, the service stopped writing its completion events; other providers can still write to the Application log. Those findings justified a filter correction on ContosoLinuxA and a service start on ContosoWinSrvB. A heartbeat or an empty query alone wouldn't have justified either change.
+
+Prove each recovery claim separately: a new commit in the order system for processing, the same fresh event at the intended workspace for collection, and the recipient's **Fired** message for the alert instance for notification delivery. In the handoff, say which of those you know, when you observed it, and who owns the rest.
+
+## More info
+
+These official references support the collection, query-store, export, and alert behaviors used in this module.
+
+- [Monitor Azure virtual machines with Azure Monitor](/training/modules/monitor-azure-vm-using-diagnostic-data/)
+- [Collect VM client event logs](/training/modules/monitor-azure-vm-using-diagnostic-data/6-collect-log-data)
+- [Collect Syslog events with Azure Monitor Agent](/azure/azure-monitor/vm/data-collection-syslog)
+- [systemd journal fields](https://www.freedesktop.org/software/systemd/man/latest/systemd.journal-fields.html)
+- [Collect Windows events with Azure Monitor Agent, including XPath filters](/azure/azure-monitor/vm/data-collection-windows-events)
+- [Windows Event table and field definitions](/azure/azure-monitor/reference/tables/event)
+- [Syslog table plans and fields](/azure/azure-monitor/reference/tables/syslog)
+- [Data continuity across table-plan changes](/azure/azure-monitor/logs/logs-table-plans#data-continuity-for-table-plan-changes)
+- [Read local Windows events with Get-WinEvent](/powershell/module/microsoft.powershell.diagnostics/get-winevent)
+- [Troubleshoot Azure Monitor Agent on Linux](/azure/azure-monitor/agents/azure-monitor-agent-troubleshoot-linux-vm)
+- [Linux Syslog forwarding and upload queues](/azure/azure-monitor/agents/azure-monitor-agent-troubleshoot-linux-vm-rsyslog)
+- [Troubleshoot Azure Monitor Agent on Windows: verify the event subscription](/azure/azure-monitor/agents/azure-monitor-agent-troubleshoot-windows-vm#issues-collecting-windows-event-logs)
+- [Guest metrics experiences and query stores](/azure/azure-monitor/vm/metrics-opentelemetry-guest)
+- [Activity Log and export](/azure/azure-monitor/fundamentals/activity-log#export-activity-log)
+- [VM Resource Health states and history](/azure/service-health/resource-health-overview)
+- [Azure CLI Activity Log filters and result limits](/cli/azure/monitor/activity-log#az-monitor-activity-log-list)
+- [DCR associations](/azure/azure-monitor/data-collection/data-collection-rule-associations)
+- [Create log search alert rules, including the identity used for scheduled queries](/azure/azure-monitor/alerts/alerts-create-log-alert-rule#configure-alert-rule-details)
+- [Log alert conditions: dimensions versus the Azure Resource ID target](/azure/azure-monitor/alerts/alerts-create-log-alert-rule#configure-alert-rule-conditions)
+- [Log alert rule health](/azure/azure-monitor/alerts/log-alert-rule-health)
+- [Alert instance filters and retention](/azure/azure-monitor/alerts/alerts-manage-alert-instances)
+- [Create and test action groups](/azure/azure-monitor/alerts/action-groups)
+- [Workspace daily caps and `OverQuota` events](/azure/azure-monitor/logs/daily-cap)
+- [Understand Azure role-assignment scope](/azure/role-based-access-control/scope-overview)
+- [Alert rule access](/azure/azure-monitor/alerts/alerts-overview#azure-role-based-access-control-for-alerts)
+- [VM DCR authoring, portal editing limits, and duplicate data](/azure/azure-monitor/vm/data-collection)
+- [Workbook time parameters and query bindings](/azure/azure-monitor/visualize/workbooks-time#reference-a-time-parameter)
+- [Windows Event and Syslog stream, filter, and destination examples](/azure/azure-monitor/data-collection/data-collection-rule-samples#collect-vm-client-data)
+- [DCR stream metrics and error logs](/azure/azure-monitor/data-collection/data-collection-monitor)
+- [Multi-stage stream and table selection](/azure/azure-monitor/data-collection/data-collection-transformations#design-approach-for-multi-stage-processing)
+- [Private access for VM configuration and log ingestion](/azure/azure-monitor/fundamentals/private-link-vm-kubernetes)
+- [Explicit outbound access for private subnets](/azure/virtual-network/ip-services/default-outbound-access)
+- [Order result handling and retries](/azure/architecture/patterns/competing-consumers#problems-and-considerations)
+- [Azure Monitor timestamp replacement, receipt, ingestion and query availability](/azure/azure-monitor/logs/data-ingestion-time#check-ingestion-time)
+- [Kusto `summarize`: grouping and empty input](/kusto/query/summarize-operator?view=azure-monitor&preserve-view=true)
+- [Kusto `leftanti`: finding expected workers with no observed match](/kusto/query/join-leftanti?view=azure-monitor&preserve-view=true)
+- [Kusto: select the row with the earliest value with `arg_min()`](/kusto/query/arg-min-aggregation-function?view=azure-monitor&preserve-view=true)
+- [Kusto `top`: how a row limit changes the returned sample](/kusto/query/top-operator?view=azure-monitor&preserve-view=true)
