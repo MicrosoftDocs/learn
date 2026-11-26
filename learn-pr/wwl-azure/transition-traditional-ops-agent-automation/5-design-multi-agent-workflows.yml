@@ -3,12 +3,13 @@ uid: learn.wwl.transition-traditional-ops-agent-automation.design-multi-agent-wo
 title: Design multi-agent workflows for infrastructure tasks
 metadata:
   title: Design Multi-Agent Workflows for Infrastructure Tasks
-  description: "This unit walks through the practical steps of designing agent pipelines for common ops workflows."
-  ms.date: 6/11/2026
+  description: "Design validated artifact contracts, bounded orchestration, safe retry decisions and repeatable multi-agent evaluation."
+  ms.date: 11/26/2026
+  ai-usage: ai-assisted
   zone_pivot_groups: video-or-text
   author: petender
   ms.author: petender
   ms.topic: unit
-durationInMinutes: 9
+durationInMinutes: 10
 content: |
   [!include[](includes/5-design-multi-agent-workflows.md)]

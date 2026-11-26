@@ -4,12 +4,12 @@ title: Module assessment
 metadata:
   title: Module Assessment
   description: "Knowledge check for the agentic DevOps module."
-  ms.date: 6/11/2026
+  ms.date: 11/26/2026
   author: petender
   ms.author: petender
   ms.topic: unit
   module_assessment: true
-  ai_generated_module_assessment: false
+  ai_generated_module_assessment: true
 durationInMinutes: 3
 quiz:
   title: ""
@@ -18,46 +18,46 @@ quiz:
     choices:
     - content: "Persistent domain knowledge stored in skill files"
       isCorrect: false
-      explanation: "Persistent domain knowledge helps enforce organizational standards, but it doesn't directly address the coordination between workflow stages. Multi-step orchestration is what replaces manual coordination."
+      explanation: "Shared skills supply reusable domain guidance, but they don't coordinate workflow stages or enforce organizational standards."
     - content: "Multi-step orchestration through a conductor agent"
       isCorrect: true
-      explanation: "A conductor agent coordinates the handoffs between specialized agents, eliminating the need for a human to manually sequence steps and pass outputs between stages."
-    - content: "Automatic injection of coding instructions based on file patterns"
+      explanation: "A configured conductor can coordinate specialized agents and validate handoffs, reducing manual sequencing while preserving required approvals and permission boundaries."
+    - content: "File-scoped coding guidance supplied by a supporting host"
       isCorrect: false
-      explanation: "Auto-injected instructions enforce coding standards on output files, but they don't manage the sequencing and coordination between pipeline stages."
-  - content: "A cloud administrator is building a multi-agent pipeline for environment provisioning. The architecture agent needs to know which Azure services and SKUs the organization has approved. Where should this information be stored?"
+      explanation: "Applicable instructions guide generated output; they don't guarantee compliance or coordinate workflow stages."
+  - content: "Several architecture agents need reusable approved-service and SKU guidance with supporting workflows, without loading every detail into every conversation. Which design best supports this requirement?"
     choices:
     - content: "In the conductor agent's system prompt"
       isCorrect: false
-      explanation: "The conductor manages workflow orchestration, not domain-specific knowledge. Embedding SKU tables in the conductor would bloat its context and make the information unavailable to other agents that need it."
+      explanation: "Embedding all domain guidance in the conductor expands its context and doesn't make that guidance independently reusable by the architecture agents."
     - content: "In an instruction file with an applyTo glob pattern"
       isCorrect: false
-      explanation: "Instructions are auto-injected coding standards tied to file types. Organizational knowledge like approved services and SKUs belongs in a skill that agents read explicitly."
-    - content: "In a shared skill file that the architecture agent reads at runtime"
+      explanation: "Scoped instructions provide guidance for matching file context; a shared skill is better suited to packaging this reusable workflow and its supporting resources for on-demand loading."
+    - content: "In a shared skill package that the selected host can discover and load when relevant"
       isCorrect: true
-      explanation: "Skills store reusable domain knowledge that agents pull explicitly. A shared skill for approved services and SKUs can be read by multiple agents that need this information."
-  - content: "A DevOps engineer designs a multi-agent pipeline where the IaC agent produces Bicep templates and the deployment agent runs them. The engineer later wants to switch from Bicep to Terraform without changing the deployment agent. Which design principle makes this possible?"
+      explanation: "Supporting hosts can load shared skill content on demand, automatically or explicitly where supported. Verify availability, the loaded revision, and applicability; the skill itself neither guarantees compliance nor grants execution authority."
+  - content: "A multi-agent workflow deploys generated Bicep templates. The team replaces the IaC generator with one that produces Terraform configuration. What must be verified before the deployment stage can consume the new output?"
     choices:
-    - content: "Using a conductor agent to delegate tasks"
+    - content: "That the conductor still delegates to an agent with the same name"
       isCorrect: false
-      explanation: "The conductor manages sequencing but doesn't determine how agents communicate their outputs. The artifact contract between agents is what enables independent evolution."
-    - content: "Defining an artifact contract between agents"
+      explanation: "An unchanged agent name doesn't establish that downstream tools can validate or execute a different IaC format."
+    - content: "That the artifact, execution, and validation contracts support Terraform, updating downstream tooling and checks where required"
       isCorrect: true
-      explanation: "An artifact contract specifies what each agent produces and what downstream agents expect. As long as the replacement agent produces compatible outputs, the rest of the pipeline continues to work."
-    - content: "Storing all agent definitions in version control"
+      explanation: "Bicep and Terraform have different execution and validation requirements. Verify compatible formats, tooling, target scope, state handling, and evidence before accepting the handoff."
+    - content: "That the Terraform configuration uses the previous Bicep output filename"
       isCorrect: false
-      explanation: "Version control is a best practice for managing agent definitions, but it doesn't enable independent replacement of pipeline stages. The artifact contract is the mechanism for loose coupling."
-  - content: "A system administrator notices that the Bicep agent always generates templates without resource locks, even though the organization requires them. Which agentic building block should the administrator configure to enforce this standard automatically?"
+      explanation: "Preserving a filename doesn't preserve the artifact format or make a Bicep deployment command compatible with Terraform."
+  - content: "A Bicep agent omits required production resource locks. The team adds scoped instructions describing the requirement. What else is needed to prevent a noncompliant change from being accepted?"
     choices:
-    - content: "A skill file with resource lock patterns"
+    - content: "A shared skill with resource lock examples, without a blocking verification step"
       isCorrect: false
-      explanation: "Skills contain domain knowledge that agents must read explicitly. If the agent doesn't request the skill, the resource lock requirement would be missed. Instructions are auto-injected and enforce standards regardless of what the agent explicitly reads."
-    - content: "An instruction file targeting Bicep files"
+      explanation: "Examples can improve proposals, but skill loading and model compliance aren't guaranteed enforcement. A missing lock still needs to be detected by an independent control."
+    - content: "An independently enforced required check that validates the lock requirement, with controlled bypass permissions"
       isCorrect: true
-      explanation: "Instructions use a push model — they're automatically injected into an agent's context whenever the agent creates or edits a file matching the instruction's applyTo glob pattern, such as **/*.bicep."
-    - content: "A prompt that specifies the resource lock requirement"
+      explanation: "Instructions supply guidance; a required validation check and protected acceptance boundary can block noncompliant changes independently of the model."
+    - content: "A more emphatic instruction stating that locks must always be included"
       isCorrect: false
-      explanation: "Adding the requirement to every prompt is manual and error-prone. Instructions provide a systematic way to enforce standards on every Bicep file the agent generates."
+      explanation: "Stronger wording doesn't turn natural-language guidance into a deterministic acceptance control."
   - content: "A team is evaluating which operational workflows would benefit most from a multi-agent approach. Which scenario is the strongest candidate?"
     choices:
     - content: "Restarting a single virtual machine after a patch"

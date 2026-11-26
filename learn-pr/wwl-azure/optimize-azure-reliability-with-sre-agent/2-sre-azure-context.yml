@@ -5,7 +5,7 @@ metadata:
   zone_pivot_groups: video-or-text
   title: SRE in the context of Azure cloud operations
   description: "Understand how Azure cloud environments amplify SRE challenges and how agentic operations address them."
-  ms.date: 6/9/2026
+  ms.date: 11/26/2026
   author: petender
   ms.author: petender
   ms.topic: unit

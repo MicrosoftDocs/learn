@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+# Provisional reading/activity estimate; classroom allocation is recorded separately.
+uid: learn.wwl.design-observability-feedback-agentic-devops.summary
+title: Summary and incident-investigation handoff
+metadata:
+  title: Summary and incident-investigation handoff
+  description: Hand reviewed telemetry, queries, findings and remaining limits to the next operational workflow.
+  ms.date: 11/26/2026
+  author: petender
+  ms.author: petender
+  ai-usage: ai-generated
+  ms.topic: unit
+durationInMinutes: 2
+content: '[!include[](includes/9-summary.md)]
+
+  '

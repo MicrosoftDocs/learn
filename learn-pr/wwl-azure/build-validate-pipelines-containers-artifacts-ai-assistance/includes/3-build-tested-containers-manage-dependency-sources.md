@@ -4,7 +4,7 @@ This scenario is the supply-chain part of the larger build process: **reviewed s
 
 ## Identify packages and artifacts through the store example
 
-An **artifact** is an output you retain from a process. A **package** bundles files and metadata in a format that a package manager understands. In everyday usage, a package is one example of artifact, but not every artifact is a reusable package.
+An **artifact** is an output you retain from a process. A **package** bundles files and metadata in a format that a package manager understands. In everyday usage, a package is one example of an artifact, but not every artifact is a reusable package.
 
 For this illustrative extension of EShopOnWeb, suppose the catalog team shares product-availability data contracts with another application. It distributes those contracts as a NuGet package. The storefront consumes that package and produces a container image.
 
@@ -46,7 +46,7 @@ Copilot is useful for explaining stage relationships and spotting overly broad c
 
 ### Distinguish three kinds of stages
 
-A pipeline stage or job groups automation. A Dockerfile stage defines an intermediate filesystem and builds environment. A release stage targets an environment or audience. They're different structures: a pipeline job can run a multi-stage Docker build without deploying anything.
+A pipeline stage or job groups automation. A Dockerfile stage defines an intermediate filesystem and build environment. A release stage targets an environment or audience. They're different structures: a pipeline job can run a multi-stage Docker build without deploying anything.
 
 Also distinguish **running build tools in a container** from **building an application container image**. A container job standardizes the tool environment; its output can still be a ZIP or NuGet package. An application image packages the workload and runtime for a later container deployment. With either approach, the worker remains exposed to untrusted scripts and still needs explicit permission to publish.
 

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+# Provisional reading/activity estimate; classroom allocation is recorded separately.
+uid: learn.wwl.design-observability-feedback-agentic-devops.design-dashboards-actionable-alerts-agentic-devops
+title: Design dashboards and actionable alerts for agentic DevOps
+metadata:
+  title: Design dashboards and actionable alerts for agentic DevOps
+  description: Connect delivery performance, reliability and agent effectiveness through reviewed dashboards and actionable alerts.
+  ms.date: 11/26/2026
+  author: petender
+  ms.author: petender
+  ai-usage: ai-generated
+  ms.topic: unit
+durationInMinutes: 5
+content: '[!include[](includes/3-design-dashboards-actionable-alerts-agentic-devops.md)]
+
+  '

@@ -1,0 +1,40 @@
+### YamlMime:LearningPath
+uid: learn.wwl.az-401-operate-evolve-agentic-devops
+metadata:
+  title: 'AZ-401: Operate and evolve agentic DevOps systems'
+  description: Connect OpenTelemetry and AI-assisted observability with Azure SRE Agent and bounded agentic workflows
+    to improve operational evidence and feedback.
+  ms.date: 11/26/2026
+  ms.topic: learning-path
+  ai-usage: ai-assisted
+  author: petender
+  ms.author: petender
+title: 'AZ-401: Operate and evolve agentic DevOps systems'
+summary: |
+  Connect GitHub and Azure DevOps delivery records to OpenTelemetry and Azure workload evidence.
+  Evaluate Copilot-assisted queries and Azure Copilot Observability Agent findings, then measure delivery and agent effectiveness.
+  Explore Azure SRE Agent for incident triage and remediation, and transition from scripts and AI-assisted tasks
+  to governed agentic workflows using instructions, skills, and multi-agent orchestration.
+prerequisites: |
+  - Experience using the Azure portal and managing basic Azure application resources.
+  - Understanding of monitoring concepts, including logs, metrics, alerts, and application health signals.
+  - Familiarity with incident triage, troubleshooting, remediation, and rollback concepts.
+  - Ability to read basic Azure CLI scripts and infrastructure-as-code templates such as Bicep.
+  - Basic experience using GitHub Copilot and reviewing AI-generated operational recommendations.
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- advanced
+roles:
+- devops-engineer
+products:
+- azure
+- azure-devops
+- github
+subjects:
+- devops
+modules:
+- learn.wwl.design-observability-feedback-agentic-devops
+- learn.wwl.optimize-azure-reliability-using-sre-agent
+- learn.wwl.transition-traditional-ops-agent-automation
+trophy:
+  uid: learn.wwl.az-401-operate-evolve-agentic-devops.trophy

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-observability-feedback-agentic-devops.exercise
+title: 'Exercise: Observe Web and Chat with Copilot'
+metadata:
+  title: 'Exercise: Observe web and chat with Copilot'
+  description: Deploy Web and Chat with azd, verify correlated telemetry and Copilot-assisted KQL, investigate a controlled fault, and improve a runbook.
+  ms.date: 11/26/2026
+  ms.topic: unit
+  author: petender
+  ms.author: petender
+durationInMinutes: 45
+content: '[!include[](includes/7-exercise.md)]
+
+  '
