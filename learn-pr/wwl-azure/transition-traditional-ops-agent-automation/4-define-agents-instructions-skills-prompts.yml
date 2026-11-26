@@ -3,12 +3,13 @@ uid: learn.wwl.transition-traditional-ops-agent-automation.define-agents-instruc
 title: Define agents with instructions, skills, and prompts
 metadata:
   title: Define Agents with Instructions, Skills, and Prompts
-  description: "This unit details the four building blocks of agentic workflows and how they work together."
-  ms.date: 6/11/2026
+  description: "Select reusable Copilot building blocks, validate host-specific loading, and separate guidance and memory from enforcement."
+  ms.date: 11/26/2026
+  ai-usage: ai-assisted
   zone_pivot_groups: video-or-text
   author: petender
   ms.author: petender
   ms.topic: unit
-durationInMinutes: 9
+durationInMinutes: 10
 content: |
   [!include[](includes/4-define-agents-instructions-skills-prompts.md)]

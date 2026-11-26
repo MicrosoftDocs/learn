@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+# Provisional reading/activity estimate; classroom allocation is recorded separately.
+uid: learn.wwl.design-observability-feedback-agentic-devops.improve-agentic-workflows-evidence-knowledge-evaluation
+title: Improve agentic workflows with evidence, knowledge, and evaluation
+metadata:
+  title: Improve agentic workflows with evidence, knowledge, and evaluation
+  description: Turn verified findings into bounded feedback, maintained operational knowledge and repeatable agent evaluation.
+  ms.date: 11/26/2026
+  author: petender
+  ms.author: petender
+  ai-usage: ai-generated
+  ms.topic: unit
+durationInMinutes: 5
+content: '[!include[](includes/6-improve-agentic-workflows-evidence-knowledge-evaluation.md)]
+
+  '

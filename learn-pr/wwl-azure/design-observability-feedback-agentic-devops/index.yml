@@ -1,0 +1,52 @@
+### YamlMime:Module
+# Instruction, exercise overview and knowledge check drafted for review.
+uid: learn.wwl.design-observability-feedback-agentic-devops
+metadata:
+  title: Design observability and feedback for agentic DevOps
+  description: Connect OpenTelemetry and Azure workload evidence to GitHub and Azure DevOps delivery, evaluate AI-assisted analysis, and govern observability agents and feedback.
+  ms.date: 11/26/2026
+  author: petender
+  ms.author: petender
+  ai-usage: ai-generated
+  ms.topic: module
+  ms.service: azure-devops
+title: Design observability and feedback for agentic DevOps
+summary: >-
+  Use OpenTelemetry and Azure observability capabilities to connect delivery changes with operational behavior.
+  Evaluate Copilot-generated queries, Azure Copilot Observability Agent findings, delivery and agent-effectiveness measures,
+  and evidence-backed feedback while retaining engineering authority.
+units:
+- learn.wwl.design-observability-feedback-agentic-devops.introduction
+- learn.wwl.design-observability-feedback-agentic-devops.design-correlated-instrumentation-access
+- learn.wwl.design-observability-feedback-agentic-devops.design-dashboards-actionable-alerts-agentic-devops
+- learn.wwl.design-observability-feedback-agentic-devops.verify-natural-language-kql-analysis
+- learn.wwl.design-observability-feedback-agentic-devops.govern-agent-logs-observability-tools
+- learn.wwl.design-observability-feedback-agentic-devops.improve-agentic-workflows-evidence-knowledge-evaluation
+- learn.wwl.design-observability-feedback-agentic-devops.exercise
+- learn.wwl.design-observability-feedback-agentic-devops.knowledge-check
+- learn.wwl.design-observability-feedback-agentic-devops.summary
+abstract: |
+  In this module, you learn to:
+  - Connect OpenTelemetry instrumentation and Azure workload signals to GitHub and Azure DevOps delivery records.
+  - Design outcome-focused dashboards, actionable alerts and delivery/agent-effectiveness measures.
+  - Verify natural-language analysis and AI-generated KQL against actual schemas and evidence quality.
+  - Distinguish Azure Copilot Observability Agent investigation, preview autonomous operations and authorized remediation.
+  - Maintain grounded operational knowledge, bounded feedback and repeatable agent evaluations.
+prerequisites: |
+  - Experience using GitHub or Azure DevOps for delivery.
+  - Familiarity with application logs, metrics, traces and monitoring.
+  - Familiarity with deployment health, incident investigation and recovery.
+  - Experience using GitHub Copilot and reviewing AI-generated proposals.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- advanced
+roles:
+- devops-engineer
+products:
+- azure
+- azure-devops
+- github
+subjects:
+- devops
+badge:
+  uid: learn.wwl.design-observability-feedback-agentic-devops.badge

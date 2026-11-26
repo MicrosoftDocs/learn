@@ -1,0 +1,74 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-observability-feedback-agentic-devops.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Assess chat-outcome telemetry, workspace KQL, unknown evidence, on-demand investigation, and reviewed operational feedback.
+  ms.date: 11/26/2026
+  author: petender
+  ms.author: petender
+  ms.topic: unit
+  module_assessment: true
+  ai_generated_module_assessment: true
+durationInMinutes: 5
+content: '[!include[](includes/8-knowledge-check.md)]
+
+  '
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "ChatApi encounters an upstream failure after it starts streaming. The HTTP response remains 200 and the liveness probe is healthy. Which signal best establishes whether the shopper received a complete answer?"
+    choices:
+    - content: "The HTTP status alone, because 200 always means the answer completed."
+      isCorrect: false
+      explanation: "A failure after streaming begins can retain HTTP 200 while the application emits an error."
+    - content: "An explicit completed or failed chat outcome correlated with the Web, ChatApi, and upstream dependency trace."
+      isCorrect: true
+      explanation: "Application outcomes describe answer completion; distributed correlation connects that outcome to the request and dependency behavior."
+    - content: "The liveness probe, because a running process must be able to answer catalog questions."
+      isCorrect: false
+      explanation: "Liveness does not validate model configuration, inference, or a completed response."
+  - content: "Copilot produces a query using requests and dependencies, but the learner opened Logs at workspace scope. What should the learner verify before relying on the result?"
+    choices:
+    - content: "The actual workspace tables, fields, types, time range, service scope, and correlation contract, then compare the query with real evidence."
+      isCorrect: true
+      explanation: "Workspace queries use tables such as AppRequests and AppDependencies. Schema and attribution must be verified rather than inferred from a generated query."
+    - content: "Only whether the query has valid punctuation."
+      isCorrect: false
+      explanation: "Syntactically valid KQL can use the wrong table, population, units, or identifiers."
+    - content: "Whether Copilot states that the result is accurate."
+      isCorrect: false
+      explanation: "The assistant's confidence is not independent query or evidence validation."
+  - content: "A dashboard shows no failed ChatApi operations, but that service has no recent attributed telemetry. How should the evidence state be classified?"
+    choices:
+    - content: "Healthy, because there are zero returned failures."
+      isCorrect: false
+      explanation: "Zero returned failures without a valid observed population does not establish success."
+    - content: "Recovered, because no alert is currently firing."
+      isCorrect: false
+      explanation: "An alert can resolve when its failure window empties even if telemetry is absent."
+    - content: "Unknown until sufficient fresh and correctly attributed evidence is available."
+      isCorrect: true
+      explanation: "Missing, stale, sampled, or malformed evidence must not become a passing health signal."
+  - content: "A team wants to try an available Azure Copilot Observability Agent investigation before adopting preview background operations. What is the appropriate first step?"
+    choices:
+    - content: "Provision an autonomous-agent resource and grant production write permissions before asking a question."
+      isCorrect: false
+      explanation: "On-demand investigation does not require that separately provisioned resource or remediation authority."
+    - content: "Request a scoped on-demand investigation using the signed-in user's supported access and verify its evidence."
+      isCorrect: true
+      explanation: "On-demand exploration and preview autonomous operations have different provisioning and identity boundaries. Findings still require verification."
+    - content: "Ask the Observability Agent to restart all resources automatically."
+      isCorrect: false
+      explanation: "Observability findings do not authorize remediation, and the Observability Agent is not an independent restart or configuration-change engine."
+  - content: "Copilot attributes a controlled chat failure to a model configuration change. What should be retained as reusable operational knowledge?"
+    choices:
+    - content: "A reviewed runbook and actual feedback item separating verified facts, hypotheses, missing checks, recovery steps, and fresh recovery evidence."
+      isCorrect: true
+      explanation: "Reviewed, attributable knowledge supports repeatable investigations and improvements without promoting an unverified narrative to fact."
+    - content: "The complete customer conversation and all access tokens used during investigation."
+      isCorrect: false
+      explanation: "Sensitive payloads and credentials do not belong in reusable runbooks or feedback items."
+    - content: "The assistant's conclusion alone, with no evidence links or review date."
+      isCorrect: false
+      explanation: "A conclusion without grounding, ownership, or freshness checks is unreliable operational knowledge."

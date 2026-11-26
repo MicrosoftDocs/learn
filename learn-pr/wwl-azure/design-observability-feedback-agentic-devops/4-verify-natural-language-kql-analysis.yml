@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+# Provisional reading/activity estimate; classroom allocation is recorded separately.
+uid: learn.wwl.design-observability-feedback-agentic-devops.verify-natural-language-kql-analysis
+title: Verify natural-language and AI-generated KQL analysis
+metadata:
+  title: Verify natural-language and AI-generated KQL analysis
+  description: Evaluate Copilot-generated KQL and operational explanations against schema, attribution, sampling, and complete evidence.
+  ms.date: 11/26/2026
+  author: petender
+  ms.author: petender
+  ai-usage: ai-generated
+  ms.topic: unit
+durationInMinutes: 6
+content: '[!include[](includes/4-verify-natural-language-kql-analysis.md)]
+
+  '
