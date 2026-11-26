@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.surface-repair-tool.find-support-and-configure-surface-repair-tool
+title: Find support and configure Surface Repair Tool
+metadata:
+  title: Find Support And Configure Surface Repair Tool
+  description: This content is part of the "Diagnose and support Surface devices with Surface Repair Tool" module.
+  ms.date: 11/24/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-find-support-and-configure-surface-repair-tool.md)]
