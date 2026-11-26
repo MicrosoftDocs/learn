@@ -1,0 +1,37 @@
+### YamlMime:LearningPath
+uid: learn.wwl.az-401-build-validate-governed-ai
+metadata:
+  title: 'AZ-401: Build and validate with governed AI assistance'
+  description: Start with GitHub and Azure Repos contribution and Copilot review, then build and validate pipelines, Docker containers, packages, and artifacts with scoped AI assistance.
+  ms.date: 11/26/2026
+  ms.topic: learning-path
+  ai-usage: ai-assisted
+  author: petender
+  ms.author: petender
+title: 'AZ-401: Build and validate with governed AI assistance'
+summary: |
+  First establish repository contribution, branches, pull requests, conflict resolution, and Copilot code review.
+  Then turn accepted source into tested build candidates using Azure Pipelines or GitHub Actions.
+  Compare Docker builds, Azure Artifacts, GitHub Packages, and container registries while preserving output identity,
+  independent validation, and scoped publication.
+prerequisites: |
+  - Familiarity with Git repositories, commits, and remotes in GitHub or Azure Repos.
+  - Ability to read and edit YAML pipelines in Azure Pipelines or GitHub Actions.
+  - Understanding of build agents or runners, pipeline variables, and package or artifact management.
+  - Familiarity with automated testing, code quality checks, and basic security scanning.
+  - Basic experience using GitHub Copilot and reviewing generated code or configuration.
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- advanced
+roles:
+- devops-engineer
+products:
+- azure-devops
+- github
+subjects:
+- devops
+modules:
+- learn.wwl.manage-source-control-code-review-github-copilot
+- learn.wwl.build-validate-pipelines-containers-artifacts-ai-assistance
+trophy:
+  uid: learn.wwl.az-401-build-validate-governed-ai.trophy

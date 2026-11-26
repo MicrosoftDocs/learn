@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+# Provisional reading/activity estimate; classroom allocation is recorded separately.
+uid: learn.wwl.build-validate-pipelines-containers-artifacts-ai-assistance.exercise
+title: 'Exercise: Build web and chat CI with GitHub Copilot'
+metadata:
+  title: 'Exercise: Build web and chat CI with GitHub Copilot'
+  description: Build and test Web and Chat, package a Docker image, and use Copilot to author and troubleshoot CI with Azure Pipelines or GitHub Actions.
+  ms.date: 11/26/2026
+  author: petender
+  ms.author: petender
+  ms.topic: unit
+durationInMinutes: 60
+content: '[!include[](includes/6-exercise.md)]
+
+  '

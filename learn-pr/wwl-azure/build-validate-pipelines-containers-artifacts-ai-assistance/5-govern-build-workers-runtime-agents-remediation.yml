@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+# Provisional self-paced estimate; classroom time is recorded separately.
+uid: learn.wwl.build-validate-pipelines-containers-artifacts-ai-assistance.govern-build-workers-runtime-agents-remediation
+title: Govern build workers, runtime agents, and remediation
+metadata:
+  title: Govern build workers, runtime agents, and remediation
+  description: Separate validation from privileged publication and bound runtime-agent proposals and supply-chain recovery.
+  author: petender
+  ms.author: petender
+  ms.date: 11/26/2026
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 12
+content: '[!include[](includes/5-govern-build-workers-runtime-agents-remediation.md)]'

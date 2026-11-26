@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+# Provisional self-paced estimate; classroom time is recorded separately.
+uid: learn.wwl.build-validate-pipelines-containers-artifacts-ai-assistance.build-tested-containers-manage-dependency-sources
+title: Build tested containers and manage dependency sources
+metadata:
+  title: Build tested containers and manage dependency sources
+  description: Connect tested Docker stages, approved feeds, resolved dependencies, package versions, and digest-bound evidence.
+  author: petender
+  ms.author: petender
+  ms.date: 11/26/2026
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 17
+content: '[!include[](includes/3-build-tested-containers-manage-dependency-sources.md)]'

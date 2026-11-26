@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+# Provisional self-paced estimate; classroom time is recorded separately.
+uid: learn.wwl.manage-source-control-code-review-github-copilot.define-pull-request-acceptance-criteria-verification-evidence
+title: Define pull-request acceptance criteria and verification evidence
+metadata:
+  title: Define pull-request acceptance criteria and verification evidence
+  description: Turn requirements into a change contract and evaluate code, tests, and revision-linked review evidence.
+  ms.date: 11/26/2026
+  author: petender
+  ms.author: petender
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 5
+content: '[!include[](includes/4-define-pull-request-acceptance-criteria-verification-evidence.md)]
+
+  '
