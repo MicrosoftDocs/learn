@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="477" viewBox="0 0 840 477" role="img" aria-labelledby="title desc" font-family="Segoe UI, Arial, sans-serif">
+<title id="title">Which VM can run the month-end report?</title><desc id="desc">Three bars on the same scale show 12 GiB required, 8 GiB in candidate A and 16 GiB in candidate B. A is 4 GiB short. B passes the memory check, not every sizing or cost check.</desc>
+<rect id="paper" x="0" y="0" width="840" height="477" fill="#ffffff"/>
+<rect id="accent" x="28" y="21" width="28" height="5" rx="2" fill="#0078d4" stroke="none"/>
+<text data-label="1" data-cell="" x="66" y="31" fill="#000000" font-size="15" font-weight="700">OPTIMIZATION  /  WORKED EXAMPLE</text>
+<text data-label="1" data-cell="" x="28" y="78" fill="#000000" font-size="34" font-weight="700">Which VM can run the month-end report?</text>
+<text data-label="1" data-cell="" x="28" y="110" fill="#000000" font-size="19" font-weight="400">Compare proposed memory capacity with the workload peak, not a quiet week.</text>
+<!-- Azure icon: management + governance/00003-icon-service-Advisor.svg -->
+<svg data-icon="1" data-cell="" aria-hidden="true" x="761" y="35" width="46" height="46" viewBox="0 0 18 18"><defs xmlns="http://www.w3.org/2000/svg"><linearGradient id="e005-b5b60882-abde-470c-a0f5-cd6e41418837" x1="9" y1="-0.88" x2="9" y2="16.01" gradientUnits="userSpaceOnUse"><stop offset="0.22" stop-color="#32d4f5" /><stop offset="0.43" stop-color="#31d1f2" /><stop offset="0.6" stop-color="#2dc6e9" /><stop offset="0.76" stop-color="#28b5d9" /><stop offset="0.91" stop-color="#1f9dc4" /><stop offset="1" stop-color="#198ab3" /></linearGradient></defs><path d="M17.5,9.44A3.85,3.85,0,0,0,14.18,5.7,4.85,4.85,0,0,0,9.23,1,5,5,0,0,0,4.48,4.29a4.58,4.58,0,0,0-4,4.46,4.66,4.66,0,0,0,4.79,4.53,3,3,0,0,0,.42,0h7.75a.64.64,0,0,0,.2,0A3.9,3.9,0,0,0,17.5,9.44Z" fill="url(#e005-b5b60882-abde-470c-a0f5-cd6e41418837)" xmlns="http://www.w3.org/2000/svg" /><path d="M14.53,15.14l-2,2.14a.26.26,0,0,1-.44-.14l-1.21-5.9A.26.26,0,0,1,11,11l1.32-.54a.26.26,0,0,1,.33.13l1.95,4.3A.24.24,0,0,1,14.53,15.14Z" fill="#37c2b1" xmlns="http://www.w3.org/2000/svg" /><path d="M8,15.14l2,2.14a.26.26,0,0,0,.44-.14l1.21-5.9a.26.26,0,0,0-.15-.28l-1.32-.54a.26.26,0,0,0-.33.13l-1.95,4.3A.24.24,0,0,0,8,15.14Z" fill="#42e8ca" xmlns="http://www.w3.org/2000/svg" /><path d="M11.58,6l.26-.22a.41.41,0,0,1,.57.05.37.37,0,0,1,.07.12l.12.32a.42.42,0,0,0,.45.26l.33-.06a.41.41,0,0,1,.47.33.33.33,0,0,1,0,.14l-.06.33a.42.42,0,0,0,.26.45l.32.11a.42.42,0,0,1,.24.53.75.75,0,0,1-.07.12l-.22.25a.42.42,0,0,0,0,.52l.22.26a.4.4,0,0,1-.06.57.41.41,0,0,1-.11.07l-.32.12a.4.4,0,0,0-.26.45l.06.33a.39.39,0,0,1-.33.46.33.33,0,0,1-.14,0l-.33,0a.4.4,0,0,0-.45.26l-.12.31a.4.4,0,0,1-.52.24.37.37,0,0,1-.12-.07L11.59,12a.4.4,0,0,0-.52,0l-.26.21a.4.4,0,0,1-.57-.05.24.24,0,0,1-.07-.12l-.12-.31a.39.39,0,0,0-.45-.26l-.33.06a.41.41,0,0,1-.47-.34.29.29,0,0,1,0-.13l.06-.33a.4.4,0,0,0-.26-.45l-.31-.12A.42.42,0,0,1,8,9.66a.75.75,0,0,1,.07-.12l.22-.26a.42.42,0,0,0,0-.52l-.22-.25a.41.41,0,0,1,.06-.58.23.23,0,0,1,.12-.06l.31-.12a.42.42,0,0,0,.26-.45L8.8,7a.41.41,0,0,1,.33-.47h.14l.33.06a.41.41,0,0,0,.45-.26L10.17,6a.41.41,0,0,1,.52-.24l.12.07.26.22A.41.41,0,0,0,11.58,6Z" fill="#005ba1" xmlns="http://www.w3.org/2000/svg" /><circle cx="11.33" cy="9.02" r="2.36" fill="#ffca00" xmlns="http://www.w3.org/2000/svg" /></svg>
+<text data-label="1" data-cell="" x="28" y="153" fill="#000000" font-size="16" font-weight="700">MEMORY AT MONTH-END</text>
+<text data-label="1" data-cell="" x="28" y="204" fill="#000000" font-size="22" font-weight="700">Report requires</text>
+<rect id="track182" x="236" y="182" width="464" height="28" rx="0" fill="#edf0f3" stroke="none"/>
+<rect id="capacity182" x="236" y="182" width="348" height="28" rx="0" fill="#506576" stroke="none"/>
+<text data-label="1" data-cell="" x="723" y="205" fill="#000000" font-size="22" font-weight="700">12 GiB</text>
+<text data-label="1" data-cell="" x="28" y="270" fill="#000000" font-size="22" font-weight="700">Candidate A</text>
+<rect id="track248" x="236" y="248" width="464" height="28" rx="0" fill="#edf0f3" stroke="none"/>
+<rect id="capacity248" x="236" y="248" width="232" height="28" rx="0" fill="#ae5b05" stroke="none"/>
+<text data-label="1" data-cell="" x="723" y="271" fill="#000000" font-size="22" font-weight="700">8 GiB</text>
+<text data-label="1" data-cell="" x="28" y="336" fill="#000000" font-size="22" font-weight="700">Candidate B</text>
+<rect id="track314" x="236" y="314" width="464" height="28" rx="0" fill="#edf0f3" stroke="none"/>
+<rect id="capacity314" x="236" y="314" width="464" height="28" rx="0" fill="#137a71" stroke="none"/>
+<text data-label="1" data-cell="" x="723" y="337" fill="#000000" font-size="22" font-weight="700">16 GiB</text>
+<rect id="memory-conclusion" x="28" y="367" width="784" height="85" rx="9" fill="#e3f4f1" stroke="none"/>
+<text data-label="1" data-cell="memory-conclusion" x="46" y="400" fill="#000000" font-size="21" font-weight="700">8 GiB is too small. 16 GiB passes the memory check only.</text>
+<text data-label="1" data-cell="memory-conclusion" x="46" y="431" fill="#000000" font-size="18" font-weight="400">Compare CPU, storage, networking and effective cost before approving a resize.</text>
+</svg>

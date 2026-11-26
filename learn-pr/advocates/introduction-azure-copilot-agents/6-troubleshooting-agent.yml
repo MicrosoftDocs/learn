@@ -3,8 +3,8 @@ uid: learn.introduction-azure-copilot-agents.troubleshooting-agent
 title: Troubleshooting agent
 metadata:
   title: Troubleshooting Agent
-  description: Understand how to use the Troubleshooting Agent to automate and streamline your Azure resource troubleshooting, ensuring consistency and efficiency in your operations tasks.
-  ms.date: 02/13/2026
+  description: Diagnose a VM restart using Azure and guest evidence, escalate unresolved issues, and add later Resource health findings to the existing support case.
+  ms.date: 11/23/2026
   author: Orin-Thomas
   ms.author: orthomas
   ms.topic: unit
