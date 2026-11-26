@@ -5,7 +5,7 @@ metadata:
   zone_pivot_groups: video-or-text
   title: Introduction to agentic DevOps for Microsoft environments
   description: "Overview of agentic DevOps and what this module covers for Microsoft DevOps Engineers on Azure."
-  ms.date: 8/24/2026
+  ms.date: 11/26/2026
   author: petender
   ms.author: petender
   ms.topic: unit

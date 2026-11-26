@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+# Provisional self-paced estimate; classroom time is recorded separately.
+uid: learn.wwl.design-release-strategies-ai-assisted-deployment-pipelines.design-environments-deployment-components
+title: Design environments and reusable deployment components
+metadata:
+  title: Design environments and reusable deployment components
+  description: Promote the same candidate through dev/test, staging, and production while validating target readiness.
+  ms.date: 11/26/2026
+  author: petender
+  ms.author: petender
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 8
+content: '[!include[](includes/2-design-environments-deployment-components.md)]
+
+  '

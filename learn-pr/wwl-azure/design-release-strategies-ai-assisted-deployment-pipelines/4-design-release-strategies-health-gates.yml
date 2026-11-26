@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+# Provisional self-paced estimate; classroom time is recorded separately.
+uid: learn.wwl.design-release-strategies-ai-assisted-deployment-pipelines.design-release-strategies-health-gates
+title: Design release strategies and health gates
+metadata:
+  title: Design release strategies and health gates
+  description: Compare canary, early-adopter, and blue-green exposure with security, quality, and cohort-health rules.
+  ms.date: 11/26/2026
+  author: petender
+  ms.author: petender
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 11
+content: '[!include[](includes/4-design-release-strategies-health-gates.md)]
+
+  '

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+# Provisional self-paced estimate; classroom time is recorded separately.
+uid: learn.wwl.manage-source-control-code-review-github-copilot.guide-copilot-repository-assistance-context-tools-instructions
+title: Guide Copilot repository assistance with context, tools, and instructions
+metadata:
+  title: Guide Copilot repository assistance with context, tools, and instructions
+  description: Use bounded source-change prompts, GitHub MCP evidence, appropriate integration identities and platform-specific review instructions.
+  ms.date: 11/26/2026
+  author: petender
+  ms.author: petender
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 8
+content: '[!include[](includes/5-guide-copilot-repository-assistance-context-tools-instructions.md)]
+
+  '

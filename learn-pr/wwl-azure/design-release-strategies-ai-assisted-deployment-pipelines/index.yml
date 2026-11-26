@@ -1,0 +1,49 @@
+### YamlMime:Module
+# Instruction, exercise overview and knowledge check drafted for review.
+uid: learn.wwl.design-release-strategies-ai-assisted-deployment-pipelines
+metadata:
+  title: Design release strategies and AI-assisted deployment pipelines
+  description: Promote accepted artifacts through dev/test, staging, and production; compare canary, early-adopter, and blue-green releases with scoped identities and evidence-based gates.
+  ms.date: 11/26/2026
+  author: petender
+  ms.author: petender
+  ms.topic: module
+  ms.service: azure-devops
+  ai-usage: ai-generated
+title: Design release strategies and AI-assisted deployment pipelines
+summary: Consume the accepted build candidate without rebuilding, verify target readiness, and generate release-specific Azure Pipelines or GitHub Actions proposals. Separate environment promotion from production exposure, preserve scoped identity and configuration, and decide promotion using candidate-linked security and health evidence.
+units:
+- learn.wwl.design-release-strategies-ai-assisted-deployment-pipelines.introduction
+- learn.wwl.design-release-strategies-ai-assisted-deployment-pipelines.design-environments-deployment-components
+- learn.wwl.design-release-strategies-ai-assisted-deployment-pipelines.design-secretless-identity-configuration
+- learn.wwl.design-release-strategies-ai-assisted-deployment-pipelines.design-release-strategies-health-gates
+- learn.wwl.design-release-strategies-ai-assisted-deployment-pipelines.generate-review-release-pipelines-github-azure-devops
+- learn.wwl.design-release-strategies-ai-assisted-deployment-pipelines.govern-promotion-from-observed-evidence
+- learn.wwl.design-release-strategies-ai-assisted-deployment-pipelines.exercise
+- learn.wwl.design-release-strategies-ai-assisted-deployment-pipelines.knowledge-check
+- learn.wwl.design-release-strategies-ai-assisted-deployment-pipelines.summary
+abstract: |
+  - Define target readiness and reusable application deployment components.
+  - Separate deployment and runtime identities and govern configuration without exposing secrets.
+  - Compare dev/test, staging, and production promotion with canary, early-adopter, and blue-green exposure.
+  - Design security, quality, and health gates with controlled exceptions.
+  - Generate and review release-specific pipeline proposals for GitHub and Azure DevOps without delegating approval.
+  - Govern promotion using evidence for the actual candidate and cohort.
+prerequisites: |
+  - Understanding of CI/CD concepts, version control, and verified build artifacts.
+  - Familiarity with Azure application hosting, access permissions, and configuration.
+  - Ability to read basic Azure Pipelines or GitHub Actions YAML.
+  - Experience using GitHub Copilot to propose and review changes.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- advanced
+roles:
+- devops-engineer
+products:
+- azure
+- azure-devops
+- github
+subjects:
+- devops
+badge:
+  uid: learn.wwl.design-release-strategies-ai-assisted-deployment-pipelines.badge
