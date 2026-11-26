@@ -1,10 +1,10 @@
 The EShopOnWeb team has a reviewed correction for **Search results showing out-of-stock items**. Its pipeline can compile the change, but compilation answers only one question: can these inputs produce an application? Before another team uses the output, you also need to know what it contains, whether the required checks ran, and which exact output those checks cover.
 
-This is the supply-chain part of the larger build process: **reviewed source -> approved dependencies -> build and test -> identified output -> controlled sharing**. Repository collaboration supplies the reviewed change; supply-chain controls keep its inputs and outputs traceable. They don't replace application testing or implement deployment.
+This scenario is the supply-chain part of the larger build process: **reviewed source -> approved dependencies -> build and test -> identified output -> controlled sharing**. Repository collaboration supplies the reviewed change; supply-chain controls keep its inputs and outputs traceable. They don't replace application testing or implement deployment.
 
 ## Identify packages and artifacts through the store example
 
-An **artifact** is an output you retain from a process. A **package** bundles files and metadata in a format that a package manager understands. In everyday usage, a package is one kind of artifact, but not every artifact is a reusable package.
+An **artifact** is an output you retain from a process. A **package** bundles files and metadata in a format that a package manager understands. In everyday usage, a package is one example of artifact, but not every artifact is a reusable package.
 
 For this illustrative extension of EShopOnWeb, suppose the catalog team shares product-availability data contracts with another application. It distributes those contracts as a NuGet package. The storefront consumes that package and produces a container image.
 
@@ -46,9 +46,9 @@ Copilot is useful for explaining stage relationships and spotting overly broad c
 
 ### Distinguish three kinds of stages
 
-A pipeline stage or job groups automation. A Dockerfile stage defines an intermediate filesystem and build environment. A release stage targets an environment or audience. They are different structures: a pipeline job can run a multi-stage Docker build without deploying anything.
+A pipeline stage or job groups automation. A Dockerfile stage defines an intermediate filesystem and builds environment. A release stage targets an environment or audience. They're different structures: a pipeline job can run a multi-stage Docker build without deploying anything.
 
-Also distinguish **running build tools in a container** from **building an application container image**. A container job standardizes the tool environment; its output can still be a ZIP or NuGet package. An application image packages the workload and runtime for a later container deployment. Neither approach makes the worker immune to untrusted scripts or grants it publishing permission.
+Also distinguish **running build tools in a container** from **building an application container image**. A container job standardizes the tool environment; its output can still be a ZIP or NuGet package. An application image packages the workload and runtime for a later container deployment. With either approach, the worker remains exposed to untrusted scripts and still needs explicit permission to publish.
 
 ### Make the final image depend on tested output
 
@@ -76,11 +76,11 @@ USER app
 ENTRYPOINT ["dotnet", "Web.dll"]
 ```
 
-The final stage copies from `tested`, which inherits `build`. BuildKit therefore needs that dependency path. A failed test stops publication output and the image build. A separate unreferenced `test` stage would not provide the same guarantee.
+The final stage copies from `tested`, which inherits `build`. BuildKit therefore needs that dependency path. A failed test stops publication output and the image build. A separate unreferenced `test` stage wouldn't provide the same guarantee.
 
 The broad source copy keeps this teaching graph readable, not optimized. Review `.dockerignore` so the context excludes `.git`, local outputs, credentials, and unrelated data while retaining required source, tests, lockfiles, and restore settings. Optimize restore caching only after those inputs are understood. BuildKit can reuse a previously successful layer; use the approved cache policy or fresh execution when policy requires new evidence.
 
-Private-feed restoration requires a supported build-secret mount and scoped identity; the Dockerfile above assumes its approved sources need no secret. Don't add a token through `ARG`, `ENV`, or a copied credential file to make it work. Publishing the final image is a separate pipeline action, not a Dockerfile instruction.
+Private-feed restoration requires a supported build-secret mount and scoped identity; the Dockerfile example  assumes its approved sources need no secret. Don't add a token through `ARG`, `ENV`, or a copied credential file to make it work. Publishing the final image is a separate pipeline action, not a Dockerfile instruction.
 
 ## Collect evidence that answers concrete questions
 
@@ -106,7 +106,7 @@ You distinguish a direct dependency, which your project declares, from a transit
 
 In the example, you treat the proposed dependency update as a separate justification within the same change. A filtering correction doesn't automatically require a new library. You compare the existing API with the proposed capability and inspect the resulting transitive changes. If the current dependency supports the correction, you reject unnecessary package churn rather than accept a larger review surface.
 
-Your decision record connects the package's exact name, ecosystem, resolved version, and origin to its purpose. You also record the owning team and whether the component appears only during build or ships with the application. This distinction helps you assess both build-host exposure and distributed software obligations. An internal package name alone doesn't establish a trusted origin.
+Your decision record connects the package's exact name, ecosystem, resolved version, and origin to its purpose. You also record the owning team and whether the component appears only during build or ships with the application. The distinction helps you assess both build-host exposure and distributed software obligations. An internal package name alone doesn't establish a trusted origin.
 
 Source consolidation follows this inventory, not the other way around. You map existing consumers, credentials, duplicate names, and retention needs before you select a common endpoint. A migration that silently changes resolution is an input change even when no application code changes. You compare resolved graphs before and after the endpoint change and preserve required versions before you retire an old source.
 
@@ -118,7 +118,7 @@ Upstream sources let the feed serve packages from configured external origins. A
 
 The permission to download a saved package differs from the permission to introduce an upstream version. A Feed Reader consumes packages already in the feed. A Feed and Upstream Reader, also called a Collaborator, can save an upstream package when installing it. A Contributor can publish and promote packages. You therefore distinguish ordinary restoration from upstream intake rather than grant every consumer publishing rights.
 
-With Azure Pipelines, you inspect the build identity's feed permissions as well as authentication configuration. For NuGet, the NuGet Authenticate task configures supported tools to authenticate before restore or push. It doesn't grant missing feed permissions. For a project-scoped feed in another project, you also check project access. You keep credentials out of committed configuration and grant publishing access only where the approved workflow needs it.
+With Azure Pipelines, you inspect the build identity's feed permissions and authentication configuration. For NuGet, the NuGet Authenticate task configures supported tools to authenticate before restore or push. It doesn't grant missing feed permissions. For a project-scoped feed in another project, you also check project access. You keep credentials out of committed configuration and grant publishing access only where the approved workflow needs it.
 
 Feed views need an access review too. A person with access to a view can download its packages without direct feed access. You inspect both feed and view visibility before treating the feed as restricted. Storage in a feed doesn't certify package security or licensing. Your intake controls supply those decisions.
 
@@ -146,4 +146,4 @@ Finally, you distinguish a pipeline artifact, a versioned package, and an image 
 
 **Azure Artifacts is not a container registry.** With Azure Pipelines, retain an image archive as a run artifact when transferring it between approved jobs, and publish images to an approved registry such as Azure Container Registry. With GitHub Actions, workflow artifacts likewise transfer files, while GitHub Packages' Container registry (`ghcr.io`) stores images. A package feed, a run artifact, and a deployment environment aren't interchangeable destinations.
 
-Feed-view promotion changes who can consume an existing package version. It does not deploy that version to dev/test, staging, or production. That environment sequence and production exposure belong to the release module.
+Feed-view promotion changes who can consume an existing package version. It doesn't deploy that version to dev/test, staging, or production. That environment sequence and production exposure belong to the release module.

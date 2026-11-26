@@ -10,4 +10,4 @@ In this module, you:
 - Use Copilot to draft and evaluate build-only YAML, dependency, container, and publication changes.
 - Separate validation from privileged publication, and bound runtime agents and remediation with retained evidence.
 
-The output is a candidate identified by a package version, file identity, or image digest, with matching test and supply-chain evidence. This module doesn't choose canary percentages, switch production traffic, or rebuild a package for each environment. Those are release decisions in the next learning path, which consumes the accepted candidate.
+The output is a candidate identified by a package version, file identity, or image digest, with matching test and supply-chain evidence. 

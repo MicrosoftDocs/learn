@@ -19,13 +19,13 @@ Allow approximately **45 minutes per option**, excluding administrator setup for
 
 Use a GitHub repository containing a copy of the Spoon-Knife sample. You create an issue and feature branch, update the collaboration page's HTML and CSS in VS Code, and open a PR. You request native Copilot code review, evaluate its suggestions, correct an intentionally incomplete revision, and request another review. Before merging, you inspect the source and preview the page locally.
 
-[![Illustration of the button to launch the GitHub code review exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?LinkId=2390312)
+[![Button to launch the GitHub exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?LinkId=2390312)
 
 ### Option 2: Azure Repos source control and Copilot code review
 
 Use a private Azure DevOps lab project containing an imported copy of eShopOnWeb. You link an Azure Boards work item to a feature branch and PR, configure the lab's contribution policies, and request native Copilot code review in Azure Repos. You compare feedback with the catalog-filter source and requirement, correct an intentionally incorrect revision, and request a fresh review before completing the PR.
 
-[![Illustration of the button to launch the Azure Repos code review exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?LinkId=2390311)
+[![Button to launch the Azure Repos exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?LinkId=2390311)
 
 > [!IMPORTANT]
 > Both options use isolated sample repositories and deliberately introduce an incomplete or incorrect first revision. Don't merge that revision or change the public source repository. These are solo exercises, not demonstrations of independent team approval. Copilot feedback doesn't replace your verification or your team's approval policies.

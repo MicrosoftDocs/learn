@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+# Provisional self-paced estimate; classroom time is recorded separately.
+uid: learn.wwl.design-release-strategies-ai-assisted-deployment-pipelines.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Extend accepted build candidates into environment promotion and progressive release decisions.
+  ms.date: 11/26/2026
+  author: petender
+  ms.author: petender
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 2
+content: '[!include[](includes/1-introduction.md)]
+
+  '

@@ -5,7 +5,7 @@ metadata:
   zone_pivot_groups: video-or-text
   title: Generating Bicep Templates with GitHub Copilot
   description: "Learn how to use GitHub Copilot to generate simple and complex Bicep templates, modularize infrastructure code, and improve output quality with the Bicep MCP server."
-  ms.date: 6/11/2026
+  ms.date: 11/26/2026
   author: petender
   ms.author: petender
   ms.topic: unit

@@ -2,7 +2,7 @@ Source control supplies a reviewed change; continuous integration (CI) turns the
 
 ## Connect PR validation to main-branch integration
 
-PR validation provides evidence before integration. A build on `main` validates the integrated revision and can produce the candidate for subsequent use. These are related events, not the same event. Opening a PR, approving it, and completing its merge don't automatically trigger identical jobs or grant identical credentials.
+PR validation provides evidence before integration. A build on `main` validates the integrated revision and can produce the candidate for subsequent use. These examples are related events, not the same event. Opening a PR, approving it, and completing its merge don't automatically trigger identical jobs or grant identical credentials.
 
 A platform can validate the source revision or a generated test-merge revision, depending on its configuration. Squash and rebase-based completion can also produce a different commit on the target branch. You therefore record what each result validates and how the resulting candidate links to the integrated change. A passing result from an earlier PR update doesn't validate a later conflict resolution.
 
@@ -76,7 +76,7 @@ With these settings, the automatic behavior is:
 | Event | Azure Pipelines with the policy | GitHub Actions with the workflow |
 | --- | --- | --- |
 | Push to `feature-fix` without an open PR | No build | No build |
-| Open a non-draft PR from `feature-fix` into `main` | Validate the PR merge commit | Validate the PR test-merge revision |
+| Open a nondraft PR from `feature-fix` into `main` | Validate the PR merge commit | Validate the PR test-merge revision |
 | Push another commit to `feature-fix` while that PR is open | Validate the updated PR | Validate the updated PR |
 | Approve the PR without changing code | No new build | No new build |
 | Merge the PR into `main` | No push-triggered build | No push-triggered build |
@@ -115,7 +115,7 @@ Check expected test discovery, required-suite execution, report presence, and pu
 
 ## Reuse build logic
 
-Shared build logic helps teams use the same build and test process without copying YAML into every pipeline. Each platform provides its own way to do this:
+Shared build logic helps teams use the same build and test process without copying YAML into every pipeline. Each platform provides its own way:
 
 - **Azure Pipelines:** Use YAML templates to share steps, jobs, or stages. Pass parameters for choices such as the build configuration. Keep credentials in protected resources such as secret variables or service connections, not in ordinary template parameters.
 - **GitHub Actions:** Use reusable workflows to share a workflow containing jobs and steps. The calling job references the workflow with `uses`, passes inputs with `with`, and passes permitted secrets with `secrets`. Limit its `GITHUB_TOKEN` permissions to the access it needs.
@@ -132,6 +132,6 @@ Hosted execution reduces machine maintenance. Persistent self-hosted workers off
 
 Concurrency needs to respect the constrained resource. Parallel unit tests can help, while two jobs changing one shared test database can interfere. A matrix also consumes execution capacity. GitHub concurrency groups and Azure Pipelines protected-resource locks offer different controls; an ordinary stage or job dependency within one run isn't a lock against work in another run. Dependency caches likewise need input-aware keys and appropriate trust boundaries. They aren't substitutes for versioned output artifacts.
 
-You measure queue time separately from execution time and compare like-for-like runs. Useful signals include critical-path duration, first-attempt failures, compute consumption, and cache behavior. Retention also determines how long the team can inspect original results. In the search scenario, removing a required test can look as fast as genuine parallelization, so the accepted optimization preserves the verification contract. The next unit develops Docker packaging and dependency sources. Later, you use this build contract to evaluate Copilot-generated YAML and publication proposals.
+You measure queue time separately from execution time and compare like-for-like runs. Useful signals include critical-path duration, first-attempt failures, compute consumption, and cache behavior. Retention also determines how long the team can inspect original results. In the search scenario, removing a required test can look as fast as genuine parallelization, so the accepted optimization preserves the verification contract. The next unit develops Docker packaging and dependency sources. Later, you use the build contract to evaluate Copilot-generated YAML and publication proposals.
 
 Learn more about [Azure Pipelines stages and dependencies](/azure/devops/pipelines/process/stages?view=azure-devops), [Azure Repos pipeline triggers](/azure/devops/pipelines/repos/azure-repos-git?view=azure-devops), [test-result publication controls](/azure/devops/pipelines/tasks/reference/publish-test-results-v2?view=azure-pipelines), and [agent execution models](/azure/devops/pipelines/agents/agents?view=azure-devops).

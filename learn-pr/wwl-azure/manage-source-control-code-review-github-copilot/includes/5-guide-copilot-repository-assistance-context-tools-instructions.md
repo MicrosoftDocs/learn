@@ -2,7 +2,7 @@ Copilot can help prepare a focused contribution, but a request such as "fix the 
 
 ## Give repository assistance useful context
 
-For the illustrative EShopOnWeb search correction, provide the approved acceptance criteria, relevant code and tests, contribution guidance, and known nongoals. Identify files explicitly rather than assume an open editor supplies the full repository.
+For the illustrative EShopOnWeb search correction, provide the approved acceptance criteria, relevant code and tests, contribution guidance, and known non-goals. Identify files explicitly rather than assume an open editor supplies the full repository.
 
 ```text
 Explain the smallest source change for the supplied search acceptance criteria.
@@ -20,13 +20,13 @@ For a follow-up, supply the current diff and ask for a minimal correction rather
 
 ## Bring GitHub repository evidence into Copilot with MCP
 
-The GitHub MCP server can supply current repository, issue, PR, and other supported platform information to Copilot in the IDE. It complements the Azure DevOps MCP workflow introduced earlier; it doesn't make Azure Repos and GitHub share tool names, identities, or policy enforcement.
+The GitHub MCP server can supply current repository, issue, PR and other supported platform information to Copilot in the IDE. It complements the Azure DevOps MCP workflow introduced earlier; it doesn't make Azure Repos and GitHub share tool names, identities, or policy enforcement.
 
 For a read-and-propose contribution workflow:
 
-1. Follow GitHub's current server setup for the supported IDE. Confirm organizational MCP policy, the approved server source, and authentication method.
+1. Follow GitHub's current server setup for the supported IDE. Confirm organizational MCP policy, the approved server source and authentication method.
 2. In Copilot Chat's Agent mode, inspect **Configure tools** and the GitHub server's available tools. Select only the repository/PR/issue reads needed for the task; keep mutation and terminal execution unavailable for this boundary.
-3. Specify the owner/repository, PR or issue identifier, target branch, source revision, and question. Retrieve current metadata and the relevant diff rather than ask the agent to guess from a repository name.
+3. Specify the owner/repository, PR or issue identifier, target branch, source revision and question. Retrieve current metadata and the relevant diff rather than ask the agent to guess from a repository name.
 4. Ask for a proposal with evidence links and missing-context statements. Verify the returned repository/revision and compare findings with the actual contribution.
 5. If later writes are justified, authorize the specific operation separately and verify its actual outcome. A drafted comment or issue isn't proof that it was posted.
 
@@ -40,27 +40,27 @@ Cite the PR revision and supporting records. State inaccessible information.
 Do not post comments, create work, edit files, rerun workflows, push or merge.
 ```
 
-Tool names and available features depend on the server/host and account access. Selecting a read tool in chat doesn't independently constrain every credential or external execution path. The supported read-only configuration and platform permissions provide extra boundaries. Never copy credentials into prompts or committed MCP configuration.
+Tool names and available features depend on the server/host and account access. Selecting a read tool in chat doesn't independently constrain every credential or external execution path; the server's supported read-only configuration and platform permissions provide additional boundaries. Never copy credentials into prompts or committed MCP configuration.
 
 ## Choose identity for the actor, not for the model
 
-An interactive Copilot session and an unattended repository integration are different actors. Don't assume that signing into Copilot authenticates every connected tool or grants Azure access.
+An interactive Copilot session and an unattended repository integration are different actors. Do not assume that signing into Copilot authenticates every connected tool or grants Azure access.
 
 | Identity | Typical use | Boundary to verify |
 | --- | --- | --- |
-| Approved interactive sign-in | IDE/MCP operations on behalf of the engineer | Actual user access, organizational authorization, and selected tool scope |
-| GitHub App installation token | A team-owned integration acting on installed repositories | Installation repository selection and endpoint permissions; installation tokens expire after one hour and can't exceed the installation's granted access |
+| Approved interactive sign-in | IDE/MCP operations on behalf of the engineer | Actual user access, organizational authorization and selected tool scope |
+| GitHub App installation token | A team-owned integration acting on installed repositories | Installation repository selection and endpoint permissions; installation tokens expire after one hour and cannot exceed the installation's granted access |
 | `GITHUB_TOKEN` | GitHub Actions operations within the workflow's repository | Explicit workflow/job permissions and event restrictions; not a generic interactive MCP credential |
-| PAT, where approved | A supported tool integration requiring user-associated token access | Selected resources/scopes, expiry, storage, and revocation ownership; not a default substitute for every identity |
+| PAT, where approved | A supported tool integration requiring user-associated token access | Selected resources/scopes, expiry, storage and revocation ownership; not a default substitute for every identity |
 | Azure workload federation/service connection | Approved automation accessing Azure | Separate Azure trust/RBAC and connection scope; a GitHub repository token doesn't confer Azure permissions |
 
 A GitHub App can make automation ownership clearer than a maintainer's personal token, but installation isn't blanket access. Match the required endpoint permissions and issue short-lived tokens through the approved integration. Keep registration/private-key administration out of an ordinary source-editing task.
 
-The useful optimization is current, bounded context, and a recognizable actor, not giving an agent every available tool so it can find its own route.
+The useful optimization is current, bounded context and a recognizable actor, not giving an agent every available tool so it can find its own route.
 
 ## Maintain review instructions on each platform
 
-Repository instructions help Copilot focus on the team's conventions and the requirement. They aren't branch protection or a replacement for review.
+Repository instructions help Copilot focus on the team's conventions and the requirement. They are not branch protection or a replacement for review.
 
 | Concern | GitHub | Azure Repos |
 | --- | --- | --- |
@@ -82,7 +82,7 @@ Do not invent application files, product behavior, or executed test results.
 Suggestions do not authorize a merge or a change to repository controls.
 ```
 
-Adapt it to the real repository rather than use generic text to override team policy. Keep credentials, user data, and unnecessary private sign out of instructions and Copilot context.
+Adapt it to the real repository rather than use generic text to override team policy. Keep credentials, user data, and unnecessary private logs out of instructions and Copilot context.
 
 ## Evaluate proposals and review feedback
 

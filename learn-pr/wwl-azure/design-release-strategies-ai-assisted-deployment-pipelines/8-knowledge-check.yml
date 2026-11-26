@@ -1,0 +1,74 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-release-strategies-ai-assisted-deployment-pipelines.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Assess build-once promotion, Entra OIDC identity, progressive exposure, freshness gates, and independent deployment approval.
+  ms.date: 11/26/2026
+  author: petender
+  ms.author: petender
+  ms.topic: unit
+  module_assessment: true
+  ai_generated_module_assessment: true
+durationInMinutes: 5
+content: '[!include[](includes/8-knowledge-check.md)]
+
+  '
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Staging validated artifact A. The production job rebuilds the same source commit and produces artifact B with a different digest. Can A's approval authorize promotion of B?"
+    choices:
+    - content: "Yes, because the source commit is unchanged."
+      isCorrect: false
+      explanation: "A rebuild can resolve different dependencies or inputs. Source identity alone does not prove output identity."
+    - content: "No. Promote accepted artifact A, or evaluate B as a new candidate with its own applicable evidence."
+      isCorrect: true
+      explanation: "Build-once promotion preserves the output covered by validation. A different candidate needs its own evidence and decision."
+    - content: "Yes, if Copilot reports no differences in the source files."
+      isCorrect: false
+      explanation: "A source comparison does not establish that the rebuilt artifact matches the accepted contents."
+  - content: "A GitHub Actions deployment uses Microsoft Entra OIDC workload identity federation. Which statement correctly describes its authentication?"
+    choices:
+    - content: "The workflow exchanges its trusted OIDC token for Azure access as a configured service principal, without a client secret."
+      isCorrect: true
+      explanation: "Federation is the authentication method; the service principal is the deployment identity. Trust and Azure role assignments still need configuration."
+    - content: "OIDC removes the need for a deployment identity and Azure role assignments."
+      isCorrect: false
+      explanation: "Federated authentication does not remove the identity or its authorization requirements."
+    - content: "The workflow must store the service principal's password in the repository."
+      isCorrect: false
+      explanation: "Workload identity federation replaces client-secret authentication rather than requiring a password."
+  - content: "A release sends the accepted candidate to a small production cohort and increases exposure only after checks pass. How does this differ from dev/test-to-staging promotion?"
+    choices:
+    - content: "It is another name for moving the artifact into a staging environment."
+      isCorrect: false
+      explanation: "Staging promotion changes the target environment; the scenario changes exposure inside production."
+    - content: "It removes the need to verify which candidate reached the audience."
+      isCorrect: false
+      explanation: "Every exposure wave still needs candidate, configuration, cohort, and evidence identity."
+    - content: "It controls production audience exposure, while environment promotion moves the candidate between environments."
+      isCorrect: true
+      explanation: "Canary and other exposure strategies are distinct from the dev/test, staging, and production environment sequence."
+  - content: "An illustrative release contract requires two hours, at least 1,000 attributed requests, a 5xx rate below 1%, p95 at most 500 ms, and telemetry freshness within five minutes. Results show 1,380 requests, eight 5xx responses and p95 of 460 ms, but telemetry ends 18 minutes before evaluation. What is the decision?"
+    choices:
+    - content: "Promote because the returned error rate and latency meet their thresholds."
+      isCorrect: false
+      explanation: "Favorable returned metrics do not satisfy the separate freshness requirement."
+    - content: "Hold exposure and restore current evidence before reevaluating the unchanged contract."
+      isCorrect: true
+      explanation: "Stale evidence leaves the recent interval unknown. Do not treat missing observations as zero failures or adjust the contract to obtain a pass."
+    - content: "Ignore freshness for this attempt because the request population is large enough."
+      isCorrect: false
+      explanation: "Minimum population and freshness are independent requirements; passing one does not waive the other."
+  - content: "Copilot proposes simplifying a release workflow by removing its protected environment and having the assessment job approve its own recommendation. What should the reviewer require?"
+    choices:
+    - content: "Retain independent environment controls and required approvals, with assessment access separated from promotion authority."
+      isCorrect: true
+      explanation: "A generated recommendation cannot replace the required approval boundary or grant itself deployment authority."
+    - content: "Accept the change if the prompt says that only safe releases may proceed."
+      isCorrect: false
+      explanation: "Natural-language guidance does not enforce environment protection."
+    - content: "Allow self-approval whenever the assessment job reports confidence above 90%."
+      isCorrect: false
+      explanation: "Model confidence is not an independently verified gate or an authorized human decision."

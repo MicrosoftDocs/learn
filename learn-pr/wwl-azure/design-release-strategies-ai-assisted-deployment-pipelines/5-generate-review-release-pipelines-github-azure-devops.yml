@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+# Provisional self-paced estimate; classroom time is recorded separately.
+uid: learn.wwl.design-release-strategies-ai-assisted-deployment-pipelines.generate-review-release-pipelines-github-azure-devops
+title: Generate and review release pipelines for GitHub and Azure DevOps
+metadata:
+  title: Generate and review release pipelines for GitHub and Azure DevOps
+  description: Select accepted artifacts and review scoped, protected release jobs and blue-green slot orchestration on both
+    platforms.
+  ms.date: 11/26/2026
+  author: petender
+  ms.author: petender
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 6
+content: '[!include[](includes/5-generate-review-release-pipelines-github-azure-devops.md)]
+
+  '

@@ -7,7 +7,7 @@
 >
 > The hosted agent or runner performs the .NET and Docker builds. A local .NET SDK, Docker engine, Azure subscription, or Foundry deployment isn't required. Copilot requests and hosted builds can incur charges.
 
-In this exercise, you create continuous integration (CI) for EShopOnWebDN11, a sample retail application with a .NET 11 Web storefront and a separate ChatApi service for Foundry-powered catalog assistance. You build, test, and publish both applications, then use GitHub Copilot to add Docker packaging for ChatApi. You review the generated YAML, diagnose an intentionally incorrect Dockerfile path using build logs, and verify automatic CI after merging your changes.
+In this exercise, you create continuous integration (CI) for EShopOnWebDN11, a sample retail application with a .NET 11 Web storefront. To help customers, the web app provides a separate ChatApi service using Microsoft Foundry. You build, test, and publish both applications, then use GitHub Copilot to add Docker packaging for ChatApi. You review the generated YAML, diagnose an intentionally incorrect Dockerfile path using build logs, and verify automatic CI after merging your changes.
 
 ## Choose your DevOps platform
 
@@ -19,13 +19,13 @@ Allow approximately **60 minutes per option**, excluding repository setup and ho
 
 Import the course repository into a private Azure DevOps project and clone it into VS Code. Create an Azure Pipelines YAML definition to build, test, and publish Web and Chat. Use Copilot to add Docker build and image-save tasks, correct a controlled build failure, and enable automatic CI when changes merge into `main`.
 
-[![Illustration of the button to launch the Azure DevOps CI exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?LinkId=2390119)
+[![Button to launch the Azure DevOps exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?LinkId=2390119)
 
 ### Option 2: GitHub with GitHub Actions
 
 Clone the course repository and push your copy to a GitHub lab repository. Create a GitHub Actions workflow to build, test, and publish Web and Chat. Use Copilot to add Docker build and image-save steps, correct a controlled build failure, and enable automatic CI when changes merge into `main`.
 
-[![Illustration of the button to launch the GitHub Actions CI exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?LinkId=2390120)
+[![Button to launch the GitHub exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?LinkId=2390120)
 
 > [!IMPORTANT]
 > Work in your own lab repository and review Copilot's changes before committing. Correct the deliberately broken Dockerfile path before merging.

@@ -1,6 +1,6 @@
-Writing a pipeline means translating an engineering workflow into precise YAML. Maintaining it means repeating that work when SDKs, tests, artifact paths, or shared templates change. Indentation is only one source of errors. Azure Pipelines and GitHub Actions use different trigger rules, dependency expressions, variable syntax, and task or action inputs. A definition can parse correctly yet skip a required test or package the wrong output.
+Writing a pipeline means to translate an engineering workflow into precise YAML. Maintaining it means to repeat that work when SDKs, tests, artifact paths, or shared templates change. Indentation is only one source of errors. Azure Pipelines and GitHub Actions use different trigger rules, dependency expressions, variable syntax, and task or action inputs. A definition can parse correctly, but then  skip a required test or package the wrong output.
 
-GitHub Copilot can help draft that syntax, explain an unfamiliar definition, and adapt a reviewed pattern for another platform. You supply the intended behavior and repository context, then evaluate the generated proposal. For the EShopOnWeb search fix, the outcome is still a verified build candidate, not an infrastructure or application deployment.
+GitHub Copilot can help draft that syntax, explain an unfamiliar definition, and adapt a reviewed pattern for another platform. You supply the intended behavior and repository context, then evaluate the generated proposal. For the EShopOnWeb search fix, the outcome is still a verified build candidate, not an infrastructure, or application deployment.
 
 ## Give Copilot enough context to generate the build
 
@@ -35,7 +35,7 @@ Use approved templates if supplied. Ask about missing repository details.
 Do not modify files, queue a run, or change permissions.
 ```
 
-The build stage contains build, verification, and candidate-packaging steps. These are the same conceptual phases introduced in the previous unit, kept in one job for this small example. Splitting them into jobs requires explicit artifact transfer.
+The build stage contains build, verification, and candidate-packaging steps. These steps are the same conceptual phases introduced in the previous unit, kept in one job for this small example. Splitting them into jobs requires explicit artifact transfer.
 
 ### Azure Pipelines: inspect a possible draft
 
@@ -71,7 +71,7 @@ stages:
       artifact: app-candidate
 ```
 
- and that publishing the selected project doesn't invoke a different build configuration. Uploading a run artifact stores the candidate for later use; it isn't a deployment. Azure Repos PR validation still needs its separate branch policy.
+ And that publishing the selected project doesn't invoke a different build configuration. Uploading a run artifact stores the candidate for later use; it isn't a deployment. Azure Repos PR validation still needs its separate branch policy.
 
 ### GitHub Actions: request equivalent behavior
 
@@ -149,7 +149,7 @@ Translate concepts, not keywords:
 | Share output | Publish and download pipeline artifacts | Upload and download workflow artifacts |
 | Require PR validation | Azure Repos branch build-validation policy | Workflow event plus required status check |
 
-Neither a dependency nor a similar artifact name guarantees the same behavior on both platforms. If you split the sample into jobs, ask which files each consumer downloads and what happens when an upstream job fails or is skipped.
+A dependency and a similar artifact name don't guarantee the same behavior on both platforms. If you split the sample into jobs, ask which files each consumer downloads and what happens when an upstream job fails or is skipped.
 
 ## Evaluate the proposal before accepting it
 
@@ -162,19 +162,19 @@ Trace execution before judging syntax. Each required test must run against the i
 
 The correction matters only if the stage also depends on the required verification. In GitHub Actions, inspect `needs`, `if`, events, and result propagation rather than translating the expression literally. Diagnostic log collection after failure is different from authorizing a candidate after a failed test.
 
-Review authority alongside the diff. Build-only generation doesn't need Azure service connections, environment secrets, or cloud write permissions. Untrusted PR code must not gain deployment credentials when you later add PR validation. Inspect reusable definitions and action references as executable inputs. Treat PR titles, logs, and work-item text as data, not shell fragments or instructions that override the approved contract.
+Review authority alongside the diff. Build-only generation doesn't need Azure service connections, environment secrets, or cloud write permissions. Untrusted PR code must not gain deployment credentials when you later add PR validation. Inspect reusable definitions and action references as executable inputs. Treat PR titles, logs, and work-item text as data, not shell fragments, or instructions that override the approved contract.
 
 Prompt wording describes intent; repository permissions, tool approvals, and service identities enforce authority. A request not to execute doesn't remove access already granted to the session.
 
 Validate structure with platform tooling, then use an authorized, isolated run to check behavior. Inspect actual test discovery and results, confirm failed tests block artifact creation, and verify that the expected output exists. Link the work item, source and workflow revisions, run attempt, test results, and candidate artifact. If a change claims better performance, compare like-for-like timings without removing required checks.
 
-### Critique generated tests as well as generated YAML
+### Critique generated tests and generated YAML
 
-Code and tests can repeat the same incorrect assumption. Compare each assertion with the independently agreed behavior. A search test that checks only that a collection exists can pass when the wrong items appear. A fixture containing only available stock doesn't challenge unavailable-stock behavior, and an expected value calculated through the production helper can reproduce its defect.
+Code and tests can repeat the same incorrect assumption. Compare each assertion with the independently agreed behavior. A search test that only checks if a collection exists, can pass when the wrong items appear. A fixture containing only available stock doesn't challenge unavailable-stock behavior, and an expected value calculated through the production helper can reproduce its defect.
 
 Use a plausible incorrect implementation as a counterexample: would the test reject an incorrect availability state, omitted matching item, or unauthorized purchase? Follow the approved visibility rule rather than inventing one. Ask Copilot for the smallest missing assertion or test boundary, then inspect and execute the proposed test normally. Agreement between generated code, tests, and review text isn't independent confirmation.
 
-Reconcile summaries with the original reports. GitHub required-check rules can accept neutral or skipped states, so platform mergeability isn't proof that every critical suite executed. Missing suites, reports from another attempt, or an artifact from a different run mean **revise or hold**, not approval. Reject a proposal that disables required validation or grants itself bypass rights; policy changes need separate authority. A later commit or different artifact can invalidate earlier evidence.
+Reconcile summaries with the original reports. GitHub required-check rules can accept neutral or skipped states, so being able to merge isn't proof that every critical suite executed. Missing suites, reports from another attempt, or an artifact from a different run mean **revise or hold**, not approval. Reject a proposal that disables required validation or grants itself bypass rights; policy changes need separate authority. A later commit or different artifact can invalidate earlier evidence.
 
 Accept through normal PR review only when that evidence supports the contract; otherwise revise or reject. The next unit governs build execution and remediation. Delivery later consumes this accepted output without rebuilding it; infrastructure readiness can be supplied separately.
 
@@ -182,7 +182,7 @@ Learn more about [Copilot prompting](https://docs.github.com/en/copilot/concepts
 
 ## Package a container candidate before granting registry access
 
-For a container output, use the tested Dockerfile from the previous unit instead of compiling a second application candidate through the ZIP route. These are alternative packaging choices. The following **Azure Pipelines steps fragment** assumes an Ubuntu agent with Docker and compatible, approved `SDK_IMAGE` and `RUNTIME_IMAGE` variables. It builds locally and saves the same image for a later job:
+For a container output, use the tested Dockerfile from the previous unit instead of compiling a second application candidate through the ZIP route. The following **Azure Pipelines steps fragment** assumes an Ubuntu agent with Docker and compatible, approved `SDK_IMAGE` and `RUNTIME_IMAGE` variables. It builds locally and saves the same image for a later job:
 
 ```yaml
 steps:
@@ -249,7 +249,15 @@ Copilot can draft the image route and identify missing inputs, but it must not i
 
 ## Publish a reusable package only when consumers need one
 
-The app-candidate run artifact above is not a package-feed publication. For the fictional catalog contracts package, the following alternative publication fragments assume a Windows agent or runner with PowerShell, a configured .NET SDK, successful checks and independent approval, and the exact approved package already downloaded into candidate. They don't build it again or establish these controls. Choose the registry used by your consumers; don't publish twice by default.
+The app-candidate example saves a run artifact. It doesn't publish a package to a feed. The following examples show how to publish the fictional catalog contracts package.
+
+Before you use either example, make sure:
+
+- Your Windows agent or runner has PowerShell and a configured .NET SDK.
+- The package passed all checks and received independent approval.
+- The exact approved package is downloaded into the `candidate` folder.
+
+These examples only publish the package. They don't rebuild it, run checks, or obtain approval. Choose the registry your consumers use rather than publishing to both by default.
 
 ### Apply the process with Azure Artifacts and Azure Pipelines
 
