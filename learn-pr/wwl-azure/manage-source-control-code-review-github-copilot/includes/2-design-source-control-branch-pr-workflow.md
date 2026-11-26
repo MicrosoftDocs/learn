@@ -8,7 +8,7 @@ For an existing project, you clone that repository rather than create another un
 
 For the illustrative search fix in the EShopOnWeb project, a short-lived branch from `main` fits a small, independently reviewable change. GitHub flow is a lightweight Git-based workflow built around feature branches, pull requests, review, and integration into the default branch. Unlike Gitflow, it doesn't require a separate long-lived `develop` branch. Despite its name, you can implement the same GitHub flow workflow in Azure Repos using pull requests and branch policies. 
 
-Release branches make sense when you maintain supported versions or need a defined stabilization line. They also create more places to propagate fixes. If a hotfix changes a supported release, the team identifies where the same correction belongs in ongoing development. More permanent branches don't automatically mean having or enforcing more control.
+Release branches make sense when you maintain supported versions or need a defined stabilization line. They also create more places to propagate fixes. If a hotfix changes a supported release, the team identifies where the same correction belongs in ongoing development. More permanent branches doesn't automatically mean having or enforcing more control.
 
 For an experienced team, the agentic question isn't which Git command creates a branch. It's which branching model keeps delegated work small, current, and independently reviewable:
 
