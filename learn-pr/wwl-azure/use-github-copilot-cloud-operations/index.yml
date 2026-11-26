@@ -41,6 +41,8 @@ units:
 - learn.wwl.use-github-copilot-cloud-operations.prompt-engineering-for-infrastructure-as-code
 - learn.wwl.use-github-copilot-cloud-operations.azure-cli-assistance-github-copilot
 - learn.wwl.use-github-copilot-cloud-operations.generating-bicep-templates
+- learn.wwl.use-github-copilot-cloud-operations.container-infrastructure
+- learn.wwl.use-github-copilot-cloud-operations.cicd-pipeline-generation
 - learn.wwl.use-github-copilot-cloud-operations.documentation-generation
 - learn.wwl.use-github-copilot-cloud-operations.log-configuration-analysis
 - learn.wwl.use-github-copilot-cloud-operations.exercise-github-copilot-cloud-operations
