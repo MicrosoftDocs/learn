@@ -77,7 +77,7 @@ GitHub Copilot shortens and simplifies every step of the IaC authoring cycle.
 
 **At the review stage**, Copilot can analyze an existing template and identify security gaps, missing properties, or outdated patterns. It acts as a second set of eyes before the template is deployed.
 
-**At the transform stage**, Copilot can convert between Azure CLI and PowerShell, between Azure Resource Manager JSON and Bicep, or between Azure Pipelines and GitHub Actions. Reducing the cost of switching tools or adapting examples from documentation.
+**At the transform stage**, Copilot can convert between Azure CLI and PowerShell, or between Azure Resource Manager JSON and Bicep. Reducing the cost of switching tools or adapting examples from documentation.
 
 **At the documentation stage**, Copilot can read a completed template and generate human-readable explanations, parameter references, and architecture descriptions. Work that is often skipped entirely because it's tedious to do manually.
 
@@ -110,7 +110,7 @@ Infrastructure definitions have qualities that make them good candidates for AI-
 - **They are highly structured**: Resource definitions follow schemas. Properties are based on known types, valid values, and required/optional designations. This structured nature makes it easier for a model to produce syntactically correct output.
 - **They are pattern-rich**: Most Azure deployments use a relatively small set of common resource types: virtual networks, storage accounts, compute resources, and identity. These patterns appear frequently in training data, meaning Copilot relies on many examples.
 - **They are expensive to research manually**: Finding the correct combination of API version, required properties, and valid SKUs for an unfamiliar resource type can take significant time. Copilot compresses that research into a prompt.
-- **They are safe to iterate**: You validate before you deploy. A wrong suggestion from Copilot is caught at `az bicep build` or `what-if` before it touches any real resources. This safety net encourages experimentation.
+- **They support reviewed iteration**: Use `az bicep build` and `what-if` to detect many syntax, configuration, and planned-change issues before deployment. They don't catch every incorrect suggestion or prove runtime behavior, authorization, or operational safety. What-if can leave some expressions or resources unevaluated. Review its diagnostics, validate in the appropriate non-production environment, and retain approval and post-deployment checks.
 
 ## Key takeaways
 

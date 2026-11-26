@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-github-copilot-cloud-operations.log-configuration-analysis
+title: Log and configuration analysis with GitHub Copilot
+metadata:
+  zone_pivot_groups: video-or-text
+  title: Log and Configuration Analysis with GitHub Copilot
+  description: "Learn how to use GitHub Copilot to analyze Azure Firewall and NSG logs, troubleshoot deployment failures, generate KQL queries for Azure Monitor, and produce compliance audit summaries."
+  ms.date: 11/26/2026
+  author: petender
+  ms.author: petender
+  ms.topic: unit
+durationInMinutes: 12
+content: |
+  [!include[](includes/6-log-configuration-analysis.md)]

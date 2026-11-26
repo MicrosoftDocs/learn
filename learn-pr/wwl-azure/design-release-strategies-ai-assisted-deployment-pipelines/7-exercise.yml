@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+# Provisional reading/activity estimate; classroom allocation is recorded separately.
+uid: learn.wwl.design-release-strategies-ai-assisted-deployment-pipelines.exercise
+title: 'Exercise: Deploy Web then Chat with Copilot-assisted pipelines'
+metadata:
+  title: 'Exercise: Deploy Web then Chat with Copilot-assisted pipelines'
+  description: Use supplied CI and Copilot to deploy Web and Chat with Microsoft Entra OIDC authentication and environment approvals, using Azure Pipelines or GitHub Actions.
+  ms.date: 11/26/2026
+  ms.topic: unit
+durationInMinutes: 45
+content: '[!include[](includes/7-exercise.md)]
+
+  '
