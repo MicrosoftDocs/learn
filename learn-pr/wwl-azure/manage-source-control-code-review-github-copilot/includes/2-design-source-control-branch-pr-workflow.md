@@ -8,7 +8,7 @@ For an existing project, you clone that repository rather than create another un
 
 For the illustrative search fix in the EShopOnWeb project, a short-lived branch from `main` fits a small, independently reviewable change. GitHub flow is a lightweight Git-based workflow built around feature branches, pull requests, review, and integration into the default branch. Unlike Gitflow, it doesn't require a separate long-lived `develop` branch. Despite its name, you can implement the same GitHub flow workflow in Azure Repos using pull requests and branch policies. 
 
-Release branches make sense when you maintain supported versions or need a defined stabilization line. They also create more places to propagate fixes. If a hotfix changes a supported release, the team identifies where the same correction belongs in ongoing development. More permanent branches doesn't automatically mean having or enforcing more control.
+Release branches make sense when you maintain supported versions or need a defined stabilization line. They also create more places to propagate fixes. If a hotfix changes a supported release, the team identifies where the same correction belongs in ongoing development. More permanent branches don't automatically mean having or enforcing more control.
 
 For an experienced team, the agentic question isn't which Git command creates a branch. It is which branching model keeps delegated work small, current, and independently reviewable:
 
@@ -72,7 +72,7 @@ git commit -m "Fix search stock filtering and add regression coverage"
 git push -u origin fix/search-stock
 ```
 
-The staged diff is what the commit contains, which isn't necessarily every edited file. You exclude unrelated changes - usually defined in the `.gitignore` file in the root of the repo - generated outputs, local settings, specific environment variables and secrets, and run the project's relevant tests before publishing. 
+The staged diff is what the commit contains, which isn't necessarily every edited file. You exclude unrelated changes by specifying them in a `.gitignore` file in the root of the repo. Changes such as generated outputs, local settings, specific environment variables and secrets. Run the project's relevant tests before publishing. 
 
 Each line in the above example flow, represents a decision point, not an unattended script: a failed check stops the commit or push until you understand and fix it. The upstream setting on the first push connects the local working branch to its remote counterpart. Later commits on that branch use the same contribution route.
 
@@ -84,7 +84,7 @@ After the branch is published, a PR requests integration from the **source branc
 
 The description explains the problem, the behavioral change, relevant tests, and remaining risk. For "Search results showing out-of-stock items", useful context identifies which items remain visible and how the regression cases establish that behavior. Link the work item through the repository's configured integration rather than assume that an arbitrary issue number creates Azure Boards traceability.
 
-A draft PR supports early discussion while the implementation is incomplete. When the contribution is ready, reviewers - which used to be humans only, but now a perfect candidate for an AI assistant - inspect the actual diff and required checks. They don't rely only on a generated description or a green badge from another revision. Feedback leads to additional edits, tests, commits, and pushes on the same source branch. This is the normal review loop, not a failed handoff. The final approval to merge should be done by humans, even if an AI assistant like GitHub Copilot would be able to do it. 
+A draft PR supports early discussion while the implementation is incomplete. When the contribution is ready, reviewers inspect the actual diff and required checks. Code reviewing was always a human task, but AI assistants like GitHub Copilot are getting better at this. They don't rely only on a generated description or a green badge from another revision. Feedback leads to additional edits, tests, commits, and pushes on the same source branch. This is the normal review loop, not a failed handoff. The final approval to merge should be done by humans, even if an AI assistant like GitHub Copilot would be able to do it. 
 
 For GitHub, repository rules can require PR approvals and named status checks. For Azure Repos, branch policies can require reviewers, linked work, comment resolution, and build validation. The platforms share collaboration goals, not identical configuration. Repository administrators also control if and who can bypass those requirements.
 

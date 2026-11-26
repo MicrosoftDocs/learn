@@ -1,6 +1,6 @@
 Writing a pipeline means to translate an engineering workflow into precise YAML. Maintaining it means to repeat that work when SDKs, tests, artifact paths, or shared templates change. Indentation is only one source of errors. Azure Pipelines and GitHub Actions use different trigger rules, dependency expressions, variable syntax, and task or action inputs. A definition can parse correctly, but then  skip a required test or package the wrong output.
 
-GitHub Copilot can help draft that syntax, explain an unfamiliar definition, and adapt a reviewed pattern for another platform. You supply the intended behavior and repository context, then evaluate the generated proposal. For the EShopOnWeb search fix, the outcome is still a verified build candidate, not an infrastructure, or application deployment.
+GitHub Copilot can help draft that syntax, explain an unfamiliar definition, and adapt a reviewed pattern for another platform. You supply the intended behavior and repository context, then evaluate the generated proposal. For the EShopOnWeb search fix, the outcome is still a verified build candidate, not an infrastructure or application deployment.
 
 ## Give Copilot enough context to generate the build
 
@@ -71,7 +71,7 @@ stages:
       artifact: app-candidate
 ```
 
- And that publishing the selected project doesn't invoke a different build configuration. Uploading a run artifact stores the candidate for later use; it isn't a deployment. Azure Repos PR validation still needs its separate branch policy.
+It also shows that publishing the selected project doesn't invoke a different build configuration. Uploading a run artifact stores the candidate for later use; it isn't a deployment. Azure Repos PR validation still needs its separate branch policy.
 
 ### GitHub Actions: request equivalent behavior
 
