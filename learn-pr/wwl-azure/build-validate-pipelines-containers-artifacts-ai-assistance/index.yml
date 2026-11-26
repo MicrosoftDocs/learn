@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.wwl.build-validate-pipelines-containers-artifacts-ai-assistance
+metadata:
+  title: Build and validate pipelines, containers, and artifacts with AI assistance
+  description: Design CI pipelines, tested Docker builds, dependency sources, and artifact or package publication in Azure Pipelines and GitHub Actions with bounded Copilot assistance.
+  author: petender
+  ms.author: petender
+  ms.date: 11/26/2026
+  ms.topic: module
+  ms.service: azure-devops
+  ai-usage: ai-generated
+title: Build and validate pipelines, containers, and artifacts with AI assistance
+summary: Turn accepted source into tested ZIP, package, or container candidates. Compare CI structure and output transfer in Azure Pipelines and GitHub Actions, use Docker and approved dependency sources, then evaluate Copilot-generated build and publication changes with scoped execution and retained evidence.
+units:
+- learn.wwl.build-validate-pipelines-containers-artifacts-ai-assistance.introduction
+- learn.wwl.build-validate-pipelines-containers-artifacts-ai-assistance.design-ci-pipelines-build-verification
+- learn.wwl.build-validate-pipelines-containers-artifacts-ai-assistance.build-tested-containers-manage-dependency-sources
+- learn.wwl.build-validate-pipelines-containers-artifacts-ai-assistance.generate-build-pipelines-publish-accepted-outputs-copilot
+- learn.wwl.build-validate-pipelines-containers-artifacts-ai-assistance.govern-build-workers-runtime-agents-remediation
+- learn.wwl.build-validate-pipelines-containers-artifacts-ai-assistance.exercise
+- learn.wwl.build-validate-pipelines-containers-artifacts-ai-assistance.knowledge-check
+- learn.wwl.build-validate-pipelines-containers-artifacts-ai-assistance.summary
+abstract: |
+  In this module, you learn how to:
+  - Design CI triggers, dependencies, reusable definitions, test evidence, and artifact transfer on both platforms.
+  - Build tested container candidates and select dependency feeds, package versions, and image digests.
+  - Generate and evaluate build-only YAML, dependency, container, and publication proposals with Copilot.
+  - Separate validation workers from privileged publishers and bound runtime agents and remediation.
+prerequisites: |
+  - Knowledge of Git branches, pull requests, and independent change review.
+  - Ability to read basic YAML and application build commands.
+  - Familiarity with automated tests and package manifests.
+  - Basic knowledge of containers and least-privilege service access.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- advanced
+roles:
+- devops-engineer
+products:
+- azure
+- azure-devops
+- github
+subjects:
+- devops
+badge:
+  uid: learn.wwl.build-validate-pipelines-containers-artifacts-ai-assistance.badge

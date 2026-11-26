@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+# Provisional self-paced estimate; classroom time is recorded separately.
+uid: learn.wwl.manage-source-control-code-review-github-copilot.review-pull-requests-resolve-conflicts-with-copilot
+title: Review pull requests and resolve conflicts with GitHub Copilot
+metadata:
+  title: Review pull requests and resolve conflicts with GitHub Copilot
+  description: Threat-model changes early, reconcile conflicts, and compare native Copilot review in GitHub and Azure Repos.
+  ms.date: 11/26/2026
+  author: petender
+  ms.author: petender
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 9
+content: '[!include[](includes/3-review-pull-requests-resolve-conflicts-with-copilot.md)]
+
+  '

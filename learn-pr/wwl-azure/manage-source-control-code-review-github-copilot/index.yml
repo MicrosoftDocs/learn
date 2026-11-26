@@ -1,0 +1,54 @@
+### YamlMime:Module
+uid: learn.wwl.manage-source-control-code-review-github-copilot
+metadata:
+  title: Manage source control and code review with GitHub Copilot
+  description: Apply Copilot-assisted contribution, worktree, migration and recovery workflows; use bounded repository evidence and review in GitHub and Azure Repos.
+  ms.date: 11/26/2026
+  author: petender
+  ms.author: petender
+  ms.topic: module
+  ms.service: azure-devops
+  ai-usage: ai-generated
+title: Manage source control and code review with GitHub Copilot
+summary: >-
+  Follow a change from repository setup or clone through branches, pull requests, conflict resolution, and merge.
+  Threat-model the change early, evaluate generated tests against requirements, and use Copilot review in GitHub and Azure Repos.
+  Define reviewable change contracts, isolate concurrent worktrees, and preserve evidence during repository migration and recovery.
+  Use bounded GitHub MCP context and appropriate integration identities while protecting independent repository controls.
+units:
+- learn.wwl.manage-source-control-code-review-github-copilot.introduction
+- learn.wwl.manage-source-control-code-review-github-copilot.design-source-control-branch-pr-workflow
+- learn.wwl.manage-source-control-code-review-github-copilot.review-pull-requests-resolve-conflicts-with-copilot
+- learn.wwl.manage-source-control-code-review-github-copilot.define-pull-request-acceptance-criteria-verification-evidence
+- learn.wwl.manage-source-control-code-review-github-copilot.guide-copilot-repository-assistance-context-tools-instructions
+- learn.wwl.manage-source-control-code-review-github-copilot.govern-repository-contribution-merge-authority
+- learn.wwl.manage-source-control-code-review-github-copilot.exercise
+- learn.wwl.manage-source-control-code-review-github-copilot.knowledge-check
+- learn.wwl.manage-source-control-code-review-github-copilot.summary
+abstract: |
+  In this module, you learn to:
+  - Explain a contribution workflow from repository setup or clone to branch, commit, pull request, merge, and synchronization.
+  - Choose branching/worktree boundaries and preserve history, integrations and reviewed recovery during platform transitions.
+  - Threat-model application and engineering trust boundaries before reconciling changes and evaluating Copilot review.
+  - Define a change contract and review source and test proposals against independent requirements.
+  - Apply platform-specific repository instructions without confusing guidance with merge enforcement.
+  - Use GitHub MCP evidence and appropriate user, app and workflow identities for bounded repository assistance.
+  - Govern contribution, review, and integration through protected repository permissions and policies.
+prerequisites: |
+  - Familiarity with basic Git concepts, including repositories, commits, and remotes.
+  - Familiarity with issues or Azure Boards work items and code changes.
+  - Familiarity with automated tests and code review.
+  - Basic experience using GitHub Copilot and least-privilege repository access.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- advanced
+roles:
+- devops-engineer
+products:
+- azure
+- azure-devops
+- github
+subjects:
+- devops
+badge:
+  uid: learn.wwl.manage-source-control-code-review-github-copilot.badge

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+# Provisional reading/activity estimate; classroom allocation is recorded separately.
+uid: learn.wwl.manage-source-control-code-review-github-copilot.exercise
+title: 'Exercise: Practice source control with GitHub Copilot code review'
+metadata:
+  title: 'Exercise: Practice source control with GitHub Copilot code review'
+  description: Practice contribution and Copilot code review in GitHub or Azure Repos. Choose your preferred DevOps platform, or complete both options to compare the workflows.
+  ms.date: 11/26/2026
+  ms.topic: unit
+durationInMinutes: 60
+content: '[!include[](includes/7-exercise.md)]
+
+  '

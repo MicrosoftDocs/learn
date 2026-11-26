@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+# Provisional self-paced estimate; classroom time is recorded separately.
+uid: learn.wwl.manage-source-control-code-review-github-copilot.design-source-control-branch-pr-workflow
+title: Design a repository, branch, and pull-request workflow
+metadata:
+  title: Design a repository, branch, and pull-request workflow
+  description: Choose contribution and worktree boundaries, preserve the repository contract during migration, and review selective Git recovery.
+  ms.date: 11/26/2026
+  author: petender
+  ms.author: petender
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 12
+content: '[!include[](includes/2-design-source-control-branch-pr-workflow.md)]
+
+  '

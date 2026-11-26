@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+# Provisional self-paced estimate; classroom time is recorded separately.
+uid: learn.wwl.build-validate-pipelines-containers-artifacts-ai-assistance.design-ci-pipelines-build-verification
+title: Design CI pipelines and build verification
+metadata:
+  title: Design CI pipelines and build verification
+  description: Compare CI triggers, stages or jobs, reusable definitions, test evidence, artifact transfer, and execution
+    boundaries.
+  author: petender
+  ms.author: petender
+  ms.date: 11/26/2026
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 13
+content: '[!include[](includes/2-design-ci-pipelines-build-verification.md)]'
