@@ -7,6 +7,8 @@ metadata:
   description: Build and test Web and Chat, package a Docker image, and use Copilot to author and troubleshoot CI with Azure Pipelines or GitHub Actions.
   ms.date: 11/26/2026
   ms.topic: unit
+  author: petender
+  ms.author: petender
 durationInMinutes: 60
 content: '[!include[](includes/6-exercise.md)]
 

@@ -7,6 +7,8 @@ metadata:
   description: Practice contribution and Copilot code review in GitHub or Azure Repos. Choose your preferred DevOps platform, or complete both options to compare the workflows.
   ms.date: 11/26/2026
   ms.topic: unit
+  author: petender
+  ms.author: petender
 durationInMinutes: 60
 content: '[!include[](includes/7-exercise.md)]
 
