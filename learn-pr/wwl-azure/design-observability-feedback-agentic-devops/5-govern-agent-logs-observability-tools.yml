@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+# Provisional reading/activity estimate; classroom allocation is recorded separately.
+uid: learn.wwl.design-observability-feedback-agentic-devops.govern-agent-logs-observability-tools
+title: Govern agent telemetry and Azure Copilot Observability Agent
+metadata:
+  title: Govern agent telemetry and Azure Copilot Observability Agent
+  description: Retain available agent activity and distinguish Azure Copilot investigation, preview autonomous operations and authorized remediation.
+  ms.date: 11/26/2026
+  author: petender
+  ms.author: petender
+  ai-usage: ai-generated
+  ms.topic: unit
+durationInMinutes: 6
+content: '[!include[](includes/5-govern-agent-logs-observability-tools.md)]
+
+  '

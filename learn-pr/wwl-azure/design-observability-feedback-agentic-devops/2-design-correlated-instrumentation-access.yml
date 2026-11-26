@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+# Provisional reading/activity estimate; classroom allocation is recorded separately.
+uid: learn.wwl.design-observability-feedback-agentic-devops.design-correlated-instrumentation-access
+title: Design OpenTelemetry correlation and telemetry access
+metadata:
+  title: Design OpenTelemetry correlation and telemetry access
+  description: Relate OpenTelemetry instrumentation and Azure workload signals to GitHub and Azure DevOps delivery evidence.
+  ms.date: 11/26/2026
+  author: petender
+  ms.author: petender
+  ai-usage: ai-generated
+  ms.topic: unit
+durationInMinutes: 6
+content: '[!include[](includes/2-design-correlated-instrumentation-access.md)]
+
+  '

@@ -15,7 +15,7 @@ First connect the finding to the exact candidate digest and scan time. Then ask 
 
 Suppose this finding comes from the storefront's runtime base image, not `EShopOnWeb.Catalog.Contracts` version `1.4.0`. Updating the contracts package would add risk without addressing the finding. The focused proposal is to select a supported, compatible runtime image containing the fix and rebuild the storefront.
 
-Severity helps prioritize the work, but also check exposure, exploit prerequisites, available fixes, and business impact. Keep licensing and security findings separate: a clean vulnerability scan doesn't resolve to miss license terms.
+Severity helps prioritize the work, but also check exposure, exploit prerequisites, available fixes, and business impact. Keep licensing and security findings separate: a clean vulnerability scan doesn't resolve  missing license terms.
 
 Copilot can explain a dependency path or compare an advisory with the current configuration. Require links to the relevant evidence and mark uncertainty. Its suggestion that a vulnerable path is unused isn't proof; verify that claim before accepting the risk.
 

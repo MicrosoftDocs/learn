@@ -6,7 +6,7 @@ Your delivery-control contract records:
 
 - **Candidate and target:** Artifact provenance, target-readiness requirements, and reusable deployment components.
 - **Identity and configuration:** Separately scoped deployment/runtime identities, approved connections, configuration references, and feature state without secret values.
-- **Environments and exposure:** Promote the same candidate through dev/test and staging, then use the supported canary, early-adopter, or blue-green mechanism for production.
+- **Environments and exposure:** Promotion path for the same candidate through dev/test and staging, and the supported canary, early-adopter, or blue-green exposure mechanism for production.
 - **Gates:** Applicable security/quality reports, scoped exceptions, cohort health thresholds, and explicit missing-data and stop behavior.
 - **Authority and evidence:** Who may propose, approve, deploy, promote, or halt, with linked results for each decision.
 

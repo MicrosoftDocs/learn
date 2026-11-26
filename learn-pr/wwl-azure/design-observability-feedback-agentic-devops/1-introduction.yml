@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+# Provisional reading/activity estimate; classroom allocation is recorded separately.
+uid: learn.wwl.design-observability-feedback-agentic-devops.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Connect delivery, workload telemetry and AI-assisted investigation for experienced DevOps engineers.
+  ms.date: 11/26/2026
+  author: petender
+  ms.author: petender
+  ai-usage: ai-generated
+  ms.topic: unit
+durationInMinutes: 2
+content: '[!include[](includes/1-introduction.md)]
+
+  '

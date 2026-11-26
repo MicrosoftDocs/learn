@@ -11,7 +11,9 @@
 
 An agentic workflow is built from four components that work together: **agents**, **skills**, **instructions**, and **prompts**. Each serves a different purpose, and understanding how they relate is essential to designing effective multi-agent systems.
 
-A user prompt flows into an agent defined in an `.agent.md` file. The agent defines its identity, the tools it can use, and which subagents it can delegate to. From there, the agent draws on **two sources** of supporting content. The first is `skills`: domain knowledge documents that the agent reads explicitly at runtime. The second is `instructions`: coding and format standards that are automatically injected based on the type of file the agent is working with.
+A user prompt flows into an agent with a defined role and available tools. In GitHub Copilot, a custom agent can be defined in an `.agent.md` file. Skills supply reusable workflows and supporting resources; instructions supply applicable repository or file-scoped guidance. The host determines discovery, loading, tool availability, and approval behavior, so validate the configuration in the actual Copilot experience you intend to use.
+
+For an existing DevOps engineer, the optimization is to make recurring expertise reusable without confusing model guidance with enforcement. Start with one bounded role and its required evidence, not a collection of agents with unrestricted tools.
 
 ## Agents
 
@@ -21,10 +23,9 @@ Here's the structure of an agent definition file:
 
 ```yaml
 ---
-name: deploy-agent
-description: Deploys infrastructure using Azure Developer CLI
-tools: [runInTerminal, readFile, createFile]
-agents: []
+name: infra-review-agent
+description: Reviews supplied infrastructure changes and returns evidence-backed findings
+tools: ['read', 'search']
 ---
 ```
 
@@ -37,15 +38,17 @@ Key properties of an agent:
 | `name` | Identifier used for delegation and selection |
 | `description` | Short summary shown in the UI or used by the conductor |
 | `tools` | Which tools (terminal, file creation, search) the agent can use |
-| `agents` | Other agents this agent can delegate to via subagent calls |
+| Delegation configuration | Host-specific selection of subagents and delegation tools; not a universal `agents` header |
 
-A conductor agent, for example, lists all specialized agents in its `agents` array and uses `runSubagent` calls to delegate tasks. A leaf agent (one that does the actual work) typically has an empty `agents` array and relies on tools like `runInTerminal` or `createFile` to produce outputs.
+A conductor can use the host's supported delegation tool and subagent configuration. Tool identifiers and delegation options vary across Copilot hosts; don't copy an IDE definition unchanged into CLI or hosted automation. For example, the current VS Code reference distinguishes the Local schema's `agents` field from the Copilot harness, which doesn't accept that field.
+
+The example is deliberately read-only. Its body should define expected findings, evidence references and stop conditions. Confirm that the agent appears without configuration errors and that its actual tools match the intended boundary. Selecting a tool doesn't grant its underlying identity new repository or Azure permissions.
 
 ## Skills
 
-A skill is a reusable knowledge document that agents read at runtime. Skills contain domain-specific information that is too large or too volatile to embed directly in an agent's system prompt. Including  patterns, lookup tables, code snippets, and default configurations.
+A skill is a reusable workflow package that an agent can load when relevant. It can include instructions, scripts, templates, examples and supporting resources, rather than just a large knowledge document.
 
-Skills live in a dedicated folder (for example, `.github/skills/`) and follow a standard format:
+For example, place a repository skill in `.github/skills/azure-deployment-defaults/SKILL.md`, with the following front matter and body. Keep supporting resources beside it and use the host's supported locations:
 
 ```yaml
 ---
@@ -72,15 +75,15 @@ description: "Default configurations for Azure infrastructure deployments"
 | Key Vault | Standard | Standard |
 ```
 
-**How agents consume skills:** Agents use a **pull model**. The agent's system prompt contains an explicit instruction like "Read the deployment-defaults skill before starting work." The agent then calls a file-read tool to load the skill content into its context. Skills aren't automatically injected. The agent must request them.
+**How agents consume skills:** Supported hosts discover skill metadata and load relevant content on demand. Selection can be automatic or explicit where supported; it isn't universally a manual file-read instruction. This progressive loading avoids putting every workflow into every conversation. Check that the intended skill was available and loaded before attributing an outcome to it.
 
-This design lets you share the same skill across multiple agents while keeping each agent's context focused on what it needs. A deployment agent reads the deployment-defaults skill, while an architecture agent reads an architecture-patterns skill. Both skills live in the same folder, but each agent pulls only what's relevant to its task.
+This design lets multiple agents reuse reviewed expertise while keeping context focused. Include prerequisites, applicable workload/environment scope, required evidence and stop conditions. A skill containing a deployment script doesn't itself authorize execution of that script.
 
 ## Instructions
 
-Instructions are coding standards that are automatically injected into an agent's context based on file patterns. Unlike skills, which agents pull explicitly, instructions use a **push model**. They activate whenever an agent creates or edits a file matching the instruction's target pattern.
+Instructions express repository conventions or file-scoped guidance. Supported hosts load repository-wide guidance or match scoped instructions to relevant file context. Loading isn't limited to a universal "file edited" trigger, and it doesn't guarantee model compliance.
 
-An instruction file includes a glob pattern that determines when it applies:
+A scoped file such as `.github/instructions/bicep.instructions.md` can include a glob pattern:
 
 ```yaml
 ---
@@ -97,7 +100,7 @@ applyTo: "**/*.bicep"
 - Use parameter decorators for validation
 ```
 
-When an agent creates a `.bicep` file, the environment automatically includes the Bicep instruction in the agent's context. The agent doesn't need to know about the instruction. It gets silently applied.
+For matching Bicep context, a supporting host can include this guidance. Verify the loaded instructions and their precedence in the selected experience. Repository-wide `.github/copilot-instructions.md` and scoped instruction files have different activation rules; hosted code review also has platform-specific behavior.
 
 Common instruction patterns for ops teams:
 
@@ -114,14 +117,14 @@ The distinction between skills and instructions matters for maintainability:
 
 | Aspect | Skills | Instructions |
 |---|---|---|
-| **Activation** | Agent reads explicitly | Autoinjected by file glob |
+| **Activation** | Relevant content loaded on demand by a supporting host | Repository-wide or file-scoped loading, where supported |
 | **Scope** | Domain knowledge and patterns | Coding standards for a file type |
 | **Size** | Can be large (hundreds of lines) | Focused rules for one language or format |
 | **Audience** | One or more specific agents | Any agent editing matching files |
 
 Use **skills** when you need to encode organizational knowledge that agents reference during planning. For example, which Azure services to recommend for different workloads, or what naming conventions your organization follows.
 
-Use **instructions** when you need to enforce standards on the output. For example, how Bicep templates should be structured, or what formatting rules apply to documentation.
+Use **instructions** to guide output toward team standards. Enforce those standards separately through reviewed tests, linters, branch policies, environment checks and platform permissions.
 
 ## Prompts
 
@@ -133,13 +136,13 @@ Effective prompts for agentic workflows describe the desired outcome rather than
 >
 > **More effective:** "Build an Azure environment with a web application on App Service, connected to a SQL Database, with Key Vault for secrets management and Application Insights for monitoring. Use managed identity for all service-to-service authentication."
 
-The second prompt gives the conductor enough context to plan the full workflow across requirements, architecture, code generation, and deployment, rather than handling a single step.
+The second prompt gives the conductor more useful architecture context. It still needs an approved target, scope, evidence requirements and action boundary before execution. Prefer "prepare a plan and reviewed diff; don't deploy" when the authorized task is a proposal. A desired outcome alone isn't a safe operational contract.
 
 ## Agent memory and constraints
 
-Beyond skills and instructions, agents can use **memory** to persist and recall information across sessions. Memory provides a way to capture learnings, preferences, and organizational constraints that accumulate over time rather than being authored upfront.
+Beyond skills and instructions, supported hosts can provide **memory** to retain selected context. Persistence, scope, review and deletion controls vary; ordinary repository files aren't automatically a memory service.
 
-Memory operates at different scopes:
+Possible memory scopes include:
 
 | Scope | Persistence | Purpose |
 |---|---|---|
@@ -147,7 +150,7 @@ Memory operates at different scopes:
 | **User memory** | Across all workspaces | Personal preferences and patterns |
 | **Repository memory** | Workspace-scoped | Project-specific facts and conventions |
 
-**Constraints files** are a common pattern for repository memory. A constraints file captures organizational rules that agents must follow when working in a specific codebase. Unlike skills, which contain general domain knowledge, constraints are project-specific rules that shouldn't be overridden.
+**Constraints documents** capture project requirements for reviewable guidance. They don't establish platform authorization or deterministic policy enforcement. Give retained facts and constraints a source, owner, applicable environment, reviewed revision and freshness check; keep hypotheses and sensitive data out of reusable memory.
 
 Example constraints file structure:
 
@@ -174,11 +177,11 @@ Example constraints file structure:
 | **Origin** | Authored by humans | Can be authored or learned |
 | **Volatility** | Relatively stable | Updated as agents learn |
 | **Scope** | Shareable across projects | Often project-specific |
-| **Override behavior** | Agents can adapt | Constraints are non-negotiable |
+| **Authority** | Reusable guidance, not permission | Retained facts/requirements, not a platform enforcement mechanism |
 
-Use **memory** when you need agents to remember discovered facts, such as which deployment approach worked for a specific environment, or what naming pattern a user prefers. Use **constraints** when you need to enforce rules that apply to every agent working in a repository, regardless of the specific task.
+Use **memory** for approved, verifiable facts that remain useful across tasks. Use **constraints** to express project requirements, and separate enforceable controls from natural-language expectations. If retained guidance conflicts with current evidence, stop and resolve the conflict rather than silently following stale memory.
 
-In practice, many teams maintain a `.github/constraints.md` file that agents read at the start of any workflow. The constraints file acts as organizational guardrails that prevent agents from generating outputs that violate company policy, even when the user's prompt doesn't mention those requirements.
+An ordinary file such as `.github/constraints.md` has no guaranteed special loading behavior. Reference it explicitly through supported guidance if the workflow needs it. Test both discovery and behavior; a well-named document doesn't prevent a prohibited operation.
 
 ## Putting the building blocks together
 
@@ -186,11 +189,15 @@ When a user submits a prompt, the system resolves all four components:
 
 1. The user selects an agent and types a prompt.
 2. The agent's definition file (front matter + body) loads as the system prompt.
-3. The agent's body instructs it to read specific skills.
-4. When the agent creates or edits files, matching instructions are autoinjected.
+3. The host discovers applicable skills and loads relevant content when selected.
+4. Supported repository/file-scoped instructions supply guidance for the task context.
 5. The agent starts reasoning, calls tools, and produces artifacts.
 6. If the agent has subagents listed, it can delegate via subagent calls.
 
-This resolution chain means that the combination of the agent's definition, defines its behavior. The skills it reads, the instructions that apply to the files it touches, and the user's prompt. Changing any of these components changes the agent's output.
+Version the definitions, skills and instructions alongside the operational code. Validate the selected host's actual configuration and use a small regression set before rolling out changes. A successful invocation proves availability, not that the agent follows every rule.
+
+The following unit adds artifact contracts, bounded retries and repeatable workflow evaluation. Keep the same separation throughout: the model proposes and reasons; independently configured controls establish what can actually happen.
+
+Learn more about [Copilot custom agents](https://code.visualstudio.com/docs/agent-customization/custom-agents), [host-specific agent configuration](https://code.visualstudio.com/docs/agents/reference/custom-agent-file-reference), and [agent skills](https://code.visualstudio.com/docs/agent-customization/agent-skills).
 
 ::: zone-end

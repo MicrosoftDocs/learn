@@ -71,7 +71,7 @@ stages:
       artifact: app-candidate
 ```
 
- And that publishing the selected project doesn't invoke a different build configuration. Uploading a run artifact stores the candidate for later use; it isn't a deployment. Azure Repos PR validation still needs its separate branch policy.
+It also shows that publishing the selected project doesn't invoke a different build configuration. Uploading a run artifact stores the candidate for later use; it isn't a deployment. Azure Repos PR validation still needs its separate branch policy.
 
 ### GitHub Actions: request equivalent behavior
 

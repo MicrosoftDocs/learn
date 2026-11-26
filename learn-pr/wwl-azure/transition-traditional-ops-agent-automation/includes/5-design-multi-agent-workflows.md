@@ -45,20 +45,13 @@ Agents communicate through files, so define what each agent produces and what do
 | Deployment | deploy-agent | `infra/main.bicep` | `deployment-summary.md` |
 | Documentation | docs-agent | All prior artifacts | `docs/runbook.md` |
 
-This contract ensures that agents can evolve independently. You can replace the Bicep agent with a Terraform agent, and as long as the output includes the infrastructure templates the deploy agent expects, the pipeline continues to work.
+This contract helps agents evolve independently. Replacing a Bicep agent with a Terraform agent also changes the execution and validation contract; retaining a filename alone doesn't preserve compatibility. Downstream steps must validate the expected format, target and evidence.
 
 ## Step 4: Build the conductor
 
-The conductor agent ties the pipeline together. Its definition includes all specialized agents in the `agents` array and its system prompt describes the workflow sequence:
+The conductor ties the workflow together. Configure its available delegation tools and allowed specialists using the selected host's supported format. An `agents` front-matter array is a Local-schema option, not a portable Copilot contract. Verify delegation and tool availability in the intended Copilot experience rather than assume that a Markdown role description provisions working subagents.
 
-```yaml
----
-name: ops-conductor
-description: Orchestrates infrastructure provisioning workflows
-agents: [requirements-agent, architecture-agent, bicep-agent, deploy-agent, docs-agent]
-tools: [readFile, createFile]
----
-```
+The requirements, architecture, Bicep, deployment and documentation agents below are illustrative roles. The conductor coordinates their outputs; it doesn't automatically inherit every specialist's execution permissions.
 
 The conductor's system prompt specifies:
 
@@ -77,9 +70,10 @@ Here's an example of how a conductor's system prompt might describe a handoff:
 3. Delegate to architecture-agent: "Assess the architecture based on requirements.md"
 4. Verify that architecture-assessment.md exists
 5. Delegate to bicep-agent: "Generate Bicep templates per architecture-assessment.md"
-6. Verify that infra/main.bicep exists and compiles without errors
-7. Delegate to deploy-agent: "Deploy the infrastructure from infra/"
-8. Delegate to docs-agent: "Generate a runbook from all project artifacts"
+6. Verify template identity, compilation, reviewed what-if diagnostics and target readiness
+7. Obtain the independent approval required for this exact target and reviewed change
+8. Delegate authorized execution; verify actual deployment results before continuing
+9. Delegate to docs-agent: "Draft a runbook from verified artifacts and explicit remaining limits"
 ```
 
 ## Step 5: Create shared skills
@@ -91,7 +85,7 @@ Review the domain knowledge that multiple agents need and extract it into shared
 - **Approved services and SKUs**: A lookup table of which Azure services and tiers your organization has approved for different environments.
 - **Compliance requirements**: Regulatory or organizational policies that affect architecture decisions and deployment configurations.
 
-Each skill is a Markdown file that agents read as needed. The architecture agent reads the naming conventions and approved services skills. The Bicep agent reads naming conventions and security baselines. This overlap is intentional. Shared skills ensure consistency across the pipeline.
+Each skill is a package with a `SKILL.md` entry point and optional supporting resources that a compatible host loads as needed. Sharing reviewed skills reduces repeated guidance; it doesn't guarantee that every agent loaded the same revision or complied with it. Capture the relevant versions with the workflow evidence.
 
 ## Example: Compliance check pipeline
 
@@ -110,6 +104,44 @@ When designing multi-agent workflows for ops tasks, keep these guidelines in min
 - **Version your agent definitions**: Store agent files, skills, and instructions in version control alongside your infrastructure code. Changes to agent behavior should go through the same review process as code changes.
 - **Test individual agents first**: Before running the full pipeline, invoke each agent directly with sample inputs to verify its outputs meet your expectations.
 - **Plan for human-in-the-loop**: Not every step should be fully automated from day one. Design your pipeline so that a human can review artifacts between stages and approve before the next agent runs.
+
+## Strengthen the artifact contract
+
+File existence is a weak handoff check. Add the task/attempt identity, source and input revisions, target environment, producer/configuration versions, validation status, evidence references and expiry conditions. A downstream agent must reject a missing, stale, malformed or mismatched artifact rather than manufacture a plausible substitute.
+
+For a proposal step, distinguish `ready-for-review`, `blocked` and `failed`; none means "deployed". Markdown can remain human-readable, but machine-consumed metadata should have a validated schema. Keep actual approval and execution results separate from the producer's claims.
+
+If approved input changes, invalidate dependent proposals and approvals as appropriate. An earlier approval doesn't authorize a new diff or target. Only independently verifiable output should cross an authority boundary.
+
+## Bound concurrency, retries and operational effects
+
+Parallelize independent read/proposal work where it saves time. Serialize changes to a shared branch, artifact, environment or external resource. Separate worktrees isolate local files, not production writes; use an appropriate workflow/platform coordination mechanism for shared targets.
+
+Define maximum attempts, elapsed time, tool calls and available usage/cost budgets before execution. A budget in a prompt is guidance; the host or orchestration wrapper must enforce its limits. When enforcement isn't available, keep consequential execution under explicit operator control.
+
+Use these failure decisions:
+
+| Failure | Required response |
+| --- | --- |
+| Missing prerequisite, stale evidence or unclear scope | Block the dependent step and ask for the missing decision |
+| Transient read failure | Retry only within the declared limit; retain the failed attempt and final error |
+| Write timeout or lost acknowledgement | Treat outcome as unknown; inspect actual state before deciding whether retry is safe |
+| Repeated tool errors or exhausted budget | Stop and return partial evidence with the blocker |
+| Optional documentation failure | Report it explicitly; don't mark the entire workflow complete |
+
+Use task/operation identifiers and supported idempotency controls to prevent duplicate actions. Don't replay the whole workflow to fix one failed report. Recheck current state before restarting a step; compensation or rollback requires compatibility and authorization, not just a reverse command.
+
+Cancellation must stop new delegation and pending writes through the host's supported mechanism. Report which operations already happened or remain uncertain; ending the conversation isn't proof that an external job stopped.
+
+## Evaluate a workflow before widening autonomy
+
+Version the agent definitions, tools, skills, instructions, evaluator criteria and sanitized input fixtures. Include a normal case, conflicting requirements, stale artifacts, a malformed handoff, a transient read failure, a write with uncertain outcome and an out-of-scope request.
+
+Run individual roles first, then the composed workflow. Evaluate output correctness and evidence quality, stop/escalation behavior, duplicate-action prevention, human review effort, latency and supported usage measures. Repeat representative cases because model-mediated outputs can vary.
+
+For a **fictional** migration from manual triage, a team might require every critical boundary case to stop without a write and every accepted proposal to cite valid evidence. These are locally defined criteria, not a universal benchmark. Improved average speed cannot offset a critical authority violation.
+
+Keep a reviewed previous configuration for controlled rollback of agent behavior. Module 4.1's telemetry and feedback approach supports the ongoing scorecard; passing a small evaluation set doesn't establish safety for every production scenario.
 
 The transition from traditional ops to agentic workflows is incremental. You don't need to automate everything at once. Start with the workflows where you spend the most time coordinating between steps, and gradually expand as you build confidence in your agent definitions and skills.
 
