@@ -1,0 +1,39 @@
+### YamlMime:LearningPath
+uid: learn.wwl.az-401-deploy-safely-ai-automation
+metadata:
+  title: 'AZ-401: Deploy safely with AI-assisted automation'
+  description: Release accepted artifacts through environments and progressive exposure using GitHub and Azure DevOps, and use Copilot to plan and implement reviewed cloud changes.
+  ms.date: 11/26/2026
+  ms.topic: learning-path
+  ai-usage: ai-assisted
+  author: petender
+  ms.author: petender
+title: 'AZ-401: Deploy safely with AI-assisted automation'
+summary: |
+  Promote accepted build candidates through dev/test, staging, and production without rebuilding.
+  Compare canary, early-adopter, and blue-green strategies and review release-specific pipeline syntax for GitHub and Azure DevOps.
+  Use GitHub Copilot to plan and implement cloud changes, then verify candidate and configuration identity,
+  dependency readiness, and release-specific health checks.
+prerequisites: |
+  - Understanding of CI/CD stages, build artifacts, and promotion between deployment environments.
+  - Familiarity with Azure resource groups, compute, storage, and networking services.
+  - Ability to read basic infrastructure-as-code templates and Azure CLI or PowerShell commands.
+  - Understanding of service identities, access permissions, and secret management.
+  - Basic experience using GitHub Copilot in Visual Studio Code and reviewing generated changes.
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- advanced
+roles:
+- devops-engineer
+products:
+- azure
+- azure-devops
+- github
+subjects:
+- devops
+modules:
+- learn.wwl.design-release-strategies-ai-assisted-deployment-pipelines
+- learn.wwl.use-plan-mode-cloud-ops
+- learn.wwl.use-github-copilot-cloud-operations
+trophy:
+  uid: learn.wwl.az-401-deploy-safely-ai-automation.trophy

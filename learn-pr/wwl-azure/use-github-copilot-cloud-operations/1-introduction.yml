@@ -4,8 +4,9 @@ title: Introduction
 metadata:
   zone_pivot_groups: video-or-text
   title: Introduction
-  description: "This unit introduces Infrastructure as Code concepts and explains how GitHub Copilot changes the IaC authoring workflow."
-  ms.date: 6/11/2026
+  description: "Review the Copilot-assisted IaC workflow while recognizing the limits of compilation and what-if validation."
+  ms.date: 11/26/2026
+  ai-usage: ai-assisted
   author: petender
   ms.author: petender
   ms.topic: unit

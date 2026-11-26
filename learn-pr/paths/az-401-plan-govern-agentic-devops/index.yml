@@ -3,11 +3,11 @@ uid: learn.wwl.az-401-plan-govern-agentic-devops
 metadata:
   title: "AZ-401: Plan and govern work for agentic DevOps"
   description: "Explore agentic DevOps, manage work with Azure Boards and GitHub Copilot, and use Azure DevOps MCP Server with access controls and human oversight."
-  ms.date: 11/16/2026
-  author: petender
-  ms.author: petender
+  ms.date: 11/26/2026
   ms.topic: learning-path
   ai-usage: ai-assisted
+  author: petender
+  ms.author: petender
 title: "AZ-401: Plan and govern work for agentic DevOps"
 summary: |
   Explore how agentic approaches support DevOps teams while maintaining human oversight.

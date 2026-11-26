@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+# Provisional self-paced estimate; classroom time is recorded separately.
+uid: learn.wwl.build-validate-pipelines-containers-artifacts-ai-assistance.generate-build-pipelines-publish-accepted-outputs-copilot
+title: Generate build pipelines and publish accepted outputs with Copilot
+metadata:
+  title: Generate build pipelines and publish accepted outputs with Copilot
+  description: Evaluate build-only YAML and ZIP, container, Azure Artifacts, and GitHub Packages publication proposals.
+  author: petender
+  ms.author: petender
+  ms.date: 11/26/2026
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 14
+content: '[!include[](includes/4-generate-build-pipelines-publish-accepted-outputs-copilot.md)]'

@@ -1,0 +1,74 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-validate-pipelines-containers-artifacts-ai-assistance.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Assess test discovery, Docker stage dependencies, immutable candidates, secret handling, and publication permissions.
+  ms.date: 11/26/2026
+  author: petender
+  ms.author: petender
+  ms.topic: unit
+  module_assessment: true
+  ai_generated_module_assessment: true
+durationInMinutes: 5
+content: '[!include[](includes/7-knowledge-check.md)]
+
+  '
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "A generated CI job is green, but its test report shows that none of the required tests were discovered. How should the build be evaluated?"
+    choices:
+    - content: "Accept it because a successful test command proves the required behavior was checked."
+      isCorrect: false
+      explanation: "A command can succeed without executing the required tests. Exit status alone is insufficient evidence."
+    - content: "Treat verification as incomplete, correct test selection or discovery, and require applicable execution evidence."
+      isCorrect: true
+      explanation: "Build verification must establish that the intended suites actually ran and tested the required behavior."
+    - content: "Remove the test-report step so it does not disagree with the green job."
+      isCorrect: false
+      explanation: "Removing evidence hides the gap rather than repairing verification."
+  - content: "A Dockerfile defines a test stage, but the final runtime stage copies published output directly from the build stage. What change ensures tests cannot be skipped on the publication path?"
+    choices:
+    - content: "Make the final stage depend on tested output, or enforce an equivalent blocking pipeline test dependency."
+      isCorrect: true
+      explanation: "BuildKit follows stage dependencies. The selected output path or a required pipeline dependency must require successful tests."
+    - content: "Move the test stage above the runtime stage without changing any dependencies."
+      isCorrect: false
+      explanation: "Textual order does not make an otherwise unused test stage a dependency."
+    - content: "Rename the test stage to required-tests."
+      isCorrect: false
+      explanation: "A stage name does not enforce execution."
+  - content: "An image passed validation under a friendly tag. Another build later moved that tag to different contents. Which identity should the publisher use?"
+    choices:
+    - content: "The current tagged image, because the tag name matches the approved build."
+      isCorrect: false
+      explanation: "Mutable tags can point to contents that the approval did not cover."
+    - content: "A newly rebuilt image from the same commit, without collecting new evidence."
+      isCorrect: false
+      explanation: "Rebuilding can change dependencies or base-image inputs and creates another candidate."
+    - content: "The exact tested image digest with evidence bound to that output."
+      isCorrect: true
+      explanation: "A digest identifies the image contents and connects publication to the candidate actually verified."
+  - content: "A container build needs a private NuGet feed. How should its credential be supplied?"
+    choices:
+    - content: "Copy a token-bearing configuration into the image and delete it in a later layer."
+      isCorrect: false
+      explanation: "Deleting the file later does not remove the credential from earlier image layers."
+    - content: "Use a supported build-secret mechanism and scoped access, keeping credentials out of ordinary build arguments and image layers."
+      isCorrect: true
+      explanation: "Secret mounts and limited credentials let the authorized build restore packages without baking secrets into the distributed image."
+    - content: "Pass the token through an ordinary Docker ARG and print it while troubleshooting."
+      isCorrect: false
+      explanation: "Ordinary build arguments and logs are inappropriate channels for secrets."
+  - content: "An untrusted pull request can modify build scripts. Which design best protects package publication?"
+    choices:
+    - content: "Keep validation workers unprivileged and give a separate, controlled publisher only the permissions needed to publish accepted output."
+      isCorrect: true
+      explanation: "Separating untrusted validation from privileged publication reduces the ability of modified scripts to access publication credentials."
+    - content: "Give every PR worker publication credentials so it can test the full release path."
+      isCorrect: false
+      explanation: "Untrusted scripts could use those credentials outside the intended validation task."
+    - content: "Use the same privileged worker and ask Copilot not to run suspicious scripts."
+      isCorrect: false
+      explanation: "Model guidance does not replace worker isolation and permission boundaries."
