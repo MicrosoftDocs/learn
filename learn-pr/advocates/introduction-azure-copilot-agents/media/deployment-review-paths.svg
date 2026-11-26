@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="506" viewBox="0 0 840 506" role="img" aria-labelledby="title desc" font-family="Segoe UI, Arial, sans-serif">
+<title id="title">What gets deployed after review?</title><desc id="desc">Two parallel paths: Bicep what-if predicts changes to a template; Terraform can apply the exact saved plan. An authorized person decides whether to deploy.</desc>
+<rect id="paper" x="0" y="0" width="840" height="506" fill="#ffffff"/>
+<rect id="accent" x="28" y="21" width="28" height="5" rx="2" fill="#0078d4" stroke="none"/>
+<text data-label="1" data-cell="" x="66" y="31" fill="#000000" font-size="15" font-weight="700">DEPLOYMENT  /  DOWNLOADED FILES</text>
+<text data-label="1" data-cell="" x="28" y="78" fill="#000000" font-size="34" font-weight="700">What gets deployed after review?</text>
+<text data-label="1" data-cell="" x="28" y="110" fill="#000000" font-size="19" font-weight="400">Choose one path for the files generated from the approved design.</text>
+<!-- Azure icon: general/10007-icon-service-Resource-Groups.svg -->
+<svg data-icon="1" data-cell="" aria-hidden="true" x="761" y="35" width="46" height="46" viewBox="0 0 18 18"><g xmlns="http://www.w3.org/2000/svg"><g><path d="M.5,15.08a.16.16,0,0,0,.08.14l1.16.65L3.7,17a.17.17,0,0,0,.23-.06l.66-1.12a.16.16,0,0,0-.06-.21l-2.3-1.3a.17.17,0,0,1-.08-.14V3.85a.16.16,0,0,1,.08-.14l2.3-1.3a.16.16,0,0,0,.06-.21L3.93,1.08A.17.17,0,0,0,3.7,1L1.78,2.11l-1.2.67a.16.16,0,0,0-.08.14V15.08Z" fill="#949494" /><path d="M2.14,3.77l.06-.06,2.3-1.3a.14.14,0,0,0,.06-.21L3.9,1.08A.15.15,0,0,0,3.68,1L1.75,2.11.56,2.78s-.05,0-.06.06l.9.51Z" fill="#a3a3a3" /><path d="M4.5,15.59l-2.3-1.3a.22.22,0,0,1-.07-.09l-1.62,1,.05,0,1.15.65,2,1.11a.15.15,0,0,0,.22-.06l.66-1.12A.14.14,0,0,0,4.5,15.59Z" fill="#a3a3a3" /></g><path d="M17.5,15.08a.16.16,0,0,1-.08.14l-1.16.65L14.3,17a.17.17,0,0,1-.23-.06l-.66-1.12a.16.16,0,0,1,.06-.21l2.3-1.3a.17.17,0,0,0,.08-.14V3.85a.16.16,0,0,0-.08-.14l-2.3-1.3a.16.16,0,0,1-.06-.21l.66-1.12A.17.17,0,0,1,14.3,1l1.92,1.09,1.2.67a.16.16,0,0,1,.08.14V15.08Z" fill="#949494" /><path d="M15.86,3.77l-.06-.06-2.3-1.3a.14.14,0,0,1-.06-.21l.66-1.12A.15.15,0,0,1,14.32,1l1.93,1.09,1.19.67s0,0,.06.06l-.9.51Z" fill="#a3a3a3" /><path d="M13.5,15.59l2.3-1.3a.22.22,0,0,0,.07-.09l1.62,1,0,0-1.15.65-2,1.11a.15.15,0,0,1-.22-.06l-.66-1.12A.14.14,0,0,1,13.5,15.59Z" fill="#a3a3a3" /><polygon points="14.31 5.93 14.31 12.07 8.99 15.16 8.99 9.01 14.31 5.93" fill="#32bedd" /><polygon points="14.31 5.93 9 9.02 3.68 5.93 9 2.84 14.31 5.93" fill="#9cebff" /><polygon points="8.99 9.02 8.99 15.16 3.68 12.07 3.68 5.93 8.99 9.02" fill="#50e6ff" /><polygon points="3.68 12.07 8.99 9.01 8.99 15.16 3.68 12.07" fill="#9cebff" /><polygon points="14.31 12.07 8.99 9.01 8.99 15.16 14.31 12.07" fill="#50e6ff" /></g></svg>
+<text data-label="1" data-cell="" x="28" y="155" fill="#000000" font-size="16" font-weight="700">01   REVIEW THE CHANGE</text>
+<text data-label="1" data-cell="" x="448" y="155" fill="#000000" font-size="16" font-weight="700">02   DEPLOY AFTER APPROVAL</text>
+<rect id="bicep-preview" x="28" y="172" width="364" height="110" rx="9" fill="#e9f4fe" stroke="none"/>
+<text data-label="1" data-cell="bicep-preview" x="46" y="206" fill="#000000" font-size="23" font-weight="700">Bicep: run what-if</text>
+<text data-label="1" data-cell="bicep-preview" x="46" y="234" fill="#000000" font-size="19" font-weight="400">Check the template and parameters</text>
+<text data-label="1" data-cell="bicep-preview" x="46" y="258" fill="#000000" font-size="19" font-weight="400">against the intended Azure scope.</text>
+<g data-connector="1"><line x1="402" y1="226" x2="427" y2="226" stroke="#53687b" stroke-width="3" stroke-linecap="round"/><polygon points="438,226 427,232 427,220" fill="#53687b"/></g>
+<rect id="bicep-deploy" x="448" y="172" width="364" height="110" rx="9" fill="#e9f4fe" stroke="none"/>
+<text data-label="1" data-cell="bicep-deploy" x="466" y="206" fill="#000000" font-size="23" font-weight="700">Submit the template</text>
+<text data-label="1" data-cell="bicep-deploy" x="466" y="234" fill="#000000" font-size="19" font-weight="400">Use the reviewed inputs and scope.</text>
+<text data-label="1" data-cell="bicep-deploy" x="466" y="258" fill="#000000" font-size="19" font-weight="400">The preview itself is not deployed.</text>
+<rect id="tf-preview" x="28" y="302" width="364" height="110" rx="9" fill="#e3f4f1" stroke="none"/>
+<text data-label="1" data-cell="tf-preview" x="46" y="336" fill="#000000" font-size="23" font-weight="700">Terraform: save the plan</text>
+<text data-label="1" data-cell="tf-preview" x="46" y="364" fill="#000000" font-size="19" font-weight="400">Review the planned changes.</text>
+<text data-label="1" data-cell="tf-preview" x="46" y="388" fill="#000000" font-size="19" font-weight="400">Protect the saved plan file.</text>
+<g data-connector="1"><line x1="402" y1="357" x2="427" y2="357" stroke="#53687b" stroke-width="3" stroke-linecap="round"/><polygon points="438,357 427,363 427,351" fill="#53687b"/></g>
+<rect id="tf-deploy" x="448" y="302" width="364" height="110" rx="9" fill="#e3f4f1" stroke="none"/>
+<text data-label="1" data-cell="tf-deploy" x="466" y="336" fill="#000000" font-size="23" font-weight="700">Apply that exact plan file</text>
+<text data-label="1" data-cell="tf-deploy" x="466" y="364" fill="#000000" font-size="19" font-weight="400">Applying it will not prompt again.</text>
+<text data-label="1" data-cell="tf-deploy" x="466" y="388" fill="#000000" font-size="19" font-weight="400">Review a new plan if inputs change.</text>
+<rect id="deploy-stop" x="28" y="432" width="784" height="54" rx="9" fill="#f3f5f7" stroke="none"/>
+<text data-label="1" data-cell="deploy-stop" x="46" y="466" fill="#000000" font-size="19" font-weight="700">Unexpected change? Stop and review it with the resource owner.</text>
+</svg>

@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.dpu.surface-repair-tool
+title: Diagnose and support Surface devices with Surface Repair Tool
+metadata:
+  title: Diagnose And Support Surface Devices With Surface Repair Tool
+  description: 'Learn how to use Surface Repair Tool to diagnose hardware issues, interpret test results, complete supported repair workflows, and validate device functionality after a repair.'
+  ms.date: 11/24/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: module
+  ms.service: surface
+summary: >
+  Surface Repair Tool provides guided diagnostics and supported repair workflows for compatible Surface devices. Learn how to navigate the tool, run hardware tests, review results, determine appropriate next steps, and complete post-repair validation and functionality testing.
+
+abstract: |
+  By the end of this module, you'll be able to:
+  - Describe how Surface Repair Tool supports hardware diagnostics and guided repairs.
+  - Navigate Surface Repair Tool and identify its primary diagnostic and repair capabilities.
+  - Select and run diagnostic tests based on a Surface device's hardware issue.
+  - Interpret diagnostic results and determine appropriate next steps.
+  - Explain how Surface Repair Tool supports repair validation, calibration, and post-repair functionality testing.
+
+prerequisites: |
+  - None
+iconUrl: /training/achievements/surface-repair-tool-badge.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - administrator
+  - business-leader
+  - business-owner
+  - business-user
+  - technology-manager
+products:
+  - surface
+units:
+  - learn.dpu.surface-repair-tool.introduction
+  - learn.dpu.surface-repair-tool.access-and-navigate-surface-repair-tool
+  - learn.dpu.surface-repair-tool.run-hardware-diagnostics-with-surface-repair-tool
+  - learn.dpu.surface-repair-tool.run-a-battery-diagnostic
+  - learn.dpu.surface-repair-tool.choose-the-next-troubleshooting-step
+  - learn.dpu.surface-repair-tool.complete-a-guided-repair-workflow
+  - learn.dpu.surface-repair-tool.find-support-and-configure-surface-repair-tool
+  - learn.dpu.surface-repair-tool.module-assessment
+  - learn.dpu.surface-repair-tool.summary
+badge:
+  uid: learn.dpu.surface-repair-tool.badge

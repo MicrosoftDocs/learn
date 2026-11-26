@@ -1,9 +1,14 @@
-In this module you learned about the Azure Copilot Deployment, Migration, Observability, Optimization, Resiliency, and Troubleshooting agents. These agentic capabilities work in concert to automate the cloud management lifecycle end-to-end. From initially moving workloads into Azure, to deploying new infrastructure, monitoring and tuning it continuously, ensuring high availability, and rapidly resolving issues. By delegating domain-specific tasks to each intelligent agent, you can use Azure Copilot to reduce manual effort, minimize errors, and improve operational efficiency across your organization's cloud environments.
+Choose an agent based on the decision you need to make. The Deployment agent helps design new infrastructure; the Azure Catalyst agent helps assess existing workloads and plan their migration. Neither a generated configuration nor an approved wave plan means the workload has been deployed or moved.
 
-Learn more:
+During an incident, use Observability in Azure Monitor to examine telemetry and identify a likely cause. Use Troubleshooting for resource diagnostics and, where supported, a fix you can review and confirm. For an underused VM, Optimization helps you weigh a resize against workload needs. For a VM that supports Azure VM Backup, Resiliency can guide backup configuration. It can also help you plan for a zone outage. Review the evidence before taking action, and use the appropriate Azure service to confirm the outcome.
+
+:::image type="content" source="../media/agent-decision-map.svg" alt-text="Diagram that shows which of the six agents to use for deployment, migration, telemetry, VM diagnosis, resizing, or outage planning.":::
+
+## Learn more
 
 - [Deployment agent](/azure/copilot/deployment-agent)
-- [Observability agent](/azure/copilot/observability-agent)
+- [Azure Catalyst agent](/azure/migrate/azure-copilot-migration-agent)
+- [Observability agent](/azure/azure-monitor/aiops/observability-agent-overview)
+- [Optimization agent](/azure/copilot/optimization-agent)
 - [Resiliency agent](/azure/copilot/resiliency-agent)
 - [Troubleshooting agent](/azure/copilot/troubleshooting-agent)
-- [Optimization agent](/azure/copilot/optimization-agent)

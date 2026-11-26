@@ -23,30 +23,31 @@ metadata:
   gs-source.content: https://github.com/MicrosoftDocs/learn-pr/blob/main/learn-pr/advocates/introduction-azure-copilot-agents/index.yml
   ms.author: orthomas
   author: Orin-Thomas
-  ms.date: 02/13/2026
+  ms.date: 11/23/2026
   ms.update-cycle: 180-days
   title: Introduction to Azure Copilot Agents
-  description: In this module, you get an overview of each of the agents available in Azure Copilot and how you can use them to perform common Azure operations tasks more efficiently.
+  description: Choose an Azure Copilot agent for an operations task and distinguish recommendations from actions you or an Azure service must complete.
   ms.topic: module
   ms.service: azure
   ms.collection: ce-advocates-ai-copilot
 title: Introduction to Azure Copilot agents
 summary: |
-  Azure Copilot is an AI-driven cloud assistant that helps you perform operations tasks in Azure. Azure Copilot includes six specialized agents, which assist you with managing and maintaining your Azure workloads. 
-  In this module, you get an overview of each of the agents available in Azure Copilot and how you can use them to perform common Azure operations tasks more efficiently.
-abstract: | 
-  By completing this module, you learn about the functionality of the following Azure Copilot agents:
-  -	Deployment agent
-  -	Migration agent
-  -	Observability agent
-  -	Optimization agent
-  -	Resiliency agent
-  -	Troubleshooting agent
-prerequisites:   |
-  To get the best learning experience from this module, you should have knowledge and experience of:
-  -	Microsoft Azure and cloud services
+  Learn how six Azure Copilot agents help you design, migrate, investigate, and manage Azure workloads. For each task, identify what the agent can do, what evidence to review, and which actions you complete in an Azure service.
+abstract: |
+  By the end of this module, you can:
+
+  - Use the Deployment agent to plan new infrastructure and review Terraform or Bicep before deployment.
+  - Use the Azure Catalyst agent to interpret migration readiness and distinguish wave planning from cutover.
+  - Start an Observability investigation in Azure Monitor and save its findings for another responder.
+  - Evaluate an Optimization recommendation before resizing a virtual machine.
+  - Distinguish the Resiliency agent's VM backup workflow from planning for a zone or regional outage.
+  - Use the Troubleshooting agent to diagnose a resource problem and prepare a support request if needed.
+prerequisites: |
+  This module assumes familiarity with:
+
+  - Microsoft Azure and cloud services
   - Azure operations tasks and best practices
-  -	AI concepts
+  - AI concepts
   - Architecture concepts
 iconUrl: /learn/achievements/generic-badge.svg
 levels:

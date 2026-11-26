@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="613" viewBox="0 0 840 613" role="img" aria-labelledby="title desc" font-family="Segoe UI, Arial, sans-serif">
+<title id="title">Which agent fits the task?</title><desc id="desc">Compare three pairs: Deployment designs new infrastructure and Catalyst plans a migration. Observability investigates telemetry and Troubleshooting diagnoses a resource. Optimization evaluates VM resizing and Resiliency reviews protection.</desc>
+<rect id="paper" x="0" y="0" width="840" height="613" fill="#ffffff"/>
+<rect id="accent" x="28" y="21" width="28" height="5" rx="2" fill="#0078d4" stroke="none"/>
+<text data-label="1" data-cell="" x="66" y="31" fill="#000000" font-size="15" font-weight="700">FIELD GUIDE  /  SIX AZURE COPILOT AGENTS</text>
+<text data-label="1" data-cell="" x="28" y="78" fill="#000000" font-size="34" font-weight="700">Which agent fits the task?</text>
+<text data-label="1" data-cell="" x="28" y="110" fill="#000000" font-size="19" font-weight="400">Choose by the decision you need to make, not by resource type.</text>
+<text data-label="1" data-cell="" x="28" y="155" fill="#000000" font-size="16" font-weight="700">01   BUILD OR MOVE</text>
+<rect id="left155" x="28" y="171" width="380" height="95" rx="9" fill="#e9f4fe" stroke="none"/>
+<text data-label="1" data-cell="left155" x="46" y="205" fill="#000000" font-size="23" font-weight="700">Deployment</text>
+<text data-label="1" data-cell="left155" x="46" y="233" fill="#000000" font-size="19" font-weight="400">Design infrastructure for a new app.</text>
+<rect id="right155" x="432" y="171" width="380" height="95" rx="9" fill="#e9f4fe" stroke="none"/>
+<text data-label="1" data-cell="right155" x="450" y="205" fill="#000000" font-size="23" font-weight="700">Catalyst</text>
+<text data-label="1" data-cell="right155" x="450" y="233" fill="#000000" font-size="19" font-weight="400">Plan a wave for existing workloads.</text>
+<text data-label="1" data-cell="" x="28" y="307" fill="#000000" font-size="16" font-weight="700">02   INVESTIGATE AN INCIDENT</text>
+<rect id="left307" x="28" y="323" width="380" height="95" rx="9" fill="#e3f4f1" stroke="none"/>
+<text data-label="1" data-cell="left307" x="46" y="357" fill="#000000" font-size="23" font-weight="700">Observability</text>
+<text data-label="1" data-cell="left307" x="46" y="385" fill="#000000" font-size="19" font-weight="400">Why did API latency rise?</text>
+<rect id="right307" x="432" y="323" width="380" height="95" rx="9" fill="#e3f4f1" stroke="none"/>
+<text data-label="1" data-cell="right307" x="450" y="357" fill="#000000" font-size="23" font-weight="700">Troubleshooting</text>
+<text data-label="1" data-cell="right307" x="450" y="385" fill="#000000" font-size="19" font-weight="400">Why did this VM restart?</text>
+<text data-label="1" data-cell="" x="28" y="459" fill="#000000" font-size="16" font-weight="700">03   REVIEW COST OR PROTECTION</text>
+<rect id="left459" x="28" y="475" width="380" height="95" rx="9" fill="#f3f5f7" stroke="none"/>
+<text data-label="1" data-cell="left459" x="46" y="509" fill="#000000" font-size="23" font-weight="700">Optimization</text>
+<text data-label="1" data-cell="left459" x="46" y="537" fill="#000000" font-size="19" font-weight="400">Should this VM change size?</text>
+<rect id="right459" x="432" y="475" width="380" height="95" rx="9" fill="#f3f5f7" stroke="none"/>
+<text data-label="1" data-cell="right459" x="450" y="509" fill="#000000" font-size="23" font-weight="700">Resiliency</text>
+<text data-label="1" data-cell="right459" x="450" y="537" fill="#000000" font-size="19" font-weight="400">Can checkout withstand a zone outage?</text>
+</svg>
