@@ -19,5 +19,5 @@ This module only established the foundation. The next modules in this learning p
 - [Microsoft Azure Copilot overview](/azure/copilot/overview)
 - [GitHub Copilot documentation](https://docs.github.com/copilot)
 - [Introduction to Azure Copilot agents](/training/modules/introduction-azure-copilot-agents/)
-- [Azure DevOps product documentation](/azure/devops/?view=azure-devops&preserve-view=true)
+- [Azure DevOps product documentation](/azure/devops/?view=azure-devops)
 - [Azure Well-Architected Framework—Operational Excellence](/azure/well-architected/operational-excellence/)
