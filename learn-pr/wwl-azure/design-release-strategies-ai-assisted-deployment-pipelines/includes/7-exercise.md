@@ -28,7 +28,7 @@ Import the course repository into a private Azure DevOps project and use its sup
 
 Clone the course repository, push your copy to a GitHub lab repository, and activate the supplied workflow. Configure Microsoft Entra OIDC trust for the deployment environments and a required Chat reviewer. Use Copilot to create Web and Chat jobs, deploy Web first, then approve Chat deployment and verify the live application.
 
-[![Button to launch the GitHub exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?LinkId=2390015)
+[![Select this button to launch the GitHub exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?LinkId=2390015)
 
 > [!IMPORTANT]
 > Deploy only to your dedicated lab resource group. Keep the deployment identity's permissions scoped to that group, review Copilot's changes, and use the configured environment approval before releasing Chat.

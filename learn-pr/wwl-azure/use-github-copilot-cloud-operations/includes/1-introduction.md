@@ -37,7 +37,7 @@ By the end of this module, you are able to:
 - Describe the GitHub Copilot capabilities most relevant to infrastructure work
 
 
-## Infrastructure as Code challenges
+## Infrastructure as code challenges
 
 Each step has friction. Writing a Bicep template from scratch requires knowledge of resource types, API versions, required properties, and Azure-specific naming conventions. Looking up the correct API version for `Microsoft.Network/virtualNetworks` means navigating documentation or copying from previous projects. Syntax errors get caught after running a build command. And keeping templates up to date as Azure APIs evolve, is an ongoing maintenance burden.
 

@@ -8,13 +8,14 @@ metadata:
   author: petender
   ms.author: petender
   ms.topic: module
+  ms.service: azure-devops
   ai-usage: ai-generated
 title: Design release strategies and AI-assisted deployment pipelines
 summary: Consume the accepted build candidate without rebuilding, verify target readiness, and generate release-specific Azure Pipelines or GitHub Actions proposals. Separate environment promotion from production exposure, preserve scoped identity and configuration, and decide promotion using candidate-linked security and health evidence.
 units:
 - learn.wwl.design-release-strategies-ai-assisted-deployment-pipelines.introduction
-- learn.wwl.design-release-strategies-ai-assisted-deployment-pipelines.design-environments-and-deployment-components
-- learn.wwl.design-release-strategies-ai-assisted-deployment-pipelines.design-secretless-identity-and-configuration
+- learn.wwl.design-release-strategies-ai-assisted-deployment-pipelines.design-environments-deployment-components
+- learn.wwl.design-release-strategies-ai-assisted-deployment-pipelines.design-secretless-identity-configuration
 - learn.wwl.design-release-strategies-ai-assisted-deployment-pipelines.design-release-strategies-health-gates
 - learn.wwl.design-release-strategies-ai-assisted-deployment-pipelines.generate-review-release-pipelines-github-azure-devops
 - learn.wwl.design-release-strategies-ai-assisted-deployment-pipelines.govern-promotion-from-observed-evidence

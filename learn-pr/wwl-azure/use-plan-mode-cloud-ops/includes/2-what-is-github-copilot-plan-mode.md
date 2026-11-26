@@ -17,7 +17,7 @@ GitHub Copilot in Visual Studio Code provides three built-in agents, each operat
 
 The distinction that matters for operations work isn't just about safety. It's about where in the agentic loop the human judgment sits. With the Agent, you review output after the fact. With the Plan agent, you review and approve the approach before a single tool call that modifies state is made.
 
-## How the Plan agent operates internally
+## How the plan agent operates internally
 
 The Plan agent is an instance of a broader agentic pattern called **plan-and-execute**, where reasoning about what to do is separated from doing it. Understanding how the agent gathers information at each stage helps you write better prompts and interpret its output more critically.
 
@@ -64,7 +64,7 @@ This iterative loop is where Plan mode earns most of its value for operations wo
 
 ![Diagram of a typical GitHub plan agent planning flow.](../media/agent-planning-workflow.png)
 
-## Access the Plan agent
+## Access the plan agent
 
 You can access the Plan agent in two ways:
 
@@ -97,7 +97,7 @@ For example, if you ask the Plan agent to create an Azure resource group tagging
 
 The Plan agent automatically saves its implementation plan to a session memory file at `/memories/session/plan.md`. You can access this file by running the **Chat: Show Memory Files** command in the Command Palette and selecting `plan.md`. Because session memory is cleared when the conversation ends, the plan isn't available in later sessions. If you need to preserve a plan, copy it to a file in your repository before closing the session.
 
-## Plan mode versus Agent mode
+## Plan mode versus agent mode
 
 The difference between Plan mode and Agent mode isn't primarily about capability. Both have access to the same underlying model. The difference is about the position of the human review gate in the agentic loop and the side-effect contract each mode operates under.
 
