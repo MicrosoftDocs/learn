@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.surface-repair-tool.access-and-navigate-surface-repair-tool
+title: Access and navigate Surface Repair Tool
+metadata:
+  title: Access And Navigate Surface Repair Tool
+  description: This content is part of the "Diagnose and support Surface devices with Surface Repair Tool" module.
+  ms.date: 11/24/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-access-and-navigate-surface-repair-tool.md)]

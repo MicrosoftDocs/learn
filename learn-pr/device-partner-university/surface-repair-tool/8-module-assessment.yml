@@ -1,0 +1,106 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.surface-repair-tool.module-assessment
+title: Module assessment
+metadata:
+  module_assessment: true
+  title: Module assessment
+  description: This content is part of the "Diagnose and support Surface devices with Surface Repair Tool" module.
+  ms.date: 11/24/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+
+  questions:
+
+  - content: "A commercial IT administrator needs standardized diagnostic and troubleshooting workflows for the organization's Surface devices. How should they access Surface Repair Tool?"
+    choices:
+    - content: "Install it from the Microsoft Store and launch it from the Start menu."
+      isCorrect: false
+      explanation: "Incorrect. Surface Repair Tool for commercial IT administrators is accessed through Surface IT Toolkit, not installed as a standalone app from the Microsoft Store."
+
+    - content: "Open Surface IT Toolkit and select the Surface Repair Tool module."
+      isCorrect: true
+      explanation: "Correct. Surface Repair Tool is available as a module in Surface IT Toolkit, providing commercial IT administrators with guided diagnostic and troubleshooting workflows."
+
+    - content: "Open the Surface app, select Help & Support, and then go to Troubleshoot basic issues."
+      isCorrect: false
+      explanation: "Incorrect. The Surface app provides device information and support options, but Surface Repair Tool is accessed through Surface IT Toolkit."
+
+    - content: "Download it from the Microsoft Download Center and launch it from a service workstation."
+      isCorrect: false
+      explanation: "Incorrect. Surface Repair Tool is accessed through Surface IT Toolkit rather than downloaded separately from the Microsoft Download Center."
+
+  - content: "A Surface device isn't charging as expected. You've launched Surface Repair Tool and reviewed the device information on the Home page. What should you do next?"
+    choices:
+    - content: "Select Start a repair and choose the battery replacement workflow."
+      isCorrect: false
+      explanation: "Incorrect. Diagnose the charging issue before starting a repair or replacing hardware."
+
+    - content: "Select Support to escalate the issue."
+      isCorrect: false
+      explanation: "Incorrect. Before escalating the issue, use the available diagnostics to identify the cause of the charging problem."
+
+    - content: "Select Settings to change the diagnostic run preferences."
+      isCorrect: false
+      explanation: "Incorrect. Changing settings isn't necessary to begin diagnosing the charging issue."
+
+    - content: "Select Run a test and choose the battery diagnostics."
+      isCorrect: true
+      explanation: "Correct. Run the battery diagnostics to evaluate the device's battery and charging behavior before determining whether further troubleshooting or repair is needed."
+
+  - content: "You're about to run the USB diagnostic in Surface Repair Tool. What should you do first?"
+    choices:
+    - content: "Disconnect the USB accessories and any connected Surface Dock."
+      isCorrect: true
+      explanation: "Correct. Disconnect USB accessories and any connected Surface Dock before starting the USB diagnostic so the device's USB ports can be tested appropriately."
+
+    - content: "Connect a Surface Dock so all USB ports can be tested at the same time."
+      isCorrect: false
+      explanation: "Incorrect. The Surface Dock and other USB accessories should be disconnected before running the USB diagnostic."
+
+    - content: "Nothing. The USB diagnostic runs automatically without any interaction."
+      isCorrect: false
+      explanation: "Incorrect. Preparation is required before running the USB diagnostic, including disconnecting USB accessories and any connected Surface Dock."
+
+    - content: "Enter System Repair Mode so the ports can be tested safely."
+      isCorrect: false
+      explanation: "Incorrect. System Repair Mode isn't required to run the USB diagnostic."
+
+  - content: "A Bluetooth diagnostic fails because the accessory isn't detected. What's the most appropriate next step?"
+    choices:
+    - content: "Select the Fix option right away to start a repair workflow."
+      isCorrect: false
+      explanation: "Incorrect. A failed detection doesn't immediately indicate that a hardware repair is needed. Check the Bluetooth connection conditions and run the test again first."
+
+    - content: "Conclude that the Bluetooth hardware is faulty and contact support."
+      isCorrect: false
+      explanation: "Incorrect. An accessory might not be detected because of its pairing state, distance, or Bluetooth settings, so troubleshoot these conditions before concluding that the hardware is faulty."
+
+    - content: "Make sure Bluetooth is on, the accessory is in pairing mode and within 1-2 meters, and then run the test again."
+      isCorrect: true
+      explanation: "Correct. Verify that Bluetooth is enabled, place the accessory in pairing mode, keep it within 1-2 meters of the Surface device, and then rerun the diagnostic."
+
+    - content: "Switch to Surface Diagnostic Toolkit (SDT) for further testing."
+      isCorrect: false
+      explanation: "Incorrect. First correct common Bluetooth detection conditions and rerun the diagnostic in Surface Repair Tool before moving to other troubleshooting options."
+
+  - content: "During a battery repair workflow, you've entered System Repair Mode and physically replaced the battery. What should you do next?"
+    choices:
+    - content: "Nothing. The repair is complete once the new battery is installed."
+      isCorrect: false
+      explanation: "Incorrect. The repair workflow isn't complete until the replaced component is validated after the device returns to Windows."
+
+    - content: "Power on the device, boot to Windows, relaunch Surface Repair Tool, and select Step 3 to validate the repair."
+      isCorrect: true
+      explanation: "Correct. After replacing the battery, boot the device into Windows, relaunch Surface Repair Tool, and continue to Step 3 to validate that the repair was successful."
+
+    - content: "Enter System Repair Mode again to confirm the new battery is detected."
+      isCorrect: false
+      explanation: "Incorrect. After the physical replacement is complete, return to Windows and use the validation step in Surface Repair Tool rather than reentering System Repair Mode."
+
+    - content: "Run Step 1 to verify the health of the replaced battery."
+      isCorrect: false
+      explanation: "Incorrect. Step 1 is part of the earlier repair workflow. After replacing the battery, continue to Step 3 to validate the completed repair."

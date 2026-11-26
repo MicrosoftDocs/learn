@@ -3,8 +3,8 @@ uid: learn.introduction-azure-copilot-agents.optimization-agent
 title: Optimization agent
 metadata:
   title: Optimization Agent
-  description: Understand how to use the Optimization Agent to automate and streamline your Azure resource optimization, ensuring consistency and efficiency in your operations tasks.
-  ms.date: 02/13/2026
+  description: Weigh resize estimates against peak demand, check scale-set hardware and autoscale limits, and check VM quota before taking a reporting VM offline.
+  ms.date: 11/23/2026
   author: Orin-Thomas
   ms.author: orthomas
   ms.topic: unit
