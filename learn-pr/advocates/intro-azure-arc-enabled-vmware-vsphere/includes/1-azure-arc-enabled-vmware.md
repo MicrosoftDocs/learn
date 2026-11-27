@@ -5,9 +5,9 @@ Azure Arc-enabled VMware vSphere allows you to:
 - Discover your VMware vSphere estate (VMs, templates, networks, datastores, clusters/hosts/resource pools) and register resources with Azure at scale.
 - Perform various virtual machine (VM) operations directly from Azure, such as create, resize, delete, and power cycle operations such as start/stop/restart on VMware VMs consistently with Azure.
 - Enable developers and application teams to self-serve VM operations on-demand mediated by Azure role-based access control.
-- Govern, protect, configure, and monitor VMware VMs at scale by through the Azure connected machine agent.
+- Govern, protect, configure, and monitor guest operating systems by installing the Azure Connected Machine agent and enabling the Azure services you need.
 - Browse your VMware vSphere resources (VMs, templates, networks, and storage) in Azure.
-- Leverage Azure Arc benefits such as Windows Server management for VMs with Software Assurance licenses, Extended Security Updates benefits for Windows Server and SQL Server with pay-as-you-go billing for on-premises VMs and free ESUs for Azure VMware Solution VMs.
+- Use Windows Server management benefits for qualifying licenses and enroll eligible Windows Server and SQL Server workloads in Extended Security Updates (ESUs). Don't assume ESUs are free on AVS: Windows Server and SQL Server terms depend on the version.
 
 To connect your VMware vCenter Server to Azure Arc, you need to deploy the Azure Arc resource bridge in your vSphere environment. Azure Arc resource bridge is a virtual appliance that hosts the components that communicate with your vCenter Server and Azure.
 
@@ -15,11 +15,11 @@ vSphere resources are automatically discovered when you connect a VMware vCenter
 
 [![Diagram of Azure Arc-enabled VMware vSphere architecture.](../media/arc-vmware-architecture.png)](../media/arc-vmware-architecture.png#lightbox)
 
-Guest OS-based capabilities are provided by enabling guest management. Guest management involves installing the Arc agent on the VMs running in the VMware environment. Once you enable guest management, you can deploy VM extensions to extend the Azure management capabilities. For example, by enabling guest management, you can perform virtual hardware operations such as VM resizing, adding and deleting disks, and VM restarts.
+Choose the management layer for the task. To resize a VM, add a virtual disk, or power cycle the VM, onboard it for **Virtual hardware management only**. The resource bridge sends the operation to vCenter; no agent is required inside the VM. To install a monitoring extension or assess updates inside the guest OS, choose **Arc agent with virtual hardware management**. This also installs the Azure Connected Machine agent.
 
-Arc-enabled VMware vSphere works with vCenter Server versions 7 and 8. You can onboard multiple vCenters using a single Azure Arc resource bridge as long as the total number of VMs managed across all onboarded systems doesn't exceed 9500. 
+For on-premises deployments, the support matrix lists vCenter Server version 8. One resource bridge can connect multiple vCenters, but their **combined** inventory must not exceed 9,500 VMs. A managed AVS private cloud uses its own onboarding procedure so Azure can identify the hosting platform correctly.
 
-Once a vCenter instance is connected to Azure, you can use the Azure portal to browse VMware vSphere inventory and register virtual machines resource pools, networks, and templates into Azure. This enables you to provide developer and operations teams fine-grained permissions on those VMware resources through Azure Role Based Access Control.
+Discovery makes inventory visible; it doesn't grant management access or install software. Onboard the selected VMs, resource pools, networks, datastores, and templates as Azure resources. You can then give teams permissions on those resources through Azure role-based access control (RBAC).
 
 The difference between Azure Arc-enabled servers and Azure Arc-enabled VMware vSphere is as follows:
 

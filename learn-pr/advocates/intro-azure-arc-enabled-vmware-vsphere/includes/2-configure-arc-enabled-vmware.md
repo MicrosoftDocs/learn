@@ -1,137 +1,70 @@
-Connecting your VMware vCenter Server instance to Azure Arc enables you to start using the Azure Arc-enabled VMware vSphere features. You make this connection with a helper script that deploys the Azure Arc resource bridge virtual appliance in your vCenter environment. Once deployed, the script then installs a VMware cluster extension to provide a continuous connection between vCenter Server and Azure Arc.
+Use the vCenter helper script for an on-premises deployment. It deploys an Azure Arc resource bridge appliance in vSphere and installs the VMware cluster extension on the bridge. For an Azure VMware Solution (AVS) private cloud, use the AVS procedure below instead; it associates the resources with the managed private cloud.
 
-Prior to performing these steps, you need access to a Microsoft Entra account that has the Owner, Contributor, or Azure Arc VMware Private Clouds Onboarding role to a resource group in the target subscription. The vCenter server you want to connect also needs to meet the following requirements:
+## Prepare your on-premises environment
 
-- vCenter Server version 7 or 8.
-- A virtual network that can provide internet access, directly or through a proxy. It must also be possible for VMs on this network to communicate with the vCenter server on TCP port (usually 443).
-- At least three free static IP addresses on the above network.
-- A resource pool or a cluster with a minimum capacity of 16 GB of RAM and 4 vCPUs.
-- A datastore with a minimum of 200 GB of free disk space or 400 GB for High Availability deployment, available through the resource pool or cluster.
+- **Azure:** Choose a supported region and a target resource group. Assign **Azure Arc VMware Private Clouds Onboarding** on that group, or use an existing Contributor or Owner assignment there. If providers aren't registered, someone with the provider's `/register/action` at **subscription** scope must register them. A resource-group role alone can't do that.
+- **vSphere:** Use vCenter Server version 8. The bridge appliance minimum is 4 vCPUs and 8 GB RAM. When preparing the resource pool, the VMware quickstart calls for a reservation of 4 vCPUs and at least 16 GB RAM. Plan for at least 200 GB of free datastore space, or 400 GB for a high-availability deployment. Use supported hybrid storage (flash and HDD) or all-flash storage (SSDs or NVMe); available capacity alone doesn't establish a supported storage configuration. Check the requirements for your chosen topology before reserving capacity.
+- **Account:** Use a dedicated vSphere account that can read the inventory and deploy and update VMs on the resource pools or clusters, networks, and templates you intend to use. The bridge requires noninteractive credentials and can't use a vSphere account that requires multifactor authentication. This restriction doesn't remove MFA requirements for administrators signing in to Azure. Credentials are encrypted locally as Kubernetes secrets. The appliance deployment/upgrade account and the VMware cluster extension account are stored separately, even when they use the same username. When rotating that account's password, update both credential sets: use `az arcappliance update-infracredentials vmware` for the appliance and `az connectedvmware vcenter connect` for the VMware extension, supplying the parameters for your existing deployment.
+- **Management workstation:** Run the helper on a Windows or Linux machine with 64-bit Azure CLI, internal and external DNS resolution, and connectivity to vCenter, the ESXi host backing the target datastore, and the required Azure endpoints. The workstation must also reach the appliance IPs and control plane directly on TCP 22 and 6443, bypassing proxies. The bridge needs connectivity to vCenter (normally TCP 443). Appliance peers also need TCP 6443, 2379, 2380, 10250, 10257, and 10259 for upgrades. Build the complete allow list from the current bridge network requirements and VMware support matrix; these local ports don't replace the required outbound Azure and download endpoints.
 
-The vSphere account used for this operation must have the following permissions:
+For a standard bridge, reserve three unused static IP addresses on one subnet: two for the appliance pool, including its upgrade address, and one **outside** the pool for the control plane. DHCP isn't supported on VMware. Don't overlap the bridge's reserved pod or service ranges. For new deployments using bridge version 1.8.0 or later, these are `10.244.0.0/16` and `10.96.0.0/24`; check the version-specific requirements for an existing bridge. The following example assumes the subnet is available at your site:
 
-- Read all inventory permission.
-- Permission to deploy and update VMs to all the resource pools (or clusters), networks, and VM templates that you want to use with Azure Arc.
-
-The details of this account will be stored locally within the Azure Arc resource bridge VM and encrypted as a Kubernetes secret at rest. The vSphere account allows Azure Arc-enabled VMware to interact with VMware vSphere. If your organization practices routine credential rotation, you'll need to update the credentials in Azure Arc-enabled VMware to maintain the connection between Azure Arc-enabled VMware and VMware vSphere.
-
-To obtain the onboarding script:
-
-1. In the Azure portal, search and select **Azure Arc**.
-1. In the **Overview** page, select **Add resources** under **Manage resources across environments**.
-1. In the **Host environments** section, in **VMware vSphere** select **Add**.
-1. Select Create a new resource bridge and select Next: Basics.
-1. Provide a name for Azure Arc resource bridge. For example: contoso-syd-resourcebridge.
-1. Select a subscription and resource group where you want to create the resource bridge.
-1. Under Region, select an Azure location where you want to store the resource metadata.
-1. Provide a name for Custom location. This is the name that you'll see when you deploy virtual machines. Name it for the datacenter or the physical location of your datacenter. For example: contoso-syd-dc.
-1. Leave the option Use the same subscription and resource group as your resource bridge selected.
-1. Provide a name for your vCenter Server instance in Azure. For example: contoso-syd-vcenter.
-1. You can choose to Enable Kubernetes Service on VMware. If you choose to do so, ensure you update the namespace of your custom location to "default" in the onboarding script: $customLocationNamespace = ("default".ToLower() -replace '[^a-z0-9-]', ''). 
-1. Select Next: Tags and assign Azure tags to your resources in Value under Physical location tags. You can add additional tags to help you organize your resources to facilitate administrative tasks using custom tags.
-1. Select Next: Download and run script and download and run the script.
-
-If your subscription isn't registered with all the required resource providers, a Register button appears. A typical onboarding that uses the script takes between 30 and 60 minutes. During the process, you're prompted for the following details:
-
-| **Requirement** | **Details** |
-|---|---|
-| **Azure login** | When you're prompted, go to the device sign-in page, enter the authorization code shown in the terminal, and sign in to Azure. |
-| **vCenter FQDN/Address** | Enter the fully qualified domain name for the vCenter Server instance (or an IP address). For example: **10.160.0.1** or **syd-vcenter.contoso.com**. |
-| **vCenter Username** | Enter the username for the vSphere account. |
-| **vCenter password** | Enter the password for the vSphere account. |
-| **Data center selection** | Select the name of the datacenter (as shown in the vSphere client) where the Azure Arc resource bridge VM should be deployed. |
-| **Network selection** | Select the name of the virtual network or segment to which the Azure Arc resource bridge VM must be connected. This network should allow the appliance to communicate with vCenter Server and the Azure endpoints (or internet). |
-| **Static IP** | Arc Resource Bridge requires static IP address assignment and DHCP isn't supported.<br>1. **Static IP address prefix**: Network address in CIDR notation. For example: **192.168.0.0/24**.<br>2. **Static gateway**: Gateway address. For example: **192.168.0.0**.<br>3. **DNS servers**: IP address(es) of DNS server(s) used by Azure Arc resource bridge VM for DNS resolution. Azure Arc resource bridge VM must be able to resolve external sites, like mcr.microsoft.com and the vCenter server.<br>4. **Start range IP**: Minimum size of two available IP addresses is required. One IP address is for the Azure Arc resource bridge VM, and the other is reserved for upgrade scenarios. Provide the starting IP address of that range. Ensure the Start range IP has internet access.<br>5. **End range IP**: Last IP address of the IP range requested in the previous field. Ensure the End range IP has internet access. |
-| **Control Plane IP address** | Azure Arc resource bridge runs a Kubernetes cluster, and its control plane always requires a static IP address. Provide an IP address that meets the following requirements:<br>- The IP address must have internet access.<br>- The IP address must be within the subnet defined by IP address prefix.<br>- If you're using static IP address option for resource bridge VM IP address, the control plane IP address must be outside of the IP address range provided for the VM (Start range IP - End range IP). |
-| **Resource pool** | Select the name of the resource pool to which the Azure Arc resource bridge VM will be deployed. |
-| **Data store** | Select the name of the datastore to be used for the Azure Arc resource bridge VM. |
-| **Folder** | Select the name of the vSphere VM and the template folder where the Azure Arc resource bridge's VM will be deployed. |
-| **Appliance proxy settings** | Enter **y** if there's a proxy in your appliance network. Otherwise, enter **n**.<br>You need to populate the following boxes when you have a proxy set up:<br>1. **Http**: Address of the HTTP proxy server.<br>2. **Https**: Address of the HTTPS proxy server.<br>3. **NoProxy**: Addresses to be excluded from the proxy.<br>4. **CertificateFilePath**: For SSL-based proxies, the path to the certificate to be used. |
-
-After the command finishes running, your setup is complete, and you can use the capabilities of Azure Arc-enabled VMware vSphere.
-
-## Deploy Arc-enabled VMware vSphere for Azure VMware Solution private cloud
-
-Arc-enabled VMware vSphere for Azure VMware Solution private cloud functions in a manner similar to Arc-enabled VMware vSphere, except that with Azure VMware Solution, your VMware deployment is already hosted in Azure rather than an on-premises datacenter. 
-
-Arc-enabled Azure VMware Solution allows you to do the following actions:
-
-- Identify your VMware vSphere resources (VMs, templates, networks, datastores, clusters/hosts/resource pools) and register them with Arc at scale.
-- Perform different virtual machine (VM) operations directly from Azure like; create, resize, delete, and power cycle operations (start/stop/restart) on VMware VMs consistently with Azure.
-- Permit developers and application teams to use VM operations on-demand with Role-based access control.
-- Install the Arc-connected machine agent to govern, protect, configure, and monitor them.
-- Browse your VMware vSphere resources (vms, templates, networks, and storage) in Azure
-
-To deploy Arc for Azure VMware Solution, you need to ensure that you have registered the following providers in your subscription:
-
-- Microsoft.ConnectedVMwarevSphere
-- Microsoft.ExtendedLocation  
-- Microsoft.KubernetesConfiguration
-- Microsoft.ResourceConnector
-- Microsoft.AVS
-
-You can do this using Azure CLI or by navigating to Resource providers and registering each provider in the target subscription. You also need a resource group in the target subscription where you have owner or contributor role.
-
-To onboard Azure Arc for Azure VMware Solution:
-
-1. Sign into the Management VM and extract the contents of the deployment files and scripts you've downloaded from <https://github.com/Azure/ArcOnAVS/releases/latest>. 
-1. Edit the config_avs.json file and configure all of the necessary variables.
-
-```json
-{
-  "subscriptionId": "",
-  "resourceGroup": "",
-  "applianceControlPlaneIpAddress": "",
-  "privateCloud": "",
-  "isStatic": true,
-  "staticIpNetworkDetails": {
-   "networkForApplianceVM": "",
-   "networkCIDRForApplianceVM": "",
-   "k8sNodeIPPoolStart": "",
-   "k8sNodeIPPoolEnd": "",
-   "gatewayIPAddress": ""
-  }
-}
-```
-
-1. Run the installation scripts.
-
-To verify that the script has completed successfully, perform the following steps:
-
-1. In the left navigation, locate Operations.
-1. Choose Azure Arc.
-1. Azure Arc state shows as Configured.
-
-When Arc appliance is successfully deployed on your private cloud, you can perform the following actions.
-
-- View the status from within the private cloud left navigation under **Operations > Azure Arc**.
-- View the VMware vSphere infrastructure resources from the private cloud left navigation under **Private cloud** then select **Azure Arc vCenter Server resources**.
-- Discover your VMware vSphere infrastructure resources and project them to Azure by navigating, **Private cloud > Arc vCenter Server resources > Virtual Machines**.
-- Enable networks, templates, resource pools, and data-stores in Azure.
-
-To make resources in your Azure VMware Solution private cloud enabled for Azure, perform the following steps:
-
-1. On your Azure VMware Solution private cloud, in the left navigation, locate **vCenter Server Inventory**.
-1. Select the resources you want to enable, then select **Enable in Azure**.
-1. Select your Azure **Subscription** and **Resource Group**, then select **Enable**.
-
-The enable action starts a deployment and creates a resource in Azure, creating representative objects in Azure for your VMware vSphere resources. It allows you to manage who can access those resources through Role-based access control granularly.
-
-## Roles and permissions
-
-You assign permissions to resources in Azure by adding security principals to role based access control roles. The Built-in Roles for Azure Arc-enabled VMware vSphere include
-
-- Azure Arc VMware Administrator role. Members of this role have permissions to perform all connected VMware vSphere actions (full administrative access to all Arc-enabled VMware vSphere resources).
-- Azure Arc VMware Private Cloud User. Members of this role have permissions to use the VMware cloud resources (resource pools, clusters/hosts, networks, datastores, templates) to deploy VMs.
-- Azure Arc VMware Private Clouds Onboarding. Members of this role have permissions to provision all required resources to onboard or offboard (deboard) VMware vCenter instances to Azure Arc.
-- Azure Arc VMware VM Contributor. Members of this role have permissions to perform all virtual machine (VM) operations, that is, create, modify, delete, and manage VMs in Arc-enabled vSphere
-
-You should always assign the minimum required permissions to security principals. The following table lists the minimum role required to perform common Arc-enabled VMware vSphere related administrative tasks:
-
-| **Operation** | **Minimum role required** | **Scope** |
+| Setting | Example | What to enter |
 |---|---|---|
-| **Onboarding your vCenter Server to Arc** | Azure Arc VMware Private Clouds Onboarding | On the subscription or resource group into which you want to onboard |
-| **Administering Arc-enabled VMware vSphere** | Azure Arc VMware Administrator | On the subscription or resource group where vCenter server resource is created |
-| **VM Provisioning** | Azure Arc VMware Private Cloud User | On the subscription or resource group that contains the resource pool/cluster/host, datastore, and virtual network resources, or on the resources themselves |
-| **VM Provisioning** | Azure Arc VMware VM Contributor | On the subscription or resource group where you want to provision VMs |
-| **VM Operations** | Azure Arc VMware VM Contributor | On the subscription or resource group that contains the VM, or on the VM itself |
+| Subnet | `192.168.0.0/24` | The network prefix, not an address to assign to the router. |
+| Gateway | `192.168.0.1` | The actual router address on that subnet. |
+| Appliance pool | `192.168.0.10` through `192.168.0.11` | Allow the required traffic from **both** addresses so upgrades work. |
+| Control plane | `192.168.0.12` | A distinct static address on the same subnet. |
+| DNS | Your DNS server addresses | Resolve both the internal vCenter name and external Azure endpoints. |
+
+Choose these settings for the bridge's lifetime. Changing its DNS configuration requires the supported recovery procedure, and in-place network migration of the appliance isn't supported. Don't treat the bridge like an ordinary VM that you can move to another subnet or restore from a VM backup. The prescribed recovery procedure can deploy a replacement bridge on a new network while preserving the vCenter and custom-location associations.
+
+## Connect an on-premises vCenter
+
+1. In the Azure portal, open **Azure Arc > Supported environments > VMware vCenter > Add**. Select **Create a new resource bridge**, then **Next: Basics**.
+1. Enter the bridge name, subscription, resource group, and region. Name the custom location for the datacenter; users select this location when placing a new VM. Keep the same subscription and resource group for this example, then name the vCenter resource in Azure.
+1. Continue to **Tags**, then **Download and run script**. If **Register** appears, complete provider registration with a subscription-authorized account. Download the PowerShell or Bash script for your management workstation.
+1. Run the downloaded helper on the workstation. On Windows, use an elevated PowerShell terminal, not PowerShell ISE, and run `Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass` before invoking the downloaded script. This changes execution policy only for that PowerShell process. On Linux, run the downloaded Bash script with `bash`. Sign in to Azure when prompted. Enter the vCenter address and credentials, then select the datacenter, network, resource pool, datastore, and VM folder. For the appliance, select a user-created resource pool or a default cluster resource pool. Default host resource pools aren't offered by the helper; don't deploy the appliance in a host resource pool, where a host failure leaves it without high availability.
+1. Supply the static IP settings, DNS, and any required explicit proxy and bypass list. For an SSL proxy, supply a single Base-64-encoded X.509 `.CER` certificate for the appliance, not a certificate bundle. The appliance proxy endpoint can't use a `.local` domain. These requirements don't mean you should disable certificate validation or replace the workstation's trusted certificate store. Allow about 30 to 60 minutes for onboarding.
+1. In Azure, confirm that the bridge is **Running**, vCenter is **Connected**, and the expected inventory appears. Securely retain the generated resource, appliance, and infrastructure YAML files and `kubeconfig` for maintenance and recovery. Don't place them in source control.
+
+You don't need a workload Kubernetes cluster or a custom-location namespace change to manage VMware VMs. The resource bridge hosts the management components; deploying a separate application platform isn't part of VMware onboarding.
+
+## Connect an Azure VMware Solution private cloud
+
+1. Use the **same resource group as the AVS private cloud** for the onboarding resources. You need Owner or Contributor access there. Confirm regional support. Have a subscription-authorized identity register `Microsoft.ConnectedVMwarevSphere`, `Microsoft.ExtendedLocation`, `Microsoft.KubernetesConfiguration`, `Microsoft.ResourceConnector`, and `Microsoft.AVS` if needed. Wait until each provider is **Registered** before running the AVS script; resource-group access alone doesn't grant registration permission.
+1. For this example, use an **x64 Windows management VM with Windows PowerShell 5.1 or later** and local administrative elevation for the helper's setup actions. Verify access to vCenter, NSX Manager, and required download and Azure endpoints. Allow management-VM access to the appliance pool and control-plane addresses on TCP 22 and 6443 without a proxy; allow appliance access to vCenter on TCP 443 and peer-upgrade traffic on TCP 6443, 2379, 2380, 10250, 10257, and 10259. Configure internal/external DNS and required outbound endpoints for **all** appliance pool addresses, including upgrade addresses, not just the management VM. Start with working NSX routing and DNS. Plan an unused static segment whose CIDR doesn't overlap existing networks or the bridge's reserved ranges; the script can add the appliance segment to that prepared environment.
+1. Extract the current Arc for AVS release on the management VM. Open its **`src` directory** and edit the `config_avs.json` **from that release**. Enter the subscription ID, private cloud resource group and name, static segment details, and any required credentials or proxy settings. Keep the file private. For an SSL proxy, `applianceProxyDetails.certificateFilePath` must identify a single Base-64-encoded X.509 `.CER` certificate, not a certificate bundle; the appliance proxy endpoint can't use a `.local` domain. Supply all four optional address settings together: top-level `applianceControlPlaneIpAddress`, plus `gatewayIPAddress`, `k8sNodeIPPoolStart`, and `k8sNodeIPPoolEnd` under `staticIpNetworkDetails`. In this explicit mode, the address before `/` in `networkCIDRForApplianceVM` must equal `gatewayIPAddress`. Use a pool of at least two unused addresses within the segment for deployment and upgrades. Reserve a separate unused control-plane address in the same segment, outside the pool and distinct from the gateway; don't include the gateway in the pool either. Alternatively, omit all four keys entirely, rather than leaving empty values, and use a `/28`. In that default mode, use the **first usable gateway address with its prefix**, for example `10.14.10.1/28`, not `10.14.10.0/28`. In both modes this field describes the segment gateway and prefix, unlike the subnet-prefix input in the on-premises example.
+1. Open an elevated Windows PowerShell terminal and run the release's onboarding script **from that `src` directory**, where the script and configuration file are located. First run `Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass`, then `.\run.ps1 -Operation onboard -FilePath .\config_avs.json` in the same session. Sign in to Azure when prompted.
+1. Open the private cloud in the Azure portal. Under **Operations > Azure Arc**, check that the state is **Configured**. Retain the three generated bridge YAML files together and `kubeconfig` securely. Release 2.0.29 writes the YAML files under `src\.temp` and attempts to copy `kubeconfig` to `src`; if that copy is absent, check `src\.temp`. Check the output locations for the release you use.
+
+## Keep the resource bridge operational
+
+The bridge is an ongoing management dependency, not just an installer. If it becomes unavailable, Azure-based inventory and virtual hardware management are affected, but the existing VMware VMs continue running. Configure a resource health alert so that an unavailable bridge is investigated promptly.
+
+For Arc-enabled VMware, you're responsible for keeping the bridge on a supported version. Check current release notes for the supported versions and any exceptions. Plan manual upgrades at least every six months and sooner when the supported-version window requires it; supplementary Microsoft-managed upgrades don't replace this responsibility. An offline period longer than 45 days risks certificate expiry and can require recovery. Before upgrading, check the documented capacity, credentials, network connectivity, and resource-lock prerequisites. Afterwards, confirm **Running** and provisioning state **Succeeded**, then compare the installed appliance version with the supported releases. A manual upgrade can advance to the next version rather than the newest; repeat the supported upgrade process if necessary. Successful operation status alone doesn't establish that the bridge is on a supported version.
+
+If deployment or maintenance fails, use the bridge troubleshooting guidance to identify the failed prerequisite or operation. For recovery, follow the VMware recovery procedure, rather than restoring an appliance backup or deleting its Azure resource independently. Recovery is a coordinated replacement of the bridge, not removal of the connected vCenter environment.
+
+## Onboard discovered inventory
+
+1. Open **vCenter Server Inventory** from the connected vCenter or AVS private cloud. Select the resources to manage, then **Manage Arc onboarding**. Choose the destination subscription and resource group carefully: moving VMware vCenter resources between groups or subscriptions isn't supported.
+1. For networks, datastores, templates, and placement resources, select **Onboard** to create their Azure representations. This operation doesn't change the underlying vSphere resources or install an agent. VMware Tools must be installed in a VM template for the portal to onboard it. Prepare templates without an existing Arc connection or copied Arc identity. The agent package can be preinstalled without connecting it. When guest management is required, connect each new VM after cloning so it gets its own Azure resource identity; cloning an already-connected template makes multiple agents report as the same resource.
+1. For existing VMs, choose **Virtual hardware management only** or **Arc agent with virtual hardware management**, then select **Onboard**. Only the second choice installs the guest agent and requires guest credentials. The next unit covers this path.
+
+## Delegate permissions and provision a VM
+
+The person granting access needs `Microsoft.Authorization/roleAssignments/write` at each assignment scope, for example through **Role Based Access Control Administrator**, **User Access Administrator**, or **Owner**. Contributor and the VMware management roles don't grant role-assignment rights. Use **Access control (IAM) > Add > Add role assignment** on the relevant resource or group, select the role and team, and select **Review + assign**.
+
+| Task | Built-in role | Scope |
+|---|---|---|
+| Onboard vCenter | Azure Arc VMware Private Clouds Onboarding | Target resource group or subscription. |
+| Administer the VMware environment through Arc | Azure Arc VMware Administrator role | Group or subscription containing the vCenter resource. |
+| Use infrastructure for VM provisioning | Azure Arc VMware Private Cloud User | Selected resource pool, cluster or host; datastore; network; VM template; **and custom location**, or a group containing them. |
+| Browse the shared vCenter in the portal | Reader | The vCenter Azure resource, if this access isn't already inherited. |
+| Create the VM resource | Azure Arc VMware VM Contributor | Destination resource group or subscription. |
+| Operate an existing VM | Azure Arc VMware VM Contributor | VM, its resource group, or subscription. |
+
+For self-service provisioning, grant **both** the right to use the infrastructure and the right to create the VM in its destination group. For example, if the application team already has VM Contributor in `rg-app`, give it Private Cloud User on the shared template, network, datastore, placement resource, and custom location it may use, plus Reader on the vCenter for portal navigation. A role on a resource pool doesn't grant access to a separate custom location in another group. The Private Cloud User role includes the custom-location read and deploy actions; assign it at a scope that includes that location. Don't grant Contributor on the whole private cloud merely to make the wizard work.
+
+To use those permissions, open the vCenter's **Virtual machines** inventory and select **Add**. Choose the destination group, custom location, **VMware** VM kind, placement resource, datastore, and template. Review the guest management choice, credentials, disks, and network. Select **Review + create > Create**, then open the VM in Azure to check its power state.
