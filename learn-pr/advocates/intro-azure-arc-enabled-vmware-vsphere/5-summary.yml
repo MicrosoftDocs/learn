@@ -3,8 +3,8 @@ uid: learn.azure-arc-enabled-vmware.summary
 title: Summary
 metadata:
   title: Summary
-  description: TBD
-  ms.date: 02/15/2026
+  description: Review VMware onboarding, virtual hardware and guest management, protection, and ESU eligibility.
+  ms.date: 11/24/2026
   author: Orin-Thomas
   ms.author: orthomas
   ms.topic: unit

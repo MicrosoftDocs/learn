@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-virtual-machine-platform-maintenance.workload-recovery-verification
+metadata:
+  title: "Verify Rejoin and Document Unprotected Cases"
+  description: "Reconcile invoice outcomes, verify guest and application health, and preserve evidence before reopening intake after maintenance."
+  ms.date: 11/23/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: "Verify rejoin and document unprotected cases"
+durationInMinutes: 12
+content: |
+  [!include[](includes/6-workload-recovery-verification.md)]

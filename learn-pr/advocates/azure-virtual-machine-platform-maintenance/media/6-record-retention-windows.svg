@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="332" viewBox="0 0 1000 332" role="img" aria-labelledby="retention-title" aria-describedby="retention-desc" font-family="Segoe UI, Arial, sans-serif" font-size="17" fill="#183449">
+  <title id="retention-title">Diagram that shows why invoice posting evidence must remain available for a permitted replay even after the maintenance event record expires.</title>
+  <desc id="retention-desc">In this example the application records maintenance event E1 and invoice job J1. E1 expires under the event deduplication policy. A later authorized replay of J1 still falls within the supported retry window. Look up J1's committed result rather than posting again. Beyond the supported window, require reconciliation; a missing marker does not prove the invoice was never posted. The milestones show an example order, not fixed Azure retention periods.</desc>
+  <metadata>{"iconRoot":"C:\\Azure-Icons","sources":{"record":"general\\10800-icon-service-File.svg","ledger":"CnE_Enterprise\\Database generic.svg"}}</metadata>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto">
+      <path d="M0 0L10 5L0 10Z" fill="#39566c" />
+    </marker>
+    <linearGradient id="page-edge" x1="9" y1="18" x2="9" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0078d4" /><stop offset=".817" stop-color="#5ea0ef" />
+    </linearGradient>
+    <symbol id="record" viewBox="0 0 18 18">
+      <path d="M10.023.134H2.362A.605.605,0,0,0,1.757.74V17.26a.605.605,0,0,0,.605.606H15.638a.605.605,0,0,0,.6-.606V6.327a.605.605,0,0,0-.6-.606H11.232a.605.605,0,0,1-.6-.605V.74A.6.6,0,0,0,10.023.134Z" fill="#fff" />
+      <path d="M9.743.908V5.057a1.524,1.524,0,0,0,1.52,1.523h4.18V17.092H2.557V.908H9.743M10.036,0H2.264A.614.614,0,0,0,1.65.615v16.77A.614.614,0,0,0,2.264,18H15.736a.614.614,0,0,0,.614-.615V6.286a.614.614,0,0,0-.614-.614H11.263a.614.614,0,0,1-.613-.615V.615A.614.614,0,0,0,10.036,0Z" fill="url(#page-edge)" />
+      <path d="M16.116,5.794,10.438.134V4.746a1.041,1.041,0,0,0,1.035,1.048Z" fill="#0078d4" />
+      <g fill="#5ea0ef">
+        <rect x="4" y="8.196" width="9.999" height="1.341" rx=".603" /><rect x="4" y="10.599" width="9.999" height="1.341" rx=".603" />
+        <rect x="4" y="13.002" width="6.302" height="1.341" rx=".603" />
+      </g>
+    </symbol>
+    <symbol id="ledger" viewBox="-1705 1753 258 338">
+      <path fill="#2a3282" d="M-1576.7,1828.1c-49.7,0-90.8-12-90.8-27.4c0-15.4,40.2-27.4,90.8-27.4c49.7,0,89.9,12,89.9,27.4C-1486.8,1816.1-1526.2,1828.1-1576.7,1828.1z M-1703.4,1985.6v49.7c0,23.1,46.2,48.8,107,53.1h40.2c60.8-4.3,107-24.8,107-48.8v-233.7c0-25.7-57.4-50.5-127.6-50.5c-70.2,0-126.7,23.1-126.7,49.7v104.4L-1703.4,1985.6L-1703.4,1985.6z" />
+    </symbol>
+  </defs>
+  <rect id="background" width="1000" height="332" fill="#ffffff" />
+  <text x="20" y="34" font-size="21" font-weight="600">Example: an invoice replay after the event record expires</text>
+  <g text-anchor="middle" font-size="16" font-weight="600" fill="#38566b">
+    <text x="236" y="74">Records saved</text><text x="470" y="74">Event record expires</text>
+    <text x="690" y="74">Replay of J1</text><text x="890" y="74">Retry window ends</text>
+  </g>
+  <g id="time-axis" fill="none" stroke="#526d80" stroke-width="1.5">
+    <path d="M236 92H975" marker-end="url(#arrow)" />
+    <path d="M236 86V99 M470 86V99 M690 86V99 M890 86V99" />
+    <path d="M470 99V108 M690 99V163 M890 99V163" stroke-dasharray="4 4" />
+  </g>
+  <g>
+    <use xlink:href="#record" x="20" y="115" width="28" height="28" />
+    <text x="60" y="137" font-size="18" font-weight="600">EventId E1</text>
+    <rect id="event-retention" x="236" y="109" width="234" height="40" rx="4" fill="#edf4fa" stroke="#527c9a" stroke-width="1.5" />
+    <text x="250" y="136">Recognize a repeat of E1</text>
+  </g>
+  <g>
+    <use xlink:href="#ledger" x="20" y="170" width="28" height="28" />
+    <text x="60" y="192" font-size="18" font-weight="600">Job ID J1</text>
+    <rect id="job-retention" x="236" y="164" width="654" height="40" rx="4" fill="#edf8f4" stroke="#447f70" stroke-width="1.5" />
+    <text x="250" y="191">Keep J1's posting evidence through all permitted retries and manual replays.</text>
+  </g>
+  <g>
+    <rect x="20" y="224" width="468" height="90" rx="5" fill="#f4f7fa" stroke="#71899b" stroke-width="1.5" />
+    <text x="36" y="251" font-size="18" font-weight="600">At the authorized replay</text>
+    <text x="36" y="279">Look up the outcome by job ID, not event ID.</text>
+    <text x="36" y="303">If already posted, settle without reposting.</text>
+  </g>
+  <g>
+    <rect x="512" y="224" width="468" height="90" rx="5" fill="#fff7ed" stroke="#9b6a35" stroke-width="1.5" />
+    <text x="528" y="251" font-size="18" font-weight="600">After the supported retry window</text>
+    <text x="528" y="279">Do not retry based on a missing record.</text>
+    <text x="528" y="303">Reconcile the posting outcome first.</text>
+  </g>
+</svg>

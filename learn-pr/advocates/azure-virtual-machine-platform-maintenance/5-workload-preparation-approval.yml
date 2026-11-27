@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-virtual-machine-platform-maintenance.workload-preparation-approval
+metadata:
+  title: "Coordinate Bounded Preparation and Approval"
+  description: "Bound checkpoint preparation, verify readiness for every affected virtual machine, and handle uncertain or conflicting observations before approval."
+  ms.date: 11/23/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: "Coordinate bounded preparation and approval"
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-workload-preparation-approval.md)]
