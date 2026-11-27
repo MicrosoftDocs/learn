@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="970" height="315" viewBox="0 0 970 315" role="img" aria-labelledby="budget-title" aria-describedby="budget-desc" font-family="Segoe UI, Arial, sans-serif" font-size="17" fill="#183449">
+  <title id="budget-title">Diagram that shows why a 20-second checkpoint cannot fit when a 5-second reserve leaves only 7 of the 12 seconds before NotBefore.</title>
+  <desc id="budget-desc">All bars start when preparation begins and use the same time scale. The workload caps preparation at 30 seconds, but NotBefore is only 12 seconds away. The last 5 seconds are reserved, so a durable write would have to finish within 7 seconds. The estimated 20-second write is not started. The worker does not report ready and the coordinator withholds early approval.</desc>
+  <metadata>{"iconRoot":"C:\\Azure-Icons","sources":{"clock":"general\\10833-icon-service-Scheduler.svg"}}</metadata>
+  <defs>
+    <radialGradient id="rim" cx="16.858" cy="14.328" r="8.737" gradientTransform="translate(-6.212 -5.281) scale(.944)" gradientUnits="userSpaceOnUse">
+      <stop offset=".183" stop-color="#5ea0ef" /><stop offset=".555" stop-color="#5c9fee" /><stop offset=".689" stop-color="#559ced" /><stop offset=".785" stop-color="#4a97e9" />
+      <stop offset=".862" stop-color="#3990e4" /><stop offset=".928" stop-color="#2387de" /><stop offset=".985" stop-color="#087bd6" /><stop offset="1" stop-color="#0078d4" />
+    </radialGradient>
+    <radialGradient id="pin" cx="17.97" cy="15.337" r="1.223" gradientTransform="translate(-7.203 -6.199) scale(.943)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7f7f7f" /><stop offset="1" stop-color="#5e5e5e" />
+    </radialGradient>
+    <symbol id="clock" viewBox="0 0 18 18">
+      <circle cx="9.71" cy="8.252" r="8.252" fill="url(#rim)" /><circle cx="9.742" cy="8.252" r="7.185" fill="#fff" />
+      <g fill="#7a7a7a">
+        <rect x="13.04" y="4.13" width="1.231" height=".397" transform="translate(.939 10.924) rotate(-45)" />
+        <rect x="14.61" y="8.045" width="1.231" height=".397" />
+        <rect x="13.4" y="11.486" width=".397" height="1.231" transform="translate(-4.574 13.16) rotate(-45)" />
+        <rect x="9.543" y="13.093" width=".397" height="1.231" />
+        <rect x="5.588" y="3.674" width=".397" height="1.231" transform="translate(-1.338 5.348) rotate(-45)" />
+        <rect x="5.231" y="11.939" width="1.231" height=".397" transform="translate(-6.87 7.689) rotate(-45)" />
+        <rect x="3.565" y="8.045" width="1.231" height=".397" />
+        <rect x="9.237" y="2.172" width="1.107" height="6.326" rx=".505" />
+        <rect x="10.722" y="7.822" width="1.105" height="3.961" rx=".504" transform="translate(26.177 8.761) rotate(135)" />
+      </g>
+      <circle cx="9.747" cy="8.238" r="1.169" fill="url(#pin)" />
+      <path d="M8.078.146A8.294,8.294,0,0,0,5.4,15.353l.274-.726a.161.161,0,0,1,.275-.046L8.1,17.191a.161.161,0,0,1-.1.262L4.657,18a.162.162,0,0,1-.177-.216l.4-1.074A9.719,9.719,0,0,1,.373,10.953,8.462,8.462,0,0,1,8.078.146Z" fill="#86d633" />
+    </symbol>
+  </defs>
+  <rect id="background" width="970" height="315" fill="#ffffff" />
+  <use xlink:href="#clock" x="20" y="13" width="32" height="32" />
+  <text x="64" y="37" font-size="21" font-weight="600">Checkpoint budget when NotBefore is 12 seconds away</text>
+
+  <g fill="#38566b" font-size="16" text-anchor="middle">
+    <text x="210" y="73">0 s</text><text x="378" y="73">7 s</text><text x="498" y="73">12 s</text>
+    <text x="690" y="73">20 s</text><text x="930" y="73">30 s</text>
+  </g>
+  <path id="time-axis" d="M210 91H930 M210 85V97 M378 85V97 M498 85V97 M690 85V97 M930 85V97" fill="none" stroke="#526d80" stroke-width="1.5" />
+  <g>
+    <text x="20" y="134" font-weight="600">Workload limit</text>
+    <rect id="cap" x="210" y="108" width="720" height="38" rx="4" fill="#f1f7fc" stroke="#527c9a" stroke-width="1.5" />
+    <text x="224" y="134">30 seconds from the start of preparation</text>
+  </g>
+  <g>
+    <text x="20" y="183" font-weight="600">Notice window</text>
+    <rect id="usable" x="210" y="157" width="168" height="38" fill="#eaf6f1" stroke="#447f70" stroke-width="1.5" />
+    <rect id="reserve" x="378" y="157" width="120" height="38" fill="#fff5e8" stroke="#9b6a35" stroke-width="1.5" />
+    <g font-weight="600" text-anchor="middle"><text x="294" y="183">7 s usable</text><text x="438" y="183">5 s reserve</text></g>
+    <text x="512" y="183">NotBefore at 12 s</text>
+  </g>
+  <g>
+    <text x="20" y="232" font-weight="600">Checkpoint estimate</text>
+    <rect id="estimate" x="210" y="206" width="480" height="38" rx="4" fill="#fff" stroke="#71899b" stroke-width="1.5" stroke-dasharray="6 4" />
+    <text x="224" y="232">20 seconds needed for a durable write</text>
+  </g>
+  <g>
+    <rect x="20" y="263" width="930" height="38" rx="4" fill="#fff7ed" stroke="#9b6a35" />
+    <text x="36" y="289" font-weight="600">Do not start the write or report ready. Withhold early approval.</text>
+  </g>
+</svg>

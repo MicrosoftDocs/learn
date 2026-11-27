@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1080" height="508" viewBox="0 0 1080 508" role="img" aria-labelledby="trace-title" aria-describedby="trace-desc" font-family="Segoe UI, Arial, sans-serif" font-size="17" fill="#172f43">
+  <title id="trace-title">Diagram that shows how invoice workers hand off a lease and check posting by job ID before acknowledging or holding a redelivered message.</title>
+  <desc id="trace-desc">Process A receives a message, acquires the job's business lease, and renews it while working. To hand off, A saves a durable checkpoint, stops lease-dependent work, and releases the lease or lets it expire without acknowledging the message. If ownership is uncertain, A stops that work and flags the outcome for reconciliation. Normally, A confirms posting and commits the result before acknowledging. If A crashes after posting, the queue redelivers the message. Process B checks the same job ID, records a confirmed posting, and acknowledges without posting again. If the outcome is unknown, B puts the job on durable hold and assigns a reconciliation owner. The message stays recoverable unless a durable handoff preserves the job details and responsibility.</desc>
+  <metadata>{"iconRoot":"C:\\Azure-Icons","sources":{"vm-icon":"compute\\10021-icon-service-Virtual-Machine.svg","queue-icon":"general\\10840-icon-service-Storage-Queue.svg","store-icon":"storage\\10086-icon-service-Storage-Accounts.svg","posting-icon":"CnE_Enterprise\\Application -Generic.svg"}}</metadata>
+  <defs>
+    <style>
+      .node { fill: #fff; stroke: #748b9b; stroke-width: 1.5; }
+      .resource { font-size: 16px; font-weight: 600; fill: #38566b; }
+      .action { font-size: 18px; font-weight: 600; }
+      .heading { font-size: 20px; font-weight: 600; }
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0 0L10 5L0 10Z" fill="#39566c" />
+    </marker>
+    <linearGradient id="vm-screen" x1="8.88" y1="12.21" x2="8.88" y2="0.21" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0078d4" /><stop offset=".82" stop-color="#5ea0ef" />
+    </linearGradient>
+    <linearGradient id="vm-base" x1="8.88" y1="16.84" x2="8.88" y2="12.21" gradientUnits="userSpaceOnUse">
+      <stop offset=".15" stop-color="#ccc" /><stop offset="1" stop-color="#707070" />
+    </linearGradient>
+    <symbol id="vm-icon" viewBox="0 0 18 18">
+      <rect x="-0.12" y="0.21" width="18" height="12" rx="0.6" fill="url(#vm-screen)" />
+      <polygon points="11.88 4.46 11.88 7.95 8.88 9.71 8.88 6.21 11.88 4.46" fill="#50e6ff" />
+      <polygon points="11.88 4.46 8.88 6.22 5.88 4.46 8.88 2.71 11.88 4.46" fill="#c3f1ff" />
+      <polygon points="8.88 6.22 8.88 9.71 5.88 7.95 5.88 4.46 8.88 6.22" fill="#9cebff" />
+      <polygon points="5.88 7.95 8.88 6.21 8.88 9.71 5.88 7.95" fill="#c3f1ff" />
+      <polygon points="11.88 7.95 8.88 6.21 8.88 9.71 11.88 7.95" fill="#9cebff" />
+      <path d="M12.49,15.84c-1.78-.28-1.85-1.56-1.85-3.63H7.11c0,2.07-.06,3.35-1.84,3.63a1,1,0,0,0-.89,1h9A1,1,0,0,0,12.49,15.84Z" fill="url(#vm-base)" />
+    </symbol>
+    <linearGradient id="queue-body" x1="9" y1="15.799" x2="9" y2="5.316" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#a67af4" /><stop offset=".775" stop-color="#b796f9" />
+    </linearGradient>
+    <symbol id="queue-icon" viewBox="0 0 18 18">
+      <path d="M.544,5.316H17.456a0,0,0,0,1,0,0v9.918a.565.565,0,0,1-.565.565H1.109a.565.565,0,0,1-.565-.565V5.316A0,0,0,0,1,.544,5.316Z" fill="url(#queue-body)" />
+      <path d="M1.112,2.2H16.888a.565.565,0,0,1,.565.565v2.55a0,0,0,0,1,0,0H.547a0,0,0,0,1,0,0V2.766A.565.565,0,0,1,1.112,2.2Z" fill="#773adc" />
+      <g fill="#fff">
+        <rect x="2.625" y="6.435" width="3.683" height="7.933" rx=".274" />
+        <rect x="7.158" y="6.435" width="3.683" height="7.933" rx=".274" opacity=".75" />
+        <rect x="11.692" y="6.435" width="3.683" height="7.933" rx=".274" opacity=".5" />
+      </g>
+    </symbol>
+    <linearGradient id="store-body" x1="9" y1="15.83" x2="9" y2="5.79" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#b3b3b3" /><stop offset=".26" stop-color="#c1c1c1" /><stop offset="1" stop-color="#e6e6e6" />
+    </linearGradient>
+    <symbol id="store-icon" viewBox="0 0 18 18">
+      <path d="M.5,5.79h17a0,0,0,0,1,0,0v9.48a.57.57,0,0,1-.57.57H1.07a.57.57,0,0,1-.57-.57V5.79A0,0,0,0,1,.5,5.79Z" fill="url(#store-body)" />
+      <path d="M1.07,2.17H16.93a.57.57,0,0,1,.57.57V5.79a0,0,0,0,1,0,0H.5a0,0,0,0,1,0,0V2.73A.57.57,0,0,1,1.07,2.17Z" fill="#37c2b1" />
+      <path d="M2.81,6.89H15.18a.27.27,0,0,1,.26.27v1.4a.27.27,0,0,1-.26.27H2.81a.27.27,0,0,1-.26-.27V7.16A.27.27,0,0,1,2.81,6.89Z" fill="#fff" />
+      <path d="M2.82,9.68H15.19a.27.27,0,0,1,.26.27v1.41a.27.27,0,0,1-.26.27H2.82a.27.27,0,0,1-.26-.27V10A.27.27,0,0,1,2.82,9.68Z" fill="#37c2b1" />
+      <path d="M2.82,12.5H15.19a.27.27,0,0,1,.26.27v1.41a.27.27,0,0,1-.26.27H2.82a.27.27,0,0,1-.26-.27V12.77A.27.27,0,0,1,2.82,12.5Z" fill="#258277" />
+    </symbol>
+    <symbol id="posting-icon" viewBox="198 172 396 268" fill="#2a3282">
+      <path d="M198.7,172.9v266.1h394.8V172.9H198.7z M573.8,417.5H213.3V228.6h360.5V417.5z" />
+      <polygon points="247.7,383.1 367.8,383.1 367.8,263 247.7,263" />
+      <polygon points="410.7,383.1 539.5,383.1 539.5,366 410.7,366" />
+      <polygon points="410.7,348.8 539.5,348.8 539.5,331.6 410.7,331.6" />
+      <polygon points="410.7,314.5 539.5,314.5 539.5,297.3 410.7,297.3" />
+      <polygon points="410.7,280.1 539.5,280.1 539.5,263 410.7,263" />
+    </symbol>
+  </defs>
+
+  <rect id="background" width="1080" height="508" fill="#ffffff" />
+  <g fill="#f3f7fa" stroke="#8297a6" stroke-width="1.5">
+    <rect x="20" y="198" width="410" height="290" rx="6" />
+    <rect x="450" y="198" width="610" height="290" rx="6" />
+  </g>
+  <g id="connectors" fill="none" stroke="#39566c" stroke-width="2" stroke-linejoin="round">
+    <g marker-end="url(#arrow)">
+      <path d="M206 108H232" /><path d="M444 108H470" /><path d="M642 108H668" /><path d="M856 108H882" />
+      <path d="M338 156V197" stroke-dasharray="5 4" /><path d="M556 156V197" stroke-dasharray="5 4" />
+      <path d="M658 295H687" />
+      <path d="M866 352H600V367" /><path d="M866 352H900V367" />
+    </g>
+    <path d="M866 338V352" />
+    <circle cx="866" cy="352" r="3" fill="#39566c" stroke="none" />
+  </g>
+
+  <g id="process-a">
+    <use xlink:href="#vm-icon" x="20" y="15" width="32" height="32" />
+    <text x="64" y="39" class="heading">Invoice process A on VM worker-a</text>
+    <g transform="translate(20 60)">
+      <rect class="node" width="186" height="96" rx="5" />
+      <use xlink:href="#queue-icon" x="13" y="11" width="26" height="26" />
+      <text x="48" y="30" class="resource">Invoice queue</text>
+      <text x="13" y="58" class="action">1. Receive message</text>
+    </g>
+    <g transform="translate(233 60)">
+      <rect class="node" width="211" height="96" rx="5" />
+      <use xlink:href="#store-icon" x="13" y="11" width="26" height="26" />
+      <text x="48" y="30" class="resource">Ownership store</text>
+      <text x="13" y="58" class="action">2. Acquire lease</text>
+      <text x="13" y="85">Renew while working</text>
+    </g>
+    <g transform="translate(471 60)">
+      <rect class="node" width="171" height="96" rx="5" />
+      <use xlink:href="#posting-icon" x="13" y="11" width="26" height="26" />
+      <text x="48" y="30" class="resource">Posting service</text>
+      <text x="13" y="58" class="action">3. Post invoice</text>
+      <text x="13" y="85">Confirm posting</text>
+    </g>
+    <g transform="translate(669 60)">
+      <rect class="node" width="187" height="96" rx="5" />
+      <use xlink:href="#store-icon" x="13" y="11" width="26" height="26" />
+      <text x="48" y="30" class="resource">Result store</text>
+      <text x="13" y="58" class="action">4. Commit result</text>
+    </g>
+    <g transform="translate(883 60)">
+      <rect class="node" width="177" height="96" rx="5" />
+      <use xlink:href="#queue-icon" x="13" y="11" width="26" height="26" />
+      <text x="48" y="30" class="resource">Invoice queue</text>
+      <text x="13" y="58" class="action">5. Acknowledge</text>
+    </g>
+  </g>
+
+  <g id="lease-handoff">
+    <text x="36" y="230" class="heading">Business lease handoff or loss</text>
+    <g transform="translate(36 246)">
+      <rect class="node" width="378" height="112" rx="5" />
+      <text x="14" y="26" class="action">Planned handoff</text>
+      <text x="14" y="53">Save a durable checkpoint and stop work.</text>
+      <text x="14" y="76">Release the lease or let it expire.</text>
+      <text x="14" y="99">Leave the message unacknowledged.</text>
+    </g>
+    <g transform="translate(36 368)">
+      <rect class="node" width="378" height="104" rx="5" />
+      <text x="14" y="27" class="action">Renewal fails or ownership is unclear</text>
+      <text x="14" y="55">Stop lease-dependent work.</text>
+      <text x="14" y="79">Flag uncertain outcomes for reconciliation.</text>
+    </g>
+  </g>
+
+  <g id="redelivery">
+    <text x="466" y="230" class="heading">If A crashes after posting but before acknowledgment</text>
+    <g transform="translate(466 246)">
+      <rect class="node" width="192" height="92" rx="5" />
+      <use xlink:href="#queue-icon" x="13" y="11" width="26" height="26" />
+      <text x="48" y="30" class="resource">Invoice queue</text>
+      <text x="13" y="63" class="action">Redeliver message</text>
+    </g>
+    <g transform="translate(688 246)">
+      <rect class="node" width="356" height="92" rx="5" />
+      <use xlink:href="#vm-icon" x="13" y="11" width="26" height="26" />
+      <text x="48" y="30" class="resource">Invoice process B on VM worker-b</text>
+      <text x="13" y="57">Acquire the lease.</text>
+      <text x="13" y="80">Look up posting by the same job ID.</text>
+    </g>
+    <g transform="translate(466 368)">
+      <rect width="268" height="104" rx="5" fill="#f1faf6" stroke="#498775" stroke-width="1.5" />
+      <text x="14" y="27" class="action">Posting confirmed</text>
+      <text x="14" y="55">Record completion.</text>
+      <text x="14" y="79">Acknowledge without reposting.</text>
+    </g>
+    <g transform="translate(750 368)">
+      <rect width="294" height="104" rx="5" fill="#fff8ed" stroke="#a46d30" stroke-width="1.5" />
+      <text x="14" y="27" class="action">Posting unknown: durable hold</text>
+      <text x="14" y="55">Assign a reconciliation owner.</text>
+      <text x="14" y="79">Block automatic reposting.</text>
+    </g>
+  </g>
+</svg>

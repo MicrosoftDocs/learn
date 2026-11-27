@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-virtual-machine-platform-maintenance.workload-maintenance-exposure
+metadata:
+  title: "Map Workload Placement to Maintenance Exposure"
+  description: "Map virtual machine placement, queue intake, shared dependencies, job ownership, and application health to maintenance exposure."
+  ms.date: 11/23/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: "Map workload placement to maintenance exposure"
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-workload-maintenance-exposure.md)]

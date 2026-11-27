@@ -1,0 +1,72 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-virtual-machine-platform-maintenance.knowledge-check
+metadata:
+  title: "Module Assessment"
+  description: "Assess affected-resource handling, preparation deadlines, event-wide approval, observation gaps, and safe invoice recovery."
+  ms.date: 11/23/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+  module_assessment: true
+title: "Module assessment"
+durationInMinutes: 5
+content: |
+  Choose one answer for each question. Use the maintenance notice, preparation deadline, and invoice evidence to decide what the application should do.
+quiz:
+  questions:
+  - content: Two non-GPU worker VMs, `pool_0` and `pool_1`, share a Uniform scale-set placement group. VM `pool_1` receives a Scheduled Events notice that lists only `pool_0` in `Resources`. No other event or health issue affects `pool_1`. What should the invoice process on `pool_1` do?
+    choices:
+    - content: Continue taking invoices while its event consumer keeps polling.
+      isCorrect: true
+      explanation: Correct. These peers share a supported notification scope, but only `pool_0` is listed as affected. `Resources`, not receipt of the notice, determines which VM needs to prepare.
+    - content: Stop taking invoices until the event for VM `pool_0` disappears.
+      isCorrect: false
+      explanation: Incorrect. Receiving a shared notice doesn't mean the local virtual machine is affected. Only pool_0 appears in Resources, and pool_1 has no other hold.
+    - content: Checkpoint its invoices and report VM `pool_1` ready for the event.
+      isCorrect: false
+      explanation: Incorrect. A process prepares and reports readiness for an event affecting its own virtual machine. A report from pool_1 can't replace readiness from pool_0.
+  - content: An invoice process has 24 seconds until `NotBefore` and must leave a five-second safety margin. Its checkpoint takes 20 seconds. What should it do?
+    choices:
+    - content: Start the checkpoint because it can finish before `NotBefore`.
+      isCorrect: false
+      explanation: Incorrect. The five-second safety margin leaves only 19 seconds. A checkpoint that needs 20 seconds doesn't fit the usable preparation budget.
+    - content: Stop taking jobs, record which invoices it owns, and withhold readiness.
+      isCorrect: true
+      explanation: Correct. The safety margin leaves 19 seconds. A 20-second checkpoint can't finish within that budget, and starting a write doesn't make it durable.
+    - content: Start the checkpoint and report readiness as soon as the write begins.
+      isCorrect: false
+      explanation: Incorrect. Beginning a checkpoint doesn't establish that it committed durably. Readiness requires confirmed completion within the preparation deadline.
+  - content: One atomic operation produces a scheduled event naming non-GPU worker VMs `pool_0` and `pool_1` in the same Uniform placement group. VM `pool_0` reports ready for this event. VM `pool_1` reports ready for a different `EventId`. What should the approval coordinator do?
+    choices:
+    - content: Approve only for VM `pool_0`, leaving VM `pool_1` pending.
+      isCorrect: false
+      explanation: Incorrect. Early approval applies to every virtual machine named in the event. It can't approve maintenance only for pool_0 while leaving pool_1 pending.
+    - content: Withhold approval unless VM `pool_1` also reports ready for the current event.
+      isCorrect: true
+      explanation: Correct. `pool_1` hasn't reported readiness for this event. Early approval covers both named VMs; readiness for a different event can't substitute.
+    - content: Approve the event because both VMs have reported readiness.
+      isCorrect: false
+      explanation: Incorrect. Readiness is specific to an EventId. A report for a different event doesn't establish that pool_1 is ready for this operation.
+  - content: An IMDS poll shows an event as `Scheduled`. The next poll times out. The next successful poll no longer lists the event. What can the event consumer conclude?
+    choices:
+    - content: The event was removed without the consumer observing `Started`.
+      isCorrect: true
+      explanation: Correct. A timeout leaves a gap in the record. The later poll establishes that the event is absent, not whether it was canceled or completed.
+    - content: Maintenance started and finished during the polling gap.
+      isCorrect: false
+      explanation: Incorrect. Completion during the gap is possible, but so is cancellation. The consumer didn't observe enough evidence to establish either outcome.
+    - content: Azure canceled the event before maintenance started.
+      isCorrect: false
+      explanation: Incorrect. Disappearance can reflect cancellation or an event that started and finished during the polling gap. The observations don't establish cancellation.
+  - content: After VM `worker-a` restarts, the queue offers an invoice for retry. Which evidence tells invoice process A to record the job as complete without posting the invoice again?
+    choices:
+    - content: The checkpoint store contains saved progress for the same job ID.
+      isCorrect: false
+      explanation: Incorrect. A checkpoint records progress, not an authoritative committed posting. It doesn't establish whether repeating the posting is safe.
+    - content: Two consecutive polls show no active event and the application health checks pass.
+      isCorrect: false
+      explanation: Incorrect. Successful polls and health checks support application rejoin, but don't establish whether this particular invoice was posted.
+    - content: The result store contains a committed posting for the same stable job ID.
+      isCorrect: true
+      explanation: Correct. A committed result for that job ID establishes that the invoice was posted. A checkpoint shows progress; health checks show the application can operate. Neither proves a particular posting succeeded.

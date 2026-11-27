@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1040" height="496" viewBox="0 0 1040 496" role="img" aria-labelledby="timeline-title" aria-describedby="timeline-desc" font-family="Segoe UI, Arial, sans-serif">
+  <title id="timeline-title">Diagram that shows why the coordinator approves neither event and the worker waits for two healthy polls before recovering both invoices.</title>
+  <desc id="timeline-desc">Read down the numbered timeline and across each row. The example uses two standalone VMs, worker-a and worker-b, in different zones. Event 1 affects only VM worker-a. Invoice process A checkpoints two jobs, but its readiness report does not reach the coordinator before the cutoff, so early approval is withheld. The next poll times out; then Event 1 is absent and Event 2 for VM worker-a has already started. The result store fails. Intake stays closed until two healthy polls, both leases and jobs are reconciled, and both committed results are confirmed.</desc>
+  <metadata>{"iconRoot":"C:\\Azure-Icons","sources":{"observation-icon":"monitor\\00001-icon-service-Monitor.svg","intake-icon":"general\\10840-icon-service-Storage-Queue.svg","result-icon":"storage\\10086-icon-service-Storage-Accounts.svg"}}</metadata>
+  <defs>
+    <marker id="timeline-arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0 0L10 5L0 10Z" fill="#39566c" />
+    </marker>
+  
+    <symbol id="observation-icon" viewBox="0 0 18 18"><defs><radialGradient id="ac8b32da-30ca-4b92-8d0f-8d2d5ef278a0" cx="5.72" cy="7.45" r="8.42" gradientTransform="translate(3.23 1.51) scale(1.01 1.01)" gradientUnits="userSpaceOnUse"><stop offset="0.18" stop-color="#5ea0ef" /><stop offset="0.56" stop-color="#5c9fee" /><stop offset="0.69" stop-color="#559ced" /><stop offset="0.78" stop-color="#4a97e9" /><stop offset="0.86" stop-color="#3990e4" /><stop offset="0.93" stop-color="#2387de" /><stop offset="0.99" stop-color="#087bd6" /><stop offset="1" stop-color="#0078d4" /></radialGradient><radialGradient id="a9954820-cb38-4943-9842-f0a568d2b015" cx="28.18" cy="202.29" r="2.7" gradientTransform="translate(-17.77 -185.01) scale(0.95)" gradientUnits="userSpaceOnUse"><stop offset="0.19" stop-color="#8c8e90" /><stop offset="0.35" stop-color="#848688" /><stop offset="0.6" stop-color="#6e7071" /><stop offset="0.91" stop-color="#4a4b4c" /><stop offset="1" stop-color="#3e3f3f" /></radialGradient></defs><ellipse cx="9" cy="9" rx="8.5" ry="8.47" fill="url(#ac8b32da-30ca-4b92-8d0f-8d2d5ef278a0)" /><ellipse cx="9" cy="9" rx="7.4" ry="7.37" fill="#fff" /><path d="M2.72,9.44a6.24,6.24,0,0,0,1.82,4l2-2a3.53,3.53,0,0,1-1-2Z" fill="#9cebff" /><path d="M13.13,4.27A6.25,6.25,0,0,0,9.44,2.74V5.53a3.41,3.41,0,0,1,1.71.7Z" fill="#32bedd" /><path d="M4.87,4.27l2,2a3.41,3.41,0,0,1,1.71-.7V2.74A6.25,6.25,0,0,0,4.87,4.27Z" fill="#32bedd" /><path d="M11.78,6.85a3.6,3.6,0,0,1,.71,1.71h2.79a6.16,6.16,0,0,0-1.53-3.67Z" fill="#32bedd" /><path d="M6.22,6.85l-2-2A6.16,6.16,0,0,0,2.72,8.56H5.51A3.6,3.6,0,0,1,6.22,6.85Z" fill="#50e6ff" /><path d="M14.14,7a.45.45,0,0,0-.57-.25L9.45,8.41l.32.81,4.12-1.63A.44.44,0,0,0,14.14,7Z" fill="#f04049" /><ellipse cx="9" cy="9" rx="1.2" ry="1.2" fill="url(#a9954820-cb38-4943-9842-f0a568d2b015)" /></symbol>
+    <symbol id="intake-icon" viewBox="0 0 18 18"><defs><linearGradient id="f6607f9a-6e3a-4339-acc9-d6f3ae1a2c0d" x1="9" y1="15.799" x2="9" y2="5.316" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#a67af4" /><stop offset="0.775" stop-color="#b796f9" /></linearGradient></defs><g id="f3784f80-3379-4e66-8e32-fca3fab0f4d7"><g><path d="M.544,5.316H17.456a0,0,0,0,1,0,0v9.918a.565.565,0,0,1-.565.565H1.109a.565.565,0,0,1-.565-.565V5.316A0,0,0,0,1,.544,5.316Z" fill="url(#f6607f9a-6e3a-4339-acc9-d6f3ae1a2c0d)" /><path d="M1.112,2.2H16.888a.565.565,0,0,1,.565.565v2.55a0,0,0,0,1,0,0H.547a0,0,0,0,1,0,0V2.766A.565.565,0,0,1,1.112,2.2Z" fill="#773adc" /><g><rect x="2.625" y="6.435" width="3.683" height="7.933" rx="0.274" fill="#fff" /><rect x="7.158" y="6.435" width="3.683" height="7.933" rx="0.274" fill="#fff" opacity="0.75" /><rect x="11.692" y="6.435" width="3.683" height="7.933" rx="0.274" fill="#fff" opacity="0.5" /></g></g></g></symbol>
+    <symbol id="result-icon" viewBox="0 0 18 18"><defs><linearGradient id="ad4c4f96-09aa-4f91-ba10-5cb8ad530f74" x1="9" y1="15.83" x2="9" y2="5.79" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#b3b3b3" /><stop offset="0.26" stop-color="#c1c1c1" /><stop offset="1" stop-color="#e6e6e6" /></linearGradient></defs><path d="M.5,5.79h17a0,0,0,0,1,0,0v9.48a.57.57,0,0,1-.57.57H1.07a.57.57,0,0,1-.57-.57V5.79A0,0,0,0,1,.5,5.79Z" fill="url(#ad4c4f96-09aa-4f91-ba10-5cb8ad530f74)" /><path d="M1.07,2.17H16.93a.57.57,0,0,1,.57.57V5.79a0,0,0,0,1,0,0H.5a0,0,0,0,1,0,0V2.73A.57.57,0,0,1,1.07,2.17Z" fill="#37c2b1" /><path d="M2.81,6.89H15.18a.27.27,0,0,1,.26.27v1.4a.27.27,0,0,1-.26.27H2.81a.27.27,0,0,1-.26-.27V7.16A.27.27,0,0,1,2.81,6.89Z" fill="#fff" /><path d="M2.82,9.68H15.19a.27.27,0,0,1,.26.27v1.41a.27.27,0,0,1-.26.27H2.82a.27.27,0,0,1-.26-.27V10A.27.27,0,0,1,2.82,9.68Z" fill="#37c2b1" /><path d="M2.82,12.5H15.19a.27.27,0,0,1,.26.27v1.41a.27.27,0,0,1-.26.27H2.82a.27.27,0,0,1-.26-.27V12.77A.27.27,0,0,1,2.82,12.5Z" fill="#258277" /></symbol>
+  </defs>
+  <rect id="background" x="0" y="0" width="1040" height="496" fill="#ffffff" />
+  <g id="headings">
+    <use xlink:href="#observation-icon" x="63" y="14" width="28" height="28" />
+    <use xlink:href="#intake-icon" x="526" y="14" width="28" height="28" />
+    <g font-size="20" font-weight="600"><text x="103" y="36">Observation</text><text x="566" y="36">Application response</text></g>
+  </g>
+  <g id="connectors" fill="none" stroke="#39566c" stroke-width="2">
+    <path d="M32 105V150 M32 180V225 M32 255V300 M32 330V375" stroke="#87a2b7" />
+    <g marker-end="url(#timeline-arrow)">
+      <path d="M477 90H524" /><path d="M477 165H524" /><path d="M477 240H524" />
+      <path d="M477 315H524" /><path d="M477 390H524" />
+    </g>
+  </g>
+  <g id="sequence" fill="#e7f2fb">
+    <circle cx="32" cy="90" r="14" /><circle cx="32" cy="165" r="14" /><circle cx="32" cy="240" r="14" />
+    <circle cx="32" cy="315" r="14" /><circle cx="32" cy="390" r="14" />
+    <g fill="#000000" font-size="15" font-weight="600" text-anchor="middle">
+      <text x="32" y="95">1</text><text x="32" y="170">2</text><text x="32" y="245">3</text>
+      <text x="32" y="320">4</text><text x="32" y="395">5</text>
+    </g>
+  </g>
+  <g id="observations">
+    <g fill="#f3f8fd" stroke="#7191a7" stroke-width="1.5">
+      <rect x="62" y="58" width="414" height="64" rx="5" /><rect x="62" y="133" width="414" height="64" rx="5" />
+      <rect x="62" y="208" width="414" height="64" rx="5" /><rect x="62" y="283" width="414" height="64" rx="5" />
+      <rect x="62" y="358" width="414" height="64" rx="5" />
+    </g>
+    <g font-size="18" font-weight="600">
+      <text x="78" y="84">Event 1: Scheduled</text><text x="78" y="159">Next poll times out</text>
+      <text x="78" y="234">Event 1 absent; Event 2 already Started</text>
+      <text x="78" y="309">Event 2 disappears</text><text x="78" y="384">Two healthy polls in a row</text>
+    </g>
+    <g font-size="15">
+      <text x="78" y="108">Only VM worker-a is listed.</text><text x="78" y="183">No new event document.</text>
+      <text x="78" y="258">Event 2 names VM worker-a.</text><text x="78" y="333">The result store is unreachable.</text>
+      <text x="78" y="408">No active event for VM worker-a.</text>
+    </g>
+  </g>
+  <g id="responses">
+    <g fill="#fff" stroke="#8195a4" stroke-width="1.5">
+      <rect x="526" y="58" width="494" height="64" rx="5" /><rect x="526" y="133" width="494" height="64" rx="5" />
+      <rect x="526" y="208" width="494" height="64" rx="5" /><rect x="526" y="283" width="494" height="64" rx="5" />
+      <rect x="526" y="358" width="494" height="64" rx="5" fill="#f1faf6" stroke="#498775" />
+    </g>
+    <g font-size="18" font-weight="600">
+      <text x="542" y="84">Invoice process A drains; checkpoints two jobs.</text>
+      <text x="542" y="159">Retain Event 1 and both checkpoints.</text>
+      <text x="542" y="234">Event 1: removed without observed start.</text>
+      <text x="542" y="309">Keep intake closed.</text>
+      <text x="542" y="384">Confirm both leases; resume from checkpoints.</text>
+    </g>
+    <g font-size="15">
+      <text x="542" y="108">A's readiness report misses coordinator cutoff: no approval.</text>
+      <text x="542" y="183">A timeout does not mean the event ended.</text>
+      <text x="542" y="258">Stay drained. No late preparation or approval for Event 2.</text>
+      <text x="542" y="333">The application health check failed.</text>
+      <text x="542" y="408">Verify one committed result per invoice, then reopen intake.</text>
+    </g>
+  </g>
+  <g id="outcome">
+    <rect x="62" y="439" width="958" height="42" rx="5" fill="#f1faf6" stroke="#498775" />
+    <use xlink:href="#result-icon" x="78" y="447" width="25" height="25" />
+    <text x="115" y="466" font-size="18" font-weight="600">Outcome: two committed results, zero early approvals.</text>
+  </g>
+</svg>

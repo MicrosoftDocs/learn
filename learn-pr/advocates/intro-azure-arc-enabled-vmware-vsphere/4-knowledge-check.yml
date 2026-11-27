@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge Check
   description: Check your knowledge of Azure Arc-enabled VMware vSphere
-  ms.date: 02/15/2026
+  ms.date: 11/24/2026
   author: Orin-Thomas
   ms.author: orthomas
   ms.topic: unit
@@ -12,17 +12,17 @@ durationInMinutes: 4
 content: Choose the best response for each question.
 quiz:
   questions:
-    - content: "What's the minimum role on the resource group that contains the resource pool, cluster, host, datastore, and virtual network resources required for VM Provisioning?"
+    - content: "A team can read the shared vCenter and has Azure Arc VMware VM Contributor on its destination resource group. Which is the least-privileged built-in role it needs on the shared VM template, network, datastore, placement resource, and custom location?"
       choices:
         - content: "Azure Arc VMware Private Cloud User."
           isCorrect: true
-          explanation: "The minimum role requirement is Azure Arc VMware Private Cloud User."
+          explanation: "Private Cloud User grants use of the shared infrastructure, including read and deploy permissions on the custom location. VM Contributor in the destination group permits creation of the VM."
         - content: "Azure Arc VMware Administrator."
           isCorrect: false
-          explanation: "The minimum role requirement is Azure Arc VMware Private Cloud User."
+          explanation: "Administrator grants more access than the team needs. Assign Private Cloud User on the shared resources instead."
         - content: "Azure Arc VMware Private Clouds Onboarding."
           isCorrect: false
-          explanation: "The minimum role requirement is Azure Arc VMware Private Cloud User."
+          explanation: "The Onboarding role connects vCenter to Arc. Use Private Cloud User to delegate consumption of shared resources."
 
     - content: "In order to connect an on-premises VMware vCenter Server to Azure as part of an Azure Arc-enabled VMware vSphere deployment, which of the following steps is required?"
       choices:
@@ -34,7 +34,7 @@ quiz:
           explanation: "The Connected Machine agent (used for Arc-enabled servers) by itself can't integrate the vCenter infrastructure – Azure Arc-enabled VMware vSphere requires the resource bridge appliance to interface with vCenter at the management plane level."
         - content: "Register the vCenter Server as a custom location in Azure Arc to enable management of vSphere resources through Azure."
           isCorrect: false
-          explanation: "Custom locations in Azure Arc are used after deploying the resource bridge and Kubernetes clusters, not as a direct method of integrating vCenter."
+          explanation: "The custom location is a placement target associated with the bridge; it isn't the vCenter connection. No separate workload Kubernetes cluster is required."
 
     - content: "When onboarding on-premises VMware VMs into Azure Arc-enabled VMware vSphere and planning to deploy Azure extensions to these machines, which of the following role assignments should you assign to an administrator who needs to enable extensions on connected VMs?"
       choices:
@@ -46,4 +46,16 @@ quiz:
           explanation: "Assigning the user the Azure Connected Machine Resource Administrator role on the Arc-connected machine resources allows deployment and management of extensions."
         - content: "Assign the user the Virtual Machine Contributor role at the subscription level."
           isCorrect: false
-          explanation: "Virtual Machine Contributor applies to Azure-native VMs, not Arc-connected resources."
+          explanation: "Virtual Machine Contributor grants Microsoft.Compute VM permissions, not Microsoft.HybridCompute/machines/extensions/write for Arc-enabled servers. Increasing its scope doesn't add that permission."
+
+    - content: "An on-premises VMware VM is onboarded for virtual hardware management only. Which action can the operator perform without installing a guest agent?"
+      choices:
+        - content: "Deploy Azure Monitor Agent as a guest extension."
+          isCorrect: false
+          explanation: "Arc deploys guest extensions through the Connected Machine agent inside the VM."
+        - content: "Power cycle the VM through vCenter from Azure."
+          isCorrect: true
+          explanation: "The resource bridge sends the hardware operation to vCenter without using the guest operating system."
+        - content: "Enroll the guest in Windows Server ESUs through Azure Arc."
+          isCorrect: false
+          explanation: "Arc ESU enrollment requires an eligible guest connected through the Connected Machine agent."

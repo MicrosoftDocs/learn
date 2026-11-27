@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="940" height="280" viewBox="0 0 940 280" role="img" aria-labelledby="scope-title" aria-describedby="scope-desc" font-family="Segoe UI, Arial, sans-serif" font-size="17" fill="#183449">
+  <title id="scope-title">Diagram that shows two VMs seeing the same notice in a Uniform placement group. Only the VM listed in Resources prepares.</title>
+  <desc id="scope-desc">In this non-GPU example, both VMs poll their own IMDS endpoints. The event lists only pool_0. Its invoice process stops intake and checkpoints active jobs. Pool_1 keeps working if no other hold applies. Sharing an invoice queue does not give standalone VMs a shared notification scope.</desc>
+  <metadata>{"iconRoot":"C:\\Azure-Icons","sources":{"vm":"compute\\10021-icon-service-Virtual-Machine.svg"}}</metadata>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto">
+      <path d="M0 0L10 5L0 10Z" fill="#39566c" />
+    </marker>
+    <linearGradient id="screen" x1="8.88" y1="12.21" x2="8.88" y2=".21" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0078d4" /><stop offset=".82" stop-color="#5ea0ef" />
+    </linearGradient>
+    <linearGradient id="stand" x1="8.88" y1="16.84" x2="8.88" y2="12.21" gradientUnits="userSpaceOnUse">
+      <stop offset=".15" stop-color="#ccc" /><stop offset="1" stop-color="#707070" />
+    </linearGradient>
+    <symbol id="vm" viewBox="0 0 18 18">
+      <rect x="-.12" y=".21" width="18" height="12" rx=".6" fill="url(#screen)" />
+      <polygon points="11.88 4.46 11.88 7.95 8.88 9.71 8.88 6.21 11.88 4.46" fill="#50e6ff" />
+      <polygon points="11.88 4.46 8.88 6.22 5.88 4.46 8.88 2.71 11.88 4.46" fill="#c3f1ff" />
+      <polygon points="8.88 6.22 8.88 9.71 5.88 7.95 5.88 4.46 8.88 6.22" fill="#9cebff" />
+      <polygon points="5.88 7.95 8.88 6.21 8.88 9.71 5.88 7.95" fill="#c3f1ff" />
+      <polygon points="11.88 7.95 8.88 6.21 8.88 9.71 11.88 7.95" fill="#9cebff" />
+      <path d="M12.49,15.84c-1.78-.28-1.85-1.56-1.85-3.63H7.11c0,2.07-.06,3.35-1.84,3.63a1,1,0,0,0-.89,1h9A1,1,0,0,0,12.49,15.84Z" fill="url(#stand)" />
+    </symbol>
+  </defs>
+  <rect id="background" width="940" height="280" fill="#ffffff" />
+  <text x="20" y="34" font-size="21" font-weight="600">Example: two non-GPU VMs in one Uniform placement group</text>
+  <g id="connectors" fill="none" stroke="#39566c" stroke-width="2" stroke-linejoin="round">
+    <path d="M276 144H306" />
+    <g marker-end="url(#arrow)">
+      <path d="M306 144V97H335" /><path d="M306 144V191H335" />
+      <path d="M554 97H599" /><path d="M554 191H599" />
+    </g>
+    <circle cx="306" cy="144" r="3" fill="#39566c" stroke="none" />
+  </g>
+  <g>
+    <rect x="20" y="99" width="256" height="90" rx="5" fill="#f1f7fc" stroke="#527c9a" stroke-width="1.5" />
+    <text x="36" y="134" font-size="19" font-weight="600">Event in both local polls</text>
+    <text x="36" y="165" font-family="Consolas, monospace">Resources: ["pool_0"]</text>
+  </g>
+  <g>
+    <rect x="336" y="60" width="218" height="74" rx="5" fill="#fff" stroke="#71899b" stroke-width="1.5" />
+    <use xlink:href="#vm" x="350" y="80" width="34" height="34" />
+    <text x="398" y="89" font-size="19" font-weight="600">pool_0</text>
+    <text x="398" y="117">Listed in Resources</text>
+  </g>
+  <g>
+    <rect x="600" y="60" width="320" height="74" rx="5" fill="#edf8f4" stroke="#447f70" stroke-width="1.5" />
+    <text x="616" y="89" font-size="19" font-weight="600">Prepare for maintenance</text>
+    <text x="616" y="117">Stop intake and checkpoint active jobs.</text>
+  </g>
+  <g>
+    <rect x="336" y="154" width="218" height="74" rx="5" fill="#fff" stroke="#71899b" stroke-width="1.5" />
+    <use xlink:href="#vm" x="350" y="174" width="34" height="34" />
+    <text x="398" y="183" font-size="19" font-weight="600">pool_1</text>
+    <text x="398" y="211">Not listed</text>
+  </g>
+  <g>
+    <rect x="600" y="154" width="320" height="74" rx="5" fill="#f4f7fa" stroke="#71899b" stroke-width="1.5" />
+    <text x="616" y="183" font-size="19" font-weight="600">Keep processing</text>
+    <text x="616" y="211">No other hold applies in this example.</text>
+  </g>
+  <text x="20" y="262">Sharing an invoice queue does not make standalone VMs share IMDS notices.</text>
+</svg>

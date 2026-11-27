@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-virtual-machine-platform-maintenance.scheduled-event-resources
+metadata:
+  title: "Read Azure Scheduled Events and Identify Which VMs Are Affected"
+  description: "Interpret Scheduled Events resource scope, timing, and lifecycle, observe local metadata, and select an appropriate response architecture."
+  ms.date: 11/23/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: "Read Azure Scheduled Events and identify which VMs are affected"
+durationInMinutes: 15
+content: |
+  [!include[](includes/4-scheduled-event-resources.md)]

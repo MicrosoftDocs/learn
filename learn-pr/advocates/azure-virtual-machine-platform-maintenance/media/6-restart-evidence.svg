@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="306" viewBox="0 0 1000 306" role="img" aria-labelledby="evidence-title" aria-describedby="evidence-desc" font-family="Segoe UI, Arial, sans-serif" font-size="17" fill="#183449">
+  <title id="evidence-title">Diagram that shows a successful restart and a reachable guest, but a failed test transaction keeps the invoice worker from reopening intake.</title>
+  <desc id="evidence-desc">In this example the Activity Log records a successful authorized restart. The guest boot time changed, an administrator can reconnect, and a fresh IMDS GET succeeds. But the synthetic job cannot read back its result and earlier invoice outcomes are unverified. Record guest restart verified, application rejoin not verified. Keep intake closed.</desc>
+  <metadata>{"iconRoot":"C:\\Azure-Icons","sources":{"activity":"monitor\\00007-icon-service-Activity-Log.svg","vm":"compute\\10021-icon-service-Virtual-Machine.svg","store":"CnE_Enterprise\\Database generic.svg"}}</metadata>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto">
+      <path d="M0 0L10 5L0 10Z" fill="#39566c" />
+    </marker>
+    <linearGradient id="cover" x1="8.15" y1="17.5" x2="8.15" y2="2.09" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1988d9" /><stop offset=".9" stop-color="#54aef0" />
+    </linearGradient>
+    <symbol id="activity" viewBox="0 0 18 18">
+      <path d="M1.93,2.11,3.14.7A.59.59,0,0,1,3.59.5H15.2a.81.81,0,0,1,.89.83v14.5a.57.57,0,0,1-.2.43l-1.3,1.19H2.72l-.81-.33Z" fill="#005ba1" />
+      <path d="M2.91,2.1l.74-.84A.5.5,0,0,1,4,1.08H14.89a.52.52,0,0,1,.52.52V15.38a.52.52,0,0,1-.17.39l-1.16,1.05Z" fill="#fff" />
+      <path d="M14,2.09H2a.06.06,0,0,0-.06.06v15a.39.39,0,0,0,.39.38H14a.38.38,0,0,0,.38-.38V2.48A.39.39,0,0,0,14,2.09Z" fill="url(#cover)" />
+      <rect x="4.72" y="6.2" width="6.58" height="2.38" rx=".28" fill="#fff" />
+    </symbol>
+    <linearGradient id="screen" x1="8.88" y1="12.21" x2="8.88" y2=".21" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0078d4" /><stop offset=".82" stop-color="#5ea0ef" />
+    </linearGradient>
+    <linearGradient id="stand" x1="8.88" y1="16.84" x2="8.88" y2="12.21" gradientUnits="userSpaceOnUse">
+      <stop offset=".15" stop-color="#ccc" /><stop offset="1" stop-color="#707070" />
+    </linearGradient>
+    <symbol id="vm" viewBox="0 0 18 18">
+      <rect x="-.12" y=".21" width="18" height="12" rx=".6" fill="url(#screen)" />
+      <polygon points="11.88 4.46 11.88 7.95 8.88 9.71 8.88 6.21 11.88 4.46" fill="#50e6ff" />
+      <polygon points="11.88 4.46 8.88 6.22 5.88 4.46 8.88 2.71 11.88 4.46" fill="#c3f1ff" />
+      <polygon points="8.88 6.22 8.88 9.71 5.88 7.95 5.88 4.46 8.88 6.22" fill="#9cebff" />
+      <polygon points="5.88 7.95 8.88 6.21 8.88 9.71 5.88 7.95" fill="#c3f1ff" />
+      <polygon points="11.88 7.95 8.88 6.21 8.88 9.71 11.88 7.95" fill="#9cebff" />
+      <path d="M12.49,15.84c-1.78-.28-1.85-1.56-1.85-3.63H7.11c0,2.07-.06,3.35-1.84,3.63a1,1,0,0,0-.89,1h9A1,1,0,0,0,12.49,15.84Z" fill="url(#stand)" />
+    </symbol>
+    <symbol id="store" viewBox="-1705 1753 258 338">
+      <path fill="#2a3282" d="M-1576.7,1828.1c-49.7,0-90.8-12-90.8-27.4c0-15.4,40.2-27.4,90.8-27.4c49.7,0,89.9,12,89.9,27.4C-1486.8,1816.1-1526.2,1828.1-1576.7,1828.1z M-1703.4,1985.6v49.7c0,23.1,46.2,48.8,107,53.1h40.2c60.8-4.3,107-24.8,107-48.8v-233.7c0-25.7-57.4-50.5-127.6-50.5c-70.2,0-126.7,23.1-126.7,49.7v104.4L-1703.4,1985.6L-1703.4,1985.6z" />
+    </symbol>
+  </defs>
+  <rect id="background" width="1000" height="306" fill="#ffffff" />
+  <text x="20" y="34" font-size="21" font-weight="600">Example: what does an authorized restart prove?</text>
+  <g id="connectors" fill="none" stroke="#39566c" stroke-width="2" stroke-linejoin="round">
+    <path d="M172 161V182H828V161" /><path d="M500 161V202" marker-end="url(#arrow)" />
+    <circle cx="500" cy="182" r="3" fill="#39566c" stroke="none" />
+  </g>
+  <g>
+    <rect x="20" y="56" width="304" height="105" rx="5" fill="#f1f7fc" stroke="#527c9a" stroke-width="1.5" />
+    <use xlink:href="#activity" x="33" y="67" width="30" height="30" />
+    <text x="75" y="89" font-size="18" font-weight="600">Management operation</text>
+    <text x="36" y="119">The VM's Activity Log records</text><text x="36" y="145">a successful restart operation.</text>
+  </g>
+  <g>
+    <rect x="348" y="56" width="304" height="105" rx="5" fill="#f1f7fc" stroke="#527c9a" stroke-width="1.5" />
+    <use xlink:href="#vm" x="361" y="67" width="30" height="30" />
+    <text x="404" y="89" font-size="18" font-weight="600">Guest VM</text>
+    <text x="364" y="119">Boot time changed. Admin sign-in</text><text x="364" y="145">and a fresh IMDS GET succeed.</text>
+  </g>
+  <g>
+    <rect x="676" y="56" width="304" height="105" rx="5" fill="#fff7ed" stroke="#9b6a35" stroke-width="1.5" />
+    <use xlink:href="#store" x="689" y="67" width="30" height="30" />
+    <text x="731" y="89" font-size="18" font-weight="600">Invoice application</text>
+    <text x="692" y="119">The test job cannot read its result.</text><text x="692" y="145">Prior invoices are not reconciled.</text>
+  </g>
+  <g text-anchor="middle">
+    <rect x="84" y="203" width="832" height="84" rx="5" fill="#fff7ed" stroke="#9b6a35" stroke-width="1.5" />
+    <text x="500" y="235" font-size="20" font-weight="600">Guest restart verified; application rejoin not verified.</text>
+    <text x="500" y="265">Keep intake closed. Check the result store and reconcile the earlier invoices.</text>
+  </g>
+</svg>

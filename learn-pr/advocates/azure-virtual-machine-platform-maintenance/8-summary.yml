@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-virtual-machine-platform-maintenance.summary
+metadata:
+  title: "Summary"
+  description: "Review safe maintenance preparation, approval, recovery, and remaining protection limits, and consult the supporting references."
+  ms.date: 11/23/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: "Summary"
+durationInMinutes: 3
+content: |
+  [!include[](includes/8-summary.md)]
