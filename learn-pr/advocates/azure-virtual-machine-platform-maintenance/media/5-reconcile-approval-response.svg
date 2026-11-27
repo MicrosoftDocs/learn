@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="960" height="370" viewBox="0 0 960 370" role="img" aria-labelledby="retry-title" aria-describedby="retry-desc" font-family="Segoe UI, Arial, sans-serif" font-size="17" fill="#183449">
+  <title id="retry-title">Diagram that shows why a lost approval response calls for a fresh IMDS poll, not another checkpoint or a new approval intent.</title>
+  <desc id="retry-desc">After the initial approval checks pass, the coordinator persists one intent for E1. The in-guest sender rechecks the conditions and posts E1 to local IMDS. If the response is lost, log the uncertain outcome and validate a fresh poll. Retry only the approval request, using the existing intent, if E1 is still Scheduled, the VM list still matches, there is time before the safety margin, and every named VM still has a fresh, authenticated readiness report. Otherwise do not resend. An accepted request is permission, not proof that maintenance started.</desc>
+  <metadata>{"iconRoot":"C:\\Azure-Icons","sources":{"ledger":"CnE_Enterprise\\Database generic.svg","vm":"compute\\10021-icon-service-Virtual-Machine.svg"}}</metadata>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto">
+      <path d="M0 0L10 5L0 10Z" fill="#39566c" />
+    </marker>
+    <symbol id="ledger" viewBox="-1705 1753 258 338">
+      <path fill="#2a3282" d="M-1576.7,1828.1c-49.7,0-90.8-12-90.8-27.4c0-15.4,40.2-27.4,90.8-27.4c49.7,0,89.9,12,89.9,27.4C-1486.8,1816.1-1526.2,1828.1-1576.7,1828.1z M-1703.4,1985.6v49.7c0,23.1,46.2,48.8,107,53.1h40.2c60.8-4.3,107-24.8,107-48.8v-233.7c0-25.7-57.4-50.5-127.6-50.5c-70.2,0-126.7,23.1-126.7,49.7v104.4L-1703.4,1985.6L-1703.4,1985.6z" />
+    </symbol>
+    <linearGradient id="screen" x1="8.88" y1="12.21" x2="8.88" y2=".21" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0078d4" /><stop offset=".82" stop-color="#5ea0ef" />
+    </linearGradient>
+    <linearGradient id="stand" x1="8.88" y1="16.84" x2="8.88" y2="12.21" gradientUnits="userSpaceOnUse">
+      <stop offset=".15" stop-color="#ccc" /><stop offset="1" stop-color="#707070" />
+    </linearGradient>
+    <symbol id="vm" viewBox="0 0 18 18">
+      <rect x="-.12" y=".21" width="18" height="12" rx=".6" fill="url(#screen)" />
+      <polygon points="11.88 4.46 11.88 7.95 8.88 9.71 8.88 6.21 11.88 4.46" fill="#50e6ff" />
+      <polygon points="11.88 4.46 8.88 6.22 5.88 4.46 8.88 2.71 11.88 4.46" fill="#c3f1ff" />
+      <polygon points="8.88 6.22 8.88 9.71 5.88 7.95 5.88 4.46 8.88 6.22" fill="#9cebff" />
+      <polygon points="5.88 7.95 8.88 6.21 8.88 9.71 5.88 7.95" fill="#c3f1ff" />
+      <polygon points="11.88 7.95 8.88 6.21 8.88 9.71 11.88 7.95" fill="#9cebff" />
+      <path d="M12.49,15.84c-1.78-.28-1.85-1.56-1.85-3.63H7.11c0,2.07-.06,3.35-1.84,3.63a1,1,0,0,0-.89,1h9A1,1,0,0,0,12.49,15.84Z" fill="url(#stand)" />
+    </symbol>
+  </defs>
+  <rect id="background" width="960" height="370" fill="#ffffff" />
+  <text x="18" y="33" font-size="21" font-weight="600">When the approval response is lost</text>
+  <g id="connectors" fill="none" stroke="#39566c" stroke-width="2" stroke-linejoin="round">
+    <g marker-end="url(#arrow)">
+      <path d="M262 90H295" /><path d="M600 90H635" />
+      <path d="M789 128V144H480V158" />
+      <path d="M480 245H259V260" /><path d="M480 245H701V260" />
+    </g>
+    <path d="M480 231V245" />
+    <circle cx="480" cy="245" r="3" fill="#39566c" stroke="none" />
+  </g>
+  <g>
+    <rect x="18" y="52" width="244" height="76" rx="5" fill="#f1f7fc" stroke="#527c9a" stroke-width="1.5" />
+    <use xlink:href="#ledger" x="30" y="61" width="28" height="28" />
+    <text x="68" y="82" font-size="18" font-weight="600">1. Save one intent</text>
+    <text x="34" y="111">Record E1 before sending.</text>
+  </g>
+  <g>
+    <rect x="296" y="52" width="304" height="76" rx="5" fill="#f1f7fc" stroke="#527c9a" stroke-width="1.5" />
+    <use xlink:href="#vm" x="310" y="61" width="28" height="28" />
+    <text x="348" y="82" font-size="18" font-weight="600">2. Recheck and send</text>
+    <text x="312" y="111">POST E1 from the guest to IMDS.</text>
+  </g>
+  <g>
+    <rect x="636" y="52" width="306" height="76" rx="5" fill="#fff7ed" stroke="#9b6a35" stroke-width="1.5" />
+    <text x="652" y="82" font-size="18" font-weight="600">3. No response</text>
+    <text x="652" y="111">Log the outcome as unknown.</text>
+  </g>
+  <g text-anchor="middle">
+    <rect x="66" y="159" width="828" height="72" rx="5" fill="#f4f7fa" stroke="#71899b" stroke-width="1.5" />
+    <text x="480" y="187" font-size="19" font-weight="600">4. Poll and validate the IMDS response again</text>
+    <text x="480" y="215">Same E1 and VM list, still Scheduled, before the cutoff, and fresh readiness from every named VM?</text>
+  </g>
+  <g>
+    <rect x="66" y="261" width="386" height="62" rx="5" fill="#edf8f4" stroke="#447f70" stroke-width="1.5" />
+    <text x="82" y="285" font-size="18" font-weight="600">All checks pass</text>
+    <text x="82" y="311">May resend the POST for E1.</text>
+  </g>
+  <g>
+    <rect x="508" y="261" width="386" height="62" rx="5" fill="#fff7ed" stroke="#9b6a35" stroke-width="1.5" />
+    <text x="524" y="285" font-size="18" font-weight="600">Any check fails or is unknown</text>
+    <text x="524" y="311">Do not resend. Keep the original intent.</text>
+  </g>
+  <text x="18" y="353">Do not repeat invoice work. An accepted POST is permission, not proof that maintenance started.</text>
+</svg>

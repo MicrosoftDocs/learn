@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="960" height="308" viewBox="0 0 960 308" role="img" aria-labelledby="membership-title" aria-describedby="membership-desc" font-family="Segoe UI, Arial, sans-serif" font-size="17" fill="#183449">
+  <title id="membership-title">Diagram that shows how a changed VM list for E2 blocks approval for both events, even though E1 still lists the local VM.</title>
+  <desc id="membership-desc">The local VM is pool_0. In both the saved and current responses, E1 lists pool_0. E2 previously listed pool_0 and pool_1, but now lists only pool_1. Comparing the full response exposes the conflict that filtering for pool_0 first would hide. Quarantine the consumer, preserve both documents for operator review, and approve neither event.</desc>
+  <metadata>{"iconRoot":"C:\\Azure-Icons","sources":{"document":"general\\10800-icon-service-File.svg"}}</metadata>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto">
+      <path d="M0 0L10 5L0 10Z" fill="#39566c" />
+    </marker>
+    <linearGradient id="page-edge" x1="9" y1="18" x2="9" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0078d4" /><stop offset=".817" stop-color="#5ea0ef" />
+    </linearGradient>
+    <symbol id="document" viewBox="0 0 18 18">
+      <path d="M10.023.134H2.362A.605.605,0,0,0,1.757.74V17.26a.605.605,0,0,0,.605.606H15.638a.605.605,0,0,0,.6-.606V6.327a.605.605,0,0,0-.6-.606H11.232a.605.605,0,0,1-.6-.605V.74A.6.6,0,0,0,10.023.134Z" fill="#fff" />
+      <path d="M9.743.908V5.057a1.524,1.524,0,0,0,1.52,1.523h4.18V17.092H2.557V.908H9.743M10.036,0H2.264A.614.614,0,0,0,1.65.615v16.77A.614.614,0,0,0,2.264,18H15.736a.614.614,0,0,0,.614-.615V6.286a.614.614,0,0,0-.614-.614H11.263a.614.614,0,0,1-.613-.615V.615A.614.614,0,0,0,10.036,0Z" fill="url(#page-edge)" />
+      <path d="M16.116,5.794,10.438.134V4.746a1.041,1.041,0,0,0,1.035,1.048Z" fill="#0078d4" />
+      <g fill="#5ea0ef">
+        <rect x="4" y="8.196" width="9.999" height="1.341" rx=".603" /><rect x="4" y="10.599" width="9.999" height="1.341" rx=".603" />
+        <rect x="4" y="13.002" width="6.302" height="1.341" rx=".603" />
+      </g>
+    </symbol>
+  </defs>
+  <rect id="background" width="960" height="308" fill="#ffffff" />
+  <text x="20" y="34" font-size="21" font-weight="600">Compare Resources before filtering for pool_0</text>
+  <g font-weight="600" fill="#38566b">
+    <text x="22" y="75">EventId</text>
+    <use xlink:href="#document" x="122" y="54" width="25" height="25" /><text x="157" y="75">Saved Resources</text>
+    <use xlink:href="#document" x="405" y="54" width="25" height="25" /><text x="440" y="75">Current Resources</text>
+    <text x="694" y="75">Membership check</text>
+  </g>
+  <g id="connectors" fill="none" stroke="#39566c" stroke-width="2" marker-end="url(#arrow)">
+    <path d="M365 113H404" /><path d="M640 113H677" />
+    <path d="M365 169H404" /><path d="M640 169H677" />
+    <path d="M809 190V210" />
+  </g>
+  <g>
+    <rect x="20" y="92" width="86" height="42" rx="5" fill="#edf4fa" stroke="#527c9a" />
+    <text x="63" y="119" text-anchor="middle" font-weight="600">E1</text>
+    <g fill="#fff" stroke="#71899b">
+      <rect x="122" y="92" width="243" height="42" rx="5" /><rect x="405" y="92" width="235" height="42" rx="5" />
+      <rect x="678" y="92" width="262" height="42" rx="5" />
+    </g>
+    <g font-family="Consolas, monospace"><text x="136" y="119">["pool_0"]</text><text x="419" y="119">["pool_0"]</text></g>
+    <text x="694" y="119">Unchanged</text>
+  </g>
+  <g>
+    <rect x="20" y="148" width="86" height="42" rx="5" fill="#edf4fa" stroke="#527c9a" />
+    <text x="63" y="175" text-anchor="middle" font-weight="600">E2</text>
+    <rect x="122" y="148" width="243" height="42" rx="5" fill="#fff" stroke="#71899b" />
+    <g fill="#fff7ed" stroke="#9b6a35">
+      <rect x="405" y="148" width="235" height="42" rx="5" /><rect x="678" y="148" width="262" height="42" rx="5" />
+    </g>
+    <g font-family="Consolas, monospace"><text x="136" y="175">["pool_0", "pool_1"]</text><text x="419" y="175">["pool_1"]</text></g>
+    <text x="694" y="175" font-weight="600">Conflict: pool_0 removed</text>
+  </g>
+  <g>
+    <rect x="20" y="211" width="920" height="79" rx="5" fill="#fff7ed" stroke="#9b6a35" stroke-width="1.5" />
+    <text x="36" y="241" font-size="19" font-weight="600">Quarantine the consumer. Withhold approval for both E1 and E2.</text>
+    <text x="36" y="271">Filtering for pool_0 first would hide E2. Preserve both documents for operator review.</text>
+  </g>
+</svg>

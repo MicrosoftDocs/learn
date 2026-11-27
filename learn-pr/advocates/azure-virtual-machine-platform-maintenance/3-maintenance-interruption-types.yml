@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.azure-virtual-machine-platform-maintenance.maintenance-interruption-types
+metadata:
+  title: "Distinguish Maintenance from Patching and Failure"
+  description: "Distinguish host maintenance, guest updates, operator actions, hardware failure, and Spot eviction, including the limits of maintenance controls."
+  ms.date: 11/23/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: "Distinguish maintenance from patching and failure"
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-maintenance-interruption-types.md)]

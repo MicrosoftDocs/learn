@@ -1,0 +1,54 @@
+### YamlMime:Module
+uid: learn.devrel.azure-virtual-machine-platform-maintenance
+metadata:
+  title: "Prepare Azure Virtual Machine Workloads for Platform Maintenance"
+  description: "Prepare Azure virtual machine workloads for platform maintenance with resource-scoped Scheduled Events, bounded preparation, coordinated approval, and verified recovery."
+  ms.date: 11/23/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: module-standard-concept-based
+  ms.service: azure-virtual-machines
+  ai-usage: ai-assisted
+title: "Prepare Azure virtual machine workloads for platform maintenance"
+summary: |
+  An Azure virtual machine (VM) runs on physical infrastructure hosts in Azure datacenters. Azure frequently updates the software on these physical infrastructure hosts to fix security issues, improve reliability and performance. Most updates to the Azure host platform don't interrupt the VM. Some briefly pause it while preserving its memory and some updates require the VM to restart.
+
+  When an Azure VM host needs maintenance, Azure can move a running VM to another host without rebooting its operating system. If the Azure VM host fails suddenly, Azure may instead restart the VM on a healthy host without advance notice. Not every restart signals a host problem: an update inside the VM or an operator's restart request can also cause a reboot.
+
+  Azure Scheduled Events can warn an application that its VM is about to pause, restart, or move. In the invoice processing example used in this module, a **worker process** is a running instance of the invoice application that takes jobs from a queue. A **worker VM** is the Azure virtual machine that runs the process. Azure maintains the VM; the application stops taking jobs, saves progress, and later resumes processing. This module explains when to take those steps and when it's safe to approve maintenance.
+abstract: |
+  By the end of this module, you can:
+
+  - Identify which VMs could be interrupted together, how requests reach them, and which queues or data stores they share.
+  - Consume Instance Metadata Service (IMDS) Scheduled Events without acting on unrelated resources.
+  - Set a time limit for worker processes to prepare and coordinate approval across all affected VMs. Decide how to respond when a poll fails, an event repeats, changes or disappears, or the first notice already says `Started`.
+  - Verify guest and application recovery and reconcile in-flight jobs before reopening intake.
+  - Explain the failures that placement, maintenance controls, and advance notice can't prevent.
+prerequisites: |
+  Before you start, you should have the following background:
+
+  - Familiarity with Azure virtual machines and basic Windows or Linux administration.
+  - Basic knowledge of queue-based workloads, durable storage, and application retries.
+
+  This module uses a worked example, not a hands-on lab. You don't need to deploy resources to follow it. Observing Scheduled Events requires an existing Azure virtual machine and an HTTP client such as PowerShell 7.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- advanced
+roles:
+- administrator
+- solution-architect
+products:
+- azure-virtual-machines
+subjects:
+- infrastructure
+units:
+- learn.devrel.azure-virtual-machine-platform-maintenance.introduction
+- learn.devrel.azure-virtual-machine-platform-maintenance.workload-maintenance-exposure
+- learn.devrel.azure-virtual-machine-platform-maintenance.maintenance-interruption-types
+- learn.devrel.azure-virtual-machine-platform-maintenance.scheduled-event-resources
+- learn.devrel.azure-virtual-machine-platform-maintenance.workload-preparation-approval
+- learn.devrel.azure-virtual-machine-platform-maintenance.workload-recovery-verification
+- learn.devrel.azure-virtual-machine-platform-maintenance.knowledge-check
+- learn.devrel.azure-virtual-machine-platform-maintenance.summary
+badge:
+  uid: learn.devrel.azure-virtual-machine-platform-maintenance.badge
